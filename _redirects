@@ -1,4 +1,0 @@
-/blog/es/* /blog/es/:splat 200
-/blog/val/* /blog/val/:splat 200
-/blog/en/* /blog/en/:splat 200
-/* /index.html 200
