@@ -116,6 +116,166 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- Article 9: Página web para electricistas -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/pagina-web-para-electricistas</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 10: Optimizar ficha Google Business Profile -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/optimizar-ficha-google-business-profile</loc>
+        <lastmod>2026-03-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 11: Cómo posicionar web en Google local -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/como-posicionar-web-en-google-local</loc>
+        <lastmod>2026-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 12: Redes sociales para autónomos -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/redes-sociales-autonomos-cuales-usar</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 13: Web para fontaneros -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/web-para-fontaneros-guia-completa</loc>
+        <lastmod>2026-03-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 14: Google Posts -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/google-posts-publicar-fiche-google</loc>
+        <lastmod>2026-04-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 15: Map Pack de Google -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/que-es-map-pack-google-como-salir</loc>
+        <lastmod>2026-04-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 16: Email marketing para autónomos -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/email-marketing-autonomos-guia-basica</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 17: Web para clínicas dentales y fisioterapeutas -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/web-para-clinica-dental-fisioterapeuta</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 18: Responder reseñas negativas -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/responder-resenas-negativas-google</loc>
+        <lastmod>2026-04-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 19: Schema LocalBusiness -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/schema-local-business-que-es-como-implementar</loc>
+        <lastmod>2026-04-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 20: Presupuesto marketing digital -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/presupuesto-marketing-digital-autonomos</loc>
+        <lastmod>2026-04-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 21: Elementos web profesional autónomo -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/que-debe-tener-web-profesional-autonomo</loc>
+        <lastmod>2026-04-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 22: Categorías Google Business -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/categorias-google-business-como-elegir</loc>
+        <lastmod>2026-04-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 23: Citas locales NAP -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/citas-locales-nap-que-son-por-que-importan</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 24: Digitalización autónomos España -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/digitalizacion-autonomos-espana-por-donde-empezar</loc>
+        <lastmod>2026-05-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 25: Web para carpinteros y reformas -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/web-para-carpinteros-reformas</loc>
+        <lastmod>2026-05-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 26: Fotos y vídeos ficha Google -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/fotos-videos-ficha-google-importancia</loc>
+        <lastmod>2026-05-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 27: Backlinks locales -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/backlinks-locales-como-conseguir</loc>
+        <lastmod>2026-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Article 28: Errores marketing digital autónomos -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/errores-marketing-digital-autonomos</loc>
+        <lastmod>2026-05-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
     <!-- Demos -->
     <url>
         <loc>https://webautonomos.es/demo-electricista</loc>
