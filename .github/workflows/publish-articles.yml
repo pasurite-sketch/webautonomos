@@ -1,0 +1,55 @@
+name: Publish Blog Articles
+
+on:
+  schedule:
+    # Every Monday and Thursday at 8:00 Europe/Madrid (6:00 UTC in winter, 7:00 UTC summer)
+    # Using 6:00 UTC to cover CET (winter). In CEST (summer) this runs at 8:00 local.
+    - cron: '0 6 * * 1,4'
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run publish script
+        id: publish
+        run: |
+          OUTPUT=$(node scripts/publish-articles.js 2>&1)
+          echo "$OUTPUT"
+          if echo "$OUTPUT" | grep -q "No articles to publish"; then
+            echo "published=false" >> $GITHUB_OUTPUT
+          else
+            echo "published=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.publish.outputs.published == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html calendrier.json sitemap.xml
+          git commit -m "blog: auto-publish articles for $(date +%Y-%m-%d)
+
+          Automated by GitHub Actions publish-articles workflow.
+
+          Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+          git push
+
+      - name: Deploy to Cloudflare Workers
+        if: steps.publish.outputs.published == 'true'
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
