@@ -24,31 +24,56 @@
 
 ```
 webautonomos/
-├── index.html          # React SPA (tout le site)
-├── robots.txt          # Directives crawlers
-├── sitemap.xml         # Plan du site pour Google
-├── wrangler.jsonc      # Config Cloudflare Workers
-├── CLAUDE.md           # Ce fichier (règles projet)
-├── calendrier.json     # Calendrier éditorial blog
-└── blog/               # Articles de blog (fichiers HTML individuels)
-    └── es/             # Articles en espagnol
-    └── val/            # Articles en valencien
-    └── en/             # Articles en anglais
+├── index.html              # React SPA (tout le site)
+├── robots.txt              # Directives crawlers
+├── sitemap.xml             # Plan du site pour Google
+├── wrangler.jsonc          # Config Cloudflare Workers
+├── CLAUDE.md               # Ce fichier (règles projet)
+├── calendrier.json         # Calendrier éditorial blog
+├── template-article.html   # Template HTML de référence pour les articles
+└── blog/                   # Articles de blog (fichiers HTML individuels)
+    └── es/                 # Articles en espagnol
+    └── val/                # Articles en valencien
+    └── en/                 # Articles en anglais
 ```
+
+## Articles Existants (SPA React)
+
+⚠️ **6 articles existent déjà dans le SPA React (index.html).** NE PAS les régénérer en HTML autonome.
+
+| ID Cal | URL existante (SPA) | Titre | Silo | Status |
+|--------|---------------------|-------|------|--------|
+| 1 | /blog/5-razones-pagina-web-negocio-2026 | 5 razones por las que tu negocio necesita una página web en 2026 | paginas-web | ✅ existant |
+| 2 | /blog/como-aparecer-google-maps-autonomos | Cómo aparecer en Google Maps: guía completa para autónomos | google-my-business | ✅ existant |
+| 3 | /blog/seo-local-que-es-autonomos | SEO local: qué es y por qué es clave para electricistas y fontaneros | seo-local | ✅ existant |
+| 5 | /blog/cuanto-cuesta-pagina-web-autonomos-espana | ¿Cuánto cuesta una página web para autónomos en España? | paginas-web | ✅ existant |
+| 6 | /blog/como-conseguir-resenas-google-negocio | Cómo conseguir más reseñas en Google (sin parecer desesperado) | google-my-business | ✅ existant |
+| 8 | /blog/configurar-whatsapp-business-gratis-autonomos | WhatsApp Business: la herramienta gratuita que todo autónomo debería usar | marketing-digital | ✅ existant |
+
+**Articles restants à générer** : 22 (IDs 4, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28)
 
 ## Blog — Objectif & Stratégie
 
 ### But du Blog
-Attirer du trafic organique vers webautonomos.es via du contenu SEO ciblant les autónomos espagnols qui cherchent à améliorer leur présence digitale. Chaque article doit démontrer l'expertise de WebAutonomos et inciter le lecteur à demander un devis.
+Attirer du trafic organique vers webautonomos.es via du contenu SEO ciblant les autónomos espagnols qui cherchent à améliorer leur présence digitale. Chaque article doit démontrer l'expertise de WebAutonomos et inciter le lecteur à demander un devis. L'objectif est d'atteindre la 1ère position Google pour chaque mot-clé ciblé.
+
+### Stratégie "1ère place"
+Pour chaque article, le contenu doit être **objectivement meilleur** que le résultat #1 actuel :
+- **3x plus long** que la concurrence (2000-2500 mots vs ~800 mots moyens)
+- **Sommaire visible** (les concurrents n'en ont pas)
+- **FAQ structurée** avec Schema FAQPage (Rich Snippets)
+- **4 Schemas JSON-LD** (BlogPosting, FAQPage, BreadcrumbList, Organization)
+- **Exemples locaux** Valencia/Alicante/Elda/Elche (les concurrents sont généralistes)
+- **Données récentes** 2025-2026 (les concurrents ont du contenu daté)
 
 ### 4 Silos Thématiques (Catégories)
 
-| Silo | Slug catégorie | Description | Mot-clé racine |
-|------|---------------|-------------|----------------|
-| **Presencia Digital** | `paginas-web` | Pourquoi et comment avoir un site web | páginas web para autónomos |
-| **SEO Local** | `seo-local` | Référencement local, Google Maps | SEO local para autónomos |
-| **Google My Business** | `google-my-business` | Optimisation fiche GBP | optimizar Google My Business |
-| **Marketing Digital** | `marketing-digital` | Stratégies marketing pour artisans | marketing digital autónomos |
+| Silo | Slug catégorie | Color | Mot-clé racine |
+|------|---------------|-------|----------------|
+| **Presencia Digital** | `paginas-web` | #3B82F6 | páginas web para autónomos |
+| **SEO Local** | `seo-local` | #10B981 | SEO local para autónomos |
+| **Google My Business** | `google-my-business` | #F59E0B | optimizar Google My Business |
+| **Marketing Digital** | `marketing-digital` | #8B5CF6 | marketing digital autónomos |
 
 ### Calendrier de Publication
 - **Rythme** : 2 articles/semaine (lundi + jeudi)
@@ -61,87 +86,115 @@ Attirer du trafic organique vers webautonomos.es via du contenu SEO ciblant les 
 ### Format de Sortie
 Chaque article est un fichier HTML autonome :
 - **Chemin** : `blog/{lang}/{slug}.html`
-- **Exemple** : `blog/es/por-que-tu-negocio-necesita-una-web.html`
+- **Exemple** : `blog/es/como-conseguir-clientes-por-internet.html`
+- **Template de référence** : `template-article.html` (à la racine du repo)
 
-### Structure HTML d'un Article
+### Structure HTML Obligatoire
 
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{titre} | WebAutonomos Blog</title>
-    <meta name="description" content="{meta_description max 155 caractères}">
-    <meta property="og:title" content="{titre}">
-    <meta property="og:description" content="{meta_description}">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://webautonomos.es/blog/{lang}/{slug}">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://webautonomos.es/blog/{lang}/{slug}">
-    <!-- Hreflang pour les versions multilingues -->
-    <link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/{slug-es}">
-    <link rel="alternate" hreflang="ca" href="https://webautonomos.es/blog/val/{slug-val}">
-    <link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/{slug-en}">
-    <!-- Style Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Schema.org Article -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "{titre}",
-        "description": "{meta_description}",
-        "author": {
-            "@type": "Organization",
-            "name": "WebAutonomos",
-            "url": "https://webautonomos.es"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "WebAutonomos"
-        },
-        "datePublished": "{YYYY-MM-DD}",
-        "dateModified": "{YYYY-MM-DD}",
-        "mainEntityOfPage": "https://webautonomos.es/blog/{lang}/{slug}",
-        "inLanguage": "{es|ca|en}"
-    }
-    </script>
-</head>
-<body class="bg-gray-50">
-    <!-- Navigation minimale avec lien retour -->
-    <nav>...</nav>
+⚠️ **Toujours se baser sur `template-article.html` pour la structure exacte.**
 
-    <article class="max-w-3xl mx-auto px-4 py-8">
-        <!-- Breadcrumb -->
-        <!-- Badge catégorie + Date -->
-        <!-- H1 : titre de l'article -->
-        <!-- Temps de lecture estimé -->
-        <!-- Contenu structuré H2/H3 -->
-        <!-- CTA vers webautonomos.es/contacto -->
-        <!-- Articles connexes (même silo) -->
-        <!-- Auteur WebAutonomos -->
-    </article>
+Chaque article DOIT contenir dans cet ordre :
 
-    <footer>...</footer>
-</body>
-</html>
-```
+#### 1. HEAD — SEO complet
+- `<title>` : mot-clé + année + "| WebAutonomos" (max 60 car.)
+- `<meta description>` : 150-155 car. avec CTA
+- `<link canonical>` vers URL définitive
+- `<meta robots>` : "index, follow, max-snippet:-1, max-image-preview:large"
+- Hreflang : `es`, `ca-ES` (valencien), `en`, `x-default`
+- Open Graph complet (og:type, og:url, og:title, og:description, og:locale, article:*)
+- Twitter Card (summary_large_image)
+- **4 Schemas JSON-LD** :
+  - `BlogPosting` (headline, author, publisher, datePublished, wordCount)
+  - `BreadcrumbList` (Inicio > Blog > Catégorie > Titre)
+  - `FAQPage` (5 questions/réponses)
+  - `Organization` (WebAutonomos, areaServed: Comunidad Valenciana)
+- Preconnect Tailwind CDN
+- CSS custom (smooth scroll, gradient-wa, tip-box, warning-box, toc-link, FAQ accordion)
+
+#### 2. NAVIGATION
+- Barre sticky blanche avec logo "W" gradient + lien retour blog
+
+#### 3. BREADCRUMB
+- Inicio > Blog > {Catégorie} — texte gris, liens cliquables
+
+#### 4. EN-TÊTE ARTICLE
+- Badge catégorie (couleur du silo, texte blanc, rounded-full)
+- Date formatée + temps de lecture estimé
+- **H1** : mot-clé principal (text-3xl md:text-4xl font-bold)
+- Paragraphe d'introduction (text-lg, mot-clé dans les 100 premiers mots)
+
+#### 5. SOMMAIRE — ⚠️ TOUJOURS VISIBLE (pas de `<details>`)
+- Encadré `bg-white rounded-2xl shadow-sm` avec bordure gauche couleur du silo
+- Titre : "📑 Contenido del artículo"
+- Liste numérotée `<ol>` de tous les H2 (liens ancres #seccion-N)
+- **La FAQ est le dernier item** : "Preguntas frecuentes"
+- Hover : fond violet léger (#F5F3FF)
+
+#### 6. CORPS — 2000-2500 mots
+- **H2** pour sections principales (mot-clé dans ≥2 H2, id="seccion-N")
+- **H3** pour sous-sections
+- Paragraphes courts (3-4 lignes, line-height: 1.8)
+- Encadrés "💡 Consejo" (.tip-box, bordure #7C3AED, fond #F5F3FF)
+- Encadrés "⚠️ Importante" (.warning-box, bordure #F59E0B, fond #FFFBEB)
+- **Exemples locaux** obligatoires : mentionner Valencia, Alicante, Elda, Elche
+- **Données chiffrées** récentes (2025-2026)
+- **Liens internes** : 2 même silo + 1 autre silo minimum (texte d'ancre descriptif)
+
+#### 7. FAQ — 5 questions (format accordéon `<details>/<summary>`)
+- Questions tirées des "People Also Ask" de Google
+- Réponses concises (2-3 phrases)
+- **Schema FAQPage** intégré dans le HEAD (même contenu)
+
+#### 8. CTA
+- Encadré gradient (.gradient-wa, rounded-2xl)
+- Titre accrocheur **lié au sujet de l'article**
+- Bouton blanc "Pedir presupuesto gratis →" vers /contacto
+- Mention : "Páginas web profesionales desde 15€/mes · Sin permanencia"
+
+#### 9. ARTICLES CONNEXES
+- 3 articles avec titre + description courte
+- Liens vers articles existants (SPA: /blog/{slug}) OU nouveaux (blog/es/{slug})
+- Priorité au même silo (2) + 1 d'un autre silo
+
+#### 10. AUTEUR
+- Avatar gradient "W" (w-16 h-16, gradient-wa)
+- "WebAutonomos" + description
+
+#### 11. FOOTER
+- Lien "← Volver al blog" + lien webautonomos.es
+
+### Liens Internes — Mapping des URLs
+
+⚠️ Important : les 6 articles existants utilisent des URLs SPA, les nouveaux utilisent des URLs HTML autonomes.
+
+**Articles existants (SPA)** — utiliser ces URLs pour les liens internes :
+- `/blog/5-razones-pagina-web-negocio-2026`
+- `/blog/como-aparecer-google-maps-autonomos`
+- `/blog/seo-local-que-es-autonomos`
+- `/blog/cuanto-cuesta-pagina-web-autonomos-espana`
+- `/blog/como-conseguir-resenas-google-negocio`
+- `/blog/configurar-whatsapp-business-gratis-autonomos`
+
+**Nouveaux articles (HTML autonome)** — utiliser ces URLs :
+- `/blog/es/{slug}` (sans .html dans le lien, Cloudflare sert le fichier)
 
 ### Règles de Contenu SEO
 
 1. **Titre H1** : Inclure le mot-clé principal, max 60 caractères
 2. **Meta description** : Inclure le mot-clé, max 155 caractères, avec appel à l'action
-3. **Structure** : H1 → H2 (sections principales) → H3 (sous-sections). Jamais sauter de niveau.
-4. **Longueur** : 1200-2000 mots par article
+3. **Structure** : H1 → H2 (sections) → H3 (sous-sections). Jamais sauter de niveau
+4. **Longueur** : 2000-2500 mots par article (objectif : 3x le concurrent #1)
 5. **Mot-clé principal** : Dans H1, premier paragraphe, au moins 2 H2, meta description, URL slug
-6. **Mots-clés secondaires** : 3-5 variations naturelles dans le corps du texte
-7. **Liens internes** : Minimum 2 liens vers d'autres articles du même silo + 1 lien vers un article d'un autre silo
-8. **CTA** : Chaque article doit se terminer par un appel à l'action vers webautonomos.es (demande de devis, contact, etc.)
-9. **Ton** : Expert mais accessible. Tutoiement ("tú"). Concret avec des exemples locaux (Valencia, Alicante, Elda, Elche).
-10. **Localisation** : Mentionner des villes/quartiers de la Comunidad Valenciana quand pertinent
-11. **E-E-A-T** : Démontrer Expérience, Expertise, Autorité, Confiance. Citer des données, des cas pratiques.
+6. **Mots-clés secondaires** : 3-5 variations naturelles dans le corps
+7. **Liens internes** : Minimum 2 liens même silo + 1 lien autre silo
+8. **CTA** : Chaque article finit par un appel à l'action vers webautonomos.es
+9. **Ton** : Expert mais accessible. Tutoiement ("tú"). Concret avec exemples locaux
+10. **Localisation** : Mentionner villes de la Comunidad Valenciana quand pertinent
+11. **E-E-A-T** : Expérience, Expertise, Autorité, Confiance. Données, cas pratiques
 12. **Pas de spam IA** : Contenu utile, spécifique, pas de remplissage générique
+13. **Sommaire** : TOUJOURS visible, jamais dans un `<details>` accordéon
+14. **FAQ** : 5 questions basées sur "People Also Ask", format `<details>/<summary>`
+15. **Schema** : 4 blocs JSON-LD obligatoires (BlogPosting, FAQPage, BreadcrumbList, Organization)
 
 ### Règles de Nommage
 
@@ -151,19 +204,20 @@ Chaque article est un fichier HTML autonome :
 - **Fichiers** : `blog/{lang}/{slug}.html`
 - **Images** : `blog/img/{slug}-{n}.webp` (si nécessaire)
 
-### Maillage Interne (Liens entre articles)
+### Maillage Interne (Toile d'araignée)
 
-Suivre la structure "toile d'araignée" :
 - Chaque article du silo lie vers au moins 2 autres articles du même silo
 - Chaque article lie vers au moins 1 article d'un silo différent
 - Utiliser des ancres de texte descriptives (pas "cliquez ici")
 - Le premier article de chaque silo est le "pilier" (article le plus long et complet)
+- Les articles SPA existants comptent comme cibles de liens valides
 
 ### Traductions (VAL + EN)
 
-- Les traductions ne sont PAS des traductions littérales — elles sont adaptées culturellement
+- Les traductions ne sont PAS littérales — elles sont adaptées culturellement
 - VAL : Valencien/Catalan, respecter la normative linguistique AVL
 - EN : Anglais international, adapter les exemples au contexte espagnol
+- Hreflang : `es`, `ca-ES` (pour valencien/catalan), `en`
 - Les slugs peuvent varier légèrement entre langues si nécessaire
 
 ## Workflow de Publication
@@ -177,23 +231,26 @@ cat calendrier.json | jq '.articles[] | select(.status == "pending")' | head -1
 # Générer l'article
 # Claude Code va :
 # 1. Lire les specs dans calendrier.json
-# 2. Créer le fichier HTML dans blog/es/
-# 3. Mettre à jour calendrier.json (status: "published")
-# 4. Mettre à jour sitemap.xml
-# 5. Commit + push
+# 2. Lire le template-article.html comme base
+# 3. Créer le fichier HTML dans blog/es/
+# 4. Mettre à jour calendrier.json (status: "published")
+# 5. Mettre à jour sitemap.xml
+# 6. Commit + push
 ```
 
-### Checklist Avant Publication
+### Checklist SEO Avant Publication (12/12)
 
-- [ ] Titre H1 contient le mot-clé principal
-- [ ] Meta description < 155 caractères
-- [ ] Au moins 1200 mots
-- [ ] Minimum 2 liens internes (même silo)
-- [ ] Minimum 1 lien interne (autre silo)
-- [ ] CTA présent en fin d'article
-- [ ] Schema.org BlogPosting valide
-- [ ] Hreflang tags présents
+- [ ] H1 contient le mot-clé principal (max 60 car.)
+- [ ] Meta description < 155 caractères avec CTA
+- [ ] 2000-2500 mots
+- [ ] Sommaire visible (pas de `<details>`) avec tous les H2
+- [ ] FAQ 5 questions avec `<details>/<summary>`
+- [ ] 4 Schemas JSON-LD (BlogPosting, FAQPage, BreadcrumbList, Organization)
+- [ ] Minimum 2 liens internes même silo + 1 autre silo
+- [ ] CTA présent en fin d'article avec lien /contacto
+- [ ] Hreflang tags (es, ca-ES, en, x-default)
 - [ ] URL canonical correcte
+- [ ] Exemples locaux (Valencia, Alicante, Elda, Elche)
 - [ ] Fichier ajouté au sitemap.xml
 
 ### Mise à jour du Sitemap
@@ -220,14 +277,16 @@ cat calendrier.json | jq '[.articles[] | .status] | group_by(.) | map({status: .
 # Lister les articles publiés
 ls blog/es/*.html | wc -l
 
-# Valider le HTML
-npx html-validate blog/es/{slug}.html
+# Voir le prochain article à publier
+cat calendrier.json | jq '.articles[] | select(.status == "pending") | {id, title_es, silo, publish_date}' | head -20
 ```
 
 ## Rappels Importants
 
-- **Ne JAMAIS modifier index.html** manuellement — c'est le bundle React compilé de Lovable
+- **Ne JAMAIS modifier index.html** — c'est le bundle React compilé de Lovable
+- **Ne JAMAIS régénérer les 6 articles existants** — ils vivent dans le SPA React
 - **Toujours pousser sur `main`** — c'est la branche de production
+- **Toujours se baser sur template-article.html** — pour la structure HTML
 - **Tester localement** avant de pousser : ouvrir le fichier HTML dans un navigateur
 - **Les articles blog sont des pages HTML séparées** — ils ne font pas partie du SPA React
 - **Cloudflare sert les fichiers statiques** — les chemins /blog/es/slug.html sont servis directement
