@@ -4708,13 +4708,14 @@
                 e.preventDefault();
                 setStatus('sending');
                 try {
+                    const data = new FormData(e.target);
+                    data.append('from_name', 'WebAutonomos');
                     const res = await fetch('https://api.web3forms.com/submit', {
                         method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ access_key: 'e65162dd-0ae2-4c30-9fce-68eb7fd2eccd', subject: 'Nuevo contacto desde WebAutonomos.es', from_name: 'WebAutonomos', ...formData })
+                        body: data
                     });
-                    const data = await res.json();
-                    if (data.success) { setStatus('success'); setFormData({ name: '', email: '', phone: '', business: '', message: '' }); }
+                    const json = await res.json();
+                    if (json.success) { setStatus('success'); setFormData({ name: '', email: '', phone: '', business: '', message: '' }); e.target.reset(); }
                     else { setStatus('error'); }
                 } catch (err) { setStatus('error'); }
             };
