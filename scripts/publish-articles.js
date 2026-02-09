@@ -17,10 +17,12 @@ const ROOT = path.resolve(__dirname, '..');
 const INDEX_PATH = path.join(ROOT, 'index.html');
 const CALENDRIER_PATH = path.join(ROOT, 'calendrier.json');
 const SPA_DATA_PATH = path.join(ROOT, 'blog-spa-data.json');
+const SITEMAP_PATH = path.join(ROOT, 'sitemap.xml');
 
 // Read files
 console.log('Reading files...');
 let html = fs.readFileSync(INDEX_PATH, 'utf8');
+let sitemap = fs.readFileSync(SITEMAP_PATH, 'utf8');
 const calendrier = JSON.parse(fs.readFileSync(CALENDRIER_PATH, 'utf8'));
 const spaData = JSON.parse(fs.readFileSync(SPA_DATA_PATH, 'utf8'));
 
@@ -116,8 +118,42 @@ toPublish.forEach(a => {
     }
 });
 
+// Update sitemap.xml — add entries for articles not yet listed
+const sitemapInsertions = [];
+toPublish.forEach(a => {
+    const sitemapUrl = `https://webautonomos.es/blog/es/${a.slug_es}`;
+    if (!sitemap.includes(sitemapUrl)) {
+        sitemapInsertions.push(
+            `    <url>\n` +
+            `        <loc>${sitemapUrl}</loc>\n` +
+            `        <lastmod>${a.publish_date}</lastmod>\n` +
+            `        <changefreq>monthly</changefreq>\n` +
+            `        <priority>0.7</priority>\n` +
+            `    </url>`
+        );
+    }
+});
+
+if (sitemapInsertions.length > 0) {
+    // Insert before <!-- Demos --> or before </urlset>
+    const demoMarker = '<!-- Demos -->';
+    const insertPos = sitemap.indexOf(demoMarker);
+    if (insertPos !== -1) {
+        sitemap = sitemap.substring(0, insertPos) +
+            sitemapInsertions.join('\n\n') + '\n\n    ' +
+            sitemap.substring(insertPos);
+    } else {
+        // Fallback: insert before </urlset>
+        sitemap = sitemap.replace('</urlset>', sitemapInsertions.join('\n\n') + '\n\n</urlset>');
+    }
+    console.log(`Added ${sitemapInsertions.length} new entries to sitemap.xml.`);
+} else {
+    console.log('All articles already in sitemap.xml.');
+}
+
 // Write updated files
 fs.writeFileSync(INDEX_PATH, html);
+fs.writeFileSync(SITEMAP_PATH, sitemap);
 fs.writeFileSync(CALENDRIER_PATH, JSON.stringify(calendrier, null, 2) + '\n');
 
 console.log('');

@@ -28,11 +28,18 @@ webautonomos/
 ├── robots.txt              # Directives crawlers
 ├── sitemap.xml             # Plan du site pour Google
 ├── wrangler.jsonc          # Config Cloudflare Workers
+├── .assetsignore           # Fichiers exclus du déploiement Cloudflare
 ├── CLAUDE.md               # Ce fichier (règles projet)
 ├── calendrier.json         # Calendrier éditorial blog
+├── blog-spa-data.json      # Données SPA pré-générées (3 langues) pour publish-articles.js
 ├── template-article.html   # Template HTML de référence pour les articles
+├── scripts/
+│   └── publish-articles.js # Script auto-publication SPA + sitemap
+├── .github/
+│   └── workflows/
+│       └── publish-articles.yml  # GitHub Action (lun/jeu 8h Madrid)
 └── blog/                   # Articles de blog (fichiers HTML individuels)
-    └── es/                 # Articles en espagnol
+    └── es/                 # Articles en espagnol (22 articles)
     └── val/                # Articles en valencien
     └── en/                 # Articles en anglais
 ```
@@ -50,7 +57,8 @@ webautonomos/
 | 6 | /blog/como-conseguir-resenas-google-negocio | Cómo conseguir más reseñas en Google (sin parecer desesperado) | google-my-business | ✅ existant |
 | 8 | /blog/configurar-whatsapp-business-gratis-autonomos | WhatsApp Business: la herramienta gratuita que todo autónomo debería usar | marketing-digital | ✅ existant |
 
-**Articles restants à générer** : 22 (IDs 4, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28)
+**Articles HTML générés** : 22 (IDs 4, 7, 9-28) — tous dans `blog/es/` et dans `sitemap.xml`
+**Ajout au SPA** : automatisé via GitHub Action (`scripts/publish-articles.js`) selon les dates de `calendrier.json`
 
 ## Blog — Objectif & Stratégie
 
@@ -222,20 +230,31 @@ Chaque article DOIT contenir dans cet ordre :
 
 ## Workflow de Publication
 
-### Commande Claude Code pour générer un article :
+### Publication automatique (GitHub Action)
+
+Le script `scripts/publish-articles.js` est exécuté automatiquement par `.github/workflows/publish-articles.yml` chaque lundi et jeudi à 8h (heure Madrid). Il :
+
+1. Lit `calendrier.json` et `blog-spa-data.json`
+2. Trouve les articles avec `publish_date ≤ aujourd'hui` et `status: "published"`
+3. Insère les entrées SPA dans `index.html` (3 langues : ES, VAL, EN)
+4. Ajoute les URLs manquantes dans `sitemap.xml`
+5. Met à jour `calendrier.json` (`status: "published_spa"`)
+6. Commit, push, et déploie via Cloudflare Workers
+
+### Commande Claude Code pour générer un nouvel article :
 
 ```bash
 # Lire le calendrier pour identifier le prochain article à publier
 cat calendrier.json | jq '.articles[] | select(.status == "pending")' | head -1
 
-# Générer l'article
-# Claude Code va :
+# Générer l'article — Claude Code va :
 # 1. Lire les specs dans calendrier.json
 # 2. Lire le template-article.html comme base
 # 3. Créer le fichier HTML dans blog/es/
-# 4. Mettre à jour calendrier.json (status: "published")
-# 5. Mettre à jour sitemap.xml
-# 6. Commit + push
+# 4. Générer les données SPA (ES/VAL/EN) dans blog-spa-data.json
+# 5. Ajouter l'URL dans sitemap.xml
+# 6. Mettre à jour calendrier.json (status: "published")
+# 7. Commit + push → le GitHub Action ajoutera l'article au SPA à la date prévue
 ```
 
 ### Checklist SEO Avant Publication (12/12)
