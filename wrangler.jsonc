@@ -2,6 +2,7 @@
   "name": "webautonomos-site",
   "compatibility_date": "2026-02-08",
   "assets": {
-    "directory": "./"
+    "directory": "./",
+    "not_found_handling": "single-page-application"
   }
 }
