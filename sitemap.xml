@@ -108,6 +108,14 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- Article 7: Palabras clave locales -->
+    <url>
+        <loc>https://webautonomos.es/blog/es/palabras-clave-locales-como-elegir</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
     <!-- Demos -->
     <url>
         <loc>https://webautonomos.es/demo-electricista</loc>
