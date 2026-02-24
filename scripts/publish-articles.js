@@ -104,8 +104,13 @@ for (let i = 2; i >= 0; i--) {
     }).filter(Boolean);
 
     if (entries.length > 0) {
+        // Find the newline before the closing ] to preserve its indentation
+        const lineBreakBefore = html.lastIndexOf('\n', closingBracketPos - 1);
+        const indentBefore = html.substring(lineBreakBefore + 1, closingBracketPos);
+
         const insertion = entries.map(e => ',\n' + e).join('');
-        html = html.substring(0, closingBracketPos) + insertion + '\n' + html.substring(closingBracketPos);
+        // Insert after the last article's }, keeping ] on its own properly-indented line
+        html = html.substring(0, lineBreakBefore) + insertion + '\n' + indentBefore + html.substring(closingBracketPos);
         console.log(`Inserted ${entries.length} entries in ${lang.toUpperCase()} block.`);
     }
 }
