@@ -1,8 +1,13 @@
 {
   "name": "webautonomos-site",
   "compatibility_date": "2026-02-08",
+  "workers_dev": true,
   "assets": {
     "directory": "./",
     "not_found_handling": "single-page-application"
-  }
+  },
+  "routes": [
+    { "pattern": "webautonomos.es/*", "zone_name": "webautonomos.es" },
+    { "pattern": "www.webautonomos.es/*", "zone_name": "webautonomos.es" }
+  ]
 }
