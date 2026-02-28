@@ -137,6 +137,9 @@
                     ctaSecondary: "Cómo funciona",
                     trusted: "Más de 50 autónomos ya confían en nosotros"
                 },
+                video: {
+                    title: "Descubre WebAutonomos en 1 minuto",
+                },
                 benefits: {
                     title: "Todo incluido, sin letra pequeña",
                     benefit1: "Creación gratuita", benefit1Desc: "Diseñamos tu web antes de que pagues nada",
@@ -1138,6 +1141,9 @@
                     ctaSecondary: "Com funciona",
                     trusted: "Més de 50 autònoms ja confien en nosaltres"
                 },
+                video: {
+                    title: "Descobreix WebAutonomos en 1 minut",
+                },
                 benefits: {
                     title: "Tot inclòs, sense lletra menuda",
                     benefit1: "Creació gratuïta", benefit1Desc: "Dissenyem la teua web abans que pagues res",
@@ -2138,6 +2144,9 @@
                     cta: "See my free website",
                     ctaSecondary: "How it works",
                     trusted: "More than 50 freelancers already trust us"
+                },
+                video: {
+                    title: "Discover WebAutonomos in 1 minute",
                 },
                 benefits: {
                     title: "Everything included, no fine print",
@@ -3312,6 +3321,28 @@
                                 className="bg-white/20 hover:bg-white/30 px-8 py-4 rounded-full text-lg font-semibold transition">
                                 {t.hero.ctaSecondary}
                             </button>
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        // Video Section
+        const VideoSection = () => {
+            const { t } = useLanguage();
+            return (
+                <section className="py-16 bg-gray-50">
+                    <div className="max-w-4xl mx-auto px-4 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">{t.video.title}</h2>
+                        <div className="relative w-full overflow-hidden rounded-2xl shadow-xl" style={{paddingBottom: '56.25%'}}>
+                            <iframe
+                                className="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/LJOXCug7W7k"
+                                title={t.video.title}
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
                         </div>
                     </div>
                 </section>
@@ -5438,6 +5469,7 @@
                         {currentPage === 'home' && (
                             <>
                                 <HeroSection setCurrentPage={setCurrentPage} />
+                                <VideoSection />
                                 <BenefitsSection />
                                 <ComparisonSection />
                                 <ForWhoSection setCurrentPage={setCurrentPage} />
