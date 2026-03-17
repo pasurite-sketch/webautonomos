@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Gracias! — WebAutonomos</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MT6S7CH7N9');
+    gtag('event', 'purchase', { currency: 'EUR', value: 15.00 });
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      background: linear-gradient(135deg, #2B5BE8 0%, #1a8faa 50%, #18C97A 100%);
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 20% 20%, #ffffff11 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 80% 80%, #ffffff08 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    .check-wrap {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.25);
+      border: 2px solid rgba(255,255,255,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem auto 2rem;
+      animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both,
+                 pulse 2s 0.6s ease-out infinite;
+    }
+    .check-wrap svg {
+      width: 48px; height: 48px;
+      stroke: white; stroke-width: 3;
+      stroke-linecap: round; stroke-linejoin: round; fill: none;
+    }
+    .check-wrap svg polyline {
+      stroke-dasharray: 60; stroke-dashoffset: 60;
+      animation: drawCheck 0.4s 0.4s ease forwards;
+    }
+    @keyframes drawCheck { to { stroke-dashoffset: 0; } }
+    @keyframes popIn { 0% { transform: scale(0); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.4); }
+      70% { box-shadow: 0 0 0 20px rgba(255,255,255,0); }
+      100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+    }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.2rem, 6vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+      animation: fadeUp 0.6s 0.3s ease both;
+    }
+    .service-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 100px;
+      padding: 0.3rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      animation: fadeUp 0.6s 0.35s ease both;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.85);
+      max-width: 500px;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      animation: fadeUp 0.6s 0.45s ease both;
+    }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 480px;
+      margin-bottom: 2.5rem;
+      animation: fadeUp 0.6s 0.6s ease both;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      text-align: left;
+    }
+    .step-num {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.3);
+      color: white;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .step-text strong { display: block; font-weight: 500; font-size: 0.95rem; margin-bottom: 0.2rem; }
+    .step-text span { font-size: 0.85rem; color: rgba(255,255,255,0.85); }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255,255,255,0.2);
+      border: 2px solid rgba(255,255,255,0.5);
+      backdrop-filter: blur(8px);
+      color: white;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      animation: fadeUp 0.6s 0.75s ease both;
+    }
+    .cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); background: rgba(255,255,255,0.3); }
+    .logo {
+      position: fixed;
+      top: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      text-decoration: none;
+      z-index: 10;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      white-space: nowrap;
+    }
+    .logo span.web { color: #0f172a; font-weight: 800; }
+    .logo span.auto { color: #93C5FD; font-weight: 800; }
+    .logo span.es { color: #6EE7B7; font-weight: 800; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+  <a href="/" class="logo">
+    <span class="web">web</span><span class="auto">autonomos</span><span class="es">.es</span>
+  </a>
+  <div class="container">
+    <div class="check-wrap">
+      <svg viewBox="0 0 24 24"><polyline points="4,12 9,17 20,6" /></svg>
+    </div>
+    <div class="service-badge">Google My Business - Optimización y Gestión</div>
+    <h1>¡Suscripción<br>activada!</h1>
+    <p class="subtitle">Bienvenido a WebAutonomos. Tu ficha de Google My Business está en buenas manos. Aquí tienes los próximos pasos:</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          <strong>Recibirás un email de confirmación</strong>
+          <span>Revisa tu bandeja de entrada (y la carpeta de spam por si acaso).</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          <strong>Te contactamos en menos de 24h</strong>
+          <span>Necesitamos acceso a tu ficha de Google para comenzar la optimización.</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          <strong>Optimización completa en 48-72h</strong>
+          <span>Actualizamos fotos, descripción, categorías, horarios y atributos.</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-text">
+          <strong>Gestión mensual activa</strong>
+          <span>Publicamos 4 posts al mes, gestionamos reseñas e informes de rendimiento.</span>
+        </div>
+      </div>
+    </div>
+    <a href="/" class="cta">← Volver al inicio</a>
+  </div>
+</body>
+</html>
