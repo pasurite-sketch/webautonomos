@@ -1,4 +1,91 @@
-<?xml version="1.0" encoding="UTF-8"?>
+import os
+INDEX = 'index.html'
+SITEMAP = 'sitemap.xml'
+with open(INDEX, 'r', encoding='utf-8') as f:
+    html = f.read()
+changes = 0
+hreflang_block = """
+    <!-- Hreflang: multilingual homepage -->
+    <link rel="alternate" hreflang="es" href="https://webautonomos.es/">
+    <link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/">
+    <link rel="alternate" hreflang="en" href="https://webautonomos.es/">
+    <link rel="alternate" hreflang="x-default" href="https://webautonomos.es/">"""
+if 'hreflang' not in html:
+    old_canonical = '    <link rel="canonical" href="https://webautonomos.es/">'
+    html = html.replace(old_canonical, old_canonical + hreflang_block)
+    changes += 1
+    print("1a. hreflang tags added")
+else:
+    print("1a. hreflang already present")
+org_schema = '''
+    <!-- Schema.org: Organization + WebSite + ProfessionalService -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "logo": "https://webautonomos.es/favicon-512.png",
+        "description": "Paginas web profesionales para autonomos y pequenos negocios en Espana. Desde 15 euros/mes, sin permanencia.",
+        "address": {"@type": "PostalAddress", "addressLocality": "Elda", "addressRegion": "Comunidad Valenciana", "addressCountry": "ES"},
+        "contactPoint": {"@type": "ContactPoint", "telephone": "+34654239520", "contactType": "customer service", "email": "info@webautonomos.es", "availableLanguage": ["Spanish", "Catalan", "English"]}
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "inLanguage": ["es", "ca", "en"],
+        "potentialAction": {"@type": "SearchAction", "target": "https://webautonomos.es/blog?q={search_term_string}", "query-input": "required name=search_term_string"}
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "priceRange": "$$",
+        "address": {"@type": "PostalAddress", "addressLocality": "Elda", "addressRegion": "Comunidad Valenciana", "addressCountry": "ES"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 38.477, "longitude": -0.7967},
+        "telephone": "+34654239520",
+        "email": "info@webautonomos.es",
+        "areaServed": {"@type": "Country", "name": "Spain"},
+        "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Servicios Web", "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pagina Web Profesional"}, "price": "15", "priceCurrency": "EUR"},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO Local"}, "price": "15", "priceCurrency": "EUR"},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Google My Business"}, "price": "29", "priceCurrency": "EUR"}
+        ]}
+    }
+    </script>'''
+if 'ProfessionalService' not in html:
+    marker = '    <script src="https://cdn.tailwindcss.com"></script>'
+    html = html.replace(marker, org_schema + '\n' + marker)
+    changes += 1
+    print("1b. Organization + WebSite + ProfessionalService schemas added")
+else:
+    print("1b. Schemas already present")
+old_update = '                updateMetaTags();\n            }, [currentPage, lang, t]);'
+new_update = """                updateMetaTags();
+                var langMap = { es: 'es', val: 'ca', en: 'en' };
+                document.documentElement.lang = langMap[lang] || 'es';
+                var localeMap = { es: 'es_ES', val: 'ca_ES', en: 'en_US' };
+                var ogLocale = document.querySelector('meta[property="og:locale"]');
+                if (!ogLocale) { ogLocale = document.createElement('meta'); ogLocale.setAttribute('property', 'og:locale'); document.head.appendChild(ogLocale); }
+                ogLocale.setAttribute('content', localeMap[lang] || 'es_ES');
+            }, [currentPage, lang, t]);"""
+if 'documentElement.lang' not in html:
+    html = html.replace(old_update, new_update)
+    changes += 1
+    print("1c. Dynamic html lang + OG locale added")
+else:
+    print("1c. Dynamic lang already present")
+with open(INDEX, 'w', encoding='utf-8') as f:
+    f.write(html)
+print(f"index.html: {changes} fixes applied")
+sitemap = '''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
@@ -95,4 +182,7 @@
     <!-- Demos -->
     <url><loc>https://webautonomos.es/demo-electricista</loc><lastmod>2026-02-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
     <url><loc>https://webautonomos.es/demo-fontanero</loc><lastmod>2026-02-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-</urlset>
+</urlset>'''
+with open(SITEMAP, 'w', encoding='utf-8') as f:
+    f.write(sitemap)
+print("sitemap.xml rewritten")
