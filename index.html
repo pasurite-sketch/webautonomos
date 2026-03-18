@@ -28,6 +28,11 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://webautonomos.es/">
+    <!-- Hreflang: multilingual homepage -->
+    <link rel="alternate" hreflang="es" href="https://webautonomos.es/">
+    <link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/">
+    <link rel="alternate" hreflang="en" href="https://webautonomos.es/">
+    <link rel="alternate" hreflang="x-default" href="https://webautonomos.es/">
     
     <!-- Robots -->
     <meta name="robots" content="index, follow">
@@ -36,6 +41,49 @@
     <link rel="icon" href="/favicon.ico" sizes="48x48">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Schema.org: Organization + WebSite + ProfessionalService -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "logo": "https://webautonomos.es/favicon-512.png",
+        "description": "Paginas web profesionales para autonomos y pequenos negocios en Espana. Desde 15 euros/mes, sin permanencia.",
+        "address": {"@type": "PostalAddress", "addressLocality": "Elda", "addressRegion": "Comunidad Valenciana", "addressCountry": "ES"},
+        "contactPoint": {"@type": "ContactPoint", "telephone": "+34654239520", "contactType": "customer service", "email": "info@webautonomos.es", "availableLanguage": ["Spanish", "Catalan", "English"]}
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "inLanguage": ["es", "ca", "en"],
+        "potentialAction": {"@type": "SearchAction", "target": "https://webautonomos.es/blog?q={search_term_string}", "query-input": "required name=search_term_string"}
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "priceRange": "$$",
+        "address": {"@type": "PostalAddress", "addressLocality": "Elda", "addressRegion": "Comunidad Valenciana", "addressCountry": "ES"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 38.477, "longitude": -0.7967},
+        "telephone": "+34654239520",
+        "email": "info@webautonomos.es",
+        "areaServed": {"@type": "Country", "name": "Spain"},
+        "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Servicios Web", "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pagina Web Profesional"}, "price": "15", "priceCurrency": "EUR"},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO Local"}, "price": "15", "priceCurrency": "EUR"},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Google My Business"}, "price": "29", "priceCurrency": "EUR"}
+        ]}
+    }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
@@ -5945,6 +5993,12 @@
                 };
                 
                 updateMetaTags();
+                var langMap = { es: 'es', val: 'ca', en: 'en' };
+                document.documentElement.lang = langMap[lang] || 'es';
+                var localeMap = { es: 'es_ES', val: 'ca_ES', en: 'en_US' };
+                var ogLocale = document.querySelector('meta[property="og:locale"]');
+                if (!ogLocale) { ogLocale = document.createElement('meta'); ogLocale.setAttribute('property', 'og:locale'); document.head.appendChild(ogLocale); }
+                ogLocale.setAttribute('content', localeMap[lang] || 'es_ES');
             }, [currentPage, lang, t]);
 
             // Custom setCurrentPage that also updates URL
