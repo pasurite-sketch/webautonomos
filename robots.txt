@@ -1,10 +1,4 @@
-# Robots.txt for webautonomos.es
-
 User-agent: *
 Allow: /
 
-# Sitemap location
 Sitemap: https://webautonomos.es/sitemap.xml
-
-# Crawl-delay (optional, be nice to the server)
-Crawl-delay: 1
