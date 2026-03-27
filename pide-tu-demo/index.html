@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Recibe tu sitio web demo gratis en 24h — WebAutonomos</title>
 <meta name="description" content="Rellena la ficha en 3 minutos. Te enviamos tu sitio web profesional personalizado en menos de 24 horas. Sin compromiso, 15€/mes.">
-<link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -36,31 +35,26 @@
   nav {
     position:fixed; top:0; left:0; right:0; z-index:200;
     height:60px;
-    background:#ffffff;
+    background:var(--grad);
     display:flex; align-items:center; justify-content:space-between;
     padding:0 6%;
     box-shadow:0 2px 24px rgba(15,32,96,0.25);
   }
   .logo {
-    text-decoration:none; display:flex; align-items:center; gap:9px;
-  }
-  .logo-icon {
-    width:34px; height:34px;
-    background:linear-gradient(135deg,#2056df,#188d6e);
-    border-radius:9px;
-    display:flex; align-items:center; justify-content:center;
-    flex-shrink:0;
-    box-shadow:0 2px 8px rgba(0,0,0,0.2);
-  }
-  .logo-text {
     font-family:'Bricolage Grotesque',sans-serif;
-    font-size:1.1rem; letter-spacing:-0.01em;
+    font-weight:800; font-size:1.15rem;
+    color:var(--white); text-decoration:none;
+    display:flex; align-items:center; gap:8px;
   }
-  .logo-web { font-weight:800; color:#0f172a; }
-  .logo-auto { font-weight:800; color:#2563eb; }
-  .logo-es { color:#4ade80; font-weight:700; }
+  .logo-g {
+    width:26px; height:26px;
+    background:rgba(255,255,255,0.18); border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:0.85rem;
+  }
+  .logo em { font-style:normal; font-weight:400; opacity:0.85; }
   .nav-back {
-    font-size:1rem; color:#6b7280;
+    font-size:0.82rem; color:rgba(255,255,255,0.6);
     text-decoration:none; transition:color 0.2s;
   }
   .nav-back:hover { color:var(--white); }
@@ -151,8 +145,8 @@
     height:4px; background:var(--grad);
   }
   .ey {
-    text-align:center; font-size:1rem; font-weight:700;
-    letter-spacing:0.08em; text-transform:uppercase;
+    text-align:center; font-size:0.72rem; font-weight:700;
+    letter-spacing:0.12em; text-transform:uppercase;
     background:var(--grad);
     -webkit-background-clip:text; -webkit-text-fill-color:transparent;
     background-clip:text; margin-bottom:10px;
@@ -178,32 +172,7 @@
   .vf iframe { width:100%; height:100%; border:none; display:block; }
   .vnote {
     text-align:center; margin-top:14px;
-    font-size:1.15rem; color:var(--gray); font-style:italic; font-weight:600;
-  }
-  /* Placeholder vidéo */
-  .vph {
-    width:100%; height:100%;
-    background:var(--grad);
-    display:flex; align-items:center; justify-content:center;
-  }
-  .vph-inner {
-    display:flex; flex-direction:column; align-items:center; gap:14px;
-    color:rgba(255,255,255,0.75);
-  }
-  .vph-inner p { font-size:1rem; font-weight:600; }
-  .vph-inner span { font-size:0.8rem; opacity:0.6; letter-spacing:0.05em; text-transform:uppercase; }
-  .vph-play {
-    width:68px; height:68px;
-    border-radius:50%;
-    border:2px solid rgba(255,255,255,0.35);
-    background:rgba(255,255,255,0.12);
-    display:flex; align-items:center; justify-content:center;
-  }
-  .vph-play::after {
-    content:'';
-    border:10px solid transparent;
-    border-left:18px solid rgba(255,255,255,0.8);
-    margin-left:5px;
+    font-size:0.82rem; color:var(--gray); font-style:italic;
   }
 
   /* STEPS */
@@ -226,10 +195,9 @@
   .sn {
     font-family:'Bricolage Grotesque',sans-serif;
     font-size:3.5rem; font-weight:800; line-height:1;
-    margin-bottom:14px; color:rgba(100,116,139,0.35);
-    text-align:center;
+    margin-bottom:14px; color:rgba(15,32,96,0.07);
   }
-  .step.ft .sn { color:rgba(255,255,255,0.18); }
+  .step.ft .sn { color:rgba(255,255,255,0.1); }
   .se { font-size:1.7rem; margin-bottom:12px; display:block; }
   .stit {
     font-family:'Bricolage Grotesque',sans-serif;
@@ -373,7 +341,7 @@
     border-top:1px solid var(--border);
   }
   .ti-wrap {
-    display:flex; flex-wrap:nowrap; justify-content:center;
+    display:flex; flex-wrap:wrap; justify-content:center;
     gap:36px; max-width:860px; margin:0 auto;
   }
   .ti { display:flex; align-items:center; gap:12px; font-size:0.88rem; }
@@ -408,150 +376,30 @@
 
   /* RESPONSIVE */
   @media (max-width:640px) {
-    /* Formulaire */
     .frow { grid-template-columns:1fr; }
-    .card { padding:24px 16px; }
-
-    /* Steps */
+    .card { padding:28px 20px; }
     .sw { grid-template-columns:1fr; }
     .step { border-right:none; border-bottom:1.5px solid var(--border); }
     .step.ft { border-bottom-color:transparent; }
-
-    /* Hero */
-    .hero { padding:88px 5% 56px; }
-    .hdesc { font-size:0.97rem; }
-    .hero-cta { width:100%; justify-content:center; }
-
-    /* Icônes déco */
+    .hero { padding:96px 5% 60px; }
     .deco { display:none; }
-
-    /* Nav */
-    nav { padding:0 4%; }
-    .logo-text { font-size:0.95rem; }
-    .nav-back { font-size:0.85rem; }
-
-    /* Trust bar — scroll horizontal sur mobile */
-    .ti-wrap { flex-wrap:wrap; gap:20px; }
-
-    /* Sections */
-    .vs, .ss, .secs, .fs, .tb { padding:56px 5%; }
-
-    /* Sectors */
-    .sg { gap:8px; }
-    .stag { font-size:0.82rem; padding:6px 12px; }
-
-    /* Video */
-    .vf { border-radius:12px; }
-
-    /* Footer */
-    footer { justify-content:center; text-align:center; gap:16px; }
-    .flinks { justify-content:center; }
-
-    /* Modal */
-    .modal-box { border-radius:12px; }
-    .modal-body { padding:20px 16px; }
-    .modal-footer-btn { padding:12px 16px; }
-  }
-
-  @media (max-width:400px) {
-    h1 { font-size:1.8rem; }
-    h2 { font-size:1.5rem; }
-    .pill { font-size:0.78rem; padding:6px 12px; }
+    footer { justify-content:center; text-align:center; }
   }
 
   /* REVEALS */
-  .js-ok .rev {
+  .rev {
     opacity:0; transform:translateY(22px);
     transition:opacity 0.55s ease, transform 0.55s ease;
   }
-  .js-ok .rev.on { opacity:1; transform:translateY(0); }
-  .js-ok .d1r { transition-delay:0.1s; }
-
-  /* MODAL */
-  .modal-overlay {
-    display:none; position:fixed; inset:0; z-index:999;
-    background:rgba(10,20,50,0.65); backdrop-filter:blur(4px);
-    align-items:center; justify-content:center; padding:20px;
-  }
-  .modal-box {
-    background:var(--white); border-radius:16px;
-    max-width:580px; width:100%; max-height:85vh;
-    overflow-y:auto; position:relative;
-    box-shadow:0 32px 80px rgba(10,20,50,0.35);
-  }
-  .modal-header {
-    position:sticky; top:0; z-index:1;
-    background:var(--grad);
-    padding:20px 24px 16px;
-    border-radius:16px 16px 0 0;
-    display:flex; align-items:flex-start; justify-content:space-between; gap:16px;
-  }
-  .modal-header h3 {
-    font-family:'Bricolage Grotesque',sans-serif;
-    font-weight:800; font-size:1.3rem;
-    color:var(--white); margin-bottom:4px;
-  }
-  .modal-header p { font-size:0.78rem; color:rgba(255,255,255,0.65); }
-  .modal-close {
-    background:rgba(255,255,255,0.15); border:none; cursor:pointer;
-    color:var(--white); width:32px; height:32px; border-radius:50%;
-    font-size:1rem; display:flex; align-items:center; justify-content:center;
-    flex-shrink:0; transition:background 0.2s;
-  }
-  .modal-close:hover { background:rgba(255,255,255,0.3); }
-  .modal-body { padding:28px 28px 24px; }
-  .modal-section { margin-bottom:24px; }
-  .modal-section-title {
-    display:flex; align-items:center; gap:10px;
-    font-family:'Bricolage Grotesque',sans-serif;
-    font-weight:700; font-size:1rem; color:var(--text);
-    margin-bottom:10px;
-  }
-  .modal-num {
-    width:24px; height:24px; border-radius:50%;
-    background:var(--grad);
-    color:var(--white); font-size:0.75rem; font-weight:700;
-    display:flex; align-items:center; justify-content:center; flex-shrink:0;
-  }
-  .modal-body p, .modal-body li {
-    font-size:0.88rem; line-height:1.65; color:#334155;
-  }
-  .modal-body ul { list-style:none; padding:0; margin-top:8px; }
-  .modal-body ul li { padding:3px 0 3px 16px; position:relative; }
-  .modal-body ul li::before {
-    content:'·'; position:absolute; left:4px; color:var(--green-mid); font-weight:700;
-  }
-  .modal-footer-btn {
-    position:sticky; bottom:0;
-    background:var(--white); padding:16px 28px;
-    border-top:1px solid var(--border);
-    display:flex; justify-content:flex-end;
-    border-radius:0 0 16px 16px;
-  }
-  .modal-footer-btn button {
-    background:var(--grad); color:var(--white);
-    font-family:'Bricolage Grotesque',sans-serif;
-    font-weight:700; font-size:0.95rem;
-    border:none; border-radius:9px; cursor:pointer;
-    padding:10px 24px; transition:filter 0.2s;
-  }
-  .modal-footer-btn button:hover { filter:brightness(1.08); }
+  .rev.on { opacity:1; transform:translateY(0); }
+  .d1r { transition-delay:0.1s; }
 </style>
 </head>
 <body>
 
 <nav>
-  <a class="logo" href="https://webautonomos.es/">
-    <span class="logo-icon">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="10"/>
-        <line x1="2" y1="12" x2="22" y2="12"/>
-        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-      </svg>
-    </span>
-    <span class="logo-text"><span class="logo-web">web</span><span class="logo-auto">autonomos</span><span class="logo-es">.es</span></span>
-  </a>
-  <a class="nav-back" href="https://webautonomos.es/">← Volver al inicio</a>
+  <a class="logo" href="/"><span class="logo-g">🌐</span>web<em>autonomos</em></a>
+  <a class="nav-back" href="/">← Volver al inicio</a>
 </nav>
 
 <!-- HERO -->
@@ -581,13 +429,13 @@
   <p class="ey">En 2 minutos</p>
   <h2>Mira cómo funciona</h2>
   <p class="sd">Un sitio hecho para ti, construido antes de que hablemos.</p>
-  <div class="vf" id="video-container">
-    <iframe src="https://www.youtube.com/embed/NK0tjjLP438?rel=0&modestbranding=1" allowfullscreen></iframe>
+  <div class="vf">
+    <!-- Remplacer VIDEO_ID_AQUI par l'ID YouTube de la vidéo WebAutonomos -->
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_AQUI?rel=0&modestbranding=1&color=white"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </div>
   <p class="vnote">Así quedará el tuyo.</p>
-  <div style="text-align:center; margin-top:28px;">
-    <a href="#pide-demo" class="hero-cta" style="display:inline-flex; background:var(--grad); color:var(--white);">Pedir mi demo gratis →</a>
-  </div>
 </section>
 
 <!-- STEPS -->
@@ -597,17 +445,17 @@
   <p class="sd" style="margin-bottom:48px">Sin contratos. Sin sorpresas. Sin tecnicismos.</p>
   <div class="sw">
     <div class="step">
-      <div class="sn">1</div><span class="se">📋</span>
+      <div class="sn">01</div><span class="se">📋</span>
       <div class="stit">Rellenas la ficha</div>
       <div class="sinf">Tu empresa, tus servicios, tu zona. Solo 3 minutos de tu tiempo.</div>
     </div>
     <div class="step ft">
-      <div class="sn">2</div><span class="se">⚡</span>
+      <div class="sn">02</div><span class="se">⚡</span>
       <div class="stit">Construimos tu sitio</div>
       <div class="sinf">En menos de 24h tienes tu demo lista con tus fotos y reseñas reales de Google.</div>
     </div>
     <div class="step">
-      <div class="sn">3</div><span class="se">📞</span>
+      <div class="sn">03</div><span class="se">📞</span>
       <div class="stit">Te llamamos</div>
       <div class="sinf">Lo revisamos juntos. Si te gusta: 15€/mes. Si no: sin coste ni compromiso.</div>
     </div>
@@ -618,7 +466,7 @@
 <section class="secs rev">
   <p class="ey">Para quién</p>
   <h2 style="margin-bottom:14px">Todos los oficios, un solo precio</h2>
-  <p class="sd">Ya trabajamos con profesionales de toda España.</p>
+  <p class="sd">Ya trabajamos con profesionales de toda la Comunitat Valenciana.</p>
   <div class="sg">
     <span class="stag">⚡ Electricistas</span>
     <span class="stag">🔧 Fontaneros</span>
@@ -631,7 +479,6 @@
     <span class="stag">🏗️ Reformas</span>
     <span class="stag">🔑 Cerrajeros</span>
     <span class="stag">🪟 Aluminios y PVC</span>
-    <span class="stag">🎨 Tatuadores</span>
     <span class="stag">➕ Tu oficio</span>
   </div>
 </section>
@@ -671,7 +518,6 @@
                 <option>Médico / Especialista</option>
               </optgroup>
               <optgroup label="Otros">
-                <option>Tatuadores</option>
                 <option>Otro oficio</option>
               </optgroup>
             </select>
@@ -711,7 +557,7 @@
         </div>
         <div class="frow solo">
           <div class="fg">
-            <label>Tu Dirección</label>
+            <label>Dirección o zona de trabajo</label>
             <input type="text" name="direccion" placeholder="Ej: Calle Mayor 12, 03001 Alicante">
           </div>
         </div>
@@ -737,6 +583,7 @@
   <div class="ti-wrap">
     <div class="ti"><div class="ti-i">🔒</div><div><strong>Sin permanencia</strong><span>Cancela cuando quieras</span></div></div>
     <div class="ti"><div class="ti-i">📱</div><div><strong>100% móvil</strong><span>Perfecto en smartphone</span></div></div>
+    <div class="ti"><div class="ti-i">📍</div><div><strong>SEO local incluido</strong><span>Visible en Google Maps</span></div></div>
     <div class="ti"><div class="ti-i">⚡</div><div><strong>Online en 48h</strong><span>Dominio .es incluido</span></div></div>
     <div class="ti"><div class="ti-i">💬</div><div><strong>Soporte WhatsApp</strong><span>Respuesta en el día</span></div></div>
   </div>
@@ -745,27 +592,19 @@
 <footer>
   <a class="fl" href="/"><span>🌐</span> webautonomos.es</a>
   <div class="flinks">
-    <a href="javascript:void(0)" onclick="document.getElementById('modal-aviso').style.display='flex'">Aviso legal</a>
-    <a href="javascript:void(0)" onclick="document.getElementById('modal-privacidad').style.display='flex'">Privacidad</a>
-    <a href="https://webautonomos.es/contacto">Contacto</a>
+    <a href="/aviso-legal">Aviso legal</a>
+    <a href="/privacidad">Privacidad</a>
+    <a href="/cdn-cgi/l/email-protection#5b32353d341b2c3e393a2e2f343534363428753e28">Contacto</a>
   </div>
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Activer les animations seulement via JS
-  document.body.classList.add('js-ok');
-
-  // Scroll reveals + trigger immédiat pour éléments déjà visibles
+  // Scroll reveals
   const io = new IntersectionObserver(
     es => es.forEach(e => { if(e.isIntersecting) e.target.classList.add('on'); }),
-    { threshold:0.05, rootMargin:'0px 0px -20px 0px' }
+    { threshold:0.1 }
   );
-  document.querySelectorAll('.rev').forEach(el => {
-    io.observe(el);
-    // Déclencher immédiatement si déjà dans le viewport
-    const r = el.getBoundingClientRect();
-    if(r.top < window.innerHeight) el.classList.add('on');
-  });
+  document.querySelectorAll('.rev').forEach(el => io.observe(el));
 
   // Submit
   function hs(e) {
@@ -784,11 +623,11 @@
     const d = Object.fromEntries(new FormData(form));
 
     // Option A — Webhook Make.com → Google Sheets (recommandé)
-    fetch('https://hook.eu1.make.com/elj9eg86coz6pflmp5hroziz8ffk08nv', {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify(d)
-    }).catch(console.error);
+    // fetch('https://hook.eu1.make.com/VOTRE_ID', {
+    //   method:'POST',
+    //   headers:{'Content-Type':'application/json'},
+    //   body:JSON.stringify(d)
+    // }).catch(console.error);
 
     // Option B — Notification WhatsApp directe
     const msg = encodeURIComponent(
@@ -802,161 +641,4 @@
     // Décommenter pour activer :
     // window.open(`https://wa.me/34654239520?text=${msg}`,'_blank');
 
-    setTimeout(()=>{
-      form.style.display='none';
-      document.getElementById('succ').style.display='block';
-    }, 350);
-  }
-</script>
-
-<!-- MODAL AVISO LEGAL -->
-<div class="modal-overlay" id="modal-aviso" onclick="if(event.target===this)this.style.display='none'">
-  <div class="modal-box">
-    <div class="modal-header">
-      <div>
-        <h3>Aviso Legal</h3>
-        <p>Última actualización: Febrero 2026</p>
-      </div>
-      <button class="modal-close" onclick="document.getElementById('modal-aviso').style.display='none'">✕</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">1</span> Identificación del titular</div>
-        <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa al usuario de los datos identificativos del titular de este sitio web:</p>
-        <ul>
-          <li>Denominación social: PASURITE SLU</li>
-          <li>CIF: B42890012</li>
-          <li>Domicilio social: Calle Pintor Segrelles, nº 26 – 46870 Ontinyent (Valencia), España</li>
-          <li>Teléfono: 654 239 520</li>
-          <li>Correo electrónico: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2dbdcd4ddf2c5d7d0d3c7c6dddcdddfddc19cd7c1">[email&#160;protected]</a></li>
-          <li>Datos registrales: Inscrita en el Registro Mercantil de Valencia, Tomo 10949, Folio 13, Hoja V-196956</li>
-          <li>Administrador único: Angelino Pace</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">2</span> Objeto y ámbito de aplicación</div>
-        <p>El presente Aviso Legal regula el acceso y uso del sitio web webautonomos.es (en adelante, el 'Sitio Web'), así como las responsabilidades derivadas de su utilización. Al acceder y utilizar este Sitio Web, el usuario acepta quedar vinculado por las presentes condiciones. PASURITE SLU se dedica a la creación de páginas web profesionales para autónomos y pequeñas empresas, así como a servicios de posicionamiento SEO local y gestión de Google My Business.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">3</span> Condiciones de acceso y uso</div>
-        <p>El acceso al Sitio Web es gratuito, salvo en lo relativo al coste de conexión a través de la red de telecomunicaciones suministrada por el proveedor de acceso contratado por el usuario. El usuario se compromete a utilizar el Sitio Web de conformidad con la ley, el presente Aviso Legal, las buenas costumbres y el orden público. Queda prohibido el uso del Sitio Web con fines ilícitos, lesivos de los derechos e intereses de terceros, o que de cualquier forma puedan dañar, inutilizar, sobrecargar o deteriorar el Sitio Web o impedir la normal utilización por otros usuarios.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">4</span> Propiedad intelectual e industrial</div>
-        <p>Todos los contenidos del Sitio Web, incluyendo, a título enunciativo pero no limitativo: textos, fotografías, gráficos, imágenes, iconos, tecnología, software, diseños, así como el diseño gráfico, código fuente y demás elementos contenidos en el mismo, son propiedad de PASURITE SLU o de terceros que han autorizado su uso, quedando todos ellos protegidos por la legislación española e internacional sobre propiedad intelectual e industrial. En particular, los diseños web creados por PASURITE SLU para sus clientes permanecen bajo la propiedad intelectual de PASURITE SLU hasta la finalización del contrato de servicio. Queda prohibida la reproducción, distribución, comunicación pública, transformación o cualquier otra actividad que se pueda realizar con los contenidos sin la autorización previa y por escrito de PASURITE SLU.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">5</span> Exclusión de garantías y responsabilidad</div>
-        <p>PASURITE SLU no garantiza la disponibilidad y continuidad del funcionamiento del Sitio Web. Cuando ello sea razonablemente posible, se advertirá previamente de las interrupciones en el funcionamiento del Sitio Web. PASURITE SLU no se hace responsable de los daños y perjuicios de cualquier naturaleza que pudieran derivarse de la falta de disponibilidad o continuidad del Sitio Web, ni de los contenidos de otros sitios web a los que se pueda acceder mediante enlaces desde este Sitio Web.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">6</span> Política de cookies</div>
-        <p>Este Sitio Web utiliza cookies propias y de terceros para mejorar la experiencia de navegación, analizar el tráfico web y personalizar el contenido. Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario. Al continuar navegando por el Sitio Web, el usuario consiente el uso de cookies. Puede configurar su navegador para rechazar las cookies, aunque esto puede afectar a la funcionalidad del Sitio Web.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">7</span> Protección de datos personales</div>
-        <p>PASURITE SLU cumple con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPD-GDD). Los datos personales recabados a través del Sitio Web serán tratados con la finalidad de gestionar las solicitudes de los usuarios y prestar los servicios contratados. El usuario puede ejercer sus derechos enviando un correo electrónico a <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d6bfb8b0b996a1b3b4b7a3a2b9b8b9bbb9a5f8b3a5">[email&#160;protected]</a>, adjuntando copia de su documento de identidad.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">8</span> Legislación aplicable y jurisdicción</div>
-        <p>El presente Aviso Legal se rige por la legislación española. Para la resolución de cualquier controversia que pudiera surgir en relación con el acceso o uso del Sitio Web, PASURITE SLU y el usuario acuerdan someterse a los Juzgados y Tribunales de la ciudad de Valencia, con renuncia expresa a cualquier otro fuero que pudiera corresponderles.</p>
-      </div>
-    </div>
-    <div class="modal-footer-btn">
-      <button onclick="document.getElementById('modal-aviso').style.display='none'">Cerrar</button>
-    </div>
-  </div>
-</div>
-
-
-<!-- MODAL PRIVACIDAD -->
-<div class="modal-overlay" id="modal-privacidad" onclick="if(event.target===this)this.style.display='none'">
-  <div class="modal-box">
-    <div class="modal-header">
-      <div>
-        <h3>Política de Privacidad</h3>
-        <p>Última actualización: Febrero 2026</p>
-      </div>
-      <button class="modal-close" onclick="document.getElementById('modal-privacidad').style.display='none'">✕</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">1</span> Responsable del tratamiento</div>
-        <p>El responsable del tratamiento de sus datos personales es:</p>
-        <ul>
-          <li>Denominación social: PASURITE SLU</li>
-          <li>CIF: B42890012</li>
-          <li>Domicilio: Calle Pintor Segrelles, nº 26 – 46870 Ontinyent (Valencia), España</li>
-          <li>Correo electrónico: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4e272028210e392b2c2f3b3a21202123213d602b3d">[email&#160;protected]</a></li>
-          <li>Teléfono: 654 239 520</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">2</span> Datos personales que recopilamos</div>
-        <p>Recopilamos los datos personales que usted nos proporciona voluntariamente a través de:</p>
-        <ul>
-          <li>Formulario de contacto: nombre, correo electrónico, teléfono y mensaje</li>
-          <li>Solicitudes de presupuesto: nombre, correo electrónico, teléfono, nombre del negocio y descripción del proyecto</li>
-          <li>Comunicaciones por WhatsApp o correo electrónico: datos que usted decida compartir</li>
-          <li>Contratación de servicios: datos de facturación (nombre/razón social, NIF/CIF, dirección, datos bancarios)</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">3</span> Finalidad del tratamiento</div>
-        <p>Tratamos sus datos personales para las siguientes finalidades:</p>
-        <ul>
-          <li>Gestionar las consultas y solicitudes de información recibidas</li>
-          <li>Elaborar y enviar presupuestos personalizados</li>
-          <li>Prestar los servicios contratados (creación de webs, SEO local, Google My Business)</li>
-          <li>Gestionar la relación contractual y la facturación</li>
-          <li>Enviar comunicaciones comerciales sobre nuestros servicios (solo con su consentimiento previo)</li>
-          <li>Cumplir con las obligaciones legales aplicables</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">4</span> Base legal del tratamiento</div>
-        <p>La base legal para el tratamiento de sus datos es:</p>
-        <ul>
-          <li>Su consentimiento, al rellenar formularios o contactar con nosotros</li>
-          <li>La ejecución de un contrato, cuando contrata nuestros servicios</li>
-          <li>El interés legítimo de PASURITE SLU para gestionar las relaciones comerciales</li>
-          <li>El cumplimiento de obligaciones legales (fiscales, mercantiles)</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">5</span> Conservación de los datos</div>
-        <p>Conservaremos sus datos personales durante el tiempo necesario para cumplir con la finalidad para la que fueron recogidos. Una vez finalizada la relación, los datos se conservarán bloqueados durante los plazos legales de prescripción: datos fiscales (4 años), datos mercantiles (6 años), y otros datos según la normativa aplicable. Transcurridos estos plazos, los datos serán eliminados de forma segura.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">6</span> Destinatarios de los datos</div>
-        <p>Sus datos personales podrán ser comunicados a:</p>
-        <ul>
-          <li>Administraciones públicas: cuando exista obligación legal (Agencia Tributaria, etc.)</li>
-          <li>Proveedores de servicios: que nos ayudan a prestar nuestros servicios (hosting, dominios, herramientas de gestión), con los que tenemos contratos de encargado de tratamiento</li>
-          <li>No vendemos ni cedemos sus datos a terceros con fines comerciales</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">7</span> Derechos del usuario</div>
-        <p>Usted tiene derecho a:</p>
-        <ul>
-          <li>Acceso: conocer qué datos personales tratamos sobre usted</li>
-          <li>Rectificación: solicitar la corrección de datos inexactos o incompletos</li>
-          <li>Supresión: solicitar la eliminación de sus datos cuando ya no sean necesarios</li>
-          <li>Limitación: solicitar que limitemos el tratamiento en determinados casos</li>
-          <li>Portabilidad: recibir sus datos en formato estructurado y transmitirlos a otro responsable</li>
-          <li>Oposición: oponerse al tratamiento de sus datos por motivos relacionados con su situación particular</li>
-          <li>Retirar el consentimiento: en cualquier momento, sin que afecte a la licitud del tratamiento previo</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">8</span> Cómo ejercer sus derechos</div>
-        <p>Para ejercer cualquiera de estos derechos, puede enviar un correo electrónico a <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e881868e87a89f8d8a899d9c87868785879bc68d9b">[email&#160;protected]</a> indicando el derecho que desea ejercer y adjuntando copia de su DNI o documento identificativo. Le responderemos en el plazo máximo de un mes. Si considera que no hemos tratado sus datos correctamente, puede presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">9</span> Seguridad de los datos</div>
-        <p>En PASURITE SLU implementamos medidas técnicas y organizativas apropiadas para garantizar la seguridad de sus datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado. Utilizamos conexiones seguras (HTTPS/SSL), servidores protegidos, copias de seguridad periódicas y acceso restringido a los datos.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title"><span class="modal-num">10</span> Modificaciones de esta política</div>
-        <p>Nos reservamos el derecho de modificar esta Polít
+    set

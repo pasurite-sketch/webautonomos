@@ -1,0 +1,74 @@
+=================================================================
+🏆 SCORING & PRIORISATION PROSPECTS
+   Date : 2026-02-11 12:20
+=================================================================
+
+📂 Lecture de prospects_MOBILES.csv...
+   ✅ 831 prospects scorés
+
+=================================================================
+📊 STATISTIQUES DE PRIORISATION
+=================================================================
+
+🏆 Répartition par priorité :
+   🔥 A - Prioritaire         :  241 (29%) ██████████████
+   ⭐ B - Intéressant         :  207 (25%) ████████████
+   📋 C - Standard            :  166 (20%) █████████
+   ⏳ D - Faible              :  217 (26%) █████████████
+
+📋 Détail par métier :
+
+   🔧 CARPINTERO (176 prospects)
+      🔥 A:24  ⭐ B:56  📋 C:47  ⏳ D:49
+      👑 Meilleur: Construcciones y Reformas CMC (score 97/100)
+
+   🔧 DENTISTA (68 prospects)
+      🔥 A:34  ⭐ B:17  📋 C:9  ⏳ D:8
+      👑 Meilleur: VICDENTAL (score 100/100)
+
+   🔧 ELECTRICISTA (160 prospects)
+      🔥 A:26  ⭐ B:37  📋 C:38  ⏳ D:59
+      👑 Meilleur: DAINSER Instalaciones y Servicios (score 100/100)
+
+   🔧 FISIOTERAPEUTA (178 prospects)
+      🔥 A:102  ⭐ B:38  📋 C:18  ⏳ D:20
+      👑 Meilleur: Clínica Fisioterapia Calpe - D. Nieves Barberá (score 100/100)
+
+   🔧 FONTANERO (131 prospects)
+      🔥 A:25  ⭐ B:32  📋 C:36  ⏳ D:38
+      👑 Meilleur: Bradley Construction Water Leak Detection (score 94/100)
+
+   🔧 PSICÓLOGO (118 prospects)
+      🔥 A:30  ⭐ B:27  📋 C:18  ⏳ D:43
+      👑 Meilleur: XIPRERETS GABINETE de PSICOLOGÍA, Mayte Pérez (score 94/100)
+
+=================================================================
+👑 TOP 10 PROSPECTS GLOBAUX
+=================================================================
+   # 1 [100/100] VICDENTAL
+       dentista | ⭐4.8 (82 avis) | 📱 619 67 17 75
+   # 2 [100/100] DAINSER Instalaciones y Servicios
+       electricista | ⭐5 (59 avis) | 📱 609 27 75 13
+   # 3 [100/100] Clínica Fisioterapia Calpe - D. Nieves Barberá
+       fisioterapeuta | ⭐5 (66 avis) | 📱 650 01 59 94
+   # 4 [100/100] LauraTabernero PODOLOGÍA y +
+       fisioterapeuta | ⭐4.9 (58 avis) | 📱 636 12 49 57
+   # 5 [97/100] Construcciones y Reformas CMC
+       carpintero | ⭐5 (39 avis) | 📱 637 89 43 55
+   # 6 [97/100] Muebles Seva E Hijos
+       carpintero | ⭐4.9 (43 avis) | 📱 607 74 01 52
+   # 7 [97/100] Clínica Dental Dra. Carmen de Teresa
+       dentista | ⭐5 (155 avis) | 📱 628 00 28 09
+   # 8 [97/100] Clínica Podología Laura Sáez
+       dentista | ⭐5 (132 avis) | 📱 645 39 53 77
+   # 9 [97/100] Sphere Dental Studio - Clínica Dental (Deutscher Zahnarzt)
+       dentista | ⭐4.9 (78 avis) | 📱 693 59 43 68
+   #10 [97/100] Clinica Servimed, S.L.
+       dentista | ⭐4.9 (104 avis) | 📱 621 24 59 24
+
+=================================================================
+✅ FICHIER GÉNÉRÉ : prospects_MOBILES_SCORES.csv
+   → 831 prospects avec score et priorité
+   → Trié par métier puis par score décroissant
+   → Prêt à importer dans Google Sheets
+=================================================================
