@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Recibe tu sitio web demo gratis en 24h — WebAutonomos</title>
-<meta name="description" content="Rellena los datos de tu negocio. Te enviamos tu sitio web profesional personalizado en menos de 24 horas. Sin alta, sin permanencia, 15€/mes.">
+<title>Tu Web Profesional desde 15€/mes — Demo Gratis en 24h | WebAutonomos</title>
+<meta name="description" content="Página web profesional para autónomos desde 15€/mes. Te enviamos tu demo personalizada en menos de 24 horas. Sin alta, sin permanencia.">
 <link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -444,6 +444,7 @@
     .modal-body { padding:20px 16px; }
     .modal-footer-btn { padding:12px 16px; }
     .proof-grid { grid-template-columns:1fr; gap:16px; }
+    .float-wa { bottom:16px; right:16px; width:52px; height:52px; }
   }
   @media (max-width:400px) {
     h1 { font-size:1.8rem; }
@@ -640,10 +641,10 @@
 <section class="proof rev">
   <p class="ey">Resultados reales</p>
   <h2>Profesionales que ya confían en nosotros</h2>
-  <p class="sd">Webs profesionales entregadas en toda la Comunidad Valenciana y Murcia.</p>
+  <p class="sd">Webs profesionales entregadas en toda España.</p>
   <div class="proof-grid">
     <div class="proof-card">
-      <div class="proof-num">+50</div>
+      <div class="proof-num">+40</div>
       <div class="proof-label">Webs creadas para<br>autónomos en España</div>
     </div>
     <div class="proof-card">
@@ -652,7 +653,7 @@
     </div>
     <div class="proof-quote">
       <div class="proof-stars">★★★★★</div>
-      <blockquote>"En 2 días tenía mi web funcionando. Mis clientes me encuentran ahora en Google."</blockquote>
+      <blockquote>"En menos de un día ya tenía mi web lista. Mis clientes me encuentran ahora en Google."</blockquote>
       <cite>— Carlos M., Electricista en Valencia</cite>
     </div>
   </div>
@@ -667,6 +668,7 @@
       <p class="sd">Rellena los datos de tu negocio. Te enviamos el enlace a tu sitio en menos de 24 horas.</p>
     </div>
     <div class="card rev d1r">
+      <p style="text-align:center;font-size:0.82rem;color:var(--green-mid);font-weight:600;margin-bottom:18px;">✓ +40 profesionales ya la tienen</p>
       <form id="pf" onsubmit="hs(event)" novalidate>
         <div class="frow">
           <div class="fg">
@@ -717,12 +719,16 @@
             <label>WhatsApp <span class="star">*</span></label>
             <input type="tel" name="whatsapp" placeholder="+34 6XX XXX XXX" required>
           </div>
+          <div class="fg">
+            <label>Email <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#94a3b8">(opcional)</span></label>
+            <input type="email" name="email" placeholder="tu@email.es">
+          </div>
         </div>
         <div class="sep"><span>Tu actividad</span></div>
         <div class="frow solo">
           <div class="fg">
             <label>Tus servicios principales <span class="star">*</span></label>
-            <textarea name="servicios" placeholder="Ej: Instalación eléctrica, cuadros, urgencias 24h, domótica…" required></textarea>
+            <textarea name="servicios" placeholder="Ej: instalaciones, reparaciones, urgencias…" required></textarea>
           </div>
         </div>
         <button type="submit" class="cta-btn" id="sb">
