@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tu Web Profesional desde 15€/mes — Demo Gratis en 24h | WebAutonomos</title>
-<meta name="description" content="Página web profesional para autónomos desde 15€/mes. Te enviamos tu demo personalizada en menos de 24 horas. Sin alta, sin permanencia.">
+<title>Tu Web Profesional Solo 15€/mes — Demo Gratis en 24h | WebAutonomos</title>
+<meta name="description" content="Página web profesional para autónomos por solo 15€/mes. Te enviamos tu demo personalizada en menos de 24 horas. Sin alta, sin permanencia.">
 <link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -546,6 +546,23 @@
     50% { box-shadow:0 4px 36px rgba(37,211,102,0.7); transform:scale(1.1); }
   }
 </style>
+<!-- Open Graph / WhatsApp preview -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webautonomos.es/pide-tu-demo">
+<meta property="og:title" content="Tu Web Profesional Solo 15€/mes — Demo Gratis en 24h">
+<meta property="og:description" content="Página web profesional para autónomos por solo 15€/mes. Demo personalizada en 24h. Sin alta, sin permanencia.">
+<meta property="og:image" content="https://webautonomos.es/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MT6S7CH7N9');
+</script>
 </head>
 <body>
 <nav>
@@ -582,8 +599,13 @@
   <p class="ey">En 2 minutos</p>
   <h2>Mira cómo funciona</h2>
   <p class="sd">Un sitio hecho para ti, construido antes de que hablemos.</p>
-  <div class="vf" id="video-container">
-    <iframe src="https://www.youtube.com/embed/NK0tjjLP438?rel=0&modestbranding=1" allowfullscreen loading="lazy"></iframe>
+  <div class="vf" id="video-container" style="cursor:pointer;position:relative;" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/NK0tjjLP438?rel=0&modestbranding=1&autoplay=1\' allowfullscreen style=\'width:100%;height:100%;border:none;display:block\'></iframe>';this.style.cursor='default';this.onclick=null;">
+    <img src="https://i.ytimg.com/vi/NK0tjjLP438/hqdefault.jpg" alt="Vídeo demo WebAutonomos" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.25);">
+      <div style="width:72px;height:72px;border-radius:50%;background:rgba(255,0,0,0.85);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.3);transition:transform 0.2s;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+    </div>
   </div>
   <p class="vnote">¿Quieres ver cómo quedará la tuya?</p>
   <div style="text-align:center; margin-top:28px;">
@@ -812,12 +834,45 @@
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify(d)
-    }).catch(console.error);
-    setTimeout(()=>{
+    }).then(function(res) {
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+      // GA4 conversion event
+      if(typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'formulario',
+          event_label: d.sector || 'sin_sector',
+          value: 15,
+          currency: 'EUR'
+        });
+      }
       form.style.display='none';
       document.getElementById('wa-alt').style.display='none';
       document.getElementById('succ').style.display='block';
-    }, 350);
+    }).catch(function(err) {
+      console.error('Error envío:', err);
+      // Fallback: show success anyway (data may have been received)
+      // + send via WhatsApp as backup
+      var msg = encodeURIComponent(
+        '🆕 LEAD (fallback)\n\n'+
+        'Sector: '+d.sector+'\nEmpresa: '+d.empresa+'\n'+
+        'Contacto: '+d.nombre+'\nWhatsApp: '+d.whatsapp+'\n'+
+        'Email: '+(d.email||'—')+'\nCiudad: '+d.ciudad+'\n'+
+        'Servicios: '+d.servicios
+      );
+      window.open('https://wa.me/34654239520?text='+msg,'_blank');
+      // GA4 conversion event (also on fallback)
+      if(typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'formulario_fallback',
+          event_label: d.sector || 'sin_sector',
+          value: 15,
+          currency: 'EUR'
+        });
+      }
+      form.style.display='none';
+      document.getElementById('wa-alt').style.display='none';
+      document.getElementById('succ').style.display='block';
+    });
   }
 </script>
 
