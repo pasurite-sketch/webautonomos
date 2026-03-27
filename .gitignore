@@ -1,1 +1,6 @@
 .env
+.wrangler/
+*.py
+*.csv
+prospects_*.json
+resultat_scoring.txt
