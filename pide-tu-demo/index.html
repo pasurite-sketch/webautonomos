@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Recibe tu sitio web demo gratis en 24h — WebAutonomos</title>
-<meta name="description" content="Rellena la ficha en 3 minutos. Te enviamos tu sitio web profesional personalizado en menos de 24 horas. Sin compromiso, 15€/mes.">
+<meta name="description" content="Rellena los datos de tu negocio. Te enviamos tu sitio web profesional personalizado en menos de 24 horas. Sin alta, sin permanencia, 15€/mes.">
+<link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -30,35 +31,38 @@
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
   }
-
   /* NAV */
   nav {
     position:fixed; top:0; left:0; right:0; z-index:200;
     height:60px;
-    background:var(--grad);
+    background:#ffffff;
     display:flex; align-items:center; justify-content:space-between;
     padding:0 6%;
     box-shadow:0 2px 24px rgba(15,32,96,0.25);
   }
   .logo {
-    font-family:'Bricolage Grotesque',sans-serif;
-    font-weight:800; font-size:1.15rem;
-    color:var(--white); text-decoration:none;
-    display:flex; align-items:center; gap:8px;
+    text-decoration:none; display:flex; align-items:center; gap:9px;
   }
-  .logo-g {
-    width:26px; height:26px;
-    background:rgba(255,255,255,0.18); border-radius:50%;
+  .logo-icon {
+    width:34px; height:34px;
+    background:linear-gradient(135deg,#2056df,#188d6e);
+    border-radius:9px;
     display:flex; align-items:center; justify-content:center;
-    font-size:0.85rem;
+    flex-shrink:0;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
   }
-  .logo em { font-style:normal; font-weight:400; opacity:0.85; }
+  .logo-text {
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-size:1.1rem; letter-spacing:-0.01em;
+  }
+  .logo-web { font-weight:800; color:#0f172a; }
+  .logo-auto { font-weight:800; color:#2563eb; }
+  .logo-es { color:#4ade80; font-weight:700; }
   .nav-back {
-    font-size:0.82rem; color:rgba(255,255,255,0.6);
+    font-size:1rem; color:#6b7280;
     text-decoration:none; transition:color 0.2s;
   }
-  .nav-back:hover { color:var(--white); }
-
+  .nav-back:hover { color:var(--blue); }
   /* HERO */
   .hero {
     padding:100px 6% 80px;
@@ -72,15 +76,6 @@
     background:radial-gradient(ellipse at 75% 30%, rgba(255,255,255,0.07) 0%, transparent 55%);
     pointer-events:none;
   }
-  /* Icônes déco flottantes */
-  .deco { position:absolute; pointer-events:none; opacity:0.13; z-index:0; }
-  .d1 { top:18%; right:13%; font-size:3rem; }
-  .d2 { top:44%; right:22%; font-size:2rem; }
-  .d3 { top:20%; right:5%;  font-size:2rem; }
-  .d4 { bottom:25%; right:17%; font-size:1.4rem; font-family:'Bricolage Grotesque',sans-serif; font-weight:800; color:var(--white); background:rgba(255,255,255,0.15); padding:3px 9px; border-radius:5px; opacity:0.18; }
-  .d5 { bottom:10%; right:8%; font-size:2.8rem; }
-  .d6 { bottom:38%; right:3%; font-size:1.8rem; }
-
   .hero-c { max-width:640px; position:relative; z-index:1; }
   .badge {
     display:inline-flex; align-items:center; gap:8px;
@@ -93,7 +88,6 @@
   }
   .dot { width:6px; height:6px; background:var(--white); border-radius:50%; animation:blink 2s infinite; }
   @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
-
   h1 {
     font-family:'Bricolage Grotesque',sans-serif;
     font-weight:800;
@@ -134,7 +128,6 @@
     transition:transform 0.2s, box-shadow 0.2s;
   }
   .hero-cta:hover { transform:translateY(-2px); box-shadow:0 12px 40px rgba(15,32,96,0.28); }
-
   /* VIDEO */
   .vs {
     padding:80px 6%; background:var(--off);
@@ -145,8 +138,8 @@
     height:4px; background:var(--grad);
   }
   .ey {
-    text-align:center; font-size:0.72rem; font-weight:700;
-    letter-spacing:0.12em; text-transform:uppercase;
+    text-align:center; font-size:1rem; font-weight:700;
+    letter-spacing:0.08em; text-transform:uppercase;
     background:var(--grad);
     -webkit-background-clip:text; -webkit-text-fill-color:transparent;
     background-clip:text; margin-bottom:10px;
@@ -172,9 +165,8 @@
   .vf iframe { width:100%; height:100%; border:none; display:block; }
   .vnote {
     text-align:center; margin-top:14px;
-    font-size:0.82rem; color:var(--gray); font-style:italic;
+    font-size:1.15rem; color:var(--gray); font-style:italic; font-weight:600;
   }
-
   /* STEPS */
   .ss { padding:80px 6%; background:var(--white); }
   .sw {
@@ -195,9 +187,10 @@
   .sn {
     font-family:'Bricolage Grotesque',sans-serif;
     font-size:3.5rem; font-weight:800; line-height:1;
-    margin-bottom:14px; color:rgba(15,32,96,0.07);
+    margin-bottom:14px; color:rgba(100,116,139,0.35);
+    text-align:center;
   }
-  .step.ft .sn { color:rgba(255,255,255,0.1); }
+  .step.ft .sn { color:rgba(255,255,255,0.18); }
   .se { font-size:1.7rem; margin-bottom:12px; display:block; }
   .stit {
     font-family:'Bricolage Grotesque',sans-serif;
@@ -207,7 +200,6 @@
   .step.ft .stit { color:var(--white); }
   .sinf { font-size:0.87rem; line-height:1.55; color:var(--gray); }
   .step.ft .sinf { color:rgba(255,255,255,0.75); }
-
   /* SECTORS */
   .secs {
     padding:64px 6%; background:var(--off);
@@ -234,7 +226,49 @@
     border-color:var(--green-mid); color:var(--green-dark);
     box-shadow:0 4px 16px rgba(34,197,94,0.15);
   }
-
+  /* SOCIAL PROOF */
+  .proof {
+    padding:64px 6%; background:var(--white);
+    position:relative;
+  }
+  .proof-grid {
+    max-width:900px; margin:0 auto;
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+  }
+  .proof-card {
+    background:var(--off); border:1.5px solid var(--border);
+    border-radius:16px; padding:28px 24px;
+    text-align:center;
+    transition:box-shadow 0.2s, transform 0.2s;
+  }
+  .proof-card:hover {
+    box-shadow:0 8px 32px rgba(15,32,96,0.1);
+    transform:translateY(-2px);
+  }
+  .proof-num {
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:800; font-size:2.5rem;
+    background:var(--grad);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+    background-clip:text;
+    line-height:1.1; margin-bottom:8px;
+  }
+  .proof-label {
+    font-size:0.88rem; color:var(--gray); line-height:1.4;
+  }
+  .proof-quote {
+    background:var(--off); border:1.5px solid var(--border);
+    border-radius:16px; padding:28px 24px;
+    display:flex; flex-direction:column; justify-content:center;
+  }
+  .proof-quote blockquote {
+    font-size:0.95rem; font-style:italic; color:var(--text);
+    line-height:1.6; margin-bottom:12px;
+  }
+  .proof-quote cite {
+    font-size:0.82rem; color:var(--gray); font-style:normal; font-weight:600;
+  }
+  .proof-stars { color:#f59e0b; font-size:0.9rem; margin-bottom:8px; }
   /* FORM */
   .fs {
     padding:88px 6%;
@@ -256,7 +290,6 @@
   }
   .fh h2 { color:var(--white); }
   .fh .sd { color:rgba(255,255,255,0.68); max-width:460px; }
-
   .card {
     background:var(--white); border-radius:22px;
     padding:44px 40px;
@@ -320,7 +353,23 @@
     gap:7px; margin-top:14px;
     font-size:0.78rem; color:var(--gray); text-align:center; line-height:1.4;
   }
-
+  /* WhatsApp alternative under form */
+  .wa-alt {
+    text-align:center; margin-top:20px; padding-top:18px;
+    border-top:1px solid var(--border);
+  }
+  .wa-alt p { font-size:0.82rem; color:var(--gray); margin-bottom:10px; }
+  .wa-alt a {
+    display:inline-flex; align-items:center; gap:8px;
+    background:#25D366; color:var(--white);
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:700; font-size:0.92rem;
+    padding:11px 22px; border-radius:10px;
+    text-decoration:none;
+    transition:transform 0.2s, box-shadow 0.2s;
+    box-shadow:0 4px 16px rgba(37,211,102,0.3);
+  }
+  .wa-alt a:hover { transform:translateY(-2px); box-shadow:0 6px 24px rgba(37,211,102,0.4); }
   /* SUCCESS */
   #succ { display:none; text-align:center; padding:56px 24px; }
   .sc {
@@ -334,14 +383,13 @@
     font-weight:800; font-size:1.6rem; color:var(--text); margin-bottom:12px;
   }
   #succ p { color:var(--gray); line-height:1.7; font-size:0.97rem; }
-
   /* TRUST */
   .tb {
     padding:52px 6%; background:var(--white);
     border-top:1px solid var(--border);
   }
   .ti-wrap {
-    display:flex; flex-wrap:wrap; justify-content:center;
+    display:flex; flex-wrap:nowrap; justify-content:center;
     gap:36px; max-width:860px; margin:0 auto;
   }
   .ti { display:flex; align-items:center; gap:12px; font-size:0.88rem; }
@@ -354,7 +402,6 @@
   }
   .ti strong { display:block; color:var(--text); font-weight:600; }
   .ti span { color:#94a3b8; font-size:0.82rem; }
-
   /* FOOTER */
   footer {
     padding:24px 6%; background:var(--grad);
@@ -373,50 +420,155 @@
     text-decoration:none; transition:color 0.2s;
   }
   .flinks a:hover { color:rgba(255,255,255,0.9); }
-
   /* RESPONSIVE */
   @media (max-width:640px) {
     .frow { grid-template-columns:1fr; }
-    .card { padding:28px 20px; }
+    .card { padding:24px 16px; }
     .sw { grid-template-columns:1fr; }
     .step { border-right:none; border-bottom:1.5px solid var(--border); }
     .step.ft { border-bottom-color:transparent; }
-    .hero { padding:96px 5% 60px; }
-    .deco { display:none; }
-    footer { justify-content:center; text-align:center; }
+    .hero { padding:88px 5% 56px; }
+    .hdesc { font-size:0.97rem; }
+    .hero-cta { width:100%; justify-content:center; }
+    nav { padding:0 4%; }
+    .logo-text { font-size:0.95rem; }
+    .nav-back { font-size:0.85rem; }
+    .ti-wrap { flex-wrap:wrap; gap:20px; }
+    .vs, .ss, .secs, .fs, .tb, .proof { padding:56px 5%; }
+    .sg { gap:8px; }
+    .stag { font-size:0.82rem; padding:6px 12px; }
+    .vf { border-radius:12px; }
+    footer { justify-content:center; text-align:center; gap:16px; }
+    .flinks { justify-content:center; }
+    .modal-box { border-radius:12px; }
+    .modal-body { padding:20px 16px; }
+    .modal-footer-btn { padding:12px 16px; }
+    .proof-grid { grid-template-columns:1fr; gap:16px; }
   }
-
+  @media (max-width:400px) {
+    h1 { font-size:1.8rem; }
+    h2 { font-size:1.5rem; }
+    .pill { font-size:0.78rem; padding:6px 12px; }
+  }
   /* REVEALS */
-  .rev {
+  .js-ok .rev {
     opacity:0; transform:translateY(22px);
     transition:opacity 0.55s ease, transform 0.55s ease;
   }
-  .rev.on { opacity:1; transform:translateY(0); }
-  .d1r { transition-delay:0.1s; }
+  .js-ok .rev.on { opacity:1; transform:translateY(0); }
+  /* Fallback: if JS observer fails, reveal all after 1.5s */
+  @keyframes fallback-show { to { opacity:1; transform:translateY(0); } }
+  .js-ok .rev { animation: fallback-show 0.6s 1.5s forwards; }
+  .js-ok .d1r { transition-delay:0.1s; }
+  /* MODAL */
+  .modal-overlay {
+    display:none; position:fixed; inset:0; z-index:999;
+    background:rgba(10,20,50,0.65); backdrop-filter:blur(4px);
+    align-items:center; justify-content:center; padding:20px;
+  }
+  .modal-box {
+    background:var(--white); border-radius:16px;
+    max-width:580px; width:100%; max-height:85vh;
+    overflow-y:auto; position:relative;
+    box-shadow:0 32px 80px rgba(10,20,50,0.35);
+  }
+  .modal-header {
+    position:sticky; top:0; z-index:1;
+    background:var(--grad);
+    padding:20px 24px 16px;
+    border-radius:16px 16px 0 0;
+    display:flex; align-items:flex-start; justify-content:space-between; gap:16px;
+  }
+  .modal-header h3 {
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:800; font-size:1.3rem;
+    color:var(--white); margin-bottom:4px;
+  }
+  .modal-header p { font-size:0.78rem; color:rgba(255,255,255,0.65); }
+  .modal-close {
+    background:rgba(255,255,255,0.15); border:none; cursor:pointer;
+    color:var(--white); width:32px; height:32px; border-radius:50%;
+    font-size:1rem; display:flex; align-items:center; justify-content:center;
+    flex-shrink:0; transition:background 0.2s;
+  }
+  .modal-close:hover { background:rgba(255,255,255,0.3); }
+  .modal-body { padding:28px 28px 24px; }
+  .modal-section { margin-bottom:24px; }
+  .modal-section-title {
+    display:flex; align-items:center; gap:10px;
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:700; font-size:1rem; color:var(--text);
+    margin-bottom:10px;
+  }
+  .modal-num {
+    width:24px; height:24px; border-radius:50%;
+    background:var(--grad);
+    color:var(--white); font-size:0.75rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .modal-body p, .modal-body li {
+    font-size:0.88rem; line-height:1.65; color:#334155;
+  }
+  .modal-body ul { list-style:none; padding:0; margin-top:8px; }
+  .modal-body ul li { padding:3px 0 3px 16px; position:relative; }
+  .modal-body ul li::before {
+    content:'·'; position:absolute; left:4px; color:var(--green-mid); font-weight:700;
+  }
+  .modal-footer-btn {
+    position:sticky; bottom:0;
+    background:var(--white); padding:16px 28px;
+    border-top:1px solid var(--border);
+    display:flex; justify-content:flex-end;
+    border-radius:0 0 16px 16px;
+  }
+  .modal-footer-btn button {
+    background:var(--grad); color:var(--white);
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:700; font-size:0.95rem;
+    border:none; border-radius:9px; cursor:pointer;
+    padding:10px 24px; transition:filter 0.2s;
+  }
+  .modal-footer-btn button:hover { filter:brightness(1.08); }
+  /* Floating WhatsApp */
+  .float-wa {
+    position:fixed; bottom:24px; right:24px; z-index:100;
+    width:60px; height:60px;
+    background:#25D366; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 4px 20px rgba(37,211,102,0.4);
+    transition:transform 0.2s, box-shadow 0.2s;
+    animation:pulse-wa 2s infinite;
+  }
+  .float-wa:hover { transform:scale(1.1); box-shadow:0 6px 28px rgba(37,211,102,0.5); }
+  @keyframes pulse-wa {
+    0%,100% { box-shadow:0 4px 20px rgba(37,211,102,0.4); transform:scale(1); }
+    50% { box-shadow:0 4px 36px rgba(37,211,102,0.7); transform:scale(1.1); }
+  }
 </style>
 </head>
 <body>
-
 <nav>
-  <a class="logo" href="/"><span class="logo-g">🌐</span>web<em>autonomos</em></a>
-  <a class="nav-back" href="/">← Volver al inicio</a>
+  <a class="logo" href="https://webautonomos.es/">
+    <span class="logo-icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="2" y1="12" x2="22" y2="12"/>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+      </svg>
+    </span>
+    <span class="logo-text"><span class="logo-web">web</span><span class="logo-auto">autonomos</span><span class="logo-es">.es</span></span>
+  </a>
+  <a class="nav-back" href="https://webautonomos.es/">← Volver al inicio</a>
 </nav>
 
-<!-- HERO -->
+<!-- HERO — P4: benefit-oriented message + P5: sin alta, sin permanencia + P7: no deco emojis -->
 <section class="hero">
-  <span class="deco d1">🌐</span>
-  <span class="deco d2">🔍</span>
-  <span class="deco d3">🎨</span>
-  <span class="deco d4">SEO</span>
-  <span class="deco d5">📦</span>
-  <span class="deco d6">⚙️</span>
-
   <div class="hero-c">
     <div class="badge"><span class="dot"></span> Artesanos &amp; Profesionales</div>
-    <h1>Tu sitio web profesional,<br><span class="ul">listo en 24 horas.</span></h1>
-    <p class="hdesc">Rellena la ficha en 3 minutos. Construimos tu sitio con tus fotos, tus servicios y tus reseñas de Google — y te lo enviamos antes de que decidas nada.</p>
+    <h1>Una web que convierte cada visita en <span class="ul">una llamada, una cita o un nuevo cliente.</span></h1>
+    <p class="hdesc">Construimos tu sitio web profesional con tus fotos, tus servicios y tus reseñas de Google — y te lo enviamos en 24 horas, antes de que decidas nada.</p>
     <div class="pills">
-      <span class="pill">✓ Sin permanencia</span>
+      <span class="pill">✓ Sin alta, sin permanencia</span>
       <span class="pill">✓ 15€/mes todo incluido</span>
       <span class="pill">✓ Demo gratuita en 24h</span>
     </div>
@@ -429,13 +581,13 @@
   <p class="ey">En 2 minutos</p>
   <h2>Mira cómo funciona</h2>
   <p class="sd">Un sitio hecho para ti, construido antes de que hablemos.</p>
-  <div class="vf">
-    <!-- Remplacer VIDEO_ID_AQUI par l'ID YouTube de la vidéo WebAutonomos -->
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_AQUI?rel=0&modestbranding=1&color=white"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+  <div class="vf" id="video-container">
+    <iframe src="https://www.youtube.com/embed/NK0tjjLP438?rel=0&modestbranding=1" allowfullscreen loading="lazy"></iframe>
   </div>
-  <p class="vnote">Así quedará el tuyo.</p>
+  <p class="vnote">¿Quieres ver cómo quedará la tuya?</p>
+  <div style="text-align:center; margin-top:28px;">
+    <a href="#pide-demo" class="hero-cta" style="display:inline-flex; background:var(--grad); color:var(--white);">Pedir mi demo gratis →</a>
+  </div>
 </section>
 
 <!-- STEPS -->
@@ -445,17 +597,17 @@
   <p class="sd" style="margin-bottom:48px">Sin contratos. Sin sorpresas. Sin tecnicismos.</p>
   <div class="sw">
     <div class="step">
-      <div class="sn">01</div><span class="se">📋</span>
-      <div class="stit">Rellenas la ficha</div>
-      <div class="sinf">Tu empresa, tus servicios, tu zona. Solo 3 minutos de tu tiempo.</div>
+      <div class="sn">1</div><span class="se">📋</span>
+      <div class="stit">Rellenas los datos de tu negocio</div>
+      <div class="sinf">Tu empresa, tus servicios, tu zona. Son 2 minutos.</div>
     </div>
     <div class="step ft">
-      <div class="sn">02</div><span class="se">⚡</span>
+      <div class="sn">2</div><span class="se">⚡</span>
       <div class="stit">Construimos tu sitio</div>
       <div class="sinf">En menos de 24h tienes tu demo lista con tus fotos y reseñas reales de Google.</div>
     </div>
     <div class="step">
-      <div class="sn">03</div><span class="se">📞</span>
+      <div class="sn">3</div><span class="se">📞</span>
       <div class="stit">Te llamamos</div>
       <div class="sinf">Lo revisamos juntos. Si te gusta: 15€/mes. Si no: sin coste ni compromiso.</div>
     </div>
@@ -466,7 +618,7 @@
 <section class="secs rev">
   <p class="ey">Para quién</p>
   <h2 style="margin-bottom:14px">Todos los oficios, un solo precio</h2>
-  <p class="sd">Ya trabajamos con profesionales de toda la Comunitat Valenciana.</p>
+  <p class="sd">Ya trabajamos con profesionales de toda España.</p>
   <div class="sg">
     <span class="stag">⚡ Electricistas</span>
     <span class="stag">🔧 Fontaneros</span>
@@ -479,11 +631,34 @@
     <span class="stag">🏗️ Reformas</span>
     <span class="stag">🔑 Cerrajeros</span>
     <span class="stag">🪟 Aluminios y PVC</span>
+    <span class="stag">🎨 Tatuadores</span>
     <span class="stag">➕ Tu oficio</span>
   </div>
 </section>
 
-<!-- FORM -->
+<!-- P3: SOCIAL PROOF — chiffres + témoignage -->
+<section class="proof rev">
+  <p class="ey">Resultados reales</p>
+  <h2>Profesionales que ya confían en nosotros</h2>
+  <p class="sd">Webs profesionales entregadas en toda la Comunidad Valenciana y Murcia.</p>
+  <div class="proof-grid">
+    <div class="proof-card">
+      <div class="proof-num">+50</div>
+      <div class="proof-label">Webs creadas para<br>autónomos en España</div>
+    </div>
+    <div class="proof-card">
+      <div class="proof-num">24h</div>
+      <div class="proof-label">Tiempo medio de<br>entrega de la demo</div>
+    </div>
+    <div class="proof-quote">
+      <div class="proof-stars">★★★★★</div>
+      <blockquote>"En 2 días tenía mi web funcionando. Mis clientes me encuentran ahora en Google."</blockquote>
+      <cite>— Carlos M., Electricista en Valencia</cite>
+    </div>
+  </div>
+</section>
+
+<!-- FORM — P2: reduced fields + P8: WhatsApp under form -->
 <section class="fs" id="pide-demo">
   <div class="fw">
     <div class="fh rev">
@@ -491,7 +666,6 @@
       <h2>Recibe tu demo personalizada</h2>
       <p class="sd">Rellena los datos de tu negocio. Te enviamos el enlace a tu sitio en menos de 24 horas.</p>
     </div>
-
     <div class="card rev d1r">
       <form id="pf" onsubmit="hs(event)" novalidate>
         <div class="frow">
@@ -518,6 +692,7 @@
                 <option>Médico / Especialista</option>
               </optgroup>
               <optgroup label="Otros">
+                <option>Tatuadores</option>
                 <option>Otro oficio</option>
               </optgroup>
             </select>
@@ -537,15 +712,10 @@
             <input type="text" name="ciudad" placeholder="Ej: Alicante, Valencia…" required>
           </div>
         </div>
-        <div class="sep"><span>Contacto</span></div>
         <div class="frow">
           <div class="fg">
             <label>WhatsApp <span class="star">*</span></label>
             <input type="tel" name="whatsapp" placeholder="+34 6XX XXX XXX" required>
-          </div>
-          <div class="fg">
-            <label>Email</label>
-            <input type="email" name="email" placeholder="tu@email.es">
           </div>
         </div>
         <div class="sep"><span>Tu actividad</span></div>
@@ -555,20 +725,22 @@
             <textarea name="servicios" placeholder="Ej: Instalación eléctrica, cuadros, urgencias 24h, domótica…" required></textarea>
           </div>
         </div>
-        <div class="frow solo">
-          <div class="fg">
-            <label>Dirección o zona de trabajo</label>
-            <input type="text" name="direccion" placeholder="Ej: Calle Mayor 12, 03001 Alicante">
-          </div>
-        </div>
         <button type="submit" class="cta-btn" id="sb">
           <span>Recibir mi demo gratis en 24h</span><span class="arr">→</span>
         </button>
         <p class="micro">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#18a050" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Demo enviada en 24h &nbsp;·&nbsp; Sin permanencia &nbsp;·&nbsp; Cancelación cuando quieras
+          Sin alta &nbsp;·&nbsp; Sin permanencia &nbsp;·&nbsp; Cancela cuando quieras
         </p>
       </form>
+      <!-- P8: WhatsApp alternative -->
+      <div class="wa-alt" id="wa-alt">
+        <p>¿Prefieres escribirnos directamente?</p>
+        <a href="https://wa.me/34654239520?text=Hola%2C%20me%20interesa%20una%20web%20para%20mi%20negocio" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          654 23 95 20
+        </a>
+      </div>
       <div id="succ">
         <div class="sc">🎉</div>
         <h3>¡Perfecto, ya está!</h3>
@@ -578,13 +750,12 @@
   </div>
 </section>
 
-<!-- TRUST -->
+<!-- TRUST — P1: aligned on 24h -->
 <section class="tb rev">
   <div class="ti-wrap">
-    <div class="ti"><div class="ti-i">🔒</div><div><strong>Sin permanencia</strong><span>Cancela cuando quieras</span></div></div>
+    <div class="ti"><div class="ti-i">🔒</div><div><strong>Sin alta, sin permanencia</strong><span>Cancela cuando quieras</span></div></div>
     <div class="ti"><div class="ti-i">📱</div><div><strong>100% móvil</strong><span>Perfecto en smartphone</span></div></div>
-    <div class="ti"><div class="ti-i">📍</div><div><strong>SEO local incluido</strong><span>Visible en Google Maps</span></div></div>
-    <div class="ti"><div class="ti-i">⚡</div><div><strong>Online en 48h</strong><span>Dominio .es incluido</span></div></div>
+    <div class="ti"><div class="ti-i">⚡</div><div><strong>Online en 24h</strong><span>Dominio .es incluido</span></div></div>
     <div class="ti"><div class="ti-i">💬</div><div><strong>Soporte WhatsApp</strong><span>Respuesta en el día</span></div></div>
   </div>
 </section>
@@ -592,21 +763,33 @@
 <footer>
   <a class="fl" href="/"><span>🌐</span> webautonomos.es</a>
   <div class="flinks">
-    <a href="/aviso-legal">Aviso legal</a>
-    <a href="/privacidad">Privacidad</a>
-    <a href="/cdn-cgi/l/email-protection#5b32353d341b2c3e393a2e2f343534363428753e28">Contacto</a>
+    <a href="javascript:void(0)" onclick="document.getElementById('modal-aviso').style.display='flex'">Aviso legal</a>
+    <a href="javascript:void(0)" onclick="document.getElementById('modal-privacidad').style.display='flex'">Privacidad</a>
+    <a href="https://webautonomos.es/contacto">Contacto</a>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Scroll reveals
-  const io = new IntersectionObserver(
-    es => es.forEach(e => { if(e.isIntersecting) e.target.classList.add('on'); }),
-    { threshold:0.1 }
-  );
-  document.querySelectorAll('.rev').forEach(el => io.observe(el));
+<!-- Floating WhatsApp button -->
+<a class="float-wa" href="https://wa.me/34654239520?text=Hola%2C%20me%20interesa%20una%20web%20para%20mi%20negocio" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
-  // Submit
+<script data-cfasync="false">
+  try {
+    document.body.classList.add('js-ok');
+    var io = new IntersectionObserver(
+      function(es) { es.forEach(function(e) { if(e.isIntersecting) e.target.classList.add('on'); }); },
+      { threshold:0.05, rootMargin:'0px 0px -20px 0px' }
+    );
+    document.querySelectorAll('.rev').forEach(function(el) {
+      io.observe(el);
+      var r = el.getBoundingClientRect();
+      if(r.top < window.innerHeight) el.classList.add('on');
+    });
+  } catch(err) {
+    // Fallback: show all sections immediately
+    document.querySelectorAll('.rev').forEach(function(el) { el.classList.add('on'); });
+  }
   function hs(e) {
     e.preventDefault();
     const form = e.target, btn = document.getElementById('sb');
@@ -616,29 +799,114 @@
       if(!f.value.trim()) { f.style.borderColor='#ef4444'; ok=false; }
     });
     if(!ok) return;
-
     btn.innerHTML = '<span>Enviando…</span>';
     btn.disabled = true;
-
     const d = Object.fromEntries(new FormData(form));
+    fetch('https://hook.eu1.make.com/elj9eg86coz6pflmp5hroziz8ffk08nv', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(d)
+    }).catch(console.error);
+    setTimeout(()=>{
+      form.style.display='none';
+      document.getElementById('wa-alt').style.display='none';
+      document.getElementById('succ').style.display='block';
+    }, 350);
+  }
+</script>
 
-    // Option A — Webhook Make.com → Google Sheets (recommandé)
-    // fetch('https://hook.eu1.make.com/VOTRE_ID', {
-    //   method:'POST',
-    //   headers:{'Content-Type':'application/json'},
-    //   body:JSON.stringify(d)
-    // }).catch(console.error);
+<!-- MODAL AVISO LEGAL -->
+<div class="modal-overlay" id="modal-aviso" onclick="if(event.target===this)this.style.display='none'">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <h3>Aviso Legal</h3>
+        <p>Última actualización: Febrero 2026</p>
+      </div>
+      <button class="modal-close" onclick="document.getElementById('modal-aviso').style.display='none'">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">1</span> Identificación del titular</div>
+        <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa al usuario de los datos identificativos del titular de este sitio web:</p>
+        <ul>
+          <li>Denominación social: PASURITE SLU</li>
+          <li>CIF: B42890012</li>
+          <li>Domicilio social: Calle Pintor Segrelles, nº 26 – 46870 Ontinyent (Valencia), España</li>
+          <li>Teléfono: 654 239 520</li>
+          <li>Correo electrónico: info@webautonomos.es</li>
+          <li>Datos registrales: Inscrita en el Registro Mercantil de Valencia, Tomo 10949, Folio 13, Hoja V-196956</li>
+          <li>Administrador único: Angelino Pace</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">2</span> Objeto y ámbito de aplicación</div>
+        <p>El presente Aviso Legal regula el acceso y uso del sitio web webautonomos.es. PASURITE SLU se dedica a la creación de páginas web profesionales para autónomos y pequeñas empresas, así como a servicios de posicionamiento SEO local y gestión de Google My Business.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">3</span> Condiciones de acceso y uso</div>
+        <p>El acceso al Sitio Web es gratuito. El usuario se compromete a utilizar el Sitio Web de conformidad con la ley, el presente Aviso Legal, las buenas costumbres y el orden público.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">4</span> Propiedad intelectual e industrial</div>
+        <p>Todos los contenidos del Sitio Web son propiedad de PASURITE SLU o de terceros que han autorizado su uso, quedando protegidos por la legislación española e internacional sobre propiedad intelectual e industrial.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">5</span> Protección de datos personales</div>
+        <p>PASURITE SLU cumple con el RGPD y la LOPD-GDD. El usuario puede ejercer sus derechos enviando un correo electrónico a info@webautonomos.es.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">6</span> Legislación aplicable</div>
+        <p>El presente Aviso Legal se rige por la legislación española. Para la resolución de cualquier controversia, PASURITE SLU y el usuario acuerdan someterse a los Juzgados y Tribunales de la ciudad de Valencia.</p>
+      </div>
+    </div>
+    <div class="modal-footer-btn">
+      <button onclick="document.getElementById('modal-aviso').style.display='none'">Cerrar</button>
+    </div>
+  </div>
+</div>
 
-    // Option B — Notification WhatsApp directe
-    const msg = encodeURIComponent(
-      `🆕 NUEVO LEAD — WebAutonomos\n\n`+
-      `Sector: ${d.sector}\nEmpresa: ${d.empresa}\n`+
-      `Contacto: ${d.nombre}\nWhatsApp: ${d.whatsapp}\n`+
-      `Email: ${d.email||'—'}\nCiudad: ${d.ciudad}\n`+
-      `Dirección: ${d.direccion||'—'}\nServicios: ${d.servicios}\n\n`+
-      `→ Demo a enviar antes de 24h ⚡`
-    );
-    // Décommenter pour activer :
-    // window.open(`https://wa.me/34654239520?text=${msg}`,'_blank');
+<!-- MODAL PRIVACIDAD -->
+<div class="modal-overlay" id="modal-privacidad" onclick="if(event.target===this)this.style.display='none'">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <h3>Política de Privacidad</h3>
+        <p>Última actualización: Febrero 2026</p>
+      </div>
+      <button class="modal-close" onclick="document.getElementById('modal-privacidad').style.display='none'">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">1</span> Responsable del tratamiento</div>
+        <p>PASURITE SLU — CIF: B42890012 — Calle Pintor Segrelles, nº 26 – 46870 Ontinyent (Valencia) — info@webautonomos.es — 654 239 520</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">2</span> Datos que recopilamos</div>
+        <p>Recopilamos los datos que nos proporciona voluntariamente: nombre, teléfono, email, nombre de empresa, ciudad, sector y servicios ofrecidos.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">3</span> Finalidad</div>
+        <p>Gestionar solicitudes de demo, elaborar presupuestos, prestar servicios contratados y enviar comunicaciones comerciales (solo con consentimiento previo).</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">4</span> Base legal</div>
+        <p>Su consentimiento al rellenar el formulario, la ejecución del contrato, el interés legítimo y el cumplimiento de obligaciones legales.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">5</span> Sus derechos</div>
+        <p>Acceso, rectificación, supresión, limitación, portabilidad y oposición. Escriba a info@webautonomos.es con copia de su DNI. Puede reclamar ante la AEPD (www.aepd.es).</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">6</span> Seguridad</div>
+        <p>Utilizamos conexiones seguras (HTTPS/SSL), servidores protegidos, copias de seguridad periódicas y acceso restringido a los datos.</p>
+      </div>
+    </div>
+    <div class="modal-footer-btn">
+      <button onclick="document.getElementById('modal-privacidad').style.display='none'">Cerrar</button>
+    </div>
+  </div>
+</div>
 
-    set
+</body>
+</html>
