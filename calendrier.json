@@ -399,7 +399,7 @@
       ],
       "meta_description_es": "Los datos estructurados Schema ayudan a Google a entender tu negocio. Te explicamos cómo implementarlos sin ser programador.",
       "pillar": false,
-      "status": "published",
+      "status": "published_spa",
       "notes": "Technique mais accessible. Générateur de code JSON-LD."
     },
     {
