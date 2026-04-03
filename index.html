@@ -213,6 +213,8 @@
                     title: "Webs profesionales para",
                     subtitle: "Especializados en autónomos y empresas de servicios",
                     ctaArrow: "👇 Haz clic en un sector para ver la demo en vivo 👇",
+                    noSector: "¿Tu oficio no aparece? Da igual. Creamos demos para cualquier profesional.",
+                    noSectorCta: "Pide la tuya gratis",
                     electricistas: "Electricistas", fontaneros: "Fontaneros", carpinteros: "Carpinteros",
                     dentistas: "Dentistas", fisioterapeutas: "Fisioterapeutas", psicologos: "Psicólogos"
                 },
@@ -1552,6 +1554,8 @@
                     title: "Webs professionals per a",
                     subtitle: "Especialitzats en autònoms i empreses de serveis",
                     ctaArrow: "👇 Fes clic en un sector per a veure la demo en viu 👇",
+                    noSector: "El teu ofici no apareix? Igual. Creem demos per a qualsevol professional.",
+                    noSectorCta: "Demana la teua gratis",
                     electricistas: "Electricistes", fontaneros: "Fontaners", carpinteros: "Fusters",
                     dentistas: "Dentistes", fisioterapeutas: "Fisioterapeutes", psicologos: "Psicòlegs"
                 },
@@ -2891,6 +2895,8 @@
                     title: "Professional websites for",
                     subtitle: "Specialized in freelancers and service companies",
                     ctaArrow: "👇 Click on a sector to see the live demo 👇",
+                    noSector: "Your profession isn't listed? No problem. We create demos for any professional.",
+                    noSectorCta: "Request yours for free",
                     electricistas: "Electricians", fontaneros: "Plumbers", carpinteros: "Carpenters",
                     dentistas: "Dentists", fisioterapeutas: "Physiotherapists", psicologos: "Psychologists"
                 },
@@ -4829,6 +4835,10 @@
                                 </ScrollReveal>
                             ))}
                         </div>
+                        <p className="text-gray-500 mt-8 text-lg">
+                            {t.forWho.noSector}{' '}
+                            <a href="/pide-tu-demo" className="text-blue-600 font-semibold hover:underline">{t.forWho.noSectorCta}</a>
+                        </p>
                     </div>
                 </section>
             );
