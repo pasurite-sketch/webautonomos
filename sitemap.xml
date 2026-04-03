@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <!-- Homepage -->
     <url>
         <loc>https://webautonomos.es/</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/"/>
@@ -11,60 +12,60 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    <url><loc>https://webautonomos.es/pide-tu-demo</loc><lastmod>2026-03-18</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <!-- Landing page -->
+    <url><loc>https://webautonomos.es/pide-tu-demo</loc><lastmod>2026-04-03</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <!-- Legal -->
     <url><loc>https://webautonomos.es/privacidad</loc><lastmod>2026-03-17</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
     <url><loc>https://webautonomos.es/aviso-legal</loc><lastmod>2026-03-17</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-    <url><loc>https://webautonomos.es/blog/5-razones-pagina-web-negocio-2026</loc><lastmod>2026-01-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://webautonomos.es/blog/como-aparecer-google-maps-autonomos</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://webautonomos.es/blog/seo-local-que-es-autonomos</loc><lastmod>2026-01-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://webautonomos.es/blog/cuanto-cuesta-pagina-web-autonomos-espana</loc><lastmod>2026-01-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://webautonomos.es/blog/como-conseguir-resenas-google-negocio</loc><lastmod>2026-01-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://webautonomos.es/blog/configurar-whatsapp-business-gratis-autonomos</loc><lastmod>2026-01-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+    <!-- ============================================ -->
+    <!-- BLOG: Trilingual articles (ES + VAL + EN)    -->
+    <!-- ============================================ -->
     <url>
         <loc>https://webautonomos.es/blog/es/como-conseguir-clientes-por-internet</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/como-conseguir-clientes-por-internet"/>
-        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/web-para-fontaneros-guia-completa"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/web-para-fontaneros-guia-completa"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/como-conseguir-clientes-por-internet"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/como-conseguir-clientes-por-internet"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/como-conseguir-clientes-por-internet"/>
         <lastmod>2026-01-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/blog/es/palabras-clave-locales-como-elegir</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/palabras-clave-locales-como-elegir"/>
-        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/web-para-fontaneros-guia-completa"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/web-para-fontaneros-guia-completa"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/palabras-clave-locales-como-elegir"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/palabras-clave-locales-como-elegir"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/palabras-clave-locales-como-elegir"/>
         <lastmod>2026-02-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/blog/es/pagina-web-para-electricistas</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/pagina-web-para-electricistas"/>
-        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/web-para-fontaneros-guia-completa"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/web-para-fontaneros-guia-completa"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/pagina-web-para-electricistas"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/pagina-web-para-electricistas"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/pagina-web-para-electricistas"/>
         <lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/blog/es/optimizar-ficha-google-business-profile</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/optimizar-ficha-google-business-profile"/>
-        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/web-para-fontaneros-guia-completa"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/web-para-fontaneros-guia-completa"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/optimizar-ficha-google-business-profile"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/optimizar-ficha-google-business-profile"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/optimizar-ficha-google-business-profile"/>
         <lastmod>2026-02-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/blog/es/como-posicionar-web-en-google-local</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/como-posicionar-web-en-google-local"/>
-        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/web-para-fontaneros-guia-completa"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/web-para-fontaneros-guia-completa"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/como-posicionar-web-en-google-local"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/como-posicionar-web-en-google-local"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/como-posicionar-web-en-google-local"/>
         <lastmod>2026-03-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/blog/es/redes-sociales-autonomos-cuales-usar</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/redes-sociales-autonomos-cuales-usar"/>
-        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/web-para-fontaneros-guia-completa"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/web-para-fontaneros-guia-completa"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/redes-sociales-autonomos-cuales-usar"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/redes-sociales-autonomos-cuales-usar"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/redes-sociales-autonomos-cuales-usar"/>
         <lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
@@ -79,55 +80,32 @@
     <url>
         <loc>https://webautonomos.es/blog/es/google-posts-publicar-fiche-google</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/google-posts-publicar-fiche-google"/>
-        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/web-para-fontaneros-guia-completa"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/web-para-fontaneros-guia-completa"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/google-posts-publicar-fiche-google"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/google-posts-publicar-fiche-google"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/google-posts-publicar-fiche-google"/>
         <lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/blog/es/que-es-map-pack-google-como-salir</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/que-es-map-pack-google-como-salir"/>
-        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/web-para-fontaneros-guia-completa"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/web-para-fontaneros-guia-completa"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/que-es-map-pack-google-como-salir"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/que-es-map-pack-google-como-salir"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/que-es-map-pack-google-como-salir"/>
         <lastmod>2026-03-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
-        <url>
-        <loc>https://webautonomos.es/blog/es/email-marketing-autonomos-guia-basica</loc>
-        <lastmod>2026-03-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
 
-        <url>
-        <loc>https://webautonomos.es/blog/es/web-para-clinica-dental-fisioterapeuta</loc>
-        <lastmod>2026-03-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+    <!-- ============================================ -->
+    <!-- BLOG: Spanish-only articles (no translations) -->
+    <!-- ============================================ -->
+    <url><loc>https://webautonomos.es/blog/es/email-marketing-autonomos-guia-basica</loc><lastmod>2026-03-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/es/web-para-clinica-dental-fisioterapeuta</loc><lastmod>2026-03-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/es/responder-resenas-negativas-google</loc><lastmod>2026-03-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/es/schema-local-business-que-es-como-implementar</loc><lastmod>2026-03-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/es/presupuesto-marketing-digital-autonomos</loc><lastmod>2026-04-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-        <url>
-        <loc>https://webautonomos.es/blog/es/responder-resenas-negativas-google</loc>
-        <lastmod>2026-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-        <url>
-        <loc>https://webautonomos.es/blog/es/schema-local-business-que-es-como-implementar</loc>
-        <lastmod>2026-03-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-        <url>
-        <loc>https://webautonomos.es/blog/es/presupuesto-marketing-digital-autonomos</loc>
-        <lastmod>2026-04-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
+    <!-- ============================================ -->
     <!-- Demos -->
+    <!-- ============================================ -->
     <url><loc>https://webautonomos.es/demo-electricista</loc><lastmod>2026-02-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
     <url><loc>https://webautonomos.es/demo-fontanero</loc><lastmod>2026-02-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
