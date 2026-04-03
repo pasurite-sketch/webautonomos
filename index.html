@@ -5068,9 +5068,9 @@
             const { t } = useLanguage();
             const [currentIndex, setCurrentIndex] = React.useState(0);
             const testimonials = [
-                { text: t.testimonials.testimonial2, author: t.testimonials.testimonial2Author, job: t.testimonials.testimonial2Job },
-                { text: t.testimonials.testimonial4, author: t.testimonials.testimonial4Author, job: t.testimonials.testimonial4Job },
-                { text: t.testimonials.testimonial6, author: t.testimonials.testimonial6Author, job: t.testimonials.testimonial6Job }
+                { text: t.testimonials.testimonial2, author: t.testimonials.testimonial2Author, job: t.testimonials.testimonial2Job, color: "bg-blue-500" },
+                { text: t.testimonials.testimonial4, author: t.testimonials.testimonial4Author, job: t.testimonials.testimonial4Job, color: "bg-green-500" },
+                { text: t.testimonials.testimonial6, author: t.testimonials.testimonial6Author, job: t.testimonials.testimonial6Job, color: "bg-orange-500" }
             ];
             
             // Auto-scroll every 4 seconds
@@ -5126,9 +5126,14 @@
                                                         {[...Array(5)].map((_, j) => <Icon key={j} name="star" className="w-6 h-6 text-yellow-400" />)}
                                                     </div>
                                                     <p className="text-gray-700 text-lg md:text-xl mb-8 italic leading-relaxed">"{item.text}"</p>
-                                                    <div>
-                                                        <p className="font-bold text-gray-800 text-lg">{item.author}</p>
-                                                        <p className="text-gray-500">{item.job}</p>
+                                                    <div className="flex items-center justify-center gap-4">
+                                                        <div className={`w-14 h-14 rounded-full ${item.color} flex items-center justify-center text-white font-bold text-xl shadow-md`}>
+                                                            {item.author.split(' ').map(n => n[0]).join('')}
+                                                        </div>
+                                                        <div className="text-left">
+                                                            <p className="font-bold text-gray-800 text-lg">{item.author}</p>
+                                                            <p className="text-gray-500">{item.job}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
