@@ -4354,7 +4354,10 @@
                                             if (currentPage !== 'home') setCurrentPage('home');
                                             setTimeout(() => {
                                                 const el = document.getElementById(item.scrollTo);
-                                                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                                if (el) {
+                                                    const y = el.getBoundingClientRect().top + window.scrollY - 100;
+                                                    window.scrollTo({ top: y, behavior: 'smooth' });
+                                                }
                                             }, currentPage !== 'home' ? 100 : 0);
                                         } else {
                                             setCurrentPage(item.page);
@@ -4388,7 +4391,10 @@
                                             if (currentPage !== 'home') setCurrentPage('home');
                                             setTimeout(() => {
                                                 const el = document.getElementById(item.scrollTo);
-                                                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                                if (el) {
+                                                    const y = el.getBoundingClientRect().top + window.scrollY - 100;
+                                                    window.scrollTo({ top: y, behavior: 'smooth' });
+                                                }
                                             }, currentPage !== 'home' ? 100 : 0);
                                         } else {
                                             setCurrentPage(item.page);
