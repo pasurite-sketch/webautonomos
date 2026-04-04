@@ -164,7 +164,7 @@
         // ============ TRADUCTIONS ============
         const translations = {
             es: {
-                nav: { inicio: "Inicio", servicios: "Qué incluye", precios: "Precios", comoFunciona: "Cómo funciona", marketing: "Marketing", blog: "Blog", contacto: "Contacto" },
+                nav: { inicio: "Inicio", servicios: "Qué incluye", precios: "Precios", comoFunciona: "Cómo funciona", marketing: "Marketing", faq: "FAQ", blog: "Blog", contacto: "Contacto" },
                 seo: {
                     home: {
                         title: "Páginas Web para Autónomos Solo 15€/mes | WebAutonomos.es",
@@ -1509,7 +1509,7 @@
                 }
             },
             val: {
-                nav: { inicio: "Inici", servicios: "Què inclou", precios: "Preus", comoFunciona: "Com funciona", marketing: "Màrqueting", blog: "Blog", contacto: "Contacte" },
+                nav: { inicio: "Inici", servicios: "Què inclou", precios: "Preus", comoFunciona: "Com funciona", marketing: "Màrqueting", faq: "FAQ", blog: "Blog", contacto: "Contacte" },
                 seo: {
                     home: {
                         title: "Pàgines Web per a Autònoms Només 15€/mes | WebAutonomos.es",
@@ -2850,7 +2850,7 @@
                 }
             },
             en: {
-                nav: { inicio: "Home", servicios: "What's included", precios: "Pricing", comoFunciona: "How it works", marketing: "Marketing", blog: "Blog", contacto: "Contact" },
+                nav: { inicio: "Home", servicios: "What's included", precios: "Pricing", comoFunciona: "How it works", marketing: "Marketing", faq: "FAQ", blog: "Blog", contacto: "Contact" },
                 seo: {
                     home: {
                         title: "Professional Websites for Freelancers Just €15/month | WebAutonomos.es",
@@ -4330,11 +4330,11 @@
             const { t, lang, setLang } = useLanguage();
             const [mobileOpen, setMobileOpen] = useState(false);
             const navItems = [
-                { key: 'inicio', page: 'home' },
                 { key: 'servicios', page: 'home', scrollTo: 'servicios' },
                 { key: 'precios', page: 'home', scrollTo: 'precios' },
                 { key: 'comoFunciona', page: 'home', scrollTo: 'como-funciona' },
                 { key: 'marketing', page: 'home', scrollTo: 'marketing' },
+                { key: 'faq', page: 'home', scrollTo: 'faq' },
                 { key: 'blog', page: 'blog' },
                 { key: 'contacto', page: 'contact' }
             ];
@@ -5216,7 +5216,7 @@
             const [openIndex, setOpenIndex] = React.useState(null);
             
             return (
-                <section className="py-20 bg-white">
+                <section id="faq" className="py-20 bg-white">
                     <div className="max-w-3xl mx-auto px-4">
                         <ScrollReveal>
                             <div className="text-center mb-12">
