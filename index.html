@@ -4347,7 +4347,7 @@
                             </div>
                             <span className="font-bold text-base md:text-xl text-gray-800">web<span className="text-blue-600">autonomos</span><span className="text-green-500">.es</span></span>
                         </div>
-                        <div className="hidden md:flex items-center gap-5 ml-8">
+                        <div className="hidden lg:flex items-center gap-4 ml-6">
                             {navItems.map(item => (
                                 <button key={item.key} onClick={() => {
                                         if (item.scrollTo) {
@@ -4374,16 +4374,16 @@
                                 <span className="whitespace-nowrap">654 239 520</span>
                             </a>
                             <LanguageSelector currentLang={lang} setLang={setLang} />
-                            <button onClick={() => window.location.href='/pide-tu-demo'} className="hidden md:block gradient-btn text-white px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap">
+                            <button onClick={() => window.location.href='/pide-tu-demo'} className="hidden lg:block gradient-btn text-white px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap">
                                 {t.hero.cta}
                             </button>
-                            <button className="md:hidden p-1 -ml-2" onClick={() => setMobileOpen(!mobileOpen)} aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"} aria-expanded={mobileOpen}>
+                            <button className="lg:hidden p-1 -ml-2" onClick={() => setMobileOpen(!mobileOpen)} aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"} aria-expanded={mobileOpen}>
                                 <Icon name={mobileOpen ? 'x' : 'menu'} className="w-6 h-6 text-gray-700" />
                             </button>
                         </div>
                     </div>
                     {mobileOpen && (
-                        <div className="md:hidden bg-white border-t px-4 py-4 space-y-3">
+                        <div className="lg:hidden bg-white border-t px-4 py-4 space-y-3">
                             {navItems.map(item => (
                                 <button key={item.key} onClick={() => {
                                         setMobileOpen(false);
