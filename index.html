@@ -4330,8 +4330,13 @@
             const { t, lang, setLang } = useLanguage();
             const [mobileOpen, setMobileOpen] = useState(false);
             const navItems = [
-                { key: 'inicio', page: 'home' }, { key: 'servicios', page: 'services' },
-                { key: 'precios', page: 'pricing' }, { key: 'comoFunciona', page: 'how' }, { key: 'marketing', page: 'marketing' }, { key: 'blog', page: 'blog' }, { key: 'contacto', page: 'contact' }
+                { key: 'inicio', page: 'home' },
+                { key: 'servicios', page: 'home', scrollTo: 'servicios' },
+                { key: 'precios', page: 'home', scrollTo: 'precios' },
+                { key: 'comoFunciona', page: 'home', scrollTo: 'como-funciona' },
+                { key: 'marketing', page: 'home', scrollTo: 'marketing' },
+                { key: 'blog', page: 'blog' },
+                { key: 'contacto', page: 'contact' }
             ];
             return (
                 <nav aria-label="Navegación principal" className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur shadow-sm">
@@ -4344,7 +4349,17 @@
                         </div>
                         <div className="hidden md:flex items-center gap-5 ml-8">
                             {navItems.map(item => (
-                                <button key={item.key} onClick={() => setCurrentPage(item.page)}
+                                <button key={item.key} onClick={() => {
+                                        if (item.scrollTo) {
+                                            if (currentPage !== 'home') setCurrentPage('home');
+                                            setTimeout(() => {
+                                                const el = document.getElementById(item.scrollTo);
+                                                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                            }, currentPage !== 'home' ? 100 : 0);
+                                        } else {
+                                            setCurrentPage(item.page);
+                                        }
+                                    }}
                                     className={`text-sm font-medium transition whitespace-nowrap ${currentPage === item.page ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'}`}>
                                     {t.nav[item.key]}
                                 </button>
@@ -4367,7 +4382,18 @@
                     {mobileOpen && (
                         <div className="md:hidden bg-white border-t px-4 py-4 space-y-3">
                             {navItems.map(item => (
-                                <button key={item.key} onClick={() => { setCurrentPage(item.page); setMobileOpen(false); }}
+                                <button key={item.key} onClick={() => {
+                                        setMobileOpen(false);
+                                        if (item.scrollTo) {
+                                            if (currentPage !== 'home') setCurrentPage('home');
+                                            setTimeout(() => {
+                                                const el = document.getElementById(item.scrollTo);
+                                                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                            }, currentPage !== 'home' ? 100 : 0);
+                                        } else {
+                                            setCurrentPage(item.page);
+                                        }
+                                    }}
                                     className="block w-full text-left py-2 text-gray-700 hover:text-blue-600">{t.nav[item.key]}</button>
                             ))}
                         </div>
@@ -4851,6 +4877,7 @@
         // How It Works
         const HowItWorksSection = () => {
             const { t } = useLanguage();
+            const sectionIdHow = "como-funciona";
             const steps = [
                 { num: 1, title: t.howItWorks.step1, desc: t.howItWorks.step1Desc, color: 'from-blue-400 to-blue-600' },
                 { num: 2, title: t.howItWorks.step2, desc: t.howItWorks.step2Desc, color: 'from-green-400 to-green-600' },
@@ -4980,6 +5007,7 @@
         // Pricing
         const PricingSection = ({ setCurrentPage }) => {
             const { t, lang } = useLanguage();
+            const sectionId = "precios";
             const items = [t.pricing.item1, t.pricing.item2, t.pricing.item3, t.pricing.item4, t.pricing.item5, t.pricing.item6, t.pricing.item7, t.pricing.item8, t.pricing.item9];
             
             const upsellColors = { 
@@ -4989,7 +5017,7 @@
             };
             
             return (
-                <section className="py-20 bg-white">
+                <section id="precios" className="py-20 bg-white">
                     <div className="max-w-6xl mx-auto px-4">
                         <ScrollReveal>
                             <div className="text-center mb-12">
@@ -6609,6 +6637,42 @@
                                 <ForWhoSection setCurrentPage={setCurrentPage} />
                                 <HowItWorksSection />
                                 <PricingSection setCurrentPage={setCurrentPage} />
+                                <section id="marketing" className="py-20 bg-gray-50">
+                                    <div className="max-w-6xl mx-auto px-4">
+                                        <ScrollReveal>
+                                            <div className="text-center mb-12">
+                                                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{t.upsells.title}</h2>
+                                                <p className="text-gray-600 text-xl">{t.upsells.subtitle}</p>
+                                            </div>
+                                        </ScrollReveal>
+                                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                            {['seo', 'gmb', 'modifs'].map((key) => {
+                                                const service = t.upsells[key];
+                                                const colors = { seo: 'from-blue-500 to-blue-600', gmb: 'from-green-500 to-green-600', modifs: 'from-purple-500 to-purple-600' };
+                                                return (
+                                                    <ScrollReveal key={key}>
+                                                        <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                                                            <div className={`bg-gradient-to-r ${colors[key]} p-6 text-white`}>
+                                                                <h3 className="text-xl font-bold mb-1">{service.title}</h3>
+                                                                <p className="text-white/80 text-sm">{service.desc}</p>
+                                                                <p className="text-3xl font-extrabold mt-3">{service.price}</p>
+                                                                <p className="text-white/70 text-sm">Sin entrada · Sin permanencia</p>
+                                                            </div>
+                                                            <ul className="p-6 space-y-3">
+                                                                {service.features.map((feat, i) => (
+                                                                    <li key={i} className="flex items-start gap-3">
+                                                                        <Icon name="check" className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                                                        <span className="text-gray-600 text-sm">{feat}</span>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    </ScrollReveal>
+                                                );
+                                            })}
+                                        </div>
+                                    </div>
+                                </section>
                                 <TestimonialsSection />
                                 <FAQSection />
                                 <CTASection setCurrentPage={setCurrentPage} />
