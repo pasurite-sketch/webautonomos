@@ -164,11 +164,15 @@
         // ============ TRADUCTIONS ============
         const translations = {
             es: {
-                nav: { inicio: "Inicio", servicios: "Servicios", precios: "Precios", comoFunciona: "Cómo funciona", blog: "Blog", contacto: "Contacto" },
+                nav: { inicio: "Inicio", servicios: "Qué incluye", precios: "Precios", comoFunciona: "Cómo funciona", marketing: "Marketing", blog: "Blog", contacto: "Contacto" },
                 seo: {
                     home: {
                         title: "Páginas Web para Autónomos Solo 15€/mes | WebAutonomos.es",
                         description: "Tu web profesional por 15€/mes. Sin entrada, sin permanencia. Diseño, hosting, dominio, SSL y alta. Todo incluido."
+                    },
+                    marketing: {
+                        title: "Marketing Digital para Autónomos | SEO Local, Google My Business | WebAutonomos.es",
+                        description: "Servicios de marketing digital para autónomos: SEO local 15€/mes, gestión de Google My Business 29€/mes, actualizaciones web 10€/mes. Sin permanencia."
                     },
                     services: {
                         title: "Servicios Web para Autónomos | Diseño Web, SEO Local, Google My Business",
@@ -1505,7 +1509,7 @@
                 }
             },
             val: {
-                nav: { inicio: "Inici", servicios: "Serveis", precios: "Preus", comoFunciona: "Com funciona", blog: "Blog", contacto: "Contacte" },
+                nav: { inicio: "Inici", servicios: "Què inclou", precios: "Preus", comoFunciona: "Com funciona", marketing: "Màrqueting", blog: "Blog", contacto: "Contacte" },
                 seo: {
                     home: {
                         title: "Pàgines Web per a Autònoms Només 15€/mes | WebAutonomos.es",
@@ -2846,7 +2850,7 @@
                 }
             },
             en: {
-                nav: { inicio: "Home", servicios: "Services", precios: "Pricing", comoFunciona: "How it works", blog: "Blog", contacto: "Contact" },
+                nav: { inicio: "Home", servicios: "What's included", precios: "Pricing", comoFunciona: "How it works", marketing: "Marketing", blog: "Blog", contacto: "Contact" },
                 seo: {
                     home: {
                         title: "Professional Websites for Freelancers Just €15/month | WebAutonomos.es",
@@ -4327,7 +4331,7 @@
             const [mobileOpen, setMobileOpen] = useState(false);
             const navItems = [
                 { key: 'inicio', page: 'home' }, { key: 'servicios', page: 'services' },
-                { key: 'precios', page: 'pricing' }, { key: 'comoFunciona', page: 'how' }, { key: 'blog', page: 'blog' }, { key: 'contacto', page: 'contact' }
+                { key: 'precios', page: 'pricing' }, { key: 'comoFunciona', page: 'how' }, { key: 'marketing', page: 'marketing' }, { key: 'blog', page: 'blog' }, { key: 'contacto', page: 'contact' }
             ];
             return (
                 <nav aria-label="Navegación principal" className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur shadow-sm">
@@ -6139,6 +6143,48 @@
             );
         };
 
+
+        // Marketing Page
+        const MarketingPage = ({ setCurrentPage }) => {
+            const { t } = useLanguage();
+            const upsellColors = { seo: 'from-blue-500 to-blue-600', gmb: 'from-green-500 to-green-600', modifs: 'from-purple-500 to-purple-600' };
+            return (
+                <section className="pt-24 pb-20 bg-gray-50 min-h-screen">
+                    <div className="max-w-6xl mx-auto px-4">
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{t.addons.title}</h2>
+                            <p className="text-gray-600 text-xl">{t.addons.subtitle}</p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            {['seo', 'gmb', 'modifs'].map((key) => {
+                                const service = t.addons[key];
+                                return (
+                                    <ScrollReveal key={key}>
+                                        <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                                            <div className={`bg-gradient-to-r ${upsellColors[key]} p-6 text-white`}>
+                                                <h3 className="text-xl font-bold mb-1">{service.title}</h3>
+                                                <p className="text-white/80 text-sm">{service.desc}</p>
+                                                <p className="text-3xl font-extrabold mt-3">{service.price}</p>
+                                                <p className="text-white/70 text-sm">Sin entrada · Sin permanencia</p>
+                                            </div>
+                                            <ul className="p-6 space-y-3">
+                                                {service.features.map((feat, i) => (
+                                                    <li key={i} className="flex items-start gap-3">
+                                                        <Icon name="check" className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                                        <span className="text-gray-600 text-sm">{feat}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </ScrollReveal>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
         // Cookie Banner
         const CookieBanner = ({ onOpenCookiesPolicy }) => {
             const { t } = useLanguage();
@@ -6569,6 +6615,7 @@
                             </>
                         )}
                         {currentPage === 'services' && <ServicesPage setCurrentPage={setCurrentPage} />}
+                        {currentPage === 'marketing' && <MarketingPage setCurrentPage={setCurrentPage} />}
                         {currentPage === 'pricing' && (<><div className="pt-20" /><PricingSection setCurrentPage={setCurrentPage} /><TestimonialsSection /></>)}
                         {currentPage === 'how' && (<><div className="pt-20" /><HowItWorksSection /><CTASection setCurrentPage={setCurrentPage} /></>)}
                         {currentPage === 'blog' && <BlogPage setCurrentPage={setCurrentPage} />}
