@@ -104,6 +104,13 @@
     <url><loc>https://webautonomos.es/blog/es/presupuesto-marketing-digital-autonomos</loc><lastmod>2026-04-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
     <!-- ============================================ -->
+        <url>
+        <loc>https://webautonomos.es/blog/es/que-debe-tener-web-profesional-autonomo</loc>
+        <lastmod>2026-04-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
     <!-- Demos -->
     <!-- ============================================ -->
     <url><loc>https://webautonomos.es/demo-electricista</loc><lastmod>2026-02-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
