@@ -5167,7 +5167,7 @@
                         </ScrollReveal>
                         
                         {/* Detailed upsells */}
-                        <div>
+                        <div id="marketing" style={{scrollMarginTop: "100px"}}>
                             <ScrollReveal>
                                 <div className="text-center mb-12">
                                     <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">{t.upsells.title}</h3>
@@ -6772,42 +6772,6 @@
                                 <ForWhoSection setCurrentPage={setCurrentPage} />
                                 <HowItWorksSection />
                                 <PricingSection setCurrentPage={setCurrentPage} />
-                                <section id="marketing" className="py-20 bg-gray-50">
-                                    <div className="max-w-6xl mx-auto px-4">
-                                        <ScrollReveal>
-                                            <div className="text-center mb-12">
-                                                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{t.upsells.title}</h2>
-                                                <p className="text-gray-600 text-xl">{t.upsells.subtitle}</p>
-                                            </div>
-                                        </ScrollReveal>
-                                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                            {['seo', 'gmb', 'modifs'].map((key) => {
-                                                const service = t.upsells[key];
-                                                const colors = { seo: 'from-blue-500 to-blue-600', gmb: 'from-green-500 to-green-600', modifs: 'from-purple-500 to-purple-600' };
-                                                return (
-                                                    <ScrollReveal key={key}>
-                                                        <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition">
-                                                            <div className={`bg-gradient-to-r ${colors[key]} p-6 text-white`}>
-                                                                <h3 className="text-xl font-bold mb-1">{service.title}</h3>
-                                                                <p className="text-white/80 text-sm">{service.desc}</p>
-                                                                <p className="text-3xl font-extrabold mt-3">{service.price}</p>
-                                                                <p className="text-white/70 text-sm">Sin entrada · Sin permanencia</p>
-                                                            </div>
-                                                            <ul className="p-6 space-y-3">
-                                                                {service.features.map((feat, i) => (
-                                                                    <li key={i} className="flex items-start gap-3">
-                                                                        <Icon name="check" className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                                                        <span className="text-gray-600 text-sm">{feat}</span>
-                                                                    </li>
-                                                                ))}
-                                                            </ul>
-                                                        </div>
-                                                    </ScrollReveal>
-                                                );
-                                            })}
-                                        </div>
-                                    </div>
-                                </section>
                                 <TestimonialsSection />
                                 <FAQSection />
                                 <CTASection setCurrentPage={setCurrentPage} />
