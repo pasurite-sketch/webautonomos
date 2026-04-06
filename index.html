@@ -4432,11 +4432,11 @@
             const { t, lang, setLang } = useLanguage();
             const [mobileOpen, setMobileOpen] = useState(false);
             const navItems = [
-                { key: 'servicios', page: 'home', scrollTo: 'servicios' },
-                { key: 'precios', page: 'home', scrollTo: 'precios' },
-                { key: 'comoFunciona', page: 'home', scrollTo: 'como-funciona' },
-                { key: 'marketing', page: 'home', scrollTo: 'marketing' },
-                { key: 'faq', page: 'home', scrollTo: 'faq' },
+                { key: 'servicios', page: 'home', scrollTo: 'servicios', url: '/servicios' },
+                { key: 'precios', page: 'home', scrollTo: 'precios', url: '/precios' },
+                { key: 'comoFunciona', page: 'home', scrollTo: 'como-funciona', url: '/como-funciona' },
+                { key: 'marketing', page: 'home', scrollTo: 'marketing', url: '/marketing' },
+                { key: 'faq', page: 'home', scrollTo: 'faq', url: '/preguntas' },
                 { key: 'blog', page: 'blog' },
                 { key: 'contacto', page: 'contact' }
             ];
@@ -4453,6 +4453,7 @@
                             {navItems.map(item => (
                                 <button key={item.key} onClick={() => {
                                         if (item.scrollTo) {
+                                            if (item.url) window.history.pushState({}, '', item.url);
                                             if (currentPage !== 'home') setCurrentPage('home');
                                             setTimeout(() => {
                                                 const el = document.getElementById(item.scrollTo);
@@ -4490,6 +4491,7 @@
                                 <button key={item.key} onClick={() => {
                                         setMobileOpen(false);
                                         if (item.scrollTo) {
+                                            if (item.url) window.history.pushState({}, '', item.url);
                                             if (currentPage !== 'home') setCurrentPage('home');
                                             setTimeout(() => {
                                                 const el = document.getElementById(item.scrollTo);
@@ -6617,13 +6619,25 @@
                 const slug = path.split('/blog/')[1];
                 if (slug) return `article-${slug}`;
             }
-            if (path === '/servicios' || path === '/services') return 'services';
-            if (path === '/precios' || path === '/pricing') return 'pricing';
-            if (path === '/como-funciona' || path === '/how') return 'how';
+            if (path === '/servicios' || path === '/services') return 'home';
+            if (path === '/precios' || path === '/pricing') return 'home';
+            if (path === '/como-funciona' || path === '/how') return 'home';
+            if (path === '/marketing') return 'home';
+            if (path === '/preguntas' || path === '/faq') return 'home';
             if (path === '/contacto' || path === '/contact') return 'contact';
             if (path === '/demo-electricista') return 'demo-electricista';
             if (path === '/demo-fontanero') return 'demo-fontanero';
             return 'home';
+        };
+        
+        const getScrollTargetFromUrl = () => {
+            const path = window.location.pathname;
+            if (path === '/servicios' || path === '/services') return 'servicios';
+            if (path === '/precios' || path === '/pricing') return 'precios';
+            if (path === '/como-funciona' || path === '/how') return 'como-funciona';
+            if (path === '/marketing') return 'marketing';
+            if (path === '/preguntas' || path === '/faq') return 'faq';
+            return null;
         };
 
         const getUrlFromPage = (page) => {
@@ -6643,6 +6657,19 @@
         function App() {
             const [lang, setLang] = useState('es');
             const [currentPage, setCurrentPageState] = useState(getPageFromUrl());
+            
+            React.useEffect(() => {
+                const target = getScrollTargetFromUrl();
+                if (target) {
+                    setTimeout(() => {
+                        const el = document.getElementById(target);
+                        if (el) {
+                            const y = el.getBoundingClientRect().top + window.scrollY - 100;
+                            window.scrollTo({ top: y, behavior: 'smooth' });
+                        }
+                    }, 500);
+                }
+            }, []);
             const [showLegalModal, setShowLegalModal] = useState(false);
             const [showPrivacyModal, setShowPrivacyModal] = useState(false);
             const [showCookiesModal, setShowCookiesModal] = useState(false);
