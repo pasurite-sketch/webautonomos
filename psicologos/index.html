@@ -439,31 +439,47 @@
     h2 { font-size:1.5rem; }
     .pill { font-size:0.78rem; padding:6px 12px; }
   }
-  /* DEMO IFRAME */
-  .demo-iframe-wrap {
-    position: relative;
+  /* DEMO PREVIEW */
+  .demo-preview-wrap {
     max-width: 1100px;
     margin: 0 auto;
+  }
+  .demo-preview-link {
+    display: block;
+    position: relative;
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 24px 64px rgba(15,32,96,0.18);
     border: 2px solid rgba(34,197,94,0.25);
-    height: 900px;
-    background: #f4fbf7;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
   }
-  .demo-iframe-wrap:hover {
+  .demo-preview-link:hover {
     transform: translateY(-4px);
-    box-shadow: 0 32px 80px rgba(15,32,96,0.22);
+    box-shadow: 0 32px 80px rgba(15,32,96,0.28);
+    border-color: rgba(34,197,94,0.5);
   }
-  .demo-iframe-wrap iframe {
+  .demo-preview-link img {
     width: 100%;
-    height: 100%;
-    border: none;
+    height: auto;
     display: block;
   }
-  @media (max-width: 768px) {
-    .demo-iframe-wrap { height: 600px; }
+  .demo-preview-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(15, 32, 96, 0.92);
+    color: white;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 11px 20px;
+    border-radius: 100px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 16px rgba(15,32,96,0.3);
+  }
+  @media (max-width: 640px) {
+    .demo-preview-badge { font-size: 0.82rem; padding: 8px 14px; bottom: 12px; right: 12px; }
   }
   /* REVEALS */
   .js-ok .rev {
@@ -633,7 +649,7 @@
   <div class="hero-c">
     <div class="badge"><span class="dot"></span> Psicólogos &amp; Terapeutas</div>
     <h1>Web Profesional Para Tu <span class="ul">Consulta de Psicología — Solo 15€/mes</span></h1>
-    <p class="hdesc">Demo personalizada en 24h, discreta y profesional. Sin alta, sin permanencia.</p>
+    <p class="hdesc">Una web que convierte visitas en nuevos pacientes. Demo personalizada en 24h, discreta y profesional. Sin alta, sin permanencia.</p>
     <div class="pills">
       <span class="pill">✓ Contacto confidencial</span>
       <span class="pill">✓ Especialidades destacadas</span>
@@ -694,8 +710,11 @@
   <p class="ey">Tu web profesional</p>
   <h2>Mira un ejemplo real para psicólogos</h2>
   <p class="sd">Así puede quedar tu web. Navega por la demo en directo.</p>
-  <div class="demo-iframe-wrap">
-    <iframe src="https://psicologos.webautonomos.es" title="Demo web profesional para consultas de psicología — WebAutonomos" loading="lazy" importance="low" fetchpriority="low" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"></iframe>
+  <div class="demo-preview-wrap">
+    <a href="https://psicologos.webautonomos.es" target="_blank" rel="noopener noreferrer" class="demo-preview-link">
+      <img src="/assets/og-demo-psico.jpg" alt="Demo web profesional para consultas de psicología — WebAutonomos" loading="lazy" width="1200" height="630">
+      <div class="demo-preview-badge">↗ Ver demo completa</div>
+    </a>
   </div>
   <p class="vnote" style="margin-top:14px;">¿Te gusta? La tuya estará lista en 24 horas · <a href="#pide-demo" style="color:var(--green-mid);text-decoration:underline;font-weight:700;">Pídela ahora ↓</a></p>
   <div style="text-align:center; margin-top:28px;">
