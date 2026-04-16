@@ -471,19 +471,20 @@
   .demo-preview-badge {
     position: absolute;
     bottom: 20px;
-    right: 20px;
-    background: rgba(15, 32, 96, 0.92);
-    color: white;
+    right: 96px;
+    background: var(--green-dark);
+    color: #fff;
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 700;
     font-size: 0.95rem;
     padding: 11px 20px;
     border-radius: 100px;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 4px 16px rgba(15,32,96,0.3);
+    box-shadow: 0 6px 20px rgba(15,122,58,0.45);
+    transition: filter 0.2s;
   }
+  .demo-preview-link:hover .demo-preview-badge { filter: brightness(1.12); }
   @media (max-width: 640px) {
-    .demo-preview-badge { font-size: 0.82rem; padding: 8px 14px; bottom: 12px; right: 12px; }
+    .demo-preview-badge { font-size: 0.82rem; padding: 8px 14px; bottom: 12px; right: 72px; }
   }
   /* REVEALS */
   .js-ok .rev {
