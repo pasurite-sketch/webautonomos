@@ -61,9 +61,9 @@
   }
   .logo-web { font-weight:800; color:#0f172a; }
   .logo-auto { font-weight:800; color:#2563eb; }
-  .logo-es { color:#4ade80; font-weight:700; }
+  .logo-es { color:var(--green-dark); font-weight:700; }
   .nav-back {
-    font-size:1rem; color:#6b7280;
+    font-size:1rem; color:#4b5563;
     text-decoration:none; transition:color 0.2s;
   }
   .nav-back:hover { color:var(--blue); }
@@ -392,7 +392,7 @@
     box-shadow:0 4px 12px rgba(15,32,96,0.15);
   }
   .ti strong { display:block; color:var(--text); font-weight:600; }
-  .ti span { color:#94a3b8; font-size:0.82rem; }
+  .ti span { color:#475569; font-size:0.82rem; }
   /* FOOTER */
   footer {
     padding:24px 6%; background:var(--grad);
@@ -472,19 +472,19 @@
     position: absolute;
     bottom: 88px;
     right: 96px;
-    background: #F97316;
+    background: #EA580C;
     color: #fff;
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 700;
     font-size: 1.125rem;
     padding: 11px 20px;
     border-radius: 100px;
-    box-shadow: 0 4px 12px rgba(249,115,22,0.4);
+    box-shadow: 0 4px 12px rgba(234,88,12,0.4);
     transition: background 0.2s, box-shadow 0.2s;
   }
   .demo-preview-link:hover .demo-preview-badge {
-    background: #EA580C;
-    box-shadow: 0 6px 16px rgba(234,88,12,0.5);
+    background: #C2410C;
+    box-shadow: 0 6px 16px rgba(194,65,12,0.5);
   }
   @media (max-width: 640px) {
     .demo-preview-badge { font-size: 1rem; padding: 8px 14px; bottom: 80px; right: 72px; }
@@ -660,6 +660,8 @@
   <a class="nav-back" href="https://webautonomos.es/">← Volver al inicio</a>
 </nav>
 
+<main>
+
 <!-- HERO -->
 <section class="hero">
   <div class="hero-c">
@@ -813,6 +815,8 @@
     <div class="ti"><div class="ti-i">💬</div><div><strong>Atención profesional</strong><span>Respuesta en el día</span></div></div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <a class="fl" href="/"><span>🌐</span> webautonomos.es</a>
