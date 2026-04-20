@@ -866,17 +866,23 @@
       body:JSON.stringify(d)
     }).then(function(res) {
       if(!res.ok) throw new Error('HTTP ' + res.status);
-      // GA4 conversion event
+      // GA4 conversion event — wait for beacon before redirect
+      var redirected = false;
+      function goGracias() {
+        if(!redirected) { redirected = true; window.location.href = '/gracias/'; }
+      }
       if(typeof gtag === 'function') {
         gtag('event', 'generate_lead', {
           event_category: 'formulario',
           event_label: d.sector || 'sin_sector',
           value: 15,
-          currency: 'EUR'
+          currency: 'EUR',
+          event_callback: goGracias
         });
+        setTimeout(goGracias, 2000);
+      } else {
+        goGracias();
       }
-      // Redirect to thank you page
-      setTimeout(function(){ window.location.href = '/gracias/'; }, 300);
     }).catch(function(err) {
       console.error('Error envío:', err);
       // Fallback: send via WhatsApp as backup
@@ -888,17 +894,23 @@
         'Servicios: '+d.servicios
       );
       window.open('https://wa.me/34654239520?text='+msg,'_blank');
-      // GA4 conversion event (also on fallback)
+      // GA4 conversion event (also on fallback) — wait for beacon
+      var redirected = false;
+      function goGracias() {
+        if(!redirected) { redirected = true; window.location.href = '/gracias/'; }
+      }
       if(typeof gtag === 'function') {
         gtag('event', 'generate_lead', {
           event_category: 'formulario_fallback',
           event_label: d.sector || 'sin_sector',
           value: 15,
-          currency: 'EUR'
+          currency: 'EUR',
+          event_callback: goGracias
         });
+        setTimeout(goGracias, 2000);
+      } else {
+        goGracias();
       }
-      // Redirect to thank you page anyway
-      setTimeout(function(){ window.location.href = '/gracias/'; }, 300);
     });
   }
 </script>
