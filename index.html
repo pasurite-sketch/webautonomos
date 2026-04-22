@@ -6369,31 +6369,23 @@
                                 {article.content && article.content.map((block, index) => {
                                     if (block.type === 'intro') {
                                         return (
-                                            <p key={index} className="text-xl text-gray-700 leading-relaxed mb-8 font-medium border-l-4 border-blue-500 pl-6">
-                                                {block.text}
-                                            </p>
+                                            <p key={index} className="text-xl text-gray-700 leading-relaxed mb-8 font-medium border-l-4 border-blue-500 pl-6" dangerouslySetInnerHTML={{__html: block.text}} />
                                         );
                                     }
                                     if (block.type === 'heading') {
                                         return (
-                                            <h2 key={index} id={`heading-${headingIndex++}`} className="article-heading text-2xl font-bold text-gray-800 mt-8 mb-4 scroll-mt-24">
-                                                {block.text}
-                                            </h2>
+                                            <h2 key={index} id={`heading-${headingIndex++}`} className="article-heading text-2xl font-bold text-gray-800 mt-8 mb-4 scroll-mt-24" dangerouslySetInnerHTML={{__html: block.text}} />
                                         );
                                     }
                                     if (block.type === 'paragraph') {
                                         return (
-                                            <p key={index} className="text-gray-700 leading-relaxed mb-4">
-                                                {block.text}
-                                            </p>
+                                            <p key={index} className="text-gray-700 leading-relaxed mb-4" dangerouslySetInnerHTML={{__html: block.text}} />
                                         );
                                     }
                                     if (block.type === 'conclusion') {
                                         return (
                                             <div key={index} className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-green-50 rounded-xl">
-                                                <p className="text-gray-800 leading-relaxed font-medium">
-                                                    {block.text}
-                                                </p>
+                                                <p className="text-gray-800 leading-relaxed font-medium" dangerouslySetInnerHTML={{__html: block.text}} />
                                             </div>
                                         );
                                     }
