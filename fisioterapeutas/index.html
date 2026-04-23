@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preload" as="image" href="/assets/og-demo-fisio.jpg">
+<link rel="preload" as="image" href="/assets/og-demo-fisio-480.webp" media="(max-width: 600px)" fetchpriority="high">
+<link rel="preload" as="image" href="/assets/og-demo-fisio.webp" media="(min-width: 601px)" fetchpriority="high">
 <title>Web Profesional Para Tu Clínica de Fisioterapia | WebAutonomos</title>
 <meta name="description" content="Web profesional a medida para clínicas de fisioterapia. Demo personalizada en 24h que muestra tus especialidades. Desde 15€/mes, sin alta ni permanencia.">
 <link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
@@ -729,9 +730,14 @@
   <h2>Mira un ejemplo real para fisioterapeutas</h2>
   <p class="sd">Así puede quedar tu web. Navega por la demo en directo.</p>
   <div class="demo-preview-wrap">
-    <a href="https://fisioterapeutas.webautonomos.es" target="_blank" rel="noopener noreferrer" class="demo-preview-link">
-      <img src="/assets/og-demo-fisio.jpg" alt="Demo web profesional para fisioterapeutas — WebAutonomos" loading="lazy" width="642" height="337">
-      <div class="demo-preview-badge">↗ Ver demo completa</div>
+    <a href="#pide-demo" class="demo-preview-link" onclick="typeof gtag==='function'&&gtag('event','click_demo_preview',{event_category:'engagement',event_label:'fisioterapeutas'})">
+      <picture>
+        <source media="(max-width: 600px)" type="image/webp" srcset="/assets/og-demo-fisio-480.webp">
+        <source type="image/webp" srcset="/assets/og-demo-fisio.webp">
+        <source media="(max-width: 600px)" srcset="/assets/og-demo-fisio-480.jpg">
+        <img src="/assets/og-demo-fisio.jpg" alt="Demo web profesional para fisioterapeutas — WebAutonomos" width="642" height="337" fetchpriority="high">
+      </picture>
+      <div class="demo-preview-badge">👇 Pedir esta web</div>
     </a>
   </div>
   <p class="vnote" style="margin-top:14px;">¿Te gusta? La tuya estará lista en 24 horas · <a href="#pide-demo" style="color:var(--green-mid);text-decoration:underline;font-weight:700;">Pídela ahora ↓</a></p>
