@@ -146,6 +146,13 @@
         <priority>0.7</priority>
     </url>
 
+        <url>
+        <loc>https://webautonomos.es/blog/es/backlinks-locales-como-conseguir</loc>
+        <lastmod>2026-04-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
     <!-- Demos -->
     <!-- ============================================ -->
     <url><loc>https://webautonomos.es/demo-electricista</loc><lastmod>2026-02-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
