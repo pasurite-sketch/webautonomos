@@ -1131,5 +1131,18 @@
   </div>
 </div>
 
+<script>
+document.querySelectorAll('a[href="#pide-demo"]').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    e.preventDefault();
+    var target = document.getElementById('pide-demo');
+    if(target) {
+      var offset = target.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+
 </body>
 </html>
