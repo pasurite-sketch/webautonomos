@@ -572,6 +572,196 @@
       "pillar": false,
       "status": "published_spa",
       "notes": "Article de clôture. Récapitulatif avec liens vers tous les silos."
+    },
+    {
+      "id": 29,
+      "week": 15,
+      "day": "lunes",
+      "publish_date": "2026-05-08",
+      "silo": "sectores",
+      "pillar": false,
+      "status": "draft",
+      "slug_es": "web-para-psicologos-terapeutas",
+      "title_es": "Páginas web para psicólogos y terapeutas: guía completa",
+      "keyword_es": "página web psicólogos",
+      "secondary_keywords_es": [
+        "web para terapeutas",
+        "web psicología online",
+        "marketing psicólogos"
+      ],
+      "meta_description_es": "Guía completa para psicólogos y terapeutas que quieren una web profesional. Secciones imprescindibles, diseño y cómo captar pacientes online.",
+      "notes": "Sector salud mental. Enlace a demo psicologos.webautonomos.es"
+    },
+    {
+      "id": 30,
+      "week": 15,
+      "day": "jueves",
+      "publish_date": "2026-05-11",
+      "silo": "marketing-digital",
+      "pillar": false,
+      "status": "draft",
+      "slug_es": "kit-digital-autonomos-2026-como-solicitarlo",
+      "title_es": "Kit Digital para autónomos en 2026: cómo solicitarlo paso a paso",
+      "keyword_es": "Kit Digital autónomos 2026",
+      "secondary_keywords_es": [
+        "bono Kit Digital",
+        "ayudas digitalización autónomos",
+        "subvención web autónomos"
+      ],
+      "meta_description_es": "Todo sobre el Kit Digital 2026: requisitos, cuantía, cómo solicitarlo y en qué puedes gastarlo. Guía actualizada para autónomos en España.",
+      "notes": "Muy buscado. Enlace a servicio WebAutonomos como agente digitalizador."
+    },
+    {
+      "id": 31,
+      "week": 16,
+      "day": "lunes",
+      "publish_date": "2026-05-14",
+      "silo": "presencia-web",
+      "pillar": false,
+      "status": "draft",
+      "slug_es": "como-elegir-dominio-web-negocio",
+      "title_es": "Cómo elegir el dominio perfecto para tu negocio",
+      "keyword_es": "elegir dominio web negocio",
+      "secondary_keywords_es": [
+        "nombre dominio empresa",
+        "dominio .es o .com",
+        "registrar dominio España"
+      ],
+      "meta_description_es": "Guía práctica para elegir el mejor dominio para tu negocio. Comparativa .es vs .com, errores comunes y consejos para autónomos.",
+      "notes": "Práctico. WebAutonomos incluye dominio .es en el servicio."
+    },
+    {
+      "id": 32,
+      "week": 16,
+      "day": "jueves",
+      "publish_date": "2026-05-18",
+      "silo": "marketing-digital",
+      "pillar": false,
+      "status": "draft",
+      "slug_es": "inteligencia-artificial-autonomos-herramientas",
+      "title_es": "IA para autónomos: 10 herramientas que ya puedes usar en tu negocio",
+      "keyword_es": "inteligencia artificial autónomos",
+      "secondary_keywords_es": [
+        "herramientas IA negocio",
+        "ChatGPT autónomos",
+        "IA marketing pymes"
+      ],
+      "meta_description_es": "10 herramientas de inteligencia artificial gratuitas o baratas que cualquier autónomo puede usar hoy. Sin conocimientos técnicos.",
+      "notes": "Tendencia 2026. Incluir ChatGPT, Canva IA, herramientas de facturación."
+    },
+    {
+      "id": 33,
+      "week": 17,
+      "day": "lunes",
+      "publish_date": "2026-05-21",
+      "silo": "marketing-digital",
+      "pillar": false,
+      "status": "draft",
+      "slug_es": "google-ads-autonomos-guia-basica",
+      "title_es": "Google Ads para autónomos: guía básica sin tirar dinero",
+      "keyword_es": "Google Ads autónomos",
+      "secondary_keywords_es": [
+        "publicidad Google autónomos",
+        "anuncios Google negocio local",
+        "SEM autónomos"
+      ],
+      "meta_description_es": "Aprende a usar Google Ads como autónomo sin malgastar. Presupuesto mínimo, palabras clave correctas y errores a evitar.",
+      "notes": "Complementa SEO orgánico. Enlace a servicio Google Ads de WebAutonomos."
+    },
+    {
+      "id": 34,
+      "week": 17,
+      "day": "jueves",
+      "publish_date": "2026-05-25",
+      "silo": "sectores",
+      "pillar": false,
+      "status": "draft",
+      "slug_es": "web-para-tatuadores-estudio-tattoo",
+      "title_es": "Páginas web para tatuadores y estudios de tattoo: lo que necesitas",
+      "keyword_es": "página web tatuadores",
+      "secondary_keywords_es": [
+        "web estudio tattoo",
+        "portfolio tatuajes online",
+        "marketing tatuadores"
+      ],
+      "meta_description_es": "Guía para tatuadores que quieren una web profesional. Portfolio, reservas online, Instagram y cómo atraer clientes premium.",
+      "notes": "Sector específico. Estética dark, portfolio visual, enlace reservas."
+    },
+    {
+      "id": 35,
+      "week": 18,
+      "day": "lunes",
+      "publish_date": "2026-05-28",
+      "silo": "presencia-web",
+      "pillar": false,
+      "status": "draft",
+      "slug_es": "medir-resultados-web-google-analytics",
+      "title_es": "Cómo saber si tu web funciona: métricas básicas para autónomos",
+      "keyword_es": "métricas web autónomos",
+      "secondary_keywords_es": [
+        "Google Analytics autónomos",
+        "medir resultados web",
+        "visitas web negocio"
+      ],
+      "meta_description_es": "Aprende a medir si tu web genera resultados reales. Las 5 métricas que todo autónomo debe vigilar, explicadas sin tecnicismos.",
+      "notes": "Práctico. GA4 básico, Search Console, conversiones."
+    },
+    {
+      "id": 36,
+      "week": 18,
+      "day": "jueves",
+      "publish_date": "2026-06-01",
+      "silo": "marketing-digital",
+      "pillar": false,
+      "status": "draft",
+      "slug_es": "facturacion-electronica-autonomos-obligatoria",
+      "title_es": "Facturación electrónica obligatoria para autónomos: lo que debes saber",
+      "keyword_es": "facturación electrónica autónomos",
+      "secondary_keywords_es": [
+        "factura electrónica obligatoria",
+        "Ley Crea y Crece autónomos",
+        "software facturación"
+      ],
+      "meta_description_es": "La facturación electrónica será obligatoria. Te explicamos plazos, requisitos, herramientas gratuitas y cómo prepararte.",
+      "notes": "Legal/administratif. Très recherché. Ley Crea y Crece."
+    },
+    {
+      "id": 37,
+      "week": 19,
+      "day": "lunes",
+      "publish_date": "2026-06-04",
+      "silo": "presencia-web",
+      "pillar": false,
+      "status": "draft",
+      "slug_es": "crear-contenido-web-sin-saber-escribir",
+      "title_es": "Cómo crear contenido para tu web sin saber escribir",
+      "keyword_es": "crear contenido web",
+      "secondary_keywords_es": [
+        "escribir textos web negocio",
+        "contenido web autónomos",
+        "qué poner en mi web"
+      ],
+      "meta_description_es": "No necesitas ser escritor para tener buena web. Te damos plantillas y trucos para escribir textos que vendan, aunque no te guste escribir.",
+      "notes": "Pain point real de los autónomos. Plantillas incluidas."
+    },
+    {
+      "id": 38,
+      "week": 19,
+      "day": "jueves",
+      "publish_date": "2026-06-08",
+      "silo": "sectores",
+      "pillar": false,
+      "status": "draft",
+      "slug_es": "web-para-podologos-clinica-pies",
+      "title_es": "Páginas web para podólogos y clínicas del pie",
+      "keyword_es": "página web podólogos",
+      "secondary_keywords_es": [
+        "web clínica podología",
+        "marketing podólogos",
+        "web profesional podología"
+      ],
+      "meta_description_es": "Guía para podólogos que quieren una web profesional. Secciones imprescindibles, SEO local y cómo captar pacientes online.",
+      "notes": "Nuevo vertical salud. Similar a dental/fisio."
     }
   ]
 }
