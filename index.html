@@ -1674,7 +1674,7 @@
                     wantThis: "¡Quiero una web así!",
                     demoNote: "Este es un ejemplo de sitio web que podemos crear para tu negocio en menos de 24 horas."
                 },
-                footer: { slogan: "Webs profesionales para autónomos", legal: "Aviso Legal", privacy: "Privacidad", cookies: "Cookies", rights: "Todos los derechos reservados" },
+                footer: { slogan: "Webs profesionales para autónomos", legal: "Aviso Legal", privacy: "Privacidad", cookies: "Cookies", rights: "Todos los derechos reservados", ivaNotice: "Todos los precios indicados son sin IVA (21%)." },
                 legalPage: {
                     title: "Aviso Legal",
                     lastUpdated: "Última actualización: Febrero 2026",
@@ -3388,7 +3388,7 @@
                     wantThis: "Vull una web així!",
                     demoNote: "Este és un exemple de lloc web que podem crear per al teu negoci en menys de 24 hores."
                 },
-                footer: { slogan: "Webs professionals per a autònoms", legal: "Avís Legal", privacy: "Privacitat", cookies: "Cookies", rights: "Tots els drets reservats" },
+                footer: { slogan: "Webs professionals per a autònoms", legal: "Avís Legal", privacy: "Privacitat", cookies: "Cookies", rights: "Tots els drets reservats", ivaNotice: "Tots els preus indicats són sense IVA (21%)." },
                 legalPage: {
                     title: "Avís Legal",
                     lastUpdated: "Última actualització: Febrer 2026",
@@ -5102,7 +5102,7 @@
                     wantThis: "I want a website like this!",
                     demoNote: "This is an example of a website we can create for your business in less than 48 hours."
                 },
-                footer: { slogan: "Professional websites for freelancers", legal: "Legal Notice", privacy: "Privacy", cookies: "Cookies", rights: "All rights reserved" },
+                footer: { slogan: "Professional websites for freelancers", legal: "Legal Notice", privacy: "Privacy", cookies: "Cookies", rights: "All rights reserved", ivaNotice: "All prices shown are excluding VAT (21%)." },
                 legalPage: {
                     title: "Legal Notice",
                     lastUpdated: "Last updated: February 2026",
@@ -7549,7 +7549,10 @@
                             <button onClick={onOpenPrivacy} className="hover:text-gray-800 transition">{t.footer.privacy}</button>
                             <button onClick={onOpenCookies} className="hover:text-gray-800 transition">{t.footer.cookies}</button>
                         </div>
-                        <div className="mt-8 pt-8 border-t border-gray-200 text-center text-sm">© 2026 webautonomos.es — {t.footer.rights}</div>
+                        <div className="mt-8 pt-8 border-t border-gray-200 text-center text-sm">
+                            <div>© 2026 webautonomos.es — {t.footer.rights}</div>
+                            <div className="mt-2 text-xs text-gray-500">{t.footer.ivaNotice}</div>
+                        </div>
                     </div>
                 </footer>
             );
