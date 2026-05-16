@@ -265,7 +265,12 @@
                     item7: "Google Maps integrado", item8: "Soporte por email", item9: "Calendario de citas online",
                     cta: "Quiero mi demo gratis",
                     guarantee: "Sin permanencia — Cancela cuando quieras",
-                    zeroRisk: "Si no te gusta, no pagas nada"
+                    zeroRisk: "Si no te gusta, no pagas nada",
+                    badge: "Más elegido",
+                    subTerms: "Sin alta · Sin permanencia",
+                    separator: "o si lo prefieres",
+                    oneShotPrice: "349", oneShotPeriod: "pago único",
+                    oneShotTerms: "Una sola cuota · Mismos servicios"
                 },
                 upsells: {
                     title: "Servicios adicionales",
@@ -1988,7 +1993,12 @@
                     item7: "Google Maps integrat", item8: "Suport per email", item9: "Calendari de cites online",
                     cta: "Vull la meua demo gratis",
                     guarantee: "Sense permanència — Cancel·la quan vulgues",
-                    zeroRisk: "Si no t'agrada, no pagues res"
+                    zeroRisk: "Si no t'agrada, no pagues res",
+                    badge: "Més triat",
+                    subTerms: "Sense alta · Sense permanència",
+                    separator: "o si ho preferixes",
+                    oneShotPrice: "349", oneShotPeriod: "pagament únic",
+                    oneShotTerms: "Una sola quota · Mateixos serveis"
                 },
                 upsells: {
                     title: "Serveis addicionals",
@@ -3702,7 +3712,12 @@
                     item7: "Google Maps integrated", item8: "Email support", item9: "Online appointment calendar",
                     cta: "I want my free demo",
                     guarantee: "No lock-in — Cancel anytime",
-                    zeroRisk: "If you don't like it, you don't pay"
+                    zeroRisk: "If you don't like it, you don't pay",
+                    badge: "Most popular",
+                    subTerms: "No setup fee · No commitment",
+                    separator: "or if you prefer",
+                    oneShotPrice: "349", oneShotPeriod: "one-time payment",
+                    oneShotTerms: "Single payment · Same services included"
                 },
                 upsells: {
                     title: "Additional services",
@@ -6176,13 +6191,31 @@
                             <div className="max-w-lg mx-auto mb-20">
                                 <div className="bg-gradient-to-br from-blue-600 to-green-500 rounded-3xl p-1">
                                     <div className="bg-white rounded-3xl p-8">
-                                        <div className="text-center mb-8">
-                                            <div className="flex items-end justify-center gap-1">
-                                                <span className="text-5xl md:text-6xl font-extrabold text-gray-800">{t.pricing.price}€</span>
-                                                <span className="text-2xl text-gray-500 mb-2">{t.pricing.period}</span>
+                                        <div className="mb-8">
+                                            {/* Abonnement — Más elegido */}
+                                            <div className="relative border-2 border-green-500 rounded-xl p-5 text-center bg-green-50/40 mt-3">
+                                                <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">{t.pricing.badge}</span>
+                                                <div className="flex items-end justify-center gap-1 mt-1">
+                                                    <span className="text-5xl md:text-6xl font-extrabold text-gray-800">{t.pricing.price}€</span>
+                                                    <span className="text-2xl text-gray-500 mb-2">{t.pricing.period}</span>
+                                                </div>
+                                                <p className="text-sm text-gray-600 mt-1">{t.pricing.subTerms}</p>
                                             </div>
-                                            <p className="text-green-600 font-medium mt-2">{t.pricing.guarantee}</p>
-                                            <p className="text-green-700 font-bold mt-1">{t.pricing.zeroRisk}</p>
+                                            {/* Séparateur */}
+                                            <div className="flex items-center gap-3 my-4">
+                                                <div className="flex-1 h-px bg-gray-200"></div>
+                                                <span className="text-sm text-gray-500 italic whitespace-nowrap">{t.pricing.separator}</span>
+                                                <div className="flex-1 h-px bg-gray-200"></div>
+                                            </div>
+                                            {/* Pago único — alternative */}
+                                            <div className="border border-gray-200 rounded-xl p-5 text-center">
+                                                <div className="flex items-end justify-center gap-1">
+                                                    <span className="text-4xl md:text-5xl font-extrabold text-gray-800">{t.pricing.oneShotPrice}€</span>
+                                                    <span className="text-lg text-gray-500 mb-1">{t.pricing.oneShotPeriod}</span>
+                                                </div>
+                                                <p className="text-sm text-gray-600 mt-1">{t.pricing.oneShotTerms}</p>
+                                            </div>
+                                            <p className="text-green-700 font-bold mt-5 text-center">{t.pricing.zeroRisk}</p>
                                         </div>
                                         <p className="font-semibold text-gray-800 mb-4">{t.pricing.includes}</p>
                                         <ul className="space-y-4 mb-8">
