@@ -1681,7 +1681,8 @@
                     title: "Contacto",
                     subtitle: "Escríbenos y te respondemos en menos de 24h",
                     name: "Nombre", email: "Email", phone: "Teléfono", business: "Tu negocio", message: "Mensaje",
-                    send: "Enviar mensaje", orCall: "O llámanos directamente", whatsapp: "WhatsApp"
+                    send: "Enviar mensaje", orCall: "O llámanos directamente", whatsapp: "WhatsApp",
+                    paymentPreference: "Preferencia de pago"
                 },
                 demo: {
                     backButton: "← Volver al inicio",
@@ -3428,7 +3429,8 @@
                     title: "Contacte",
                     subtitle: "Escriu-nos i et responem en menys de 24h",
                     name: "Nom", email: "Email", phone: "Telèfon", business: "El teu negoci", message: "Missatge",
-                    send: "Enviar missatge", orCall: "O crida'ns directament", whatsapp: "WhatsApp"
+                    send: "Enviar missatge", orCall: "O crida'ns directament", whatsapp: "WhatsApp",
+                    paymentPreference: "Preferència de pagament"
                 },
                 demo: {
                     backButton: "← Tornar a l'inici",
@@ -5175,7 +5177,8 @@
                     title: "Contact",
                     subtitle: "Write us and we'll respond in less than 24h",
                     name: "Name", email: "Email", phone: "Phone", business: "Your business", message: "Message",
-                    send: "Send message", orCall: "Or call us directly", whatsapp: "WhatsApp"
+                    send: "Send message", orCall: "Or call us directly", whatsapp: "WhatsApp",
+                    paymentPreference: "Payment preference"
                 },
                 demo: {
                     backButton: "← Back to home",
@@ -7323,7 +7326,7 @@
         // Contact
         const ContactPage = () => {
             const { t } = useLanguage();
-            const [formData, setFormData] = useState({ name: '', email: '', phone: '', business: '', message: '' });
+            const [formData, setFormData] = useState({ name: '', email: '', phone: '', business: '', message: '', payment_preference: 'mensual' });
             const [status, setStatus] = useState('idle');
             const handleChange = (e) => setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
             const handleSubmit = async (e) => {
@@ -7337,7 +7340,7 @@
                         body: data
                     });
                     const json = await res.json();
-                    if (json.success) { setStatus('success'); setFormData({ name: '', email: '', phone: '', business: '', message: '' }); e.target.reset(); }
+                    if (json.success) { setStatus('success'); setFormData({ name: '', email: '', phone: '', business: '', message: '', payment_preference: 'mensual' }); e.target.reset(); }
                     else { setStatus('error'); }
                 } catch (err) { setStatus('error'); }
             };
@@ -7377,6 +7380,21 @@
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-1">{t.contact.business}</label>
                                         <input type="text" name="business" id="field-business" value={formData.business} onChange={handleChange} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none" placeholder="Ej: Electricista, Fontanero..." />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-medium text-gray-700 mb-2">{t.contact.paymentPreference}</label>
+                                        <div className="grid grid-cols-2 gap-3">
+                                            <label className={`flex flex-col items-center justify-center p-4 border-2 rounded-xl cursor-pointer transition ${formData.payment_preference === 'mensual' ? 'border-green-500 bg-green-50' : 'border-gray-200 hover:border-gray-300'}`}>
+                                                <input type="radio" name="payment_preference" value="mensual" checked={formData.payment_preference === 'mensual'} onChange={handleChange} className="sr-only" />
+                                                <span className="text-2xl font-bold text-gray-800">15€/mes</span>
+                                                <span className="text-xs text-green-600 font-medium mt-1">{t.pricing.badge}</span>
+                                            </label>
+                                            <label className={`flex flex-col items-center justify-center p-4 border-2 rounded-xl cursor-pointer transition ${formData.payment_preference === 'unico' ? 'border-blue-500 bg-blue-50' : 'border-gray-200 hover:border-gray-300'}`}>
+                                                <input type="radio" name="payment_preference" value="unico" checked={formData.payment_preference === 'unico'} onChange={handleChange} className="sr-only" />
+                                                <span className="text-2xl font-bold text-gray-800">349€</span>
+                                                <span className="text-xs text-gray-600 mt-1">{t.pricing.oneShotPeriod}</span>
+                                            </label>
+                                        </div>
                                     </div>
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-1">{t.contact.message}</label>
