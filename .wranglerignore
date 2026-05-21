@@ -1,0 +1,15 @@
+# Audio et transcriptions
+*.m4a
+*.wav
+*.wav.srt
+*.wav.txt
+*.wav.vtt
+
+# Fichiers temporaires
+*.bak
+*.tmp
+.DS_Store
+
+# Documentation interne (à ne pas exposer publiquement)
+*.local.md
+*-INTERNE.md

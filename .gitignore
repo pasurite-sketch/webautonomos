@@ -4,3 +4,10 @@
 *.csv
 prospects_*.json
 resultat_scoring.txt
+
+# Audio et transcriptions personnelles (jamais en prod)
+*.m4a
+*.wav
+*.wav.srt
+*.wav.txt
+*.wav.vtt
