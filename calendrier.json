@@ -675,7 +675,7 @@
       "publish_date": "2026-05-28",
       "silo": "presencia-web",
       "pillar": false,
-      "status": "scheduled",
+      "status": "published_spa",
       "slug_es": "medir-resultados-web-google-analytics",
       "title_es": "Cómo saber si tu web funciona: métricas básicas para autónomos",
       "keyword_es": "métricas web autónomos",
@@ -685,7 +685,7 @@
         "visitas web negocio"
       ],
       "meta_description_es": "Aprende a medir si tu web genera resultados reales. Las 5 métricas que todo autónomo debe vigilar, explicadas sin tecnicismos.",
-      "notes": "Práctico. GA4 básico, Search Console, conversiones. [DÉPUBLIÉ 2026-06-05 - contenu placeholder à rédiger]"
+      "notes": "Práctico. GA4 básico, Search Console, conversiones. [REPUBLIÉ 2026-06-05 - contenu rédigé]"
     },
     {
       "id": 36,

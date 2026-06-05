@@ -207,4 +207,10 @@
     <!-- ============================================ -->
     <url><loc>https://webautonomos.es/demo-electricista</loc><lastmod>2026-02-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
     <url><loc>https://webautonomos.es/demo-fontanero</loc><lastmod>2026-02-07</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+          <url>
+              <loc>https://webautonomos.es/blog/es/medir-resultados-web-google-analytics</loc>
+              <lastmod>2026-05-28</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>0.7</priority>
+          </url>
 </urlset>
