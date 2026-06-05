@@ -713,7 +713,7 @@
       "publish_date": "2026-06-04",
       "silo": "presencia-web",
       "pillar": false,
-      "status": "scheduled",
+      "status": "published_spa",
       "slug_es": "crear-contenido-web-sin-saber-escribir",
       "title_es": "Cómo crear contenido para tu web sin saber escribir",
       "keyword_es": "crear contenido web",
@@ -723,7 +723,7 @@
         "qué poner en mi web"
       ],
       "meta_description_es": "No necesitas ser escritor para tener buena web. Te damos plantillas y trucos para escribir textos que vendan, aunque no te guste escribir.",
-      "notes": "Pain point real de los autónomos. Plantillas incluidas. [DÉPUBLIÉ 2026-06-05 - contenu placeholder à rédiger]"
+      "notes": "Pain point real de los autónomos. Plantillas incluidas. [REPUBLIÉ 2026-06-05 - contenu rédigé]"
     },
     {
       "id": 38,

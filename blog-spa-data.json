@@ -7300,148 +7300,317 @@
       "id": 37,
       "slug": "es/crear-contenido-web-sin-saber-escribir",
       "title": "Cómo crear contenido para tu web sin saber escribir",
-      "seoTitle": "Cómo crear contenido para tu web sin saber escribir | WebAutonomos",
-      "metaDescription": "No necesitas ser escritor para tener una buena web. La mayoría de autónomos bloquean el proyecto de su web porque no saben qué escribir. En esta guía te damos p",
+      "seoTitle": "Cómo crear contenido web sin saber escribir | WebAutonomos",
+      "metaDescription": "No sabes escribir? Te enseñamos una metodología práctica para crear contenido auténtico para tu web, aunque odies escribir.",
       "keywords": [
-        "crear contenido web sin saber escribir"
+        "crear contenido web autónomos",
+        "escribir web sin saber",
+        "contenido web fácil",
+        "redacción web autónomos"
       ],
-      "excerpt": "No necesitas ser escritor para tener una buena web. La mayoría de autónomos bloquean el proyecto de su web porque no sab",
+      "excerpt": "1 hora a la semana, dictado en voz alta, estructura simple. El método realista para tener contenido auténtico sin ser escritor.",
       "category": "web",
-      "date": "04 Jun 2026",
-      "readTime": 8,
+      "date": "4 Junio 2026",
+      "readTime": 7,
       "image": "✍️",
       "content": [
         {
           "type": "intro",
-          "text": "No necesitas ser escritor para tener una buena web. La mayoría de autónomos bloquean el proyecto de su web porque no saben qué escribir. En esta guía te damos plantillas y trucos para crear textos que vendan, aunque no te guste escribir."
+          "text": "Tienes una web pero las páginas siguen vacías porque te bloqueas cuando intentas escribir. Tranquilo: no necesitas ser escritor para tener una web que convierte. En esta guía te enseñamos una metodología práctica para crear contenido auténtico y eficaz, aunque odies escribir o no sepas por dónde empezar."
         },
         {
           "type": "heading",
-          "text": "Por qué el contenido de tu web importa más que el diseño"
+          "text": "Por qué la mayoría de autónomos no escriben"
         },
         {
           "type": "paragraph",
-          "text": "[Contenido detallado sobre por qué el contenido de tu web importa más que el diseño con datos específicos, ejemplos prácticos y referencias al mercado español de autónomos.]"
+          "text": "El 80% de los autónomos abandonan la idea de actualizar su web por miedo al folio en blanco. Y es comprensible: escribir consume tiempo y energía mental que no tienes después de un día de trabajo físico o técnico. Pero el problema no es tu falta de talento literario: es que estás intentando escribir como un profesional cuando deberías escribir como hablas. Una web sin contenido es una tarjeta de visita digital muerta. Y nadie contrata a un fantasma."
         },
         {
           "type": "heading",
-          "text": "La plantilla de la página de inicio perfecta"
+          "text": "El truco N°1: habla, no escribas"
         },
         {
           "type": "paragraph",
-          "text": "[Contenido detallado sobre la plantilla de la página de inicio perfecta con datos específicos, ejemplos prácticos y referencias al mercado español de autónomos.]"
+          "text": "La forma más rápida de crear contenido auténtico es dictarlo en voz alta. Usa la función de dictado del móvil (Whisper, Notas de iPhone, o Google Voz) y graba 5 minutos respondiendo preguntas tipo: qué hago, para quién, qué problema resuelvo. La transcripción tendrá faltas, pero el tono será 100% natural. Después corriges con calma. Este método produce contenido que conecta porque suena auténtico, no robotizado. Bonus: ahorra 70% del tiempo."
         },
         {
           "type": "heading",
-          "text": "Cómo describir tus servicios sin sonar aburrido"
+          "text": "Las 4 secciones imprescindibles que cualquier autónomo puede escribir"
         },
         {
           "type": "paragraph",
-          "text": "[Contenido detallado sobre cómo describir tus servicios sin sonar aburrido con datos específicos, ejemplos prácticos y referencias al mercado español de autónomos.]"
+          "text": "Una web de autónomo no necesita ser larga. Solo necesita 4 secciones bien hechas: Inicio con frase clara de qué haces y para quién; Servicios con descripciones breves y precios indicativos cuando sea posible; Sobre mí con tu historia, tu formación y tus valores en 3 párrafos; Contacto con formulario simple, teléfono, WhatsApp y dirección si aplica. Cualquier autónomo puede llenar estas 4 secciones en una tarde con el método del dictado."
         },
         {
           "type": "heading",
-          "text": "La sección Sobre mí: cómo generar confianza"
+          "text": "Plantilla universal: el método del antes/después"
         },
         {
           "type": "paragraph",
-          "text": "[Contenido detallado sobre la sección sobre mí: cómo generar confianza con datos específicos, ejemplos prácticos y referencias al mercado español de autónomos.]"
+          "text": "Para cada servicio que ofreces, usa esta estructura simple en 3 párrafos: describe el problema que tiene tu cliente (el antes); describe el resultado que obtendrá contigo (el después); explica brevemente cómo trabajas para conseguirlo (el cómo). Esta fórmula funciona porque habla del cliente, no de ti. Y eso es exactamente lo que el cliente quiere leer cuando aterriza en tu web."
         },
         {
           "type": "heading",
-          "text": "Textos que venden vs textos que informan"
+          "text": "Cómo usar la IA como ayudante sin que se note"
         },
         {
           "type": "paragraph",
-          "text": "[Contenido detallado sobre textos que venden vs textos que informan con datos específicos, ejemplos prácticos y referencias al mercado español de autónomos.]"
+          "text": "ChatGPT y similares son herramientas útiles si las usas bien. La regla de oro: nunca escribas tu contenido desde cero con IA. Escribe tú primero (con el método del dictado) y usa la IA solo para corregir ortografía y gramática, simplificar frases largas, generar variaciones de un mismo párrafo. Si pides a la IA que escriba todo, el resultado será genérico y se notará. Si la usas como corrector, mantienes tu voz auténtica con la calidad profesional."
         },
         {
           "type": "heading",
-          "text": "Usa ChatGPT como asistente de redacción"
+          "text": "El error que mata más webs: el texto genérico"
         },
         {
           "type": "paragraph",
-          "text": "[Contenido detallado sobre usa chatgpt como asistente de redacción con datos específicos, ejemplos prácticos y referencias al mercado español de autónomos.]"
+          "text": "La frase prohibida en cualquier web profesional: Somos una empresa comprometida con la calidad y la satisfacción del cliente. Esta frase no dice absolutamente nada y la usan miles de webs idénticas. En su lugar, sé específico: Soy fontanero en Elche con 12 años de experiencia, especializado en reparaciones de urgencia en menos de 2 horas. La especificidad genera confianza. Las generalidades generan desconfianza."
+        },
+        {
+          "type": "heading",
+          "text": "Plan de acción: 1 hora de contenido por semana"
+        },
+        {
+          "type": "paragraph",
+          "text": "No intentes escribir toda tu web en un fin de semana: te bloquearás. En su lugar, bloquea 1 hora a la semana (lunes por la mañana funciona bien para muchos) y dedica esa hora a: 30 minutos dictando contenido nuevo o mejorando uno existente, 20 minutos corrigiendo la transcripción, 10 minutos publicándolo en tu web. En 4 semanas tendrás una web completa. En 6 meses tendrás un blog con 24 artículos que te darán visibilidad SEO durante años."
         },
         {
           "type": "conclusion",
-          "text": "No necesitas ser copywriter. Con estas plantillas y la ayuda de herramientas como ChatGPT, puedes crear textos profesionales para tu web en una tarde. Y si prefieres no escribir nada, con WebAutonomos nos encargamos nosotros del contenido."
+          "text": "Crear contenido para tu web no requiere ser escritor. Requiere constancia, método y un teléfono con dictado. 1 hora a la semana, estructura simple, voz auténtica. Si aun así te bloqueas o no quieres perder tiempo, en WebAutonomos te ayudamos a crear el contenido inicial de tu web profesional sin coste adicional. Lo importante es que tu negocio tenga presencia online."
         }
       ],
       "faq": [
         {
-          "q": "¿Puedo copiar textos de webs de la competencia?",
-          "a": "No. Además de ser ilegal, Google penaliza el contenido duplicado. Tus textos deben ser originales."
+          "q": "¿Cuánto contenido necesita realmente una web de autónomo?",
+          "a": "Mucho menos del que crees. 4 páginas bien hechas (Inicio, Servicios, Sobre mí, Contacto) son suficientes para una web profesional eficaz."
         },
         {
-          "q": "¿Cuánto texto necesita mi web?",
-          "a": "Para una web básica de autónomo: inicio (200-300 palabras), servicios (150-200 por servicio), sobre mí (200-300 palabras) y contacto (50-100 palabras)."
+          "q": "¿Puedo usar ChatGPT para escribir todo mi contenido?",
+          "a": "No es recomendable. Usa la IA como corrector y asistente, no como redactor. El contenido generado al 100% por IA suena genérico y reduce la confianza."
         },
         {
-          "q": "¿WebAutonomos escribe los textos por mí?",
-          "a": "Sí. Creamos el contenido personalizado para tu web como parte del servicio. Solo necesitamos que nos cuentes tu negocio."
+          "q": "¿Necesito un blog?",
+          "a": "No es obligatorio, pero ayuda al SEO a largo plazo. Si lo tienes, mejor 1 artículo al mes con calidad que 10 artículos genéricos."
+        },
+        {
+          "q": "¿Qué hago si simplemente no me gusta escribir?",
+          "a": "Dicta. Es la solución más eficaz. Y si aun así no avanzas, deléguelo: en WebAutonomos podemos crear el contenido inicial de tu web sin coste adicional."
+        },
+        {
+          "q": "¿Es mejor escribir mucho o poco?",
+          "a": "Mejor poco y específico que mucho y genérico. Un cliente prefiere 200 palabras claras a 2.000 palabras de relleno."
         }
       ]
     },
     "val": {
       "id": 37,
-      "slug": "es/crear-contenido-web-sin-saber-escribir",
+      "slug": "val/crear-contenido-web-sin-saber-escribir",
       "title": "Com crear contingut per a la teua web sense saber escriure",
-      "seoTitle": "Com crear contingut per a la teua web sense saber escriure | WebAutonomos",
-      "metaDescription": "No necesitas ser escritor para tener una buena web. La mayoría de autónomos bloq",
+      "seoTitle": "Com crear contingut web sense saber escriure | WebAutonomos",
+      "metaDescription": "No saps escriure? T'ensenyem una metodologia pràctica per a crear contingut autèntic per a la teua web.",
       "keywords": [
-        "crear contenido web sin saber escribir"
+        "crear contingut web autònoms",
+        "escriure web sense saber",
+        "contingut web fàcil",
+        "redacció web"
       ],
-      "excerpt": "No necesitas ser escritor para tener una buena web. La mayoría de autónomos bloq",
+      "excerpt": "1 hora a la setmana, dictat en veu alta, estructura simple. El mètode realista per a tindre contingut autèntic.",
       "category": "web",
-      "date": "04 Jun 2026",
-      "readTime": 8,
+      "date": "4 Juny 2026",
+      "readTime": 7,
       "image": "✍️",
       "content": [
         {
           "type": "intro",
-          "text": "[Versió valenciana]"
+          "text": "Tens una web però les pàgines segueixen buides perquè et bloqueges quan intentes escriure. Tranquil: no necessites ser escriptor per a tindre una web que converteix. Esta guia explica una metodologia pràctica per a crear contingut autèntic."
+        },
+        {
+          "type": "heading",
+          "text": "Per què la majoria d'autònoms no escriuen"
+        },
+        {
+          "type": "paragraph",
+          "text": "El 80% dels autònoms abandonen la idea d'actualitzar la web per por al foli en blanc. El problema no és el teu talent literari: és que intentes escriure com un professional quan hauries d'escriure com parles."
+        },
+        {
+          "type": "heading",
+          "text": "El truc N°1: parla, no escrigues"
+        },
+        {
+          "type": "paragraph",
+          "text": "La forma més ràpida de crear contingut autèntic és dictar-lo en veu alta. Usa el dictat del mòbil (Whisper, Notes d'iPhone, Google Veu) i grava 5 minuts responent: què faig, per a qui, quin problema resolc. Després corregeixes amb calma."
+        },
+        {
+          "type": "heading",
+          "text": "Les 4 seccions imprescindibles"
+        },
+        {
+          "type": "paragraph",
+          "text": "Una web d'autònom només necessita 4 seccions ben fetes: Inici amb frase clara; Serveis amb descripcions breus; Sobre mi amb la teua història en 3 paràgrafs; Contacte amb formulari simple, telèfon i WhatsApp."
+        },
+        {
+          "type": "heading",
+          "text": "Plantilla universal: el mètode abans/després"
+        },
+        {
+          "type": "paragraph",
+          "text": "Per a cada servei usa esta estructura en 3 paràgrafs: descriu el problema del client (abans); descriu el resultat (després); explica com treballes (el com). Funciona perquè parla del client, no de tu."
+        },
+        {
+          "type": "heading",
+          "text": "Com usar la IA com a ajudant"
+        },
+        {
+          "type": "paragraph",
+          "text": "Regla d'or: mai escrigues amb IA des de zero. Escriu tu primer amb el dictat i usa la IA per a corregir ortografia, simplificar frases, generar variacions. Així mantens la teua veu autèntica."
+        },
+        {
+          "type": "heading",
+          "text": "L'error que mata més webs: el text genèric"
+        },
+        {
+          "type": "paragraph",
+          "text": "Frase prohibida: Som una empresa compromesa amb la qualitat. No diu res i la usen milers de webs. En lloc d'això, sigues específic: Soc fontaner a Elx amb 12 anys d'experiència, especialitzat en reparacions urgents."
+        },
+        {
+          "type": "heading",
+          "text": "Pla d'acció: 1 hora de contingut per setmana"
+        },
+        {
+          "type": "paragraph",
+          "text": "Bloqueja 1 hora setmanal: 30 minuts dictant, 20 minuts corregint, 10 minuts publicant. En 4 setmanes tindràs una web completa. En 6 mesos tindràs un blog amb 24 articles que et donaran visibilitat SEO durant anys."
         },
         {
           "type": "conclusion",
-          "text": "[Conclusió valenciana]"
+          "text": "Crear contingut no requereix ser escriptor. Requereix constància, mètode i un telèfon amb dictat. 1 hora a la setmana, estructura simple, veu autèntica. Si no avances, a WebAutonomos t'ajudem a crear el contingut inicial sense cost addicional."
         }
       ],
       "faq": [
         {
-          "q": "Pregunta?",
-          "a": "Resposta."
+          "q": "Quant contingut necessita una web d'autònom?",
+          "a": "Molt menys del que creus. 4 pàgines ben fetes (Inici, Serveis, Sobre mi, Contacte) són suficients per a una web professional eficaç."
+        },
+        {
+          "q": "Puc usar ChatGPT per a tot el contingut?",
+          "a": "No és recomanable. Usa la IA com a corrector, no com a redactor. El contingut 100% IA sona genèric."
+        },
+        {
+          "q": "Necessite un blog?",
+          "a": "No és obligatori, però ajuda al SEO a llarg termini. Millor 1 article al mes amb qualitat que 10 articles genèrics."
+        },
+        {
+          "q": "I si no m'agrada escriure?",
+          "a": "Dicta. És la solució més eficaç. I si no avances, delega-ho: WebAutonomos pot crear el contingut inicial sense cost addicional."
+        },
+        {
+          "q": "Millor escriure molt o poc?",
+          "a": "Millor poc i específic que molt i genèric. Un client prefereix 200 paraules clares a 2.000 paraules de farciment."
         }
       ]
     },
     "en": {
       "id": 37,
-      "slug": "es/crear-contenido-web-sin-saber-escribir",
-      "title": "How to create content for your website without knowing how to write",
-      "seoTitle": "How to create content for your website without knowing how to write | WebAutonomos",
-      "metaDescription": "No necesitas ser escritor para tener una buena web. La mayoría de autónomos bloq",
+      "slug": "en/crear-contenido-web-sin-saber-escribir",
+      "title": "How to create website content when you don't know how to write",
+      "seoTitle": "Create web content without writing skills | WebAutonomos",
+      "metaDescription": "Don't know how to write? Practical methodology to create authentic web content, even if you hate writing.",
       "keywords": [
-        "crear contenido web sin saber escribir"
+        "create web content freelancer",
+        "writing website no skills",
+        "easy web content",
+        "freelancer web copywriting"
       ],
-      "excerpt": "No necesitas ser escritor para tener una buena web. La mayoría de autónomos bloq",
+      "excerpt": "1 hour per week, voice dictation, simple structure. The realistic method for authentic content without being a writer.",
       "category": "web",
-      "date": "04 Jun 2026",
-      "readTime": 8,
+      "date": "4 June 2026",
+      "readTime": 7,
       "image": "✍️",
       "content": [
         {
           "type": "intro",
-          "text": "[English version]"
+          "text": "Your website pages stay empty because you freeze when trying to write. Don't worry: you don't need to be a writer to have a converting website. This guide teaches a practical methodology to create authentic content, even if you hate writing."
+        },
+        {
+          "type": "heading",
+          "text": "Why most freelancers don't write"
+        },
+        {
+          "type": "paragraph",
+          "text": "80% of freelancers give up updating their website due to blank-page fear. The problem isn't your literary talent: you're trying to write like a pro when you should write like you talk. An empty website is a dead digital business card. Nobody hires a ghost."
+        },
+        {
+          "type": "heading",
+          "text": "Trick #1: speak, don't write"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fastest way to create authentic content is to dictate it. Use phone dictation (Whisper, iPhone Notes, Google Voice) and record 5 minutes answering: what do I do, for whom, what problem do I solve. Then correct calmly. This saves 70% of time."
+        },
+        {
+          "type": "heading",
+          "text": "The 4 essential sections any freelancer can write"
+        },
+        {
+          "type": "paragraph",
+          "text": "A freelancer website doesn't need to be long. Only 4 well-done sections: Home with clear statement; Services with brief descriptions and indicative pricing; About me with your story in 3 paragraphs; Contact with simple form, phone, WhatsApp. Any freelancer can fill these in an afternoon."
+        },
+        {
+          "type": "heading",
+          "text": "Universal template: the before/after method"
+        },
+        {
+          "type": "paragraph",
+          "text": "For each service, use this 3-paragraph structure: describe the client's problem (before); describe the result they'll get (after); explain how you work (the how). Works because it speaks about the client, not you."
+        },
+        {
+          "type": "heading",
+          "text": "How to use AI as an assistant without it showing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Golden rule: never write content from scratch with AI. Write yourself first (via dictation) and use AI only to correct spelling, simplify long sentences, generate paragraph variations. AI-generated 100% content sounds generic."
+        },
+        {
+          "type": "heading",
+          "text": "The error that kills most websites: generic text"
+        },
+        {
+          "type": "paragraph",
+          "text": "Forbidden phrase: We are a company committed to quality and customer satisfaction. Says nothing and is used by thousands of identical websites. Instead be specific: I'm a plumber in Elche with 12 years of experience, specialized in 2-hour emergency repairs."
+        },
+        {
+          "type": "heading",
+          "text": "Action plan: 1 hour of content per week"
+        },
+        {
+          "type": "paragraph",
+          "text": "Don't try to write your whole website in a weekend. Block 1 hour per week: 30 minutes dictating, 20 minutes correcting, 10 minutes publishing. In 4 weeks you'll have a complete website. In 6 months you'll have a blog with 24 articles for years of SEO visibility."
         },
         {
           "type": "conclusion",
-          "text": "[English conclusion]"
+          "text": "Creating web content doesn't require being a writer. It requires consistency, method, and a phone with dictation. 1 hour per week, simple structure, authentic voice. If you still get stuck, WebAutonomos can create your initial content at no extra cost."
         }
       ],
       "faq": [
         {
-          "q": "Question?",
-          "a": "Answer."
+          "q": "How much content does a freelancer website really need?",
+          "a": "Much less than you think. 4 well-done pages (Home, Services, About, Contact) are enough for an effective professional website."
+        },
+        {
+          "q": "Can I use ChatGPT to write all my content?",
+          "a": "Not recommended. Use AI as corrector and assistant, not as writer. 100% AI-generated content sounds generic and reduces trust."
+        },
+        {
+          "q": "Do I need a blog?",
+          "a": "Not mandatory, but helps long-term SEO. Better 1 quality article per month than 10 generic ones."
+        },
+        {
+          "q": "What if I simply don't like writing?",
+          "a": "Dictate. Most effective solution. And if you still don't progress, delegate it: WebAutonomos can create your initial content at no extra cost."
+        },
+        {
+          "q": "Better to write a lot or a little?",
+          "a": "Better short and specific than long and generic. A client prefers 200 clear words to 2,000 words of fluff."
         }
       ]
     }
