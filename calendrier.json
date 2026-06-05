@@ -732,7 +732,7 @@
       "publish_date": "2026-06-08",
       "silo": "sectores",
       "pillar": false,
-      "status": "scheduled",
+      "status": "published_spa",
       "slug_es": "web-para-podologos-clinica-pies",
       "title_es": "Páginas web para podólogos y clínicas del pie",
       "keyword_es": "página web podólogos",
@@ -742,7 +742,7 @@
         "web profesional podología"
       ],
       "meta_description_es": "Guía para podólogos que quieren una web profesional. Secciones imprescindibles, SEO local y cómo captar pacientes online.",
-      "notes": "Nuevo vertical salud. Similar a dental/fisio. [DÉPUBLIÉ 2026-06-05 - contenu placeholder à rédiger]"
+      "notes": "Nuevo vertical salud. Similar a dental/fisio. [REPUBLIÉ 2026-06-05 - contenu rédigé]"
     }
   ]
 }
