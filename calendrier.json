@@ -675,7 +675,7 @@
       "publish_date": "2026-05-28",
       "silo": "presencia-web",
       "pillar": false,
-      "status": "published_spa",
+      "status": "scheduled",
       "slug_es": "medir-resultados-web-google-analytics",
       "title_es": "Cómo saber si tu web funciona: métricas básicas para autónomos",
       "keyword_es": "métricas web autónomos",
@@ -685,7 +685,7 @@
         "visitas web negocio"
       ],
       "meta_description_es": "Aprende a medir si tu web genera resultados reales. Las 5 métricas que todo autónomo debe vigilar, explicadas sin tecnicismos.",
-      "notes": "Práctico. GA4 básico, Search Console, conversiones."
+      "notes": "Práctico. GA4 básico, Search Console, conversiones. [DÉPUBLIÉ 2026-06-05 - contenu placeholder à rédiger]"
     },
     {
       "id": 36,
@@ -694,7 +694,7 @@
       "publish_date": "2026-06-01",
       "silo": "marketing-digital",
       "pillar": false,
-      "status": "published_spa",
+      "status": "scheduled",
       "slug_es": "facturacion-electronica-autonomos-obligatoria",
       "title_es": "Facturación electrónica obligatoria para autónomos: lo que debes saber",
       "keyword_es": "facturación electrónica autónomos",
@@ -704,7 +704,7 @@
         "software facturación"
       ],
       "meta_description_es": "La facturación electrónica será obligatoria. Te explicamos plazos, requisitos, herramientas gratuitas y cómo prepararte.",
-      "notes": "Legal/administratif. Très recherché. Ley Crea y Crece."
+      "notes": "Legal/administratif. Très recherché. Ley Crea y Crece. [DÉPUBLIÉ 2026-06-05 - contenu placeholder à rédiger]"
     },
     {
       "id": 37,
@@ -713,7 +713,7 @@
       "publish_date": "2026-06-04",
       "silo": "presencia-web",
       "pillar": false,
-      "status": "published_spa",
+      "status": "scheduled",
       "slug_es": "crear-contenido-web-sin-saber-escribir",
       "title_es": "Cómo crear contenido para tu web sin saber escribir",
       "keyword_es": "crear contenido web",
@@ -723,7 +723,7 @@
         "qué poner en mi web"
       ],
       "meta_description_es": "No necesitas ser escritor para tener buena web. Te damos plantillas y trucos para escribir textos que vendan, aunque no te guste escribir.",
-      "notes": "Pain point real de los autónomos. Plantillas incluidas."
+      "notes": "Pain point real de los autónomos. Plantillas incluidas. [DÉPUBLIÉ 2026-06-05 - contenu placeholder à rédiger]"
     },
     {
       "id": 38,
@@ -732,7 +732,7 @@
       "publish_date": "2026-06-08",
       "silo": "sectores",
       "pillar": false,
-      "status": "published",
+      "status": "scheduled",
       "slug_es": "web-para-podologos-clinica-pies",
       "title_es": "Páginas web para podólogos y clínicas del pie",
       "keyword_es": "página web podólogos",
@@ -742,7 +742,7 @@
         "web profesional podología"
       ],
       "meta_description_es": "Guía para podólogos que quieren una web profesional. Secciones imprescindibles, SEO local y cómo captar pacientes online.",
-      "notes": "Nuevo vertical salud. Similar a dental/fisio."
+      "notes": "Nuevo vertical salud. Similar a dental/fisio. [DÉPUBLIÉ 2026-06-05 - contenu placeholder à rédiger]"
     }
   ]
 }
