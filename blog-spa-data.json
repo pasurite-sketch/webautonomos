@@ -7301,22 +7301,22 @@
       "slug": "es/crear-contenido-web-sin-saber-escribir",
       "title": "Cómo crear contenido para tu web sin saber escribir",
       "seoTitle": "Cómo crear contenido web sin saber escribir | WebAutonomos",
-      "metaDescription": "No sabes escribir? Te enseñamos una metodología práctica para crear contenido auténtico para tu web, aunque odies escribir.",
+      "metaDescription": "No sabes escribir? Te enseñamos una metodología práctica para crear contenido auténtico, o delégalo con nuestro servicio SEO Local desde 15€/mes.",
       "keywords": [
         "crear contenido web autónomos",
         "escribir web sin saber",
         "contenido web fácil",
-        "redacción web autónomos"
+        "SEO local autónomos"
       ],
-      "excerpt": "1 hora a la semana, dictado en voz alta, estructura simple. El método realista para tener contenido auténtico sin ser escritor.",
+      "excerpt": "1 hora a la semana, dictado en voz alta, estructura simple. Y si no tienes tiempo, delégalo con nuestro servicio SEO Local desde 15€/mes.",
       "category": "web",
       "date": "4 Junio 2026",
-      "readTime": 7,
+      "readTime": 8,
       "image": "✍️",
       "content": [
         {
           "type": "intro",
-          "text": "Tienes una web pero las páginas siguen vacías porque te bloqueas cuando intentas escribir. Tranquilo: no necesitas ser escritor para tener una web que convierte. En esta guía te enseñamos una metodología práctica para crear contenido auténtico y eficaz, aunque odies escribir o no sepas por dónde empezar."
+          "text": "Tienes una web pero las páginas siguen vacías porque te bloqueas cuando intentas escribir. Tranquilo: no necesitas ser escritor para tener una web que convierte. En esta guía te enseñamos una metodología práctica para crear contenido auténtico y eficaz, aunque odies escribir o no sepas por dónde empezar. Y si no tienes tiempo, te explicamos también cómo delegarlo a nuestro servicio SEO Local."
         },
         {
           "type": "heading",
@@ -7375,8 +7375,16 @@
           "text": "No intentes escribir toda tu web en un fin de semana: te bloquearás. En su lugar, bloquea 1 hora a la semana (lunes por la mañana funciona bien para muchos) y dedica esa hora a: 30 minutos dictando contenido nuevo o mejorando uno existente, 20 minutos corrigiendo la transcripción, 10 minutos publicándolo en tu web. En 4 semanas tendrás una web completa. En 6 meses tendrás un blog con 24 artículos que te darán visibilidad SEO durante años."
         },
         {
+          "type": "heading",
+          "text": "Si no tienes tiempo: el servicio SEO Local de WebAutonomos"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sabemos que algunos autónomos prefieren delegar la creación de contenido para centrarse en su negocio. Para eso ofrecemos nuestro servicio SEO Local por 15 euros al mes, sin alta sin permanencia. Incluye: 4 artículos de blog al mes optimizados para tu sector y zona; optimización de palabras clave locales (por ejemplo 'fontanero Elche urgencias'); meta títulos y descripciones SEO optimizados para Google; estructura de URLs amigable que mejora la indexación; velocidad de carga optimizada (clave para el ranking móvil); schema markup para negocios locales que ayuda a aparecer en el pack local; e informe mensual de posicionamiento para que veas tu progreso. Todo por el mismo precio que tu web."
+        },
+        {
           "type": "conclusion",
-          "text": "Crear contenido para tu web no requiere ser escritor. Requiere constancia, método y un teléfono con dictado. 1 hora a la semana, estructura simple, voz auténtica. Si aun así te bloqueas o no quieres perder tiempo, en WebAutonomos te ayudamos a crear el contenido inicial de tu web profesional sin coste adicional. Lo importante es que tu negocio tenga presencia online."
+          "text": "Crear contenido para tu web no requiere ser escritor. Requiere constancia, método y un teléfono con dictado. 1 hora a la semana, estructura simple, voz auténtica. Y si prefieres delegarlo, nuestro servicio SEO Local te entrega 4 artículos al mes optimizados para tu sector por 15 euros al mes, sin alta sin permanencia. Lo importante es que tu negocio tenga presencia online y aparezca en Google cuando tus clientes te buscan."
         }
       ],
       "faq": [
@@ -7390,15 +7398,19 @@
         },
         {
           "q": "¿Necesito un blog?",
-          "a": "No es obligatorio, pero ayuda al SEO a largo plazo. Si lo tienes, mejor 1 artículo al mes con calidad que 10 artículos genéricos."
+          "a": "No es obligatorio, pero ayuda al SEO a largo plazo. Si lo tienes, mejor 1 artículo al mes con calidad que 10 artículos genéricos. Y si quieres ir más rápido, nuestro servicio SEO Local te entrega 4 artículos al mes optimizados por 15 euros al mes."
         },
         {
           "q": "¿Qué hago si simplemente no me gusta escribir?",
-          "a": "Dicta. Es la solución más eficaz. Y si aun así no avanzas, deléguelo: en WebAutonomos podemos crear el contenido inicial de tu web sin coste adicional."
+          "a": "Dicta. Es la solución más eficaz si quieres hacerlo tú mismo. Si prefieres delegarlo completamente, nuestro servicio SEO Local de WebAutonomos crea por ti 4 artículos al mes optimizados para tu sector y zona, por 15 euros al mes sin alta sin permanencia."
         },
         {
           "q": "¿Es mejor escribir mucho o poco?",
           "a": "Mejor poco y específico que mucho y genérico. Un cliente prefiere 200 palabras claras a 2.000 palabras de relleno."
+        },
+        {
+          "q": "¿Qué incluye exactamente el servicio SEO Local de WebAutonomos?",
+          "a": "Por 15 euros al mes sin alta sin permanencia, incluye 4 artículos de blog al mes optimizados, optimización de palabras clave locales, meta títulos y descripciones SEO, estructura de URLs amigable, velocidad de carga optimizada, schema markup para negocios locales e informe mensual de posicionamiento."
         }
       ]
     },
@@ -7407,22 +7419,22 @@
       "slug": "val/crear-contenido-web-sin-saber-escribir",
       "title": "Com crear contingut per a la teua web sense saber escriure",
       "seoTitle": "Com crear contingut web sense saber escriure | WebAutonomos",
-      "metaDescription": "No saps escriure? T'ensenyem una metodologia pràctica per a crear contingut autèntic per a la teua web.",
+      "metaDescription": "No saps escriure? T'ensenyem una metodologia pràctica, o delega-ho amb el nostre servei SEO Local des de 15€/mes.",
       "keywords": [
         "crear contingut web autònoms",
         "escriure web sense saber",
         "contingut web fàcil",
-        "redacció web"
+        "SEO local autònoms"
       ],
-      "excerpt": "1 hora a la setmana, dictat en veu alta, estructura simple. El mètode realista per a tindre contingut autèntic.",
+      "excerpt": "1 hora a la setmana, dictat en veu alta, estructura simple. I si no tens temps, delega-ho amb el nostre servei SEO Local des de 15€/mes.",
       "category": "web",
       "date": "4 Juny 2026",
-      "readTime": 7,
+      "readTime": 8,
       "image": "✍️",
       "content": [
         {
           "type": "intro",
-          "text": "Tens una web però les pàgines segueixen buides perquè et bloqueges quan intentes escriure. Tranquil: no necessites ser escriptor per a tindre una web que converteix. Esta guia explica una metodologia pràctica per a crear contingut autèntic."
+          "text": "Tens una web però les pàgines segueixen buides perquè et bloqueges quan intentes escriure. Tranquil: no necessites ser escriptor per a tindre una web que converteix. Esta guia explica una metodologia pràctica per a crear contingut autèntic, o com delegar-ho al nostre servei SEO Local."
         },
         {
           "type": "heading",
@@ -7481,8 +7493,16 @@
           "text": "Bloqueja 1 hora setmanal: 30 minuts dictant, 20 minuts corregint, 10 minuts publicant. En 4 setmanes tindràs una web completa. En 6 mesos tindràs un blog amb 24 articles que et donaran visibilitat SEO durant anys."
         },
         {
+          "type": "heading",
+          "text": "Si no tens temps: el servei SEO Local de WebAutonomos"
+        },
+        {
+          "type": "paragraph",
+          "text": "Alguns autònoms prefereixen delegar la creació de contingut per a centrar-se en el seu negoci. Per això oferim el nostre servei SEO Local per 15 euros al mes, sense alta sense permanència. Inclou: 4 articles de blog al mes optimitzats per al teu sector i zona; optimització de paraules clau locals; meta títols i descripcions SEO; estructura d'URLs amigable; velocitat de càrrega optimitzada; schema markup per a negocis locals; i informe mensual de posicionament."
+        },
+        {
           "type": "conclusion",
-          "text": "Crear contingut no requereix ser escriptor. Requereix constància, mètode i un telèfon amb dictat. 1 hora a la setmana, estructura simple, veu autèntica. Si no avances, a WebAutonomos t'ajudem a crear el contingut inicial sense cost addicional."
+          "text": "Crear contingut no requereix ser escriptor. Requereix constància, mètode i un telèfon amb dictat. I si prefereixes delegar-ho, el nostre servei SEO Local et lliura 4 articles al mes optimitzats per al teu sector per 15 euros al mes, sense alta sense permanència."
         }
       ],
       "faq": [
@@ -7496,15 +7516,19 @@
         },
         {
           "q": "Necessite un blog?",
-          "a": "No és obligatori, però ajuda al SEO a llarg termini. Millor 1 article al mes amb qualitat que 10 articles genèrics."
+          "a": "No és obligatori, però ajuda al SEO a llarg termini. I si vols anar més ràpid, el nostre servei SEO Local et lliura 4 articles al mes optimitzats per 15 euros al mes."
         },
         {
           "q": "I si no m'agrada escriure?",
-          "a": "Dicta. És la solució més eficaç. I si no avances, delega-ho: WebAutonomos pot crear el contingut inicial sense cost addicional."
+          "a": "Dicta. És la solució més eficaç si vols fer-ho tu mateix. Si prefereixes delegar-ho completament, el nostre servei SEO Local crea per tu 4 articles al mes optimitzats per al teu sector i zona, per 15 euros al mes sense alta sense permanència."
         },
         {
           "q": "Millor escriure molt o poc?",
           "a": "Millor poc i específic que molt i genèric. Un client prefereix 200 paraules clares a 2.000 paraules de farciment."
+        },
+        {
+          "q": "Què inclou exactament el servei SEO Local de WebAutonomos?",
+          "a": "Per 15 euros al mes sense alta sense permanència, inclou 4 articles de blog al mes optimitzats, optimització de paraules clau locals, meta títols i descripcions SEO, estructura d'URLs amigable, velocitat de càrrega optimitzada, schema markup per a negocis locals i informe mensual de posicionament."
         }
       ]
     },
@@ -7513,22 +7537,22 @@
       "slug": "en/crear-contenido-web-sin-saber-escribir",
       "title": "How to create website content when you don't know how to write",
       "seoTitle": "Create web content without writing skills | WebAutonomos",
-      "metaDescription": "Don't know how to write? Practical methodology to create authentic web content, even if you hate writing.",
+      "metaDescription": "Don't know how to write? Practical methodology to create authentic content, or delegate it with our Local SEO service from 15€/month.",
       "keywords": [
         "create web content freelancer",
         "writing website no skills",
         "easy web content",
-        "freelancer web copywriting"
+        "local SEO freelancer"
       ],
-      "excerpt": "1 hour per week, voice dictation, simple structure. The realistic method for authentic content without being a writer.",
+      "excerpt": "1 hour per week, voice dictation, simple structure. Or delegate it with our Local SEO service from 15€/month.",
       "category": "web",
       "date": "4 June 2026",
-      "readTime": 7,
+      "readTime": 8,
       "image": "✍️",
       "content": [
         {
           "type": "intro",
-          "text": "Your website pages stay empty because you freeze when trying to write. Don't worry: you don't need to be a writer to have a converting website. This guide teaches a practical methodology to create authentic content, even if you hate writing."
+          "text": "Your website pages stay empty because you freeze when trying to write. Don't worry: you don't need to be a writer to have a converting website. This guide teaches a practical methodology to create authentic content, or how to delegate it to our Local SEO service."
         },
         {
           "type": "heading",
@@ -7552,7 +7576,7 @@
         },
         {
           "type": "paragraph",
-          "text": "A freelancer website doesn't need to be long. Only 4 well-done sections: Home with clear statement; Services with brief descriptions and indicative pricing; About me with your story in 3 paragraphs; Contact with simple form, phone, WhatsApp. Any freelancer can fill these in an afternoon."
+          "text": "A freelancer website doesn't need to be long. Only 4 well-done sections: Home with clear statement; Services with brief descriptions and indicative pricing; About me with your story in 3 paragraphs; Contact with simple form, phone, WhatsApp."
         },
         {
           "type": "heading",
@@ -7587,8 +7611,16 @@
           "text": "Don't try to write your whole website in a weekend. Block 1 hour per week: 30 minutes dictating, 20 minutes correcting, 10 minutes publishing. In 4 weeks you'll have a complete website. In 6 months you'll have a blog with 24 articles for years of SEO visibility."
         },
         {
+          "type": "heading",
+          "text": "If you don't have time: WebAutonomos Local SEO service"
+        },
+        {
+          "type": "paragraph",
+          "text": "Some freelancers prefer to delegate content creation to focus on their business. That's why we offer our Local SEO service for 15 euros per month, no setup fee, no commitment. Includes: 4 blog articles per month optimized for your sector and area; local keyword optimization; SEO-optimized meta titles and descriptions; clean URL structure; optimized loading speed; schema markup for local businesses; and monthly ranking report."
+        },
+        {
           "type": "conclusion",
-          "text": "Creating web content doesn't require being a writer. It requires consistency, method, and a phone with dictation. 1 hour per week, simple structure, authentic voice. If you still get stuck, WebAutonomos can create your initial content at no extra cost."
+          "text": "Creating web content doesn't require being a writer. It requires consistency, method, and a phone with dictation. And if you prefer to delegate, our Local SEO service delivers 4 articles per month optimized for your sector for 15 euros per month, no setup fee, no commitment."
         }
       ],
       "faq": [
@@ -7602,15 +7634,19 @@
         },
         {
           "q": "Do I need a blog?",
-          "a": "Not mandatory, but helps long-term SEO. Better 1 quality article per month than 10 generic ones."
+          "a": "Not mandatory, but helps long-term SEO. And if you want to move faster, our Local SEO service delivers 4 optimized articles per month for 15 euros per month."
         },
         {
           "q": "What if I simply don't like writing?",
-          "a": "Dictate. Most effective solution. And if you still don't progress, delegate it: WebAutonomos can create your initial content at no extra cost."
+          "a": "Dictate. Most effective solution if you want to do it yourself. If you prefer to delegate completely, our Local SEO service creates 4 monthly articles optimized for your sector and area, for 15 euros per month, no setup fee, no commitment."
         },
         {
           "q": "Better to write a lot or a little?",
           "a": "Better short and specific than long and generic. A client prefers 200 clear words to 2,000 words of fluff."
+        },
+        {
+          "q": "What exactly does the WebAutonomos Local SEO service include?",
+          "a": "For 15 euros per month with no setup fee and no commitment, it includes 4 optimized blog articles per month, local keyword optimization, SEO-optimized meta titles and descriptions, clean URL structure, optimized loading speed, schema markup for local businesses, and monthly ranking report."
         }
       ]
     }
