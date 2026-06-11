@@ -743,6 +743,13 @@
       ],
       "meta_description_es": "Guía para podólogos que quieren una web profesional. Secciones imprescindibles, SEO local y cómo captar pacientes online.",
       "notes": "Nuevo vertical salud. Similar a dental/fisio. [REPUBLIÉ 2026-06-05 - contenu rédigé]"
+    },
+    {
+      "id": 39,
+      "slug_es": "web-para-psicologos-terapeutas",
+      "publish_date": "2026-06-11",
+      "status": "published_spa",
+      "notes": "Vertical santé - psicólogos/terapeutas. Publié manuellement (rattrapage 11/06)."
     }
   ]
 }
