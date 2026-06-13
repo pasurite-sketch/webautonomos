@@ -7213,15 +7213,44 @@
         };
 
         // Blog Page
+        const parseArticleDate = (dateStr) => {
+            if (!dateStr) return new Date(0);
+            const months = {
+                'ene': 0, 'feb': 1, 'mar': 2, 'abr': 3, 'may': 4, 'jun': 5, 'junio': 5,
+                'jul': 6, 'ago': 7, 'sep': 8, 'oct': 9, 'nov': 10, 'dic': 11,
+                'gen': 0, 'maig': 4, 'juny': 5, 'set': 8, 'des': 11,
+                'jan': 0, 'apr': 3, 'aug': 7, 'dec': 11, 'june': 5
+            };
+            const s = dateStr.trim().toLowerCase().replace(',', '');
+            const parts = s.split(/\s+/);
+            let day, month, year;
+            if (parts.length === 3 && months[parts[0]] !== undefined) {
+                month = months[parts[0]];
+                day = parseInt(parts[1], 10);
+                year = parseInt(parts[2], 10);
+            }
+            else if (parts.length === 3 && months[parts[1]] !== undefined) {
+                day = parseInt(parts[0], 10);
+                month = months[parts[1]];
+                year = parseInt(parts[2], 10);
+            }
+            else {
+                return new Date(0);
+            }
+            if (isNaN(day) || month === undefined || isNaN(year)) return new Date(0);
+            return new Date(year, month, day);
+        };
+
         const BlogPage = ({ setCurrentPage }) => {
             const { t, lang } = useLanguage();
             const [selectedCategory, setSelectedCategory] = React.useState('all');
             
             const categories = ['all', 'web', 'seo', 'gmb', 'marketing'];
             
-            const filteredArticles = selectedCategory === 'all'
+            const filteredArticles = (selectedCategory === 'all'
                 ? t.blog.articles
-                : t.blog.articles.filter(a => a.category === selectedCategory);
+                : t.blog.articles.filter(a => a.category === selectedCategory)
+            ).slice().sort((a, b) => parseArticleDate(b.date) - parseArticleDate(a.date));
             
             // Schema.org for Blog listing page
             React.useEffect(() => {
