@@ -8572,6 +8572,33 @@
                 window.scrollTo(0, 0);
             };
 
+            // Change language, adapting the article slug prefix when on an article page
+            const handleSetLang = (newLang) => {
+                if (currentPage.startsWith('article-')) {
+                    const slug = currentPage.replace('article-', '');
+                    const prefixMatch = slug.match(/^(es|val|en)\/(.+)$/);
+                    if (prefixMatch) {
+                        const baseSlug = prefixMatch[2];
+                        const newSlug = newLang + '/' + baseSlug;
+                        const exists = translations[newLang].blog.articles.find(a => a.slug === newSlug);
+                        setLang(newLang);
+                        if (exists) {
+                            setCurrentPage('article-' + newSlug);
+                        } else {
+                            setCurrentPage('blog');
+                        }
+                        return;
+                    }
+                    const existsNoPrefix = translations[newLang].blog.articles.find(a => a.slug === slug);
+                    if (!existsNoPrefix) {
+                        setLang(newLang);
+                        setCurrentPage('blog');
+                        return;
+                    }
+                }
+                setLang(newLang);
+            };
+
             // Handle browser back/forward buttons
             React.useEffect(() => {
                 const handlePopState = (event) => {
@@ -8591,7 +8618,7 @@
             }, []);
 
             return (
-                <LanguageContext.Provider value={{ t, lang, setLang }}>
+                <LanguageContext.Provider value={{ t, lang, setLang: handleSetLang }}>
                     <div className="min-h-screen bg-white">
                         <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
                         {currentPage === 'home' && (
