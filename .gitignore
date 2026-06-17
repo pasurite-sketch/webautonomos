@@ -11,3 +11,9 @@ resultat_scoring.txt
 *.wav.srt
 *.wav.txt
 *.wav.vtt
+node_modules/
+_backups/
+index.html.bak-*
+index.html.SAFE-*
+index.html.PRE-COMPILE-*
+index.compiled.html
