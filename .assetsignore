@@ -11,3 +11,6 @@ node_modules
 scripts
 .github
 blog-spa-data.json
+*.bak
+*.py
+_tools
