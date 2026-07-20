@@ -1,0 +1,188 @@
+# -*- coding: utf-8 -*-
+"""Ajoute un nouvel article de blog (3 langues) à WebAutonomos.
+
+Usage (depuis ~/webautonomos) :
+    python3 add_article.py article_XX.json
+
+Ce que fait le script :
+  - lit le JSON de l'article (voir format en bas),
+  - calcule le prochain id automatiquement,
+  - insère l'entrée ES/VAL/EN dans les bons tableaux avec slugs localisés (es/, val/, en/),
+  - complète parseArticleDate si un nom de mois (ex. Julio/Juliol) manque,
+  - ajoute le bloc <url> hreflang (es/val/en) au sitemap.xml,
+  - sauvegarde index.html + sitemap.xml HORS du dossier servi,
+  - ne modifie rien si une vérification échoue.
+Puis : npx wrangler deploy
+"""
+import json, re, sys, shutil, os
+
+F, S = 'index.html', 'sitemap.xml'
+path = sys.argv[1] if len(sys.argv) > 1 else 'new_article.json'
+for f in (F, S, path):
+    if not os.path.exists(f):
+        print(f'ERREUR: {f} introuvable (lance depuis ~/webautonomos avec le JSON en argument).'); sys.exit(1)
+
+art = json.load(open(path, encoding='utf-8'))
+html = open(F, encoding='utf-8').read()
+sm = open(S, encoding='utf-8').read()
+
+# --- table de référence des mois (ES + VAL + EN, complets et abrégés) ---
+MONTHS = {
+ 'enero':0,'febrero':1,'marzo':2,'abril':3,'mayo':4,'junio':5,'julio':6,'agosto':7,'septiembre':8,'octubre':9,'noviembre':10,'diciembre':11,
+ 'ene':0,'feb':1,'mar':2,'abr':3,'may':4,'jun':5,'jul':6,'ago':7,'sep':8,'oct':9,'nov':10,'dic':11,
+ 'gener':0,'febrer':1,'març':2,'maig':4,'juny':5,'juliol':6,'agost':7,'setembre':8,'octubre':9,'novembre':10,'desembre':11,
+ 'gen':0,'set':8,'des':11,
+ 'jan':0,'apr':3,'aug':7,'dec':11,'january':0,'february':1,'march':2,'april':3,'june':5,'july':6,'august':7,'september':8,'october':9,'november':10,'december':11,
+}
+
+def bracket_match(s, start, op, cl):
+    d = 0; i = start; q = False; e = False
+    while i < len(s):
+        c = s[i]
+        if q:
+            e = (c == '\\') if not e else False
+            if c == '"' and not e: q = False
+        else:
+            if c == '"': q = True; e = False
+            elif c == op: d += 1
+            elif c == cl:
+                d -= 1
+                if d == 0: return s[start:i+1]
+        i += 1
+    return None
+
+def js(v):
+    if isinstance(v, bool): return 'true' if v else 'false'
+    if isinstance(v, int): return str(v)
+    if isinstance(v, str): return '"' + v.replace('\\', '\\\\').replace('"', '\\"') + '"'
+    if isinstance(v, list): return '[' + ','.join(js(x) for x in v) + ']'
+    if isinstance(v, dict): return '{' + ','.join(k + ':' + js(val) for k, val in v.items()) + '}'
+    raise TypeError(type(v))
+
+# --- 1) compléter parseArticleDate si des mois manquent ---
+mobj = re.search(r"const months=\{([^}]*)\};", html)
+if not mobj:
+    print('ERREUR: parseArticleDate introuvable. Abandon.'); sys.exit(1)
+existing = set(re.findall(r"'([^']+)':", mobj.group(1)))
+needed = set()
+for lg in ('es', 'val', 'en'):
+    for tok in art[lg]['date'].lower().replace(',', '').split():
+        if not tok.isdigit(): needed.add(tok)
+missing = [t for t in sorted(needed) if t not in existing]
+unknown = [t for t in missing if t not in MONTHS]
+if unknown:
+    print(f'ERREUR: mois inconnus {unknown} (vérifie les dates du JSON). Abandon.'); sys.exit(1)
+if missing:
+    add = ''.join(f"'{t}':{MONTHS[t]}," for t in missing)
+    html = html.replace(mobj.group(0), "const months={" + add + mobj.group(0)[len("const months={"):], 1)
+    print(f'  parseArticleDate: mois ajoutés -> {missing}')
+
+# --- 2) localiser les 3 tableaux + prochain id ---
+starts = [m.start() + len('articles:') for m in re.finditer(r'articles:\[\{id:1,', html)]
+if len(starts) != 3:
+    print(f'ERREUR: {len(starts)} tableaux articles trouvés (attendu 3). Abandon.'); sys.exit(1)
+arrays = [bracket_match(html, s, '[', ']') for s in starts]
+
+def lang_of(a):
+    m = re.search(r'\{id:33,slug:"[^"]*",title:"([^"]+)"', a)
+    t = m.group(1) if m else ''
+    if t.startswith('Google Ads para'): return 'es'
+    if t.startswith('Google Ads per a'): return 'val'
+    if t.startswith('Google Ads for'): return 'en'
+    return '?'
+labels = [lang_of(a) for a in arrays]
+if sorted(labels) != ['en', 'es', 'val']:
+    print(f'ERREUR: identification des tableaux ambiguë {labels}. Abandon.'); sys.exit(1)
+nid = max(int(x) for a in arrays for x in re.findall(r'\{id:(\d+),', a)) + 1
+
+# refuser un slug déjà présent
+if re.search(r'slug:"(?:es|val|en)/' + re.escape(art['slug']) + '"', html):
+    print(f'ERREUR: le slug "{art["slug"]}" existe déjà. Abandon.'); sys.exit(1)
+
+def build_entry(lg):
+    a = art[lg]
+    return js({
+        'id': nid, 'slug': f'{lg}/' + art['slug'], 'title': a['title'], 'seoTitle': a['seoTitle'],
+        'metaDescription': a['metaDescription'], 'keywords': a['keywords'], 'excerpt': a['excerpt'],
+        'category': art['category'], 'date': a['date'], 'readTime': art['readTime'], 'image': art['image'],
+        'content': a['content'], 'faq': a['faq'],
+    })
+
+new_html = html
+for arr, lg in zip(arrays, labels):
+    entry = build_entry(lg)
+    if new_html.count(arr) != 1:
+        print(f'ERREUR: tableau {lg} non localisable de façon unique. Abandon.'); sys.exit(1)
+    new_html = new_html.replace(arr, arr[:-1] + ',' + entry + ']')
+
+# --- 3) sitemap : bloc <url> hreflang avant </urlset> ---
+sl = art['slug']; lm = art.get('lastmod', '2026-07-20')
+block = (
+ '    <url>\n'
+ f'        <loc>https://webautonomos.es/blog/es/{sl}</loc>\n'
+ f'        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/{sl}"/>\n'
+ f'        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/{sl}"/>\n'
+ f'        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/{sl}"/>\n'
+ f'        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/{sl}"/>\n'
+ f'        <lastmod>{lm}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>\n'
+ '    </url>\n')
+if f'/blog/es/{sl}<' in sm:
+    print('  sitemap: URL déjà présente, non ré-ajoutée.'); new_sm = sm
+else:
+    new_sm = sm.replace('</urlset>', block + '</urlset>', 1)
+
+# --- 4) vérifications avant écriture ---
+errs = []
+if new_html.count('{') - new_html.count('}') != html.count('{') - html.count('}'): errs.append('déséquilibre {}')
+if new_html.count('[') - new_html.count(']') != html.count('[') - html.count(']'): errs.append('déséquilibre []')
+vstarts = [m.start() + len('articles:') for m in re.finditer(r'articles:\[\{id:1,', new_html)]
+for s, lg in zip(vstarts, labels):
+    a = bracket_match(new_html, s, '[', ']')
+    ids = re.findall(r'\{id:(\d+),', a)
+    if ids.count(str(nid)) != 1: errs.append(f'tableau {lg}: id {nid} absent/dupliqué')
+    if not re.search(r'\{id:%d,slug:"%s/%s"' % (nid, lg, re.escape(sl)), a): errs.append(f'tableau {lg}: slug attendu absent')
+if new_sm.count('</urlset>') != 1: errs.append('sitemap: </urlset> anormal')
+if errs:
+    print('Anomalies détectées, RIEN modifié :'); [print('  -', e) for e in errs]; sys.exit(1)
+
+# validation JS optionnelle via node
+try:
+    import subprocess, tempfile
+    entries = []
+    for s, lg in zip(vstarts, labels):
+        a = bracket_match(new_html, s, '[', ']')
+        m = re.search(r'\{id:%d,slug:' % nid, a)
+        entries.append(bracket_match(a, m.start(), '{', '}'))
+    tf = tempfile.NamedTemporaryFile('w', suffix='.js', delete=False, encoding='utf-8')
+    tf.write('const E=%s;E.forEach(s=>{const e=eval("("+s+")");if(!e.id||!Array.isArray(e.content)||!Array.isArray(e.faq))throw"bad";});console.log("node OK");' % json.dumps(entries))
+    tf.close()
+    r = subprocess.run(['node', tf.name], capture_output=True, text=True, timeout=20)
+    os.unlink(tf.name)
+    print('  ' + (r.stdout.strip() or ('node: ' + r.stderr.strip()[:120])))
+    if r.returncode != 0:
+        print('Validation JS échouée, RIEN modifié.'); sys.exit(1)
+except FileNotFoundError:
+    print('  (node absent — validation structurelle Python seule, déjà passée)')
+
+# --- 5) écriture + sauvegardes hors dossier servi ---
+home = os.path.expanduser('~')
+shutil.copy2(F, os.path.join(home, 'index.html.bak-addarticle'))
+shutil.copy2(S, os.path.join(home, 'sitemap.xml.bak-addarticle'))
+open(F, 'w', encoding='utf-8').write(new_html)
+open(S, 'w', encoding='utf-8').write(new_sm)
+print(f'\nArticle #{nid} "{sl}" ajouté (ES/VAL/EN) + sitemap mis à jour.')
+print(f'Sauvegardes: {home}/index.html.bak-addarticle , {home}/sitemap.xml.bak-addarticle')
+print('Déploie :  npx wrangler deploy')
+
+# ---------------------------------------------------------------------------
+# Format JSON attendu :
+# {
+#   "slug":"web-para-xxx","category":"web","image":"🧭","readTime":11,"lastmod":"2026-07-20",
+#   "es":{"date":"20 Julio 2026","title":"...","seoTitle":"...","metaDescription":"...",
+#         "keywords":["..."],"excerpt":"...",
+#         "content":[{"type":"intro","text":"..."},{"type":"heading","text":"..."},
+#                    {"type":"paragraph","text":"..."},{"type":"conclusion","text":"..."}],
+#         "faq":[{"q":"...","a":"..."}]},
+#   "val":{... "date":"20 Juliol 2026" ...},
+#   "en":{... "date":"Jul 20, 2026" ...}
+# }
