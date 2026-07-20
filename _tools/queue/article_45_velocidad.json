@@ -1,0 +1,287 @@
+{
+ "publish_date": "2026-08-03",
+ "slug": "velocidad-web-y-posicionamiento",
+ "category": "seo",
+ "image": "⚡",
+ "readTime": 10,
+ "lastmod": "2026-08-03",
+ "es": {
+  "date": "03 Agosto 2026",
+  "title": "Por qué la velocidad de tu web afecta a Google",
+  "seoTitle": "Por qué la velocidad de tu web afecta al posicionamiento | WebAutonomos",
+  "metaDescription": "La velocidad de tu web afecta a tu posicionamiento en Google y a cuántos clientes se quedan. Te explicamos por qué y qué puedes hacer, sin tecnicismos.",
+  "keywords": [
+   "velocidad web posicionamiento",
+   "web rápida Google",
+   "Core Web Vitals",
+   "mejorar velocidad web"
+  ],
+  "excerpt": "Una web lenta te cuesta posiciones en Google y clientes cada día. La velocidad no es un detalle técnico: es un factor de posicionamiento.",
+  "content": [
+   {
+    "type": "intro",
+    "text": "Tienes una web bonita, pero tarda una eternidad en cargar. El problema es que, mientras el visitante espera, ya se ha ido, y Google lo sabe. La velocidad de tu web no es un detalle técnico: afecta directamente a tu posicionamiento en Google y a cuántos clientes se quedan. En esta guía te explicamos, sin tecnicismos, por qué la velocidad importa tanto y qué puedes hacer al respecto."
+   },
+   {
+    "type": "heading",
+    "text": "Por qué a Google le importa tanto la velocidad"
+   },
+   {
+    "type": "paragraph",
+    "text": "Google quiere ofrecer a sus usuarios la mejor experiencia posible, y una web lenta es una mala experiencia. Por eso, desde hace años, la velocidad de carga es un factor oficial de posicionamiento: entre dos webs parecidas, la más rápida tiende a aparecer más arriba. Google incluso mide señales concretas de velocidad y estabilidad (las llamadas Core Web Vitals) para decidir qué webs merecen estar en los primeros puestos."
+   },
+   {
+    "type": "heading",
+    "text": "Cada segundo cuenta: la velocidad y tus clientes"
+   },
+   {
+    "type": "paragraph",
+    "text": "Los estudios son claros: la mayoría de visitantes abandona una web que tarda más de 3 segundos en cargar. Si tu web es lenta, no solo pierdes posiciones en Google, pierdes directamente clientes que ni siquiera llegan a ver lo que ofreces. En un negocio local, cada visita cuenta: una web rápida convierte más llamadas, más reservas y más contactos. La velocidad es, literalmente, dinero."
+   },
+   {
+    "type": "heading",
+    "text": "Qué hace lenta a una web (y cómo se nota)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Las causas más comunes de una web lenta son: imágenes pesadas sin optimizar, plantillas sobrecargadas de funciones que no usas, demasiados plugins o scripts, y un hosting barato y saturado. Se nota sobre todo en el móvil, donde la mayoría de tus clientes te visitan: si tu web va a tirones en el teléfono, tienes un problema. La buena noticia es que casi todo tiene solución."
+   },
+   {
+    "type": "heading",
+    "text": "La velocidad en el móvil: donde se juega el partido"
+   },
+   {
+    "type": "paragraph",
+    "text": "Más de la mitad de las búsquedas locales se hacen desde el móvil, a menudo con datos y sin wifi. Google indexa tu web priorizando la versión móvil, así que si tu web no carga rápido en un teléfono, tu posicionamiento se resiente en todas partes. Una web moderna debe estar pensada para el móvil primero: ligera, rápida y fácil de usar con el pulgar. No es opcional, es la norma."
+   },
+   {
+    "type": "heading",
+    "text": "Cómo conseguir una web rápida sin complicarte"
+   },
+   {
+    "type": "paragraph",
+    "text": "No necesitas ser técnico para tener una web rápida: necesitas que esté bien hecha desde el principio. Eso significa imágenes optimizadas, código limpio sin funciones inútiles, y un hosting que responda. En WebAutonomos construimos webs ligeras y rápidas por defecto, alojadas en una infraestructura de alto rendimiento, para que la velocidad juegue a tu favor en Google en lugar de en tu contra."
+   },
+   {
+    "type": "heading",
+    "text": "Cómo saber si tu web es lo bastante rápida"
+   },
+   {
+    "type": "paragraph",
+    "text": "Puedes comprobar la velocidad de tu web gratis con herramientas como Google PageSpeed Insights: te da una puntuación y te dice qué frena tu web. Fíjate sobre todo en la puntuación móvil. Si está en rojo o naranja, estás perdiendo posiciones y clientes sin saberlo. Es la primera revisión que deberías hacer si sospechas que tu web va lenta."
+   },
+   {
+    "type": "conclusion",
+    "text": "La velocidad de tu web no es un lujo técnico: es un factor de posicionamiento en Google y una de las cosas que más influye en si un cliente se queda o se va. Una web rápida trabaja para ti las 24 horas; una lenta te cuesta clientes cada día. Con WebAutonomos tienes una web rápida y optimizada desde el primer día por 15 euros al mes, sin alta y sin permanencia."
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿De verdad la velocidad afecta a mi posición en Google?",
+    "a": "Sí. Es un factor oficial de posicionamiento desde hace años. Entre webs parecidas, Google tiende a mostrar más arriba la más rápida y estable, sobre todo en móvil."
+   },
+   {
+    "q": "¿Cómo compruebo si mi web es rápida?",
+    "a": "Con Google PageSpeed Insights, gratis: te da una puntuación y te dice qué la frena. Fíjate en la puntuación móvil, que es la que más pesa."
+   },
+   {
+    "q": "¿Por qué mi web va lenta?",
+    "a": "Lo más común: imágenes pesadas, plantillas sobrecargadas, demasiados plugins y un hosting saturado. Casi siempre tiene solución con una web bien construida."
+   },
+   {
+    "q": "¿Las webs de WebAutonomos son rápidas?",
+    "a": "Sí. Construimos webs ligeras y las alojamos en una infraestructura de alto rendimiento, para que la velocidad juegue a tu favor en Google."
+   },
+   {
+    "q": "¿Cuánto cuesta y cuánto tarda?",
+    "a": "15 euros al mes, sin alta y sin permanencia, o 349 euros en pago único. Tu web está lista en 24 horas."
+   }
+  ]
+ },
+ "val": {
+  "date": "03 Agost 2026",
+  "title": "Per què la velocitat de la teua web afecta Google",
+  "seoTitle": "Per què la velocitat de la teua web afecta el posicionament | WebAutonomos",
+  "metaDescription": "La velocitat de la teua web afecta el teu posicionament a Google i quants clients es queden. T'expliquem per què i què pots fer, sense tecnicismes.",
+  "keywords": [
+   "velocitat web posicionament",
+   "web ràpida Google",
+   "Core Web Vitals",
+   "millorar velocitat web"
+  ],
+  "excerpt": "Una web lenta et costa posicions a Google i clients cada dia. La velocitat no és un detall tècnic: és un factor de posicionament.",
+  "content": [
+   {
+    "type": "intro",
+    "text": "Tens una web bonica, però tarda una eternitat a carregar. El problema és que, mentre el visitant espera, ja se n'ha anat, i Google ho sap. La velocitat de la teua web no és un detall tècnic: afecta directament el teu posicionament a Google i quants clients es queden. En aquesta guia t'expliquem, sense tecnicismes, per què la velocitat importa tant i què pots fer-hi."
+   },
+   {
+    "type": "heading",
+    "text": "Per què a Google li importa tant la velocitat"
+   },
+   {
+    "type": "paragraph",
+    "text": "Google vol oferir als seus usuaris la millor experiència possible, i una web lenta és una mala experiència. Per això, des de fa anys, la velocitat de càrrega és un factor oficial de posicionament: entre dues webs semblants, la més ràpida tendeix a aparèixer més amunt. Google fins i tot mesura senyals concrets de velocitat i estabilitat (els anomenats Core Web Vitals) per decidir quines webs mereixen estar als primers llocs."
+   },
+   {
+    "type": "heading",
+    "text": "Cada segon compta: la velocitat i els teus clients"
+   },
+   {
+    "type": "paragraph",
+    "text": "Els estudis són clars: la majoria de visitants abandona una web que tarda més de 3 segons a carregar. Si la teua web és lenta, no només perds posicions a Google, perds directament clients que ni tan sols arriben a veure el que ofereixes. En un negoci local, cada visita compta: una web ràpida converteix més trucades, més reserves i més contactes. La velocitat és, literalment, diners."
+   },
+   {
+    "type": "heading",
+    "text": "Què fa lenta una web (i com es nota)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Les causes més comunes d'una web lenta són: imatges pesades sense optimitzar, plantilles sobrecarregades de funcions que no uses, massa plugins o scripts, i un allotjament barat i saturat. Es nota sobretot al mòbil, on la majoria dels teus clients et visiten: si la teua web va a batzegades al telèfon, tens un problema. La bona notícia és que quasi tot té solució."
+   },
+   {
+    "type": "heading",
+    "text": "La velocitat al mòbil: on es juga el partit"
+   },
+   {
+    "type": "paragraph",
+    "text": "Més de la meitat de les cerques locals es fan des del mòbil, sovint amb dades i sense wifi. Google indexa la teua web prioritzant la versió mòbil, així que si la teua web no carrega ràpid en un telèfon, el teu posicionament se'n ressent a tot arreu. Una web moderna ha d'estar pensada per al mòbil primer: lleugera, ràpida i fàcil d'usar amb el polze. No és opcional, és la norma."
+   },
+   {
+    "type": "heading",
+    "text": "Com aconseguir una web ràpida sense complicar-te"
+   },
+   {
+    "type": "paragraph",
+    "text": "No necessites ser tècnic per tindre una web ràpida: necessites que estiga ben feta des del principi. Això significa imatges optimitzades, codi net sense funcions inútils, i un allotjament que responga. A WebAutonomos construïm webs lleugeres i ràpides per defecte, allotjades en una infraestructura d'alt rendiment, perquè la velocitat jugue a favor teu a Google en lloc d'en contra."
+   },
+   {
+    "type": "heading",
+    "text": "Com saber si la teua web és prou ràpida"
+   },
+   {
+    "type": "paragraph",
+    "text": "Pots comprovar la velocitat de la teua web gratis amb eines com Google PageSpeed Insights: et dona una puntuació i et diu què frena la teua web. Fixa't sobretot en la puntuació mòbil. Si està en roig o taronja, estàs perdent posicions i clients sense saber-ho. És la primera revisió que hauries de fer si sospites que la teua web va lenta."
+   },
+   {
+    "type": "conclusion",
+    "text": "La velocitat de la teua web no és un luxe tècnic: és un factor de posicionament a Google i una de les coses que més influeix en si un client es queda o se'n va. Una web ràpida treballa per a tu les 24 hores; una lenta et costa clients cada dia. Amb WebAutonomos tens una web ràpida i optimitzada des del primer dia per 15 euros al mes, sense alta i sense permanència."
+   }
+  ],
+  "faq": [
+   {
+    "q": "De veritat la velocitat afecta la meua posició a Google?",
+    "a": "Sí. És un factor oficial de posicionament des de fa anys. Entre webs semblants, Google tendeix a mostrar més amunt la més ràpida i estable, sobretot al mòbil."
+   },
+   {
+    "q": "Com comprove si la meua web és ràpida?",
+    "a": "Amb Google PageSpeed Insights, gratis: et dona una puntuació i et diu què la frena. Fixa't en la puntuació mòbil, que és la que més pesa."
+   },
+   {
+    "q": "Per què la meua web va lenta?",
+    "a": "El més comú: imatges pesades, plantilles sobrecarregades, massa plugins i un allotjament saturat. Quasi sempre té solució amb una web ben construïda."
+   },
+   {
+    "q": "Les webs de WebAutonomos són ràpides?",
+    "a": "Sí. Construïm webs lleugeres i les allotgem en una infraestructura d'alt rendiment, perquè la velocitat jugue a favor teu a Google."
+   },
+   {
+    "q": "Quant costa i quant tarda?",
+    "a": "15 euros al mes, sense alta i sense permanència, o 349 euros en pagament únic. La teua web està llesta en 24 hores."
+   }
+  ]
+ },
+ "en": {
+  "date": "Aug 03, 2026",
+  "title": "Why your website's speed affects your Google ranking",
+  "seoTitle": "Why your website's speed affects your ranking | WebAutonomos",
+  "metaDescription": "Your website's speed affects your Google ranking and how many clients stay. We explain why and what you can do, without the jargon.",
+  "keywords": [
+   "website speed ranking",
+   "fast website Google",
+   "Core Web Vitals",
+   "improve website speed"
+  ],
+  "excerpt": "A slow website costs you Google rankings and clients every day. Speed isn't a technical detail: it's a ranking factor.",
+  "content": [
+   {
+    "type": "intro",
+    "text": "You have a beautiful website, but it takes forever to load. The problem is that, while the visitor waits, they've already left, and Google knows it. Your website's speed isn't a technical detail: it directly affects your ranking on Google and how many clients stay. In this guide we explain, without the jargon, why speed matters so much and what you can do about it."
+   },
+   {
+    "type": "heading",
+    "text": "Why Google cares so much about speed"
+   },
+   {
+    "type": "paragraph",
+    "text": "Google wants to give its users the best possible experience, and a slow website is a bad experience. That's why, for years, loading speed has been an official ranking factor: between two similar websites, the faster one tends to appear higher. Google even measures specific speed and stability signals (the so-called Core Web Vitals) to decide which websites deserve the top spots."
+   },
+   {
+    "type": "heading",
+    "text": "Every second counts: speed and your clients"
+   },
+   {
+    "type": "paragraph",
+    "text": "The studies are clear: most visitors abandon a website that takes more than 3 seconds to load. If your website is slow, you don't just lose rankings on Google, you directly lose clients who never even get to see what you offer. In a local business, every visit counts: a fast website converts more calls, more bookings and more enquiries. Speed is, literally, money."
+   },
+   {
+    "type": "heading",
+    "text": "What makes a website slow (and how you notice)"
+   },
+   {
+    "type": "paragraph",
+    "text": "The most common causes of a slow website are: heavy, unoptimised images, templates overloaded with features you don't use, too many plugins or scripts, and cheap, overcrowded hosting. It shows most on mobile, where most of your clients visit you: if your website stutters on a phone, you have a problem. The good news is that almost everything can be fixed."
+   },
+   {
+    "type": "heading",
+    "text": "Speed on mobile: where the game is won"
+   },
+   {
+    "type": "paragraph",
+    "text": "More than half of local searches are made on mobile, often on data and without wifi. Google indexes your website prioritising the mobile version, so if your website doesn't load quickly on a phone, your ranking suffers everywhere. A modern website should be built mobile-first: light, fast and easy to use with your thumb. It isn't optional, it's the standard."
+   },
+   {
+    "type": "heading",
+    "text": "How to get a fast website without the hassle"
+   },
+   {
+    "type": "paragraph",
+    "text": "You don't need to be technical to have a fast website: you need it to be well built from the start. That means optimised images, clean code without useless features, and hosting that responds. At WebAutonomos we build light, fast websites by default, hosted on high-performance infrastructure, so speed works in your favour on Google instead of against you."
+   },
+   {
+    "type": "heading",
+    "text": "How to know if your website is fast enough"
+   },
+   {
+    "type": "paragraph",
+    "text": "You can check your website's speed for free with tools like Google PageSpeed Insights: it gives you a score and tells you what's slowing your website down. Pay particular attention to the mobile score. If it's red or orange, you're losing rankings and clients without knowing it. It's the first check you should do if you suspect your website is slow."
+   },
+   {
+    "type": "conclusion",
+    "text": "Your website's speed isn't a technical luxury: it's a Google ranking factor and one of the things that most influences whether a client stays or leaves. A fast website works for you 24 hours a day; a slow one costs you clients every day. With WebAutonomos you get a fast, optimised website from day one for 15 euros per month, with no setup fee and no commitment."
+   }
+  ],
+  "faq": [
+   {
+    "q": "Does speed really affect my position on Google?",
+    "a": "Yes. It's been an official ranking factor for years. Between similar websites, Google tends to show the faster, more stable one higher, especially on mobile."
+   },
+   {
+    "q": "How do I check if my website is fast?",
+    "a": "With Google PageSpeed Insights, for free: it gives you a score and tells you what's slowing it down. Look at the mobile score, which carries the most weight."
+   },
+   {
+    "q": "Why is my website slow?",
+    "a": "The most common causes: heavy images, overloaded templates, too many plugins and overcrowded hosting. It can almost always be fixed with a well-built website."
+   },
+   {
+    "q": "Are WebAutonomos websites fast?",
+    "a": "Yes. We build light websites and host them on high-performance infrastructure, so speed works in your favour on Google."
+   },
+   {
+    "q": "How much does it cost and how long does it take?",
+    "a": "15 euros per month, with no setup fee and no commitment, or 349 euros as a one-off payment. Your website is ready in 24 hours."
+   }
+  ]
+ }
+}
