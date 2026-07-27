@@ -267,4 +267,12 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/web-para-nutricionistas-dietistas"/>
         <lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://webautonomos.es/blog/es/web-para-entrenadores-personales</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/web-para-entrenadores-personales"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/web-para-entrenadores-personales"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/web-para-entrenadores-personales"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/web-para-entrenadores-personales"/>
+        <lastmod>2026-07-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    </url>
 </urlset>
