@@ -12,13 +12,8 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-MT6S7CH7N9');
-    // Conversion event: lead from demo form
-    gtag('event', 'generate_lead', {
-      event_category: 'formulario',
-      event_label: 'pagina_gracias',
-      value: 15,
-      currency: 'EUR'
-    });
+    // generate_lead retiré : l'événement est émis une seule fois côté formulaire
+    // de la landing (fonction hs). Cette page conserve uniquement le page_view.
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

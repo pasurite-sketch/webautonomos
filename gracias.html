@@ -12,7 +12,16 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-MT6S7CH7N9');
-    gtag('event', 'purchase', { currency: 'EUR', value: 15.00 });
+    // Garde anti-double-comptage : purchase émis une seule fois par session
+    (function(){
+      var key = 'wa_purchase_demo', fired = false;
+      try { fired = !!sessionStorage.getItem(key); } catch(e){}
+      if(!fired){
+        var txId = 'wa-demo-' + Date.now();
+        gtag('event', 'purchase', { transaction_id: txId, currency: 'EUR', value: 15.00 });
+        try { sessionStorage.setItem(key, txId); } catch(e){}
+      }
+    })();
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

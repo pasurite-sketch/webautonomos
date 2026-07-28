@@ -1075,8 +1075,11 @@
     // Fallback: show all sections immediately
     document.querySelectorAll('.rev').forEach(function(el) { el.classList.add('on'); });
   }
+  let leadSent = false;
   function hs(e) {
     e.preventDefault();
+    // Garde anti-double-soumission : un seul generate_lead par chargement de page
+    if(leadSent) return;
     const form = e.target, btn = document.getElementById('sb');
     let ok = true;
     form.querySelectorAll('[required]').forEach(f => {
@@ -1084,6 +1087,7 @@
       if(!f.value.trim()) { f.style.borderColor='#ef4444'; ok=false; }
     });
     if(!ok) return;
+    leadSent = true;
     btn.innerHTML = '<span>Enviando…</span>';
     btn.disabled = true;
     const d = Object.fromEntries(new FormData(form));
