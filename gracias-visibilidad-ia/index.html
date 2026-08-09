@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>¡Recibido! Tu comprobación está en marcha — WebAutonomos</title>
+<meta name="description" content="Hemos recibido tu solicitud de comprobación de visibilidad en IA. Recibirás el resultado por email en menos de 24 horas.">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MT6S7CH7N9');
+
+  /* Conversion GA4 — anti-double-comptage (rechargement / retour arrière).
+     Événement distinct de la page /gracias/ du tunnel abonnement :
+     ici c'est un lead gratuit, pas un achat. */
+  (function(){
+    var key = 'wa_lead_visibilidad_ia';
+    var already = false;
+    try { already = !!sessionStorage.getItem(key); } catch(e){}
+    if(!already){
+      var id = 'via-' + Date.now();
+      gtag('event', 'lead_visibilidad_ia', {
+        event_category: 'lp_visibilidad_ia',
+        transaction_id: id,
+        currency: 'EUR',
+        value: 0
+      });
+      try { sessionStorage.setItem(key, id); } catch(e){}
+
+      /* ============================================================
+         ▼▼▼  TAG DE CONVERSION GOOGLE ADS — À COLLER ICI  ▼▼▼
+
+         Quand tu auras créé la conversion dans Google Ads
+         (Objectifs → Conversions → Nouvelle action → Site web),
+         Google te donnera un Conversion ID (AW-XXXXXXXXX) et un
+         Conversion Label. Décommente les deux lignes ci-dessous et
+         remplace les valeurs :
+
+         1. Charge la bibliothèque Ads (une seule fois, dans le <head>,
+            juste après le script gtag GA4 ci-dessus) :
+              gtag('config', 'AW-XXXXXXXXX');
+
+         2. Déclenche la conversion ici, à l'intérieur de ce garde
+            anti-doublon pour ne compter qu'une fois par session :
+              gtag('event', 'conversion', {
+                send_to: 'AW-XXXXXXXXX/AbCdEfGhIjKlMnOp',
+                value: 0,
+                currency: 'EUR',
+                transaction_id: id
+              });
+
+         Ne mets PAS ce tag sur visibilidad-ia.html : la conversion
+         doit se compter à l'arrivée sur cette page, pas au clic.
+         ▲▲▲  FIN DE L'EMPLACEMENT DU TAG ADS  ▲▲▲
+         ============================================================ */
+    }
+  })();
+</script>
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wb9354sv4p");
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+
+<style>
+:root{
+  --blue-600:#2563eb; --green-500:#22c55e; --green-600:#16a34a;
+  --gray-800:#1f2937; --gray-600:#4b5563; --gray-500:#6b7280; --gray-200:#e5e7eb;
+  --wa:#25D366;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  background:linear-gradient(135deg,#2563eb 0%,#1d4ed8 50%,#16a34a 100%);
+  color:#fff;min-height:100vh;line-height:1.6;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:2rem 1rem;text-align:center;
+}
+svg{display:block}
+
+.logo{display:flex;align-items:center;gap:.5rem;margin-bottom:2.5rem}
+.logo-mark{
+  width:2.5rem;height:2.5rem;border-radius:.75rem;background:rgb(255 255 255 / .2);
+  display:flex;align-items:center;justify-content:center;
+}
+.logo-mark svg{width:1.5rem;height:1.5rem;color:#fff}
+.logo-text{font-weight:700;font-size:1.25rem;color:#fff}
+.logo-text .b{color:#bfdbfe} .logo-text .g{color:#86efac}
+
+.check{
+  width:96px;height:96px;border-radius:50%;
+  background:rgb(255 255 255 / .25);border:2px solid rgb(255 255 255 / .4);
+  display:flex;align-items:center;justify-content:center;margin-bottom:2rem;
+  animation:popIn .6s cubic-bezier(.175,.885,.32,1.275) both, pulse 2s .6s ease-out infinite;
+}
+.check svg{width:48px;height:48px;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.check polyline{stroke-dasharray:60;stroke-dashoffset:60;animation:drawCheck .4s .4s ease forwards}
+
+h1{font-size:2.25rem;font-weight:800;line-height:1.15;margin-bottom:1rem;animation:fadeUp .6s .3s ease both;text-wrap:balance}
+h1 span{color:#fde047}
+.subtitle{
+  font-size:1.125rem;color:#dbeafe;max-width:34rem;margin-bottom:2.5rem;
+  animation:fadeUp .6s .45s ease both;text-wrap:pretty;
+}
+
+.steps{
+  display:flex;flex-direction:column;gap:.75rem;
+  width:100%;max-width:30rem;margin-bottom:2.5rem;
+  animation:fadeUp .6s .6s ease both;
+}
+.step{
+  display:flex;align-items:flex-start;gap:1rem;text-align:left;
+  background:rgb(255 255 255 / .12);border:1px solid rgb(255 255 255 / .2);
+  border-radius:.75rem;padding:1rem 1.25rem;
+}
+.step-num{
+  width:28px;height:28px;border-radius:50%;background:rgb(255 255 255 / .3);
+  font-weight:700;font-size:.85rem;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;margin-top:1px;
+}
+.step strong{display:block;font-weight:600;font-size:.9375rem;margin-bottom:.15rem}
+.step span.txt{font-size:.875rem;color:#dbeafe}
+
+.wa-cta{
+  display:inline-flex;align-items:center;gap:.625rem;
+  background:var(--wa);color:#fff;text-decoration:none;
+  padding:.875rem 1.75rem;border-radius:9999px;font-weight:700;
+  box-shadow:0 4px 15px rgb(37 211 102 / .4);
+  transition:transform .2s,box-shadow .2s;
+  animation:fadeUp .6s .75s ease both;
+}
+.wa-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgb(37 211 102 / .5)}
+.wa-cta svg{width:1.25rem;height:1.25rem;fill:currentColor}
+
+.legal{
+  margin-top:3rem;font-size:.8125rem;color:rgb(255 255 255 / .7);
+  display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;
+}
+.legal a{color:inherit;text-decoration:none}
+.legal a:hover{color:#fff;text-decoration:underline}
+
+@keyframes drawCheck{to{stroke-dashoffset:0}}
+@keyframes popIn{0%{transform:scale(0);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgb(255 255 255 / .4)}
+  70%{box-shadow:0 0 0 20px rgb(255 255 255 / 0)}
+  100%{box-shadow:0 0 0 0 rgb(255 255 255 / 0)}
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+@media (prefers-reduced-motion:reduce){
+  .check,h1,.subtitle,.steps,.wa-cta{animation:none}
+  .check polyline{stroke-dashoffset:0;animation:none}
+}
+@media (min-width:768px){
+  h1{font-size:3rem}
+}
+</style>
+</head>
+<body>
+
+<div class="logo">
+  <div class="logo-mark">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+    </svg>
+  </div>
+  <span class="logo-text">web<span class="b">autonomos</span><span class="g">.es</span></span>
+</div>
+
+<div class="check">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4,12 9,17 20,6"></polyline></svg>
+</div>
+
+<h1>¡Recibido!<br><span>Ya estamos en ello</span></h1>
+
+<p class="subtitle">
+  Vamos a preguntar a las IA por tu oficio en tu ciudad, una por una, y te mandamos lo que respondan.
+  Esto es lo que pasa ahora:
+</p>
+
+<div class="steps">
+  <div class="step">
+    <div class="step-num">1</div>
+    <div>
+      <strong>Hacemos la comprobación a mano</strong>
+      <span class="txt">En cada IA que has marcado, con la pregunta que has elegido.</span>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div>
+      <strong>Recibes el resultado en menos de 24h</strong>
+      <span class="txt">Por email, tanto si apareces como si no. Revisa también el spam.</span>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div>
+      <strong>Tú decides qué hacer con ello</strong>
+      <span class="txt">Sin compromiso y sin llamadas insistentes.</span>
+    </div>
+  </div>
+</div>
+
+<a class="wa-cta" href="https://wa.me/34654239520?text=Hola%2C%20acabo%20de%20pedir%20la%20comprobaci%C3%B3n%20de%20visibilidad%20en%20IA" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+  <span>¿Alguna duda? Escríbenos</span>
+</a>
+
+<div class="legal">
+  <a href="/aviso-legal/">Aviso legal</a>
+  <a href="/privacidad/">Privacidad</a>
+  <a href="/cookies/">Cookies</a>
+</div>
+
+</body>
+</html>
