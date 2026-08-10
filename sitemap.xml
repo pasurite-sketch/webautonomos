@@ -808,4 +808,12 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/marca-personal-para-autonomos"/>
         <lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://webautonomos.es/blog/es/preguntas-respuestas-ficha-google</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/preguntas-respuestas-ficha-google"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/preguntas-respuestas-ficha-google"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/preguntas-respuestas-ficha-google"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/preguntas-respuestas-ficha-google"/>
+        <lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    </url>
 </urlset>
