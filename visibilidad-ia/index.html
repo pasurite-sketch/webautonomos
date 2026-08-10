@@ -71,8 +71,8 @@ body{
 img,svg{display:block;max-width:100%}
 button,input,select,textarea{font:inherit;color:inherit}
 
-/* Dégagement sous le header fixe quand on saute à l'ancre #formulario */
-#formulario{scroll-margin-top:5rem}
+/* Dégagement sous le header fixe quand on saute à une ancre */
+#problema,#como-funciona,#formulario,#faq{scroll-margin-top:5rem}
 
 .wrap{max-width:72rem;margin:0 auto;padding:0 1rem}
 .wrap-narrow{max-width:48rem;margin:0 auto;padding:0 1rem}
@@ -443,7 +443,7 @@ label.lbl{display:block;font-size:.875rem;font-weight:500;color:var(--gray-700);
   </section>
 
   <!-- ==================== 2. El problema ==================== -->
-  <section class="section">
+  <section class="section" id="problema">
     <div class="wrap">
       <div class="center mb-12">
         <h2 class="mb-4">Algo ha cambiado en cómo te buscan</h2>
@@ -494,7 +494,7 @@ label.lbl{display:block;font-size:.875rem;font-weight:500;color:var(--gray-700);
   </section>
 
   <!-- ==================== 4. Cómo funciona ==================== -->
-  <section class="section">
+  <section class="section" id="como-funciona">
     <div class="wrap">
       <div class="center mb-12">
         <h2>Cómo funciona</h2>
@@ -631,7 +631,7 @@ label.lbl{display:block;font-size:.875rem;font-weight:500;color:var(--gray-700);
   </section>
 
   <!-- ==================== 6. FAQ ==================== -->
-  <section class="section">
+  <section class="section" id="faq">
     <div class="wrap-narrow">
       <div class="center mb-12"><h2>Preguntas frecuentes</h2></div>
       <div class="faq">
