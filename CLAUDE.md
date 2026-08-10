@@ -8,7 +8,7 @@
 - **Offre principale** : Site vitrine à 15€/mois (modèle location)
 - **Services complémentaires** : Google My Business (99€ setup + 29€/mois), SEO Local (+15€/mois)
 - **Repo** : github.com/pasurite-sketch/webautonomos
-- **Hébergement** : Cloudflare Pages (Worker-based, auto-deploy depuis GitHub branche `main`)
+- **Hébergement** : Cloudflare Workers (assets statiques), déployé via GitHub Actions sur push `main`
 
 ## Stack Technique
 
@@ -16,7 +16,10 @@
 - **Hébergement** : Cloudflare Pages via `wrangler.jsonc` (assets statiques)
 - **DNS + Email** : Cloudflare (email routing vers info@webautonomos.es)
 - **Domaine** : webautonomos.es (registrar DonDominio)
-- **Déploiement** : `git push origin main` → auto-deploy Cloudflare
+- **Déploiement** : `git push origin main` → GitHub Action `deploy.yml` → `wrangler deploy`
+  - ⚠️ Il n'y a **pas** d'intégration Cloudflare↔GitHub native : c'est le workflow qui déploie.
+  - Les pushes du bot blog (GITHUB_TOKEN) ne déclenchent pas `deploy.yml` — `publish-blog.yml` déploie déjà lui-même.
+  - Redéploiement manuel : `npx wrangler deploy` en local, ou l'onglet Actions → « Déployer sur Cloudflare Workers » → Run workflow.
 - **Langues** : ES (Español), VAL (Valenciano/Català), EN (English)
 - **URLs** : SEO-friendly avec slugs (pas d'IDs numériques)
 
@@ -30,14 +33,20 @@ webautonomos/
 ├── wrangler.jsonc          # Config Cloudflare Workers
 ├── .assetsignore           # Fichiers exclus du déploiement Cloudflare
 ├── CLAUDE.md               # Ce fichier (règles projet)
-├── calendrier.json         # Calendrier éditorial blog
-├── blog-spa-data.json      # Données SPA pré-générées (3 langues) pour publish-articles.js
+├── calendrier.json         # Calendrier éditorial blog (référence rédactionnelle)
+├── blog-spa-data.json      # Données SPA pré-générées (3 langues) — legacy
 ├── template-article.html   # Template HTML de référence pour les articles
+├── _tools/                 # Outillage blog (non déployé, cf. .assetsignore)
+│   ├── publish_next.py     # Publie le prochain article dû (appelé par le GitHub Action)
+│   ├── add_article.py      # Insertion SPA + sitemap (utilisé par publish_next.py)
+│   └── queue/              # File d'attente : 1 JSON par article à paraître
+│       └── published/      # Articles déjà publiés (déplacés ici après publication)
 ├── scripts/
-│   └── publish-articles.js # Script auto-publication SPA + sitemap
+│   └── publish-articles.js # ⚠️ Legacy, plus appelé par aucun workflow
 ├── .github/
 │   └── workflows/
-│       └── publish-articles.yml  # GitHub Action (lun/jeu 8h Madrid)
+│       ├── publish-blog.yml # Publication blog (cron lun/jeu 06:00 UTC) + deploy
+│       └── deploy.yml       # Déploiement Cloudflare sur push `main`
 └── blog/                   # Articles de blog (fichiers HTML individuels)
     └── es/                 # Articles en espagnol (22 articles)
     └── val/                # Articles en valencien
@@ -58,7 +67,7 @@ webautonomos/
 | 8 | /blog/configurar-whatsapp-business-gratis-autonomos | WhatsApp Business: la herramienta gratuita que todo autónomo debería usar | marketing-digital | ✅ existant |
 
 **Articles HTML générés** : 22 (IDs 4, 7, 9-28) — tous dans `blog/es/` et dans `sitemap.xml`
-**Ajout au SPA** : automatisé via GitHub Action (`scripts/publish-articles.js`) selon les dates de `calendrier.json`
+**Ajout au SPA** : automatisé via GitHub Action (`_tools/publish_next.py`) selon le `publish_date` des JSON de `_tools/queue/`
 
 ## Blog — Objectif & Stratégie
 
@@ -232,30 +241,40 @@ Chaque article DOIT contenir dans cet ordre :
 
 ### Publication automatique (GitHub Action)
 
-Le script `scripts/publish-articles.js` est exécuté automatiquement par `.github/workflows/publish-articles.yml` chaque lundi et jeudi à 8h (heure Madrid). Il :
+Le script `_tools/publish_next.py` est exécuté par `.github/workflows/publish-blog.yml` chaque lundi et jeudi à 06:00 UTC (~08:00 Madrid en été). Il :
 
-1. Lit `calendrier.json` et `blog-spa-data.json`
-2. Trouve les articles avec `publish_date ≤ aujourd'hui` et `status: "published"`
-3. Insère les entrées SPA dans `index.html` (3 langues : ES, VAL, EN)
-4. Ajoute les URLs manquantes dans `sitemap.xml`
-5. Met à jour `calendrier.json` (`status: "published_spa"`)
-6. Commit, push, et déploie via Cloudflare Workers
+1. Lit tous les `_tools/queue/*.json`
+2. Garde ceux dont `publish_date ≤ aujourd'hui` et publie **le plus ancien** (un seul par exécution)
+3. Appelle `_tools/add_article.py` : insertion SPA dans `index.html` + ajout de l'URL au `sitemap.xml`
+4. Déplace le JSON publié dans `_tools/queue/published/`
+5. Commit, push, puis `wrangler deploy`
+
+Déclenchement manuel possible : Actions → « Publier un article de blog » → Run workflow (option `force` pour publier
+le prochain article de la file sans attendre sa date).
+
+### Déploiement (GitHub Action)
+
+`.github/workflows/deploy.yml` lance `wrangler deploy` à chaque push sur `main` (hors fichiers non déployés :
+`CLAUDE.md`, `.github/`, `_tools/`, `scripts/`, etc.). Il n'existe pas d'intégration Cloudflare↔GitHub native :
+**sans ce workflow, un push ne publie rien**. En cas de besoin, déploiement manuel via `npx wrangler deploy`.
 
 ### Commande Claude Code pour générer un nouvel article :
 
 ```bash
-# Lire le calendrier pour identifier le prochain article à publier
-cat calendrier.json | jq '.articles[] | select(.status == "pending")' | head -1
+# Voir ce qui reste en file d'attente et à quelle date
+for f in _tools/queue/*.json; do jq -r '"\(.publish_date)  \(.slug)"' "$f"; done | sort
 
 # Générer l'article — Claude Code va :
-# 1. Lire les specs dans calendrier.json
+# 1. Lire les specs (calendrier.json sert de référence rédactionnelle : sujets, silos, mots-clés)
 # 2. Lire le template-article.html comme base
-# 3. Créer le fichier HTML dans blog/es/
-# 4. Générer les données SPA (ES/VAL/EN) dans blog-spa-data.json
-# 5. Ajouter l'URL dans sitemap.xml
-# 6. Mettre à jour calendrier.json (status: "published")
-# 7. Commit + push → le GitHub Action ajoutera l'article au SPA à la date prévue
+# 3. Créer un JSON dans _tools/queue/ (publish_date, slug, category, readTime + blocs es/val/en)
+#    → chaque bloc langue : date, title, seoTitle, metaDescription, keywords, excerpt, content, faq
+# 4. Commit + push → le GitHub Action publiera l'article (SPA + sitemap) à la date prévue,
+#    puis déploiera automatiquement
 ```
+
+⚠️ L'insertion dans `index.html` et `sitemap.xml` est faite **par le script** au moment de la publication —
+ne pas les éditer à la main pour un nouvel article.
 
 ### Checklist SEO Avant Publication (12/12)
 
@@ -274,7 +293,8 @@ cat calendrier.json | jq '.articles[] | select(.status == "pending")' | head -1
 
 ### Mise à jour du Sitemap
 
-Après chaque article publié, ajouter dans `sitemap.xml` :
+Pour les articles passant par `_tools/queue/`, l'ajout au sitemap est **automatique** (`add_article.py`).
+Pour toute autre page ajoutée à la main, insérer dans `sitemap.xml` :
 ```xml
 <url>
     <loc>https://webautonomos.es/blog/es/{slug}</loc>
@@ -287,17 +307,23 @@ Après chaque article publié, ajouter dans `sitemap.xml` :
 ## Commandes Utiles
 
 ```bash
-# Déployer les changements
+# Déployer les changements (push → GitHub Action deploy.yml → wrangler deploy)
 git add -A && git commit -m "blog: add article {slug}" && git push origin main
 
-# Vérifier le statut du calendrier
-cat calendrier.json | jq '[.articles[] | .status] | group_by(.) | map({status: .[0], count: length})'
+# Déploiement manuel immédiat (nécessite `npx wrangler login`)
+npx wrangler deploy
 
-# Lister les articles publiés
+# Vérifier ce qui est réellement en ligne (et non juste committé)
+npx wrangler deployments list | tail -10
+
+# File d'attente : articles pas encore publiés, par date
+for f in _tools/queue/*.json; do jq -r '"\(.publish_date)  \(.slug)"' "$f"; done | sort
+
+# Articles déjà publiés via la file
+ls _tools/queue/published/*.json | wc -l
+
+# Lister les articles HTML autonomes
 ls blog/es/*.html | wc -l
-
-# Voir le prochain article à publier
-cat calendrier.json | jq '.articles[] | select(.status == "pending") | {id, title_es, silo, publish_date}' | head -20
 ```
 
 ## Rappels Importants
@@ -309,3 +335,5 @@ cat calendrier.json | jq '.articles[] | select(.status == "pending") | {id, titl
 - **Tester localement** avant de pousser : ouvrir le fichier HTML dans un navigateur
 - **Les articles blog sont des pages HTML séparées** — ils ne font pas partie du SPA React
 - **Cloudflare sert les fichiers statiques** — les chemins /blog/es/slug.html sont servis directement
+- **Committé ≠ en ligne** — vérifier le run `deploy.yml` (ou `npx wrangler deployments list`) après un push
+- **Le cache Cloudflare répond `HIT` même après un déploiement raté** — se fier au déploiement, pas au fait que la page charge
