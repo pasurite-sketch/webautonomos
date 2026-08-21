@@ -15,7 +15,9 @@
      un rel="alternate icon" et un rel="mask-icon" — les trois sont à retirer.
 
   2. 6e lien dans <div class="nav-links"> :
-       <a href="/visibilidad-ia/" data-t="navVis"></a>
+       <a href="/visibilidad-ia/" class="dark" data-t="navVis"></a>
+     La classe dark le teinte en sombre : c est un lien vers une autre page,
+     les autres onglets sont des ancres de section et restent bleus.
 
   3. Clé navVis dans les TROIS blocs de traduction de l'objet T :
        es -> "Visibilidad en IA"   ca -> "Visibilitat en IA"   en -> "AI visibility"
@@ -119,9 +121,11 @@ h3{font-size:1.12rem;line-height:1.32;font-weight:700;letter-spacing:-.015em}
   clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .nav-links{display:flex;gap:26px;margin-left:26px;font-size:.9rem;font-weight:600;
   white-space:nowrap;min-width:0;overflow:hidden}
-.nav-links a{color:var(--body)}
-.nav-links a:hover{color:var(--blue)}
-.nav-links a.dark{color:var(--ink)}
+.nav-links a{color:var(--blue)}
+/* Lien vers une AUTRE page : teinte sombre pour le distinguer des ancres
+   de section. Place avant :hover pour que le survol l emporte. */
+.nav-links a.dark{color:var(--body)}
+.nav-links a:hover{color:var(--blue-d)}
 .nav-right{display:flex;align-items:center;gap:9px;margin-left:auto;flex:none}
 .tel-pill{display:flex;align-items:center;gap:7px;border:1px solid var(--line);
   border-radius:999px;padding:7px 14px;font-size:.86rem;font-weight:700;color:var(--ink);
@@ -380,7 +384,7 @@ section{padding:clamp(54px,7.5vw,100px) 0;scroll-margin-top:74px}
       <a href="#como-funciona" data-t="nav3"></a>
       <a href="#niveles" data-t="navLevels"></a>
       <a href="#preguntas" data-t="nav7"></a>
-      <a href="/visibilidad-ia/" data-t="navVis"></a>
+      <a href="/visibilidad-ia/" class="dark" data-t="navVis"></a>
     </div>
     <div class="nav-right">
       <a class="tel-pill" href="tel:+34654239520">

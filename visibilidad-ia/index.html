@@ -241,9 +241,12 @@ h2{font-size:1.875rem;font-weight:700;color:var(--gray-800);line-height:1.25}
 /* ---- Onglets de section (aligne sur diagnostico-automatizacion) ---- */
 .nav-links{display:none;align-items:center;gap:1rem;margin-left:1rem;
   font-size:.875rem;font-weight:600;white-space:nowrap}
-.nav-links a{color:var(--gray-600);text-decoration:none;padding:.25rem .5rem;
+.nav-links a{color:var(--blue-600);text-decoration:none;padding:.25rem .5rem;
   border-radius:.5rem;transition:color .2s,background-color .2s}
-.nav-links a:hover{color:var(--blue-600);background:var(--blue-50)}
+/* Lien vers une AUTRE page : teinte sombre pour le distinguer des ancres
+   de section. Place avant :hover pour que le survol l emporte. */
+.nav-links a.dark{color:var(--gray-600)}
+.nav-links a:hover{color:var(--blue-700);background:var(--blue-50)}
 .nav-right{display:flex;align-items:center;gap:.5rem;margin-left:auto;flex:none}
 
 /* ---- Selecteur de langue ---- */
@@ -584,7 +587,7 @@ label.lbl{display:block;font-size:.875rem;font-weight:500;color:var(--gray-700);
       <a href="#datos" data-t="navDatos"></a>
       <a href="#como-funciona" data-t="navComo"></a>
       <a href="#faq" data-t="navFaq"></a>
-      <a href="/diagnostico-automatizacion/" data-t="navAuto"></a>
+      <a href="/diagnostico-automatizacion/" class="dark" data-t="navAuto"></a>
     </nav>
     <div class="nav-right">
     <a class="header-phone" href="tel:+34654239520">
