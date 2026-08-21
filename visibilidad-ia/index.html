@@ -19,6 +19,15 @@
      erreur : tr() ne remplit un [data-t] que si la clé existe. D'où le
      contrôle d'intégrité en fin de fichier, qui liste les clés manquantes
      dans la console au chargement.
+     ⚠ Les clés qui portent un TABLEAU (faq, preguntas) doivent avoir le même
+     nombre d'entrées dans les trois blocs : le rendu boucle sur le tableau de
+     la langue active, donc une entrée ajoutée à un seul bloc disparaît
+     silencieusement dans les deux autres. Le contrôle vérifie aussi ces
+     longueurs, pas seulement la présence des clés.
+     État actuel : faq = 6 paires [question, réponse], preguntas = 7 modèles.
+     ⚠ Pour éditer T par script : 'es: {', 'ca: {' et 'en: {' apparaissent AUSSI
+     dans l'objet FLAGS, qui précède T. Une recherche non bornée vise le mauvais
+     bloc et écrase trois fois le même tableau.
 
   2. peindrePreguntas() est extraite de goToStep2() et exposée via
      window.renderPreguntas, pour repeindre les cartes de questions quand on
@@ -40,6 +49,16 @@
 
   5. Titre et sous-titre en tête du formulaire (clés formTitle/formSubtitle).
 
+  6. Bloc FAQPage en JSON-LD (script#faq-schema, dans le head) :
+       - écrit en dur en ESPAGNOL, car c'est ce que la page affiche par défaut
+         et ce que voit un crawler qui n'exécute pas JS ;
+       - tr() le réécrit dans la langue active, pour qu'il décrive toujours la
+         FAQ réellement affichée (inLanguage suit aussi).
+     ⚠ Le texte en dur duplique T.es.faq : le contrôle d'intégrité compare les
+     deux au chargement et signale toute divergence (« FAQPage : question N
+     differe de T.es »). Si tu modifies une question, modifie les deux, ou
+     régénère le bloc depuis T.es.
+
   Vérifié : 0px de débordement de barre dans les trois langues à 1280 et
   1440px, aucun débordement horizontal de 375 à 1920px, aucun data-t vide.
 -->
@@ -48,6 +67,64 @@
 <meta name="description" content="Descubre gratis si ChatGPT, Gemini, Perplexity y Claude recomiendan tu negocio en tu ciudad. Resultado en 24h, sin compromiso.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://webautonomos.es/visibilidad-ia/">
+
+<script type="application/ld+json" id="faq-schema">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "es-ES",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Por qué no aparezco en ChatGPT si estoy bien posicionado en Google?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque no funcionan igual. Google ordena páginas; una IA responde con lo que ha retenido de fuentes que considera fiables — directorios, prensa local, reseñas, foros. Puedes ser el primero en Google y no existir para ChatGPT, y al revés. Son dos visibilidades distintas y se trabajan por separado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Esto es gratis de verdad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. No pedimos tarjeta, no hay periodo de prueba ni letra pequeña. Hacemos la comprobación y te enviamos el resultado tal cual, tanto si apareces como si no. Si después quieres que trabajemos tu visibilidad, ya hablaremos; y si no, te quedas con el resultado igual."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tarda?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Menos de 24 horas laborables. Consultamos cada IA por separado y contrastamos las respuestas antes de enviártelas: por eso tarda un día y por eso el resultado es fiable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué hago si no aparezco?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es lo más habitual, así que no te alarmes. En el email te indicamos qué fuentes está citando la IA para tu oficio y tu ciudad, y qué le falta a tu negocio para entrar ahí. Con eso ya puedes empezar a moverlo por tu cuenta si quieres."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El resultado cambia de un día para otro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puede variar, sí. Las IA actualizan sus fuentes y no siempre responden igual dos veces. Por eso consultamos cada una por separado y contrastamos las respuestas antes de enviarte nada: lo que te llega es lo que se repite, no una foto de un momento suelto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Si no aparezco, ¿se puede arreglar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Casi siempre, pero no de un día para otro ni con un truco. Aparecer en una IA depende de lo que digan de ti las fuentes que ella consulta, y eso se construye: fichas coherentes, reseñas reales, menciones en sitios que la IA ya lee. El informe te dice qué fuentes cita en tu sector y cuáles te faltan. Con eso ya puedes empezar tú."
+      }
+    }
+  ]
+}
+</script>
 <link rel="alternate" hreflang="es-ES" href="https://webautonomos.es/visibilidad-ia/">
 <link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/visibilidad-ia/?lang=ca">
 <link rel="alternate" hreflang="en" href="https://webautonomos.es/visibilidad-ia/?lang=en">
@@ -849,9 +926,12 @@ es: {
   btnBack:"← Volver", errElige:"Elige qué quieres comprobar.",
   errSend:"No hemos podido enviarlo. Inténtalo de nuevo o escríbenos por WhatsApp.",
   faqH2:"Preguntas frecuentes",
-  faq:[["¿Esto es gratis de verdad?","Sí. No pedimos tarjeta, no hay periodo de prueba ni letra pequeña. Hacemos la comprobación y te enviamos el resultado tal cual, tanto si apareces como si no. Si después quieres que trabajemos tu visibilidad, ya hablaremos; y si no, te quedas con el resultado igual."],
+  faq:[["¿Por qué no aparezco en ChatGPT si estoy bien posicionado en Google?","Porque no funcionan igual. Google ordena páginas; una IA responde con lo que ha retenido de fuentes que considera fiables — directorios, prensa local, reseñas, foros. Puedes ser el primero en Google y no existir para ChatGPT, y al revés. Son dos visibilidades distintas y se trabajan por separado."],
+       ["¿Esto es gratis de verdad?","Sí. No pedimos tarjeta, no hay periodo de prueba ni letra pequeña. Hacemos la comprobación y te enviamos el resultado tal cual, tanto si apareces como si no. Si después quieres que trabajemos tu visibilidad, ya hablaremos; y si no, te quedas con el resultado igual."],
+       ["¿Cuánto tarda?","Menos de 24 horas laborables. Consultamos cada IA por separado y contrastamos las respuestas antes de enviártelas: por eso tarda un día y por eso el resultado es fiable."],
        ["¿Qué hago si no aparezco?","Es lo más habitual, así que no te alarmes. En el email te indicamos qué fuentes está citando la IA para tu oficio y tu ciudad, y qué le falta a tu negocio para entrar ahí. Con eso ya puedes empezar a moverlo por tu cuenta si quieres."],
-       ["¿Cuánto tarda?","Menos de 24 horas laborables. Consultamos cada IA por separado y contrastamos las respuestas antes de enviártelas: por eso tarda un día y por eso el resultado es fiable."]],
+       ["¿El resultado cambia de un día para otro?","Puede variar, sí. Las IA actualizan sus fuentes y no siempre responden igual dos veces. Por eso consultamos cada una por separado y contrastamos las respuestas antes de enviarte nada: lo que te llega es lo que se repite, no una foto de un momento suelto."],
+       ["Si no aparezco, ¿se puede arreglar?","Casi siempre, pero no de un día para otro ni con un truco. Aparecer en una IA depende de lo que digan de ti las fuentes que ella consulta, y eso se construye: fichas coherentes, reseñas reales, menciones en sitios que la IA ya lee. El informe te dice qué fuentes cita en tu sector y cuáles te faltan. Con eso ya puedes empezar tú."]],
   footSlogan:"— Tu negocio, visible donde te buscan",
   preguntas:["¿Qué {oficio} me recomiendas en {ciudad}?","Mejor {oficio} en {ciudad}","{Oficio} urgente en {ciudad}","¿Cuánto cuesta un trabajo de {oficio} en {ciudad}?","{Oficio} de confianza en {ciudad} con buenas opiniones","Los 5 mejores profesionales de {oficio} en {ciudad}","Necesito {oficio} en {ciudad}, ¿a quién llamo?"],
   metaTitle:"¿Te recomienda ChatGPT? Comprueba gratis tu visibilidad en IA | WebAutonomos",
@@ -891,9 +971,12 @@ ca: {
   btnBack:"← Tornar", errElige:"Tria què vols comprovar.",
   errSend:"No hem pogut enviar-ho. Torna-ho a provar o escriu-nos per WhatsApp.",
   faqH2:"Preguntes freqüents",
-  faq:[["Açò és gratis de veritat?","Sí. No demanem targeta, no hi ha període de prova ni lletra menuda. Fem la comprovació i t'enviem el resultat tal qual, tant si hi apareixes com si no. Si després vols que treballem la teua visibilitat, ja en parlarem; i si no, et quedes amb el resultat igual."],
+  faq:[["Per què no aparec en ChatGPT si estic ben posicionat en Google?","Perquè no funcionen igual. Google ordena pàgines; una IA respon amb el que ha retingut de fonts que considera fiables — directoris, premsa local, ressenyes, fòrums. Pots ser el primer en Google i no existir per a ChatGPT, i a l'inrevés. Són dues visibilitats distintes i es treballen per separat."],
+       ["Açò és gratis de veritat?","Sí. No demanem targeta, no hi ha període de prova ni lletra menuda. Fem la comprovació i t'enviem el resultat tal qual, tant si hi apareixes com si no. Si després vols que treballem la teua visibilitat, ja en parlarem; i si no, et quedes amb el resultat igual."],
+       ["Quant tarda?","Menys de 24 hores laborables. Consultem cada IA per separat i contrastem les respostes abans d'enviar-te-les: per això tarda un dia i per això el resultat és fiable."],
        ["Què faig si no hi aparec?","És el més habitual, així que no t'alarmes. En el correu t'indiquem quines fonts està citant la IA per al teu ofici i la teua ciutat, i què li falta al teu negoci per a entrar-hi. Amb això ja pots començar a moure-ho pel teu compte si vols."],
-       ["Quant tarda?","Menys de 24 hores laborables. Consultem cada IA per separat i contrastem les respostes abans d'enviar-te-les: per això tarda un dia i per això el resultat és fiable."]],
+       ["El resultat canvia d'un dia per a l'altre?","Pot variar, sí. Les IA actualitzen les seues fonts i no sempre responen igual dues vegades. Per això consultem cada una per separat i contrastem les respostes abans d'enviar-te res: el que t'arriba és el que es repetix, no una foto d'un moment solt."],
+       ["Si no hi aparec, es pot arreglar?","Quasi sempre, però no d'un dia per a l'altre ni amb un truc. Aparéixer en una IA depén del que diguen de tu les fonts que ella consulta, i això es construïx: fitxes coherents, ressenyes reals, mencions en llocs que la IA ja llig. L'informe et diu quines fonts cita en el teu sector i quines et falten. Amb això ja pots començar tu."]],
   footSlogan:"— El teu negoci, visible on et busquen",
   preguntas:["Quin {oficio} em recomanes a {ciudad}?","Millor {oficio} a {ciudad}","{Oficio} urgent a {ciudad}","Quant costa un treball de {oficio} a {ciudad}?","{Oficio} de confiança a {ciudad} amb bones opinions","Els 5 millors professionals de {oficio} a {ciudad}","Necessite {oficio} a {ciudad}, a qui telefone?"],
   metaTitle:"Et recomana ChatGPT? Comprova gratis la teua visibilitat en IA | WebAutonomos",
@@ -933,9 +1016,12 @@ en: {
   btnBack:"← Back", errElige:"Choose what you want to check.",
   errSend:"We could not send it. Try again or write to us on WhatsApp.",
   faqH2:"Frequently asked questions",
-  faq:[["Is this really free?","Yes. We do not ask for a card, there is no trial period and no small print. We run the check and send you the result as it is, whether you show up or not. If you then want us to work on your visibility, we can talk; and if not, you keep the result anyway."],
+  faq:[["Why don't I show up in ChatGPT if I rank well on Google?","Because they do not work the same way. Google ranks pages; an AI answers with what it has retained from sources it considers reliable — directories, local press, reviews, forums. You can be first on Google and not exist for ChatGPT, and the other way round. They are two different kinds of visibility and they are worked on separately."],
+       ["Is this really free?","Yes. We do not ask for a card, there is no trial period and no small print. We run the check and send you the result as it is, whether you show up or not. If you then want us to work on your visibility, we can talk; and if not, you keep the result anyway."],
+       ["How long does it take?","Less than 24 working hours. We query each AI separately and cross-check the answers before sending them to you: that is why it takes a day and why the result is reliable."],
        ["What do I do if I do not show up?","That is the most common outcome, so do not be alarmed. In the email we tell you which sources the AI is citing for your trade and your city, and what your business is missing to get in there. With that you can start working on it yourself if you want."],
-       ["How long does it take?","Less than 24 working hours. We query each AI separately and cross-check the answers before sending them to you: that is why it takes a day and why the result is reliable."]],
+       ["Does the result change from one day to the next?","It can vary, yes. AIs update their sources and do not always answer the same way twice. That is why we query each one separately and cross-check the answers before sending you anything: what reaches you is what comes up repeatedly, not a snapshot of a single moment."],
+       ["If I do not show up, can it be fixed?","Almost always, but not overnight and not with a trick. Showing up in an AI depends on what the sources it consults say about you, and that gets built: consistent listings, real reviews, mentions on sites the AI already reads. The report tells you which sources it cites in your sector and which ones you are missing. With that you can start on your own."]],
   footSlogan:"— Your business, visible where people look for you",
   preguntas:["Which {oficio} do you recommend in {ciudad}?","Best {oficio} in {ciudad}","Emergency {oficio} in {ciudad}","How much does {oficio} work cost in {ciudad}?","Trustworthy {oficio} in {ciudad} with good reviews","The 5 best {oficio} professionals in {ciudad}","I need a {oficio} in {ciudad}, who should I call?"],
   metaTitle:"Does ChatGPT recommend you? Check your AI visibility for free | WebAutonomos",
@@ -947,6 +1033,13 @@ var lang = (new URLSearchParams(location.search).get("lang") || "es").toLowerCas
 if (!T[lang]) lang = "es";
 
 /* Controle d'integrite : une cle manquante donnerait un texte vide a l'ecran. */
+/* Capture du bloc FAQPage tel qu'il est ECRIT dans le fichier, avant que tr()
+   ne le reecrive : c'est lui que verra un crawler qui n'execute pas JS. */
+var FAQ_STATIQUE = (function(){
+  var el = document.getElementById("faq-schema");
+  try { return el ? JSON.parse(el.textContent) : null; } catch (e) { return "invalide"; }
+})();
+
 (function(){
   var ref = Object.keys(T.es), manquantes = [];
   ["ca","en"].forEach(function(l){
@@ -961,8 +1054,30 @@ if (!T[lang]) lang = "es";
         if (typeof T[l][k] !== "string") manquantes.push(l + "." + k + " (utilisee dans le DOM)");
       });
     });
-    if (manquantes.length) console.error("[i18n] cles manquantes :", manquantes);
-    else console.log("[i18n] toutes les cles sont presentes dans les trois langues");
+    /* Les tableaux (faq, preguntas) doivent avoir la MEME longueur partout :
+       le rendu boucle sur celui de la langue active, donc une entree ajoutee
+       dans un seul bloc disparait silencieusement dans les deux autres. */
+    ["faq","preguntas"].forEach(function(k){
+      var n = T.es[k].length;
+      ["ca","en"].forEach(function(l){
+        if (T[l][k].length !== n)
+          manquantes.push(k + " : " + l + " a " + T[l][k].length + " entrees contre " + n + " en es");
+      });
+    });
+    /* Le bloc statique doit refleter la FAQ espagnole affichee par defaut. */
+    if (FAQ_STATIQUE === "invalide") manquantes.push("FAQPage : JSON-LD statique invalide");
+    else if (!FAQ_STATIQUE) manquantes.push("FAQPage : bloc absent");
+    else {
+      var m = FAQ_STATIQUE.mainEntity || [];
+      if (m.length !== T.es.faq.length)
+        manquantes.push("FAQPage : " + m.length + " questions contre " + T.es.faq.length + " dans T.es");
+      else T.es.faq.forEach(function(q, i){
+        if (m[i].name !== q[0] || m[i].acceptedAnswer.text !== q[1])
+          manquantes.push("FAQPage : question " + (i + 1) + " differe de T.es");
+      });
+    }
+    if (manquantes.length) console.error("[i18n] incoherences :", manquantes);
+    else console.log("[i18n] cles et longueurs de tableaux coherentes dans les trois langues");
   });
 })();
 
@@ -988,6 +1103,18 @@ function tr(){
       '<svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7"></path></svg>' +
       '</summary><div class="answer">' + q[1] + '</div></details>';
   }).join("");
+  /* Le balisage doit decrire ce que la page AFFICHE : on le regenere a chaque
+     changement de langue depuis le meme tableau que la FAQ visible. */
+  var sch = document.getElementById("faq-schema");
+  if (sch) sch.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": document.documentElement.lang,
+    "mainEntity": t.faq.map(function(q){
+      return { "@type": "Question", "name": q[0],
+               "acceptedAnswer": { "@type": "Answer", "text": q[1] } };
+    })
+  }, null, 2);
   document.getElementById("langFlag").innerHTML = FLAGS[lang].svg;
   document.getElementById("langMenu").innerHTML = Object.keys(FLAGS).map(function(k){
     return '<li role="option" data-lang="' + k + '" tabindex="-1" aria-selected="'
