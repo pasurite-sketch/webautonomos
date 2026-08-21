@@ -1,0 +1,287 @@
+{
+  "publish_date": "2026-08-27",
+  "slug": "cuanto-cuesta-automatizar-un-proceso-formula",
+  "category": "automatizacion",
+  "image": "🧮",
+  "lastmod": "2026-08-27",
+  "es": {
+    "date": "27 Agosto 2026",
+    "title": "Cuánto cuesta automatizar: la fórmula, no el rango",
+    "seoTitle": "Cuánto cuesta automatizar un proceso: la fórmula | WebAutonomos",
+    "metaDescription": "Todos responden «depende». Aquí tienes la fórmula exacta con la que calculamos el precio, los tres números que necesitas y cuándo la respuesta es no.",
+    "keywords": [
+      "cuánto cuesta automatizar procesos",
+      "precio automatización pymes",
+      "rentabilidad de automatizar procesos",
+      "calcular retorno automatización"
+    ],
+    "excerpt": "Busca «cuánto cuesta automatizar» y encontrarás rangos de 1.500 a 60.000 euros. Ninguno te sirve. Aquí está la fórmula que hay detrás.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Busca «cuánto cuesta automatizar un proceso» y verás lo mismo en todas partes: rangos que van de 1.500 a 60.000 euros, una lista de factores que mueven el precio, y una frase final que lo resume todo. El importe exacto sale de una auditoría previa. Es verdad. Y no te sirve de nada cuando lo que necesitas es saber si te compensa antes de pedir cita con nadie."
+      },
+      {
+        "type": "heading",
+        "text": "Por qué todo el mundo responde «depende»"
+      },
+      {
+        "type": "paragraph",
+        "text": "Porque es cierto, y porque conviene. Es cierto: el precio depende de tus programas, de tus volúmenes y de cuántos casos raros hay que contemplar. Y conviene: un rango de 1.500 a 15.000 euros no compromete a nadie, y obliga a pedir el presupuesto. El problema es que el rango es tan ancho que no te ayuda a decidir. Entre 1.500 y 15.000 hay diez veces de diferencia."
+      },
+      {
+        "type": "heading",
+        "text": "La fórmula que usamos, publicada"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nosotros calculamos la implantación como el 12 % del coste anual de la tarea que vas a automatizar. Si una tarea te cuesta 20.000 euros al año, el proyecto ronda los 2.400. Si te cuesta 4.000, ronda los 500. El precio va atado a lo que la tarea te cuesta hoy, no a lo compleja que nos parezca a nosotros. Y el mantenimiento es el 20 % de esa implantación, repartido al año."
+      },
+      {
+        "type": "heading",
+        "text": "Los tres números que necesitas"
+      },
+      {
+        "type": "paragraph",
+        "text": "Para saber lo que te cuesta la tarea hoy solo hacen falta tres datos, y los tienes todos. Cuántas veces al día se hace. Cuánto tiempo lleva cada vez. Y cuánto cuesta la hora de quien la hace, con cargas sociales incluidas. Multiplica los tres por 240 días laborables y ya tienes el coste anual. Sin hojas de cálculo ni fórmulas raras."
+      },
+      {
+        "type": "heading",
+        "text": "Un ejemplo completo, con los números a la vista"
+      },
+      {
+        "type": "paragraph",
+        "text": "Una empresa graba albaranes de proveedores dos veces al día, veinte minutos cada vez, con una persona que cuesta 25 euros la hora con cargas. Son 160 horas al año y 4.000 euros. La implantación sale por unos 480 euros y el mantenimiento por unos 96 al año. Ahora falta la otra mitad del cálculo: cuánto de esos 4.000 euros recupera realmente una automatización."
+      },
+      {
+        "type": "heading",
+        "text": "Casi nunca se recupera el 100 %"
+      },
+      {
+        "type": "paragraph",
+        "text": "Aquí es donde fallan la mayoría de los cálculos de retorno. Ninguna automatización elimina la tarea entera: quedan las excepciones, las revisiones y los casos que no encajan. Si los datos están en un programa de gestión y los casos se parecen entre sí, puedes recuperar entre el 30 y el 50 %. Si están en papel y cada caso es distinto, bajas al 10 o 15 %. Esa diferencia decide el proyecto entero."
+      },
+      {
+        "type": "heading",
+        "text": "Cuándo la respuesta es que no"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nosotros solo proponemos un proyecto cuando se amortiza en menos de 24 meses. Por debajo de ese umbral hay caso; por encima, no. En la práctica eso descarta las tareas de pocos minutos al día, las que cambian de reglas cada trimestre, y las que tienen los datos en papel sin haberlos ordenado antes. No es que sean imposibles: es que el coste de mantenerlas se come el ahorro."
+      },
+      {
+        "type": "conclusion",
+        "text": "Puedes hacer estas cuentas tú mismo con una calculadora, o dejar que las haga un diagnóstico gratuito que hemos preparado: cuatro preguntas, dos minutos, y te devuelve el coste anual de tu tarea, cuánto es recuperable, qué tecnología mínima hace falta y en cuántos meses se amortiza. Sin cita previa y sin hablar con nadie. Y si sale que no compensa, te lo dice igual."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué el 12 % y no otro porcentaje?",
+        "a": "Porque ata el precio a lo que la tarea te cuesta, no a lo que nos parezca. Una tarea de 4.000 euros anuales no puede justificar un proyecto de 5.000, por muy elegante que sea la solución. El porcentaje mantiene la proporción."
+      },
+      {
+        "q": "¿Ese precio incluye el mantenimiento?",
+        "a": "No. El mantenimiento es aparte y es opcional: en torno al 20 % de la implantación repartido al año. Sin él, la automatización sigue funcionando hasta que uno de tus programas cambie de versión; entonces la reparación se cobra por horas."
+      },
+      {
+        "q": "¿Cómo sé qué parte del coste es recuperable?",
+        "a": "Depende de cuatro cosas: si los casos se parecen entre sí, dónde están los datos, si hay alguien que lleve el tema internamente, y qué pasa si el sistema se equivoca. El diagnóstico gratuito las pregunta y te da el porcentaje."
+      },
+      {
+        "q": "¿Y si mi caso sale por debajo de 500 euros?",
+        "a": "Te lo decimos y te indicamos qué configurar tú mismo, sin coste. Un proyecto que no compensa no es un proyecto pequeño: es un proyecto que no hay que hacer."
+      },
+      {
+        "q": "¿Cuánto tardáis en darme un presupuesto?",
+        "a": "Menos de 48 horas desde la videollamada, y es un presupuesto cerrado: no un rango, no un «depende». La videollamada dura treinta minutos y sirve para ver tus programas, tus volúmenes reales y tus casos particulares."
+      }
+    ]
+  },
+  "val": {
+    "date": "27 Agost 2026",
+    "title": "Quant costa automatitzar: la fórmula, no el rang",
+    "seoTitle": "Quant costa automatitzar un procés: la fórmula | WebAutonomos",
+    "metaDescription": "Tots responen «depén». Ací tens la fórmula exacta amb què calculem el preu, els tres números que necessites i quan la resposta és no.",
+    "keywords": [
+      "quant costa automatitzar processos",
+      "preu automatització pimes",
+      "rendibilitat d'automatitzar processos",
+      "calcular retorn automatització"
+    ],
+    "excerpt": "Busca «quant costa automatitzar» i trobaràs rangs de 1.500 a 60.000 euros. Cap no et servix. Ací està la fórmula que hi ha darrere.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Busca «quant costa automatitzar un procés» i veuràs el mateix per tot arreu: rangs que van de 1.500 a 60.000 euros, una llista de factors que mouen el preu, i una frase final que ho resumix tot. L'import exacte ix d'una auditoria prèvia. És veritat. I no et servix de res quan el que necessites és saber si et compensa abans de demanar cita amb ningú."
+      },
+      {
+        "type": "heading",
+        "text": "Per què tothom respon «depén»"
+      },
+      {
+        "type": "paragraph",
+        "text": "Perquè és cert, i perquè convé. És cert: el preu depén dels teus programes, dels teus volums i de quants casos rars cal contemplar. I convé: un rang de 1.500 a 15.000 euros no compromet ningú, i obliga a demanar el pressupost. El problema és que el rang és tan ample que no t'ajuda a decidir. Entre 1.500 i 15.000 hi ha deu vegades de diferència."
+      },
+      {
+        "type": "heading",
+        "text": "La fórmula que fem servir, publicada"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nosaltres calculem la implantació com el 12 % del cost anual de la tasca que vas a automatitzar. Si una tasca et costa 20.000 euros a l'any, el projecte ronda els 2.400. Si et costa 4.000, ronda els 500. El preu va lligat al que la tasca et costa hui, no a com de complexa ens sembla a nosaltres. I el manteniment és el 20 % d'eixa implantació, repartit a l'any."
+      },
+      {
+        "type": "heading",
+        "text": "Els tres números que necessites"
+      },
+      {
+        "type": "paragraph",
+        "text": "Per a saber el que et costa la tasca hui només fan falta tres dades, i les tens totes. Quantes vegades al dia es fa. Quant de temps porta cada vegada. I quant costa l'hora de qui la fa, amb càrregues socials incloses. Multiplica els tres per 240 dies hàbils i ja tens el cost anual. Sense fulls de càlcul ni fórmules rares."
+      },
+      {
+        "type": "heading",
+        "text": "Un exemple complet, amb els números a la vista"
+      },
+      {
+        "type": "paragraph",
+        "text": "Una empresa grava albarans de proveïdors dos vegades al dia, vint minuts cada vegada, amb una persona que costa 25 euros l'hora amb càrregues. Són 160 hores a l'any i 4.000 euros. La implantació ix per uns 480 euros i el manteniment per uns 96 a l'any. Ara falta l'altra meitat del càlcul: quant d'eixos 4.000 euros recupera realment una automatització."
+      },
+      {
+        "type": "heading",
+        "text": "Quasi mai es recupera el 100 %"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ací és on fallen la majoria dels càlculs de retorn. Cap automatització elimina la tasca sencera: queden les excepcions, les revisions i els casos que no encaixen. Si les dades estan en un programa de gestió i els casos s'assemblen entre si, pots recuperar entre el 30 i el 50 %. Si estan en paper i cada cas és distint, baixes al 10 o 15 %. Eixa diferència decidix el projecte sencer."
+      },
+      {
+        "type": "heading",
+        "text": "Quan la resposta és que no"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nosaltres només proposem un projecte quan s'amortitza en menys de 24 mesos. Per davall d'eixe llindar hi ha cas; per damunt, no. En la pràctica això descarta les tasques de pocs minuts al dia, les que canvien de regles cada trimestre, i les que tenen les dades en paper sense haver-les ordenat abans. No és que siguen impossibles: és que el cost de mantindre-les es menja l'estalvi."
+      },
+      {
+        "type": "conclusion",
+        "text": "Pots fer estos comptes tu mateix amb una calculadora, o deixar que els faça un diagnòstic gratuït que hem preparat: quatre preguntes, dos minuts, i et torna el cost anual de la teua tasca, quant és recuperable, quina tecnologia mínima fa falta i en quants mesos s'amortitza. Sense cita prèvia i sense parlar amb ningú. I si ix que no compensa, t'ho diu igual."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Per què el 12 % i no un altre percentatge?",
+        "a": "Perquè lliga el preu al que la tasca et costa, no al que ens parega. Una tasca de 4.000 euros anuals no pot justificar un projecte de 5.000, per molt elegant que siga la solució. El percentatge manté la proporció."
+      },
+      {
+        "q": "Eixe preu inclou el manteniment?",
+        "a": "No. El manteniment va a banda i és opcional: al voltant del 20 % de la implantació repartit a l'any. Sense ell, l'automatització continua funcionant fins que un dels teus programes canvie de versió; llavors la reparació es cobra per hores."
+      },
+      {
+        "q": "Com sé quina part del cost és recuperable?",
+        "a": "Depén de quatre coses: si els casos s'assemblen entre si, on estan les dades, si hi ha algú que porte el tema internament, i què passa si el sistema s'equivoca. El diagnòstic gratuït les pregunta i et dona el percentatge."
+      },
+      {
+        "q": "I si el meu cas ix per davall de 500 euros?",
+        "a": "T'ho diem i t'indiquem què configurar tu mateix, sense cost. Un projecte que no compensa no és un projecte xicotet: és un projecte que no cal fer."
+      },
+      {
+        "q": "Quant tardeu a donar-me un pressupost?",
+        "a": "Menys de 48 hores des de la videotrucada, i és un pressupost tancat: no un rang, no un «depén». La videotrucada dura trenta minuts i servix per a veure els teus programes, els teus volums reals i els teus casos particulars."
+      }
+    ]
+  },
+  "en": {
+    "date": "Aug 27, 2026",
+    "title": "What automation costs: the formula, not the range",
+    "seoTitle": "What automating a process costs: the formula | WebAutonomos",
+    "metaDescription": "Everyone answers «it depends». Here is the exact formula we price with, the three numbers you need, and when the answer is no.",
+    "keywords": [
+      "cost to automate a process",
+      "automation pricing SME",
+      "automation return on investment",
+      "calculate automation payback"
+    ],
+    "excerpt": "Search for what automation costs and you get ranges from €1,500 to €60,000. None of them help. Here is the formula behind them.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Search for what it costs to automate a process and you will find the same thing everywhere: ranges from €1,500 to €60,000, a list of factors that move the price, and a closing line that sums it all up. The exact figure comes out of a prior audit. That is true. And it is no use at all when what you need is to know whether it is worth it before booking a call with anyone."
+      },
+      {
+        "type": "heading",
+        "text": "Why everyone answers «it depends»"
+      },
+      {
+        "type": "paragraph",
+        "text": "Because it is true, and because it suits them. It is true: the price depends on your systems, your volumes and how many odd cases have to be handled. And it suits them: a range from €1,500 to €15,000 commits nobody, and forces you to ask for a quote. The problem is that the range is so wide it does not help you decide. Between €1,500 and €15,000 there is a factor of ten."
+      },
+      {
+        "type": "heading",
+        "text": "The formula we use, published"
+      },
+      {
+        "type": "paragraph",
+        "text": "We price the build at 12 % of the annual cost of the task being automated. If a task costs you €20,000 a year, the project comes to around €2,400. If it costs €4,000, around €500. The price is tied to what the task costs you today, not to how complex it looks to us. Maintenance is 20 % of that build cost, spread across the year."
+      },
+      {
+        "type": "heading",
+        "text": "The three numbers you need"
+      },
+      {
+        "type": "paragraph",
+        "text": "To work out what the task costs today you only need three figures, and you have all of them. How many times a day it is done. How long it takes each time. And what the hour costs for whoever does it, employer contributions included. Multiply the three by 240 working days and you have the annual cost. No spreadsheets, no odd formulas."
+      },
+      {
+        "type": "heading",
+        "text": "A worked example, with the numbers on show"
+      },
+      {
+        "type": "paragraph",
+        "text": "A company keys in supplier delivery notes twice a day, twenty minutes each time, with someone costing €25 an hour fully loaded. That is 160 hours a year and €4,000. The build comes to around €480 and maintenance to around €96 a year. Now for the other half of the calculation: how much of those €4,000 automation actually recovers."
+      },
+      {
+        "type": "heading",
+        "text": "You almost never recover 100 %"
+      },
+      {
+        "type": "paragraph",
+        "text": "This is where most payback calculations go wrong. No automation removes the whole task: exceptions, checks and cases that do not fit all remain. If the data sits in a business system and the cases resemble one another, you can recover 30 to 50 %. If it sits on paper and every case is different, you drop to 10 or 15 %. That difference decides the entire project."
+      },
+      {
+        "type": "heading",
+        "text": "When the answer is no"
+      },
+      {
+        "type": "paragraph",
+        "text": "We only propose a project when it pays back in under 24 months. Below that threshold there is a case; above it, there is not. In practice that rules out tasks of a few minutes a day, those whose rules change every quarter, and those whose data sits on paper without having been sorted out first. Not because they are impossible: because the cost of keeping them running eats the saving."
+      },
+      {
+        "type": "conclusion",
+        "text": "You can run these numbers yourself with a calculator, or let a free diagnostic do it: four questions, two minutes, and it returns the annual cost of your task, how much of it is recoverable, the minimum technology required and how many months it takes to pay back. No appointment, no talking to anyone. And if it turns out not to be worth it, it tells you that too."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why 12 % and not some other percentage?",
+        "a": "Because it ties the price to what the task costs you, not to what we think of it. A task costing €4,000 a year cannot justify a €5,000 project, however elegant the solution. The percentage keeps the proportion."
+      },
+      {
+        "q": "Does that price include maintenance?",
+        "a": "No. Maintenance is separate and optional: around 20 % of the build cost, spread across the year. Without it the automation keeps running until one of your systems changes version; the repair is then charged by the hour."
+      },
+      {
+        "q": "How do I know what share of the cost is recoverable?",
+        "a": "It depends on four things: whether the cases resemble one another, where the data sits, whether someone owns the subject internally, and what happens if the system gets it wrong. The free diagnostic asks all four and gives you the percentage."
+      },
+      {
+        "q": "What if my case comes in under €500?",
+        "a": "We say so, and we tell you what to configure yourself at no cost. A project that does not pay back is not a small project: it is a project not to do."
+      },
+      {
+        "q": "How long do you take to send a quote?",
+        "a": "Under 48 hours from the video call, and it is a fixed quote: not a range, not an «it depends». The call lasts thirty minutes and covers your systems, your real volumes and your edge cases."
+      }
+    ]
+  },
+  "readTime": 10
+}
