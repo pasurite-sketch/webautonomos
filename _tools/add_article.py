@@ -31,7 +31,7 @@ sm = open(S, encoding='utf-8').read()
 # libelles. Sans ce controle, une categorie inconnue passe sans erreur : l'article
 # sort avec un badge VIDE (t.blog.categories[cat] vaut undefined) et n'apparait
 # sous aucun bouton du filtre, seulement sous « Todos ».
-CATEGORIES = ('web', 'seo', 'gmb', 'marketing', 'automatizacion')
+CATEGORIES = ('web', 'seo', 'gmb', 'marketing', 'automatizacion', 'legal')
 cat = art.get('category')
 if cat not in CATEGORIES:
     print(f'ERREUR: category "{cat}" inconnue. Attendu : {", ".join(CATEGORIES)}. Abandon.'); sys.exit(1)
@@ -193,7 +193,7 @@ print('Déploie :  npx wrangler deploy')
 # Format JSON attendu :
 # {
 #   "slug":"web-para-xxx","category":"web","image":"🧭","readTime":11,"lastmod":"2026-07-20",
-#   category ∈ web | seo | gmb | marketing | automatizacion
+#   category ∈ web | seo | gmb | marketing | automatizacion | legal
 #   (ajouter une catégorie = la déclarer AUSSI dans const categories=[...] et dans
 #    les trois objets categories:{...} de index.html, sinon le script refuse)
 #   "es":{"date":"20 Julio 2026","title":"...","seoTitle":"...","metaDescription":"...",
