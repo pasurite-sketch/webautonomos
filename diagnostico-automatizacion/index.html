@@ -27,8 +27,23 @@
      déborde entre 1180 et 1280px. Ne PAS toucher à .wrap{max-width:1180px},
      qui est une règle différente.
 
+  5. Balisage JSON-LD (script#ld-graph, @graph de 7 types) :
+       - le nœud FAQPage porte inLanguage et ses 7 questions en espagnol —
+         c'est ce que voit un crawler qui n'exécute pas JS ;
+       - render() régénère ce nœud depuis T[lang].faq à chaque changement de
+         langue, et met à jour inLanguage sur FAQPage et sur WebPage, pour que
+         le balisage décrive toujours la FAQ réellement affichée ;
+       - LD_BASE capture le graphe du fichier avant toute réécriture.
+     ⚠ Le nœud écrit en dur duplique T.es.faq. Un contrôle au chargement les
+     compare et signale toute divergence en console (« FAQPage : question N
+     differe de T.es »). Il avait de quoi servir : le bloc d'origine ne
+     contenait que 6 des 7 questions — « ¿El mantenimiento es obligatorio? »
+     manquait, donc le balisage décrivait une FAQ que la page n'affichait pas.
+     Si tu modifies une question espagnole, modifie les deux endroits.
+
   Vérifié : 0px de débordement de 1300 à 1600px, barre masquée à 1280px et en
-  dessous, aucun débordement horizontal de 375 à 1600px.
+  dessous, aucun débordement horizontal de 375 à 1600px. JSON-LD valide, 7
+  questions identiques à la FAQ affichée en es, ca et en.
 -->
 
 <title>Automatizar tareas repetitivas: calcula gratis si te compensa | WebAutonomos</title>
@@ -573,7 +588,7 @@ section{padding:clamp(54px,7.5vw,100px) 0;scroll-margin-top:74px}
   </a>
 </div>
 
-<script type="application/ld+json">
+<script type="application/ld+json" id="ld-graph">
 {
   "@context":"https://schema.org",
   "@graph":[
@@ -607,13 +622,15 @@ section{padding:clamp(54px,7.5vw,100px) 0;scroll-margin-top:74px}
      "hasOfferCatalog":{"@type":"OfferCatalog","name":"Servicios de automatización","itemListElement":[
        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Diagnóstico de automatización","description":"Cálculo del coste anual de una tarea y de su potencial de automatización."}},
        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Desarrollo a medida de una automatización","description":"Diseño, desarrollo, puesta en producción y mantenimiento."}}]}},
-    {"@type":"FAQPage","@id":"https://webautonomos.es/diagnostico-automatizacion/#faq","mainEntity":[
+    {"@type":"FAQPage","@id":"https://webautonomos.es/diagnostico-automatizacion/#faq","inLanguage":"es-ES","mainEntity":[
       {"@type":"Question","name":"¿El diagnóstico es realmente gratis?","acceptedAnswer":{"@type":"Answer","text":"Sí. La herramienta es de acceso libre y el resultado aparece en pantalla. Te pedimos un correo antes de mostrarlo para poder enviarte una copia del informe."}},
       {"@type":"Question","name":"¿Cuánto tiempo lleva?","acceptedAnswer":{"@type":"Answer","text":"Cuatro preguntas para obtener el coste anual de la tarea, unos dos minutos. Para el análisis completo — potencial recuperable, tecnología mínima y plazo de retorno — añade seis preguntas y unos cinco minutos, preferiblemente con tu programa de gestión abierto."}},
       {"@type":"Question","name":"¿Sirve si trabajo solo, sin empleados?","acceptedAnswer":{"@type":"Answer","text":"Sí. El coste por hora que introduces es entonces el valor de tu propio tiempo: lo que facturas por hora, o lo que dejarías de facturar si dedicases esas horas a trabajo de cliente."}},
+      {"@type":"Question","name":"¿El mantenimiento es obligatorio?","acceptedAnswer":{"@type":"Answer","text":"No. Sin mantenimiento la automatización sigue funcionando hasta que uno de tus programas cambie de versión o de interfaz; entonces te cobramos la reparación por horas. Con mantenimiento, la arreglamos nosotros y sin coste adicional."}},
       {"@type":"Question","name":"¿Qué pasa si el diagnóstico dice que no automatice?","acceptedAnswer":{"@type":"Answer","text":"Ocurre a menudo, y te lo decimos con la misma claridad. Una tarea pequeña, muy variable o con los datos en papel rara vez amortiza un desarrollo. Saberlo antes de gastar el dinero también es un resultado."}},
       {"@type":"Question","name":"¿Qué hacéis con mis datos?","acceptedAnswer":{"@type":"Answer","text":"Tus respuestas sirven para elaborar el diagnóstico y enviarte el informe. No se venden ni se ceden a terceros. Puedes pedir su supresión escribiendo a info@webautonomos.es."}},
-      {"@type":"Question","name":"¿Y después del diagnóstico?","acceptedAnswer":{"@type":"Answer","text":"Los importes son órdenes de magnitud. El presupuesto definitivo depende de tus programas, de tus volúmenes reales y del número de casos particulares. Treinta minutos por videollamada bastan para elaborarlo, sin compromiso."}}]}
+      {"@type":"Question","name":"¿Y después del diagnóstico?","acceptedAnswer":{"@type":"Answer","text":"Treinta minutos por videollamada para ver tus programas, tus volúmenes reales y tus casos particulares. Después recibes un presupuesto cerrado en menos de 48 horas, sin compromiso."}}
+    ]}
   ]
 }
 </script>
@@ -905,6 +922,14 @@ var FLAGS = {
   en: { nom: 'English', svg: '<svg viewBox="0 0 60 36" aria-hidden="true" focusable="false"><clipPath id="ukc"><rect width="60" height="36"/></clipPath><g clip-path="url(#ukc)"><rect width="60" height="36" fill="#012169"/><path d="M0 0 60 36M60 0 0 36" stroke="#fff" stroke-width="7.2"/><path d="M0 0 60 36M60 0 0 36" stroke="#C8102E" stroke-width="4.3"/><path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="12"/><path d="M30 0v36M0 18h60" stroke="#C8102E" stroke-width="7.2"/></g></svg>' }
 };
 
+/* Graphe JSON-LD tel qu'il est ECRIT dans le fichier : c'est ce que voit un
+   crawler qui n'execute pas JS. On le capture avant toute reecriture, pour le
+   comparer a T.es et pour servir de base aux versions traduites. */
+var LD_BASE = (function(){
+  var el = document.getElementById("ld-graph");
+  try { return el ? JSON.parse(el.textContent) : null; } catch (e) { return "invalide"; }
+})();
+
 var lang = (new URLSearchParams(location.search).get("lang") || "es").toLowerCase();
 if (!T[lang]) lang = "es";
 var seg = "solo";
@@ -957,6 +982,23 @@ function render(){
     return '<details><summary>' + q[0] + '</summary><div class="a">' + q[1] + '</div></details>';
   }).join("");
   document.getElementById("fallback").classList.toggle("on", !!t.toolFallback);
+  /* Le balisage doit decrire ce que la page AFFICHE : on regenere le noeud
+     FAQPage depuis le meme tableau que la FAQ visible, et inLanguage suit. */
+  if (LD_BASE && LD_BASE !== "invalide"){
+    var g = JSON.parse(JSON.stringify(LD_BASE));
+    (g["@graph"] || []).forEach(function(n){
+      if (n["@type"] === "FAQPage"){
+        n.inLanguage = document.documentElement.lang;
+        n.mainEntity = t.faq.map(function(q){
+          return { "@type": "Question", "name": q[0],
+                   "acceptedAnswer": { "@type": "Answer", "text": q[1] } };
+        });
+      } else if (n["@type"] === "WebPage"){
+        n.inLanguage = document.documentElement.lang;
+      }
+    });
+    document.getElementById("ld-graph").textContent = JSON.stringify(g, null, 2);
+  }
   document.getElementById("langFlag").innerHTML = FLAGS[lang].svg;
   document.getElementById("langMenu").innerHTML = Object.keys(FLAGS).map(function(k){
     return '<li role="option" data-lang="' + k + '" tabindex="-1" aria-selected="'
@@ -971,6 +1013,38 @@ function render(){
   if (f.getAttribute("src") !== src) f.setAttribute("src", src);
   contador();
 }
+
+/* Le noeud FAQPage ecrit en dur duplique T.es.faq : on verifie au chargement
+   qu'ils n'ont pas divergé. Sans ce controle, le balisage peut decrire une FAQ
+   que la page n'affiche plus — c'est exactement ce qui s'etait produit ici,
+   une question manquait dans le bloc statique. */
+(function(){
+  var pb = [];
+  if (LD_BASE === "invalide") pb.push("JSON-LD statique invalide");
+  else if (!LD_BASE) pb.push("bloc JSON-LD absent");
+  else {
+    var n = (LD_BASE["@graph"] || []).filter(function(x){ return x["@type"] === "FAQPage"; })[0];
+    if (!n) pb.push("noeud FAQPage absent du graphe");
+    else {
+      var m = n.mainEntity || [];
+      if (m.length !== T.es.faq.length)
+        pb.push("FAQPage : " + m.length + " questions contre " + T.es.faq.length + " dans T.es");
+      else T.es.faq.forEach(function(q, i){
+        if (m[i].name !== q[0] || m[i].acceptedAnswer.text !== q[1])
+          pb.push("FAQPage : question " + (i + 1) + " differe de T.es");
+      });
+    }
+  }
+  ["faq","ex1","ex2","tiers"].forEach(function(k){
+    if (!T.es[k] || typeof T.es[k].length !== "number") return;
+    ["ca","en"].forEach(function(l){
+      if (T[l][k] && T[l][k].length !== T.es[k].length)
+        pb.push(k + " : " + l + " a " + T[l][k].length + " entrees contre " + T.es[k].length + " en es");
+    });
+  });
+  if (pb.length) console.error("[jsonld] incoherences :", pb);
+  else console.log("[jsonld] bloc statique coherent avec T.es, tableaux de meme longueur");
+})();
 
 /* ---- menu de langues : bouton + liste, clavier compris ---- */
 var lBtn = document.getElementById("langBtn");
