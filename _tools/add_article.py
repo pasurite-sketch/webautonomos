@@ -27,7 +27,22 @@ art = json.load(open(path, encoding='utf-8'))
 html = open(F, encoding='utf-8').read()
 sm = open(S, encoding='utf-8').read()
 
-# --- 0) categorie : doit exister dans le filtre du blog ET dans les 3 blocs de
+# --- 0a) champs obligatoires : sans ce controle, un champ absent remonte en
+# KeyError brut au milieu du script. Le message doit dire QUOI manque.
+LANGUES = ('es', 'val', 'en', 'fr')
+CHAMPS_LANGUE = ('date', 'title', 'seoTitle', 'metaDescription', 'keywords', 'excerpt', 'content', 'faq')
+manquants = [c for c in ('slug', 'category', 'image', 'readTime') if c not in art]
+for lg in LANGUES:
+    if lg not in art:
+        manquants.append(f'bloc "{lg}"')
+    else:
+        manquants += [f'{lg}.{c}' for c in CHAMPS_LANGUE if c not in art[lg]]
+if manquants:
+    print('ERREUR: champs absents du JSON : ' + ', '.join(manquants))
+    print('        (le site est en 4 langues : es, val, en, fr sont tous requis). Abandon.')
+    sys.exit(1)
+
+# --- 0b) categorie : doit exister dans le filtre du blog ET dans les 3 blocs de
 # libelles. Sans ce controle, une categorie inconnue passe sans erreur : l'article
 # sort avec un badge VIDE (t.blog.categories[cat] vaut undefined) et n'apparait
 # sous aucun bouton du filtre, seulement sous « Todos ».
@@ -47,6 +62,8 @@ MONTHS = {
  'ene':0,'feb':1,'mar':2,'abr':3,'may':4,'jun':5,'jul':6,'ago':7,'sep':8,'oct':9,'nov':10,'dic':11,
  'gener':0,'febrer':1,'març':2,'maig':4,'juny':5,'juliol':6,'agost':7,'setembre':8,'octubre':9,'novembre':10,'desembre':11,
  'gen':0,'set':8,'des':11,
+ 'janvier':0,'février':1,'mars':2,'avril':3,'mai':4,'juin':5,'juillet':6,'août':7,
+ 'septembre':8,'octobre':9,'novembre':10,'décembre':11,
  'jan':0,'apr':3,'aug':7,'dec':11,'january':0,'february':1,'march':2,'april':3,'june':5,'july':6,'august':7,'september':8,'october':9,'november':10,'december':11,
 }
 
@@ -80,7 +97,7 @@ if not mobj:
     print('ERREUR: parseArticleDate introuvable. Abandon.'); sys.exit(1)
 existing = set(re.findall(r"'([^']+)':", mobj.group(1)))
 needed = set()
-for lg in ('es', 'val', 'en'):
+for lg in ('es', 'val', 'en', 'fr'):
     for tok in art[lg]['date'].lower().replace(',', '').split():
         if not tok.isdigit(): needed.add(tok)
 missing = [t for t in sorted(needed) if t not in existing]
@@ -93,20 +110,27 @@ if missing:
     print(f'  parseArticleDate: mois ajoutés -> {missing}')
 
 # --- 2) localiser les 3 tableaux + prochain id ---
-starts = [m.start() + len('articles:') for m in re.finditer(r'articles:\[\{id:1,', html)]
-if len(starts) != 3:
-    print(f'ERREUR: {len(starts)} tableaux articles trouvés (attendu 3). Abandon.'); sys.exit(1)
+# Reperage generique : 'articles:[' apparait exactement 4 fois (es/val/en/fr).
+# On n'ancre PAS sur {id:1, : le tableau francais est vide avant insertion et
+# commence par un autre id apres.
+starts = [m.start() + len('articles:') for m in re.finditer(r'articles:\[', html)]
+if len(starts) != 4:
+    print(f'ERREUR: {len(starts)} tableaux articles trouvés (attendu 4 : es/val/en/fr). Abandon.'); sys.exit(1)
 arrays = [bracket_match(html, s, '[', ']') for s in starts]
 
 def lang_of(a):
-    m = re.search(r'\{id:33,slug:"[^"]*",title:"([^"]+)"', a)
-    t = m.group(1) if m else ''
+    m = re.search(r'\{id:33,slug:"([a-z]+)/[^"]*",title:"([^"]+)"', a)
+    if not m:
+        # tableau sans article #33 : c'est le bloc francais, encore vide
+        return 'fr'
+    prefixe, t = m.group(1), m.group(2)
+    if prefixe in ('es', 'val', 'en', 'fr'): return prefixe
     if t.startswith('Google Ads para'): return 'es'
     if t.startswith('Google Ads per a'): return 'val'
     if t.startswith('Google Ads for'): return 'en'
     return '?'
 labels = [lang_of(a) for a in arrays]
-if sorted(labels) != ['en', 'es', 'val']:
+if sorted(labels) != ['en', 'es', 'fr', 'val']:
     print(f'ERREUR: identification des tableaux ambiguë {labels}. Abandon.'); sys.exit(1)
 nid = max(int(x) for a in arrays for x in re.findall(r'\{id:(\d+),', a)) + 1
 
@@ -126,9 +150,10 @@ def build_entry(lg):
 new_html = html
 for arr, lg in zip(arrays, labels):
     entry = build_entry(lg)
-    if new_html.count(arr) != 1:
+    if new_html.count('articles:' + arr) != 1:
         print(f'ERREUR: tableau {lg} non localisable de façon unique. Abandon.'); sys.exit(1)
-    new_html = new_html.replace(arr, arr[:-1] + ',' + entry + ']')
+    sep = ',' if len(arr) > 2 else ''      # '[]' -> pas de virgule en tete
+    new_html = new_html.replace('articles:' + arr, 'articles:' + arr[:-1] + sep + entry + ']')
 
 # --- 3) sitemap : bloc <url> hreflang avant </urlset> ---
 sl = art['slug']; lm = art.get('lastmod', '2026-07-20')
@@ -138,6 +163,7 @@ block = (
  f'        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/{sl}"/>\n'
  f'        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/{sl}"/>\n'
  f'        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/{sl}"/>\n'
+ f'        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/{sl}"/>\n'
  f'        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/{sl}"/>\n'
  f'        <lastmod>{lm}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>\n'
  '    </url>\n')
@@ -150,7 +176,7 @@ else:
 errs = []
 if new_html.count('{') - new_html.count('}') != html.count('{') - html.count('}'): errs.append('déséquilibre {}')
 if new_html.count('[') - new_html.count(']') != html.count('[') - html.count(']'): errs.append('déséquilibre []')
-vstarts = [m.start() + len('articles:') for m in re.finditer(r'articles:\[\{id:1,', new_html)]
+vstarts = [m.start() + len('articles:') for m in re.finditer(r'articles:\[', new_html)]
 for s, lg in zip(vstarts, labels):
     a = bracket_match(new_html, s, '[', ']')
     ids = re.findall(r'\{id:(\d+),', a)
@@ -185,7 +211,7 @@ shutil.copy2(F, os.path.join(home, 'index.html.bak-addarticle'))
 shutil.copy2(S, os.path.join(home, 'sitemap.xml.bak-addarticle'))
 open(F, 'w', encoding='utf-8').write(new_html)
 open(S, 'w', encoding='utf-8').write(new_sm)
-print(f'\nArticle #{nid} "{sl}" ajouté (ES/VAL/EN) + sitemap mis à jour.')
+print(f'\nArticle #{nid} "{sl}" ajouté (ES/VAL/EN/FR) + sitemap mis à jour.')
 print(f'Sauvegardes: {home}/index.html.bak-addarticle , {home}/sitemap.xml.bak-addarticle')
 print('Déploie :  npx wrangler deploy')
 
