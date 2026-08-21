@@ -890,6 +890,10 @@ label.lbl{display:block;font-size:.875rem;font-weight:500;color:var(--gray-700);
    La langue vient de ?lang= ; toute cle absente ferait un texte vide,
    d'ou le controle d'integrite en fin de fichier (console.error).
    ============================================================ */
+/* Le francais existe dans FLAGS (drapeau du declencheur, ?lang=fr) mais est
+   RETIRE du menu tant que les 438 chaines ne sont pas traduites : le bloc fr
+   affiche encore de l espagnol prefixe de ⟦fr⟧. Retirer le filtre ci-dessous
+   pour le reproposer. */
 var FLAGS = {
   es: { nom: "Castellano", svg: '<svg viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#C60B1E"/><rect y="4" width="24" height="8" fill="#FFC400"/></svg>' },
   ca: { nom: "Valencià",  svg: '<svg viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#FFC400"/><g fill="#DA121A"><rect y="2" width="24" height="2"/><rect y="6" width="24" height="2"/><rect y="10" width="24" height="2"/><rect y="14" width="24" height="2"/></g></svg>' },
@@ -1123,7 +1127,7 @@ function tr(){
     })
   }, null, 2);
   document.getElementById("langFlag").innerHTML = FLAGS[lang].svg;
-  document.getElementById("langMenu").innerHTML = Object.keys(FLAGS).map(function(k){
+  document.getElementById("langMenu").innerHTML = Object.keys(FLAGS).filter(function(k){ return k !== "fr"; }).map(function(k){
     return '<li role="option" data-lang="' + k + '" tabindex="-1" aria-selected="'
       + (k === lang ? "true" : "false") + '"><span class="lang-flag">' + FLAGS[k].svg + '</span>' + FLAGS[k].nom + '</li>';
   }).join("");
