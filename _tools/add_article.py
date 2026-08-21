@@ -6,6 +6,7 @@ Usage (depuis ~/webautonomos) :
 
 Ce que fait le script :
   - lit le JSON de l'article (voir format en bas),
+  - vérifie que la catégorie est connue du filtre du blog et traduite dans les 3 langues,
   - calcule le prochain id automatiquement,
   - insère l'entrée ES/VAL/EN dans les bons tableaux avec slugs localisés (es/, val/, en/),
   - complète parseArticleDate si un nom de mois (ex. Julio/Juliol) manque,
@@ -25,6 +26,20 @@ for f in (F, S, path):
 art = json.load(open(path, encoding='utf-8'))
 html = open(F, encoding='utf-8').read()
 sm = open(S, encoding='utf-8').read()
+
+# --- 0) categorie : doit exister dans le filtre du blog ET dans les 3 blocs de
+# libelles. Sans ce controle, une categorie inconnue passe sans erreur : l'article
+# sort avec un badge VIDE (t.blog.categories[cat] vaut undefined) et n'apparait
+# sous aucun bouton du filtre, seulement sous « Todos ».
+CATEGORIES = ('web', 'seo', 'gmb', 'marketing', 'automatizacion')
+cat = art.get('category')
+if cat not in CATEGORIES:
+    print(f'ERREUR: category "{cat}" inconnue. Attendu : {", ".join(CATEGORIES)}. Abandon.'); sys.exit(1)
+if f"'{cat}'" not in (re.search(r"const categories=\[([^\]]*)\]", html) or type('', (), {'group': lambda *a: ''})()).group(1):
+    print(f'ERREUR: "{cat}" absente de const categories=[...] dans {F}. Abandon.'); sys.exit(1)
+for bloc in re.findall(r'categories:\{seo:[^}]*\}', html):
+    if f'{cat}:"' not in bloc:
+        print(f'ERREUR: libelle manquant pour "{cat}" dans un des blocs de traduction. Abandon.'); sys.exit(1)
 
 # --- table de référence des mois (ES + VAL + EN, complets et abrégés) ---
 MONTHS = {
@@ -178,6 +193,9 @@ print('Déploie :  npx wrangler deploy')
 # Format JSON attendu :
 # {
 #   "slug":"web-para-xxx","category":"web","image":"🧭","readTime":11,"lastmod":"2026-07-20",
+#   category ∈ web | seo | gmb | marketing | automatizacion
+#   (ajouter une catégorie = la déclarer AUSSI dans const categories=[...] et dans
+#    les trois objets categories:{...} de index.html, sinon le script refuse)
 #   "es":{"date":"20 Julio 2026","title":"...","seoTitle":"...","metaDescription":"...",
 #         "keywords":["..."],"excerpt":"...",
 #         "content":[{"type":"intro","text":"..."},{"type":"heading","text":"..."},
