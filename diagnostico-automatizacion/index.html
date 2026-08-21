@@ -24,10 +24,17 @@
      Sans elle le lien s'affiche VIDE : render() ne remplit un [data-t] que si la
      clé existe, et ces <a> n'ont pas de texte de repli.
 
-  4. Point de rupture de la barre : @media (max-width:1280px){ .nav-links{display:none} }
-     La source est à 1180px, calibrée pour 5 liens. Avec le 6e lien la barre
-     déborde entre 1180 et 1280px. Ne PAS toucher à .wrap{max-width:1180px},
-     qui est une règle différente.
+  4. Largeur de la barre — trois réglages liés, à ne pas dissocier :
+       .nav-links{flex:none}      la rangée ne doit JAMAIS être rétrécie
+       .nav .wrap{max-width:1300px}  il lui faut 1262px en espagnol
+       @media (max-width:1320px){ .nav-links{display:none} }
+     ⚠ La source avait min-width:0 + overflow:hidden sur .nav-links : le flex
+     rétrécissait la rangée et elle rognait son dernier lien EN SILENCE. Le
+     découpage ayant lieu à l'intérieur de la rangée, la barre affichait 0 de
+     débordement — mesurer bar.scrollWidth ne le voyait pas, il faut regarder
+     row.scrollWidth - row.clientWidth. Le 6e lien est resté invisible à toutes
+     les largeurs jusqu'à ce que ce soit corrigé.
+     Ne PAS toucher à .wrap{max-width:1180px}, qui régit les sections de la page.
 
   5. Balisage JSON-LD (script#ld-graph, @graph de 7 types) :
        - le nœud FAQPage porte inLanguage et ses 7 questions en espagnol —
@@ -111,7 +118,7 @@ h3{font-size:1.12rem;line-height:1.32;font-weight:700;letter-spacing:-.015em}
 /* ---------- barre de navigation ---------- */
 .nav{position:sticky;top:0;z-index:80;background:rgba(255,255,255,.94);
   backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;gap:16px;height:66px}
+.nav .wrap{display:flex;align-items:center;gap:16px;height:66px;max-width:1300px}
 .brand{display:flex;align-items:center;gap:10px;flex:none}
 .mark{width:34px;height:34px;display:block;flex:none}
 .mark-txt{font-weight:800;font-size:1.2rem;color:#15192E;letter-spacing:-.05em;white-space:nowrap}
@@ -119,8 +126,11 @@ h3{font-size:1.12rem;line-height:1.32;font-weight:700;letter-spacing:-.015em}
 .mark-txt s{color:#3FBE6E;text-decoration:none;font-weight:800}
 .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
   clip:rect(0 0 0 0);white-space:nowrap;border:0}
-.nav-links{display:flex;gap:26px;margin-left:26px;font-size:.9rem;font-weight:600;
-  white-space:nowrap;min-width:0;overflow:hidden}
+/* flex:none et PAS de overflow:hidden : sinon la rangee est retrecie par le flex
+   et rogne silencieusement son dernier lien, sans que le debordement apparaisse
+   sur la barre (le decoupage a lieu un niveau plus bas). */
+.nav-links{display:flex;flex:none;gap:26px;margin-left:26px;font-size:.9rem;font-weight:600;
+  white-space:nowrap}
 .nav-links a{color:var(--blue)}
 /* Lien vers une AUTRE page : teinte sombre pour le distinguer des ancres
    de section. Place avant :hover pour que le survol l emporte. */
@@ -330,7 +340,7 @@ section{padding:clamp(54px,7.5vw,100px) 0;scroll-margin-top:74px}
 .rv.in{opacity:1;transform:none}
 
 /* ---------- écrans ---------- */
-@media (max-width:1280px){ .nav-links{display:none} }
+@media (max-width:1320px){ .nav-links{display:none} }
 @media (max-width:900px){
   .g3,.g4{grid-template-columns:1fr 1fr}
   .tool-frame iframe{min-height:920px}
