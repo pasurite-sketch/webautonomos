@@ -21,6 +21,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--
+      ⚠ MODIFICATIONS LOCALES — à réappliquer si ce fichier est régénéré depuis
+      Lovable. Ce n'est pas un bundle opaque : le JSX est compilé en appels
+      React.createElement lisibles, tout est éditable à la main.
+      Le composant Navigation et l'objet `translations` (clés nav / footer)
+      concentrent l'essentiel.
+
+      1. Deux entrées de nav vers les pages de destination :
+           {key:'diagnostico',href:'/diagnostico-automatizacion/'}
+           {key:'visibilidad', href:'/visibilidad-ia/'}
+         navItems compte 9 entrées. Les 7 d'origine sont des <button> qui
+         changent l'état interne de la SPA ; ces deux-là mènent AILLEURS, d'où
+         une branche `item.href ? <a href> : <button>` dans les DEUX rendus
+         (rangée bureau et panneau burger). Rendues en <a>, elles sont
+         crawlables — un <button> ne l'est pas.
+
+      2. En-tête recalibré (la ligne flex débordait de 106px À L'ORIGINE, le
+         bouton CTA sortait de l'écran sous 1680px) :
+           conteneur   max-w-[1536px]   (au lieu de max-w-6xl / 1152px)
+           rangée      hidden xl:flex … gap-4      -> onglets à partir de 1280px
+           onglets     min-[1440px]:px-2           -> padding seulement ≥1440px
+           burger      xl:hidden                   -> prend le relais sous 1280px
+           pastille tél  masquée dans l'en-tête (le numéro reste au pied de page)
+         ⚠ Ces valeurs tiennent à ~21px près en espagnol, la langue la plus
+         large. Toute entrée ajoutée à navItems, tout libellé rallongé, et le
+         CTA ressort de l'écran. Mesurer avant, pas après.
+
+      3. CTA de la barre : clé `nav.cta` COURTE et distincte de `hero.cta`
+           "Pedir demo" / "Demanar demo" / "Free demo"
+         Le hero garde son libellé long. Les fusionner refait déborder la barre.
+
+      4. Rangée de liens au pied de page (au-dessus des liens légaux), en <a>
+         crawlables, clés footer.diagnostico / footer.visibilidad.
+
+      5. Sélecteur de langue : les 3 drapeaux côte à côte sont remplacés par un
+         menu déroulant compact (LANG_OPTIONS + LanguageSelector), qui n'affiche
+         que la langue active — 136px -> 52px, et c'est ce gain qui a permis de
+         loger les deux nouvelles entrées. Seul élément à état de la barre :
+         fermeture au clic extérieur et à Échap avec retour du focus, navigation
+         clavier ↓ ↑ Début Fin, aria-expanded, role=menu/menuitem.
+
+      6. Flèches du carrousel de témoignages : `lg:translate-x-14` et non `md:`.
+         En md: elles sortaient du viewport entre 768 et 1007px — la droite
+         créait un scroll horizontal, la gauche était invisible hors écran.
+
       ⚠ ÉCART DE LIBELLÉ VOLONTAIRE — ne pas « corriger ».
 
       Le lien vers /diagnostico-automatizacion/ porte deux noms différents
