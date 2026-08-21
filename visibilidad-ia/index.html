@@ -4,6 +4,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!--
+  ⚠ MODIFICATIONS LOCALES — à réappliquer si cette page est régénérée depuis
+  une source externe. La page d'origine est monolingue et n'a qu'un logo et
+  une pastille téléphone dans son en-tête.
+
+  1. Système de traduction complet (le plus gros du travail) :
+       - objet T avec les trois blocs es / ca / en (~48 clés)
+       - attributs data-t (texte) et data-tph (placeholders) dans tout le DOM
+       - fonction tr(), langue lue dans ?lang= , balises hreflang
+       - traduits : contenu, formulaire, les 7 questions personnalisées,
+         messages d'erreur, FAQ, la balise title et la meta description
+     ⚠ Une clé absente d'un seul bloc donne un texte VIDE à l'écran, pas une
+     erreur : tr() ne remplit un [data-t] que si la clé existe. D'où le
+     contrôle d'intégrité en fin de fichier, qui liste les clés manquantes
+     dans la console au chargement.
+
+  2. peindrePreguntas() est extraite de goToStep2() et exposée via
+     window.renderPreguntas, pour repeindre les cartes de questions quand on
+     change de langue en étant déjà à l'étape 2 du formulaire. Sans ça les
+     7 questions resteraient dans la langue précédente.
+
+  3. Barre de navigation alignée sur diagnostico-automatizacion/index.html :
+       - le logo est un <a href="https://webautonomos.es"> (et non un <div>)
+       - .nav-links : 5 onglets (#problema, #datos, #como-funciona, #faq,
+         /diagnostico-automatizacion/), affichés à partir de 1280px
+       - .nav-right : pastille tél, menu déroulant de langues, CTA -> #formulario
+       - .site-header .bar : max-width 1220px (et non 72rem) — en espagnol la
+         barre déborde de 16px à 72rem. L'en-tête étant position:fixed, ce
+         débordement ne crée AUCUN scroll horizontal : il ne se voit pas dans
+         document.scrollWidth, il faut mesurer bar.scrollWidth.
+
+  4. id="datos" posé sur la section chiffres (« 4.000+ ») — cible de l'onglet
+     « Los datos ». Les ancres #problema, #como-funciona et #faq existaient.
+
+  5. Titre et sous-titre en tête du formulaire (clés formTitle/formSubtitle).
+
+  Vérifié : 0px de débordement de barre dans les trois langues à 1280 et
+  1440px, aucun débordement horizontal de 375 à 1920px, aucun data-t vide.
+-->
+
 <title>¿Te recomienda ChatGPT? Comprueba gratis tu visibilidad en IA | WebAutonomos</title>
 <meta name="description" content="Descubre gratis si ChatGPT, Gemini, Perplexity y Claude recomiendan tu negocio en tu ciudad. Resultado en 24h, sin compromiso.">
 <meta name="robots" content="index, follow">
