@@ -1,0 +1,383 @@
+{
+  "publish_date": "2026-08-24",
+  "slug": "factura-electronica-plazos-2026-2027",
+  "category": "automatizacion",
+  "image": "📄",
+  "readTime": 10,
+  "lastmod": "2026-08-24",
+  "fr": {
+    "slug": "facture-electronique-1er-septembre-2026",
+    "date": "24 Août 2026",
+    "title": "Facture électronique : l'échéance du 1er septembre",
+    "seoTitle": "Facture électronique au 1er septembre 2026 | WebAutonomos",
+    "metaDescription": "Le 1er septembre 2026, toute entreprise française assujettie à la TVA doit pouvoir recevoir des factures électroniques. Ce que ça implique, même en franchise.",
+    "keywords": [
+      "facture électronique obligatoire 2026",
+      "facturation électronique TPE",
+      "plateforme agréée facture",
+      "obligation réception facture électronique"
+    ],
+    "excerpt": "Dans quelques jours, toute entreprise assujettie à la TVA devra pouvoir recevoir des factures électroniques. Y compris en franchise de base.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Le 1er septembre 2026, toutes les entreprises établies en France et assujetties à la TVA devront être capables de recevoir des factures électroniques structurées. Sans exception de taille. Beaucoup de dirigeants pensent que la réforme ne les concerne qu'en 2027 : c'est vrai pour l'émission, pas pour la réception. Et la nuance change tout, parce que la première échéance tombe dans quelques jours."
+      },
+      {
+        "type": "heading",
+        "text": "Ce qui change exactement à cette date"
+      },
+      {
+        "type": "paragraph",
+        "text": "Deux obligations distinctes entrent en vigueur le même jour. Les grandes entreprises et les entreprises de taille intermédiaire doivent émettre leurs factures au format électronique. Et toutes les autres — PME, TPE, indépendants, micro-entreprises — doivent pouvoir les recevoir. Concrètement, cela suppose d'être inscrit auprès d'une plateforme agréée avant la date, pour que les factures de vos fournisseurs vous parviennent."
+      },
+      {
+        "type": "heading",
+        "text": "Un PDF envoyé par courriel ne compte pas"
+      },
+      {
+        "type": "paragraph",
+        "text": "C'est le malentendu le plus répandu. Une facture électronique au sens de la réforme est un fichier structuré, lisible par une machine, aux formats Factur-X, UBL ou CII définis par la norme européenne. Un PDF joint à un courriel n'en est pas une, même s'il a été produit par un logiciel. La distinction n'est pas cosmétique : elle détermine si votre facture est conforme ou non."
+      },
+      {
+        "type": "heading",
+        "text": "Oui, vous êtes concerné même en franchise de base"
+      },
+      {
+        "type": "paragraph",
+        "text": "La franchise en base de TVA ne dispense pas de la réforme. Un micro-entrepreneur est assujetti à la TVA même s'il n'en est pas redevable — et c'est l'assujettissement qui déclenche l'obligation. Seules les activités exonérées par nature, comme le médical ou l'enseignement, en sortent. La mention « TVA non applicable, article 293 B du CGI » continuera d'apparaître sur vos factures, mais leur mode de transmission change."
+      },
+      {
+        "type": "heading",
+        "text": "Ce qui vient ensuite, en septembre 2027"
+      },
+      {
+        "type": "paragraph",
+        "text": "Un an plus tard, l'obligation d'émettre s'étend aux PME, TPE, indépendants et micro-entreprises. À cette date, toute facture entre professionnels devra transiter par une plateforme agréée, et le e-reporting des opérations hors périmètre deviendra obligatoire lui aussi. Les sanctions annoncées sont de quinze euros par facture non conforme, plafonnées à quinze mille euros par an, et de deux cent cinquante euros par envoi de e-reporting manquant."
+      },
+      {
+        "type": "heading",
+        "text": "Ce que ça change dans votre travail quotidien"
+      },
+      {
+        "type": "paragraph",
+        "text": "Le bénéfice réel n'est pas la conformité, c'est ce qu'elle rend possible. Une facture structurée n'a plus besoin d'être ressaisie : les données arrivent lisibles par votre logiciel. Le rapprochement, le classement et le suivi des règlements cessent d'être manuels. Beaucoup d'entreprises vont installer une plateforme pour se conformer, puis continuer à tout recopier à la main — et passer à côté de l'essentiel."
+      },
+      {
+        "type": "heading",
+        "text": "Par quoi commencer, concrètement"
+      },
+      {
+        "type": "paragraph",
+        "text": "Vérifiez d'abord auprès de votre expert-comptable si votre logiciel actuel gère déjà la réception. Beaucoup d'éditeurs ont mis leurs offres à jour sans que leurs clients l'aient remarqué. Choisissez ensuite une plateforme agréée et inscrivez-vous. Puis, avant que les factures n'arrivent, décidez qui les reçoit, qui les valide et comment les erreurs sont traitées — c'est cette organisation-là qui manque le plus souvent."
+      },
+      {
+        "type": "conclusion",
+        "text": "Cette réforme est l'occasion de regarder ce que votre facturation vous coûte réellement en temps. Nous avons préparé un diagnostic gratuit qui le calcule en deux minutes : quatre questions, résultat à l'écran, et il vous dit si automatiser cette tâche vaut le coup ou non. Parfois la réponse est non, et il vous le dit aussi. Pour les dates et votre cas particulier, votre expert-comptable reste l'interlocuteur."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Je suis auto-entrepreneur, suis-je vraiment concerné ?",
+        "a": "Oui, sauf si votre activité est exonérée de TVA par nature. La franchise en base ne dispense pas de la réforme : vous êtes assujetti même sans être redevable. L'obligation de réception s'applique donc au 1er septembre 2026, celle d'émission au 1er septembre 2027."
+      },
+      {
+        "q": "Que se passe-t-il si je ne fais rien avant le 1er septembre ?",
+        "a": "Vos fournisseurs grands comptes ne pourront plus vous adresser leurs factures par les canaux habituels. Le risque immédiat n'est pas la sanction mais le blocage : des factures qui n'arrivent pas, des règlements qui prennent du retard, et une régularisation à faire dans l'urgence."
+      },
+      {
+        "q": "Combien coûte une plateforme agréée ?",
+        "a": "Les tarifs varient selon le volume de factures et les fonctions retenues. Certains logiciels de gestion incluent désormais la fonction sans surcoût. Comparez ce que propose votre éditeur actuel avant de souscrire ailleurs, c'est souvent le plus simple."
+      },
+      {
+        "q": "Un PDF signé électroniquement suffit-il ?",
+        "a": "Non. La réforme exige un format structuré, lisible par une machine, conforme à la norme européenne. Un PDF, même signé, reste un document destiné à être lu par un humain. Les formats acceptés sont Factur-X, UBL et CII."
+      },
+      {
+        "q": "Et si mes clients sont des particuliers ?",
+        "a": "L'obligation de facture électronique concerne les échanges entre professionnels. Les ventes aux particuliers relèvent du e-reporting, qui impose de transmettre les données de transaction à l'administration, selon un calendrier propre. Votre expert-comptable vous précisera ce qui s'applique à votre activité."
+      }
+    ]
+  },
+  "es": {
+    "date": "24 Agosto 2026",
+    "title": "Factura electrónica: dos normas que se confunden",
+    "seoTitle": "Verifactu y factura electrónica: qué te toca | WebAutonomos",
+    "metaDescription": "Verifactu y la factura electrónica de Crea y Crece son dos normas distintas, con calendarios distintos. Aclaramos cuál te afecta y cuándo.",
+    "keywords": [
+      "verifactu autónomos",
+      "factura electrónica obligatoria",
+      "crea y crece factura",
+      "software facturación obligatorio"
+    ],
+    "excerpt": "Verifactu y la factura electrónica B2B no son lo mismo, aunque casi todo el mundo las mete en el mismo saco. Y sus calendarios no coinciden.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Hay dos normas en marcha y casi todo el mundo las confunde. Verifactu regula el software con el que emites facturas. La factura electrónica de la Ley Crea y Crece regula el formato y el canal por el que viajan entre empresas. Son obligaciones distintas, con calendarios distintos, y la confusión hace que mucha gente deje de prestar atención justo cuando debería empezar a decidir."
+      },
+      {
+        "type": "heading",
+        "text": "Verifactu: lo que obliga a tu programa"
+      },
+      {
+        "type": "paragraph",
+        "text": "Verifactu no es un impuesto ni un formato: es un requisito técnico sobre el software. Tu programa de facturación debe generar un registro por cada factura, encadenarlo mediante una huella, firmarlo y hacerlo inalterable. El objetivo declarado es acabar con el software de doble uso, ese que permite borrar una factura después de emitirla. Afecta tanto a operaciones B2B como B2C."
+      },
+      {
+        "type": "heading",
+        "text": "Crea y Crece: lo que obliga al formato"
+      },
+      {
+        "type": "paragraph",
+        "text": "La segunda norma exige que las facturas entre empresas y profesionales viajen en formato estructurado y por canales digitales. Un PDF enviado por correo no cuenta como factura electrónica. El sistema deberá además informar del estado de cada factura — emitida, recibida, aceptada, rechazada, pagada — lo que se presenta como una herramienta contra la morosidad."
+      },
+      {
+        "type": "heading",
+        "text": "Los calendarios se han movido varias veces"
+      },
+      {
+        "type": "paragraph",
+        "text": "Aquí conviene la prudencia: ambas normas han sufrido aplazamientos y el desarrollo reglamentario ha ido cambiando. La entrada en vigor está escalonada por tamaño de empresa, con las grandes primero y los autónomos al final. Antes de planificar nada, consulta la última actualización oficial de la AEAT o pregunta a tu gestor: las fechas que circulan por internet suelen estar desfasadas."
+      },
+      {
+        "type": "heading",
+        "text": "Habrá una solución pública y gratuita"
+      },
+      {
+        "type": "paragraph",
+        "text": "La Agencia Tributaria prevé poner a disposición una solución gratuita, pensada especialmente para autónomos y pequeñas empresas con poco volumen de facturación. Para quien emite pocas facturas al mes, puede bastar. Para quien emite muchas, o quien ya trabaja con un programa de gestión, suele salir mejor adaptar lo que ya tiene que añadir una herramienta más."
+      },
+      {
+        "type": "heading",
+        "text": "Lo que esto cambia en tu día a día"
+      },
+      {
+        "type": "paragraph",
+        "text": "El beneficio real no es cumplir, es lo que cumplir hace posible. Una factura estructurada ya no hace falta volver a teclearla: los datos llegan legibles para tu programa. El cuadre, el archivo y el seguimiento de cobros dejan de ser manuales. Muchas empresas van a instalar una plataforma para cumplir, y después seguirán copiándolo todo a mano — perdiendo justo lo que importaba."
+      },
+      {
+        "type": "heading",
+        "text": "Por dónde empezar, en la práctica"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pregunta primero a tu gestor si el programa que ya usas cumple los requisitos: muchos editores han actualizado sus productos sin avisar a sus clientes. Después decide quién recibe las facturas, quién las valida y cómo se corrigen los errores. Esa organización interna es lo que más falta suele hacer, y no la resuelve ninguna herramienta por sí sola."
+      },
+      {
+        "type": "conclusion",
+        "text": "Esta reforma es una buena ocasión para mirar lo que tu facturación te cuesta de verdad en tiempo. Hemos preparado un diagnóstico gratuito que lo calcula en dos minutos: cuatro preguntas, resultado en pantalla, y te dice si automatizar esa tarea compensa o no. A veces la respuesta es no, y también te lo decimos. Para las fechas y tu caso concreto, tu gestor sigue siendo el interlocutor."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Verifactu y la factura electrónica son lo mismo?",
+        "a": "No. Verifactu regula los requisitos técnicos del software emisor: registro, huella, inalterabilidad. La Ley Crea y Crece regula el formato de la factura y el canal por el que se intercambia entre empresas. La mayoría de negocios tendrá que cumplir ambas."
+      },
+      {
+        "q": "¿Un PDF vale como factura electrónica?",
+        "a": "No. La norma exige un formato estructurado, legible por una máquina, como Facturae, UBL o equivalentes. Un PDF es un documento pensado para que lo lea una persona, aunque lo haya generado un programa de facturación."
+      },
+      {
+        "q": "¿Cuándo me toca exactamente?",
+        "a": "Depende del tamaño de tu negocio y de la norma, y los calendarios se han aplazado varias veces. Consulta la última publicación oficial de la AEAT o pregunta a tu gestor antes de contratar nada: las fechas que circulan suelen estar desfasadas."
+      },
+      {
+        "q": "Si ya adapté mi software, ¿he perdido la inversión con los aplazamientos?",
+        "a": "No. Si tu programa cumple los requisitos técnicos, esa adaptación sigue siendo válida cuando llegue la fecha. El aplazamiento da margen a quien no ha empezado, no penaliza a quien se adelantó."
+      },
+      {
+        "q": "¿Esto me obliga a cambiar de programa de gestión?",
+        "a": "No necesariamente. Muchos editores ya han actualizado sus productos sin que sus clientes lo sepan. Pregunta primero a tu proveedor actual: suele ser más barato y más sencillo que empezar de cero con otra herramienta."
+      }
+    ]
+  },
+  "val": {
+    "slug": "factura-electronica-terminis-2026-2027",
+    "date": "24 Agost 2026",
+    "title": "Factura electrònica: dues normes que es confonen",
+    "seoTitle": "Verifactu i factura electrònica: què et toca | WebAutonomos",
+    "metaDescription": "Verifactu i la factura electrònica de Crea i Creix són dues normes distintes, amb calendaris distints. Aclarim quina t'afecta i quan.",
+    "keywords": [
+      "verifactu autònoms",
+      "factura electrònica obligatòria",
+      "crea i creix factura",
+      "programari facturació obligatori"
+    ],
+    "excerpt": "Verifactu i la factura electrònica B2B no són el mateix, encara que quasi tothom les fica en el mateix sac. I els seus calendaris no coincidixen.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Hi ha dues normes en marxa i quasi tothom les confon. Verifactu regula el programari amb què emets factures. La factura electrònica de la Llei Crea i Creix regula el format i el canal pel qual viatgen entre empreses. Són obligacions distintes, amb calendaris distints, i la confusió fa que molta gent deixe de parar atenció justament quan hauria de començar a decidir."
+      },
+      {
+        "type": "heading",
+        "text": "Verifactu: el que obliga el teu programa"
+      },
+      {
+        "type": "paragraph",
+        "text": "Verifactu no és un impost ni un format: és un requisit tècnic sobre el programari. El teu programa de facturació ha de generar un registre per cada factura, encadenar-lo mitjançant una empremta, signar-lo i fer-lo inalterable. L'objectiu declarat és acabar amb el programari de doble ús, eixe que permet esborrar una factura després d'emetre-la. Afecta tant operacions B2B com B2C."
+      },
+      {
+        "type": "heading",
+        "text": "Crea i Creix: el que obliga el format"
+      },
+      {
+        "type": "paragraph",
+        "text": "La segona norma exigix que les factures entre empreses i professionals viatgen en format estructurat i per canals digitals. Un PDF enviat per correu no compta com a factura electrònica. El sistema haurà d'informar a més de l'estat de cada factura — emesa, rebuda, acceptada, rebutjada, pagada — cosa que es presenta com una ferramenta contra la morositat."
+      },
+      {
+        "type": "heading",
+        "text": "Els calendaris s'han mogut diverses vegades"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ací convé la prudència: ambdues normes han patit ajornaments i el desenvolupament reglamentari ha anat canviant. L'entrada en vigor està esglaonada per grandària d'empresa, amb les grans primer i els autònoms al final. Abans de planificar res, consulta l'última actualització oficial de l'AEAT o pregunta al teu gestor: les dates que circulen per internet solen estar desfasades."
+      },
+      {
+        "type": "heading",
+        "text": "Hi haurà una solució pública i gratuïta"
+      },
+      {
+        "type": "paragraph",
+        "text": "L'Agència Tributària preveu posar a disposició una solució gratuïta, pensada especialment per a autònoms i xicotetes empreses amb poc volum de facturació. Per a qui emet poques factures al mes, pot ser suficient. Per a qui n'emet moltes, o qui ja treballa amb un programa de gestió, sol eixir millor adaptar el que ja té que afegir una ferramenta més."
+      },
+      {
+        "type": "heading",
+        "text": "El que això canvia en el teu dia a dia"
+      },
+      {
+        "type": "paragraph",
+        "text": "El benefici real no és complir, és el que complir fa possible. Una factura estructurada ja no cal tornar a teclejar-la: les dades arriben llegibles per al teu programa. El quadrament, l'arxiu i el seguiment de cobraments deixen de ser manuals. Moltes empreses instal·laran una plataforma per a complir, i després continuaran copiant-ho tot a mà — perdent justament el que importava."
+      },
+      {
+        "type": "heading",
+        "text": "Per on començar, en la pràctica"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pregunta primer al teu gestor si el programa que ja uses complix els requisits: molts editors han actualitzat els seus productes sense avisar els clients. Després decidix qui rep les factures, qui les valida i com es corregixen els errors. Eixa organització interna és el que més falta sol fer, i no la resol cap ferramenta per si sola."
+      },
+      {
+        "type": "conclusion",
+        "text": "Esta reforma és una bona ocasió per a mirar el que la teua facturació et costa de veritat en temps. Hem preparat un diagnòstic gratuït que ho calcula en dos minuts: quatre preguntes, resultat en pantalla, i et diu si automatitzar eixa tasca compensa o no. De vegades la resposta és no, i també t'ho diem. Per a les dates i el teu cas concret, el teu gestor continua sent l'interlocutor."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Verifactu i la factura electrònica són el mateix?",
+        "a": "No. Verifactu regula els requisits tècnics del programari emissor: registre, empremta, inalterabilitat. La Llei Crea i Creix regula el format de la factura i el canal pel qual s'intercanvia entre empreses. La majoria de negocis haurà de complir totes dues."
+      },
+      {
+        "q": "Un PDF val com a factura electrònica?",
+        "a": "No. La norma exigix un format estructurat, llegible per una màquina, com Facturae, UBL o equivalents. Un PDF és un document pensat perquè el llija una persona, encara que l'haja generat un programa de facturació."
+      },
+      {
+        "q": "Quan em toca exactament?",
+        "a": "Depén de la grandària del teu negoci i de la norma, i els calendaris s'han ajornat diverses vegades. Consulta l'última publicació oficial de l'AEAT o pregunta al teu gestor abans de contractar res: les dates que circulen solen estar desfasades."
+      },
+      {
+        "q": "Si ja vaig adaptar el programari, he perdut la inversió amb els ajornaments?",
+        "a": "No. Si el teu programa complix els requisits tècnics, eixa adaptació continua sent vàlida quan arribe la data. L'ajornament dona marge a qui no ha començat, no penalitza qui es va avançar."
+      },
+      {
+        "q": "Això m'obliga a canviar de programa de gestió?",
+        "a": "No necessàriament. Molts editors ja han actualitzat els seus productes sense que els seus clients ho sàpiguen. Pregunta primer al teu proveïdor actual: sol ser més barat i més senzill que començar de zero amb una altra ferramenta."
+      }
+    ]
+  },
+  "en": {
+    "slug": "e-invoicing-deadlines-france-spain",
+    "date": "Aug 24, 2026",
+    "title": "E-invoicing: the deadlines that are actually coming",
+    "seoTitle": "E-invoicing deadlines in France and Spain | WebAutonomos",
+    "metaDescription": "France requires all VAT-registered businesses to receive electronic invoices from 1 September 2026. Spain runs two separate rules. What each one means.",
+    "keywords": [
+      "e-invoicing mandate France",
+      "electronic invoicing small business",
+      "Verifactu Spain",
+      "structured invoice format"
+    ],
+    "excerpt": "France sets its first deadline at 1 September 2026. Spain runs two separate rules that most people confuse. Here is what each actually requires.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "If you invoice from France or from Spain, electronic invoicing is no longer a plan on a slide. France has set 1 September 2026 as the date from which every VAT-registered business must be able to receive structured electronic invoices. Spain runs two separate rules whose calendars have shifted more than once. Neither country lets a PDF count as an electronic invoice."
+      },
+      {
+        "type": "heading",
+        "text": "France: receiving comes before sending"
+      },
+      {
+        "type": "paragraph",
+        "text": "From 1 September 2026, every business established in France and liable for VAT must be able to receive structured electronic invoices, whatever its size. Large companies and mid-caps must also send them from that date. Small firms, sole traders and micro-businesses get an extra year: their obligation to send starts on 1 September 2027, alongside e-reporting."
+      },
+      {
+        "type": "heading",
+        "text": "The VAT franchise does not exempt you"
+      },
+      {
+        "type": "paragraph",
+        "text": "This is the most common misunderstanding in France. A micro-entrepreneur under the base franchise is still liable for VAT even if not required to charge it — and it is liability, not charging, that triggers the obligation. Only activities exempt by nature, such as medical or teaching work, fall outside. The invoice wording changes nothing about how it must now be transmitted."
+      },
+      {
+        "type": "heading",
+        "text": "Spain: two rules, constantly confused"
+      },
+      {
+        "type": "paragraph",
+        "text": "Spain runs Verifactu, which governs the invoicing software itself — each invoice must produce a chained, signed, unalterable record — and separately the Crea y Crece law, which governs the format and channel of business-to-business invoices. They are different obligations with different calendars, and most businesses will end up meeting both."
+      },
+      {
+        "type": "heading",
+        "text": "Spanish dates have moved more than once"
+      },
+      {
+        "type": "paragraph",
+        "text": "Both Spanish rules have been postponed, and the implementing regulation has kept changing. Entry into force is staged by company size, largest first and sole traders last. Before planning anything, check the latest official publication from the tax agency or ask your accountant: the dates circulating online are frequently out of date."
+      },
+      {
+        "type": "heading",
+        "text": "What it changes in your daily work"
+      },
+      {
+        "type": "paragraph",
+        "text": "The real benefit is not compliance, it is what compliance makes possible. A structured invoice no longer has to be keyed in again: the data arrives readable by your system. Reconciliation, filing and payment tracking stop being manual. Many firms will install a platform to comply, then carry on copying everything by hand — and miss the part that mattered."
+      },
+      {
+        "type": "heading",
+        "text": "Where to start, in practice"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask your accountant first whether the software you already use meets the requirements: many vendors have updated their products without telling their customers. Then decide who receives the invoices, who approves them and how errors get fixed. That internal organisation is what is most often missing, and no tool solves it on its own."
+      },
+      {
+        "type": "conclusion",
+        "text": "This reform is a good moment to look at what your invoicing actually costs you in time. We have built a free diagnostic that works it out in two minutes: four questions, the result on screen, and it tells you whether automating that task is worth it or not. Sometimes the answer is no, and it says so too. For dates and your own situation, your accountant remains the right person to ask."
+      }
+    ],
+    "faq": [
+      {
+        "q": "I am a sole trader. Does this really apply to me?",
+        "a": "In France, yes, unless your activity is exempt from VAT by nature. The base franchise does not exempt you: you are liable even without charging VAT. Receiving becomes mandatory on 1 September 2026 and sending on 1 September 2027."
+      },
+      {
+        "q": "Does a PDF count as an electronic invoice?",
+        "a": "No, in neither country. Both require a structured format readable by a machine — Factur-X, UBL or CII in France, Facturae or equivalents in Spain. A PDF is a document meant for a human to read, even when a program generated it."
+      },
+      {
+        "q": "What happens if I do nothing before the deadline?",
+        "a": "In France, large suppliers will no longer be able to send you invoices through the usual channels. The immediate risk is not a fine but a blockage: invoices that never arrive, payments that fall behind, and a rushed fix afterwards."
+      },
+      {
+        "q": "Will I have to change my accounting software?",
+        "a": "Not necessarily. Many vendors have already updated their products without their customers noticing. Ask your current supplier first: it is usually cheaper and simpler than starting again with another tool."
+      },
+      {
+        "q": "How much does a certified platform cost?",
+        "a": "Prices vary with invoice volume and the features chosen, and some business systems now include the function at no extra cost. Compare what your current vendor offers before signing up elsewhere."
+      }
+    ]
+  }
+}
