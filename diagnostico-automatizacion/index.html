@@ -36,7 +36,13 @@
      les largeurs jusqu'à ce que ce soit corrigé.
      Ne PAS toucher à .wrap{max-width:1180px}, qui régit les sections de la page.
 
-  5. Balisage JSON-LD (script#ld-graph, @graph de 7 types) :
+  5. Le bloc fr vise les FRANCOPHONES INSTALLÉS EN ESPAGNE (décidé le
+     2026-08-22), pas le marché français. Les statistiques restent donc
+     espagnoles — ATA, INE, Banco de España — et disent « en Espagne » là où
+     le périmètre était implicite. Ne pas les remplacer par des chiffres
+     français sans changer aussi de public.
+
+  6. Balisage JSON-LD (script#ld-graph, @graph de 7 types) :
        - le nœud FAQPage porte inLanguage et ses 7 questions en espagnol —
          c'est ce que voit un crawler qui n'exécute pas JS ;
        - render() régénère ce nœud depuis T[lang].faq à chaque changement de
