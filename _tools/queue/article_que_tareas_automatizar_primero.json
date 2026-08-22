@@ -1,0 +1,315 @@
+{
+  "publish_date": "2026-09-07",
+  "slug": "que-tareas-automatizar-primero",
+  "category": "automatizacion",
+  "image": "🎯",
+  "readTime": 10,
+  "lastmod": "2026-09-07",
+
+  "es": {
+    "date": "7 Septiembre 2026",
+    "title": "Qué tareas automatizar primero (y cuáles no)",
+    "seoTitle": "Qué procesos automatizar primero en tu pyme | WebAutonomos",
+    "metaDescription": "La tarea que más te molesta casi nunca es la que más compensa automatizar. Los cuatro criterios que deciden de verdad, en el orden correcto.",
+    "keywords": [
+      "qué procesos automatizar pyme",
+      "por dónde empezar a automatizar",
+      "priorizar automatización",
+      "tareas repetitivas empresa"
+    ],
+    "excerpt": "Se empieza siempre por la tarea que molesta. Es un mal punto de partida, y la diferencia con la que sí compensa se cuenta en miles de euros.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "La pregunta llega siempre en el mismo orden. Se empieza por la tarea que molesta — grabar facturas, perseguir impagados, cuadrar el banco — y se busca una herramienta para quitársela de encima. Es un mal punto de partida. La tarea que más te molesta casi nunca es la que mejor se amortiza, y la diferencia entre una y otra se cuenta en miles de euros."
+      },
+      { "type": "heading", "text": "El reflejo que sale caro" },
+      {
+        "type": "paragraph",
+        "text": "Lo que molesta no es lo que cuesta. Una tarea pesada que se hace una vez por semana pesa diez veces menos que una tarea banal que se hace veinte veces al día. La molestia mide la fricción, no el volumen — y es el volumen el que decide. El primer filtro consiste en dejar de lado lo que sientes y ponerte a contar."
+      },
+      { "type": "heading", "text": "Cuatro criterios, en este orden" },
+      {
+        "type": "paragraph",
+        "text": "El volumen primero: cuántas veces al día, multiplicado por la duración. Después el parecido entre los casos: cuanto más se parecen, mejor aguanta la automatización. Luego, dónde están los datos. Y por último, qué pasa si el sistema se equivoca. Estos cuatro criterios, en este orden, explican casi todas las decisiones."
+      },
+      { "type": "heading", "text": "El volumen descarta más proyectos de lo que parece" },
+      {
+        "type": "paragraph",
+        "text": "Una tarea de diez minutos al día son cuarenta horas al año. A 25 euros la hora, 1.000 euros. Ningún desarrollo a medida se amortiza con eso: el coste de mantenerlo se come el ahorro en pocos meses. En cambio, dos horas al día son 480 horas y unos 12.000 euros. El mismo trabajo técnico, un caso doce veces más sólido."
+      },
+      { "type": "heading", "text": "Dónde están los datos mata más proyectos que la complejidad" },
+      {
+        "type": "paragraph",
+        "text": "Es el criterio que más se subestima. Si la información ya está en un programa de gestión, casi todo es posible. Si está en correos o en PDF, hay que leerla primero, lo que añade una capa de tecnología y de coste. Y si está en papel, hay que producirla antes de automatizar nada — un trabajo previo que suele ser más corto de lo que parece, pero que va primero."
+      },
+      { "type": "heading", "text": "Y lo que no haces, por falta de tiempo" },
+      {
+        "type": "paragraph",
+        "text": "Esta es la categoría que nadie mira. El seguimiento de impagados que se hace cuando queda un rato. La vigilancia de licitaciones que nunca empezó. La reactivación de clientes antiguos aplazada desde hace dos años. Estas tareas no cuestan horas, porque no existen — cuestan facturación que no entra. Ningún cálculo de rentabilidad las ve, y suelen ser las que más pagan."
+      },
+      { "type": "heading", "text": "Por dónde empezar en la práctica" },
+      {
+        "type": "paragraph",
+        "text": "Coge tres tareas, no una. De cada una, anota cuántas veces al día se hace, cuánto dura y dónde están los datos. Casi siempre verás que solo una de las tres destaca claramente — y que no es la que tenías en mente al empezar. Lo que importa es el orden, no la precisión del cálculo."
+      },
+      {
+        "type": "conclusion",
+        "text": "Hemos preparado un diagnóstico gratuito que hace ese filtro por ti: cuatro preguntas para cifrar el coste anual de una tarea, seis más para saber qué parte es recuperable, con qué tecnología y en cuántos meses. Puedes pasarlo a tres tareas seguidas y comparar. Y si concluye que ninguna merece automatizarse, también te lo dice."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué tarea empiezo si no tengo ni idea?",
+        "a": "Por la que más veces se repite al día, aunque sea corta. El volumen es el criterio que más decide, y suele ser el que peor se estima de memoria. Abre tu programa de gestión y mira la cifra real del año pasado."
+      },
+      {
+        "q": "¿Hay que automatizarlo todo de golpe?",
+        "a": "No, y casi nunca compensa. Una automatización que funciona genera confianza y datos; tres a la vez multiplican los puntos de fallo y ninguna se estabiliza. Empieza por una, mídela durante un trimestre, y decide la siguiente con esos datos."
+      },
+      {
+        "q": "¿Cómo sé si mis datos son aprovechables?",
+        "a": "Pregúntate dónde está la información cuando la necesitas. Si está en un programa, bien. Si está en correos o PDF, hace falta una capa de lectura. Si está en papel, hay un trabajo previo antes de automatizar nada."
+      },
+      {
+        "q": "¿Y si la tarea cambia de reglas a menudo?",
+        "a": "Entonces conviene esperar. Una automatización se construye sobre reglas estables; si cambian cada trimestre, el mantenimiento se come el ahorro. Es uno de los casos en los que decimos que no."
+      },
+      {
+        "q": "¿Cuánto cuesta automatizar una tarea?",
+        "a": "La mayoría de los proyectos que aceptamos están entre 500 y 4.000 euros, y solo proponemos los que se amortizan en menos de 24 meses. Tu cifra exacta la calcula el diagnóstico, con tus volúmenes y tus horas."
+      }
+    ]
+  },
+
+  "val": {
+    "slug": "quines-tasques-automatitzar-primer",
+    "date": "7 Setembre 2026",
+    "title": "Quines tasques automatitzar primer (i quines no)",
+    "seoTitle": "Quins processos automatitzar primer | WebAutonomos",
+    "metaDescription": "La tasca que més et molesta quasi mai és la que més compensa automatitzar. Els quatre criteris que decidixen de veritat, en l'ordre correcte.",
+    "keywords": [
+      "quins processos automatitzar pime",
+      "per on començar a automatitzar",
+      "prioritzar automatització",
+      "tasques repetitives empresa"
+    ],
+    "excerpt": "Sempre es comença per la tasca que molesta. És un mal punt de partida, i la diferència amb la que sí compensa es compta en milers d'euros.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "La pregunta arriba sempre en el mateix ordre. Es comença per la tasca que molesta — gravar factures, perseguir impagats, quadrar el banc — i es busca una ferramenta per a llevar-se-la de damunt. És un mal punt de partida. La tasca que més et molesta quasi mai és la que millor s'amortitza, i la diferència entre una i l'altra es compta en milers d'euros."
+      },
+      { "type": "heading", "text": "El reflex que ix car" },
+      {
+        "type": "paragraph",
+        "text": "El que molesta no és el que costa. Una tasca pesada que es fa una vegada per setmana pesa deu vegades menys que una tasca banal que es fa vint vegades al dia. La molèstia mesura la fricció, no el volum — i és el volum el que decidix. El primer filtre consistix a deixar de banda el que sents i posar-te a comptar."
+      },
+      { "type": "heading", "text": "Quatre criteris, en este ordre" },
+      {
+        "type": "paragraph",
+        "text": "El volum primer: quantes vegades al dia, multiplicat per la duració. Després la semblança entre els casos: com més s'assemblen, millor aguanta l'automatització. Després, on estan les dades. I per últim, què passa si el sistema s'equivoca. Estos quatre criteris, en este ordre, expliquen quasi totes les decisions."
+      },
+      { "type": "heading", "text": "El volum descarta més projectes del que sembla" },
+      {
+        "type": "paragraph",
+        "text": "Una tasca de deu minuts al dia són quaranta hores a l'any. A 25 euros l'hora, 1.000 euros. Cap desenvolupament a mida s'amortitza amb això: el cost de mantindre'l es menja l'estalvi en pocs mesos. En canvi, dues hores al dia són 480 hores i uns 12.000 euros. La mateixa faena tècnica, un cas dotze vegades més sòlid."
+      },
+      { "type": "heading", "text": "On estan les dades mata més projectes que la complexitat" },
+      {
+        "type": "paragraph",
+        "text": "És el criteri que més es subestima. Si la informació ja està en un programa de gestió, quasi tot és possible. Si està en correus o en PDF, cal llegir-la primer, la qual cosa afig una capa de tecnologia i de cost. I si està en paper, cal produir-la abans d'automatitzar res — una faena prèvia que sol ser més curta del que sembla, però que va primer."
+      },
+      { "type": "heading", "text": "I el que no fas, per falta de temps" },
+      {
+        "type": "paragraph",
+        "text": "Esta és la categoria que ningú mira. El seguiment d'impagats que es fa quan queda una estona. La vigilància de licitacions que mai va començar. La reactivació de clients antics ajornada des de fa dos anys. Estes tasques no costen hores, perquè no existixen — costen facturació que no entra. Cap càlcul de rendibilitat les veu, i solen ser les que més paguen."
+      },
+      { "type": "heading", "text": "Per on començar en la pràctica" },
+      {
+        "type": "paragraph",
+        "text": "Agafa tres tasques, no una. De cadascuna, apunta quantes vegades al dia es fa, quant dura i on estan les dades. Quasi sempre veuràs que només una de les tres destaca clarament — i que no és la que tenies al cap en començar. El que importa és l'ordre, no la precisió del càlcul."
+      },
+      {
+        "type": "conclusion",
+        "text": "Hem preparat un diagnòstic gratuït que fa eixe filtre per tu: quatre preguntes per a xifrar el cost anual d'una tasca, sis més per a saber quina part és recuperable, amb quina tecnologia i en quants mesos. Pots passar-lo a tres tasques seguides i comparar. I si conclou que cap mereix automatitzar-se, també t'ho diu."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Per quina tasca comence si no en tinc ni idea?",
+        "a": "Per la que més vegades es repetix al dia, encara que siga curta. El volum és el criteri que més decidix, i sol ser el que pitjor s'estima de memòria. Obri el teu programa de gestió i mira la xifra real de l'any passat."
+      },
+      {
+        "q": "Cal automatitzar-ho tot de colp?",
+        "a": "No, i quasi mai compensa. Una automatització que funciona genera confiança i dades; tres alhora multipliquen els punts de fallada i cap s'estabilitza. Comença per una, mesura-la durant un trimestre, i decidix la següent amb eixes dades."
+      },
+      {
+        "q": "Com sé si les meues dades són aprofitables?",
+        "a": "Pregunta't on està la informació quan la necessites. Si està en un programa, bé. Si està en correus o PDF, cal una capa de lectura. Si està en paper, hi ha una faena prèvia abans d'automatitzar res."
+      },
+      {
+        "q": "I si la tasca canvia de regles sovint?",
+        "a": "Llavors convé esperar. Una automatització es construïx sobre regles estables; si canvien cada trimestre, el manteniment es menja l'estalvi. És un dels casos en què diem que no."
+      },
+      {
+        "q": "Quant costa automatitzar una tasca?",
+        "a": "La majoria dels projectes que acceptem estan entre 500 i 4.000 euros, i només proposem els que s'amortitzen en menys de 24 mesos. La teua xifra exacta la calcula el diagnòstic, amb els teus volums i les teues hores."
+      }
+    ]
+  },
+
+  "fr": {
+    "slug": "quelles-taches-automatiser-en-premier",
+    "date": "7 Septembre 2026",
+    "title": "Quelles tâches automatiser en premier ?",
+    "seoTitle": "Quelles tâches automatiser en premier | WebAutonomos",
+    "metaDescription": "La tâche qui vous agace le plus n'est presque jamais celle qui rembourse le mieux. Les quatre critères qui décident vraiment, dans le bon ordre.",
+    "keywords": [
+      "quelles tâches automatiser",
+      "par où commencer automatisation",
+      "prioriser automatisation TPE",
+      "tâches répétitives entreprise"
+    ],
+    "excerpt": "On commence toujours par la tâche qui agace. C'est un mauvais point de départ, et l'écart avec celle qui rembourse se compte en milliers d'euros.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "La question arrive toujours dans le même ordre. On commence par la tâche qui agace — saisir les factures, relancer les impayés, faire le rapprochement bancaire — et on cherche un outil pour s'en débarrasser. C'est un mauvais point de départ. La tâche qui vous agace le plus n'est presque jamais celle qui rembourse le mieux, et l'écart entre les deux se compte en milliers d'euros."
+      },
+      { "type": "heading", "text": "Le réflexe qui coûte cher" },
+      {
+        "type": "paragraph",
+        "text": "Ce qui agace n'est pas ce qui coûte. Une tâche pénible faite une fois par semaine pèse dix fois moins qu'une tâche banale faite vingt fois par jour. L'agacement mesure la friction, pas le volume — et c'est le volume qui décide. Le premier tri consiste donc à mettre de côté ce que vous ressentez et à compter."
+      },
+      { "type": "heading", "text": "Quatre critères, dans cet ordre" },
+      {
+        "type": "paragraph",
+        "text": "Le volume d'abord : combien de fois par jour, multiplié par la durée. Puis la ressemblance entre les occurrences : plus les cas se ressemblent, mieux l'automatisation tient. Ensuite, l'endroit où se trouvent les données. Et enfin, ce qui se passe si le système se trompe. Ces quatre critères, dans cet ordre, expliquent presque toutes les décisions."
+      },
+      { "type": "heading", "text": "Le volume écarte plus de projets qu'on ne croit" },
+      {
+        "type": "paragraph",
+        "text": "Une tâche de dix minutes par jour représente quarante heures par an. À 40 euros de l'heure, 1 600 euros. Aucun développement sur mesure ne se rembourse là-dessus : le coût de le maintenir mange l'économie en quelques mois. À l'inverse, deux heures par jour font 480 heures et près de 20 000 euros. Le même travail technique, un dossier douze fois plus solide."
+      },
+      { "type": "heading", "text": "L'endroit où sont les données tue plus de projets que la complexité" },
+      {
+        "type": "paragraph",
+        "text": "C'est le critère qu'on sous-estime le plus. Si l'information est déjà dans un logiciel de gestion, presque tout est possible. Si elle est dans des courriels ou des PDF, il faut d'abord la lire, ce qui ajoute une couche de technologie et de coût. Et si elle est sur papier, il faut la produire avant d'automatiser quoi que ce soit — un chantier préalable souvent plus court qu'il n'y paraît, mais qui vient en premier."
+      },
+      { "type": "heading", "text": "Et ce que vous ne faites pas, faute de temps" },
+      {
+        "type": "paragraph",
+        "text": "Voici la catégorie que personne ne regarde. Le suivi des impayés fait quand il reste un moment. La veille des appels d'offres jamais commencée. La relance des anciens clients repoussée depuis deux ans. Ces tâches ne coûtent pas d'heures, puisqu'elles n'existent pas — elles coûtent du chiffre d'affaires qui n'entre pas. Aucun calcul de rentabilité ne les voit, et ce sont souvent les plus payantes."
+      },
+      { "type": "heading", "text": "Par quoi commencer concrètement" },
+      {
+        "type": "paragraph",
+        "text": "Prenez trois tâches, pas une. Pour chacune, notez le nombre d'occurrences par jour, la durée, et l'endroit où sont les données. Vous verrez presque toujours qu'une seule des trois se détache nettement — et que ce n'est pas celle à laquelle vous pensiez au départ. C'est le tri qui compte, pas la précision du calcul."
+      },
+      {
+        "type": "conclusion",
+        "text": "Nous avons préparé un diagnostic gratuit qui fait ce tri à votre place : quatre questions pour chiffrer le coût annuel d'une tâche, six de plus pour savoir ce qui est récupérable, avec quelle technologie et en combien de mois. Vous pouvez le passer à trois tâches d'affilée et comparer. Et s'il conclut qu'aucune ne mérite d'être automatisée, il vous le dit aussi."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Par quelle tâche commencer si je n'ai aucune idée ?",
+        "a": "Par celle qui se répète le plus souvent dans la journée, même si elle est courte. Le volume est le critère qui décide le plus, et c'est celui qu'on estime le plus mal de mémoire. Ouvrez votre logiciel de gestion et regardez le chiffre réel de l'an dernier."
+      },
+      {
+        "q": "Faut-il tout automatiser d'un coup ?",
+        "a": "Non, et cela ne se justifie presque jamais. Une automatisation qui fonctionne produit de la confiance et des données ; trois à la fois multiplient les points de panne et aucune ne se stabilise. Commencez par une, mesurez-la pendant un trimestre, et décidez la suivante avec ces chiffres."
+      },
+      {
+        "q": "Comment savoir si mes données sont exploitables ?",
+        "a": "Demandez-vous où se trouve l'information quand vous en avez besoin. Dans un logiciel, c'est bon. Dans des courriels ou des PDF, il faut une couche de lecture. Sur papier, il y a un chantier préalable avant d'automatiser quoi que ce soit."
+      },
+      {
+        "q": "Et si la tâche change souvent de règles ?",
+        "a": "Alors il vaut mieux attendre. Une automatisation se construit sur des règles stables ; si elles changent chaque trimestre, la maintenance mange l'économie. C'est l'un des cas où nous disons non."
+      },
+      {
+        "q": "Combien coûte l'automatisation d'une tâche ?",
+        "a": "La plupart des projets que nous acceptons se situent entre 500 et 4 000 euros, et nous ne proposons que ceux qui s'amortissent en moins de 24 mois. Votre chiffre exact sort du diagnostic, avec vos volumes et vos heures."
+      }
+    ]
+  },
+
+  "en": {
+    "slug": "which-tasks-to-automate-first",
+    "date": "Sep 7, 2026",
+    "title": "Which tasks to automate first (and which not to)",
+    "seoTitle": "Which tasks to automate first in a small firm | WebAutonomos",
+    "metaDescription": "The task that annoys you most is almost never the one that pays back best. The four criteria that actually decide, in the right order.",
+    "keywords": [
+      "which tasks to automate",
+      "where to start automating",
+      "prioritise automation",
+      "repetitive business tasks"
+    ],
+    "excerpt": "People always start with the task that annoys them. It is a poor starting point, and the gap with the one that pays back runs into thousands.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "The question always comes in the same order. You start with the task that annoys you — keying in invoices, chasing unpaid bills, reconciling the bank — and you look for a tool to get rid of it. That is a poor starting point. The task that annoys you most is almost never the one that pays back best, and the gap between the two runs into thousands of euros."
+      },
+      { "type": "heading", "text": "The reflex that costs you" },
+      {
+        "type": "paragraph",
+        "text": "What annoys is not what costs. A tiresome task done once a week weighs ten times less than a mundane one done twenty times a day. Annoyance measures friction, not volume — and volume is what decides. The first sort is to set aside what you feel and start counting."
+      },
+      { "type": "heading", "text": "Four criteria, in this order" },
+      {
+        "type": "paragraph",
+        "text": "Volume first: how many times a day, multiplied by the duration. Then how alike the occurrences are: the more they resemble one another, the better the automation holds. Then where the data sits. And finally, what happens if the system gets it wrong. These four criteria, in this order, explain almost every decision."
+      },
+      { "type": "heading", "text": "Volume rules out more projects than you would think" },
+      {
+        "type": "paragraph",
+        "text": "A task taking ten minutes a day amounts to forty hours a year. At €25 an hour, that is €1,000. No custom build pays back on that: the cost of keeping it running eats the saving within months. Two hours a day, by contrast, come to 480 hours and around €12,000. The same technical work, a case twelve times stronger."
+      },
+      { "type": "heading", "text": "Where the data sits kills more projects than complexity" },
+      {
+        "type": "paragraph",
+        "text": "This is the criterion most people underestimate. If the information already sits in a business system, almost anything is possible. If it sits in emails or PDFs, it has to be read first, which adds a layer of technology and cost. And if it sits on paper, it has to be produced before anything can be automated — groundwork that is often shorter than it looks, but that comes first."
+      },
+      { "type": "heading", "text": "And what you never get round to doing" },
+      {
+        "type": "paragraph",
+        "text": "This is the category nobody looks at. Chasing unpaid invoices when a spare moment turns up. Monitoring tenders, never started. Reactivating old customers, put off for two years. These tasks cost no hours, because they do not happen — they cost revenue that never comes in. No payback calculation sees them, and they are often the ones that pay best."
+      },
+      { "type": "heading", "text": "Where to start in practice" },
+      {
+        "type": "paragraph",
+        "text": "Take three tasks, not one. For each, note how many times a day it is done, how long it takes, and where the data sits. You will almost always find that only one of the three stands out clearly — and that it is not the one you had in mind. What matters is the ranking, not the precision of the sums."
+      },
+      {
+        "type": "conclusion",
+        "text": "We have built a free diagnostic that does the sorting for you: four questions to price the annual cost of a task, six more to work out what is recoverable, with which technology and over how many months. You can run it on three tasks in a row and compare. And if it concludes that none of them is worth automating, it says that too."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Which task should I start with if I have no idea?",
+        "a": "The one repeated most often during the day, even if it is short. Volume is the criterion that decides most, and the one people estimate worst from memory. Open your business system and look up last year's real figure."
+      },
+      {
+        "q": "Should everything be automated at once?",
+        "a": "No, and it almost never pays. One automation that works builds confidence and data; three at once multiply the points of failure and none of them settles. Start with one, measure it over a quarter, and decide the next with those numbers."
+      },
+      {
+        "q": "How do I know whether my data is usable?",
+        "a": "Ask yourself where the information sits when you need it. In a system, fine. In emails or PDFs, a reading layer is needed. On paper, there is groundwork before anything can be automated."
+      },
+      {
+        "q": "What if the task keeps changing its rules?",
+        "a": "Then it is better to wait. Automation is built on stable rules; if they change every quarter, maintenance eats the saving. It is one of the cases where we say no."
+      },
+      {
+        "q": "What does automating a task cost?",
+        "a": "Most of the projects we take on fall between €500 and €4,000, and we only propose those that pay back in under 24 months. Your exact figure comes from the diagnostic, using your volumes and your hours."
+      }
+    ]
+  }
+}
