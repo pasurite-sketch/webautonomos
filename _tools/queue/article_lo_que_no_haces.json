@@ -1,0 +1,315 @@
+{
+  "publish_date": "2026-08-31",
+  "slug": "lo-que-no-haces-por-falta-de-tiempo",
+  "category": "automatizacion",
+  "image": "👻",
+  "readTime": 10,
+  "lastmod": "2026-08-31",
+
+  "fr": {
+    "slug": "ce-que-vous-ne-faites-pas-faute-de-temps",
+    "date": "31 Août 2026",
+    "title": "Ce que vous ne faites pas, faute de temps",
+    "seoTitle": "Les tâches que vous ne faites jamais | WebAutonomos",
+    "metaDescription": "Les relances jamais faites, la veille jamais commencée. Elles ne coûtent pas d'heures, elles coûtent du chiffre d'affaires. Et personne ne les mesure.",
+    "keywords": [
+      "relance impayés automatique",
+      "veille appels d'offres",
+      "relancer anciens clients",
+      "tâches jamais faites entreprise"
+    ],
+    "excerpt": "Il existe une catégorie de tâches qu'aucun calcul de rentabilité ne voit : celles que vous ne faites pas. Ce sont souvent les plus payantes.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "On mesure toujours ce qu'on fait. Les heures passées, les tâches répétées, le temps qu'on aimerait récupérer. Mais il existe une autre catégorie, invisible dans tous les calculs : ce que vous ne faites pas. Pas par négligence — parce qu'il n'y a jamais eu le temps. Et ces tâches-là ne coûtent pas des heures. Elles coûtent du chiffre d'affaires qui n'entre pas."
+      },
+      { "type": "heading", "text": "Aucun calcul de rentabilité ne les voit" },
+      {
+        "type": "paragraph",
+        "text": "Un calcul d'automatisation part toujours du même point : combien de fois, combien de temps, combien coûte l'heure. Une tâche qui n'existe pas n'a aucun de ces trois nombres. Son coût actuel est zéro, donc son gain est zéro, donc elle n'apparaît nulle part. C'est une faille structurelle de la méthode — la nôtre comprise — et elle écarte précisément les gisements les plus rentables."
+      },
+      { "type": "heading", "text": "Les quatre plus fréquentes" },
+      {
+        "type": "paragraph",
+        "text": "La relance des impayés, faite quand il reste un moment, jamais avec méthode. La veille des appels d'offres ou des subventions, jamais commencée. La reprise de contact avec les anciens clients, repoussée depuis deux ans. Et la publication régulière, abandonnée après trois semaines. Presque toutes les entreprises que nous rencontrons en ont au moins deux sur les quatre."
+      },
+      { "type": "heading", "text": "Ce qu'elles coûtent vraiment" },
+      {
+        "type": "paragraph",
+        "text": "Une relance d'impayés faite systématiquement à trente jours raccourcit vos délais de paiement de plusieurs semaines. Un ancien client recontacté a déjà acheté, il coûte donc infiniment moins cher à convaincre qu'un inconnu. Une veille des appels d'offres vous met sur des dossiers auxquels vous n'auriez pas candidaté. Aucune de ces valeurs n'est un gain de temps : ce sont des revenus."
+      },
+      { "type": "heading", "text": "Elles sont plus faciles à automatiser qu'on ne croit" },
+      {
+        "type": "paragraph",
+        "text": "C'est ce qui surprend le plus. Automatiser une tâche existante suppose de la reproduire à l'identique, avec ses habitudes, ses exceptions et ses cas particuliers accumulés depuis des années. Une tâche qui n'existe pas n'a rien de tout ça. Il n'y a pas d'ancien processus à respecter, personne à convaincre de changer ses gestes, et aucune régression possible. On part d'une page blanche."
+      },
+      { "type": "heading", "text": "Comment les repérer chez vous" },
+      {
+        "type": "paragraph",
+        "text": "Posez-vous une seule question, et notez la première réponse qui vient : qu'est-ce que vous savez qu'il faudrait faire, et que vous ne faites pas faute de temps ? La plupart des dirigeants répondent en moins de dix secondes. Ils savent. Ce n'est pas un problème de diagnostic, c'est un problème d'arbitrage — et l'arbitrage a toujours été rendu en faveur de l'urgent."
+      },
+      { "type": "heading", "text": "Pourquoi le calcul habituel ne suffit pas ici" },
+      {
+        "type": "paragraph",
+        "text": "Pour une tâche existante, nous chiffrons, nous comparons, et nous disons oui ou non selon un seuil. Pour une tâche qui n'existe pas, il n'y a rien à comparer : il faut estimer un revenu futur, ce qui est un exercice de jugement et non de calcul. Nous préférons le dire plutôt que d'habiller une intuition en tableau."
+      },
+      {
+        "type": "conclusion",
+        "text": "Ces tâches-là n'apparaissent pas dans notre diagnostic gratuit, et c'est assumé : on ne mesure pas le coût de ce qu'on ne fait pas. Si vous vous reconnaissez dans l'une des quatre, la bonne suite n'est pas un formulaire mais une conversation de quelques minutes, pour estimer ensemble ce que cette absence vous coûte. Écrivez-nous, c'est le genre de sujet qui se traite mieux à voix haute."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Pourquoi votre diagnostic ne les chiffre-t-il pas ?",
+        "a": "Parce qu'il part du coût actuel d'une tâche, et qu'une tâche qui n'existe pas n'en a aucun. Le calcul donnerait un gain nul et un délai de retour infini. Plutôt que de bricoler un coefficient, nous préférons dire que cette catégorie sort du périmètre de l'outil."
+      },
+      {
+        "q": "Par laquelle commencer ?",
+        "a": "Par la relance des impayés, presque toujours. C'est celle dont l'effet se mesure le plus vite, sur vos délais de paiement, et celle qui demande le moins de mise en place. Les trois autres viennent ensuite."
+      },
+      {
+        "q": "Est-ce que ça coûte plus cher qu'une automatisation classique ?",
+        "a": "Souvent moins, parce qu'il n'y a pas d'existant à respecter. On construit directement le processus voulu au lieu de reproduire celui qui tourne déjà, avec ses exceptions accumulées. Le travail technique est comparable, la phase d'analyse bien plus courte."
+      },
+      {
+        "q": "Comment mesurer le résultat si je partais de zéro ?",
+        "a": "Sur un indicateur métier, pas sur des heures gagnées. Le délai moyen de paiement pour les relances, le nombre de dossiers déposés pour une veille, les réponses obtenues pour une reprise de contact. Fixez le repère avant de commencer, sinon vous ne saurez rien."
+      },
+      {
+        "q": "Et si je n'ai aucune des quatre ?",
+        "a": "Alors votre organisation est plus solide que la moyenne, et le diagnostic classique suffira. Il chiffrera vos tâches existantes et vous dira lesquelles méritent d'être automatisées — parfois aucune, et il vous le dira aussi."
+      }
+    ]
+  },
+
+  "es": {
+    "date": "31 Agosto 2026",
+    "title": "Lo que no haces, por falta de tiempo",
+    "seoTitle": "Las tareas que nunca llegas a hacer | WebAutonomos",
+    "metaDescription": "Los impagados sin reclamar, la vigilancia nunca empezada. No cuestan horas, cuestan facturación. Y ningún cálculo de rentabilidad las ve.",
+    "keywords": [
+      "reclamación de impagados automática",
+      "vigilancia de licitaciones",
+      "reactivar clientes antiguos",
+      "tareas que nunca se hacen"
+    ],
+    "excerpt": "Hay una categoría de tareas que ningún cálculo de rentabilidad ve: las que no haces. Suelen ser las que más pagan.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Siempre se mide lo que se hace. Las horas dedicadas, las tareas repetidas, el tiempo que gustaría recuperar. Pero hay otra categoría, invisible en todos los cálculos: lo que no haces. No por dejadez — porque nunca hubo tiempo. Y esas tareas no cuestan horas. Cuestan facturación que no entra."
+      },
+      { "type": "heading", "text": "Ningún cálculo de rentabilidad las ve" },
+      {
+        "type": "paragraph",
+        "text": "Un cálculo de automatización parte siempre del mismo sitio: cuántas veces, cuánto tiempo, cuánto cuesta la hora. Una tarea que no existe no tiene ninguno de esos tres números. Su coste actual es cero, su ganancia es cero, y por tanto no aparece en ninguna parte. Es un fallo estructural del método — el nuestro incluido — y descarta justo los filones más rentables."
+      },
+      { "type": "heading", "text": "Las cuatro más frecuentes" },
+      {
+        "type": "paragraph",
+        "text": "La reclamación de impagados, que se hace cuando queda un rato, nunca con método. La vigilancia de licitaciones o subvenciones, que nunca empezó. La reactivación de clientes antiguos, aplazada desde hace dos años. Y la publicación regular, abandonada a las tres semanas. Casi todas las empresas que conocemos tienen al menos dos de las cuatro."
+      },
+      { "type": "heading", "text": "Lo que cuestan de verdad" },
+      {
+        "type": "paragraph",
+        "text": "Una reclamación hecha sistemáticamente a los treinta días acorta tus plazos de cobro en varias semanas. Un cliente antiguo al que vuelves a llamar ya compró una vez: convencerlo cuesta infinitamente menos que convencer a un desconocido. Una vigilancia de licitaciones te pone en concursos a los que no te habrías presentado. Nada de esto es ahorro de tiempo: son ingresos."
+      },
+      { "type": "heading", "text": "Son más fáciles de automatizar de lo que parece" },
+      {
+        "type": "paragraph",
+        "text": "Esto es lo que más sorprende. Automatizar una tarea existente obliga a reproducirla igual, con sus costumbres, sus excepciones y sus casos particulares acumulados durante años. Una tarea que no existe no tiene nada de eso. No hay proceso anterior que respetar, nadie a quien convencer de cambiar de gestos, y ninguna regresión posible. Se parte de una página en blanco."
+      },
+      { "type": "heading", "text": "Cómo detectarlas en tu negocio" },
+      {
+        "type": "paragraph",
+        "text": "Hazte una sola pregunta y apunta la primera respuesta que te venga: ¿qué sabes que habría que hacer, y no haces por falta de tiempo? La mayoría de los responsables contesta en menos de diez segundos. Lo saben. No es un problema de diagnóstico, es un problema de prioridades — y la prioridad siempre se ha decidido a favor de lo urgente."
+      },
+      { "type": "heading", "text": "Por qué el cálculo habitual no basta aquí" },
+      {
+        "type": "paragraph",
+        "text": "Para una tarea existente ciframos, comparamos, y decimos sí o no según un umbral. Para una tarea que no existe no hay nada que comparar: hay que estimar un ingreso futuro, y eso es un ejercicio de criterio, no de cálculo. Preferimos decirlo antes que vestir una intuición de tabla."
+      },
+      {
+        "type": "conclusion",
+        "text": "Estas tareas no aparecen en nuestro diagnóstico gratuito, y es a propósito: no se mide el coste de lo que no se hace. Si te reconoces en alguna de las cuatro, lo que toca no es un formulario sino una conversación de unos minutos, para estimar juntos lo que esa ausencia te cuesta. Escríbenos: es de esos temas que se tratan mejor hablando."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué vuestro diagnóstico no las cifra?",
+        "a": "Porque parte del coste actual de una tarea, y una tarea que no existe no tiene ninguno. El cálculo daría una ganancia nula y un plazo de retorno infinito. Antes que apañar un coeficiente, preferimos decir que esta categoría queda fuera del alcance de la herramienta."
+      },
+      {
+        "q": "¿Por cuál empiezo?",
+        "a": "Por la reclamación de impagados, casi siempre. Es la que antes se nota, en tus plazos de cobro, y la que menos montaje requiere. Las otras tres vienen después."
+      },
+      {
+        "q": "¿Cuesta más que una automatización clásica?",
+        "a": "Suele costar menos, porque no hay un existente que respetar. Se construye directamente el proceso que quieres en vez de reproducir el que ya gira, con sus excepciones acumuladas. El trabajo técnico es parecido, la fase de análisis mucho más corta."
+      },
+      {
+        "q": "¿Cómo mido el resultado si parto de cero?",
+        "a": "Con un indicador de negocio, no con horas ahorradas. El plazo medio de cobro para las reclamaciones, el número de concursos presentados para una vigilancia, las respuestas obtenidas en una reactivación. Fija la referencia antes de empezar, o no sabrás nada."
+      },
+      {
+        "q": "¿Y si no tengo ninguna de las cuatro?",
+        "a": "Entonces tu organización está mejor que la media, y el diagnóstico clásico te bastará. Cifrará tus tareas actuales y te dirá cuáles merecen automatizarse — a veces ninguna, y también te lo dirá."
+      }
+    ]
+  },
+
+  "val": {
+    "slug": "el-que-no-fas-per-falta-de-temps",
+    "date": "31 Agost 2026",
+    "title": "El que no fas, per falta de temps",
+    "seoTitle": "Les tasques que mai arribes a fer | WebAutonomos",
+    "metaDescription": "Els impagats sense reclamar, la vigilància mai començada. No costen hores, costen facturació. I cap càlcul de rendibilitat les veu.",
+    "keywords": [
+      "reclamació d'impagats automàtica",
+      "vigilància de licitacions",
+      "reactivar clients antics",
+      "tasques que mai es fan"
+    ],
+    "excerpt": "Hi ha una categoria de tasques que cap càlcul de rendibilitat veu: les que no fas. Solen ser les que més paguen.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Sempre es mesura el que es fa. Les hores dedicades, les tasques repetides, el temps que agradaria recuperar. Però hi ha una altra categoria, invisible en tots els càlculs: el que no fas. No per deixadesa — perquè mai va haver-hi temps. I eixes tasques no costen hores. Costen facturació que no entra."
+      },
+      { "type": "heading", "text": "Cap càlcul de rendibilitat les veu" },
+      {
+        "type": "paragraph",
+        "text": "Un càlcul d'automatització parteix sempre del mateix lloc: quantes vegades, quant de temps, quant costa l'hora. Una tasca que no existix no té cap d'eixos tres números. El seu cost actual és zero, el seu guany és zero, i per tant no apareix enlloc. És una fallada estructural del mètode — el nostre inclòs — i descarta justament els filons més rendibles."
+      },
+      { "type": "heading", "text": "Les quatre més freqüents" },
+      {
+        "type": "paragraph",
+        "text": "La reclamació d'impagats, que es fa quan queda una estona, mai amb mètode. La vigilància de licitacions o subvencions, que mai va començar. La reactivació de clients antics, ajornada des de fa dos anys. I la publicació regular, abandonada a les tres setmanes. Quasi totes les empreses que coneixem en tenen almenys dues de les quatre."
+      },
+      { "type": "heading", "text": "El que costen de veritat" },
+      {
+        "type": "paragraph",
+        "text": "Una reclamació feta sistemàticament als trenta dies escurça els teus terminis de cobrament en diverses setmanes. Un client antic a qui tornes a telefonar ja va comprar una vegada: convéncer-lo costa infinitament menys que convéncer un desconegut. Una vigilància de licitacions et posa en concursos als quals no t'hauries presentat. Res d'això és estalvi de temps: són ingressos."
+      },
+      { "type": "heading", "text": "Són més fàcils d'automatitzar del que sembla" },
+      {
+        "type": "paragraph",
+        "text": "Això és el que més sorprén. Automatitzar una tasca existent obliga a reproduir-la igual, amb els seus costums, les seues excepcions i els seus casos particulars acumulats durant anys. Una tasca que no existix no té res d'això. No hi ha procés anterior a respectar, ningú a qui convéncer de canviar de gestos, i cap regressió possible. Es parteix d'una pàgina en blanc."
+      },
+      { "type": "heading", "text": "Com detectar-les en el teu negoci" },
+      {
+        "type": "paragraph",
+        "text": "Fes-te una sola pregunta i apunta la primera resposta que et vinga: què saps que caldria fer, i no fas per falta de temps? La majoria dels responsables contesta en menys de deu segons. Ho saben. No és un problema de diagnòstic, és un problema de prioritats — i la prioritat sempre s'ha decidit a favor de l'urgent."
+      },
+      { "type": "heading", "text": "Per què el càlcul habitual no basta ací" },
+      {
+        "type": "paragraph",
+        "text": "Per a una tasca existent xifrem, comparem, i diem sí o no segons un llindar. Per a una tasca que no existix no hi ha res a comparar: cal estimar un ingrés futur, i això és un exercici de criteri, no de càlcul. Preferim dir-ho abans que vestir una intuïció de taula."
+      },
+      {
+        "type": "conclusion",
+        "text": "Estes tasques no apareixen en el nostre diagnòstic gratuït, i és a propòsit: no es mesura el cost del que no es fa. Si t'hi reconeixes en alguna de les quatre, el que toca no és un formulari sinó una conversa d'uns minuts, per a estimar junts el que eixa absència et costa. Escriu-nos: és d'eixos temes que es tracten millor parlant."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Per què el vostre diagnòstic no les xifra?",
+        "a": "Perquè parteix del cost actual d'una tasca, i una tasca que no existix no en té cap. El càlcul donaria un guany nul i un termini de retorn infinit. Abans que apanyar un coeficient, preferim dir que esta categoria queda fora de l'abast de la ferramenta."
+      },
+      {
+        "q": "Per quina comence?",
+        "a": "Per la reclamació d'impagats, quasi sempre. És la que abans es nota, en els teus terminis de cobrament, i la que menys muntatge requerix. Les altres tres vénen després."
+      },
+      {
+        "q": "Costa més que una automatització clàssica?",
+        "a": "Sol costar menys, perquè no hi ha un existent a respectar. Es construïx directament el procés que vols en compte de reproduir el que ja gira, amb les seues excepcions acumulades. La faena tècnica és semblant, la fase d'anàlisi molt més curta."
+      },
+      {
+        "q": "Com mesure el resultat si partisc de zero?",
+        "a": "Amb un indicador de negoci, no amb hores estalviades. El termini mitjà de cobrament per a les reclamacions, el nombre de concursos presentats per a una vigilància, les respostes obtingudes en una reactivació. Fixa la referència abans de començar, o no sabràs res."
+      },
+      {
+        "q": "I si no tinc cap de les quatre?",
+        "a": "Llavors la teua organització està millor que la mitjana, i el diagnòstic clàssic et bastarà. Xifrarà les teues tasques actuals i et dirà quines mereixen automatitzar-se — de vegades cap, i també t'ho dirà."
+      }
+    ]
+  },
+
+  "en": {
+    "slug": "what-you-never-get-round-to",
+    "date": "Aug 31, 2026",
+    "title": "What you never get round to doing",
+    "seoTitle": "The tasks you never get round to | WebAutonomos",
+    "metaDescription": "Unpaid invoices never chased, monitoring never started. They cost no hours, they cost revenue. And no payback calculation sees them.",
+    "keywords": [
+      "automated payment chasing",
+      "tender monitoring",
+      "reactivate old customers",
+      "tasks never done business"
+    ],
+    "excerpt": "There is a category of work no payback calculation can see: the things you never do. They are often the ones that pay best.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "We always measure what we do. The hours spent, the tasks repeated, the time we would like back. But there is another category, invisible to every calculation: what you never do. Not through neglect — because there was never time. And those tasks cost no hours. They cost revenue that never comes in."
+      },
+      { "type": "heading", "text": "No payback calculation can see them" },
+      {
+        "type": "paragraph",
+        "text": "An automation calculation always starts from the same place: how many times, how long, what the hour costs. A task that does not exist has none of those three numbers. Its current cost is zero, so its gain is zero, so it appears nowhere. That is a structural flaw in the method — ours included — and it rules out precisely the richest seams."
+      },
+      { "type": "heading", "text": "The four most common" },
+      {
+        "type": "paragraph",
+        "text": "Chasing unpaid invoices, done whenever a spare moment turns up, never systematically. Monitoring tenders or grants, never started. Getting back in touch with former customers, put off for two years. And publishing regularly, abandoned after three weeks. Almost every business we meet has at least two of the four."
+      },
+      { "type": "heading", "text": "What they actually cost" },
+      {
+        "type": "paragraph",
+        "text": "Chasing systematically at thirty days shortens your payment terms by weeks. A former customer you call again has already bought once, so convincing them costs a fraction of convincing a stranger. Tender monitoring puts you in front of contracts you would never have bid for. None of this is time saved: it is revenue."
+      },
+      { "type": "heading", "text": "They are easier to automate than you would think" },
+      {
+        "type": "paragraph",
+        "text": "This is the surprising part. Automating an existing task means reproducing it faithfully, with its habits, its exceptions and its special cases piled up over years. A task that does not exist has none of that. There is no prior process to respect, nobody to persuade to change their ways, and no regression to fear. You start from a blank page."
+      },
+      { "type": "heading", "text": "How to spot yours" },
+      {
+        "type": "paragraph",
+        "text": "Ask yourself one question and write down the first answer that comes: what do you know you ought to be doing, and never do for lack of time? Most owners answer in under ten seconds. They know. It is not a diagnosis problem, it is a prioritisation problem — and the priority has always gone to whatever was urgent."
+      },
+      { "type": "heading", "text": "Why the usual calculation falls short here" },
+      {
+        "type": "paragraph",
+        "text": "For an existing task we price it, compare it, and say yes or no against a threshold. For a task that does not exist there is nothing to compare: you have to estimate future revenue, which is judgement rather than arithmetic. We would rather say so than dress an intuition up as a table."
+      },
+      {
+        "type": "conclusion",
+        "text": "These tasks do not appear in our free diagnostic, deliberately: you cannot measure the cost of something you never do. If you recognise yourself in one of the four, the right next step is not a form but a short conversation, to work out together what that absence costs you. Write to us — this is the kind of subject best handled out loud."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why does your diagnostic not price them?",
+        "a": "Because it starts from the current cost of a task, and a task that does not exist has none. The calculation would return zero gain and infinite payback. Rather than rig a coefficient, we prefer to say this category falls outside the tool's scope."
+      },
+      {
+        "q": "Which one should I start with?",
+        "a": "Chasing unpaid invoices, almost always. It shows results fastest, in your payment terms, and needs the least setting up. The other three come afterwards."
+      },
+      {
+        "q": "Does it cost more than ordinary automation?",
+        "a": "Usually less, because there is no existing process to respect. You build the process you want instead of reproducing the one already running, with its accumulated exceptions. The technical work is comparable, the analysis phase much shorter."
+      },
+      {
+        "q": "How do I measure results if I start from nothing?",
+        "a": "With a business indicator, not with hours saved. Average payment terms for chasing, number of bids submitted for monitoring, replies received for a reactivation campaign. Set the baseline before you start, or you will learn nothing."
+      },
+      {
+        "q": "What if I have none of the four?",
+        "a": "Then your organisation is in better shape than most, and the ordinary diagnostic will do. It will price your existing tasks and tell you which are worth automating — sometimes none, and it will say so."
+      }
+    ]
+  }
+}
