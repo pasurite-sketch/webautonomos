@@ -3,6 +3,7 @@
   "slug": "cuanto-cuesta-automatizar-un-proceso-formula",
   "category": "automatizacion",
   "image": "🧮",
+  "readTime": 10,
   "lastmod": "2026-09-03",
   "es": {
     "date": "3 Septiembre 2026",
@@ -283,5 +284,97 @@
       }
     ]
   },
-  "readTime": 10
+  "fr": {
+    "date": "3 Septembre 2026",
+    "title": "Combien coûte une automatisation : la formule",
+    "seoTitle": "Combien coûte l'automatisation d'un processus | WebAutonomos",
+    "metaDescription": "Tout le monde répond « ça dépend ». Voici la formule exacte avec laquelle nous chiffrons, les trois nombres qu'il vous faut, et quand la réponse est non.",
+    "keywords": [
+      "combien coûte automatiser un processus",
+      "prix automatisation PME",
+      "rentabilité automatisation",
+      "calculer retour automatisation"
+    ],
+    "excerpt": "Cherchez « combien coûte automatiser » et vous trouverez des fourchettes de 1 500 à 60 000 euros. Aucune ne sert. Voici la formule qui se cache derrière.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Cherchez ce que coûte l'automatisation d'un processus et vous trouverez partout la même chose : des fourchettes allant de 1 500 à 60 000 euros, une liste de facteurs qui font varier le prix, et une phrase finale qui résume tout. Le montant exact sort d'un audit préalable. C'est vrai. Et cela ne vous sert à rien quand ce dont vous avez besoin, c'est de savoir si l'opération vaut le coup avant de prendre rendez-vous avec qui que ce soit."
+      },
+      {
+        "type": "heading",
+        "text": "Pourquoi tout le monde répond « ça dépend »"
+      },
+      {
+        "type": "paragraph",
+        "text": "Parce que c'est exact, et parce que cela arrange. C'est exact : le prix dépend de vos logiciels, de vos volumes et du nombre de cas particuliers à traiter. Et cela arrange : une fourchette de 1 500 à 15 000 euros n'engage personne, et oblige à demander le devis. Le problème, c'est qu'elle est si large qu'elle ne vous aide pas à décider. Entre 1 500 et 15 000, il y a un facteur dix."
+      },
+      {
+        "type": "heading",
+        "text": "La formule que nous utilisons, publiée"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nous chiffrons la mise en œuvre à 12 % du coût annuel de la tâche à automatiser. Si une tâche vous coûte 20 000 euros par an, le projet tourne autour de 2 400. Si elle vous coûte 4 000, autour de 500. Le prix est lié à ce que la tâche vous coûte aujourd'hui, pas à la complexité qu'elle représente pour nous. Et la maintenance vaut 20 % de cette mise en œuvre, répartis sur l'année."
+      },
+      {
+        "type": "heading",
+        "text": "Les trois nombres qu'il vous faut"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pour savoir ce que la tâche vous coûte aujourd'hui, trois données suffisent, et vous les avez toutes. Combien de fois par jour elle est réalisée. Combien de temps elle prend chaque fois. Et combien coûte l'heure de la personne qui s'en occupe, charges comprises. Multipliez les trois par 240 jours ouvrables et vous obtenez le coût annuel. Sans tableur ni formule compliquée."
+      },
+      {
+        "type": "heading",
+        "text": "Un exemple complet, chiffres à l'appui"
+      },
+      {
+        "type": "paragraph",
+        "text": "Une entreprise saisit des bons de livraison fournisseurs deux fois par jour, vingt minutes à chaque fois, avec une personne qui coûte 25 euros de l'heure charges comprises. Cela fait 160 heures par an et 4 000 euros. La mise en œuvre revient à environ 480 euros et la maintenance à 96 par an. Reste l'autre moitié du calcul : quelle part de ces 4 000 euros une automatisation récupère réellement."
+      },
+      {
+        "type": "heading",
+        "text": "On ne récupère presque jamais 100 %"
+      },
+      {
+        "type": "paragraph",
+        "text": "C'est là que la plupart des calculs de rentabilité se trompent. Aucune automatisation n'élimine la tâche entière : restent les exceptions, les vérifications et les cas qui ne rentrent pas dans le moule. Si les données sont dans un logiciel de gestion et que les cas se ressemblent, vous récupérez entre 30 et 50 %. Si elles sont sur papier et que chaque cas diffère, vous tombez à 10 ou 15 %. Cet écart décide du projet entier."
+      },
+      {
+        "type": "heading",
+        "text": "Quand la réponse est non"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nous ne proposons un projet que s'il s'amortit en moins de 24 mois. Sous ce seuil, il y a un dossier ; au-dessus, non. En pratique, cela écarte les tâches de quelques minutes par jour, celles dont les règles changent chaque trimestre, et celles dont les données sont sur papier sans avoir été mises en ordre au préalable. Ce n'est pas qu'elles soient impossibles : c'est que le coût de les faire tourner mange l'économie."
+      },
+      {
+        "type": "conclusion",
+        "text": "Vous pouvez faire ces calculs vous-même avec une calculatrice, ou les confier à un diagnostic gratuit que nous avons préparé : quatre questions, deux minutes, et il vous rend le coût annuel de votre tâche, la part récupérable, la technologie minimale nécessaire et le nombre de mois avant amortissement. Sans rendez-vous et sans parler à personne. Et si le résultat dit que cela ne vaut pas la peine, il vous le dit aussi."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Pourquoi 12 % et pas un autre pourcentage ?",
+        "a": "Parce que cela lie le prix à ce que la tâche vous coûte, et non à ce qu'elle nous inspire. Une tâche de 4 000 euros par an ne peut pas justifier un projet à 5 000, aussi élégante que soit la solution. Le pourcentage maintient la proportion."
+      },
+      {
+        "q": "Ce prix comprend-il la maintenance ?",
+        "a": "Non. La maintenance est facturée à part et reste optionnelle : environ 20 % de la mise en œuvre, répartis sur l'année. Sans elle, l'automatisation continue de fonctionner jusqu'à ce qu'un de vos logiciels change de version ; la réparation est alors facturée à l'heure."
+      },
+      {
+        "q": "Comment savoir quelle part du coût est récupérable ?",
+        "a": "Cela dépend de quatre choses : si les cas se ressemblent entre eux, où se trouvent les données, si quelqu'un porte le sujet en interne, et ce qui se passe si le système se trompe. Le diagnostic gratuit pose les quatre questions et vous donne le pourcentage."
+      },
+      {
+        "q": "Et si mon cas ressort sous 500 euros ?",
+        "a": "Nous vous le disons et nous vous indiquons quoi paramétrer vous-même, sans frais. Un projet qui ne se rembourse pas n'est pas un petit projet : c'est un projet à ne pas faire."
+      },
+      {
+        "q": "En combien de temps recevons-nous un devis ?",
+        "a": "Moins de 48 heures après la visioconférence, et c'est un devis ferme : pas une fourchette, pas un « ça dépend ». La visioconférence dure trente minutes et sert à voir vos logiciels, vos volumes réels et vos cas particuliers."
+      }
+    ]
+  }
 }
