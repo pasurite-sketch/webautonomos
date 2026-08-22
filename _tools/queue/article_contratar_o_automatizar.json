@@ -1,0 +1,315 @@
+{
+  "publish_date": "2026-08-27",
+  "slug": "contratar-o-automatizar",
+  "category": "automatizacion",
+  "image": "⚖️",
+  "readTime": 10,
+  "lastmod": "2026-08-27",
+
+  "fr": {
+    "slug": "embaucher-ou-automatiser",
+    "date": "27 Août 2026",
+    "title": "Faut-il embaucher ou automatiser ?",
+    "seoTitle": "Embaucher ou automatiser : comment trancher | WebAutonomos",
+    "metaDescription": "Un salarié au SMIC coûte moins cher qu'on ne le croit, et une automatisation moins cher encore. Les chiffres réels des deux, et comment choisir.",
+    "keywords": [
+      "embaucher ou automatiser",
+      "coût réel d'un salarié",
+      "charges patronales 2026",
+      "automatiser tâches administratives"
+    ],
+    "excerpt": "La question se pose mal. Ce n'est pas l'un ou l'autre, et les chiffres réels surprennent dans les deux sens. Voici comment trancher.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "La question revient dès que l'administratif déborde : faut-il embaucher quelqu'un, ou trouver un outil ? Elle se pose presque toujours mal, parce que les deux coûts sont mal connus. Un salarié coûte souvent moins que ce que la rumeur des charges laisse croire. Une automatisation coûte souvent moins encore, mais ne fait qu'une partie du travail. Voici les chiffres des deux."
+      },
+      { "type": "heading", "text": "Ce qu'un salarié coûte réellement" },
+      {
+        "type": "paragraph",
+        "text": "Depuis juin 2026, le SMIC brut mensuel s'établit à 1 867 euros. Le coût employeur correspondant tourne autour de 1 933 euros par mois, soit environ 23 000 euros par an pour un temps plein. Au-dessus du SMIC, la réduction générale décroît et l'écart se creuse : à 2 500 euros de brut, le coût mensuel avoisine 3 550 euros, cotisations comprises."
+      },
+      { "type": "heading", "text": "Le point que personne ne vous dit" },
+      {
+        "type": "paragraph",
+        "text": "On répète que les charges patronales représentent 42 % du brut. C'est le taux facial, avant réduction. La réduction générale dégressive, qui s'applique désormais jusqu'à trois fois le SMIC, ramène ce taux à environ 10 % au niveau du salaire minimum. Autrement dit, embaucher à un bas salaire coûte proportionnellement bien moins cher que ce que l'on croit — et cela mérite d'être su avant d'écarter l'option."
+      },
+      { "type": "heading", "text": "Et ce que les tableaux oublient" },
+      {
+        "type": "paragraph",
+        "text": "Le coût chargé n'est pas le coût complet. Il faut y ajouter cinq semaines de congés payés, soit environ 10 % d'une année sans production, la mutuelle collective dont vous financez la moitié, la médecine du travail, le temps de recrutement et celui de formation. Et le risque qu'après huit mois, la personne parte — auquel cas tout recommence."
+      },
+      { "type": "heading", "text": "Ce qu'une automatisation coûte en face" },
+      {
+        "type": "paragraph",
+        "text": "Nous chiffrons la mise en œuvre à 12 % du coût annuel de la tâche automatisée. Une tâche qui vous coûte 8 000 euros par an revient donc à environ 960 euros, plus une maintenance d'un cinquième par an. La plupart des projets que nous acceptons se situent entre 500 et 4 000 euros. L'écart avec une embauche n'est pas de quelques pour cent : il est d'un ordre de grandeur."
+      },
+      { "type": "heading", "text": "Mais ce n'est pas la même chose" },
+      {
+        "type": "paragraph",
+        "text": "Comparer les deux montants n'a de sens que si les deux font le même travail, et ce n'est jamais le cas. Une personne traite les exceptions, décroche le téléphone, remarque qu'un dossier sent mauvais. Une automatisation fait une chose, toujours pareil, sans se lasser et sans congés. La bonne question n'est donc pas laquelle choisir, mais quelle part du travail relève de laquelle."
+      },
+      { "type": "heading", "text": "Comment trancher en trois nombres" },
+      {
+        "type": "paragraph",
+        "text": "Prenez ce que vous confieriez à cette future recrue et découpez-le. Pour chaque bloc, notez combien de fois par jour il revient, combien de temps il prend, et s'il demande un jugement ou seulement de l'exécution. Vous verrez presque toujours qu'une moitié est répétitive et l'autre non. Automatisez la première, et vous découvrirez souvent que la seconde ne justifie plus un poste entier."
+      },
+      {
+        "type": "conclusion",
+        "text": "Nous avons préparé un diagnostic gratuit qui chiffre une tâche en deux minutes : quatre questions, résultat à l'écran, et il vous dit si l'automatiser vaut le coup ou non. Passez-le sur les trois blocs les plus lourds avant de rédiger une offre d'emploi. Et si le résultat conclut qu'aucun ne mérite d'être automatisé, alors la réponse est peut-être bien d'embaucher — il vous le dira aussi."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Combien coûte vraiment un salarié au SMIC en 2026 ?",
+        "a": "Le SMIC brut mensuel est de 1 867 euros depuis juin 2026, pour un coût employeur d'environ 1 933 euros après la réduction générale. Soit près de 23 000 euros par an, hors mutuelle, congés payés et frais annexes propres à votre entreprise."
+      },
+      {
+        "q": "Une automatisation remplace-t-elle un poste ?",
+        "a": "Presque jamais en entier. Elle absorbe la part répétitive et laisse les exceptions, les vérifications et tout ce qui demande un jugement. C'est pour cela que la bonne question porte sur le découpage du travail, pas sur le choix entre deux options."
+      },
+      {
+        "q": "Un temps partiel n'est-il pas une meilleure solution ?",
+        "a": "Souvent, oui, et nous le disons quand c'est le cas. Un mi-temps administratif coûte environ la moitié d'un plein temps, avec la même souplesse humaine. Il devient discutable quand la moitié de ses heures partent dans des tâches qu'une machine ferait sans erreur."
+      },
+      {
+        "q": "Et si j'automatise puis que mon activité change ?",
+        "a": "C'est un vrai risque, et c'est pour cela que nous refusons les tâches dont les règles bougent chaque trimestre. Une automatisation se construit sur du stable. Si votre organisation est en train de changer, attendez qu'elle se pose."
+      },
+      {
+        "q": "Combien coûte l'automatisation d'une tâche ?",
+        "a": "La plupart des projets que nous acceptons se situent entre 500 et 4 000 euros, et nous ne proposons que ceux qui s'amortissent en moins de 24 mois. Votre chiffre exact sort du diagnostic, avec vos volumes et vos heures."
+      }
+    ]
+  },
+
+  "es": {
+    "date": "27 Agosto 2026",
+    "title": "¿Contratar o automatizar?",
+    "seoTitle": "Contratar o automatizar: cómo decidir | WebAutonomos",
+    "metaDescription": "Un administrativo cuesta más de lo que parece y una automatización menos de lo que se cree. Los números de ambos, y cómo elegir entre los dos.",
+    "keywords": [
+      "contratar o automatizar",
+      "coste real de un empleado",
+      "coste laboral administrativo",
+      "automatizar tareas administrativas"
+    ],
+    "excerpt": "La pregunta está mal planteada. No es lo uno o lo otro, y los números reales sorprenden en los dos sentidos.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "La pregunta llega en cuanto lo administrativo desborda: ¿hay que contratar a alguien, o buscar una herramienta? Casi siempre está mal planteada, porque los dos costes se conocen mal. Un empleado cuesta más de lo que dice la nómina. Una automatización cuesta menos de lo que se teme, pero solo hace una parte del trabajo. Aquí están los números de ambos."
+      },
+      { "type": "heading", "text": "Lo que cuesta de verdad un empleado" },
+      {
+        "type": "paragraph",
+        "text": "El coste laboral por hora efectiva en España se sitúa en 24,88 euros según el INE, primer trimestre de 2026. Para un puesto administrativo a jornada completa, la factura anual con cotizaciones ronda los 26.000 euros. Y esa cifra no incluye la selección, la formación, ni el riesgo de que la persona se vaya a los ocho meses y haya que empezar de nuevo."
+      },
+      { "type": "heading", "text": "Lo que las tablas se dejan fuera" },
+      {
+        "type": "paragraph",
+        "text": "El coste con cargas no es el coste completo. Hay que añadir las vacaciones, el tiempo de quien forma a la persona nueva, la baja que llega en el peor momento y el hueco que deja mientras se cubre. Nada de esto aparece en el presupuesto inicial, y todo aparece en la realidad del primer año."
+      },
+      { "type": "heading", "text": "Lo que cuesta una automatización, enfrente" },
+      {
+        "type": "paragraph",
+        "text": "Nosotros ciframos la implantación en el 12 % del coste anual de la tarea automatizada. Una tarea que te cuesta 8.000 euros al año sale por unos 960, más un mantenimiento de una quinta parte al año. La mayoría de los proyectos que aceptamos están entre 500 y 4.000 euros. La diferencia con una contratación no es de unos puntos: es de un orden de magnitud."
+      },
+      { "type": "heading", "text": "Pero no son la misma cosa" },
+      {
+        "type": "paragraph",
+        "text": "Comparar las dos cifras solo tiene sentido si hacen el mismo trabajo, y nunca lo hacen. Una persona resuelve las excepciones, coge el teléfono, se da cuenta de que un expediente huele mal. Una automatización hace una cosa, siempre igual, sin cansarse y sin vacaciones. La buena pregunta no es cuál elegir, sino qué parte del trabajo corresponde a cada una."
+      },
+      { "type": "heading", "text": "Cómo decidir con tres números" },
+      {
+        "type": "paragraph",
+        "text": "Coge lo que le encargarías a esa futura contratación y trocéalo. De cada bloque, anota cuántas veces al día aparece, cuánto dura, y si exige criterio o solo ejecución. Casi siempre verás que una mitad es repetitiva y la otra no. Automatiza la primera, y a menudo descubrirás que la segunda ya no justifica un puesto entero."
+      },
+      { "type": "heading", "text": "Media jornada suele ser la respuesta" },
+      {
+        "type": "paragraph",
+        "text": "Es la salida que más recomendamos y la que menos se plantea. Una media jornada administrativa cuesta la mitad y conserva toda la flexibilidad humana. Se vuelve discutible cuando la mitad de esas horas se va en tareas que una máquina haría sin errores — y ahí es donde conviene medir antes de firmar nada."
+      },
+      {
+        "type": "conclusion",
+        "text": "Hemos preparado un diagnóstico gratuito que cifra una tarea en dos minutos: cuatro preguntas, resultado en pantalla, y te dice si automatizarla compensa o no. Pásalo por los tres bloques más pesados antes de redactar una oferta de empleo. Y si concluye que ninguno merece automatizarse, quizá la respuesta sea contratar — también te lo dirá."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cuánto cuesta realmente un administrativo?",
+        "a": "Alrededor de 26.000 euros al año con cotizaciones para una jornada completa, tomando como referencia el coste laboral por hora efectiva del INE. Sin contar selección, formación ni el coste de una rotación."
+      },
+      {
+        "q": "¿Una automatización sustituye un puesto?",
+        "a": "Casi nunca por completo. Absorbe la parte repetitiva y deja las excepciones, las revisiones y todo lo que exige criterio. Por eso la pregunta correcta es cómo se reparte el trabajo, no cuál de los dos elegir."
+      },
+      {
+        "q": "¿No es mejor una media jornada?",
+        "a": "A menudo sí, y lo decimos cuando toca. Cuesta la mitad y conserva la flexibilidad humana. Se vuelve discutible cuando la mitad de esas horas se va en tareas que una máquina haría sin errores."
+      },
+      {
+        "q": "¿Y si automatizo y luego cambia mi actividad?",
+        "a": "Es un riesgo real, y por eso rechazamos las tareas cuyas reglas cambian cada trimestre. Una automatización se construye sobre lo estable. Si tu organización está cambiando, espera a que se asiente."
+      },
+      {
+        "q": "¿Cuánto cuesta automatizar una tarea?",
+        "a": "La mayoría de los proyectos que aceptamos están entre 500 y 4.000 euros, y solo proponemos los que se amortizan en menos de 24 meses. Tu cifra exacta la calcula el diagnóstico, con tus volúmenes y tus horas."
+      }
+    ]
+  },
+
+  "val": {
+    "slug": "contractar-o-automatitzar",
+    "date": "27 Agost 2026",
+    "title": "Contractar o automatitzar?",
+    "seoTitle": "Contractar o automatitzar: com decidir | WebAutonomos",
+    "metaDescription": "Un administratiu costa més del que sembla i una automatització menys del que es creu. Els números d'ambdós, i com triar.",
+    "keywords": [
+      "contractar o automatitzar",
+      "cost real d'un empleat",
+      "cost laboral administratiu",
+      "automatitzar tasques administratives"
+    ],
+    "excerpt": "La pregunta està mal plantejada. No és l'un o l'altre, i els números reals sorprenen en els dos sentits.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "La pregunta arriba en quant l'administratiu desborda: cal contractar algú, o buscar una ferramenta? Quasi sempre està mal plantejada, perquè els dos costos es coneixen malament. Un empleat costa més del que diu la nòmina. Una automatització costa menys del que es tem, però només fa una part de la faena. Ací estan els números d'ambdós."
+      },
+      { "type": "heading", "text": "El que costa de veritat un empleat" },
+      {
+        "type": "paragraph",
+        "text": "El cost laboral per hora efectiva a Espanya se situa en 24,88 euros segons l'INE, primer trimestre de 2026. Per a un lloc administratiu a jornada completa, la factura anual amb cotitzacions ronda els 26.000 euros. I eixa xifra no inclou la selecció, la formació, ni el risc que la persona se'n vaja als huit mesos i calga començar de nou."
+      },
+      { "type": "heading", "text": "El que les taules es deixen fora" },
+      {
+        "type": "paragraph",
+        "text": "El cost amb càrregues no és el cost complet. Cal afegir les vacances, el temps de qui forma la persona nova, la baixa que arriba en el pitjor moment i el buit que deixa mentres es cobrix. Res d'això apareix en el pressupost inicial, i tot apareix en la realitat del primer any."
+      },
+      { "type": "heading", "text": "El que costa una automatització, enfront" },
+      {
+        "type": "paragraph",
+        "text": "Nosaltres xifrem la implantació en el 12 % del cost anual de la tasca automatitzada. Una tasca que et costa 8.000 euros a l'any ix per uns 960, més un manteniment d'una cinquena part a l'any. La majoria dels projectes que acceptem estan entre 500 i 4.000 euros. La diferència amb una contractació no és d'uns punts: és d'un ordre de magnitud."
+      },
+      { "type": "heading", "text": "Però no són la mateixa cosa" },
+      {
+        "type": "paragraph",
+        "text": "Comparar les dues xifres només té sentit si fan la mateixa faena, i mai la fan. Una persona resol les excepcions, agafa el telèfon, s'adona que un expedient fa mala olor. Una automatització fa una cosa, sempre igual, sense cansar-se i sense vacances. La bona pregunta no és quina triar, sinó quina part de la faena correspon a cadascuna."
+      },
+      { "type": "heading", "text": "Com decidir amb tres números" },
+      {
+        "type": "paragraph",
+        "text": "Agafa el que li encarregaries a eixa futura contractació i trosseja-ho. De cada bloc, apunta quantes vegades al dia apareix, quant dura, i si exigix criteri o només execució. Quasi sempre veuràs que una meitat és repetitiva i l'altra no. Automatitza la primera, i sovint descobriràs que la segona ja no justifica un lloc sencer."
+      },
+      { "type": "heading", "text": "Mitja jornada sol ser la resposta" },
+      {
+        "type": "paragraph",
+        "text": "És l'eixida que més recomanem i la que menys es planteja. Una mitja jornada administrativa costa la meitat i conserva tota la flexibilitat humana. Es torna discutible quan la meitat d'eixes hores se'n va en tasques que una màquina faria sense errors — i ahí és on convé mesurar abans de firmar res."
+      },
+      {
+        "type": "conclusion",
+        "text": "Hem preparat un diagnòstic gratuït que xifra una tasca en dos minuts: quatre preguntes, resultat en pantalla, i et diu si automatitzar-la compensa o no. Passa'l pels tres blocs més pesats abans de redactar una oferta de faena. I si conclou que cap mereix automatitzar-se, potser la resposta siga contractar — també t'ho dirà."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quant costa realment un administratiu?",
+        "a": "Al voltant de 26.000 euros a l'any amb cotitzacions per a una jornada completa, prenent com a referència el cost laboral per hora efectiva de l'INE. Sense comptar selecció, formació ni el cost d'una rotació."
+      },
+      {
+        "q": "Una automatització substituïx un lloc de faena?",
+        "a": "Quasi mai del tot. Absorbix la part repetitiva i deixa les excepcions, les revisions i tot el que exigix criteri. Per això la pregunta correcta és com es repartix la faena, no quin dels dos triar."
+      },
+      {
+        "q": "No és millor una mitja jornada?",
+        "a": "Sovint sí, i ho diem quan toca. Costa la meitat i conserva la flexibilitat humana. Es torna discutible quan la meitat d'eixes hores se'n va en tasques que una màquina faria sense errors."
+      },
+      {
+        "q": "I si automatitze i després canvia la meua activitat?",
+        "a": "És un risc real, i per això rebutgem les tasques les regles de les quals canvien cada trimestre. Una automatització es construïx sobre el que és estable. Si la teua organització està canviant, espera que s'assente."
+      },
+      {
+        "q": "Quant costa automatitzar una tasca?",
+        "a": "La majoria dels projectes que acceptem estan entre 500 i 4.000 euros, i només proposem els que s'amortitzen en menys de 24 mesos. La teua xifra exacta la calcula el diagnòstic, amb els teus volums i les teues hores."
+      }
+    ]
+  },
+
+  "en": {
+    "slug": "hire-or-automate",
+    "date": "Aug 27, 2026",
+    "title": "Hire someone, or automate?",
+    "seoTitle": "Hire or automate: how to decide | WebAutonomos",
+    "metaDescription": "An admin hire costs more than the payslip suggests, and automation less than people fear. The real numbers for both, and how to choose.",
+    "keywords": [
+      "hire or automate",
+      "real cost of an employee",
+      "administrative staff cost",
+      "automate administrative tasks"
+    ],
+    "excerpt": "The question is usually framed wrong. It is not one or the other, and the real numbers surprise in both directions.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "The question turns up as soon as the admin overflows: should you hire someone, or find a tool? It is almost always framed wrong, because both costs are poorly understood. An employee costs more than the payslip shows. Automation costs less than people fear, but only does part of the work. Here are the numbers for both."
+      },
+      { "type": "heading", "text": "What an employee really costs" },
+      {
+        "type": "paragraph",
+        "text": "In Spain, the hourly labour cost stands at €24.88 according to the national statistics institute for the first quarter of 2026. For a full-time administrative role, the annual bill with contributions comes to around €26,000. That figure excludes recruitment, training, and the risk that the person leaves after eight months and the whole thing starts again."
+      },
+      { "type": "heading", "text": "What the tables leave out" },
+      {
+        "type": "paragraph",
+        "text": "Loaded cost is not full cost. Add paid holiday, the time of whoever trains the new person, the sick leave that arrives at the worst moment, and the gap it leaves while cover is found. None of this appears in the initial budget, and all of it appears in the reality of the first year."
+      },
+      { "type": "heading", "text": "What automation costs, alongside" },
+      {
+        "type": "paragraph",
+        "text": "We price the build at 12 % of the annual cost of the task being automated. A task costing you €8,000 a year comes to around €960, plus maintenance of a fifth of that per year. Most of the projects we take on fall between €500 and €4,000. The gap with a hire is not a few percent: it is an order of magnitude."
+      },
+      { "type": "heading", "text": "But they are not the same thing" },
+      {
+        "type": "paragraph",
+        "text": "Comparing the two figures only makes sense if they do the same work, and they never do. A person handles the exceptions, picks up the phone, notices that a file smells wrong. An automation does one thing, always the same way, without tiring and without holidays. The right question is not which to choose, but which share of the work belongs to which."
+      },
+      { "type": "heading", "text": "How to decide with three numbers" },
+      {
+        "type": "paragraph",
+        "text": "Take what you would give that future hire and break it into blocks. For each one, note how many times a day it comes up, how long it takes, and whether it needs judgement or only execution. You will almost always find one half is repetitive and the other is not. Automate the first, and you will often find the second no longer justifies a full post."
+      },
+      { "type": "heading", "text": "Part-time is often the answer" },
+      {
+        "type": "paragraph",
+        "text": "It is the option we recommend most and the one people consider least. A half-time admin post costs half as much and keeps all the human flexibility. It becomes questionable when half of those hours go into tasks a machine would do without error — and that is where measuring beats guessing."
+      },
+      {
+        "type": "conclusion",
+        "text": "We have built a free diagnostic that prices a task in two minutes: four questions, the result on screen, and it tells you whether automating it is worth it. Run it on the three heaviest blocks before you write a job advert. And if it concludes that none of them is worth automating, then hiring may well be the answer — it will tell you that too."
+      }
+    ],
+    "faq": [
+      {
+        "q": "What does an administrative employee really cost?",
+        "a": "Around €26,000 a year with contributions for a full-time role in Spain, based on the national hourly labour cost figure. That excludes recruitment, training and the cost of turnover."
+      },
+      {
+        "q": "Does automation replace a job?",
+        "a": "Almost never entirely. It absorbs the repetitive part and leaves the exceptions, the checks and everything requiring judgement. That is why the right question is how the work divides, not which of the two to pick."
+      },
+      {
+        "q": "Would part-time not be better?",
+        "a": "Often yes, and we say so when it is. It costs half as much and keeps the human flexibility. It becomes questionable when half those hours go into tasks a machine would do without error."
+      },
+      {
+        "q": "What if I automate and then my business changes?",
+        "a": "That is a real risk, and it is why we turn down tasks whose rules change every quarter. Automation is built on what is stable. If your organisation is in flux, wait for it to settle."
+      },
+      {
+        "q": "What does automating a task cost?",
+        "a": "Most of the projects we take on fall between €500 and €4,000, and we only propose those that pay back in under 24 months. Your exact figure comes from the diagnostic, using your volumes and your hours."
+      }
+    ]
+  }
+}
