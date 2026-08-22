@@ -134,14 +134,24 @@ if sorted(labels) != ['en', 'es', 'fr', 'val']:
     print(f'ERREUR: identification des tableaux ambiguë {labels}. Abandon.'); sys.exit(1)
 nid = max(int(x) for a in arrays for x in re.findall(r'\{id:(\d+),', a)) + 1
 
-# refuser un slug déjà présent
-if re.search(r'slug:"(?:es|val|en)/' + re.escape(art['slug']) + '"', html):
-    print(f'ERREUR: le slug "{art["slug"]}" existe déjà. Abandon.'); sys.exit(1)
+# --- slug par langue, avec repli sur le slug racine ---
+# art['slug'] reste obligatoire : c'est le slug par défaut ET celui de l'URL
+# espagnole, qui sert de <loc> canonique au sitemap. Chaque bloc de langue peut
+# le surcharger avec son propre "slug" ; les articles qui n'en déclarent pas se
+# comportent exactement comme avant.
+SLUGS = {lg: art[lg].get('slug', art['slug']) for lg in LANGUES}
+if len(set(SLUGS.values())) > 1:
+    print('  slugs par langue : ' + ', '.join(f'{lg}={SLUGS[lg]}' for lg in LANGUES))
+
+# refuser un slug déjà présent, langue par langue
+for lg in LANGUES:
+    if re.search(r'slug:"%s/%s"' % (lg, re.escape(SLUGS[lg])), html):
+        print(f'ERREUR: le slug "{SLUGS[lg]}" existe déjà en {lg}. Abandon.'); sys.exit(1)
 
 def build_entry(lg):
     a = art[lg]
     return js({
-        'id': nid, 'slug': f'{lg}/' + art['slug'], 'title': a['title'], 'seoTitle': a['seoTitle'],
+        'id': nid, 'slug': f'{lg}/' + SLUGS[lg], 'title': a['title'], 'seoTitle': a['seoTitle'],
         'metaDescription': a['metaDescription'], 'keywords': a['keywords'], 'excerpt': a['excerpt'],
         'category': art['category'], 'date': a['date'], 'readTime': art['readTime'], 'image': art['image'],
         'content': a['content'], 'faq': a['faq'],
@@ -156,15 +166,17 @@ for arr, lg in zip(arrays, labels):
     new_html = new_html.replace('articles:' + arr, 'articles:' + arr[:-1] + sep + entry + ']')
 
 # --- 3) sitemap : bloc <url> hreflang avant </urlset> ---
-sl = art['slug']; lm = art.get('lastmod', '2026-07-20')
+sl = SLUGS['es']; lm = art.get('lastmod', '2026-07-20')
+# Chaque alternative pointe vers le slug de SA langue : un hreflang qui pointe
+# vers une URL inexistante est une erreur signalee par la Search Console.
 block = (
  '    <url>\n'
- f'        <loc>https://webautonomos.es/blog/es/{sl}</loc>\n'
- f'        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/{sl}"/>\n'
- f'        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/{sl}"/>\n'
- f'        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/{sl}"/>\n'
- f'        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/{sl}"/>\n'
- f'        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/{sl}"/>\n'
+ f'        <loc>https://webautonomos.es/blog/es/{SLUGS["es"]}</loc>\n'
+ f'        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/{SLUGS["es"]}"/>\n'
+ f'        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/{SLUGS["val"]}"/>\n'
+ f'        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/{SLUGS["en"]}"/>\n'
+ f'        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/{SLUGS["fr"]}"/>\n'
+ f'        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/{SLUGS["es"]}"/>\n'
  f'        <lastmod>{lm}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>\n'
  '    </url>\n')
 if f'/blog/es/{sl}<' in sm:
@@ -181,7 +193,7 @@ for s, lg in zip(vstarts, labels):
     a = bracket_match(new_html, s, '[', ']')
     ids = re.findall(r'\{id:(\d+),', a)
     if ids.count(str(nid)) != 1: errs.append(f'tableau {lg}: id {nid} absent/dupliqué')
-    if not re.search(r'\{id:%d,slug:"%s/%s"' % (nid, lg, re.escape(sl)), a): errs.append(f'tableau {lg}: slug attendu absent')
+    if not re.search(r'\{id:%d,slug:"%s/%s"' % (nid, lg, re.escape(SLUGS[lg])), a): errs.append(f'tableau {lg}: slug attendu absent')
 if new_sm.count('</urlset>') != 1: errs.append('sitemap: </urlset> anormal')
 if errs:
     print('Anomalies détectées, RIEN modifié :'); [print('  -', e) for e in errs]; sys.exit(1)
@@ -220,6 +232,11 @@ print('Déploie :  npx wrangler deploy')
 # {
 #   "slug":"web-para-xxx","category":"web","image":"🧭","readTime":11,"lastmod":"2026-07-20",
 #   category ∈ web | seo | gmb | marketing | automatizacion | legal
+#   Slug par langue (facultatif) : ajouter "slug" DANS un bloc de langue pour
+#   qu'elle ait sa propre URL. Sans lui, la langue reprend le slug racine.
+#     "slug":"cuanto-cuesta-papeleo-autonomo",
+#     "fr":{ "slug":"paperasse-huit-heures-par-semaine", "date":"…", … }
+#   Le slug racine reste obligatoire : il sert de <loc> canonique au sitemap.
 #   (ajouter une catégorie = la déclarer AUSSI dans const categories=[...] et dans
 #    les trois objets categories:{...} de index.html, sinon le script refuse)
 #   "es":{"date":"20 Julio 2026","title":"...","seoTitle":"...","metaDescription":"...",
