@@ -828,4 +828,13 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/cuanto-cuesta-papeleo-autonomo"/>
         <lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://webautonomos.es/blog/es/factura-electronica-plazos-2026-2027</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/factura-electronica-plazos-2026-2027"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/factura-electronica-terminis-2026-2027"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/e-invoicing-deadlines-france-spain"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/facture-electronique-1er-septembre-2026"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/factura-electronica-plazos-2026-2027"/>
+        <lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    </url>
 </urlset>
