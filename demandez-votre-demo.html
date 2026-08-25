@@ -614,6 +614,32 @@
   gtag('js', new Date());
   gtag('config', 'G-MT6S7CH7N9');
 </script>
+<!-- Capture des identifiants publicitaires (gclid) — conservés 90 jours -->
+<script>
+  (function(){
+    var KEYS=['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term'];
+    var STORE='wa_ads', p=new URLSearchParams(location.search), found={}, has=false;
+    KEYS.forEach(function(k){ var v=p.get(k); if(v){ found[k]=v; has=true; } });
+    if(has){ try{ localStorage.setItem(STORE, JSON.stringify({t:Date.now(), d:found})); }catch(e){} }
+    function remplir(){
+      var data=found;
+      if(!has){
+        try{
+          var raw=localStorage.getItem(STORE);
+          if(raw){ var o=JSON.parse(raw);
+            if(o && o.t && (Date.now()-o.t) < 90*24*3600*1000) data=o.d||{};
+          }
+        }catch(e){}
+      }
+      KEYS.forEach(function(k){
+        var el=document.getElementById('f_'+k);
+        if(el && data[k]) el.value=data[k];
+      });
+    }
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', remplir);
+    else remplir();
+  })();
+</script>
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
   (function(c,l,a,r,i,t,y){
@@ -733,6 +759,13 @@
     <div class="card rev d1r">
       <form id="pf" onsubmit="hs(event)" novalidate>
         <input type="hidden" name="idioma" value="fr">
+        <input type="hidden" name="gclid" id="f_gclid">
+        <input type="hidden" name="gbraid" id="f_gbraid">
+        <input type="hidden" name="wbraid" id="f_wbraid">
+        <input type="hidden" name="utm_source" id="f_utm_source">
+        <input type="hidden" name="utm_medium" id="f_utm_medium">
+        <input type="hidden" name="utm_campaign" id="f_utm_campaign">
+        <input type="hidden" name="utm_term" id="f_utm_term">
         <div class="frow">
           <div class="fg">
             <label>Votre métier <span class="star">*</span></label>
