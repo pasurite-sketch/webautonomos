@@ -59,6 +59,18 @@
      manquait, donc le balisage décrivait une FAQ que la page n'affichait pas.
      Si tu modifies une question espagnole, modifie les deux endroits.
 
+  7. Locale française dans LOC :
+       var LOC = { es:"es-ES", ca:"ca-ES", en:"en-GB", fr:"fr-FR" };
+     La source omet fr. nfmt() appelle Intl.NumberFormat(LOC[lang]) : sans
+     l'entrée, lang="fr" passe undefined et le formatage retombe SILENCIEUSEMENT
+     sur la locale du navigateur du visiteur. Un francophone au navigateur
+     anglais lit alors « 1,200 € » au lieu de « 1 200 € » — sur les montants
+     du devis, c'est-à-dire l'argument central de la page.
+
+  8. Mesure d'audience (GA4 G-MT6S7CH7N9 + Clarity wb9354sv4p), juste avant
+     </head>, à l'identique du reste du site. La source régénérée n'en a aucune :
+     la page est alors totalement absente des statistiques.
+
   Vérifié : 0px de débordement de 1300 à 1600px, barre masquée à 1280px et en
   dessous, aucun débordement horizontal de 375 à 1600px. JSON-LD valide, 7
   questions identiques à la FAQ affichée en es, ca et en.
@@ -380,6 +392,23 @@ section{padding:clamp(54px,7.5vw,100px) 0;scroll-margin-top:74px}
   .cta:hover,.card:hover,.float a:hover{transform:none}
 }
 </style>
+
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MT6S7CH7N9');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wb9354sv4p");
+</script>
 </head>
 <body>
 
@@ -962,7 +991,7 @@ var LD_BASE = (function(){
 var lang = (new URLSearchParams(location.search).get("lang") || "es").toLowerCase();
 if (!T[lang]) lang = "es";
 var seg = "solo";
-var LOC = { es:"es-ES", ca:"ca-ES", en:"en-GB" };
+var LOC = { es:"es-ES", ca:"ca-ES", en:"en-GB", fr:"fr-FR" };
 
 function diasHabiles(){
   var now = new Date(), start = new Date(now.getFullYear(), 0, 1);
