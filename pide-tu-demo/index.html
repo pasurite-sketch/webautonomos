@@ -303,6 +303,8 @@
     letter-spacing:0.05em; text-transform:uppercase;
   }
   label .star { color:var(--green-mid); margin-left:1px; }
+  .fg-err { display:none; color:#ef4444; font-size:0.78rem; margin-top:2px; }
+  .fg-err.on { display:block; }
   input, select, textarea {
     width:100%; padding:11px 13px;
     border:1.5px solid var(--border); border-radius:9px;
@@ -722,7 +724,6 @@
       <p class="sd">Rellena los datos de tu negocio. Te enviamos el enlace a tu sitio en menos de 24 horas.</p>
     </div>
     <div class="card rev d1r">
-      <p style="text-align:center;font-size:0.82rem;color:var(--green-mid);font-weight:600;margin-bottom:18px;">✓ +40 profesionales ya la tienen</p>
       <form id="pf" onsubmit="hs(event)" novalidate>
         <div class="frow">
           <div class="fg">
@@ -771,11 +772,23 @@
         <div class="frow">
           <div class="fg">
             <label>WhatsApp <span class="star">*</span></label>
-            <input type="tel" name="whatsapp" placeholder="+34 6XX XXX XXX" required>
+            <input type="tel" name="whatsapp" id="wa1" placeholder="+34 6XX XXX XXX" required>
           </div>
           <div class="fg">
+            <label>Repite tu WhatsApp <span class="star">*</span></label>
+            <input type="tel" id="wa2" placeholder="+34 6XX XXX XXX" required autocomplete="off">
+            <p class="fg-err" id="waErr">Los números no coinciden.</p>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fg">
             <label>Email <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#94a3b8">(opcional)</span></label>
-            <input type="email" name="email" placeholder="tu@email.es">
+            <input type="email" name="email" id="em1" placeholder="tu@email.es">
+          </div>
+          <div class="fg">
+            <label>Repite tu email</label>
+            <input type="email" id="em2" placeholder="tu@email.es" autocomplete="off">
+            <p class="fg-err" id="emErr">Los emails no coinciden.</p>
           </div>
         </div>
         <div class="sep"><span>Tu actividad</span></div>
@@ -859,6 +872,20 @@
       f.style.borderColor = '';
       if(!f.value.trim()) { f.style.borderColor='#ef4444'; ok=false; }
     });
+    // Confirmation du téléphone et de l'e-mail (anti-faute de frappe)
+    var norm = function(s){ return (s||'').replace(/[\s.\-()]/g,'').toLowerCase(); };
+    var wa1=document.getElementById('wa1'), wa2=document.getElementById('wa2');
+    var em1=document.getElementById('em1'), em2=document.getElementById('em2');
+    var waErr=document.getElementById('waErr'), emErr=document.getElementById('emErr');
+    if(waErr) waErr.classList.remove('on');
+    if(emErr) emErr.classList.remove('on');
+    if(em2) em2.style.borderColor='';
+    if(wa1 && wa2 && wa1.value.trim() && norm(wa1.value)!==norm(wa2.value)){
+      wa2.style.borderColor='#ef4444'; if(waErr) waErr.classList.add('on'); ok=false;
+    }
+    if(em1 && em2 && em1.value.trim() && norm(em1.value)!==norm(em2.value)){
+      em2.style.borderColor='#ef4444'; if(emErr) emErr.classList.add('on'); ok=false;
+    }
     if(!ok) return;
     leadSent = true;
     btn.innerHTML = '<span>Enviando…</span>';
