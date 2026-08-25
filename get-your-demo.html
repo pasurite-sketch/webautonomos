@@ -28,7 +28,8 @@
     --text:   #0f2040;
   }
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-  html { scroll-behavior:smooth; }
+  html { scroll-behavior:smooth; scroll-padding-top:90px; }
+  section[id] { scroll-margin-top:90px; }
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--white);
@@ -683,7 +684,7 @@
 </section>
 
 <!-- STEPS -->
-<section class="ss rev">
+<section class="ss rev" id="etapes">
   <p class="ey">The process</p>
   <h2>Three steps, no complications</h2>
   <p class="sd" style="margin-bottom:48px">No contracts. No surprises. No technical jargon.</p>
@@ -707,7 +708,7 @@
 </section>
 
 <!-- SECTORS -->
-<section class="secs rev">
+<section class="secs rev" id="metiers">
   <p class="ey">Who it is for</p>
   <h2 style="margin-bottom:14px">Every trade, one single price</h2>
   <p class="sd">We already work with self-employed professionals across Spain.</p>
@@ -729,7 +730,7 @@
 </section>
 
 <!-- P3: SOCIAL PROOF — chiffres + témoignage -->
-<section class="proof rev">
+<section class="proof rev" id="avis">
   <p class="ey">Real results</p>
   <h2>Professionals who already trust us</h2>
   <p class="sd">Professional websites delivered in 24 hours.</p>
@@ -862,7 +863,7 @@
 </section>
 
 <!-- TRUST — P1: aligned on 24h -->
-<section class="tb rev">
+<section class="tb rev" id="tarifs">
   <div class="ti-wrap">
     <div class="ti"><div class="ti-i">🔒</div><div><strong>No setup fee</strong><span>Cancel whenever you want</span></div></div>
     <div class="ti"><div class="ti-i">📱</div><div><strong>100% mobile</strong><span>Perfect on smartphone</span></div></div>

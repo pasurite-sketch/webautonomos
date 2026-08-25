@@ -23,7 +23,8 @@
     --text:   #0f2040;
   }
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-  html { scroll-behavior:smooth; }
+  html { scroll-behavior:smooth; scroll-padding-top:90px; }
+  section[id] { scroll-margin-top:90px; }
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--white);
@@ -697,7 +698,7 @@
 </section>
 
 <!-- STEPS -->
-<section class="ss rev">
+<section class="ss rev" id="etapes">
   <p class="ey">El proceso</p>
   <h2>Tres pasos, sin complicaciones</h2>
   <p class="sd" style="margin-bottom:48px">Sin contratos. Sin sorpresas. Sin tecnicismos.</p>
@@ -721,7 +722,7 @@
 </section>
 
 <!-- SECTORS -->
-<section class="secs rev">
+<section class="secs rev" id="metiers">
   <p class="ey">Para quién</p>
   <h2 style="margin-bottom:14px">Todos los oficios, un solo precio</h2>
   <p class="sd">Ya trabajamos con profesionales de toda España.</p>
@@ -743,7 +744,7 @@
 </section>
 
 <!-- P3: SOCIAL PROOF — chiffres + témoignage -->
-<section class="proof rev">
+<section class="proof rev" id="avis">
   <p class="ey">Resultados reales</p>
   <h2>Profesionales que ya confían en nosotros</h2>
   <p class="sd">Webs profesionales entregadas en toda España.</p>
@@ -875,7 +876,7 @@
 </section>
 
 <!-- TRUST — P1: aligned on 24h -->
-<section class="tb rev">
+<section class="tb rev" id="tarifs">
   <div class="ti-wrap">
     <div class="ti"><div class="ti-i">🔒</div><div><strong>Sin alta, sin permanencia</strong><span>Cancela cuando quieras</span></div></div>
     <div class="ti"><div class="ti-i">📱</div><div><strong>100% móvil</strong><span>Perfecto en smartphone</span></div></div>

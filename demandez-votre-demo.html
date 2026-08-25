@@ -27,7 +27,8 @@
     --text:   #0f2040;
   }
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-  html { scroll-behavior:smooth; }
+  html { scroll-behavior:smooth; scroll-padding-top:90px; }
+  section[id] { scroll-margin-top:90px; }
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--white);
@@ -682,7 +683,7 @@
 </section>
 
 <!-- STEPS -->
-<section class="ss rev">
+<section class="ss rev" id="etapes">
   <p class="ey">Le déroulement</p>
   <h2>Trois étapes, sans complications</h2>
   <p class="sd" style="margin-bottom:48px">Sans contrat. Sans surprise. Sans jargon technique.</p>
@@ -706,7 +707,7 @@
 </section>
 
 <!-- SECTORS -->
-<section class="secs rev">
+<section class="secs rev" id="metiers">
   <p class="ey">Pour qui</p>
   <h2 style="margin-bottom:14px">Tous les métiers, un seul prix</h2>
   <p class="sd">Nous travaillons déjà avec des professionnels indépendants.</p>
@@ -728,7 +729,7 @@
 </section>
 
 <!-- P3: SOCIAL PROOF — chiffres + témoignage -->
-<section class="proof rev">
+<section class="proof rev" id="avis">
   <p class="ey">Résultats concrets</p>
   <h2>Des professionnels nous font déjà confiance</h2>
   <p class="sd">Des sites professionnels livrés en 24 heures.</p>
@@ -861,7 +862,7 @@
 </section>
 
 <!-- TRUST — P1: aligned on 24h -->
-<section class="tb rev">
+<section class="tb rev" id="tarifs">
   <div class="ti-wrap">
     <div class="ti"><div class="ti-i">🔒</div><div><strong>Sans frais d'installation</strong><span>Résiliez quand vous voulez</span></div></div>
     <div class="ti"><div class="ti-i">📱</div><div><strong>100 % mobile</strong><span>Parfait sur smartphone</span></div></div>
