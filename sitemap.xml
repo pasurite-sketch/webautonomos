@@ -837,4 +837,13 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/factura-electronica-plazos-2026-2027"/>
         <lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://webautonomos.es/blog/es/contratar-o-automatizar</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/contratar-o-automatizar"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/contractar-o-automatitzar"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/hire-or-automate"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/embaucher-ou-automatiser"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/contratar-o-automatizar"/>
+        <lastmod>2026-08-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    </url>
 </urlset>
