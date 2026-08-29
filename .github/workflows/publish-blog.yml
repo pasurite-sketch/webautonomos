@@ -43,12 +43,27 @@ jobs:
           PUBLISH_DATE_OVERRIDE: ${{ inputs.force && '2099-12-31' || '' }}
         run: python3 _tools/publish_next.py
 
+      # publish_next.py n'insère l'article que dans les données SPA de index.html
+      # et dans sitemap.xml. Depuis le passage de assets.not_found_handling à
+      # "404-page", une URL sans fichier renvoie un vrai 404 : sans cette étape,
+      # l'article publié serait déclaré au sitemap tout en répondant 404.
+      # Le script ne crée que les fichiers absents (pas de --force).
+      - name: Générer les fichiers statiques des articles
+        if: steps.publish.outputs.published == 'true'
+        run: python3 _tools/generate_spa_articles.py
+
+      # Reconstruit la liste de /blog/ à partir des fichiers présents sur disque,
+      # pour que le nouvel article soit maillé depuis l'index de section.
+      - name: Régénérer l'index du blog
+        if: steps.publish.outputs.published == 'true'
+        run: python3 _tools/generate_blog_index.py
+
       - name: Committer les changements
         if: steps.publish.outputs.published == 'true'
         run: |
           git config user.name "webautonomos-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add index.html sitemap.xml _tools/queue
+          git add index.html sitemap.xml blog _tools/queue
           git commit -m "Blog auto : publication ${{ steps.publish.outputs.slug }}"
           git push
 
