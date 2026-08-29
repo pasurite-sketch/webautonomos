@@ -106,27 +106,69 @@ def iter_tags(masked):
 
 
 def leaf_blocks(s):
-    """[(debut_contenu, fin_contenu, nom_balise)] des blocs feuilles."""
+    """[(debut_contenu, fin_contenu, nom_balise)] des zones de texte a traduire.
+
+    Deux familles :
+      - les blocs FEUILLES : un <p>, un <li>, un <h2> sans bloc enfant ;
+      - le texte ORPHELIN d'un bloc parent : du texte qui vit directement dans un
+        bloc ayant par ailleurs des blocs enfants, et qui n'appartient donc a
+        aucune feuille.
+
+    La seconde famille a ete ajoutee apres un trou reel : dans
+
+        <div class="faq-item"><strong>Question ?</strong><p>Reponse.</p></div>
+
+    seule la reponse etait une feuille. La question, posee dans un <strong> du
+    <div> parent, n'etait extraite par personne et restait donc en espagnol dans
+    un fichier par ailleurs declare traduit. Meme famille de bug que le <pre>
+    de l'article Schema : ce que l'extraction ne voit pas, la traduction ne le
+    corrige pas.
+    """
     masked = mask_raw_text(s)
-    stack, leaves = [], []
+    # nom, debut contenu, a_un_bloc_enfant, [spans des blocs enfants directs]
+    stack, spans = [], []
     for m, is_close, name, self_closing in iter_tags(masked):
         if name in VOID or self_closing:
             continue
         if not is_close:
-            stack.append([name, m.end(), False])          # nom, debut contenu, a_un_bloc_enfant
             if name in BLOCK:
-                for fr in stack[:-1]:
+                for fr in reversed(stack):
                     if fr[0] in BLOCK:
                         fr[2] = True
+                        fr[3].append([m.start(), None])   # span du bloc enfant direct
+                        break
+            stack.append([name, m.end(), False, []])
         else:
             while stack and stack[-1][0] != name:
                 stack.pop()
             if not stack:
                 continue
-            open_name, content_start, has_block_child = stack.pop()
-            if open_name in BLOCK and not has_block_child:
-                leaves.append((content_start, m.start(), open_name))
-    return sorted(leaves)
+            open_name, content_start, has_block_child, kids = stack.pop()
+            if open_name not in BLOCK:
+                continue
+            # Tout bloc qui se ferme referme son span chez son parent — feuille
+            # comprise. Ne le faire que pour les parents laissait les feuilles
+            # hors des spans enfants, et leur texte etait alors compte deux fois :
+            # une fois comme feuille, une fois comme orphelin du parent.
+            for fr in reversed(stack):
+                if fr[0] in BLOCK:
+                    if fr[3] and fr[3][-1][1] is None:
+                        fr[3][-1][1] = m.end()
+                    break
+            if not has_block_child:
+                spans.append((content_start, m.start(), open_name))
+                continue
+            # texte orphelin = contenu du parent moins les spans de ses enfants
+            cursor = content_start
+            for a, b in kids:
+                if b is None:
+                    continue
+                if a > cursor and visible_words(masked[cursor:a]):
+                    spans.append((cursor, a, open_name))
+                cursor = max(cursor, b)
+            if m.start() > cursor and visible_words(masked[cursor:m.start()]):
+                spans.append((cursor, m.start(), open_name))
+    return sorted(spans)
 
 
 def visible_words(s):
@@ -458,9 +500,17 @@ def integrity(out, src):
     # script) ou juste apres (sortie de generate_spa_articles.py). Ce qui est
     # verifie, c'est l'invariant commun : <article> ferme, et le fichier se
     # termine par </body></html>. Une troncature echoue dans les deux cas.
+    # <article> n'est exige que si la SOURCE en contient un : reservas-online-
+    # autonomos-2026 est bati sans <article>, et l'exiger en absolu bloquait une
+    # sortie pourtant complete. L'invariant reel est : la sortie se ferme comme
+    # la source. Une troncature echoue toujours sur la fin de document.
     tail = out.rstrip()
-    closes = re.search(r'</body>\s*</html>$', tail) is not None and '</article>' in out
-    checks.append((closes, 'document ferme : </article> present, fin sur </body></html>',
+    needs_article = '</article>' in src
+    closes = (re.search(r'</body>\s*</html>$', tail) is not None
+              and ('</article>' in out if needs_article else True))
+    checks.append((closes,
+                   'document ferme : %sfin sur </body></html>'
+                   % ('</article> present, ' if needs_article else ''),
                    '...' + repr(tail[-34:])))
 
     masked = mask_raw_text(out)
@@ -874,6 +924,59 @@ def cmd_check(args):
     return 0 if report(integrity(out, src)) else 1
 
 
+def cmd_retarget_all(args):
+    """Passe globale : repointe les liens ES vers leur equivalent FR partout.
+
+    Raison d'etre : retarget_links, appele pendant un build, ne convertit un
+    lien que si le fichier FR cible existe DEJA. Dans un lot ou les articles se
+    citent mutuellement, les premiers batis ne peuvent pas pointer vers les
+    derniers — site-web-pour-plombiers-guide-complet a ete ecrit avant
+    site-web-pour-electriciens et citait donc encore la version espagnole.
+    Cette commande se lance apres le lot, quand tous les fichiers sont la.
+
+    Les exceptions sont celles de retarget_links, qui reposent toutes sur la
+    meme regle : un lien vers la version ES/VAL/EN DU MEME article est voulu,
+    pas subi. Cela couvre les balises hreflang, le selecteur de langue et une
+    carte « articles similaires » qui pointerait vers l'article lui-meme.
+
+    Idempotente : une fois passee, un second appel ne trouve plus rien.
+    """
+    mapping = es_to_fr_slugs()
+    paths = sorted(glob.glob(os.path.join(ROOT, 'blog', 'fr', '*.html')))
+    if not paths:
+        print('  aucun fichier dans blog/fr/')
+        return 0
+
+    link_re = re.compile(
+        r'href="(?:https://webautonomos\.es)?/blog/(?:es/)?'
+        r'([a-z0-9-]+)(?:\.html)?(?=")')
+
+    total, touched = 0, 0
+    for path in paths:
+        fr_slug = os.path.basename(path)[:-5]
+        before = open(path, encoding='utf-8').read()
+        hits = [es for es in link_re.findall(before)
+                if mapping.get(es) and mapping[es] != fr_slug]
+        if not hits:
+            continue
+        after = retarget_links(before, fr_slug, mapping)
+        total += len(hits)
+        touched += 1
+        counts = {}
+        for es in hits:
+            counts[es] = counts.get(es, 0) + 1
+        for es in sorted(counts):
+            print('  %-46s %s -> %s%s' % (fr_slug, es, mapping[es],
+                                          ' x%d' % counts[es] if counts[es] > 1 else ''))
+        if not args.dry_run:
+            open(path, 'w', encoding='utf-8').write(after)
+
+    verbe = 'a repointer' if args.dry_run else 'repointes'
+    print('  %d fichier(s) balaye(s), %d lien(s) %s dans %d fichier(s)'
+          % (len(paths), total, verbe, touched))
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -893,6 +996,13 @@ def main():
     c.add_argument('path')
     c.add_argument('--source', required=True)
     c.set_defaults(func=cmd_check)
+
+    r = sub.add_parser('retarget-all',
+                       help='repointe les liens ES vers le FR dans tout blog/fr/ '
+                            '(a lancer apres chaque lot)')
+    r.add_argument('--dry-run', action='store_true',
+                   help="liste ce qui serait modifie sans rien ecrire")
+    r.set_defaults(func=cmd_retarget_all)
 
     args = ap.parse_args()
     return args.func(args)
