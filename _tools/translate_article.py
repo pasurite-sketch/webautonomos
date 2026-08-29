@@ -924,6 +924,180 @@ def cmd_check(args):
     return 0 if report(integrity(out, src)) else 1
 
 
+# ==========================================================================
+# Pre-remplissage deterministe du payload
+# ==========================================================================
+#
+# Une bonne moitie des segments d'un article n'a pas a etre traduite a la main :
+# l'habillage est identique mot pour mot d'un article a l'autre, les dates se
+# convertissent mecaniquement, et plusieurs valeurs JSON-LD reprennent
+# textuellement un bloc du corps (la reponse d'une FAQ, le <h1>, le titre).
+# Les retaper article par article, c'etait 8 lots durant une source d'oublis :
+# chaque « segment vide » ou « jsonld non resolu » refuse par build venait de la.
+#
+# Ce qui reste a la charge du traducteur, c'est le corps redactionnel — et c'est
+# tres bien ainsi : c'est la seule partie ou un choix editorial se joue.
+
+# Faits WebAutonomos : recopies tels quels (cf. CLAUDE.md, cible FR).
+PREFILL_PASSTHROUGH = re.compile(r'(title="Espa\u00f1ol"|Calle Pintor Josep Segrelles)')
+
+MONTHS_ES_FR = {
+    'enero': 'janvier', 'febrero': 'f\u00e9vrier', 'marzo': 'mars', 'abril': 'avril',
+    'mayo': 'mai', 'junio': 'juin', 'julio': 'juillet', 'agosto': 'ao\u00fbt',
+    'septiembre': 'septembre', 'octubre': 'octobre', 'noviembre': 'novembre',
+    'diciembre': 'd\u00e9cembre',
+}
+
+# Blocs d'habillage, identiques dans tous les articles du gabarit SPA.
+PREFILL_BLOCKS = {
+    'W': 'W',
+    'WebAutonomos': 'WebAutonomos',
+    'Preguntas frecuentes': 'Questions fr\u00e9quentes',
+    '\U0001F4D1 Contenido del art\u00edculo': "\U0001F4D1 Sommaire de l'article",
+    '\u00bfQuieres una web as\u00ed para tu negocio?':
+        'Vous voulez un site comme celui-ci pour votre activit\u00e9 ?',
+    'P\u00e1ginas web profesionales desde 15 \u20ac/mes \u00b7 Sin permanencia':
+        'Sites web professionnels \u00e0 partir de 15 \u20ac/mois \u00b7 Sans engagement',
+    'Agencia web especializada en aut\u00f3nomos de la Comunidad Valenciana. '
+    'P\u00e1ginas web profesionales desde 15 \u20ac/mes, sin permanencia.':
+        'Agence web sp\u00e9cialis\u00e9e dans les ind\u00e9pendants de la Communaut\u00e9 '
+        'valencienne. Sites web professionnels \u00e0 partir de 15 \u20ac/mois, sans engagement.',
+    '\u00bfCu\u00e1nto cuesta y cu\u00e1nto tarda?':
+        'Combien \u00e7a co\u00fbte et combien de temps \u00e7a prend ?',
+    '15 euros al mes, sin alta y sin permanencia, o 349 euros en pago \u00fanico. '
+    'Tu web est\u00e1 lista en 24 horas.':
+        "15 \u20ac/mois, sans frais d'ouverture et sans engagement, ou 349 euros en "
+        'paiement unique. Votre site est pr\u00eat en 24 heures.',
+}
+
+# Valeurs JSON-LD qui decrivent WebAutonomos, pas l'article.
+PREFILL_JSONLD = {
+    'jsonld:0:author.name': 'WebAutonomos',
+    'jsonld:0:publisher.name': 'WebAutonomos',
+    'jsonld:1:itemListElement.0.name': 'Accueil',
+    'jsonld:1:itemListElement.1.name': 'Blog',
+    'jsonld:3:name': 'WebAutonomos',
+    'jsonld:3:description': 'Agence de marketing digital sp\u00e9cialis\u00e9e dans les sites '
+                            'web et le SEO local pour les ind\u00e9pendants de la '
+                            'Communaut\u00e9 valencienne',
+    'jsonld:3:areaServed.name': 'Communaut\u00e9 valencienne',
+    'jsonld:4:name': 'Blog WebAutonomos.es',
+    'jsonld:4:description': 'Conseils et guides de SEO local et de marketing digital '
+                            'pour les ind\u00e9pendants',
+    'jsonld:4:publisher.name': 'WebAutonomos.es',
+}
+
+
+def _flat(txt):
+    return ' '.join(txt.split())
+
+
+def prefill_block(src_txt):
+    """Traduction FR d'un bloc d'habillage, ou None si le bloc est redactionnel."""
+    flat = _flat(src_txt)
+    if flat in PREFILL_BLOCKS:
+        return PREFILL_BLOCKS[flat]
+    # date de publication : « 30 Julio 2026 · 11 min de lectura »
+    if '<time' in flat:
+        out = src_txt
+        for es, fr in MONTHS_ES_FR.items():
+            out = re.sub(es, fr, out, flags=re.I)
+        return out.replace('min de lectura', 'min de lecture')
+    # logo « web | autonomos | .es », eventuellement suivi du lien Blog
+    if '>autonomos</span>' in flat and '>web</span>' in flat:
+        return src_txt
+    if 'Volver al blog' in flat:
+        return src_txt.replace('Volver al blog', 'Retour au blog')
+    if 'Pedir presupuesto gratis' in flat:
+        return src_txt.replace('Pedir presupuesto gratis \u2192', 'Demander un devis gratuit \u2192')
+    if 'Solicitar mi web gratis' in flat:
+        return src_txt.replace('Solicitar mi web gratis', 'Demander mon site gratuitement')
+    if 'aviso-legal' in flat and 'privacidad' in flat:
+        return (src_txt.replace('>Aviso legal<', '>Mentions l\u00e9gales<')
+                       .replace('>Privacidad<', '>Confidentialit\u00e9<')
+                       .replace('>Contacto<', '>Contact<'))
+    return None
+
+
+def _visible(txt):
+    return ' '.join(H.unescape(re.sub(r'<[^>]+>', ' ', txt)).split())
+
+
+def _loose(txt):
+    return re.sub(r'[^0-9a-z]+', '', _visible(txt).lower())
+
+
+def cmd_prefill(args):
+    """Remplit ce qui se deduit sans choix editorial. Idempotente, relancable.
+
+    A lancer deux fois : juste apres 'extract' pour l'habillage, puis une fois le
+    corps traduit, pour resoudre les valeurs JSON-LD qui reprennent un bloc.
+    """
+    path = os.path.join(TRANSLATIONS_DIR, args.fr_slug + '.json')
+    if not os.path.isfile(path):
+        sys.exit('fichier de traduction introuvable : ' + path)
+    payload = json.load(open(path, encoding='utf-8'))
+    segs = payload['segments']
+
+    def empty(seg):
+        return not str(seg.get('fr', '')).strip()
+
+    n_chrome = 0
+    for seg in segs:
+        if not seg['id'].startswith('block:') or not empty(seg):
+            continue
+        if PREFILL_PASSTHROUGH.search(seg['source']):
+            seg['fr'] = seg['source']
+            n_chrome += 1
+            continue
+        fr = prefill_block(seg['source'])
+        if fr is not None:
+            seg['fr'] = fr
+            n_chrome += 1
+
+    # JSON-LD : d'abord les valeurs fixes, puis celles qui reprennent un bloc
+    # deja traduit — une reponse de FAQ, le <h1>, le titre de la page.
+    idx, idx_loose = {}, {}
+    for seg in segs:
+        if seg['id'].startswith('block:') and not empty(seg):
+            idx[_visible(seg['source'])] = _visible(seg['fr'])
+            idx_loose[_loose(seg['source'])] = _visible(seg['fr'])
+    for seg in segs:
+        if seg['id'].startswith('meta:') and not empty(seg):
+            idx.setdefault(_visible(seg['source']), _visible(seg['fr']))
+            idx_loose.setdefault(_loose(seg['source']), _visible(seg['fr']))
+
+    n_ld = 0
+    for seg in segs:
+        if not seg['id'].startswith('jsonld') or not empty(seg):
+            continue
+        if seg['id'] in PREFILL_JSONLD:
+            seg['fr'] = PREFILL_JSONLD[seg['id']]
+            n_ld += 1
+            continue
+        key = _visible(seg['source'])
+        if key in idx:
+            seg['fr'] = idx[key]
+            n_ld += 1
+        elif _loose(seg['source']) in idx_loose:
+            seg['fr'] = idx_loose[_loose(seg['source'])]
+            n_ld += 1
+
+    if not args.dry_run:
+        json.dump(payload, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+
+    rest = [s['id'] for s in segs if empty(s)]
+    verbe = 'a remplir' if args.dry_run else 'remplis'
+    print('  %d bloc(s) d\'habillage %s, %d segment(s) JSON-LD %s'
+          % (n_chrome, verbe, n_ld, verbe))
+    print('  %d segment(s) restant(s), a traduire a la main :' % len(rest))
+    for sid in rest[:12]:
+        print('    -', sid)
+    if len(rest) > 12:
+        print('    ... et %d autre(s)' % (len(rest) - 12))
+    return 0
+
+
 def cmd_retarget_all(args):
     """Passe globale : repointe les liens ES vers leur equivalent FR partout.
 
@@ -996,6 +1170,14 @@ def main():
     c.add_argument('path')
     c.add_argument('--source', required=True)
     c.set_defaults(func=cmd_check)
+
+    p = sub.add_parser('prefill',
+                       help="remplit l'habillage, les dates et le JSON-LD deductible ; "
+                            "a lancer apres extract, puis apres la traduction du corps")
+    p.add_argument('--fr-slug', required=True)
+    p.add_argument('--dry-run', action='store_true',
+                   help='affiche ce qui serait rempli sans ecrire')
+    p.set_defaults(func=cmd_prefill)
 
     r = sub.add_parser('retarget-all',
                        help='repointe les liens ES vers le FR dans tout blog/fr/ '
