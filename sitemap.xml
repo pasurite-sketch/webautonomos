@@ -878,4 +878,14 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <!-- Articles de blog en francais -->
+    <url><loc>https://webautonomos.es/blog/fr/budget-marketing-digital-independants</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/fr/combien-coute-un-site-web-pour-independants</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/fr/comment-trouver-des-clients-sur-internet</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/fr/email-marketing-independants-guide-debutant</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/fr/embaucher-ou-automatiser</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/fr/facture-electronique-1er-septembre-2026</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/fr/paperasse-huit-heures-par-semaine</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/fr/reseaux-sociaux-independants-lesquels-choisir</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://webautonomos.es/blog/fr/seo-local-independants-guide-complet</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
