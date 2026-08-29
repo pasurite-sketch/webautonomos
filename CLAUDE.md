@@ -229,13 +229,69 @@ Chaque article DOIT contenir dans cet ordre :
 - Le premier article de chaque silo est le "pilier" (article le plus long et complet)
 - Les articles SPA existants comptent comme cibles de liens valides
 
-### Traductions (VAL + EN)
+### Traductions (VAL + EN + FR)
 
 - Les traductions ne sont PAS littérales — elles sont adaptées culturellement
 - VAL : Valencien/Catalan, respecter la normative linguistique AVL
 - EN : Anglais international, adapter les exemples au contexte espagnol
-- Hreflang : `es`, `ca-ES` (pour valencien/catalan), `en`
+- FR : français de France/Belgique/Suisse, exemples transposés en villes francophones
+- Hreflang : `es`, `ca-ES` (pour valencien/catalan), `en`, `fr`
 - Les slugs peuvent varier légèrement entre langues si nécessaire
+
+#### Registre : divergence assumée entre les langues
+
+| Langue | Registre |
+|--------|----------|
+| ES | **tutoiement** (`tú`) |
+| VAL | **tutoiement** (`tu`) |
+| EN | *you* (neutre) |
+| FR | **vouvoiement** (`vous`) |
+
+⚠️ **Le français vouvoie, l'espagnol et le valencien tutoient. C'est une divergence
+volontaire, pas une incohérence** : le `tú` commercial est la norme en Espagne, le
+tutoiement d'un prospect inconnu ne l'est pas en français. Ne pas « harmoniser ».
+
+En FR : `vous / votre / vos / le vôtre`, participes et adjectifs au pluriel de
+politesse. Aucune 2ᵉ personne du singulier — ni `tu`, ni `ton/ta/tes`, ni `toi`,
+ni impératif singulier (`utilise` → `utilisez`).
+
+Le contrôle est automatisé et **bloquant** : `_tools/translate_article.py` refuse
+d'écrire un fichier FR contenant du tutoiement.
+
+#### Cible FR : qui lit ces articles
+
+**Francophones de France, de Belgique et de Suisse.** Ce sont des lecteurs qui
+vivent en pays francophone, **pas des expatriés en Espagne** — ces derniers sont
+servis par les articles ES.
+
+Décision figée le 2026-08-29. Elle remplace la formulation antérieure
+(« francophones des deux côtés »), qui laissait le périmètre ambigu.
+
+Conséquences :
+
+| Élément | Traitement |
+|---------|-----------|
+| Exemples illustratifs — villes, prénoms, quartiers, adresses, téléphones, noms d'entreprises fictives | **Transposés** en France, Belgique ou Suisse |
+| Faits sur WebAutonomos — `areaServed`, NAP, description `Organization` | **Conservés tels quels** |
+| Statistiques ATA, INE, Banco de España décrivant le marché de WebAutonomos | **Conservées telles quelles** |
+| Prix en euros, « 15 €/mois » | **Inchangés**, strictement tels quels |
+
+La ligne de partage : un **exemple pédagogique** se transpose, un **fait** sur
+l'entreprise ou sur le marché d'où elle facture ne se transpose pas.
+
+#### Adaptation culturelle (FR)
+
+- **Villes** : transposer les exemples espagnols en villes francophones — Lyon,
+  Nantes, Bruxelles, Lausanne — quartiers compris.
+  **Exception** : garder la ville quand elle désigne WebAutonomos lui-même
+  (siège d'Ontinyent, `areaServed` « Comunidad Valenciana », adresse du NAP).
+  C'est un fait sur l'entreprise, pas un exemple pédagogique.
+- **Références réglementaires** espagnoles sans équivalent francophone (RETA,
+  Kit Digital, IVA, autónomo societario) : donner l'équivalent local s'il existe,
+  sinon **reformuler sans la mention**. Ne jamais traduire littéralement un
+  dispositif qui n'existe pas chez le lecteur.
+- **Prix** : montants en euros inchangés, et « 15 €/mois » strictement tel quel —
+  c'est l'offre commerciale, pas un exemple.
 
 ## Workflow de Publication
 
