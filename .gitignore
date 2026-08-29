@@ -18,3 +18,4 @@ index.html.SAFE-*
 index.html.PRE-COMPILE-*
 index.compiled.html
 _tools/translations/
+_tools/__pycache__/
