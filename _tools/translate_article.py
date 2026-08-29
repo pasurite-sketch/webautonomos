@@ -70,8 +70,13 @@ VOID = {'meta', 'link', 'br', 'hr', 'img', 'input', 'source', 'col', 'area',
 # 'div' en fait partie : sans lui les reponses de FAQ, qui vivent dans un
 # <div>, echappaient a l'extraction. La couverture mesuree a l'extraction
 # (mots captures / mots du document) est la garantie qu'aucun texte ne fuit.
+# 'pre' y figure depuis qu'un exemple de code JSON-LD a traverse le pipeline sans
+# etre vu : ses valeurs espagnoles (« Fontaneria Lopez Elda », « +34 », pays ES)
+# survivaient a une traduction declaree complete. C'etait la 3e lacune de la
+# meme famille, apres le texte orphelin des blocs parents.
 BLOCK = {'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'summary', 'dt', 'dd',
-         'td', 'th', 'caption', 'figcaption', 'blockquote', 'address', 'div'}
+         'td', 'th', 'caption', 'figcaption', 'blockquote', 'address', 'div',
+         'pre'}
 
 # Seuil de perte de texte tolere. Le francais est structurellement plus long
 # que l'espagnol (~10-15%), donc descendre sous 85% signale une amputation,
@@ -320,6 +325,49 @@ def cmd_extract(args):
 # 3. Reassemblage
 # ==========================================================================
 
+# ==========================================================================
+# Mesure d'audience
+# ==========================================================================
+#
+# Le clonage structurel recopie le <head> de la source espagnole. Tant que
+# celle-ci porte les traceurs, la sortie FR les herite — mais on ne peut pas en
+# dependre : 28 articles ES viennent de template-article.html, et rien ne
+# garantit qu'une source future les aura. L'insertion est donc faite ici aussi,
+# et elle est idempotente : si les blocs sont deja la, elle ne fait rien.
+#
+# Repris a l'identique des landings : meme identifiant GA4, meme extrait
+# Clarity, meme ordre, tout a la fin du <head>, apres le JSON-LD.
+
+TRACKING = """<!-- Google Analytics GA4 -->
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MT6S7CH7N9');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wb9354sv4p");
+</script>"""
+
+GA4_ID = 'G-MT6S7CH7N9'
+CLARITY_ID = 'wb9354sv4p'
+
+
+def ensure_tracking(s):
+    """Insere gtag + Clarity en fin de <head> si absents. Idempotent."""
+    if GA4_ID in s and CLARITY_ID in s:
+        return s, False
+    if '</head>' not in s:
+        return s, False
+    return s.replace('</head>', TRACKING + '\n</head>', 1), True
+
+
 def adapt_head(s, es_slug, fr_slug):
     """lang, canonical, hreflang, Open Graph : passage a la version francaise."""
     fr_url = '%s/blog/fr/%s' % (BASE, fr_slug)
@@ -344,6 +392,8 @@ def adapt_head(s, es_slug, fr_slug):
                lambda m: m.group(1) + fr_url + m.group(2), s, count=1)
     s = re.sub(r'(<meta property="og:locale" content=")[^"]*(")',
                lambda m: m.group(1) + 'fr_FR' + m.group(2), s, count=1)
+
+    s, _ = ensure_tracking(s)
     return s
 
 
@@ -1016,6 +1066,13 @@ def prefill_block(src_txt):
         return (src_txt.replace('>Aviso legal<', '>Mentions l\u00e9gales<')
                        .replace('>Privacidad<', '>Confidentialit\u00e9<')
                        .replace('>Contacto<', '>Contact<'))
+    # Depuis que l'extraction couvre le texte orphelin des blocs parents, la
+    # barre de navigation et le bouton CTA sont des segments a part entiere. Ils
+    # etaient jusqu'ici traites par localize_chrome au moment de l'assemblage :
+    # on reutilise la meme table plutot que d'en tenir une seconde.
+    localized, applied = localize_chrome(src_txt)
+    if applied:
+        return localized
     return None
 
 

@@ -221,6 +221,36 @@ def has_asset(slug):
 E = lambda s: html.escape(s or '', quote=True)
 J = lambda s: json.dumps(s or '', ensure_ascii=False)
 
+
+# --------------------------------------------------------------------------
+# Mesure d'audience
+# --------------------------------------------------------------------------
+#
+# Repris a l'identique des landings (fontaneros/index.html) : meme identifiant
+# GA4, meme extrait Clarity, meme ordre, meme place — tout a la fin du <head>,
+# apres le JSON-LD. Le loader gtag reste en `defer`.
+#
+# Ces blocs vivent dans une constante et non dans le gabarit format() : le
+# JavaScript de Clarity contient des accolades, qui devraient etre doublees
+# dans une chaine de format. Une constante evite ce piege.
+
+TRACKING = """<!-- Google Analytics GA4 -->
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MT6S7CH7N9');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wb9354sv4p");
+</script>"""
+
 NAV = """    <nav style="background:white; box-shadow:0 1px 3px rgba(0,0,0,0.1); position:sticky; top:0; z-index:50;">
         <div style="max-width:1200px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;">
             <a href="{base}" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
@@ -412,6 +442,7 @@ def render(article, lang, alternates):
     </style>
 
 {schemas}
+{tracking}
 </head>
 <body class="bg-gray-50">
 
@@ -472,7 +503,7 @@ def render(article, lang, alternates):
         htmllang=HTML_LANG[lang], seo_title=E(seo_title), desc=E(desc), url=url,
         canonical_url=canonical_url,
         hreflang="\n".join(hreflang), oglocale=OG_LOCALE[lang], published=published,
-        cat_label=E(cat_label), cat_color=cat_color, base=BASE, schemas=schema_html,
+        cat_label=E(cat_label), cat_color=cat_color, base=BASE, schemas=schema_html, tracking=TRACKING,
         nav=NAV.format(base=BASE, blog=E(ui['blog'])),
         home=E(ui['home']), blog=E(ui['blog']), date_raw=E(article.get('date') or published),
         read=read, read_label=E(ui['read']), title=E(title),
