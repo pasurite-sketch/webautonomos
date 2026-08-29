@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cómo medir resultados de tu web con Google Analytics | WebAutonomos</title>
+    <meta name="description" content="Aprende a medir si tu web genera resultados reales. Las 5 métricas que todo autónomo debe vigilar, explicadas sin tecnicismos.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="WebAutonomos">
+
+    <link rel="canonical" href="https://webautonomos.es/blog/es/medir-resultados-web-google-analytics">
+    <link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/medir-resultados-web-google-analytics">
+    <link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/medir-resultados-web-google-analytics">
+    <link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/medir-resultados-web-google-analytics">
+    <link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/medir-resultados-web-google-analytics">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://webautonomos.es/blog/es/medir-resultados-web-google-analytics">
+    <meta property="og:title" content="Cómo medir resultados de tu web con Google Analytics | WebAutonomos">
+    <meta property="og:description" content="Aprende a medir si tu web genera resultados reales. Las 5 métricas que todo autónomo debe vigilar, explicadas sin tecnicismos.">
+    <meta property="og:site_name" content="WebAutonomos">
+    <meta property="og:locale" content="es_ES">
+    <meta property="article:published_time" content="2026-05-28T08:00:00+01:00">
+    <meta property="article:modified_time" content="2026-05-28T08:00:00+01:00">
+    <meta property="article:section" content="Páginas Web">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cómo medir resultados de tu web con Google Analytics | WebAutonomos">
+    <meta name="twitter:description" content="Aprende a medir si tu web genera resultados reales. Las 5 métricas que todo autónomo debe vigilar, explicadas sin tecnicismos.">
+
+    <link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior:smooth; }
+        .toc-link { color:#4b5563; text-decoration:none; }
+        .toc-link:hover { color:#6D28D9; }
+        .prose-article p { line-height:1.8; }
+        .gradient-wa { background:linear-gradient(135deg,#2563eb,#16a34a); }
+    </style>
+
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Cómo saber si tu web funciona: métricas básicas para autónomos",
+        "description": "Aprende a medir si tu web genera resultados reales. Las 5 métricas que todo autónomo debe vigilar, explicadas sin tecnicismos.",
+        "author": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es"
+        },
+        "publisher": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es",
+                "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://webautonomos.es/logo.png"
+                }
+        },
+        "datePublished": "2026-05-28T08:00:00+01:00",
+        "dateModified": "2026-05-28T08:00:00+01:00",
+        "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://webautonomos.es/blog/es/medir-resultados-web-google-analytics"
+        },
+        "articleSection": "Páginas Web",
+        "inLanguage": "es",
+        "wordCount": 700,
+        "keywords": "métricas web autónomos, Google Analytics autónomos, medir resultados web, visitas web negocio"
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inicio",
+                        "item": "https://webautonomos.es"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Blog",
+                        "item": "https://webautonomos.es/blog"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Páginas Web",
+                        "item": "https://webautonomos.es/blog?categoria=paginas-web"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Cómo saber si tu web funciona: métricas básicas para autónomos"
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+                {
+                        "@type": "Question",
+                        "name": "¿Necesito conocimientos técnicos para usar Analytics?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "No. Google Analytics tiene una interfaz visual con gráficos claros. Con nuestra guía, lo configuras en 10 minutos."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "¿Cuántas visitas debería tener mi web?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Depende de tu sector y zona. Un electricista local puede generar negocio con 100-200 visitas al mes si están bien orientadas."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "¿Es gratis Google Analytics?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Sí, completamente gratuito. Solo necesitas una cuenta de Google."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "¿Con qué frecuencia debo revisar las métricas?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Con revisar tus datos una vez por semana es más que suficiente. Dedicar 10 minutos cada lunes te dará una visión clara de la evolución sin saturarte."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "¿Qué hago si mi tasa de conversión es muy baja?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Revisa tres cosas: que tu botón de WhatsApp esté visible en móvil, que tu formulario tenga máximo 3 campos, y que tu mensaje principal sea claro en los primeros 3 segundos de visita."
+                        }
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "logo": "https://webautonomos.es/logo.png",
+        "email": "info@webautonomos.es",
+        "telephone": "+34961877356",
+        "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Calle Pintor Josep Segrelles, 26",
+                "postalCode": "46870",
+                "addressLocality": "Ontinyent",
+                "addressRegion": "Valencia",
+                "addressCountry": "ES"
+        },
+        "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Comunidad Valenciana"
+        }
+}
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <nav style="background:white; box-shadow:0 1px 3px rgba(0,0,0,0.1); position:sticky; top:0; z-index:50;">
+        <div style="max-width:1200px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;">
+            <a href="https://webautonomos.es" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+                <div style="width:36px; height:36px; background:linear-gradient(135deg,#2563eb,#16a34a); border-radius:8px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:16px;">W</div>
+                <span style="font-weight:700; font-size:18px;"><span style="color:#2563eb;">web</span><span style="color:#16a34a;">autonomos</span><span style="color:#111;">.es</span></span>
+            </a>
+            <a href="https://webautonomos.es/blog" style="color:#374151; text-decoration:none; font-size:14px; font-weight:500;">Blog</a>
+        </div>
+    </nav>
+
+    <article class="max-w-3xl mx-auto px-4 py-8 prose-article">
+
+        <nav class="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
+            <a href="https://webautonomos.es" class="hover:text-purple-600 transition">Inicio</a>
+            <span class="mx-1">&rsaquo;</span>
+            <a href="https://webautonomos.es/blog" class="hover:text-purple-600 transition">Blog</a>
+            <span class="mx-1">&rsaquo;</span>
+            <span>Páginas Web</span>
+        </nav>
+
+        <header class="mb-8">
+            <span style="background:#3B82F6; color:white; padding:4px 14px; border-radius:999px; font-size:13px; font-weight:600;">Páginas Web</span>
+            <p class="text-sm text-gray-500 mt-4 mb-3">
+                <time datetime="2026-05-28">28 May 2026</time> &middot; 8 min de lectura
+            </p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Cómo saber si tu web funciona: métricas básicas para autónomos</h1>
+        </header>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-10" style="border-left:4px solid #3B82F6;">
+            <p class="font-bold text-gray-900 mb-3">📑 Contenido del artículo</p>
+            <ol class="list-decimal list-inside space-y-1 text-sm">
+                    <li><a href="#seccion-1" class="toc-link">Las 5 métricas que todo autónomo debe vigilar</a></li>
+                    <li><a href="#seccion-2" class="toc-link">Visitas: cuánta gente llega a tu web</a></li>
+                    <li><a href="#seccion-3" class="toc-link">Fuentes de tráfico: de dónde vienen tus visitantes</a></li>
+                    <li><a href="#seccion-4" class="toc-link">Tasa de rebote: cuántos se van sin hacer nada</a></li>
+                    <li><a href="#seccion-5" class="toc-link">Conversiones: cuántos te contactan</a></li>
+                    <li><a href="#seccion-6" class="toc-link">Google Search Console: por qué palabras te encuentran</a></li>
+                    <li><a href="#seccion-7" class="toc-link">Cómo configurar Google Analytics en 10 minutos</a></li>
+                    <li><a href="#faq" class="toc-link">Preguntas frecuentes</a></li>
+            </ol>
+        </div>
+
+        <div class="article-body">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">Tienes una web pero no sabes si está funcionando. No recibes llamadas, no sabes cuántas visitas tienes ni de dónde vienen. Tranquilo: con 5 métricas básicas y 10 minutos a la semana puedes saber exactamente qué está pasando y qué mejorar. En esta guía te explicamos cómo configurar Google Analytics 4 sin tecnicismos y qué números mirar realmente para tomar decisiones que generen más clientes.</p>
+            <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Las 5 métricas que todo autónomo debe vigilar</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Olvídate del 90% de los datos que muestra Google Analytics. Para tu negocio solo importan 5 cifras: visitas mensuales, fuentes de tráfico, tasa de rebote, conversiones y palabras clave por las que te encuentran. Con estas 5 métricas revisadas una vez por semana sabrás si tu web genera negocio o si necesita ajustes. El resto son distracciones que no te ayudarán a tomar decisiones.</p>
+            <h2 id="seccion-2" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Visitas: cuánta gente llega a tu web</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">La métrica más básica y la primera que debes mirar. Si tu web tiene menos de 50 visitas al mes, tienes un problema de visibilidad: nadie te encuentra en Google. Si tienes entre 100 y 500 visitas mensuales, estás en el rango normal para un autónomo local. Si superas las 1.000 visitas mensuales sin campañas de pago, tu SEO está funcionando bien. Lo importante no es el número absoluto, sino la tendencia: ¿sube cada mes o se estanca?</p>
+            <h2 id="seccion-3" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Fuentes de tráfico: de dónde vienen tus visitantes</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Google Analytics te dice exactamente de dónde llegan tus visitas: búsqueda orgánica de Google, redes sociales, enlaces directos, anuncios de pago o referencias de otras webs. Si el 80% de tus visitas vienen solo de Instagram, dependes peligrosamente de una sola fuente. Lo ideal para un autónomo es tener un mix equilibrado: 50% Google orgánico, 20% redes sociales, 15% directo, 15% otros canales. Si tu Google orgánico está por debajo del 30%, tu SEO local necesita trabajo.</p>
+            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Tasa de rebote: cuántos se van sin hacer nada</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">La tasa de rebote es el porcentaje de visitantes que llegan a tu web y se van sin hacer clic en nada. Una tasa de rebote por encima del 70% indica un problema: la web carga lento, el contenido no responde a lo que buscaban, o el diseño no genera confianza. Una tasa entre 40% y 60% es normal para una web de servicios locales. Por debajo del 40% es excelente. Si tu rebote es muy alto, revisa la velocidad de carga, la claridad del mensaje principal y si tu web es realmente útil para quien la visita.</p>
+            <h2 id="seccion-5" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Conversiones: cuántos te contactan</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Esta es la métrica que de verdad importa. ¿Cuántos visitantes acaban rellenando un formulario, llamándote por teléfono o escribiéndote por WhatsApp? Una buena web de autónomo convierte entre el 2% y el 5% de sus visitas en contactos. Si tienes 500 visitas al mes y consigues 10-25 contactos, estás dentro del rango normal. Si tienes 500 visitas y solo consigues 1-2 contactos, hay algo mal: probablemente falta un botón de WhatsApp visible, un formulario simple o una llamada a la acción clara.</p>
+            <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Google Search Console: por qué palabras te encuentran</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Google Search Console es la herramienta gemela de Analytics, y es completamente gratuita. Te muestra exactamente qué palabras clave usan los clientes para llegar a tu web. Si eres fontanero en Alicante y descubres que la gente te encuentra buscando &#x27;desatasco urgente Alicante&#x27;, sabes que tienes que crear contenido específico sobre ese tema. Esta información vale oro: es la mente del cliente revelada en datos reales.</p>
+            <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Cómo configurar Google Analytics en 10 minutos</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Crea una cuenta gratuita en analytics.google.com con tu correo de Google. Añade tu web como propiedad. Copia el código de seguimiento (un trozo de código que empieza por G-) y pégalo en tu web (si tu web está hecha con WebAutonomos, te lo configuramos nosotros sin coste). Espera 24 horas y ya tendrás tus primeros datos. Después configura Google Search Console del mismo modo. Listo: ya puedes empezar a medir.</p>
+            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">Medir no es complicado si te centras en lo que importa. 5 métricas, 10 minutos a la semana, y sabrás exactamente si tu web está generando negocio o si necesita ajustes. Lo que no se mide no se mejora. Y lo que no se mejora deja de generar clientes.</p>
+        </div>
+
+            <section id="faq" class="mt-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Preguntas frecuentes</h2>
+                <div class="space-y-3">
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Necesito conocimientos técnicos para usar Analytics?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">No. Google Analytics tiene una interfaz visual con gráficos claros. Con nuestra guía, lo configuras en 10 minutos.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Cuántas visitas debería tener mi web?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Depende de tu sector y zona. Un electricista local puede generar negocio con 100-200 visitas al mes si están bien orientadas.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Es gratis Google Analytics?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Sí, completamente gratuito. Solo necesitas una cuenta de Google.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Con qué frecuencia debo revisar las métricas?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Con revisar tus datos una vez por semana es más que suficiente. Dedicar 10 minutos cada lunes te dará una visión clara de la evolución sin saturarte.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Qué hago si mi tasa de conversión es muy baja?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Revisa tres cosas: que tu botón de WhatsApp esté visible en móvil, que tu formulario tenga máximo 3 campos, y que tu mensaje principal sea claro en los primeros 3 segundos de visita.</div>
+                </details>
+                </div>
+            </section>
+
+        <div class="gradient-wa rounded-2xl p-8 text-center text-white mt-12">
+            <h2 class="text-2xl font-bold mb-3">¿Quieres una web así para tu negocio?</h2>
+            <p class="mb-6 opacity-90">Páginas web profesionales desde 15 €/mes · Sin permanencia</p>
+            <a href="https://webautonomos.es/contacto" style="background:white; color:#2563eb; padding:14px 30px; border-radius:999px; font-weight:600; text-decoration:none; display:inline-block;">Pedir presupuesto gratis →</a>
+        </div>
+
+        <div class="flex items-center gap-4 mt-12 bg-white rounded-2xl p-6 shadow-sm">
+            <div class="w-16 h-16 gradient-wa rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">W</div>
+            <div>
+                <p class="font-bold text-gray-900">WebAutonomos</p>
+                <p class="text-sm text-gray-600">Agencia web especializada en autónomos de la Comunidad Valenciana. Páginas web profesionales desde 15 €/mes, sin permanencia.</p>
+            </div>
+        </div>
+
+        <p class="mt-10">
+            <a href="https://webautonomos.es/blog" style="color:#2563eb; text-decoration:none; font-weight:500;">← Volver al blog</a>
+        </p>
+
+    </article>
+
+    <footer style="background:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%); padding:24px 6%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:48px;">
+        <a href="https://webautonomos.es" style="font-weight:800; font-size:1rem; color:rgba(255,255,255,0.85); text-decoration:none;">&#127760; webautonomos.es</a>
+        <div style="display:flex; gap:20px; flex-wrap:wrap;">
+            <a href="https://webautonomos.es/aviso-legal" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Aviso legal</a>
+            <a href="https://webautonomos.es/privacidad" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Privacidad</a>
+            <a href="https://webautonomos.es/contacto" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Contacto</a>
+        </div>
+        <address style="flex-basis:100%; order:3; margin-top:4px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.12); font-style:normal; font-size:0.78rem; line-height:1.7; color:rgba(255,255,255,0.55); display:flex; flex-direction:column; gap:1px;">
+            <strong>WebAutonomos</strong>
+            <span>Calle Pintor Josep Segrelles, 26</span>
+            <span>46870 Ontinyent, Valencia</span>
+            <a href="tel:+34961877356" style="color:rgba(255,255,255,0.55); text-decoration:none;">+34 961 877 356</a>
+            <a href="mailto:info@webautonomos.es" style="color:rgba(255,255,255,0.55); text-decoration:none;">info@webautonomos.es</a>
+        </address>
+    </footer>
+
+</body>
+</html>

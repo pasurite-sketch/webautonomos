@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Com mesurar resultats de la teua web amb Google Analytics | WebAutonomos</title>
+    <meta name="description" content="Aprén a mesurar si la teua web genera resultats reals. Les 5 mètriques que tot autònom ha de vigilar.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="WebAutonomos">
+
+    <link rel="canonical" href="https://webautonomos.es/blog/val/medir-resultados-web-google-analytics">
+    <link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/medir-resultados-web-google-analytics">
+    <link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/medir-resultados-web-google-analytics">
+    <link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/medir-resultados-web-google-analytics">
+    <link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/medir-resultados-web-google-analytics">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://webautonomos.es/blog/val/medir-resultados-web-google-analytics">
+    <meta property="og:title" content="Com mesurar resultats de la teua web amb Google Analytics | WebAutonomos">
+    <meta property="og:description" content="Aprén a mesurar si la teua web genera resultats reals. Les 5 mètriques que tot autònom ha de vigilar.">
+    <meta property="og:site_name" content="WebAutonomos">
+    <meta property="og:locale" content="ca_ES">
+    <meta property="article:published_time" content="2026-05-28T08:00:00+01:00">
+    <meta property="article:modified_time" content="2026-05-28T08:00:00+01:00">
+    <meta property="article:section" content="Pàgines Web">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Com mesurar resultats de la teua web amb Google Analytics | WebAutonomos">
+    <meta name="twitter:description" content="Aprén a mesurar si la teua web genera resultats reals. Les 5 mètriques que tot autònom ha de vigilar.">
+
+    <link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior:smooth; }
+        .toc-link { color:#4b5563; text-decoration:none; }
+        .toc-link:hover { color:#6D28D9; }
+        .prose-article p { line-height:1.8; }
+        .gradient-wa { background:linear-gradient(135deg,#2563eb,#16a34a); }
+    </style>
+
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Com saber si la teua web funciona: mètriques bàsiques per a autònoms",
+        "description": "Aprén a mesurar si la teua web genera resultats reals. Les 5 mètriques que tot autònom ha de vigilar.",
+        "author": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es"
+        },
+        "publisher": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es",
+                "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://webautonomos.es/logo.png"
+                }
+        },
+        "datePublished": "2026-05-28T08:00:00+01:00",
+        "dateModified": "2026-05-28T08:00:00+01:00",
+        "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://webautonomos.es/blog/val/medir-resultados-web-google-analytics"
+        },
+        "articleSection": "Pàgines Web",
+        "inLanguage": "ca",
+        "wordCount": 715,
+        "keywords": "mètriques web autònoms, Google Analytics autònoms, mesurar resultats web, visites web negoci"
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inici",
+                        "item": "https://webautonomos.es"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Blog",
+                        "item": "https://webautonomos.es/blog"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Pàgines Web",
+                        "item": "https://webautonomos.es/blog?categoria=paginas-web"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Com saber si la teua web funciona: mètriques bàsiques per a autònoms"
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+                {
+                        "@type": "Question",
+                        "name": "Necessite coneixements tècnics per a usar Analytics?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "No. Google Analytics té una interfície visual amb gràfics clars. Amb la nostra guia, el configures en 10 minuts."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Quantes visites hauria de tindre la meua web?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Depén del teu sector i zona. Un electricista local pot generar negoci amb 100-200 visites al mes si estan ben orientades."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "És gratis Google Analytics?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Sí, completament gratuït. Només necessites un compte de Google."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Amb quina freqüència he de revisar les mètriques?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Amb revisar les teues dades una vegada per setmana és més que suficient. Dedicar 10 minuts cada dilluns et donarà una visió clara de l'evolució sense saturar-te."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Què faig si la meua taxa de conversió és molt baixa?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Revisa tres coses: que el teu botó de WhatsApp estiga visible en mòbil, que el teu formulari tinga màxim 3 camps, i que el teu missatge principal siga clar en els primers 3 segons de visita."
+                        }
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "logo": "https://webautonomos.es/logo.png",
+        "email": "info@webautonomos.es",
+        "telephone": "+34961877356",
+        "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Calle Pintor Josep Segrelles, 26",
+                "postalCode": "46870",
+                "addressLocality": "Ontinyent",
+                "addressRegion": "Valencia",
+                "addressCountry": "ES"
+        },
+        "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Comunidad Valenciana"
+        }
+}
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <nav style="background:white; box-shadow:0 1px 3px rgba(0,0,0,0.1); position:sticky; top:0; z-index:50;">
+        <div style="max-width:1200px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;">
+            <a href="https://webautonomos.es" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+                <div style="width:36px; height:36px; background:linear-gradient(135deg,#2563eb,#16a34a); border-radius:8px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:16px;">W</div>
+                <span style="font-weight:700; font-size:18px;"><span style="color:#2563eb;">web</span><span style="color:#16a34a;">autonomos</span><span style="color:#111;">.es</span></span>
+            </a>
+            <a href="https://webautonomos.es/blog" style="color:#374151; text-decoration:none; font-size:14px; font-weight:500;">Blog</a>
+        </div>
+    </nav>
+
+    <article class="max-w-3xl mx-auto px-4 py-8 prose-article">
+
+        <nav class="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
+            <a href="https://webautonomos.es" class="hover:text-purple-600 transition">Inici</a>
+            <span class="mx-1">&rsaquo;</span>
+            <a href="https://webautonomos.es/blog" class="hover:text-purple-600 transition">Blog</a>
+            <span class="mx-1">&rsaquo;</span>
+            <span>Pàgines Web</span>
+        </nav>
+
+        <header class="mb-8">
+            <span style="background:#3B82F6; color:white; padding:4px 14px; border-radius:999px; font-size:13px; font-weight:600;">Pàgines Web</span>
+            <p class="text-sm text-gray-500 mt-4 mb-3">
+                <time datetime="2026-05-28">28 Maig 2026</time> &middot; 8 min de lectura
+            </p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Com saber si la teua web funciona: mètriques bàsiques per a autònoms</h1>
+        </header>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-10" style="border-left:4px solid #3B82F6;">
+            <p class="font-bold text-gray-900 mb-3">📑 Contingut de l&#x27;article</p>
+            <ol class="list-decimal list-inside space-y-1 text-sm">
+                    <li><a href="#seccion-1" class="toc-link">Les 5 mètriques que tot autònom ha de vigilar</a></li>
+                    <li><a href="#seccion-2" class="toc-link">Visites: quanta gent arriba a la teua web</a></li>
+                    <li><a href="#seccion-3" class="toc-link">Fonts de trànsit: d&#x27;on venen els teus visitants</a></li>
+                    <li><a href="#seccion-4" class="toc-link">Taxa de rebot: quants se&#x27;n van sense fer res</a></li>
+                    <li><a href="#seccion-5" class="toc-link">Conversions: quants et contacten</a></li>
+                    <li><a href="#seccion-6" class="toc-link">Google Search Console: per quines paraules et troben</a></li>
+                    <li><a href="#seccion-7" class="toc-link">Com configurar Google Analytics en 10 minuts</a></li>
+                    <li><a href="#faq" class="toc-link">Preguntes freqüents</a></li>
+            </ol>
+        </div>
+
+        <div class="article-body">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">Tens una web però no saps si està funcionant. No reps telefonades, no saps quantes visites tens ni d&#x27;on venen. Tranquil: amb 5 mètriques bàsiques i 10 minuts a la setmana pots saber exactament què està passant i què millorar. En esta guia t&#x27;expliquem com configurar Google Analytics 4 sense tecnicismes i quins números mirar realment per a prendre decisions que generen més clients.</p>
+            <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Les 5 mètriques que tot autònom ha de vigilar</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Oblida&#x27;t del 90% de les dades que mostra Google Analytics. Per al teu negoci només importen 5 xifres: visites mensuals, fonts de trànsit, taxa de rebot, conversions i paraules clau per les quals et troben. Amb estes 5 mètriques revisades una vegada per setmana sabràs si la teua web genera negoci o si necessita ajustos. La resta són distraccions que no t&#x27;ajudaran a prendre decisions.</p>
+            <h2 id="seccion-2" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Visites: quanta gent arriba a la teua web</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">La mètrica més bàsica i la primera que has de mirar. Si la teua web té menys de 50 visites al mes, tens un problema de visibilitat: ningú et troba en Google. Si tens entre 100 i 500 visites mensuals, estàs en el rang normal per a un autònom local. Si superes les 1.000 visites mensuals sense campanyes de pagament, el teu SEO està funcionant bé. L&#x27;important no és el número absolut, sinó la tendència: puja cada mes o s&#x27;estanca?</p>
+            <h2 id="seccion-3" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Fonts de trànsit: d&#x27;on venen els teus visitants</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Google Analytics et diu exactament d&#x27;on arriben les teues visites: busca orgànica de Google, xarxes socials, enllaços directes, anuncis de pagament o referències d&#x27;altres webs. Si el 80% de les teues visites venen només d&#x27;Instagram, depens perillosament d&#x27;una sola font. L&#x27;ideal per a un autònom és tindre un mix equilibrat: 50% Google orgànic, 20% xarxes socials, 15% directe, 15% altres canals. Si el teu Google orgànic està per davall del 30%, el teu SEO local necessita treball.</p>
+            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Taxa de rebot: quants se&#x27;n van sense fer res</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">La taxa de rebot és el percentatge de visitants que arriben a la teua web i se&#x27;n van sense fer clic en res. Una taxa de rebot per damunt del 70% indica un problema: la web carrega lent, el contingut no respon al que buscaven, o el disseny no genera confiança. Una taxa entre 40% i 60% és normal per a una web de servicis locals. Per davall del 40% és excel·lent. Si el teu rebot és molt alt, revisa la velocitat de càrrega, la claredat del missatge principal i si la teua web és realment útil per a qui la visita.</p>
+            <h2 id="seccion-5" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Conversions: quants et contacten</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Esta és la mètrica que de veritat importa. Quants visitants acaben omplint un formulari, telefonant-te o escrivint-te per WhatsApp? Una bona web d&#x27;autònom convertix entre el 2% i el 5% de les seues visites en contactes. Si tens 500 visites al mes i aconseguixes 10-25 contactes, estàs dins del rang normal. Si tens 500 visites i només aconseguixes 1-2 contactes, hi ha alguna cosa malament: probablement falta un botó de WhatsApp visible, un formulari simple o una crida a l&#x27;acció clara.</p>
+            <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Google Search Console: per quines paraules et troben</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Google Search Console és la ferramenta bessona d&#x27;Analytics, i és completament gratuïta. Et mostra exactament quines paraules clau usen els clients per a arribar a la teua web. Si eres fontaner a Alacant i descobrixes que la gent et troba buscant &#x27;desembossament urgent Alacant&#x27;, saps que has de crear contingut específic sobre eixe tema. Esta informació val or: és la ment del client revelada en dades reals.</p>
+            <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Com configurar Google Analytics en 10 minuts</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Crea un compte gratuït en analytics.google.com amb el teu correu de Google. Afig la teua web com a propietat. Copia el codi de seguiment (un tros de codi que comença per G-) i apega&#x27;l en la teua web (si la teua web està feta amb WebAutonomos, te&#x27;l configurem nosaltres sense cost). Espera 24 hores i ja tindràs les teues primeres dades. Després configura Google Search Console de la mateixa manera. Llest: ja pots començar a mesurar.</p>
+            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">Mesurar no és complicat si et centres en el que importa. 5 mètriques, 10 minuts a la setmana, i sabràs exactament si la teua web està generant negoci o si necessita ajustos. El que no es mesura no es millora. I el que no es millora deixa de generar clients.</p>
+        </div>
+
+            <section id="faq" class="mt-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Preguntes freqüents</h2>
+                <div class="space-y-3">
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Necessite coneixements tècnics per a usar Analytics?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">No. Google Analytics té una interfície visual amb gràfics clars. Amb la nostra guia, el configures en 10 minuts.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Quantes visites hauria de tindre la meua web?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Depén del teu sector i zona. Un electricista local pot generar negoci amb 100-200 visites al mes si estan ben orientades.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">És gratis Google Analytics?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Sí, completament gratuït. Només necessites un compte de Google.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Amb quina freqüència he de revisar les mètriques?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Amb revisar les teues dades una vegada per setmana és més que suficient. Dedicar 10 minuts cada dilluns et donarà una visió clara de l&#x27;evolució sense saturar-te.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Què faig si la meua taxa de conversió és molt baixa?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Revisa tres coses: que el teu botó de WhatsApp estiga visible en mòbil, que el teu formulari tinga màxim 3 camps, i que el teu missatge principal siga clar en els primers 3 segons de visita.</div>
+                </details>
+                </div>
+            </section>
+
+        <div class="gradient-wa rounded-2xl p-8 text-center text-white mt-12">
+            <h2 class="text-2xl font-bold mb-3">Vols una web així per al teu negoci?</h2>
+            <p class="mb-6 opacity-90">Pàgines web professionals des de 15 €/mes · Sense permanència</p>
+            <a href="https://webautonomos.es/contacto" style="background:white; color:#2563eb; padding:14px 30px; border-radius:999px; font-weight:600; text-decoration:none; display:inline-block;">Demanar pressupost gratis →</a>
+        </div>
+
+        <div class="flex items-center gap-4 mt-12 bg-white rounded-2xl p-6 shadow-sm">
+            <div class="w-16 h-16 gradient-wa rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">W</div>
+            <div>
+                <p class="font-bold text-gray-900">WebAutonomos</p>
+                <p class="text-sm text-gray-600">Agència web especialitzada en autònoms de la Comunitat Valenciana. Pàgines web professionals des de 15 €/mes, sense permanència.</p>
+            </div>
+        </div>
+
+        <p class="mt-10">
+            <a href="https://webautonomos.es/blog" style="color:#2563eb; text-decoration:none; font-weight:500;">← Tornar al blog</a>
+        </p>
+
+    </article>
+
+    <footer style="background:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%); padding:24px 6%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:48px;">
+        <a href="https://webautonomos.es" style="font-weight:800; font-size:1rem; color:rgba(255,255,255,0.85); text-decoration:none;">&#127760; webautonomos.es</a>
+        <div style="display:flex; gap:20px; flex-wrap:wrap;">
+            <a href="https://webautonomos.es/aviso-legal" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Avís legal</a>
+            <a href="https://webautonomos.es/privacidad" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Privacitat</a>
+            <a href="https://webautonomos.es/contacto" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Contacte</a>
+        </div>
+        <address style="flex-basis:100%; order:3; margin-top:4px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.12); font-style:normal; font-size:0.78rem; line-height:1.7; color:rgba(255,255,255,0.55); display:flex; flex-direction:column; gap:1px;">
+            <strong>WebAutonomos</strong>
+            <span>Calle Pintor Josep Segrelles, 26</span>
+            <span>46870 Ontinyent, Valencia</span>
+            <a href="tel:+34961877356" style="color:rgba(255,255,255,0.55); text-decoration:none;">+34 961 877 356</a>
+            <a href="mailto:info@webautonomos.es" style="color:rgba(255,255,255,0.55); text-decoration:none;">info@webautonomos.es</a>
+        </address>
+    </footer>
+
+</body>
+</html>

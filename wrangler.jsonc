@@ -4,7 +4,12 @@
   "workers_dev": true,
   "assets": {
     "directory": "./",
-    "not_found_handling": "single-page-application"
+    // Sert /404.html avec un vrai HTTP 404 quand aucun asset ne correspond.
+    // Remplace "single-page-application", qui renvoyait index.html en 200
+    // sur toute URL inconnue (soft 404 à l'échelle du domaine).
+    "not_found_handling": "404-page",
+    // Explicite le défaut implicite : /x.html -> 307 vers /x.
+    "html_handling": "auto-trailing-slash"
   },
   "routes": [
     { "pattern": "webautonomos.es/*", "zone_name": "webautonomos.es" },
