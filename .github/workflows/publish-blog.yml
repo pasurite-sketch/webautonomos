@@ -58,6 +58,15 @@ jobs:
         if: steps.publish.outputs.published == 'true'
         run: python3 _tools/generate_blog_index.py
 
+      # add_article.py a deja insere son bloc <url> ; ce generateur reecrit le
+      # sitemap entier depuis le disque pour qu'il reste homogene (une <loc> par
+      # groupe linguistique, avec ses alternates) au lieu d'accumuler les
+      # conventions successives. Il echoue sans rien ecrire si une verification
+      # ne passe pas, ce qui fait echouer le job avant le commit.
+      - name: Régénérer le sitemap
+        if: steps.publish.outputs.published == 'true'
+        run: python3 _tools/generate_sitemap.py
+
       - name: Committer les changements
         if: steps.publish.outputs.published == 'true'
         run: |
