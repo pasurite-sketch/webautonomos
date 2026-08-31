@@ -739,7 +739,134 @@ def assemble(src, payload, prof=None):
 # 4. Controle d'integrite — BLOQUANT
 # ==========================================================================
 
-def integrity(out, src, prof=None):
+# Champs JSON-LD porteurs d'identite. Un « name » ou une « description » y designe
+# la page courante, jamais une autre. Les autres champs — publisher.name,
+# author.name, areaServed.name, les items de fil d'Ariane autres que le dernier —
+# nomment WebAutonomos ou une categorie : ils sont hors controle.
+IDENTITY_TYPES = ('BlogPosting', 'Article', 'WebPage', 'ImageObject')
+
+
+def _identity_fields(node, path=''):
+    """[(chemin, valeur)] des champs d'identite d'un bloc JSON-LD."""
+    out = []
+    if isinstance(node, list):
+        for i, v in enumerate(node):
+            out += _identity_fields(v, '%s[%d]' % (path, i))
+        return out
+    if not isinstance(node, dict):
+        return out
+    ty = node.get('@type')
+    if ty in IDENTITY_TYPES:
+        for key in ('name', 'headline', 'description'):
+            v = node.get(key)
+            if isinstance(v, str) and v.strip():
+                out.append(('%s.%s' % (ty, key), v))
+    if ty == 'BreadcrumbList':
+        items = node.get('itemListElement') or []
+        if items and isinstance(items[-1], dict):
+            v = items[-1].get('name')
+            if isinstance(v, str) and v.strip():
+                out.append(('BreadcrumbList.last', v))
+    for v in node.values():
+        if isinstance(v, (dict, list)):
+            out += _identity_fields(v, path)
+    return out
+
+
+def _plain(t):
+    return ' '.join(H.unescape(re.sub(r'<[^>]+>', '', str(t))).split())
+
+
+_CORPUS_IDENTITIES = None
+
+
+def corpus_identities():
+    """{texte d'identite -> {chemins qui le portent}} pour tout le blog.
+
+    Sert a repondre a la seule question qui compte : ce champ appartient-il a un
+    AUTRE article ? L'index est memoise, il ne coute qu'une lecture du corpus par
+    processus.
+    """
+    global _CORPUS_IDENTITIES
+    if _CORPUS_IDENTITIES is not None:
+        return _CORPUS_IDENTITIES
+    _CORPUS_IDENTITIES = {}
+    for lang in ('es', 'val', 'en', 'fr'):
+        for path in glob.glob(os.path.join(ROOT, 'blog', lang, '*.html')):
+            try:
+                doc = open(path, encoding='utf-8', errors='replace').read()
+            except OSError:
+                continue
+            for v in own_identities(doc):
+                _CORPUS_IDENTITIES.setdefault(v, set()).add(os.path.abspath(path))
+    return _CORPUS_IDENTITIES
+
+
+BRAND_SUFFIX = re.compile(r'\s*\|\s*WebAutonomos(?:\.es)?\s*$')
+
+
+def own_identities(doc):
+    """Les trois textes par lesquels un document se nomme, suffixe de marque ote."""
+    out = set()
+    for pattern in (r'(?s)<title>(.*?)</title>',
+                    r'(?s)<h1[^>]*>(.*?)</h1>',
+                    r'<meta name="description" content="([^"]*)"'):
+        m = re.search(pattern, doc)
+        if m:
+            v = _plain(m.group(1))
+            if v:
+                out.add(v)
+                out.add(BRAND_SUFFIX.sub('', v))
+    return {v for v in out if v}
+
+
+def jsonld_identity_hits(out, path=None):
+    """[(champ, valeur, article proprietaire)] des champs JSON-LD volés a autrui.
+
+    Ne : le vestige du 18 mars 2026. Un copier-coller avait laisse la description,
+    le dernier item du fil d'Ariane, le hreflang espagnol puis le nom d'ImageObject
+    de « como-posicionar-web-en-google-local » dans six autres articles. Les quatre
+    faces ont ete trouvees separement, a des semaines d'intervalle : le controle
+    manquant a coute plus cher que le defaut lui-meme.
+
+    Le critere n'est PAS « ce champ egale le <title> du fichier ». Cette regle plus
+    simple leve 35 faux positifs sur les 198 articles : la description JSON-LD est
+    couramment une reformulation plus courte de la meta description, et le
+    valencien comme le francais font porter a ImageObject.name le titre complet la
+    ou le <title> est raccourci. Ces divergences sont voulues.
+
+    Le critere retenu est le defaut reel : le champ ne designe pas cette page ET
+    designe une autre page du blog. Un texte qui n'appartient a personne d'autre
+    passe ; un texte emprunte a un article voisin bloque l'ecriture.
+    """
+    mine = own_identities(out)
+    if not mine:
+        return []
+    index = corpus_identities()
+    self_path = os.path.abspath(path) if path else None
+
+    hits = []
+    for m in re.finditer(r'(?s)<script type="application/ld\+json">(.*?)</script>', out):
+        try:
+            node = json.loads(m.group(1))
+        except ValueError:
+            continue                       # la validite JSON est verifiee ailleurs
+        for field, value in _identity_fields(node):
+            v = _plain(value)
+            bare = BRAND_SUFFIX.sub('', v)
+            if v in mine or bare in mine:
+                continue
+            owners = index.get(v) or index.get(bare)
+            if not owners:
+                continue                   # texte propre a ce document
+            if self_path and owners <= {self_path}:
+                continue
+            other = sorted(owners)[0]
+            hits.append((field, v, os.path.relpath(other, ROOT)))
+    return hits
+
+
+def integrity(out, src, prof=None, dest=None):
     """[(ok, libelle, detail)] — l'ecriture n'a lieu que si tous les ok sont True."""
     prof = prof or PROFILES['fr']
     checks = []
@@ -810,6 +937,12 @@ def integrity(out, src, prof=None):
     else:
         checks.append((True, 'registre', 'document hors langue cible : controle sans objet'))
         checks.append((True, 'residu espagnol', 'document hors langue cible : controle sans objet'))
+
+    ident = jsonld_identity_hits(out, dest)
+    checks.append((not ident, 'JSON-LD : aucun champ emprunte a un autre article',
+                   ('%d champ(s) : ' % len(ident)) + ' | '.join(
+                       '%s « %s » (= %s)' % (f, v[:40], o) for f, v, o in ident[:4])
+                   if ident else 'zero emprunt'))
 
     w_src, w_out = len(visible_words(src)), len(visible_words(out))
     ratio = w_out / w_src if w_src else 0
@@ -1390,13 +1523,13 @@ def cmd_build(args):
             print('  habillage localise : %s'
                   % ', '.join('%s x%d' % (c[0][:28], c[1]) for c in chrome))
 
+    dest = os.path.join(ROOT, 'blog', prof.directory, payload['fr_slug'] + '.html')
     print('  CONTROLE D\'INTEGRITE (bloquant)')
-    checks = integrity(out, src, prof)
+    checks = integrity(out, src, prof, dest)
     if not report(checks):
         print('\n  -> au moins un controle a echoue : RIEN N\'A ETE ECRIT.')
         return 1
 
-    dest = os.path.join(ROOT, 'blog', prof.directory, payload['fr_slug'] + '.html')
     os.makedirs(os.path.dirname(dest), exist_ok=True)
     with open(dest, 'w', encoding='utf-8') as fh:
         fh.write(out)
@@ -1410,7 +1543,8 @@ def cmd_check(args):
     src = open(os.path.join(ROOT, args.source), encoding='utf-8').read()
     prof = profile_for(args.lang)
     print('  CONTROLE D\'INTEGRITE de %s' % args.path)
-    return 0 if report(integrity(out, src, prof)) else 1
+    return 0 if report(integrity(out, src, prof,
+                                 os.path.join(ROOT, args.path))) else 1
 
 
 # ==========================================================================
