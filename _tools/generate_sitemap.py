@@ -196,11 +196,12 @@ def link_by_spa_id(files, uf, stats):
 # un seul cas : le guest post « reservas online », ecrit hors pipeline, dont
 # aucune des quatre versions ne declare de hreflang et dont la version francaise
 # n'existe pas dans les tableaux du SPA. Sans cette table, l'article espagnol et
-# sa traduction francaise sortiraient en deux <loc> etrangeres l'une a l'autre.
+# ses traductions sortiraient en <loc> etrangeres les unes aux autres.
+# Le slug anglais a change le 2026-09-01 avec la migration des slugs EN.
 MANUAL_GROUPS = [
     [('es', 'reservas-online-autonomos-2026'),
      ('val', 'reserves-en-linia-per-a-autonoms'),
-     ('en', 'reservas-online-autonomos-2026'),
+     ('en', 'online-booking-for-freelancers'),
      ('fr', 'reservation-en-ligne-pour-independants')],
 ]
 

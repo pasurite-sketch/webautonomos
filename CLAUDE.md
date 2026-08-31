@@ -233,10 +233,51 @@ Chaque article DOIT contenir dans cet ordre :
 
 - Les traductions ne sont PAS littérales — elles sont adaptées culturellement
 - VAL : Valencien/Catalan, respecter la normative linguistique AVL
-- EN : Anglais international, adapter les exemples au contexte espagnol
+- EN : anglais britannique, lecteur installé en Espagne (voir plus bas)
 - FR : français de France/Belgique/Suisse, exemples transposés en villes francophones
 - Hreflang : `es`, `ca-ES` (pour valencien/catalan), `en`, `fr`
 - Les slugs peuvent varier légèrement entre langues si nécessaire
+
+#### Cible EN : qui lit ces articles
+
+**Le marché espagnol, lu en anglais.** Ce sont les expatriés britanniques et
+irlandais installés en Espagne — Costa Blanca, Comunidad Valenciana — et les
+anglophones qui y travaillent. Ils cherchent un plombier à Alicante, pas à
+Manchester.
+
+C'est l'exact opposé du français. Le lecteur FR vit en pays francophone et les
+exemples se transposent chez lui ; le lecteur EN vit en Espagne et les exemples
+restent là où ils sont.
+
+| Élément | FR | EN |
+|---------|----|----|
+| Villes des exemples — Valencia, Alicante, Elda, Elche | **Transposées** (Lyon, Nantes, Bruxelles) | **Conservées telles quelles** |
+| Prénoms et entreprises fictives | Transposés | Conservés (Antonio, María, Fontanería López) |
+| Quartiers, journaux locaux (Las Provincias, Levante-EMV) | Transposés | Conservés |
+| Références réglementaires espagnoles (RETA, Kit Digital, IVA) | Équivalent local, sinon reformuler | **Conservées et expliquées** |
+| Institutions (ATA, INE, Banco de España) | Reformuler | **Nom espagnol conservé** |
+
+#### Adaptation culturelle (EN)
+
+- **Villes : ne rien transposer.** Un article anglais sur les plombiers parle de
+  Valencia et d'Elche, parce que c'est là que vit le lecteur.
+- **Requêtes de recherche : traduites.** `"fontanero urgente Valencia"` devient
+  `"emergency plumber Valencia"` — le nom de la ville reste, le reste passe en
+  anglais. Le lecteur cherche en anglais mais dans une ville espagnole.
+- **Prix : inchangés.** « 15 €/mois » s'écrit `€15/month`, symbole avant le
+  nombre selon l'usage anglais, montant strictement identique. Idem pour les
+  349 €, 99 € et 29 €.
+- **Anglais britannique** : *optimised*, *specialising*, *colours*,
+  *neighbourhood*, *organisation*. `og:locale` vaut `en_GB`, la date s'écrit
+  jour-mois-année (`20 July 2026`).
+- **Registre** : *you* neutre. L'anglais ne distingue pas tutoiement et
+  vouvoiement — le profil EN n'a donc **aucune garde de registre**, à la
+  différence du français.
+
+Le contrôle de résidu castillan du profil EN exclut délibérément les homographes
+(`local`, `digital`, `total`, `personal`, `son`, `no`, `la`, `de`) et masque les
+toponymes espagnols, les institutions et le logo. Voir `_tools/translate_article.py`,
+`EN_ES_WORDS` et `EN_LEGIT`.
 
 #### Registre : divergence assumée entre les langues
 

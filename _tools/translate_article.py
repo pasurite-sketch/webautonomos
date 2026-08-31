@@ -369,6 +369,89 @@ def ensure_tracking(s):
     return s.replace('</head>', TRACKING + '\n</head>', 1), True
 
 
+# --------------------------------------------------------------------------
+# Groupes linguistiques : une seule source de verite
+# --------------------------------------------------------------------------
+#
+# adapt_head() fabriquait les alternates des TROIS autres langues a slug
+# constant : /blog/val/<slug-espagnol>, /blog/en/<slug-espagnol>,
+# /blog/fr/<slug-espagnol>. C'est faux des qu'une langue localise ses slugs.
+# Le valencien l'a fait le 31 aout : 49 fichiers ont alors declare un hreflang
+# fr mort, repares a la main — et le premier build suivant les aurait recasses,
+# puisque le generateur, lui, n'avait pas change.
+#
+# La resolution vient donc de generate_sitemap.py, qui apparie les langues par
+# les hreflang presents sur le disque, par l'id d'article du SPA et par une
+# table explicite. C'est deja la reference du sitemap : deux resolutions
+# concurrentes finiraient par diverger.
+
+_GROUPS_CACHE = None
+
+
+def language_groups():
+    """{(langue, slug): {langue: slug}} — resolution partagee avec le sitemap.
+
+    Retourne un dictionnaire vide si la resolution echoue (module absent,
+    node indisponible pour lire les donnees du SPA). L'appelant retombe alors
+    sur le slug espagnol, c'est-a-dire sur l'ancien comportement : degrade,
+    mais jamais bloquant pour une traduction.
+    """
+    global _GROUPS_CACHE
+    if _GROUPS_CACHE is not None:
+        return _GROUPS_CACHE
+    _GROUPS_CACHE = {}
+    try:
+        sys.path.insert(0, os.path.join(ROOT, '_tools'))
+        import generate_sitemap as GS
+        files = GS.blog_files()
+        stats = {'dangling': 0, 'incoherent': 0, 'linked': 0, 'linked_spa': 0,
+                 'linked_manual': 0, 'spa_ok': True, 'spa_error': '', 'today': ''}
+        for group in GS.groups(files, stats):
+            for lang, slug in group.items():
+                _GROUPS_CACHE[(lang, slug)] = group
+    except Exception as exc:                          # noqa: BLE001
+        print('  ATTENTION : groupes linguistiques indisponibles (%s) ; '
+              'les alternates retombent sur le slug espagnol.' % exc)
+    return _GROUPS_CACHE
+
+
+def group_slug(es_slug, lang):
+    """Slug de `lang` dans le groupe de l'article espagnol `es_slug`.
+
+    A defaut de groupe connu, rend le slug espagnol : mieux vaut un lien vers
+    une page qui existe qu'un lien fabrique.
+    """
+    group = language_groups().get(('es', es_slug))
+    if not group:
+        return es_slug
+    return group.get(lang, es_slug)
+
+
+# Selecteur de langue du gabarit : trois drapeaux, un titre par langue.
+SWITCHER_LANG = {'Espa\u00f1ol': 'es', 'Valenci\u00e0': 'val',
+                 'English': 'en', 'Fran\u00e7ais': 'fr'}
+
+
+def localize_switcher(s, es_slug):
+    """Repointe les liens du selecteur de langue vers les slugs du groupe.
+
+    Ces liens vivent dans un bloc passe-plat : le payload les recopie tels
+    quels depuis la source, y compris quand la source stockee est perimee. Les
+    reconstruire ici, a partir du groupe, les rend insensibles a l'age du
+    payload.
+    """
+    def repl(m):
+        lang = SWITCHER_LANG.get(m.group('title'))
+        if lang is None:
+            return m.group(0)
+        url = '%s/blog/%s/%s.html' % (BASE, lang, group_slug(es_slug, lang))
+        return m.group(0).replace(m.group('href'), url)
+
+    return re.sub(r'href="(?P<href>[^"]*/blog/(?:es|val|en|fr)/[^"]*)"'
+                  r'(?P<mid>[^>]*?)title="(?P<title>Espa\u00f1ol|Valenci\u00e0|English|Fran\u00e7ais)"',
+                  repl, s)
+
+
 def adapt_head(s, es_slug, out_slug, prof):
     """lang, canonical, hreflang, Open Graph : passage a la langue cible."""
     fr_url = prof.url(out_slug)
@@ -378,13 +461,21 @@ def adapt_head(s, es_slug, out_slug, prof):
                '<link rel="canonical" href="%s">' % fr_url, s, count=1)
 
     # hreflang : les 4 langues, x-default sur l'espagnol (version de reference).
-    # La langue cible remplace l'entree correspondante ; les autres pointent vers
-    # le slug espagnol, faute de connaitre les slugs localises des autres langues.
-    alts = [('es', '%s/blog/es/%s' % (BASE, es_slug)),
-            ('ca-ES', '%s/blog/val/%s' % (BASE, es_slug)),
-            ('en', '%s/blog/en/%s' % (BASE, es_slug)),
-            ('fr', '%s/blog/fr/%s' % (BASE, es_slug)),
-            ('x-default', '%s/blog/es/%s' % (BASE, es_slug))]
+    # La langue cible remplace l'entree correspondante ; les autres viennent du
+    # groupe linguistique, seul endroit qui connaisse les slugs localises.
+    # Une langue absente du groupe n'est pas declaree du tout. Annoncer un
+    # hreflang vers une page qui n'existe pas est pire que de n'en annoncer
+    # aucun : c'est exactement ce qui a produit les 49 liens morts du valencien.
+    # Deux articles n'ont volontairement pas de version francaise ; leur bloc
+    # hreflang ne doit compter que trois langues.
+    group = language_groups().get(('es', es_slug))
+    langs = [('es', 'es'), ('val', 'ca-ES'), ('en', 'en'), ('fr', 'fr')]
+    alts = []
+    for lang, tag in langs:
+        if group is not None and lang not in group and lang != prof.code:
+            continue
+        alts.append((tag, '%s/blog/%s/%s' % (BASE, lang, group_slug(es_slug, lang))))
+    alts.append(('x-default', '%s/blog/es/%s' % (BASE, group_slug(es_slug, 'es'))))
     alts = [(h, fr_url if h == prof.hreflang else u) for h, u in alts]
     block = '\n'.join('    <link rel="alternate" hreflang="%s" href="%s">' % a for a in alts)
     s, n = re.subn(r'(?:[ \t]*<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n?)+',
@@ -397,6 +488,7 @@ def adapt_head(s, es_slug, out_slug, prof):
     s = re.sub(r'(<meta property="og:locale" content=")[^"]*(")',
                lambda m: m.group(1) + prof.og_locale + m.group(2), s, count=1)
 
+    s = localize_switcher(s, es_slug)
     s, _ = ensure_tracking(s)
     return s
 
@@ -426,6 +518,36 @@ def es_to_fr_slugs(prof=None):
                                               fr + '.html')):
             out[es] = fr
     return out
+
+
+def repair_stale_links(s):
+    """Repointe les liens internes /blog/<langue>/<slug> devenus morts.
+
+    Un lien redactionnel vers un article frere est fige dans la traduction au
+    moment ou elle est ecrite. Quand une langue renomme ses slugs — le valencien
+    l'a fait le 31 aout pour ses 50 articles — ces liens pointent vers des
+    fichiers qui n'existent plus, et une passe corrective sur les fichiers
+    livres ne les repare pas dans les payloads : le build suivant les
+    ressuscite.
+
+    La reparation passe par le groupe linguistique : le slug mort est lu comme
+    un slug espagnol, et on lui substitue le slug de la langue visee. Rien ne
+    bouge si la cible actuelle existe deja, ni si la substitution ne designe
+    aucun fichier — mieux vaut un lien mort visible qu'un lien invente.
+    """
+    def repl(m):
+        lang, slug, ext = m.group('lang'), m.group('slug'), m.group('ext') or ''
+        if os.path.isfile(os.path.join(ROOT, 'blog', lang, slug + '.html')):
+            return m.group(0)
+        fixed = group_slug(slug, lang)
+        if fixed == slug or not os.path.isfile(
+                os.path.join(ROOT, 'blog', lang, fixed + '.html')):
+            return m.group(0)
+        return m.group(0).replace('/blog/%s/%s' % (lang, slug),
+                                  '/blog/%s/%s' % (lang, fixed))
+
+    return re.sub(r'/blog/(?P<lang>es|val|en|fr)/(?P<slug>[a-z0-9-]+)(?P<ext>\.html)?',
+                  repl, s)
 
 
 def retarget_links(s, fr_slug, prof, mapping=None):
@@ -475,6 +597,68 @@ NAP_FOOTER = """
 """.replace('{base}', BASE)
 
 
+class BlockAlignmentError(Exception):
+    """La source a bouge au point qu'un bloc traduit n'a plus de place ou aller."""
+
+
+def resolve_block_spans(src, payload):
+    """{id de segment: (debut, fin)} calcule sur la source ACTUELLE.
+
+    Pourquoi ne pas lire seg['offset'] : cet offset est fige au moment de
+    l'extraction. Toute edition ulterieure du fichier espagnol — un correctif de
+    coquille, l'insertion du script de mesure, la reparation d'un hreflang —
+    decale tout ce qui suit. Le 31 aout, la reecriture d'une seule ligne par
+    source a peri 6364 blocs sur 6898, soit 92 % des offsets des 94 payloads.
+    Seul le controle d'integrite a empeche 81 documents dechiquetes d'atteindre
+    le disque.
+
+    Reindexer les payloads aurait repare ce jour-la et laisse la classe de bug
+    entiere : la prochaine edition d'une source les aurait tous reperimes, en
+    silence. On enleve donc l'offset du chemin critique. Le payload ne porte
+    plus que ce qu'il doit porter — un identifiant, un texte source, une
+    traduction — et la position se recalcule a chaque build.
+
+    L'appariement se fait par CONTENU, via un alignement de sequences entre les
+    textes sources memorises et les blocs extraits maintenant :
+
+      - zone identique          -> appariement direct ;
+      - zone modifiee de meme longueur -> appariement dans l'ordre. C'est le cas
+        d'un bloc dont le texte a change sans que la structure bouge, par exemple
+        le selecteur de langue apres un changement de slug ;
+      - insertion, suppression, ou remplacement de longueurs differentes -> aucun
+        appariement. Placer un bloc traduit au jugé serait pire que refuser.
+
+    Leve BlockAlignmentError si un segment reste sans place : mieux vaut un
+    build refuse qu'un paragraphe ecrit au mauvais endroit.
+    """
+    blocks = leaf_blocks(src)
+    texts = [src[a:b].strip() for a, b, _ in blocks]
+    segs = sorted((sg for sg in payload['segments'] if sg['id'].startswith('block:')),
+                  key=lambda sg: int(sg['id'].split(':', 1)[1]))
+    sources = [str(sg['source']).strip() for sg in segs]
+
+    spans, shifted = {}, 0
+    sm = difflib.SequenceMatcher(None, sources, texts, autojunk=False)
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        if tag == 'equal':
+            for k in range(i2 - i1):
+                spans[segs[i1 + k]['id']] = (blocks[j1 + k][0], blocks[j1 + k][1])
+        elif tag == 'replace' and (i2 - i1) == (j2 - j1):
+            for k in range(i2 - i1):
+                spans[segs[i1 + k]['id']] = (blocks[j1 + k][0], blocks[j1 + k][1])
+                shifted += 1
+
+    orphans = [sg['id'] for sg in segs if sg['id'] not in spans]
+    if orphans:
+        raise BlockAlignmentError(
+            '%d bloc(s) traduit(s) sans correspondance dans la source actuelle '
+            '(%s%s). La source a change de structure depuis l\'extraction : '
+            'relance extract.'
+            % (len(orphans), ', '.join(orphans[:6]),
+               ', ...' if len(orphans) > 6 else ''))
+    return spans, shifted
+
+
 def assemble(src, payload, prof=None):
     """Clone le document source en substituant les fragments traduits."""
     prof = prof or PROFILES['fr']
@@ -482,9 +666,13 @@ def assemble(src, payload, prof=None):
     s = src
 
     # --- blocs du corps : de la fin vers le debut, pour garder les offsets valides
+    spans, shifted = resolve_block_spans(src, payload)
+    if shifted:
+        print('  %d bloc(s) apparie(s) par position dans une zone modifiee '
+              '(source editee depuis l\'extraction)' % shifted)
     blocks = [seg for seg in payload['segments'] if seg['id'].startswith('block:')]
-    for seg in sorted(blocks, key=lambda x: -x['offset'][0]):
-        a, b = seg['offset']
+    for seg in sorted(blocks, key=lambda x: -spans[x['id']][0]):
+        a, b = spans[seg['id']]
         original = src[a:b]
         lead = original[:len(original) - len(original.lstrip())]
         trail = original[len(original.rstrip()):]
@@ -535,6 +723,7 @@ def assemble(src, payload, prof=None):
 
     s = adapt_head(s, payload['es_slug'], payload['fr_slug'], prof)
     s = retarget_links(s, payload['fr_slug'], prof)
+    s = repair_stale_links(s)
 
     # --- pied de page NAP, insere AVANT </article> : le document doit se terminer
     # exactement par </article></body></html>, sans rien entre les trois.
@@ -864,6 +1053,9 @@ def mask_legitimate_spanish(html_text):
     s = re.sub(r'(?is)<script\b(?![^>]*ld\+json)[^>]*>.*?</script>', _blank, s)
     # URL : un lien vers /blog/es/<slug-espagnol> est la version ES, pas un residu.
     s = re.sub(r'https?://[^\s"\'<>]+', _blank, s)
+    # Meme chose sans schema : « webautonomos.es/demo-fontanero » cite dans une
+    # reponse de FAQ est une adresse, pas du castillan oublie.
+    s = re.sub(r'\bwebautonomos\.es/[^\s"\'<>)]+', _blank, s)
     s = re.sub(r'(?i)\b(?:href|src|content)\s*=\s*"(?:/|#|mailto:|tel:)[^"]*"', _blank, s)
     # Attributs sans prose.
     s = re.sub(r'(?i)\b(?:%s)\s*=\s*"[^"]*"' % '|'.join(NOISE_ATTRS), _blank, s)
@@ -1186,7 +1378,12 @@ def cmd_build(args):
             print('    - %s  source=%s  fr=%s' % (sid, a, b))
         return 1
 
-    out = assemble(src, payload, prof)
+    try:
+        out = assemble(src, payload, prof)
+    except BlockAlignmentError as exc:
+        print('  %s' % exc)
+        print('  -> alignement impossible : RIEN N\'A ETE ECRIT.')
+        return 1
     if re.search(r'<html[^>]*\blang="%s"' % prof.html_lang, out):
         out, chrome = localize_chrome(out, prof)
         if chrome:
@@ -1290,11 +1487,24 @@ def prefill_block(src_txt, prof):
     if flat in prof.prefill_blocks:
         return prof.prefill_blocks[flat]
     # date de publication : « 30 Julio 2026 · 11 min de lectura »
-    if '<time' in flat:
+    # 29 des 50 sources espagnoles ecrivent cette ligne sans balise <time> : la
+    # mention du temps de lecture est le seul marqueur commun aux deux formes.
+    # La mention seule ne suffit pas : les cartes « articles similaires » portent
+    # elles aussi « 12 min de lectura », et cette branche les renverrait telles
+    # quelles, titre espagnol compris. Un nom de mois signe la ligne de date.
+    if '<time' in flat or ('min de lectura' in flat
+                           and any(m in flat.lower() for m in prof.months)):
         out = src_txt
         for es, fr in prof.months.items():
             out = re.sub(es, fr, out, flags=re.I)
-        return out.replace('min de lectura', prof.read_label)
+        out = out.replace('min de lectura', prof.read_label)
+        # Ce bloc ne porte pas que la date : le badge de categorie l'accompagne
+        # dans le meme conteneur. Sans cette ligne, « Presencia Digital » sortait
+        # en castillan, sur une forme multi-lignes que la table d'habillage ne
+        # rattrape pas au moment de l'assemblage.
+        for a, b in prof.chrome:
+            out = out.replace(a.strip('>< '), b.strip('>< '))
+        return out
     # logo « web | autonomos | .es », eventuellement suivi du lien Blog
     if '>autonomos</span>' in flat and '>web</span>' in flat:
         return src_txt
@@ -1527,10 +1737,256 @@ def cmd_retarget_all(args):
         if not args.dry_run:
             open(path, 'w', encoding='utf-8').write(after)
 
+    # Seconde passe : les liens deja ecrits sous /blog/<langue>/<slug> mort.
+    # retarget_links ne convertit que la forme espagnole ; un article bati avant
+    # ses freres a pu figer un lien vers un slug qui n'existait pas encore, ou
+    # qui a ete renomme depuis. C'est le meme angle mort que celui qui a fait
+    # renaitre 18 liens valenciens au premier rebuild.
+    repaired = rep_files = 0
+    for path in paths:
+        before = open(path, encoding='utf-8', errors='replace').read()
+        after = repair_stale_links(before)
+        if after != before:
+            rep_files += 1
+            repaired += sum(1 for a, b in zip(re.findall(r'/blog/\w+/[a-z0-9-]+', before),
+                                              re.findall(r'/blog/\w+/[a-z0-9-]+', after))
+                            if a != b)
+            if not args.dry_run:
+                open(path, 'w', encoding='utf-8').write(after)
+
     verbe = 'a repointer' if args.dry_run else 'repointes'
     print('  %d fichier(s) balaye(s), %d lien(s) %s dans %d fichier(s)'
           % (len(paths), total, verbe, touched))
+    print('  liens morts repares : %d dans %d fichier(s)' % (repaired, rep_files))
     return 0
+
+
+# --------------------------------------------------------------------------
+# Anglais : habillage
+# --------------------------------------------------------------------------
+#
+# Les libelles reprennent ceux des 28 fichiers EN deja corrects, pour ne pas
+# introduire un second vocabulaire anglais a cote du premier.
+
+CHROME_EN = [
+    # barre de navigation
+    ('>Inicio</a>',            '>Home</a>'),
+    ('>Servicios</a>',         '>Services</a>'),
+    ('>Precios</a>',           '>Pricing</a>'),
+    ('>Contacto</a>',          '>Contact</a>'),
+    ('>Ver mi web gratis</a>', '>See my free website</a>'),
+    # boutons CTA
+    ('>Solicitar mi web gratis<', '>Request my free website<'),
+    ('Pedir presupuesto gratis \u2192', 'Get a free quote \u2192'),
+    # badges et fil d'Ariane de categorie
+    ('>P\u00e1ginas Web<',        '>Websites<'),
+    ('>Presencia Digital<',      '>Digital Presence<'),
+    ('>SEO Local<',              '>Local SEO<'),
+    ('>Marketing Digital<',      '>Digital Marketing<'),
+    ('>Facturaci\u00f3n y Legal<', '>Invoicing & Legal<'),
+    ('>Automatizaci\u00f3n<',      '>Automation<'),
+    # Variantes espacees : le gabarit ecrit « > Paginas Web < » avec des blancs,
+    # que la forme collee ne rattrape pas.
+    (' P\u00e1ginas Web ',        ' Websites '),
+    (' Presencia Digital ',      ' Digital Presence '),
+    (' SEO Local ',              ' Local SEO '),
+    (' Marketing Digital ',      ' Digital Marketing '),
+    (' Google My Business ',     ' Google My Business '),
+    ('Art\u00edculos relacionados', 'Related articles'),
+    # pied de page
+    ('>Aviso legal</a>',       '>Legal notice</a>'),
+    ('>Privacidad</a>',        '>Privacy</a>'),
+    ('\u2190 Volver al blog',    '\u2190 Back to blog'),
+]
+
+CHROME_EN_RE = [
+    ('("serviceType"\\s*:\\s*\\[\\s*")Dise\u00f1o web(")',
+     '\\g<1>Web design\\g<2>', 'serviceType : Dise\u00f1o web'),
+]
+
+PREFILL_BLOCKS_EN = {
+    'W': 'W',
+    'WebAutonomos': 'WebAutonomos',
+    'Preguntas frecuentes': 'Frequently asked questions',
+    '\U0001F4D1 Contenido del art\u00edculo': '\U0001F4D1 Article contents',
+    '\u00bfQuieres una web as\u00ed para tu negocio?':
+        'Want a website like this for your business?',
+    'P\u00e1ginas web profesionales desde 15 \u20ac/mes \u00b7 Sin permanencia':
+        'Professional websites from \u20ac15/month \u00b7 No commitment',
+    'Agencia web especializada en aut\u00f3nomos de la Comunidad Valenciana. '
+    'P\u00e1ginas web profesionales desde 15 \u20ac/mes, sin permanencia.':
+        'Web agency specialising in freelancers across the Valencian Community. '
+        'Professional websites from \u20ac15/month, no commitment.',
+    '\u00bfCu\u00e1nto cuesta y cu\u00e1nto tarda?':
+        'How much does it cost and how long does it take?',
+    '15 euros al mes, sin alta y sin permanencia, o 349 euros en pago \u00fanico. '
+    'Tu web est\u00e1 lista en 24 horas.':
+        '15 euros per month, with no setup fee and no commitment, or 349 euros '
+        'as a one-off payment. Your website is ready in 24 hours.',
+}
+
+PREFILL_JSONLD_EN = {
+    'jsonld:0:author.name': 'WebAutonomos',
+    'jsonld:0:publisher.name': 'WebAutonomos',
+    'jsonld:1:itemListElement.0.name': 'Home',
+    'jsonld:1:itemListElement.1.name': 'Blog',
+    'jsonld:3:name': 'WebAutonomos',
+    'jsonld:3:description': 'Digital marketing agency specialising in websites '
+                            'and local SEO for freelancers in the Valencian '
+                            'Community',
+    'jsonld:3:areaServed.name': 'Valencian Community',
+    'jsonld:4:name': 'Blog WebAutonomos.es',
+    'jsonld:4:description': 'Local SEO and digital marketing advice and guides '
+                            'for freelancers',
+    'jsonld:4:publisher.name': 'WebAutonomos.es',
+}
+
+# Mois en toutes lettres : « 20 de julio de 2026 » devient « 20 July 2026 ».
+# La substitution du profil remplace le nom du mois sur place, sans reordonner —
+# ce qui donne la forme jour-mois-annee, celle de l'anglais britannique annonce
+# par og_locale. Les 28 fichiers deja corrects portaient « Jul 20, 2026 », forme
+# americaine : ils changent donc de format a la reconstruction.
+MONTHS_ES_EN = {
+    'enero': 'January', 'febrero': 'February', 'marzo': 'March',
+    'abril': 'April', 'mayo': 'May', 'junio': 'June', 'julio': 'July',
+    'agosto': 'August', 'septiembre': 'September', 'octubre': 'October',
+    'noviembre': 'November', 'diciembre': 'December',
+}
+
+
+# --------------------------------------------------------------------------
+# Anglais : residu espagnol
+# --------------------------------------------------------------------------
+#
+# Regle numero un, apprise sur le valencien puis reapprise ici : un detecteur
+# qui crie sur les 50 fichiers ne detecte rien. Deux categories de faux positifs
+# le guettent en anglais.
+#
+#   1. Les homographes. « local », « digital », « total », « personal »,
+#      « normal », « general », « natural », « central », « material », mais
+#      aussi « son », « no », « la », « de », « a », « es », « un », « si »,
+#      « lo », « le » : tous existent en anglais. Aucun n'entre dans la liste.
+#      Seul « profesional », avec un seul s la ou l'anglais en met deux, est un
+#      marqueur sur.
+#   2. Le logo, decoupe en <span>web</span><span>autonomos</span>. Une fois les
+#      balises retirees il redevient « web autonomos » et se lit comme un mot
+#      castillan : il apparaissait une fois par fichier, sur les 50.
+#      mask_legitimate_spanish() le neutralise deja, ainsi que les URL, les
+#      attributs et le bloc NAP.
+#
+# Les toponymes espagnols, eux, sont legitimes en anglais — un exemple situe a
+# Alicante reste a Alicante. Ils sont masques, contrairement au valencien ou ils
+# devaient s'ecrire Alacant.
+
+EN_LEGIT = [
+    'Comunidad Valenciana', 'Valenciana', 'Valencia', 'Valencian', 'Alicante',
+    'Elda', 'Elche', 'Castell\u00f3n', 'Castellon', 'Espa\u00f1a',
+    'Google My Business', 'Kit Digital', 'RETA',
+    # noms propres cites dans les exemples locaux : journaux, quartiers
+    'Las Provincias', 'Levante-EMV', 'Informaci\u00f3n', 'Ruzafa', 'Benimaclet',
+    # Institutions espagnoles : leur raison sociale ne se traduit pas, un
+    # article anglais qui cite une statistique de l'ATA doit la nommer telle
+    # qu'elle est. Sans ce masque, le controle refusait une citation correcte.
+    'Federaci\u00f3n Nacional de Asociaciones de Trabajadores Aut\u00f3nomos',
+    'Instituto Nacional de Estad\u00edstica', 'Banco de Espa\u00f1a',
+    'Agencia Tributaria', 'Seguridad Social', 'C\u00e1mara de Comercio',
+    # Annuaires espagnols cites par leur nom commercial.
+    'P\u00e1ginas Amarillas', 'Acelera Pyme', 'Ley Crea y Crece',
+]
+
+# Mots espagnols sans homographe anglais. Toute entree ajoutee ici doit etre
+# introuvable dans un dictionnaire anglais : c'est le seul critere.
+EN_ES_WORDS = [
+    # fonctionnels
+    'que', 'para', 'con', 'por', 'los', 'las', 'del', 'una', 'unos', 'unas',
+    'pero', 'cuando', 'donde', 'porque', 'este', 'esta', 'estos', 'estas',
+    'muy', 'todo', 'todos', 'toda', 'todas', 'cada', 'sobre', 'entre', 'hasta',
+    'desde', 'aunque', 'mientras', 'ademas', 'adem\u00e1s', 'tambien',
+    'tambi\u00e9n', 'asi', 'as\u00ed', 'siempre', 'nunca', 'menos', 'mas',
+    'm\u00e1s', 'tus', 'sus', 'nuestro', 'nuestra', 'ahora', 'aqui', 'aqu\u00ed',
+    'bien', 'mejor', 'mejores', 'hay', 'muchos', 'muchas', 'otros', 'otras',
+    'primero', 'primera', 'segundo', 'ejemplo', 'ejemplos',
+    # verbes
+    'hacer', 'hace', 'hacen', 'haces', 'tener', 'tiene', 'tienen', 'tienes',
+    'puede', 'pueden', 'puedes', 'estan', 'est\u00e1n', 'quieres', 'necesitas',
+    'debes', 'sabes', 'conoces', 'buscar', 'buscas', 'encontrar', 'conseguir',
+    # noms
+    'negocio', 'negocios', 'clientes', 'cliente', 'pagina', 'p\u00e1gina',
+    'paginas', 'p\u00e1ginas', 'autonomo', 'aut\u00f3nomo', 'autonomos',
+    'aut\u00f3nomos', 'empresa', 'empresas', 'anos', 'a\u00f1os', 'dia',
+    'd\u00eda', 'dias', 'd\u00edas', 'tiempo', 'dinero', 'trabajo', 'cosas',
+    'cuenta', 'forma', 'manera', 'parte', 'veces', 'caso', 'casos', 'personas',
+    'gente', 'correo', 'llamada', 'telefono', 'tel\u00e9fono', 'horario',
+    'direccion', 'direcci\u00f3n', 'ficha', 'resena', 'rese\u00f1a', 'resenas',
+    'rese\u00f1as', 'palabras', 'clave', 'busqueda', 'b\u00fasqueda', 'buscador',
+    'consejo', 'consejos', 'importante', 'imprescindible', 'servicio',
+    'servicios', 'precio', 'precios', 'sitio',
+    # « profesional » a un seul s : l'anglais ecrit « professional ».
+    'profesional', 'profesionales',
+    # Vocabulaire courant des gabarits et des intertitres. Ajoute apres qu'une
+    # recuperation eut accepte « Zona de cobertura » et « Fotos de trabajos
+    # realizados » : deux <h3> entierement castillans, qu'aucun mot de la
+    # premiere liste ne couvrait.
+    'zona', 'zonas', 'cobertura', 'foto', 'fotos', 'trabajos', 'realizado',
+    'realizados', 'realizada', 'realizadas', 'inicio', 'llamadas', 'urgencia',
+    # Les noms de metier — fontanero, electricista, carpintero — sont volontairement
+    # absents : ils composent les raisons sociales des exemples (« Fontaneria Lopez
+    # Elda »), que la regle editoriale EN conserve en espagnol. Meme raison pour
+    # « reformas », qui apparait dans « Reformas Martinez ». Une prose castillane
+    # oubliee porte de toute facon ses mots outils, qui suffisent a la signaler.
+    'urgencias', 'presupuesto', 'presupuestos', 'ciudad', 'ciudades', 'barrio',
+    'barrios', 'poblaciones', 'seccion', 'secci\u00f3n', 'secciones',
+    'pantalla', 'boton', 'bot\u00f3n', 'botones', 'movil', 'm\u00f3vil',
+    'usuario', 'usuarios', 'cabecera', 'formulario', 'dise\u00f1o', 'diseno',
+    'guia', 'gu\u00eda', 'guias', 'gu\u00edas', 'herramienta', 'herramientas',
+    'semana', 'semanas', 'meses', 'hora', 'horas', 'nuevo', 'nueva', 'nuevos',
+    'nuevas', 'bueno', 'buena', 'buenos', 'buenas', 'como', 'c\u00f3mo',
+    'cuanto', 'cu\u00e1nto', 'cual', 'cu\u00e1l', 'empezar', 'recibir',
+    'llegar', 'mostrar', 'aparecer', 'necesita', 'necesitan', 'quiere',
+    'quieren', 'vale', 'pierde', 'gana',
+    # Libelles du gabarit qui vivent DANS un bloc et non dans la table
+    # d'habillage : un sommaire numerote « 6. Preguntas frecuentes » n'a pas de
+    # forme litterale a substituer, il doit etre traduit comme du texte.
+    'pregunta', 'preguntas', 'frecuente', 'frecuentes', 'relacionado',
+    'relacionados', 'relacionadas', 'articulo', 'art\u00edculo', 'articulos',
+    'art\u00edculos', 'contenido', 'lectura', 'volver', 'presencia',
+]
+
+EN_ES_CHARS = (r'[\u00f1\u00d1\u00bf\u00a1]', 'caractere castillan')
+
+
+def english_residue_hits(html_text):
+    """[(ligne, motif, token, extrait)] du castillan residuel dans un texte EN."""
+    masked = mask_legitimate_spanish(html_text)
+    for lit in EN_LEGIT:
+        masked = re.sub(re.escape(lit), _blank, masked, flags=re.I)
+    patterns = [
+        EN_ES_CHARS,
+        (r'\b(?:%s)\b' % '|'.join(sorted(EN_ES_WORDS, key=len, reverse=True)),
+         'mot castillan'),
+    ]
+    hits, seen = [], set()
+    for pattern, label in patterns:
+        for m in re.finditer(pattern, masked, re.I):
+            if m.start() in seen:
+                continue
+            seen.add(m.start())
+            line = masked.count('\n', 0, m.start()) + 1
+            raw = html_text[max(0, m.start() - 40):m.end() + 40]
+            hits.append((line, label, m.group(0).strip(), ' '.join(raw.split())))
+    hits.sort()
+    return hits
+
+
+def no_register_hits(html_text):
+    """Garde de registre vide.
+
+    L'anglais ne distingue pas le tutoiement du vouvoiement : « you » couvre les
+    deux. Il n'y a donc rien a verifier, et rien a inventer pour meubler. Le
+    profil EN passe cette fonction pour que segment_is_clean() garde sa forme a
+    deux gardes sans traiter l'anglais comme un cas particulier.
+    """
+    return []
 
 
 PROFILES = {
@@ -1554,6 +2010,16 @@ PROFILES = {
         register=avl_hits,
         register_label='normative AVL (signes ouvrants, l geminee)',
         read_label='min de lectura'),   # identique en catalan
+    'en': LangProfile(
+        code='en', html_lang='en', directory='en', og_locale='en_GB',
+        hreflang='en',
+        chrome=CHROME_EN, chrome_re=CHROME_EN_RE,
+        prefill_blocks=PREFILL_BLOCKS_EN, prefill_jsonld=PREFILL_JSONLD_EN,
+        months=MONTHS_ES_EN, passthrough=PREFILL_PASSTHROUGH,
+        residue=english_residue_hits,
+        register=no_register_hits,
+        register_label="aucune (l'anglais ne distingue pas le registre)",
+        read_label='min read'),
 }
 
 
