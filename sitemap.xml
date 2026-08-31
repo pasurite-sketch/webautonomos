@@ -542,6 +542,10 @@
         <lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
+        <loc>https://webautonomos.es/prestations</loc>
+        <lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://webautonomos.es/pricing</loc>
         <lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
@@ -554,6 +558,10 @@
         <lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
+        <loc>https://webautonomos.es/questions</loc>
+        <lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://webautonomos.es/reformas/</loc>
         <lastmod>2026-08-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
@@ -564,6 +572,10 @@
     <url>
         <loc>https://webautonomos.es/servicios</loc>
         <lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://webautonomos.es/tarifs</loc>
+        <lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/visibilidad-ia/</loc>
