@@ -423,9 +423,36 @@ ls _tools/queue/published/*.json | wc -l
 ls blog/es/*.html | wc -l
 ```
 
+## index.html : ce que le dépôt contient en plus de Lovable
+
+`index.html` est le bundle exporté de Lovable, mais **le fichier du dépôt a divergé de
+la source Lovable**. Trois modifications y vivent, appliquées par des scripts et non à
+la main. Un ré-export depuis Lovable les écraserait toutes les trois, sans avertissement.
+
+| Modification | Qui l'applique | Ce qu'on perd à un ré-export |
+|---|---|---|
+| Articles insérés dans les tableaux SPA | `_tools/add_article.py`, à chaque publication | Les articles publiés depuis mars — 11 à ce jour |
+| Slugs VAL et EN des tableaux SPA | corrigés le 2026-09-01 après les migrations | 95 champs `slug:` ; `generate_spa_articles.py` recréerait alors 95 fichiers sous les anciens slugs et masquerait 190 redirections 301 |
+| `<noscript>` de repli dans le `<body>` | ajouté le 2026-09-01 | Le seul `<h1>` et les 1 200 mots que voit un crawler sans JavaScript sur `/` |
+
+**Le `<noscript>` de repli.** Il vit dans le `<body>`, juste après `<div id="root"></div>`,
+et porte l'identifiant `fallback`. Le `<noscript>` du `<head>` est différent : il ne charge
+qu'une police, et la spécification n'y autorise que `<link>`, `<style>` et `<meta>` — y
+placer un `<h1>` produit du HTML invalide.
+
+Son contenu est **extrait de l'objet `translations` du bundle**, jamais réécrit. C'est ce
+qui sépare un repli légitime d'un *cloaking* : le crawler sans JavaScript lit exactement ce
+que l'application affiche. Toute mise à jour doit repasser par une extraction, pas par une
+retouche du texte.
+
+Le montage React utilise `createRoot().render()`, qui écrase le conteneur au premier rendu :
+le repli disparaît dès que le JavaScript s'exécute, sans conflit d'hydratation. `hydrateRoot`
+aurait exigé une correspondance exacte et interdit ce procédé.
+
+
 ## Rappels Importants
 
-- **Ne JAMAIS modifier index.html** — c'est le bundle React compilé de Lovable
+- **Ne JAMAIS modifier index.html à la main** — c'est le bundle React compilé de Lovable. Trois exceptions, toutes automatisées, toutes perdues à un ré-export (voir ci-dessous)
 - **Ne JAMAIS régénérer les 6 articles existants** — ils vivent dans le SPA React
 - **Toujours pousser sur `main`** — c'est la branche de production
 - **Toujours se baser sur template-article.html** — pour la structure HTML
