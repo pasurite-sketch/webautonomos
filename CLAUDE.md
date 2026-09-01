@@ -434,6 +434,17 @@ la main. Un ré-export depuis Lovable les écraserait toutes les trois, sans ave
 | Articles insérés dans les tableaux SPA | `_tools/add_article.py`, à chaque publication | Les articles publiés depuis mars — 11 à ce jour |
 | Slugs VAL et EN des tableaux SPA | corrigés le 2026-09-01 après les migrations | 95 champs `slug:` ; `generate_spa_articles.py` recréerait alors 95 fichiers sous les anciens slugs et masquerait 190 redirections 301 |
 | `<noscript>` de repli dans le `<body>` | ajouté le 2026-09-01 | Le seul `<h1>` et les 1 200 mots que voit un crawler sans JavaScript sur `/` |
+| Formule tarifaire de 4 champs de métadonnées | corrigée le 2026-09-01 | « 15 €/mes sin alta, sin permanencia » redeviendrait « desde 15… » dans `Organization.description` (JSON-LD statique et bundle) et dans `seo.demoFontanero` / `seo.demoElectricista` |
+
+**La formule tarifaire.** Quatre champs de métadonnées portent « 15 €/mes sin alta, sin
+permanencia ». Les **16 autres occurrences de « desde 15 »** dans `index.html` sont des corps
+d'articles et des réponses de FAQ des données SPA, **dupliqués dans `blog/es/*.html`** : les
+corriger d'un seul côté créerait une divergence. Elles se traitent en même temps que les
+fichiers d'articles, ou pas du tout.
+
+Le corps des trois blocs JSON-LD statiques est en **ASCII pur** — « Paginas », « Espana »,
+« euros » en toutes lettres. Le seul caractère non-ASCII y est `priceRange: "€€"`, une valeur
+Schema.org. Toute retouche doit conserver cette convention.
 
 **Le `<noscript>` de repli.** Il vit dans le `<body>`, juste après `<div id="root"></div>`,
 et porte l'identifiant `fallback`. Le `<noscript>` du `<head>` est différent : il ne charge
