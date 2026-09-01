@@ -100,6 +100,75 @@
   .note { font-size:0.85rem; color:var(--gray); margin:0 0 26px; }
   .updated { font-size:0.85rem; color:var(--gray); margin:34px 0 0;
              padding-top:16px; border-top:1px solid var(--border); }
+/* MODAL */
+  .modal-overlay {
+    display:none; position:fixed; inset:0; z-index:999;
+    background:rgba(10,20,50,0.65); backdrop-filter:blur(4px);
+    align-items:center; justify-content:center; padding:20px;
+  }
+  .modal-box {
+    background:var(--white); border-radius:16px;
+    max-width:580px; width:100%; max-height:85vh;
+    overflow-y:auto; position:relative;
+    box-shadow:0 32px 80px rgba(10,20,50,0.35);
+  }
+  .modal-header {
+    position:sticky; top:0; z-index:1;
+    background:var(--grad);
+    padding:20px 24px 16px;
+    border-radius:16px 16px 0 0;
+    display:flex; align-items:flex-start; justify-content:space-between; gap:16px;
+  }
+  .modal-header h3 {
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:800; font-size:1.3rem;
+    color:var(--white); margin-bottom:4px;
+  }
+  .modal-header p { font-size:0.78rem; color:rgba(255,255,255,0.65); }
+  .modal-close {
+    background:rgba(255,255,255,0.15); border:none; cursor:pointer;
+    color:var(--white); width:32px; height:32px; border-radius:50%;
+    font-size:1rem; display:flex; align-items:center; justify-content:center;
+    flex-shrink:0; transition:background 0.2s;
+  }
+  .modal-close:hover { background:rgba(255,255,255,0.3); }
+  .modal-body { padding:28px 28px 24px; }
+  .modal-section { margin-bottom:24px; }
+  .modal-section-title {
+    display:flex; align-items:center; gap:10px;
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:700; font-size:1rem; color:var(--text);
+    margin-bottom:10px;
+  }
+  .modal-num {
+    width:24px; height:24px; border-radius:50%;
+    background:var(--grad);
+    color:var(--white); font-size:0.75rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .modal-body p, .modal-body li {
+    font-size:0.88rem; line-height:1.65; color:#334155;
+  }
+  .modal-body ul { list-style:none; padding:0; margin-top:8px; }
+  .modal-body ul li { padding:3px 0 3px 16px; position:relative; }
+  .modal-body ul li::before {
+    content:'·'; position:absolute; left:4px; color:var(--green-mid); font-weight:700;
+  }
+  .modal-footer-btn {
+    position:sticky; bottom:0;
+    background:var(--white); padding:16px 28px;
+    border-top:1px solid var(--border);
+    display:flex; justify-content:flex-end;
+    border-radius:0 0 16px 16px;
+  }
+  .modal-footer-btn button {
+    background:var(--grad); color:var(--white);
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:700; font-size:0.95rem;
+    border:none; border-radius:9px; cursor:pointer;
+    padding:10px 24px; transition:filter 0.2s;
+  }
+  .modal-footer-btn button:hover { filter:brightness(1.08); }
 </style>
 <script type="application/ld+json">
 {
@@ -305,6 +374,8 @@
     <dd>Cela dépend de votre horizon. 349 € correspondent à un peu moins de 24 mois d'abonnement. Au-delà de deux ans, le paiement unique revient moins cher ; en dessous, l'abonnement laisse plus de souplesse. L'abonnement inclut en outre la maintenance continue, que le paiement unique ne couvre pas au-delà de la première année.</dd>
   </dl>
 
+  <p>Un doute sur ce que couvre exactement l'abonnement, sur les délais ou sur la résiliation ? Nos <a href="/questions">questions fréquentes</a> répondent aux huit points que l'on nous pose le plus souvent avant de commencer.</p>
+
   <div class="actions">
     <a class="btn btn-primary" href="/demandez-votre-demo">Demander ma démonstration gratuite</a>
     <a class="btn btn-ghost" href="/prestations">Voir les prestations</a>
@@ -315,9 +386,9 @@
 <footer>
   <a class="fl" href="/"><span>&#127760;</span> webautonomos.es</a>
   <div class="flinks">
-    <a href="/aviso-legal">Aviso legal</a>
-    <a href="/privacidad">Privacidad</a>
-    <a href="/contacto">Contacto</a>
+    <a href="/aviso-legal" onclick="event.preventDefault();document.getElementById('modal-aviso').style.display='flex'">Mentions légales</a>
+    <a href="/privacidad" onclick="event.preventDefault();document.getElementById('modal-privacidad').style.display='flex'">Confidentialité</a>
+    <a href="https://webautonomos.es/contacto">Contact</a>
   </div>
   <address class="fnap">
     <strong>WebAutonomos</strong>
@@ -327,6 +398,96 @@
     <a href="mailto:info@webautonomos.es">info@webautonomos.es</a>
   </address>
 </footer>
+
+<div class="modal-overlay" id="modal-aviso" onclick="if(event.target===this)this.style.display='none'">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <h3>Mentions légales</h3>
+        <p>Ce document n'est disponible qu'en espagnol.</p>
+      </div>
+      <button class="modal-close" onclick="document.getElementById('modal-aviso').style.display='none'">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">1</span> Identificación del titular</div>
+        <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa al usuario de los datos identificativos del titular de este sitio web:</p>
+        <ul>
+          <li>Denominación social: PASURITE SLU</li>
+          <li>CIF: B42890012</li>
+          <li>Domicilio social: Calle Pintor Segrelles, nº 26 – 46870 Ontinyent (Valencia), España</li>
+          <li>Teléfono: +34 961 877 356</li>
+          <li>Correo electrónico: info@webautonomos.es</li>
+          <li>Datos registrales: Inscrita en el Registro Mercantil de Valencia, Tomo 10949, Folio 13, Hoja V-196956</li>
+          <li>Administrador único: Angelino Pace</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">2</span> Objeto y ámbito de aplicación</div>
+        <p>El presente Aviso Legal regula el acceso y uso del sitio web webautonomos.es. PASURITE SLU se dedica a la creación de páginas web profesionales para autónomos y pequeñas empresas, así como a servicios de posicionamiento SEO local y gestión de Google My Business.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">3</span> Condiciones de acceso y uso</div>
+        <p>El acceso al Sitio Web es gratuito. El usuario se compromete a utilizar el Sitio Web de conformidad con la ley, el presente Aviso Legal, las buenas costumbres y el orden público.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">4</span> Propiedad intelectual e industrial</div>
+        <p>Todos los contenidos del Sitio Web son propiedad de PASURITE SLU o de terceros que han autorizado su uso, quedando protegidos por la legislación española e internacional sobre propiedad intelectual e industrial.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">5</span> Protección de datos personales</div>
+        <p>PASURITE SLU cumple con el RGPD y la LOPD-GDD. El usuario puede ejercer sus derechos enviando un correo electrónico a info@webautonomos.es.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">6</span> Legislación aplicable</div>
+        <p>El presente Aviso Legal se rige por la legislación española. Para la resolución de cualquier controversia, PASURITE SLU y el usuario acuerdan someterse a los Juzgados y Tribunales de la ciudad de Valencia.</p>
+      </div>
+    </div>
+    <div class="modal-footer-btn">
+      <button onclick="document.getElementById('modal-aviso').style.display='none'">Fermer</button>
+    </div>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-privacidad" onclick="if(event.target===this)this.style.display='none'">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <h3>Politique de confidentialité</h3>
+        <p>Última actualización: Febrero 2026</p>
+      </div>
+      <button class="modal-close" onclick="document.getElementById('modal-privacidad').style.display='none'">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">1</span> Responsable del tratamiento</div>
+        <p>PASURITE SLU — CIF: B42890012 — Calle Pintor Segrelles, nº 26 – 46870 Ontinyent (Valencia) — info@webautonomos.es — +34 961 877 356</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">2</span> Datos que recopilamos</div>
+        <p>Recopilamos los datos que nos proporciona voluntariamente: nombre, teléfono, email, nombre de empresa, ciudad, sector y servicios ofrecidos.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">3</span> Finalidad</div>
+        <p>Gestionar solicitudes de demo, elaborar presupuestos, prestar servicios contratados y enviar comunicaciones comerciales (solo con consentimiento previo).</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">4</span> Base legal</div>
+        <p>Su consentimiento al rellenar el formulario, la ejecución del contrato, el interés legítimo y el cumplimiento de obligaciones legales.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">5</span> Sus derechos</div>
+        <p>Acceso, rectificación, supresión, limitación, portabilidad y oposición. Escriba a info@webautonomos.es con copia de su DNI. Puede reclamar ante la AEPD (www.aepd.es).</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="modal-num">6</span> Seguridad</div>
+        <p>Utilizamos conexiones seguras (HTTPS/SSL), servidores protegidos, copias de seguridad periódicas y acceso restringido a los datos.</p>
+      </div>
+    </div>
+    <div class="modal-footer-btn">
+      <button onclick="document.getElementById('modal-privacidad').style.display='none'">Fermer</button>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
