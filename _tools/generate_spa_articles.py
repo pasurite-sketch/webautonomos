@@ -257,7 +257,7 @@ NAV = """    <nav style="background:white; box-shadow:0 1px 3px rgba(0,0,0,0.1);
                 <div style="width:36px; height:36px; background:linear-gradient(135deg,#2563eb,#16a34a); border-radius:8px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:16px;">W</div>
                 <span style="font-weight:700; font-size:18px;"><span style="color:#2563eb;">web</span><span style="color:#16a34a;">autonomos</span><span style="color:#111;">.es</span></span>
             </a>
-            <a href="{base}/blog" style="color:#374151; text-decoration:none; font-size:14px; font-weight:500;">{blog}</a>
+            <a href="{base}/blog/" style="color:#374151; text-decoration:none; font-size:14px; font-weight:500;">{blog}</a>
         </div>
     </nav>
 """
@@ -497,7 +497,7 @@ def render(article, lang, alternates):
         <nav class="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
             <a href="{base}" class="hover:text-purple-600 transition">{home}</a>
             <span class="mx-1">&rsaquo;</span>
-            <a href="{base}/blog" class="hover:text-purple-600 transition">{blog}</a>
+            <a href="{base}/blog/" class="hover:text-purple-600 transition">{blog}</a>
             <span class="mx-1">&rsaquo;</span>
             <span>{cat_label}</span>
         </nav>
@@ -536,7 +536,7 @@ def render(article, lang, alternates):
         </div>
 
         <p class="mt-10">
-            <a href="{base}/blog" style="color:#2563eb; text-decoration:none; font-weight:500;">{back}</a>
+            <a href="{base}/blog/" style="color:#2563eb; text-decoration:none; font-weight:500;">{back}</a>
         </p>
 
     </article>
@@ -569,12 +569,17 @@ def main():
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--dry-run', action='store_true', help='liste sans ecrire')
     ap.add_argument('--force', action='store_true', help='reecrit meme si le fichier existe')
+    ap.add_argument('--slug', action='append', metavar='BASE',
+                    help='limite le traitement aux articles dont le slug de base '
+                         'correspond (repetable). Ex : --slug cuanto-cuesta-pagina-'
+                         'web-autonomos-espana. Les quatre langues du groupe sont '
+                         'traitees ensemble : leurs hreflang doivent rester coherents.')
     args = ap.parse_args()
 
     translations = load_translations()
 
     # Index global slug -> (lang, article), pour calculer les hreflang.
-    by_slug, by_base = {}, {}
+    by_slug, by_base, by_id = {}, {}, {}
     for lang, block in translations.items():
         for art in (block.get('blog') or {}).get('articles') or []:
             slug = art['slug']
@@ -588,14 +593,43 @@ def main():
             key = prefix or lang
             if key not in variants or prefix is not None:
                 variants[key] = slug
+            # Appariement par identifiant d'article (05/09/2026). Les slugs sont
+            # localises depuis la migration EN/VAL/FR : "cuanto-cuesta-..." en
+            # espagnol devient "how-much-does-a-website-cost-..." en anglais, et
+            # l'appariement par slug de base echoue. L'id, lui, est commun aux
+            # quatre langues. C'est la meme logique que link_by_spa_id() dans
+            # generate_sitemap.py, qui documentait le defaut sans le corriger ici.
+            if art.get('id') is not None:
+                by_id.setdefault(art['id'], {})[key] = slug
+
+    # --slug : on filtre sur le slug de BASE, pas sur le slug complet, pour que
+    # les quatre variantes linguistiques soient regenerees ensemble. Regenerer
+    # l'espagnol seul laisserait les trois autres pointer un hreflang perime.
+    # Les traductions portent des slugs de base differents de l'espagnol
+    # ("how-much-does-a-website-cost-for-freelancers" pour "cuanto-cuesta-...").
+    # On resout donc chaque --slug vers son groupe linguistique via by_base, puis
+    # on retient tous les slugs complets du groupe : les quatre langues sont
+    # regenerees ensemble et leurs hreflang restent coherents.
+    wanted = set()
+    if args.slug:
+        connus = {split_slug(sl)[1] for sl in by_slug}
+        inconnus = set(args.slug) - connus
+        if inconnus:
+            raise SystemExit('slug inconnu : %s' % ', '.join(sorted(inconnus)))
+        for base in args.slug:
+            for sl, (l_, a_) in by_slug.items():
+                if split_slug(sl)[1] == base:
+                    wanted.update((by_id.get(a_.get('id')) or {l_: sl}).values())
 
     written, skipped, failed = {}, 0, []
     for slug, (lang, art) in sorted(by_slug.items()):
+        if wanted and slug not in wanted:
+            continue
         if has_asset(slug) and not args.force:
             skipped += 1
             continue
         _, base = split_slug(slug)
-        alternates = by_base.get(base, {})
+        alternates = by_id.get(art.get('id')) or by_base.get(base, {})
         try:
             page = render(art, lang, alternates)
         except Exception as exc:                     # noqa: BLE001
