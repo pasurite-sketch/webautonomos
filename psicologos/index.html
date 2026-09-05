@@ -236,8 +236,8 @@
     position:relative;
   }
   .proof-grid {
-    max-width:900px; margin:0 auto;
-    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+    max-width:620px; margin:0 auto;
+    display:grid; grid-template-columns:repeat(2,1fr); gap:24px;
   }
   .proof-card {
     background:var(--off); border:1.5px solid var(--border);
@@ -675,6 +675,17 @@
     box-shadow: 0 0 0 2px var(--green) !important;
     transition: box-shadow 0.15s;
   }
+
+.reviews-carousel{max-width:1080px; margin:24px auto 0; overflow-x:auto;
+  scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin; padding-bottom:10px;}
+.reviews-track{display:flex; gap:20px; width:max-content;}
+.reviews-carousel .review-card{flex:0 0 320px; scroll-snap-align:start;}
+@media (min-width:1100px){
+  .reviews-carousel{overflow-x:visible;}
+  .reviews-track{display:grid; grid-template-columns:repeat(3,1fr); width:auto;}
+  .reviews-carousel .review-card:nth-child(n+4){display:none;}
+}
 </style>
 <!-- Canonical -->
 <link rel="canonical" href="https://webautonomos.es/psicologos/">
@@ -688,8 +699,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <!-- Schema.org LocalBusiness -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "WebAutonomos",
@@ -704,22 +714,55 @@
     "addressRegion": "Valencia",
     "addressCountry": "ES"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 38.820659, "longitude": -0.602125 },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.820659,
+    "longitude": -0.602125
+  },
   "telephone": "+34961877356",
   "email": "info@webautonomos.es",
   "priceRange": "€",
-  "areaServed": { "@type": "Country", "name": "Spain" },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Spain"
+  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Servicios Web",
     "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Página Web Profesional" }, "price": "15", "priceCurrency": "EUR" },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Local" }, "price": "15", "priceCurrency": "EUR" },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google My Business" }, "price": "29", "priceCurrency": "EUR" }
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Página Web Profesional"
+        },
+        "price": "15",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "SEO Local"
+        },
+        "price": "15",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Google My Business"
+        },
+        "price": "29",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      }
     ]
   }
-}
-</script>
+}</script>
 <!-- Google Analytics GA4 -->
 <script defer src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
 <script>
@@ -833,25 +876,37 @@
       <div class="proof-label">Tiempo medio de<br>entrega de la demo</div>
     </div>
     <div class="proof-card">
-      <div class="proof-num">5★</div>
-      <div class="proof-label">Opiniones reales<br>verificadas en Trustpilot</div>
+      <div class="proof-num">4,1★</div>
+      <div class="proof-label">Valoración media sobre<br>5 opiniones en Trustpilot</div>
     </div>
   </div>
-  <div class="reviews-grid">
-    <div class="review-card">
-      <div class="proof-stars">★★★★★</div>
-      <blockquote>"Angelino creó mi web rápidamente y explica todo muy bien. Cuando tienes alguna duda, siempre responde con rapidez. Recomiendo encarecidamente contactar con Angelino a cualquiera que necesite una web."</blockquote>
-      <cite>— Lee Robinson, Carpintero (La Marina)<br><span class="review-meta">Opinión verificada · traducido del inglés</span></cite>
-    </div>
-    <div class="review-card">
-      <div class="proof-stars">★★★★★</div>
-      <blockquote>"Extremadamente satisfecha con WebAutonomos. ¡Gracias por la creación de mi maravillosa web que me representa tan bien! Gracias por su reactividad y profesionalidad. Lo recomiendo sin dudarlo."</blockquote>
-      <cite>— Amelle B.<br><span class="review-meta">Opinión verificada · traducido del francés</span></cite>
-    </div>
-    <div class="review-card">
-      <div class="proof-stars">★★★★★</div>
-      <blockquote>"Me Gusto mucho el trabajo de Angelino para mi página web. El tuvo paciencia, sabe escuchar y luego concretizar. El ofrece un muy buen serviço."</blockquote>
-      <cite>— Fabiana<br><span class="review-meta">Opinión verificada</span></cite>
+    <div class="reviews-carousel">
+    <div class="reviews-track">
+      <div class="review-card">
+        <div class="proof-stars">★★★★★</div>
+        <blockquote>"Angelino creó mi web rápidamente y explica todo muy bien. Cuando tienes alguna duda, siempre responde con rapidez. Recomiendo encarecidamente contactar con Angelino a cualquiera que necesite una web."</blockquote>
+        <cite>— Lee Robinson, Carpintero<br><span class="review-meta">Opinión verificada · traducido del inglés</span></cite>
+      </div>
+      <div class="review-card">
+        <div class="proof-stars">★★★★★</div>
+        <blockquote>"Extremadamente satisfecha con WebAutonomos. ¡Gracias por la creación de mi maravillosa web que me representa tan bien! Gracias por su reactividad y profesionalidad. Lo recomiendo sin dudarlo."</blockquote>
+        <cite>— Amelle B.<br><span class="review-meta">Opinión verificada · traducido del francés</span></cite>
+      </div>
+      <div class="review-card">
+        <div class="proof-stars">★★★★★</div>
+        <blockquote>"Me Gusto mucho el trabajo de Angelino para mi página web. El tuvo paciencia, sabe escuchar y luego concretizar. El ofrece un muy buen serviço."</blockquote>
+        <cite>— Fabiana<br><span class="review-meta">Opinión verificada</span></cite>
+      </div>
+      <div class="review-card">
+        <div class="proof-stars">★★★★★</div>
+        <blockquote>"Muy buen profesional, muy atento y te ayuda en todo lo que necesitas. Me hizo la página web como quería, con todos los cambios que necesité y guiándome en todo."</blockquote>
+        <cite>— Ana Saiz, Psicóloga<br><span class="review-meta">Opinión verificada</span></cite>
+      </div>
+      <div class="review-card">
+        <div class="proof-stars">★★★★★</div>
+        <blockquote>"Muy recomendable el trabajo de Angelino en la creación de mi nueva página web. Gracias por tu paciencia y profesionalidad. Resultado impecable. Lo recomiendo."</blockquote>
+        <cite>— Begoña Cid, Hipnoterapeuta<br><span class="review-meta">Opinión verificada</span></cite>
+      </div>
     </div>
   </div>
   <p class="reviews-link">
@@ -931,6 +986,11 @@
 
 
 <!-- DOS OPCIONES DE PRECIO -->
+<section class="pricing-opts rev" id="cuanto-cuesta-h2" style="padding-bottom:0">
+  <h2>¿Cuánto cuesta una página web para psicólogos?</h2>
+  <p class="sd">Una página web profesional para una consulta de psicología cuesta 15 € al mes, sin alta y sin permanencia, o 349 € en un pago único. El precio incluye el diseño, el alojamiento, el dominio .es el primer año, el certificado SSL y el mantenimiento. No hay coste de instalación ni penalización por cancelar.</p>
+  <p class="sd"><a href="https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-autonomos-espana">Compara los precios del mercado en 2026</a> frente a agencias, freelances y constructores web.</p>
+</section>
 <section class="pricing-opts rev">
   <p class="ey">Dos formas de tener tu web</p>
   <h2>Elige la opción que más te encaje</h2>
@@ -944,7 +1004,7 @@
       <ul class="opt-features">
         <li>Diseño, hosting y dominio incluidos</li>
         <li>Mantenimiento y actualizaciones</li>
-        <li>Modificaciones ilimitadas</li>
+        <li>1 modificación al mes incluida</li>
         <li>Solo pagas cuando te convence</li>
       </ul>
       <a href="#pide-demo" class="opt-cta">Pedir mi demo gratis →</a>
