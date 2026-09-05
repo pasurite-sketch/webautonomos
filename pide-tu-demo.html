@@ -584,8 +584,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <!-- Schema.org LocalBusiness -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "WebAutonomos",
@@ -600,22 +599,55 @@
     "addressRegion": "Valencia",
     "addressCountry": "ES"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 38.820659, "longitude": -0.602125 },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.820659,
+    "longitude": -0.602125
+  },
   "telephone": "+34961877356",
   "email": "info@webautonomos.es",
   "priceRange": "€",
-  "areaServed": { "@type": "Country", "name": "Spain" },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Spain"
+  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Servicios Web",
     "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Página Web Profesional" }, "price": "15", "priceCurrency": "EUR" },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Local" }, "price": "15", "priceCurrency": "EUR" },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google My Business" }, "price": "29", "priceCurrency": "EUR" }
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Página Web Profesional"
+        },
+        "price": "15",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "SEO Local"
+        },
+        "price": "15",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Google My Business"
+        },
+        "price": "29",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      }
     ]
   }
-}
-</script>
+}</script>
 <!-- Google Analytics GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
 <script>
@@ -658,6 +690,7 @@
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
   })(window, document, "clarity", "script", "wb9354sv4p");
 </script>
+  <style>.tax-note{font-size:.85rem;color:#6b7280;margin-top:.75rem;line-height:1.5;}</style>
 </head>
 <body>
 <nav>
@@ -687,7 +720,8 @@
       <span class="pill">✓ 15€/mes todo incluido</span>
       <span class="pill">✓ Demo gratuita en 24h</span>
     </div>
-    <a class="hero-cta" href="#pide-demo">Quiero mi demo gratis →</a>
+    <p class="tax-note">Precios sin IVA. Para autónomos y empresas, el IVA es deducible.</p>
+      <a class="hero-cta" href="#pide-demo">Quiero mi demo gratis →</a>
   </div>
 </section>
 

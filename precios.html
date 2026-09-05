@@ -92,6 +92,55 @@
   .fnap a { color:rgba(255,255,255,0.55); text-decoration:none; }
   .fnap a:hover { color:rgba(255,255,255,0.85); }
 </style>
+  <style>.tax-note{font-size:.85rem;color:#6b7280;margin-top:.75rem;line-height:1.5;}</style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Página web profesional para autónomos",
+  "serviceType": "Diseño y mantenimiento de páginas web",
+  "provider": {
+    "@type": "Organization",
+    "name": "WebAutonomos",
+    "url": "https://webautonomos.es"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "ES"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Plan mensual",
+      "price": "15",
+      "priceCurrency": "EUR",
+      "valueAddedTaxIncluded": false,
+      "availability": "https://schema.org/InStock",
+      "url": "https://webautonomos.es/precios",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "15",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false,
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Pago único",
+      "price": "349",
+      "priceCurrency": "EUR",
+      "valueAddedTaxIncluded": false,
+      "availability": "https://schema.org/InStock",
+      "url": "https://webautonomos.es/precios"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -108,7 +157,8 @@
     <li>Formulario de contacto</li>
     <li>Botón de WhatsApp</li>
   </ul>
-  <h2>Servicios complementarios</h2>
+  <p class="tax-note">Precios sin IVA. Para autónomos y empresas, el IVA es deducible.</p>
+    <h2>Servicios complementarios</h2>
   <ul class="plain">
     <li>SEO Local — 15 €/mes</li>
     <li>Google My Business — 29 €/mes (alta 90 € pago único)</li>

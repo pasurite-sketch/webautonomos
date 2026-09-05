@@ -92,6 +92,55 @@
   .fnap a { color:rgba(255,255,255,0.55); text-decoration:none; }
   .fnap a:hover { color:rgba(255,255,255,0.85); }
 </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Professional website for freelancers",
+  "serviceType": "Website design and maintenance",
+  "provider": {
+    "@type": "Organization",
+    "name": "WebAutonomos",
+    "url": "https://webautonomos.es"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "ES"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Monthly plan",
+      "price": "15",
+      "priceCurrency": "EUR",
+      "valueAddedTaxIncluded": false,
+      "availability": "https://schema.org/InStock",
+      "url": "https://webautonomos.es/pricing",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "15",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false,
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "One-off payment",
+      "price": "349",
+      "priceCurrency": "EUR",
+      "valueAddedTaxIncluded": false,
+      "availability": "https://schema.org/InStock",
+      "url": "https://webautonomos.es/pricing"
+    }
+  ]
+}
+  </script>
+  <style>.tax-note{font-size:.85rem;color:#6b7280;margin-top:.75rem;line-height:1.5;}</style>
 </head>
 <body>
 
@@ -108,6 +157,7 @@
     <li>Contact form</li>
     <li>WhatsApp button</li>
   </ul>
+  <p class="tax-note">Prices exclude VAT. VAT is deductible for freelancers and companies.</p>
   <h2>Add-on services</h2>
   <ul class="plain">
     <li>Local SEO — €15/month</li>
@@ -116,7 +166,7 @@
   <p>There are no installation fees, hidden commissions or activation costs. The price you see is the price you pay, and you can cancel whenever you like: no minimum term, no penalties.</p>
   <div class="actions">
     <a class="btn btn-primary" href="/#precios">See the pricing table</a>
-    <a class="btn btn-ghost" href="/pide-tu-demo">Get my free demo</a>
+    <a class="btn btn-ghost" href="/get-your-demo">Get my free demo</a>
   </div>
 </main>
 
