@@ -309,6 +309,45 @@ def render(article, lang, alternates):
     blocks = article.get('content') or []
     headings = [b for b in blocks if b.get('type') == 'heading']
 
+    # ---- rendu d'un bloc table (ajoute le 05/09/2026)
+    # Bloc attendu : {"type": "table", "caption": "...", "headers": [...],
+    #                 "rows": [[...], [...]], "note": "..."}
+    # La premiere colonne devient un <th scope="row"> : c'est ce qui permet a
+    # Google et aux modeles de rattacher chaque valeur a son libelle.
+    def render_table(b):
+        heads = b.get('headers') or []
+        rows = b.get('rows') or []
+        cap = b.get('caption') or ''
+        note = b.get('note') or ''
+        out = ['            <div class="overflow-x-auto my-8">',
+               '                <table class="w-full text-sm border-collapse">']
+        if cap:
+            out.append('                    <caption class="caption-top text-left '
+                       'text-base font-semibold text-gray-900 mb-3">%s</caption>' % E(cap))
+        if heads:
+            out.append('                    <thead><tr class="bg-gray-50">')
+            for i, h in enumerate(heads):
+                out.append('                        <th scope="col" class="%s px-4 py-3 '
+                           'font-semibold text-gray-900 border-b border-gray-200">%s</th>'
+                           % ('text-left' if i == 0 else 'text-center', E(h)))
+            out.append('                    </tr></thead>')
+        out.append('                    <tbody>')
+        for r in rows:
+            out.append('                        <tr class="border-b border-gray-100">')
+            for i, c in enumerate(r):
+                if i == 0:
+                    out.append('                            <th scope="row" class="text-left '
+                               'px-4 py-3 font-medium text-gray-800">%s</th>' % E(c))
+                else:
+                    out.append('                            <td class="text-center px-4 py-3 '
+                               'text-gray-700">%s</td>' % E(c))
+            out.append('                        </tr>')
+        out.extend(['                    </tbody>', '                </table>'])
+        if note:
+            out.append('                <p class="text-xs text-gray-500 mt-3">%s</p>' % E(note))
+        out.append('            </div>')
+        return chr(10).join(out)
+
     # ---- corps + sommaire
     toc, body, n = [], [], 0
     for b in blocks:
@@ -323,6 +362,8 @@ def render(article, lang, alternates):
             body.append('            <p class="text-lg text-gray-700 leading-relaxed mb-6">%s</p>' % E(text))
         elif kind == 'conclusion':
             body.append('            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">%s</p>' % E(text))
+        elif kind == 'table':
+            body.append(render_table(b))
         else:
             body.append('            <p class="text-gray-700 leading-relaxed mb-4">%s</p>' % E(text))
     toc.append('                    <li><a href="#faq" class="toc-link">%s</a></li>' % E(ui['faq']))
@@ -354,7 +395,11 @@ def render(article, lang, alternates):
                       "url": BASE,
                       "logo": {"@type": "ImageObject", "url": BASE + "/logo.png"}},
         "datePublished": published + "T08:00:00+01:00",
-        "dateModified": published + "T08:00:00+01:00",
+        # Un article refondu doit annoncer sa vraie date de revision : sans le
+        # champ "updated", dateModified restait colle a datePublished et aucun
+        # signal de fraicheur ne partait vers Google.
+        "dateModified": iso_date(article.get('updated') or article.get('date'))
+                        + "T08:00:00+01:00",
         "mainEntityOfPage": {"@type": "WebPage", "@id": url},
         "articleSection": cat_label,
         "inLanguage": HTML_LANG[lang],
