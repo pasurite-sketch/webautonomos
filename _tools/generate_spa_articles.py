@@ -319,33 +319,73 @@ def render(article, lang, alternates):
         rows = b.get('rows') or []
         cap = b.get('caption') or ''
         note = b.get('note') or ''
-        out = ['            <div class="overflow-x-auto my-8">',
-               '                <table class="w-full text-sm border-collapse">']
+        # Colonne mise en avant : "highlight" (index) si present, sinon celle
+        # dont l'en-tete contient WebAutonomos, sinon aucune.
+        hl = b.get('highlight')
+        if hl is None:
+            hl = next((k for k, h in enumerate(heads) if 'webautonomos' in h.lower()), None)
+        badge = {'es': 'Nuestra oferta', 'val': 'La nostra oferta',
+                 'en': 'Our offer', 'fr': 'Notre offre'}.get(lang, '')
+        last = len(rows) - 1
+
+        out = ['            <figure class="my-10">']
         if cap:
-            out.append('                    <caption class="caption-top text-left '
-                       'text-base font-semibold text-gray-900 mb-3">%s</caption>' % E(cap))
+            out.append('                <figcaption class="flex items-center gap-3 mb-4">'
+                       '<span class="inline-block w-1.5 h-6 rounded-full gradient-wa"></span>'
+                       '<span class="text-lg font-bold text-gray-900">%s</span></figcaption>'
+                       % E(cap))
+        out.append('                <div class="overflow-x-auto rounded-2xl ring-1 ring-gray-200 '
+                   'shadow-sm bg-white">')
+        out.append('                <table class="w-full min-w-[640px] text-sm border-separate '
+                   'border-spacing-0">')
+        if cap:
+            out.append('                    <caption class="sr-only">%s</caption>' % E(cap))
         if heads:
-            out.append('                    <thead><tr class="bg-gray-50">')
-            for i, h in enumerate(heads):
-                out.append('                        <th scope="col" class="%s px-4 py-3 '
-                           'font-semibold text-gray-900 border-b border-gray-200">%s</th>'
-                           % ('text-left' if i == 0 else 'text-center', E(h)))
+            out.append('                    <thead><tr>')
+            for k, h in enumerate(heads):
+                if k == 0:
+                    cls = 'sticky left-0 z-10 bg-gray-50 text-left text-gray-900'
+                elif k == hl:
+                    cls = 'bg-blue-50 text-center text-blue-700'
+                else:
+                    cls = 'bg-gray-50 text-center text-gray-900'
+                inner = E(h)
+                if k == hl and badge:
+                    inner = ('<span class="block text-[10px] font-semibold uppercase '
+                             'tracking-wider text-blue-600 mb-1">%s</span>%s' % (E(badge), inner))
+                out.append('                        <th scope="col" class="%s px-4 py-4 font-semibold '
+                           'border-b border-gray-200 align-bottom">%s</th>' % (cls, inner))
             out.append('                    </tr></thead>')
         out.append('                    <tbody>')
-        for r in rows:
-            out.append('                        <tr class="border-b border-gray-100">')
-            for i, c in enumerate(r):
-                if i == 0:
-                    out.append('                            <th scope="row" class="text-left '
-                               'px-4 py-3 font-medium text-gray-800">%s</th>' % E(c))
+        for ri, r in enumerate(rows):
+            total = (ri == last and last > 0)
+            out.append('                        <tr class="%s">'
+                       % ('bg-gray-50/70' if total else 'hover:bg-gray-50/60'))
+            for k, c in enumerate(r):
+                border = 'border-t-2 border-gray-200' if total else 'border-b border-gray-100'
+                if k == 0:
+                    tag, close = 'th scope="row"', 'th'
+                    cls = ('sticky left-0 z-10 text-left ' +
+                           ('bg-gray-50 font-bold text-gray-900' if total
+                            else 'bg-white font-medium text-gray-800'))
+                elif k == hl:
+                    tag = close = 'td'
+                    cls = 'bg-blue-50/60 text-center ' + (
+                        'font-bold text-blue-700 text-base' if total
+                        else 'font-medium text-gray-900')
                 else:
-                    out.append('                            <td class="text-center px-4 py-3 '
-                               'text-gray-700">%s</td>' % E(c))
+                    tag = close = 'td'
+                    cls = 'text-center ' + ('font-semibold text-gray-900' if total
+                                            else 'text-gray-700')
+                out.append('                            <%s class="%s %s px-4 py-3.5 leading-snug">'
+                           '%s</%s>' % (tag, cls, border, E(c), close))
             out.append('                        </tr>')
-        out.extend(['                    </tbody>', '                </table>'])
+        out.extend(['                    </tbody>', '                </table>',
+                    '                </div>'])
         if note:
-            out.append('                <p class="text-xs text-gray-500 mt-3">%s</p>' % E(note))
-        out.append('            </div>')
+            out.append('                <p class="mt-3 text-xs text-gray-500 leading-relaxed">%s</p>'
+                       % E(note))
+        out.append('            </figure>')
         return chr(10).join(out)
 
     # ---- corps + sommaire
