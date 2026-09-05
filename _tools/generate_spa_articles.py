@@ -114,32 +114,32 @@ UI = {
     'es': dict(home='Inicio', blog='Blog', back='← Volver al blog',
                toc='📑 Contenido del artículo', faq='Preguntas frecuentes',
                read='min de lectura', cta_title='¿Quieres una web así para tu negocio?',
-               cta_text='Páginas web profesionales desde 15 €/mes · Sin permanencia',
-               cta_btn='Pedir presupuesto gratis →', author_desc=
+               cta_text='Páginas web profesionales por 15 €/mes · Sin alta · Sin permanencia',
+               cta_btn='Pedir gratis la demo de tu web →', cta_href='/pide-tu-demo', author_desc=
                'Agencia web especializada en autónomos de la Comunidad Valenciana. '
                'Páginas web profesionales desde 15 €/mes, sin permanencia.',
                legal='Aviso legal', privacy='Privacidad', contact='Contacto'),
     'val': dict(home='Inici', blog='Blog', back='← Tornar al blog',
                 toc='📑 Contingut de l\'article', faq='Preguntes freqüents',
                 read='min de lectura', cta_title='Vols una web així per al teu negoci?',
-                cta_text='Pàgines web professionals des de 15 €/mes · Sense permanència',
-                cta_btn='Demanar pressupost gratis →', author_desc=
+                cta_text='Pàgines web professionals per 15 €/mes · Sense alta · Sense permanència',
+                cta_btn='Demana gratis la demo de la teua web →', cta_href='/pide-tu-demo', author_desc=
                 'Agència web especialitzada en autònoms de la Comunitat Valenciana. '
                 'Pàgines web professionals des de 15 €/mes, sense permanència.',
                 legal='Avís legal', privacy='Privacitat', contact='Contacte'),
     'en': dict(home='Home', blog='Blog', back='← Back to the blog',
                toc='📑 Article contents', faq='Frequently asked questions',
                read='min read', cta_title='Want a website like this for your business?',
-               cta_text='Professional websites from €15/month · No commitment',
-               cta_btn='Get a free quote →', author_desc=
+               cta_text='Professional websites for €15/month · No setup fee · No commitment',
+               cta_btn='Get a free demo of your website →', cta_href='/get-your-demo', author_desc=
                'Web agency specialising in freelancers across the Valencian Community. '
                'Professional websites from €15/month, no commitment.',
                legal='Legal notice', privacy='Privacy', contact='Contact'),
     'fr': dict(home='Accueil', blog='Blog', back='← Retour au blog',
                toc='📑 Sommaire de l\'article', faq='Questions fréquentes',
                read='min de lecture', cta_title='Vous voulez un site comme celui-ci ?',
-               cta_text='Sites web professionnels à partir de 15 €/mois · Sans engagement',
-               cta_btn='Demander un devis gratuit →', author_desc=
+               cta_text='Sites web professionnels pour 15 €/mois · Sans frais d\'ouverture · Sans engagement',
+               cta_btn='Demander gratuitement la démo de votre site →', cta_href='/demandez-votre-demo', author_desc=
                'Agence web spécialisée dans les indépendants de la Communauté valencienne. '
                'Sites web professionnels à partir de 15 €/mois, sans engagement.',
                legal='Mentions légales', privacy='Confidentialité', contact='Contact'),
@@ -564,7 +564,7 @@ def render(article, lang, alternates):
         <div class="gradient-wa rounded-2xl p-8 text-center text-white mt-12">
             <h2 class="text-2xl font-bold mb-3">{cta_title}</h2>
             <p class="mb-6 opacity-90">{cta_text}</p>
-            <a href="{base}/contacto" style="background:white; color:#2563eb; padding:14px 30px; border-radius:999px; font-weight:600; text-decoration:none; display:inline-block;">{cta_btn}</a>
+            <a href="{base}{cta_href}" style="background:white; color:#2563eb; padding:14px 30px; border-radius:999px; font-weight:600; text-decoration:none; display:inline-block;">{cta_btn}</a>
         </div>
 
         <div class="flex items-center gap-4 mt-12 bg-white rounded-2xl p-6 shadow-sm">
@@ -594,7 +594,8 @@ def render(article, lang, alternates):
         read=read, read_label=E(ui['read']), title=E(title),
         toc_label=E(ui['toc']), toc="\n".join(toc), body="\n".join(body),
         faq_section=faq_section, cta_title=E(ui['cta_title']), cta_text=E(ui['cta_text']),
-        cta_btn=E(ui['cta_btn']), author_desc=E(ui['author_desc']), back=E(ui['back']),
+        cta_btn=E(ui['cta_btn']), cta_href=ui.get('cta_href', '/pide-tu-demo'),
+        author_desc=E(ui['author_desc']), back=E(ui['back']),
         footer=FOOTER.format(base=BASE, legal=E(ui['legal']),
                              privacy=E(ui['privacy']), contact=E(ui['contact'])),
     )
@@ -603,6 +604,33 @@ def render(article, lang, alternates):
 # --------------------------------------------------------------------------
 # 5. Point d'entree
 # --------------------------------------------------------------------------
+
+
+def alternates_disque(connus):
+    """Complete les alternates avec les fichiers presents mais absents des donnees.
+
+    On lit les hreflang declares par une variante connue et on retient ceux dont
+    le fichier existe reellement. Rien n'est invente : une declaration sans
+    fichier sur le disque est ignoree.
+    """
+    trouves = {}
+    for sl in connus.values():
+        chemin = os.path.join(ROOT, 'blog', sl + '.html')
+        if not os.path.exists(chemin):
+            continue
+        with open(chemin, encoding='utf-8', errors='replace') as fh:
+            html = fh.read()
+        for balise in re.findall(r'<link[^>]+rel="alternate"[^>]*>', html):
+            tag = re.search(r'hreflang="([^"]+)"', balise)
+            href = re.search(r'href="[^"]*?/blog/(es|val|en|fr)/([^"?#]+)"', balise)
+            if not tag or not href or tag.group(1) == 'x-default':
+                continue
+            lang2, slug2 = href.group(1), href.group(2)
+            if lang2 in connus or lang2 in trouves:
+                continue
+            if os.path.exists(os.path.join(ROOT, 'blog', lang2, slug2 + '.html')):
+                trouves[lang2] = '%s/%s' % (lang2, slug2)
+    return trouves
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
@@ -669,7 +697,13 @@ def main():
             skipped += 1
             continue
         _, base = split_slug(slug)
-        alternates = by_id.get(art.get('id')) or by_base.get(base, {})
+        alternates = dict(by_id.get(art.get('id')) or by_base.get(base, {}))
+        # 44 articles francais existent sur le disque sans figurer dans les
+        # donnees du SPA : produits par un gabarit anterieur, jamais reintegres.
+        # Sans ce complement, chaque page du groupe perdait son hreflang "fr" a
+        # la regeneration. Meme approche que link_by_hreflang() dans
+        # generate_sitemap.py : le disque fait foi quand les donnees sont muettes.
+        alternates.update(alternates_disque(alternates))
         try:
             page = render(art, lang, alternates)
         except Exception as exc:                     # noqa: BLE001
