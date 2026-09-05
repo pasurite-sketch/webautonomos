@@ -53,7 +53,7 @@
       "pillar": true,
       "status": "published_spa",
       "notes": "Article pilier du silo Presencia Digital. Exemples concrets d'artisans de Valencia. [EXISTANT DANS SPA - NE PAS RÉGÉNÉRER]",
-      "url_es": "/blog/5-razones-pagina-web-negocio-2026"
+      "url_es": "/blog/es/5-razones-pagina-web-negocio-2026"
     },
     {
       "id": 2,
@@ -73,7 +73,7 @@
       "pillar": true,
       "status": "published_spa",
       "notes": "Article pilier du silo GMB. Tutoriel pas à pas. [EXISTANT DANS SPA - NE PAS RÉGÉNÉRER]",
-      "url_es": "/blog/como-aparecer-google-maps-autonomos"
+      "url_es": "/blog/es/como-aparecer-google-maps-autonomos"
     },
     {
       "id": 3,
@@ -93,7 +93,7 @@
       "pillar": true,
       "status": "published_spa",
       "notes": "Article pilier du silo SEO Local. Focus electricistas/fontaneros. [EXISTANT DANS SPA - NE PAS RÉGÉNÉRER]",
-      "url_es": "/blog/seo-local-que-es-autonomos"
+      "url_es": "/blog/es/seo-local-que-es-autonomos"
     },
     {
       "id": 4,
@@ -132,7 +132,7 @@
       "pillar": false,
       "status": "published_spa",
       "notes": "Comparatif prix. Positionner le modèle 15€/mois comme optimal. [EXISTANT DANS SPA - NE PAS RÉGÉNÉRER]",
-      "url_es": "/blog/cuanto-cuesta-pagina-web-autonomos-espana"
+      "url_es": "/blog/es/cuanto-cuesta-pagina-web-autonomos-espana"
     },
     {
       "id": 6,
@@ -152,7 +152,7 @@
       "pillar": false,
       "status": "published_spa",
       "notes": "Très actionable. Templates WhatsApp pour demander avis. [EXISTANT DANS SPA - NE PAS RÉGÉNÉRER]",
-      "url_es": "/blog/como-conseguir-resenas-google-negocio"
+      "url_es": "/blog/es/como-conseguir-resenas-google-negocio"
     },
     {
       "id": 7,
@@ -191,7 +191,7 @@
       "pillar": false,
       "status": "published_spa",
       "notes": "Tutoriel pratique. Lien avec le bouton WhatsApp des sites. [EXISTANT DANS SPA - NE PAS RÉGÉNÉRER]",
-      "url_es": "/blog/configurar-whatsapp-business-gratis-autonomos"
+      "url_es": "/blog/es/configurar-whatsapp-business-gratis-autonomos"
     },
     {
       "id": 9,

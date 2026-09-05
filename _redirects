@@ -200,3 +200,19 @@
 /blog/en/web-para-psicologos-terapeutas/  /blog/en/website-for-psychologists-and-therapists   301
 /blog/en/web-para-tatuadores-estudio-tattoo   /blog/en/website-for-tattoo-artists   301
 /blog/en/web-para-tatuadores-estudio-tattoo/  /blog/en/website-for-tattoo-artists   301
+
+# Consolidation des 6 slugs herites blog/*.html vers blog/es/*.html (05/09/2026).
+# Les fichiers sont supprimes dans le meme commit : sans ces regles, les URL
+# indexees — dont /blog/cuanto-cuesta-... a 1749 impressions — feraient 404.
+/blog/5-razones-pagina-web-negocio-2026   /blog/es/5-razones-pagina-web-negocio-2026   301
+/blog/5-razones-pagina-web-negocio-2026/  /blog/es/5-razones-pagina-web-negocio-2026   301
+/blog/como-aparecer-google-maps-autonomos   /blog/es/como-aparecer-google-maps-autonomos   301
+/blog/como-aparecer-google-maps-autonomos/  /blog/es/como-aparecer-google-maps-autonomos   301
+/blog/como-conseguir-resenas-google-negocio   /blog/es/como-conseguir-resenas-google-negocio   301
+/blog/como-conseguir-resenas-google-negocio/  /blog/es/como-conseguir-resenas-google-negocio   301
+/blog/configurar-whatsapp-business-gratis-autonomos   /blog/es/configurar-whatsapp-business-gratis-autonomos   301
+/blog/configurar-whatsapp-business-gratis-autonomos/  /blog/es/configurar-whatsapp-business-gratis-autonomos   301
+/blog/cuanto-cuesta-pagina-web-autonomos-espana   /blog/es/cuanto-cuesta-pagina-web-autonomos-espana   301
+/blog/cuanto-cuesta-pagina-web-autonomos-espana/  /blog/es/cuanto-cuesta-pagina-web-autonomos-espana   301
+/blog/seo-local-que-es-autonomos   /blog/es/seo-local-que-es-autonomos   301
+/blog/seo-local-que-es-autonomos/  /blog/es/seo-local-que-es-autonomos   301

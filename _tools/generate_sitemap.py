@@ -300,8 +300,13 @@ def build(files, grps, pages, previous, stats):
                      '0.9', changefreq='weekly'))
 
     for g in grps:
-        lang = next(l for l in LOC_ORDER if l in g)
-        loc = '%s/blog/%s/%s' % (BASE, lang, g[lang])
+        # Modele B (05/09/2026) : une entree <url> par variante linguistique. En modele A,
+        # seule la version espagnole portait une <loc> ; les 151 URL EN, FR et
+        # VAL n'existaient qu'en xhtml:link et n'etaient donc jamais soumises a
+        # l'indexation. Cause directe des 28 articles EN et VAL « explores,
+        # actuellement non indexes » releves le 05/09/2026.
+        xdef_lang = next(l for l in LOC_ORDER if l in g)
+        xdef = '%s/blog/%s/%s' % (BASE, xdef_lang, g[xdef_lang])
         alts = []
         if len(g) > 1:
             # Un groupe d'un seul membre n'a rien a declarer : un hreflang
@@ -309,9 +314,13 @@ def build(files, grps, pages, previous, stats):
             for l in LANGS:
                 if l in g:
                     alts.append((HREFLANG[l], '%s/blog/%s/%s' % (BASE, l, g[l])))
-            alts.append(('x-default', loc))
-        out.append(block(loc, lastmod_for(loc, files[(lang, g[lang])], previous),
-                         '0.7', alts))
+            alts.append(('x-default', xdef))
+        for l in LOC_ORDER:
+            if l not in g:
+                continue
+            loc = '%s/blog/%s/%s' % (BASE, l, g[l])
+            out.append(block(loc, lastmod_for(loc, files[(l, g[l])], previous),
+                             '0.7' if l == xdef_lang else '0.6', alts))
 
     for url, path in pages:
         out.append(block(BASE + url, lastmod_for(BASE + url, path, previous), '0.8'))
