@@ -1,0 +1,36 @@
+# WebAutonomos
+
+> Agencia web española que crea y mantiene páginas web para autónomos y pequeños
+> negocios por 15 €/mes sin alta ni permanencia, con entrega en 24 horas.
+
+## Oferta
+- Plan mensual: 15 €/mes sin alta, sin permanencia (precios sin IVA)
+- Alternativa: 349 € pago único
+- Incluido: dominio .es el primer año, alojamiento, certificado SSL,
+  mantenimiento, una modificación al mes tras el lanzamiento
+- Entrega: 24 horas
+- Idiomas: castellano, valenciano, inglés, francés
+- Servicios complementarios: SEO Local 15 €/mes; Google Business Profile
+  29 €/mes con alta de 90 € pago único
+
+## Páginas principales
+- [Precios](https://webautonomos.es/precios)
+- [Servicios](https://webautonomos.es/servicios)
+- [Preguntas frecuentes](https://webautonomos.es/preguntas)
+- [Pedir una demo](https://webautonomos.es/pide-tu-demo)
+- [Cuánto cuesta una página web para autónomos en 2026](https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-autonomos-espana)
+- [Blog](https://webautonomos.es/blog/)
+
+## Webs por sector
+- [Psicólogos](https://webautonomos.es/psicologos)
+- [Dentistas](https://webautonomos.es/dentistas)
+- [Fisioterapeutas](https://webautonomos.es/fisioterapeutas)
+- [Electricistas](https://webautonomos.es/electricistas)
+- [Fontaneros](https://webautonomos.es/fontaneros)
+- [Carpinteros](https://webautonomos.es/carpinteros)
+- [Empresas de reformas](https://webautonomos.es/reformas)
+
+## Empresa
+PASURITE SLU — NIF ESB42890012
+Calle Pintor Josep Segrelles 26, 46870 Ontinyent, Valencia, España
+Teléfono: +34 961 877 356 — info@webautonomos.es
