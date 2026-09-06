@@ -111,7 +111,7 @@ OG_LOCALE = {'es': 'es_ES', 'val': 'ca_ES', 'en': 'en_US', 'fr': 'fr_FR'}
 
 # Libelles d'interface
 UI = {
-    'es': dict(home='Inicio', blog='Blog', back='← Volver al blog',
+    'es': dict(home='Inicio', sectors='Webs por sector', sector_q='¿Trabajas en este sector?', sector_link='Ver la web para {name} →', blog='Blog', back='← Volver al blog',
                toc='📑 Contenido del artículo', faq='Preguntas frecuentes',
                read='min de lectura', cta_title='¿Quieres una web así para tu negocio?',
                cta_text='Páginas web profesionales por 15 €/mes · Sin alta · Sin permanencia',
@@ -119,7 +119,7 @@ UI = {
                'Agencia web especializada en autónomos de la Comunidad Valenciana. '
                'Páginas web profesionales desde 15 €/mes, sin permanencia.',
                legal='Aviso legal', privacy='Privacidad', contact='Contacto'),
-    'val': dict(home='Inici', blog='Blog', back='← Tornar al blog',
+    'val': dict(home='Inici', sectors='Webs per sector', sector_q='Treballes en aquest sector?', sector_link='Veure la web per a {name} →', blog='Blog', back='← Tornar al blog',
                 toc='📑 Contingut de l\'article', faq='Preguntes freqüents',
                 read='min de lectura', cta_title='Vols una web així per al teu negoci?',
                 cta_text='Pàgines web professionals per 15 €/mes · Sense alta · Sense permanència',
@@ -127,7 +127,7 @@ UI = {
                 'Agència web especialitzada en autònoms de la Comunitat Valenciana. '
                 'Pàgines web professionals des de 15 €/mes, sense permanència.',
                 legal='Avís legal', privacy='Privacitat', contact='Contacte'),
-    'en': dict(home='Home', blog='Blog', back='← Back to the blog',
+    'en': dict(home='Home', sectors='Websites by trade', sector_q='', sector_link='', blog='Blog', back='← Back to the blog',
                toc='📑 Article contents', faq='Frequently asked questions',
                read='min read', cta_title='Want a website like this for your business?',
                cta_text='Professional websites for €15/month · No setup fee · No commitment',
@@ -135,7 +135,7 @@ UI = {
                'Web agency specialising in freelancers across the Valencian Community. '
                'Professional websites from €15/month, no commitment.',
                legal='Legal notice', privacy='Privacy', contact='Contact'),
-    'fr': dict(home='Accueil', blog='Blog', back='← Retour au blog',
+    'fr': dict(home='Accueil', sectors='Sites par métier', sector_q='', sector_link='', blog='Blog', back='← Retour au blog',
                toc='📑 Sommaire de l\'article', faq='Questions fréquentes',
                read='min de lecture', cta_title='Vous voulez un site comme celui-ci ?',
                cta_text='Sites web professionnels pour 15 €/mois · Sans frais d\'ouverture · Sans engagement',
@@ -269,6 +269,10 @@ FOOTER = """    <footer style="background:linear-gradient(135deg,#1a3a8f 0%,#1a7
             <a href="{base}/privacidad" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{privacy}</a>
             <a href="{base}/contacto" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{contact}</a>
         </div>
+        <nav aria-label="{sectors_label}" style="flex-basis:100%; order:2; display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center; font-size:0.85rem;">
+            <span style="color:rgba(255,255,255,0.7);">{sectors_label}:</span>
+            {sector_links}
+        </nav>
         <address style="flex-basis:100%; order:3; margin-top:4px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.12); font-style:normal; font-size:0.78rem; line-height:1.7; color:rgba(255,255,255,0.55); display:flex; flex-direction:column; gap:1px;">
             <strong>WebAutonomos</strong>
             <span>Calle Pintor Josep Segrelles, 26</span>
@@ -561,6 +565,7 @@ def render(article, lang, alternates):
 {body}
         </div>
 {faq_section}
+{sector_cta}
         <div class="gradient-wa rounded-2xl p-8 text-center text-white mt-12">
             <h2 class="text-2xl font-bold mb-3">{cta_title}</h2>
             <p class="mb-6 opacity-90">{cta_text}</p>
@@ -593,11 +598,14 @@ def render(article, lang, alternates):
         home=E(ui['home']), blog=E(ui['blog']), date_raw=E(article.get('date') or published),
         read=read, read_label=E(ui['read']), title=E(title),
         toc_label=E(ui['toc']), toc="\n".join(toc), body="\n".join(body),
-        faq_section=faq_section, cta_title=E(ui['cta_title']), cta_text=E(ui['cta_text']),
+        faq_section=faq_section, sector_cta=sector_cta_html(article.get('slug', ''), lang),
+        cta_title=E(ui['cta_title']), cta_text=E(ui['cta_text']),
         cta_btn=E(ui['cta_btn']), cta_href=ui.get('cta_href', '/pide-tu-demo'),
         author_desc=E(ui['author_desc']), back=E(ui['back']),
         footer=FOOTER.format(base=BASE, legal=E(ui['legal']),
-                             privacy=E(ui['privacy']), contact=E(ui['contact'])),
+                             privacy=E(ui['privacy']), contact=E(ui['contact']),
+                             sectors_label=E(ui['sectors']),
+                             sector_links=sector_links_html(lang)),
     )
 
 
@@ -631,6 +639,59 @@ def alternates_disque(connus):
             if os.path.exists(os.path.join(ROOT, 'blog', lang2, slug2 + '.html')):
                 trouves[lang2] = '%s/%s' % (lang2, slug2)
     return trouves
+
+
+# Les 7 pages secteur n'existaient qu'en espagnol et ne recevaient aucun lien
+# interne (audit du 05/09/2026 : 0 lien entrant sur /psicologos). Chaque
+# article les lie depuis son pied de page ; les articles sectoriels ES/VAL
+# ajoutent un lien contextuel. Anchor text traduit, cible espagnole.
+SECTORS = [
+    ('psicologos',      ('psicol', 'psycho', 'psicoleg'),
+     {'es': 'Psicólogos', 'val': 'Psicòlegs', 'en': 'Psychologists', 'fr': 'Psychologues'}),
+    ('dentistas',       ('dentist', 'dental'),
+     {'es': 'Dentistas', 'val': 'Dentistes', 'en': 'Dentists', 'fr': 'Dentistes'}),
+    ('fisioterapeutas', ('fisio', 'physio', 'kine'),
+     {'es': 'Fisioterapeutas', 'val': 'Fisioterapeutes', 'en': 'Physiotherapists', 'fr': 'Kinésithérapeutes'}),
+    ('electricistas',   ('electric',),
+     {'es': 'Electricistas', 'val': 'Electricistes', 'en': 'Electricians', 'fr': 'Électriciens'}),
+    ('fontaneros',      ('fontaner', 'plumb', 'plomb'),
+     {'es': 'Fontaneros', 'val': 'Fontaners', 'en': 'Plumbers', 'fr': 'Plombiers'}),
+    ('carpinteros',     ('carpint', 'carpent', 'menuis', 'fuster'),
+     {'es': 'Carpinteros', 'val': 'Fusters', 'en': 'Carpenters', 'fr': 'Menuisiers'}),
+    ('reformas',        ('reform', 'renov'),
+     {'es': 'Reformas', 'val': 'Reformes', 'en': 'Renovations', 'fr': 'Rénovation'}),
+]
+
+
+def sector_links_html(lang):
+    """Liste des 7 liens pour le pied de page."""
+    return ' · '.join(
+        '<a href="%s/%s" style="color:rgba(255,255,255,0.85); text-decoration:none;">%s</a>'
+        % (BASE, key, E(names.get(lang, names['es'])))
+        for key, _, names in SECTORS)
+
+
+def sector_cta_html(slug, lang):
+    """Bloc contextuel pour les articles sectoriels, ES et VAL seulement :
+    les pages cibles sont en espagnol, un lecteur anglais ou francais y
+    serait mal recu."""
+    ui = UI[lang]
+    if not ui.get('sector_q'):
+        return ''
+    low = slug.lower()
+    hits = [(key, names) for key, pats, names in SECTORS if any(pt in low for pt in pats)]
+    if not hits:
+        return ''
+    links = ''.join(
+        '<a href="%s/%s" style="display:inline-block; margin:6px 8px 0 0; color:#2563eb; '
+        'font-weight:600; text-decoration:none;">%s</a>'
+        % (BASE, key, E(ui['sector_link'].format(name=names[lang].lower())))
+        for key, names in hits)
+    return ('        <div style="background:#f0f7f6; border:1.5px solid #cfe5e0; border-radius:14px; '
+            'padding:18px 22px; margin-top:28px;">\n'
+            '            <p style="margin:0; font-weight:700; color:#12263f;">%s</p>\n'
+            '            %s\n        </div>' % (E(ui['sector_q']), links))
+
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
