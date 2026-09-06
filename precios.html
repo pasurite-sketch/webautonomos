@@ -141,7 +141,7 @@
   ]
 }
   </script>
-  <style>.cmp-wrap{margin:16px 0 8px}.cmp{width:100%;table-layout:fixed;border-collapse:collapse;font-size:.8rem;line-height:1.35}.cmp th,.cmp td{padding:8px 5px;border-bottom:1px solid #e5e7eb;text-align:center;vertical-align:top;word-break:break-word;hyphens:auto}.cmp col.lbl{width:19%}.cmp col.c{width:16.2%}.cmp td:first-child{text-align:left;font-weight:600;font-size:.82rem}.cmp thead th{background:#f3f4f6;font-weight:700;font-size:.82rem}.cmp .me{background:#eff6ff}@media(max-width:760px){.cmp-wrap{overflow-x:auto}.cmp{table-layout:auto;min-width:640px}}</style>
+  <style>.cmp-wrap{margin:16px 0 8px}.cmp{width:100%;table-layout:fixed;border-collapse:collapse;font-size:.8rem;line-height:1.35}.cmp th,.cmp td{padding:8px 5px;border-bottom:1px solid #e5e7eb;text-align:center;vertical-align:top;word-break:break-word;hyphens:auto}.cmp col.lbl{width:19%}.cmp col.c{width:16.2%}.cmp td:first-child{text-align:left;font-weight:600;font-size:.82rem}.cmp thead th{background:#f3f4f6;font-weight:700;font-size:.82rem}.cmp .me{background:#eff6ff}.cmp thead th{word-break:normal;overflow-wrap:normal;hyphens:none;font-size:.78rem}.cmp col.lbl{width:16%}.cmp col.c{width:16.8%}.cmp thead th{font-size:.8rem;padding-left:4px;padding-right:2px;letter-spacing:-.01em}@media(max-width:760px){.cmp-wrap{overflow-x:auto}.cmp{table-layout:auto;min-width:640px}}</style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -174,6 +174,7 @@
   ]
 }
   </script>
+  <style>.calc-bar{font-size:.82rem;color:#374151;margin:14px 0 6px}#calc-rate,.hin{width:4.4em;padding:3px 5px;border:1px solid #cbd5e1;border-radius:6px;font:inherit;font-size:.82rem;text-align:center}.cmp .tot td{border-top:2px solid #cbd5e1;font-size:.9rem}.calc-note{font-size:.78rem;color:#6b7280;margin:6px 0 0;line-height:1.5}</style>
 </head>
 <body>
 
@@ -196,9 +197,10 @@
   <h2>¿Cuál es el precio del diseño de una página web profesional?</h2>
   <p>Depende de quién hace el trabajo y de lo que pagas a partir del segundo año. Una agencia cobra entre 1.000 y 6.000 € más mantenimiento; un freelance, entre 500 y 1.200 €; en un constructor como Wix o Hostinger la haces tú y el precio promocional sube en la renovación. Precios de tarifa sin IVA, consultados el 5 de septiembre de 2026.</p>
   <div class="cmp-wrap">
-  <table class="cmp">
+  <p class="calc-bar">Calcula con tu tarifa por hora: <input id="calc-rate" type="number" min="0" step="5" value="25"> &euro;/h</p>
+  <table class="cmp" data-loc="es-ES">
     <colgroup><col class="lbl"><col class="c"><col class="c"><col class="c"><col class="c"><col class="c"></colgroup>
-    <thead><tr><th></th><th class="me">WebAutonomos<br><span style="font-weight:500;font-size:.8rem">15 €/mes</span></th><th class="me">WebAutonomos<br><span style="font-weight:500;font-size:.8rem">349 € pago único</span></th><th>IONOS Diseño S</th><th>Wix Core</th><th>Hostinger Premium</th></tr></thead>
+    <thead><tr><th></th><th class="me">Nosotros<br><span style="font-weight:500;font-size:.8rem">15 €/mes</span></th><th class="me">Nosotros<br><span style="font-weight:500;font-size:.8rem">349 € pago único</span></th><th>IONOS<br>Diseño S</th><th>Wix Core</th><th>Hostinger<br>Premium</th></tr></thead>
     <tbody>
       <tr><td>Quién la hace</td><td class="me">Nosotros</td><td class="me">Nosotros</td><td>IONOS</td><td>Tú</td><td>Tú</td></tr>
       <tr><td>Pago inicial</td><td class="me">0 €</td><td class="me">349 €</td><td>199 €</td><td>0 €</td><td>0 €</td></tr>
@@ -207,9 +209,11 @@
       <tr><td>Hosting y SSL</td><td class="me">Incluidos siempre</td><td class="me">Incluidos siempre</td><td>Incluidos</td><td>Incluidos</td><td>Incluidos</td></tr>
       <tr><td>Permanencia</td><td class="me">Ninguna</td><td class="me">Ninguna</td><td>Según contrato</td><td>12 meses</td><td>48 meses</td></tr>
       <tr><td>Modificaciones</td><td class="me">1 al mes</td><td class="me">Ilimitadas 30 d.</td><td>1 por trimestre</td><td>Tú mismo</td><td>Tú mismo</td></tr>
-      <tr><td>Coste a 24 meses<br>(dominio incl.)</td><td class="me"><strong>372 €</strong></td><td class="me"><strong>361 €</strong></td><td><strong>1.069 €</strong></td><td><strong>492 €</strong> + tu tiempo</td><td><strong>84 €</strong><br>+ tu tiempo</td></tr>
+      <tr><td>Horas de tu tiempo</td><td class="me">0,5 h</td><td class="me">0,5 h</td><td class=""><input class="hin" data-col="3" type="number" min="0" step="0.5" value="2" aria-label="Horas de tu tiempo"> h</td><td class=""><input class="hin" data-col="4" type="number" min="0" step="0.5" value="20" aria-label="Horas de tu tiempo"> h</td><td class=""><input class="hin" data-col="5" type="number" min="0" step="0.5" value="27" aria-label="Horas de tu tiempo"> h</td></tr>
+      <tr class="tot"><td>Coste real a 24 meses<br>(con tu tiempo)</td><td class="me" data-col="1" data-base="372" data-h="0.5"><strong>384 &euro;</strong></td><td class="me" data-col="2" data-base="361" data-h="0.5"><strong>374 &euro;</strong></td><td class="" data-col="3" data-base="1069"><strong>1.119 &euro;</strong></td><td class="" data-col="4" data-base="492"><strong>992 &euro;</strong></td><td class="" data-col="5" data-base="84"><strong>759 &euro;</strong></td></tr>
     </tbody>
   </table>
+  <p class="calc-note">Cambia las horas o tu tarifa para ver el coste real de cada opción. El tiempo que dedicas a construir la web tú mismo también es dinero.</p>
   </div>
   <p><a href="/blog/es/cuanto-cuesta-pagina-web-autonomos-espana">Ver la comparativa completa, con agencias y freelances →</a></p>
   <p class="tax-note">Precios sin IVA. Para autónomos y empresas, el IVA es deducible.</p>
@@ -241,5 +245,26 @@
   </address>
 </footer>
 
+  <script>
+(function(){
+  // Les heures des colonnes WebAutonomos sont fixes (data-h sur la cellule de
+  // total) ; celles des concurrents sont saisissables. Le total se recalcule
+  // dans les deux cas quand le taux horaire change.
+  var t=document.querySelector('.cmp'); if(!t) return;
+  var rate=document.getElementById('calc-rate'); if(!rate) return;
+  var loc=t.getAttribute('data-loc')||'es-ES';
+  function calc(){
+    var r=parseFloat(rate.value); if(isNaN(r)||r<0) r=0;
+    t.querySelectorAll('.tot td[data-col]').forEach(function(cell){
+      var inp=t.querySelector('.hin[data-col="'+cell.dataset.col+'"]');
+      var h=parseFloat(inp?inp.value:cell.dataset.h); if(isNaN(h)||h<0) h=0;
+      var v=parseFloat(cell.dataset.base)+h*r;
+      cell.innerHTML='<strong>'+Math.round(v).toLocaleString(loc)+' \u20ac</strong>';
+    });
+  }
+  rate.addEventListener('input',calc);
+  t.querySelectorAll('.hin').forEach(function(i){i.addEventListener('input',calc);});
+})();
+</script>
 </body>
 </html>
