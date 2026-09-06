@@ -111,7 +111,7 @@ OG_LOCALE = {'es': 'es_ES', 'val': 'ca_ES', 'en': 'en_US', 'fr': 'fr_FR'}
 
 # Libelles d'interface
 UI = {
-    'es': dict(home='Inicio', sectors='Webs por sector', sector_q='¿Trabajas en este sector?', sector_link='Ver la web para {name} →', blog='Blog', back='← Volver al blog',
+    'es': dict(home='Inicio', sectors='Webs por sector', sector_q='¿Trabajas en este sector?', sector_link='Ver la web para {name} →', seo_q='¿Prefieres que lo hagamos por ti?', seo_link='SEO local para autónomos desde 15 €/mes →', blog='Blog', back='← Volver al blog',
                toc='📑 Contenido del artículo', faq='Preguntas frecuentes',
                read='min de lectura', cta_title='¿Quieres una web así para tu negocio?',
                cta_text='Páginas web profesionales por 15 €/mes · Sin alta · Sin permanencia',
@@ -119,7 +119,7 @@ UI = {
                'Agencia web especializada en autónomos de la Comunidad Valenciana. '
                'Páginas web profesionales desde 15 €/mes, sin permanencia.',
                legal='Aviso legal', privacy='Privacidad', contact='Contacto'),
-    'val': dict(home='Inici', sectors='Webs per sector', sector_q='Treballes en aquest sector?', sector_link='Veure la web per a {name} →', blog='Blog', back='← Tornar al blog',
+    'val': dict(home='Inici', sectors='Webs per sector', sector_q='Treballes en aquest sector?', sector_link='Veure la web per a {name} →', seo_q='Prefereixes que ho fem nosaltres?', seo_link='SEO local per a autònoms des de 15 €/mes →', blog='Blog', back='← Tornar al blog',
                 toc='📑 Contingut de l\'article', faq='Preguntes freqüents',
                 read='min de lectura', cta_title='Vols una web així per al teu negoci?',
                 cta_text='Pàgines web professionals per 15 €/mes · Sense alta · Sense permanència',
@@ -669,6 +669,11 @@ SECTORS = [
 ]
 
 
+SEO_LOCAL_PATS = ('google', 'maps', 'resen', 'ressen', 'nap', 'schema', 'seo-local',
+                  'backlink', 'palabras-clave', 'paraules-clau', 'map-pack', 'posicionar',
+                  'fitxa', 'ficha')
+
+
 def sector_links_html(lang):
     """Liste des 7 liens pour le pied de page."""
     return ' · '.join(
@@ -686,6 +691,15 @@ def sector_cta_html(slug, lang):
         return ''
     low = slug.lower()
     hits = [(key, names) for key, pats, names in SECTORS if any(pt in low for pt in pats)]
+    # Articles de SEO local : ils menent au service qui le vend, /marketing.
+    # Sans ce lien, 15 articles a 1 005 impressions tournaient a vide (GSC 05/09).
+    if not hits and ui.get('seo_q') and any(pt in low for pt in SEO_LOCAL_PATS):
+        return ('        <div style="background:#f0f7f6; border:1.5px solid #cfe5e0; border-radius:14px; '
+                'padding:18px 22px; margin-top:28px;">\n'
+                '            <p style="margin:0; font-weight:700; color:#12263f;">%s</p>\n'
+                '            <a href="%s/marketing" style="display:inline-block; margin-top:6px; '
+                'color:#2563eb; font-weight:600; text-decoration:none;">%s</a>\n        </div>'
+                % (E(ui['seo_q']), BASE, E(ui['seo_link'])))
     if not hits:
         return ''
     links = ''.join(
