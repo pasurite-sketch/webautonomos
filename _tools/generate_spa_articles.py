@@ -305,7 +305,13 @@ def render(article, lang, alternates):
     cat_slug, cat_color, cat_labels = CATEGORIES.get(article.get('category'), DEFAULT_CATEGORY)
     cat_label = cat_labels.get(lang, cat_labels['es'])
     title = article.get('title') or slug
-    seo_title = article.get('seoTitle') or (title + ' | WebAutonomos')
+    seo_title = article.get('seoTitle') or title
+    # Google tronque le title vers 60 caracteres. Le suffixe de marque n'est
+    # ajoute que s'il tient : au-dela de 55 caracteres de titre, il pousserait
+    # les mots utiles hors de l'affichage. Audit du 05/09/2026 : 112 titles sur
+    # 235 depassaient 70 caracteres, 108 d'entre eux a cause du suffixe.
+    if not article.get('seoTitle') and len(title) <= 55:
+        seo_title = title + ' | WebAutonomos'
     desc = article.get('metaDescription') or article.get('excerpt') or ''
     published = iso_date(article.get('date'))
     read = article.get('readTime') or 8
