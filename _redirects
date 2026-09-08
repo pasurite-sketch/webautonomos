@@ -222,3 +222,10 @@
 # 200 avec un contenu divergent (pas de hreflang, pas de mention TVA) ; elle n est
 # liee nulle part dans le site, mais peut vivre dans un lien externe ou une URL Ads.
 /pide-tu-demo/  /pide-tu-demo  301
+
+# Doublon de la page de remerciement leve le 2026-09-08. Sens INVERSE de
+# pide-tu-demo : ici c est la version dossier qui gagne. /gracias/ est la cible
+# de redirection post-formulaire de 8 pages (apres l evenement GA4 generate_lead),
+# et la source que build_demo_pages.py lit pour fabriquer /merci/ et /thank-you/.
+# gracias.html, orphelin, est supprime ; la page est en noindex et hors sitemap.
+/gracias  /gracias/  301
