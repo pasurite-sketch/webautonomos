@@ -216,3 +216,9 @@
 /blog/cuanto-cuesta-pagina-web-autonomos-espana/  /blog/es/cuanto-cuesta-pagina-web-autonomos-espana   301
 /blog/seo-local-que-es-autonomos   /blog/es/seo-local-que-es-autonomos   301
 /blog/seo-local-que-es-autonomos/  /blog/es/seo-local-que-es-autonomos   301
+
+# Doublon de la page de demande de demo leve le 2026-09-08 : pide-tu-demo/index.html
+# est supprime, seul pide-tu-demo.html subsiste. Cette URL a barre finale repondait
+# 200 avec un contenu divergent (pas de hreflang, pas de mention TVA) ; elle n est
+# liee nulle part dans le site, mais peut vivre dans un lien externe ou une URL Ads.
+/pide-tu-demo/  /pide-tu-demo  301
