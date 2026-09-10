@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Automatitzar sense codi: què pots fer tu | WebAutonomos</title>
+    <meta name="description" content="Hui bona part de les tasques s&#x27;automatitzen sense escriure una línia de codi. Però hi ha un límit. Tracem la línia, amb honestedat.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="WebAutonomos">
+
+    <link rel="canonical" href="https://webautonomos.es/blog/val/automatitzar-sense-saber-programar">
+    <link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/automatizar-sin-saber-programar">
+    <link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/automatitzar-sense-saber-programar">
+    <link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/automate-without-coding">
+    <link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/automatiser-sans-savoir-programmer">
+    <link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/automatizar-sin-saber-programar">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://webautonomos.es/blog/val/automatitzar-sense-saber-programar">
+    <meta property="og:title" content="Automatitzar sense codi: què pots fer tu | WebAutonomos">
+    <meta property="og:description" content="Hui bona part de les tasques s&#x27;automatitzen sense escriure una línia de codi. Però hi ha un límit. Tracem la línia, amb honestedat.">
+    <meta property="og:site_name" content="WebAutonomos">
+    <meta property="og:locale" content="ca_ES">
+    <meta property="article:published_time" content="2026-09-10T08:00:00+01:00">
+    <meta property="article:modified_time" content="2026-09-10T08:00:00+01:00">
+    <meta property="article:section" content="Automatització">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Automatitzar sense codi: què pots fer tu | WebAutonomos">
+    <meta name="twitter:description" content="Hui bona part de les tasques s&#x27;automatitzen sense escriure una línia de codi. Però hi ha un límit. Tracem la línia, amb honestedat.">
+
+    <link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior:smooth; }
+        .toc-link { color:#4b5563; text-decoration:none; }
+        .toc-link:hover { color:#6D28D9; }
+        .prose-article p { line-height:1.8; }
+        .gradient-wa { background:linear-gradient(135deg,#2563eb,#16a34a); }
+    </style>
+
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Automatitzar sense saber programar: fins on arribes tu sol",
+        "description": "Hui bona part de les tasques s'automatitzen sense escriure una línia de codi. Però hi ha un límit. Tracem la línia, amb honestedat.",
+        "author": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es"
+        },
+        "publisher": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es",
+                "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://webautonomos.es/logo.png"
+                }
+        },
+        "datePublished": "2026-09-10T08:00:00+01:00",
+        "dateModified": "2026-09-10T08:00:00+01:00",
+        "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://webautonomos.es/blog/val/automatitzar-sense-saber-programar"
+        },
+        "articleSection": "Automatització",
+        "inLanguage": "ca",
+        "wordCount": 1513,
+        "keywords": "automatitzar sense codi, ferramentes no-code autònoms, automatització sense programar, quan delegar una automatització"
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inici",
+                        "item": "https://webautonomos.es"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Blog",
+                        "item": "https://webautonomos.es/blog"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Automatització",
+                        "item": "https://webautonomos.es/blog?categoria=automatizacion"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Automatitzar sense saber programar: fins on arribes tu sol"
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+                {
+                        "@type": "Question",
+                        "name": "Quines ferramentes necessite per a començar sense programar?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Amb una plataforma visual de les que connecten servicis entre si basta per a les primeres automatitzacions. No cal instal·lar res complex ni pagar per avançat: quasi totes tenen un nivell gratuït suficient per a provar. L'important no és la ferramenta, sinó començar per una tasca d'una sola peça."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "És segur muntar coses importants amb ferramentes gratuïtes?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Per al senzill, sí. Per al crític, amb compte: si el teu negoci depén que eixe procés funcione, lligar-lo a una ferramenta gratuïta que pot canviar les seues condicions o tancar és un risc. Ahí convé una solució que controles tu, no una que depenga d'un tercer."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Quant tarde a aprendre a automatitzar el bàsic?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Una vesprada per a la primera, menys per a les següents. Les automatitzacions d'una sola peça s'aprenen veient un parell de tutorials. La corba s'empina quan vols encadenar-ne diverses — i eixe sol ser el moment de plantejar-se ajuda."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "I si munte alguna cosa jo i després es trenca?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Passa, i és normal: els servicis que connectes canvien i les ferramentes s'actualitzen. Per això convé comptar el manteniment des del principi i començar per coses que, si fallen un dia, no tinguen conseqüències greus. El crític és just el que no convé deixar en mans d'un muntatge casolà."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Com sé si una tasca és massa complexa per a fer-la jo?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Si té un sol disparador i una sola acció, és per a tu. Si cal encadenar passos, gestionar excepcions o connectar sistemes que no parlen el mateix idioma, comença a ser per a algú amb experiència. El diagnòstic gratuït t'ajuda a situar-la abans d'invertir."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Val la pena aprendre encara que acabe delegant?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Sí. Muntar les teues primeres automatitzacions senzilles et dóna el criteri per a saber què demanar, què és raonable i què et venen de més. Encara que després delegues el complex, hauràs deixat de partir de zero en cada conversa."
+                        }
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "logo": "https://webautonomos.es/logo.png",
+        "email": "info@webautonomos.es",
+        "telephone": "+34961877356",
+        "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Calle Pintor Josep Segrelles, 26",
+                "postalCode": "46870",
+                "addressLocality": "Ontinyent",
+                "addressRegion": "Valencia",
+                "addressCountry": "ES"
+        },
+        "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Comunidad Valenciana"
+        }
+}
+    </script>
+<!-- Google Analytics GA4 -->
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MT6S7CH7N9');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wb9354sv4p");
+</script>
+</head>
+<body class="bg-gray-50">
+
+    <nav style="background:white; box-shadow:0 1px 3px rgba(0,0,0,0.1); position:sticky; top:0; z-index:50;">
+        <div style="max-width:1200px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;">
+            <a href="https://webautonomos.es" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+                <div style="width:36px; height:36px; background:linear-gradient(135deg,#2563eb,#16a34a); border-radius:8px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:16px;">W</div>
+                <span style="font-weight:700; font-size:18px;"><span style="color:#2563eb;">web</span><span style="color:#16a34a;">autonomos</span><span style="color:#111;">.es</span></span>
+            </a>
+            <a href="https://webautonomos.es/blog/" style="color:#374151; text-decoration:none; font-size:14px; font-weight:500;">Blog</a>
+        </div>
+    </nav>
+
+    <article class="max-w-3xl mx-auto px-4 py-8 prose-article">
+
+        <nav class="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
+            <a href="https://webautonomos.es" class="hover:text-purple-600 transition">Inici</a>
+            <span class="mx-1">&rsaquo;</span>
+            <a href="https://webautonomos.es/blog/" class="hover:text-purple-600 transition">Blog</a>
+            <span class="mx-1">&rsaquo;</span>
+            <span>Automatització</span>
+        </nav>
+
+        <header class="mb-8">
+            <span style="background:#0EA5E9; color:white; padding:4px 14px; border-radius:999px; font-size:13px; font-weight:600;">Automatització</span>
+            <p class="text-sm text-gray-500 mt-4 mb-3">
+                <time datetime="2026-09-10">10 Setembre 2026</time> &middot; 11 min de lectura
+            </p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Automatitzar sense saber programar: fins on arribes tu sol</h1>
+        </header>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-10" style="border-left:4px solid #0EA5E9;">
+            <p class="font-bold text-gray-900 mb-3">📑 Contingut de l&#x27;article</p>
+            <ol class="list-decimal list-inside space-y-1 text-sm">
+                    <li><a href="#seccion-1" class="toc-link">La pregunta no és si pots, sinó fins on</a></li>
+                    <li><a href="#seccion-2" class="toc-link">El que munta qualsevol en una vesprada</a></li>
+                    <li><a href="#seccion-3" class="toc-link">Les ferramentes no-code, i la seua lletra menuda</a></li>
+                    <li><a href="#seccion-4" class="toc-link">On comença a torçar-se el bricolatge</a></li>
+                    <li><a href="#seccion-5" class="toc-link">El cost que no es veu: mantindre&#x27;l</a></li>
+                    <li><a href="#seccion-6" class="toc-link">Quan compensa fer-ho tu</a></li>
+                    <li><a href="#seccion-7" class="toc-link">Quan convé delegar</a></li>
+                    <li><a href="#seccion-8" class="toc-link">Un exemple d&#x27;on cau la frontera</a></li>
+                    <li><a href="#seccion-9" class="toc-link">Com decidir sense gastar de més</a></li>
+                    <li><a href="#seccion-10" class="toc-link">L&#x27;ordre que convé seguir</a></li>
+                    <li><a href="#faq" class="toc-link">Preguntes freqüents</a></li>
+            </ol>
+        </div>
+
+        <div class="article-body">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">«Jo de programació no en tinc ni idea.» És la primera frase de quasi totes les converses sobre automatització, i quasi sempre sobra. En 2026 pots muntar tu sol coses que fa cinc anys exigien un desenvolupador. Però hi ha un límit, i el problema no és reconéixer-lo tard: és no saber on està fins que ja has perdut un cap de setmana barallant-te amb una ferramenta. Este article traça eixa línia amb honestedat — el que pots fer tu, el que convé delegar, i com no gastar de més en cap dels dos costats.</p>
+            <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">La pregunta no és si pots, sinó fins on</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Automatitzar sense programar és hui perfectament possible per a una franja àmplia de tasques. Connectar el formulari de la teua web amb el teu correu, enviar un recordatori automàtic el dia abans d&#x27;una cita, passar cada factura nova a una carpeta ordenada, avisar-te quan entra un pagament: res d&#x27;això necessita una sola línia de codi. Ho fan ferramentes visuals, de les que arrossegues caixes i les unixes amb fletxes. El dubte real mai és «sóc capaç?», perquè per a estes coses la resposta és sí. El dubte útil és un altre: fins a quin punt de complexitat et compensa seguir fent-ho tu, abans que el temps que li dediques valga més que el que estalvies?</p>
+            <h2 id="seccion-2" class="text-2xl font-bold text-gray-900 mt-10 mb-4">El que munta qualsevol en una vesprada</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Hi ha un primer nivell que està a l&#x27;abast de qualsevol autònom amb paciència i una vesprada lliure. Un formulari que arriba ordenat a la teua safata en compte de en deu correus solts. Una resposta automàtica que confirma la recepció d&#x27;un missatge i dóna un termini. Un recordatori que ix sol abans de cada cita i reduïx les absències. Un full que s&#x27;ompli sol cada vegada que entra una comanda. Són automatitzacions d&#x27;una sola peça: un disparador i una acció. No es trenquen quasi mai perquè no depenen de res més, i el seu muntatge s&#x27;aprén veient un parell de tutorials. Si mai has automatitzat res, és exactament per ací per on cal començar.</p>
+            <h2 id="seccion-3" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Les ferramentes no-code, i la seua lletra menuda</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Les plataformes visuals — les que permeten tot açò sense codi — tenen una lletra menuda que convé llegir abans d&#x27;apoiar-s&#x27;hi. La primera és el preu per volum: són barates o gratis mentres faces poques operacions al mes, i pugen de pressa quan l&#x27;ús creix. La segona és la dependència: si construïxes alguna cosa important sobre una d&#x27;elles i demà canvia les seues condicions o tanca, el teu procés se&#x27;n va amb ella. La tercera és el manteniment silenciós: una actualització de la ferramenta, un canvi en el servici que connectaves, i el que funcionava deixa de funcionar sense avisar. Res d&#x27;això les desqualifica. Només vol dir que convé usar-les sabent el que són: excel·lents per al senzill, arriscades per al crític.</p>
+            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">On comença a torçar-se el bricolatge</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">El problema no apareix en la primera automatització, sinó en la tercera o la quarta, quan vols encadenar-ne diverses i que es parlen entre elles. Ahí el bricolatge comença a torçar-se. Apareixen les excepcions — el client que paga a mitges, la comanda que s&#x27;anul·la, el correu que arriba en un format estrany — i cada excepció exigix una decisió que la caixa d&#x27;arrossegar no sap prendre sola. Comences a acumular pedaços, a recordar en quin ordre cal tocar les coses perquè no es trenquen, i a ser tu, una altra vegada, l&#x27;únic que entén com funciona. En eixe punt has reinventat el problema que volies resoldre: un procés fràgil que depén d&#x27;una persona.</p>
+            <h2 id="seccion-5" class="text-2xl font-bold text-gray-900 mt-10 mb-4">El cost que no es veu: mantindre&#x27;l</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Tota automatització, la faces tu o la faça un altre, té un cost que no apareix el dia que la muntes: mantindre-la viva. Els servicis que connecta canvien, les ferramentes s&#x27;actualitzen, el teu propi negoci evoluciona i el que valia al gener deixa d&#x27;encaixar al setembre. Si la vas muntar tu amb una ferramenta visual, eixe manteniment també és teu, i es paga a les pitjors hores: un dissabte, quan alguna cosa deixa de funcionar i no saps per què. Comptar eixe temps des del principi canvia el càlcul. Una automatització que t&#x27;estalvia dues hores al mes però t&#x27;obliga a dedicar-ne una a mantindre-la no estalvia dues hores: estalvia una.</p>
+            <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Quan compensa fer-ho tu</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Fer-ho tu compensa quan la tasca és senzilla, estable i d&#x27;una sola peça; quan el volum és baix i no vas a fregar els límits de preu de la ferramenta; quan pots permetre&#x27;t que falle un dia sense conseqüències greus; i quan tens, de veritat, les hores per a muntar-ho i mantindre-ho. Si es complixen les quatre, avant: és teu, ho entens, i no depens de ningú. Muntar les teues primeres automatitzacions senzilles és a més la millor manera d&#x27;entendre què es pot i què no — i d&#x27;arribar a qualsevol conversa posterior sabent de què es parla.</p>
+            <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Quan convé delegar</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Convé delegar en quant la tasca deixa de ser d&#x27;una sola peça: quan cal encadenar diversos passos, gestionar excepcions, o connectar sistemes que no estaven pensats per a parlar-se. També quan el procés és crític — si es cau, perds diners o clients — perquè llavors el dissabte de manteniment deixa de ser una molèstia i passa a ser un risc. I quan el volum és alt, perquè ahí les ferramentes visuals s&#x27;encarixen i una solució feta a mida ix, a la llarga, més barata. Delegar no és rendir-se: és reconéixer que la teua hora val més resolent el teu que barallant-te amb una integració.</p>
+            <h2 id="seccion-8" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Un exemple d&#x27;on cau la frontera</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Un exemple aclarix on està el límit. Imagina que vols deixar de perseguir cobraments a mà. El primer pas — que t&#x27;arribe un avís a tu mateix tres dies abans de cada venciment — el muntes tu en una vesprada: és un disparador i una acció, no falla, i ja et canvia el dia a dia. El segon pas — que isca un correu automàtic al client el dia del venciment, amb l&#x27;import i la referència correctes — seguix sent assumible, encara que convé provar-lo amb calma. Però el tercer pas — que el sistema distingisca qui ha pagat i qui no, deixe de reclamar al que ja va pagar, canvie el to en la segona reclamació i t&#x27;avise només dels casos que es resistixen — ahí has creuat la frontera. Això ja no és arrossegar dues caixes: és lògica amb excepcions, i és exactament on el bricolatge casolà es convertix en una font d&#x27;errors. La mateixa tasca, els cobraments, té un tram que és teu i un tram que convé delegar. Quasi totes les tasques es partixen així.</p>
+            <h2 id="seccion-9" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Com decidir sense gastar de més</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">La regla és senzilla i s&#x27;aplica tasca per tasca. Comença tu pel senzill, sempre: et costa poc, aprens, i moltes vegades resol més del que esperaves. Reserva l&#x27;ajuda externa per al que tinga volum, excepcions o risc. I abans de pagar per qualsevol de les dues vies, posa números: quant et costa hui eixa tasca, quant t&#x27;estalviaria, i en quant de temps es paga el que vas a invertir. Si els números no ixen, la resposta és no automatitzar — ni tu ni ningú. És la part que menys es diu i la que més diners estalvia.</p>
+            <h2 id="seccion-10" class="text-2xl font-bold text-gray-900 mt-10 mb-4">L&#x27;ordre que convé seguir</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">L&#x27;ordre importa tant com la decisió. El que recomanem és sempre el mateix: comença per una sola automatització senzilla, la més molesta de les teues tasques repetitives, i viu-la un parell de setmanes abans de tocar res més. Eixe primer pas t&#x27;ensenya dues coses alhora: quant de temps et torna de veritat, i fins on arriba la teua paciència amb estes ferramentes. Amb eixa experiència real, ja no decidixes a cegues. Sabràs si disfrutes muntant-les — hi ha qui s&#x27;hi enganxa — o si preferixes que algú se n&#x27;encarregue mentres tu atens el teu. Només llavors té sentit plantejar-se el següent pas, i decidir amb coneixement de causa si el muntes tu o el delegues. Anar tasca per tasca, sense pressa, és més lent sobre el paper i molt més ràpid en la pràctica: evita el cap de setmana perdut, el procés fràgil i l&#x27;automatització cara que no s&#x27;amortitza. L&#x27;automatització que dura és la que es construïx a poc a poc.</p>
+            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">Automatitzar sense saber programar no és un eslògan: és una realitat per a bona part de les tasques que et roben temps. El que fa falta no és aprendre a programar, sinó saber traçar la línia entre el que et compensa muntar tu i el que convé delegar — i tindre el criteri de no automatitzar el que no ho mereix. Eixa línia no és la mateixa per a tots: depén de les teues hores, de la teua paciència i del que cada tasca et coste hui. Per això el sensat és mesurar abans de decidir. Hem preparat un diagnòstic gratuït que posa números a una tasca en dos minuts i et diu de quin costat d&#x27;eixa línia cau la teua. Quatre preguntes, resultat en pantalla, sense compromís. I si conclou que et ix a compte fer-ho tu sol, també t&#x27;ho dirà.</p>
+        </div>
+
+            <section id="faq" class="mt-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Preguntes freqüents</h2>
+                <div class="space-y-3">
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Quines ferramentes necessite per a començar sense programar?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Amb una plataforma visual de les que connecten servicis entre si basta per a les primeres automatitzacions. No cal instal·lar res complex ni pagar per avançat: quasi totes tenen un nivell gratuït suficient per a provar. L&#x27;important no és la ferramenta, sinó començar per una tasca d&#x27;una sola peça.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">És segur muntar coses importants amb ferramentes gratuïtes?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Per al senzill, sí. Per al crític, amb compte: si el teu negoci depén que eixe procés funcione, lligar-lo a una ferramenta gratuïta que pot canviar les seues condicions o tancar és un risc. Ahí convé una solució que controles tu, no una que depenga d&#x27;un tercer.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Quant tarde a aprendre a automatitzar el bàsic?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Una vesprada per a la primera, menys per a les següents. Les automatitzacions d&#x27;una sola peça s&#x27;aprenen veient un parell de tutorials. La corba s&#x27;empina quan vols encadenar-ne diverses — i eixe sol ser el moment de plantejar-se ajuda.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">I si munte alguna cosa jo i després es trenca?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Passa, i és normal: els servicis que connectes canvien i les ferramentes s&#x27;actualitzen. Per això convé comptar el manteniment des del principi i començar per coses que, si fallen un dia, no tinguen conseqüències greus. El crític és just el que no convé deixar en mans d&#x27;un muntatge casolà.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Com sé si una tasca és massa complexa per a fer-la jo?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Si té un sol disparador i una sola acció, és per a tu. Si cal encadenar passos, gestionar excepcions o connectar sistemes que no parlen el mateix idioma, comença a ser per a algú amb experiència. El diagnòstic gratuït t&#x27;ajuda a situar-la abans d&#x27;invertir.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Val la pena aprendre encara que acabe delegant?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Sí. Muntar les teues primeres automatitzacions senzilles et dóna el criteri per a saber què demanar, què és raonable i què et venen de més. Encara que després delegues el complex, hauràs deixat de partir de zero en cada conversa.</div>
+                </details>
+                </div>
+            </section>
+
+
+        <div class="gradient-wa rounded-2xl p-8 text-center text-white mt-12">
+            <h2 class="text-2xl font-bold mb-3">Vols una web així per al teu negoci?</h2>
+            <p class="mb-6 opacity-90">Pàgines web professionals per 15 €/mes · Sense alta · Sense permanència</p>
+            <a href="https://webautonomos.es/pide-tu-demo" style="background:white; color:#2563eb; padding:14px 30px; border-radius:999px; font-weight:600; text-decoration:none; display:inline-block;">Demana gratis la demo de la teua web →</a>
+        </div>
+
+        <div class="flex items-center gap-4 mt-12 bg-white rounded-2xl p-6 shadow-sm">
+            <div class="w-16 h-16 gradient-wa rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">W</div>
+            <div>
+                <p class="font-bold text-gray-900">WebAutonomos</p>
+                <p class="text-sm text-gray-600">Agència web especialitzada en autònoms de la Comunitat Valenciana. Pàgines web professionals des de 15 €/mes, sense permanència.</p>
+            </div>
+        </div>
+
+        <p class="mt-10">
+            <a href="https://webautonomos.es/blog/" style="color:#2563eb; text-decoration:none; font-weight:500;">← Tornar al blog</a>
+        </p>
+
+    </article>
+
+    <footer style="background:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%); padding:24px 6%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:48px;">
+        <a href="https://webautonomos.es" style="font-weight:800; font-size:1rem; color:rgba(255,255,255,0.85); text-decoration:none;">&#127760; webautonomos.es</a>
+        <div style="display:flex; gap:20px; flex-wrap:wrap;">
+            <a href="https://webautonomos.es/aviso-legal" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Avís legal</a>
+            <a href="https://webautonomos.es/privacidad" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Privacitat</a>
+            <a href="https://webautonomos.es/contacto" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Contacte</a>
+        </div>
+        <nav aria-label="Webs per sector" style="flex-basis:100%; order:2; display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center; font-size:0.85rem;">
+            <span style="color:rgba(255,255,255,0.7);">Webs per sector:</span>
+            <a href="https://webautonomos.es/psicologos" style="color:rgba(255,255,255,0.85); text-decoration:none;">Psicòlegs</a> · <a href="https://webautonomos.es/dentistas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Dentistes</a> · <a href="https://webautonomos.es/fisioterapeutas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Fisioterapeutes</a> · <a href="https://webautonomos.es/electricistas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Electricistes</a> · <a href="https://webautonomos.es/fontaneros" style="color:rgba(255,255,255,0.85); text-decoration:none;">Fontaners</a> · <a href="https://webautonomos.es/carpinteros" style="color:rgba(255,255,255,0.85); text-decoration:none;">Fusters</a> · <a href="https://webautonomos.es/reformas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Reformes</a>
+        </nav>
+        <address style="flex-basis:100%; order:3; margin-top:4px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.12); font-style:normal; font-size:0.78rem; line-height:1.7; color:rgba(255,255,255,0.55); display:flex; flex-direction:column; gap:1px;">
+            <strong>WebAutonomos</strong>
+            <span>Calle Pintor Josep Segrelles, 26</span>
+            <span>46870 Ontinyent, Valencia</span>
+            <a href="tel:+34961877356" style="color:rgba(255,255,255,0.55); text-decoration:none;">+34 961 877 356</a>
+            <a href="mailto:info@webautonomos.es" style="color:rgba(255,255,255,0.55); text-decoration:none;">info@webautonomos.es</a>
+        </address>
+    </footer>
+
+</body>
+</html>
