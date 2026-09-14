@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Els errors més cars de l&#x27;automatització | WebAutonomos</title>
+    <meta name="description" content="Una automatització mal feta costa més que no automatitzar res. Estos són els cinc errors que més veiem, i com evitar-los.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="WebAutonomos">
+
+    <link rel="canonical" href="https://webautonomos.es/blog/val/errors-mes-cars-al-automatitzar">
+    <link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/errores-mas-caros-al-automatizar">
+    <link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/errors-mes-cars-al-automatitzar">
+    <link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/costliest-automation-mistakes">
+    <link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/erreurs-les-plus-couteuses-en-automatisation">
+    <link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/errores-mas-caros-al-automatizar">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://webautonomos.es/blog/val/errors-mes-cars-al-automatitzar">
+    <meta property="og:title" content="Els errors més cars de l&#x27;automatització | WebAutonomos">
+    <meta property="og:description" content="Una automatització mal feta costa més que no automatitzar res. Estos són els cinc errors que més veiem, i com evitar-los.">
+    <meta property="og:site_name" content="WebAutonomos">
+    <meta property="og:locale" content="ca_ES">
+    <meta property="article:published_time" content="2026-09-14T08:00:00+01:00">
+    <meta property="article:modified_time" content="2026-09-14T08:00:00+01:00">
+    <meta property="article:section" content="Automatització">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Els errors més cars de l&#x27;automatització | WebAutonomos">
+    <meta name="twitter:description" content="Una automatització mal feta costa més que no automatitzar res. Estos són els cinc errors que més veiem, i com evitar-los.">
+
+    <link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior:smooth; }
+        .toc-link { color:#4b5563; text-decoration:none; }
+        .toc-link:hover { color:#6D28D9; }
+        .prose-article p { line-height:1.8; }
+        .gradient-wa { background:linear-gradient(135deg,#2563eb,#16a34a); }
+    </style>
+
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Els 5 errors més cars en automatitzar (i com evitar-los)",
+        "description": "Una automatització mal feta costa més que no automatitzar res. Estos són els cinc errors que més veiem, i com evitar-los.",
+        "author": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es"
+        },
+        "publisher": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es",
+                "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://webautonomos.es/logo.png"
+                }
+        },
+        "datePublished": "2026-09-14T08:00:00+01:00",
+        "dateModified": "2026-09-14T08:00:00+01:00",
+        "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://webautonomos.es/blog/val/errors-mes-cars-al-automatitzar"
+        },
+        "articleSection": "Automatització",
+        "inLanguage": "ca",
+        "wordCount": 1504,
+        "keywords": "errors automatització negoci, automatització mal feta, cost automatització autònom, evitar errors automatització"
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inici",
+                        "item": "https://webautonomos.es"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Blog",
+                        "item": "https://webautonomos.es/blog"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Automatització",
+                        "item": "https://webautonomos.es/blog?categoria=automatizacion"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Els 5 errors més cars en automatitzar (i com evitar-los)"
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+                {
+                        "@type": "Question",
+                        "name": "Quin és l'error que més costa?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Automatitzar una tasca inestable, quasi sempre. Com que la regla canvia sense parar, pagues el muntatge i després cada modificació, i el manteniment acaba superant el guany. És també el més fàcil d'evitar: basta preguntar-se si la tasca es farà igual d'ací a un any."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Com sé si una tasca és prou estable per a automatitzar-la?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Mira els últims dotze mesos. Si la forma de fer-la ha canviat diverses vegades — noves regles, noves ferramentes, nova organització — no està llesta. Si es fa igual des de fa temps, ho està. L'estabilitat passada és el millor indici de l'estabilitat futura."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "De veritat costa tant el manteniment?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "No molt en absolut, però el suficient per a canviar el càlcul en les tasques menudes. Compta una fracció del cost de muntatge a l'any. L'error no és que siga alt: és oblidar-lo, i creure que una automatització es paga una sola vegada."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Què faig si mai he escrit el meu procés?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Comença per escriure'l, abans de qualsevol tècnica. Descriu la tasca tal com es fa de veritat, excepcions incloses. Sol ser el pas més útil: revela el que sobra i simplifica la resta. Sense ell, cap automatització se sostindrà."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "És millor automatitzar tot de colp per a anar més ràpid?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "No, és l'error contrari. Un projecte gran és lent, fràgil i difícil de corregir. Una peça menuda ben triada rendix en una setmana i es comprova de seguida. S'avança més ràpid a trossos, i cada tros provat finança el següent."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Com mesure si partisc sense cap referència?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Apunta un sol número abans de començar: el temps real dedicat a la tasca, o el nombre d'errors, o el termini mitjà. Basta un minut. Sense eixa referència de partida, mai podràs dir si l'automatització va valdre la pena — et quedaràs amb una impressió."
+                        }
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "logo": "https://webautonomos.es/logo.png",
+        "email": "info@webautonomos.es",
+        "telephone": "+34961877356",
+        "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Calle Pintor Josep Segrelles, 26",
+                "postalCode": "46870",
+                "addressLocality": "Ontinyent",
+                "addressRegion": "Valencia",
+                "addressCountry": "ES"
+        },
+        "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Comunidad Valenciana"
+        }
+}
+    </script>
+<!-- Google Analytics GA4 -->
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MT6S7CH7N9');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wb9354sv4p");
+</script>
+</head>
+<body class="bg-gray-50">
+
+    <nav style="background:white; box-shadow:0 1px 3px rgba(0,0,0,0.1); position:sticky; top:0; z-index:50;">
+        <div style="max-width:1200px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;">
+            <a href="https://webautonomos.es" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+                <div style="width:36px; height:36px; background:linear-gradient(135deg,#2563eb,#16a34a); border-radius:8px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:16px;">W</div>
+                <span style="font-weight:700; font-size:18px;"><span style="color:#2563eb;">web</span><span style="color:#16a34a;">autonomos</span><span style="color:#111;">.es</span></span>
+            </a>
+            <a href="https://webautonomos.es/blog/" style="color:#374151; text-decoration:none; font-size:14px; font-weight:500;">Blog</a>
+        </div>
+    </nav>
+
+    <article class="max-w-3xl mx-auto px-4 py-8 prose-article">
+
+        <nav class="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
+            <a href="https://webautonomos.es" class="hover:text-purple-600 transition">Inici</a>
+            <span class="mx-1">&rsaquo;</span>
+            <a href="https://webautonomos.es/blog/" class="hover:text-purple-600 transition">Blog</a>
+            <span class="mx-1">&rsaquo;</span>
+            <span>Automatització</span>
+        </nav>
+
+        <header class="mb-8">
+            <span style="background:#0EA5E9; color:white; padding:4px 14px; border-radius:999px; font-size:13px; font-weight:600;">Automatització</span>
+            <p class="text-sm text-gray-500 mt-4 mb-3">
+                <time datetime="2026-09-14">14 Setembre 2026</time> &middot; 11 min de lectura
+            </p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Els 5 errors més cars en automatitzar (i com evitar-los)</h1>
+        </header>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-10" style="border-left:4px solid #0EA5E9;">
+            <p class="font-bold text-gray-900 mb-3">📑 Contingut de l&#x27;article</p>
+            <ol class="list-decimal list-inside space-y-1 text-sm">
+                    <li><a href="#seccion-1" class="toc-link">Error 1: automatitzar una tasca inestable</a></li>
+                    <li><a href="#seccion-2" class="toc-link">Error 2: oblidar el cost del manteniment</a></li>
+                    <li><a href="#seccion-3" class="toc-link">Error 3: automatitzar el que mai vas escriure amb claredat</a></li>
+                    <li><a href="#seccion-4" class="toc-link">Error 4: apuntar al tot, en compte d&#x27;a un tros</a></li>
+                    <li><a href="#seccion-5" class="toc-link">Error 5: no mesurar abans, i no poder jutjar després</a></li>
+                    <li><a href="#seccion-6" class="toc-link">Un cas real: els cinc en un mateix projecte</a></li>
+                    <li><a href="#seccion-7" class="toc-link">El fil comú dels cinc</a></li>
+                    <li><a href="#seccion-8" class="toc-link">Com saber quines t&#x27;afecten més</a></li>
+                    <li><a href="#seccion-9" class="toc-link">Com evitar-los tots d&#x27;una vegada</a></li>
+                    <li><a href="#seccion-10" class="toc-link">Què fer si ja n&#x27;has comés una</a></li>
+                    <li><a href="#faq" class="toc-link">Preguntes freqüents</a></li>
+            </ol>
+        </div>
+
+        <div class="article-body">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">Un imagina que una automatització, com a molt, no servix per a res. La realitat és menys amable: una automatització mal plantejada costa més que no automatitzar res. Immobilitza diners al principi, exigix manteniment, i sobretot et fa confiar en un procés que, un dia, s&#x27;equivoca sense avisar. Després de desenes de projectes, sempre són els mateixos cinc errors els que es repetixen. Cap és tècnic: són errors de criteri, i es veuen vindre. Conéixer-los ja és evitar-los. I el millor de tot: evitar-los no costa diners ni coneixements tècnics, només un poc d&#x27;atenció abans de començar a gastar.</p>
+            <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Error 1: automatitzar una tasca inestable</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">És el més freqüent i el més car. Una automatització es construïx sobre una regla estable: quan passe això, fes allò. Si la regla canvia cada trimestre — perquè la teua activitat es mou, perquè la normativa evoluciona, perquè encara estàs buscant la teua forma de treballar — l&#x27;automatització queda obsoleta abans d&#x27;amortitzar-se. Pagues per muntar-la, després pagues per modificar-la en cada canvi, i el cost de manteniment es menja el guany. La pregunta que cal fer-se no és «és pesada?» sinó «esta tasca es farà igual d&#x27;ací a un any?». Si la resposta és no, espera que el procés s&#x27;estabilitze. Automatitzar un terreny movedís és tirar formigó sobre arena. Un autònom que encara prova preus cada dos mesos no hauria d&#x27;automatitzar els seus pressupostos encara: cada canvi de tarifa l&#x27;obligaria a refer el muntatge.</p>
+            <h2 id="seccion-2" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Error 2: oblidar el cost del manteniment</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Una automatització no és una compra, és un lloguer. El dia que es munta, té un preu; tots els mesos següents, té un cost. Els servicis que connecta canvien les seues condicions, les ferramentes s&#x27;actualitzen, el teu negoci evoluciona i el que encaixava al gener deixa d&#x27;encaixar al setembre. Qui només compta el preu de partida es prepara una mala sorpresa. El càlcul bo sempre suma el manteniment: una automatització que t&#x27;estalvia dues hores al mes però demana una per a seguir viva només t&#x27;estalvia una. No és motiu per a renunciar — és motiu per a saber-ho abans de firmar. És la diferència entre comprar una ferramenta i adoptar una mascota: el car no és el primer dia, són tots els altres.</p>
+            <h2 id="seccion-3" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Error 3: automatitzar el que mai vas escriure amb claredat</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">No es pot automatitzar un procés que no saps explicar. És una obvietat, i tot i això és una trampa clàssica: es demana automatitzar una tasca que, en realitat, viu al cap d&#x27;una sola persona, amb les seues excepcions, les seues dreceres i els seus «depén» mai formalitzats. Quan intentes posar-la en màquina, descobrixes que mai va tindre una regla clara — i la màquina exigix una regla clara. La faena útil comença, per tant, abans de la tècnica: escriure la tasca tal com es fa de veritat, excepcions incloses. Sovint, eixe exercici basta per a revelar que la mitat del procés sobrava, i que l&#x27;altra mitat es simplifica. Escriure el procés és incòmode i poc lluït, però és just el pas que separa una automatització sòlida d&#x27;un castell de cartes.</p>
+            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Error 4: apuntar al tot, en compte d&#x27;a un tros</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Les ganes s&#x27;entenen: ja que automatitzes, millor automatitzar-ho tot de colp. Quasi sempre és un error. Un projecte gran que ho toca tot tarda a muntar-se, costa de provar, i quan alguna cosa falla no saps on. Un tros menut ben triat, en canvi, es posa en marxa en unes hores, es comprova de seguida, i rendix un servici mesurable des de la primera setmana. L&#x27;enfocament bo és el contrari de la intuïció: començar per la peça més pesada i més aïllada, instal·lar-la, deixar-la girar, i afegir la següent només quan la primera estiga provada. S&#x27;avança més ràpid a trossos que en bloc. Ningú construïx una casa sencera abans de comprovar que els fonaments aguanten; amb l&#x27;automatització, la prudència és la mateixa.</p>
+            <h2 id="seccion-5" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Error 5: no mesurar abans, i no poder jutjar després</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Si no saps el que la tasca et costava abans, mai sabràs si l&#x27;automatització va valdre la pena. És l&#x27;error més silenciós, perquè no trenca res: simplement et deixa sense criteri. Sense una referència de partida — el temps real dedicat, el nombre d&#x27;errors, el termini mitjà — et quedes amb una impressió, i la impressió s&#x27;equivoca. Abans de tocar res, apunta el número que importa per a eixa tasca concreta. És un minut de faena que convertix, més tard, una intuïció en prova — i que et diu, negre sobre blanc, si has de seguir, corregir o fer marxa arrere. Mesurar abans no és burocràcia: és l&#x27;única forma que, d&#x27;ací a sis mesos, la resposta a «va valdre la pena?» siga un número i no una discussió.</p>
+            <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Un cas real: els cinc en un mateix projecte</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Els cinc rarament vénen sols. Un cas que veiem sovint els reunix tots. Un negoci decidix automatitzar la seua facturació just quan està canviant de programa de gestió (error 1: base inestable). Ningú escriu com es factura de veritat, amb els seus descomptes a ull i els seus casos especials (error 3: procés no escrit). Es demana automatitzar-ho tot alhora — factures, cobraments, recordatoris, comptabilitat — en un sol projecte gran (error 4: apuntar al tot). No s&#x27;anota quant de temps costava abans, així que ningú sabrà si va millorar (error 5: sense mesurar). I en el pressupost només apareix el muntatge, mai el manteniment (error 2). Sis mesos després, el programa de gestió ha canviat, mitja automatització ja no encaixa, i la sensació general és que «això d&#x27;automatitzar no funciona». No és que no funcione: és que es va fer amb les cinc trampes posades. Cadascuna per separat s&#x27;evita fàcil; juntes, enfonsen el projecte.</p>
+            <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">El fil comú dels cinc</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Cap d&#x27;estos errors és un error de ferramenta. Tots són errors de preparació: s&#x27;automatitza massa prompte, sense haver escrit la regla, sense haver mesurat, sense comptar el manteniment, apuntant massa alt. La tècnica quasi sempre es resol. És el criteri previ el que marca la diferència entre una automatització que rendix durant anys i una que costa diners en silenci. La bona notícia: eixe criteri no exigix ser expert. Exigix frenar cinc minuts i fer-se les preguntes correctes abans de gastar el primer euro.</p>
+            <h2 id="seccion-8" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Com saber quines t&#x27;afecten més</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">No tots els negocis ensopeguen amb els cinc igual. Si la teua activitat canvia molt d&#x27;un any a l&#x27;altre, la trampa 1 és el teu major risc i convé automatitzar només el més estable. Si treballes de memòria, sense processos escrits, la trampa 3 és la teua, i el primer pas no és tècnic sinó posar per escrit com fas les coses. Si eres dels que volen resoldre-ho tot de colp, vigila la trampa 4 i obliga&#x27;t a començar per una sola peça. I si mai has mesurat quant et costa res, les trampes 2 i 5 t&#x27;aguaiten alhora: et faltarà la dada per a decidir i per a jutjar. Saber quin és el teu punt dèbil val més que conéixer els cinc de memòria, perquè et diu on posar l&#x27;atenció abans de gastar.</p>
+            <h2 id="seccion-9" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Com evitar-los tots d&#x27;una vegada</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Hi ha un gest senzill que protegix dels cinc alhora: xifrar la tasca abans d&#x27;automatitzar-la. El càlcul t&#x27;obliga a mirar l&#x27;estabilitat (error 1), a incloure el manteniment (error 2), a descriure el procés per a poder estimar-lo (error 3), a aïllar una peça concreta (error 4) i a fixar una referència de partida (error 5). No és casualitat: posar números a una tasca obliga a respondre a totes les preguntes que fan fracassar un projecte. És exactament per això que nosaltres sempre comencem ahí, abans de la mínima línia tècnica.</p>
+            <h2 id="seccion-10" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Què fer si ja n&#x27;has comés una</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Si et reconeixes en una de les cinc amb una automatització que ja tens muntada, no la borres per impuls. Primer mesura: t&#x27;està estalviant alguna cosa, encara que siga menys del promés, o et està costant més del que rendix? Amb eixa dada, la decisió és senzilla. Si encara aporta, deixa-la i anota què falta afinar. Si costa més del que dóna, apaga-la sense drama: una automatització que no s&#x27;amortitza no és un fracàs personal, és informació. L&#x27;important és no arrossegar durant anys un procés que ja saps que no compensa, pel simple fet que va costar muntar-lo. Els diners gastats no tornen per mantindre&#x27;l viu. Tornar a mesurar cada cert temps el que tens automatitzat és la millor manera que les cinc trampes no t&#x27;acompanyen per sempre.</p>
+            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">La majoria de les automatitzacions fallides no ho són per falta de destresa tècnica, sinó per excés de pressa. Els cinc errors s&#x27;assemblen: apareixen quan es salta el pas de pensar per anar directe a la ferramenta. Hem preparat un diagnòstic gratuït que posa números a una tasca en dos minuts — i, en fer-ho, et fa passar l&#x27;examen dels cinc errors sense ni tan sols pensar-ho. Quatre preguntes, resultat en pantalla, sense compromís. Si conclou que la tasca no està llesta, t&#x27;ho dirà — i hauràs evitat l&#x27;error més car de tots: automatitzar alguna cosa que encara no s&#x27;havia d&#x27;automatitzar.</p>
+        </div>
+
+            <section id="faq" class="mt-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Preguntes freqüents</h2>
+                <div class="space-y-3">
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Quin és l&#x27;error que més costa?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Automatitzar una tasca inestable, quasi sempre. Com que la regla canvia sense parar, pagues el muntatge i després cada modificació, i el manteniment acaba superant el guany. És també el més fàcil d&#x27;evitar: basta preguntar-se si la tasca es farà igual d&#x27;ací a un any.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Com sé si una tasca és prou estable per a automatitzar-la?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Mira els últims dotze mesos. Si la forma de fer-la ha canviat diverses vegades — noves regles, noves ferramentes, nova organització — no està llesta. Si es fa igual des de fa temps, ho està. L&#x27;estabilitat passada és el millor indici de l&#x27;estabilitat futura.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">De veritat costa tant el manteniment?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">No molt en absolut, però el suficient per a canviar el càlcul en les tasques menudes. Compta una fracció del cost de muntatge a l&#x27;any. L&#x27;error no és que siga alt: és oblidar-lo, i creure que una automatització es paga una sola vegada.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Què faig si mai he escrit el meu procés?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Comença per escriure&#x27;l, abans de qualsevol tècnica. Descriu la tasca tal com es fa de veritat, excepcions incloses. Sol ser el pas més útil: revela el que sobra i simplifica la resta. Sense ell, cap automatització se sostindrà.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">És millor automatitzar tot de colp per a anar més ràpid?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">No, és l&#x27;error contrari. Un projecte gran és lent, fràgil i difícil de corregir. Una peça menuda ben triada rendix en una setmana i es comprova de seguida. S&#x27;avança més ràpid a trossos, i cada tros provat finança el següent.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Com mesure si partisc sense cap referència?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Apunta un sol número abans de començar: el temps real dedicat a la tasca, o el nombre d&#x27;errors, o el termini mitjà. Basta un minut. Sense eixa referència de partida, mai podràs dir si l&#x27;automatització va valdre la pena — et quedaràs amb una impressió.</div>
+                </details>
+                </div>
+            </section>
+
+
+        <div class="gradient-wa rounded-2xl p-8 text-center text-white mt-12">
+            <h2 class="text-2xl font-bold mb-3">Vols una web així per al teu negoci?</h2>
+            <p class="mb-6 opacity-90">Pàgines web professionals per 15 €/mes · Sense alta · Sense permanència</p>
+            <a href="https://webautonomos.es/pide-tu-demo" style="background:white; color:#2563eb; padding:14px 30px; border-radius:999px; font-weight:600; text-decoration:none; display:inline-block;">Demana gratis la demo de la teua web →</a>
+        </div>
+
+        <div class="flex items-center gap-4 mt-12 bg-white rounded-2xl p-6 shadow-sm">
+            <div class="w-16 h-16 gradient-wa rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">W</div>
+            <div>
+                <p class="font-bold text-gray-900">WebAutonomos</p>
+                <p class="text-sm text-gray-600">Agència web especialitzada en autònoms de la Comunitat Valenciana. Pàgines web professionals des de 15 €/mes, sense permanència.</p>
+            </div>
+        </div>
+
+        <p class="mt-10">
+            <a href="https://webautonomos.es/blog/" style="color:#2563eb; text-decoration:none; font-weight:500;">← Tornar al blog</a>
+        </p>
+
+    </article>
+
+    <footer style="background:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%); padding:24px 6%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:48px;">
+        <a href="https://webautonomos.es" style="font-weight:800; font-size:1rem; color:rgba(255,255,255,0.85); text-decoration:none;">&#127760; webautonomos.es</a>
+        <div style="display:flex; gap:20px; flex-wrap:wrap;">
+            <a href="https://webautonomos.es/aviso-legal" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Avís legal</a>
+            <a href="https://webautonomos.es/privacidad" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Privacitat</a>
+            <a href="https://webautonomos.es/contacto" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Contacte</a>
+        </div>
+        <nav aria-label="Webs per sector" style="flex-basis:100%; order:2; display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center; font-size:0.85rem;">
+            <span style="color:rgba(255,255,255,0.7);">Webs per sector:</span>
+            <a href="https://webautonomos.es/psicologos" style="color:rgba(255,255,255,0.85); text-decoration:none;">Psicòlegs</a> · <a href="https://webautonomos.es/dentistas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Dentistes</a> · <a href="https://webautonomos.es/fisioterapeutas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Fisioterapeutes</a> · <a href="https://webautonomos.es/electricistas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Electricistes</a> · <a href="https://webautonomos.es/fontaneros" style="color:rgba(255,255,255,0.85); text-decoration:none;">Fontaners</a> · <a href="https://webautonomos.es/carpinteros" style="color:rgba(255,255,255,0.85); text-decoration:none;">Fusters</a> · <a href="https://webautonomos.es/reformas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Reformes</a>
+        </nav>
+        <address style="flex-basis:100%; order:3; margin-top:4px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.12); font-style:normal; font-size:0.78rem; line-height:1.7; color:rgba(255,255,255,0.55); display:flex; flex-direction:column; gap:1px;">
+            <strong>WebAutonomos</strong>
+            <span>Calle Pintor Josep Segrelles, 26</span>
+            <span>46870 Ontinyent, Valencia</span>
+            <a href="tel:+34961877356" style="color:rgba(255,255,255,0.55); text-decoration:none;">+34 961 877 356</a>
+            <a href="mailto:info@webautonomos.es" style="color:rgba(255,255,255,0.55); text-decoration:none;">info@webautonomos.es</a>
+        </address>
+    </footer>
+
+</body>
+</html>
