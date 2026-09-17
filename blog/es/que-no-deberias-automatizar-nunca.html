@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Qué no deberías automatizar nunca | WebAutonomos</title>
+    <meta name="description" content="No todo merece automatizarse. Algunas tareas pierden valor si las hace una máquina. Estas son cuáles, y por qué.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="WebAutonomos">
+
+    <link rel="canonical" href="https://webautonomos.es/blog/es/que-no-deberias-automatizar-nunca">
+    <link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/que-no-deberias-automatizar-nunca">
+    <link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/que-no-hauries-d-automatitzar-mai">
+    <link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/what-you-should-never-automate">
+    <link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/ce-qu-il-ne-faut-jamais-automatiser">
+    <link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/que-no-deberias-automatizar-nunca">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://webautonomos.es/blog/es/que-no-deberias-automatizar-nunca">
+    <meta property="og:title" content="Qué no deberías automatizar nunca | WebAutonomos">
+    <meta property="og:description" content="No todo merece automatizarse. Algunas tareas pierden valor si las hace una máquina. Estas son cuáles, y por qué.">
+    <meta property="og:site_name" content="WebAutonomos">
+    <meta property="og:locale" content="es_ES">
+    <meta property="article:published_time" content="2026-09-17T08:00:00+01:00">
+    <meta property="article:modified_time" content="2026-09-17T08:00:00+01:00">
+    <meta property="article:section" content="Automatización">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Qué no deberías automatizar nunca | WebAutonomos">
+    <meta name="twitter:description" content="No todo merece automatizarse. Algunas tareas pierden valor si las hace una máquina. Estas son cuáles, y por qué.">
+
+    <link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior:smooth; }
+        .toc-link { color:#4b5563; text-decoration:none; }
+        .toc-link:hover { color:#6D28D9; }
+        .prose-article p { line-height:1.8; }
+        .gradient-wa { background:linear-gradient(135deg,#2563eb,#16a34a); }
+    </style>
+
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Qué NO deberías automatizar nunca",
+        "description": "No todo merece automatizarse. Algunas tareas pierden valor si las hace una máquina. Estas son cuáles, y por qué.",
+        "author": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es"
+        },
+        "publisher": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es",
+                "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://webautonomos.es/logo.png"
+                }
+        },
+        "datePublished": "2026-09-17T08:00:00+01:00",
+        "dateModified": "2026-09-17T08:00:00+01:00",
+        "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://webautonomos.es/blog/es/que-no-deberias-automatizar-nunca"
+        },
+        "articleSection": "Automatización",
+        "inLanguage": "es",
+        "wordCount": 1520,
+        "keywords": "qué no automatizar, límites de la automatización, relación con el cliente automatización, tareas que deben seguir siendo humanas"
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inicio",
+                        "item": "https://webautonomos.es"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Blog",
+                        "item": "https://webautonomos.es/blog"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Automatización",
+                        "item": "https://webautonomos.es/blog?categoria=automatizacion"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Qué NO deberías automatizar nunca"
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+                {
+                        "@type": "Question",
+                        "name": "¿Vendéis automatización y me decís que no lo automatice todo?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Sí, y es coherente. Una automatización que degrada tu relación con el cliente o congela un proceso inestable acaba desconectada, y te deja mal recuerdo. Preferimos entregar menos, pero cosas que aguantan años. Un «no» claro hoy vale más que un arrepentimiento dentro de seis meses."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "¿Puedo automatizar la recepción sin perder el contacto humano?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "En parte. Una confirmación automática de recepción tranquiliza y no molesta a nadie. Lo que conviene guardar es la respuesta de verdad a la consulta: la que marca el tono de la relación. Automatiza el acuse de recibo, guarda la respuesta."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "¿Cómo sé si una tarea exige criterio o solo una regla?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Pregúntate si la buena decisión es siempre la misma, o si depende del contexto. Si es siempre la misma, es una regla, y se puede automatizar. Si cambia según el caso, es criterio, y la decisión final debe seguir siendo tuya."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "¿Y si una tarea rara me quita mucho tiempo de todos modos?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Para una tarea trimestral que consume tiempo, la buena respuesta rara vez es una automatización — costaría más de lo que rinde con tan pocas repeticiones. Una lista de comprobación bien hecha resuelve lo esencial: no cuesta nada y no se avería nunca."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "¿El núcleo de mi oficio puede apoyarse en una máquina, aunque sea en parte?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Apoyarse, sí; sustituirse, no. Una máquina puede preparar, reunir y ordenar alrededor de tu trabajo. Pero aquello por lo que los clientes vienen a verte precisamente a ti debe seguir siendo tuyo. Automatiza todo alrededor, protege el centro."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "¿Cómo decido rápido ante una tarea concreta?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Hazte una pregunta: si un cliente supiera que la hace una máquina, ¿se quedaría tranquilo o decepcionado? Tranquilo, automatiza sin miedo. Decepcionado, guárdala a mano. El diagnóstico gratuito afina después la decisión con números."
+                        }
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "logo": "https://webautonomos.es/logo.png",
+        "email": "info@webautonomos.es",
+        "telephone": "+34961877356",
+        "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Calle Pintor Josep Segrelles, 26",
+                "postalCode": "46870",
+                "addressLocality": "Ontinyent",
+                "addressRegion": "Valencia",
+                "addressCountry": "ES"
+        },
+        "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Comunidad Valenciana"
+        }
+}
+    </script>
+<!-- Google Analytics GA4 -->
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MT6S7CH7N9');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wb9354sv4p");
+</script>
+</head>
+<body class="bg-gray-50">
+
+    <nav style="background:white; box-shadow:0 1px 3px rgba(0,0,0,0.1); position:sticky; top:0; z-index:50;">
+        <div style="max-width:1200px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;">
+            <a href="https://webautonomos.es" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+                <div style="width:36px; height:36px; background:linear-gradient(135deg,#2563eb,#16a34a); border-radius:8px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:16px;">W</div>
+                <span style="font-weight:700; font-size:18px;"><span style="color:#2563eb;">web</span><span style="color:#16a34a;">autonomos</span><span style="color:#111;">.es</span></span>
+            </a>
+            <a href="https://webautonomos.es/blog/" style="color:#374151; text-decoration:none; font-size:14px; font-weight:500;">Blog</a>
+        </div>
+    </nav>
+
+    <article class="max-w-3xl mx-auto px-4 py-8 prose-article">
+
+        <nav class="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
+            <a href="https://webautonomos.es" class="hover:text-purple-600 transition">Inicio</a>
+            <span class="mx-1">&rsaquo;</span>
+            <a href="https://webautonomos.es/blog/" class="hover:text-purple-600 transition">Blog</a>
+            <span class="mx-1">&rsaquo;</span>
+            <span>Automatización</span>
+        </nav>
+
+        <header class="mb-8">
+            <span style="background:#0EA5E9; color:white; padding:4px 14px; border-radius:999px; font-size:13px; font-weight:600;">Automatización</span>
+            <p class="text-sm text-gray-500 mt-4 mb-3">
+                <time datetime="2026-09-17">17 Septiembre 2026</time> &middot; 11 min de lectura
+            </p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Qué NO deberías automatizar nunca</h1>
+        </header>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-10" style="border-left:4px solid #0EA5E9;">
+            <p class="font-bold text-gray-900 mb-3">📑 Contenido del artículo</p>
+            <ol class="list-decimal list-inside space-y-1 text-sm">
+                    <li><a href="#seccion-1" class="toc-link">El primer contacto con un cliente</a></li>
+                    <li><a href="#seccion-2" class="toc-link">La reclamación y la disculpa</a></li>
+                    <li><a href="#seccion-3" class="toc-link">Lo que exige criterio, no una regla</a></li>
+                    <li><a href="#seccion-4" class="toc-link">Lo que pasa una vez por trimestre</a></li>
+                    <li><a href="#seccion-5" class="toc-link">Lo que aún no haces de forma estable</a></li>
+                    <li><a href="#seccion-6" class="toc-link">Lo que es tu verdadero oficio</a></li>
+                    <li><a href="#seccion-7" class="toc-link">La prueba en una pregunta</a></li>
+                    <li><a href="#seccion-8" class="toc-link">Por qué un proveedor te cuenta todo esto</a></li>
+                    <li><a href="#seccion-9" class="toc-link">Automatizar por moda, el peor motivo</a></li>
+                    <li><a href="#seccion-10" class="toc-link">Qué queda, entonces, por automatizar</a></li>
+                    <li><a href="#faq" class="toc-link">Preguntas frecuentes</a></li>
+            </ol>
+        </div>
+
+        <div class="article-body">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">Vivimos de la automatización, y aun así vamos a dedicar este artículo a decirte cuándo no tocarla. No es falsa modestia: es la mejor forma de no estropear lo que te da valor. Algunas tareas ganan al automatizarse; otras pierden algo irremplazable en cuanto una máquina se mete de por medio. Saber trazar esa línea te evita dos errores simétricos: automatizar lo que debía seguir siendo humano, y pagar por degradar tu propio trabajo. Estas son las tareas que, casi siempre, conviene mantener a mano. No es una lista de prohibiciones, sino de sentido común. Entender qué pierde valor al automatizarse es, precisamente, lo que te permite automatizar todo lo demás con total tranquilidad y sin remordimientos.</p>
+            <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">El primer contacto con un cliente</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">El primer intercambio con alguien que te descubre es un momento en el que se decide confiar en ti o no. Es justo ahí donde una respuesta automática hace más daño: es correcta, educada, y perfectamente impersonal — y el cliente lo nota. Una confirmación automática de recepción, sí, tranquiliza. Pero la respuesta de verdad, la que contesta a su pregunta y marca el tono de la relación, gana viniendo de ti. No es cuestión de tiempo ahorrado: es el momento más rentable de toda la relación, y delegarlo en una máquina equivale a ahorrar en la única cosa que no se recupera. Cuesta lo mismo escribir dos líneas propias que configurar una respuesta automática, y la diferencia en la impresión que dejas es enorme.</p>
+            <h2 id="seccion-2" class="text-2xl font-bold text-gray-900 mt-10 mb-4">La reclamación y la disculpa</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Hay un caso que merece mención aparte porque es donde más se cae en la tentación: la gestión de una queja. Cuando un cliente escribe enfadado, la respuesta rápida y automática parece eficiente — y es justo lo contrario. Un cliente molesto que recibe un mensaje claramente prefabricado se enfada el doble, porque siente que su problema ni siquiera ha sido leído. La reclamación es, paradójicamente, otra oportunidad: un problema bien resuelto fideliza más que si nunca hubiera pasado nada. Eso solo funciona si la persona al otro lado percibe que alguien de verdad se ha ocupado. Puedes automatizar el aviso de que has recibido la queja y el plazo en que responderás; la disculpa, la explicación y la solución tienen que llevar tu voz. Es el ejemplo más claro de una tarea donde la eficiencia mal entendida destruye exactamente el valor que pretendía proteger. El coste de equivocarse aquí no es una hora perdida: es un cliente que se va y lo cuenta.</p>
+            <h2 id="seccion-3" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Lo que exige criterio, no una regla</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Una automatización aplica una regla: si esto, entonces aquello. Es imbatible cuando la regla es clara, y peligrosa cuando la buena decisión depende del contexto. Decidir hacer un gesto comercial a un cliente descontento, juzgar si un encargo huele a estafa, elegir qué proyecto aceptar y cuál rechazar: son arbitrajes, no ejecuciones. Una máquina puede prepararlos — reunir la información, señalar lo que se sale de lo normal — pero la decisión final debe seguir siendo tuya. El día que automatizas el criterio mismo, no ganas tiempo: tomas decisiones medias sobre casos que no tenían nada de medio. Una máquina no siente cuándo conviene saltarse la norma, y a veces saltársela es exactamente lo que salva la relación.</p>
+            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Lo que pasa una vez por trimestre</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">El volumen es el primer criterio de rentabilidad de una automatización. Una tarea que haces cien veces al día merece que le dediques tiempo; una que haces tres veces al año, casi nunca. El montaje y el mantenimiento cuestan lo mismo sea cual sea el volumen, pero la ganancia depende del número de repeticiones. Automatizar un ritual trimestral es invertir horas para recuperar unos minutos, cuatro veces al año. Para esas tareas raras, la buena solución no es una máquina: es una simple lista de comprobación, que cuesta cero y no se avería nunca un sábado. Guardar esas tareas para hacerlas a mano, una vez cada tres meses, no es pereza tecnológica: es sentido común económico.</p>
+            <h2 id="seccion-5" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Lo que aún no haces de forma estable</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">No se congela un proceso que todavía se mueve. Si aún estás buscando tu forma de hacer las cosas — cambias tus tarifas, pruebas una oferta nueva, tu organización se reinventa cada dos meses — automatizar sería echar en hormigón una versión que vas a abandonar. Cada cambio te obligaría a deshacer y rehacer, y el coste de esos vaivenes superaría pronto el beneficio. La regla es sencilla: deja que la tarea se estabilice primero, automatiza después. Una tarea aún movediza no es un mal candidato para siempre; es un mal candidato ahora.</p>
+            <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Lo que es tu verdadero oficio</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Hay una diferencia entre lo que rodea tu trabajo y el trabajo en sí. Un fotógrafo puede automatizar sus presupuestos, sus recordatorios y su archivo de ficheros — pero no su manera de componer una imagen. Un terapeuta puede automatizar la reserva de cita — pero no la sesión. El núcleo de tu oficio, aquello por lo que la gente viene a verte precisamente a ti, es lo último que hay que dejar en manos de una máquina, y a menudo lo que más tienta tocar porque quita tiempo. Ese tiempo no es desperdicio: es lo que vendes. Automatiza todo alrededor, protege el centro. La paradoja es que cuanto mejor automatizas lo accesorio, más tiempo libre te queda justamente para lo que no debe automatizarse.</p>
+            <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">La prueba en una pregunta</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Ante una tarea, hazte una sola pregunta: si un cliente supiera que la hace una máquina, ¿se quedaría más tranquilo o decepcionado? Con el archivo de tus facturas le da igual — hasta le extrañaría que aún lo hicieras a mano. Con la respuesta a su consulta delicada, se decepcionaría, y con razón. Esa pregunta separa sorprendentemente bien los dos mundos: por un lado, lo invisible, lo repetitivo, lo administrativo, que nadie lamenta automatizar; por otro, lo relacional, lo decisivo, el núcleo del oficio, que pierde valor al delegarse.</p>
+            <h2 id="seccion-8" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Por qué un proveedor te cuenta todo esto</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Podría pensarse que un artesano de la automatización tiene interés en automatizarlo todo. A corto plazo, quizá. A largo plazo, seguro que no. Una automatización que degrada tu relación con el cliente o congela un proceso inestable acaba desconectándose, y de la experiencia guardarás el recuerdo de un proyecto fallido. Preferimos rechazar una parte de lo que se nos pide y entregar automatizaciones que aguantan años. Es la misma lógica honesta que aplicamos en todo: mejor un «no» claro hoy que un «deberíamos haber dicho que no» dentro de seis meses. Preferimos que vuelvas dentro de un año con otro proyecto que cobrarte hoy por algo de lo que te arrepentirás.</p>
+            <h2 id="seccion-9" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Automatizar por moda, el peor motivo</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Conviene desconfiar de un motivo concreto para automatizar: que lo haga todo el mundo. La automatización se ha puesto de moda, y con la moda llega la presión de subirse al carro para no parecer atrasado. Pero automatizar por imagen, sin un problema real que resolver, es gastar dinero en una solución que busca su problema. La pregunta correcta nunca es «¿debería automatizar algo?» en abstracto, sino «¿esta tarea concreta me está costando lo suficiente como para que valga la pena?». Si la respuesta es no, no automatizar no es quedarse atrás: es no tirar el dinero. Los negocios que mejor usan la automatización no son los que más automatizan, sino los que lo hacen solo donde hay un ahorro claro y medible. La moda es un pésimo consejero de inversión, aquí como en todo. Nadie ha ganado nunca dinero automatizando para presumir de moderno en una comida con colegas.</p>
+            <h2 id="seccion-10" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Qué queda, entonces, por automatizar</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Al quitar todo esto, queda muchísimo. El archivo, la facturación, los recordatorios, las reclamaciones de pago, las confirmaciones, la actualización de tablas, el traspaso de información de una herramienta a otra: todo el tejido invisible que te quita horas sin aportar nada a nadie. Ahí es donde la automatización más rinde, precisamente porque son tareas que la máquina hace mejor que tú — sin cansarse, sin equivocarse, sin olvidar. Trazar bien la línea no reduce el terreno de la automatización: lo concentra donde crea valor en vez de destruirlo. Es un campo enorme, y es exactamente donde una automatización bien pensada se paga sola en pocos meses.</p>
+            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">Saber qué no automatizar vale tanto como saber qué automatizar — es la misma lucidez, vista desde el otro lado. La línea se resume en unos pocos principios: guarda el primer contacto, el criterio, lo raro, lo inestable y el núcleo de tu oficio; deja el resto en manos de la máquina sin dudar. Nuestro diagnóstico gratuito pone números a una tarea en dos minutos y te dice si merece automatizarse — y no tiene ningún problema en concluir que no, porque «no» es a menudo la respuesta correcta. Cuatro preguntas, resultado en pantalla, sin compromiso. La mejor automatización es a veces la que se decide no hacer. Y esa decisión, la de saber dónde parar, es la que distingue a quien usa la tecnología a su favor de quien se deja usar por ella. Automatizar bien es, sobre todo, saber elegir.</p>
+        </div>
+
+            <section id="faq" class="mt-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Preguntas frecuentes</h2>
+                <div class="space-y-3">
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Vendéis automatización y me decís que no lo automatice todo?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Sí, y es coherente. Una automatización que degrada tu relación con el cliente o congela un proceso inestable acaba desconectada, y te deja mal recuerdo. Preferimos entregar menos, pero cosas que aguantan años. Un «no» claro hoy vale más que un arrepentimiento dentro de seis meses.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Puedo automatizar la recepción sin perder el contacto humano?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">En parte. Una confirmación automática de recepción tranquiliza y no molesta a nadie. Lo que conviene guardar es la respuesta de verdad a la consulta: la que marca el tono de la relación. Automatiza el acuse de recibo, guarda la respuesta.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Cómo sé si una tarea exige criterio o solo una regla?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Pregúntate si la buena decisión es siempre la misma, o si depende del contexto. Si es siempre la misma, es una regla, y se puede automatizar. Si cambia según el caso, es criterio, y la decisión final debe seguir siendo tuya.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Y si una tarea rara me quita mucho tiempo de todos modos?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Para una tarea trimestral que consume tiempo, la buena respuesta rara vez es una automatización — costaría más de lo que rinde con tan pocas repeticiones. Una lista de comprobación bien hecha resuelve lo esencial: no cuesta nada y no se avería nunca.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿El núcleo de mi oficio puede apoyarse en una máquina, aunque sea en parte?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Apoyarse, sí; sustituirse, no. Una máquina puede preparar, reunir y ordenar alrededor de tu trabajo. Pero aquello por lo que los clientes vienen a verte precisamente a ti debe seguir siendo tuyo. Automatiza todo alrededor, protege el centro.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Cómo decido rápido ante una tarea concreta?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Hazte una pregunta: si un cliente supiera que la hace una máquina, ¿se quedaría tranquilo o decepcionado? Tranquilo, automatiza sin miedo. Decepcionado, guárdala a mano. El diagnóstico gratuito afina después la decisión con números.</div>
+                </details>
+                </div>
+            </section>
+
+
+        <div class="gradient-wa rounded-2xl p-8 text-center text-white mt-12">
+            <h2 class="text-2xl font-bold mb-3">¿Quieres una web así para tu negocio?</h2>
+            <p class="mb-6 opacity-90">Páginas web profesionales por 15 €/mes · Sin alta · Sin permanencia</p>
+            <a href="https://webautonomos.es/pide-tu-demo" style="background:white; color:#2563eb; padding:14px 30px; border-radius:999px; font-weight:600; text-decoration:none; display:inline-block;">Pedir gratis la demo de tu web →</a>
+        </div>
+
+        <div class="flex items-center gap-4 mt-12 bg-white rounded-2xl p-6 shadow-sm">
+            <div class="w-16 h-16 gradient-wa rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">W</div>
+            <div>
+                <p class="font-bold text-gray-900">WebAutonomos</p>
+                <p class="text-sm text-gray-600">Agencia web especializada en autónomos de la Comunidad Valenciana. Páginas web profesionales desde 15 €/mes, sin permanencia.</p>
+            </div>
+        </div>
+
+        <p class="mt-10">
+            <a href="https://webautonomos.es/blog/" style="color:#2563eb; text-decoration:none; font-weight:500;">← Volver al blog</a>
+        </p>
+
+    </article>
+
+    <footer style="background:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%); padding:24px 6%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:48px;">
+        <a href="https://webautonomos.es" style="font-weight:800; font-size:1rem; color:rgba(255,255,255,0.85); text-decoration:none;">&#127760; webautonomos.es</a>
+        <div style="display:flex; gap:20px; flex-wrap:wrap;">
+            <a href="https://webautonomos.es/aviso-legal" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Aviso legal</a>
+            <a href="https://webautonomos.es/privacidad" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Privacidad</a>
+            <a href="https://webautonomos.es/contacto" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Contacto</a>
+        </div>
+        <nav aria-label="Webs por sector" style="flex-basis:100%; order:2; display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center; font-size:0.85rem;">
+            <span style="color:rgba(255,255,255,0.7);">Webs por sector:</span>
+            <a href="https://webautonomos.es/psicologos" style="color:rgba(255,255,255,0.85); text-decoration:none;">Psicólogos</a> · <a href="https://webautonomos.es/dentistas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Dentistas</a> · <a href="https://webautonomos.es/fisioterapeutas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Fisioterapeutas</a> · <a href="https://webautonomos.es/electricistas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Electricistas</a> · <a href="https://webautonomos.es/fontaneros" style="color:rgba(255,255,255,0.85); text-decoration:none;">Fontaneros</a> · <a href="https://webautonomos.es/carpinteros" style="color:rgba(255,255,255,0.85); text-decoration:none;">Carpinteros</a> · <a href="https://webautonomos.es/reformas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Reformas</a>
+        </nav>
+        <address style="flex-basis:100%; order:3; margin-top:4px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.12); font-style:normal; font-size:0.78rem; line-height:1.7; color:rgba(255,255,255,0.55); display:flex; flex-direction:column; gap:1px;">
+            <strong>WebAutonomos</strong>
+            <span>Calle Pintor Josep Segrelles, 26</span>
+            <span>46870 Ontinyent, Valencia</span>
+            <a href="tel:+34961877356" style="color:rgba(255,255,255,0.55); text-decoration:none;">+34 961 877 356</a>
+            <a href="mailto:info@webautonomos.es" style="color:rgba(255,255,255,0.55); text-decoration:none;">info@webautonomos.es</a>
+        </address>
+    </footer>
+
+</body>
+</html>
