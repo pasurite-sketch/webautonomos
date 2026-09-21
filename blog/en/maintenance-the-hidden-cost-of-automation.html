@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The hidden cost of automation: maintenance | WebAutonomos</title>
+    <meta name="description" content="An automation has a price the day it is built, and a cost every month after. Here is what maintenance really is, and how to price it.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="WebAutonomos">
+
+    <link rel="canonical" href="https://webautonomos.es/blog/en/maintenance-the-hidden-cost-of-automation">
+    <link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/mantenimiento-coste-automatizacion">
+    <link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/manteniment-el-cost-amagat-de-l-automatitzacio">
+    <link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/maintenance-the-hidden-cost-of-automation">
+    <link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/maintenance-le-cout-cache-de-l-automatisation">
+    <link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/mantenimiento-coste-automatizacion">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://webautonomos.es/blog/en/maintenance-the-hidden-cost-of-automation">
+    <meta property="og:title" content="The hidden cost of automation: maintenance | WebAutonomos">
+    <meta property="og:description" content="An automation has a price the day it is built, and a cost every month after. Here is what maintenance really is, and how to price it.">
+    <meta property="og:site_name" content="WebAutonomos">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-09-21T08:00:00+01:00">
+    <meta property="article:modified_time" content="2026-09-21T08:00:00+01:00">
+    <meta property="article:section" content="Automation">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The hidden cost of automation: maintenance | WebAutonomos">
+    <meta name="twitter:description" content="An automation has a price the day it is built, and a cost every month after. Here is what maintenance really is, and how to price it.">
+
+    <link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior:smooth; }
+        .toc-link { color:#4b5563; text-decoration:none; }
+        .toc-link:hover { color:#6D28D9; }
+        .prose-article p { line-height:1.8; }
+        .gradient-wa { background:linear-gradient(135deg,#2563eb,#16a34a); }
+    </style>
+
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Maintenance: the cost of automation nobody tells you about",
+        "description": "An automation has a price the day it is built, and a cost every month after. Here is what maintenance really is, and how to price it.",
+        "author": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es"
+        },
+        "publisher": {
+                "@type": "Organization",
+                "name": "WebAutonomos",
+                "url": "https://webautonomos.es",
+                "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://webautonomos.es/logo.png"
+                }
+        },
+        "datePublished": "2026-09-21T08:00:00+01:00",
+        "dateModified": "2026-09-21T08:00:00+01:00",
+        "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://webautonomos.es/blog/en/maintenance-the-hidden-cost-of-automation"
+        },
+        "articleSection": "Automation",
+        "inLanguage": "en",
+        "wordCount": 1504,
+        "keywords": "automation maintenance cost, automation upkeep business, hidden cost of automation, automation that breaks down"
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://webautonomos.es"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Blog",
+                        "item": "https://webautonomos.es/blog"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Automation",
+                        "item": "https://webautonomos.es/blog?categoria=automatizacion"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Maintenance: the cost of automation nobody tells you about"
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+                {
+                        "@type": "Question",
+                        "name": "How much does maintaining an automation cost?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "A reasonable order of magnitude is a fraction of the build cost per year, often around a fifth. An automation built for a thousand euros therefore asks for about two hundred euros of yearly upkeep, in money if you outsource or in time if you handle it. It is not huge, but forgetting it skews the whole calculation."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Why does an automation need maintenance if it works?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Because it lives in a shifting environment. The services it connects change their rules, the tools update, your business evolves. None of this gives warning. An automation frozen in a moving world drifts out of alignment on its own, a little each month."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "What is the real risk: the failure or the upkeep?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "The silent failure, by far. An automation that stops outright gets noticed. One that keeps running while getting things wrong — bad invoice, forgotten client — does damage for weeks before you notice. Watching that what runs runs right is the real maintenance."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Do small automations cost less to maintain?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Less in absolute terms, but more in proportion. Upkeep cost does not fall in proportion to the gain, so on a very small task it can eat the entire benefit. It is often there that a simple checklist beats an automation."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "How do I reduce future maintenance?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "By staying simple. A single-piece automation depending on few services asks for almost nothing. One chaining ten steps and connecting five tools multiplies the breaking points. Fewer pieces, less upkeep: it is one more reason to start small."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "What should I ask a provider about maintenance?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Who handles it, how much it represents per year, and what happens if a connected service changes its rules. A serious provider has a clear answer. The one who only talks about the build is selling you half the story."
+                        }
+                }
+        ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WebAutonomos",
+        "url": "https://webautonomos.es",
+        "logo": "https://webautonomos.es/logo.png",
+        "email": "info@webautonomos.es",
+        "telephone": "+34961877356",
+        "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Calle Pintor Josep Segrelles, 26",
+                "postalCode": "46870",
+                "addressLocality": "Ontinyent",
+                "addressRegion": "Valencia",
+                "addressCountry": "ES"
+        },
+        "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Comunidad Valenciana"
+        }
+}
+    </script>
+<!-- Google Analytics GA4 -->
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MT6S7CH7N9');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wb9354sv4p");
+</script>
+</head>
+<body class="bg-gray-50">
+
+    <nav style="background:white; box-shadow:0 1px 3px rgba(0,0,0,0.1); position:sticky; top:0; z-index:50;">
+        <div style="max-width:1200px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;">
+            <a href="https://webautonomos.es" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+                <div style="width:36px; height:36px; background:linear-gradient(135deg,#2563eb,#16a34a); border-radius:8px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:16px;">W</div>
+                <span style="font-weight:700; font-size:18px;"><span style="color:#2563eb;">web</span><span style="color:#16a34a;">autonomos</span><span style="color:#111;">.es</span></span>
+            </a>
+            <a href="https://webautonomos.es/blog/" style="color:#374151; text-decoration:none; font-size:14px; font-weight:500;">Blog</a>
+        </div>
+    </nav>
+
+    <article class="max-w-3xl mx-auto px-4 py-8 prose-article">
+
+        <nav class="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
+            <a href="https://webautonomos.es" class="hover:text-purple-600 transition">Home</a>
+            <span class="mx-1">&rsaquo;</span>
+            <a href="https://webautonomos.es/blog/" class="hover:text-purple-600 transition">Blog</a>
+            <span class="mx-1">&rsaquo;</span>
+            <span>Automation</span>
+        </nav>
+
+        <header class="mb-8">
+            <span style="background:#0EA5E9; color:white; padding:4px 14px; border-radius:999px; font-size:13px; font-weight:600;">Automation</span>
+            <p class="text-sm text-gray-500 mt-4 mb-3">
+                <time datetime="2026-09-21">Sep 21, 2026</time> &middot; 11 min read
+            </p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Maintenance: the cost of automation nobody tells you about</h1>
+        </header>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-10" style="border-left:4px solid #0EA5E9;">
+            <p class="font-bold text-gray-900 mb-3">📑 Article contents</p>
+            <ol class="list-decimal list-inside space-y-1 text-sm">
+                    <li><a href="#seccion-1" class="toc-link">Why an automation never stays still</a></li>
+                    <li><a href="#seccion-2" class="toc-link">An example: the day something changes without warning</a></li>
+                    <li><a href="#seccion-3" class="toc-link">The three sources of maintenance</a></li>
+                    <li><a href="#seccion-4" class="toc-link">Roughly what maintenance costs</a></li>
+                    <li><a href="#seccion-5" class="toc-link">The trap of small automations</a></li>
+                    <li><a href="#seccion-6" class="toc-link">The costliest cost is not upkeep: it is the silent failure</a></li>
+                    <li><a href="#seccion-7" class="toc-link">How to reduce maintenance from the start</a></li>
+                    <li><a href="#seccion-8" class="toc-link">Maintain it yourself or outsource it?</a></li>
+                    <li><a href="#seccion-9" class="toc-link">The question to ask before signing</a></li>
+                    <li><a href="#seccion-10" class="toc-link">Why we bring it up before selling</a></li>
+                    <li><a href="#faq" class="toc-link">Frequently asked questions</a></li>
+            </ol>
+        </div>
+
+        <div class="article-body">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">When an automation is priced, almost everyone looks at a single number: what the build costs. It is the number you are quoted, the one on the estimate, the one you compare. And it is the wrong number to decide on. An automation is not a purchase you pay for once: it is a rental you pay for as long as it runs. The build is the first month&#x27;s rent, not the total price. This article is about what almost nobody puts on the table: maintenance, what it covers, why it is unavoidable, and how to price it before signing rather than discovering it on a Saturday.</p>
+            <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Why an automation never stays still</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">People picture an automation as a machine you install and forget. The reality is that it lives in an environment that, unlike it, moves constantly. The services it connects change their rules overnight. The tools it uses update and move a button, rename a field, change a format. Your own business evolves: new rates, a new type of client, a new way of invoicing. None of this is your fault, and none of it gives warning. An automation frozen in a shifting world drifts out of alignment on its own, a little each month, until the day it gets something genuinely wrong. Expecting an automation to live without maintenance is like expecting a car to run without servicing: it works, until one day it stops at the worst moment.</p>
+            <h2 id="seccion-2" class="text-2xl font-bold text-gray-900 mt-10 mb-4">An example: the day something changes without warning</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">A concrete example shows why maintenance is not optional. Picture an automation that, every time an order comes through your site, logs it on a sheet and sends you an alert. It runs faultlessly for months. One day, the email service it uses decides, for security, to require a new connection step. Nobody warns you; for everyone else it is an improvement. But your automation, which talked to that service the old way, stops sending alerts overnight. Orders keep landing on the sheet, so at first glance everything looks fine — until you realise, two weeks later, that you have not been told about a single new order. Nothing visible broke: the world around simply moved and your automation stayed still. Readjusting it is half an hour&#x27;s work. Detecting that it needed readjusting, though, depended on someone watching. That is maintenance in one scene. And a fix only happens because someone was paying attention in the first place, which is the whole point of upkeep.</p>
+            <h2 id="seccion-3" class="text-2xl font-bold text-gray-900 mt-10 mb-4">The three sources of maintenance</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Maintenance work comes from three places, and it helps to tell them apart. The first is external change: a connected service alters its terms and you have to adapt. The second is your own business evolving: what the automation did no longer matches what you need. The third is the special cases nobody foresaw at the start and that surface with use — the client who fills in a form crookedly, the order straddling two categories. None of these three sources ever disappears completely. They slow down once the system is bedded in, but they do not switch off.</p>
+            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Roughly what maintenance costs</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">A reasonable order of magnitude, for a well-built automation, is a fraction of the build cost per year — often around a fifth. An automation built for a thousand euros therefore asks, on average, something like two hundred euros of yearly upkeep, whether in money if you outsource or in time if you handle it yourself. It is not huge, and that is not the problem. The problem is ignoring it: counting zero for upkeep skews every calculation, especially on small tasks, where that fraction can be enough to tip a project from profitable to loss-making. Seeing it as insurance helps: you pay a little each year so the system doesn&#x27;t leave you stranded just when you need it most.</p>
+            <h2 id="seccion-5" class="text-2xl font-bold text-gray-900 mt-10 mb-4">The trap of small automations</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">It is on the smallest tasks that forgetting maintenance does the most damage. An automation that saves you ten minutes a month always seems a good idea — until you add that it, too, asks for a few minutes of upkeep now and then. The net gain shrinks, and sometimes it vanishes. The rule is counter-intuitive: the smaller a task, the more maintenance weighs on its balance, because upkeep cost does not fall in proportion to the gain. Large automations easily absorb their upkeep; tiny ones drown in it. It is often for small tasks that a simple checklist beats an automation.</p>
+            <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">The costliest cost is not upkeep: it is the silent failure</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">There is a cost worse than regular upkeep, and it is the one least talked about: the failure that gives no warning. An automation that stops outright gets noticed. But an automation that keeps running while getting things wrong — sending the wrong invoice, forgetting one client in ten, chasing someone who already paid — can do damage for weeks before anyone notices. That is the real danger of a system you trust blindly. Maintenance is not only fixing what breaks: it is watching that what runs runs right. That quiet check is the most important part, and the easiest to neglect. That is why a good automation always includes some way of alerting when something goes wrong, instead of failing in silence.</p>
+            <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">How to reduce maintenance from the start</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">How much future upkeep there will be is largely decided at the design stage. A simple, single-piece automation that depends on few outside services will ask for almost nothing. An ambitious automation that chains ten steps and connects five tools multiplies the chances of breakage accordingly: every link is a possible breaking point. The fewer the pieces, the less there is to maintain. It is one more reason to start small and add drop by drop: not only do you move more safely, you build a system you will be able to maintain without spending your weekends on it.</p>
+            <h2 id="seccion-8" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Maintain it yourself or outsource it?</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">That leaves the question of who does this work. If you built the automation yourself with a visual tool, the maintenance is yours too, and it is worth being honest about what that means: being available when something drifts, knowing where to look, and having the calm to fix it without breaking something else. For simple automations, it is perfectly manageable. If instead you outsourced the build, the logical thing is to outsource the maintenance too, and there what matters is that it is clear in writing: what it covers, how quickly they respond, and what it costs per year. What never works is no man&#x27;s land: an automation built by someone no longer around, that nobody maintains, and that keeps running until the day it fails and there is no one to call. Deciding from the start who handles it is as important as deciding what gets automated. The worst option is the one nobody chose: assuming it maintains itself and finding out it doesn&#x27;t when it is already too late.</p>
+            <h2 id="seccion-9" class="text-2xl font-bold text-gray-900 mt-10 mb-4">The question to ask before signing</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Before accepting any automation quote, ask a simple question: what about maintenance? Who handles it, how much time or money does it represent per year, and what happens the day a connected service changes its rules? A serious provider has a clear answer to these questions; a provider who only talks about the build is selling you half the story. This question does not complicate the decision, it makes it honest: it turns a quoted price into a real cost, and it is the real cost, not the quoted price, that determines whether the automation is worth it. If that question makes the provider uncomfortable, you already have an answer about who you are dealing with.</p>
+            <h2 id="seccion-10" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Why we bring it up before selling</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">We could save the subject for the end, once the contract is signed. We prefer the opposite, for a simple reason: an automation whose upkeep cost was hidden ends up disappointing, and a disappointment is worth less than an honest sale. Better a client who agrees knowing the full cost than one who discovers the bill months later. It is the same logic we apply everywhere: the quoted price is never the whole truth, and our job is to give you the whole truth before you decide, not after. We would rather lose a sale through excess of honesty than win it by hiding what comes next.</p>
+            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">Maintenance is not bad news: it is simply a reality better known before than after. An automation remains almost always profitable once upkeep is included — provided you included it, precisely, in the starting calculation. That is exactly what our free diagnostic does: it prices a task in two minutes taking into account what it will cost to keep alive, not just to build. Four questions, result on screen, no commitment. You will know not what an automation costs on the first day, but what it really costs — and that is the only number that lets you decide well.</p>
+        </div>
+
+            <section id="faq" class="mt-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Frequently asked questions</h2>
+                <div class="space-y-3">
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">How much does maintaining an automation cost?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">A reasonable order of magnitude is a fraction of the build cost per year, often around a fifth. An automation built for a thousand euros therefore asks for about two hundred euros of yearly upkeep, in money if you outsource or in time if you handle it. It is not huge, but forgetting it skews the whole calculation.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Why does an automation need maintenance if it works?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Because it lives in a shifting environment. The services it connects change their rules, the tools update, your business evolves. None of this gives warning. An automation frozen in a moving world drifts out of alignment on its own, a little each month.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">What is the real risk: the failure or the upkeep?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">The silent failure, by far. An automation that stops outright gets noticed. One that keeps running while getting things wrong — bad invoice, forgotten client — does damage for weeks before you notice. Watching that what runs runs right is the real maintenance.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Do small automations cost less to maintain?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Less in absolute terms, but more in proportion. Upkeep cost does not fall in proportion to the gain, so on a very small task it can eat the entire benefit. It is often there that a simple checklist beats an automation.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">How do I reduce future maintenance?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">By staying simple. A single-piece automation depending on few services asks for almost nothing. One chaining ten steps and connecting five tools multiplies the breaking points. Fewer pieces, less upkeep: it is one more reason to start small.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">What should I ask a provider about maintenance?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Who handles it, how much it represents per year, and what happens if a connected service changes its rules. A serious provider has a clear answer. The one who only talks about the build is selling you half the story.</div>
+                </details>
+                </div>
+            </section>
+
+
+        <div class="gradient-wa rounded-2xl p-8 text-center text-white mt-12">
+            <h2 class="text-2xl font-bold mb-3">Want a website like this for your business?</h2>
+            <p class="mb-6 opacity-90">Professional websites for €15/month · No setup fee · No commitment</p>
+            <a href="https://webautonomos.es/get-your-demo" style="background:white; color:#2563eb; padding:14px 30px; border-radius:999px; font-weight:600; text-decoration:none; display:inline-block;">Get a free demo of your website →</a>
+        </div>
+
+        <div class="flex items-center gap-4 mt-12 bg-white rounded-2xl p-6 shadow-sm">
+            <div class="w-16 h-16 gradient-wa rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">W</div>
+            <div>
+                <p class="font-bold text-gray-900">WebAutonomos</p>
+                <p class="text-sm text-gray-600">Web agency specialising in freelancers across the Valencian Community. Professional websites from €15/month, no commitment.</p>
+            </div>
+        </div>
+
+        <p class="mt-10">
+            <a href="https://webautonomos.es/blog/" style="color:#2563eb; text-decoration:none; font-weight:500;">← Back to the blog</a>
+        </p>
+
+    </article>
+
+    <footer style="background:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%); padding:24px 6%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:48px;">
+        <a href="https://webautonomos.es" style="font-weight:800; font-size:1rem; color:rgba(255,255,255,0.85); text-decoration:none;">&#127760; webautonomos.es</a>
+        <div style="display:flex; gap:20px; flex-wrap:wrap;">
+            <a href="https://webautonomos.es/aviso-legal" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Legal notice</a>
+            <a href="https://webautonomos.es/privacidad" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Privacy</a>
+            <a href="https://webautonomos.es/contacto" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Contact</a>
+        </div>
+        <nav aria-label="Websites by trade" style="flex-basis:100%; order:2; display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center; font-size:0.85rem;">
+            <span style="color:rgba(255,255,255,0.7);">Websites by trade:</span>
+            <a href="https://webautonomos.es/psicologos" style="color:rgba(255,255,255,0.85); text-decoration:none;">Psychologists</a> · <a href="https://webautonomos.es/dentistas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Dentists</a> · <a href="https://webautonomos.es/fisioterapeutas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Physiotherapists</a> · <a href="https://webautonomos.es/electricistas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Electricians</a> · <a href="https://webautonomos.es/fontaneros" style="color:rgba(255,255,255,0.85); text-decoration:none;">Plumbers</a> · <a href="https://webautonomos.es/carpinteros" style="color:rgba(255,255,255,0.85); text-decoration:none;">Carpenters</a> · <a href="https://webautonomos.es/reformas" style="color:rgba(255,255,255,0.85); text-decoration:none;">Renovations</a>
+        </nav>
+        <address style="flex-basis:100%; order:3; margin-top:4px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.12); font-style:normal; font-size:0.78rem; line-height:1.7; color:rgba(255,255,255,0.55); display:flex; flex-direction:column; gap:1px;">
+            <strong>WebAutonomos</strong>
+            <span>Calle Pintor Josep Segrelles, 26</span>
+            <span>46870 Ontinyent, Valencia</span>
+            <a href="tel:+34961877356" style="color:rgba(255,255,255,0.55); text-decoration:none;">+34 961 877 356</a>
+            <a href="mailto:info@webautonomos.es" style="color:rgba(255,255,255,0.55); text-decoration:none;">info@webautonomos.es</a>
+        </address>
+    </footer>
+
+</body>
+</html>
