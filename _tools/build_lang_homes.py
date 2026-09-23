@@ -122,7 +122,7 @@ C['fr'] = dict(
   aud_ey='Pour qui', aud_t='En France ou installé en Espagne',
   aud_sd='Nous travaillons à distance, par e-mail, WhatsApp et visioconférence.',
   aud=[('🇫🇷', 'Indépendants en France', "Artisans, thérapeutes, professions de santé : votre site est rédigé en français, pour vos clients, avec votre nom de domaine en .fr."),
-       ('🇪🇸', 'Francophones installés en Espagne', "Vous travaillez en Espagne ? Nous connaissons les obligations d'un site espagnol (aviso legal, RGPD, cookies) et nous vous parlons en français."),
+       ('🇪🇸', 'Francophones installés en Espagne', "Vous travaillez en Espagne ? Nous connaissons les obligations d'un site espagnol (aviso legal, RGPD, cookies) et nous vous parlons en français.", '/fr/site-internet-francophones-espagne'),
        ('💬', 'Un doute sur votre projet ?', "Écrivez-nous sur WhatsApp : nous vous répondons dans la journée, en français.")],
   sect_ey='Métiers', sect_t='Tous les métiers, un seul prix',
   sectors=['⚡ Électriciens', '🔧 Plombiers', '🪵 Menuisiers', '🎨 Peintres', '🏗️ Rénovation',
@@ -208,7 +208,7 @@ C['en'] = dict(
   price_link='See full pricing details',
   aud_ey='Built for Spain', aud_t='Doing business in Spain, in English',
   aud_sd='We work with you remotely, by email, WhatsApp and video call.',
-  aud=[('⚖️', 'Spanish legal pages included', 'Every business website in Spain must show a legal notice, a privacy policy and a cookie policy (LSSI and GDPR). We write them for you.'),
+  aud=[('⚖️', 'Spanish legal pages included', 'Every business website in Spain must show a legal notice, a privacy policy and a cookie policy (LSSI and GDPR). We write them for you.', '/en/web-design-for-expats-in-spain'),
        ('📍', 'Found by local customers', 'A domain name in your name, Google Maps on your site and, if you want, a managed Google Business Profile.'),
        ('💬', 'Contact the Spanish way', 'A WhatsApp button and a contact form that lands in your inbox — how customers in Spain prefer to get in touch.')],
   sect_ey='Trades', sect_t='Every trade, one price',
@@ -478,8 +478,12 @@ def page(lang):
                   '<div class="pc-p">%s</div><ul>%s</ul></div>') % (
             ' hl' if p['hl'] else '', '<span class="pc-b">%s</span>' % E(p['badge']) if p['badge'] else '',
             E(p['name']), E(p['amt']), E(p['per']), ''.join('<li>%s</li>' % E(x) for x in p['pts']))
-    aud = ''.join('<div class="aud-c"><div class="aud-i" aria-hidden="true">%s</div><h3>%s</h3><p>%s</p></div>'
-                  % (i, E(t), E(d)) for i, t, d in c['aud'])
+    # 4e élément facultatif : lien vers une page dédiée (pages expatriés, 23/09/2026)
+    aud = ''.join('<div class="aud-c"><div class="aud-i" aria-hidden="true">%s</div><h3>%s</h3><p>%s</p>%s</div>'
+                  % (a[0], E(a[1]), E(a[2]),
+                     '<p style="margin-top:10px"><a href="%s%s" style="font-weight:600;color:var(--blue)">%s →</a></p>'
+                     % (BASE, a[3], E(c['add_more'])) if len(a) > 3 else '')
+                  for a in c['aud'])
     sectors = ''.join('<span class="stag">%s</span>' % E(s) for s in c['sectors'])
     slides, dots = '', ''
     for n, (txt, who, tr) in enumerate(AVIS[lang]):
