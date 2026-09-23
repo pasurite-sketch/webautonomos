@@ -51,6 +51,10 @@ URLS = {
 SOURCE_DEMO = {'fr': 'demandez-votre-demo.html', 'en': 'get-your-demo.html'}
 # Ancres des sections, dans la langue de la page (les pages commerciales y
 # renvoient : /en/#pricing, /fr/#tarifs…).
+# Tags métier de /fr/ et /en/ qui mènent vers une page métier.
+# Tenu à jour par _tools/build_metier_pages.py.
+SECTOR_LINKS = {"fr": {"🧠 Psychologues": "/fr/site-internet-psychologue-therapeute", "🌿 Thérapeutes bien-être": "/fr/site-internet-psychologue-therapeute"}, "en": {"🧠 Psychologists": "/en/website-for-therapists-in-spain", "🌿 Wellbeing practitioners": "/en/website-for-therapists-in-spain"}}
+
 IDS = {
     'fr': dict(brief='en-bref', inc='inclus', steps='etapes', price='tarifs', aud='pour-qui',
                sect='metiers', rev='avis', cmp='comparer', add='services', faq='faq'),
@@ -365,6 +369,8 @@ EXTRA_CSS = """
 .cmp-c.us li::before { content:'✓'; color:var(--green-dark); }
 .cmp-more { text-align:center; margin-top:28px; font-size:.97rem; }
 .cmp-more a { color:var(--blue); font-weight:600; text-decoration:none; }
+a.stag { text-decoration:none; }
+a.stag:hover { border-color:var(--green-mid); }
 .faq-l { max-width:780px; margin:0 auto; display:grid; gap:10px; }
 .faq-l details { background:var(--white); border:1.5px solid var(--border); border-radius:12px; }
 .faq-l summary { cursor:pointer; padding:16px 18px; font-weight:600; list-style:none;
@@ -490,7 +496,10 @@ def page(lang):
                      '<p style="margin-top:10px"><a href="%s%s" style="font-weight:600;color:var(--blue)">%s →</a></p>'
                      % (BASE, a[3], E(c['add_more'])) if len(a) > 3 else '')
                   for a in c['aud'])
-    sectors = ''.join('<span class="stag">%s</span>' % E(s) for s in c['sectors'])
+    # tags liés à une page métier (build_metier_pages.py, 24/09/2026)
+    sectors = ''.join('<a class="stag" href="%s%s">%s</a>' % (BASE, SECTOR_LINKS[lang][s], E(s))
+                      if s in SECTOR_LINKS.get(lang, {}) else '<span class="stag">%s</span>' % E(s)
+                      for s in c['sectors'])
     slides, dots = '', ''
     for n, (txt, who, tr) in enumerate(AVIS[lang]):
         slides += ('<div class="tp-slide"><div class="tp-card"><div class="tp-stars" aria-hidden="true">★★★★★</div>'
