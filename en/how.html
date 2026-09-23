@@ -19,30 +19,26 @@
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Page statique pour la route SPA /how. Existe pour qu'elle reste servie en 200
-     apres le passage de assets.not_found_handling a "404-page". -->
-<title>How It Works | Your Website Ready in 24 Hours | WebAutonomos.es</title>
-<meta name="description" content="Simple process: 1) Choose your demo, 2) We customize with your data, 3) Your website online in 24h. No technical complications, we take care of everything.">
+<title>How it works: your website ready in 24 hours | WebAutonomos</title>
+<meta name="description" content="We build a real demo of your website within 24 hours, with your own information and the Spanish legal pages, and you only pay if you like it. In English.">
 <link rel="canonical" href="https://webautonomos.es/en/how">
 <link rel="alternate" hreflang="es-ES" href="https://webautonomos.es/como-funciona">
 <link rel="alternate" hreflang="en" href="https://webautonomos.es/en/how">
 <link rel="alternate" hreflang="x-default" href="https://webautonomos.es/como-funciona">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://webautonomos.es/en/how">
-<meta property="og:title" content="How It Works | Your Website Ready in 24 Hours | WebAutonomos.es">
-<meta property="og:description" content="Simple process: 1) Choose your demo, 2) We customize with your data, 3) Your website online in 24h. No technical complications, we take care of everything.">
-<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How it works: your website ready in 24 hours | WebAutonomos">
+<meta property="og:description" content="We build a real demo of your website within 24 hours, with your own information and the Spanish legal pages, and you only pay if you like it. In English.">
+<meta property="og:image" content="https://webautonomos.es/og-image.png">
+<meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="WebAutonomos">
 <meta name="twitter:card" content="summary_large_image">
-
-<link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
 <style>
   :root {
     --blue:#1a3a8f; --blue-dark:#0f2060; --green:#22c55e;
@@ -90,33 +86,215 @@
           color:rgba(255,255,255,0.55); display:flex; flex-direction:column; gap:1px; }
   .fnap a { color:rgba(255,255,255,0.55); text-decoration:none; }
   .fnap a:hover { color:rgba(255,255,255,0.85); }
+  table.cmp { width:100%; border-collapse:collapse; margin:0 0 12px; font-size:0.95rem; }
+  table.cmp caption { caption-side:top; text-align:left; font-size:0.85rem;
+                      color:var(--gray); padding:0 0 10px; }
+  table.cmp th, table.cmp td { padding:11px 12px; text-align:left;
+                               border-bottom:1px solid var(--border); vertical-align:top; }
+  table.cmp thead th { background:var(--off); font-weight:600; font-size:0.9rem; }
+  table.cmp tbody th { font-weight:500; color:var(--gray); width:34%; }
+  table.cmp td.us { font-weight:600; }
+  .wrap { overflow-x:auto; margin:0 0 8px; }
+  .note { font-size:0.85rem; color:var(--gray); margin:0 0 26px; }
+  .updated { font-size:0.85rem; color:var(--gray); margin:34px 0 0;
+             padding-top:16px; border-top:1px solid var(--border); }
+/* MODAL */
+  .modal-overlay {
+    display:none; position:fixed; inset:0; z-index:999;
+    background:rgba(10,20,50,0.65); backdrop-filter:blur(4px);
+    align-items:center; justify-content:center; padding:20px;
+  }
+  .modal-box {
+    background:var(--white); border-radius:16px;
+    max-width:580px; width:100%; max-height:85vh;
+    overflow-y:auto; position:relative;
+    box-shadow:0 32px 80px rgba(10,20,50,0.35);
+  }
+  .modal-header {
+    position:sticky; top:0; z-index:1;
+    background:var(--grad);
+    padding:20px 24px 16px;
+    border-radius:16px 16px 0 0;
+    display:flex; align-items:flex-start; justify-content:space-between; gap:16px;
+  }
+  .modal-header h3 {
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:800; font-size:1.3rem;
+    color:var(--white); margin-bottom:4px;
+  }
+  .modal-header p { font-size:0.78rem; color:rgba(255,255,255,0.65); }
+  .modal-close {
+    background:rgba(255,255,255,0.15); border:none; cursor:pointer;
+    color:var(--white); width:32px; height:32px; border-radius:50%;
+    font-size:1rem; display:flex; align-items:center; justify-content:center;
+    flex-shrink:0; transition:background 0.2s;
+  }
+  .modal-close:hover { background:rgba(255,255,255,0.3); }
+  .modal-body { padding:28px 28px 24px; }
+  .modal-section { margin-bottom:24px; }
+  .modal-section-title {
+    display:flex; align-items:center; gap:10px;
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:700; font-size:1rem; color:var(--text);
+    margin-bottom:10px;
+  }
+  .modal-num {
+    width:24px; height:24px; border-radius:50%;
+    background:var(--grad);
+    color:var(--white); font-size:0.75rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .modal-body p, .modal-body li {
+    font-size:0.88rem; line-height:1.65; color:#334155;
+  }
+  .modal-body ul { list-style:none; padding:0; margin-top:8px; }
+  .modal-body ul li { padding:3px 0 3px 16px; position:relative; }
+  .modal-body ul li::before {
+    content:'·'; position:absolute; left:4px; color:var(--green-mid); font-weight:700;
+  }
+  .modal-footer-btn {
+    position:sticky; bottom:0;
+    background:var(--white); padding:16px 28px;
+    border-top:1px solid var(--border);
+    display:flex; justify-content:flex-end;
+    border-radius:0 0 16px 16px;
+  }
+  .modal-footer-btn button {
+    background:var(--grad); color:var(--white);
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:700; font-size:0.95rem;
+    border:none; border-radius:9px; cursor:pointer;
+    padding:10px 24px; transition:filter 0.2s;
+  }
+  .modal-footer-btn button:hover { filter:brightness(1.08); }
+
+.tax-note{font-size:.85rem;color:#6b7280;margin-top:.75rem;line-height:1.5;}
+.cmp{width:100%;table-layout:fixed;border-collapse:collapse;font-size:.8rem;line-height:1.35;margin:0 0 12px}.cmp caption{caption-side:top;text-align:left;font-size:.78rem;color:#6b7280;padding-bottom:10px;line-height:1.5}.cmp th,.cmp td{padding:8px 5px;border-bottom:1px solid #e5e7eb;text-align:center;vertical-align:top;word-break:break-word;hyphens:auto;width:auto}.cmp td:first-child{text-align:left;font-weight:600;font-size:.82rem;color:inherit}.cmp .me{background:#eff6ff}.cmp thead th{background:#f3f4f6;font-weight:700;word-break:normal;overflow-wrap:normal;hyphens:none;font-size:.8rem;padding-left:4px;padding-right:2px;letter-spacing:-.01em}.cmp col.lbl{width:16%}.cmp col.c{width:16.8%}@media(max-width:760px){.cmp{table-layout:auto;min-width:640px;display:block;overflow-x:auto}}
+.calc-bar{font-size:.82rem;color:#374151;margin:14px 0 6px}#calc-rate,.hin{width:4.4em;padding:3px 5px;border:1px solid #cbd5e1;border-radius:6px;font:inherit;font-size:.82rem;text-align:center}.cmp .tot td{border-top:2px solid #cbd5e1;font-size:.9rem}.calc-note{font-size:.78rem;color:#6b7280;margin:6px 0 0;line-height:1.5}
+.no-plantilla{background:#eff6ff;border-left:4px solid #2563eb;padding:12px 16px;border-radius:8px;margin:14px 0 22px;line-height:1.55}
+ol.steps{margin:0 0 26px;padding-left:1.2em}ol.steps li{margin:0 0 10px;line-height:1.7}
+.aside{background:#f4fbf7;border:1px solid #d1e8d9;border-radius:10px;padding:14px 16px;margin:0 0 24px;font-size:.97rem;line-height:1.65}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "en",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to prepare texts or photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We write the copy from what you tell us and from your Google Business Profile, and we use your photos if you have some. If you don't, we use professional images."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I don't like the demo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Then you don't pay anything. Before launch, adjustments are unlimited: texts, photos, colours, sections. We make each one within 24 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do changes work after launch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One content change per month is included: text, photos, opening hours, services, prices or a new section. Send it by WhatsApp or email and it is done within 24 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need any technical knowledge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "None. Hosting, domain, SSL certificate, legal pages, updates and backups are all handled for you."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://webautonomos.es/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "How it works",
+      "item": "https://webautonomos.es/en/how"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <main>
   <p class="crumb"><a href="/en/">Home</a> &rsaquo; How it works</p>
   <h1>How it works: your website ready in 24 hours</h1>
-  <p class="lede">Three steps, no technical complications and nothing for you to configure: we take care of everything.</p>
-  <h2>1. We build your website</h2>
-  <p>We design a professional website tailored to your business, free and with no commitment.</p>
-  <h2>2. You review it</h2>
-  <p>We send you the link. You check it and tell us what you want changed.</p>
-  <h2>3. Online in 24h</h2>
-  <p>You approve it, pay €15/month and your website goes live on your own domain.</p>
-  <p>This is our <em>Déjà-Fait</em> method: we build a real demo with your information first — name, services, service area — and you only pay if it convinces you.</p>
+  <p class="lede">We build a real demo of your website first, with your own information, and you only pay if you like it. No template to fill in, nothing to configure, and it is all done in English.</p>
+  <p class="no-plantilla"><strong>This is our "already done" method.</strong> Most web offers ask you to commit before you see anything. We do the opposite: you see your finished website first, then decide.</p>
+
+  <h2>1. You tell us about your business</h2>
+  <p>It takes about two minutes: your trade, your main services, the town where you work and how to reach you (WhatsApp or email). You can use the <a href="/get-your-demo#pide-demo">demo form</a> or simply send us a WhatsApp message.</p>
+
+  <h2>2. We build your demo in under 24 hours</h2>
+  <p>We write the copy from what you told us and from your Google Business Profile: your services, your opening hours, your real reviews and your photos. We add the WhatsApp button, the contact form, a map, and the legal notice, privacy and cookie pages that Spanish law requires.</p>
+
+  <h2>3. We review it together</h2>
+  <p>We send you a private link so you can look at it in your own time, and we can go through it together by WhatsApp or video call if you prefer. You tell us what you want changed — texts, photos, colours, sections — and we make the changes within 24 hours. Adjustments before launch are unlimited.</p>
+
+  <h2>4. You approve it and it goes live</h2>
+  <p>Once you are happy, we connect your domain name, registered in your name, and the website goes live. You pay €15 a month with no lock-in, or a one-off €349. <a href="/en/pricing">Compare both plans</a>.</p>
+
+  <h2>After launch</h2>
+  <ul class="plain">
+    <li>One content change per month, done within 24 hours</li>
+    <li>Daily backups</li>
+    <li>24/7 monitoring and technical maintenance</li>
+    <li>SSL certificate renewed automatically</li>
+    <li>Support by email and WhatsApp</li>
+    <li>Cancel any time, keep your domain</li>
+  </ul>
+
+  <h2>What you don't have to do</h2>
+  <p class="aside">Choose a template, learn an editor, compare hosting plans, install plugins, write a Spanish legal notice or a cookie policy, or remember to renew an SSL certificate. That is our job.</p>
+
+  <h2>Frequently asked questions</h2>
+  <dl class="qa">
+    <dt>Do I need to prepare texts or photos?</dt>
+    <dd>No. We write the copy from what you tell us and from your Google Business Profile, and we use your photos if you have some. If you don't, we use professional images.</dd>
+    <dt>What if I don't like the demo?</dt>
+    <dd>Then you don't pay anything. Before launch, adjustments are unlimited: texts, photos, colours, sections. We make each one within 24 hours.</dd>
+    <dt>How do changes work after launch?</dt>
+    <dd>One content change per month is included: text, photos, opening hours, services, prices or a new section. Send it by WhatsApp or email and it is done within 24 hours.</dd>
+    <dt>Do I need any technical knowledge?</dt>
+    <dd>None. Hosting, domain, SSL certificate, legal pages, updates and backups are all handled for you.</dd>
+  </dl>
   <div class="actions">
-    <a class="btn btn-primary" href="/en/#steps">See the full process</a>
-    <a class="btn btn-ghost" href="/get-your-demo">Get my free demo</a>
+    <a class="btn btn-primary" href="/get-your-demo#pide-demo">Get my free demo</a>
+    <a class="btn btn-ghost" href="/en/services">See what's included</a>
   </div>
+  <p class="updated">Updated: September 2026</p>
 </main>
 
 <footer>
   <a class="fl" href="/en/"><span>&#127760;</span> webautonomos.es</a>
   <div class="flinks">
-    <a href="/aviso-legal">Legal notice</a>
-    <a href="/privacidad">Privacy</a>
+    <a href="/aviso-legal/">Legal notice</a>
+    <a href="/privacidad/">Privacy</a>
     <a href="/en/contact">Contact</a>
+    <a href="/blog/#en">Blog</a>
   </div>
   <address class="fnap">
     <strong>WebAutonomos</strong>

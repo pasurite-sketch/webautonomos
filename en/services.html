@@ -19,31 +19,27 @@
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Page statique pour la route SPA /services. Existe pour qu'elle reste servie en 200
-     apres le passage de assets.not_found_handling a "404-page". -->
-<title>Web Services for Freelancers | Web Design, Local SEO, Google My Business</title>
-<meta name="description" content="Digital services for freelancers: professional websites Just €15/month, local SEO to appear on Google Maps, and Google My Business management. Valencia and all Spain.">
+<title>Web services for freelancers in Spain: website, SEO, Google</title>
+<meta name="description" content="Website for €15/month, local SEO for €15/month and Google Business Profile management for €29/month. For freelancers and small businesses in Spain, no lock-in.">
 <link rel="canonical" href="https://webautonomos.es/en/services">
 <link rel="alternate" hreflang="es-ES" href="https://webautonomos.es/servicios">
 <link rel="alternate" hreflang="en" href="https://webautonomos.es/en/services">
 <link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/prestations">
 <link rel="alternate" hreflang="x-default" href="https://webautonomos.es/servicios">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://webautonomos.es/en/services">
-<meta property="og:title" content="Web Services for Freelancers | Web Design, Local SEO, Google My Business">
-<meta property="og:description" content="Digital services for freelancers: professional websites Just €15/month, local SEO to appear on Google Maps, and Google My Business management. Valencia and all Spain.">
-<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Web services for freelancers in Spain: website, SEO, Google">
+<meta property="og:description" content="Website for €15/month, local SEO for €15/month and Google Business Profile management for €29/month. For freelancers and small businesses in Spain, no lock-in.">
+<meta property="og:image" content="https://webautonomos.es/og-image.png">
+<meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="WebAutonomos">
 <meta name="twitter:card" content="summary_large_image">
-
-<link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
 <style>
   :root {
     --blue:#1a3a8f; --blue-dark:#0f2060; --green:#22c55e;
@@ -91,55 +87,243 @@
           color:rgba(255,255,255,0.55); display:flex; flex-direction:column; gap:1px; }
   .fnap a { color:rgba(255,255,255,0.55); text-decoration:none; }
   .fnap a:hover { color:rgba(255,255,255,0.85); }
+  table.cmp { width:100%; border-collapse:collapse; margin:0 0 12px; font-size:0.95rem; }
+  table.cmp caption { caption-side:top; text-align:left; font-size:0.85rem;
+                      color:var(--gray); padding:0 0 10px; }
+  table.cmp th, table.cmp td { padding:11px 12px; text-align:left;
+                               border-bottom:1px solid var(--border); vertical-align:top; }
+  table.cmp thead th { background:var(--off); font-weight:600; font-size:0.9rem; }
+  table.cmp tbody th { font-weight:500; color:var(--gray); width:34%; }
+  table.cmp td.us { font-weight:600; }
+  .wrap { overflow-x:auto; margin:0 0 8px; }
+  .note { font-size:0.85rem; color:var(--gray); margin:0 0 26px; }
+  .updated { font-size:0.85rem; color:var(--gray); margin:34px 0 0;
+             padding-top:16px; border-top:1px solid var(--border); }
+/* MODAL */
+  .modal-overlay {
+    display:none; position:fixed; inset:0; z-index:999;
+    background:rgba(10,20,50,0.65); backdrop-filter:blur(4px);
+    align-items:center; justify-content:center; padding:20px;
+  }
+  .modal-box {
+    background:var(--white); border-radius:16px;
+    max-width:580px; width:100%; max-height:85vh;
+    overflow-y:auto; position:relative;
+    box-shadow:0 32px 80px rgba(10,20,50,0.35);
+  }
+  .modal-header {
+    position:sticky; top:0; z-index:1;
+    background:var(--grad);
+    padding:20px 24px 16px;
+    border-radius:16px 16px 0 0;
+    display:flex; align-items:flex-start; justify-content:space-between; gap:16px;
+  }
+  .modal-header h3 {
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:800; font-size:1.3rem;
+    color:var(--white); margin-bottom:4px;
+  }
+  .modal-header p { font-size:0.78rem; color:rgba(255,255,255,0.65); }
+  .modal-close {
+    background:rgba(255,255,255,0.15); border:none; cursor:pointer;
+    color:var(--white); width:32px; height:32px; border-radius:50%;
+    font-size:1rem; display:flex; align-items:center; justify-content:center;
+    flex-shrink:0; transition:background 0.2s;
+  }
+  .modal-close:hover { background:rgba(255,255,255,0.3); }
+  .modal-body { padding:28px 28px 24px; }
+  .modal-section { margin-bottom:24px; }
+  .modal-section-title {
+    display:flex; align-items:center; gap:10px;
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:700; font-size:1rem; color:var(--text);
+    margin-bottom:10px;
+  }
+  .modal-num {
+    width:24px; height:24px; border-radius:50%;
+    background:var(--grad);
+    color:var(--white); font-size:0.75rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .modal-body p, .modal-body li {
+    font-size:0.88rem; line-height:1.65; color:#334155;
+  }
+  .modal-body ul { list-style:none; padding:0; margin-top:8px; }
+  .modal-body ul li { padding:3px 0 3px 16px; position:relative; }
+  .modal-body ul li::before {
+    content:'·'; position:absolute; left:4px; color:var(--green-mid); font-weight:700;
+  }
+  .modal-footer-btn {
+    position:sticky; bottom:0;
+    background:var(--white); padding:16px 28px;
+    border-top:1px solid var(--border);
+    display:flex; justify-content:flex-end;
+    border-radius:0 0 16px 16px;
+  }
+  .modal-footer-btn button {
+    background:var(--grad); color:var(--white);
+    font-family:'Bricolage Grotesque',sans-serif;
+    font-weight:700; font-size:0.95rem;
+    border:none; border-radius:9px; cursor:pointer;
+    padding:10px 24px; transition:filter 0.2s;
+  }
+  .modal-footer-btn button:hover { filter:brightness(1.08); }
+
+.tax-note{font-size:.85rem;color:#6b7280;margin-top:.75rem;line-height:1.5;}
+.cmp{width:100%;table-layout:fixed;border-collapse:collapse;font-size:.8rem;line-height:1.35;margin:0 0 12px}.cmp caption{caption-side:top;text-align:left;font-size:.78rem;color:#6b7280;padding-bottom:10px;line-height:1.5}.cmp th,.cmp td{padding:8px 5px;border-bottom:1px solid #e5e7eb;text-align:center;vertical-align:top;word-break:break-word;hyphens:auto;width:auto}.cmp td:first-child{text-align:left;font-weight:600;font-size:.82rem;color:inherit}.cmp .me{background:#eff6ff}.cmp thead th{background:#f3f4f6;font-weight:700;word-break:normal;overflow-wrap:normal;hyphens:none;font-size:.8rem;padding-left:4px;padding-right:2px;letter-spacing:-.01em}.cmp col.lbl{width:16%}.cmp col.c{width:16.8%}@media(max-width:760px){.cmp{table-layout:auto;min-width:640px;display:block;overflow-x:auto}}
+.calc-bar{font-size:.82rem;color:#374151;margin:14px 0 6px}#calc-rate,.hin{width:4.4em;padding:3px 5px;border:1px solid #cbd5e1;border-radius:6px;font:inherit;font-size:.82rem;text-align:center}.cmp .tot td{border-top:2px solid #cbd5e1;font-size:.9rem}.calc-note{font-size:.78rem;color:#6b7280;margin:6px 0 0;line-height:1.5}
+.no-plantilla{background:#eff6ff;border-left:4px solid #2563eb;padding:12px 16px;border-radius:8px;margin:14px 0 22px;line-height:1.55}
+ol.steps{margin:0 0 26px;padding-left:1.2em}ol.steps li{margin:0 0 10px;line-height:1.7}
+.aside{background:#f4fbf7;border:1px solid #d1e8d9;border-radius:10px;padding:14px 16px;margin:0 0 24px;font-size:.97rem;line-height:1.65}
 </style>
-  <style>.tax-note{font-size:.85rem;color:#6b7280;margin-top:.75rem;line-height:1.5;}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Web services for freelancers and small businesses in Spain",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://webautonomos.es/#organization",
+    "name": "WebAutonomos",
+    "url": "https://webautonomos.es/"
+  },
+  "inLanguage": "en",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Spain"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Web services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "price": "15",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Professional website",
+          "description": "Custom website with hosting, domain name, SSL, Spanish legal pages and maintenance."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "15",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Local SEO",
+          "description": "Four articles a month, local keywords and a monthly ranking report."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "29",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false,
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Google Business Profile management",
+          "description": "Profile optimisation, four posts a month and replies to reviews. Creation: €90 once."
+        }
+      }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://webautonomos.es/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://webautonomos.es/en/services"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <main>
   <p class="crumb"><a href="/en/">Home</a> &rsaquo; Services</p>
-  <h1>Web services for freelancers</h1>
-  <p class="lede">Professional websites for €15/month, local SEO to show up on Google Maps, and full management of your Google My Business profile. No commitment.</p>
+  <h1>Web services for freelancers and small businesses in Spain</h1>
+  <p class="lede">A professional website for €15 a month, local SEO to show up on Google Maps, and full management of your Google Business Profile. No lock-in, and each service can be taken on its own.</p>
+  <p class="tax-note">Prices exclude Spanish VAT (IVA, 21%). Most autónomos and companies can deduct it.</p>
+
   <h2>Website — €15/month</h2>
+  <p>This is the foundation, and for many freelancers it is all they need. A three- to five-page website designed for one thing: when a customer looks for you on Google, they find you, understand what you do, and call you.</p>
   <ul class="plain">
-    <li>Professional web design</li>
-    <li>Hosting and .es domain</li>
+    <li>Custom design</li>
+    <li>Hosting and domain name in your name</li>
     <li>SSL certificate (https)</li>
-    <li>Mobile optimisation</li>
+    <li>Mobile-friendly layout</li>
     <li>Contact form</li>
     <li>WhatsApp button</li>
+    <li>Legal notice, privacy and cookie policy</li>
+    <li>One content change per month</li>
   </ul>
-  <p class="tax-note">Prices exclude VAT. VAT is deductible for freelancers and companies.</p>
-    <h2>Local SEO — €15/month</h2>
+  <p>Your website is ready within 24 hours. You approve a demo built with your real information before anything goes live, and nothing is charged until you say yes. The legal pages Spanish law requires are part of the package, whatever language your site is in — <a href="/en/web-design-for-expats-in-spain">here is what they must contain</a>.</p>
+
+  <h2>Local SEO — €15/month</h2>
+  <p>Having a website is not enough to be found. Local SEO is the work that moves your page up when someone searches for your trade in your town. It is slow and cumulative, and it is what separates a website that sleeps from one that makes the phone ring.</p>
   <ul class="plain">
     <li>4 blog articles per month</li>
-    <li>Local keyword optimisation</li>
-    <li>Optimised meta titles and descriptions</li>
-    <li>SEO-friendly URL structure</li>
+    <li>Local keyword research and placement</li>
+    <li>Optimised page titles and descriptions</li>
+    <li>Clean, readable URLs</li>
     <li>Page speed optimisation</li>
     <li>Local business schema markup</li>
     <li>Monthly ranking report</li>
   </ul>
-  <h2>Google My Business — €29/month</h2>
+  <p>Allow three to six months before you see clear results. That is the normal pace: anyone who promises you first place in three weeks is selling you something else.</p>
+
+  <h2>Google Business Profile management — €29/month</h2>
+  <p>Your Google profile is often a customer's first contact with your business, even before your website. A complete, active profile, with reviews that get a reply, weighs heavily in the final choice.</p>
   <ul class="plain">
-    <li>Profile creation: €90 (one-time)</li>
+    <li>Profile creation: €90, once</li>
     <li>Complete profile optimisation</li>
     <li>4 posts per month</li>
-    <li>Review management and replies</li>
+    <li>Review monitoring and replies</li>
     <li>Monthly performance report</li>
   </ul>
+  <p>The €90 creation fee is only paid once, and only if you don't have a profile yet. If yours already exists, we take it over at no extra cost.</p>
+
+  <h2>How to combine them</h2>
+  <p>Each service works on its own. If you are starting out, the website alone is the right first step: everything else depends on it. Add the Google profile if customers come to you, or if you travel to them within a specific area. Local SEO comes last, once the base is in place and you want to reach further.</p>
+  <p>A physiotherapist opening a practice in Valencia will take the website alone, at €15. An established plumber on the Costa Blanca who wants to appear in the Google Maps results will take the website and the Google profile. All three together cost €59 a month, plus the profile creation if needed.</p>
+
+  <h2>Two more services</h2>
+  <ul class="plain">
+    <li><a href="/en/automation-diagnostic/">Automation diagnostic</a>: work out for free what your repetitive tasks cost you and whether automating them pays off.</li>
+    <li><a href="/en/ai-visibility/">AI visibility check</a>: find out whether ChatGPT, Gemini or Perplexity recommend your business, and how to get there.</li>
+  </ul>
+  <p>Before choosing, you may want to read our <a href="/en/faq">FAQ about the €15/month website</a>: timings, costs, cancelling and the technical skills you need (none).</p>
   <div class="actions">
-    <a class="btn btn-primary" href="/en/#included">See the services in detail</a>
-    <a class="btn btn-ghost" href="/get-your-demo">Get a free quote</a>
+    <a class="btn btn-primary" href="/get-your-demo#pide-demo">Get my free demo</a>
+    <a class="btn btn-ghost" href="/en/pricing">See pricing details</a>
   </div>
+  <p class="updated">Updated: September 2026</p>
 </main>
 
 <footer>
   <a class="fl" href="/en/"><span>&#127760;</span> webautonomos.es</a>
   <div class="flinks">
-    <a href="/aviso-legal">Legal notice</a>
-    <a href="/privacidad">Privacy</a>
+    <a href="/aviso-legal/">Legal notice</a>
+    <a href="/privacidad/">Privacy</a>
     <a href="/en/contact">Contact</a>
+    <a href="/blog/#en">Blog</a>
   </div>
   <address class="fnap">
     <strong>WebAutonomos</strong>
