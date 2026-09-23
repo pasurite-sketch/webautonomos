@@ -145,6 +145,37 @@ UI = {
                legal='Mentions légales', privacy='Confidentialité', contact='Contact'),
 }
 
+# CTA par categorie (23/09/2026). Remplace les cles cta_* de UI pour les
+# articles de la categorie indiquee. Meme logique que CTA_PAR_CATEGORIE dans le
+# SPA (index.html), mais avec le parametre ?lang= : le diagnostic lit la langue
+# dans l'URL (es par defaut, puis ca / en / fr), le lecteur arrive donc dans sa
+# langue. Avant ce correctif, les 40 articles d'automatisation renvoyaient vers
+# /pide-tu-demo et /diagnostico-automatizacion/ n'avait aucun lien interne.
+CTA_CATEGORIE = {
+    'automatizacion': {
+        'es': dict(cta_title='¿Cuánto te cuestan tus tareas repetitivas?',
+                   cta_text='Diagnóstico gratuito: 4 preguntas, unos 2 minutos · '
+                            'Precio cerrado · Presupuesto en menos de 48 horas',
+                   cta_btn='Calcular lo que me cuesta →',
+                   cta_href='/diagnostico-automatizacion/'),
+        'val': dict(cta_title='Quant et costen les teues tasques repetitives?',
+                    cta_text='Diagnòstic gratuït: 4 preguntes, uns 2 minuts · '
+                             'Preu tancat · Pressupost en menys de 48 hores',
+                    cta_btn='Calcular el que em costa →',
+                    cta_href='/diagnostico-automatizacion/?lang=ca'),
+        'en': dict(cta_title='What are your repetitive tasks costing you?',
+                   cta_text='Free diagnostic: 4 questions, about 2 minutes · '
+                            'Fixed price · Quote within 48 hours',
+                   cta_btn='Calculate what it costs me →',
+                   cta_href='/diagnostico-automatizacion/?lang=en'),
+        'fr': dict(cta_title='Combien vous coûtent vos tâches répétitives ?',
+                   cta_text='Diagnostic gratuit : 4 questions, environ 2 minutes · '
+                            'Prix ferme · Devis en moins de 48 heures',
+                   cta_btn='Calculer ce que ça me coûte →',
+                   cta_href='/diagnostico-automatizacion/?lang=fr'),
+    },
+}
+
 # Tous les libelles de mois rencontres dans les 4 blocs de langue.
 MONTHS = {
     'ene': 1, 'gen': 1, 'jan': 1, 'enero': 1, 'gener': 1, 'january': 1, 'janvier': 1,
@@ -302,6 +333,8 @@ def render(article, lang, alternates):
         alternates = dict(alternates, es=es_twin)
 
     ui = UI[lang]
+    # CTA propre a la categorie, s'il existe (voir CTA_CATEGORIE).
+    ui = dict(ui, **CTA_CATEGORIE.get(article.get('category'), {}).get(lang, {}))
     cat_slug, cat_color, cat_labels = CATEGORIES.get(article.get('category'), DEFAULT_CATEGORY)
     cat_label = cat_labels.get(lang, cat_labels['es'])
     title = article.get('title') or slug
