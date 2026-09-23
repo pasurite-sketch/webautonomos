@@ -9,6 +9,7 @@
 - Incluido: dominio .es el primer año, alojamiento, certificado SSL,
   mantenimiento, una modificación al mes tras el lanzamiento
 - Entrega: 24 horas
+- Web bilingüe (dos idiomas) sin coste adicional
 - Idiomas: castellano, valenciano, inglés, francés
 - Servicios complementarios: SEO Local 15 €/mes; Google Business Profile
   29 €/mes con alta de 90 € pago único

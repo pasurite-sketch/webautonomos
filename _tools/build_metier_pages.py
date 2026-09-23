@@ -86,7 +86,7 @@ THERA['fr'] = dict(
           "textes à partir de vos informations, affichons votre titre et votre numéro RPPS si vous en avez un, et "
           "prévoyons un formulaire de contact qui ne demande pas le motif de consultation. Le site coûte "
           "<strong>15 € HT par mois</strong> sans frais d'installation ni engagement, ou <strong>349 € HT en "
-          "paiement unique</strong>, et la démo est prête en 24 heures.",
+          "paiement unique</strong>, bilingue sans supplément si vous le souhaitez, et la démo est prête en 24 heures.",
     legal_id='regles', legal_ey='Les règles', legal_t="Ce que votre site doit respecter",
     legal_intro="Les règles changent selon votre titre. Un psychologue n'a pas les contraintes publicitaires d'un "
                 "médecin, mais son titre est protégé ; un praticien non réglementé communique librement, sans "
@@ -161,9 +161,10 @@ THERA['fr'] = dict(
                                         "vos mentions légales."),
            ('Vous décidez', "Vous demandez les modifications que vous voulez. Si le site vous plaît, il est mis en "
                            "ligne ; sinon, vous ne payez rien.")],
-    price_note="Prix hors taxes. Les psychologues sont exonérés de TVA et beaucoup de praticiens sont en franchise "
-               "en base : la plupart ne récupèrent pas la TVA, comptez donc 20 à 21 % de plus selon votre situation. "
-               "Nom de domaine inclus la première année, puis environ 12 €/an.",
+    price_note="Prix hors taxes. En France, nous facturons sans TVA : vous déclarez vous-même la TVA française de "
+               "20 % (autoliquidation), que les psychologues, exonérés, et les praticiens en franchise en base ne "
+               "récupèrent pas. En Espagne, l'IVA de 21 % s'ajoute. Nom de domaine inclus la première année, puis "
+               "environ 12 €/an.",
     faq_t='Questions fréquentes',
     faq=[("Un psychologue doit-il afficher son numéro RPPS sur son site ?",
           "Aucune loi ne l'impose expressément sur un site, mais c'est recommandé. La LCEN (art. 19) demande aux "
@@ -228,8 +229,8 @@ THERA['en'] = dict(
           "hypnotherapists and coaches practising in Spain. We write the copy from your information, show your "
           "Colegio and colegiado number if you are a psychologist, keep health claims and patient testimonials off "
           "the site, and use a contact form that doesn't ask for health details. It costs <strong>€15 + VAT per "
-          "month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>. We work "
-          "with you in English, and your demo is ready within 24 hours.",
+          "month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>, in English "
+          "and Spanish at no extra cost. We work with you in English, and your demo is ready within 24 hours.",
     legal_id='rules', legal_ey='Spanish rules', legal_t='What your website has to get right in Spain',
     legal_intro="In Spain, what you may say online depends on your title. A health psychologist is a regulated "
                 "health professional; a counsellor or coach is not, and must not present their work as health "
@@ -331,7 +332,8 @@ THERA['en'] = dict(
           "No law requires the whole site in Spanish. Spanish consumer law does require pre-contract information, "
           "such as prices and terms, to be given at least in Spanish, and Madrid applies this to all information "
           "for consumers. In Catalonia, documents offering your services must also be available at least in "
-          "Catalan. A short Spanish version of your prices and terms is the safe choice."),
+          "Catalan. A short Spanish version of your prices and terms is the safe choice, and we build your site "
+          "in English and Spanish at no extra cost."),
          ("What should my contact form ask?",
           "A name, a way to reach the person and a preferred time. Not the reason for the consultation: that is "
           "health data under the GDPR, and data should be limited to what is necessary. We add a short note asking "
