@@ -39,12 +39,14 @@ URLS = {
     'fr': dict(home='/fr/', demo='/demandez-votre-demo', tarifs='/fr/tarifs',
                prestations='/fr/prestations', questions='/fr/questions', blog='/blog/#fr',
                diag='/fr/diagnostic-automatisation/',
-               vis='/fr/visibilite-ia/'),
+               vis='/fr/visibilite-ia/',
+               cmp='/fr/meilleurs-createurs-de-sites-pour-independants'),
     'en': dict(home='/en/', demo='/get-your-demo', tarifs='/en/pricing',
                prestations='/en/services', questions='/en/faq', blog='/blog/#en',
                how='/en/how', contact='/en/contact',
                diag='/en/automation-diagnostic/',
-               vis='/en/ai-visibility/'),
+               vis='/en/ai-visibility/',
+               cmp='/en/best-website-builders-for-freelancers-in-spain'),
 }
 SOURCE_DEMO = {'fr': 'demandez-votre-demo.html', 'en': 'get-your-demo.html'}
 # Ancres des sections, dans la langue de la page (les pages commerciales y
@@ -134,6 +136,7 @@ C['fr'] = dict(
   rev_aria='Avis',
   cmp_ey='Comparer', cmp_t='Pourquoi nous choisir ?',
   cmp_a='Avec une agence classique', cmp_b='Avec WebAutonomos',
+  cmp_more='Comparer toutes les options : Wix, Hostinger, Jimdo, Simplébo…',
   cmp_others=["<strong>Prix gonflés :</strong> 500 €, 1 000 € ou plus pour un site vitrine simple.",
               "<strong>Des semaines d'attente :</strong> on vous annonce 2 semaines, il en faut 2 mois.",
               "<strong>Lié par un contrat :</strong> engagement de 12 mois, pénalités si vous résiliez."],
@@ -221,6 +224,7 @@ C['en'] = dict(
   rev_aria='Review',
   cmp_ey='Compare', cmp_t='Why choose us?',
   cmp_a='With a typical agency', cmp_b='With WebAutonomos',
+  cmp_more='Compare every option: Wix, Hostinger, Jimdo, IONOS…',
   cmp_others=["<strong>Inflated prices:</strong> €500, €1,000 or more for a simple business website.",
               "<strong>Weeks of waiting:</strong> they say 2 weeks and it ends up being 2 months.",
               "<strong>Tied by contract:</strong> 12-month commitments and penalties if you cancel."],
@@ -359,6 +363,8 @@ EXTRA_CSS = """
 .cmp-c li::before { position:absolute; left:0; font-weight:800; }
 .cmp-c.them li::before { content:'✕'; color:#dc2626; }
 .cmp-c.us li::before { content:'✓'; color:var(--green-dark); }
+.cmp-more { text-align:center; margin-top:28px; font-size:.97rem; }
+.cmp-more a { color:var(--blue); font-weight:600; text-decoration:none; }
 .faq-l { max-width:780px; margin:0 auto; display:grid; gap:10px; }
 .faq-l details { background:var(--white); border:1.5px solid var(--border); border-radius:12px; }
 .faq-l summary { cursor:pointer; padding:16px 18px; font-weight:600; list-style:none;
@@ -622,6 +628,7 @@ def page(lang):
     <div class="cmp-c them"><h3>{E(c['cmp_a'])}</h3><ul>{others}</ul></div>
     <div class="cmp-c us"><h3>{E(c['cmp_b'])}</h3><ul>{us}</ul></div>
   </div>
+  <p class="cmp-more"><a href="{L('cmp')}">{E(c['cmp_more'])} →</a></p>
 </section>
 
 <section class="blk" id="{i['add']}">
