@@ -114,6 +114,13 @@ def page_files():
                 continue
             subs['%s/%s' % (lang, name[:-5])] = ('/%s/%s' % (lang, name[:-5]), path)
 
+    # Pages FR/EN en dossier (fr/diagnostic-automatisation/index.html…),
+    # generees par build_i18n_pages.py : servies sous /fr/<dossier>/.
+    for lang in ('fr', 'en'):
+        for path in sorted(glob.glob(os.path.join(ROOT, lang, '*', 'index.html'))):
+            d = os.path.basename(os.path.dirname(path))
+            subs['%s/%s/' % (lang, d)] = ('/%s/%s/' % (lang, d), path)
+
     return [v for _, v in sorted(list(roots.items()) + list(dirs.items())
                                  + list(subs.items()))]
 

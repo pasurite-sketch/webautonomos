@@ -38,13 +38,13 @@ E = lambda s: html.escape(s, quote=True)
 URLS = {
     'fr': dict(home='/fr/', demo='/demandez-votre-demo', tarifs='/fr/tarifs',
                prestations='/fr/prestations', questions='/fr/questions', blog='/blog/#fr',
-               diag='/diagnostico-automatizacion/?lang=fr',
-               vis='/visibilidad-ia/?lang=fr'),
+               diag='/fr/diagnostic-automatisation/',
+               vis='/fr/visibilite-ia/'),
     'en': dict(home='/en/', demo='/get-your-demo', tarifs='/en/pricing',
                prestations='/en/services', questions='/en/faq', blog='/blog/#en',
                how='/en/how', contact='/en/contact',
-               diag='/diagnostico-automatizacion/?lang=en',
-               vis='/visibilidad-ia/?lang=en'),
+               diag='/en/automation-diagnostic/',
+               vis='/en/ai-visibility/'),
 }
 SOURCE_DEMO = {'fr': 'demandez-votre-demo.html', 'en': 'get-your-demo.html'}
 # Ancres des sections, dans la langue de la page (les pages commerciales y

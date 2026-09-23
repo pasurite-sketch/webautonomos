@@ -178,12 +178,12 @@ CTA_CATEGORIE = {
                    cta_text='Free diagnostic: 4 questions, about 2 minutes · '
                             'Fixed price · Quote within 48 hours',
                    cta_btn='Calculate what it costs me →',
-                   cta_href='/diagnostico-automatizacion/?lang=en'),
+                   cta_href='/en/automation-diagnostic/'),
         'fr': dict(cta_title='Combien vous coûtent vos tâches répétitives ?',
                    cta_text='Diagnostic gratuit : 4 questions, environ 2 minutes · '
                             'Prix ferme · Devis en moins de 48 heures',
                    cta_btn='Calculer ce que ça me coûte →',
-                   cta_href='/diagnostico-automatizacion/?lang=fr'),
+                   cta_href='/fr/diagnostic-automatisation/'),
     },
 }
 
