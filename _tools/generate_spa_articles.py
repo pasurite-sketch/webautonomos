@@ -109,6 +109,17 @@ DEFAULT_CATEGORY = ('paginas-web', '#3B82F6',
 HTML_LANG = {'es': 'es', 'val': 'ca', 'en': 'en', 'fr': 'fr'}
 OG_LOCALE = {'es': 'es_ES', 'val': 'ca_ES', 'en': 'en_US', 'fr': 'fr_FR'}
 
+# Adresses de navigation par langue (23/09/2026, plan SEO FR-EN) : les
+# articles FR et EN renvoient vers l'accueil de leur langue. es et val
+# gardent exactement les adresses d'avant.
+NAV_URLS = {
+    'es':  dict(home=BASE, blog=BASE + '/blog/', contact=BASE + '/contacto'),
+    'val': dict(home=BASE, blog=BASE + '/blog/', contact=BASE + '/contacto'),
+    'en':  dict(home=BASE + '/en/', blog=BASE + '/blog/#en', contact=BASE + '/en/contact'),
+    'fr':  dict(home=BASE + '/fr/', blog=BASE + '/blog/#fr',
+                contact=BASE + '/demandez-votre-demo#pide-demo'),
+}
+
 # Libelles d'interface
 UI = {
     'es': dict(home='Inicio', sectors='Webs por sector', sector_q='¿Trabajas en este sector?', sector_link='Ver la web para {name} →', seo_q='¿Prefieres que lo hagamos por ti?', seo_link='SEO local para autónomos desde 15 €/mes →', blog='Blog', back='← Volver al blog',
@@ -284,21 +295,21 @@ TRACKING = """<!-- Google Analytics GA4 -->
 
 NAV = """    <nav style="background:white; box-shadow:0 1px 3px rgba(0,0,0,0.1); position:sticky; top:0; z-index:50;">
         <div style="max-width:1200px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;">
-            <a href="{base}" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+            <a href="{home_url}" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
                 <div style="width:36px; height:36px; background:linear-gradient(135deg,#2563eb,#16a34a); border-radius:8px; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:16px;">W</div>
                 <span style="font-weight:700; font-size:18px;"><span style="color:#2563eb;">web</span><span style="color:#16a34a;">autonomos</span><span style="color:#111;">.es</span></span>
             </a>
-            <a href="{base}/blog/" style="color:#374151; text-decoration:none; font-size:14px; font-weight:500;">{blog}</a>
+            <a href="{blog_url}" style="color:#374151; text-decoration:none; font-size:14px; font-weight:500;">{blog}</a>
         </div>
     </nav>
 """
 
 FOOTER = """    <footer style="background:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%); padding:24px 6%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:48px;">
-        <a href="{base}" style="font-weight:800; font-size:1rem; color:rgba(255,255,255,0.85); text-decoration:none;">&#127760; webautonomos.es</a>
+        <a href="{home_url}" style="font-weight:800; font-size:1rem; color:rgba(255,255,255,0.85); text-decoration:none;">&#127760; webautonomos.es</a>
         <div style="display:flex; gap:20px; flex-wrap:wrap;">
             <a href="{base}/aviso-legal" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{legal}</a>
             <a href="{base}/privacidad" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{privacy}</a>
-            <a href="{base}/contacto" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{contact}</a>
+            <a href="{contact_url}" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{contact}</a>
         </div>
         <nav aria-label="{sectors_label}" style="flex-basis:100%; order:2; display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center; font-size:0.85rem;">
             <span style="color:rgba(255,255,255,0.7);">{sectors_label}:</span>
@@ -492,7 +503,7 @@ def render(article, lang, alternates):
     breadcrumb = {
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": ui['home'], "item": BASE},
+            {"@type": "ListItem", "position": 1, "name": ui['home'], "item": NAV_URLS[lang]['home']},
             {"@type": "ListItem", "position": 2, "name": ui['blog'], "item": BASE + "/blog"},
             {"@type": "ListItem", "position": 3, "name": cat_label,
              "item": "%s/blog?categoria=%s" % (BASE, cat_slug)},
@@ -578,9 +589,9 @@ def render(article, lang, alternates):
     <article class="max-w-3xl mx-auto px-4 py-8 prose-article">
 
         <nav class="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
-            <a href="{base}" class="hover:text-purple-600 transition">{home}</a>
+            <a href="{home_url}" class="hover:text-purple-600 transition">{home}</a>
             <span class="mx-1">&rsaquo;</span>
-            <a href="{base}/blog/" class="hover:text-purple-600 transition">{blog}</a>
+            <a href="{blog_url}" class="hover:text-purple-600 transition">{blog}</a>
             <span class="mx-1">&rsaquo;</span>
             <span>{cat_label}</span>
         </nav>
@@ -620,7 +631,7 @@ def render(article, lang, alternates):
         </div>
 
         <p class="mt-10">
-            <a href="{base}/blog/" style="color:#2563eb; text-decoration:none; font-weight:500;">{back}</a>
+            <a href="{blog_url}" style="color:#2563eb; text-decoration:none; font-weight:500;">{back}</a>
         </p>
 
     </article>
@@ -633,7 +644,9 @@ def render(article, lang, alternates):
         canonical_url=canonical_url,
         hreflang="\n".join(hreflang), oglocale=OG_LOCALE[lang], published=published,
         cat_label=E(cat_label), cat_color=cat_color, base=BASE, schemas=schema_html, tracking=TRACKING,
-        nav=NAV.format(base=BASE, blog=E(ui['blog'])),
+        nav=NAV.format(base=BASE, blog=E(ui['blog']), home_url=NAV_URLS[lang]['home'],
+                       blog_url=NAV_URLS[lang]['blog']),
+        home_url=NAV_URLS[lang]['home'], blog_url=NAV_URLS[lang]['blog'],
         home=E(ui['home']), blog=E(ui['blog']), date_raw=E(article.get('date') or published),
         read=read, read_label=E(ui['read']), title=E(title),
         toc_label=E(ui['toc']), toc="\n".join(toc), body="\n".join(body),
@@ -642,6 +655,8 @@ def render(article, lang, alternates):
         cta_btn=E(ui['cta_btn']), cta_href=ui.get('cta_href', '/pide-tu-demo'),
         author_desc=E(ui['author_desc']), back=E(ui['back']),
         footer=FOOTER.format(base=BASE, legal=E(ui['legal']),
+                             home_url=NAV_URLS[lang]['home'],
+                             contact_url=NAV_URLS[lang]['contact'],
                              privacy=E(ui['privacy']), contact=E(ui['contact']),
                              sectors_label=E(ui['sectors']),
                              sector_links=sector_links_html(lang)),
@@ -756,6 +771,10 @@ def main():
                          'correspond (repetable). Ex : --slug cuanto-cuesta-pagina-'
                          'web-autonomos-espana. Les quatre langues du groupe sont '
                          'traitees ensemble : leurs hreflang doivent rester coherents.')
+    ap.add_argument('--lang', action='append', choices=['es', 'val', 'en', 'fr'],
+                    help='limite l ecriture aux articles de cette langue (repetable). '
+                         'Ex : --force --lang fr --lang en regenere le francais et '
+                         'l anglais sans toucher aux articles espagnols retouches a la main.')
     args = ap.parse_args()
 
     translations = load_translations()
@@ -806,6 +825,8 @@ def main():
     written, skipped, failed = {}, 0, []
     for slug, (lang, art) in sorted(by_slug.items()):
         if wanted and slug not in wanted:
+            continue
+        if args.lang and lang not in args.lang:
             continue
         if has_asset(slug) and not args.force:
             skipped += 1
