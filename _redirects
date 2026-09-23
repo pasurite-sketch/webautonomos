@@ -229,3 +229,22 @@
 # et la source que build_demo_pages.py lit pour fabriquer /merci/ et /thank-you/.
 # gracias.html, orphelin, est supprime ; la page est en noindex et hors sitemap.
 /gracias  /gracias/  301
+
+# Pages commerciales FR/EN rangees sous /fr/ et /en/ (23/09/2026, plan SEO FR-EN).
+# Les fichiers ont ete deplaces dans le meme commit (migrate_fr_en_pages.py).
+/prestations   /fr/prestations   301
+/prestations/  /fr/prestations   301
+/tarifs   /fr/tarifs   301
+/tarifs/  /fr/tarifs   301
+/questions   /fr/questions   301
+/questions/  /fr/questions   301
+/services   /en/services   301
+/services/  /en/services   301
+/pricing   /en/pricing   301
+/pricing/  /en/pricing   301
+/faq   /en/faq   301
+/faq/  /en/faq   301
+/how   /en/how   301
+/how/  /en/how   301
+/contact   /en/contact   301
+/contact/  /en/contact   301

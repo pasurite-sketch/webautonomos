@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
-"""Génère les versions FRANÇAISE et ANGLAISE des pages de conversion,
+"""⚠ PÉRIMÉ — NE PAS RELANCER (constat du 23/09/2026).
+Les pages en ligne ont reçu des corrections après la dernière génération
+(hreflang EN, avis, canonical, Open Graph, liens vers /fr/ et /en/). Relancé,
+ce script les effacerait et injecterait des textes espagnols dans les pages FR
+et EN (mention TVA). Corriger désormais demandez-votre-demo.html et
+get-your-demo.html directement.
+
+Génère les versions FRANÇAISE et ANGLAISE des pages de conversion,
 à partir des sources espagnoles :
 
   pide-tu-demo.html   ->  demandez-votre-demo.html  (/demandez-votre-demo)

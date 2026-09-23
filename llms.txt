@@ -21,6 +21,21 @@
 - [Cuánto cuesta una página web para autónomos en 2026](https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-autonomos-espana)
 - [Blog](https://webautonomos.es/blog/)
 
+## English — for English-speaking businesses in Spain
+- [Home (English)](https://webautonomos.es/en/)
+- [Pricing](https://webautonomos.es/en/pricing)
+- [What's included](https://webautonomos.es/en/services)
+- [How it works](https://webautonomos.es/en/how)
+- [FAQ](https://webautonomos.es/en/faq)
+- [Get a free demo](https://webautonomos.es/get-your-demo)
+
+## Français — indépendants en France et en Espagne
+- [Accueil (français)](https://webautonomos.es/fr/)
+- [Tarifs](https://webautonomos.es/fr/tarifs)
+- [Prestations](https://webautonomos.es/fr/prestations)
+- [Questions fréquentes](https://webautonomos.es/fr/questions)
+- [Demander une démo gratuite](https://webautonomos.es/demandez-votre-demo)
+
 ## Webs por sector
 - [Psicólogos](https://webautonomos.es/psicologos)
 - [Dentistas](https://webautonomos.es/dentistas)

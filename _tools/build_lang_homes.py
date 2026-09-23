@@ -15,8 +15,8 @@ WhatsApp flottant) est repris à chaque génération dans les pages de démo de 
 même langue (demandez-votre-demo.html, get-your-demo.html), pour que l'accueil
 reste identique visuellement à la page d'atterrissage.
 
-Les adresses internes sont centralisées dans URLS : le jour où les pages
-commerciales passent sous /fr/ et /en/, c'est le seul endroit à changer.
+Les adresses internes sont centralisées dans URLS. Depuis le 23/09/2026 les
+pages commerciales vivent sous /fr/ et /en/ (migrate_fr_en_pages.py).
 
 Usage (depuis ~/webautonomos) :
     python3 _tools/build_lang_homes.py            # écrit fr/index.html et en/index.html
@@ -36,17 +36,25 @@ E = lambda s: html.escape(s, quote=True)
 
 # ─── adresses internes (un seul endroit à modifier) ─────────────────────────
 URLS = {
-    'fr': dict(home='/fr/', demo='/demandez-votre-demo', tarifs='/tarifs',
-               prestations='/prestations', questions='/questions', blog='/blog/#fr',
+    'fr': dict(home='/fr/', demo='/demandez-votre-demo', tarifs='/fr/tarifs',
+               prestations='/fr/prestations', questions='/fr/questions', blog='/blog/#fr',
                diag='/diagnostico-automatizacion/?lang=fr',
                vis='/visibilidad-ia/?lang=fr'),
-    'en': dict(home='/en/', demo='/get-your-demo', tarifs='/pricing',
-               prestations='/services', questions='/faq', blog='/blog/#en',
-               how='/how', contact='/contact',
+    'en': dict(home='/en/', demo='/get-your-demo', tarifs='/en/pricing',
+               prestations='/en/services', questions='/en/faq', blog='/blog/#en',
+               how='/en/how', contact='/en/contact',
                diag='/diagnostico-automatizacion/?lang=en',
                vis='/visibilidad-ia/?lang=en'),
 }
 SOURCE_DEMO = {'fr': 'demandez-votre-demo.html', 'en': 'get-your-demo.html'}
+# Ancres des sections, dans la langue de la page (les pages commerciales y
+# renvoient : /en/#pricing, /fr/#tarifs…).
+IDS = {
+    'fr': dict(brief='en-bref', inc='inclus', steps='etapes', price='tarifs', aud='pour-qui',
+               sect='metiers', rev='avis', cmp='comparer', add='services', faq='faq'),
+    'en': dict(brief='in-short', inc='included', steps='steps', price='pricing', aud='who-we-help',
+               sect='trades', rev='reviews', cmp='compare', add='services', faq='faq'),
+}
 TRUSTPILOT = 'https://www.trustpilot.com/review/webautonomos.es'
 WHATSAPP = '34654239520'
 
@@ -450,7 +458,7 @@ def jsonld(lang, c, u):
 
 
 def page(lang):
-    c, u, src = C[lang], URLS[lang], source(lang)
+    c, u, src, i = C[lang], URLS[lang], source(lang), IDS[lang]
     L = lambda k: BASE + u[k]
     url = L('home')
     demo = L('demo') + '#pide-demo'
@@ -549,28 +557,28 @@ def page(lang):
   </div>
 </section>
 
-<section class="brief" id="en-bref">
+<section class="brief" id="{i['brief']}">
   <div class="brief-c">
     <h2>{E(c['brief_t'])}</h2>
     <p>{c['brief']}</p>
   </div>
 </section>
 
-<section class="blk" id="inclus">
+<section class="blk" id="{i['inc']}">
   <p class="ey">{E(c['inc_ey'])}</p>
   <h2>{E(c['inc_t'])}</h2>
   <p class="sd">{E(c['inc_sd'])}</p>
   <ul class="inc-g">{inc}</ul>
 </section>
 
-<section class="ss blk alt" id="etapes">
+<section class="ss blk alt" id="{i['steps']}">
   <p class="ey">{E(c['how_ey'])}</p>
   <h2>{E(c['how_t'])}</h2>
   <p class="sd">{E(c['how_sd'])}</p>
   <div class="sw">{steps}</div>
 </section>
 
-<section class="blk" id="tarifs">
+<section class="blk" id="{i['price']}">
   <p class="ey">{E(c['price_ey'])}</p>
   <h2>{E(c['price_t'])}</h2>
   <p class="sd">{E(c['price_sd'])}</p>
@@ -579,20 +587,20 @@ def page(lang):
   <a class="p-link" href="{L('tarifs')}">{E(c['price_link'])} →</a>
 </section>
 
-<section class="blk alt" id="pour-qui">
+<section class="blk alt" id="{i['aud']}">
   <p class="ey">{E(c['aud_ey'])}</p>
   <h2>{E(c['aud_t'])}</h2>
   <p class="sd">{E(c['aud_sd'])}</p>
   <div class="aud-g">{aud}</div>
 </section>
 
-<section class="secs" id="metiers">
+<section class="secs" id="{i['sect']}">
   <p class="ey">{E(c['sect_ey'])}</p>
   <h2 style="margin-bottom:24px">{E(c['sect_t'])}</h2>
   <div class="sg">{sectors}</div>
 </section>
 
-<section class="proof" id="avis">
+<section class="proof" id="{i['rev']}">
   <p class="ey">{E(c['rev_ey'])}</p>
   <h2>{E(c['rev_t'])}</h2>
   <div class="tp">
@@ -603,7 +611,7 @@ def page(lang):
   </div>
 </section>
 
-<section class="blk alt" id="comparer">
+<section class="blk alt" id="{i['cmp']}">
   <p class="ey">{E(c['cmp_ey'])}</p>
   <h2 style="margin-bottom:36px">{E(c['cmp_t'])}</h2>
   <div class="cmp-g">
@@ -612,13 +620,13 @@ def page(lang):
   </div>
 </section>
 
-<section class="blk" id="services">
+<section class="blk" id="{i['add']}">
   <p class="ey">{E(c['add_ey'])}</p>
   <h2 style="margin-bottom:36px">{E(c['add_t'])}</h2>
   <div class="add-g">{addons}</div>
 </section>
 
-<section class="blk alt" id="faq">
+<section class="blk alt" id="{i['faq']}">
   <p class="ey">{E(c['faq_ey'])}</p>
   <h2 style="margin-bottom:36px">{E(c['faq_t'])}</h2>
   <div class="faq-l">{faq}</div>
@@ -637,6 +645,7 @@ def page(lang):
     <a href="{BASE}/aviso-legal/" onclick="{legal_js % 'modal-aviso'}">{E(c['foot_legal'])}</a>
     <a href="{BASE}/privacidad/" onclick="{legal_js % 'modal-privacidad'}">{E(c['foot_privacy'])}</a>
     <a href="{L('blog')}">{E(c['foot_blog'])}</a>
+    {('<a href="%s">Contact</a>' % L('contact')) if 'contact' in u else ''}
     {''.join('<a href="%s" hreflang="%s">%s</a>' % (h, code, lab) for code, lab, h in langs if code != lang)}
   </div>
   <address class="fnap">

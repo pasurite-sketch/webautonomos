@@ -103,7 +103,19 @@ def page_files():
             continue
         dirs[name] = ('/%s/' % name, path)
 
-    return [v for _, v in sorted(list(roots.items()) + list(dirs.items()))]
+    # Pages commerciales FR/EN rangees sous /fr/ et /en/ (23/09/2026) :
+    # fr/tarifs.html est servi sous /fr/tarifs. fr/index.html et en/index.html
+    # sont deja couverts par la boucle des dossiers ci-dessus.
+    subs = {}
+    for lang in ('fr', 'en'):
+        for path in sorted(glob.glob(os.path.join(ROOT, lang, '*.html'))):
+            name = os.path.basename(path)
+            if name == 'index.html':
+                continue
+            subs['%s/%s' % (lang, name[:-5])] = ('/%s/%s' % (lang, name[:-5]), path)
+
+    return [v for _, v in sorted(list(roots.items()) + list(dirs.items())
+                                 + list(subs.items()))]
 
 
 # --------------------------------------------------------------------------
