@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Traite UNE page : rédacteur → contrôles → relecteur (→ correction) → PR GitHub.
-# Usage : bash _tools/seo_pipeline/run_page.sh <slug>
+# Usage : bash _tools/seo_pipeline/run_page.sh <slug> [--reprise]
+#   --reprise : reprend un passage interrompu sur sa branche seo/<slug>-… (contrôles, relecture, suite)
 # Variables (fichier ~/.seo_pipeline.env) :
 #   ANTHROPIC_API_KEY, SERPMANTICS_API_KEY   (obligatoires)
 #   WRITER_MODEL   (défaut claude-sonnet-5)   REVIEWER_MODEL (défaut claude-opus-5-5)
@@ -27,16 +28,29 @@ state(){ python3 "$P/pipeline.py" state "$SLUG" "$@"; }
 MODE="$(python3 "$P/pipeline.py" field "$SLUG" mode)"
 [ "$MODE" = "manuel" ] && { log "mode manuel : ignorée"; exit 0; }
 
-# Départ propre depuis main à jour
-if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
-  log "arbre de travail modifié : arrêt (rien n'est touché)"; exit 2
+REPRISE=0
+[ "${2:-}" = "--reprise" ] && REPRISE=1
+if [ "$REPRISE" = 1 ]; then
+  # Reprise d'un passage interrompu : on garde la branche et le travail en cours
+  BR="$(git rev-parse --abbrev-ref HEAD)"
+  case "$BR" in
+    "seo/${SLUG}-"*) ;;
+    *) log "reprise impossible : la branche courante ($BR) n'est pas seo/${SLUG}-…"; exit 2 ;;
+  esac
+  BASE="$(git rev-parse HEAD)"
+  state en_cours "$BR (reprise)"
+else
+  # Départ propre depuis main à jour
+  if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
+    log "arbre de travail modifié : arrêt (rien n'est touché)"; exit 2
+  fi
+  git checkout -q main
+  git pull -q --ff-only
+  BASE="$(git rev-parse HEAD)"
+  BR="seo/${SLUG}-$(date +%Y%m%d-%H%M)"
+  git checkout -q -b "$BR"
+  state en_cours "$BR"
 fi
-git checkout -q main
-git pull -q --ff-only
-BASE="$(git rev-parse HEAD)"
-BR="seo/${SLUG}-$(date +%Y%m%d-%H%M)"
-git checkout -q -b "$BR"
-state en_cours "$BR"
 
 WRITER_TOOLS='Read,Edit,Write,Glob,Grep,Bash(python3 _tools/*),Bash(git diff*),Bash(git status*)'
 abandon(){
@@ -77,12 +91,20 @@ relecteur(){ # $1 = numéro de passe
   log "verdict : $VERDICT — contrôles : $([ "$CHECKS_OK" = 1 ] && echo OK || echo ÉCHEC)"
 }
 
-log "guides SERPmantics (serp.py)"
-python3 "$P/serp.py" guides "$SLUG" >> "$RUN/run.log" 2>&1 || abandon "guides SERPmantics indisponibles"
-redacteur writer 0
-controles
-relecteur 0
-passe=0
+if [ "$REPRISE" = 1 ]; then
+  passe="$(ls "$RUN"/writer_*.json 2>/dev/null | sed 's/.*writer_\([0-9]*\)\.json/\1/' | sort -n | tail -1)"
+  passe="${passe:-0}"
+  log "reprise après la passe $passe du rédacteur"
+  controles
+  relecteur "$passe"
+else
+  log "guides SERPmantics (serp.py)"
+  python3 "$P/serp.py" guides "$SLUG" >> "$RUN/run.log" 2>&1 || abandon "guides SERPmantics indisponibles"
+  redacteur writer 0
+  controles
+  relecteur 0
+  passe=0
+fi
 while :; do
   if [ "$VERDICT" = "approuver" ] && [ "$CHECKS_OK" = 1 ]; then break; fi
   [ "$VERDICT" = "rejeter" ] && abandon "rejetée par le relecteur (voir $RUN/review.json)"
@@ -95,7 +117,7 @@ done
 
 # Publication : commit + PR
 python3 "$P/pipeline.py" summary "$SLUG" > "$RUN/pr.md"
-git add -A -- . ':(exclude)_tools/seo_pipeline/runs' ':(exclude).claude'
+git add -A  # runs/ et .claude/ exclus par .gitignore
 git commit -q -m "SEO $SLUG : « $(python3 "$P/pipeline.py" field "$SLUG" requete) » (circuit SERPmantics + relecture)" \
   -m "Rédacteur $WRITER_MODEL, relecteur $REVIEWER_MODEL. Détails dans la PR."
 git push -q -u origin "$BR"

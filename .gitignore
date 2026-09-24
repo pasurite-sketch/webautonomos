@@ -23,3 +23,4 @@ _tools/__pycache__/
 # Circuit SEO : journaux et état locaux
 _tools/seo_pipeline/runs/
 __pycache__/
+.claude/

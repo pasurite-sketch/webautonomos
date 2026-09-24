@@ -233,7 +233,7 @@ def main():
 
     # pages générées : le script doit reproduire exactement la page
     if not a.no_generators and changes:
-        git('add', '-A', '--', '.', ':(exclude)_tools/seo_pipeline/runs', ':(exclude).claude')
+        git('add', '-A')  # runs/ et .claude/ sont exclus par .gitignore (une exclusion explicite d'un chemin ignoré fait échouer git add)
         for g in GENERATEURS_IDEMPOTENTS:
             r = subprocess.run([sys.executable, g], cwd=ROOT, capture_output=True, text=True)
             if r.returncode != 0:
