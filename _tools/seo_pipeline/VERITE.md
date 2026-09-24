@@ -54,6 +54,7 @@
 
 - SEO Local : **15 €/mes + IVA**
 - Google Business Profile (ficha de Google) : **29 €/mes + IVA**, et **49 € + IVA** de création/vérification si le client n'a pas encore de fiche (paiement unique). Décidé le 24/09/2026.
+- Gestion des réseaux sociaux et publicité Facebook / Google Ads : proposées **ponctuellement, sur demande** (déclaré par Angelino le 24/09/2026). Aucun prix, délai ni résultat à annoncer : écrire seulement que c'est possible et inviter à demander. Ne jamais écrire que WebAutonomos ne gère pas les réseaux sociaux.
 
 ## 6. Preuves sociales
 
@@ -105,6 +106,8 @@ desde (19|20)\d\d
 espace client
 client area
 1 cli(c|ck)
+cancel\w* con un cli(c|ck)
+baja con un cli(c|ck)
 caso real
 cas r[ée]el
 cas real
