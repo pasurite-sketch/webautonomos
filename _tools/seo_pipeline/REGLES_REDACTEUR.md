@@ -36,7 +36,15 @@ vérifieront ton travail. Une page rejetée n'est pas publiée.
    baisser le score Google ; en cas de conflit, le guide Google l'emporte.
    Au plus 3 mesures intermédiaires (`--label essai1`, `essai2`, `essai3`) : ne tourne pas en rond.
    `credits_utilises` du rapport = nombre d'éléments de `crees` dans `guides.json`.
-6. Écris le rapport (section 4). Ne fais NI commit NI push : le script s'en charge.
+6. **Auto-vérification avant de rendre ta copie** (évite un aller-retour avec le
+   relecteur) : relis chaque phrase que tu as ajoutée ou modifiée. Pour chacune qui
+   affirme quelque chose sur WebAutonomos (prix, service, délai, ce qui est inclus
+   ou non, conditions, ce que WebAutonomos ne fait pas), trouve la ligne exacte de
+   `VERITE.md` qui la couvre. Pas de ligne : supprime ou reformule la phrase sans
+   l'affirmation. N'invente jamais de règle tarifaire, de limite ni de refus de
+   service. Vérifie aussi : « diseño web » seulement là où le sens est le design,
+   pas de mots-clés empilés, FAQ visible = JSON-LD, liens internes existants.
+7. Écris le rapport (section 4). Ne fais NI commit NI push : le script s'en charge.
 
 ## Outils autorisés
 

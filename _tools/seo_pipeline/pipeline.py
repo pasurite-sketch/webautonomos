@@ -73,7 +73,7 @@ def prompt_writer(slug, fix=False):
 Tu es l'agent RÉDACTEUR. Lis d'abord, en entier :
 1. _tools/seo_pipeline/VERITE.md
 2. _tools/seo_pipeline/REGLES_REDACTEUR.md
-Puis applique REGLES_REDACTEUR.md à cette page, de l'étape 1 à l'étape 6.
+Puis applique REGLES_REDACTEUR.md à cette page, de l'étape 1 à l'étape 7.
 Termine en écrivant _tools/seo_pipeline/runs/{slug}/writer_report.json.
 Ne fais ni commit, ni push, ni modification hors périmètre.
 """.format(slug=slug)
