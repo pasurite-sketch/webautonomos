@@ -3,7 +3,7 @@
 > **Règle absolue pour les agents** : toute affirmation factuelle sur WebAutonomos
 > (prix, délais, services, langues, chiffres, clients, ancienneté, résultats)
 > qui n'est pas écrite ici est **interdite**. Le relecteur rejette la page.
-> Tenu à jour par Angelino. Dernière révision : 24/09/2026.
+> Tenu à jour par Angelino. Dernière révision : 24/09/2026 (après-midi).
 > Les lignes marquées **À CONFIRMER** ne doivent pas être utilisées tant
 > qu'Angelino ne les a pas tranchées.
 
@@ -32,7 +32,8 @@
   - optimisation SEO de base (titres et textes avec service et zone, données cohérentes avec la fiche Google)
 - Domaine : .es au nom du client, **inclus la première année**, ensuite environ **12 €/an** ; le client garde son domaine s'il part
 - TVA : prix affichés **sans IVA** ; IVA 21 % facturée, sauf client avec numéro de TVA intracommunautaire (autoliquidation, facture sans TVA)
-- Résiliation : le client arrête de payer, sans pénalité ni durée minimale
+- Résiliation : le client prévient par email ou WhatsApp et arrête de payer, sans pénalité ni durée minimale. **Il n'existe pas d'« área de cliente » / espace client**, ni de résiliation « en 1 clic ».
+- Boutiques en ligne (tienda online / e-commerce) : **oui, sur devis** (« bajo presupuesto »). Non incluses dans 15 €/mes ni dans 349 €. Ne jamais annoncer de prix.
 
 ## 3. Langues
 
@@ -52,7 +53,7 @@
 ## 5. Services complémentaires
 
 - SEO Local : **15 €/mes + IVA**
-- Google Business Profile : **29 €/mes + IVA** — frais de création/vérification : **À CONFIRMER (90 € ou 99 € ?)** — le site dit 90 € (home, llms.txt) et 99 € (meta de /precios, CLAUDE.md). Ne pas citer ce montant tant qu'il n'est pas tranché.
+- Google Business Profile (ficha de Google) : **29 €/mes + IVA**, et **49 € + IVA** de création/vérification si le client n'a pas encore de fiche (paiement unique). Décidé le 24/09/2026.
 
 ## 6. Preuves sociales
 
@@ -70,9 +71,17 @@ Les seuls nombres qu'un agent peut **ajouter** dans une page (en plus de ceux d�
 4,3, 8, 29
 2026
 961 877 356, 654 23 95 20, 46870, 26
+49, 800, 2.000, 1.500, 4.000
 ```
 
 Un pourcentage (« 70 % », « el 87 % de… ») n'est **jamais** autorisé, sauf s'il est accompagné ici d'une source.
+
+### Chiffres de marché sourcés (utilisables avec la source citée)
+
+- Web professionnelle réalisée par un freelance : **800 € à 2 000 €** ; par une agence : **1 500 € à 4 000 €**, hors maintenance — [Social Media Pymes, « Cuánto cuesta una web: precios reales en España 2026 », 31/08/2026](https://www.socialmediapymes.com/cuanto-cuesta-una-web/)
+- 96,3 % des 16-74 ans ont utilisé Internet au cours des trois derniers mois — [INE, Encuesta TIC-H 2025, 20/11/2025](https://www.ine.es/dyngs/Prensa/TICH2025.htm)
+
+Aucune source fiable trouvée pour la part des recherches locales faites sur mobile : écrire « muchos de tus clientes te buscarán desde el móvil », sans chiffre.
 
 ## 8. Interdits (expressions rejetées automatiquement)
 
@@ -92,6 +101,14 @@ primera p[aá]gina de google garantizada
 sin traducci[oó]n autom[aá]tica
 habitissimo
 desde (19|20)\d\d
+[áa]rea de cliente
+espace client
+client area
+1 cli(c|ck)
+caso real
+cas r[ée]el
+cas real
+real case
 ```
 
 ## 9. Santé (psicólogos, dentistas, fisioterapeutas, et versions FR/EN)
@@ -102,9 +119,11 @@ desde (19|20)\d\d
 
 ## 10. À CONFIRMER par Angelino
 
-- [ ] Frais de création Google Business Profile : 90 € ou 99 € ?
-- [ ] Existe-t-il un « área de cliente » ? (la FAQ de /reformas/ dit « cancelas desde tu área de cliente »)
-- [ ] « El sector cobra entre 800€ y 2.500€ por una web profesional » (hero de /reformas/) : source ?
-- [ ] « Más del 70% de los autónomos en España reciben sus consultas desde el móvil » (FAQ de /reformas/) : source ? Sinon à retirer.
+- [x] Création fiche Google : 49 € (24/09)
+- [x] Pas d'área de cliente (24/09) — retiré des 7 pages métier
+- [x] « 800 € à 2 500 € » remplacé par les fourchettes sourcées (Social Media Pymes) sur les 7 pages métier (24/09)
+- [x] « 70 % des autónomos… » retiré des 7 pages métier (24/09)
+- [x] Boutiques en ligne : sur devis (24/09)
 - [ ] « Respuesta en el día » / « respuesta en menos de 24 horas » au support : engagement réel ?
-- [ ] Faites-vous des boutiques en ligne (e-commerce) ? Si non, l'écrire ici pour qu'aucun agent ne le promette.
+- [ ] Home : « el 46% de las búsquedas en Google tienen intención local » (FAQ, 4 langues) : chiffre repris d'une infographie non officielle, à retirer ?
+- [ ] Blog : ~40 statistiques « 70 % » sans source et 2 « cas réels » (Miguel, électricien à Elche ; Antonio, menuisier à Elda) : sont-ils de vrais clients ?

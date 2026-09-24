@@ -91,16 +91,16 @@
     },
     {
       "slug": "es-electricistas",
-      "url": "https://webautonomos.es/electricistas/",
+      "url": "https://webautonomos.es/blog/es/pagina-web-para-electricistas",
       "lang": "es",
       "requete": "pagina web para electricistas",
       "requete_a_confirmer": false,
-      "fichier": "electricistas/index.html",
+      "fichier": "blog/es/pagina-web-para-electricistas.html",
       "generateur": null,
       "mode": "auto",
-      "statut": "decision",
+      "statut": "a_faire",
       "priorite": 1,
-      "notes": "DÉCISION REQUISE : l'article blog/es/pagina-web-para-electricistas est en pos. 10 (300 imp.) et /electricistas/ en pos. 67. Choisir la page qui porte la requête avant tout guide."
+      "notes": "Décidé le 24/09 : c'est l'ARTICLE qui porte la requête (pos. 10, 300 imp., 5 clics) ; /electricistas/ (pos. 67) reste la page de conversion et ne doit PAS viser cette requête. Le rédacteur ajoute dans l'article un lien vers /electricistas/ (ancre du type « ver la oferta para electricistas »), retire la statistique « 70 % » sans source et le « caso real » de Miguel (Elche) sauf s'il figure dans VERITE.md. L'article est aussi copié dans index.html (SPA) : ne modifier que le fichier statique."
     },
     {
       "slug": "es-psicologos",

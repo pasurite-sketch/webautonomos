@@ -6,7 +6,7 @@
 - **Activité** : Agence web spécialisée sites vitrines pour autónomos (artisans + professions libérales)
 - **Zone** : Comunidad Valenciana, Espagne
 - **Offre principale** : Site vitrine à 15€/mois (modèle location)
-- **Services complémentaires** : Google My Business (99€ setup + 29€/mois), SEO Local (+15€/mois)
+- **Services complémentaires** : Google My Business (49€ de création + 29€/mois), SEO Local (+15€/mois)
 - **Repo** : github.com/pasurite-sketch/webautonomos
 - **Hébergement** : Cloudflare Workers (assets statiques), déployé via GitHub Actions sur push `main`
 
@@ -80,8 +80,8 @@ Pour chaque article, le contenu doit être **objectivement meilleur** que le ré
 - **Sommaire visible** (les concurrents n'en ont pas)
 - **FAQ structurée** avec Schema FAQPage (Rich Snippets)
 - **4 Schemas JSON-LD** (BlogPosting, FAQPage, BreadcrumbList, Organization)
-- **Exemples locaux** Valencia/Alicante/Elda/Elche (les concurrents sont généralistes)
-- **Données récentes** 2025-2026 (les concurrents ont du contenu daté)
+- **Exemples locaux** Valencia/Alicante/Elda/Elche (les concurrents sont généralistes) — **pédagogiques uniquement** : une situation type, jamais un « caso real », un prénom de client ou un résultat chiffré
+- **Données sourcées** : un chiffre ou une statistique n'est publié qu'avec sa source en lien (INE, Google, étude nommée…). Sans source fiable, on écrit la phrase sans chiffre. Ne jamais inventer ni arrondir « à peu près » un pourcentage
 
 ### 4 Silos Thématiques (Catégories)
 
@@ -153,8 +153,8 @@ Chaque article DOIT contenir dans cet ordre :
 - Paragraphes courts (3-4 lignes, line-height: 1.8)
 - Encadrés "💡 Consejo" (.tip-box, bordure #7C3AED, fond #F5F3FF)
 - Encadrés "⚠️ Importante" (.warning-box, bordure #F59E0B, fond #FFFBEB)
-- **Exemples locaux** obligatoires : mentionner Valencia, Alicante, Elda, Elche
-- **Données chiffrées** récentes (2025-2026)
+- **Exemples locaux** : mentionner Valencia, Alicante, Elda, Elche dans des situations types (jamais de client, de prénom ou de résultat inventé)
+- **Chiffres** : seulement avec une source en lien ; sinon, aucune donnée chiffrée
 - **Liens internes** : 2 même silo + 1 autre silo minimum (texte d'ancre descriptif)
 
 #### 7. FAQ — 5 questions (format accordéon `<details>/<summary>`)
@@ -207,11 +207,12 @@ Chaque article DOIT contenir dans cet ordre :
 8. **CTA** : Chaque article finit par un appel à l'action vers webautonomos.es
 9. **Ton** : Expert mais accessible. Tutoiement ("tú"). Concret avec exemples locaux
 10. **Localisation** : Mentionner villes de la Comunidad Valenciana quand pertinent
-11. **E-E-A-T** : Expérience, Expertise, Autorité, Confiance. Données, cas pratiques
+11. **E-E-A-T** : Expérience, Expertise, Autorité, Confiance. Conseils précis et vérifiables, chiffres sourcés. **Interdit** : cas client, « caso real », témoignage, résultat ou statistique inventés — Google et les IA sanctionnent justement ce qui ne peut pas être vérifié
 12. **Pas de spam IA** : Contenu utile, spécifique, pas de remplissage générique
 13. **Sommaire** : TOUJOURS visible, jamais dans un `<details>` accordéon
 14. **FAQ** : 5 questions basées sur "People Also Ask", format `<details>/<summary>`
 15. **Schema** : 4 blocs JSON-LD obligatoires (BlogPosting, FAQPage, BreadcrumbList, Organization)
+16. **Faits sur WebAutonomos** (prix, délais, services, langues, clients) : uniquement ceux de `_tools/seo_pipeline/VERITE.md`. Aucun nombre de clients, aucune ancienneté, aucun client cité sans accord écrit
 
 ### Règles de Nommage
 
@@ -373,7 +374,7 @@ for f in _tools/queue/*.json; do jq -r '"\(.publish_date)  \(.slug)"' "$f"; done
 ⚠️ L'insertion dans `index.html` et `sitemap.xml` est faite **par le script** au moment de la publication —
 ne pas les éditer à la main pour un nouvel article.
 
-### Checklist SEO Avant Publication (12/12)
+### Checklist SEO Avant Publication (13/13)
 
 - [ ] H1 contient le mot-clé principal (max 60 car.)
 - [ ] Meta description < 155 caractères avec CTA
@@ -385,7 +386,8 @@ ne pas les éditer à la main pour un nouvel article.
 - [ ] CTA présent en fin d'article avec lien /contacto
 - [ ] Hreflang tags (es, ca-ES, en, x-default)
 - [ ] URL canonical correcte
-- [ ] Exemples locaux (Valencia, Alicante, Elda, Elche)
+- [ ] Exemples locaux (Valencia, Alicante, Elda, Elche), sans client ni cas inventé
+- [ ] Chaque chiffre a sa source en lien ; faits sur l'offre conformes à `_tools/seo_pipeline/VERITE.md`
 - [ ] Fichier ajouté au sitemap.xml
 
 ### Mise à jour du Sitemap
