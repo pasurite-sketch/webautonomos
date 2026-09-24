@@ -196,7 +196,7 @@ def cmd_summary(slug):
         for a in c['avertissements']:
             L.append(f'- {a}')
     L.append('')
-    L.append(f"_Coût API estimé : {cout(slug):.2f} $ — circuit SEO WebAutonomos (Claude Code + SERPmantics)_")
+    L.append(f"_Coût équivalent API : {cout(slug):.2f} $ (non facturé si le circuit tourne sur l'abonnement Claude) — circuit SEO WebAutonomos (Claude Code + SERPmantics)_")
     print('\n'.join(L))
 
 

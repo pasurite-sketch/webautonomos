@@ -14,7 +14,14 @@ REPO="$(git rev-parse --show-toplevel)"
 cd "$REPO"
 P="_tools/seo_pipeline"
 [ -f "$HOME/.seo_pipeline.env" ] && set -a && . "$HOME/.seo_pipeline.env" && set +a
-: "${ANTHROPIC_API_KEY:?ANTHROPIC_API_KEY manquante}"
+# Authentification Claude : abonnement (CLAUDE_CODE_OAUTH_TOKEN, via `claude setup-token`)
+# ou clé API (ANTHROPIC_API_KEY). Si les deux sont présentes, claude -p utilise la clé API :
+# on la retire donc quand un jeton d'abonnement est fourni.
+if [ -n "${CLAUDE_CODE_OAUTH_TOKEN:-}" ]; then
+  unset ANTHROPIC_API_KEY
+elif [ -z "${ANTHROPIC_API_KEY:-}" ]; then
+  echo "ni CLAUDE_CODE_OAUTH_TOKEN ni ANTHROPIC_API_KEY : arrêt" >&2; exit 2
+fi
 : "${SERPMANTICS_API_KEY:?SERPMANTICS_API_KEY manquante}"
 WRITER_MODEL="${WRITER_MODEL:-claude-sonnet-5}"
 REVIEWER_MODEL="${REVIEWER_MODEL:-claude-opus-5-5}"
