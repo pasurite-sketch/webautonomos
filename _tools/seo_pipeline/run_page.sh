@@ -38,7 +38,7 @@ BR="seo/${SLUG}-$(date +%Y%m%d-%H%M)"
 git checkout -q -b "$BR"
 state en_cours "$BR"
 
-WRITER_TOOLS='Read,Edit,Write,Glob,Grep,Bash(python3 _tools/*),Bash(git diff*),Bash(git status*),mcp__serpmantics'
+WRITER_TOOLS='Read,Edit,Write,Glob,Grep,Bash(python3 _tools/*),Bash(git diff*),Bash(git status*)'
 abandon(){
   log "ABANDON : $1"
   git reset -q --hard "$BASE"
@@ -52,10 +52,9 @@ redacteur(){ # $1 = writer|fix, $2 = numéro de passe
   log "rédacteur ($1, passe $2, $WRITER_MODEL)"
   claude -p "$(python3 "$P/pipeline.py" prompt "$1" "$SLUG")" \
     --model "$WRITER_MODEL" \
-    --mcp-config "$P/mcp.json" \
     --allowedTools "$WRITER_TOOLS" \
     --permission-mode acceptEdits \
-    --max-turns 80 \
+    --max-turns 100 \
     --output-format json > "$RUN/writer_$2.json" || abandon "le rédacteur a échoué (passe $2)"
   [ -f "$RUN/writer_report.json" ] || abandon "pas de writer_report.json"
 }
@@ -78,6 +77,8 @@ relecteur(){ # $1 = numéro de passe
   log "verdict : $VERDICT — contrôles : $([ "$CHECKS_OK" = 1 ] && echo OK || echo ÉCHEC)"
 }
 
+log "guides SERPmantics (serp.py)"
+python3 "$P/serp.py" guides "$SLUG" >> "$RUN/run.log" 2>&1 || abandon "guides SERPmantics indisponibles"
 redacteur writer 0
 controles
 relecteur 0

@@ -19,39 +19,31 @@ vérifieront ton travail. Une page rejetée n'est pas publiée.
 2. Si l'entrée a un `generateur` : lis le script, repère le texte de cette page
    dedans. **Tu modifieras le script, jamais la page**, puis tu relanceras le script
    (`python3 <generateur>`) pour régénérer la page.
-3. SERPmantics (outils `mcp__serpmantics__*` ; lis leurs noms exacts dans ta liste d'outils) :
-   a. **Solde** : lis le solde de crédits (outil « credits », gratuit). Un guide
-      coûte 1 crédit. S'il en reste moins de 2, arrête-toi sans rien modifier et
-      écris-le dans le rapport (`points_d_attention`).
-   b. **Réutilise avant de créer** : liste les guides existants filtrés sur la
-      requête. Ce filtre est une expression régulière insensible à la casse :
-      compare toi-même `query`, `lang` et `source`. Un guide qui a exactement la
-      même requête, la même langue et la même source, créé il y a moins de
-      180 jours, est réutilisé : n'en crée pas un second.
-   c. Sinon, crée **au plus deux guides**, avec `lang` = la langue du guide
-      indiquée dans la consigne :
-      - `source: "google"` : SEO, 1 crédit, guide principal ;
-      - `source: "google_ai_overview_citations"` : GEO, contenu des pages citées
-        par les réponses IA de Google, 1 crédit.
-      Aucune autre source (les moteurs IA coûtent 4 crédits par guide).
-      Lis la réponse : une requête dans `guidesFailed` n'a pas créé de guide et
-      son crédit est rendu, tu peux la renvoyer une fois ; une requête dans
-      `guidesUnknown` ne doit **jamais** être renvoyée (tu paierais deux fois) :
-      attends quelques minutes et cherche-la dans la liste des guides. Si le guide
-      GEO échoue (pas de réponse IA de Google pour cette requête), continue avec
-      le seul guide Google et note-le dans le rapport.
-   d. Lis chaque guide : expressions attendues et leurs fourchettes, expressions à
-      éviter, statistiques du top 10 (mots, titres, listes).
-   e. Outil « score » sur le contenu ACTUEL de la page, pour chaque guide →
-      scores de départ.
-   f. N'utilise **aucun** outil qui consomme des jetons IA (meta, outline,
-      intent, internal-links, eeat, eeat-competitors).
-4. Réécris selon la section 2.
-5. Outil « score » sur le nouveau contenu, pour chaque guide. Guide Google : vise
-   **le niveau médian du top 3**, plafonné à 80 ; au-delà, tu bourres : arrête-toi.
-   Guide GEO : améliore-le sans jamais faire baisser le score Google ; en cas de
-   conflit entre les deux guides, le guide Google l'emporte.
+3. SERPmantics : le script a **déjà** préparé les guides, tu n'appelles aucune API.
+   - Lis `_tools/seo_pipeline/runs/<slug>/guides.json` (identifiants, `cible_top3`,
+     guides créés), puis `guide_google.md` et, s'il existe, `guide_geo.md` : ce sont
+     les résumés (structure du top 10, expressions à placer avec leurs fourchettes,
+     expressions à éviter, premiers résultats).
+   - **Ne lis jamais** les fichiers `guide_*.json` : réponses brutes énormes.
+   - Mesure la page AVANT toute modification :
+     `python3 _tools/seo_pipeline/serp.py score <slug> --label avant`
+     (rapport court : score, structure, expressions sous ou au-dessus de leur
+     fourchette, expressions à éviter présentes).
+4. Réécris selon la section 2. Si la page a un générateur, relance-le avant de mesurer.
+5. Mesure de nouveau : `python3 _tools/seo_pipeline/serp.py score <slug> --label apres`.
+   Guide Google : vise `cible_top3` de `guides.json` (médiane du top 3, plafond 80) ;
+   au-delà, tu bourres : arrête-toi. Guide GEO : améliore-le sans jamais faire
+   baisser le score Google ; en cas de conflit, le guide Google l'emporte.
+   Au plus 3 mesures intermédiaires (`--label essai1`, `essai2`, `essai3`) : ne tourne pas en rond.
+   `credits_utilises` du rapport = nombre d'éléments de `crees` dans `guides.json`.
 6. Écris le rapport (section 4). Ne fais NI commit NI push : le script s'en charge.
+
+## Outils autorisés
+
+Read (avec `offset`/`limit` pour les gros fichiers : les pages font plus de
+1 000 lignes), Edit, Write, Grep, Glob, et seulement ces commandes :
+`python3 _tools/...`, `git diff`, `git status`. Toute autre commande (jq, sed,
+cat, head, `python3 -c`…) est refusée : ne l'essaie pas, utilise Read et Grep.
 
 ## 2. Comment réécrire
 
@@ -137,5 +129,5 @@ sur WebAutonomos, avec la section de `VERITE.md` qui la justifie.
 ## 5. En cas de retour du relecteur
 
 Tu reçois `review.json` et `checks.json`. Corrige **uniquement** les points
-signalés, relance l'outil « score » sur les guides existants (ne crée **aucun**
-nouveau guide), mets à jour le rapport. Ne réécris pas tout.
+signalés, relance `python3 _tools/seo_pipeline/serp.py score <slug> --label fix`
+(aucun nouveau guide), mets à jour le rapport. Ne réécris pas tout.

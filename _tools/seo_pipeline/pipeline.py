@@ -86,7 +86,7 @@ l'arbre de travail. Lis :
 3. _tools/seo_pipeline/runs/{slug}/checks.json (contrôles automatiques)
 Corrige UNIQUEMENT les problèmes signalés (bloquants des contrôles, problèmes
 du relecteur). Si la page a un générateur, corrige le script et relance-le.
-Relance l'outil « score » SERPmantics sur les guides existants (ne crée aucun nouveau guide), puis mets à jour writer_report.json.
+Relance la mesure : python3 _tools/seo_pipeline/serp.py score {slug} --label fix (aucun nouveau guide), puis mets à jour writer_report.json.
 """.format(slug=slug)
     return txt
 
