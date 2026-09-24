@@ -708,6 +708,16 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 /* ─── pages métier (build_metier_pages.py) ─── */
 .spain-note { max-width:760px; margin:18px auto 0; background:var(--off); border:1.5px solid var(--border); border-radius:12px; padding:14px 18px; font-size:.93rem; color:#334155; line-height:1.6; }
 .spain-note a { color:var(--blue); font-weight:600; }
+/* tableau des règles en fiches sur mobile : la 3e colonne restait hors écran (24/09/2026) */
+@media (max-width:640px) {
+  .lt-wrap { overflow:visible; }
+  table.lt { min-width:0; }
+  table.lt thead { display:none; }
+  table.lt tr { display:block; padding:14px 16px; border-bottom:1px solid var(--border); }
+  table.lt tr:last-child { border-bottom:none; }
+  table.lt tbody th, table.lt td { display:block; padding:0; border:none; }
+  table.lt td.law { margin:4px 0 8px; font-size:.82rem; }
+}
 </style>
 <script type="application/ld+json">
 {

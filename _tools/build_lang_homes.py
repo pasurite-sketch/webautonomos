@@ -53,7 +53,7 @@ SOURCE_DEMO = {'fr': 'demandez-votre-demo.html', 'en': 'get-your-demo.html'}
 # renvoient : /en/#pricing, /fr/#tarifs…).
 # Tags métier de /fr/ et /en/ qui mènent vers une page métier.
 # Tenu à jour par _tools/build_metier_pages.py.
-SECTOR_LINKS = {"fr": {"🧠 Psychologues": "/fr/site-internet-psychologue-therapeute", "🌿 Thérapeutes bien-être": "/fr/site-internet-psychologue-therapeute", "🪵 Menuisiers": "/fr/site-internet-menuisier", "🪟 Aluminium et PVC": "/fr/site-internet-menuisier"}, "en": {"🧠 Psychologists": "/en/website-for-therapists-in-spain", "🌿 Wellbeing practitioners": "/en/website-for-therapists-in-spain", "🪵 Carpenters": "/en/website-for-carpenters-in-spain", "🪟 Aluminium & PVC": "/en/website-for-carpenters-in-spain"}}
+SECTOR_LINKS = {"fr": {"🧠 Psychologues": "/fr/site-internet-psychologue-therapeute", "🌿 Thérapeutes bien-être": "/fr/site-internet-psychologue-therapeute", "🪵 Menuisiers": "/fr/site-internet-menuisier", "🪟 Aluminium et PVC": "/fr/site-internet-menuisier", "💆 Kinésithérapeutes": "/fr/site-internet-kinesitherapeute", "🦷 Dentistes": "/fr/site-internet-dentiste"}, "en": {"🧠 Psychologists": "/en/website-for-therapists-in-spain", "🌿 Wellbeing practitioners": "/en/website-for-therapists-in-spain", "🪵 Carpenters": "/en/website-for-carpenters-in-spain", "🪟 Aluminium & PVC": "/en/website-for-carpenters-in-spain", "💆 Physiotherapists": "/en/website-for-physiotherapists-in-spain", "🦷 Dentists": "/en/website-for-dentists-in-spain"}}
 
 IDS = {
     'fr': dict(brief='en-bref', inc='inclus', steps='etapes', price='tarifs', aud='pour-qui',

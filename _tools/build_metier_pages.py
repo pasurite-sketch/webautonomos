@@ -19,6 +19,25 @@ Métiers :
                                                régionaux, réclamations (15 jours),
                                                IVA 10 %, avis (30 jours), langue, REA
     /carpinteros/                              (espagnol, page existante)
+  kinésithérapeutes et physiotherapists (24/09/2026)
+    /fr/site-internet-kinesitherapeute         règles françaises : référencement
+                                               prioritaire interdit (R4321-123),
+                                               honoraires sur le site (R4321-98),
+                                               RPPS, spécificités reconnues, accès direct
+    /en/website-for-physiotherapists-in-spain  règles espagnoles : colegiación, LSSI,
+                                               autorisation sanitaire U.59 et n° de
+                                               registre, RD 1907/1996, code du CGCFE
+    /fisioterapeutas/                          (espagnol, page existante)
+  chirurgiens-dentistes et dentists (24/09/2026)
+    /fr/site-internet-dentiste                 règles françaises : référencement
+                                               prioritaire interdit (R4127-217),
+                                               honoraires (R4127-240), spécialités et
+                                               formules ONCD, devis, centres de santé
+    /en/website-for-dentists-in-spain          règles espagnoles : n° de registre C.2.5.1,
+                                               pas de « especialista », marques de
+                                               dispositifs interdites (RD 1591/2009),
+                                               prix complets et TAE du financement
+    /dentistas/                                (espagnol, page existante)
 
 Faits juridiques vérifiés le 23-24/09/2026 (sources officielles, voir THERA_SOURCES),
 puis relus par une vérification indépendante le 24/09/2026 :
@@ -695,6 +714,604 @@ MENU_SOURCES = {
     ],
 }
 
+# ═════════════════════════ KINÉSITHÉRAPEUTES ET PHYSIOTHERAPISTS ══════════
+PRIX_FR_SANTE = ("Prix hors taxes. Vous exercez en France : donnez-nous votre numéro de TVA intracommunautaire, "
+                 "obligatoire pour cet achat même si vos soins sont exonérés. La facture est alors émise sans TVA et "
+                 "vous autoliquidez la TVA française de 20 %, que vous ne récupérez pas, soit 18 € par mois pour "
+                 "l'abonnement. Sans ce numéro, ou si vous exercez en Espagne, l'IVA espagnole de 21 % s'ajoute. Nom de "
+                 "domaine inclus la première année, puis environ 12 €/an.")
+PRIX_EN_SANTE = ("Prices exclude VAT (21% IVA on the mainland and the Balearics; the Canary Islands, Ceuta and Melilla "
+                 "have their own taxes). Your health services are VAT-exempt, so you usually can't deduct it: on the "
+                 "mainland and the Balearics the monthly price comes to €18.15. Domain name included for the first "
+                 "year, then about €12/year.")
+
+KINE = {}
+KINE['fr'] = dict(
+    html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
+    title="Site internet pour kinésithérapeute : 15 €/mois",
+    description="Site internet pour kinésithérapeute pensé pour le code de déontologie : RPPS, honoraires, "
+                "spécificités reconnues, sans référencement interdit. Démo gratuite en 24 h, 15 €/mois HT.",
+    service_name="Création de site internet pour masseurs-kinésithérapeutes",
+    audience="Masseurs-kinésithérapeutes libéraux",
+    crumb_home='Accueil', crumb='Kinésithérapeutes',
+    badge='Masseurs-kinésithérapeutes libéraux',
+    h1="Un site internet pour <em>kinésithérapeutes</em>, pensé pour votre code de déontologie",
+    lede="Votre cabinet, vos spécificités, vos honoraires et votre agenda en ligne, présentés selon les "
+         "recommandations de l'Ordre : un site qui informe, sans rien de commercial. Nous l'écrivons pour vous, vous "
+         "validez chaque contenu, et la démo est gratuite en 24 heures.",
+    pills=["Construit selon les recommandations de l'Ordre", 'RPPS et honoraires affichés', 'Démo gratuite en 24 h'],
+    cta='Recevoir ma démo gratuite', cta2='Ce que le code impose',
+    brief_t='En bref',
+    brief="WebAutonomos crée des sites internet pour les masseurs-kinésithérapeutes libéraux, en France et en "
+          "Espagne. Le site présente votre cabinet, vos spécificités reconnues par l'Ordre, vos honoraires et vos modes "
+          "de paiement, avec votre numéro RPPS et votre numéro d'Ordre, comme l'exigent le code de déontologie et les "
+          "recommandations de l'Ordre. Il reste "
+          "informatif : pas de témoignages, pas de comparaison, et pas de référencement pour passer devant vos "
+          "confrères, que le code interdit. Le site coûte <strong>15 € HT par mois</strong> sans frais d'installation "
+          "ni engagement, ou <strong>349 € HT en paiement unique</strong>, et la démo est prête en 24 heures.",
+    legal_id='regles', legal_ey='Le code de déontologie', legal_t="Ce que votre site doit respecter",
+    legal_intro="Depuis 2020, un kinésithérapeute peut informer le public librement, y compris sur un site internet. "
+                "Mais cette information est encadrée par le code de déontologie et par les recommandations de l'Ordre. "
+                "Voici l'essentiel.",
+    legal_cols=('Sujet', 'Texte', 'Ce que ça change sur votre site'),
+    legal_rows=[
+        ('Le titre', 'Code de la santé publique, art. L4323-5 ; Code pénal, art. 433-17',
+         "« Masseur-kinésithérapeute » est un titre protégé ; l'usurper est puni d'un an de prison et de 15 000 € "
+         "d'amende. L'Ordre traite « kiné », « kinésithérapeute » et « physiothérapeute » comme des dérivés du titre."),
+        ('Ce que vous pouvez dire', 'Code de la santé publique, art. R4321-67-1',
+         "Vos compétences, votre parcours et vos conditions d'exercice, de façon loyale et honnête : pas de témoignages "
+         "de tiers, pas de comparaison avec d'autres kinés, pas d'incitation à des soins inutiles. L'Ordre demande un "
+         "site sans caractère promotionnel ni lien commercial."),
+        ('Référencement', 'Code de la santé publique, art. R4321-123',
+         "Il est interdit d'obtenir, contre paiement ou par tout autre moyen, un référencement qui fasse apparaître "
+         "votre site en priorité dans les résultats de recherche. L'Ordre étend l'interdiction à tout service, payant "
+         "ou non, qui vise ce résultat."),
+        ('Honoraires', 'Code de la santé publique, art. R4321-98',
+         "Un site qui présente votre activité doit indiquer vos honoraires, les modes de paiement acceptés et les "
+         "obligations d'accès aux soins sans discrimination, de façon claire, honnête, précise et non comparative. "
+         "Des fourchettes sont possibles si vous en donnez les critères."),
+        ('Spécificités et diplômes', "Code de la santé publique, art. R4321-67-1 ; avis du CNO n° 2023-02 ; "
+                                     "recommandations de l'Ordre",
+         "Seuls les diplômes universitaires reconnus par l'Ordre et les spécificités de sa liste peuvent figurer, avec "
+         "leur libellé exact, par exemple « Kinésithérapie du sport ». Pas de « spécialiste », ni de marque ou de "
+         "méthode présentée comme une spécificité."),
+        ('Accès direct', 'Code de la santé publique, art. L4321-1',
+         "Sans prescription, si vous exercez en établissement de santé ou médico-social, en maison ou centre de "
+         "santé, en équipe de soins primaires ou spécialisés, ou en CPTS dans l'un des 20 départements de "
+         "l'expérimentation (déclaration à l'ARS) : 8 séances au plus sans diagnostic médical. À n'indiquer que si "
+         "vous êtes concerné, avec ces limites."),
+        ('Mentions obligatoires', "Recommandations de l'Ordre ; LCEN, art. 1-1 et 19 ; Code de commerce, art. R526-27",
+         "Numéro RPPS et numéro d'Ordre, titre, pays d'obtention, Ordre d'inscription et code de déontologie applicable, "
+         "téléphone, e-mail et accessibilité du cabinet, nom précédé ou suivi de « EI » si vous êtes entrepreneur "
+         "individuel, directeur de la publication et hébergeur."),
+    ],
+    legal_note="Pour un agenda en ligne, l'Ordre demande qu'il ne comporte aucune zone de texte libre ; un outil qui "
+               "stocke des données de santé doit passer par un hébergeur certifié HDS. Informations générales à jour en "
+               "septembre 2026, qui ne remplacent pas l'avis de votre conseil départemental de l'Ordre.",
+    legal_we_t='Ce que nous mettons en place',
+    legal_we=["Votre numéro RPPS, votre numéro d'Ordre, vos coordonnées, l'accessibilité du cabinet et les mentions "
+              "légales complètes, avec le code de déontologie applicable",
+              "Vos honoraires et modes de paiement sur une page claire, sans comparaison",
+              "Seulement les spécificités et diplômes reconnus par l'Ordre, avec leur libellé exact",
+              "Un lien vers votre agenda en ligne, et un formulaire sans champ libre sur l'état de santé",
+              "Un site informatif, sans témoignages ni liens commerciaux, et sans prestation de référencement pour passer "
+              "devant vos confrères"],
+    spain_note="<strong>Vous exercez en Espagne ?</strong> Les règles changent : inscription obligatoire au Colegio de "
+               "Fisioterapeutas, numéro de colegiado sur le site, cabinet autorisé comme centre sanitaire avec son "
+               "numéro d'enregistrement dans la publicité, et dans certaines régions, comme Murcie, autorisation "
+               "préalable de la publicité, site compris. Nous connaissons aussi ces règles : "
+               "<a href=\"/fr/site-internet-francophones-espagne\">site internet pour francophones en Espagne</a>.",
+    sources_t='Sources',
+    why_ey='Pourquoi nous', why_t="Pensé pour les kinésithérapeutes",
+    why=[('📋', "Les mentions de l'Ordre en place", "RPPS, numéro d'Ordre, honoraires et modes de paiement : ce que le "
+                                                  "code et l'Ordre exigent d'un site."),
+         ('🏷️', 'Des spécificités reconnues', "Seules les spécificités de la liste de l'Ordre, avec leur libellé exact, "
+                                             "comme « Kinésithérapie du sport »."),
+         ('📅', 'Un agenda sans champ libre', "Un lien vers votre prise de rendez-vous en ligne, sans zone de texte "
+                                             "libre, comme le recommande l'Ordre."),
+         ('⚖️', 'Rien de ce que le code interdit', "Pas de témoignages, pas de comparaison, pas de référencement pour passer "
+                                            "devant vos confrères : nous ne vous le vendrons pas.")],
+    where_t='En France et en Espagne',
+    where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que votre cabinet soit à "
+          "Lille, à Toulouse ou à Alicante, rien ne change.",
+    sect_t='Pour qui',
+    sectors=['💆 Kinés libéraux', '🏃 Kinésithérapie du sport', '🫁 Kinésithérapie respiratoire',
+             '🤰 Kinésithérapie en pelvi-périnéologie', '🧓 Kinésithérapie en gériatrie', '👶 Kinésithérapie en pédiatrie',
+             '🏥 Cabinets de groupe', '🦴 Kinés ostéopathes'],
+    how_t='Votre site en trois étapes',
+    steps=[('Vous décrivez votre cabinet', "Vos spécificités reconnues, vos horaires, votre agenda en ligne, votre "
+                                          "ville : deux minutes suffisent."),
+           ('Nous préparons votre démo', "En moins de 24 heures, avec vos honoraires, votre RPPS et vos mentions "
+                                        "légales."),
+           ('Vous décidez', "Vous relisez et validez chaque contenu, et demandez les modifications que vous voulez. Si "
+                           "le site vous plaît, il est mis en ligne ; sinon, vous ne payez rien.")],
+    price_note=PRIX_FR_SANTE,
+    faq_t='Questions fréquentes',
+    faq=[("Un kinésithérapeute a-t-il le droit d'avoir un site internet ?",
+          "Oui. Depuis la réforme de 2020, le code de déontologie permet d'informer le public par tout moyen, y compris "
+          "sur un site internet, sur vos compétences, votre parcours et vos conditions d'exercice (art. R4321-67-1). "
+          "L'information doit être loyale et honnête et tenir compte des recommandations de l'Ordre, qui demande un site "
+          "sans caractère promotionnel ni commercial."),
+         ("Mes honoraires doivent-ils figurer sur mon site ?",
+          "Oui. Le code de déontologie (art. R4321-98) impose à un kiné qui présente son activité, notamment sur un site, "
+          "d'y indiquer ses honoraires, les modes de paiement acceptés et les obligations d'accès aux soins sans "
+          "discrimination. Des fourchettes sont possibles si vous en précisez les critères."),
+         ("Puis-je payer pour être mieux référencé sur Google ?",
+          "Non. L'article R4321-123 interdit d'obtenir, contre paiement ou par tout autre moyen, un référencement qui "
+          "fasse apparaître votre site en priorité, et l'Ordre étend l'interdiction à tout service qui vise ce résultat. "
+          "C'est pourquoi nous ne vendons ni référencement ni publicité aux kinés : le site est clair et bien construit, "
+          "et Google l'indexe normalement."),
+         ("Puis-je afficher les avis de mes patients ?",
+          "Non : votre communication ne doit pas faire appel à des témoignages de tiers (art. R4321-67-1). Afficher ou "
+          "intégrer des avis de patients sur votre site revient à utiliser ces témoignages."),
+         ("Puis-je écrire « kiné du sport » ou « spécialiste » ?",
+          "Seulement les spécificités reconnues par l'Ordre, avec leur libellé exact : « Kinésithérapie du sport », par "
+          "exemple, si vous avez un diplôme reconnu ou au moins 80 heures de formation sur quatre ans. Le mot "
+          "« spécialiste » est à éviter : l'Ordre parle d'exercice préférentiel."),
+         ("Puis-je indiquer que les patients peuvent venir sans ordonnance ?",
+          "Seulement si vous exercez en établissement de santé ou médico-social, en maison ou centre de santé, en "
+          "équipe de soins primaires ou spécialisés, ou en CPTS dans l'un des 20 départements de l'expérimentation. "
+          "Dans ce cas, précisez les limites : 8 séances au plus sans diagnostic médical, avec un bilan et un compte "
+          "rendu adressés au patient et à son médecin traitant et versés au DMP."),
+         ("Je suis aussi ostéopathe : comment l'indiquer ?",
+          "Si vous avez le droit d'utiliser le titre, le site doit mentionner votre diplôme d'ostéopathie ainsi que votre "
+          "diplôme d'État de masseur-kinésithérapeute, comme sur votre plaque."),
+         ("Combien coûte un site pour kinésithérapeute ?",
+          "15 € HT par mois sans frais d'installation ni engagement, ou 349 € HT en paiement unique, avec les mêmes "
+          "services : conception, hébergement, nom de domaine la première année, mentions légales et une modification "
+          "par mois. La démo est gratuite.")],
+    final_t='Voyez votre site avant de payer quoi que ce soit',
+    final_sd="Démo gratuite en 24 heures, honoraires et mentions obligatoires compris. Sans frais d'installation, sans "
+             "engagement.",
+)
+
+KINE['en'] = dict(
+    html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
+    title="Websites for physiotherapists in Spain: €15/month",
+    description="Websites for English-speaking physiotherapists in Spain, built around Spanish Colegio, "
+                "health-advertising and practice rules. Free demo in 24h, €15/month + VAT.",
+    service_name="Web design for physiotherapists in Spain",
+    audience="English-speaking physiotherapists practising in Spain",
+    crumb_home='Home', crumb='Physiotherapists',
+    badge='For physiotherapists in Spain',
+    h1="Websites for <em>physiotherapists</em> in Spain",
+    lede="Your practice, your treatments and how to book, in English and Spanish, written with Spanish rules on "
+         "Colegio details, health advertising and practice authorisation in mind. We write it for you, you approve "
+         "every word, and your free demo is ready within 24 hours.",
+    pills=['English and Spanish included', 'Written with Spanish rules in mind', 'Free demo in 24 hours'],
+    cta='Get my free demo', cta2='What Spanish rules require',
+    brief_t='In short',
+    brief="WebAutonomos builds websites for English-speaking physiotherapists practising in Spain. We write the copy in "
+          "English and Spanish at no extra cost, show your Colegio, colegiado number and practice registration number, "
+          "and keep promises of cure and patient testimonials off the site, as Spanish health-advertising rules "
+          "require. It costs <strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a "
+          "<strong>one-off €349 + VAT</strong>. We work with you in English, and your demo is ready within 24 hours.",
+    legal_id='rules', legal_ey='Spanish rules', legal_t='What your website has to get right in Spain',
+    legal_intro="Physiotherapy is a regulated health profession in Spain. That shapes what your website must show and "
+                "what it may say. These are the points that matter.",
+    legal_cols=('Topic', 'Law', 'What it means for your website'),
+    legal_rows=[
+        ('Colegio and legal notice', 'Ley 2/1974, art. 3; LSSI (Ley 34/2002), art. 10',
+         "Membership of a Colegio de Fisioterapeutas is compulsory to practise. Your site must show your Colegio and "
+         "colegiado number, your qualification, the country that issued it and any recognition in Spain, the "
+         "professional rules that apply to you, and your NIF or NIE."),
+        ('Practice authorisation', 'RD 1277/2003, art. 3 and 6.2',
+         "A physiotherapy practice (usually type C.2.2, with the physiotherapy unit U.59) needs prior authorisation "
+         "from your regional health department. Any "
+         "advertising that suggests health care, your website included, must show the registration number it gives "
+         "you. Madrid also requires an authorisation for home-visit-only practice."),
+        ('Health advertising', 'Ley 44/2003, art. 44; RD 1907/1996, art. 4',
+         "Advertising must be objective, prudent and truthful: no assurances of relief or cure, no patient "
+         "testimonials used to attract clients, and no claims without scientific evidence."),
+        ('Code of ethics', 'Código Deontológico of the Consejo General de Colegios de Fisioterapeutas, art. 76–81',
+         "Present yourself only as a “Fisioterapeuta”: adding another title, such as “and osteopath”, goes against the "
+         "code. Show your name, colegiado number and Colegio in your adverts, and don't attract clients with "
+         "price-based advertising."),
+        ('Foreign qualifications', 'RD 581/2017; RD 889/2022; RDL 38/2020, art. 4; Código Penal, art. 403',
+         "An EU qualification is recognised by the Ministry of Health, on application; a new application for a UK "
+         "one goes through homologation by the Ministry of Science, Innovation and Universities, with Spanish at B2 "
+         "level. Practising without a title recognised in Spain is a criminal offence."),
+        ('Data protection', 'GDPR, art. 9; LOPDGDD, art. 34',
+         "Health details in a contact form are special-category data, so ask only for what you need. A physiotherapist "
+         "working alone doesn't need a data protection officer; a clinic does."),
+    ],
+    legal_note="Physiotherapy is VAT-exempt when it treats or prevents an injury or illness; relaxing or beauty "
+               "massage outside a treatment is taxed at 21%. Some regions, such as Murcia, also require prior "
+               "authorisation of health advertising, websites included: we wait for it before your site goes live. "
+               "This is general information as of September 2026, not legal advice: check with your Colegio and your "
+               "regional health department.",
+    legal_we_t='What we set up for you',
+    legal_we=["Your Colegio, colegiado number, qualification and a link to the code of ethics, plus your NIF or NIE",
+              "Your practice registration number wherever the site presents your services",
+              "Copy written without promises of cure, patient testimonials or price-led offers",
+              "A link to your booking tool, WhatsApp or phone, and a contact form that asks only what it needs",
+              "Your site in English and Spanish at no extra cost"],
+    spain_note='',
+    sources_t='Sources',
+    why_ey='Why us', why_t='Built for physiotherapists who work in English',
+    why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
+                                         "or technical jargon."),
+         ('🌍', 'Two languages, one price', "English and Spanish at no extra cost, so Spanish patients find you as "
+                                           "easily as expats do."),
+         ('📋', 'Colegio details in place', "Colegio, colegiado number and practice registration number shown the way "
+                                           "Spanish rules expect."),
+         ('📅', 'Easy to book', "A clear button to your online calendar, WhatsApp or phone, with clinic or home visits "
+                               "stated plainly.")],
+    where_t='Anywhere in Spain',
+    where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work remotely, "
+          "so where your practice is makes no difference.",
+    sect_t='Who it is for',
+    sectors=['💆 Physiotherapists', '🏃 Sports physiotherapy', '🦴 Musculoskeletal', '🧓 Older adults',
+             '🤰 Women’s health', '👶 Paediatrics', '🏠 Home visits', '🏥 Clinics'],
+    how_t='Your website in three steps',
+    steps=[('Tell us about your practice', 'Your treatments, clinic or home visits, your town: it takes two minutes.'),
+           ('We build your demo', 'Within 24 hours, with your copy in English and Spanish and your legal pages.'),
+           ('You decide', "You check every word and ask for any changes you want. If you like it, it goes live; if "
+                         "not, you pay nothing.")],
+    price_note=PRIX_EN_SANTE,
+    faq_t='Frequently asked questions',
+    faq=[("Can I practise as a physiotherapist in Spain with a UK degree?",
+          "Only once it is recognised. New applications for a UK degree now go through homologation by the Ministry "
+          "of Science, Innovation and Universities, which requires Spanish at B2 level. Recognitions already granted, "
+          "including those given under Spain's Brexit transition rules to people who began their studies before 2021, "
+          "keep their effect. After that you still need to join a Colegio and practise from an authorised centre."),
+         ("What must my website show?",
+          "Under article 10 of the LSSI: your name, address and contact details, your NIF or NIE, your Colegio and "
+          "colegiado number, your qualification and the country that issued it, any recognition in Spain, and the "
+          "professional rules that apply to you. If you run an authorised practice, add its authorisation details, "
+          "the regional health department that supervises it and its registration number; if you trade through a "
+          "company, add its Registro Mercantil details."),
+         ("Does my practice need to be registered as a health centre?",
+          "Yes. A physiotherapy practice needs prior authorisation from the regional health department and goes on the "
+          "regional register (RD 1277/2003). Madrid also requires an authorisation if you only do home visits. The "
+          "registration number must appear in any advertising that suggests health care, including your website."),
+         ("Can I show patient reviews or testimonials?",
+          "Avoid them: Spanish health-advertising rules ban patient testimonials used to attract clients (RD 1907/1996, "
+          "art. 4.7). We build trust with your qualifications, your approach and practical details instead."),
+         ("Can I call myself a physiotherapist and osteopath?",
+          "Your Colegio's code of ethics asks you to present yourself only as a “Fisioterapeuta”, without adding another "
+          "title. You can mention osteopathy among the techniques you are trained in. Osteopathy isn't a regulated "
+          "profession in Spain."),
+         ("Can a sports massage therapist offer treatment?",
+          "No. Sports massage therapist and quiromasajista are not regulated health professions, so they can offer "
+          "wellness or relaxation services but can't claim to treat or rehabilitate injuries. Only authorised health "
+          "centres may use wording that suggests health care."),
+         ("Is physiotherapy VAT-exempt?",
+          "Yes, when the service treats or prevents an illness or injury and is provided by a health professional. "
+          "Relaxing, beauty or slimming massage outside a treatment is taxed at 21%. Because your health services are "
+          "exempt, you usually can't deduct the VAT on our invoice (only in part if you also sell taxed services or "
+          "products)."),
+         ("How much does a website cost?",
+          "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: design, "
+          "hosting, a domain name for the first year, legal pages and one change a month. English and Spanish are "
+          "included, and the demo is free.")],
+    final_t='See your website before you pay a thing',
+    final_sd="Free demo within 24 hours, copy and legal pages included. No setup fee, no lock-in.",
+)
+
+KINE_SOURCES = {
+    'fr': [
+        ("Code de déontologie des masseurs-kinésithérapeutes (Ordre, 2026)",
+         'https://deontologie.ordremk.fr/wp-content/uploads/2026/02/code-de-deontologie-avec-sommaire.pdf'),
+        ("Recommandations de l'Ordre sur la communication",
+         'https://www.ordremk.fr/wp-content/uploads/2025/04/guide_recommandationscom_cnomk_2024.pdf'),
+        ("Spécificités d'exercice reconnues (avis CNO 2023-02)", 'https://www.ordremk.fr/wp-content/uploads/2024/01/avis-cno-2023-02.pdf'),
+        ("Accès direct aux kinésithérapeutes (Ordre)", 'https://www.ordremk.fr/actualites/kines/acces-direct-aux-kinesitherapeutes/'),
+        ("Obligation d'affichage des tarifs (Ordre)", 'https://www.ordremk.fr/actualites/kines/obligation-daffichage-des-tarifs/'),
+    ],
+    'en': [
+        ("LSSI, art. 10 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758'),
+        ("RD 1277/2003 on health centres (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2003-19572'),
+        ("RD 1907/1996 on health advertising (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-1996-18085'),
+        ("Physiotherapists' code of ethics (Consejo General)",
+         'https://www.consejo-fisioterapia.org/descargas/codigo-deontologico-cgcfe.pdf'),
+        ("Homologation of physiotherapy degrees (Ministry of Science, Innovation and Universities)",
+         'https://www.ciencia.gob.es/Universidades/validate/homologacion/fisioterapeuta.html'),
+        ("AEPD FAQ for health professionals", 'https://www.aepd.es/preguntas-frecuentes/16-salud/2-profesionales-sanitarios'),
+    ],
+}
+
+# ═════════════════════════ DENTISTES ET DENTISTS ═══════════════════════════
+DENT = {}
+DENT['fr'] = dict(
+    html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
+    title="Site internet pour dentiste : 15 €/mois, démo en 24 h",
+    description="Site internet pour chirurgien-dentiste pensé pour le code de déontologie et les recommandations de "
+                "l'Ordre : honoraires, titres, sans avis ni référencement interdit. Démo gratuite en 24 h, 15 €/mois HT.",
+    service_name="Création de site internet pour chirurgiens-dentistes",
+    audience="Chirurgiens-dentistes libéraux",
+    crumb_home='Accueil', crumb='Dentistes',
+    badge='Chirurgiens-dentistes libéraux',
+    h1="Un site internet pour <em>dentistes</em>, construit selon les recommandations de l'Ordre",
+    lede="Votre cabinet, vos soins, vos honoraires et votre prise de rendez-vous, présentés selon le code de "
+         "déontologie : informer, sans promotion. Nous l'écrivons pour vous, vous validez chaque contenu, et la démo "
+         "est gratuite en 24 heures.",
+    pills=["Construit selon les recommandations de l'Ordre", 'Honoraires affichés', 'Démo gratuite en 24 h'],
+    cta='Recevoir ma démo gratuite', cta2='Ce que le code impose',
+    brief_t='En bref',
+    brief="WebAutonomos crée des sites internet pour les chirurgiens-dentistes libéraux, en France et en Espagne. Le "
+          "site présente votre cabinet, vos soins et votre équipe, avec vos honoraires, vos modes de paiement et votre "
+          "conventionnement, comme l'exigent le code de déontologie et l'arrêté du 30 mai 2018. Il suit les "
+          "recommandations de l'Ordre de juin 2026 : "
+          "pas d'avis ni de notes, pas de promotion, pas de photos avant/après, et pas de référencement pour passer "
+          "devant vos confrères. Le site coûte <strong>15 € HT par mois</strong> sans frais d'installation ni "
+          "engagement, ou <strong>349 € HT en paiement unique</strong>, et la démo est prête en 24 heures.",
+    legal_id='regles', legal_ey='Le code de déontologie', legal_t="Ce que votre site doit respecter",
+    legal_intro="Depuis 2020, un chirurgien-dentiste peut communiquer librement auprès du public, y compris sur un "
+                "site internet. Cette communication reste encadrée par le code de déontologie et par les "
+                "recommandations de l'Ordre, mises à jour en juin 2026. Voici l'essentiel.",
+    legal_cols=('Sujet', 'Texte', 'Ce que ça change sur votre site'),
+    legal_rows=[
+        ('Le titre', 'Code de la santé publique, art. L4162-1 ; Code pénal, art. 433-17',
+         "« Chirurgien-dentiste » est un titre protégé ; l'usurper est puni d'un an de prison et de 15 000 € "
+         "d'amende."),
+        ('Ce que vous pouvez dire', 'Code de la santé publique, art. R4127-215-1 ; recommandations de l\'Ordre (juin 2026)',
+         "Vos compétences, votre parcours et vos conditions d'exercice, de façon loyale et honnête : pas de témoignages "
+         "ni de notations, pas de comparaison de prix ou de pratiques, pas de promotion comme « 3 implants pour le prix "
+         "de 2 ». L'Ordre déconseille les photos avant/après, qui suggèrent un résultat certain."),
+        ('Référencement', 'Code de la santé publique, art. R4127-217',
+         "Il est interdit d'obtenir, contre paiement ou par tout autre moyen, un référencement qui fasse apparaître "
+         "votre site en priorité dans les résultats de recherche. Pour l'Ordre, le référencement prioritaire, payant ou "
+         "non, est proscrit."),
+        ('Honoraires', 'Code de la santé publique, art. R4127-240',
+         "Un site qui présente votre activité doit indiquer vos honoraires, les modes de paiement acceptés et les "
+         "obligations d'accès aux soins sans discrimination (CSS, AME). L'Ordre recommande d'indiquer au moins les "
+         "honoraires des 5 à 10 actes les plus pratiqués."),
+        ('Titres et spécialités', "Code de la santé publique, art. R4127-220 ; recommandations de l'Ordre",
+         "Trois spécialités seulement : orthopédie dento-faciale, chirurgie orale, médecine bucco-dentaire, affichées par "
+         "les seuls spécialistes qualifiés. Un omnipraticien doit employer les formules de l'Ordre, comme « oriente "
+         "(ou limite) sa pratique aux actes d'orthodontie ». Diplômes universitaires : ceux que l'Ordre reconnaît ; "
+         "une autre formation peut être citée avec la mention qu'elle n'est ni une spécialité ni un diplôme reconnu."),
+        ('Devis et information écrite', "Arrêté du 30 mai 2018, art. 7 ; Code de la santé publique, art. L1111-3-2",
+         "Information écrite préalable dès 70 € de dépassements d'honoraires, et devis type de la convention pour les "
+         "prothèses et l'orthodontie, avec une alternative sans reste à charge ou à reste à charge modéré quand il y "
+         "en a une."),
+        ('Mentions obligatoires', "LCEN, art. 1-1 et 19 ; Code de commerce, art. R526-27 ; recommandations de l'Ordre",
+         "Titre, pays d'obtention, Ordre d'inscription et code de déontologie applicable, nom précédé ou suivi de "
+         "« EI » si vous êtes entrepreneur individuel, directeur de la publication et hébergeur. L'Ordre cite aussi "
+         "le numéro RPPS et l'accessibilité du cabinet parmi les informations de base."),
+    ],
+    legal_note="Pas de lien vers le site d'une société commerciale ni de publicité pour un tiers : le code l'interdit "
+               "(art. R4127-225). "
+               "En centre de santé, toute publicité est interdite et le site doit identifier tous les praticiens "
+               "(art. L6323-1-9 et L6323-1-5). Informations générales à jour en septembre 2026, qui ne remplacent pas "
+               "l'avis de votre conseil départemental de l'Ordre.",
+    legal_we_t='Ce que nous mettons en place',
+    legal_we=["Vos honoraires pour les actes les plus pratiqués, vos modes de paiement, votre conventionnement et "
+              "l'accès aux soins (CSS, AME)",
+              "Vos titres et orientations avec les formules de l'Ordre, et vos diplômes dans leur libellé exact",
+              "Un site sans avis, sans notes, sans photos avant/après et sans promotion",
+              "Des mentions légales complètes, avec votre RPPS, votre Ordre, le code de déontologie et l'accessibilité "
+              "du cabinet",
+              "Aucune prestation de référencement pour passer devant vos confrères, et aucun lien commercial"],
+    spain_note="<strong>Vous exercez en Espagne ?</strong> Les règles changent : inscription obligatoire au Colegio, "
+               "clinique autorisée comme centre sanitaire avec son numéro d'enregistrement dans la publicité (et, dans "
+               "certaines régions comme Murcie, autorisation préalable de la publicité, site compris), pas de "
+               "« especialista » (l'Espagne n'a pas de spécialités dentaires officielles), et prix totaux dans les "
+               "annonces. Nous connaissons aussi ces règles : "
+               "<a href=\"/fr/site-internet-francophones-espagne\">site internet pour francophones en Espagne</a>.",
+    sources_t='Sources',
+    why_ey='Pourquoi nous', why_t="Pensé pour les chirurgiens-dentistes",
+    why=[('📋', 'Les honoraires bien présentés', "Actes les plus pratiqués, modes de paiement, conventionnement : ce que "
+                                               "le code exige, lisible pour les patients."),
+         ('🏷️', 'Les bons titres', "Spécialités qualifiées, orientations d'omnipraticien et diplômes reconnus, avec "
+                                  "les formules de l'Ordre."),
+         ('📅', 'Rendez-vous en un clic', "Un lien vers votre prise de rendez-vous en ligne et un formulaire réduit au "
+                                         "strict nécessaire."),
+         ('⚖️', "Rien de ce que l'Ordre écarte", "Pas d'avis, pas d'avant/après, pas de promotion, pas de référencement "
+                                            "prioritaire : nous ne vous le vendrons pas.")],
+    where_t='En France et en Espagne',
+    where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que votre cabinet soit à "
+          "Bordeaux, à Strasbourg ou à Valence, en Espagne, rien ne change.",
+    sect_t='Pour qui',
+    sectors=['🦷 Omnipraticiens', '😁 Orthodontistes (ODF)', '🩻 Chirurgie orale', '🩺 Médecine bucco-dentaire',
+             '👶 Odontologie pédiatrique', '🔩 Omnipraticiens (implantologie)', '🏥 Cabinets de groupe',
+             '🪥 Parodontologie'],
+    how_t='Votre site en trois étapes',
+    steps=[('Vous décrivez votre cabinet', "Vos soins, votre équipe, vos horaires, votre prise de rendez-vous : deux "
+                                          "minutes suffisent."),
+           ('Nous préparons votre démo', "En moins de 24 heures, avec vos honoraires, vos titres et vos mentions "
+                                        "légales."),
+           ('Vous décidez', "Vous relisez et validez chaque contenu, et demandez les modifications que vous voulez. Si "
+                           "le site vous plaît, il est mis en ligne ; sinon, vous ne payez rien.")],
+    price_note=PRIX_FR_SANTE,
+    faq_t='Questions fréquentes',
+    faq=[("Mes honoraires doivent-ils figurer sur mon site ?",
+          "Oui. Le code de déontologie (art. R4127-240) impose à un dentiste qui présente son activité, notamment sur un "
+          "site, d'y indiquer ses honoraires, les modes de paiement acceptés et les obligations d'accès aux soins sans "
+          "discrimination. L'Ordre recommande d'indiquer au moins les honoraires des 5 à 10 actes les plus "
+          "pratiqués."),
+         ("Puis-je afficher les avis de mes patients ou une note Google ?",
+          "Non. Le code interdit les témoignages de tiers (art. R4127-215-1), et l'Ordre précise qu'une communication "
+          "loyale et honnête ne fait appel ni à des témoignages ni à des notations. Répondre publiquement à un avis "
+          "nominatif peut aussi violer le secret professionnel."),
+         ("Puis-je montrer des photos avant/après ?",
+          "L'Ordre les déconseille : elles suggèrent au patient un résultat positif certain et tendent à être une "
+          "information trompeuse. Aucun texte ne les interdit expressément, mais le risque disciplinaire existe."),
+         ("Puis-je payer pour être mieux référencé sur Google ?",
+          "Non. L'article R4127-217 interdit d'obtenir, contre paiement ou par tout autre moyen, un référencement qui "
+          "fasse apparaître votre site en priorité ; l'Ordre proscrit le référencement prioritaire, payant ou non. Nous "
+          "ne vendons donc ni référencement ni publicité aux dentistes : le site est clair et bien construit, et Google "
+          "l'indexe normalement."),
+         ("Puis-je écrire « spécialiste en implantologie » ?",
+          "Non. Il n'existe que trois spécialités, réservées aux spécialistes qualifiés : orthopédie dento-faciale, "
+          "chirurgie orale et médecine bucco-dentaire. Un omnipraticien doit utiliser les formules de l'Ordre, comme "
+          "« oriente sa pratique aux actes d'odontologie chirurgicale ». Vous pouvez citer l'implantologie parmi vos "
+          "pratiques, sans la présenter comme relevant de la spécialité de chirurgie orale."),
+         ("Quand dois-je remettre un devis ?",
+          "Une information écrite préalable est obligatoire dès que les dépassements d'honoraires atteignent 70 € "
+          "(arrêté du 30 mai 2018). Pour les prothèses et l'orthodontie, le devis suit le modèle de la convention et "
+          "propose "
+          "une alternative sans reste à charge ou à reste à charge modéré quand il y en a une."),
+         ("Un centre de santé peut-il avoir un site ?",
+          "Oui, sans aucune publicité en faveur du centre (art. L6323-1-9), et son gestionnaire doit y afficher "
+          "l'identité et les fonctions de tous les médecins et chirurgiens-dentistes qui y exercent (art. "
+          "L6323-1-5)."),
+         ("Combien coûte un site pour dentiste ?",
+          "15 € HT par mois sans frais d'installation ni engagement, ou 349 € HT en paiement unique, avec les mêmes "
+          "services : conception, hébergement, nom de domaine la première année, mentions légales et une modification "
+          "par mois. La démo est gratuite.")],
+    final_t='Voyez votre site avant de payer quoi que ce soit',
+    final_sd="Démo gratuite en 24 heures, honoraires et mentions obligatoires compris. Sans frais d'installation, sans "
+             "engagement.",
+)
+
+DENT['en'] = dict(
+    html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
+    title="Websites for dentists and dental clinics in Spain: €15/month",
+    description="Websites for English-speaking dentists and dental clinics in Spain, built around Spanish rules on "
+                "health advertising, prices and titles. Free demo in 24h, €15/month + VAT.",
+    service_name="Web design for dentists and dental clinics in Spain",
+    audience="English-speaking dentists and dental clinic owners in Spain",
+    crumb_home='Home', crumb='Dentists',
+    badge='For dentists and dental clinics in Spain',
+    h1="Websites for <em>dentists and dental clinics</em> in Spain",
+    lede="Your clinic, your treatments and how to book, in English and Spanish, with prices, titles and registration "
+         "details set out with Spanish rules in mind. We write it for you, you approve every word, and your free demo "
+         "is ready within 24 hours.",
+    pills=['English and Spanish included', 'Written with Spanish rules in mind', 'Free demo in 24 hours'],
+    cta='Get my free demo', cta2='What Spanish rules require',
+    brief_t='In short',
+    brief="WebAutonomos builds websites for English-speaking dentists and dental clinics in Spain. We write the copy in "
+          "English and Spanish at no extra cost, show your Colegio, colegiado number and clinic registration number, "
+          "and keep the site clear of what Spanish rules ban: patient testimonials, promises of results, implant or "
+          "aligner brand names, and “especialista” titles that don't exist in Spain. It costs <strong>€15 + VAT per "
+          "month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>, and your demo is "
+          "ready within 24 hours.",
+    legal_id='rules', legal_ey='Spanish rules', legal_t='What your website has to get right in Spain',
+    legal_intro="Dentistry is a regulated health profession in Spain, and dental advertising has been under close "
+                "watch since the iDental and Dentix collapses. These are the points that matter for a website.",
+    legal_cols=('Topic', 'Law', 'What it means for your website'),
+    legal_rows=[
+        ('Colegio and legal notice', 'Ley 2/1974, art. 3; LSSI (Ley 34/2002), art. 10',
+         "Membership of a Colegio de Odontólogos y Estomatólogos is compulsory. Your site must show your Colegio and "
+         "colegiado number, your qualification, the country that issued it and any recognition in Spain, the "
+         "professional rules that apply, your NIF and the clinic's authorisation details."),
+        ('Clinic authorisation', 'RD 1277/2003, art. 6.2; RD 1594/1994, art. 3',
+         "A dental clinic (type C.2.5.1) needs regional authorisation, and its registration number must appear in any "
+         "advertising, your website included. A dental practice must be run directly and personally by a dentist."),
+        ('Health advertising', 'Ley 44/2003, art. 44; RD 1907/1996, art. 4',
+         "Advertising must be objective, prudent and truthful: no assurances of results, and no testimonials from "
+         "patients or famous people used to attract clients."),
+        ('Titles', 'Ley 44/2003, 2nd additional provision; Consejo General code of ethics, art. 56',
+         "Spain has no official dental specialties, so titles such as “especialista en implantes” or “orthodontic "
+         "specialist” can't be used. Use only the titles you actually hold."),
+        ('Brands and “free”', 'RD 1591/2009, art. 38.9; Ley 3/1991, art. 22.5',
+         "Advertising to the public of medical devices that dentists apply, such as implant or aligner brands, is "
+         "banned. Calling something “free” is misleading if the patient has to pay anything."),
+        ('Prices and financing', 'Consumer law (TRLGDCU), art. 20.1.c; Ley 16/2011, art. 9',
+         "Advertised prices must be the full final price. Any advert that mentions financing costs must give a "
+         "representative example with the APR (TAE); “0% interest” finance arranged through the clinic still counts "
+         "as a consumer credit."),
+        ('Foreign qualifications', 'RD 581/2017; RD 889/2022; RDL 38/2020, art. 4; Código Penal, art. 403',
+         "EU dental degrees benefit from automatic recognition, but you still apply to the Ministry of Health; a new "
+         "application for a UK degree goes through homologation, with Spanish at B2 level. Practising without a "
+         "recognised title is a criminal offence."),
+    ],
+    legal_note="Regional rules add detail: in Madrid, consumer law, as the COEM's decalogue explains, requires the "
+               "total price of a treatment rather than “from €X” and the previous price next to any discount; "
+               "Catalonia's Colegio rules out “first visit free”. Some regions, such as Murcia, require prior "
+               "authorisation of health advertising, websites included: we wait for it before your site goes live. "
+               "Dental clinics must appoint a data protection officer; a dentist practising alone, as an individual, "
+               "doesn't have to. This is general information as of September 2026, not legal advice: check with your "
+               "Colegio and your regional health department.",
+    legal_we_t='What we set up for you',
+    legal_we=["Your Colegio, colegiado number, qualification and a link to the code of ethics, plus the clinic's "
+              "registration number and authorisation details",
+              "Treatments described without promises of results, testimonials, brand names or “especialista” titles",
+              "Prices shown as full final prices, and any financing with its representative example",
+              "A link to your booking tool, WhatsApp or phone, and a contact form that asks only what it needs",
+              "Your site in English and Spanish at no extra cost"],
+    spain_note='',
+    sources_t='Sources',
+    why_ey='Why us', why_t='Built for dentists who work in English',
+    why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
+                                         "or technical jargon."),
+         ('🌍', 'Two languages, one price', "English and Spanish at no extra cost, so Spanish patients find you as "
+                                           "easily as expats do."),
+         ('📋', 'Registration details in place', "Colegio, colegiado number and clinic registration number shown the "
+                                                "way Spanish rules expect."),
+         ('📅', 'Easy to book', "A clear button to your online calendar, WhatsApp or phone.")],
+    where_t='Anywhere in Spain',
+    where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work remotely, "
+          "so where your clinic is makes no difference.",
+    sect_t='Who it is for',
+    sectors=['🦷 General dentists', '😁 Orthodontics', '🦷 Implant dentistry', '👶 Children’s dentistry',
+             '🪥 Periodontics', '✨ Cosmetic dentistry', '🏥 Dental clinics', '🧑‍⚕️ Group practices'],
+    how_t='Your website in three steps',
+    steps=[('Tell us about your clinic', 'Your treatments, your team, your opening hours, your town: it takes two '
+                                         'minutes.'),
+           ('We build your demo', 'Within 24 hours, with your copy in English and Spanish and your legal pages.'),
+           ('You decide', "You check every word and ask for any changes you want. If you like it, it goes live; if "
+                         "not, you pay nothing.")],
+    price_note=PRIX_EN_SANTE,
+    faq_t='Frequently asked questions',
+    faq=[("Can I practise as a dentist in Spain with a UK degree?",
+          "Only once it is recognised. New applications for a UK degree now go through homologation by the Ministry "
+          "of Science, Innovation and Universities, which requires Spanish at B2 level. Recognitions already granted, "
+          "including those given under Spain's Brexit transition rules to people who began their studies before 2021, "
+          "keep their effect. EU dental degrees benefit from automatic recognition, but you still apply to the Ministry "
+          "of Health."),
+         ("What must my clinic's website show?",
+          "Under article 10 of the LSSI: your name or company name (with its Registro Mercantil details), address, "
+          "email and NIF, your Colegio and colegiado number, your qualification and the country that issued it, any "
+          "recognition in Spain, the professional rules that apply, and the clinic's authorisation details, including "
+          "the regional health department that supervises it. The clinic's registration number must "
+          "also appear in any advertising (RD 1277/2003, art. 6.2)."),
+         ("Can I call myself a specialist in implants or orthodontics?",
+          "Spain has no officially recognised dental specialties, and the law bars titles that could be confused with "
+          "official ones. Describe what you do, for example “implant treatment” or “orthodontic treatment”, and use only "
+          "the titles you actually hold."),
+         ("Can I mention Invisalign or an implant brand?",
+          "Not in advertising aimed at patients: Spanish rules ban advertising to the public of medical devices that "
+          "dentists apply themselves (RD 1591/2009, art. 38.9). Describe the treatment instead, such as “clear aligners”."),
+         ("Can I show patient reviews or before-and-after photos?",
+          "Avoid patient testimonials: health-advertising rules ban them as a way to attract clients (RD 1907/1996, "
+          "art. 4.7). There is no specific rule on before-and-after photos, but they are judged under the same bans on "
+          "testimonials and misleading claims, and need the patient's explicit consent."),
+         ("How should I show prices and financing?",
+          "As full final prices: the Madrid Colegio's decalogue treats “from €X” and “free implants” as misleading, "
+          "and discounts must show the previous price. If an advert mentions financing costs, it must include a representative "
+          "example with the APR (TAE), even for “0%” finance arranged through the clinic."),
+         ("Do I have to give patients a written quote?",
+          "A dentist must provide a written estimate of the treatment and its cost when the patient asks for one (RD "
+          "1594/1994, art. 4). In Catalonia a written quote is compulsory unless the patient waives it in their own "
+          "handwriting, and it must include the clinic's registration number."),
+         ("How much does a website cost?",
+          "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: design, "
+          "hosting, a domain name for the first year, legal pages and one change a month. Dental services, whitening "
+          "included, are VAT-exempt, so you usually can't deduct the VAT on our invoice (only in part if you also sell "
+          "taxed services or products).")],
+    final_t='See your website before you pay a thing',
+    final_sd="Free demo within 24 hours, copy and legal pages included. No setup fee, no lock-in.",
+)
+
+DENT_SOURCES = {
+    'fr': [
+        ("Code de déontologie, communication des chirurgiens-dentistes (Légifrance)",
+         'https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072665/LEGISCTA000006196413/'),
+        ("Recommandations de l'Ordre sur la communication (juin 2026)",
+         'https://www.ordre-chirurgiens-dentistes.fr/download/109355/'),
+        ("Affichages réglementaires (Ordre)",
+         'https://www.ordre-chirurgiens-dentistes.fr/pour-le-chirurgien-dentiste/affichages-reglementaires-rgpd/'),
+        ("Devis obligatoire (ameli.fr)",
+         'https://www.ameli.fr/chirurgien-dentiste/exercice-liberal/facturation-remuneration/tarifs-conventionnels/devis-obligatoire'),
+        ("Arrêté du 30 mai 2018 sur l'information des patients (Légifrance)",
+         'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037032490'),
+    ],
+    'en': [
+        ("LSSI, art. 10 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758'),
+        ("RD 1277/2003 on health centres (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2003-19572'),
+        ("RD 1907/1996 on health advertising (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-1996-18085'),
+        ("Dental advertising decalogue (Colegio de Dentistas de Madrid)",
+         'https://coem.org.es/wp-content/uploads/2025/11/DECALOGO_PUBLICIDAD_COEM.pdf'),
+        ("Dental clinics: consumer rights (Comunidad de Madrid)",
+         'https://www.comunidad.madrid/consumo/clinicas-dentales-derechos-consumidores'),
+        ("Homologation of dental degrees (Ministry of Science, Innovation and Universities)",
+         'https://www.ciencia.gob.es/Universidades/validate/homologacion/dentista.html'),
+    ],
+}
+
 METIERS = {
     'therapeutes': dict(
         es='/psicologos/',
@@ -723,12 +1340,48 @@ METIERS = {
         tags={'fr': ['🪵 Menuisiers', '🪟 Aluminium et PVC'],
               'en': ['🪵 Carpenters', '🪟 Aluminium & PVC']},
     ),
+    'kines': dict(
+        es='/fisioterapeutas/',
+        fr='/fr/site-internet-kinesitherapeute',
+        en='/en/website-for-physiotherapists-in-spain',
+        C=KINE, SOURCES=KINE_SOURCES,
+        avis_ordre=['Ana Saiz', 'Analía', 'Sabine O.', 'Begoña Cid', 'Inés', 'Fabiana', 'Amelle B.', 'Lee Robinson'],
+        llms={'fr': ("- [Site internet pour menuisiers](https://webautonomos.es/fr/site-internet-menuisier)",
+                     "Site internet pour kinésithérapeutes"),
+              'en': ("- [Websites for carpenters and joiners in Spain](https://webautonomos.es/en/website-for-carpenters-in-spain)",
+                     "Websites for physiotherapists in Spain")},
+        tags={'fr': ['💆 Kinésithérapeutes'],
+              'en': ['💆 Physiotherapists']},
+    ),
+    'dentistes': dict(
+        es='/dentistas/',
+        fr='/fr/site-internet-dentiste',
+        en='/en/website-for-dentists-in-spain',
+        C=DENT, SOURCES=DENT_SOURCES,
+        avis_ordre=['Ana Saiz', 'Analía', 'Sabine O.', 'Begoña Cid', 'Inés', 'Fabiana', 'Amelle B.', 'Lee Robinson'],
+        llms={'fr': ("- [Site internet pour kinésithérapeutes](https://webautonomos.es/fr/site-internet-kinesitherapeute)",
+                     "Site internet pour chirurgiens-dentistes"),
+              'en': ("- [Websites for physiotherapists in Spain](https://webautonomos.es/en/website-for-physiotherapists-in-spain)",
+                     "Websites for dentists and dental clinics in Spain")},
+        tags={'fr': ['🦷 Dentistes'],
+              'en': ['🦷 Dentists']},
+    ),
 }
 
 CSS_METIER = """
 /* ─── pages métier (build_metier_pages.py) ─── */
 .spain-note { max-width:760px; margin:18px auto 0; background:var(--off); border:1.5px solid var(--border); border-radius:12px; padding:14px 18px; font-size:.93rem; color:#334155; line-height:1.6; }
 .spain-note a { color:var(--blue); font-weight:600; }
+/* tableau des règles en fiches sur mobile : la 3e colonne restait hors écran (24/09/2026) */
+@media (max-width:640px) {
+  .lt-wrap { overflow:visible; }
+  table.lt { min-width:0; }
+  table.lt thead { display:none; }
+  table.lt tr { display:block; padding:14px 16px; border-bottom:1px solid var(--border); }
+  table.lt tr:last-child { border-bottom:none; }
+  table.lt tbody th, table.lt td { display:block; padding:0; border:none; }
+  table.lt td.law { margin:4px 0 8px; font-size:.82rem; }
+}
 """
 
 
