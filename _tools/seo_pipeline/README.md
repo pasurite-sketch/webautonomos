@@ -39,7 +39,7 @@ Installation : `INSTALL_VPS.md`.
 
 - Trancher les points **À CONFIRMER** de `VERITE.md` (section 10).
 - Pages marquées `requete_a_confirmer: true` : sautées tant qu'aucun volume
-  ne confirme la requête (au 24/09 : 6 pages FR et 8 pages EN).
-- Liste du 24/09/2026 : vague 1 = 8 pages (priorité 1), puis 3 pages
-  FR dont les requêtes viennent du relevé de volumes (priorité 2) ;
-  `/servicios` retirée du circuit.
+  ne confirme la requête (au 24/09 : 6 pages FR et 7 pages EN).
+- Liste du 24/09/2026 : vague 1 = 11 pages (priorité 1 : 7 ES, 1 EN et les
+  3 pages FR dont les requêtes viennent du relevé de volumes), puis
+  `en-therapists` (priorité 2) ; `/servicios` retirée du circuit.

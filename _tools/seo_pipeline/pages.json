@@ -179,8 +179,8 @@
       "generateur": "_tools/build_lang_homes.py",
       "mode": "auto",
       "statut": "a_faire",
-      "priorite": 2,
-      "notes": "Page générée : modifier le dictionnaire C['fr'] de build_lang_homes.py puis relancer le script. Angle « pas cher » = 15 €/mois assumé, avec les preuves de sérieux (démo avant paiement, sans engagement, modification mensuelle). Jamais « le moins cher » ni comparaison chiffrée avec un concurrent sans source.",
+      "priorite": 1,
+      "notes": "Page générée : modifier le dictionnaire C['fr'] de build_lang_homes.py puis relancer le script. Angle « pas cher » = 15 €/mois assumé, avec les preuves de sérieux (démo avant paiement, sans engagement, modification mensuelle). Jamais « le moins cher » ni comparaison chiffrée avec un concurrent sans source. Page créée le 23/09/2026 : aucune position à perdre, Google la découvrira directement optimisée.",
       "requetes_secondaires": [
         "création site internet pas cher",
         "site internet vitrine"
@@ -197,8 +197,8 @@
       "generateur": null,
       "mode": "auto",
       "statut": "a_faire",
-      "priorite": 2,
-      "notes": "Cannibalisation : l'article blog/fr/combien-coute-un-site-web-pour-independants.html traite le même sujet (angle informatif). Dans cet article, ajouter seulement un lien vers /fr/tarifs avec l'ancre « prix d'un site internet », sans le réécrire. Garder le tableau comparatif et les prix de concurrents tels quels (relevés le 23/09).",
+      "priorite": 1,
+      "notes": "Cannibalisation : l'article blog/fr/combien-coute-un-site-web-pour-independants.html traite le même sujet (angle informatif). Dans cet article, ajouter seulement un lien vers /fr/tarifs avec l'ancre « prix d'un site internet », sans le réécrire. Garder le tableau comparatif et les prix de concurrents tels quels (relevés le 23/09). Page créée le 23/09/2026 : aucune position à perdre, Google la découvrira directement optimisée.",
       "requetes_secondaires": [
         "site internet prix",
         "combien coûte un site internet",
@@ -217,8 +217,8 @@
       "generateur": null,
       "mode": "auto",
       "statut": "a_faire",
-      "priorite": 2,
-      "notes": "Angle « devis immédiat » : les prix sont fixes et affichés ; la démo gratuite en 24 h montre le site ET le prix avant tout paiement, sans attendre de devis. Seule une boutique en ligne fait l'objet d'un devis personnalisé (VERITE §2). Ne pas promettre de « devis gratuit » ni de délai de devis. Ne pas viser « refonte » (hors offre).",
+      "priorite": 1,
+      "notes": "Angle « devis immédiat » : les prix sont fixes et affichés ; la démo gratuite en 24 h montre le site ET le prix avant tout paiement, sans attendre de devis. Seule une boutique en ligne fait l'objet d'un devis personnalisé (VERITE §2). Ne pas promettre de « devis gratuit » ni de délai de devis. Ne pas viser « refonte » (hors offre). Page créée le 23/09/2026 : aucune position à perdre, Google la découvrira directement optimisée.",
       "requetes_secondaires": [
         "devis création site internet",
         "création site internet devis"
@@ -352,14 +352,20 @@
       "slug": "en-therapists",
       "url": "https://webautonomos.es/en/website-for-therapists-in-spain",
       "lang": "en",
-      "requete": "website for therapists spain",
-      "requete_a_confirmer": true,
+      "requete": "websites for therapists",
+      "requete_a_confirmer": false,
       "fichier": "en/website-for-therapists-in-spain.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
       "statut": "a_faire",
       "priorite": 2,
-      "notes": "SANTÉ. Règles espagnoles."
+      "notes": "SANTÉ. Règles espagnoles.",
+      "requetes_secondaires": [
+        "websites for psychologists",
+        "websites for psychotherapists",
+        "websites for counsellors"
+      ],
+      "donnees": "Search Console, 28 jours au 21/09/2026 : websites for psychologists 17 imp. ; websites for therapists 10 ; websites for psychotherapists 7 ; websites for counsellors 6. Une partie vient des États-Unis et du Royaume-Uni : viser les praticiens anglophones installés en Espagne."
     },
     {
       "slug": "en-carpenters",
