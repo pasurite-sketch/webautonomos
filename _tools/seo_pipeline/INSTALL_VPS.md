@@ -8,8 +8,8 @@ le résultat indiqué, puis passe à la suivante.
 1. **Clé API Anthropic** : console.anthropic.com → API Keys → Create key.
    Garde-la de côté. Mets une limite de dépense mensuelle (Billing → Limits),
    par exemple 50 $ pour commencer.
-2. **Clé API SERPmantics** (offre Pionnier ou plus) : page « API / MCP » de
-   SERPmantics → créer une clé.
+2. **Clé API SERPmantics** (offre Pionnier ou plus) : SERPmantics → onglet
+   « API / MCP » → « Clés API » → nom `circuit-seo-vps` → « Créer une nouvelle clé ».
 3. **Jeton GitHub limité au dépôt** : github.com → Settings → Developer settings →
    Fine-grained tokens → Generate new token
    - Repository access : *Only select repositories* → `pasurite-sketch/webautonomos`
@@ -63,7 +63,7 @@ Réglage d'effort du relecteur : si l'étape B.6 montre une option d'effort
 
 1. `python3 _tools/seo_pipeline/pipeline.py status` → le tableau des 30 pages
 2. `python3 _tools/seo_pipeline/pipeline.py next --n 5` → les pages prêtes
-3. **Test de la connexion SERPmantics** (1 crédit) :
+3. **Test de la connexion SERPmantics** (gratuit : la lecture du solde ne coûte rien) :
    `set -a; . ~/.seo_pipeline.env; set +a; claude -p "Avec l'outil serpmantics get_credits, donne-moi mon solde de crédits et de jetons." --mcp-config _tools/seo_pipeline/mcp.json --allowedTools mcp__serpmantics`
    → doit afficher ton solde. Si c'est une erreur d'authentification, le nom
    de l'en-tête dans `mcp.json` est peut-être différent : envoie-moi le message.

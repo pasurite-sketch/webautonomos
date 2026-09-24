@@ -5,8 +5,10 @@ sans publier d'affirmation fausse.
 
 ## Le circuit, pour chaque page
 
-1. **Rédacteur** (Claude, `WRITER_MODEL`) : guide SERPmantics → réécriture
-   (page ou script générateur) → nouveau score → rapport.
+1. **Rédacteur** (Claude, `WRITER_MODEL`) : 2 guides SERPmantics (Google pour
+   le SEO, pages citées par les réponses IA de Google pour le GEO : 1 crédit
+   chacun, réutilisés s'ils existent déjà) → réécriture (page ou script
+   générateur) → nouveaux scores → rapport.
 2. **Contrôles automatiques** (`checks.py`, sans IA) : périmètre, scripts
    générateurs, HTML, JSON-LD, FAQ, title, H1, prix, liens de démo, Trustpilot,
    nombres et expressions interdits, accents.

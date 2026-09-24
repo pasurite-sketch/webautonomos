@@ -19,14 +19,38 @@ vérifieront ton travail. Une page rejetée n'est pas publiée.
 2. Si l'entrée a un `generateur` : lis le script, repère le texte de cette page
    dedans. **Tu modifieras le script, jamais la page**, puis tu relanceras le script
    (`python3 <generateur>`) pour régénérer la page.
-3. SERPmantics (outils `mcp__serpmantics__*`) :
-   - `create_guides` pour la requête, moteur Google, dans la langue indiquée ;
-   - `get_guides` pour obtenir les expressions attendues (avec leurs fourchettes),
-     les expressions à éviter, les statistiques du top 10 (mots, titres, listes) ;
-   - `create_score` sur le contenu ACTUEL de la page → note le score de départ.
+3. SERPmantics (outils `mcp__serpmantics__*` ; lis leurs noms exacts dans ta liste d'outils) :
+   a. **Solde** : lis le solde de crédits (outil « credits », gratuit). Un guide
+      coûte 1 crédit. S'il en reste moins de 2, arrête-toi sans rien modifier et
+      écris-le dans le rapport (`points_d_attention`).
+   b. **Réutilise avant de créer** : liste les guides existants filtrés sur la
+      requête. Ce filtre est une expression régulière insensible à la casse :
+      compare toi-même `query`, `lang` et `source`. Un guide qui a exactement la
+      même requête, la même langue et la même source, créé il y a moins de
+      180 jours, est réutilisé : n'en crée pas un second.
+   c. Sinon, crée **au plus deux guides**, avec `lang` = la langue du guide
+      indiquée dans la consigne :
+      - `source: "google"` : SEO, 1 crédit, guide principal ;
+      - `source: "google_ai_overview_citations"` : GEO, contenu des pages citées
+        par les réponses IA de Google, 1 crédit.
+      Aucune autre source (les moteurs IA coûtent 4 crédits par guide).
+      Lis la réponse : une requête dans `guidesFailed` n'a pas créé de guide et
+      son crédit est rendu, tu peux la renvoyer une fois ; une requête dans
+      `guidesUnknown` ne doit **jamais** être renvoyée (tu paierais deux fois) :
+      attends quelques minutes et cherche-la dans la liste des guides. Si le guide
+      GEO échoue (pas de réponse IA de Google pour cette requête), continue avec
+      le seul guide Google et note-le dans le rapport.
+   d. Lis chaque guide : expressions attendues et leurs fourchettes, expressions à
+      éviter, statistiques du top 10 (mots, titres, listes).
+   e. Outil « score » sur le contenu ACTUEL de la page, pour chaque guide →
+      scores de départ.
+   f. N'utilise **aucun** outil qui consomme des jetons IA (meta, outline,
+      intent, internal-links, eeat, eeat-competitors).
 4. Réécris selon la section 2.
-5. `create_score` sur le nouveau contenu. Vise **le niveau médian du top 3**,
-   plafonné à 80. Au-delà, tu bourres : arrête-toi.
+5. Outil « score » sur le nouveau contenu, pour chaque guide. Guide Google : vise
+   **le niveau médian du top 3**, plafonné à 80 ; au-delà, tu bourres : arrête-toi.
+   Guide GEO : améliore-le sans jamais faire baisser le score Google ; en cas de
+   conflit entre les deux guides, le guide Google l'emporte.
 6. Écris le rapport (section 4). Ne fais NI commit NI push : le script s'en charge.
 
 ## 2. Comment réécrire
@@ -51,6 +75,10 @@ vérifieront ton travail. Une page rejetée n'est pas publiée.
 - Expressions « à éviter » : retire-les si c'est sans perte ; **garde** prix et
   formules de paiement même si l'outil les juge « à éviter » (c'est l'argument
   commercial de WebAutonomos).
+- **GEO** (pour être cité par les réponses IA) : sous chaque H2 formulé en
+  question, une réponse directe de 1 à 2 phrases qui se comprend seule, avant
+  les détails ; définitions nettes ; listes et tableaux simples ; les faits de
+  `VERITE.md` (prix, délais, ce qui est inclus) écrits en toutes lettres.
 - Si tu ajoutes une FAQ visible, ajoute ou mets à jour le JSON-LD `FAQPage`
   avec **exactement** les mêmes questions/réponses.
 - Langue : espagnol avec accents corrects (página, diseño, información…),
@@ -81,10 +109,14 @@ phrase** et signale-le dans le rapport (`faits_manquants`).
 {
   "slug": "…",
   "requete": "…",
-  "guide_serpmantics": "id ou url du guide",
+  "guide_serpmantics": "id du guide Google",
   "score_avant": 0,
   "score_apres": 0,
   "cible_top3": 0,
+  "guide_geo": "id du guide google_ai_overview_citations, ou null",
+  "score_geo_avant": 0,
+  "score_geo_apres": 0,
+  "credits_utilises": 0,
   "mots_avant": 0,
   "mots_apres": 0,
   "fichiers_modifies": ["…"],
@@ -105,4 +137,5 @@ sur WebAutonomos, avec la section de `VERITE.md` qui la justifie.
 ## 5. En cas de retour du relecteur
 
 Tu reçois `review.json` et `checks.json`. Corrige **uniquement** les points
-signalés, relance `create_score`, mets à jour le rapport. Ne réécris pas tout.
+signalés, relance l'outil « score » sur les guides existants (ne crée **aucun**
+nouveau guide), mets à jour le rapport. Ne réécris pas tout.

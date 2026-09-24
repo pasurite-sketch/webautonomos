@@ -86,7 +86,7 @@ l'arbre de travail. Lis :
 3. _tools/seo_pipeline/runs/{slug}/checks.json (contrôles automatiques)
 Corrige UNIQUEMENT les problèmes signalés (bloquants des contrôles, problèmes
 du relecteur). Si la page a un générateur, corrige le script et relance-le.
-Relance create_score, puis mets à jour writer_report.json.
+Relance l'outil « score » SERPmantics sur les guides existants (ne crée aucun nouveau guide), puis mets à jour writer_report.json.
 """.format(slug=slug)
     return txt
 
@@ -171,6 +171,9 @@ def cmd_summary(slug):
     L.append('')
     L.append(f"- **Score SERPmantics** : {w.get('score_avant', '?')} → **{w.get('score_apres', '?')}** "
              f"(cible top 3 : {w.get('cible_top3', '?')})")
+    if w.get('guide_geo'):
+        L.append(f"- **Score GEO (réponses IA de Google)** : {w.get('score_geo_avant', '?')} → **{w.get('score_geo_apres', '?')}**")
+    L.append(f"- **Crédits SERPmantics utilisés** : {w.get('credits_utilises', '?')}")
     L.append(f"- **Mots** : {w.get('mots_avant', '?')} → {w.get('mots_apres', '?')}")
     L.append(f"- **Relecteur** : {r.get('verdict', '?')} (confiance {r.get('confiance', '?')}) — {r.get('resume', '')}")
     L.append(f"- **Contrôles automatiques** : {'OK' if c.get('ok') else 'ÉCHEC'}"

@@ -8,9 +8,9 @@
     "donnees : origine des volumes (Search Console ou outil de mots-clés d'Angelino)."
   ],
   "langues_serpmantics": {
-    "es": "Espagnol (Espagne)",
-    "fr": "Français (France)",
-    "en": "Anglais, résultats Google Espagne (si SERPmantics ne propose pas ce couple : Anglais (Royaume-Uni))"
+    "es": "es-es",
+    "fr": "fr-fr",
+    "en": "en-es (si SERPmantics le refuse : en-gb)"
   },
   "pages": [
     {
