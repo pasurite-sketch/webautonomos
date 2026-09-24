@@ -313,14 +313,20 @@
       "slug": "en-home",
       "url": "https://webautonomos.es/en/",
       "lang": "en",
-      "requete": "web design spain",
-      "requete_a_confirmer": true,
+      "requete": "affordable web design",
+      "requete_a_confirmer": false,
       "fichier": "en/index.html",
       "generateur": "_tools/build_lang_homes.py",
       "mode": "auto",
       "statut": "a_faire",
-      "priorite": 1,
-      "notes": "Page générée : modifier C['en'] de build_lang_homes.py puis relancer."
+      "priorite": 2,
+      "notes": "Page générée : modifier C['en'] de build_lang_homes.py puis relancer. Page créée le 23/09/2026. Angle « affordable » = 15 €/mois assumé (équivalent du « pas cher » de /fr/), public : entreprises et indépendants anglophones installés en Espagne. Jamais « the cheapest » ni comparaison chiffrée avec un concurrent sans source. Ne pas viser « web design services » (réservé à /en/services).",
+      "requetes_secondaires": [
+        "web design agency",
+        "web designers",
+        "web design company"
+      ],
+      "donnees": "Outil de mots-clés d'Angelino, base Espagne, requêtes en anglais, relevé du 24/09/2026 (volume mensuel / KD) : affordable web design 50 / KD 14 (commerciale) ; web design agency 170 / 20 ; web designers 260 / 33 ; web design company 70 / 23."
     },
     {
       "slug": "en-pricing",
@@ -339,14 +345,19 @@
       "slug": "en-services",
       "url": "https://webautonomos.es/en/services",
       "lang": "en",
-      "requete": "website design for small business spain",
-      "requete_a_confirmer": true,
+      "requete": "web design services",
+      "requete_a_confirmer": false,
       "fichier": "en/services.html",
       "generateur": null,
       "mode": "auto",
       "statut": "a_faire",
-      "priorite": 3,
-      "notes": ""
+      "priorite": 2,
+      "notes": "Page créée le 23/09/2026. Ne pas viser « affordable web design » (réservé à /en/).",
+      "requetes_secondaires": [
+        "website design company",
+        "website services"
+      ],
+      "donnees": "Outil de mots-clés d'Angelino, base Espagne, requêtes en anglais, relevé du 24/09/2026 (volume mensuel / KD) : web design services 90 / KD 33 ; website design company 70 / 43 ; website services 50 / 66."
     },
     {
       "slug": "en-therapists",
