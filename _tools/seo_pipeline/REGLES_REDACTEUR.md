@@ -64,9 +64,15 @@ cat, head, `python3 -c`…) est refusée : ne l'essaie pas, utilise Read et Grep
 - Intègre les expressions manquantes **naturellement**, jamais en liste de
   mots-clés. Respecte les fourchettes : ne dépasse pas le haut de la fourchette.
 - Réduis les expressions signalées « sur-utilisées ».
-- Expressions « à éviter » : retire-les si c'est sans perte ; **garde** prix et
-  formules de paiement même si l'outil les juge « à éviter » (c'est l'argument
-  commercial de WebAutonomos).
+- Expressions « à éviter » : retire-les si c'est sans perte ; **garde** prix,
+  formules de paiement, « demo » / « démo » / « demo gratis » et « 24 h » / « 24h »
+  même si l'outil les juge « à éviter » (c'est l'offre de WebAutonomos).
+- **Images** : n'en ajoute aucune (il n'y a pas d'images disponibles et tu ne
+  dois pas en inventer) ; si le guide en demande plus, écris-le dans
+  `points_d_attention`. **Liens** : ajoute seulement des liens internes vers des
+  pages qui existent dans le dépôt (vérifie avec Glob), jamais de lien externe
+  inventé ni de source non vérifiée. Si la structure demande beaucoup plus de
+  liens, ne force pas : signale-le.
 - **GEO** (pour être cité par les réponses IA) : sous chaque H2 formulé en
   question, une réponse directe de 1 à 2 phrases qui se comprend seule, avant
   les détails ; définitions nettes ; listes et tableaux simples ; les faits de
