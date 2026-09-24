@@ -6,10 +6,19 @@ Une entrée par métier dans METIERS ; chaque métier a une page française
 (anglophones installés en Espagne) et une page espagnole existante (/psicologos/…)
 avec laquelle elles forment un groupe hreflang.
 
-Premier métier : thérapeutes et psychologues.
-  /fr/site-internet-psychologue-therapeute
-  /en/website-for-therapists-in-spain
-  /psicologos/                               (espagnol, page existante)
+Métiers :
+  thérapeutes et psychologues (24/09/2026)
+    /fr/site-internet-psychologue-therapeute
+    /en/website-for-therapists-in-spain
+    /psicologos/                               (espagnol, page existante)
+  menuisiers et carpenters (24/09/2026)
+    /fr/site-internet-menuisier                règles françaises : titre d'artisan,
+                                               décennale, RGE, encart France Rénov'
+                                               (1/10/2026), médiateur, dépannage
+    /en/website-for-carpenters-in-spain        règles espagnoles : LSSI, devis écrits
+                                               régionaux, réclamations (15 jours),
+                                               IVA 10 %, avis (30 jours), langue, REA
+    /carpinteros/                              (espagnol, page existante)
 
 Faits juridiques vérifiés le 23-24/09/2026 (sources officielles, voir THERA_SOURCES),
 puis relus par une vérification indépendante le 24/09/2026 :
@@ -161,10 +170,10 @@ THERA['fr'] = dict(
                                         "vos mentions légales."),
            ('Vous décidez', "Vous demandez les modifications que vous voulez. Si le site vous plaît, il est mis en "
                            "ligne ; sinon, vous ne payez rien.")],
-    price_note="Prix hors taxes. En France, nous facturons sans TVA : vous déclarez vous-même la TVA française de "
-               "20 % (autoliquidation), que les psychologues, exonérés, et les praticiens en franchise en base ne "
-               "récupèrent pas. En Espagne, l'IVA de 21 % s'ajoute. Nom de domaine inclus la première année, puis "
-               "environ 12 €/an.",
+    price_note="Prix hors taxes : l'IVA espagnole de 21 % s'ajoute. Si vous êtes établi dans un autre pays de l'UE, "
+               "en France par exemple, avec un numéro de TVA intracommunautaire, la facture est émise sans TVA "
+               "(autoliquidation) ; les psychologues, exonérés, et les praticiens en franchise en base ne récupèrent "
+               "pas cette TVA. Nom de domaine inclus la première année, puis environ 12 €/an.",
     faq_t='Questions fréquentes',
     faq=[("Un psychologue doit-il afficher son numéro RPPS sur son site ?",
           "Aucune loi ne l'impose expressément sur un site, mais c'est recommandé. La LCEN (art. 19) demande aux "
@@ -371,6 +380,321 @@ THERA_SOURCES = {
     ],
 }
 
+# ═════════════════════════ MENUISIERS ET CARPENTERS ════════════════════════
+MENU = {}
+MENU['fr'] = dict(
+    html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
+    title="Site internet pour menuisier : 15 €/mois, démo en 24 h",
+    description="Site internet pour menuisier bois, alu ou PVC : vos réalisations, décennale, médiateur, mentions "
+                "légales et encart France Rénov'. Démo gratuite en 24 h, 15 €/mois HT.",
+    service_name="Création de site internet pour menuisiers",
+    audience="Menuisiers, ébénistes, poseurs de fenêtres et agenceurs de cuisine",
+    crumb_home='Accueil', crumb='Menuisiers',
+    badge='Menuisiers bois, alu et PVC, ébénistes, agenceurs',
+    h1="Un site internet pour <em>menuisiers</em> qui montre votre travail",
+    lede="Vos réalisations en photos, vos zones d'intervention, un devis demandé en un clic, et les mentions que la "
+         "loi impose dès que vous travaillez pour des particuliers. Nous l'écrivons pour vous et vous envoyons une démo "
+         "gratuite en 24 heures.",
+    pills=['Vos réalisations en valeur', 'Mentions obligatoires en ordre', 'Démo gratuite en 24 h'],
+    cta='Recevoir ma démo gratuite', cta2='Ce que la loi impose',
+    brief_t='En bref',
+    brief="WebAutonomos crée des sites internet pour les menuisiers bois, alu et PVC, les ébénistes, les poseurs de "
+          "fenêtres et les agenceurs de cuisine, en France et en Espagne. Nous mettons vos réalisations en valeur, "
+          "rédigeons les textes et plaçons les mentions qu'impose le travail pour des particuliers : assurance, "
+          "médiateur de la consommation, mentions légales et, pour la rénovation énergétique, l'encart France Rénov' "
+          "obligatoire à partir du 1<sup>er</sup> octobre 2026. Le site coûte <strong>15 € HT par mois</strong> sans "
+          "frais d'installation ni engagement, ou <strong>349 € HT en paiement unique</strong>, bilingue sans "
+          "supplément si vous le souhaitez, et la démo est prête en 24 heures.",
+    legal_id='regles', legal_ey='Les règles', legal_t="Ce que votre site doit montrer",
+    legal_intro="Un site de menuisier n'est pas qu'une vitrine : dès que vous travaillez pour des particuliers, le Code "
+                "de la consommation vous impose quelques mentions, et la rénovation énergétique a ses propres règles. "
+                "Voici l'essentiel pour une activité en France.",
+    legal_cols=('Sujet', 'Texte', 'Ce que ça change sur votre site'),
+    legal_rows=[
+        ("Le mot « artisan »", "Code de l'artisanat, art. L211-1, L241-1 et L241-2",
+         "Réservé à ceux qui ont un CAP, un BEP, un titre équivalent ou trois ans d'expérience dans le métier : "
+         "l'immatriculation seule ne suffit pas. L'usage abusif est puni de 7 500 € d'amende (37 500 € pour une "
+         "société). « Maître artisan » est un titre délivré par la chambre de métiers, en général avec le brevet de "
+         "maîtrise et deux ans de pratique."),
+        ("Assurance", "Code des assurances, art. L241-1 et L243-2 ; Code de la consommation, art. R111-2",
+         "Si vous êtes soumis à la décennale, l'attestation se joint à chaque devis et chaque facture. Avant tout "
+         "contrat, le client doit aussi pouvoir connaître votre assurance, votre assureur et la couverture "
+         "géographique : le site est l'endroit le plus simple pour le dire."),
+        ("RGE et aides pour les fenêtres", "Code de la consommation, art. L121-4 ; décret n° 2026-822",
+         "Afficher le logo RGE sans la qualification est une pratique commerciale trompeuse. Depuis le 1er septembre "
+         "2026, MaPrimeRénov' « par geste » ne finance plus les fenêtres ; elles restent possibles dans une "
+         "rénovation d'ampleur, et avec les CEE si elles remplacent du simple vitrage, par un professionnel RGE."),
+        ("Encart France Rénov'", "Code de la consommation, art. L122-26 ; arrêté du 7 juillet 2026",
+         "À partir du 1er octobre 2026, tout professionnel qui propose des travaux de rénovation énergétique sur son "
+         "site ou dans sa publicité doit afficher le message officiel de France Rénov' dans un bandeau, avec un lien "
+         "vers le service public. Amende jusqu'à 15 000 € (75 000 € pour une société)."),
+        ("Médiateur de la consommation", "Code de la consommation, art. L616-1, R616-1 et L641-1",
+         "Si vous travaillez pour des particuliers, le nom, les coordonnées et l'adresse du site de votre médiateur "
+         "doivent être visibles sur votre site. Amende jusqu'à 3 000 € (15 000 € pour une société)."),
+        ("Tarifs de dépannage et devis", "Arrêté du 24 janvier 2017",
+         "Pour le dépannage, la réparation et l'entretien, menuiserie comprise : taux horaire TTC, mode de décompte du "
+         "temps, frais de déplacement et conditions du devis doivent être facilement accessibles sur votre site, et un "
+         "devis détaillé est remis avant toute intervention."),
+        ("Mentions légales", "LCEN, art. 1-1 et 19",
+         "Nom (suivi de « EI » si vous êtes entrepreneur individuel), adresse, téléphone, e-mail, numéro "
+         "d'immatriculation au RNE, numéro de TVA si vous en avez un, directeur de la publication, et nom, adresse et téléphone de "
+         "l'hébergeur."),
+    ],
+    legal_note="Nouveau au 1er octobre 2026 : l'encart France Rénov' devient obligatoire sur les sites qui proposent "
+               "des travaux de rénovation énergétique, fenêtres comprises. Et si vous affichez des avis clients, "
+               "indiquez s'ils sont vérifiés et comment, avec leur date (Code de la consommation, art. L111-7-2). "
+               "Informations générales à jour en septembre 2026, qui ne remplacent pas un conseil juridique.",
+    legal_we_t='Ce que nous mettons en place',
+    legal_we=["Votre qualité d'artisan, votre numéro RNE et votre assurance (assureur, couverture) indiqués "
+              "clairement",
+              "Le logo RGE seulement si vous êtes qualifié, avec les travaux qu'il couvre",
+              "L'encart France Rénov' et son lien si vous proposez des travaux de rénovation énergétique",
+              "Vos tarifs de dépannage (taux horaire TTC, déplacement) sur une page dédiée, si vous faites de la "
+              "réparation",
+              "Les coordonnées de votre médiateur, des mentions légales complètes et des avis présentés avec leur "
+              "date et leur mode de vérification"],
+    spain_note="<strong>Vous travaillez en Espagne ?</strong> Les règles changent : droit du client à un devis écrit "
+               "préalable dans plusieurs communautés (Valence, Madrid, Catalogne), sauf renonciation manuscrite, "
+               "formulaires de réclamation régionaux, et IVA à 10 % sous conditions, pour la rénovation du logement "
+               "d'un particulier notamment. Nous connaissons aussi ces règles : "
+               "<a href=\"/fr/site-internet-francophones-espagne\">site internet pour francophones en Espagne</a>.",
+    sources_t='Sources',
+    why_ey='Pourquoi nous', why_t="Pensé pour les menuisiers",
+    why=[('📸', 'Vos réalisations en valeur', "Cuisines, escaliers, fenêtres, dressings : vos photos de chantier "
+                                            "classées par type de travaux, avec avant et après si vous en avez."),
+         ('📝', 'Un devis en un clic', "Formulaire, WhatsApp ou téléphone : le particulier décrit son projet et vous "
+                                      "recevez la demande directement."),
+         ('📄', 'Les mentions en ordre', "Assurance, médiateur, mentions légales, encart France Rénov' : ce que la "
+                                        "loi demande est en place, sans que vous ayez à le chercher."),
+         ('📍', 'Trouvé près de chez vous', "Titres et textes pensés pour les recherches « menuisier + votre ville », "
+                                           "et votre fiche Google si vous le souhaitez.")],
+    where_t='En France et en Espagne',
+    where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que votre atelier soit "
+          "en Bretagne, en Alsace ou sur la Costa Blanca, rien ne change.",
+    sect_t='Pour qui',
+    sectors=['🪵 Menuisiers bois', '🪟 Menuisiers alu et PVC', '🚪 Poseurs de portes et fenêtres', '🪑 Ébénistes',
+             '🍳 Cuisinistes et agenceurs', '🪜 Escaliéteurs', '🏠 Charpentiers', '🟫 Parqueteurs'],
+    how_t='Votre site en trois étapes',
+    steps=[('Vous décrivez votre activité', "Vos spécialités, votre zone d'intervention, quelques photos de "
+                                           "chantier : deux minutes suffisent."),
+           ('Nous préparons votre démo', "En moins de 24 heures, avec vos réalisations, vos textes et vos mentions "
+                                        "légales."),
+           ('Vous décidez', "Vous demandez les modifications que vous voulez. Si le site vous plaît, il est mis en "
+                           "ligne ; sinon, vous ne payez rien.")],
+    price_note="Prix hors taxes : l'IVA espagnole de 21 % s'ajoute. Si votre entreprise est établie dans un autre "
+               "pays de l'UE, en France par exemple, avec un numéro de TVA intracommunautaire, la facture est émise "
+               "sans TVA (autoliquidation). Nom de domaine inclus la première année, puis environ 12 €/an.",
+    faq_t='Questions fréquentes',
+    faq=[("Un menuisier doit-il afficher son assurance décennale sur son site ?",
+          "Aucun texte n'impose le site en particulier. Si vous êtes soumis à la décennale, l'attestation doit être "
+          "jointe à chaque devis et chaque facture (Code des assurances, art. L243-2). Et avant tout contrat, le client "
+          "doit pouvoir connaître votre assurance, votre assureur et la couverture géographique (Code de la "
+          "consommation, art. R111-2) : l'indiquer sur le site est la façon la plus simple d'y répondre."),
+         ("Puis-je me présenter comme artisan menuisier ?",
+          "Oui si vous avez un CAP, un BEP, un titre équivalent ou trois ans d'expérience dans le métier : c'est ce qui "
+          "donne la qualité d'artisan, pas la seule immatriculation. Utiliser le mot « artisan » sans y avoir droit "
+          "est puni de 7 500 € d'amende. Si votre activité relève vraiment d'un métier d'art de la liste officielle, "
+          "menuiserie ou ébénisterie d'art par exemple, vous pouvez demander la qualité d'artisan d'art : vérifiez-le "
+          "auprès de votre chambre de métiers avant de l'afficher."),
+         ("Le remplacement de fenêtres donne-t-il encore droit à MaPrimeRénov' ?",
+          "Plus en « par geste » : depuis le 1er septembre 2026, ce parcours ne finance plus les fenêtres. Elles "
+          "restent possibles dans une rénovation d'ampleur, et avec les certificats d'économies d'énergie quand elles "
+          "remplacent du simple vitrage, à condition de passer par un professionnel RGE. Sur votre site, restez "
+          "précis : une aide annoncée à tort est une pratique commerciale trompeuse."),
+         ("Qu'est-ce que l'encart France Rénov' obligatoire au 1er octobre 2026 ?",
+          "À partir du 1er octobre 2026 (Code de la consommation, art. L122-26), tout professionnel qui propose des "
+          "travaux de rénovation énergétique sur son site ou dans sa publicité doit afficher, dans un bandeau, le "
+          "message officiel : « Avant de vous engager, le service public vous informe gratuitement pour préparer et "
+          "sécuriser votre projet : www.france-renov.gouv.fr », avec un lien vers le service public. Amende jusqu'à "
+          "15 000 € (75 000 € pour une société). Si vous posez des fenêtres ou isolez, votre site est concerné ; nous "
+          "ajoutons le bandeau."),
+         ("Dois-je indiquer un médiateur de la consommation ?",
+          "Oui, si vous travaillez pour des particuliers, quelle que soit la taille de votre entreprise. Son nom, ses "
+          "coordonnées et l'adresse de son site doivent être visibles sur votre site, vos conditions générales et vos "
+          "bons de commande. L'ancienne plateforme européenne de règlement des litiges a fermé en juillet 2025 : "
+          "inutile d'y renvoyer."),
+         ("Mes tarifs de dépannage doivent-ils être sur mon site ?",
+          "Oui, si vous faites du dépannage, de la réparation ou de l'entretien : l'arrêté du 24 janvier 2017 couvre "
+          "la menuiserie. Taux horaire TTC, mode de décompte du temps, frais de déplacement et conditions du devis "
+          "doivent être facilement accessibles en ligne, et un devis détaillé est remis avant l'intervention."),
+         ("Puis-je afficher mes avis Google sur mon site ?",
+          "Oui, en indiquant s'ils sont vérifiés et comment, avec la date de chaque avis (Code de la consommation, "
+          "art. L111-7-2). Publier de faux avis, ou les modifier, est une pratique commerciale trompeuse."),
+         ("Combien coûte un site pour menuisier ?",
+          "15 € HT par mois sans frais d'installation ni engagement, ou 349 € HT en paiement unique, avec les mêmes "
+          "services : conception, hébergement, nom de domaine la première année, mentions légales et une "
+          "modification par mois. Le site peut être bilingue sans supplément, et la démo est gratuite.")],
+    final_t='Voyez votre site avant de payer quoi que ce soit',
+    final_sd="Démo gratuite en 24 heures, avec vos réalisations et vos mentions légales. Sans frais d'installation, "
+             "sans engagement.",
+)
+
+MENU['en'] = dict(
+    html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
+    title="Websites for carpenters and joiners in Spain: €15/month",
+    description="Websites for English-speaking carpenters, joiners and kitchen fitters in Spain: your work, your legal "
+                "notice and Spanish consumer rules. Free demo in 24h, €15/month + VAT.",
+    service_name="Web design for carpenters and joiners in Spain",
+    audience="English-speaking carpenters, joiners, kitchen fitters and window installers in Spain",
+    crumb_home='Home', crumb='Carpenters and joiners',
+    badge='For carpenters, joiners and kitchen fitters in Spain',
+    h1="Websites for <em>carpenters and joiners</em> in Spain",
+    lede="Your projects in photos, the areas you cover, a quote request in one click, in English and Spanish, and the "
+         "information Spanish consumer law expects. We write it for you and send you a free demo within 24 hours.",
+    pills=['English and Spanish included', 'Spanish rules built in', 'Free demo in 24 hours'],
+    cta='Get my free demo', cta2='What Spanish rules require',
+    brief_t='In short',
+    brief="WebAutonomos builds websites for English-speaking carpenters, joiners, kitchen fitters and window "
+          "installers working in Spain. We show your projects, write the copy in English and Spanish at no extra "
+          "cost, and include what Spanish law expects: a legal notice with your NIF or NIE, prices for homeowners "
+          "shown with VAT included, and the complaint information your region asks for. It costs <strong>€15 + VAT per "
+          "month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>. We work with "
+          "you in English, and your demo is ready within 24 hours.",
+    legal_id='rules', legal_ey='Spanish rules', legal_t='What your website and quotes have to get right',
+    legal_intro="Carpentry isn't a regulated profession in Spain, but as soon as you work for homeowners, consumer law "
+                "and your region's rules decide what your website, quotes and invoices must show. These are the points "
+                "that matter.",
+    legal_cols=('Topic', 'Law', 'What it means for you'),
+    legal_rows=[
+        ('Legal notice', 'LSSI (Ley 34/2002), art. 10',
+         "Your name, address, email and phone, your NIF (for a foreign national, your NIE), your Registro Mercantil "
+         "details if you trade as an S.L., and, if you show prices, whether they include VAT."),
+        ('Written quotes', 'Comunitat Valenciana: Decreto 11/1995; Madrid: Decreto 35/1995; Catalonia: Consumer Code, '
+                           'art. 251-3',
+         "In these regions a homeowner is entitled to a detailed written quote with set contents before work starts, "
+         "unless they waive it in their own handwriting and sign; a pre-printed waiver is not enough. Madrid's "
+         "consumer office also expects renovation firms to offer a price information sheet on their website."),
+        ('Complaints', 'Consumer law (TRLGDCU), art. 21.3; regional rules',
+         "Accept complaints through the channel the customer first used (WhatsApp or your web form, for example) as "
+         "well as by post, phone and an electronic channel. Since 28 December 2025 you must reply within 15 days "
+         "(previously a month). Official complaint forms are regional: in Andalucía, businesses without premises "
+         "show a QR complaint poster on quotes, invoices and websites."),
+        ('10% VAT', 'Ley 37/1992, art. 91.Uno.2.10º',
+         "Renovation or repair of a home at least two years old, for an individual using it privately (not rented "
+         "out) or a comunidad de propietarios, with materials costing no more than 40% of the price before VAT. "
+         "Double glazing usually goes over that limit, and doors, windows or kitchen units supplied without fitting "
+         "are always 21%."),
+        ('Customer reviews', 'Consumer law (TRLGDCU), art. 20.4; Ley 3/1991, art. 27',
+         "Say whether and how you check that reviews come from real customers. Since December 2025, reviews must "
+         "relate to a job bought or used in the 30 days before the review; fake reviews have been banned since "
+         "2022."),
+        ('Language', 'Consumer law (TRLGDCU), art. 60.4',
+         "Pre-contract information, quotes included, must be given at least in Spanish. In Catalonia, customers can "
+         "ask for offers, quotes and invoices in Catalan."),
+    ],
+    legal_note="Rules on quotes and complaint forms are regional, so check your comunidad autónoma's consumer office. "
+               "This is general information as of September 2026, not legal advice.",
+    legal_we_t='What we set up for you',
+    legal_we=["A proper legal notice with your name, NIF or NIE and contact details, plus your company details if you "
+              "trade as an S.L.",
+              "Your postal address, phone, email and WhatsApp shown together, so customers can reach you through the "
+              "complaint channels consumer law requires",
+              "Prices for homeowners shown with VAT included, and a price information page (expected in Madrid for "
+              "renovation firms)",
+              "The complaint information your region asks for, such as the QR poster in Andalucía",
+              "Customer reviews shown with a note on how they are checked, and your site in English and Spanish at no "
+              "extra cost"],
+    spain_note='',
+    sources_t='Sources',
+    why_ey='Why us', why_t='Built for tradespeople who work in English',
+    why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish "
+                                         "legal or technical jargon."),
+         ('🌍', 'Two languages, one price', "English and Spanish at no extra cost, so Spanish homeowners find you as "
+                                           "easily as expats do."),
+         ('📸', 'Your work, shown properly', "Kitchens, wardrobes, doors, staircases: your project photos organised "
+                                            "by type of job."),
+         ('📍', 'Found locally', "Titles and copy written for searches like “carpenter Jávea” or “kitchen fitter "
+                                "Torrevieja”, in both languages.")],
+    where_t='Anywhere in Spain',
+    where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work remotely, "
+          "so where your workshop is makes no difference.",
+    sect_t='Who it is for',
+    sectors=['🪵 Carpenters', '🪚 Joiners', '🍳 Kitchen fitters', '🚪 Door and window installers',
+             '🗄️ Fitted wardrobes', '🪜 Staircase makers', '🪑 Cabinet makers', '🟫 Floor fitters'],
+    how_t='Your website in three steps',
+    steps=[('Tell us about your business', 'Your specialities, the areas you cover and a few project photos: it takes '
+                                           'two minutes.'),
+           ('We build your demo', 'Within 24 hours, with your projects, your copy in English and Spanish, and your '
+                                  'legal pages.'),
+           ('You decide', "Ask for any changes you want. If you like it, it goes live; if not, you pay nothing.")],
+    price_note="Prices exclude VAT (21% IVA on the mainland and the Balearics; the Canary Islands, Ceuta and Melilla "
+               "have their own taxes). As a VAT-registered autónomo you can normally deduct it. Domain name included "
+               "for the first year, then about €12/year.",
+    faq_t='Frequently asked questions',
+    faq=[("What must a carpenter's website in Spain show?",
+          "Under article 10 of the LSSI: your name, an address in Spain, email and other contact details, your NIF "
+          "(your NIE if you are not Spanish), your Registro Mercantil details if you trade as a company, and whether "
+          "any prices shown include VAT. Carpentry is not a regulated profession, so there is no Colegio number to "
+          "add."),
+         ("Do I have to give customers a written quote?",
+          "It depends on the region. In the Comunitat Valenciana, Madrid and Catalonia, homeowners are entitled to a "
+          "detailed written quote before work starts, with set information such as materials, labour rates, dates and "
+          "the total with VAT. They can only waive it in their own handwriting, with their signature (Valencia and "
+          "Madrid prescribe the wording, such as “Renuncio al presupuesto previo y autorizo la reparación”). In "
+          "Catalonia the quote is due whenever the customer can't work out the price themselves, and in Valencia you "
+          "must be able to prove you offered one. Other regions have their own rules: a written quote is always the "
+          "safe choice."),
+         ("Can I charge 10% VAT on carpentry work?",
+          "Mainly for renovation or repair of a home: the customer is an individual using it privately (not rented "
+          "out) or a comunidad de propietarios, the home is at least two years old, and the materials you supply cost "
+          "no more than 40% of the price before VAT. The Tax Agency notes that double glazing usually exceeds that "
+          "limit, and doors, windows, wardrobes or kitchen units supplied without fitting are always taxed at 21%. "
+          "New-build or rehabilitation work contracted directly with the developer, including kitchen units and "
+          "fitted wardrobes supplied and installed, can also be at 10%. The invoice should state the cost of "
+          "materials, or that they don't exceed 40% of the price before VAT."),
+         ("Do I need to register in the REA?",
+          "Only if you employ staff and work as a contractor or subcontractor on construction sites (Ley 32/2006). "
+          "Self-employed carpenters with no employees are exempt. If you have staff and work directly for a "
+          "homeowner, you only need it if you subcontract part of the job. There is no obligation to show an REA "
+          "number on your website."),
+         ("What do I need to do about complaints?",
+          "Accept complaints through the channel the customer first used, as well as by post, phone and an "
+          "electronic channel, and reply within 15 days: a national rule since 28 December 2025 (previously a month). "
+          "Carry your region's official complaint forms. In Andalucía, businesses without premises must show a QR "
+          "complaint poster on quotes, invoices and their website; in Madrid, if you have no premises open to the "
+          "public, a notice that complaint forms are available goes wherever you make offers."),
+         ("Can I show customer reviews on my website?",
+          "Yes, if you say whether and how you check them. Since December 2025, reviews must relate to a job done in "
+          "the 30 days before the review, and adding or commissioning fake reviews has been banned outright since "
+          "2022."),
+         ("Do my quotes have to be in Spanish?",
+          "Pre-contract information, including quotes, must be given at least in Spanish, so a bilingual quote is the "
+          "safe choice even for British customers. Invoices can be in any language, although the Tax Agency may ask "
+          "for a translation. Your website comes in English and Spanish at no extra cost."),
+         ("How much does a website cost?",
+          "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: "
+          "design, hosting, a domain name for the first year, legal pages and one change a month. English and "
+          "Spanish are included, and the demo is free.")],
+    final_t='See your website before you pay a thing',
+    final_sd="Free demo within 24 hours, with your projects and legal pages. No setup fee, no lock-in.",
+)
+
+MENU_SOURCES = {
+    'fr': [
+        ("Code de l'artisanat, qualité d'artisan (Légifrance)",
+         'https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006075116/LEGISCTA000047362410/'),
+        ("Assurance décennale (Service-public)", 'https://entreprendre.service-public.gouv.fr/vosdroits/F2034'),
+        ("MaPrimeRénov' au 1er septembre 2026 (Service-public)",
+         'https://www.service-public.gouv.fr/particuliers/actualites/A18332'),
+        ("Publicité et rénovation énergétique : référence obligatoire à France Rénov'",
+         'https://france-renov.gouv.fr/actualites/publicite-pour-la-renovation-energetique-obligation-desormais-de-faire-reference-au'),
+        ("Médiateur de la consommation (Service-public)", 'https://entreprendre.service-public.gouv.fr/vosdroits/F33338'),
+        ("Arrêté du 24 janvier 2017, dépannage dans le bâtiment (Légifrance)",
+         'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033935513'),
+        ("Avis en ligne (DGCCRF)", 'https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/avis-en-ligne-attention-aux-faux-commentaires'),
+    ],
+    'en': [
+        ("LSSI, art. 10 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758'),
+        ("Spanish consumer law, TRLGDCU (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555'),
+        ("VAT on home repairs, FAQ (Tax Agency)",
+         'https://sede.agenciatributaria.gob.es/Sede/iva/iva-operaciones-inmobiliarias/preguntas-frecuentes-sobre-obras-reparaciones-inmuebles.html'),
+        ("Home renovations (Comunidad de Madrid)", 'https://www.comunidad.madrid/consumo/reformas-hogar'),
+        ("Complaint rules in Andalucía (Consumo Responde)",
+         'https://www.consumoresponde.es/art%C3%ADculos/obligaciones_de_las_empresas_en_materia_de_quejas_y_reclamaciones_en_andalucia'),
+        ("Ley 32/2006 on construction subcontracting (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2006-18205'),
+    ],
+}
+
 METIERS = {
     'therapeutes': dict(
         es='/psicologos/',
@@ -385,6 +709,19 @@ METIERS = {
                      "Websites for therapists and psychologists in Spain")},
         tags={'fr': ['🧠 Psychologues', '🌿 Thérapeutes bien-être'],
               'en': ['🧠 Psychologists', '🌿 Wellbeing practitioners']},
+    ),
+    'menuisiers': dict(
+        es='/carpinteros/',
+        fr='/fr/site-internet-menuisier',
+        en='/en/website-for-carpenters-in-spain',
+        C=MENU, SOURCES=MENU_SOURCES,
+        avis_ordre=['Lee Robinson', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés'],
+        llms={'fr': ("- [Site internet pour psychologues et thérapeutes](https://webautonomos.es/fr/site-internet-psychologue-therapeute)",
+                     "Site internet pour menuisiers"),
+              'en': ("- [Websites for therapists and psychologists in Spain](https://webautonomos.es/en/website-for-therapists-in-spain)",
+                     "Websites for carpenters and joiners in Spain")},
+        tags={'fr': ['🪵 Menuisiers', '🪟 Aluminium et PVC'],
+              'en': ['🪵 Carpenters', '🪟 Aluminium & PVC']},
     ),
 }
 
@@ -532,7 +869,7 @@ def page(m, lang):
     <p class="legal-note">{E(c['legal_note'])}</p>
     {spain}
     <div class="legal-we"><h3>{E(c['legal_we_t'])}</h3><ul>{we}</ul></div>
-    <p class="srcs">{E(c['sources_t'])} : {srcs}</p>
+    <p class="srcs">{E(c['sources_t'])}{' :' if lang == 'fr' else ':'} {srcs}</p>
   </div>
 </section>
 

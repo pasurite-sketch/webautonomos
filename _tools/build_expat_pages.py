@@ -373,7 +373,7 @@ def page(lang):
     </table></div>
     <p class="legal-note">{E(c['legal_note'])}</p>
     <div class="legal-we"><h3>{E(c['legal_we_t'])}</h3><ul>{we}</ul></div>
-    <p class="srcs">{E(c['sources_t'])} : {srcs}</p>
+    <p class="srcs">{E(c['sources_t'])}{' :' if lang == 'fr' else ':'} {srcs}</p>
   </div>
 </section>
 

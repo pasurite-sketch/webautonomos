@@ -53,7 +53,7 @@ SOURCE_DEMO = {'fr': 'demandez-votre-demo.html', 'en': 'get-your-demo.html'}
 # renvoient : /en/#pricing, /fr/#tarifs…).
 # Tags métier de /fr/ et /en/ qui mènent vers une page métier.
 # Tenu à jour par _tools/build_metier_pages.py.
-SECTOR_LINKS = {"fr": {"🧠 Psychologues": "/fr/site-internet-psychologue-therapeute", "🌿 Thérapeutes bien-être": "/fr/site-internet-psychologue-therapeute"}, "en": {"🧠 Psychologists": "/en/website-for-therapists-in-spain", "🌿 Wellbeing practitioners": "/en/website-for-therapists-in-spain"}}
+SECTOR_LINKS = {"fr": {"🧠 Psychologues": "/fr/site-internet-psychologue-therapeute", "🌿 Thérapeutes bien-être": "/fr/site-internet-psychologue-therapeute", "🪵 Menuisiers": "/fr/site-internet-menuisier", "🪟 Aluminium et PVC": "/fr/site-internet-menuisier"}, "en": {"🧠 Psychologists": "/en/website-for-therapists-in-spain", "🌿 Wellbeing practitioners": "/en/website-for-therapists-in-spain", "🪵 Carpenters": "/en/website-for-carpenters-in-spain", "🪟 Aluminium & PVC": "/en/website-for-carpenters-in-spain"}}
 
 IDS = {
     'fr': dict(brief='en-bref', inc='inclus', steps='etapes', price='tarifs', aud='pour-qui',
@@ -123,7 +123,7 @@ C['fr'] = dict(
               pts=["Sans frais d'installation", 'Sans engagement, résiliable à tout moment', 'Démo gratuite avant de payer']),
          dict(name='Paiement unique', amt='349 €', per='HT, une seule fois', hl=False, badge='',
               pts=['Mêmes services inclus', 'Un seul versement', 'Idéal si vous préférez ne plus y penser'])],
-  price_note="Prix hors taxes. En France, facturés sans TVA (vous la déclarez en autoliquidation) ; en Espagne, IVA de 21 % en plus. Nom de domaine inclus la première année, puis environ 12 €/an.",
+  price_note="Prix hors taxes : IVA espagnole de 21 % en plus. Entreprise établie ailleurs dans l'UE avec un numéro de TVA intracommunautaire : facture sans TVA (autoliquidation). Nom de domaine inclus la première année, puis environ 12 €/an.",
   price_link='Voir le détail et le coût réel sur 24 mois',
   aud_ey='Pour qui', aud_t='En France ou installé en Espagne',
   aud_sd='Nous travaillons à distance, par e-mail, WhatsApp et visioconférence.',
