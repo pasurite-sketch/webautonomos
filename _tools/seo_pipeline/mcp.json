@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "serpmantics": {
+      "type": "http",
+      "url": "https://app.serpmantics.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${SERPMANTICS_API_KEY}"
+      }
+    }
+  }
+}

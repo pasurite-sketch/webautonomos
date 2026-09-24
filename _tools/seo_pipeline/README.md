@@ -1,0 +1,44 @@
+# Circuit SEO/GEO automatisé — webautonomos.es
+
+Optimise les pages commerciales une par une avec SERPmantics et Claude Code,
+sans publier d'affirmation fausse.
+
+## Le circuit, pour chaque page
+
+1. **Rédacteur** (Claude, `WRITER_MODEL`) : guide SERPmantics → réécriture
+   (page ou script générateur) → nouveau score → rapport.
+2. **Contrôles automatiques** (`checks.py`, sans IA) : périmètre, scripts
+   générateurs, HTML, JSON-LD, FAQ, title, H1, prix, liens de démo, Trustpilot,
+   nombres et expressions interdits, accents.
+3. **Relecteur** (Claude, `REVIEWER_MODEL`, indépendant, lecture seule) :
+   faits contre `VERITE.md`, qualité, cannibalisation, santé → approuver /
+   réviser / rejeter.
+4. Jusqu'à 2 corrections si « réviser ». « Rejeter » = abandon, rien n'est publié.
+5. **Pull request** GitHub avec un résumé de 5 lignes. Fusion automatique
+   seulement si `AUTO_MERGE=1` et page en mode `auto`. Pages santé : toujours
+   ton clic.
+
+## Fichiers
+
+| Fichier | Rôle | Qui le modifie |
+|---|---|---|
+| `VERITE.md` | Seuls faits autorisés, chiffres, interdits | **Angelino** |
+| `pages.json` | Les 30 pages : requête, fichier, mode, statut | Angelino / Claude |
+| `REGLES_REDACTEUR.md` | Consignes de l'agent rédacteur | Claude |
+| `REGLES_RELECTEUR.md` | Grille de l'agent relecteur | Claude |
+| `checks.py` | Contrôles automatiques | Claude |
+| `pipeline.py` | Consignes, état, résumé de PR | Claude |
+| `run_page.sh` | Traite une page | — |
+| `run_batch.sh` | Traite les N suivantes (cron) | — |
+| `mcp.json` | Connexion SERPmantics | — |
+| `runs/` | Journaux, rapports, état (non versionné) | automatique |
+
+Installation : `INSTALL_VPS.md`.
+
+## Avant le premier passage
+
+- Trancher les points **À CONFIRMER** de `VERITE.md` (section 10).
+- Confirmer les requêtes des pages marquées `requete_a_confirmer: true`
+  (surtout FR/EN : aucune donnée Search Console). Elles sont sautées tant
+  qu'elles ne sont pas confirmées.
+- Décider pour `es-electricistas` (article du blog ou page métier ?).
