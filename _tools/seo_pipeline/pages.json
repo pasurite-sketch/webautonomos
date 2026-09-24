@@ -3,12 +3,14 @@
     "Une entrée par page. Seules les pages statut='a_faire' sont traitées, par priorité (1 d'abord).",
     "mode: 'auto' = fusion automatique si contrôles + relecteur OK ; 'validation' = PR laissée ouverte pour Angelino ; 'manuel' = jamais traitée par le circuit.",
     "requete_a_confirmer=true : requête proposée sans donnée Search Console ; le circuit la saute tant qu'Angelino ne la passe pas à false.",
-    "generateur : si renseigné, modifier le SCRIPT (pas la page) puis le relancer."
+    "generateur : si renseigné, modifier le SCRIPT (pas la page) puis le relancer.",
+    "requetes_secondaires : variantes à placer naturellement (H2, FAQ, texte), sans changer la requête principale du title.",
+    "donnees : origine des volumes (Search Console ou outil de mots-clés d'Angelino)."
   ],
   "langues_serpmantics": {
     "es": "Espagnol (Espagne)",
     "fr": "Français (France)",
-    "en": "Anglais (Royaume-Uni)"
+    "en": "Anglais, résultats Google Espagne (si SERPmantics ne propose pas ce couple : Anglais (Royaume-Uni))"
   },
   "pages": [
     {
@@ -81,7 +83,7 @@
       "url": "https://webautonomos.es/carpinteros/",
       "lang": "es",
       "requete": "pagina web para carpinteros",
-      "requete_a_confirmer": true,
+      "requete_a_confirmer": false,
       "fichier": "carpinteros/index.html",
       "generateur": null,
       "mode": "auto",
@@ -120,12 +122,12 @@
       "url": "https://webautonomos.es/dentistas/",
       "lang": "es",
       "requete": "pagina web para dentistas",
-      "requete_a_confirmer": true,
+      "requete_a_confirmer": false,
       "fichier": "dentistas/index.html",
       "generateur": null,
       "mode": "validation",
       "statut": "a_faire",
-      "priorite": 2,
+      "priorite": 1,
       "notes": "SANTÉ."
     },
     {
@@ -133,12 +135,12 @@
       "url": "https://webautonomos.es/fisioterapeutas/",
       "lang": "es",
       "requete": "pagina web para fisioterapeutas",
-      "requete_a_confirmer": true,
+      "requete_a_confirmer": false,
       "fichier": "fisioterapeutas/index.html",
       "generateur": null,
       "mode": "validation",
       "statut": "a_faire",
-      "priorite": 2,
+      "priorite": 1,
       "notes": "SANTÉ."
     },
     {
@@ -149,10 +151,10 @@
       "requete_a_confirmer": true,
       "fichier": "servicios.html",
       "generateur": null,
-      "mode": "auto",
-      "statut": "a_faire",
+      "mode": "manuel",
+      "statut": "manuel",
       "priorite": 3,
-      "notes": "ATTENTION cannibalisation : la home vise déjà 'diseño web autonomos'. Choisir une autre requête (ex. 'mantenimiento web autonomos') ou laisser."
+      "notes": "Retirée du circuit le 24/09/2026 : la cibler reviendrait à concurrencer la home sur « diseño web para autónomos »."
     },
     {
       "slug": "es-comparatif",
@@ -164,47 +166,64 @@
       "generateur": null,
       "mode": "auto",
       "statut": "a_faire",
-      "priorite": 2,
+      "priorite": 1,
       "notes": "Page écrite par build_comparatifs.py (script à usage unique) : modifier la page directement. Prix des concurrents relevés le 23/09 : ne pas les changer sans source."
     },
     {
       "slug": "fr-home",
       "url": "https://webautonomos.es/fr/",
       "lang": "fr",
-      "requete": "création site internet artisan",
-      "requete_a_confirmer": true,
+      "requete": "site internet pas cher",
+      "requete_a_confirmer": false,
       "fichier": "fr/index.html",
       "generateur": "_tools/build_lang_homes.py",
       "mode": "auto",
       "statut": "a_faire",
-      "priorite": 1,
-      "notes": "Page générée : modifier le dictionnaire C['fr'] de build_lang_homes.py puis relancer le script."
+      "priorite": 2,
+      "notes": "Page générée : modifier le dictionnaire C['fr'] de build_lang_homes.py puis relancer le script. Angle « pas cher » = 15 €/mois assumé, avec les preuves de sérieux (démo avant paiement, sans engagement, modification mensuelle). Jamais « le moins cher » ni comparaison chiffrée avec un concurrent sans source.",
+      "requetes_secondaires": [
+        "création site internet pas cher",
+        "site internet vitrine"
+      ],
+      "donnees": "Outil de mots-clés d'Angelino, France, relevé du 24/09/2026 (volume mensuel, KD) : site internet pas cher 1 600 / KD 19 ; création site internet pas cher 480 / KD 21 ; site internet vitrine 480 / KD 34."
     },
     {
       "slug": "fr-tarifs",
       "url": "https://webautonomos.es/fr/tarifs",
       "lang": "fr",
-      "requete": "prix site internet artisan",
-      "requete_a_confirmer": true,
+      "requete": "prix d'un site internet",
+      "requete_a_confirmer": false,
       "fichier": "fr/tarifs.html",
       "generateur": null,
       "mode": "auto",
       "statut": "a_faire",
       "priorite": 2,
-      "notes": ""
+      "notes": "Cannibalisation : l'article blog/fr/combien-coute-un-site-web-pour-independants.html traite le même sujet (angle informatif). Dans cet article, ajouter seulement un lien vers /fr/tarifs avec l'ancre « prix d'un site internet », sans le réécrire. Garder le tableau comparatif et les prix de concurrents tels quels (relevés le 23/09).",
+      "requetes_secondaires": [
+        "site internet prix",
+        "combien coûte un site internet",
+        "prix pour un site internet",
+        "création site internet prix"
+      ],
+      "donnees": "Outil de mots-clés d'Angelino, France, relevé du 24/09/2026 (volume mensuel, KD) : site internet prix 720 / KD 33 (transactionnelle) ; combien coûte un site internet 590 / KD 33 ; prix d'un site internet 590 / KD 34 ; prix pour un site internet 590 / KD 36 ; création site internet prix 390 / KD 37."
     },
     {
       "slug": "fr-prestations",
       "url": "https://webautonomos.es/fr/prestations",
       "lang": "fr",
-      "requete": "site internet clé en main artisan",
-      "requete_a_confirmer": true,
+      "requete": "devis site internet",
+      "requete_a_confirmer": false,
       "fichier": "fr/prestations.html",
       "generateur": null,
       "mode": "auto",
       "statut": "a_faire",
-      "priorite": 3,
-      "notes": ""
+      "priorite": 2,
+      "notes": "Angle « devis immédiat » : les prix sont fixes et affichés ; la démo gratuite en 24 h montre le site ET le prix avant tout paiement, sans attendre de devis. Seule une boutique en ligne fait l'objet d'un devis personnalisé (VERITE §2). Ne pas promettre de « devis gratuit » ni de délai de devis. Ne pas viser « refonte » (hors offre).",
+      "requetes_secondaires": [
+        "devis création site internet",
+        "création site internet devis"
+      ],
+      "donnees": "Outil de mots-clés d'Angelino, France, relevé du 24/09/2026 (volume mensuel, KD) : devis site internet 1 300 / KD 17 ; devis création site internet 720 / KD 15 ; création site internet devis 390 / KD 12."
     },
     {
       "slug": "fr-psychologue",
@@ -216,8 +235,9 @@
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
       "statut": "a_faire",
-      "priorite": 2,
-      "notes": "SANTÉ. Règles françaises (titre, RPPS)."
+      "priorite": 3,
+      "notes": "SANTÉ. Règles françaises (titre, RPPS).",
+      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
       "slug": "fr-menuisier",
@@ -229,8 +249,9 @@
       "generateur": "_tools/build_metier_pages.py",
       "mode": "auto",
       "statut": "a_faire",
-      "priorite": 2,
-      "notes": ""
+      "priorite": 3,
+      "notes": "",
+      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
       "slug": "fr-kine",
@@ -242,8 +263,9 @@
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
       "statut": "a_faire",
-      "priorite": 2,
-      "notes": "SANTÉ. R4321-123, R4321-98."
+      "priorite": 3,
+      "notes": "SANTÉ. R4321-123, R4321-98.",
+      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
       "slug": "fr-dentiste",
@@ -256,7 +278,8 @@
       "mode": "validation",
       "statut": "a_faire",
       "priorite": 3,
-      "notes": "SANTÉ."
+      "notes": "SANTÉ.",
+      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
       "slug": "fr-francophones-espagne",
@@ -268,8 +291,9 @@
       "generateur": "_tools/build_expat_pages.py",
       "mode": "auto",
       "statut": "a_faire",
-      "priorite": 2,
-      "notes": ""
+      "priorite": 3,
+      "notes": "",
+      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
       "slug": "fr-comparatif",
@@ -282,7 +306,8 @@
       "mode": "auto",
       "statut": "a_faire",
       "priorite": 3,
-      "notes": "Modifier la page directement (script à usage unique). Prix concurrents relevés le 23/09."
+      "notes": "Modifier la page directement (script à usage unique). Prix concurrents relevés le 23/09.",
+      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
       "slug": "en-home",

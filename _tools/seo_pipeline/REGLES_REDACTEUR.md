@@ -40,6 +40,11 @@ vérifieront ton travail. Une page rejetée n'est pas publiée.
   style CSS existant de la page. Structure en H2/H3, listes.
 - **Title** : commence par la requête (ou sa forme naturelle), 580 px max
   (~58 caractères). **H1** unique, contient la requête.
+- **Requêtes secondaires** (champ `requetes_secondaires` de l'entrée, s'il
+  existe) : place chacune au moins une fois, naturellement (un H2, une question
+  de FAQ ou une phrase), sans les empiler dans le title ni le H1.
+- **Notes** de l'entrée : elles priment sur les règles générales de ce fichier
+  (angle, cannibalisation, éléments à garder), jamais sur `VERITE.md`.
 - Intègre les expressions manquantes **naturellement**, jamais en liste de
   mots-clés. Respecte les fourchettes : ne dépasse pas le haut de la fourchette.
 - Réduis les expressions signalées « sur-utilisées ».

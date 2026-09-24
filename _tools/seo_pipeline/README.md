@@ -38,7 +38,8 @@ Installation : `INSTALL_VPS.md`.
 ## Avant le premier passage
 
 - Trancher les points **À CONFIRMER** de `VERITE.md` (section 10).
-- Confirmer les requêtes des pages marquées `requete_a_confirmer: true`
-  (surtout FR/EN : aucune donnée Search Console). Elles sont sautées tant
-  qu'elles ne sont pas confirmées.
-- Décider pour `es-electricistas` (article du blog ou page métier ?).
+- Pages marquées `requete_a_confirmer: true` : sautées tant qu'aucun volume
+  ne confirme la requête (au 24/09 : 6 pages FR et 8 pages EN).
+- Liste du 24/09/2026 : vague 1 = 8 pages (priorité 1), puis 3 pages
+  FR dont les requêtes viennent du relevé de volumes (priorité 2) ;
+  `/servicios` retirée du circuit.
