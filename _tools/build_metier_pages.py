@@ -114,7 +114,7 @@ THERA['fr'] = dict(
           "textes à partir de vos informations, affichons votre titre et votre numéro RPPS si vous en avez un, et "
           "prévoyons un formulaire de contact qui ne demande pas le motif de consultation. Le site coûte "
           "<strong>15 € HT par mois</strong> sans frais d'installation ni engagement, ou <strong>349 € HT en "
-          "paiement unique</strong>, bilingue sans supplément si vous le souhaitez, et la démo est prête en 24 heures.",
+          "paiement unique</strong>, jusqu'à 4 langues sans supplément si vous le souhaitez, et la démo est prête en 24 heures.",
     legal_id='regles', legal_ey='Les règles', legal_t="Ce que votre site doit respecter",
     legal_intro="Les règles changent selon votre titre. Un psychologue n'a pas les contraintes publicitaires d'un "
                 "médecin, mais son titre est protégé ; un praticien non réglementé communique librement, sans "
@@ -258,7 +258,7 @@ THERA['en'] = dict(
           "Colegio and colegiado number if you are a psychologist, keep health claims and patient testimonials off "
           "the site, and use a contact form that doesn't ask for health details. It costs <strong>€15 + VAT per "
           "month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>, in English "
-          "and Spanish at no extra cost. We work with you in English, and your demo is ready within 24 hours.",
+          "and Spanish, plus up to two more languages (French, Catalan, Galician or Basque), at no extra cost. We work with you in English, and your demo is ready within 24 hours.",
     legal_id='rules', legal_ey='Spanish rules', legal_t='What your website has to get right in Spain',
     legal_intro="In Spain, what you may say online depends on your title. A health psychologist is a regulated "
                 "health professional; a counsellor or coach is not, and must not present their work as health "
@@ -361,7 +361,7 @@ THERA['en'] = dict(
           "such as prices and terms, to be given at least in Spanish, and Madrid applies this to all information "
           "for consumers. In Catalonia, documents offering your services must also be available at least in "
           "Catalan. A short Spanish version of your prices and terms is the safe choice, and we build your site "
-          "in English and Spanish at no extra cost."),
+          "in English and Spanish, and in Catalan too if you need it, at no extra cost (up to four languages)."),
          ("What should my contact form ask?",
           "A name, a way to reach the person and a preferred time. Not the reason for the consultation: that is "
           "health data under the GDPR, and data should be limited to what is necessary. We add a short note asking "
@@ -422,7 +422,7 @@ MENU['fr'] = dict(
           "rédigeons les textes et plaçons les mentions qu'impose le travail pour des particuliers : assurance, "
           "médiateur de la consommation, mentions légales et, pour la rénovation énergétique, l'encart France Rénov' "
           "obligatoire à partir du 1<sup>er</sup> octobre 2026. Le site coûte <strong>15 € HT par mois</strong> sans "
-          "frais d'installation ni engagement, ou <strong>349 € HT en paiement unique</strong>, bilingue sans "
+          "frais d'installation ni engagement, ou <strong>349 € HT en paiement unique</strong>, jusqu'à 4 langues sans "
           "supplément si vous le souhaitez, et la démo est prête en 24 heures.",
     legal_id='regles', legal_ey='Les règles', legal_t="Ce que votre site doit montrer",
     legal_intro="Un site de menuisier n'est pas qu'une vitrine : dès que vous travaillez pour des particuliers, le Code "
@@ -542,7 +542,7 @@ MENU['fr'] = dict(
          ("Combien coûte un site pour menuisier ?",
           "15 € HT par mois sans frais d'installation ni engagement, ou 349 € HT en paiement unique, avec les mêmes "
           "services : conception, hébergement, nom de domaine la première année, mentions légales et une "
-          "modification par mois. Le site peut être bilingue sans supplément, et la démo est gratuite.")],
+          "modification par mois. Le site peut être en plusieurs langues sans supplément (jusqu'à 4), et la démo est gratuite.")],
     final_t='Voyez votre site avant de payer quoi que ce soit',
     final_sd="Démo gratuite en 24 heures, avec vos réalisations et vos mentions légales. Sans frais d'installation, "
              "sans engagement.",
@@ -564,7 +564,7 @@ MENU['en'] = dict(
     cta='Get my free demo', cta2='What Spanish rules require',
     brief_t='In short',
     brief="WebAutonomos builds websites for English-speaking carpenters, joiners, kitchen fitters and window "
-          "installers working in Spain. We show your projects, write the copy in English and Spanish at no extra "
+          "installers working in Spain. We show your projects, write the copy in English and Spanish (up to four languages) at no extra "
           "cost, and include what Spanish law expects: a legal notice with your NIF or NIE, prices for homeowners "
           "shown with VAT included, and the complaint information your region asks for. It costs <strong>€15 + VAT per "
           "month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>. We work with "
@@ -611,14 +611,14 @@ MENU['en'] = dict(
               "Prices for homeowners shown with VAT included, and a price information page (expected in Madrid for "
               "renovation firms)",
               "The complaint information your region asks for, such as the QR poster in Andalucía",
-              "Customer reviews shown with a note on how they are checked, and your site in English and Spanish at no "
+              "Customer reviews shown with a note on how they are checked, and your site in up to four languages, English and Spanish included, at no "
               "extra cost"],
     spain_note='',
     sources_t='Sources',
     why_ey='Why us', why_t='Built for tradespeople who work in English',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish "
                                          "legal or technical jargon."),
-         ('🌍', 'Two languages, one price', "English and Spanish at no extra cost, so Spanish homeowners find you as "
+         ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish homeowners find you as "
                                            "easily as expats do."),
          ('📸', 'Your work, shown properly', "Kitchens, wardrobes, doors, staircases: your project photos organised "
                                             "by type of job."),
@@ -679,7 +679,7 @@ MENU['en'] = dict(
          ("Do my quotes have to be in Spanish?",
           "Pre-contract information, including quotes, must be given at least in Spanish, so a bilingual quote is the "
           "safe choice even for British customers. Invoices can be in any language, although the Tax Agency may ask "
-          "for a translation. Your website comes in English and Spanish at no extra cost."),
+          "for a translation. Your website comes in English and Spanish, plus up to two more languages, at no extra cost."),
          ("How much does a website cost?",
           "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: "
           "design, hosting, a domain name for the first year, legal pages and one change a month. English and "
@@ -882,7 +882,7 @@ KINE['en'] = dict(
     cta='Get my free demo', cta2='What Spanish rules require',
     brief_t='In short',
     brief="WebAutonomos builds websites for English-speaking physiotherapists practising in Spain. We write the copy in "
-          "English and Spanish at no extra cost, show your Colegio, colegiado number and practice registration number, "
+          "English and Spanish, plus up to two more languages if you need them, at no extra cost, show your Colegio, colegiado number and practice registration number, "
           "and keep promises of cure and patient testimonials off the site, as Spanish health-advertising rules "
           "require. It costs <strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a "
           "<strong>one-off €349 + VAT</strong>. We work with you in English, and your demo is ready within 24 hours.",
@@ -925,13 +925,13 @@ KINE['en'] = dict(
               "Your practice registration number wherever the site presents your services",
               "Copy written without promises of cure, patient testimonials or price-led offers",
               "A link to your booking tool, WhatsApp or phone, and a contact form that asks only what it needs",
-              "Your site in English and Spanish at no extra cost"],
+              "Your site in up to four languages, English and Spanish included, at no extra cost"],
     spain_note='',
     sources_t='Sources',
     why_ey='Why us', why_t='Built for physiotherapists who work in English',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
                                          "or technical jargon."),
-         ('🌍', 'Two languages, one price', "English and Spanish at no extra cost, so Spanish patients find you as "
+         ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish patients find you as "
                                            "easily as expats do."),
          ('📋', 'Colegio details in place', "Colegio, colegiado number and practice registration number shown the way "
                                            "Spanish rules expect."),
@@ -1173,7 +1173,7 @@ DENT['en'] = dict(
     cta='Get my free demo', cta2='What Spanish rules require',
     brief_t='In short',
     brief="WebAutonomos builds websites for English-speaking dentists and dental clinics in Spain. We write the copy in "
-          "English and Spanish at no extra cost, show your Colegio, colegiado number and clinic registration number, "
+          "English and Spanish, plus up to two more languages if you need them, at no extra cost, show your Colegio, colegiado number and clinic registration number, "
           "and keep the site clear of what Spanish rules ban: patient testimonials, promises of results, implant or "
           "aligner brand names, and “especialista” titles that don't exist in Spain. It costs <strong>€15 + VAT per "
           "month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>, and your demo is "
@@ -1221,13 +1221,13 @@ DENT['en'] = dict(
               "Treatments described without promises of results, testimonials, brand names or “especialista” titles",
               "Prices shown as full final prices, and any financing with its representative example",
               "A link to your booking tool, WhatsApp or phone, and a contact form that asks only what it needs",
-              "Your site in English and Spanish at no extra cost"],
+              "Your site in up to four languages, English and Spanish included, at no extra cost"],
     spain_note='',
     sources_t='Sources',
     why_ey='Why us', why_t='Built for dentists who work in English',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
                                          "or technical jargon."),
-         ('🌍', 'Two languages, one price', "English and Spanish at no extra cost, so Spanish patients find you as "
+         ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish patients find you as "
                                            "easily as expats do."),
          ('📋', 'Registration details in place', "Colegio, colegiado number and clinic registration number shown the "
                                                 "way Spanish rules expect."),
