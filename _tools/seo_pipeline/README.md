@@ -16,7 +16,12 @@ sans publier d'affirmation fausse.
 3. **Relecteur** (Claude, `REVIEWER_MODEL`, indépendant, lecture seule) :
    faits contre `VERITE.md`, qualité, cannibalisation, santé → approuver /
    réviser / rejeter.
-4. Jusqu'à 2 corrections si « réviser ». « Rejeter » = abandon, rien n'est publié.
+4. Jusqu'à 2 corrections si « réviser ». Si la page n'est toujours pas approuvée
+   (ou si le relecteur « rejette » parce qu'une décision d'Angelino est
+   nécessaire), le travail n'est plus jeté : il part en **PR brouillon
+   « [À REVOIR] »** avec les remarques du relecteur (non fusionnable en l'état).
+   Après décision (VERITE.md mis à jour) : `run_page.sh <slug> --reparer` repart
+   de cette version et des remarques, sans refaire la rédaction.
 5. **Pull request** GitHub avec un résumé de 5 lignes. Fusion automatique
    seulement si `AUTO_MERGE=1` et page en mode `auto`. Pages santé : toujours
    ton clic.

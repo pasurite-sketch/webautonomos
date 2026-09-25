@@ -87,9 +87,9 @@
       "fichier": "carpinteros/index.html",
       "generateur": null,
       "mode": "auto",
-      "statut": "a_faire",
+      "statut": "fait",
       "priorite": 1,
-      "notes": "Garder le bloc Trustpilot intact. L'article blog/es/web-para-carpinteros-reformas vise aussi ce sujet : ajouter un lien vers /carpinteros/ plutôt que concurrencer."
+      "notes": "Garder le bloc Trustpilot intact. L'article blog/es/web-para-carpinteros-reformas vise aussi ce sujet : ajouter un lien vers /carpinteros/ plutôt que concurrencer. Publiée le 25/09/2026 (PR #2) : score Google 45 → 73, GEO 6 → 13."
     },
     {
       "slug": "es-electricistas",

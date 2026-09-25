@@ -47,7 +47,7 @@ def cmd_next(n):
     st = state()
     todo = [p for p in cfg()['pages']
             if p['statut'] == 'a_faire' and p['mode'] != 'manuel' and not p.get('requete_a_confirmer')
-            and st.get(p['slug'], {}).get('statut') not in ('publie', 'pr_ouverte', 'bloque', 'en_cours')]
+            and st.get(p['slug'], {}).get('statut') not in ('publie', 'pr_ouverte', 'a_revoir', 'bloque', 'en_cours')]
     todo.sort(key=lambda p: (p['priorite'], p['slug']))
     print('\n'.join(p['slug'] for p in todo[:n]))
 
@@ -86,6 +86,9 @@ l'arbre de travail. Lis :
 3. _tools/seo_pipeline/runs/{slug}/checks.json (contrôles automatiques)
 Corrige UNIQUEMENT les problèmes signalés (bloquants des contrôles, problèmes
 du relecteur). Si la page a un générateur, corrige le script et relance-le.
+VERITE.md a pu être mis à jour par Angelino APRÈS la relecture : si une
+correction demandée contredit VERITE.md, VERITE.md l'emporte. N'applique pas
+cette correction et explique-le dans `points_d_attention` du rapport.
 Relance la mesure : python3 _tools/seo_pipeline/serp.py score {slug} --label fix (aucun nouveau guide), puis mets à jour writer_report.json.
 """.format(slug=slug)
     return txt
@@ -179,6 +182,27 @@ def cmd_summary(slug):
     L.append(f"- **Contrôles automatiques** : {'OK' if c.get('ok') else 'ÉCHEC'}"
              + (f" — {len(c.get('avertissements', []))} avertissement(s)" if c.get('avertissements') else ''))
     L.append(f"- **Mode** : {e['mode']}" + (' — **attend ton accord (page santé)**' if e['mode'] == 'validation' else ''))
+    probs = r.get('problemes') or []
+    if r.get('verdict') != 'approuver':
+        a_traiter = [p for p in probs if p.get('gravite') in ('bloquant', 'a_corriger')]
+        titre = '### Remarques du relecteur, à traiter avant toute fusion'
+    else:
+        a_traiter = [p for p in probs if p.get('gravite') == 'mineur']
+        titre = '### Points mineurs signalés par le relecteur'
+    if a_traiter:
+        L.append('')
+        L.append(titre)
+        for p in a_traiter:
+            ext = (p.get('extrait') or '').replace('\n', ' ')
+            ext = ext[:180] + ('…' if len(ext) > 180 else '')
+            cor = (p.get('correction_attendue') or '').replace('\n', ' ')
+            cor = cor[:500] + ('…' if len(cor) > 500 else '')
+            L.append(f"- **{p.get('gravite', '?')}** — « {ext} » → {cor}")
+    if c.get('bloquants'):
+        L.append('')
+        L.append('### Blocages des contrôles automatiques')
+        for b in c['bloquants']:
+            L.append(f'- {b}')
     af = w.get('affirmations_factuelles') or []
     if af:
         L.append('')

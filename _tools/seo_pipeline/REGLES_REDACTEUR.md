@@ -2,7 +2,8 @@
 
 Tu optimises UNE page du site webautonomos.es pour UNE requête, avec l'aide de
 SERPmantics. Un agent relecteur indépendant et des contrôles automatiques
-vérifieront ton travail. Une page rejetée n'est pas publiée.
+vérifieront ton travail. Une page non approuvée n'est pas publiée : elle part en
+brouillon « À REVOIR » pour Angelino.
 
 ## 0. Priorité des règles
 
@@ -32,7 +33,9 @@ vérifieront ton travail. Une page rejetée n'est pas publiée.
 4. Réécris selon la section 2. Si la page a un générateur, relance-le avant de mesurer.
 5. Mesure de nouveau : `python3 _tools/seo_pipeline/serp.py score <slug> --label apres`.
    Guide Google : vise `cible_top3` de `guides.json` (médiane du top 3, plafond 80) ;
-   au-delà, tu bourres : arrête-toi. Guide GEO : améliore-le sans jamais faire
+   au-delà, tu bourres : arrête-toi. Un score au-dessus de 80 est une faute
+   (25/09 : fisioterapeutas à 95, avec un libellé du formulaire modifié pour la
+   densité) : retire des répétitions jusqu'à repasser sous 80. Guide GEO : améliore-le sans jamais faire
    baisser le score Google ; en cas de conflit, le guide Google l'emporte.
    Au plus 3 mesures intermédiaires (`--label essai1`, `essai2`, `essai3`) : ne tourne pas en rond.
    `credits_utilises` du rapport = nombre d'éléments de `crees` dans `guides.json`.
@@ -43,7 +46,8 @@ vérifieront ton travail. Une page rejetée n'est pas publiée.
    `VERITE.md` qui la couvre. Pas de ligne : supprime ou reformule la phrase sans
    l'affirmation. N'invente jamais de règle tarifaire, de limite ni de refus de
    service. Vérifie aussi : « diseño web » seulement là où le sens est le design,
-   pas de mots-clés empilés, FAQ visible = JSON-LD, liens internes existants.
+   pas de mots-clés empilés, FAQ visible = JSON-LD, liens internes existants,
+   et chaque point de la section 2 bis.
 7. Écris le rapport (section 4). Ne fais NI commit NI push : le script s'en charge.
 
 ## Outils autorisés
@@ -94,6 +98,42 @@ cat, head, `python3 -c`…) est refusée : ne l'essaie pas, utilise Read et Grep
   sauf pour ajouter UN lien interne vers la page depuis un article du blog qui la
   concurrence, si l'entrée le demande dans `notes`.
 
+## 2 bis. Erreurs déjà relevées par le relecteur (ne les refais pas)
+
+Relevées sur les pages du 24 et du 25/09/2026 :
+
+- **« la mayoría de », « la plupart des », « most », « suele », superlatifs**
+  (« la forma más rápida », « lo que más pesa ») présentés comme des faits : interdits
+  sans source de `VERITE.md` §7. Écris « muchos », « a menudo », « ayuda a ».
+- **Éléments protégés modifiés pour la densité** : ne change jamais un libellé du
+  formulaire, une carte de prix, le paragraphe prix, la promesse de la démo ni
+  un avis pour baisser ou monter une expression. Si elle y est « sur-utilisée »,
+  laisse-la et réduis ailleurs.
+- **Prix des services complémentaires** : toujours « + IVA ». Reprends mot pour
+  mot la formule de `VERITE.md` §5. N'invente rien sur le contenu du SEO Local
+  (ni « avanzado », ni « aparecer en el mapa », ni « contenido pensado para… »).
+- **Promesses sur la web du client** : la web n'« appartient » au client qu'avec
+  la formule 349 € (en alquiler, seul le domaine est à lui) ; ne garantis jamais
+  qu'il « cumple con sus obligaciones legales sin ocuparse de nada » : écris
+  seulement que les textes légaux (aviso legal, privacidad, cookies) sont inclus.
+- **Services non listés** : aucune intégration d'agenda ou de réservation
+  (Calendly, Doctoralia, Bookitit, Doctolib, logiciels de clinique), aucun
+  rappel SMS/email, aucune photo « de alta calidad » (voir `VERITE.md` §2).
+- **Cannibalisation du blog** : avant d'écrire un H2, cherche (Grep sur `<h1`,
+  `<h2` et `<title` dans `blog/<langue>/`) les titres des articles existants. Ne
+  recopie pas un titre d'article : formule autrement et fais un lien vers l'article.
+- **FAQ existante transformée en JSON-LD** : vérifie chaque réponse contre
+  `VERITE.md` avant de la recopier. Réponse non couverte : corrige-la dans la FAQ
+  visible ET dans le JSON-LD, et note-le dans `affirmations_factuelles`.
+- **Pages santé** (dentistas, fisioterapeutas, psicologos et versions FR/EN) :
+  applique `VERITE.md` §9 et les règles déjà écrites dans les pages EN/FR du même
+  métier (pas de promesse de soulagement ni de résultat — « qué dolor resuelve »
+  est interdit —, pas de « especialista » / « especialidades », ne demande pas le
+  motif de consultation dans le formulaire). Les avis réels de la fiche Google
+  sont autorisés (décision d'Angelino, §9).
+- **Phrases sans verbe, H3 hors sujet sous un H2, même énumération répétée
+  plusieurs fois** : le relecteur les renvoie. Relis la page d'un bout à l'autre.
+
 ## 3. Interdits (rejet automatique)
 
 - Tout fait absent de `VERITE.md` : ancienneté, nombre de clients, résultats
@@ -102,7 +142,8 @@ cat, head, `python3 -c`…) est refusée : ne l'essaie pas, utilise Read et Grep
 - Tout client, prénom, entreprise ou « cas réel », même présenté comme exemple.
 - Les expressions de la section 8 de `VERITE.md`.
 - Toute modification d'une page générée sans passer par son script.
-- Santé : témoignages de patients, promesses de résultat, prix promotionnels.
+- Santé : témoignages inventés ou reformulés, promesses de résultat ou de
+  soulagement, prix promotionnels (les avis réels de la fiche Google sont permis).
 
 Si tu as besoin d'un fait qui n'est pas dans `VERITE.md`, **n'écris pas la
 phrase** et signale-le dans le rapport (`faits_manquants`).

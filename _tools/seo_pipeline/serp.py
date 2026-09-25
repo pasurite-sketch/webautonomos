@@ -55,10 +55,12 @@ def entree(slug):
     sys.exit(f'slug inconnu : {slug}')
 
 
-def lang_code(e):
+def lang_codes(e):
+    """Codes de langue SERPmantics à essayer, dans l'ordre (pages.json :
+    « en-es (si SERPmantics le refuse : en-gb) » → ['en-es', 'en-gb'])."""
     brut = cfg().get('langues_serpmantics', {}).get(e['lang'], e['lang'])
-    m = re.match(r'\s*([a-z]{2}-[a-z]{2})', brut, re.I)
-    return m.group(1).lower() if m else brut.strip().lower()
+    codes = [c.lower() for c in re.findall(r'\b([a-z]{2}-[a-z]{2})\b', brut, re.I)]
+    return list(dict.fromkeys(codes)) or [brut.strip().lower()]
 
 
 def norm(t):
@@ -156,21 +158,27 @@ def attendre_guide(gid, max_min=25):
 
 
 def creer_guide(requete, lang, source):
+    """Renvoie (identifiant ou None, refus) ; refus = demande rejetée, rien n'a été créé."""
     code, j = api('POST', '/guides', corps={'queries': [requete], 'lang': lang, 'source': source})
-    log(f'création {source} : HTTP {code}')
+    log(f'création {source} ({lang}) : HTTP {code}')
     if j.get('guides'):
-        return j['guides'][0]['id']
+        return j['guides'][0]['id'], False
     if j.get('guidesFailed'):
-        log(f'refus sans guide créé (crédit rendu) : {json.dumps(j)[:300]}')
-        return None
+        log(f'refus sans guide créé (crédit rendu) : {json.dumps(j, ensure_ascii=False)[:300]}')
+        return None, True
+    if 400 <= code < 500 and code not in (408, 429):
+        # demande refusée (langue non prise en charge, paramètre invalide…) : rien n'a
+        # été créé, inutile d'attendre (25/09 : 20 min perdues sur en-carpenters)
+        log(f'demande refusée : {json.dumps(j, ensure_ascii=False)[:300]}')
+        return None, True
     # guidesUnknown ou réponse sans identifiant : NE PAS renvoyer, chercher le guide
     for _ in range(20):
         time.sleep(30)
         g = chercher_guide(requete, lang, source)
         if g:
-            return g['id']
+            return g['id'], False
     log('guide introuvable après 10 min (ne pas le recréer : voir le support SERPmantics)')
-    return None
+    return None, False
 
 
 def resume_guide(j, cle_src, requete, lang):
@@ -220,18 +228,39 @@ def cible_top3(j):
     return min(80, round(scores[len(scores) // 2]))
 
 
+def obtenir_guide(requete, lang, cle_src, source, res):
+    """Identifiant d'un guide existant ou nouvellement créé ; (None, refus) sinon."""
+    g = chercher_guide(requete, lang, source)
+    gid = g['id'] if g else None
+    log(f'{cle_src} ({lang}) : ' + (f'guide existant réutilisé ({gid})' if gid else 'aucun guide existant, création'))
+    if gid:
+        return gid, False
+    gid, refus = creer_guide(requete, lang, source)
+    if gid:
+        res['crees'].append(cle_src)
+    return gid, refus
+
+
 def cmd_guides(slug):
     e = entree(slug)
-    requete, lang, d = e['requete'], lang_code(e), dossier(slug)
-    res = {'requete': requete, 'lang': lang, 'crees': []}
+    requete, d = e['requete'], dossier(slug)
+    langs = lang_codes(e)
+    res = {'requete': requete, 'lang': langs[0], 'crees': []}
+    # guide Google d'abord, en essayant les langues de repli si SERPmantics refuse
+    gid_google = None
+    for i, lang in enumerate(langs):
+        res['lang'] = lang
+        gid_google, refus = obtenir_guide(requete, lang, 'google', SOURCES[0][1], res)
+        if gid_google or not refus:
+            break
+        if i + 1 < len(langs):
+            log(f'langue {lang} refusée : essai avec {langs[i + 1]}')
+    lang = res['lang']
     for cle_src, source in SOURCES:
-        g = chercher_guide(requete, lang, source)
-        gid = g['id'] if g else None
-        log(f'{cle_src} : ' + (f'guide existant réutilisé ({gid})' if gid else 'aucun guide existant, création'))
-        if not gid:
-            gid = creer_guide(requete, lang, source)
-            if gid:
-                res['crees'].append(cle_src)
+        if cle_src == 'google':
+            gid = gid_google
+        else:
+            gid, _ = obtenir_guide(requete, lang, cle_src, source, res)
         if not gid:
             res[cle_src] = None
             continue

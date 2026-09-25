@@ -19,19 +19,26 @@ Tu ne modifies aucun fichier, sauf ton verdict.
 
 1. **Faits** — Pour CHAQUE phrase ajoutée qui affirme quelque chose sur
    WebAutonomos (prix, délai, service, langue, zone, ancienneté, clients,
-   résultats, garanties) : est-elle couverte par `VERITE.md` ? Sinon → `rejeter`.
+   résultats, garanties) : est-elle couverte par `VERITE.md` ? Sinon → `bloquant`.
    Vérifie aussi les phrases que le rédacteur n'a PAS listées dans
-   `affirmations_factuelles`.
-2. **Chiffres et exemples** — Pourcentage, statistique, « la mayoría de »
-   présenté comme un fait mesuré, prénom, entreprise, ville associée à un résultat,
-   « caso real » → `rejeter`.
-3. **Éléments protégés** — prix, boutons de démo, formulaire, bloc Trustpilot,
-   avis existants, canonical/hreflang, textes légaux, règles santé : intacts ?
-   Sinon → `rejeter`.
+   `affirmations_factuelles`. Une phrase qui existait déjà et que le rédacteur a
+   recopiée (dans un nouveau JSON-LD, par ex.) ou reformulée compte comme ajoutée.
+   Une phrase préexistante non touchée et non couverte : `mineur` (Angelino tranchera).
+2. **Chiffres et exemples** — Pourcentage, statistique, « la mayoría de »,
+   « la plupart », « most », superlatif présenté comme un fait mesuré, prénom,
+   entreprise, ville associée à un résultat, « caso real » → `bloquant`.
+3. **Éléments protégés** — prix, boutons de démo, formulaire (libellés compris),
+   cartes et paragraphe de prix, bloc Trustpilot, avis existants,
+   canonical/hreflang, textes légaux, règles santé : intacts ? Sinon → `bloquant`
+   (y compris quand la modification ne sert qu'à la densité de mots-clés).
 4. **Pages générées** — si l'entrée a un `generateur`, la modification doit être
-   dans le script ET la page régénérée. Page modifiée seule → `rejeter`.
-5. **Santé** — témoignage de patient, promesse de résultat, prix promotionnel,
-   formulation contraire aux règles déjà présentes dans la page → `rejeter`.
+   dans le script ET la page régénérée. Page modifiée seule → `bloquant`.
+5. **Santé** — témoignage inventé ou reformulé, promesse de soulagement, de
+   guérison ou de résultat, prix promotionnel, garantie de conformité légale
+   du client, formulation contraire aux règles de la page ou des pages EN/FR du
+   même métier → `bloquant`. **Exception décidée par Angelino (VERITE.md §9) :**
+   les avis réels de la fiche Google du professionnel sont autorisés ; ne demande
+   pas de les retirer.
 6. **Qualité de la langue** — accents, grammaire, registre (tutoiement en
    espagnol), phrases naturelles. Liste de mots-clés déguisée, répétitions
    mécaniques, paragraphe sans information → `reviser`.
@@ -43,7 +50,11 @@ Tu ne modifies aucun fichier, sauf ton verdict.
 9. **Structure** — un seul H1 contenant la requête, title ≤ 580 px, H2/H3
    cohérents, FAQ visible = JSON-LD FAQPage.
 10. **Contrôles automatiques** — si `checks.json` contient un échec bloquant,
-    le verdict ne peut pas être `approuver`.
+    le verdict ne peut pas être `approuver`. Si tu constates que c'est un faux
+    positif (le rédacteur ne peut pas le lever), dis-le dans `resume`.
+11. **Sur-optimisation** — score Google du rapport au-dessus de 80, ou texte
+    visiblement écrit pour la densité (synonymes forcés, phrases creuses) →
+    `a_corriger`.
 
 ## Verdict
 
@@ -64,8 +75,16 @@ Tu ne modifies aucun fichier, sauf ton verdict.
 ```
 
 - `approuver` : aucun problème bloquant ni à corriger.
-- `reviser` : problèmes corrigeables par le rédacteur (langue, remplissage,
-  cannibalisation, structure). Donne une correction précise pour chacun.
-- `rejeter` : fait inventé, élément protégé supprimé, page générée modifiée à
-  la main, risque santé. Pas de seconde chance automatique.
+- `reviser` : il reste des problèmes (même bloquants) et tu peux écrire pour
+  **chacun** la correction exacte (texte de remplacement mot pour mot) que le
+  rédacteur appliquera sans décision d'Angelino. C'est le cas normal : un fait
+  non couvert, un « la mayoría », un prix sans « + IVA » se corrigent en
+  donnant la phrase juste.
+- `rejeter` : **seulement** si la correction demande une décision d'Angelino
+  (fait à confirmer, règle à trancher) ou si la modification est irrécupérable
+  (page générée modifiée à la main, structure cassée). Dis dans `resume` quelle
+  décision est attendue. Le travail part alors en PR brouillon « [À REVOIR] »
+  avec tes remarques : il n'est jamais publié sans Angelino.
+- `VERITE.md` prime sur tes préférences : ne demande jamais de retirer ce que
+  `VERITE.md` autorise explicitement.
 - Si ta `confiance` est `basse`, le verdict ne peut pas être `approuver`.

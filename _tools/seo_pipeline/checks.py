@@ -173,14 +173,19 @@ def controler_html(path, base_s, new_s, lang, bloquants, avert, infos):
     if not PRIX_RE.search(tn) and PRIX_RE.search(tb):
         bloquants.append(f'{nom} : plus aucune mention du prix')
     infos.setdefault('mots', {})[nom] = [len(tb.split()), len(tn.split())]
-    # nombres ajoutés
+    # nombres ajoutés : seuls les nombres NOUVEAUX pour la page comptent. Répéter un
+    # nombre déjà présent (tableau repris dans la FAQ, par ex.) n'est pas bloquant :
+    # le relecteur juge le contexte. (25/09 : 9 faux positifs sur es-comparatif.)
     autorises, interdits = verite()
     nb, nn = nombres_du_texte(tb), nombres_du_texte(tn)
-    for k, c in nn.items():
-        if c > nb.get(k, 0) and re.sub(r'\s', '', k) not in autorises:
+    for k in nn:
+        if k not in nb and re.sub(r'\s', '', k) not in autorises:
             bloquants.append(f'{nom} : nombre ajouté non autorisé par VERITE.md : « {k} »')
-    if compter(r'\d\s?%|%\s?\d', tn) > compter(r'\d\s?%|%\s?\d', tb):
-        bloquants.append(f'{nom} : pourcentage ajouté (interdit sans source dans VERITE.md)')
+    pct = lambda t: set(re.findall(r'(\d[\d.,]*)\s?%', t)) | set(re.findall(r'%\s?(\d[\d.,]*)', t))
+    nouveaux_pct = pct(tn) - pct(tb)
+    if nouveaux_pct:
+        bloquants.append(f'{nom} : pourcentage ajouté (interdit sans source dans VERITE.md) : '
+                         + ', '.join(sorted(nouveaux_pct)))
     # expressions interdites
     for motif in interdits:
         try:

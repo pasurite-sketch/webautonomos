@@ -1,15 +1,20 @@
 #!/usr/bin/env bash
 # Traite UNE page : rédacteur → contrôles → relecteur (→ correction) → PR GitHub.
-# Usage : bash _tools/seo_pipeline/run_page.sh <slug> [--reprise]
+# Usage : bash _tools/seo_pipeline/run_page.sh <slug> [--reprise | --reparer]
 #   --reprise : reprend un passage interrompu sur sa branche seo/<slug>-… (contrôles, relecture, suite)
+#   --reparer : repart de la dernière version écrite (runs/<slug>/diff.patch) et des
+#               remarques du relecteur (runs/<slug>/review.json) : passes de correction,
+#               relecture, PR. Sert aux pages non approuvées lors d'un passage précédent.
+# Une page non approuvée n'est plus jetée : elle part en PR brouillon « [À REVOIR] »
+# avec les remarques du relecteur (non fusionnable en l'état, jamais publiée seule).
 # Variables (fichier ~/.seo_pipeline.env) :
-#   ANTHROPIC_API_KEY, SERPMANTICS_API_KEY   (obligatoires)
+#   CLAUDE_CODE_OAUTH_TOKEN (abonnement) ou ANTHROPIC_API_KEY ; SERPMANTICS_API_KEY
 #   WRITER_MODEL   (défaut claude-sonnet-5)   REVIEWER_MODEL (défaut claude-opus-5-5)
 #   REVIEWER_EXTRA_ARGS  (ex. réglage d'effort, voir INSTALL_VPS.md)
 #   MAX_FIX=2      nombre maximal de corrections après relecture
 #   AUTO_MERGE=0   1 = fusion automatique des pages mode "auto" approuvées
 set -euo pipefail
-SLUG="${1:?usage: run_page.sh <slug>}"
+SLUG="${1:?usage: run_page.sh <slug> [--reprise | --reparer]}"
 REPO="$(git rev-parse --show-toplevel)"
 cd "$REPO"
 P="_tools/seo_pipeline"
@@ -36,36 +41,38 @@ MODE="$(python3 "$P/pipeline.py" field "$SLUG" mode)"
 [ "$MODE" = "manuel" ] && { log "mode manuel : ignorée"; exit 0; }
 
 REPRISE=0
-[ "${2:-}" = "--reprise" ] && REPRISE=1
-if [ "$REPRISE" = 1 ]; then
-  # Reprise d'un passage interrompu : on garde la branche et le travail en cours
-  BR="$(git rev-parse --abbrev-ref HEAD)"
-  case "$BR" in
-    "seo/${SLUG}-"*) ;;
-    *) log "reprise impossible : la branche courante ($BR) n'est pas seo/${SLUG}-…"; exit 2 ;;
-  esac
-  BASE="$(git rev-parse HEAD)"
-  state en_cours "$BR (reprise)"
-else
-  # Départ propre depuis main à jour
-  if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
-    log "arbre de travail modifié : arrêt (rien n'est touché)"; exit 2
-  fi
-  git checkout -q main
-  git pull -q --ff-only
-  BASE="$(git rev-parse HEAD)"
-  BR="seo/${SLUG}-$(date +%Y%m%d-%H%M)"
-  git checkout -q -b "$BR"
-  state en_cours "$BR"
-fi
+REPARER=0
+case "${2:-}" in
+  "") ;;
+  --reprise) REPRISE=1 ;;
+  --reparer) REPARER=1 ;;
+  *) echo "option inconnue : $2 (attendu : --reprise ou --reparer)" >&2; exit 2 ;;
+esac
 
 WRITER_TOOLS='Read,Edit,Write,Glob,Grep,Bash(python3 _tools/*),Bash(git diff*),Bash(git status*)'
-abandon(){
+
+abandon(){ # échec technique : rien à garder
   log "ABANDON : $1"
   git reset -q --hard "$BASE"
   git checkout -q main
   git branch -q -D "$BR" || true
   state bloque "$1"
+  exit 1
+}
+
+a_revoir(){ # page non approuvée : le travail est gardé en PR brouillon, avec les remarques
+  log "À REVOIR : $1"
+  if git diff --quiet "$BASE" -- .; then abandon "$1 (aucune modification à garder)"; fi
+  python3 "$P/pipeline.py" summary "$SLUG" > "$RUN/pr.md"
+  git add -A  # runs/ et .claude/ exclus par .gitignore
+  git commit -q -m "SEO $SLUG — À REVOIR : $1" \
+    -m "Non approuvée par le circuit. Remarques du relecteur dans la PR brouillon."
+  git push -q -u origin "$BR"
+  PR_URL="$(gh pr create --draft --base main --head "$BR" \
+    --title "[À REVOIR] SEO — $(python3 "$P/pipeline.py" field "$SLUG" url)" --body-file "$RUN/pr.md")"
+  state a_revoir "$PR_URL"
+  log "PR brouillon (non fusionnable en l'état) : $PR_URL"
+  git checkout -q main
   exit 1
 }
 
@@ -99,6 +106,41 @@ relecteur(){ # $1 = numéro de passe
 }
 
 if [ "$REPRISE" = 1 ]; then
+  # Reprise d'un passage interrompu : on garde la branche et le travail en cours
+  BR="$(git rev-parse --abbrev-ref HEAD)"
+  case "$BR" in
+    "seo/${SLUG}-"*) ;;
+    *) log "reprise impossible : la branche courante ($BR) n'est pas seo/${SLUG}-…"; exit 2 ;;
+  esac
+  BASE="$(git rev-parse HEAD)"
+  state en_cours "$BR (reprise)"
+else
+  # Départ propre depuis main à jour
+  if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
+    log "arbre de travail modifié : arrêt (rien n'est touché)"; exit 2
+  fi
+  if [ "$REPARER" = 1 ] && { [ ! -s "$RUN/diff.patch" ] || [ ! -f "$RUN/review.json" ]; }; then
+    log "réparation impossible : $RUN/diff.patch ou review.json absent"; exit 2
+  fi
+  git checkout -q main
+  git pull -q --ff-only
+  BASE="$(git rev-parse HEAD)"
+  BR="seo/${SLUG}-$(date +%Y%m%d-%H%M)"
+  [ "$REPARER" = 1 ] && BR="${BR}-reparation"
+  git checkout -q -b "$BR"
+  if [ "$REPARER" = 1 ] && ! git apply "$RUN/diff.patch"; then
+    git reset -q --hard "$BASE"; git checkout -q main; git branch -q -D "$BR" || true
+    log "réparation impossible : la page a changé depuis, diff.patch ne s'applique plus"; exit 2
+  fi
+  state en_cours "$BR"
+fi
+
+if [ "$REPARER" = 1 ]; then
+  log "réparation : dernière version écrite + remarques du relecteur ($(python3 "$P/pipeline.py" verdict "$SLUG"))"
+  controles
+  VERDICT=reviser  # au moins une passe de correction, même après un « rejeter »
+  passe=0
+elif [ "$REPRISE" = 1 ]; then
   passe="$(ls "$RUN"/writer_*.json 2>/dev/null | sed 's/.*writer_\([0-9]*\)\.json/\1/' | sort -n | tail -1)"
   passe="${passe:-0}"
   log "reprise après la passe $passe du rédacteur"
@@ -114,9 +156,9 @@ else
 fi
 while :; do
   if [ "$VERDICT" = "approuver" ] && [ "$CHECKS_OK" = 1 ]; then break; fi
-  [ "$VERDICT" = "rejeter" ] && abandon "rejetée par le relecteur (voir $RUN/review.json)"
+  [ "$VERDICT" = "rejeter" ] && a_revoir "rejetée par le relecteur"
   passe=$((passe + 1))
-  [ "$passe" -gt "$MAX_FIX" ] && abandon "toujours pas approuvée après $MAX_FIX corrections"
+  [ "$passe" -gt "$MAX_FIX" ] && a_revoir "toujours pas approuvée après $MAX_FIX corrections"
   redacteur fix "$passe"
   controles
   relecteur "$passe"
