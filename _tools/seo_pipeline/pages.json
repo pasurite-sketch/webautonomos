@@ -100,9 +100,9 @@
       "fichier": "blog/es/pagina-web-para-electricistas.html",
       "generateur": null,
       "mode": "auto",
-      "statut": "a_faire",
+      "statut": "fait",
       "priorite": 1,
-      "notes": "Décidé le 24/09 : c'est l'ARTICLE qui porte la requête (pos. 10, 300 imp., 5 clics) ; /electricistas/ (pos. 67) reste la page de conversion et ne doit PAS viser cette requête. Le rédacteur ajoute dans l'article un lien vers /electricistas/ (ancre du type « ver la oferta para electricistas »), retire la statistique « 70 % » sans source et le « caso real » de Miguel (Elche) sauf s'il figure dans VERITE.md. L'article est aussi copié dans index.html (SPA) : ne modifier que le fichier statique."
+      "notes": "Décidé le 24/09 : c'est l'ARTICLE qui porte la requête (pos. 10, 300 imp., 5 clics) ; /electricistas/ (pos. 67) reste la page de conversion et ne doit PAS viser cette requête. Le rédacteur ajoute dans l'article un lien vers /electricistas/ (ancre du type « ver la oferta para electricistas »), retire la statistique « 70 % » sans source et le « caso real » de Miguel (Elche) sauf s'il figure dans VERITE.md. L'article est aussi copié dans index.html (SPA) : ne modifier que le fichier statique. Publiée le 25/09/2026 (PR #3) : score Google 50 → 70, GEO 16 → 28."
     },
     {
       "slug": "es-psicologos",
@@ -126,9 +126,9 @@
       "fichier": "dentistas/index.html",
       "generateur": null,
       "mode": "validation",
-      "statut": "a_faire",
+      "statut": "fait",
       "priorite": 1,
-      "notes": "SANTÉ."
+      "notes": "SANTÉ. Publiée le 25/09/2026 (PR #5) : score Google 13 → 39, GEO 9 → 19."
     },
     {
       "slug": "es-fisioterapeutas",
@@ -139,9 +139,9 @@
       "fichier": "fisioterapeutas/index.html",
       "generateur": null,
       "mode": "validation",
-      "statut": "a_faire",
+      "statut": "fait",
       "priorite": 1,
-      "notes": "SANTÉ."
+      "notes": "SANTÉ. Publiée le 25/09/2026 (PR #8) : score Google 42 → 77, GEO 21 → 51."
     },
     {
       "slug": "es-servicios",
@@ -165,9 +165,9 @@
       "fichier": "mejores-creadores-paginas-web-autonomos.html",
       "generateur": null,
       "mode": "auto",
-      "statut": "a_faire",
+      "statut": "fait",
       "priorite": 1,
-      "notes": "Page écrite par build_comparatifs.py (script à usage unique) : modifier la page directement. Prix des concurrents relevés le 23/09 : ne pas les changer sans source."
+      "notes": "Page écrite par build_comparatifs.py (script à usage unique) : modifier la page directement. Prix des concurrents relevés le 23/09 : ne pas les changer sans source. Publiée le 25/09/2026 (PR #4) : score Google 8 → 36, GEO 25 → 69."
     },
     {
       "slug": "fr-home",
@@ -387,9 +387,9 @@
       "fichier": "en/website-for-carpenters-in-spain.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "auto",
-      "statut": "a_faire",
+      "statut": "fait",
       "priorite": 1,
-      "notes": "'websites for carpenters' 65 imp. + 'carpenters websites' 52 imp. (GSC 16 mois)."
+      "notes": "'websites for carpenters' 65 imp. + 'carpenters websites' 52 imp. (GSC 16 mois). Publiée le 25/09/2026 (PR #7) : score Google 41 → 53, GEO 10 → 20."
     },
     {
       "slug": "en-physio",
