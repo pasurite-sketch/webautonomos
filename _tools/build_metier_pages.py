@@ -626,7 +626,7 @@ MENU['en'] = dict(
                                 "Torrevieja”, in both languages.")],
     where_t='Anywhere in Spain',
     where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work remotely, "
-          "so where your workshop is makes no difference.",
+          "so your workshop's location does not change how we work with you.",
     sect_t='Who it is for',
     sectors=['🪵 Carpenters', '🪚 Joiners', '🍳 Kitchen fitters', '🚪 Door and window installers',
              '🗄️ Fitted wardrobes', '🪜 Staircase makers', '🪑 Cabinet makers', '🟫 Floor fitters'],
@@ -639,6 +639,85 @@ MENU['en'] = dict(
     price_note="Prices exclude VAT (21% IVA on the mainland and the Balearics; the Canary Islands, Ceuta and Melilla "
                "have their own taxes). As a VAT-registered autónomo you can normally deduct it. Domain name included "
                "for the first year, then about €12/year.",
+    extra=[
+        ('what-to-include', 'On your website', "What to put on your carpentry website",
+         '<p class="legal-intro">A homeowner who lands on your website wants to see quickly whether you do the '
+         'kind of work they need, in their area, and how to reach you. These are the parts that answer those '
+         'questions and make it easier for them to ask you for a quote.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F5C2️</div>'
+         '<h3>A portfolio organised by project type</h3>'
+         '<p>Kitchens, staircases, fitted wardrobes and custom furniture, grouped so a visitor looking for one type '
+         'of work does not have to scroll past another. A good starting point is your own project photos: we '
+         'build your site around them.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CD</div>'
+         '<h3>The areas you cover, stated clearly</h3>'
+         '<p>Naming the towns you work in (Jávea, Torrevieja or Marbella, for example) helps both readers and '
+         'Google understand who your site is for.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4AC</div>'
+         '<h3>A quote request in one click</h3>'
+         '<p>A form, WhatsApp button or phone number that a homeowner can use straight away, without hunting for '
+         'your contact details.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">⭐</div>'
+         '<h3>Google reviews, shown honestly</h3>'
+         '<p>As the rules above set out, your website must say whether and how you check that reviews come from '
+         'real customers. If you show reviews from your Google Business Profile, add a short note saying they '
+         'come from Google and whether, and how, you check them.</p></div>'
+         '</div>'
+         '<p class="where">For a longer read on structuring a carpentry site, see our article on '
+         '<a href="https://webautonomos.es/blog/en/website-for-carpenters-and-renovations">websites for carpenters '
+         'and renovation companies</a>.</p>'),
+        ('services-carpenters', 'Your work', 'Which services should you highlight?',
+         '<p class="legal-intro">Grouping your services by type of job, rather than listing everything on one '
+         'long page, helps a visitor find the right section faster.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001FA91</div>'
+         '<h3>Bespoke furniture and fitted wardrobes</h3>'
+         '<p>Custom pieces built to a room&#8217;s exact dimensions are a different decision for a homeowner than a '
+         'quick repair, so give them their own section.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F373</div>'
+         '<h3>Kitchen fitting</h3>'
+         '<p>Units, worktops and installation: homeowners comparing kitchen fitters want to see finished projects '
+         'before they request a quote.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F6AA</div>'
+         '<h3>Doors, windows and staircases</h3>'
+         '<p>Smaller jobs bring in work between larger projects, so give them a clear place on your site '
+         'too.</p></div>'
+         '</div>'),
+        ('local-search-help', 'Local search', 'How your website helps you appear in local searches',
+         '<p class="legal-intro">Getting found in your area is not only about the website itself.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F50D</div>'
+         '<h3>Basic SEO, included in your price</h3>'
+         '<p>Titles and copy written around your trade and your area, kept consistent with your Google Business '
+         'Profile, come with your website at no extra cost.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4C8</div>'
+         '<h3>SEO Local and your Google listing, if you want more</h3>'
+         '<p>We also offer SEO Local for €15 + VAT a month, and managing your Google Business Profile for €29 + '
+         'VAT a month (€49 + VAT to set one up if you do not have a listing yet).</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4DA</div>'
+         '<h3>Guides to go further</h3>'
+         '<p>Our blog has practical guides on '
+         '<a href="https://webautonomos.es/blog/en/how-to-rank-your-website-in-local-google">ranking your website '
+         'locally</a>, <a href="https://webautonomos.es/blog/en/optimise-your-google-business-profile">optimising '
+         'your Google Business Profile</a> and <a href="https://webautonomos.es/blog/en/how-to-get-more-google-'
+         'reviews">getting more Google reviews</a>.</p></div>'
+         '</div>'),
+        ('common-mistakes', 'What to avoid', 'Common mistakes on carpenter websites',
+         '<p class="legal-intro">These are the gaps that often make a carpenter&#8217;s website less '
+         'effective.</p>'
+         '<div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul>'
+         '<li>No project photos, or an unsorted gallery mixing every type of job</li>'
+         '<li>No clear service area, so people cannot tell whether you cover their town</li>'
+         '<li>No quick way to ask for a quote: a phone number buried in a footer, or no WhatsApp link</li>'
+         '<li>An incomplete legal notice, missing the NIF or NIE that the LSSI requires</li>'
+         '</ul></div>'
+         '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>How we help you avoid them</h3>'
+         '<p>Your website is built around your own project photos, names your trade and the areas you cover in '
+         'its titles and copy, and comes with a contact form, a WhatsApp button and legal pages (legal notice, '
+         'privacy and cookies). You see it before you pay anything, you can ask for as many changes as you want '
+         'before it goes live, and if you decide not to go ahead, you pay nothing.</p></div>'),
+    ],
     faq_t='Frequently asked questions',
     faq=[("What must a carpenter's website in Spain show?",
           "Under article 10 of the LSSI: your name, an address in Spain, email and other contact details, your NIF "
@@ -680,6 +759,14 @@ MENU['en'] = dict(
           "Pre-contract information, including quotes, must be given at least in Spanish, so a bilingual quote is the "
           "safe choice even for British customers. Invoices can be in any language, although the Tax Agency may ask "
           "for a translation. Your website comes in English and Spanish, plus up to two more languages, at no extra cost."),
+         ("How should I organise my project photos on the website?",
+          "Group them by type of job (kitchens, staircases, fitted wardrobes, doors) rather than in one long "
+          "gallery, so a homeowner looking for a fitted wardrobe sees relevant work straight away. We use the "
+          "photos on your Google Business Profile and any others you send us."),
+         ("Do I need Google Business Profile management as well as a website?",
+          "No, it's optional. Your website already comes with basic SEO: titles and copy built around your trade and "
+          "your area. If you want more, we also manage Google Business Profiles for €29 + VAT a month (€49 + VAT to "
+          "set one up if you don't have one yet)."),
          ("How much does a website cost?",
           "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: "
           "design, hosting, a domain name for the first year, legal pages and one change a month. English and "
@@ -1429,6 +1516,11 @@ def page(m, lang):
         dots += '<button class="tp-dot%s" onclick="tpGo(%d)" aria-label="%s %d"></button>' % (
             ' on' if n == 0 else '', n, E(x['rev_aria']), n + 1)
     faq = ''.join('<details><summary>%s</summary><p>%s</p></details>' % (E(q), E(a)) for q, a in c['faq'])
+    # sections supplémentaires facultatives (contenu utile ajouté par le rédacteur, cf. REGLES_REDACTEUR.md §2)
+    extra_html = ''.join(
+        '\n\n<section class="blk%s" id="%s">\n  %s<h2 style="margin-bottom:36px">%s</h2>\n  %s\n</section>'
+        % (' alt' if idx % 2 == 0 else '', eid, '<p class="ey">%s</p>\n  ' % E(ey) if ey else '', h2, body)
+        for idx, (eid, ey, h2, body) in enumerate(c.get('extra', [])))
     hreflang = '\n'.join('<link rel="alternate" hreflang="%s" href="%s%s">' % (h, BASE, M[k]) for h, k in
                          (('es-ES', 'es'), ('fr', 'fr'), ('en', 'en'), ('x-default', 'es')))
     jc = dict(title=c['title'], description=c['description'], html_lang=c['html_lang'],
@@ -1559,7 +1651,7 @@ def page(m, lang):
     <a class="tp-link" href="{H.TRUSTPILOT}" target="_blank" rel="noopener noreferrer">{E(x['rev_link'])} →</a>
   </div>
 </section>
-
+{extra_html}
 <section class="blk alt" id="{i['faq']}">
   <h2 style="margin-bottom:36px">{E(c['faq_t'])}</h2>
   <div class="faq-l">{faq}</div>
