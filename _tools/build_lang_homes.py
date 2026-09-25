@@ -92,12 +92,12 @@ AVIS = {
 C = {}
 C['fr'] = dict(
   html_lang='fr', og_locale='fr_FR',
-  title="Site internet pour indépendants et artisans : 15 €/mois",
-  description="Votre site pro créé en 24 h, avant tout paiement : 15 €/mois HT sans frais d'installation ni engagement. Indépendants en France et en Espagne.",
+  title="Site internet pas cher pour indépendants et artisans",
+  description="Un site internet pas cher, prêt en 24 h avant paiement : 15 €/mois HT, sans frais d'installation ni engagement. Indépendants en France et en Espagne.",
   nav=[('prestations', 'Prestations'), ('tarifs', 'Tarifs'), ('questions', 'Questions'), ('blog', 'Blog')],
   nav_cta='Démo gratuite', lang_label='Langue',
   badge='Indépendants et artisans · France et Espagne',
-  h1='Site internet pour indépendants et artisans, <span class="ul">à 15 €/mois tout compris</span>',
+  h1='Un site internet pas cher pour indépendants et artisans, <span class="ul">à 15 €/mois tout compris</span>',
   lede="Nous créons votre site professionnel avec vos services, vos photos et vos avis Google, et nous vous l'envoyons en 24 heures — avant que vous ne payiez quoi que ce soit. En France comme en Espagne.",
   pills=["Sans frais d'installation", 'Sans engagement', 'Démo gratuite en 24 h'],
   cta='Recevoir ma démo gratuite', cta2='Voir les tarifs',
@@ -111,7 +111,16 @@ C['fr'] = dict(
        'Nom de domaine à votre nom, inclus la 1<sup>re</sup> année', 'Site adapté au mobile',
        'Formulaire de contact vers votre e-mail', 'Bouton WhatsApp',
        'Mentions légales, confidentialité et cookies', 'Sauvegardes, surveillance 24 h/24 et maintenance',
-       "Jusqu'à 4 langues sans supplément", 'Une modification par mois'],
+       "Jusqu'à 4 langues sans supplément", 'Une modification par mois', 'Liens vers vos réseaux sociaux'],
+  content_ey='À savoir', content_t='Ce que doit contenir un site internet professionnel',
+  content_sd="Quel que soit son prix, un site professionnel doit réunir ces éléments de base pour transformer vos visiteurs en demandes de contact.",
+  content_p="Un site pas cher n'est pas un site web incomplet. Avant de penser à une fonctionnalité en plus, vos pages doivent d'abord présenter clairement votre activité et donner envie de vous contacter. Ce que nous construisons est un site internet vitrine : il présente votre activité, vos services et vos coordonnées, il ne remplace pas une boutique en ligne. Si vous avez besoin de vendre directement en ligne, une boutique reste possible, mais sur devis séparé.",
+  content_g1_t="Les informations que cherchent vos visiteurs",
+  content_g1=[("Vos services, clairement listés", "Ce que vous faites, pour qui : un visiteur doit comprendre votre activité en quelques secondes, sur la page d'accueil."),
+              ("Votre zone d'intervention", "Les villes ou le quartier où vous travaillez, pour que Google et vos visiteurs sachent si vous couvrez leur secteur."),
+              ("Vos photos et vos avis Google", "Vos réalisations et les avis déjà publiés sur votre fiche Google rassurent un visiteur qui ne vous connaît pas encore.")],
+  content_link="Voir la liste complète des éléments indispensables",
+  content_link_url='/blog/fr/elements-indispensables-site-professionnel',
   how_ey='Le déroulement', how_t='Votre site en trois étapes',
   how_sd='Sans contrat. Sans surprise. Sans jargon technique.',
   steps=[('Vous décrivez votre activité', 'Votre métier, vos services, votre ville : deux minutes suffisent.'),
@@ -125,6 +134,24 @@ C['fr'] = dict(
               pts=['Mêmes services inclus', 'Un seul versement', 'Idéal si vous préférez ne plus y penser'])],
   price_note="Prix hors taxes : IVA espagnole de 21 % en plus. Entreprise établie ailleurs dans l'UE avec un numéro de TVA intracommunautaire : facture sans TVA (autoliquidation). Nom de domaine inclus la première année, puis environ 12 €/an.",
   price_link='Voir le détail et le coût réel sur 24 mois',
+  why_ey='Le prix', why_t='Pourquoi un site internet pas cher chez WebAutonomos ?',
+  why_sd="Un tarif bas qui s'explique par notre façon de travailler.",
+  why_lede="Parce que nous utilisons notre propre système, qui réutilise des composants déjà testés, et que nous n'avons ni bureaux luxueux ni commerciaux à commission : cela se traduit par un tarif plus bas pour vous.",
+  why_h3a="Notre propre système, pas une remise",
+  why_pa="Ce tarif n'est pas une promotion temporaire ni une version limitée : c'est notre prix normal. Chaque site part de briques déjà éprouvées sur d'autres projets, au lieu de repartir de zéro.",
+  why_h3b="Face aux tarifs habituels en Espagne",
+  why_pb_pre="En Espagne, un site web professionnel réalisé par un freelance coûte entre 800 € et 2 000 €, et entre 1 500 € et 4 000 € auprès d'une agence, hors maintenance, selon un ",
+  why_pb_link_txt="article de Social Media Pymes",
+  why_pb_link_url="https://www.socialmediapymes.com/cuanto-cuesta-una-web/",
+  why_pb_post=" publié en août 2026. Avec l'abonnement à 15 € HT par mois, vous n'avancez pas cette somme : vous payez un montant fixe chaque mois, sans frais d'installation. Avec la formule à 349 € HT en paiement unique, vous restez en dessous de ces deux fourchettes. Dans les deux formules, l'hébergement et la maintenance sont compris.",
+  hcare_ey='Après la mise en ligne', hcare_t='Hébergement, sécurité et référencement naturel : ce qui reste compris',
+  hcare_sd="Un site pas cher ne doit pas devenir un site à l'abandon : voici ce qui reste géré pour vous, mois après mois.",
+  hcare_h3a="L'hébergement et la sécurité, sans y penser",
+  hcare_pa="L'hébergement de votre site, le certificat de sécurité (https) et les sauvegardes quotidiennes sont compris dans le tarif, pas facturés en option. La gestion technique et les mises à jour de sécurité restent de notre côté : vous n'avez ni serveur à choisir, ni logiciel à surveiller.",
+  hcare_h3b="Le référencement naturel, dès la mise en ligne",
+  hcare_pb="Les titres et les textes de votre site reprennent vos services et votre zone d'intervention, et les informations de votre site restent cohérentes avec votre fiche Google : c'est la base du référencement naturel local. Un service de référencement local plus poussé (SEO local) existe en complément, présenté plus bas sur cette page.",
+  hcare_h3c="Le contenu et les évolutions",
+  hcare_pc="Vos textes et vos contenus ne sont pas figés : une modification par mois est incluse, par exemple pour ajouter un service, changer une photo ou mettre à jour vos horaires. Les changements plus importants, comme une refonte ou une nouvelle grande section, se font sur devis fermé.",
   aud_ey='Pour qui', aud_t='En France ou installé en Espagne',
   aud_sd='Nous travaillons à distance, par e-mail, WhatsApp et visioconférence.',
   aud=[('🇫🇷', 'Indépendants en France', "Artisans, thérapeutes, professions de santé : votre site est rédigé en français, pour vos clients, avec votre nom de domaine en .fr."),
@@ -135,6 +162,13 @@ C['fr'] = dict(
            '❄️ Climatisation', '🔑 Serruriers', '🪟 Aluminium et PVC', '🦷 Dentistes',
            '💆 Kinésithérapeutes', '🦶 Podologues', '🧠 Psychologues', '🌿 Thérapeutes bien-être',
            '🖋️ Tatoueurs', '➕ Votre métier'],
+  how_choose_ey='Les options', how_choose_t='Faire soi-même ou confier la création de son site : comment choisir',
+  how_choose_sd="Trois façons de fabriquer un site pas cher, avec des compromis différents.",
+  how_choose_items=[("Un créateur de site en ligne", "Vous construisez vous-même votre site web, bloc par bloc, sur une interface glisser-déposer, sans toucher au code HTML. Vous gardez la main sur chaque choix, mais la qualité du résultat dépend entièrement de vos bases en design."),
+                     ("WordPress et un thème à personnaliser", "Vous installez WordPress, choisissez un thème et l'adaptez. C'est une solution flexible, mais il faut suivre les mises à jour de sécurité, choisir des extensions fiables et gérer vous-même l'administration."),
+                     ("Un site clé en main, comme chez WebAutonomos", "Nous construisons votre site à partir de vos informations : vous n'ouvrez aucune interface d'administration, vous ne touchez ni thème ni code HTML. Vous nous écrivez pour demander une modification (une par mois est incluse), nous nous en occupons.")],
+  how_choose_p="Il n'existe pas une seule bonne réponse : tout dépend du temps et du budget que vous voulez y consacrer. Que vous choisissiez un créateur de site, WordPress ou un site clé en main, le résultat doit rester simple à faire évoluer.",
+  how_choose_link="Comparer les créateurs de site pour indépendants",
   rev_ey='Avis clients', rev_t='Ce que disent nos clients',
   rev_count='Note moyenne sur 8 avis vérifiés Trustpilot', rev_link='Voir tous les avis sur Trustpilot',
   rev_aria='Avis',
@@ -147,15 +181,26 @@ C['fr'] = dict(
   cmp_us=["<strong>Prix fixe et clair :</strong> 15 €/mois, tout compris, sans petits caractères.",
           "<strong>Votre site en 24 heures :</strong> vous le voyez avant de payer, vous validez, il est en ligne.",
           "<strong>Sans engagement :</strong> vous résiliez quand vous voulez, sans pénalité ni justification."],
+  mistakes_ey='Vigilance', mistakes_t='Erreurs à éviter en cherchant un site pas cher',
+  mistakes_sd="Avant de choisir une offre de création de site internet pas cher, vérifiez ces points, quel que soit le prestataire.",
+  mistakes_items=[("Des frais d'installation qui gonflent la facture", "Un tarif mensuel bas peut cacher des frais de mise en place à part. Demandez toujours le montant total avant de signer."),
+                   ("Un engagement de longue durée", "Un abonnement mensuel sans engagement vous laisse partir quand vous voulez, sans pénalité ni justification à donner."),
+                   ("Aucune mention légale", "Les mentions légales et la politique de confidentialité doivent figurer sur le site dès sa mise en ligne, pas être ajoutées plus tard sur demande."),
+                   ("Un nom de domaine qui ne vous appartient pas", "Vérifiez que le nom de domaine est enregistré à votre nom : c'est ce qui vous permet de le garder si vous changez de prestataire."),
+                   ("Pas de maintenance incluse", "Hébergement, certificat SSL, sauvegardes et mises à jour de sécurité doivent être compris dans le tarif affiché, pas facturés en plus.")],
+  mistakes_links=[("le prix d'un site internet", "/fr/tarifs"),
+                   ("la vitesse du site et le référencement", "/blog/fr/vitesse-du-site-et-referencement")],
   add_ey='Pour aller plus loin', add_t='Services complémentaires',
   addons=[('SEO local', '+15 €/mois', 'Quatre articles par mois, mots-clés locaux et rapport mensuel pour être trouvé sur Google dans votre secteur.', None),
           ('Fiche Google Business', '+29 €/mois', 'Optimisation de votre fiche Google Maps, 4 publications par mois et réponse aux avis. Création de la fiche : 49 €.', None),
           ('Automatisation des tâches', 'Diagnostic gratuit', "Calculez ce que vous coûtent vos tâches répétitives et si les automatiser est rentable.", 'diag'),
           ('Visibilité IA', 'Audit', 'Savoir si ChatGPT, Gemini ou Perplexity recommandent votre activité, et comment y apparaître.', 'vis')],
   add_more='En savoir plus',
-  faq_ey='Questions fréquentes', faq_t='Vos questions',
+  faq_ey='FAQ', faq_t='Vos questions',
   faq=[("Combien coûte un site internet avec WebAutonomos ?",
         "15 € HT par mois, sans frais d'installation ni engagement, ou 349 € HT en paiement unique. Les deux formules comprennent les mêmes services : design, hébergement, SSL, nom de domaine la première année (environ 12 €/an ensuite), textes légaux et maintenance."),
+       ("Qu'est-ce qu'un site internet vitrine ?",
+        "Un site internet vitrine présente votre activité, vos services, votre zone d'intervention et vos coordonnées, sans système de vente en ligne. C'est le type de site que nous construisons chez WebAutonomos ; si vous avez besoin d'une boutique en ligne pour vendre directement, cela reste possible, sur devis séparé."),
        ("Puis-je voir mon site avant de payer ?",
         "Oui. Nous créons votre site avant tout paiement et vous envoyons un lien privé. Vous demandez les changements que vous voulez ; vous ne payez qu'après avoir validé le résultat."),
        ("Combien de temps faut-il pour avoir mon site ?",
@@ -486,6 +531,20 @@ def page(lang):
         h, code, code, ' aria-current="page"' if code == lang else '', lab) for code, lab, h in langs)
     pills = ''.join('<span class="pill">✓ %s</span>' % E(p) for p in c['pills'])
     inc = ''.join('<li><span>%s</span></li>' % i for i in c['inc'])
+    content_html = ''
+    if c.get('content_t'):
+        g1 = ''.join('<li><span><strong>%s.</strong> %s</span></li>' % (E(t), E(d)) for t, d in c['content_g1'])
+        content_html = f"""
+<section class="blk" id="contenu">
+  <p class="ey">{E(c['content_ey'])}</p>
+  <h2>{E(c['content_t'])}</h2>
+  <p class="sd">{E(c['content_sd'])}</p>
+  <p class="brief-c" style="font-size:1.04rem;line-height:1.75;color:var(--text);margin:0 auto 16px">{E(c['content_p'])}</p>
+  <h3 style="text-align:center;margin-bottom:16px">{E(c['content_g1_t'])}</h3>
+  <ul class="inc-g" style="max-width:900px;margin:0 auto 32px">{g1}</ul>
+  <a class="p-link" href="{BASE}{c['content_link_url']}">{E(c['content_link'])} →</a>
+</section>
+"""
     steps = ''.join('<div class="step%s"><div class="sn">%d</div><div class="stit">%s</div><div class="sinf">%s</div></div>'
                     % (' ft' if n == 1 else '', n + 1, E(t), E(d)) for n, (t, d) in enumerate(c['steps']))
     plans = ''
@@ -494,6 +553,43 @@ def page(lang):
                   '<div class="pc-p">%s</div><ul>%s</ul></div>') % (
             ' hl' if p['hl'] else '', '<span class="pc-b">%s</span>' % E(p['badge']) if p['badge'] else '',
             E(p['name']), E(p['amt']), E(p['per']), ''.join('<li>%s</li>' % E(x) for x in p['pts']))
+    why_html = ''
+    if c.get('why_t'):
+        why_link = ('<a href="%s" target="_blank" rel="noopener noreferrer" style="color:var(--blue);font-weight:600">%s</a>'
+                    % (c['why_pb_link_url'], E(c['why_pb_link_txt'])))
+        p_style = 'font-size:1.04rem;line-height:1.75;color:var(--text)'
+        why_html = f"""
+<section class="blk alt" id="pourquoi-pas-cher">
+  <p class="ey">{E(c['why_ey'])}</p>
+  <h2>{E(c['why_t'])}</h2>
+  <p class="sd">{E(c['why_sd'])}</p>
+  <div class="brief-c">
+    <p style="{p_style}">{E(c['why_lede'])}</p>
+    <h3 style="margin-top:24px;margin-bottom:8px">{E(c['why_h3a'])}</h3>
+    <p style="{p_style}">{E(c['why_pa'])}</p>
+    <h3 style="margin-top:24px;margin-bottom:8px">{E(c['why_h3b'])}</h3>
+    <p style="{p_style}">{E(c['why_pb_pre'])}{why_link}{E(c['why_pb_post'])}</p>
+  </div>
+</section>
+"""
+    hcare_html = ''
+    if c.get('hcare_t'):
+        p_style = 'font-size:1.04rem;line-height:1.75;color:var(--text)'
+        hcare_html = f"""
+<section class="blk" id="apres-mise-en-ligne">
+  <p class="ey">{E(c['hcare_ey'])}</p>
+  <h2>{E(c['hcare_t'])}</h2>
+  <p class="sd">{E(c['hcare_sd'])}</p>
+  <div class="brief-c">
+    <h3 style="margin-bottom:8px">{E(c['hcare_h3a'])}</h3>
+    <p style="{p_style}">{E(c['hcare_pa'])}</p>
+    <h3 style="margin-top:24px;margin-bottom:8px">{E(c['hcare_h3b'])}</h3>
+    <p style="{p_style}">{E(c['hcare_pb'])}</p>
+    <h3 style="margin-top:24px;margin-bottom:8px">{E(c['hcare_h3c'])}</h3>
+    <p style="{p_style}">{E(c['hcare_pc'])}</p>
+  </div>
+</section>
+"""
     # 4e élément facultatif : lien vers une page dédiée (pages expatriés, 23/09/2026)
     aud = ''.join('<div class="aud-c"><div class="aud-i" aria-hidden="true">%s</div><h3>%s</h3><p>%s</p>%s</div>'
                   % (a[0], E(a[1]), E(a[2]),
@@ -504,6 +600,20 @@ def page(lang):
     sectors = ''.join('<a class="stag" href="%s%s">%s</a>' % (BASE, SECTOR_LINKS[lang][s], E(s))
                       if s in SECTOR_LINKS.get(lang, {}) else '<span class="stag">%s</span>' % E(s)
                       for s in c['sectors'])
+    how_choose_html = ''
+    if c.get('how_choose_t'):
+        opts = ''.join('<div class="aud-c"><h3>%s</h3><p>%s</p></div>' % (E(t), E(d))
+                       for t, d in c['how_choose_items'])
+        how_choose_html = f"""
+<section class="blk" id="comment-choisir">
+  <p class="ey">{E(c['how_choose_ey'])}</p>
+  <h2>{E(c['how_choose_t'])}</h2>
+  <p class="sd">{E(c['how_choose_sd'])}</p>
+  <div class="aud-g">{opts}</div>
+  <p class="p-note" style="max-width:780px">{E(c['how_choose_p'])}</p>
+  <a class="p-link" href="{L('cmp')}">{E(c['how_choose_link'])} →</a>
+</section>
+"""
     slides, dots = '', ''
     for n, (txt, who, tr) in enumerate(AVIS[lang]):
         slides += ('<div class="tp-slide"><div class="tp-card"><div class="tp-stars" aria-hidden="true">★★★★★</div>'
@@ -513,6 +623,20 @@ def page(lang):
             ' on' if n == 0 else '', n, E(c['rev_aria']), n + 1)
     others = ''.join('<li>%s</li>' % x for x in c['cmp_others'])
     us = ''.join('<li>%s</li>' % x for x in c['cmp_us'])
+    mistakes_html = ''
+    if c.get('mistakes_t'):
+        items = ''.join('<li><strong>%s.</strong> %s</li>' % (E(t), E(d)) for t, d in c['mistakes_items'])
+        links = ' et '.join('notre %s sur <a href="%s%s" style="color:var(--blue);font-weight:600">%s</a>' % (
+            'page' if n == 0 else 'article', BASE, u2, E(t2)) for n, (t2, u2) in enumerate(c['mistakes_links']))
+        mistakes_html = f"""
+<section class="blk alt" id="erreurs">
+  <p class="ey">{E(c['mistakes_ey'])}</p>
+  <h2>{E(c['mistakes_t'])}</h2>
+  <p class="sd">{E(c['mistakes_sd'])}</p>
+  <div class="cmp-c them" style="max-width:900px;margin:0 auto"><ul>{items}</ul></div>
+  <p class="p-note" style="max-width:780px">À lire aussi : {links}.</p>
+</section>
+"""
     addons = ''
     for t, p, d, k in c['addons']:
         addons += '<div class="add-c"><span class="add-p">%s</span><h3>%s</h3><p>%s</p>%s</div>' % (
@@ -593,7 +717,7 @@ def page(lang):
   <p class="sd">{E(c['inc_sd'])}</p>
   <ul class="inc-g">{inc}</ul>
 </section>
-
+{content_html}
 <section class="ss blk alt" id="{i['steps']}">
   <p class="ey">{E(c['how_ey'])}</p>
   <h2>{E(c['how_t'])}</h2>
@@ -609,7 +733,7 @@ def page(lang):
   <p class="p-note">{E(c['price_note'])}</p>
   <a class="p-link" href="{L('tarifs')}">{E(c['price_link'])} →</a>
 </section>
-
+{why_html}{hcare_html}
 <section class="blk alt" id="{i['aud']}">
   <p class="ey">{E(c['aud_ey'])}</p>
   <h2>{E(c['aud_t'])}</h2>
@@ -622,7 +746,7 @@ def page(lang):
   <h2 style="margin-bottom:24px">{E(c['sect_t'])}</h2>
   <div class="sg">{sectors}</div>
 </section>
-
+{how_choose_html}
 <section class="proof" id="{i['rev']}">
   <p class="ey">{E(c['rev_ey'])}</p>
   <h2>{E(c['rev_t'])}</h2>
@@ -643,7 +767,7 @@ def page(lang):
   </div>
   <p class="cmp-more"><a href="{L('cmp')}">{E(c['cmp_more'])} →</a></p>
 </section>
-
+{mistakes_html}
 <section class="blk" id="{i['add']}">
   <p class="ey">{E(c['add_ey'])}</p>
   <h2 style="margin-bottom:36px">{E(c['add_t'])}</h2>
