@@ -16,8 +16,8 @@
   "seuil_rouge": 25,
   "sources_geo": [
     {"cle": "geo", "source": "google_ai_overview_citations", "nom": "AI Overview de Google"},
-    {"cle": "chatgpt", "source": "auto:chatgpt|openai|gpt", "nom": "ChatGPT"},
-    {"cle": "gemini", "source": "auto:gemini", "nom": "Gemini"}
+    {"cle": "chatgpt", "source": "chatgpt_citations", "nom": "ChatGPT (pages citées)"},
+    {"cle": "gemini", "source": "gemini_citations", "nom": "Gemini (pages citées)"}
   ],
   "objectif_geo_regle": "Décision d'Angelino du 25/09/2026 : GEO au vert (≥ seuil_vert) obligatoire pour les articles (blog, comparatifs, tarifs, devis) ; « au_mieux » pour les pages de vente (métiers, accueils, services).",
   "pages": [
