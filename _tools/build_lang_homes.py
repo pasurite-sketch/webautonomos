@@ -182,26 +182,51 @@ C['fr'] = dict(
 
 C['en'] = dict(
   html_lang='en', og_locale='en_GB',
-  title="Websites for English-speaking businesses in Spain | €15/month",
-  description="Your professional website built in 24 hours, before you pay: €15/month + VAT, no setup fee, no lock-in. Spanish legal pages included. Based in Valencia.",
+  title="Affordable Web Design for Businesses in Spain | €15/month",
+  description="Affordable web design for English-speaking businesses in Spain: your site built in 24 hours, before you pay. €15/month + VAT, no setup fee, no lock-in.",
   nav=[('prestations', "What's included"), ('tarifs', 'Pricing'), ('how', 'How it works'), ('questions', 'FAQ'), ('blog', 'Blog')],
   nav_cta='Free demo', lang_label='Language',
   badge='For English-speaking businesses in Spain',
-  h1='Websites for <span style="white-space:nowrap">English-speaking</span> businesses in Spain, <span class="ul">€15/month all included</span>',
+  h1='Affordable web design for <span style="white-space:nowrap">English-speaking</span> businesses in Spain, <span class="ul">€15/month all included</span>',
   lede="We build your professional website with your services, photos and Google reviews, and send it to you within 24 hours — before you pay anything. The legal pages every Spanish business website needs are included.",
   pills=['No setup fee', 'No lock-in', 'Free demo in 24 hours'],
   cta='Get my free demo', cta2='See pricing',
   rating='<b>4.3/5</b> · 8 verified reviews on Trustpilot',
   brief_t='In short',
-  brief="WebAutonomos builds professional websites for freelancers (autónomos) and small businesses in Spain, including English-speaking business owners. A website costs <strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>. That price covers design, hosting, SSL, a domain name in your name for the first year, the legal pages required in Spain and ongoing maintenance. We build a free demo within 24 hours and you only pay if you like it. The agency is based in Ontinyent (Valencia) and works with businesses across Spain.",
+  brief="WebAutonomos builds professional websites for freelancers (autónomos) and small businesses in Spain, including English-speaking business owners. A website costs <strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>. That price covers design, hosting, SSL, a domain name in your name for the first year, the legal pages required in Spain and ongoing maintenance. We build a free demo within 24 hours and you only pay if you like it. The agency is based in Ontinyent (Valencia) and works with businesses across Spain. The price stays low because we use our own tested system instead of coding every website from scratch, and there's no luxury office or commission-paid sales team to fund. See how this compares with hiring a freelancer or a web design agency in <a href=\"https://webautonomos.es/blog/en/how-much-does-a-website-cost-for-freelancers\">our guide to website costs for freelancers</a>.",
   inc_ey="What's included", inc_t='Everything in one price',
   inc_sd='No hidden costs, no essential extras to pay for later.',
+  inc_groups=[
+    ('Design & content', ['Professional custom design', 'Unlimited adjustments before launch',
+                          'Mobile-friendly site', 'Up to 4 languages at no extra cost']),
+    ('Hosting & security', ['Fast, secure hosting', 'SSL certificate (https)',
+                            'Daily backups, 24/7 monitoring and maintenance',
+                            'Domain name in your name, first year included']),
+    ('Built to be found', ['Basic SEO: page titles and text matched to your trade and area (see our '
+                            '<a href="https://webautonomos.es/blog/en/local-seo-for-freelancers-complete-guide">local SEO guide</a>)',
+                            'Links to your social media profiles']),
+    ('Contact, legal & updates', ['Contact form to your email', 'WhatsApp button',
+                 'Legal notice, privacy and cookie policy (Spanish law)', 'One content change per month']),
+  ],
   inc=['Professional custom design', 'Unlimited adjustments before launch',
        'Fast, secure hosting', 'SSL certificate (https)',
        'Domain name in your name, first year included', 'Mobile-friendly site',
        'Contact form to your email', 'WhatsApp button',
        'Legal notice, privacy and cookie policy (Spanish law)', 'Daily backups, 24/7 monitoring and maintenance',
        'Up to 4 languages at no extra cost', 'One content change per month'],
+  why_ey='Affordable by design', why_t='Why is our web design so affordable?',
+  why_sd="The saving comes from how we build, not from what you get.",
+  why_items=[
+    ('⚙️', 'One system, not custom code every time',
+     "Instead of coding every website from scratch, we reuse our own tested system. "
+     "It's one of the reasons a professional website can cost €15 + VAT a month here."),
+    ('🏢', 'No luxury offices, no commission sales team',
+     "There's no expensive office and no sales commission built into the cost — just the team that designs "
+     "and maintains your website."),
+    ('💶', 'No hidden extras',
+     "No setup fee and no lock-in: hosting, SSL, daily backups, monitoring and one content change a month are "
+     "already part of both packages."),
+  ],
   how_ey='How it works', how_t='Your website in three steps',
   how_sd='No contract. No surprises. No tech jargon.',
   steps=[('Tell us about your business', 'Your trade, your services, your town: it takes two minutes.'),
@@ -261,7 +286,11 @@ C['en'] = dict(
        ("Can I change my website later?",
         "Yes. One content change per month is included: text, photos, opening hours, services, prices or a new section. Just message us on WhatsApp or by email."),
        ('Can my website be in several languages?',
-        "Yes. With WebAutonomos your website can be in up to four languages at no extra cost: English, Spanish, French and Spain's co-official languages (Catalan, Valencian, Galician or Basque). It still costs €15 + VAT per month, or a one-off €349 + VAT. We write each version ourselves, and the monthly content change included applies in every language.")],
+        "Yes. With WebAutonomos your website can be in up to four languages at no extra cost: English, Spanish, French and Spain's co-official languages (Catalan, Valencian, Galician or Basque). It still costs €15 + VAT per month, or a one-off €349 + VAT. We write each version ourselves, and the monthly content change included applies in every language."),
+       ('Is affordable web design lower quality?',
+        "No. The lower price comes from reusing our own tested system instead of building every website from scratch, not from leaving anything out: design, hosting, SSL, daily backups, maintenance and the Spanish legal pages are included in both packages."),
+       ("What's the difference between the monthly plan and the one-off payment?",
+        "Both plans include the same services. With the one-off €349 + VAT payment, the website itself belongs to you. With the €15 + VAT a month plan you don't own the website, though the domain name is registered in your name in both cases.")],
   final_t="See your website before you pay a thing",
   final_sd='Free demo within 24 hours. No setup fee, no lock-in.',
   foot_legal='Legal notice', foot_privacy='Privacy', foot_blog='Blog',
@@ -397,6 +426,7 @@ a.stag:hover { border-color:var(--green-mid); }
   .hero-acts { flex-direction:column; align-items:stretch; text-align:center; }
 }
 """
+INC_H_CSS = ".inc-h { max-width:980px; margin:32px auto 12px; font-family:'Bricolage Grotesque',sans-serif; font-weight:700; font-size:1.05rem; color:var(--text); }\n"
 
 CAROUSEL_JS = """(function(){
   var track=document.getElementById('tpTrack');
@@ -485,7 +515,24 @@ def page(lang):
     lang_links = ''.join('<a href="%s" hreflang="%s" lang="%s"%s>%s</a>' % (
         h, code, code, ' aria-current="page"' if code == lang else '', lab) for code, lab, h in langs)
     pills = ''.join('<span class="pill">✓ %s</span>' % E(p) for p in c['pills'])
-    inc = ''.join('<li><span>%s</span></li>' % i for i in c['inc'])
+    if c.get('inc_groups'):
+        inc_block = ''.join(
+            '<h3 class="inc-h">%s</h3><ul class="inc-g">%s</ul>' % (
+                E(gt), ''.join('<li><span>%s</span></li>' % gi for gi in items))
+            for gt, items in c['inc_groups'])
+    else:
+        inc_block = '<ul class="inc-g">%s</ul>' % ''.join('<li><span>%s</span></li>' % i for i in c['inc'])
+    if c.get('inc_intro'):
+        inc_block = '<p class="sd" style="max-width:700px;margin:0 auto 28px">%s</p>' % c['inc_intro'] + inc_block
+    why = ''
+    if c.get('why_t'):
+        why_cards = ''.join(
+            '<div class="aud-c"><div class="aud-i" aria-hidden="true">%s</div><h3>%s</h3><p>%s</p></div>' % (
+                icon, E(t), p) for icon, t, p in c['why_items'])
+        why = ('<section class="blk alt" id="why-affordable">'
+               '<p class="ey">%s</p><h2>%s</h2><p class="sd">%s</p>'
+               '<div class="aud-g">%s</div></section>') % (
+            E(c['why_ey']), E(c['why_t']), E(c['why_sd']), why_cards)
     steps = ''.join('<div class="step%s"><div class="sn">%d</div><div class="stit">%s</div><div class="sinf">%s</div></div>'
                     % (' ft' if n == 1 else '', n + 1, E(t), E(d)) for n, (t, d) in enumerate(c['steps']))
     plans = ''
@@ -550,7 +597,7 @@ def page(lang):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>{src['css']}{EXTRA_CSS}</style>
+<style>{src['css']}{EXTRA_CSS}{INC_H_CSS if c.get('inc_groups') else ''}</style>
 <script type="application/ld+json">
 {jsonld(lang, c, u)}
 </script>
@@ -591,9 +638,9 @@ def page(lang):
   <p class="ey">{E(c['inc_ey'])}</p>
   <h2>{E(c['inc_t'])}</h2>
   <p class="sd">{E(c['inc_sd'])}</p>
-  <ul class="inc-g">{inc}</ul>
+  {inc_block}
 </section>
-
+{why}
 <section class="ss blk alt" id="{i['steps']}">
   <p class="ey">{E(c['how_ey'])}</p>
   <h2>{E(c['how_t'])}</h2>
