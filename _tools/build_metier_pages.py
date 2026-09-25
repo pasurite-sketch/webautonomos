@@ -307,7 +307,7 @@ THERA['en'] = dict(
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish "
                                          "legal or technical jargon."),
          ('🤫', 'Discreet by design', "A contact form that asks only what it needs, with no health questions, "
-                                     "and https across the whole site."),
+                                     "and an SSL certificate (https) across the whole site."),
          ('📅', 'Easy to book', "A clear button to your online calendar, WhatsApp or phone, with in-person or "
                                "online sessions stated plainly."),
          ('📍', 'Found by English speakers', "Titles and copy written for searches like “English-speaking "
@@ -328,6 +328,69 @@ THERA['en'] = dict(
                "have their own taxes). Psychologists' health services are VAT-exempt, so they usually can't deduct "
                "it: on the mainland and the Balearics the monthly price comes to €18.15. Domain name included for "
                "the first year, then about €12/year.",
+    extra=[
+        ('website-content', 'On your website', 'What to put on your therapist or psychologist website',
+         '<p class="legal-intro">When someone looking for a therapist lands on your website, they need to see '
+         'quickly who you are, how you work and how to reach you, whatever screen they are using.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📝</div>'
+         '<h3>What you do, in plain language</h3>'
+         '<p>Your approach and the type of session you offer, in person, online or both, described so a '
+         'stranger can understand it, without jargon or a promise of a cure.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div>'
+         '<h3>Who you are, and why they can trust you</h3>'
+         '<p>Your training, your years of experience and, if you are a psychologist, your Colegio and colegiado '
+         'number (see <a href="#rules">the rules above</a>).</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✉️</div>'
+         '<h3>How to get in touch</h3>'
+         '<p>A contact form, a WhatsApp button or a phone number, so a visitor does not have to search for how '
+         'to reach you.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div>'
+         '<h3>A design that works on any screen</h3>'
+         '<p>Many visitors will look at your site on their phone, so a design that looks good and works well on '
+         'any screen matters, for them and for search engines.</p></div>'
+         '</div>'
+         '<p class="where">For a longer read on structuring this kind of site, see our blog guide on '
+         '<a href="https://webautonomos.es/blog/en/website-for-psychologists-and-therapists">the essential '
+         'sections of a psychology website</a>.</p>'),
+        ('different-titles', 'Different titles, different rules',
+         'Websites for psychologists, psychotherapists and counsellors',
+         '<p class="legal-intro">The website itself works the same way for every title; what changes is which '
+         'claims the rules above let you make.</p>'
+         '<div class="aud-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧠</div>'
+         '<h3>If you are a psychologist</h3>'
+         '<p>Show your Colegio and colegiado number, plus your practice&#8217;s registration number if you work '
+         'as a health psychologist (see <a href="#rules">the rules above</a>).</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗣️</div>'
+         '<h3>If you are a psychotherapist</h3>'
+         '<p>Describe your training and how a session works, without a promise of relief or cure: the bans on '
+         'health claims in <a href="#rules">the rules above</a> apply to anyone who presents their work as '
+         'health-related, whatever their title.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">💬</div>'
+         '<h3>If you are a counsellor</h3>'
+         '<p>Like coach and hypnotherapist, counsellor is not a regulated title in Spain: write about support '
+         'and personal development, not treatment.</p></div>'
+         '</div>'),
+        ('getting-found', 'Local search', 'How your website helps you appear in local searches',
+         '<p class="legal-intro">Getting found by someone searching for a therapist near them depends on more '
+         'than the design: your copy and your Google Business Profile count too.</p>'
+         '<div class="aud-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div>'
+         '<h3>Basic SEO, included in your price</h3>'
+         '<p>Titles and copy written around your services and your area, kept consistent with your Google '
+         'Business Profile, come with your website at no extra cost.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div>'
+         '<h3>SEO Local and your Google listing, if you want more</h3>'
+         '<p>We also offer SEO Local for €15 + VAT a month, and managing your Google Business Profile for €29 '
+         '+ VAT a month (€49 + VAT to set one up if you do not have a listing yet).</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📚</div>'
+         '<h3>Guides to go further</h3>'
+         '<p>Our blog has practical guides on <a href="https://webautonomos.es/blog/en/how-to-rank-your-website-'
+         'in-local-google">ranking your website locally</a> and <a href="https://webautonomos.es/blog/en/'
+         'optimise-your-google-business-profile">optimising your Google Business Profile</a>.</p></div>'
+         '</div>'),
+    ],
     faq_t='Frequently asked questions',
     faq=[("Can I call myself a psychologist in Spain with a UK degree?",
           "Only once it is recognised. Since 1 January 2021, UK qualifications follow the procedure for non-EU "
