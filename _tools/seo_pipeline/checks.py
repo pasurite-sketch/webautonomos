@@ -70,6 +70,16 @@ def largeur_title(t):
     return len(t), 'caracteres'
 
 
+# Milliers écrits à la française (« 2 000 »), à l'anglaise (« 2,000 ») ou à l'espagnole
+# (« 2.000 ») : ramenés à « 2000 » des deux côtés de la comparaison (25/09 : faux
+# positifs « 000 », « 500 », « 2,000 » sur /fr/prestations et /en/services).
+MILLIERS = re.compile(r'(?<![\d.,])\d{1,3}(?:[ \u00a0\u202f.,]\d{3})+(?![\d])')
+
+
+def sans_milliers(t):
+    return MILLIERS.sub(lambda m: re.sub(r'[ \u00a0\u202f.,]', '', m.group(0)), t)
+
+
 def verite():
     v = open(os.path.join(P, 'VERITE.md'), encoding='utf-8').read()
     blocs = re.findall(r'```\n(.*?)```', v, re.S)
@@ -81,6 +91,9 @@ def verite():
             continue
         nombres.add(re.sub(r'\s', '', item))
         nombres.update(re.findall(r'\d[\d.,]*\d|\d', item))
+        item_n = sans_milliers(item)
+        nombres.add(re.sub(r'\s', '', item_n))
+        nombres.update(re.findall(r'\d[\d.,]*\d|\d', item_n))
     interdits = [l.strip() for l in (blocs[1] if len(blocs) > 1 else '').splitlines() if l.strip()]
     return nombres, interdits
 
@@ -90,7 +103,7 @@ def compter(motif, texte, flags=re.I):
 
 
 def nombres_du_texte(t):
-    toks = re.findall(r'\d[\d.,]*\d|\d', t)
+    toks = re.findall(r'\d[\d.,]*\d|\d', sans_milliers(t))
     out = {}
     for x in toks:
         x = x.rstrip('.,')

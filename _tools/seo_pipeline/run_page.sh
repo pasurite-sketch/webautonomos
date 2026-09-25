@@ -128,7 +128,8 @@ else
   BR="seo/${SLUG}-$(date +%Y%m%d-%H%M)"
   [ "$REPARER" = 1 ] && BR="${BR}-reparation"
   git checkout -q -b "$BR"
-  if [ "$REPARER" = 1 ] && ! git apply "$RUN/diff.patch"; then
+  # si la page (ou son générateur) a changé depuis, on tente une fusion à 3 voies
+  if [ "$REPARER" = 1 ] && ! git apply "$RUN/diff.patch" && ! git apply --3way "$RUN/diff.patch"; then
     git reset -q --hard "$BASE"; git checkout -q main; git branch -q -D "$BR" || true
     log "réparation impossible : la page a changé depuis, diff.patch ne s'applique plus"; exit 2
   fi
