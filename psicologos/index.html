@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preload" as="image" href="/assets/og-demo-psico.jpg">
 <title>Página web para psicólogos: 15 €/mes, demo gratis en 24h</title>
-<meta name="description" content="Web profesional a medida para consultas de psicología. Demo personalizada en 24h, discreta y RGPD-compliant. 15€/mes, sin alta ni permanencia.">
+<meta name="description" content="Web profesional a medida para consultas de psicología. Demo personalizada en 24h. 15€/mes + IVA, sin alta ni permanencia.">
 <link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -686,6 +686,18 @@
   .reviews-track{display:grid; grid-template-columns:repeat(3,1fr); width:auto;}
   .reviews-carousel .review-card:nth-child(n+4){display:none;}
 }
+.content-sec{padding:64px 6%}
+.content-sec.off{background:var(--off)}
+.content-sec.white{background:var(--white)}
+.content-inner{max-width:760px;margin:0 auto}
+.content-inner h2{text-align:left;font-size:clamp(1.5rem,3.2vw,2.2rem);margin-bottom:14px}
+.content-inner>.sd{text-align:left;margin:0 0 28px;max-width:none}
+.content-inner h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.1rem;color:var(--blue-dark);margin:26px 0 10px}
+.content-inner p{font-size:0.98rem;line-height:1.75;color:#334155;margin-bottom:12px}
+.content-inner ul{list-style:none;margin:10px 0 18px}
+.content-inner ul li{font-size:0.95rem;line-height:1.6;color:var(--text);padding:5px 0 5px 24px;position:relative}
+.content-inner ul li::before{content:'✓';position:absolute;left:0;color:var(--green-mid);font-weight:700}
+.content-inner a{color:var(--green-mid);font-weight:600;text-decoration:underline}
 </style>
 <!-- Canonical -->
 <link rel="canonical" href="https://webautonomos.es/psicologos/">
@@ -697,7 +709,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://webautonomos.es/psicologos/">
 <meta property="og:title" content="Página web para psicólogos: 15 €/mes, demo gratis en 24h">
-<meta property="og:description" content="Web profesional a medida para consultas de psicología. Demo personalizada en 24h, discreta y RGPD-compliant. 15€/mes.">
+<meta property="og:description" content="Web profesional a medida para consultas de psicología. Demo personalizada en 24h. 15€/mes + IVA.">
 <meta property="og:image" content="https://webautonomos.es/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -767,6 +779,93 @@
     ]
   }
 }</script>
+<!-- Schema.org FAQPage -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿15€/mes? ¿Cuál es el truco?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ningún truco. El precio bajo viene de tres cosas: (1) usamos un sistema propio que reutiliza componentes testados, (2) no tenemos oficinas lujosas ni comerciales a comisión, (3) la web es solo el punto de entrada — ganamos cuando estás satisfecho y te quedas meses. Sin permanencia, sin alta, sin letra pequeña. Lo verás en la demo antes de pagar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Y si no me gusta la demo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No pagas nada, cero compromiso. Puedes pedirnos todas las modificaciones que quieras: textos, colores, fotos, secciones añadidas, estructura… Solo empezarás a pagar 15€/mes el día en que estés 100% satisfecho con tu sitio. Si después de nuestras revisiones aún no te convence, te despides sin coste alguno. Así de simple."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si quiero cancelar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cancelas cuando quieras, sin preguntas ni penalizaciones: basta con avisarnos por email o WhatsApp. Te devolvemos tu dominio (es tuyo) para que puedas migrar a otro proveedor si lo deseas. Nuestro objetivo es que te quedes porque te funciona, no porque estés atado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Quién mantiene la web después?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nosotros. Actualizaciones de seguridad, copias de respaldo, mantenimiento técnico y una modificación al mes (textos, fotos, horarios) están incluidos en los 15€/mes. Para cambios adicionales, nos escribes por email o WhatsApp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo ofrecer sesiones online además de presenciales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Tu web puede mostrar con claridad si ofreces sesiones presenciales, online o ambas, y explicar cómo es cada una. La solicitud de cita llega directamente a tu email a través del formulario, y el botón de WhatsApp permite que te escriban sin esperar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo funciona en móvil?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todas nuestras webs están diseñadas primero para móvil (mobile-first). Muchos de tus clientes te buscarán desde el móvil, así que es imprescindible. Tu web se verá perfecta en iPhone, Android, tablet y ordenador."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Y si quiero cambiar el diseño más tarde?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tienes una modificación al mes incluida en los 15€/mes (textos, fotos, horarios, nuevos servicios). Para cambios mayores (rediseño completo, nueva sección grande), hacemos un presupuesto cerrado sin sorpresas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo protegéis la confidencialidad de mis pacientes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los formularios de contacto usan conexión SSL cifrada, y las copias de seguridad y el mantenimiento técnico corren de nuestra parte. Los textos legales —aviso legal, política de privacidad y cookies— están incluidos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Vosotros entendéis mi sector?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Trabajamos con autónomos y pequeños negocios en España: profesionales de la salud, oficios (electricistas, fontaneros, carpinteros), servicios personales. Cada sector tiene sus códigos y nosotros los conocemos. Si tienes dudas específicas, contáctanos y te respondemos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Necesito indicar mi colegio y mi número de colegiado en la web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. La LSSI (art. 10) te obliga a indicar en tu web tu colegio profesional, tu número de colegiado y tu titulación. Incluimos estos datos en el diseño de tu web, igual que el resto de tu información. Si tu consulta está autorizada como centro sanitario, tu web también debe mostrar su número de registro sanitario."
+      }
+    }
+  ]
+}</script>
 <!-- Google Analytics GA4 -->
 <script defer src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
 <script>
@@ -809,7 +908,7 @@
     <p class="hdesc">Un freelance cobra entre 800 € y 2.000 € por una web profesional y una agencia, entre 1.500 € y 4.000 €. Nosotros la hacemos a medida por 15€/mes, sin alta ni permanencia. Demo personalizada en 24h.</p>
     <div class="pills">
       <span class="pill">✓ Optimizada para búsquedas locales en Google</span>
-      <span class="pill">✓ Formulario de contacto 100% confidencial (RGPD)</span>
+      <span class="pill">✓ Formulario de contacto con conexión cifrada (SSL)</span>
       <span class="pill">✓ Demo sin compromiso en menos de 24h</span>
     </div>
     <a class="hero-cta" href="#pide-demo">Quiero mi demo gratis →</a>
@@ -939,6 +1038,112 @@
   </div>
 </section>
 
+<!-- CONTENIDO SEO: QUÉ DEBE INCLUIR TU WEB -->
+<section class="content-sec white rev">
+  <div class="content-inner">
+    <p class="ey" style="text-align:left">Antes de la demo</p>
+    <h2>¿Qué secciones necesita la web de tu consulta?</h2>
+    <p class="sd">Debe explicar con claridad cómo trabajas y facilitar el contacto, mostrar tu colegio y tu número de colegiado, y cuidar la privacidad de tus pacientes. Puedes leer más en <a href="https://webautonomos.es/blog/es/web-para-psicologos-terapeutas">qué debe tener la web de un psicólogo</a>.</p>
+
+    <h3>Información de contacto y acceso</h3>
+    <ul>
+      <li>Dirección de tu consulta, o un aviso claro si trabajas solo online</li>
+      <li>Teléfono y correo electrónico</li>
+      <li>Botón de WhatsApp</li>
+      <li>Horario de atención</li>
+    </ul>
+
+    <h3>Tus áreas de trabajo, explicadas con claridad</h3>
+    <p>Terapia individual, terapia de pareja, ansiedad, duelo, acompañamiento en procesos de cambio: cada área en la que trabajas merece su propio apartado, que explique en qué consiste, para quién puede ser útil y cómo es una primera sesión. Cuanta más claridad des sobre tu forma de trabajar, más fácil es para un paciente decidirse a pedir cita.</p>
+
+    <h3>Colegio profesional y número de colegiado</h3>
+    <p>La Ley de Servicios de la Sociedad de la Información (<a href="https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758" rel="noopener" target="_blank">LSSI, art. 10</a>) te obliga a indicar en tu web tu colegio oficial, tu número de colegiado y tu titulación. Incluimos estos datos en el diseño de tu web, igual que el resto de la información de tu consulta.</p>
+
+    <h3>Petición de cita, sin pedir el motivo de consulta</h3>
+    <p>El formulario de contacto de tu web pide solo los datos necesarios para responderte — nombre y forma de contacto —, sin preguntar el motivo de la consulta: es un dato de salud y no hace falta para concertar una primera cita. Las solicitudes llegan directamente a tu correo, y el botón de WhatsApp permite que un paciente te escriba sin esperar. Puedes leer más sobre cómo <a href="https://webautonomos.es/blog/es/reservas-online-autonomos-2026">automatizar la reserva de citas de tu negocio</a>.</p>
+  </div>
+</section>
+
+<!-- CONTENIDO SEO: DISEÑO Y CONFIANZA -->
+<section class="content-sec off rev">
+  <div class="content-inner">
+    <p class="ey" style="text-align:left">Diseño</p>
+    <h2>Diseño web para psicólogos: el primer paso hacia la confianza de un paciente</h2>
+    <p class="sd">Antes de escribirte, muchas personas que buscan un psicólogo visitan varias webs y se quedan con la que les da más confianza. El diseño influye en esa primera impresión, así que lo cuidamos desde el primer boceto.</p>
+
+    <h3>Colores y tono, adaptados a tu forma de trabajar</h3>
+    <p>Elegimos colores y un tono visual sencillo y cercano, coherente con tu enfoque de trabajo, ya sea más clínico o más cálido: el diseño web se adapta a tu consulta.</p>
+
+    <h3>Una estructura clara, pensada para quien busca ayuda</h3>
+    <p>Alguien que busca un psicólogo no quiere perderse en menús complicados. Por eso creamos una estructura sencilla y fácil de recorrer:</p>
+    <ul>
+      <li>Quién eres y cómo trabajas</li>
+      <li>Tus áreas de trabajo, explicadas una a una</li>
+      <li>Cómo pedir cita, en pocos pasos</li>
+      <li>Tu ubicación o tu modalidad online</li>
+    </ul>
+
+    <h3>Tu marca, no una plantilla genérica</h3>
+    <p>Tu web lleva tu nombre, tus textos y tus datos reales, con los mismos servicios en las dos opciones: 15 €/mes + IVA o un pago único de 349 € + IVA.</p>
+  </div>
+</section>
+
+<!-- CONTENIDO SEO: NORMATIVA -->
+<section class="content-sec white rev">
+  <div class="content-inner">
+    <p class="ey" style="text-align:left">Normativa</p>
+    <h2>Lo que tu web debe cumplir como psicólogo</h2>
+    <p class="sd">La publicidad de servicios de psicología tiene sus propias reglas. Las tenemos en cuenta al redactar tu web.</p>
+    <ul>
+      <li>Tu colegio y tu número de colegiado, visibles en la web</li>
+      <li>Sin promesas de curación ni testimonios inventados</li>
+      <li>Aviso legal, política de privacidad y cookies incluidos</li>
+    </ul>
+
+    <h3>Sin promesas de resultado</h3>
+    <p>Redactamos tus textos a partir de tu formación y tu forma de trabajar, sin promesas de curación, de alivio ni de resultado, y sin testimonios inventados.</p>
+
+    <h3>Si eres psicólogo general sanitario</h3>
+    <p>Si tu consulta está autorizada como centro sanitario, tu web debe indicar también el número de registro que te da tu comunidad autónoma, como exige la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-19572" rel="noopener" target="_blank">normativa estatal de autorización de centros sanitarios</a>.</p>
+
+    <p style="font-size:0.85rem;color:var(--gray);margin-top:8px">Información general, no un consejo jurídico: ante cualquier duda sobre tu caso, consulta a tu colegio profesional.</p>
+  </div>
+</section>
+
+<!-- CONTENIDO SEO: PARA QUIÉN ES -->
+<section class="content-sec off rev">
+  <div class="content-inner">
+    <p class="ey" style="text-align:left">Para quién es</p>
+    <h2>Una web para psicólogos, psicoterapeutas y otros profesionales de la salud mental</h2>
+    <p class="sd">Hacemos webs para psicólogos, psicoterapeutas y otros profesionales de la psicología que acompañan a sus pacientes de forma individual o en pareja, presencial u online.</p>
+
+    <h3>Tu experiencia, en primer plano</h3>
+    <p>Ya trabajes con adultos, con niños o en terapia de pareja, tu formación, tu colegiación y tu experiencia profesional son lo que hace que un paciente te elija a ti. Las mostramos con claridad, junto con las áreas en las que trabajas.</p>
+
+    <h3>Tus redes sociales, conectadas</h3>
+    <p>Incluimos enlaces a tus perfiles en redes sociales (Instagram, LinkedIn, Facebook), para que un paciente que te sigue allí también pueda llegar a tu web y pedir cita.</p>
+
+    <h3>Seguridad de los datos de tus pacientes</h3>
+    <p>Tu web incluye certificado SSL y los textos legales: aviso legal, política de privacidad y cookies. La gestión técnica —seguridad, copias de respaldo, mantenimiento— corre de nuestra parte.</p>
+  </div>
+</section>
+
+<!-- CONTENIDO SEO: SEO LOCAL -->
+<section class="content-sec white rev">
+  <div class="content-inner">
+    <p class="ey" style="text-align:left">SEO local</p>
+    <h2>Que te encuentren en Google en tu zona</h2>
+    <p class="sd">Cuando alguien busca un psicólogo cerca de casa, ayuda que tu web y tu ficha de Google den la misma información: nombre, dirección (o modalidad online) y servicios.</p>
+
+    <h3>Lo que ya incluye tu página</h3>
+    <p>Incluimos una optimización SEO básica: títulos y textos con tu servicio y tu zona, coherentes con tu ficha de Google. Si tu consulta está en Elche, por ejemplo, lo indicamos con claridad en el título y en los textos.</p>
+
+    <h3>Ir más allá: SEO Local y ficha de Google</h3>
+    <p>Si quieres reforzar tu posicionamiento, ofrecemos SEO Local por 15 €/mes + IVA y la gestión de tu ficha de Google por 29 €/mes + IVA (49 € + IVA de creación si todavía no tienes ficha).</p>
+    <p>Puedes leer qué es <a href="https://webautonomos.es/blog/es/seo-local-que-es-autonomos">el SEO local y por qué importa</a> y cómo <a href="https://webautonomos.es/blog/es/como-aparecer-google-maps-autonomos">aparecer en Google Maps paso a paso</a>.</p>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="faq">
   <p class="ey">Preguntas frecuentes</p>
@@ -962,12 +1167,12 @@
 
     <details class="faq-item">
       <summary>¿Quién mantiene la web después?</summary>
-      <p>Nosotros. Actualizaciones de seguridad, copias de respaldo, ajustes de contenido, cambios de fotos o textos — todo incluido en los 15€/mes. Tú solo tienes que pedirnos lo que necesites por email o WhatsApp.</p>
+      <p>Nosotros. Actualizaciones de seguridad, copias de respaldo, mantenimiento técnico y una modificación al mes (textos, fotos, horarios) están incluidos en los 15€/mes. Para cambios adicionales, nos escribes por email o WhatsApp.</p>
     </details>
 
     <details class="faq-item">
       <summary>¿Puedo ofrecer sesiones online además de presenciales?</summary>
-      <p>Sí. Configuramos tu web para mostrar claramente si ofreces sesiones presenciales, online o ambas. Integramos el sistema de videoconsulta que uses (Jitsi, Zoom, Doxy.me) y los formularios previos a la sesión si los necesitas.</p>
+      <p>Sí. Tu web puede mostrar con claridad si ofreces sesiones presenciales, online o ambas, y explicar cómo es cada una. La solicitud de cita llega directamente a tu email a través del formulario, y el botón de WhatsApp permite que te escriban sin esperar.</p>
     </details>
 
     <details class="faq-item">
@@ -977,17 +1182,22 @@
 
     <details class="faq-item">
       <summary>¿Y si quiero cambiar el diseño más tarde?</summary>
-      <p>Los cambios menores (textos, fotos, horarios, nuevos servicios) están incluidos en los 15€/mes. Para cambios mayores (rediseño completo, nueva sección grande), hacemos un presupuesto cerrado sin sorpresas. Normalmente es mucho más barato de lo que imaginas.</p>
+      <p>Tienes una modificación al mes incluida en los 15€/mes (textos, fotos, horarios, nuevos servicios). Para cambios mayores (rediseño completo, nueva sección grande), hacemos un presupuesto cerrado sin sorpresas.</p>
     </details>
 
     <details class="faq-item">
-      <summary>¿La confidencialidad de mis pacientes está garantizada?</summary>
-      <p>Absolutamente. Los formularios de contacto usan conexión SSL cifrada, los datos se almacenan en servidores europeos conformes con RGPD, y nunca compartimos información con terceros. Para el sector de la salud mental, añadimos cláusulas específicas en la política de privacidad.</p>
+      <summary>¿Cómo protegéis la confidencialidad de mis pacientes?</summary>
+      <p>Los formularios de contacto usan conexión SSL cifrada, y las copias de seguridad y el mantenimiento técnico corren de nuestra parte. Los textos legales —aviso legal, política de privacidad y cookies— están incluidos.</p>
     </details>
 
     <details class="faq-item">
       <summary>¿Vosotros entendéis mi sector?</summary>
-      <p>Sí. Trabajamos con autónomos y pequeños negocios en toda España: profesionales de la salud, oficios (electricistas, fontaneros, carpinteros), servicios personales. Cada sector tiene sus códigos y nosotros los conocemos. Si tienes dudas específicas, contáctanos y te respondemos.</p>
+      <p>Sí. Trabajamos con autónomos y pequeños negocios en España: profesionales de la salud, oficios (electricistas, fontaneros, carpinteros), servicios personales. Cada sector tiene sus códigos y nosotros los conocemos. Si tienes dudas específicas, contáctanos y te respondemos.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Necesito indicar mi colegio y mi número de colegiado en la web?</summary>
+      <p>Sí. La LSSI (art. 10) te obliga a indicar en tu web tu colegio profesional, tu número de colegiado y tu titulación. Incluimos estos datos en el diseño de tu web, igual que el resto de tu información. Si tu consulta está autorizada como centro sanitario, tu web también debe mostrar su número de registro sanitario.</p>
     </details>
 
   </div>
