@@ -652,6 +652,19 @@
   .wy-icon{font-size:32px;margin-bottom:12px}
   .wy-title{font-family:'Bricolage Grotesque',sans-serif;font-size:1.15rem;font-weight:700;color:var(--blue-dark);margin-bottom:8px}
   .wy-desc{font-size:0.95rem;line-height:1.5;color:#475569}
+  /* CONTENIDO SEO */
+  .content-sec{padding:64px 6%}
+  .content-sec.off{background:var(--off)}
+  .content-sec.white{background:var(--white)}
+  .content-inner{max-width:760px;margin:0 auto}
+  .content-inner h2{text-align:left;font-size:clamp(1.5rem,3.2vw,2.2rem);margin-bottom:14px}
+  .content-inner>.sd{text-align:left;margin:0 0 28px;max-width:none}
+  .content-inner h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.1rem;color:var(--blue-dark);margin:26px 0 10px}
+  .content-inner p{font-size:0.98rem;line-height:1.75;color:#334155;margin-bottom:12px}
+  .content-inner ul{list-style:none;margin:10px 0 18px}
+  .content-inner ul li{font-size:0.95rem;line-height:1.6;color:var(--text);padding:5px 0 5px 24px;position:relative}
+  .content-inner ul li::before{content:'✓';position:absolute;left:0;color:var(--green-mid);font-weight:700}
+  .content-inner a{color:var(--green-mid);font-weight:600;text-decoration:underline}
   /* FAQ */
   .faq{padding:64px 20px;max-width:820px;margin:0 auto}
   .faq-list{margin-top:32px}
@@ -766,6 +779,85 @@
       }
     ]
   }
+}</script>
+<!-- Schema.org FAQPage -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿15€/mes? ¿Cuál es el truco?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ningún truco. El precio bajo viene de tres cosas: (1) usamos un sistema propio que reutiliza componentes testados, (2) no tenemos oficinas lujosas ni comerciales a comisión, (3) la web es solo el punto de entrada — ganamos cuando estás satisfecho y te quedas meses. Sin permanencia, sin alta, sin letra pequeña. Lo verás en la demo antes de pagar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Y si no me gusta la demo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No pagas nada, cero compromiso. Puedes pedirnos todas las modificaciones que quieras: textos, colores, fotos, secciones añadidas, estructura… Solo empezarás a pagar 15€/mes el día en que estés 100% satisfecho con tu sitio. Si después de nuestras revisiones aún no te convence, te despides sin coste alguno. Así de simple."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si quiero cancelar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cancelas cuando quieras, sin preguntas ni penalizaciones: basta con avisarnos por email o WhatsApp. Te devolvemos tu dominio (es tuyo) para que puedas migrar a otro proveedor si lo deseas. Nuestro objetivo es que te quedes porque te funciona, no porque estés atado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Quién mantiene la web después?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nosotros. Actualizaciones de seguridad, copias de respaldo, mantenimiento técnico y una modificación al mes (textos, fotos, horarios) están incluidos en los 15€/mes. Para cambios adicionales, nos escribes por email o WhatsApp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo funciona en móvil?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todas nuestras webs están diseñadas primero para móvil (mobile-first). Muchos de tus clientes te buscarán desde el móvil, así que es imprescindible. Tu web se verá perfecta en iPhone, Android, tablet y ordenador."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Y si quiero cambiar el diseño más tarde?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tienes una modificación al mes incluida en los 15€/mes (textos, fotos, horarios, nuevos servicios). Para cambios mayores (rediseño completo, nueva sección grande), hacemos un presupuesto cerrado sin sorpresas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Vosotros entendéis mi sector?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Trabajamos con autónomos y pequeños negocios en España: profesionales de la salud, oficios (electricistas, fontaneros, carpinteros), servicios personales. Cada sector tiene sus códigos y nosotros los conocemos. Si tienes dudas específicas, contáctanos y te respondemos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Necesito aviso legal y política de privacidad en la web de mi consulta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. La LSSI (art. 10) obliga a identificarte en el aviso legal, con tu colegio profesional, tu número de colegiado y tu titulación, y si la web recoge datos personales necesitas una política de privacidad. El aviso legal, la política de privacidad y la política de cookies están incluidos, tanto en la opción de 15 €/mes + IVA como en el pago único de 349 € + IVA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo enlazar mi página a Facebook, Instagram o LinkedIn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, incluimos enlaces a tus perfiles en redes sociales para que un paciente pueda seguirte donde ya te sigue. Si más adelante quieres que nos encarguemos de gestionar tus redes sociales o de una campaña en Facebook Ads o Google Ads, es un servicio que ofrecemos bajo petición: escríbenos y lo vemos juntos."
+      }
+    }
+  ]
 }</script>
 <!-- Google Analytics GA4 -->
 <script defer src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
@@ -939,6 +1031,49 @@
   </div>
 </section>
 
+<!-- CONTENIDO SEO: QUÉ DEBE INCLUIR TU WEB -->
+<section class="content-sec white rev">
+  <div class="content-inner">
+    <p class="ey" style="text-align:left">Antes de la demo</p>
+    <h2>¿Qué secciones necesita la web de tu consulta?</h2>
+    <p class="sd">Debe mostrar tus servicios y tu zona con claridad, facilitar el contacto y la petición de cita, indicar tu número de colegiado y cumplir con la normativa de protección de datos. Puedes leer más sobre <a href="https://webautonomos.es/blog/es/web-para-clinica-dental-fisioterapeuta">qué debe tener la web de una clínica de fisioterapia</a>.</p>
+
+    <h3>Información de contacto y acceso</h3>
+    <ul>
+      <li>Dirección y mapa de acceso a tu clínica</li>
+      <li>Teléfono y correo electrónico</li>
+      <li>Botón de WhatsApp</li>
+      <li>Horario</li>
+    </ul>
+
+    <h3>Tus servicios y tratamientos</h3>
+    <p>Cada tratamiento que ofreces —fisioterapia deportiva, traumatología, suelo pélvico, terapia manual, rehabilitación tras una lesión— merece su propio apartado: en qué consiste, para quién está indicado y cómo es una sesión. Cuanto más claros sean tus servicios, más fácil es la decisión de contactar.</p>
+
+    <h3>Formación y experiencia</h3>
+    <p>Mostrar tu formación, tu colegiación y tus años de experiencia ayuda a que un paciente decida pedir cita contigo antes que con otra clínica. Si tu consulta está autorizada como centro sanitario, incluye también su número de registro, exigido por la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-19572">normativa estatal de autorización de centros sanitarios</a>.</p>
+
+    <h3>Agenda y reserva de cita</h3>
+    <p>Un formulario de contacto envía las solicitudes directamente a tu correo, y el botón de WhatsApp permite que un paciente te escriba sin esperar. Puedes leer más sobre cómo <a href="https://webautonomos.es/blog/es/reservas-online-autonomos-2026">automatizar la reserva de citas de tu negocio</a>.</p>
+
+  </div>
+</section>
+
+<!-- CONTENIDO SEO: SEO LOCAL -->
+<section class="content-sec off rev">
+  <div class="content-inner">
+    <p class="ey" style="text-align:left">Que te encuentren</p>
+    <h2>Que te encuentren en Google en tu zona</h2>
+    <p class="sd">Cuando alguien busca un fisioterapeuta cerca de casa, ayuda que tu web y tu ficha de Google den la misma información: nombre, dirección, teléfono y servicios.</p>
+
+    <h3>Lo que ya incluye tu página</h3>
+    <p>Ya incluimos una optimización SEO de base: títulos y textos con tu servicio, coherentes con tu ficha de Google. Si tu clínica está en Elche, por ejemplo, lo indicamos con claridad en el título y en los textos.</p>
+
+    <h3>Ir más allá: SEO Local y ficha de Google</h3>
+    <p>Si quieres reforzar tu posicionamiento, ofrecemos SEO Local por 15 €/mes + IVA y la gestión de tu ficha de Google por 29 €/mes + IVA (49 € + IVA de creación si todavía no tienes ficha).</p>
+    <p>Puedes leer qué es <a href="https://webautonomos.es/blog/es/seo-local-que-es-autonomos">el SEO local y por qué importa</a> y cómo <a href="https://webautonomos.es/blog/es/como-aparecer-google-maps-autonomos">aparecer en Google Maps paso a paso</a>.</p>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="faq">
   <p class="ey">Preguntas frecuentes</p>
@@ -962,12 +1097,7 @@
 
     <details class="faq-item">
       <summary>¿Quién mantiene la web después?</summary>
-      <p>Nosotros. Actualizaciones de seguridad, copias de respaldo, ajustes de contenido, cambios de fotos o textos — todo incluido en los 15€/mes. Tú solo tienes que pedirnos lo que necesites por email o WhatsApp.</p>
-    </details>
-
-    <details class="faq-item">
-      <summary>¿Puedo añadir reserva de sesiones online en mi web?</summary>
-      <p>Sí, integramos sistemas de reserva de citas online para que tus pacientes pidan sesión directamente desde la web (Calendly, Doctoralia, Bookitit). Configuramos tus horarios, tus duraciones de sesión y los recordatorios automáticos por SMS/email.</p>
+      <p>Nosotros. Actualizaciones de seguridad, copias de respaldo, mantenimiento técnico y una modificación al mes (textos, fotos, horarios) están incluidos en los 15€/mes. Para cambios adicionales, nos escribes por email o WhatsApp.</p>
     </details>
 
     <details class="faq-item">
@@ -977,17 +1107,22 @@
 
     <details class="faq-item">
       <summary>¿Y si quiero cambiar el diseño más tarde?</summary>
-      <p>Los cambios menores (textos, fotos, horarios, nuevos servicios) están incluidos en los 15€/mes. Para cambios mayores (rediseño completo, nueva sección grande), hacemos un presupuesto cerrado sin sorpresas. Normalmente es mucho más barato de lo que imaginas.</p>
-    </details>
-
-    <details class="faq-item">
-      <summary>¿Puedo mostrar mis especialidades (deportiva, traumatología, suelo pélvico…)?</summary>
-      <p>Por supuesto. Estructuramos tu web con una sección dedicada a cada especialidad que practiques, con fotos, explicaciones adaptadas a tus pacientes y CTAs específicos. Cuantas más especialidades tengas bien presentadas, mejor rankea tu web en Google para cada búsqueda local.</p>
+      <p>Tienes una modificación al mes incluida en los 15€/mes (textos, fotos, horarios, nuevos servicios). Para cambios mayores (rediseño completo, nueva sección grande), hacemos un presupuesto cerrado sin sorpresas.</p>
     </details>
 
     <details class="faq-item">
       <summary>¿Vosotros entendéis mi sector?</summary>
-      <p>Sí. Trabajamos con autónomos y pequeños negocios en toda España: profesionales de la salud, oficios (electricistas, fontaneros, carpinteros), servicios personales. Cada sector tiene sus códigos y nosotros los conocemos. Si tienes dudas específicas, contáctanos y te respondemos con ejemplos reales.</p>
+      <p>Sí. Trabajamos con autónomos y pequeños negocios en España: profesionales de la salud, oficios (electricistas, fontaneros, carpinteros), servicios personales. Cada sector tiene sus códigos y nosotros los conocemos. Si tienes dudas específicas, contáctanos y te respondemos.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Necesito aviso legal y política de privacidad en la web de mi consulta?</summary>
+      <p>Sí. La LSSI (art. 10) obliga a identificarte en el aviso legal, con tu colegio profesional, tu número de colegiado y tu titulación, y si la web recoge datos personales necesitas una política de privacidad. El aviso legal, la política de privacidad y la política de cookies están incluidos, tanto en la opción de 15 €/mes + IVA como en el pago único de 349 € + IVA.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Puedo enlazar mi página a Facebook, Instagram o LinkedIn?</summary>
+      <p>Sí, incluimos enlaces a tus perfiles en redes sociales para que un paciente pueda seguirte donde ya te sigue. Si más adelante quieres que nos encarguemos de gestionar tus redes sociales o de una campaña en Facebook Ads o Google Ads, es un servicio que ofrecemos bajo petición: escríbenos y lo vemos juntos.</p>
     </details>
 
   </div>
