@@ -51,3 +51,20 @@ Installation : `INSTALL_VPS.md`.
 - Liste du 24/09/2026 : vague 1 = 11 pages (priorité 1 : 7 ES, 1 EN et les
   3 pages FR dont les requêtes viennent du relevé de volumes), puis
   `en-home`, `en-services` et `en-therapists` (priorité 2) ; `/servicios` retirée du circuit.
+
+## Passage de nuit (depuis le 26/09/2026)
+
+`install_cron.sh` (une fois, utilisateur `seo`) active la fusion automatique des
+pages non santé (`AUTO_MERGE=1`) et programme `run_nuit.sh` chaque nuit à 3h17 :
+
+1. `pipeline.py sync` : relit sur GitHub les PR fusionnées ou fermées ;
+2. **affinage** (`run_page.sh <slug> --affiner`) : mesure gratuite des pages
+   publiées ; celles qui ne sont pas au vert (score Google < 50, ou GEO < 50 pour
+   les pages `"objectif_geo": "vert"`) reçoivent une retouche minimale, relue,
+   puis PR (au plus `MAX_AFFINAGES`, 3 par défaut) ;
+3. nouvelles pages (`N_NOUVELLES`, 2 par défaut).
+
+Coût : 0 € de plus (mesures SERPmantics gratuites, guides réutilisés, Claude sur
+l'abonnement). Journal : `~/nuit.log` sur le VPS.
+Sources GEO : `sources_geo` dans pages.json ; `serp.py sources` liste celles que
+SERPmantics propose (AI Overview de Google, ChatGPT, Gemini…).

@@ -22,9 +22,11 @@ brouillon « À REVOIR » pour Angelino.
    (`python3 <generateur>`) pour régénérer la page.
 3. SERPmantics : le script a **déjà** préparé les guides, tu n'appelles aucune API.
    - Lis `_tools/seo_pipeline/runs/<slug>/guides.json` (identifiants, `cible_top3`,
-     guides créés), puis `guide_google.md` et, s'il existe, `guide_geo.md` : ce sont
-     les résumés (structure du top 10, expressions à placer avec leurs fourchettes,
-     expressions à éviter, premiers résultats).
+     guides créés), puis `guide_google.md` et les guides GEO qui existent
+     (`guide_geo.md` pour l'AI Overview de Google, et selon `sources_geo` de
+     pages.json `guide_chatgpt.md`, `guide_gemini.md`…) : ce sont les résumés
+     (structure du top 10, expressions à placer avec leurs fourchettes, expressions
+     à éviter, premiers résultats).
    - **Ne lis jamais** les fichiers `guide_*.json` : réponses brutes énormes.
    - Mesure la page AVANT toute modification :
      `python3 _tools/seo_pipeline/serp.py score <slug> --label avant`
@@ -32,12 +34,28 @@ brouillon « À REVOIR » pour Angelino.
      fourchette, expressions à éviter présentes).
 4. Réécris selon la section 2. Si la page a un générateur, relance-le avant de mesurer.
 5. Mesure de nouveau : `python3 _tools/seo_pipeline/serp.py score <slug> --label apres`.
-   Guide Google : vise `cible_top3` de `guides.json` (médiane du top 3, plafond 80) ;
-   au-delà, tu bourres : arrête-toi. Un score au-dessus de 80 est une faute
-   (25/09 : fisioterapeutas à 95, avec un libellé du formulaire modifié pour la
-   densité) : retire des répétitions jusqu'à repasser sous 80. Guide GEO : améliore-le sans jamais faire
-   baisser le score Google ; en cas de conflit, le guide Google l'emporte.
-   Au plus 3 mesures intermédiaires (`--label essai1`, `essai2`, `essai3`) : ne tourne pas en rond.
+   **Seuils (décision d'Angelino du 25/09/2026)** : score Google **au moins 50**
+   (le vert de SERPmantics) sur toutes les pages. Score GEO (moyenne des guides
+   GEO, affichée par `serp.py score`) : **au moins 50** si l'entrée a
+   `"objectif_geo": "vert"` (articles, comparatifs, tarifs, devis) ; si elle a
+   `"au_mieux"` (pages de vente), améliore-le seulement quand c'est utile au
+   lecteur, sans transformer la page de vente en article. **Sur toutes les pages,
+   aucun guide GEO ne doit rester en rouge** (AI Overview, ChatGPT ou Gemini sous
+   25, décision du 25/09/2026) : un guide rouge doit remonter au vert (≥ 50), par
+   des ajouts utiles au lecteur (réponses directes sous les H2, questions de FAQ,
+   définitions, listes), jamais par répétition de mots-clés.
+   Guide Google : au moins 50, et au moins `cible_top3` de `guides.json` (médiane
+   du top 3) quand c'est possible. **Pas de plafond** (décision d'Angelino du
+   25/09/2026) : monte aussi haut que tu peux **tant que le texte reste rédigé
+   naturellement, se lit bien et apporte de la valeur au lecteur**. Tu t'arrêtes
+   quand le point suivant exigerait une répétition, un synonyme forcé, une phrase
+   creuse ou la modification d'un élément protégé (25/09 : fisioterapeutas avait
+   atteint 95 en changeant « Ciudad » en « Localidad » dans le formulaire : c'est
+   ce genre de gain qui est interdit, pas le score). Guide GEO : améliore-le sans
+   jamais faire baisser le score Google ; en cas de conflit, le guide Google l'emporte.
+   Au plus 5 mesures intermédiaires (`--label essai1` … `essai5`) : ne tourne pas en rond.
+   Seuil impossible à atteindre sans enfreindre une règle (santé, faits, protégés) :
+   arrête-toi et explique-le dans `points_d_attention`.
    `credits_utilises` du rapport = nombre d'éléments de `crees` dans `guides.json`.
 6. **Auto-vérification avant de rendre ta copie** (évite un aller-retour avec le
    relecteur) : relis chaque phrase que tu as ajoutée ou modifiée. Pour chacune qui
@@ -183,6 +201,17 @@ phrase** et signale-le dans le rapport (`faits_manquants`).
 
 `affirmations_factuelles` liste **chaque** phrase ajoutée qui affirme un fait
 sur WebAutonomos, avec la section de `VERITE.md` qui la justifie.
+
+## 4 bis. Affinage (page déjà publiée)
+
+Quand la consigne dit AFFINAGE : la page a déjà été approuvée, elle n'atteint
+simplement pas ses seuils. `runs/<slug>/score_controle.json` donne la mesure de
+départ (expressions sous leur fourchette, structure). Ajoute ce qui manque par
+petites touches utiles au lecteur : une réponse directe sous un H2, une question
+de FAQ (visible ET JSON-LD), une précision dans une liste, un H3. Ne réécris pas
+les sections qui fonctionnent, ne change ni le title ni le H1 sauf nécessité, et
+respecte toutes les autres règles de ce fichier. Dans le rapport,
+`score_avant` et `score_geo_avant` = valeurs de `score_controle.json`.
 
 ## 5. En cas de retour du relecteur
 

@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Traite les N prochaines pages (par priorité). Pour cron.
 # Usage : N=3 bash _tools/seo_pipeline/run_batch.sh
+# Enveloppé dans main() : un git pull pendant l'exécution ne peut pas corrompre le script.
+main() {
 set -uo pipefail
 REPO="$(git -C "$(dirname "$0")" rev-parse --show-toplevel)"
 cd "$REPO"
@@ -13,3 +15,5 @@ for slug in $(python3 "$P/pipeline.py" next --n "$N"); do
   bash "$P/run_page.sh" "$slug" || echo "$slug : non publié (voir $P/runs/$slug/run.log)"
 done
 python3 "$P/pipeline.py" status
+}
+main "$@"

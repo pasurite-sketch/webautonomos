@@ -12,6 +12,14 @@
     "fr": "fr-fr",
     "en": "en-es (si SERPmantics le refuse : en-gb)"
   },
+  "seuil_vert": 50,
+  "seuil_rouge": 25,
+  "sources_geo": [
+    {"cle": "geo", "source": "google_ai_overview_citations", "nom": "AI Overview de Google"},
+    {"cle": "chatgpt", "source": "auto:chatgpt|openai|gpt", "nom": "ChatGPT"},
+    {"cle": "gemini", "source": "auto:gemini", "nom": "Gemini"}
+  ],
+  "objectif_geo_regle": "Décision d'Angelino du 25/09/2026 : GEO au vert (≥ seuil_vert) obligatoire pour les articles (blog, comparatifs, tarifs, devis) ; « au_mieux » pour les pages de vente (métiers, accueils, services).",
   "pages": [
     {
       "slug": "es-home",
@@ -22,6 +30,7 @@
       "fichier": "index.html",
       "generateur": null,
       "mode": "manuel",
+      "objectif_geo": "au_mieux",
       "statut": "manuel",
       "priorite": 1,
       "notes": "SPA React pré-transpilée de 1,5 Mo : texte en 3 endroits (fallback statique, objet translations, JSON-LD). Title/H1 revus le 24/09. Hors automatisation."
@@ -35,6 +44,7 @@
       "fichier": "precios.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "vert",
       "statut": "gele_jusqu_au_2026-10-22",
       "priorite": 1,
       "notes": "Gelée jusqu'au contrôle du 22/10 (page récente, title du 14/09). Ne pas toucher avant."
@@ -48,6 +58,7 @@
       "fichier": "blog/es/cuanto-cuesta-pagina-web-autonomos-espana.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "vert",
       "statut": "gele_jusqu_au_2026-10-22",
       "priorite": 1,
       "notes": "Porte les requêtes de prix (2 800 imp.). À traiter avec /precios après le 22/10. Aussi copié dans index.html (SPA)."
@@ -61,6 +72,7 @@
       "fichier": "reformas/index.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "au_mieux",
       "statut": "fait",
       "priorite": 1,
       "notes": "Réécrite à la main le 24/09 (score 18 au départ). Mesurer début novembre."
@@ -74,6 +86,7 @@
       "fichier": "fontaneros/index.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "au_mieux",
       "statut": "fait",
       "priorite": 1,
       "notes": "51 imp., pos. 15 (GSC 16 mois). Garder le bloc Trustpilot (<div class=\"proof-num\">4,3★</div>) intact. Publiée le 24/09/2026 (PR #1) : score Google 36 → 50, GEO 16 → 25."
@@ -87,6 +100,7 @@
       "fichier": "carpinteros/index.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "au_mieux",
       "statut": "fait",
       "priorite": 1,
       "notes": "Garder le bloc Trustpilot intact. L'article blog/es/web-para-carpinteros-reformas vise aussi ce sujet : ajouter un lien vers /carpinteros/ plutôt que concurrencer. Publiée le 25/09/2026 (PR #2) : score Google 45 → 73, GEO 6 → 13."
@@ -100,6 +114,7 @@
       "fichier": "blog/es/pagina-web-para-electricistas.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "vert",
       "statut": "fait",
       "priorite": 1,
       "notes": "Décidé le 24/09 : c'est l'ARTICLE qui porte la requête (pos. 10, 300 imp., 5 clics) ; /electricistas/ (pos. 67) reste la page de conversion et ne doit PAS viser cette requête. Le rédacteur ajoute dans l'article un lien vers /electricistas/ (ancre du type « ver la oferta para electricistas »), retire la statistique « 70 % » sans source et le « caso real » de Miguel (Elche) sauf s'il figure dans VERITE.md. L'article est aussi copié dans index.html (SPA) : ne modifier que le fichier statique. Publiée le 25/09/2026 (PR #3) : score Google 50 → 70, GEO 16 → 28."
@@ -113,9 +128,10 @@
       "fichier": "psicologos/index.html",
       "generateur": null,
       "mode": "validation",
-      "statut": "a_faire",
+      "objectif_geo": "au_mieux",
+      "statut": "fait",
       "priorite": 1,
-      "notes": "SANTÉ. ~160 imp., pos. 42-48. Sous-domaine psicologos.webautonomos.es (démo) aussi indexé. Règles RD 1907/1996."
+      "notes": "SANTÉ. ~160 imp., pos. 42-48. Sous-domaine psicologos.webautonomos.es (démo) aussi indexé. Règles RD 1907/1996. Publiée le 25/09/2026 (PR #12) : score Google 15 → 68, GEO 10 → 33."
     },
     {
       "slug": "es-dentistas",
@@ -126,6 +142,7 @@
       "fichier": "dentistas/index.html",
       "generateur": null,
       "mode": "validation",
+      "objectif_geo": "au_mieux",
       "statut": "fait",
       "priorite": 1,
       "notes": "SANTÉ. Publiée le 25/09/2026 (PR #5) : score Google 13 → 39, GEO 9 → 19."
@@ -139,6 +156,7 @@
       "fichier": "fisioterapeutas/index.html",
       "generateur": null,
       "mode": "validation",
+      "objectif_geo": "au_mieux",
       "statut": "fait",
       "priorite": 1,
       "notes": "SANTÉ. Publiée le 25/09/2026 (PR #8) : score Google 42 → 77, GEO 21 → 51."
@@ -152,6 +170,7 @@
       "fichier": "servicios.html",
       "generateur": null,
       "mode": "manuel",
+      "objectif_geo": "au_mieux",
       "statut": "manuel",
       "priorite": 3,
       "notes": "Retirée du circuit le 24/09/2026 : la cibler reviendrait à concurrencer la home sur « diseño web para autónomos »."
@@ -165,6 +184,7 @@
       "fichier": "mejores-creadores-paginas-web-autonomos.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "vert",
       "statut": "fait",
       "priorite": 1,
       "notes": "Page écrite par build_comparatifs.py (script à usage unique) : modifier la page directement. Prix des concurrents relevés le 23/09 : ne pas les changer sans source. Publiée le 25/09/2026 (PR #4) : score Google 8 → 36, GEO 25 → 69."
@@ -178,9 +198,10 @@
       "fichier": "fr/index.html",
       "generateur": "_tools/build_lang_homes.py",
       "mode": "auto",
-      "statut": "a_faire",
+      "objectif_geo": "au_mieux",
+      "statut": "fait",
       "priorite": 1,
-      "notes": "Page générée : modifier le dictionnaire C['fr'] de build_lang_homes.py puis relancer le script. Angle « pas cher » = 15 €/mois assumé, avec les preuves de sérieux (démo avant paiement, sans engagement, modification mensuelle). Jamais « le moins cher » ni comparaison chiffrée avec un concurrent sans source. Page créée le 23/09/2026 : aucune position à perdre, Google la découvrira directement optimisée.",
+      "notes": "Page générée : modifier le dictionnaire C['fr'] de build_lang_homes.py puis relancer le script. Angle « pas cher » = 15 €/mois assumé, avec les preuves de sérieux (démo avant paiement, sans engagement, modification mensuelle). Jamais « le moins cher » ni comparaison chiffrée avec un concurrent sans source. Page créée le 23/09/2026 : aucune position à perdre, Google la découvrira directement optimisée. Publiée le 25/09/2026 (PR #11) : score Google 18 → 40, GEO 11 → 50.",
       "requetes_secondaires": [
         "création site internet pas cher",
         "site internet vitrine"
@@ -196,9 +217,10 @@
       "fichier": "fr/tarifs.html",
       "generateur": null,
       "mode": "auto",
-      "statut": "a_faire",
+      "objectif_geo": "vert",
+      "statut": "fait",
       "priorite": 1,
-      "notes": "Cannibalisation : l'article blog/fr/combien-coute-un-site-web-pour-independants.html traite le même sujet (angle informatif). Dans cet article, ajouter seulement un lien vers /fr/tarifs avec l'ancre « prix d'un site internet », sans le réécrire. Garder le tableau comparatif et les prix de concurrents tels quels (relevés le 23/09). Page créée le 23/09/2026 : aucune position à perdre, Google la découvrira directement optimisée.",
+      "notes": "Cannibalisation : l'article blog/fr/combien-coute-un-site-web-pour-independants.html traite le même sujet (angle informatif). Dans cet article, ajouter seulement un lien vers /fr/tarifs avec l'ancre « prix d'un site internet », sans le réécrire. Garder le tableau comparatif et les prix de concurrents tels quels (relevés le 23/09). Page créée le 23/09/2026 : aucune position à perdre, Google la découvrira directement optimisée. Publiée le 25/09/2026 (PR #9) : score Google 26 → 70, GEO 31 → 60.",
       "requetes_secondaires": [
         "site internet prix",
         "combien coûte un site internet",
@@ -216,6 +238,7 @@
       "fichier": "fr/prestations.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "vert",
       "statut": "a_faire",
       "priorite": 1,
       "notes": "Angle « devis immédiat » : les prix sont fixes et affichés ; la démo gratuite en 24 h montre le site ET le prix avant tout paiement, sans attendre de devis. Seule une boutique en ligne fait l'objet d'un devis personnalisé (VERITE §2). Ne pas promettre de « devis gratuit » ni de délai de devis. Ne pas viser « refonte » (hors offre). Page créée le 23/09/2026 : aucune position à perdre, Google la découvrira directement optimisée.",
@@ -234,6 +257,7 @@
       "fichier": "fr/site-internet-psychologue-therapeute.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
+      "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
       "notes": "SANTÉ. Règles françaises (titre, RPPS).",
@@ -248,6 +272,7 @@
       "fichier": "fr/site-internet-menuisier.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "auto",
+      "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
       "notes": "",
@@ -262,6 +287,7 @@
       "fichier": "fr/site-internet-kinesitherapeute.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
+      "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
       "notes": "SANTÉ. R4321-123, R4321-98.",
@@ -276,6 +302,7 @@
       "fichier": "fr/site-internet-dentiste.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
+      "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
       "notes": "SANTÉ.",
@@ -290,6 +317,7 @@
       "fichier": "fr/site-internet-francophones-espagne.html",
       "generateur": "_tools/build_expat_pages.py",
       "mode": "auto",
+      "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
       "notes": "",
@@ -304,6 +332,7 @@
       "fichier": "fr/meilleurs-createurs-de-sites-pour-independants.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "vert",
       "statut": "a_faire",
       "priorite": 3,
       "notes": "Modifier la page directement (script à usage unique). Prix concurrents relevés le 23/09.",
@@ -318,6 +347,7 @@
       "fichier": "en/index.html",
       "generateur": "_tools/build_lang_homes.py",
       "mode": "auto",
+      "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 2,
       "notes": "Page générée : modifier C['en'] de build_lang_homes.py puis relancer. Page créée le 23/09/2026. Angle « affordable » = 15 €/mois assumé (équivalent du « pas cher » de /fr/), public : entreprises et indépendants anglophones installés en Espagne. Jamais « the cheapest » ni comparaison chiffrée avec un concurrent sans source. Ne pas viser « web design services » (réservé à /en/services).",
@@ -337,6 +367,7 @@
       "fichier": "en/pricing.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "vert",
       "statut": "a_faire",
       "priorite": 2,
       "notes": ""
@@ -350,6 +381,7 @@
       "fichier": "en/services.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 2,
       "notes": "Page créée le 23/09/2026. Ne pas viser « affordable web design » (réservé à /en/).",
@@ -368,9 +400,10 @@
       "fichier": "en/website-for-therapists-in-spain.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
-      "statut": "a_faire",
+      "objectif_geo": "au_mieux",
+      "statut": "fait",
       "priorite": 2,
-      "notes": "SANTÉ. Règles espagnoles.",
+      "notes": "SANTÉ. Règles espagnoles. Publiée le 25/09/2026 (PR #15) : score Google 43 → 64, GEO 21 → 32.",
       "requetes_secondaires": [
         "websites for psychologists",
         "websites for psychotherapists",
@@ -387,6 +420,7 @@
       "fichier": "en/website-for-carpenters-in-spain.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "auto",
+      "objectif_geo": "au_mieux",
       "statut": "fait",
       "priorite": 1,
       "notes": "'websites for carpenters' 65 imp. + 'carpenters websites' 52 imp. (GSC 16 mois). Publiée le 25/09/2026 (PR #7) : score Google 41 → 53, GEO 10 → 20."
@@ -400,6 +434,7 @@
       "fichier": "en/website-for-physiotherapists-in-spain.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
+      "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
       "notes": "SANTÉ."
@@ -413,6 +448,7 @@
       "fichier": "en/website-for-dentists-in-spain.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
+      "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
       "notes": "SANTÉ."
@@ -426,6 +462,7 @@
       "fichier": "en/web-design-for-expats-in-spain.html",
       "generateur": "_tools/build_expat_pages.py",
       "mode": "auto",
+      "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 2,
       "notes": ""
@@ -439,6 +476,7 @@
       "fichier": "en/best-website-builders-for-freelancers-in-spain.html",
       "generateur": null,
       "mode": "auto",
+      "objectif_geo": "vert",
       "statut": "a_faire",
       "priorite": 3,
       "notes": "Modifier la page directement (script à usage unique)."

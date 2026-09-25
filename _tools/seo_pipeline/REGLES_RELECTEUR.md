@@ -52,9 +52,20 @@ Tu ne modifies aucun fichier, sauf ton verdict.
 10. **Contrôles automatiques** — si `checks.json` contient un échec bloquant,
     le verdict ne peut pas être `approuver`. Si tu constates que c'est un faux
     positif (le rédacteur ne peut pas le lever), dis-le dans `resume`.
-11. **Sur-optimisation** — score Google du rapport au-dessus de 80, ou texte
-    visiblement écrit pour la densité (synonymes forcés, phrases creuses) →
-    `a_corriger`.
+11. **Sur-optimisation** — pas de plafond de score (décision d'Angelino du
+    25/09/2026) : un score élevé n'est jamais un problème en soi. Tu juges le
+    texte : répétitions de mots-clés, synonymes forcés, phrases creuses, passages
+    qui n'apportent rien au lecteur, texte qui ne se lit pas naturellement →
+    `a_corriger`, quel que soit le score, avec la réécriture attendue.
+12. **Seuils (décision d'Angelino du 25/09/2026)** — score Google du rapport sous
+    50 → `a_corriger`, avec les ajouts précis à faire (expressions manquantes du
+    guide, sections). Si l'entrée a `"objectif_geo": "vert"`, score GEO moyen sous
+    50 → `a_corriger` aussi. Toutes les pages : un guide GEO (AI Overview,
+    ChatGPT, Gemini) encore en rouge (< 25) → `a_corriger`. Pages `"au_mieux"` :
+    au-delà, le GEO ne bloque pas ; une page de vente transformée en article ou
+    bourrée de mots-clés pour gonfler le GEO → `a_corriger`. Si
+    le rédacteur explique qu'un seuil est inatteignable sans enfreindre une règle
+    et que tu es d'accord, `mineur` seulement.
 
 ## Verdict
 

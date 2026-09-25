@@ -4,14 +4,17 @@
 
     python3 _tools/seo_pipeline/pipeline.py next [--n 3]         slugs à traiter
     python3 _tools/seo_pipeline/pipeline.py field <slug> <champ>  un champ de pages.json
-    python3 _tools/seo_pipeline/pipeline.py prompt writer|fix|review <slug>
+    python3 _tools/seo_pipeline/pipeline.py a-affiner [--n 50]      pages publiées à contrôler (affinage)
+    python3 _tools/seo_pipeline/pipeline.py controle <slug> <vert|a_affiner>
+    python3 _tools/seo_pipeline/pipeline.py sync                 état des PR relu sur GitHub (gh)
+    python3 _tools/seo_pipeline/pipeline.py prompt writer|fix|affine|review <slug>
     python3 _tools/seo_pipeline/pipeline.py extract-review <slug> <sortie_claude.json>
     python3 _tools/seo_pipeline/pipeline.py verdict <slug>        approuver|reviser|rejeter|absent
     python3 _tools/seo_pipeline/pipeline.py summary <slug>        corps de la PR (markdown)
     python3 _tools/seo_pipeline/pipeline.py state <slug> <statut> [note]
     python3 _tools/seo_pipeline/pipeline.py status               tableau de l'état local
 """
-import json, os, re, sys, datetime
+import json, os, re, subprocess, sys, datetime
 
 P = os.path.dirname(os.path.abspath(__file__))
 RUNS = os.path.join(P, 'runs')
@@ -52,6 +55,58 @@ def cmd_next(n):
     print('\n'.join(p['slug'] for p in todo[:n]))
 
 
+BLOQUANTS = ('en_cours', 'pr_ouverte', 'a_revoir')
+
+
+def cmd_a_affiner(n):
+    """Pages publiées (pages.json « fait » ou fusionnées par le circuit), hors pages en
+    cours ou en attente, les moins récemment contrôlées d'abord."""
+    st = state()
+    ctl = st.get('_controles', {})
+    liste = []
+    for p in cfg()['pages']:
+        s_ = st.get(p['slug'], {}).get('statut')
+        if p['mode'] == 'manuel' or s_ in BLOQUANTS:
+            continue
+        if p['statut'] == 'fait' or s_ == 'publie':
+            liste.append((ctl.get(p['slug'], {}).get('date', ''), p['priorite'], p['slug']))
+    liste.sort()
+    print('\n'.join(x[2] for x in liste[:n]))
+
+
+def cmd_controle(slug, resultat):
+    os.makedirs(RUNS, exist_ok=True)
+    st = state()
+    st.setdefault('_controles', {})[slug] = {
+        'resultat': resultat, 'date': datetime.datetime.now().isoformat(timespec='minutes')}
+    json.dump(st, open(STATE, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
+
+
+def cmd_sync():
+    """Relit sur GitHub l'état des PR ouvertes par le circuit : fusionnée → publie,
+    fermée sans fusion → ferme (la page redevient disponible)."""
+    st = state()
+    change = False
+    for slug, v in list(st.items()):
+        if slug.startswith('_') or not isinstance(v, dict) or v.get('statut') not in ('pr_ouverte', 'a_revoir'):
+            continue
+        m = re.search(r'https://github\.com/\S+/pull/\d+', v.get('note', ''))
+        if not m:
+            continue
+        try:
+            etat = subprocess.run(['gh', 'pr', 'view', m.group(0), '--json', 'state', '-q', '.state'],
+                                  capture_output=True, text=True, timeout=60).stdout.strip()
+        except Exception:
+            continue
+        nouveau = {'MERGED': 'publie', 'CLOSED': 'ferme'}.get(etat)
+        if nouveau:
+            v['statut'] = nouveau
+            print(f'{slug} : {etat} → {nouveau}')
+            change = True
+    if change:
+        json.dump(st, open(STATE, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
+
+
 ENTETE = """Tu travailles dans le dépôt du site webautonomos.es (répertoire courant).
 Page à traiter (entrée de _tools/seo_pipeline/pages.json) :
 
@@ -68,6 +123,27 @@ def prompt_writer(slug, fix=False):
     e = entree(slug)
     txt = ENTETE.format(entree=json.dumps(e, ensure_ascii=False, indent=2), slug=slug,
                         langue_guide=cfg()['langues_serpmantics'].get(e['lang'], e['lang']))
+    if fix == 'affine':
+        return txt + """
+Tu es l'agent RÉDACTEUR, en AFFINAGE. Cette page est déjà publiée et a été
+approuvée : elle n'atteint simplement pas ses seuils SERPmantics. Lis d'abord, en entier :
+1. _tools/seo_pipeline/VERITE.md
+2. _tools/seo_pipeline/REGLES_REDACTEUR.md (sections 1 à 5, dont « Affinage »)
+3. _tools/seo_pipeline/runs/{slug}/score_controle.json (mesure de cette nuit)
+4. _tools/seo_pipeline/runs/{slug}/guides.json puis les guide_*.md
+Objectif : score Google ≥ {seuil} ; si l'entrée a "objectif_geo": "vert", score GEO
+moyen ≥ {seuil} aussi ; sur toutes les pages, chaque guide GEO en rouge (< 25 :
+AI Overview, ChatGPT ou Gemini) remonte au vert (≥ {seuil}). Sans faire baisser le
+score Google. Pas de plafond de score, mais un texte rédigé naturellement, qui se
+lit bien et apporte de la valeur au lecteur : chaque ajout doit apporter une
+information réelle, jamais une répétition de mots-clés.
+Modifie le MINIMUM nécessaire : ajoute ou complète des passages utiles (réponses
+directes, FAQ, précisions), ne réécris pas ce qui fonctionne. Mesure avec
+python3 _tools/seo_pipeline/serp.py score {slug} --label apres
+(au plus 5 mesures intermédiaires --label essai1 … essai5).
+Termine en écrivant _tools/seo_pipeline/runs/{slug}/writer_report.json
+(score_avant = mesure de contrôle). Ne fais ni commit, ni push, ni modification hors périmètre.
+""".format(slug=slug, seuil=cfg().get('seuil_vert', 50))
     if not fix:
         txt += """
 Tu es l'agent RÉDACTEUR. Lis d'abord, en entier :
@@ -174,8 +250,20 @@ def cmd_summary(slug):
     L.append('')
     L.append(f"- **Score SERPmantics** : {w.get('score_avant', '?')} → **{w.get('score_apres', '?')}** "
              f"(cible top 3 : {w.get('cible_top3', '?')})")
-    if w.get('guide_geo'):
-        L.append(f"- **Score GEO (réponses IA de Google)** : {w.get('score_geo_avant', '?')} → **{w.get('score_geo_apres', '?')}**")
+    if w.get('guide_geo') or w.get('score_geo_apres') is not None:
+        L.append(f"- **Score GEO** (moyenne des guides GEO) : {w.get('score_geo_avant', '?')} → **{w.get('score_geo_apres', '?')}**"
+                 f" — objectif : {'vert (≥ %s)' % cfg().get('seuil_vert', 50) if e.get('objectif_geo') == 'vert' else 'au mieux (page de vente)'}")
+    sc = None
+    for nom_ in ('score_fix.json', 'score_apres.json', 'score_controle.json'):
+        sc = lire_json(slug, nom_)
+        if sc:
+            break
+    if sc:
+        noms = {'google': 'Google', 'geo': 'AI Overview', 'chatgpt': 'ChatGPT', 'gemini': 'Gemini'}
+        parts = [f"{noms.get(k, k)} {v.get('score')}" for k, v in sc.items()
+                 if isinstance(v, dict) and v.get('score') is not None]
+        if parts:
+            L.append('- **Détail des scores (dernière mesure)** : ' + ' · '.join(parts))
     L.append(f"- **Crédits SERPmantics utilisés** : {w.get('credits_utilises', '?')}")
     L.append(f"- **Mots** : {w.get('mots_avant', '?')} → {w.get('mots_apres', '?')}")
     L.append(f"- **Relecteur** : {r.get('verdict', '?')} (confiance {r.get('confiance', '?')}) — {r.get('resume', '')}")
@@ -249,11 +337,20 @@ if __name__ == '__main__':
         v = entree(a[1]).get(a[2])
         print('' if v is None else v)
     elif c == 'prompt':
-        print(prompt_review(a[2]) if a[1] == 'review' else prompt_writer(a[2], fix=(a[1] == 'fix')))
+        mode_ = {'fix': True, 'affine': 'affine'}.get(a[1], False)
+        print(prompt_review(a[2]) if a[1] == 'review' else prompt_writer(a[2], fix=mode_))
     elif c == 'extract-review':
         cmd_extract_review(a[1], a[2])
     elif c == 'verdict':
         cmd_verdict(a[1])
+    elif c == 'a-affiner':
+        cmd_a_affiner(int(a[2]) if len(a) > 2 and a[1] == '--n' else 50)
+    elif c == 'etat':
+        print(state().get(a[1], {}).get('statut', '-'))
+    elif c == 'controle':
+        cmd_controle(a[1], a[2])
+    elif c == 'sync':
+        cmd_sync()
     elif c == 'summary':
         cmd_summary(a[1])
     elif c == 'state':

@@ -2,6 +2,8 @@
 # Traite une liste de pages, l'une après l'autre (même verrou que run_batch.sh).
 # Usage : bash _tools/seo_pipeline/run_lot.sh <slug>[:--reparer|:--reprise] …
 # Ex.   : bash _tools/seo_pipeline/run_lot.sh es-electricistas:--reparer en-carpenters
+# Enveloppé dans main() : un git pull pendant l'exécution ne peut pas corrompre le script.
+main() {
 set -uo pipefail
 REPO="$(git -C "$(dirname "$0")" rev-parse --show-toplevel)"
 cd "$REPO"
@@ -17,3 +19,5 @@ for item in "$@"; do
   bash "$P/run_page.sh" "$slug" $opt || echo "$slug : non publié (voir $P/runs/$slug/run.log)"
 done
 python3 "$P/pipeline.py" status
+}
+main "$@"

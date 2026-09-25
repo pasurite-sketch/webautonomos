@@ -14,6 +14,15 @@ Ce script fait le travail mécanique et ne donne à l'agent que des résumés.
           runs/<slug>/guide_geo.md           idem pour le guide GEO (si disponible)
           runs/<slug>/guide_*.json           réponses brutes (NE PAS faire lire à l'agent)
 
+    python3 _tools/seo_pipeline/serp.py verifier <slug>
+        Mesure de contrôle (gratuite) et verdict « au vert » : score Google ≥ seuil
+        (pages.json « seuil_vert », 50) et, si l'entrée a « objectif_geo »: "vert",
+        moyenne des guides GEO ≥ seuil. Code de sortie 0 = au vert, 3 = à affiner.
+
+    python3 _tools/seo_pipeline/serp.py sources
+        Demande au serveur MCP de SERPmantics la liste de ses outils et les valeurs
+        possibles de « source » (Google, AI Overview, ChatGPT, Gemini…). Gratuit.
+
     python3 _tools/seo_pipeline/serp.py score <slug> [--label avant|apres|fixN]
         Mesure le contenu ACTUEL de la page (balise <main>) avec chaque guide.
         Affiche un rapport court (score, structure, expressions sous/au-dessus
@@ -21,8 +30,9 @@ Ce script fait le travail mécanique et ne donne à l'agent que des résumés.
         runs/<slug>/score_<label>.json. Gratuit (ne consomme ni crédit ni jeton).
 
 Clé : variable SERPMANTICS_API_KEY (fichier ~/.seo_pipeline.env).
-Ne crée jamais de guide pour un autre moteur que Google (les moteurs IA
-coûtent 4 crédits) ; réutilise un guide existant de moins de 175 jours.
+Sources des guides : Google + les sources GEO listées dans pages.json
+(« sources_geo » : AI Overview de Google, et ChatGPT / Gemini une fois leurs noms
+confirmés par `serp.py sources`). Réutilise un guide existant de moins de 175 jours.
 """
 import datetime
 import html as htmlmod
@@ -40,7 +50,78 @@ P = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(P, '..', '..'))
 RUNS = os.path.join(P, 'runs')
 API = 'https://app.serpmantics.com/api/v1'
-SOURCES = [('google', 'google'), ('geo', 'google_ai_overview_citations')]
+SOURCES_GEO_DEFAUT = [{'cle': 'geo', 'source': 'google_ai_overview_citations', 'nom': 'AI Overview de Google'}]
+
+
+def sources():
+    """[(clé, source SERPmantics, nom)] : Google d'abord, puis les sources GEO de pages.json.
+    Une source « auto:<motif> » (ex. auto:chatgpt|openai|gpt) est résolue d'après la liste
+    officielle des sources SERPmantics ; introuvable, elle est ignorée."""
+    geo = cfg().get('sources_geo') or SOURCES_GEO_DEFAUT
+    out = [('google', 'google', 'Google')]
+    for g in geo:
+        src = g['source']
+        if src.startswith('auto:'):
+            src = resoudre_source(src[5:])
+            if not src:
+                continue
+        out.append((g['cle'], src, g.get('nom', g['cle'])))
+    return out
+
+
+def valeurs_sources():
+    """Valeurs possibles du paramètre « source » des guides, lues une fois par mois sur le
+    serveur MCP de SERPmantics (gratuit) et gardées dans runs/_sources_serpmantics.json."""
+    cache = os.path.join(RUNS, '_sources_serpmantics.json')
+    try:
+        c = json.load(open(cache, encoding='utf-8'))
+        if time.time() - c.get('t', 0) < 30 * 86400 and c.get('valeurs'):
+            return c['valeurs']
+    except Exception:
+        pass
+    if not os.environ.get('SERPMANTICS_API_KEY'):
+        return []
+    try:
+        outils = lister_outils_mcp()
+    except Exception as e:
+        log(f'liste des sources SERPmantics indisponible : {e}')
+        return []
+    valeurs, textes = [], []
+
+    def collecter(schema):
+        if not isinstance(schema, dict):
+            return
+        valeurs.extend(v for v in schema.get('enum') or [] if isinstance(v, str))
+        textes.append(schema.get('description') or '')
+        for k in ('items', 'anyOf', 'oneOf'):
+            sous = schema.get(k)
+            for x in (sous if isinstance(sous, list) else [sous]):
+                collecter(x)
+    for t in outils:
+        collecter(((t.get('inputSchema') or {}).get('properties') or {}).get('source'))
+    if not valeurs:  # pas d'enum : on prend les identifiants cités dans les descriptions
+        for tx in textes:
+            valeurs += re.findall(r'\b[a-z][a-z0-9]*(?:_[a-z0-9]+)*\b', tx)
+    valeurs = list(dict.fromkeys(valeurs))
+    os.makedirs(RUNS, exist_ok=True)
+    json.dump({'t': time.time(), 'valeurs': valeurs}, open(cache, 'w', encoding='utf-8'), ensure_ascii=False)
+    return valeurs
+
+
+def resoudre_source(motif):
+    for v in valeurs_sources():
+        if re.search(motif, v, re.I):
+            return v
+    log(f'aucune source SERPmantics ne correspond à « {motif} » : ignorée')
+    return None
+
+
+def seuil_vert():
+    return int(cfg().get('seuil_vert', 50))
+
+
+def seuil_rouge():
+    return int(cfg().get('seuil_rouge', 25))
 
 
 # ---------------------------------------------------------------- utilitaires
@@ -225,7 +306,7 @@ def cible_top3(j):
     if not scores:
         return 70
     scores.sort()
-    return min(80, round(scores[len(scores) // 2]))
+    return round(scores[len(scores) // 2])  # pas de plafond (décision du 25/09/2026)
 
 
 def obtenir_guide(requete, lang, cle_src, source, res):
@@ -250,13 +331,13 @@ def cmd_guides(slug):
     gid_google = None
     for i, lang in enumerate(langs):
         res['lang'] = lang
-        gid_google, refus = obtenir_guide(requete, lang, 'google', SOURCES[0][1], res)
+        gid_google, refus = obtenir_guide(requete, lang, 'google', 'google', res)
         if gid_google or not refus:
             break
         if i + 1 < len(langs):
             log(f'langue {lang} refusée : essai avec {langs[i + 1]}')
     lang = res['lang']
-    for cle_src, source in SOURCES:
+    for cle_src, source, _nom in sources():
         if cle_src == 'google':
             gid = gid_google
         else:
@@ -345,7 +426,7 @@ def cmd_score(slug, label):
         sys.exit('lance d’abord : python3 _tools/seo_pipeline/serp.py guides ' + slug)
     contenu = contenu_page(e)
     rapport = {'label': label, 'fichier': e['fichier'], 'cible_top3': ids.get('cible_top3')}
-    for cle_src, _ in SOURCES:
+    for cle_src, _src, _nom in sources():
         gid = ids.get(cle_src)
         if not gid:
             continue
@@ -360,28 +441,128 @@ def cmd_score(slug, label):
             rapport[cle_src] = {'erreur': f'HTTP {code}', 'detail': str(js)[:300]}
             continue
         rapport[cle_src] = analyser(jg, js, contenu)
+    geo = [rapport[c]['score'] for c, _s, _n in sources()[1:]
+           if isinstance(rapport.get(c), dict) and isinstance(rapport[c].get('score'), (int, float))]
+    rapport['score_geo_moyen'] = round(sum(geo) / len(geo)) if geo else None
     json.dump(rapport, open(os.path.join(d, f'score_{label}.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
-    L = [f"SCORE SERPmantics ({label}) — {e['fichier']} — cible Google : {rapport.get('cible_top3')} (médiane du top 3, plafond 80)"]
-    for cle_src, _ in SOURCES:
+    L = [f"SCORE SERPmantics ({label}) — {e['fichier']} — cible Google : au moins 50 et {rapport.get('cible_top3')} (médiane du top 3), sans plafond si le texte reste naturel"]
+    for cle_src, _src, nom in sources():
         r = rapport.get(cle_src)
         if not r:
             continue
         if 'erreur' in r:
             L.append(f"[{cle_src}] ERREUR {r['erreur']} {r.get('detail', '')}")
             continue
-        L.append(f"[{cle_src}] score {r['score']}")
+        L.append(f"[{cle_src} — {nom}] score {r['score']}")
         L.append('  structure : ' + ' · '.join(r['structure']))
         L.append(f"  sous la fourchette ({len(r['sous_fourchette'])}) : " + ', '.join(r['sous_fourchette'][:40]))
         L.append(f"  au-dessus ({len(r['au_dessus_fourchette'])}) : " + ', '.join(r['au_dessus_fourchette']))
         if r['a_eviter_presentes']:
             L.append('  à éviter présentes : ' + ', '.join(r['a_eviter_presentes']))
+    if rapport.get('score_geo_moyen') is not None:
+        L.append(f"GEO moyen (toutes sources GEO) : {rapport['score_geo_moyen']}")
     print('\n'.join(L))
+    return rapport
+
+
+def cmd_verifier(slug):
+    e = entree(slug)
+    r = cmd_score(slug, 'controle')
+    s = seuil_vert()
+    g = (r.get('google') or {}).get('score')
+    geo = r.get('score_geo_moyen')
+    objectif = e.get('objectif_geo', 'au_mieux')
+    manque = []
+    if not isinstance(g, (int, float)):
+        sys.exit('score Google indisponible')  # code 1 : erreur, pas une décision
+    if g < s:
+        manque.append(f'Google {g} < {s}')
+    if objectif == 'vert' and geo is not None and geo < s:
+        manque.append(f'GEO moyen {geo} < {s} (objectif_geo : vert)')
+    # toutes les pages : aucun guide GEO en rouge (décision d'Angelino du 25/09/2026, 23h29)
+    for cle, _src, nom in sources()[1:]:
+        sc = (r.get(cle) or {}).get('score') if isinstance(r.get(cle), dict) else None
+        if isinstance(sc, (int, float)) and sc < seuil_rouge():
+            manque.append(f'GEO {nom} {sc} en rouge (< {seuil_rouge()}) : à remonter au vert')
+    if manque:
+        print('À AFFINER : ' + ' ; '.join(manque))
+        sys.exit(3)
+    print(f'SEUILS ATTEINTS : Google {g}' + (f', GEO moyen {geo}' if geo is not None else '')
+          + f' (objectif_geo : {objectif}, aucun guide GEO en rouge)')
+
+
+def mcp_appel(methode, params=None, session=None, ident=1):
+    cle = os.environ.get('SERPMANTICS_API_KEY')
+    if not cle:
+        sys.exit('SERPMANTICS_API_KEY manquante (charge ~/.seo_pipeline.env)')
+    corps = {'jsonrpc': '2.0', 'method': methode}
+    if ident is not None:
+        corps['id'] = ident
+    if params is not None:
+        corps['params'] = params
+    h = {'Authorization': f'Bearer {cle}', 'Content-Type': 'application/json',
+         'Accept': 'application/json, text/event-stream', 'User-Agent': 'webautonomos-circuit-seo/1.0'}
+    if session:
+        h['Mcp-Session-Id'] = session
+    req = urllib.request.Request(API + '/mcp', data=json.dumps(corps).encode(), method='POST', headers=h)
+    with urllib.request.urlopen(req, timeout=60) as r:
+        txt = r.read().decode('utf-8', 'replace')
+        sid = r.headers.get('Mcp-Session-Id') or session
+    donnees = [l[5:].strip() for l in txt.splitlines() if l.startswith('data:')]
+    brut = donnees[-1] if donnees else txt
+    try:
+        return json.loads(brut) if brut.strip() else {}, sid
+    except Exception:
+        return {'brut': brut[:500]}, sid
+
+
+def lister_outils_mcp():
+    _init, sid = mcp_appel('initialize', {'protocolVersion': '2025-06-18', 'capabilities': {},
+                                          'clientInfo': {'name': 'webautonomos-circuit-seo', 'version': '1.0'}})
+    try:
+        mcp_appel('notifications/initialized', None, sid, ident=None)
+    except Exception:
+        pass
+    rep_, _ = mcp_appel('tools/list', {}, sid, ident=2)
+    outils = ((rep_.get('result') or {}).get('tools')) or []
+    if not outils:
+        raise RuntimeError('réponse inattendue : ' + json.dumps(rep_, ensure_ascii=False)[:500])
+    return outils
+
+
+def cmd_sources():
+    try:
+        outils = lister_outils_mcp()
+    except Exception as e:
+        print(e)
+        return
+    for t in outils:
+        props = ((t.get('inputSchema') or {}).get('properties')) or {}
+        src = props.get('source')
+        ligne = f"- {t.get('name')}"
+        if src:
+            ligne += f" | source : {json.dumps(src, ensure_ascii=False)[:600]}"
+        print(ligne)
+        d = t.get('description') or ''
+        if re.search(r'chatgpt|gemini|perplexity|llm|source|cr[ée]dit', d, re.I):
+            print('    ' + re.sub(r'\s+', ' ', d)[:700])
+    try:
+        os.remove(os.path.join(RUNS, '_sources_serpmantics.json'))  # relire la liste à jour
+    except OSError:
+        pass
+    print('\nSources utilisées par le circuit :')
+    for cle, src, nom in sources():
+        print(f'  {cle:8} {nom:24} → {src}')
 
 
 if __name__ == '__main__':
     a = sys.argv[1:]
     if len(a) >= 2 and a[0] == 'guides':
         cmd_guides(a[1])
+    elif len(a) >= 2 and a[0] == 'verifier':
+        cmd_verifier(a[1])
+    elif a and a[0] == 'sources':
+        cmd_sources()
     elif len(a) >= 2 and a[0] == 'score':
         lab = a[a.index('--label') + 1] if '--label' in a else 'mesure'
         if not re.fullmatch(r'[a-z0-9_-]{1,20}', lab):
