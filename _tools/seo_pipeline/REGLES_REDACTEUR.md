@@ -112,8 +112,9 @@ Relevées sur les pages du 24 et du 25/09/2026 :
   un avis pour baisser ou monter une expression. Si elle y est « sur-utilisée »,
   laisse-la et réduis ailleurs.
 - **Prix des services complémentaires** : toujours « + IVA ». Reprends mot pour
-  mot la formule de `VERITE.md` §5. N'invente rien sur le contenu du SEO Local
-  (ni « avanzado », ni « aparecer en el mapa », ni « contenido pensado para… »).
+  mot la formule de `VERITE.md` §5. Contenu du SEO Local et de la fiche Google :
+  uniquement celui de §5 (ni « avanzado », ni « aparecer en el mapa »). Ce ne sont
+  pas des éléments du site à 15 €/mes : ne les présente jamais comme « inclus ».
 - **Promesses sur la web du client** : la web n'« appartient » au client qu'avec
   la formule 349 € (en alquiler, seul le domaine est à lui) ; ne garantis jamais
   qu'il « cumple con sus obligaciones legales sin ocuparse de nada » : écris
