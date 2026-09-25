@@ -62,7 +62,9 @@ cat, head, `python3 -c`…) est refusée : ne l'essaie pas, utilise Read et Grep
 - **Garde** : prix, boutons et liens de démo (`#pide-demo`, `/pide-tu-demo`,
   `/demandez-votre-demo`, `/get-your-demo`), formulaire, bloc Trustpilot
   (`<div class="proof-num">…</div>`), avis existants mot pour mot, canonical,
-  hreflang, textes légaux, scripts, sections « règles » des pages santé.
+  hreflang, textes légaux, scripts, sections « règles » des pages santé,
+  et dans les articles du blog le bandeau d'appel à l'action et le bloc auteur
+  (décision d'Angelino du 25/09/2026 : on n'y touche pas).
 - **Ajoute** de vraies sections utiles au lecteur (ce que doit contenir sa web,
   services par type de travail, SEO local, erreurs fréquentes, FAQ), dans le
   style CSS existant de la page. Structure en H2/H3, listes.

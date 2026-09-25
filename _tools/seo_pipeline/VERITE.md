@@ -3,7 +3,7 @@
 > **Règle absolue pour les agents** : toute affirmation factuelle sur WebAutonomos
 > (prix, délais, services, langues, chiffres, clients, ancienneté, résultats)
 > qui n'est pas écrite ici est **interdite**. Le relecteur rejette la page.
-> Tenu à jour par Angelino. Dernière révision : 25/09/2026 (matin).
+> Tenu à jour par Angelino. Dernière révision : 25/09/2026 (après-midi).
 > Les lignes marquées **À CONFIRMER** ne doivent pas être utilisées tant
 > qu'Angelino ne les a pas tranchées.
 
@@ -15,6 +15,7 @@
 - Téléphone : +34 961 877 356 — WhatsApp : 654 23 95 20
 - Email : info@webautonomos.es
 - Équipe basée dans la province de Valencia ; travail à distance (email, WhatsApp, visioconférence)
+- Langues de travail avec le client : espagnol, français et anglais (« we work with you in English », confirmé le 25/09/2026)
 - Clients en Espagne et en France
 - Pourquoi le prix est bas (confirmé par Angelino le 25/09/2026) : système propre qui réutilise des composants testés ; pas de bureaux luxueux ni de commerciaux à commission (« usamos un sistema propio que reutiliza componentes testados », « no tenemos oficinas lujosas ni comerciales a comisión »)
 
@@ -31,6 +32,8 @@
   - liens vers les profils du client sur les réseaux sociaux (confirmé par Angelino le 25/09/2026)
   - textes légaux (aviso legal, privacidad, cookies)
   - **une modification par mois** après la mise en ligne, sans limite de durée (y compris formule 349 €)
+  - changements plus importants (refonte, nouvelle grande section) : **sur devis fermé** (« presupuesto cerrado sin sorpresas », confirmé le 25/09/2026) ; aucun prix à annoncer
+  - mise en conformité de la web du client (confirmé le 25/09/2026) : prix pour les particuliers affichés TVA comprise, informations de réclamation exigées par la région (ex. affiche QR en Andalousie), mention expliquant si et comment les avis affichés sont vérifiés
   - optimisation SEO de base (titres et textes avec service et zone, données cohérentes avec la fiche Google)
 - Domaine : .es au nom du client, **inclus la première année**, ensuite environ **12 €/an** ; le client garde son domaine s'il part
 - Propriété de la web : avec la formule 349 €, la web est au client (« pagas una vez y la web es tuya », cartes de prix du site) ; en alquiler, ne pas écrire que la web lui appartient (seul le domaine est à lui)
@@ -53,6 +56,7 @@
 ## 4. Délais et processus
 
 - Démo personnalisée prête en **moins de 24 heures**
+- Support : réponse dans la journée (« respuesta en el día », confirmé le 25/09/2026)
 - Le client voit sa web **avant de payer** (méthode « Déjà-Fait ») ; il ne paie qu'après validation
 - Si la démo ne convient pas : aucun coût, aucun engagement
 - Formulation autorisée : « web lista en 24 horas » / « démo en 24 heures »
@@ -69,6 +73,7 @@
 
 - Note Trustpilot affichée : **4,3/5 sur 8 avis** (à mettre à jour ici quand elle change)
 - Avis déjà publiés sur le site : les conserver tels quels, n'en créer aucun, n'en reformuler aucun
+- Les images des sections « Mira un ejemplo… » des pages métier sont des **démos**, pas des sites de clients (25/09/2026) : ne jamais les présenter comme « real », « de un cliente » ou « caso real »
 - **Aucun client ne peut être cité** (nom, entreprise, ville, résultat) sans accord écrit noté ici. Accords actuels : aucun.
 - **Aucun nombre de clients** (ni « +40 », ni « +50 », ni autre)
 
@@ -126,6 +131,7 @@ la plupart des (clients|patients|gens|internautes|ind[ée]pendants|artisans|entr
 \bmost (of )?(your |the )?(customers|clients|patients|people|freelancers|businesses)
 ejemplos reales
 fotos? de alta calidad
+ejemplo real\b
 qu[eé] dolor resuelve
 ```
 
@@ -148,6 +154,10 @@ qu[eé] dolor resuelve
 - [x] Intégration Calendly / Doctoralia / Bookitit et rappels SMS/email : non (25/09) — à retirer de /fisioterapeutas/ et /dentistas/
 - [x] Avis Google des patients sur les pages santé ES : gardés (25/09)
 - [x] Liens vers les réseaux sociaux du client sur sa web : inclus (25/09)
-- [ ] « Respuesta en el día » / « respuesta en menos de 24 horas » au support : engagement réel ?
+- [x] « Respuesta en el día » : vrai (25/09)
+- [x] Images « Mira un ejemplo real » : ce sont des démos → H2 corrigé en « Mira un ejemplo de web para… » (25/09)
+- [x] « Para cambios mayores, presupuesto cerrado » : vrai (25/09)
+- [x] Pages EN : « We work with you in English », prix TTC, affiche QR de réclamation, mention sur la vérification des avis : vrai (25/09)
+- [x] Blog : ne pas ajouter « + IVA » ni modifier le bandeau d'appel à l'action ou le bloc auteur des articles (décision du 25/09)
 - [ ] Home : « el 46% de las búsquedas en Google tienen intención local » (FAQ, 4 langues) : chiffre repris d'une infographie non officielle, à retirer ?
 - [ ] Blog : ~40 statistiques « 70 % » sans source et 2 « cas réels » (Miguel, électricien à Elche ; Antonio, menuisier à Elda) : sont-ils de vrais clients ?
