@@ -746,6 +746,10 @@ MENU['en'] = dict(
          '<h3>Doors, windows and staircases</h3>'
          '<p>Smaller jobs bring in work between larger projects, so give them a clear place on your site '
          'too.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F333</div>'
+         '<h3>Decking and garden carpentry</h3>'
+         '<p>Decking, pergolas and other outdoor work are a different job from indoor carpentry, so show them '
+         'apart from your kitchens and wardrobes, with a short caption naming the wood or material used.</p></div>'
          '</div>'),
         ('local-search-help', 'Local search', 'How your website helps you appear in local searches',
          '<p class="legal-intro">Getting found in your area is not only about the website itself.</p>'
@@ -780,6 +784,40 @@ MENU['en'] = dict(
          'its titles and copy, and comes with a contact form, a WhatsApp button and legal pages (legal notice, '
          'privacy and cookies). You see it before you pay anything, you can ask for as many changes as you want '
          'before it goes live, and if you decide not to go ahead, you pay nothing.</p></div>'),
+        ('directory-vs-website', 'Compare', 'Your own website compared to a directory listing',
+         '<p class="legal-intro">If you already get work through a trade directory, here is what changes once you '
+         'also have your own website.</p>'
+         '<div class="cmp-g">'
+         '<div class="cmp-c them"><h3>A directory listing</h3><ul>'
+         '<li>Enquiries often go through the platform, not straight to you</li>'
+         '<li>Homeowners post a job and receive quotes from several local tradespeople, yours among them</li>'
+         '<li>You do not control the layout, or your own domain name</li>'
+         '<li>Your contact details and project pictures live on someone else&#8217;s platform</li>'
+         '</ul></div>'
+         '<div class="cmp-c us"><h3>Your own website</h3><ul>'
+         '<li>Every enquiry goes directly to your email and WhatsApp</li>'
+         '<li>Only your own portfolio and projects are shown, with no competitors on the same page</li>'
+         '<li>Your own .es domain name, included for the first year</li>'
+         '<li>Designed around your own project images and the towns you cover</li>'
+         '</ul></div>'
+         '</div>'),
+        ('technical-basics', 'Behind the scenes', 'What runs behind your website',
+         '<p class="legal-intro">Alongside the pages you and your customers see, a few technical basics come '
+         'with every website we build.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F512</div>'
+         '<h3>Hosting, SSL and daily backups</h3>'
+         '<p>Your site includes hosting, an SSL certificate, daily backups and technical maintenance, so you do '
+         'not have to think about the technical side.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F517</div>'
+         '<h3>Links to your social profiles</h3>'
+         '<p>We add links to your Facebook, Instagram or other social profiles on the website, so visitors can '
+         'also see the work you post there.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✏️</div>'
+         '<h3>One change a month, included</h3>'
+         '<p>Once your site is live, you can ask for one change a month at no extra cost: updating a price, '
+         'adding new project pictures, or requesting other small changes.</p></div>'
+         '</div>'),
     ],
     faq_t='Frequently asked questions',
     faq=[("What must a carpenter's website in Spain show?",
@@ -833,7 +871,15 @@ MENU['en'] = dict(
          ("How much does a website cost?",
           "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: "
           "design, hosting, a domain name for the first year, legal pages and one change a month. English and "
-          "Spanish are included, and the demo is free.")],
+          "Spanish are included, and the demo is free."),
+         ("Do I need my own website if I'm already on a trade directory?",
+          "You don't have to choose: keep the directory profile for extra enquiries, and use your own website as "
+          "the place customers land when they search for your business by name, with your whole portfolio and a "
+          "direct way to contact you."),
+         ("Can I show before-and-after shots of a finished project?",
+          "Yes, before-and-after shots of a kitchen fitting or a finished staircase can help a homeowner compare "
+          "carpenters, as long as they're genuine pictures from your own projects. We build your gallery around "
+          "whatever pictures you send us.")],
     final_t='See your website before you pay a thing',
     final_sd="Free demo within 24 hours, with your projects and legal pages. No setup fee, no lock-in.",
 )
