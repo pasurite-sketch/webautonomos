@@ -1,0 +1,891 @@
+{
+  "publish_date": "2026-10-01",
+  "slug": "wix-o-wordpress",
+  "category": "web",
+  "image": "🆚",
+  "readTime": 11,
+  "lastmod": "2026-10-01",
+  "fr": {
+    "slug": "wix-ou-wordpress",
+    "date": "1 Octobre 2026",
+    "title": "Wix ou WordPress : lequel choisir pour votre site d'indépendant en 2026 ?",
+    "seoTitle": "Wix ou WordPress : lequel choisir en 2026 ? | WebAutonomos",
+    "metaDescription": "Wix ou WordPress ? Prix vérifiés en septembre 2026, coût sur 3 ans, maintenance, SEO et changement d'hébergeur : le comparatif pour bien choisir.",
+    "keywords": [
+      "wix ou wordpress",
+      "wix ou wordpress pour un indépendant",
+      "prix wix 2026",
+      "wordpress.com ou wordpress.org"
+    ],
+    "excerpt": "Wix vous loue un outil tout-en-un, WordPress vous laisse la main, et l'entretien qui va avec. Prix vérifiés le 26 septembre 2026, budget sur trois ans et critères concrets pour choisir sans regret.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Vous voulez un site pour votre activité et deux noms reviennent sans cesse : Wix et WordPress. Avec Wix, vous louez un outil complet où tout est réglé pour vous. Avec WordPress, vous utilisez un logiciel libre, avec la liberté et l'entretien qui vont avec. Voici ce que chacun coûte sur trois ans, ce qu'il vous demande et à quel profil il convient. Tous les prix ont été relevés sur les sites officiels le 26 septembre 2026."
+      },
+      {
+        "type": "heading",
+        "text": "Wix ou WordPress : quelle est la vraie différence ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wix est un créateur de sites tout-en-un : l'éditeur, l'hébergement, la sécurité et les mises à jour sont fournis par Wix, en échange d'un abonnement. Son centre d'assistance le dit clairement : Wix est une solution SaaS, et votre site doit fonctionner sur ses serveurs."
+      },
+      {
+        "type": "paragraph",
+        "text": "WordPress existe sous deux formes. WordPress.org est un logiciel libre, sous licence GPL, que vous téléchargez gratuitement et installez chez l'hébergeur de votre choix, payé à part. WordPress.com est un service qui héberge WordPress pour vous, avec des formules payantes, un peu comme Wix."
+      },
+      {
+        "type": "heading",
+        "text": "Combien coûte Wix en 2026 ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Réponse courte : de 14 à 149 € HT par mois selon la formule, avec un engagement d'un an payé d'avance (tarifs relevés sur wix.com le 26 septembre 2026). Light coûte 14 € HT par mois (soit 16,80 € TTC avec la TVA française au taux normal), Essentiel 25 €, Business 34 € et Business Plus 149 €. La TVA n'est pas comprise : elle s'ajoute au paiement selon votre adresse de facturation. En paiement mensuel, sans engagement, les mêmes formules coûtent 19 €, 30 €, 42 € et 159 € HT par mois."
+      },
+      {
+        "type": "paragraph",
+        "text": "Light suffit pour un site sans publicité Wix, relié à votre propre nom de domaine, offert la première année. En revanche, les paiements en ligne n'arrivent qu'avec Essentiel : pour vendre ou encaisser des acomptes sur votre site, comptez au minimum 25 € HT par mois en annuel (tarif relevé sur wix.com le 26 septembre 2026)."
+      },
+      {
+        "type": "paragraph",
+        "text": "La version gratuite existe, sans carte bancaire, mais elle affiche une bannière publicitaire Wix et une adresse en wixsite.com. Pour retirer la bannière et connecter votre domaine, Wix impose une formule payante. C'est parfait pour tester l'outil, pas pour une activité professionnelle."
+      },
+      {
+        "type": "heading",
+        "text": "Combien coûte WordPress en 2026 ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Réponse courte : le logiciel est gratuit, mais un site WordPress ne l'est pas, car il lui faut un hébergement."
+      },
+      {
+        "type": "paragraph",
+        "text": "Avec WordPress.com, qui s'occupe de l'hébergement, les formules sans publicité commencent à 4 € HT par mois avec Personal, puis 8 € pour Premium, 25 € pour Business et 45 € pour Commerce en facturation annuelle, ou 9 €, 18 €, 40 € et 70 € HT en paiement mensuel (tarifs relevés sur wordpress.com le 26 septembre 2026). Les formules payantes acceptent les extensions, et Business ajoute des sauvegardes en temps réel."
+      },
+      {
+        "type": "paragraph",
+        "text": "Avec WordPress.org, vous payez un hébergeur. Chez OVHcloud, l'offre Perso coûte 2,99 € HT par mois la première année (35,88 € HT pour douze mois), puis 5,99 € HT par mois au renouvellement, avec un domaine offert la première année (tarifs relevés sur ovhcloud.com le 26 septembre 2026). Chez o2switch, l'offre Grow est à 7 € HT par mois payés à l'année, soit 84 € HT, avec un domaine gratuit pendant un an (tarif relevé sur o2switch.fr le 26 septembre 2026). Attention : le prix de la première année n'est pas toujours celui des suivantes."
+      },
+      {
+        "type": "heading",
+        "text": "Quel budget prévoir sur trois ans ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Réponse courte : sur trois ans, les formules d'entrée de WordPress coûtent moins cher en abonnement que celles de Wix, mais WordPress auto-hébergé vous demande davantage de temps."
+      },
+      {
+        "type": "paragraph",
+        "text": "Le calcul, hors taxes, avec les tarifs relevés le 26 septembre 2026 : Wix Light en annuel, 14 € × 36 mois = 504 €. Wix Essentiel, pour les paiements en ligne, 25 € × 36 = 900 €. WordPress.com Personal, 48 € par an × 3 = 144 €. WordPress.org chez OVHcloud Perso, 35,88 € la première année puis 71,88 € par an, soit 179,64 €. WordPress.org chez o2switch Grow, 84 € × 3 = 252 €."
+      },
+      {
+        "type": "paragraph",
+        "text": "Dans tous les cas, ajoutez le nom de domaine, payant après la première année. Avec WordPress auto-hébergé peuvent aussi s'ajouter un thème ou des extensions payantes, et surtout votre temps. L'abonnement Wix, lui, inclut l'hébergement et la maintenance technique, mais il se paie tant que le site existe."
+      },
+      {
+        "type": "table",
+        "caption": "Wix ou WordPress : le comparatif en un coup d'œil",
+        "headers": [
+          "",
+          "Wix",
+          "WordPress"
+        ],
+        "rows": [
+          [
+            "Type d'outil",
+            "Créateur de sites tout-en-un, hébergé par Wix",
+            "Logiciel libre : WordPress.org chez l'hébergeur de votre choix, ou WordPress.com qui l'héberge pour vous"
+          ],
+          [
+            "Version gratuite",
+            "Oui, avec bannière publicitaire Wix et adresse en wixsite.com",
+            "Logiciel gratuit mais hébergement payant ; plan gratuit WordPress.com avec publicités"
+          ],
+          [
+            "Entrée de gamme sans publicité",
+            "Light : 14 € HT par mois en annuel, 19 € en paiement mensuel",
+            "WordPress.com Personal : 4 € HT par mois en annuel, 9 € en paiement mensuel ; OVHcloud Perso : 2,99 € HT par mois la première année, puis 5,99 €"
+          ],
+          [
+            "Vente en ligne",
+            "À partir d'Essentiel : 25 € HT par mois en annuel",
+            "WooCommerce (base gratuite) ou WordPress.com Commerce : 45 € HT par mois en annuel"
+          ],
+          [
+            "Mises à jour et sécurité",
+            "Gérées par Wix",
+            "À votre charge en auto-hébergé : cœur, thèmes, extensions, sauvegardes"
+          ],
+          [
+            "Changer d'hébergeur",
+            "Impossible : le site fonctionne seulement sur les serveurs de Wix",
+            "Possible : export des contenus, fichiers et base de données transférables"
+          ],
+          [
+            "Budget sur 3 ans (hors taxes, domaine payant après la première année non compris)",
+            "Wix Light : 504 €",
+            "WordPress.com Personal : 144 € ; WordPress.org chez OVHcloud Perso : 179,64 €"
+          ]
+        ],
+        "note": "Tarifs relevés le 26 septembre 2026 sur wix.com, wordpress.com et ovhcloud.com, hors TVA. Prix d'un engagement annuel payé d'avance, sauf mention « paiement mensuel »."
+      },
+      {
+        "type": "heading",
+        "text": "Faut-il des compétences techniques ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Réponse courte : pas pour Wix, un peu pour WordPress.com, nettement plus pour WordPress installé chez un hébergeur. Wix fonctionne avec un éditeur glisser-déposer et des modèles : vous déplacez les blocs, changez textes et photos, et voyez le résultat tout de suite. WordPress se gère aussi sans coder, grâce à son éditeur par blocs, mais il demande plus de choix (thème, extensions, réglages) et, en auto-hébergé, l'installation et le paramétrage. Rien d'insurmontable, mais prévoyez du temps de prise en main."
+      },
+      {
+        "type": "heading",
+        "text": "Qui s'occupe de la maintenance et de la sécurité ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Réponse courte : chez Wix, c'est Wix ; avec WordPress auto-hébergé, c'est vous, ou votre prestataire. Wix héberge les sites sur son infrastructure, applique lui-même les mises à jour logicielles et assure la protection SSL."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pour WordPress.org, la documentation officielle est claire : il faut garder WordPress à jour, car les anciennes versions ne reçoivent plus de correctifs de sécurité. Les mises à jour mineures et de sécurité du cœur peuvent s'installer seules, mais les versions majeures, les extensions et les thèmes demandent votre attention. La même documentation recommande de sauvegarder régulièrement la base de données et les fichiers, et toujours avant une mise à jour. WordPress.com, de son côté, gère le serveur pour vous, ce qui allège cette charge."
+      },
+      {
+        "type": "heading",
+        "text": "Et pour le référencement sur Google ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Réponse courte : les deux permettent de régler l'essentiel ; WordPress offre davantage de contrôle, Wix davantage de simplicité. Wix intègre ses propres outils SEO pour les titres et les descriptions de vos pages, ce qui suffit pour un site vitrine. WordPress auto-hébergé vous laisse choisir l'hébergeur, le thème et la structure des adresses, et accepte des extensions dédiées au référencement : un atout si vous publiez souvent. Mais aucun outil ne vous positionne à lui seul : ce qui compte, c'est un contenu utile, des pages claires sur vos services et votre zone d'intervention, et un site rapide sur mobile."
+      },
+      {
+        "type": "heading",
+        "text": "Peut-on changer d'outil plus tard ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Réponse courte : avec WordPress, oui ; avec Wix, il faut reconstruire. Wix l'explique dans son centre d'assistance : un site Wix repose sur sa technologie propriétaire et ne peut pas être hébergé ailleurs. Vos textes et vos images vous appartiennent, mais pour quitter Wix il faudra refaire le site et y reprendre le contenu. Le nom de domaine, lui, peut être géré chez un autre prestataire."
+      },
+      {
+        "type": "paragraph",
+        "text": "WordPress, au contraire, est fait pour bouger : son outil d'export crée un fichier de vos contenus à importer dans un autre site WordPress, WordPress.com propose le même export, et en auto-hébergé vos fichiers et votre base de données se copient chez tout hébergeur compatible. Si votre site doit évoluer dans les années qui viennent, ce critère pèse lourd."
+      },
+      {
+        "type": "heading",
+        "text": "Boutique en ligne ou blog : que vaut chacun ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pour vendre en ligne, Wix intègre l'e-commerce dès Essentiel (25 € HT par mois en annuel, relevé sur wix.com le 26 septembre 2026), sans extension à installer. Sur WordPress, la boutique passe par WooCommerce, une extension open source dont la base est gratuite, ou par le plan Commerce de WordPress.com à 45 € HT par mois en annuel (relevé sur wordpress.com le 26 septembre 2026). WooCommerce est très souple, mais demande plus d'entretien."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pour un blog, WordPress a été pensé dès l'origine comme un outil de publication. Wix propose aussi un blog, correct pour quelques articles par mois. Si le contenu est au cœur de votre stratégie, WordPress garde un avantage."
+      },
+      {
+        "type": "heading",
+        "text": "Wix ou WordPress : lequel choisir selon votre profil ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Choisissez Wix si vous voulez faire votre site vous-même, vite et sans vous occuper de technique, si votre site reste simple (quelques pages de présentation et un formulaire de contact) et si vous acceptez un abonnement tant que le site existe, sans projet de changer d'outil."
+      },
+      {
+        "type": "paragraph",
+        "text": "Choisissez WordPress.com si vous voulez WordPress sans gérer de serveur, avec un budget d'entrée plus bas que Wix et la possibilité d'exporter votre contenu plus tard."
+      },
+      {
+        "type": "paragraph",
+        "text": "Choisissez WordPress.org chez un hébergeur si vous voulez le contrôle complet, un blog actif, une boutique WooCommerce ou la liberté de déménager, et si vous avez le temps d'assurer les mises à jour et les sauvegardes, ou le budget pour les confier à quelqu'un."
+      },
+      {
+        "type": "conclusion",
+        "text": "Il n'y a pas de gagnant pour tout le monde dans le match Wix ou WordPress : Wix vous vend de la tranquillité, WordPress de la liberté. Faites le calcul sur trois ans et demandez-vous combien de temps vous voulez consacrer à votre site. Si vous n'en avez ni pour l'un ni pour l'autre, il existe une troisième voie : le faire faire. Chez WebAutonomos, c'est 15 € par mois sans frais de mise en place ni engagement, ou 349 € en une seule fois, avec les mêmes services : design, textes rédigés par nos soins à partir de vos informations réelles, hébergement, certificat SSL, sauvegardes quotidiennes, maintenance technique, pages légales et une modification par mois après la mise en ligne. Votre démo personnalisée est prête en moins de 24 heures, et vous ne payez qu'après l'avoir validée."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Wix est-il gratuit ?",
+        "a": "Wix propose une version gratuite, sans carte bancaire, mais elle affiche une bannière publicitaire Wix et une adresse en wixsite.com. Pour connecter votre propre domaine et retirer la publicité, il faut une formule payante, à partir de 14 € HT par mois avec Light en engagement annuel (tarif relevé sur wix.com le 26 septembre 2026)."
+      },
+      {
+        "q": "WordPress est-il vraiment gratuit ?",
+        "a": "Le logiciel WordPress.org est gratuit et libre, sous licence GPL. En revanche, il faut payer un hébergement et un nom de domaine : chez OVHcloud, l'offre Perso démarre à 2,99 € HT par mois la première année, puis 5,99 € HT par mois au renouvellement (tarifs relevés sur ovhcloud.com le 26 septembre 2026). WordPress.com a aussi un plan gratuit, avec publicités."
+      },
+      {
+        "q": "Peut-on transférer un site Wix vers WordPress ?",
+        "a": "Pas directement. Wix indique qu'un site Wix doit fonctionner sur ses serveurs et ne peut pas être hébergé ailleurs. Vos contenus vous appartiennent, mais il faut reconstruire le site dans WordPress et y reprendre textes et images. Votre nom de domaine peut, lui, être relié au nouveau site."
+      },
+      {
+        "q": "Sur trois ans, quelle solution coûte le moins cher ?",
+        "a": "Avec les tarifs relevés sur les sites officiels le 26 septembre 2026, hors taxes et hors renouvellement du domaine : 144 € pour WordPress.com Personal, 179,64 € pour WordPress.org chez OVHcloud Perso et 504 € pour Wix Light en annuel. Mais WordPress auto-hébergé demande du temps de maintenance, qui a lui aussi un coût."
+      },
+      {
+        "q": "Faut-il savoir coder pour utiliser WordPress ?",
+        "a": "Non. WordPress se gère avec un éditeur par blocs, sans code. En revanche, l'installer chez un hébergeur, choisir les extensions et assurer les mises à jour et les sauvegardes demande un minimum d'aisance technique, ou l'aide d'un prestataire."
+      }
+    ]
+  },
+  "es": {
+    "date": "1 Octubre 2026",
+    "title": "Wix o WordPress: cuál elegir para tu web de autónomo en 2026",
+    "seoTitle": "Wix o WordPress: cuál elegir en 2026 | WebAutonomos",
+    "metaDescription": "¿Wix o WordPress? Precios comprobados en septiembre de 2026, coste a 3 años, mantenimiento, SEO y cambio de hosting para elegir bien tu web de autónomo.",
+    "keywords": [
+      "wix o wordpress",
+      "wix o wordpress para autónomos",
+      "precio wix 2026",
+      "wordpress.com o wordpress.org"
+    ],
+    "excerpt": "Wix te alquila una herramienta todo en uno; WordPress te da el control, y también el mantenimiento. Precios comprobados el 26 de septiembre de 2026, presupuesto a tres años y criterios claros para decidir.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Quieres una web para tu negocio y siempre salen los mismos dos nombres: Wix y WordPress. Con Wix alquilas una herramienta completa en la que todo viene resuelto. Con WordPress usas un software libre, con la libertad y el mantenimiento que eso implica. Aquí verás cuánto cuesta cada uno a tres años, qué te pide y a qué tipo de autónomo le encaja. Todos los precios se han comprobado en las webs oficiales el 26 de septiembre de 2026."
+      },
+      {
+        "type": "heading",
+        "text": "¿Qué diferencia hay entre Wix y WordPress?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wix es un creador de webs todo en uno: el editor, el alojamiento, la seguridad y las actualizaciones los pone Wix, a cambio de una suscripción. Su centro de ayuda lo dice claro: es una solución SaaS y tu web tiene que funcionar en sus servidores."
+      },
+      {
+        "type": "paragraph",
+        "text": "WordPress tiene dos versiones. WordPress.org es un software libre con licencia GPL que descargas gratis e instalas en el hosting que elijas, que pagas aparte. WordPress.com es un servicio que aloja WordPress por ti con planes de pago, en eso más parecido a Wix."
+      },
+      {
+        "type": "heading",
+        "text": "¿Cuánto cuesta Wix en 2026?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En pocas palabras: entre 14 y 149 € al mes sin IVA, con permanencia de un año pagada por adelantado (precios consultados en wix.com el 26 de septiembre de 2026). Light cuesta 14 € al mes, Core 25 €, Business 34 € y Business Elite 149 €. El IVA no está incluido: se añade al pagar, según tu dirección de facturación. En pago mensual, sin permanencia, los mismos planes cuestan 19, 30, 42 y 159 € al mes sin IVA."
+      },
+      {
+        "type": "paragraph",
+        "text": "Light basta para una web sin anuncios de Wix y con tu propio dominio, gratis el primer año. Pero los pagos online solo llegan con Core: si quieres vender o cobrar señales desde la web, cuenta como mínimo con 25 € al mes sin IVA en pago anual (precio consultado en wix.com el 26 de septiembre de 2026)."
+      },
+      {
+        "type": "paragraph",
+        "text": "El plan gratuito existe y no pide tarjeta, pero muestra un banner de publicidad de Wix y una dirección de tipo wixsite.com. Para quitar el anuncio y conectar tu dominio, Wix exige un plan de pago. Sirve para probar la herramienta, no para dar imagen de negocio."
+      },
+      {
+        "type": "heading",
+        "text": "¿Cuánto cuesta WordPress en 2026?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En pocas palabras: el software es gratis, pero una web con WordPress no, porque necesita alojamiento."
+      },
+      {
+        "type": "paragraph",
+        "text": "Con WordPress.com, que se encarga del alojamiento, los planes sin anuncios empiezan en 4 € al mes con Personal y siguen con Premium a 8 €, Business a 25 € y Commerce a 45 € en pago anual, o 9, 18, 40 y 70 € en pago mensual, siempre sin IVA (precios consultados en wordpress.com el 26 de septiembre de 2026). Los planes de pago admiten plugins, y Business añade copias de seguridad en tiempo real."
+      },
+      {
+        "type": "paragraph",
+        "text": "Con WordPress.org pagas un hosting. En OVHcloud, el plan Personal cuesta 2,99 € al mes + IVA el primer año (35,88 € + IVA por doce meses) y 5,99 € al mes + IVA al renovar, con dominio gratis el primer año (precios consultados en ovhcloud.com el 26 de septiembre de 2026). En Raiola Networks, un hosting español con centros de datos en Madrid, el plan Hosting Inicio para WordPress cuesta 8,95 € al mes sin impuestos, con WordPress preinstalado (precio consultado en raiolanetworks.com el 26 de septiembre de 2026). Ojo: el precio del primer año no siempre es el de los siguientes."
+      },
+      {
+        "type": "heading",
+        "text": "¿Qué presupuesto necesitas a tres años?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En pocas palabras: a tres años, los planes de entrada de WordPress cuestan menos en suscripción que los de Wix, pero WordPress en tu propio hosting te pide más tiempo."
+      },
+      {
+        "type": "paragraph",
+        "text": "Las cuentas, sin IVA, con los precios del 26 de septiembre de 2026: Wix Light en pago anual, 14 € × 36 meses = 504 €. Wix Core, para cobrar online, 25 € × 36 = 900 €. WordPress.com Personal, 48 € al año × 3 = 144 €. WordPress.org en OVHcloud Personal, 35,88 € el primer año y 71,88 € cada año siguiente, 179,64 € en total. WordPress.org en Raiola Networks Hosting Inicio, 8,95 € × 36 = 322,20 €."
+      },
+      {
+        "type": "paragraph",
+        "text": "En todos los casos, suma el dominio, que se paga a partir del segundo año. Con WordPress en tu hosting pueden añadirse un tema o plugins de pago, y sobre todo tu tiempo. La cuota de Wix ya incluye alojamiento y mantenimiento técnico, pero la pagas mientras la web exista."
+      },
+      {
+        "type": "table",
+        "caption": "Wix o WordPress: la comparativa de un vistazo",
+        "headers": [
+          "",
+          "Wix",
+          "WordPress"
+        ],
+        "rows": [
+          [
+            "Tipo de herramienta",
+            "Creador de webs todo en uno, alojado por Wix",
+            "Software libre: WordPress.org en el hosting que elijas, o WordPress.com, que lo aloja por ti"
+          ],
+          [
+            "Plan gratuito",
+            "Sí, con banner de publicidad de Wix y dirección wixsite.com",
+            "Software gratis pero hosting de pago; plan gratuito de WordPress.com con anuncios"
+          ],
+          [
+            "Plan de entrada sin anuncios",
+            "Light: 14 € al mes en pago anual, 19 € en pago mensual",
+            "WordPress.com Personal: 4 € al mes en pago anual, 9 € en pago mensual; OVHcloud Personal: 2,99 € al mes el primer año y luego 5,99 €"
+          ],
+          [
+            "Tienda online",
+            "Desde Core: 25 € al mes en pago anual",
+            "WooCommerce (base gratuita) o WordPress.com Commerce: 45 € al mes en pago anual"
+          ],
+          [
+            "Actualizaciones y seguridad",
+            "Las gestiona Wix",
+            "A tu cargo si lo alojas tú: núcleo, temas, plugins, copias de seguridad"
+          ],
+          [
+            "Cambiar de hosting",
+            "No es posible: la web solo funciona en los servidores de Wix",
+            "Sí: exportación de contenidos, archivos y base de datos transferibles"
+          ],
+          [
+            "Presupuesto a 3 años (sin IVA ni dominio a partir del segundo año)",
+            "Wix Light: 504 €",
+            "WordPress.com Personal: 144 €; WordPress.org en OVHcloud Personal: 179,64 €"
+          ]
+        ],
+        "note": "Precios consultados el 26 de septiembre de 2026 en wix.com, wordpress.com y ovhcloud.com, sin IVA. Pago anual por adelantado, salvo cuando se indica pago mensual."
+      },
+      {
+        "type": "heading",
+        "text": "¿Necesitas conocimientos técnicos?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En pocas palabras: para Wix no, para WordPress.com algunos, y para WordPress en tu propio hosting, bastantes más. Wix funciona con un editor de arrastrar y soltar y plantillas: mueves bloques, cambias textos y fotos y ves el resultado al momento. WordPress también se maneja sin programar con su editor de bloques, pero exige más decisiones (tema, plugins, ajustes) y, si lo alojas tú, la instalación y la configuración. Nada imposible, pero necesitarás tiempo para aprender."
+      },
+      {
+        "type": "heading",
+        "text": "¿Quién se encarga del mantenimiento y la seguridad?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En pocas palabras: en Wix, Wix; en WordPress autoalojado, tú o quien contrates. Wix aloja las webs en su infraestructura, aplica él mismo las actualizaciones de software y se ocupa de la protección SSL."
+      },
+      {
+        "type": "paragraph",
+        "text": "Para WordPress.org, la documentación oficial es clara: hay que mantener WordPress al día, porque las versiones antiguas dejan de recibir parches de seguridad. Las actualizaciones menores y de seguridad del núcleo pueden instalarse solas, pero las versiones mayores, los plugins y los temas requieren tu atención. La misma documentación recomienda hacer copias de seguridad de la base de datos y los archivos con regularidad, y siempre antes de actualizar. WordPress.com, por su parte, gestiona el servidor por ti, lo que aligera esta carga."
+      },
+      {
+        "type": "heading",
+        "text": "¿Y para el posicionamiento en Google?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En pocas palabras: con los dos puedes trabajar lo esencial; WordPress te da más control y Wix más sencillez. Wix incluye sus propias herramientas SEO para los títulos y las descripciones de tus páginas, suficientes para una web de presentación. WordPress en tu propio hosting te deja elegir el alojamiento, el tema y la estructura de las direcciones, y admite plugins de SEO: una ventaja si publicas a menudo. Pero ninguna herramienta te posiciona por sí sola: lo que cuenta es un contenido útil, páginas claras sobre tus servicios y tu zona de trabajo, y una web rápida en el móvil."
+      },
+      {
+        "type": "heading",
+        "text": "¿Puedes cambiar de herramienta más adelante?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En pocas palabras: con WordPress sí; con Wix tendrás que rehacer la web. Wix lo explica en su centro de ayuda: sus webs funcionan con su tecnología propia y no se pueden alojar en otro proveedor. Tus textos e imágenes son tuyos, pero si un día quieres irte, habrá que rehacer la web y pasar el contenido. El dominio sí puede gestionarse en otro proveedor."
+      },
+      {
+        "type": "paragraph",
+        "text": "WordPress, en cambio, está pensado para moverse: su herramienta de exportación genera un archivo con tus contenidos para importarlo en otro WordPress, WordPress.com ofrece la misma exportación y, si lo alojas tú, tus archivos y tu base de datos se copian en cualquier hosting compatible. Si tu web va a crecer en los próximos años, este criterio pesa mucho."
+      },
+      {
+        "type": "heading",
+        "text": "Tienda online o blog: ¿qué ofrece cada uno?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Para vender online, Wix integra el comercio electrónico desde Core (25 € al mes sin IVA en pago anual, consultado en wix.com el 26 de septiembre de 2026), sin plugins que instalar. En WordPress, la tienda pasa por WooCommerce, un plugin de código abierto cuya base es gratuita, o por el plan Commerce de WordPress.com a 45 € al mes sin IVA en pago anual (consultado en wordpress.com el 26 de septiembre de 2026). WooCommerce es muy flexible, pero pide más mantenimiento."
+      },
+      {
+        "type": "paragraph",
+        "text": "Para un blog, WordPress nació como herramienta de publicación. Wix también tiene blog, válido para publicar unos cuantos artículos al mes. Si el contenido es el centro de tu estrategia, WordPress tiene ventaja."
+      },
+      {
+        "type": "heading",
+        "text": "Wix o WordPress: ¿cuál te conviene según tu caso?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Elige Wix si quieres hacerte la web tú mismo, rápido y sin pelearte con la técnica, si tu web va a ser sencilla (unas pocas páginas de presentación y un formulario de contacto) y si aceptas pagar una cuota mientras la web exista, sin intención de cambiar de herramienta."
+      },
+      {
+        "type": "paragraph",
+        "text": "Elige WordPress.com si quieres WordPress sin gestionar un servidor, con un coste de entrada más bajo que Wix y la posibilidad de exportar tu contenido más adelante."
+      },
+      {
+        "type": "paragraph",
+        "text": "Elige WordPress.org en un hosting si quieres control total, un blog activo, una tienda con WooCommerce o libertad para mudarte, y si tienes tiempo para las actualizaciones y las copias de seguridad, o presupuesto para delegarlas."
+      },
+      {
+        "type": "conclusion",
+        "text": "En el duelo Wix o WordPress no hay un ganador para todos: Wix te vende tranquilidad y WordPress, libertad. Haz las cuentas a tres años y pregúntate cuánto tiempo quieres dedicarle a tu web. Si no tienes tiempo para ninguna de las dos, hay una tercera vía: que te la hagan. En WebAutonomos cuesta 15 € al mes sin alta ni permanencia, o 349 € en un pago único, con los mismos servicios: diseño, textos que redactamos a partir de tus datos reales, alojamiento, certificado SSL, copias de seguridad diarias, mantenimiento técnico, textos legales y una modificación al mes tras la publicación. Tu demo personalizada está lista en menos de 24 horas y solo pagas cuando la apruebas."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Wix es gratis?",
+        "a": "Wix tiene un plan gratuito que no pide tarjeta, pero muestra un banner de publicidad de Wix y una dirección de tipo wixsite.com. Para conectar tu dominio y quitar el anuncio necesitas un plan de pago, desde 14 € al mes sin IVA con Light en pago anual (precio consultado en wix.com el 26 de septiembre de 2026)."
+      },
+      {
+        "q": "¿WordPress es realmente gratis?",
+        "a": "El software WordPress.org es libre y gratuito, con licencia GPL. Lo que pagas es el hosting y el dominio: en OVHcloud, el plan Personal empieza en 2,99 € al mes + IVA el primer año y pasa a 5,99 € al mes + IVA al renovar (precios consultados en ovhcloud.com el 26 de septiembre de 2026). WordPress.com también tiene un plan gratuito, con anuncios."
+      },
+      {
+        "q": "¿Se puede pasar una web de Wix a WordPress?",
+        "a": "No directamente. Wix indica que sus webs tienen que funcionar en sus servidores y no se pueden alojar en otro sitio. Tu contenido es tuyo, pero hay que rehacer la web en WordPress y pasar los textos y las imágenes. El dominio sí puedes conectarlo a la nueva web."
+      },
+      {
+        "q": "¿Qué sale más barato a tres años?",
+        "a": "Con los precios de las webs oficiales del 26 de septiembre de 2026, sin IVA y sin contar la renovación del dominio: 144 € con WordPress.com Personal, 179,64 € con WordPress.org en OVHcloud Personal y 504 € con Wix Light en pago anual. Eso sí, WordPress en tu propio hosting te pide tiempo de mantenimiento, y ese tiempo también cuesta."
+      },
+      {
+        "q": "¿Hace falta saber programar para usar WordPress?",
+        "a": "No. WordPress se maneja con un editor de bloques, sin código. Pero instalarlo en un hosting, elegir los plugins y encargarte de las actualizaciones y las copias de seguridad pide cierta soltura técnica o la ayuda de un profesional."
+      }
+    ]
+  },
+  "val": {
+    "slug": "wix-o-wordpress",
+    "date": "1 Octubre 2026",
+    "title": "Wix o WordPress: quin triar per a la teua web d'autònom en 2026",
+    "seoTitle": "Wix o WordPress: quin triar en 2026 | WebAutonomos",
+    "metaDescription": "Wix o WordPress? Preus comprovats al setembre de 2026, cost a 3 anys, manteniment, SEO i canvi d'allotjament per a triar bé la teua web d'autònom.",
+    "keywords": [
+      "wix o wordpress",
+      "wix o wordpress per a autònoms",
+      "preu wix 2026",
+      "wordpress.com o wordpress.org"
+    ],
+    "excerpt": "Wix et lloga una ferramenta tot en u; WordPress et dona el control, i també el manteniment. Preus comprovats el 26 de setembre de 2026, pressupost a tres anys i criteris clars per a decidir.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Vols una web per al teu negoci i sempre ixen els mateixos dos noms: Wix i WordPress. Amb Wix llogues una ferramenta completa on tot ve resolt. Amb WordPress uses un programari lliure, amb la llibertat i el manteniment que això comporta. Ací veuràs quant costa cada un a tres anys, què et demana i a quin tipus d'autònom li encaixa. Tots els preus s'han comprovat en les webs oficials el 26 de setembre de 2026."
+      },
+      {
+        "type": "heading",
+        "text": "Quina diferència hi ha entre Wix i WordPress?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wix és un creador de webs tot en u: l'editor, l'allotjament, la seguretat i les actualitzacions els posa Wix, a canvi d'una subscripció. El seu centre d'ajuda ho diu clar: és una solució SaaS i la teua web ha de funcionar en els seus servidors."
+      },
+      {
+        "type": "paragraph",
+        "text": "WordPress té dues versions. WordPress.org és un programari lliure amb llicència GPL que descarregues de franc i instal·les en l'allotjament (hosting) que tries, que pagues a banda. WordPress.com és un servici que allotja WordPress per tu amb plans de pagament, en això més paregut a Wix."
+      },
+      {
+        "type": "heading",
+        "text": "Quant costa Wix en 2026?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En poques paraules: entre 14 i 149 € al mes sense IVA, amb permanència d'un any pagada per avançat (preus consultats en wix.com el 26 de setembre de 2026). Light costa 14 € al mes, Core 25 €, Business 34 € i Business Elite 149 €. L'IVA no hi està inclòs: s'afig en pagar, segons la teua adreça de facturació. En pagament mensual, sense permanència, els mateixos plans costen 19, 30, 42 i 159 € al mes sense IVA."
+      },
+      {
+        "type": "paragraph",
+        "text": "Light és suficient per a una web sense anuncis de Wix i amb el teu propi domini, gratuït el primer any. Però els pagaments en línia només arriben amb Core: si vols vendre o cobrar senyals des de la web, compta com a mínim amb 25 € al mes sense IVA en pagament anual (preu consultat en wix.com el 26 de setembre de 2026)."
+      },
+      {
+        "type": "paragraph",
+        "text": "El pla gratuït existix i no demana targeta, però mostra un bàner de publicitat de Wix i una adreça del tipus wixsite.com. Per a llevar l'anunci i connectar el teu domini, Wix exigix un pla de pagament. Servix per a provar la ferramenta, no per a donar imatge de negoci."
+      },
+      {
+        "type": "heading",
+        "text": "Quant costa WordPress en 2026?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En poques paraules: el programari és gratuït, però una web amb WordPress no, perquè necessita allotjament."
+      },
+      {
+        "type": "paragraph",
+        "text": "Amb WordPress.com, que s'encarrega de l'allotjament, els plans sense anuncis comencen en 4 € al mes amb Personal i continuen amb Premium a 8 €, Business a 25 € i Commerce a 45 € en pagament anual, o 9, 18, 40 i 70 € en pagament mensual, sempre sense IVA (preus consultats en wordpress.com el 26 de setembre de 2026). Els plans de pagament admeten extensions (plugins), i Business afig còpies de seguretat en temps real."
+      },
+      {
+        "type": "paragraph",
+        "text": "Amb WordPress.org pagues un allotjament. En OVHcloud, el pla Personal costa 2,99 € al mes + IVA el primer any (35,88 € + IVA per dotze mesos) i 5,99 € al mes + IVA en renovar, amb domini gratuït el primer any (preus consultats en ovhcloud.com el 26 de setembre de 2026). En Raiola Networks, un allotjament espanyol amb centres de dades a Madrid, el pla Hosting Inicio para WordPress costa 8,95 € al mes sense impostos, amb WordPress preinstal·lat (preu consultat en raiolanetworks.com el 26 de setembre de 2026). Compte: el preu del primer any no sempre és el dels següents."
+      },
+      {
+        "type": "heading",
+        "text": "Quin pressupost necessites a tres anys?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En poques paraules: a tres anys, els plans d'entrada de WordPress costen menys en subscripció que els de Wix, però WordPress en el teu propi allotjament et demana més temps."
+      },
+      {
+        "type": "paragraph",
+        "text": "Els comptes, sense IVA, amb els preus del 26 de setembre de 2026: Wix Light en pagament anual, 14 € × 36 mesos = 504 €. Wix Core, per a cobrar en línia, 25 € × 36 = 900 €. WordPress.com Personal, 48 € a l'any × 3 = 144 €. WordPress.org en OVHcloud Personal, 35,88 € el primer any i 71,88 € cada any següent, 179,64 € en total. WordPress.org en Raiola Networks Hosting Inicio, 8,95 € × 36 = 322,20 €."
+      },
+      {
+        "type": "paragraph",
+        "text": "En tots els supòsits, suma el domini, que es paga a partir del segon any. Amb WordPress en el teu allotjament es poden afegir un tema o extensions de pagament, i sobretot el teu temps. La quota de Wix ja inclou l'allotjament i el manteniment tècnic, però la pagues mentres la web existisca."
+      },
+      {
+        "type": "table",
+        "caption": "Wix o WordPress: la comparativa d'un colp d'ull",
+        "headers": [
+          "",
+          "Wix",
+          "WordPress"
+        ],
+        "rows": [
+          [
+            "Tipus de ferramenta",
+            "Creador de webs tot en u, allotjat per Wix",
+            "Programari lliure: WordPress.org en l'allotjament que tries, o WordPress.com, que l'allotja per tu"
+          ],
+          [
+            "Pla gratuït",
+            "Sí, amb bàner de publicitat de Wix i adreça wixsite.com",
+            "Programari gratuït però allotjament de pagament; pla gratuït de WordPress.com amb anuncis"
+          ],
+          [
+            "Pla d'entrada sense anuncis",
+            "Light: 14 € al mes en pagament anual, 19 € en pagament mensual",
+            "WordPress.com Personal: 4 € al mes en pagament anual, 9 € en pagament mensual; OVHcloud Personal: 2,99 € al mes el primer any i després 5,99 €"
+          ],
+          [
+            "Botiga en línia",
+            "Des de Core: 25 € al mes en pagament anual",
+            "WooCommerce (base gratuïta) o WordPress.com Commerce: 45 € al mes en pagament anual"
+          ],
+          [
+            "Actualitzacions i seguretat",
+            "Les gestiona Wix",
+            "A càrrec teu si l'allotges tu: nucli, temes, extensions, còpies de seguretat"
+          ],
+          [
+            "Canviar d'allotjament",
+            "No és possible: la web només funciona en els servidors de Wix",
+            "Sí: exportació de continguts, fitxers i base de dades transferibles"
+          ],
+          [
+            "Pressupost a 3 anys (sense IVA ni domini a partir del segon any)",
+            "Wix Light: 504 €",
+            "WordPress.com Personal: 144 €; WordPress.org en OVHcloud Personal: 179,64 €"
+          ]
+        ],
+        "note": "Preus consultats el 26 de setembre de 2026 en wix.com, wordpress.com i ovhcloud.com, sense IVA. Pagament anual per avançat, excepte quan s'indica pagament mensual."
+      },
+      {
+        "type": "heading",
+        "text": "Necessites coneixements tècnics?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En poques paraules: per a Wix no, per a WordPress.com alguns, i per a WordPress en el teu propi allotjament, bastants més. Wix funciona amb un editor d'arrossegar i deixar anar i plantilles: mous blocs, canvies textos i fotos i veus el resultat a l'instant. WordPress també es gestiona sense programar amb el seu editor de blocs, però exigix més decisions (tema, extensions, ajustos) i, si l'allotges tu, la instal·lació i la configuració. Res impossible, però necessitaràs temps per a aprendre."
+      },
+      {
+        "type": "heading",
+        "text": "Qui s'encarrega del manteniment i la seguretat?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En poques paraules: en Wix, Wix; en WordPress autoallotjat, tu o qui contractes. Wix allotja les webs en la seua infraestructura, aplica ell mateix les actualitzacions de programari i s'ocupa de la protecció SSL."
+      },
+      {
+        "type": "paragraph",
+        "text": "Per a WordPress.org, la documentació oficial és clara: cal mantindre WordPress al dia, perquè les versions antigues deixen de rebre pedaços de seguretat. Les actualitzacions menors i de seguretat del nucli es poden instal·lar soles, però les versions majors, les extensions i els temes requerixen la teua atenció. La mateixa documentació recomana fer còpies de seguretat de la base de dades i dels fitxers amb regularitat, i sempre abans d'actualitzar. WordPress.com, per la seua banda, gestiona el servidor per tu, cosa que alleugera esta càrrega."
+      },
+      {
+        "type": "heading",
+        "text": "I per al posicionament en Google?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En poques paraules: amb tots dos pots treballar l'essencial; WordPress et dona més control i Wix més senzillesa. Wix inclou les seues pròpies ferramentes SEO per als títols i les descripcions de les teues pàgines, suficients per a una web de presentació. WordPress en el teu propi allotjament et deixa triar l'allotjament, el tema i l'estructura de les adreces, i admet extensions de SEO: un avantatge si publiques sovint. Però cap ferramenta et posiciona per si sola: el que compta és un contingut útil, pàgines clares sobre els teus servicis i la teua zona de treball, i una web ràpida en el mòbil."
+      },
+      {
+        "type": "heading",
+        "text": "Pots canviar de ferramenta més avant?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En poques paraules: amb WordPress sí; amb Wix hauràs de refer la web. Wix ho explica en el seu centre d'ajuda: les seues webs funcionen amb la seua tecnologia pròpia i no es poden allotjar en un altre proveïdor. Els teus textos i imatges són teus, però si un dia te'n vols anar, caldrà refer la web i passar-hi el contingut. El domini sí que es pot gestionar en un altre proveïdor."
+      },
+      {
+        "type": "paragraph",
+        "text": "WordPress, en canvi, està pensat per a moure's: la seua ferramenta d'exportació genera un fitxer amb els teus continguts per a importar-lo en un altre WordPress, WordPress.com oferix la mateixa exportació i, si l'allotges tu, els teus fitxers i la teua base de dades es copien en qualsevol allotjament compatible. Si preveus que la teua web creixerà en els pròxims anys, este criteri pesa molt."
+      },
+      {
+        "type": "heading",
+        "text": "Botiga en línia o blog: què oferix cada un?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Per a vendre en línia, Wix integra el comerç electrònic des de Core (25 € al mes sense IVA en pagament anual, consultat en wix.com el 26 de setembre de 2026), sense extensions que instal·lar. En WordPress, la botiga passa per WooCommerce, una extensió de codi obert amb la base gratuïta, o pel pla Commerce de WordPress.com a 45 € al mes sense IVA en pagament anual (consultat en wordpress.com el 26 de setembre de 2026). WooCommerce és molt flexible, però demana més manteniment."
+      },
+      {
+        "type": "paragraph",
+        "text": "Per a un blog, WordPress va nàixer com a ferramenta de publicació. Wix també té blog, vàlid per a publicar uns quants articles al mes. Si el contingut és el centre de la teua estratègia, WordPress té avantatge."
+      },
+      {
+        "type": "heading",
+        "text": "Wix o WordPress: quin et convé segons la teua situació?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tria Wix si vols fer-te la web tu mateix, ràpid i sense barallar-te amb la tècnica, si la teua web serà senzilla (unes poques pàgines de presentació i un formulari de contacte) i si acceptes pagar una quota mentres la web existisca, sense intenció de canviar de ferramenta."
+      },
+      {
+        "type": "paragraph",
+        "text": "Tria WordPress.com si vols WordPress sense gestionar cap servidor, amb un cost d'entrada més baix que Wix i la possibilitat d'exportar el teu contingut més avant."
+      },
+      {
+        "type": "paragraph",
+        "text": "Tria WordPress.org en un allotjament si vols control total, un blog actiu, una botiga amb WooCommerce o llibertat per a mudar-te, i si tens temps per a les actualitzacions i les còpies de seguretat, o pressupost per a delegar-les."
+      },
+      {
+        "type": "conclusion",
+        "text": "En el duel Wix o WordPress no hi ha un guanyador per a tothom: Wix et ven tranquil·litat i WordPress, llibertat. Fes els comptes a tres anys i pregunta't quant de temps vols dedicar a la teua web. Si no tens temps per a cap de les dues, hi ha una tercera via: que te la facen. En WebAutonomos costa 15 € al mes sense alta ni permanència, o 349 € en un pagament únic, amb els mateixos servicis: disseny, textos que redactem a partir de les teues dades reals, allotjament, certificat SSL, còpies de seguretat diàries, manteniment tècnic, textos legals i una modificació al mes després de la publicació. La teua demo personalitzada està llesta en menys de 24 hores i només pagues quan l'aproves."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Wix és gratuït?",
+        "a": "Wix té un pla gratuït que no demana targeta, però mostra un bàner de publicitat de Wix i una adreça del tipus wixsite.com. Per a connectar el teu domini i llevar l'anunci necessites un pla de pagament, des de 14 € al mes sense IVA amb Light en pagament anual (preu consultat en wix.com el 26 de setembre de 2026)."
+      },
+      {
+        "q": "WordPress és realment gratuït?",
+        "a": "El programari WordPress.org és lliure i gratuït, amb llicència GPL. El que pagues és l'allotjament i el domini: en OVHcloud, el pla Personal comença en 2,99 € al mes + IVA el primer any i passa a 5,99 € al mes + IVA en renovar (preus consultats en ovhcloud.com el 26 de setembre de 2026). WordPress.com també té un pla gratuït, amb anuncis."
+      },
+      {
+        "q": "Es pot passar una web de Wix a WordPress?",
+        "a": "No directament. Wix indica que les seues webs han de funcionar en els seus servidors i no es poden allotjar en un altre lloc. El teu contingut és teu, però cal refer la web en WordPress i passar-hi els textos i les imatges. El domini sí que el pots connectar a la nova web."
+      },
+      {
+        "q": "Què ix més barat a tres anys?",
+        "a": "Amb els preus de les webs oficials del 26 de setembre de 2026, sense IVA i sense comptar la renovació del domini: 144 € amb WordPress.com Personal, 179,64 € amb WordPress.org en OVHcloud Personal i 504 € amb Wix Light en pagament anual. Ara bé, WordPress en el teu propi allotjament et demana temps de manteniment, i eixe temps també costa."
+      },
+      {
+        "q": "Cal saber programar per a usar WordPress?",
+        "a": "No. WordPress es gestiona amb un editor de blocs, sense codi. Però instal·lar-lo en un allotjament, triar les extensions i encarregar-te de les actualitzacions i les còpies de seguretat demana certa soltesa tècnica o l'ajuda d'un professional."
+      }
+    ]
+  },
+  "en": {
+    "slug": "wix-or-wordpress",
+    "date": "Oct 1, 2026",
+    "title": "Wix or WordPress: Which Should You Choose for Your Business Website in 2026?",
+    "seoTitle": "Wix or WordPress: Which to Choose in 2026 | WebAutonomos",
+    "metaDescription": "Wix or WordPress? Prices checked in September 2026, 3-year cost, maintenance, SEO and moving your site: a practical comparison for freelancers in Spain.",
+    "keywords": [
+      "wix or wordpress",
+      "wix or wordpress for freelancers",
+      "wix price 2026 spain",
+      "wordpress.com vs wordpress.org"
+    ],
+    "excerpt": "Wix rents you an all-in-one tool; WordPress gives you control, and the upkeep that comes with it. Prices checked on 26 September 2026, a three-year budget and clear criteria to help you decide.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "You need a website for your business in Spain, and the same two names keep coming up: Wix and WordPress. With Wix you rent a complete tool where everything is taken care of. With WordPress you use open-source software, with the freedom and the upkeep that brings. Here is what each costs over three years, what it asks of you and which kind of business it suits. All prices were checked on the official websites on 26 September 2026, as displayed to a visitor in Spain."
+      },
+      {
+        "type": "heading",
+        "text": "What is the real difference between Wix and WordPress?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wix is an all-in-one website builder: the editor, hosting, security and updates all come from Wix, in exchange for a subscription. Its own help centre puts it plainly: Wix is a SaaS solution, so your site must run on Wix's servers."
+      },
+      {
+        "type": "paragraph",
+        "text": "WordPress comes in two forms. WordPress.org is open-source software released under the GPL licence, which you download at no cost and install with the hosting company of your choice, paid for separately. WordPress.com is a service that hosts WordPress for you on paid plans, which makes it closer to Wix."
+      },
+      {
+        "type": "heading",
+        "text": "How much does Wix cost in 2026?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Short answer: from €14 to €149 a month excluding VAT, on a one-year plan paid upfront (prices checked on wix.com on 26 September 2026). Light costs €14 a month, Core €25, Business €34 and Business Elite €149. VAT is not included: it is added at checkout based on your billing address. Paid month by month, with no yearly commitment, the same plans cost €19, €30, €42 and €159 a month excluding VAT."
+      },
+      {
+        "type": "paragraph",
+        "text": "Light is enough for an ad-free site on your own domain, with the domain free for the first year. Online payments, however, only come with Core: if you want to sell or take deposits through your site, budget at least €25 a month excluding VAT on a yearly plan (price checked on wix.com on 26 September 2026)."
+      },
+      {
+        "type": "paragraph",
+        "text": "The free plan exists and needs no card, but it shows a Wix banner ad and uses a wixsite.com address. To remove the banner and connect your own domain, Wix requires a paid plan. It is fine for trying the tool, not for presenting a business."
+      },
+      {
+        "type": "heading",
+        "text": "How much does WordPress cost in 2026?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Short answer: the software is free, but a WordPress website is not, because it needs hosting."
+      },
+      {
+        "type": "paragraph",
+        "text": "With WordPress.com, which takes care of the hosting, ad-free plans start at €4 a month with Personal, then €8 for Premium, €25 for Business and €45 for Commerce on a yearly plan, or €9, €18, €40 and €70 paid monthly, all excluding VAT (prices checked on wordpress.com on 26 September 2026). The paid plans accept plugins, and Business adds real-time backups."
+      },
+      {
+        "type": "paragraph",
+        "text": "With WordPress.org, you pay a hosting company. At OVHcloud Spain, the Personal plan costs €2.99 a month plus VAT for the first year (€35.88 plus VAT for twelve months), then €5.99 a month plus VAT on renewal, with a free domain for the first year (prices checked on ovhcloud.com on 26 September 2026). At Raiola Networks, a Spanish host with data centres in Madrid and support in Spanish, the Hosting Inicio para WordPress plan is listed at €8.95 a month excluding tax, with WordPress pre-installed (price checked on raiolanetworks.com on 26 September 2026). Watch out: what you pay in year one is not always what you pay afterwards."
+      },
+      {
+        "type": "heading",
+        "text": "What budget do you need over three years?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Short answer: over three years, WordPress entry plans cost less in subscriptions than Wix's, but self-hosted WordPress asks for more of your time."
+      },
+      {
+        "type": "paragraph",
+        "text": "The maths, excluding VAT, with the prices checked on 26 September 2026: Wix Light on a yearly plan, €14 × 36 months = €504. Wix Core, for online payments, €25 × 36 = €900. WordPress.com Personal, €48 a year × 3 = €144. WordPress.org on OVHcloud Personal, €35.88 in the first year and €71.88 in each following year, €179.64 in total. WordPress.org on Raiola Networks Hosting Inicio, €8.95 × 36 = €322.20."
+      },
+      {
+        "type": "paragraph",
+        "text": "In every case, add the domain, which you pay for from the second year. With self-hosted WordPress you may also add a paid theme or plugins, and above all your own time. Wix's fee already includes hosting and technical maintenance, but you keep paying it for as long as the site exists."
+      },
+      {
+        "type": "table",
+        "caption": "Wix or WordPress at a glance",
+        "headers": [
+          "",
+          "Wix",
+          "WordPress"
+        ],
+        "rows": [
+          [
+            "Type of tool",
+            "All-in-one website builder, hosted by Wix",
+            "Open-source software: WordPress.org with the host of your choice, or WordPress.com, which hosts it for you"
+          ],
+          [
+            "Free plan",
+            "Yes, with a Wix banner ad and a wixsite.com address",
+            "Free software but paid hosting; WordPress.com free plan with ads"
+          ],
+          [
+            "Entry plan without ads",
+            "Light: €14 a month on a yearly plan, €19 paid monthly",
+            "WordPress.com Personal: €4 a month on a yearly plan, €9 paid monthly; OVHcloud Personal: €2.99 a month in year one, then €5.99"
+          ],
+          [
+            "Selling online",
+            "From Core: €25 a month on a yearly plan",
+            "WooCommerce (free core) or WordPress.com Commerce: €45 a month on a yearly plan"
+          ],
+          [
+            "Updates and security",
+            "Handled by Wix",
+            "Your job if self-hosted: core, themes, plugins, backups"
+          ],
+          [
+            "Moving to another host",
+            "Not possible: the site only runs on Wix's servers",
+            "Possible: content export, files and database can be transferred"
+          ],
+          [
+            "3-year budget (excl. VAT and domain renewal after year one)",
+            "Wix Light: €504",
+            "WordPress.com Personal: €144; WordPress.org on OVHcloud Personal: €179.64"
+          ]
+        ],
+        "note": "Prices checked on 26 September 2026 on wix.com, wordpress.com and ovhcloud.com as displayed in Spain, excluding VAT. Yearly plans paid upfront unless marked as paid monthly."
+      },
+      {
+        "type": "heading",
+        "text": "Do you need technical skills?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Short answer: not for Wix, a little for WordPress.com, and noticeably more for WordPress on your own hosting. Wix uses a drag-and-drop editor and templates you customise: you move blocks, change text and photos and see the result straight away. WordPress can also be run without coding thanks to its block editor, but it involves more decisions (theme, plugins, settings) and, if you host it yourself, the installation and configuration. Nothing impossible, but expect to spend time learning."
+      },
+      {
+        "type": "heading",
+        "text": "Who looks after maintenance and security?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Short answer: with Wix, Wix does; with self-hosted WordPress, you do, or whoever you hire. Wix hosts sites on its own infrastructure, applies software updates itself and provides SSL protection."
+      },
+      {
+        "type": "paragraph",
+        "text": "For WordPress.org, the official documentation is clear: you need to keep WordPress up to date, because older versions no longer receive security fixes. Minor and security updates to the core can install automatically, but major versions, plugins and themes need your attention. The same documentation recommends backing up your database and files regularly, and always before an update. WordPress.com, for its part, manages the server for you, which lightens this load."
+      },
+      {
+        "type": "heading",
+        "text": "What about ranking on Google?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Short answer: both let you handle the essentials; WordPress gives you more control, Wix more simplicity. Wix includes its own SEO tools for your page titles and descriptions, which is enough for a brochure site. Self-hosted WordPress lets you choose the host, the theme and the structure of your page addresses, and accepts plugins dedicated to SEO: an advantage if you publish often. But no tool ranks you on its own: what matters is useful content, clear pages about your services and the area you cover, and a site that loads quickly on mobile. If your clients search in both English and Spanish, plan for both languages from the start, whichever tool you pick."
+      },
+      {
+        "type": "heading",
+        "text": "Can you switch tools later?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Short answer: with WordPress, yes; with Wix, you will have to rebuild. Wix explains this in its help centre: a Wix site runs on Wix's proprietary technology and cannot be hosted with another provider. Your text and images are yours, but if you ever want to leave, the site has to be rebuilt and the content moved across. Your domain, however, can be managed with another provider."
+      },
+      {
+        "type": "paragraph",
+        "text": "WordPress, by contrast, is built to move: its export tool creates a file of your content to import into another WordPress site, WordPress.com offers the same export and, if you host it yourself, your files and database can be copied to any compatible host. If your site is likely to grow over the coming years, this point carries a lot of weight."
+      },
+      {
+        "type": "heading",
+        "text": "Online shop or blog: what does each offer?"
+      },
+      {
+        "type": "paragraph",
+        "text": "To sell online, Wix builds in eCommerce from the Core plan (€25 a month excluding VAT on a yearly plan, checked on wix.com on 26 September 2026), with no plugins to install. On WordPress, a shop means WooCommerce, an open-source plugin whose core is free, or the WordPress.com Commerce plan at €45 a month excluding VAT on a yearly plan (checked on wordpress.com on 26 September 2026). WooCommerce is very flexible, but needs more upkeep."
+      },
+      {
+        "type": "paragraph",
+        "text": "For a blog, WordPress started life as a publishing tool. Wix has a blog too, perfectly adequate for a few articles a month. If content sits at the heart of your strategy, WordPress has the edge."
+      },
+      {
+        "type": "heading",
+        "text": "Wix or WordPress: which suits your situation?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Choose Wix if you want to build the site yourself, quickly and without wrestling with technology, if your site will stay simple (a few presentation pages and a contact form) and if you accept paying a fee for as long as the site exists, with no plan to change tools."
+      },
+      {
+        "type": "paragraph",
+        "text": "Choose WordPress.com if you want WordPress without managing a server, with a lower entry cost than Wix and the option to export your content later."
+      },
+      {
+        "type": "paragraph",
+        "text": "Choose WordPress.org with a hosting company if you want full control, an active blog, a WooCommerce shop or the freedom to move, and if you have the time for updates and backups, or the budget to hand them over."
+      },
+      {
+        "type": "conclusion",
+        "text": "There is no winner for everyone in the Wix or WordPress debate: Wix sells you peace of mind, WordPress gives you freedom. Work out the cost over three years and ask yourself how much time you want to spend on your website. If you have time for neither, there is a third way: have it done for you. At WebAutonomos it costs €15 a month with no set-up fee and no lock-in, or €349 paid once, with the same services either way: design, copy we write from your real business details, hosting, SSL certificate, daily backups, technical maintenance, legal pages and one change a month after launch. Your personalised demo is ready in under 24 hours, and you only pay once you have approved it."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is Wix free?",
+        "a": "Wix has a free plan that needs no card, but it shows a Wix banner ad and uses a wixsite.com address. To connect your own domain and remove the ad you need a paid plan, from €14 a month excluding VAT with Light on a yearly plan (price checked on wix.com on 26 September 2026)."
+      },
+      {
+        "q": "Is WordPress really free?",
+        "a": "The WordPress.org software is free and open source, under the GPL licence. What you pay for is hosting and a domain: at OVHcloud Spain, the Personal plan starts at €2.99 a month plus VAT for the first year and rises to €5.99 a month plus VAT on renewal (prices checked on ovhcloud.com on 26 September 2026). WordPress.com also has a free plan, with ads."
+      },
+      {
+        "q": "Can I move a Wix site to WordPress?",
+        "a": "Not directly. Wix states that its sites must run on its servers and cannot be hosted elsewhere. Your content is yours, but the site has to be rebuilt in WordPress and the text and images moved across. Your domain can then be connected to the new site."
+      },
+      {
+        "q": "Which is cheaper over three years?",
+        "a": "Using prices from the official websites on 26 September 2026, excluding VAT and domain renewal: €144 with WordPress.com Personal, €179.64 with WordPress.org on OVHcloud Personal and €504 with Wix Light on a yearly plan. Bear in mind that self-hosted WordPress needs maintenance time, and that time has a cost too."
+      },
+      {
+        "q": "Do I need to know how to code to use WordPress?",
+        "a": "No. WordPress is run through a block editor, with no code. But installing it with a host, choosing plugins and handling updates and backups calls for some technical confidence, or help from a professional."
+      }
+    ]
+  }
+}

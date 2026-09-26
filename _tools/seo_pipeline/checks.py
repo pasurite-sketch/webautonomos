@@ -10,6 +10,7 @@ Compare l'arbre de travail à un commit de base et bloque la publication si :
   - le title dépasse 580 px, il n'y a pas exactement un H1 ;
   - canonical, hreflang, bloc Trustpilot, formulaire, liens de démo ou prix
     ont été retirés ;
+  - un lien interne ajouté mène à une page absente ou à une redirection ;
   - un nombre non autorisé, un pourcentage ou une expression interdite
     (VERITE.md §7 et §8) a été ajouté ;
   - des mots espagnols courants sont écrits sans accent.
@@ -26,7 +27,7 @@ import argparse, html as H, json, os, re, subprocess, sys, unicodedata
 ROOT = subprocess.check_output(['git', 'rev-parse', '--show-toplevel']).decode().strip()
 P = os.path.join(ROOT, '_tools', 'seo_pipeline')
 GENERATEURS_IDEMPOTENTS = ['_tools/build_lang_homes.py', '_tools/build_metier_pages.py',
-                           '_tools/build_expat_pages.py']
+                           '_tools/build_expat_pages.py', '_tools/build_uk_pages.py']
 DEMO_RE = re.compile(r'href="[^"]*(#pide-demo|/pide-tu-demo|/demandez-votre-demo|/get-your-demo)[^"]*"')
 PRIX_RE = re.compile(r'(?<![\d,.])(15|349)\s?(€|euros?)|€\s?(15|349)(?![\d,])')
 ACCENTS_ES = re.compile(r'\b(pagina|paginas|diseno|disenos|informacion|tambien|ademas|facil|faciles|rapido|rapida|'
@@ -129,6 +130,44 @@ def faq_jsonld(s):
     return qs
 
 
+# Liens internes ajoutés : ils doivent mener à une page qui existe, sans passer par
+# une redirection (26/09 : /dentistas/ liait /blog/<slug>, redirigé vers /blog/es/<slug>).
+LIEN_RE = re.compile(r'href="(?:https?://(?:www\.)?webautonomos\.es)?(/[^"#?]*)[^"]*"')
+FICHIER_STATIQUE = re.compile(r'\.(css|js|png|jpe?g|webp|gif|svg|ico|xml|txt|json|webmanifest|pdf|mp4|webm)$', re.I)
+_REDIR = None
+
+
+def redirections():
+    global _REDIR
+    if _REDIR is None:
+        _REDIR = {}
+        f = os.path.join(ROOT, '_redirects')
+        if os.path.exists(f):
+            for l in open(f, encoding='utf-8'):
+                p = l.split()
+                if len(p) >= 2 and p[0].startswith('/'):
+                    _REDIR[p[0]] = p[1]
+    return _REDIR
+
+
+def liens_internes(s):
+    return {m.group(1) for m in LIEN_RE.finditer(s or '')
+            if not m.group(1).startswith('//') and not FICHIER_STATIQUE.search(m.group(1))}
+
+
+def cible_lien(chemin):
+    """'ok', ('redirection', cible) ou 'absente'."""
+    if chemin in redirections():
+        return ('redirection', redirections()[chemin])
+    f = chemin.strip('/')
+    if not f:
+        return 'ok'
+    for c in (f, f + '.html', f + '/index.html'):
+        if os.path.isfile(os.path.join(ROOT, c)):
+            return 'ok'
+    return 'absente'
+
+
 def controler_html(path, base_s, new_s, lang, bloquants, avert, infos):
     nom = path
     # équilibre des balises : l'écart ouvrantes/fermantes ne doit pas changer
@@ -166,6 +205,13 @@ def controler_html(path, base_s, new_s, lang, bloquants, avert, infos):
         deja = base_s is not None and compter(r'<h1\b', base_s) == n_h1
         (avert if deja else bloquants).append(f'{nom} : {n_h1} balises <h1> (attendu : 1)'
                                               f'{" — déjà le cas avant" if deja else ""}')
+    # liens internes ajoutés
+    for chemin in sorted(liens_internes(new_s) - liens_internes(base_s)):
+        r = cible_lien(chemin)
+        if r == 'absente':
+            bloquants.append(f'{nom} : lien interne vers une page qui n\'existe pas : {chemin}')
+        elif r != 'ok':
+            bloquants.append(f'{nom} : lien interne vers une redirection : {chemin} → utilise {r[1]}')
     if base_s is None:
         return
     # éléments protégés

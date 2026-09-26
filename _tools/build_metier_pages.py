@@ -1130,7 +1130,9 @@ KINE['en'] = dict(
               "Copy written without promises of cure, patient testimonials or price-led offers",
               "A link to your booking tool, WhatsApp or phone, and a contact form that asks only what it needs",
               "Your site in up to four languages, English and Spanish included, at no extra cost"],
-    spain_note='',
+    spain_note='<strong>Working in the UK instead?</strong> UK rules are different. See '
+               '<a href="https://webautonomos.es/en/physiotherapy-website-design">physiotherapy website '
+               'design for UK clinics</a>.',
     sources_t='Sources',
     why_ey='Why us', why_t='Built for physiotherapists who work in English',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
@@ -1426,7 +1428,9 @@ DENT['en'] = dict(
               "Prices shown as full final prices, and any financing with its representative example",
               "A link to your booking tool, WhatsApp or phone, and a contact form that asks only what it needs",
               "Your site in up to four languages, English and Spanish included, at no extra cost"],
-    spain_note='',
+    spain_note='<strong>Practising in the UK instead?</strong> UK rules are different. See '
+               '<a href="https://webautonomos.es/en/dental-website-design">dental website design for UK '
+               'practices</a>.',
     sources_t='Sources',
     why_ey='Why us', why_t='Built for dentists who work in English',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "

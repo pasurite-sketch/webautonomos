@@ -3,7 +3,7 @@
 > **Règle absolue pour les agents** : toute affirmation factuelle sur WebAutonomos
 > (prix, délais, services, langues, chiffres, clients, ancienneté, résultats)
 > qui n'est pas écrite ici est **interdite**. Le relecteur rejette la page.
-> Tenu à jour par Angelino. Dernière révision : 25/09/2026 (soir).
+> Tenu à jour par Angelino. Dernière révision : 26/09/2026.
 > Les lignes marquées **À CONFIRMER** ne doivent pas être utilisées tant
 > qu'Angelino ne les a pas tranchées.
 
@@ -16,7 +16,7 @@
 - Email : info@webautonomos.es
 - Équipe basée dans la province de Valencia ; travail à distance (email, WhatsApp, visioconférence)
 - Langues de travail avec le client : espagnol, français et anglais (« we work with you in English », confirmé le 25/09/2026)
-- Clients en Espagne et en France
+- Clients en Espagne, en France et au Royaume-Uni (Royaume-Uni accepté par Angelino le 26/09/2026)
 - Pourquoi le prix est bas (confirmé par Angelino le 25/09/2026) : système propre qui réutilise des composants testés ; pas de bureaux luxueux ni de commerciaux à commission (« usamos un sistema propio que reutiliza componentes testados », « no tenemos oficinas lujosas ni comerciales a comisión »)
 
 ## 2. Offre
@@ -37,6 +37,12 @@
   - optimisation SEO de base (titres et textes avec service et zone, données cohérentes avec la fiche Google)
 - Domaine : .es au nom du client, **inclus la première année**, ensuite environ **12 €/an** ; le client garde son domaine s'il part
 - Clients en France : domaine en **.fr** (confirmé le 25/09/2026)
+- **Clients au Royaume-Uni** (décisions d'Angelino du 26/09/2026) :
+  - prix en euros **sans TVA ajoutée** (« prix en € sans TVA ») : 15 €/mois ou 349 € ; sur les pages destinées au Royaume-Uni, écrire « no VAT added », jamais « + VAT » ni « + IVA »
+  - équivalent indicatif en livres, toujours avec « about » : **about £13** par mois, **about £300** en paiement unique (taux du 25/09/2026 : 1 € = 0,86 £) ; préciser que le montant en livres dépend du taux de change
+  - domaine **.co.uk ou .uk** au nom du client, fourni comme le .es (inclus la première année) ; prix du renouvellement non confirmé : ne pas l'annoncer
+  - textes légaux (privacy policy, cookie notice) **adaptés au droit britannique (UK GDPR)**
+  - pages concernées : /en/dental-website-design et /en/physiotherapy-website-design (générées par `_tools/build_uk_pages.py`)
 - Propriété de la web : avec la formule 349 €, la web est au client (« pagas una vez y la web es tuya », cartes de prix du site) ; en alquiler, ne pas écrire que la web lui appartient (seul le domaine est à lui)
 - **Non inclus, ne jamais l'annoncer** (déclaré par Angelino le 25/09/2026) :
   - aucune intégration d'agenda ou de système de réservation en ligne (Calendly, Doctoralia, Bookitit, Doctolib, logiciels de clinique…) et aucun rappel automatique par SMS ou email ; les demandes arrivent par le formulaire (email) et par WhatsApp
@@ -87,6 +93,7 @@ Les seuls nombres qu'un agent peut **ajouter** dans une page (en plus de ceux d�
 
 ```
 15, 349, 12, 24, 4, 21, 1, 7
+13, 300, 0,86 (pages britanniques uniquement : équivalents en livres)
 4,3, 8, 29
 2026
 961 877 356, 654 23 95 20, 46870, 26
@@ -150,6 +157,7 @@ qu[eé] dolor resuelve
 - Ne jamais ajouter : promesses de guérison, de soulagement (« qué dolor resuelve ») ou de résultat, titres « especialista » / « especialidades », prix promotionnels ou « offres », avant/après cliniques, demande du motif de consultation dans le formulaire
 - Conserver intactes les sections « règles » / « lo que tu web debe cumplir » existantes des pages métier
 - Ces pages sont en mode **validation** : jamais fusionnées sans l'accord d'Angelino
+- **Pages santé britanniques** (/en/dental-website-design, /en/physiotherapy-website-design) : mêmes interdits, plus les règles britanniques déjà citées dans leur tableau (sources officielles vérifiées le 26/09/2026) : pas de « specialist » ni « specialising in » (dentistes hors liste GDC), pas de nom de médicament sur prescription (Botox), pas de « cure », avis affichés seulement s'ils sont authentiques et sans masquer les avis négatifs (CAP Code 3.44 à 3.50). N'ajoute aucune règle britannique absente du tableau.
 
 ## 10. À CONFIRMER par Angelino
 

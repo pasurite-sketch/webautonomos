@@ -159,6 +159,12 @@ Relevées sur les pages du 24 et du 25/09/2026 :
   est interdit —, pas de « especialista » / « especialidades », ne demande pas le
   motif de consultation dans le formulaire). Les avis réels de la fiche Google
   sont autorisés (décision d'Angelino, §9).
+- **Liens internes** : utilise l'adresse finale de la page (`/blog/es/<slug>`, pas
+  `/blog/<slug>`) ; un lien vers une redirection ou une page absente est bloqué par
+  `checks.py` (26/09 : trois liens de /dentistas/ passaient par une redirection).
+- **Pages britanniques** (`en-uk-*`) : prix « €15 a month (about £13) », « €349 (about
+  £300) », « no VAT added », jamais « + VAT » ; le tableau des règles britanniques est
+  protégé comme les sections « règles » des pages santé (VERITE.md §2 et §9).
 - **Phrases sans verbe, H3 hors sujet sous un H2, même énumération répétée
   plusieurs fois** : le relecteur les renvoie. Relis la page d'un bout à l'autre.
 

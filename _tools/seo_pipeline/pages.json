@@ -5,7 +5,8 @@
     "requete_a_confirmer=true : requête proposée sans donnée Search Console ; le circuit la saute tant qu'Angelino ne la passe pas à false.",
     "generateur : si renseigné, modifier le SCRIPT (pas la page) puis le relancer.",
     "requetes_secondaires : variantes à placer naturellement (H2, FAQ, texte), sans changer la requête principale du title.",
-    "donnees : origine des volumes (Search Console ou outil de mots-clés d'Angelino)."
+    "donnees : origine des volumes (Search Console ou outil de mots-clés d'Angelino).",
+    "langue_serpmantics : code SERPmantics propre à la page (ex. en-gb pour les pages britanniques), prioritaire sur langues_serpmantics."
   ],
   "langues_serpmantics": {
     "es": "es-es",
@@ -15,9 +16,21 @@
   "seuil_vert": 50,
   "seuil_rouge": 25,
   "sources_geo": [
-    {"cle": "geo", "source": "google_ai_overview_citations", "nom": "AI Overview de Google"},
-    {"cle": "chatgpt", "source": "chatgpt_citations", "nom": "ChatGPT (pages citées)"},
-    {"cle": "gemini", "source": "gemini_citations", "nom": "Gemini (pages citées)"}
+    {
+      "cle": "geo",
+      "source": "google_ai_overview_citations",
+      "nom": "AI Overview de Google"
+    },
+    {
+      "cle": "chatgpt",
+      "source": "chatgpt_citations",
+      "nom": "ChatGPT (pages citées)"
+    },
+    {
+      "cle": "gemini",
+      "source": "gemini_citations",
+      "nom": "Gemini (pages citées)"
+    }
   ],
   "geo_hors_cible_regle": "Décision d'Angelino du 26/09/2026 : un guide GEO dont les pages citées visent un autre public (ex. « trouver un menuisier » au lieu de « site pour menuisiers ») est déclaré hors cible pour la page : mesuré et affiché, mais exclu des seuils et de la moyenne GEO.",
   "objectif_geo_regle": "Décision d'Angelino du 25/09/2026 : GEO au vert (≥ seuil_vert) obligatoire pour les articles (blog, comparatifs, tarifs, devis) ; « au_mieux » pour les pages de vente (métiers, accueils, services).",
@@ -102,7 +115,9 @@
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "au_mieux",
-      "geo_hors_cible": ["geo"],
+      "geo_hors_cible": [
+        "geo"
+      ],
       "statut": "fait",
       "priorite": 1,
       "notes": "Garder le bloc Trustpilot intact. L'article blog/es/web-para-carpinteros-reformas vise aussi ce sujet : ajouter un lien vers /carpinteros/ plutôt que concurrencer. Publiée le 25/09/2026 (PR #2) : score Google 45 → 73, GEO 6 → 13."
@@ -145,7 +160,9 @@
       "generateur": null,
       "mode": "validation",
       "objectif_geo": "au_mieux",
-      "geo_hors_cible": ["chatgpt"],
+      "geo_hors_cible": [
+        "chatgpt"
+      ],
       "statut": "fait",
       "priorite": 1,
       "notes": "SANTÉ. Publiée le 25/09/2026 (PR #5) : score Google 13 → 39, GEO 9 → 19."
@@ -255,60 +272,75 @@
       "slug": "fr-psychologue",
       "url": "https://webautonomos.es/fr/site-internet-psychologue-therapeute",
       "lang": "fr",
-      "requete": "site internet psychologue",
-      "requete_a_confirmer": true,
+      "requete": "site internet thérapeute",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "site internet psychologue",
+        "création site internet psychologue"
+      ],
       "fichier": "fr/site-internet-psychologue-therapeute.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
-      "priorite": 3,
-      "notes": "SANTÉ. Règles françaises (titre, RPPS).",
+      "priorite": 1,
+      "notes": "SANTÉ. Règles françaises (titre, RPPS). Semrush France 26/09/2026 : « site internet thérapeute » 140/mois KD 8 ; « site internet psychologue » 140 KD 36 ; « création site internet psychologue » 40 KD 10.",
       "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
       "slug": "fr-menuisier",
       "url": "https://webautonomos.es/fr/site-internet-menuisier",
       "lang": "fr",
-      "requete": "site internet menuisier",
-      "requete_a_confirmer": true,
+      "requete": "création site internet menuisier",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "site internet menuisier"
+      ],
       "fichier": "fr/site-internet-menuisier.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "auto",
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
-      "priorite": 3,
-      "notes": "",
+      "priorite": 1,
+      "notes": "Semrush France 26/09/2026 : « création site internet menuisier » 110/mois KD 9 ; « site internet menuisier » 30 KD 6.",
       "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
       "slug": "fr-kine",
       "url": "https://webautonomos.es/fr/site-internet-kinesitherapeute",
       "lang": "fr",
-      "requete": "site internet kinésithérapeute",
-      "requete_a_confirmer": true,
+      "requete": "site internet kiné",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "site internet kinésithérapeute",
+        "création site internet kiné"
+      ],
       "fichier": "fr/site-internet-kinesitherapeute.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
-      "notes": "SANTÉ. R4321-123, R4321-98.",
+      "notes": "SANTÉ. R4321-123, R4321-98. Semrush France 26/09/2026 : « site internet kiné » 20/mois KD 9 ; « site internet kinésithérapeute » 20 KD 9 ; « création site internet kiné » 10 KD 7. Petit volume.",
       "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
       "slug": "fr-dentiste",
       "url": "https://webautonomos.es/fr/site-internet-dentiste",
       "lang": "fr",
-      "requete": "site internet dentiste",
-      "requete_a_confirmer": true,
+      "requete": "création site internet dentiste",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "site internet dentiste",
+        "site internet cabinet dentaire"
+      ],
       "fichier": "fr/site-internet-dentiste.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
-      "priorite": 3,
-      "notes": "SANTÉ.",
+      "priorite": 1,
+      "notes": "SANTÉ. Semrush France 26/09/2026 : « création site internet dentiste » 110/mois KD 11 ; « site internet dentiste » 110 KD 44 ; « site internet cabinet dentaire » 40 KD 60.",
       "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
@@ -321,24 +353,27 @@
       "generateur": "_tools/build_expat_pages.py",
       "mode": "auto",
       "objectif_geo": "au_mieux",
-      "statut": "a_faire",
+      "statut": "hors_circuit",
       "priorite": 3,
-      "notes": "",
+      "notes": "Hors circuit le 26/09/2026 : aucune requête avec du volume (Semrush France et Espagne : « site internet espagne » 10/mois, les autres n/a).",
       "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
       "slug": "fr-comparatif",
       "url": "https://webautonomos.es/fr/meilleurs-createurs-de-sites-pour-independants",
       "lang": "fr",
-      "requete": "meilleur créateur de site internet pour indépendant",
-      "requete_a_confirmer": true,
+      "requete": "meilleur créateur de site",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "meilleur créateur de site internet"
+      ],
       "fichier": "fr/meilleurs-createurs-de-sites-pour-independants.html",
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "vert",
       "statut": "a_faire",
-      "priorite": 3,
-      "notes": "Modifier la page directement (script à usage unique). Prix concurrents relevés le 23/09.",
+      "priorite": 2,
+      "notes": "Modifier la page directement (script à usage unique). Prix concurrents relevés le 23/09. Semrush France 26/09/2026 : « meilleur créateur de site » 40/mois KD 27 ; « meilleur créateur de site internet » 20 KD 26. « wix ou wordpress » (590/mois, KD 34) mérite un article dédié, pas cette page.",
       "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
@@ -366,14 +401,14 @@
       "url": "https://webautonomos.es/en/pricing",
       "lang": "en",
       "requete": "website cost spain",
-      "requete_a_confirmer": true,
+      "requete_a_confirmer": false,
       "fichier": "en/pricing.html",
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "vert",
       "statut": "a_faire",
       "priorite": 2,
-      "notes": ""
+      "notes": "Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne (prix + VAT espagnole). Semrush 26/09/2026 : volume quasi nul en Espagne ; objectif principal : être cité par les IA (GEO)."
     },
     {
       "slug": "en-services",
@@ -424,7 +459,9 @@
       "generateur": "_tools/build_metier_pages.py",
       "mode": "auto",
       "objectif_geo": "au_mieux",
-      "geo_hors_cible": ["chatgpt"],
+      "geo_hors_cible": [
+        "chatgpt"
+      ],
       "statut": "fait",
       "priorite": 1,
       "notes": "'websites for carpenters' 65 imp. + 'carpenters websites' 52 imp. (GSC 16 mois). Publiée le 25/09/2026 (PR #7) : score Google 41 → 53, GEO 10 → 20."
@@ -434,56 +471,95 @@
       "url": "https://webautonomos.es/en/website-for-physiotherapists-in-spain",
       "lang": "en",
       "requete": "website for physiotherapists spain",
-      "requete_a_confirmer": true,
+      "requete_a_confirmer": false,
       "fichier": "en/website-for-physiotherapists-in-spain.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
-      "notes": "SANTÉ."
+      "notes": "SANTÉ. Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne. Semrush 26/09/2026 : volume quasi nul pour les requêtes anglaises en Espagne ; objectif principal : être cité par les IA (GEO). Les cabinets britanniques ont leurs propres pages (en-uk-*) : garder le lien vers elles (spain_note), ne pas viser le Royaume-Uni ici."
     },
     {
       "slug": "en-dentists",
       "url": "https://webautonomos.es/en/website-for-dentists-in-spain",
       "lang": "en",
       "requete": "website for dentists spain",
-      "requete_a_confirmer": true,
+      "requete_a_confirmer": false,
       "fichier": "en/website-for-dentists-in-spain.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
-      "notes": "SANTÉ."
+      "notes": "SANTÉ. Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne. Semrush 26/09/2026 : volume quasi nul pour les requêtes anglaises en Espagne ; objectif principal : être cité par les IA (GEO). Les cabinets britanniques ont leurs propres pages (en-uk-*) : garder le lien vers elles (spain_note), ne pas viser le Royaume-Uni ici."
+    },
+    {
+      "slug": "en-uk-dentists",
+      "url": "https://webautonomos.es/en/dental-website-design",
+      "lang": "en",
+      "langue_serpmantics": "en-gb",
+      "requete": "dental website design",
+      "requete_a_confirmer": false,
+      "fichier": "en/dental-website-design.html",
+      "generateur": "_tools/build_uk_pages.py",
+      "mode": "validation",
+      "objectif_geo": "au_mieux",
+      "statut": "a_faire",
+      "priorite": 1,
+      "notes": "SANTÉ, ROYAUME-UNI. Page créée le 26/09/2026 par _tools/build_uk_pages.py : modifier DENTAL dans ce script puis le relancer. Public : cabinets dentaires au Royaume-Uni (clients britanniques acceptés le 26/09/2026). Prix : « €15 a month (about £13) », « €349 (about £300) », « no VAT added » (VERITE.md §2), jamais « + VAT ». Garder intact le tableau des règles britanniques (sources officielles vérifiées le 26/09/2026) et n'y ajouter aucune règle. Garder le lien vers la page « in Spain » (spain_note). Ne pas cibler l'Espagne : la page « in Spain » s'en charge.",
+      "donnees": "Semrush Royaume-Uni, 26/09/2026 : « dental website design » 720/mois, KD 15."
+    },
+    {
+      "slug": "en-uk-physio",
+      "url": "https://webautonomos.es/en/physiotherapy-website-design",
+      "lang": "en",
+      "langue_serpmantics": "en-gb",
+      "requete": "physiotherapy website design",
+      "requete_a_confirmer": false,
+      "fichier": "en/physiotherapy-website-design.html",
+      "generateur": "_tools/build_uk_pages.py",
+      "mode": "validation",
+      "objectif_geo": "au_mieux",
+      "statut": "a_faire",
+      "priorite": 1,
+      "notes": "SANTÉ, ROYAUME-UNI. Page créée le 26/09/2026 par _tools/build_uk_pages.py : modifier PHYSIO dans ce script puis le relancer. Public : kinésithérapeutes et cabinets de kinésithérapie au Royaume-Uni (clients britanniques acceptés le 26/09/2026). Prix : « €15 a month (about £13) », « €349 (about £300) », « no VAT added » (VERITE.md §2), jamais « + VAT ». Garder intact le tableau des règles britanniques (sources officielles vérifiées le 26/09/2026) et n'y ajouter aucune règle. Garder le lien vers la page « in Spain » (spain_note). Ne pas cibler l'Espagne : la page « in Spain » s'en charge.",
+      "donnees": "Semrush Royaume-Uni, 26/09/2026 : « physiotherapy website design » 110/mois, KD 3."
     },
     {
       "slug": "en-expats",
       "url": "https://webautonomos.es/en/web-design-for-expats-in-spain",
       "lang": "en",
-      "requete": "web design for expats in spain",
-      "requete_a_confirmer": true,
+      "requete": "web design spain",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "web design for expats"
+      ],
       "fichier": "en/web-design-for-expats-in-spain.html",
       "generateur": "_tools/build_expat_pages.py",
       "mode": "auto",
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 2,
-      "notes": ""
+      "notes": "Semrush Espagne 26/09/2026 : « web design spain » 40/mois KD 25, seule requête anglaise avec du volume en Espagne."
     },
     {
       "slug": "en-comparatif",
       "url": "https://webautonomos.es/en/best-website-builders-for-freelancers-in-spain",
       "lang": "en",
       "requete": "best website builder for freelancers spain",
-      "requete_a_confirmer": true,
+      "requete_a_confirmer": false,
       "fichier": "en/best-website-builders-for-freelancers-in-spain.html",
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "vert",
       "statut": "a_faire",
       "priorite": 3,
-      "notes": "Modifier la page directement (script à usage unique)."
+      "notes": "Modifier la page directement (script à usage unique). Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne (prix + VAT espagnole). Semrush 26/09/2026 : volume quasi nul en Espagne ; objectif principal : être cité par les IA (GEO).",
+      "requetes_secondaires": [
+        "best website builder for freelancers"
+      ],
+      "donnees": "Semrush Royaume-Uni 26/09/2026 : « best website builder for freelancers » 70/mois (volume britannique, page orientée Espagne)."
     }
   ]
 }

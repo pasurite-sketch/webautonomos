@@ -138,8 +138,9 @@ def entree(slug):
 
 def lang_codes(e):
     """Codes de langue SERPmantics à essayer, dans l'ordre (pages.json :
-    « en-es (si SERPmantics le refuse : en-gb) » → ['en-es', 'en-gb'])."""
-    brut = cfg().get('langues_serpmantics', {}).get(e['lang'], e['lang'])
+    « en-es (si SERPmantics le refuse : en-gb) » → ['en-es', 'en-gb']). Le champ
+    « langue_serpmantics » de la page, s'il existe, prime (pages britanniques : en-gb)."""
+    brut = e.get('langue_serpmantics') or cfg().get('langues_serpmantics', {}).get(e['lang'], e['lang'])
     codes = [c.lower() for c in re.findall(r'\b([a-z]{2}-[a-z]{2})\b', brut, re.I)]
     return list(dict.fromkeys(codes)) or [brut.strip().lower()]
 
