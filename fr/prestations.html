@@ -64,9 +64,9 @@
              display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:10px; }
   ul.plain li { padding:11px 14px; background:var(--off);
                 border:1px solid var(--border); border-radius:10px; font-size:0.97rem; }
-  dl.qa { margin:0 0 26px; }
-  dl.qa dt { font-weight:600; margin:18px 0 6px; }
-  dl.qa dd { margin:0; color:var(--gray); line-height:1.7; }
+  .qa { margin:0 0 26px; }
+  .qa h3 { font-family:inherit; font-weight:600; font-size:1rem; margin:18px 0 6px; }
+  .qa p { color:var(--gray); line-height:1.7; margin:0; }
   .actions { display:flex; flex-wrap:wrap; gap:14px; margin:28px 0 0; }
   .btn { display:inline-flex; align-items:center; gap:8px; padding:14px 26px;
          border-radius:999px; font-weight:600; font-size:1rem; text-decoration:none;
@@ -215,7 +215,7 @@
       "name": "Comment obtenir un devis pour un site internet ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pour un site vitrine, vous n'avez pas besoin d'attendre un devis : le prix est déjà fixé, 15 €/mois HT ou 349 € HT en paiement unique. Demandez votre démonstration gratuite, et en moins de 24 heures vous voyez votre site avec son prix, avant tout paiement."
+        "text": "Pour un site vitrine, vous n'avez pas besoin d'attendre un devis : le prix est déjà fixé, 15 €/mois HT ou 349 € HT en paiement unique. Demandez votre démonstration gratuite, et en moins de 24 heures vous voyez votre site et son prix, avant tout paiement."
       }
     },
     {
@@ -231,7 +231,7 @@
       "name": "Combien de temps faut-il pour obtenir un devis de création de site internet ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pour un site vitrine, aucun délai à surveiller, puisqu'il n'y a pas de devis à établir : le prix est fixe. Ce que vous recevez rapidement, c'est une démonstration personnalisée, en moins de 24 heures après votre demande."
+        "text": "Pour un site vitrine, aucun délai à surveiller, puisqu'il n'y a pas de devis à établir : le tarif est fixe. Ce que vous recevez rapidement, c'est une démonstration adaptée à votre métier, en moins de 24 heures après votre demande."
       }
     },
     {
@@ -239,7 +239,7 @@
       "name": "Y a-t-il des frais en plus du prix affiché ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Il n'y a pas de frais d'installation : vous payez 15 €/mois ou 349 € une fois, hors taxes (IVA espagnole de 21 %, sauf entreprise établie dans un autre pays de l'UE avec un numéro de TVA intracommunautaire). Le nom de domaine est inclus la première année, puis coûte environ 12 €/an. Un changement important après la mise en ligne, comme une nouvelle grande section, fait l'objet d'un devis ferme."
+        "text": "Il n'y a pas de frais d'installation : vous payez 15 €/mois ou 349 € une fois, hors taxes (IVA espagnole de 21 %, sauf entreprise établie dans un autre pays de l'UE avec un numéro de TVA intracommunautaire). Le domaine est inclus la première année, puis coûte environ 12 €/an. Un changement important après la mise en ligne, comme une nouvelle grande section, fait l'objet d'un devis ferme."
       }
     },
     {
@@ -247,7 +247,7 @@
       "name": "Et si mon projet est une boutique en ligne ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Les boutiques en ligne ne sont pas incluses dans les formules à 15 €/mois ou 349 € : elles font l'objet d'un devis personnalisé, car chaque projet de vente en ligne a des besoins différents."
+        "text": "Les boutiques en ligne ne sont pas incluses dans les formules à 15 €/mois ou 349 € : elles font l'objet d'un devis sur mesure, car chaque projet de vente en ligne a des besoins différents."
       }
     },
     {
@@ -265,6 +265,22 @@
         "@type": "Answer",
         "text": "Non. WebAutonomos ne demande pas de cahier des charges : un formulaire simple avec vos informations réelles (métier, zone d'activité, coordonnées) suffit pour recevoir votre démonstration en moins de 24 heures."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Le support est-il inclus après la mise en ligne ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Le support par email ou WhatsApp est inclus dans les deux formules, avec une réponse dans la journée. Une modification par mois est comprise, sans limite de durée, et, en location, vous pouvez arrêter quand vous le souhaitez, sans pénalité ni durée minimale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que se passe-t-il si la démonstration ne me convient pas ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vous ne payez rien : la démonstration est gratuite et sans engagement. Vous pouvez demander des retouches, ou en rester là sans aucune obligation."
+      }
     }
   ]
 }</script>
@@ -278,7 +294,7 @@
   <p class="crumb"><a href="/fr/">Accueil</a> &rsaquo; Prestations</p>
   <h1>Devis site internet : prix fixe et démo en 24 h</h1>
   <p class="lede">Vous cherchez un devis pour votre site internet ? Chez
-  WebAutonomos, inutile d'en réclamer un : le prix de votre site internet
+  WebAutonomos, inutile d'en réclamer un : le prix de votre site web
   professionnel est déjà fixé et public, 15 €/mois ou 349 € en paiement
   unique. Au lieu d'un devis à attendre, vous recevez une démonstration de
   votre futur site web avec son prix affiché, en moins de 24 heures et avant
@@ -287,58 +303,59 @@
   <p class="tax-note">Prix hors taxes. L'IVA espagnole de 21 % s'ajoute. Si votre entreprise est établie dans un autre pays de l'UE, en France par exemple, avec un numéro de TVA intracommunautaire, la facture est émise sans TVA et vous déclarez la TVA vous-même (autoliquidation).</p>
 
   <h2>Devis site internet : l'essentiel en un coup d'œil</h2>
-  <p>Pour une réponse rapide, avant le détail plus bas sur cette page :</p>
+  <p>Les réponses en bref ; le détail suit plus bas sur cette page.</p>
   <table class="dtable">
     <thead><tr><th>Question</th><th>Réponse chez WebAutonomos</th></tr></thead>
     <tbody>
-      <tr><td>Faut-il un devis ?</td><td>Non, pas pour un site vitrine : le prix est déjà fixé</td></tr>
+      <tr><td>Faut-il un devis ?</td><td>Non, pas pour un site vitrine : le tarif est déjà fixé</td></tr>
       <tr><td>Prix</td><td>15 €/mois HT ou 349 € HT en paiement unique</td></tr>
       <tr><td>Délai avant de voir le résultat</td><td>Moins de 24 heures, avant tout paiement</td></tr>
       <tr><td>Engagement</td><td>Aucun : en location, vous prévenez par email ou WhatsApp et vous arrêtez de payer</td></tr>
-      <tr><td>Cas avec devis</td><td>Boutique en ligne (devis personnalisé) ou changement important après la mise en ligne (devis ferme)</td></tr>
+      <tr><td>Cas avec devis</td><td>Boutique en ligne (devis sur mesure) ou changement important une fois le site en ligne (devis ferme)</td></tr>
     </tbody>
   </table>
 
   <h2>Faut-il vraiment demander un devis pour un site internet ?</h2>
-  <p>Non, pas pour un site vitrine : chez WebAutonomos, son prix ne dépend ni
+  <p>Non, pas pour un site vitrine : chez WebAutonomos, son tarif ne dépend ni
   de votre secteur, ni de la taille de votre entreprise, ni d'un rendez-vous
   téléphonique préalable. Il y a deux formules, et ce sont les seules. En
   location, 15 €/mois, sans frais d'installation et sans engagement. En
   propriété, 349 € en une fois. Les services inclus sont identiques dans les
-  deux cas. Seule une boutique en ligne fait l'objet d'un devis personnalisé.</p>
-  <p>Ailleurs, demander un devis de création de site internet veut souvent dire
+  deux cas. Seule une boutique en ligne fait l'objet d'un devis sur mesure.</p>
+  <p>Ailleurs, demander un devis de création d'un site internet veut souvent dire
   remplir un formulaire, décrire un projet, puis attendre une réponse chiffrée
   qui peut varier d'un prestataire à l'autre. Ce travail est déjà fait sur cette
   page : le budget est connu avant même le premier échange. Pas de devis gratuit
-  à réclamer par courriel, pas de délai à surveiller : le prix est affiché
+  à réclamer par courriel, pas de délai à surveiller : le coût est affiché
   d'avance, que vous soyez plombier à Lyon, kinésithérapeute à Nantes ou
   menuisier installé en Belgique.</p>
 
   <h2>Devis classique en agence ou en freelance : les montants habituels</h2>
-  <p>En Espagne, un site professionnel réalisé par un freelance coûte souvent
-  entre 800 € et 2 000 €, et par une agence entre 1 500 € et 4 000 €, hors
-  maintenance — des montants qui reviennent régulièrement dans un devis
+  <p>En Espagne, un site professionnel réalisé par un freelance représente un
+  budget de 800 € à 2 000 €, et par une agence de 1 500 € à 4 000 €, hors
+  maintenance — des coûts qui reviennent régulièrement dans un devis
   classique (source :
   <a href="https://www.socialmediapymes.com/cuanto-cuesta-una-web/">Social Media Pymes, 2026</a>).
-  Chez WebAutonomos, un site vitrine coûte 15 €/mois sans engagement, ou
-  349 € en paiement unique, maintenance comprise. Pour le détail et une
+  Chez WebAutonomos, un site vitrine professionnel coûte 15 €/mois sans
+  engagement, ou 349 € en paiement unique, conception et maintenance
+  comprises. Pour le détail et une
   comparaison avec les offres françaises, voyez notre page sur le
   <a href="/fr/tarifs">prix d'un site internet</a>.</p>
   <table class="dtable">
-    <thead><tr><th>Facteur de prix</th><th>Devis classique (agence/freelance)</th><th>Chez WebAutonomos</th></tr></thead>
+    <thead><tr><th>Facteur de coût</th><th>Devis classique (agence/freelance)</th><th>Chez WebAutonomos</th></tr></thead>
     <tbody>
       <tr><td>Design</td><td>Sur mesure en option, modèle sinon</td><td>Design personnalisé à partir de vos informations, inclus</td></tr>
       <tr><td>Contenu (textes, photos)</td><td>Rédaction souvent facturée à part</td><td>Rédigé à partir de vos données réelles, inclus</td></tr>
       <tr><td>Fonctionnalités (formulaire, multilingue)</td><td>Variable selon le prestataire</td><td>Incluses, jusqu'à 4 langues</td></tr>
-      <tr><td>Maintenance</td><td>Souvent un contrat séparé</td><td>Incluse dans le prix</td></tr>
-      <tr><td>Boutique en ligne (e-commerce)</td><td>Devis personnalisé, très variable</td><td>Devis personnalisé, comme ailleurs</td></tr>
+      <tr><td>Maintenance</td><td>Souvent un contrat séparé</td><td>Incluse, sans supplément</td></tr>
+      <tr><td>Boutique en ligne (e-commerce)</td><td>Devis calculé au cas par cas, très variable</td><td>Devis sur mesure, comme ailleurs</td></tr>
     </tbody>
   </table>
   <p class="note">Comparaison à titre indicatif : les pratiques varient d'un prestataire à l'autre.</p>
 
   <h2>Pourquoi le prix d'un devis varie autant d'un prestataire à l'autre</h2>
   <p>Le montant d'un devis de création de site internet dépend rarement d'un
-  seul critère. Les prestataires fixent leur prix selon plusieurs facteurs :</p>
+  seul critère. Les prestataires fixent leur tarif selon plusieurs facteurs :</p>
   <ul class="plain">
     <li>Le nombre de pages du site</li>
     <li>Le design : sur mesure ou modèle générique</li>
@@ -348,10 +365,10 @@
     <li>Le type de site : vitrine simple ou boutique en ligne (e-commerce)</li>
   </ul>
   <p>C'est ce qui explique pourquoi deux devis pour un projet similaire peuvent
-  afficher des prix très différents. Chez WebAutonomos, le prix d'un site
+  afficher des montants très différents. Chez WebAutonomos, le prix d'un site
   vitrine ne se calcule pas au cas par cas : le tableau ci-dessus résume ce
   que comprennent les 15 €/mois ou les 349 €. À la création, seule la
-  boutique en ligne sort de ce cadre, avec un devis personnalisé.</p>
+  boutique en ligne sort de ce cadre, avec un devis sur mesure.</p>
 
   <h2>Comment obtenir votre devis de site internet en pratique</h2>
   <p>Pour un site vitrine, il n'y a pas de devis à proprement parler ; voici ce
@@ -361,34 +378,35 @@
     vos informations réelles (métier, zone d'activité, coordonnées).</li>
     <li>WebAutonomos conçoit le site web à partir de ces informations et de
     votre fiche Google : nous rédigeons les textes et utilisons vos photos.</li>
-    <li>Vous recevez votre démonstration personnalisée en moins de 24 heures,
-    avec le prix déjà annoncé.</li>
+    <li>Vous recevez votre démonstration en moins de 24 heures, avec le
+    montant déjà annoncé.</li>
     <li>Vous demandez les retouches nécessaires ; elles sont illimitées tant
     que le site n'est pas en ligne.</li>
     <li>Le site n'est mis en ligne, et rien n'est facturé, qu'après votre
     accord.</li>
   </ol>
-  <p>C'est ce parcours qui remplace le devis classique de création de site
-  internet : pas de document PDF à commenter à distance, un résultat concret à
-  juger.</p>
+  <p>C'est ce parcours qui remplace le devis classique de création d'un site
+  internet, et vous fait gagner du temps : pas de document PDF à commenter à
+  distance, un résultat concret à juger.</p>
 
   <h2>Ce qu'il faut vérifier dans un devis de site internet, même ailleurs</h2>
   <p>Que vous restiez chez WebAutonomos ou non, voici les questions à poser
-  avant de signer n'importe quel devis de création de site internet :</p>
+  avant de signer n'importe quel devis de création de site internet, pour
+  rester dans votre budget :</p>
   <ul class="plain">
-    <li>Le prix inclut-il l'hébergement et le nom de domaine, ou faut-il les payer à part ?</li>
+    <li>Le coût inclut-il l'hébergement et le nom de domaine, ou faut-il les payer à part ?</li>
     <li>Qui rédige le contenu (textes, photos) : vous ou le prestataire ?</li>
-    <li>Une modification après la mise en ligne est-elle incluse, ou facturée à l'heure ?</li>
-    <li>Le nom de domaine est-il déposé à votre nom ?</li>
+    <li>Une modification une fois le site en ligne est-elle incluse, ou facturée à l'heure ?</li>
+    <li>Le domaine reste-t-il déposé à votre nom si vous partez ?</li>
     <li>Y a-t-il une durée d'engagement, et des frais si vous partez avant ?</li>
     <li>Le site est-il pensé pour le mobile et pour le référencement local ?</li>
   </ul>
   <p>Ces questions permettent de comparer un devis à un autre sur des bases
-  identiques, plutôt que sur le seul prix affiché en bas de page. Chez
+  identiques, plutôt que sur le seul coût affiché en bas de page. Chez
   WebAutonomos, les réponses sont déjà sur cette page : hébergement inclus,
-  nom de domaine inclus la première année puis environ 12 €/an, contenu
-  rédigé pour vous, une modification par mois comprise, domaine déposé à
-  votre nom, aucun engagement et une optimisation SEO de base dès la
+  domaine inclus la première année puis environ 12 €/an et gardé par vous
+  en cas de départ, contenu rédigé pour vous, une modification par mois
+  comprise, aucun engagement et une optimisation SEO de base dès la
   création.</p>
 
   <h2>Site internet professionnel — 15 €/mois</h2>
@@ -400,7 +418,7 @@
   <ul class="plain">
     <li>Conception graphique sur mesure</li>
     <li>Hébergement et certificat SSL</li>
-    <li>Nom de domaine à votre nom, inclus la première année (environ 12 €/an ensuite)</li>
+    <li>Domaine à votre nom, inclus la première année (environ 12 €/an ensuite)</li>
     <li>Affichage mobile soigné</li>
     <li>Formulaire de contact et bouton WhatsApp</li>
     <li>Textes légaux inclus (mentions légales, confidentialité, cookies)</li>
@@ -410,16 +428,16 @@
     <li>Une modification par mois, sans limite de durée</li>
   </ul>
   <p>Le site est livré en moins de 24 heures. Vous validez une démonstration
-  construite avec vos vraies informations avant toute mise en ligne, et rien
+  construite avec vos vraies informations avant toute publication, et rien
   n'est facturé tant que vous n'avez pas dit oui. C'est la différence avec un
   devis papier : vous jugez sur un site réel, avec son prix, pas sur une
   estimation.</p>
 
   <h2>Référencement local — 15 €/mois</h2>
-  <p>Avoir un site ne suffit pas à être trouvé. Le référencement local est le
-  travail qui fait remonter votre page quand quelqu'un cherche votre métier
-  dans votre ville. C'est lent, cumulatif, et c'est ce qui distingue un site
-  qui dort d'un site qui fait sonner le téléphone.</p>
+  <p>Avoir un site ne suffit pas à être trouvé. Le référencement local, ou SEO
+  local, est le travail qui fait remonter votre page quand quelqu'un cherche
+  votre métier dans votre ville. C'est lent, cumulatif, et c'est ce qui
+  distingue un site qui dort d'un site qui fait sonner le téléphone.</p>
   <ul class="plain">
     <li>4 articles de blog par mois</li>
     <li>Choix et placement des mots-clés locaux</li>
@@ -432,7 +450,9 @@
   <p>Comptez trois à six mois avant de voir des résultats nets. C'est le rythme
   normal : quiconque vous promet la première place en trois semaines vous vend
   autre chose. Ce service, comme le site, n'a pas besoin de devis : c'est un
-  abonnement à 15 €/mois.</p>
+  abonnement à 15 €/mois. Pour un aperçu complet de la démarche, consultez
+  notre <a href="/blog/fr/seo-local-independants-guide-complet">guide du
+  référencement local pour indépendants</a>.</p>
 
   <h2>Gestion Google My Business — 29 €/mois</h2>
   <p>Votre fiche Google est souvent le premier contact d'un client avec votre
@@ -446,17 +466,36 @@
     <li>Rapport de performance mensuel</li>
   </ul>
   <p>Les 49 € de création ne se paient qu'une fois, et seulement si vous n'avez
-  pas encore de fiche. Si la vôtre existe déjà, nous la reprenons sans frais.</p>
+  pas encore de fiche. Si la vôtre existe déjà, nous la reprenons sans frais.
+  Pour gagner en visibilité sur la carte, voyez notre article sur
+  <a href="/blog/fr/apparaitre-sur-google-maps-guide-complet">comment
+  apparaître sur Google Maps</a>.</p>
+
+  <h2>Accompagnement et maintenance après la mise en ligne</h2>
+  <p>Un devis classique s'arrête souvent à la livraison du site : le suivi qui
+  vient ensuite se négocie à part, parfois cher. Chez WebAutonomos,
+  l'accompagnement fait partie du montant annoncé dès le départ, sans coût
+  caché ni contrat de maintenance séparé.</p>
+  <h3>Le détail du suivi inclus</h3>
+  <ul class="plain">
+    <li>Maintenance technique et mises à jour</li>
+    <li>Sauvegardes quotidiennes et surveillance du site</li>
+    <li>Une modification par mois, sans limite de durée</li>
+    <li>Support par email ou WhatsApp, réponse dans la journée</li>
+  </ul>
+  <p>Ce suivi est compris dans les deux formules, à 15 €/mois comme à
+  349 € : même payé en une fois, votre site n'est pas laissé de côté après
+  son lancement.</p>
 
   <h2>Boutique en ligne (e-commerce) : le seul site sur devis personnalisé</h2>
-  <p>Un projet échappe aux prix fixes de cette page : le site e-commerce.
+  <p>Un projet échappe aux tarifs fixes de cette page : le site e-commerce.
   Vendre des produits en ligne suppose un catalogue, un panier et un système de
   paiement, une structure différente d'un site vitrine. C'est le seul type de
-  site chez WebAutonomos qui fait l'objet d'un devis personnalisé, établi
+  site chez WebAutonomos qui fait l'objet d'un devis sur mesure, établi
   selon vos besoins réels.</p>
   <p>La création d'un site vitrine, elle, ne passe jamais par un devis : le
-  prix est celui affiché plus haut, quel que soit votre métier. Après la mise
-  en ligne, une modification par mois est incluse ; un changement plus
+  coût est celui affiché plus haut, quel que soit votre métier. Une fois le
+  site en ligne, une modification par mois est incluse ; un changement plus
   important, comme une nouvelle grande section, fait l'objet d'un devis ferme,
   sans surprise.</p>
 
@@ -480,33 +519,42 @@
   <h3>Devis personnalisé</h3>
   <p>Une estimation calculée projet par projet, selon les besoins réels. Chez
   WebAutonomos, seule une boutique en ligne en fait l'objet : un site
-  vitrine, lui, garde un prix fixe.</p>
+  vitrine, lui, garde un montant fixe.</p>
 
   <h3>Devis ferme</h3>
-  <p>Un prix arrêté avant les travaux, qui ne bouge plus une fois accepté.
+  <p>Un montant arrêté avant les travaux, qui ne bouge plus une fois accepté.
   C'est la formule utilisée pour un changement important demandé après la
-  mise en ligne d'un site vitrine, comme une nouvelle grande section.</p>
+  publication d'un site vitrine, comme une nouvelle grande section.</p>
 
   <h3>Hébergement</h3>
   <p>Le service qui stocke les fichiers du site et le rend accessible en
   ligne en permanence. Chez WebAutonomos, il est compris dans les deux
-  formules, à 15 €/mois comme à 349 €, sans supplément à prévoir.</p>
+  formules, à 15 €/mois comme à 349 €, sans supplément à prévoir. Pour
+  comprendre le lien entre hébergement, vitesse et visibilité, voyez notre
+  article sur la
+  <a href="/blog/fr/vitesse-du-site-et-referencement">vitesse du site et le
+  référencement</a>.</p>
 
   <h3>Nom de domaine</h3>
   <p>L'adresse du site sur internet, par exemple votreentreprise.fr. Il est
-  inclus la première année, puis coûte environ 12 €/an ; il reste à votre nom
-  si vous décidez de partir un jour.</p>
+  inclus la première année, puis coûte environ 12 €/an, et il reste à vous,
+  même si vous décidez de partir un jour. Si vous n'en avez pas encore, consultez
+  notre article sur <a href="/blog/fr/choisir-le-nom-de-domaine-de-son-site">comment
+  choisir le nom de domaine de son site</a>.</p>
 
   <h3>CMS</h3>
   <p>Le logiciel qui permet de gérer le contenu d'un site, comme WordPress.
   Chez WebAutonomos, vous n'avez aucun logiciel à prendre en main : nous
   préparons le site et ses textes, et une modification par mois est incluse
-  après la mise en ligne.</p>
+  après sa publication.</p>
 
   <h3>Agence web</h3>
   <p>Une entreprise qui conçoit des sites sur mesure pour ses clients, souvent
   avec plusieurs professionnels (conception, développement, référencement),
-  et qui établit en général un devis pour chaque projet.</p>
+  et qui établit en général un devis pour chaque projet. Pour savoir quand une
+  agence se justifie, voyez notre
+  <a href="/fr/meilleurs-createurs-de-sites-pour-independants">comparatif des
+  solutions pour créer son site</a>.</p>
 
   <h3>SEO local</h3>
   <p>Le travail qui fait remonter un site dans les résultats Google d'une
@@ -525,26 +573,34 @@
   est calculé au cas par cas.</p>
   <p>WebAutonomos fonctionne différemment : un système propre qui réutilise
   des composants déjà testés, pas de bureaux luxueux ni de commerciaux à
-  commission. Cela se traduit par un tarif plus bas pour vous. Le prix reste
-  le même pour tout site vitrine, quel que soit votre secteur d'activité, et
-  vous le voyez avec votre démonstration, avant tout paiement.</p>
+  commission. Cela se traduit par un tarif plus bas pour vous. Vous voyez ce
+  prix avec votre démonstration, avant tout paiement.</p>
 
   <h2>Comment les combiner</h2>
-  <p>Chaque prestation fonctionne seule. Si vous démarrez, le site internet
-  seul est le bon point de départ : c'est la pièce dont tout le reste dépend.
-  Ajoutez la fiche Google si vous recevez des clients ou si
-  vous vous déplacez dans une zone précise. Le référencement local vient en
-  dernier, quand la base est en place et que vous voulez élargir.</p>
+  <p>Chaque prestation fonctionne seule. Si vous démarrez, WebAutonomos
+  recommande le site internet seul comme point de départ : c'est la pièce
+  dont tout le reste dépend. Ajoutez la gestion de la fiche Google si vous
+  recevez des clients ou si vous vous déplacez dans une zone précise. Le
+  référencement local vient en dernier, selon vos besoins, quand la base est
+  en place et que vous voulez élargir votre visibilité.</p>
   <p>Un kinésithérapeute de Nantes qui débute prendra le site seul, à 15 €. Un
   plombier déjà installé, qui veut apparaître dans le bloc de résultats Google
-  Maps, prendra site et fiche Google. Les trois ensemble reviennent à 59 €/mois,
-  hors création de fiche.</p>
+  Maps, prendra site et fiche Google.</p>
+  <ul class="plain">
+    <li>Site seul : 15 €/mois HT</li>
+    <li>Site + fiche Google : 15 €/mois HT pour le site et 29 €/mois HT pour la fiche, plus 49 € HT une seule fois si la fiche n'existe pas encore</li>
+    <li>Site + fiche Google + référencement local : 59 €/mois HT, hors création de fiche</li>
+  </ul>
+  <p>Pour situer ces abonnements dans l'ensemble de vos dépenses en ligne,
+  consultez notre article sur le
+  <a href="/blog/fr/budget-marketing-digital-independants">budget marketing
+  digital pour indépendants</a>.</p>
 
   <h2>Un devis de site internet différent selon votre métier ?</h2>
   <p>Un plombier, un coach ou un tatoueur n'exercent pas le même métier, mais
   leur site vitrine suit la même logique : présentation de l'activité, zone
   d'intervention, moyen de contact. C'est pourquoi WebAutonomos garde le même
-  prix fixe quel que soit votre secteur, plutôt que d'établir un devis
+  tarif fixe quel que soit votre secteur, plutôt que d'établir un devis
   différent à chaque fois.</p>
   <ul class="plain">
     <li><a href="/blog/fr/site-web-pour-plombiers-guide-complet">Site internet pour plombiers</a></li>
@@ -555,50 +611,59 @@
     <li><a href="/blog/fr/site-web-pour-instituts-de-beaute">Site internet pour instituts de beauté</a></li>
     <li><a href="/blog/fr/site-web-pour-podologues">Site internet pour podologues</a></li>
   </ul>
-  <p>Chaque page détaille les particularités du métier ; le prix, lui, reste
+  <p>Chaque page détaille les particularités du métier ; le montant, lui, reste
   identique : 15 €/mois ou 349 € en paiement unique. Pour ce que doit contenir
   un site professionnel en général, voyez aussi notre liste des
   <a href="/blog/fr/elements-indispensables-site-professionnel">éléments indispensables d'un site professionnel</a>.</p>
 
   <h2>Questions fréquentes</h2>
-  <dl class="qa">
-    <dt>Comment obtenir un devis pour un site internet ?</dt>
-    <dd>Pour un site vitrine, vous n'avez pas besoin d'attendre un devis : le
+  <div class="qa">
+    <h3>Comment obtenir un devis pour un site internet ?</h3>
+    <p>Pour un site vitrine, vous n'avez pas besoin d'attendre un devis : le
     prix est déjà fixé, 15 €/mois HT ou 349 € HT en paiement unique. Demandez
     votre démonstration gratuite, et en moins de 24 heures vous voyez votre
-    site avec son prix, avant tout paiement.</dd>
-    <dt>Le devis est-il gratuit ?</dt>
-    <dd>Pour un site vitrine, il n'y a pas de devis à proprement parler,
+    site et son prix, avant tout paiement.</p>
+    <h3>Le devis est-il gratuit ?</h3>
+    <p>Pour un site vitrine, il n'y a pas de devis à proprement parler,
     puisque le prix est déjà annoncé sur cette page. Ce que nous offrons,
     c'est une démonstration gratuite de votre futur site en moins de 24
-    heures, sans engagement de votre part.</dd>
-    <dt>Combien de temps faut-il pour obtenir un devis de création de site internet ?</dt>
-    <dd>Pour un site vitrine, aucun délai à surveiller, puisqu'il n'y a pas de
-    devis à établir : le prix est fixe. Ce que vous recevez rapidement, c'est
-    une démonstration personnalisée, en moins de 24 heures après votre
-    demande.</dd>
-    <dt>Y a-t-il des frais en plus du prix affiché ?</dt>
-    <dd>Il n'y a pas de frais d'installation : vous payez 15 €/mois ou 349 €
+    heures, sans engagement de votre part.</p>
+    <h3>Combien de temps faut-il pour obtenir un devis de création de site internet ?</h3>
+    <p>Pour un site vitrine, aucun délai à surveiller, puisqu'il n'y a pas de
+    devis à établir : le tarif est fixe. Ce que vous recevez rapidement, c'est
+    une démonstration adaptée à votre métier, en moins de 24 heures après votre
+    demande.</p>
+    <h3>Y a-t-il des frais en plus du prix affiché ?</h3>
+    <p>Il n'y a pas de frais d'installation : vous payez 15 €/mois ou 349 €
     une fois, hors taxes (IVA espagnole de 21 %, sauf entreprise établie dans
-    un autre pays de l'UE avec un numéro de TVA intracommunautaire). Le nom de domaine est inclus la
+    un autre pays de l'UE avec un numéro de TVA intracommunautaire). Le domaine est inclus la
     première année, puis coûte environ 12 €/an. Un changement important après
     la mise en ligne, comme une nouvelle grande section, fait l'objet d'un
-    devis ferme.</dd>
-    <dt>Et si mon projet est une boutique en ligne ?</dt>
-    <dd>Les boutiques en ligne ne sont pas incluses dans les formules à
-    15 €/mois ou 349 € : elles font l'objet d'un devis personnalisé, car
-    chaque projet de vente en ligne a des besoins différents.</dd>
-    <dt>Quelle est la différence avec le devis d'une agence ?</dt>
-    <dd>Une agence construit généralement son devis après un échange, avec un
+    devis ferme.</p>
+    <h3>Et si mon projet est une boutique en ligne ?</h3>
+    <p>Les boutiques en ligne ne sont pas incluses dans les formules à
+    15 €/mois ou 349 € : elles font l'objet d'un devis sur mesure, car
+    chaque projet de vente en ligne a des besoins différents.</p>
+    <h3>Quelle est la différence avec le devis d'une agence ?</h3>
+    <p>Une agence construit généralement son devis après un échange, avec un
     prix qui dépend du nombre de pages, du design et des fonctionnalités
     demandées. WebAutonomos applique le même prix fixe à toute création de
-    site vitrine : 15 €/mois HT ou 349 € HT, quel que soit votre secteur d'activité.</dd>
-    <dt>Dois-je préparer un cahier des charges avant de demander ma démonstration ?</dt>
-    <dd>Non. WebAutonomos ne demande pas de cahier des charges : un
+    site vitrine : 15 €/mois HT ou 349 € HT, quel que soit votre secteur d'activité.</p>
+    <h3>Dois-je préparer un cahier des charges avant de demander ma démonstration ?</h3>
+    <p>Non. WebAutonomos ne demande pas de cahier des charges : un
     formulaire simple avec vos informations réelles (métier, zone d'activité,
     coordonnées) suffit pour recevoir votre démonstration en moins de 24
-    heures.</dd>
-  </dl>
+    heures.</p>
+    <h3>Le support est-il inclus après la mise en ligne ?</h3>
+    <p>Oui. Le support par email ou WhatsApp est inclus dans les deux
+    formules, avec une réponse dans la journée. Une modification par mois est
+    comprise, sans limite de durée, et, en location, vous pouvez arrêter quand
+    vous le souhaitez, sans pénalité ni durée minimale.</p>
+    <h3>Que se passe-t-il si la démonstration ne me convient pas ?</h3>
+    <p>Vous ne payez rien : la démonstration est gratuite et sans engagement.
+    Vous pouvez demander des retouches, ou en rester là sans aucune
+    obligation.</p>
+  </div>
 
   <p>Avant de choisir, vous voudrez peut-être consulter nos <a href="/fr/questions">questions fréquentes sur le site à 15 €/mois</a> : délais, coûts, résiliation et compétences techniques nécessaires. Pour comparer plus en détail, consultez aussi le <a href="/fr/tarifs">détail des tarifs</a>, notre <a href="/fr/meilleurs-createurs-de-sites-pour-independants">comparatif des créateurs de sites pour indépendants</a>, ou l'article sur <a href="/blog/fr/combien-coute-un-site-web-pour-independants">combien coûte un site web pour un indépendant</a>.</p>
 
