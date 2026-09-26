@@ -54,6 +54,8 @@ SOURCE_DEMO = {'fr': 'demandez-votre-demo.html', 'en': 'get-your-demo.html'}
 # Tags métier de /fr/ et /en/ qui mènent vers une page métier.
 # Tenu à jour par _tools/build_metier_pages.py.
 SECTOR_LINKS = {"fr": {"🧠 Psychologues": "/fr/site-internet-psychologue-therapeute", "🌿 Thérapeutes bien-être": "/fr/site-internet-psychologue-therapeute", "🪵 Menuisiers": "/fr/site-internet-menuisier", "🪟 Aluminium et PVC": "/fr/site-internet-menuisier", "💆 Kinésithérapeutes": "/fr/site-internet-kinesitherapeute", "🦷 Dentistes": "/fr/site-internet-dentiste"}, "en": {"🧠 Psychologists": "/en/website-for-therapists-in-spain", "🌿 Wellbeing practitioners": "/en/website-for-therapists-in-spain", "🪵 Carpenters": "/en/website-for-carpenters-in-spain", "🪟 Aluminium & PVC": "/en/website-for-carpenters-in-spain", "💆 Physiotherapists": "/en/website-for-physiotherapists-in-spain", "🦷 Dentists": "/en/website-for-dentists-in-spain"}}
+# Tags métier de /fr/ sans page métier : lien vers l'article de blog (non géré par build_metier_pages.py)
+SECTOR_BLOG_LINKS = {"fr": {"⚡ Électriciens": "/blog/fr/site-web-pour-electriciens", "🔧 Plombiers": "/blog/fr/site-web-pour-plombiers-guide-complet", "🏗️ Rénovation": "/blog/fr/site-web-pour-menuisiers-et-renovation", "🦶 Podologues": "/blog/fr/site-web-pour-podologues", "🖋️ Tatoueurs": "/blog/fr/site-web-pour-tatoueurs"}}
 
 IDS = {
     'fr': dict(brief='en-bref', inc='inclus', steps='etapes', price='tarifs', aud='pour-qui',
@@ -114,7 +116,7 @@ C['fr'] = dict(
        "Jusqu'à 4 langues sans supplément", 'Une modification par mois', 'Liens vers vos réseaux sociaux'],
   content_ey='À savoir', content_t='Ce que doit contenir un site internet professionnel',
   content_sd="Quel que soit son prix, un site professionnel doit réunir ces éléments de base pour transformer vos visiteurs en demandes de contact.",
-  content_p="Un site pas cher n'est pas un site web incomplet. Avant de penser à une fonctionnalité en plus, vos pages doivent d'abord présenter clairement votre activité et donner envie de vous contacter. Ce que nous construisons est un site internet vitrine : il présente votre activité, vos services et vos coordonnées, il ne remplace pas une boutique en ligne. Si vous avez besoin de vendre directement en ligne, une boutique reste possible, mais sur devis séparé.",
+  content_p="Un site pas cher n'est pas un site web incomplet : sa qualité se juge à ce qu'il contient, pas à son prix. Avant de penser à une fonctionnalité en plus, vos pages doivent d'abord présenter clairement votre activité et donner envie de vous contacter. Ce que nous construisons est un site internet vitrine : il présente votre activité, vos services et vos coordonnées, il ne remplace pas une boutique en ligne. Si vous avez besoin de vendre directement en ligne, une boutique reste possible, mais sur devis séparé.",
   content_g1_t="Les informations que cherchent vos visiteurs",
   content_g1=[("Vos services, clairement listés", "Ce que vous faites, pour qui : un visiteur doit comprendre votre activité en quelques secondes, sur la page d'accueil."),
               ("Votre zone d'intervention", "Les villes ou le quartier où vous travaillez, pour que Google et vos visiteurs sachent si vous couvrez leur secteur."),
@@ -144,6 +146,22 @@ C['fr'] = dict(
   why_pb_link_txt="article de Social Media Pymes",
   why_pb_link_url="https://www.socialmediapymes.com/cuanto-cuesta-una-web/",
   why_pb_post=" publié en août 2026. Avec l'abonnement à 15 € HT par mois, vous n'avancez pas cette somme : vous payez un montant fixe chaque mois, sans frais d'installation. Avec la formule à 349 € HT en paiement unique, vous restez en dessous de ces deux fourchettes. Dans les deux formules, l'hébergement et la maintenance sont compris.",
+  why_extra_t="Ce qui peut faire varier le prix",
+  why_extra_p="Pour un site vitrine, le prix reste celui de votre formule, abonnement mensuel ou paiement unique. Certains besoins en sortent et passent par un devis à part, par exemple :",
+  why_extra_items=["Une boutique en ligne plutôt qu'un site vitrine : vendre directement en ligne reste possible, sur devis.",
+                    "Une refonte complète ou une nouvelle grande section : ces changements plus importants passent par un devis fermé, jamais par une facture surprise."],
+  why_extra_link_txt="Voir en détail combien coûte un site pour un indépendant",
+  why_extra_link_url='/blog/fr/combien-coute-un-site-web-pour-independants',
+  feat_ey='Personnalisation', feat_t='Quelles fonctionnalités ajouter à votre site internet ?',
+  feat_sd="Voici ce que vous pouvez nous demander, par WhatsApp ou par e-mail.",
+  feat_items=[("Vos réseaux sociaux", "Nous ajoutons des liens vers vos profils (Facebook, Instagram, LinkedIn…) sur votre site, sans supplément. Si vous voulez aller plus loin, la gestion de vos réseaux sociaux est aussi proposée ponctuellement, sur demande."),
+              ("Votre logo", "Envoyez-le avec vos photos : avant la mise en ligne, nous l'intégrons au design, les ajustements étant illimités jusque-là ; après, un changement de logo compte comme votre modification du mois. Sans logo, le nom de votre activité suffit pour commencer."),
+              ("Un service ou une section en plus", "Vous ajoutez un service ou une section avec votre modification mensuelle ; une nouvelle grande section ou une refonte passe par un devis fermé."),
+              ("Vos avis et vos photos Google", "Si vous avez une fiche Google, nous partons de ses photos et de ses avis pour préparer votre démo : vous n'avez aucun texte à rédiger vous-même.")],
+  feat_link="Comment choisir vos réseaux sociaux", feat_link_url='/blog/fr/reseaux-sociaux-independants-lesquels-choisir',
+  feat_langs_t="Les langues disponibles, sans supplément",
+  feat_langs=['Français', 'Espagnol', 'Anglais', 'Catalan', 'Valencien', 'Galicien', 'Basque'],
+  feat_langs_note="Jusqu'à quatre langues au choix parmi ces sept.",
   hcare_ey='Après la mise en ligne', hcare_t='Hébergement, sécurité et référencement naturel : ce qui reste compris',
   hcare_sd="Un site pas cher ne doit pas devenir un site à l'abandon : voici ce qui reste géré pour vous, mois après mois.",
   hcare_h3a="L'hébergement et la sécurité, sans y penser",
@@ -216,7 +234,9 @@ C['fr'] = dict(
        ("Puis-je modifier mon site plus tard ?",
         "Oui. Une modification par mois est incluse : textes, photos, horaires, services, prix ou nouvelle section. Vous nous écrivez par WhatsApp ou par e-mail."),
        ('Mon site peut-il être en plusieurs langues ?',
-        "Oui. Avec WebAutonomos, votre site peut être rédigé dans quatre langues maximum, sans supplément : français, espagnol, anglais et les langues co-officielles d'Espagne (catalan, valencien, galicien ou basque). Le prix reste de 15 € HT par mois, ou 349 € HT en paiement unique. Nous rédigeons nous-mêmes chaque version, et la modification mensuelle incluse s'applique dans toutes les langues.")],
+        "Oui. Avec WebAutonomos, votre site peut être rédigé dans quatre langues maximum, sans supplément : français, espagnol, anglais et les langues co-officielles d'Espagne (catalan, valencien, galicien ou basque). Le prix reste de 15 € HT par mois, ou 349 € HT en paiement unique. Nous rédigeons nous-mêmes chaque version, et la modification mensuelle incluse s'applique dans toutes les langues."),
+       ("Puis-je ajouter mes réseaux sociaux sur mon site ?",
+        "Oui. Les liens vers vos profils (Facebook, Instagram, LinkedIn…) sont compris dans les deux formules. Si vous ouvrez un nouveau compte plus tard, son ajout compte comme votre modification du mois.")],
   final_t='Voyez votre site avant de payer quoi que ce soit',
   final_sd="Démo gratuite en 24 heures. Sans frais d'installation, sans engagement.",
   foot_legal='Mentions légales', foot_privacy='Confidentialité', foot_blog='Blog',
@@ -227,13 +247,13 @@ C['fr'] = dict(
 
 C['en'] = dict(
   html_lang='en', og_locale='en_GB',
-  title="Websites for English-speaking businesses in Spain | €15/month",
+  title="Affordable web design for businesses in Spain | €15/month",
   description="Your professional website built in 24 hours, before you pay: €15/month + VAT, no setup fee, no lock-in. Spanish legal pages included. Based in Valencia.",
   nav=[('prestations', "What's included"), ('tarifs', 'Pricing'), ('how', 'How it works'), ('questions', 'FAQ'), ('blog', 'Blog')],
   nav_cta='Free demo', lang_label='Language',
   badge='For English-speaking businesses in Spain',
-  h1='Websites for <span style="white-space:nowrap">English-speaking</span> businesses in Spain, <span class="ul">€15/month all included</span>',
-  lede="We build your professional website with your services, photos and Google reviews, and send it to you within 24 hours — before you pay anything. The legal pages every Spanish business website needs are included.",
+  h1='Affordable web design for <span style="white-space:nowrap">English-speaking</span> businesses in Spain, <span class="ul">€15/month all included</span>',
+  lede="We build your affordable, professional website with your services, photos and Google reviews, and send it to you within 24 hours — before you pay anything. The legal pages every Spanish business website needs are included.",
   pills=['No setup fee', 'No lock-in', 'Free demo in 24 hours'],
   cta='Get my free demo', cta2='See pricing',
   rating='<b>4.3/5</b> · 8 verified reviews on Trustpilot',
@@ -306,7 +326,68 @@ C['en'] = dict(
        ("Can I change my website later?",
         "Yes. One content change per month is included: text, photos, opening hours, services, prices or a new section. Just message us on WhatsApp or by email."),
        ('Can my website be in several languages?',
-        "Yes. With WebAutonomos your website can be in up to four languages at no extra cost: English, Spanish, French and Spain's co-official languages (Catalan, Valencian, Galician or Basque). It still costs €15 + VAT per month, or a one-off €349 + VAT. We write each version ourselves, and the monthly content change included applies in every language.")],
+        "Yes. With WebAutonomos your website can be in up to four languages at no extra cost: English, Spanish, French and Spain's co-official languages (Catalan, Valencian, Galician or Basque). It still costs €15 + VAT per month, or a one-off €349 + VAT. We write each version ourselves, and the monthly content change included applies in every language."),
+       ('Do you offer affordable web design packages?',
+        "Yes. We offer two website packages with exactly the same services: €15 + VAT a month, with no setup fee and no lock-in, or a one-off €349 + VAT. Both include design, hosting and the legal pages, so affordable web design doesn't mean a stripped-down website.")],
+  content_ey='Good to know', content_t='What good website design needs to include',
+  content_sd='Whatever your budget, a small business website should be responsive and cover these basics to turn visitors into enquiries.',
+  content_p="Affordable web design doesn't mean an incomplete result: what matters is what your site contains, not what it costs. Before adding an extra feature, your homepage should clearly show what you do and make it easy to get in touch.",
+  content_g1_t='The information your visitors are looking for',
+  content_g1=[("Your services, clearly listed", "What you do and who for: a visitor should take it in within a few seconds of landing on your homepage."),
+              ("The areas you cover", "Valencia, Alicante, Elche, or wherever you're based — so visitors instantly see if you're local to them."),
+              ("Your photos and Google reviews", "Your photos and the reviews already on your Google listing reassure a visitor who doesn't know you yet.")],
+  content_link='Read the full website checklist',
+  content_link_url='/blog/en/essential-elements-of-a-professional-website',
+  why_ey='The price', why_t='Why is affordable web design possible at WebAutonomos?',
+  why_sd='A low cost that comes from how we do things, not from cutting what you get.',
+  why_lede="It's because we use our own system, built from components we've already tested, and because we don't have expensive offices or commission-based sales teams: that's what keeps the price lower for you.",
+  why_h3a='Our own system, not a discount',
+  why_pa="This isn't a temporary offer or a stripped-down version: it's our normal rate. Every website design starts from parts already proven on other projects, rather than from zero.",
+  why_h3b='Compared with typical costs in Spain',
+  why_pb_pre="In Spain, a site built by a freelance web designer typically costs between €800 and €2,000, and between €1,500 and €4,000 through a web design agency, before ongoing upkeep, according to an ",
+  why_pb_link_txt='article by Social Media Pymes',
+  why_pb_link_url='https://www.socialmediapymes.com/cuanto-cuesta-una-web/',
+  why_pb_post=" published in August 2026. With the €15 + VAT monthly plan, there's no upfront sum to pay: just a fixed monthly amount, with no setup fee. Choose the one-off €349 + VAT plan instead and you stay below both ranges. Hosting and upkeep come with both packages.",
+  why_extra_t='What falls outside this cost',
+  why_extra_p="For the website itself, you pay only your plan, monthly or one-off, plus the renewal of your domain name from the second year (about €12 a year). A few things fall outside that and go through a separate quote instead, for example:",
+  why_extra_items=["An online shop instead of a simple site: selling directly online is still possible, on a separate quote.",
+                    "A full redesign or a large new section: these bigger changes go through a fixed quote, never a surprise bill."],
+  why_extra_link_txt='See in detail how much a website costs for freelancers',
+  why_extra_link_url='/blog/en/how-much-does-a-website-cost-for-freelancers',
+  hcare_ey='After launch', hcare_t='Hosting, security and basic SEO: what stays included',
+  hcare_sd="Affordable web design shouldn't become an abandoned website: here's what keeps being looked after, month after month.",
+  hcare_h3a='Hosting and security, without you thinking about it',
+  hcare_pa="Your site's hosting, its security certificate (https) and daily backups are part of the cost, not billed as an extra. The technical side and security updates stay on our side: you don't need to choose a server or watch over any software.",
+  hcare_h3b='Basic SEO from day one',
+  hcare_pb="An affordable site still needs to be found: your titles and text reflect what you offer and the areas you cover, and the details on your site match those on your Google Business Profile — the foundation of good local search visibility.",
+  hcare_h3c="What isn't included",
+  hcare_pc="Local SEO and the management of your Google Business Profile aren't part of the website price: they're separate services, described further down this page.",
+  feat_ey='Customise it', feat_t='What can you customise in your website design?',
+  feat_sd='Here\'s what you can ask us for, by WhatsApp or email.',
+  feat_items=[("Your social media", "We add links to your profiles (Facebook, Instagram, LinkedIn…) on your site at no extra cost. If you want to go further, social media management is also possible on request: just ask us."),
+              ("Your logo", "Send it with your photos: before launch we add it to the design, with unlimited adjustments up to that point; afterwards, a logo change counts as your change for the month. No logo yet? Your company name is enough to get started."),
+              ("An extra service or section", "You add a service or a section with your monthly change; a large new section or a full redesign goes through a fixed quote."),
+              ("Your Google reviews and photos", "If you have a Google Business Profile, we start from its photos and reviews to shape the design of your demo: you don't need to write any text yourself.")],
+  feat_link='How to choose your social media channels', feat_link_url='/blog/en/social-media-for-freelancers-which-to-choose',
+  feat_langs_t='Languages available, at no extra cost',
+  feat_langs=['English', 'Spanish', 'French', 'Catalan', 'Valencian', 'Galician', 'Basque'],
+  feat_langs_note='Up to four languages of your choice from this list.',
+  how_choose_ey='Your options', how_choose_t='DIY tool, WordPress or done-for-you: how to choose a website design option',
+  how_choose_sd='Three ways for a small business to get an affordable website, each with different trade-offs.',
+  how_choose_items=[("A DIY website tool", "You build your own site, block by block, using a drag-and-drop interface, without touching any code. You stay in control of every choice, but the result depends entirely on your own design skills."),
+                     ("WordPress with a theme to customise", "You install WordPress, pick a theme and adapt it. It's flexible, but you need to keep up with security updates, choose reliable plugins and manage the admin side yourself."),
+                     ("A done-for-you website, like WebAutonomos", "We build your site from the information you give us, designed around what you offer from day one. You never open an admin dashboard, and you don't touch any theme or code — you send us your change for the month by WhatsApp or email, and we take care of it.")],
+  how_choose_p="There's no single right answer: it depends on the time and budget you want to spend on it. Whether you use a DIY tool, set up WordPress yourself or leave it to web designers, the result should still be easy to keep up to date.",
+  how_choose_link='See how these options compare in detail',
+  mistakes_ey='Watch out for', mistakes_t='Mistakes to avoid when looking for affordable web design',
+  mistakes_sd='Before choosing a web design company for your small business, compare full packages, not just the monthly figure.',
+  mistakes_items=[("Setup fees that inflate the bill", "A low monthly fee can hide separate setup costs. Always check the full cost before you sign up."),
+                   ("A long lock-in period", "A monthly plan with no lock-in lets you leave whenever you want, with no penalty and no need to explain why."),
+                   ("No legal pages at all", "The legal notice and privacy policy need to be on the website from the moment it goes live in Spain, not added later on request."),
+                   ("A domain name that isn't yours", "Check that the domain name is registered in your name: that's what lets you keep it if you switch provider."),
+                   ("Maintenance billed separately", "Hosting, an SSL certificate, backups and security updates should sit inside the cost you see, not turn up as a separate bill later.")],
+  mistakes_links=[("website pricing", "/en/pricing"),
+                   ("website speed and search rankings", "/blog/en/website-speed-and-search-rankings")],
   final_t="See your website before you pay a thing",
   final_sd='Free demo within 24 hours. No setup fee, no lock-in.',
   foot_legal='Legal notice', foot_privacy='Privacy', foot_blog='Blog',
@@ -558,6 +639,14 @@ def page(lang):
         why_link = ('<a href="%s" target="_blank" rel="noopener noreferrer" style="color:var(--blue);font-weight:600">%s</a>'
                     % (c['why_pb_link_url'], E(c['why_pb_link_txt'])))
         p_style = 'font-size:1.04rem;line-height:1.75;color:var(--text)'
+        why_extra_html = ''
+        if c.get('why_extra_t'):
+            extra_items = ''.join('<li>%s</li>' % E(x) for x in c['why_extra_items'])
+            why_extra_html = f"""
+    <h3 style="margin-top:24px;margin-bottom:8px">{E(c['why_extra_t'])}</h3>
+    <p style="{p_style}">{E(c['why_extra_p'])}</p>
+    <ol style="{p_style};padding-left:22px;display:grid;gap:6px">{extra_items}</ol>
+    <a class="p-link" href="{BASE}{c['why_extra_link_url']}">{E(c['why_extra_link_txt'])} →</a>"""
         why_html = f"""
 <section class="blk alt" id="pourquoi-pas-cher">
   <p class="ey">{E(c['why_ey'])}</p>
@@ -568,7 +657,7 @@ def page(lang):
     <h3 style="margin-top:24px;margin-bottom:8px">{E(c['why_h3a'])}</h3>
     <p style="{p_style}">{E(c['why_pa'])}</p>
     <h3 style="margin-top:24px;margin-bottom:8px">{E(c['why_h3b'])}</h3>
-    <p style="{p_style}">{E(c['why_pb_pre'])}{why_link}{E(c['why_pb_post'])}</p>
+    <p style="{p_style}">{E(c['why_pb_pre'])}{why_link}{E(c['why_pb_post'])}</p>{why_extra_html}
   </div>
 </section>
 """
@@ -590,6 +679,23 @@ def page(lang):
   </div>
 </section>
 """
+    feat_html = ''
+    if c.get('feat_t'):
+        p_style = 'font-size:1.04rem;line-height:1.75;color:var(--text)'
+        feat_items = ''.join('<li><span><strong>%s.</strong> %s</span></li>' % (E(t), E(d)) for t, d in c['feat_items'])
+        feat_langs = ''.join('<li>%s</li>' % E(x) for x in c['feat_langs'])
+        feat_html = f"""
+<section class="blk" id="fonctionnalites-site">
+  <p class="ey">{E(c['feat_ey'])}</p>
+  <h2>{E(c['feat_t'])}</h2>
+  <p class="sd">{E(c['feat_sd'])}</p>
+  <ul class="inc-g">{feat_items}</ul>
+  <h3 style="text-align:center;margin:32px 0 12px">{E(c['feat_langs_t'])}</h3>
+  <ul class="inc-g" style="max-width:700px;margin:0 auto">{feat_langs}</ul>
+  <p class="p-note">{E(c['feat_langs_note'])}</p>
+  <a class="p-link" href="{BASE}{c['feat_link_url']}">{E(c['feat_link'])} →</a>
+</section>
+"""
     # 4e élément facultatif : lien vers une page dédiée (pages expatriés, 23/09/2026)
     aud = ''.join('<div class="aud-c"><div class="aud-i" aria-hidden="true">%s</div><h3>%s</h3><p>%s</p>%s</div>'
                   % (a[0], E(a[1]), E(a[2]),
@@ -597,8 +703,9 @@ def page(lang):
                      % (BASE, a[3], E(c['add_more'])) if len(a) > 3 else '')
                   for a in c['aud'])
     # tags liés à une page métier (build_metier_pages.py, 24/09/2026)
-    sectors = ''.join('<a class="stag" href="%s%s">%s</a>' % (BASE, SECTOR_LINKS[lang][s], E(s))
-                      if s in SECTOR_LINKS.get(lang, {}) else '<span class="stag">%s</span>' % E(s)
+    tag_links = {**SECTOR_BLOG_LINKS.get(lang, {}), **SECTOR_LINKS.get(lang, {})}
+    sectors = ''.join('<a class="stag" href="%s%s">%s</a>' % (BASE, tag_links[s], E(s))
+                      if s in tag_links else '<span class="stag">%s</span>' % E(s)
                       for s in c['sectors'])
     how_choose_html = ''
     if c.get('how_choose_t'):
@@ -626,15 +733,21 @@ def page(lang):
     mistakes_html = ''
     if c.get('mistakes_t'):
         items = ''.join('<li><strong>%s.</strong> %s</li>' % (E(t), E(d)) for t, d in c['mistakes_items'])
-        links = ' et '.join('notre %s sur <a href="%s%s" style="color:var(--blue);font-weight:600">%s</a>' % (
-            'page' if n == 0 else 'article', BASE, u2, E(t2)) for n, (t2, u2) in enumerate(c['mistakes_links']))
+        if lang == 'en':
+            links = ' and '.join('our %s on <a href="%s%s" style="color:var(--blue);font-weight:600">%s</a>' % (
+                'page' if n == 0 else 'blog article', BASE, u2, E(t2)) for n, (t2, u2) in enumerate(c['mistakes_links']))
+            see_also = 'Also worth reading:'
+        else:
+            links = ' et '.join('notre %s sur <a href="%s%s" style="color:var(--blue);font-weight:600">%s</a>' % (
+                'page' if n == 0 else 'article de blog', BASE, u2, E(t2)) for n, (t2, u2) in enumerate(c['mistakes_links']))
+            see_also = 'À lire aussi :'
         mistakes_html = f"""
 <section class="blk alt" id="erreurs">
   <p class="ey">{E(c['mistakes_ey'])}</p>
   <h2>{E(c['mistakes_t'])}</h2>
   <p class="sd">{E(c['mistakes_sd'])}</p>
   <div class="cmp-c them" style="max-width:900px;margin:0 auto"><ul>{items}</ul></div>
-  <p class="p-note" style="max-width:780px">À lire aussi : {links}.</p>
+  <p class="p-note" style="max-width:780px">{see_also} {links}.</p>
 </section>
 """
     addons = ''
@@ -733,7 +846,7 @@ def page(lang):
   <p class="p-note">{E(c['price_note'])}</p>
   <a class="p-link" href="{L('tarifs')}">{E(c['price_link'])} →</a>
 </section>
-{why_html}{hcare_html}
+{why_html}{hcare_html}{feat_html}
 <section class="blk alt" id="{i['aud']}">
   <p class="ey">{E(c['aud_ey'])}</p>
   <h2>{E(c['aud_t'])}</h2>
