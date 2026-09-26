@@ -15,6 +15,11 @@ P="_tools/seo_pipeline"
 mkdir -p "$P/runs"
 exec 9>"$P/runs/.lock"
 flock -n 9 || { echo "déjà en cours"; exit 0; }
+# Mise à jour APRÈS le verrou : jamais de git checkout pendant qu'un lot travaille (26/09 :
+# le cron de 3h17 avait basculé le dépôt sur main au milieu d'un passage).
+if [ -z "$(git status --porcelain --untracked-files=no)" ]; then
+  git checkout -q main && git fetch -q origin main && git reset -q --hard origin/main
+fi
 [ -f "$HOME/.seo_pipeline.env" ] && set -a && . "$HOME/.seo_pipeline.env" && set +a
 MAX_AFFINAGES="${MAX_AFFINAGES:-3}"
 N_NOUVELLES="${N_NOUVELLES:-2}"

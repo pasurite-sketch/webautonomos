@@ -82,6 +82,39 @@ def cmd_controle(slug, resultat):
     json.dump(st, open(STATE, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
 
 
+def cmd_review_seuils(slug):
+    """Le relecteur a approuvé mais les seuils SERPmantics ne sont pas atteints :
+    review.json de correction, à partir de la mesure « seuils » (serp.py verifier)."""
+    d = os.path.join(RUNS, slug)
+    try:
+        verdict = open(os.path.join(d, 'seuils.txt'), encoding='utf-8').read()
+    except Exception:
+        verdict = ''
+    manque = [l for l in verdict.splitlines() if l.startswith('À AFFINER')]
+    sc = lire_json(slug, 'score_seuils.json') or {}
+    g = sc.get('google') or {}
+    lignes = [manque[-1] if manque else 'Seuils SERPmantics non atteints.']
+    if g.get('sous_fourchette'):
+        lignes.append('Guide Google, expressions sous leur fourchette (à placer si elles servent le lecteur) : '
+                      + ', '.join(g['sous_fourchette'][:25]))
+    for cle in ('geo', 'chatgpt', 'gemini'):
+        x = sc.get(cle) or {}
+        if isinstance(x.get('score'), (int, float)) and x['score'] < cfg().get('seuil_rouge', 25):
+            lignes.append(f'Guide {cle} en rouge ({x["score"]}) : expressions manquantes '
+                          + ', '.join((x.get('sous_fourchette') or [])[:20]))
+    lignes.append('Corrige par des ajouts utiles et naturels (réponses directes, FAQ visible ET JSON-LD, '
+                  'précisions) et en réduisant les répétitions signalées ; jamais de bourrage.')
+    prec = lire_json(slug, 'review.json') or {}
+    v = {'verdict': 'reviser', 'confiance': 'haute',
+         'resume': 'Texte approuvé par le relecteur, mais seuils SERPmantics non atteints (contrôle automatique).',
+         'problemes': [{'gravite': 'a_corriger', 'fichier': entree(slug)['fichier'], 'regle': '12',
+                        'extrait': 'scores SERPmantics', 'correction_attendue': ' '.join(lignes)}]
+                      + [p for p in prec.get('problemes', []) if p.get('gravite') == 'mineur'],
+         'affirmations_non_couvertes': []}
+    json.dump(v, open(os.path.join(d, 'review.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
+    print('reviser')
+
+
 def cmd_sync():
     """Relit sur GitHub l'état des PR ouvertes par le circuit : fusionnée → publie,
     fermée sans fusion → ferme (la page redevient disponible)."""
@@ -345,6 +378,8 @@ if __name__ == '__main__':
         cmd_verdict(a[1])
     elif c == 'a-affiner':
         cmd_a_affiner(int(a[2]) if len(a) > 2 and a[1] == '--n' else 50)
+    elif c == 'review-seuils':
+        cmd_review_seuils(a[1])
     elif c == 'etat':
         print(state().get(a[1], {}).get('statut', '-'))
     elif c == 'controle':

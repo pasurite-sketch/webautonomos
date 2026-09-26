@@ -144,8 +144,10 @@ else
   if [ "$REPARER" = 1 ] && { [ ! -s "$RUN/diff.patch" ] || [ ! -f "$RUN/review.json" ]; }; then
     log "réparation impossible : $RUN/diff.patch ou review.json absent"; exit 2
   fi
+  # main local = GitHub, toujours (le VPS ne garde jamais de commit à lui sur main)
   git checkout -q main
-  git pull -q --ff-only
+  git fetch -q origin main
+  git reset -q --hard origin/main
   BASE="$(git rev-parse HEAD)"
   if [ "$AFFINER" = 1 ]; then
     python3 "$P/pipeline.py" sync >/dev/null 2>&1 || true
@@ -204,8 +206,25 @@ else
   relecteur 0
   passe=0
 fi
+seuils_ok(){ # contrôle automatique des seuils après approbation (0 = atteints ou mesure indisponible)
+  local rc
+  set +e
+  python3 "$P/serp.py" verifier "$SLUG" --label seuils > "$RUN/seuils.txt" 2>&1
+  rc=$?
+  set -e
+  cat "$RUN/seuils.txt" >> "$RUN/run.log"
+  [ "$rc" != 3 ]
+}
 while :; do
-  if [ "$VERDICT" = "approuver" ] && [ "$CHECKS_OK" = 1 ]; then break; fi
+  if [ "$VERDICT" = "approuver" ] && [ "$CHECKS_OK" = 1 ]; then
+    if seuils_ok; then break; fi
+    if [ "$passe" -ge "$MAX_FIX" ]; then
+      log "seuils SERPmantics pas encore atteints après $MAX_FIX corrections : texte approuvé publié, l'affinage de nuit reprendra"
+      break
+    fi
+    log "approuvée par le relecteur, mais seuils SERPmantics non atteints : passe de correction"
+    VERDICT="$(python3 "$P/pipeline.py" review-seuils "$SLUG")"
+  fi
   [ "$VERDICT" = "rejeter" ] && a_revoir "rejetée par le relecteur"
   passe=$((passe + 1))
   [ "$passe" -gt "$MAX_FIX" ] && a_revoir "toujours pas approuvée après $MAX_FIX corrections"
@@ -215,6 +234,7 @@ while :; do
 done
 
 # Publication : commit + PR
+[ "$(git rev-parse --abbrev-ref HEAD)" = "$BR" ] || abandon "la branche a changé pendant le passage (autre processus sur le dépôt)"
 python3 "$P/pipeline.py" summary "$SLUG" > "$RUN/pr.md"
 git add -A  # runs/ et .claude/ exclus par .gitignore
 QUOI="circuit SERPmantics + relecture"
@@ -241,6 +261,6 @@ else
   log "en attente de ta validation sur GitHub"
 fi
 git checkout -q main
-git pull -q --ff-only || true
+git fetch -q origin main && git reset -q --hard origin/main || true
 }
 main "$@"

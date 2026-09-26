@@ -465,9 +465,25 @@ def cmd_score(slug, label):
     return rapport
 
 
-def cmd_verifier(slug):
+REPETITION = re.compile(r'^(.*) (\d+)/(\d+)\u2013(\d+)$')
+
+
+def repetitions(r):
+    """Expressions du guide Google nettement trop répétées (SERPmantics les dit « trop
+    citées ») : au moins 10 occurrences et plus du double du haut de la fourchette."""
+    out = []
+    for x in ((r.get('google') or {}).get('au_dessus_fourchette') or []):
+        m = REPETITION.match(x)
+        if m:
+            expr, n, haut = m.group(1), int(m.group(2)), int(m.group(4))
+            if n >= 10 and n > 2 * haut:
+                out.append(f'{expr} {n}× (fourchette {m.group(3)}–{haut})')
+    return out
+
+
+def cmd_verifier(slug, label='controle'):
     e = entree(slug)
-    r = cmd_score(slug, 'controle')
+    r = cmd_score(slug, label)
     s = seuil_vert()
     g = (r.get('google') or {}).get('score')
     geo = r.get('score_geo_moyen')
@@ -484,6 +500,9 @@ def cmd_verifier(slug):
         sc = (r.get(cle) or {}).get('score') if isinstance(r.get(cle), dict) else None
         if isinstance(sc, (int, float)) and sc < seuil_rouge():
             manque.append(f'GEO {nom} {sc} en rouge (< {seuil_rouge()}) : à remonter au vert')
+    trop = repetitions(r)
+    if trop:
+        manque.append('répétitions à réduire (texte peu naturel) : ' + ', '.join(trop))
     if manque:
         print('À AFFINER : ' + ' ; '.join(manque))
         sys.exit(3)
@@ -560,7 +579,10 @@ if __name__ == '__main__':
     if len(a) >= 2 and a[0] == 'guides':
         cmd_guides(a[1])
     elif len(a) >= 2 and a[0] == 'verifier':
-        cmd_verifier(a[1])
+        lab = a[a.index('--label') + 1] if '--label' in a else 'controle'
+        if not re.fullmatch(r'[a-z0-9_-]{1,20}', lab):
+            sys.exit('label invalide')
+        cmd_verifier(a[1], lab)
     elif a and a[0] == 'sources':
         cmd_sources()
     elif len(a) >= 2 and a[0] == 'score':

@@ -53,6 +53,11 @@ brouillon « À REVOIR » pour Angelino.
    atteint 95 en changeant « Ciudad » en « Localidad » dans le formulaire : c'est
    ce genre de gain qui est interdit, pas le score). Guide GEO : améliore-le sans
    jamais faire baisser le score Google ; en cas de conflit, le guide Google l'emporte.
+   **Répétitions** : aucune expression du guide Google à plus du double du haut de
+   sa fourchette (SERPmantics la dit « trop citée ») ; le contrôle automatique le
+   vérifie après la relecture (26/09 : « devis » 53 fois et « prix » 34 fois sur
+   /fr/prestations). Les fourchettes des guides ChatGPT et Gemini, tirées de peu de
+   pages, sont indicatives : ne les suis pas au point de raccourcir le texte.
    Au plus 5 mesures intermédiaires (`--label essai1` … `essai5`) : ne tourne pas en rond.
    Seuil impossible à atteindre sans enfreindre une règle (santé, faits, protégés) :
    arrête-toi et explique-le dans `points_d_attention`.
