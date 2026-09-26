@@ -1321,6 +1321,17 @@ DENT['fr'] = dict(
            ('Vous décidez', "Vous relisez et validez chaque contenu, et demandez les modifications que vous voulez. Si "
                            "le site vous plaît, il est mis en ligne ; sinon, vous ne payez rien.")],
     price_note=PRIX_FR_SANTE,
+    extra=[
+        ('contenu-site-dentiste', 'Sur votre site', "Ce que contient le site de votre cabinet dentaire",
+         """<p class="legal-intro">Un patient qui cherche un dentiste dans sa ville, depuis son mobile ou son ordinateur, veut savoir en quelques secondes où vous trouver, comment vous contacter et à qui il aura affaire. Pour nous, la création de site internet pour dentiste commence par là : répondre clairement à ces questions, dans les limites du code de déontologie rappelées plus haut.</p>
+<div class="why-g">
+<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>Votre cabinet, votre équipe, votre adresse</h3><p>Nous rédigeons la présentation de votre cabinet dentaire et de chaque praticien de votre équipe à partir de vos informations, avec votre adresse et vos horaires bien visibles dès la page d'accueil.</p></div>
+<div class="aud-c"><div class="aud-i" aria-hidden="true">☎️</div><h3>Contact en un geste</h3><p>Votre numéro de téléphone, un bouton WhatsApp et un formulaire de contact qui envoie directement la demande à votre adresse email : le patient choisit ce qui lui convient.</p></div>
+<div class="aud-c"><div class="aud-i" aria-hidden="true">🔎</div><h3>Cohérent avec votre fiche Google</h3><p>Les titres et les textes du site reprennent vos soins et votre ville, et restent cohérents avec votre fiche Google : c'est l'optimisation SEO de base, incluse dans le prix.</p></div>
+<div class="aud-c"><div class="aud-i" aria-hidden="true">🌍</div><h3>Jusqu'à quatre langues, sans supplément</h3><p>Si votre patientèle inclut des résidents ou des visiteurs étrangers, votre site peut être rédigé en français et dans jusqu'à trois autres langues parmi l'anglais, l'espagnol, le catalan, le valencien, le galicien et le basque, sans coût supplémentaire.</p></div>
+</div>
+<p class="where">Votre cabinet dentaire partage ses locaux avec des kinésithérapeutes, par exemple dans une maison de santé ? Leur communication est elle aussi encadrée par leur code de déontologie : voir notre page <a href="https://webautonomos.es/fr/site-internet-kinesitherapeute">site internet pour kinésithérapeute</a>.</p>"""),
+    ],
     faq_t='Questions fréquentes',
     faq=[("Mes honoraires doivent-ils figurer sur mon site ?",
           "Oui. Le code de déontologie (art. R4127-240) impose à un dentiste qui présente son activité, notamment sur un "
@@ -1356,7 +1367,14 @@ DENT['fr'] = dict(
          ("Combien coûte un site pour dentiste ?",
           "15 € HT par mois sans frais d'installation ni engagement, ou 349 € HT en paiement unique, avec les mêmes "
           "services : conception, hébergement, nom de domaine la première année, mentions légales et une modification "
-          "par mois. La démo est gratuite.")],
+          "par mois. La démo est gratuite."),
+         ("Mon site inclut-il des liens vers mes réseaux sociaux ?",
+          "Oui, si vous en avez : le site inclut des liens vers vos profils professionnels sur les réseaux sociaux. Le "
+          "code de déontologie encadre votre communication « par tout moyen » (art. R4127-215-1) : ces profils suivent "
+          "donc les mêmes règles que votre site."),
+         ("Mon site peut-il être proposé en plusieurs langues ?",
+          "Oui. Il peut être rédigé en français et dans jusqu'à trois autres langues parmi l'anglais, l'espagnol, le "
+          "catalan, le valencien, le galicien et le basque, sans supplément ; nous rédigeons chaque version.")],
     final_t='Voyez votre site avant de payer quoi que ce soit',
     final_sd="Démo gratuite en 24 heures, honoraires et mentions obligatoires compris. Sans frais d'installation, sans "
              "engagement.",
