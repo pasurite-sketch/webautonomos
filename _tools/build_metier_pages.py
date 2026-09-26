@@ -694,10 +694,10 @@ MENU['en'] = dict(
     sectors=['🪵 Carpenters', '🪚 Joiners', '🍳 Kitchen fitters', '🚪 Door and window installers',
              '🗄️ Fitted wardrobes', '🪜 Staircase makers', '🪑 Cabinet makers', '🟫 Floor fitters'],
     how_t='Your website in three steps',
-    steps=[('Tell us about your business', 'Your specialities, the areas you cover and a few project photos: it takes '
-                                           'two minutes.'),
-           ('We build your demo', 'Within 24 hours, with your projects, your copy in English and Spanish, and your '
-                                  'legal pages.'),
+    steps=[('Tell us about your business', 'Your specialities, the areas you cover and a few project photos: '
+                                           'it takes two minutes.'),
+           ('We build your demo', 'Within 24 hours, with your projects, your copy in English and Spanish, and '
+                                  'your legal pages.'),
            ('You decide', "Ask for any changes you want. If you like it, it goes live; if not, you pay nothing.")],
     price_note="Prices exclude VAT (21% IVA on the mainland and the Balearics; the Canary Islands, Ceuta and Melilla "
                "have their own taxes). As a VAT-registered autónomo you can normally deduct it. Domain name included "
@@ -705,12 +705,14 @@ MENU['en'] = dict(
     extra=[
         ('what-to-include', 'On your website', "What to put on your carpentry website",
          '<p class="legal-intro">A homeowner who lands on your website wants to see quickly whether you do the '
-         'kind of work they need, in their area, and how to reach you. These are the parts that answer those '
+         'kind of work they need, in their area, and how to reach you. A clean, professional web design that '
+         'helps you showcase your craftsmanship can build trust before a homeowner even picks up the phone. '
+         'These are the parts that answer those '
          'questions and make it easier for them to ask you for a quote.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F5C2️</div>'
          '<h3>A portfolio organised by project type</h3>'
-         '<p>Kitchens, staircases, fitted wardrobes and custom furniture, grouped so a visitor looking for one type '
+         '<p>Kitchens, staircases, fitted wardrobes and bespoke furniture, grouped so a visitor looking for one type '
          'of work does not have to scroll past another. A good starting point is your own project photos: we '
          'build your site around them.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CD</div>'
@@ -745,14 +747,16 @@ MENU['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F6AA</div>'
          '<h3>Doors, windows and staircases</h3>'
          '<p>Smaller jobs bring in work between larger projects, so give them a clear place on your site '
-         'too.</p></div>'
+         'too, whether you fit them yourself or bring in a specialist installer for a professional finish.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F333</div>'
          '<h3>Decking and garden carpentry</h3>'
          '<p>Decking, pergolas and other outdoor work are a different job from indoor carpentry, so show them '
          'apart from your kitchens and wardrobes, with a short caption naming the wood or material used.</p></div>'
          '</div>'),
         ('local-search-help', 'Local search', 'How your website helps you appear in local searches',
-         '<p class="legal-intro">Getting found in your area is not only about the website itself.</p>'
+         '<p class="legal-intro">Getting found in your area is not only about the website itself: it also means '
+         'standing out from other trades, whether homeowners post a job on a directory, ask around, or search '
+         'directly for a trusted tradesperson nearby.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F50D</div>'
          '<h3>Basic SEO, included in your price</h3>'
@@ -876,6 +880,11 @@ MENU['en'] = dict(
           "You don't have to choose: keep the directory profile for extra enquiries, and use your own website as "
           "the place customers land when they search for your business by name, with your whole portfolio and a "
           "direct way to contact you."),
+         ("How do homeowners usually find a carpenter or joiner?",
+          "Often by word of mouth, through a recommendation from family, friends or another trusted local "
+          "tradesperson, and they may then look you up online before getting in touch. Others simply search for a "
+          "joiner in their area. A website built around your own projects and service area helps in both cases: "
+          "someone who heard about you can check your work there, and someone searching can find it."),
          ("Can I show before-and-after shots of a finished project?",
           "Yes, before-and-after shots of a kitchen fitting or a finished staircase can help a homeowner compare "
           "carpenters, as long as they're genuine pictures from your own projects. We build your gallery around "
