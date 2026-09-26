@@ -19,6 +19,7 @@
     {"cle": "chatgpt", "source": "chatgpt_citations", "nom": "ChatGPT (pages citées)"},
     {"cle": "gemini", "source": "gemini_citations", "nom": "Gemini (pages citées)"}
   ],
+  "geo_hors_cible_regle": "Décision d'Angelino du 26/09/2026 : un guide GEO dont les pages citées visent un autre public (ex. « trouver un menuisier » au lieu de « site pour menuisiers ») est déclaré hors cible pour la page : mesuré et affiché, mais exclu des seuils et de la moyenne GEO.",
   "objectif_geo_regle": "Décision d'Angelino du 25/09/2026 : GEO au vert (≥ seuil_vert) obligatoire pour les articles (blog, comparatifs, tarifs, devis) ; « au_mieux » pour les pages de vente (métiers, accueils, services).",
   "pages": [
     {
@@ -101,6 +102,7 @@
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "au_mieux",
+      "geo_hors_cible": ["geo"],
       "statut": "fait",
       "priorite": 1,
       "notes": "Garder le bloc Trustpilot intact. L'article blog/es/web-para-carpinteros-reformas vise aussi ce sujet : ajouter un lien vers /carpinteros/ plutôt que concurrencer. Publiée le 25/09/2026 (PR #2) : score Google 45 → 73, GEO 6 → 13."
@@ -143,6 +145,7 @@
       "generateur": null,
       "mode": "validation",
       "objectif_geo": "au_mieux",
+      "geo_hors_cible": ["chatgpt"],
       "statut": "fait",
       "priorite": 1,
       "notes": "SANTÉ. Publiée le 25/09/2026 (PR #5) : score Google 13 → 39, GEO 9 → 19."
@@ -421,6 +424,7 @@
       "generateur": "_tools/build_metier_pages.py",
       "mode": "auto",
       "objectif_geo": "au_mieux",
+      "geo_hors_cible": ["chatgpt"],
       "statut": "fait",
       "priorite": 1,
       "notes": "'websites for carpenters' 65 imp. + 'carpenters websites' 52 imp. (GSC 16 mois). Publiée le 25/09/2026 (PR #7) : score Google 41 → 53, GEO 10 → 20."

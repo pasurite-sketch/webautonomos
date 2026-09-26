@@ -43,7 +43,9 @@ brouillon « À REVOIR » pour Angelino.
    aucun guide GEO ne doit rester en rouge** (AI Overview, ChatGPT ou Gemini sous
    25, décision du 25/09/2026) : un guide rouge doit remonter au vert (≥ 50), par
    des ajouts utiles au lecteur (réponses directes sous les H2, questions de FAQ,
-   définitions, listes), jamais par répétition de mots-clés.
+   définitions, listes), jamais par répétition de mots-clés. Exception : les guides
+   listés dans `geo_hors_cible` de l'entrée (leurs pages citées visent un autre
+   public, décision du 26/09/2026) sont ignorés : ne cherche pas à les remonter.
    Guide Google : au moins 50, et au moins `cible_top3` de `guides.json` (médiane
    du top 3) quand c'est possible. **Pas de plafond** (décision d'Angelino du
    25/09/2026) : monte aussi haut que tu peux **tant que le texte reste rédigé

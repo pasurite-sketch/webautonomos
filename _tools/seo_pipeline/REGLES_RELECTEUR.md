@@ -61,7 +61,8 @@ Tu ne modifies aucun fichier, sauf ton verdict.
     50 → `a_corriger`, avec les ajouts précis à faire (expressions manquantes du
     guide, sections). Si l'entrée a `"objectif_geo": "vert"`, score GEO moyen sous
     50 → `a_corriger` aussi. Toutes les pages : un guide GEO (AI Overview,
-    ChatGPT, Gemini) encore en rouge (< 25) → `a_corriger`. Pages `"au_mieux"` :
+    ChatGPT, Gemini) encore en rouge (< 25) → `a_corriger`, sauf s'il figure dans
+    `geo_hors_cible` de l'entrée (autre public visé, décision du 26/09/2026). Pages `"au_mieux"` :
     au-delà, le GEO ne bloque pas ; une page de vente transformée en article ou
     bourrée de mots-clés pour gonfler le GEO → `a_corriger`. Si
     le rédacteur explique qu'un seuil est inatteignable sans enfreindre une règle

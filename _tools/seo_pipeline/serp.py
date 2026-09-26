@@ -441,8 +441,10 @@ def cmd_score(slug, label):
             rapport[cle_src] = {'erreur': f'HTTP {code}', 'detail': str(js)[:300]}
             continue
         rapport[cle_src] = analyser(jg, js, contenu)
+    hors = set(e.get('geo_hors_cible') or [])
     geo = [rapport[c]['score'] for c, _s, _n in sources()[1:]
-           if isinstance(rapport.get(c), dict) and isinstance(rapport[c].get('score'), (int, float))]
+           if c not in hors and isinstance(rapport.get(c), dict) and isinstance(rapport[c].get('score'), (int, float))]
+    rapport['geo_hors_cible'] = sorted(hors)
     rapport['score_geo_moyen'] = round(sum(geo) / len(geo)) if geo else None
     json.dump(rapport, open(os.path.join(d, f'score_{label}.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
     L = [f"SCORE SERPmantics ({label}) — {e['fichier']} — cible Google : au moins 50 et {rapport.get('cible_top3')} (médiane du top 3), sans plafond si le texte reste naturel"]
@@ -497,6 +499,8 @@ def cmd_verifier(slug, label='controle'):
         manque.append(f'GEO moyen {geo} < {s} (objectif_geo : vert)')
     # toutes les pages : aucun guide GEO en rouge (décision d'Angelino du 25/09/2026, 23h29)
     for cle, _src, nom in sources()[1:]:
+        if cle in (e.get('geo_hors_cible') or []):
+            continue  # pages citées hors du public visé (décision du 26/09/2026)
         sc = (r.get(cle) or {}).get('score') if isinstance(r.get(cle), dict) else None
         if isinstance(sc, (int, float)) and sc < seuil_rouge():
             manque.append(f'GEO {nom} {sc} en rouge (< {seuil_rouge()}) : à remonter au vert')

@@ -179,6 +179,10 @@ else
     git reset -q --hard "$BASE"; git checkout -q main; git branch -q -D "$BR" || true
     log "réparation impossible : la page a changé depuis, diff.patch ne s'applique plus"; exit 2
   fi
+  ANCIENNE_PR=""
+  if [ "$REPARER" = 1 ] && [ "$(python3 "$P/pipeline.py" etat "$SLUG")" = "a_revoir" ]; then
+    ANCIENNE_PR="$(python3 "$P/pipeline.py" note "$SLUG" | grep -o 'https://github.com/[^ ]*/pull/[0-9]*' || true)"
+  fi
   state en_cours "$BR"
 fi
 
@@ -247,6 +251,10 @@ TITRE="SEO — $(python3 "$P/pipeline.py" field "$SLUG" url)"
 if [ "$MODE" = "validation" ]; then TITRE="[À VALIDER] $TITRE"; fi
 PR_URL="$(gh pr create --base main --head "$BR" --title "$TITRE" --body-file "$RUN/pr.md")"
 log "PR ouverte : $PR_URL"
+if [ -n "${ANCIENNE_PR:-}" ]; then
+  gh pr close "$ANCIENNE_PR" --delete-branch --comment "Remplacée par $PR_URL (réparation)." >/dev/null 2>&1 \
+    && log "ancien brouillon fermé : $ANCIENNE_PR" || true
+fi
 
 if [ "$MODE" = "auto" ] && [ "$AUTO_MERGE" = "1" ]; then
   if gh pr merge "$PR_URL" --squash --delete-branch; then

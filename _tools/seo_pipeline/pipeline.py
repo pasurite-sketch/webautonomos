@@ -98,6 +98,8 @@ def cmd_review_seuils(slug):
         lignes.append('Guide Google, expressions sous leur fourchette (à placer si elles servent le lecteur) : '
                       + ', '.join(g['sous_fourchette'][:25]))
     for cle in ('geo', 'chatgpt', 'gemini'):
+        if cle in (entree(slug).get('geo_hors_cible') or []):
+            continue
         x = sc.get(cle) or {}
         if isinstance(x.get('score'), (int, float)) and x['score'] < cfg().get('seuil_rouge', 25):
             lignes.append(f'Guide {cle} en rouge ({x["score"]}) : expressions manquantes '
@@ -293,8 +295,9 @@ def cmd_summary(slug):
             break
     if sc:
         noms = {'google': 'Google', 'geo': 'AI Overview', 'chatgpt': 'ChatGPT', 'gemini': 'Gemini'}
-        parts = [f"{noms.get(k, k)} {v.get('score')}" for k, v in sc.items()
-                 if isinstance(v, dict) and v.get('score') is not None]
+        hors = set(e.get('geo_hors_cible') or [])
+        parts = [f"{noms.get(k, k)} {v.get('score')}" + (' (hors cible)' if k in hors else '')
+                 for k, v in sc.items() if isinstance(v, dict) and v.get('score') is not None]
         if parts:
             L.append('- **Détail des scores (dernière mesure)** : ' + ' · '.join(parts))
     L.append(f"- **Crédits SERPmantics utilisés** : {w.get('credits_utilises', '?')}")
@@ -382,6 +385,8 @@ if __name__ == '__main__':
         cmd_review_seuils(a[1])
     elif c == 'etat':
         print(state().get(a[1], {}).get('statut', '-'))
+    elif c == 'note':
+        print(state().get(a[1], {}).get('note', ''))
     elif c == 'controle':
         cmd_controle(a[1], a[2])
     elif c == 'sync':
