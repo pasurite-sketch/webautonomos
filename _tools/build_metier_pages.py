@@ -473,7 +473,7 @@ MENU['fr'] = dict(
     audience="Menuisiers, ébénistes, poseurs de fenêtres et agenceurs de cuisine",
     crumb_home='Accueil', crumb='Menuisiers',
     badge='Menuisiers bois, alu et PVC, ébénistes, agenceurs',
-    h1="Un site internet pour <em>menuisiers</em> qui montre votre travail",
+    h1="Création de site internet pour <em>menuisiers</em> : montrez votre travail",
     lede="Vos réalisations en photos, vos zones d'intervention, un devis demandé en un clic, et les mentions que la "
          "loi impose dès que vous travaillez pour des particuliers. Nous l'écrivons pour vous et vous envoyons une démo "
          "gratuite en 24 heures.",
@@ -483,15 +483,16 @@ MENU['fr'] = dict(
     brief="WebAutonomos crée des sites internet pour les menuisiers bois, alu et PVC, les ébénistes, les poseurs de "
           "fenêtres et les agenceurs de cuisine, en France et en Espagne. Nous mettons vos réalisations en valeur, "
           "rédigeons les textes et plaçons les mentions qu'impose le travail pour des particuliers : assurance, "
-          "médiateur de la consommation, mentions légales et, pour la rénovation énergétique, l'encart France Rénov' "
-          "obligatoire à partir du 1<sup>er</sup> octobre 2026. Le site coûte <strong>15 € HT par mois</strong> sans "
-          "frais d'installation ni engagement, ou <strong>349 € HT en paiement unique</strong>, jusqu'à 4 langues sans "
-          "supplément si vous le souhaitez, et la démo est prête en 24 heures.",
+          "médiateur de la consommation, mentions légales et, pour les travaux d'isolation ou de menuiseries "
+          "extérieures, l'encart France Rénov' obligatoire à partir du 1<sup>er</sup> octobre 2026. L'abonnement "
+          "coûte <strong>15 € HT par mois</strong> sans frais d'installation ni engagement, ou <strong>349 € HT en "
+          "paiement unique</strong>, jusqu'à 4 langues sans supplément si vous le souhaitez, et la démo est prête en "
+          "24 heures.",
     legal_id='regles', legal_ey='Les règles', legal_t="Ce que votre site doit montrer",
     legal_intro="Un site de menuisier n'est pas qu'une vitrine : dès que vous travaillez pour des particuliers, le Code "
                 "de la consommation vous impose quelques mentions, et la rénovation énergétique a ses propres règles. "
                 "Voici l'essentiel pour une activité en France.",
-    legal_cols=('Sujet', 'Texte', 'Ce que ça change sur votre site'),
+    legal_cols=('Sujet', 'Texte', 'Ce que ça change pour vous'),
     legal_rows=[
         ("Le mot « artisan »", "Code de l'artisanat, art. L211-1, L241-1 et L241-2",
          "Réservé à ceux qui ont un CAP, un BEP, un titre équivalent ou trois ans d'expérience dans le métier : "
@@ -501,7 +502,7 @@ MENU['fr'] = dict(
         ("Assurance", "Code des assurances, art. L241-1 et L243-2 ; Code de la consommation, art. R111-2",
          "Si vous êtes soumis à la décennale, l'attestation se joint à chaque devis et chaque facture. Avant tout "
          "contrat, le client doit aussi pouvoir connaître votre assurance, votre assureur et la couverture "
-         "géographique : le site est l'endroit le plus simple pour le dire."),
+         "géographique : autant l'indiquer clairement dès le premier contact."),
         ("RGE et aides pour les fenêtres", "Code de la consommation, art. L121-4 ; décret n° 2026-822",
          "Afficher le logo RGE sans la qualification est une pratique commerciale trompeuse. Depuis le 1er septembre "
          "2026, MaPrimeRénov' « par geste » ne finance plus les fenêtres ; elles restent possibles dans une "
@@ -512,25 +513,25 @@ MENU['fr'] = dict(
          "vers le service public. Amende jusqu'à 15 000 € (75 000 € pour une société)."),
         ("Médiateur de la consommation", "Code de la consommation, art. L616-1, R616-1 et L641-1",
          "Si vous travaillez pour des particuliers, le nom, les coordonnées et l'adresse du site de votre médiateur "
-         "doivent être visibles sur votre site. Amende jusqu'à 3 000 € (15 000 € pour une société)."),
+         "doivent apparaître clairement, par exemple en pied de page. Amende jusqu'à 3 000 € (15 000 € pour une société)."),
         ("Tarifs de dépannage et devis", "Arrêté du 24 janvier 2017",
          "Pour le dépannage, la réparation et l'entretien, menuiserie comprise : taux horaire TTC, mode de décompte du "
-         "temps, frais de déplacement et conditions du devis doivent être facilement accessibles sur votre site, et un "
+         "temps, frais de déplacement et conditions du devis doivent être facilement accessibles en ligne, et un "
          "devis détaillé est remis avant toute intervention."),
         ("Mentions légales", "LCEN, art. 1-1 et 19",
          "Nom (suivi de « EI » si vous êtes entrepreneur individuel), adresse, téléphone, e-mail, numéro "
          "d'immatriculation au RNE, numéro de TVA si vous en avez un, directeur de la publication, et nom, adresse et téléphone de "
          "l'hébergeur."),
     ],
-    legal_note="Nouveau au 1er octobre 2026 : l'encart France Rénov' devient obligatoire sur les sites qui proposent "
-               "des travaux de rénovation énergétique, fenêtres comprises. Et si vous affichez des avis clients, "
+    legal_note="Nouveau au 1er octobre 2026 : l'encart France Rénov' devient obligatoire pour les sites qui proposent "
+               "ce type de travaux, fenêtres comprises. Et si vous affichez des avis clients, "
                "indiquez s'ils sont vérifiés et comment, avec leur date (Code de la consommation, art. L111-7-2). "
                "Informations générales à jour en septembre 2026, qui ne remplacent pas un conseil juridique.",
     legal_we_t='Ce que nous mettons en place',
     legal_we=["Votre qualité d'artisan, votre numéro RNE et votre assurance (assureur, couverture) indiqués "
               "clairement",
               "Le logo RGE seulement si vous êtes qualifié, avec les travaux qu'il couvre",
-              "L'encart France Rénov' et son lien si vous proposez des travaux de rénovation énergétique",
+              "L'encart France Rénov' et son lien si vous proposez ce type de travaux",
               "Vos tarifs de dépannage (taux horaire TTC, déplacement) sur une page dédiée, si vous faites de la "
               "réparation",
               "Les coordonnées de votre médiateur, des mentions légales complètes et des avis présentés avec leur "
@@ -556,7 +557,7 @@ MENU['fr'] = dict(
     sect_t='Pour qui',
     sectors=['🪵 Menuisiers bois', '🪟 Menuisiers alu et PVC', '🚪 Poseurs de portes et fenêtres', '🪑 Ébénistes',
              '🍳 Cuisinistes et agenceurs', '🪜 Escaliéteurs', '🏠 Charpentiers', '🟫 Parqueteurs'],
-    how_t='Votre site en trois étapes',
+    how_t='Votre projet en trois étapes',
     steps=[('Vous décrivez votre activité', "Vos spécialités, votre zone d'intervention, quelques photos de "
                                            "chantier : deux minutes suffisent."),
            ('Nous préparons votre démo', "En moins de 24 heures, avec vos réalisations, vos textes et vos mentions "
@@ -566,12 +567,59 @@ MENU['fr'] = dict(
     price_note="Prix hors taxes : l'IVA espagnole de 21 % s'ajoute. Si votre entreprise est établie dans un autre "
                "pays de l'UE, en France par exemple, avec un numéro de TVA intracommunautaire, la facture est émise "
                "sans TVA (autoliquidation). Nom de domaine inclus la première année, puis environ 12 €/an.",
+    extra=[
+        ('realisations', 'Ce qui convainc', 'Comment vos réalisations et votre secteur sont mis en avant',
+         "<p class=\"legal-intro\">Un visiteur veut savoir vite si vous faites le type de travaux qu'il cherche, et "
+         "si vous intervenez près de chez lui.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📸</div>"
+         "<h3>Une galerie classée par type de travaux</h3>"
+         "<p>Vos photos de chantier sont regroupées par catégorie, pour qu'une personne intéressée par un dressing "
+         "ne fasse pas défiler des photos d'escaliers avant de trouver ce qu'elle cherche. Nous partons de vos "
+         "propres photos.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📍</div>"
+         "<h3>Votre zone d'intervention, dite clairement</h3>"
+         "<p>Nommer les villes où vous travaillez, Nantes, Rezé ou Saint-Herblain par exemple, permet au visiteur "
+         "de savoir tout de suite si vous vous déplacez chez lui. C'est aussi vrai si vous travaillez en Espagne, "
+         "sur la Costa Blanca ou ailleurs.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🏷️</div>"
+         "<h3>Une légende sous chaque photo</h3>"
+         "<p>Le matériau, le type de pose et la ville du chantier, en une ligne : le visiteur comprend ce qu'il "
+         "regarde sans avoir à vous appeler.</p></div>"
+         "</div>"
+         "<p class=\"where\">Pour aller plus loin, consultez "
+         "<a href=\"https://webautonomos.es/blog/fr/site-web-pour-menuisiers-et-renovation\">notre guide pratique "
+         "pour menuisiers</a>.</p>"),
+        ('visibilite', 'Se faire trouver', 'Comment apparaître dans les recherches locales',
+         "<p class=\"legal-intro\">Commencez par des informations identiques partout : mêmes nom, adresse et "
+         "téléphone sur votre page et sur votre fiche d'établissement. Une partie de ce travail est déjà comprise "
+         "dans votre abonnement ; le reste est un service à part.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🔍</div>"
+         "<h3>Le référencement de base, inclus dans le prix</h3>"
+         "<p>Vos titres et vos textes mentionnent votre métier et votre zone : c'est compris dans les deux "
+         "formules, sans supplément.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📈</div>"
+         "<h3>Le SEO Local, un service à part</h3>"
+         "<p>Nous proposons aussi le SEO Local pour 15 € HT par mois (quatre articles de blog par mois, mots-clés "
+         "locaux et un rapport mensuel), et la gestion de votre fiche Google pour 29 € HT par mois (49 € HT de "
+         "création si vous n'en avez pas encore). Ce sont des services séparés, à ajouter à l'abonnement ou même "
+         "sans lui.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📚</div>"
+         "<h3>Nos guides sur le sujet</h3>"
+         "<p>Nos articles approfondissent ces sujets : comment "
+         "<a href=\"https://webautonomos.es/blog/fr/optimiser-sa-fiche-google-business-profile\">mieux remplir "
+         "votre fiche professionnelle</a> et comment "
+         "<a href=\"https://webautonomos.es/blog/fr/obtenir-plus-avis-google-guide-complet\">obtenir plus "
+         "d'avis</a>.</p></div>"
+         "</div>"),
+    ],
     faq_t='Questions fréquentes',
     faq=[("Un menuisier doit-il afficher son assurance décennale sur son site ?",
-          "Aucun texte n'impose le site en particulier. Si vous êtes soumis à la décennale, l'attestation doit être "
+          "Aucun texte n'impose ce canal en particulier. Si vous êtes soumis à la décennale, l'attestation doit être "
           "jointe à chaque devis et chaque facture (Code des assurances, art. L243-2). Et avant tout contrat, le client "
           "doit pouvoir connaître votre assurance, votre assureur et la couverture géographique (Code de la "
-          "consommation, art. R111-2) : l'indiquer sur le site est la façon la plus simple d'y répondre."),
+          "consommation, art. R111-2) : l'indiquer dès votre page d'accueil est la façon la plus simple d'y répondre."),
          ("Puis-je me présenter comme artisan menuisier ?",
           "Oui si vous avez un CAP, un BEP, un titre équivalent ou trois ans d'expérience dans le métier : c'est ce qui "
           "donne la qualité d'artisan, pas la seule immatriculation. Utiliser le mot « artisan » sans y avoir droit "
@@ -580,21 +628,22 @@ MENU['fr'] = dict(
           "auprès de votre chambre de métiers avant de l'afficher."),
          ("Le remplacement de fenêtres donne-t-il encore droit à MaPrimeRénov' ?",
           "Plus en « par geste » : depuis le 1er septembre 2026, ce parcours ne finance plus les fenêtres. Elles "
-          "restent possibles dans une rénovation d'ampleur, et avec les certificats d'économies d'énergie quand elles "
-          "remplacent du simple vitrage, à condition de passer par un professionnel RGE. Sur votre site, restez "
-          "précis : une aide annoncée à tort est une pratique commerciale trompeuse."),
+          "restent possibles dans un chantier plus large (voir le tableau ci-dessus), ou avec les certificats "
+          "d'économies d'énergie quand elles remplacent du simple vitrage, à condition de passer par un professionnel "
+          "RGE. Restez précis dans vos annonces en ligne : une aide affichée à tort est une pratique commerciale "
+          "trompeuse."),
          ("Qu'est-ce que l'encart France Rénov' obligatoire au 1er octobre 2026 ?",
-          "À partir du 1er octobre 2026 (Code de la consommation, art. L122-26), tout professionnel qui propose des "
-          "travaux de rénovation énergétique sur son site ou dans sa publicité doit afficher, dans un bandeau, le "
+          "À partir du 1er octobre 2026 (Code de la consommation, art. L122-26), tout professionnel qui propose ce "
+          "type de travaux, en ligne ou dans sa publicité, doit afficher, dans un bandeau, le "
           "message officiel : « Avant de vous engager, le service public vous informe gratuitement pour préparer et "
           "sécuriser votre projet : www.france-renov.gouv.fr », avec un lien vers le service public. Amende jusqu'à "
-          "15 000 € (75 000 € pour une société). Si vous posez des fenêtres ou isolez, votre site est concerné ; nous "
+          "15 000 € (75 000 € pour une société). Si vous posez des fenêtres ou isolez, vous êtes concerné ; nous "
           "ajoutons le bandeau."),
          ("Dois-je indiquer un médiateur de la consommation ?",
           "Oui, si vous travaillez pour des particuliers, quelle que soit la taille de votre entreprise. Son nom, ses "
-          "coordonnées et l'adresse de son site doivent être visibles sur votre site, vos conditions générales et vos "
-          "bons de commande. L'ancienne plateforme européenne de règlement des litiges a fermé en juillet 2025 : "
-          "inutile d'y renvoyer."),
+          "coordonnées et l'adresse de son site internet doivent apparaître dans vos mentions légales, vos conditions "
+          "générales et vos bons de commande. L'ancienne plateforme européenne de règlement des litiges a fermé en "
+          "juillet 2025 : inutile d'y renvoyer."),
          ("Mes tarifs de dépannage doivent-ils être sur mon site ?",
           "Oui, si vous faites du dépannage, de la réparation ou de l'entretien : l'arrêté du 24 janvier 2017 couvre "
           "la menuiserie. Taux horaire TTC, mode de décompte du temps, frais de déplacement et conditions du devis "
@@ -602,10 +651,15 @@ MENU['fr'] = dict(
          ("Puis-je afficher mes avis Google sur mon site ?",
           "Oui, en indiquant s'ils sont vérifiés et comment, avec la date de chaque avis (Code de la consommation, "
           "art. L111-7-2). Publier de faux avis, ou les modifier, est une pratique commerciale trompeuse."),
+         ("Le SEO Local est-il inclus dans le prix, ou puis-je l'acheter à part ?",
+          "Le référencement de base est inclus : titres et textes construits autour de votre métier. Le SEO Local "
+          "(quatre articles de blog par mois, mots-clés locaux, rapport mensuel) est un service séparé à 15 € HT "
+          "par mois, tout comme la gestion de votre fiche Google (29 € HT par mois, plus 49 € HT de création si "
+          "vous n'avez pas encore de fiche) : les deux s'achètent indépendamment de l'abonnement."),
          ("Combien coûte un site pour menuisier ?",
           "15 € HT par mois sans frais d'installation ni engagement, ou 349 € HT en paiement unique, avec les mêmes "
           "services : conception, hébergement, nom de domaine la première année, mentions légales et une "
-          "modification par mois. Le site peut être en plusieurs langues sans supplément (jusqu'à 4), et la démo est gratuite.")],
+          "modification par mois. Il peut être en plusieurs langues sans supplément (jusqu'à 4), et la démo est gratuite.")],
     final_t='Voyez votre site avant de payer quoi que ce soit',
     final_sd="Démo gratuite en 24 heures, avec vos réalisations et vos mentions légales. Sans frais d'installation, "
              "sans engagement.",
