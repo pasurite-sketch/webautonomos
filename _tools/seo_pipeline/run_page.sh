@@ -86,6 +86,10 @@ a_revoir(){ # page non approuvée : le travail est gardé en PR brouillon, avec 
     --title "[À REVOIR] SEO — $(python3 "$P/pipeline.py" field "$SLUG" url)" --body-file "$RUN/pr.md")"
   state a_revoir "$PR_URL"
   log "PR brouillon (non fusionnable en l'état) : $PR_URL"
+  if [ -n "${ANCIENNE_PR:-}" ]; then  # réparation ratée : un seul brouillon par page
+    gh pr close "$ANCIENNE_PR" --comment "Remplacée par $PR_URL (nouveau brouillon)." >/dev/null 2>&1 \
+      && log "ancien brouillon fermé : $ANCIENNE_PR" || true
+  fi
   git checkout -q main
   exit 1
 }

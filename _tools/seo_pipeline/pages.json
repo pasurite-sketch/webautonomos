@@ -6,7 +6,8 @@
     "generateur : si renseigné, modifier le SCRIPT (pas la page) puis le relancer.",
     "requetes_secondaires : variantes à placer naturellement (H2, FAQ, texte), sans changer la requête principale du title.",
     "donnees : origine des volumes (Search Console ou outil de mots-clés d'Angelino).",
-    "langue_serpmantics : code SERPmantics propre à la page (ex. en-gb pour les pages britanniques), prioritaire sur langues_serpmantics."
+    "langue_serpmantics : code SERPmantics propre à la page (ex. en-gb pour les pages britanniques), prioritaire sur langues_serpmantics.",
+    "termes_necessaires : mots que le circuit ne doit jamais réduire, même signalés « trop cités » par SERPmantics (pays, termes juridiques) ; ignorés par le contrôle de répétition."
   ],
   "langues_serpmantics": {
     "es": "es-es",
@@ -285,7 +286,12 @@
       "statut": "a_faire",
       "priorite": 1,
       "notes": "SANTÉ. Règles françaises (titre, RPPS). Semrush France 26/09/2026 : « site internet thérapeute » 140/mois KD 8 ; « site internet psychologue » 140 KD 36 ; « création site internet psychologue » 40 KD 10.",
-      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
+      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme.",
+      "termes_necessaires": [
+        "psychologue",
+        "psychothérapeute",
+        "titre"
+      ]
     },
     {
       "slug": "fr-menuisier",
@@ -325,6 +331,11 @@
       "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme.",
       "geo_hors_cible": [
         "chatgpt"
+      ],
+      "termes_necessaires": [
+        "kinésithérapeute",
+        "ordre",
+        "honoraires"
       ]
     },
     {
@@ -344,7 +355,13 @@
       "statut": "a_faire",
       "priorite": 1,
       "notes": "SANTÉ. Semrush France 26/09/2026 : « création site internet dentiste » 110/mois KD 11 ; « site internet dentiste » 110 KD 44 ; « site internet cabinet dentaire » 40 KD 60. Relecteur (27/09) : la page dit ne vendre aucun référencement aux dentistes ; ne pas appeler « optimisation SEO de base » les titres et textes cohérents avec la fiche Google (le lecteur y lit « référencement ») : décrire ce qui est fait sans le mot SEO. H1 : doit contenir la requête (« création »).",
-      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
+      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme.",
+      "termes_necessaires": [
+        "paiement",
+        "honoraires",
+        "dentiste",
+        "ordre"
+      ]
     },
     {
       "slug": "fr-francophones-espagne",
@@ -484,6 +501,15 @@
       "notes": "SANTÉ. Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne. Semrush 26/09/2026 : volume quasi nul pour les requêtes anglaises en Espagne ; objectif principal : être cité par les IA (GEO). Les cabinets britanniques ont leurs propres pages (en-uk-*) : garder le lien vers elles (spain_note), ne pas viser le Royaume-Uni ici. Angelino (27/09/2026) : retirer « we wait for it before your site goes live » (Murcia) dans legal_note : garder la règle régionale, sans dire ce que fait WebAutonomos (VERITE.md §9). Le lien vers l'outil de réservation du client est permis (simple lien, VERITE.md §2). Pas d'avis de patients sur cette page (VERITE.md §9). Gemini hors cible (27/09) : son guide s'appuie sur des pages de cliniques en espagnol (score 4 à 6).",
       "geo_hors_cible": [
         "gemini"
+      ],
+      "termes_necessaires": [
+        "spanish",
+        "spain",
+        "number",
+        "health",
+        "patient",
+        "colegiado",
+        "clinic"
       ]
     },
     {
@@ -501,6 +527,15 @@
       "notes": "SANTÉ. Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne. Semrush 26/09/2026 : volume quasi nul pour les requêtes anglaises en Espagne ; objectif principal : être cité par les IA (GEO). Les cabinets britanniques ont leurs propres pages (en-uk-*) : garder le lien vers elles (spain_note), ne pas viser le Royaume-Uni ici. Angelino (27/09/2026) : retirer « we wait for it before your site goes live » (Murcia) dans legal_note : garder la règle régionale, sans dire ce que fait WebAutonomos (VERITE.md §9). Le lien vers l'outil de réservation du client est permis (simple lien, VERITE.md §2). Pas d'avis de patients sur cette page (VERITE.md §9). Gemini hors cible (27/09) : son guide s'appuie sur des pages de cliniques en espagnol (score 4 à 6).",
       "geo_hors_cible": [
         "gemini"
+      ],
+      "termes_necessaires": [
+        "spanish",
+        "spain",
+        "number",
+        "health",
+        "patient",
+        "colegiado",
+        "clinic"
       ]
     },
     {
@@ -517,7 +552,13 @@
       "statut": "a_faire",
       "priorite": 1,
       "notes": "SANTÉ, ROYAUME-UNI. Page créée le 26/09/2026 par _tools/build_uk_pages.py : modifier DENTAL dans ce script puis le relancer. Public : cabinets dentaires au Royaume-Uni (clients britanniques acceptés le 26/09/2026). Prix : « €15 a month (about £13) », « €349 (about £300) », « no VAT added » (VERITE.md §2), jamais « + VAT ». Garder intact le tableau des règles britanniques (sources officielles vérifiées le 26/09/2026) et n'y ajouter aucune règle. Garder le lien vers la page « in Spain » (spain_note). Ne pas cibler l'Espagne : la page « in Spain » s'en charge.",
-      "donnees": "Semrush Royaume-Uni, 26/09/2026 : « dental website design » 720/mois, KD 15."
+      "donnees": "Semrush Royaume-Uni, 26/09/2026 : « dental website design » 720/mois, KD 15.",
+      "termes_necessaires": [
+        "uk",
+        "gdc",
+        "dental",
+        "practice"
+      ]
     },
     {
       "slug": "en-uk-physio",
@@ -533,7 +574,13 @@
       "statut": "a_faire",
       "priorite": 1,
       "notes": "SANTÉ, ROYAUME-UNI. Page créée le 26/09/2026 par _tools/build_uk_pages.py : modifier PHYSIO dans ce script puis le relancer. Public : kinésithérapeutes et cabinets de kinésithérapie au Royaume-Uni (clients britanniques acceptés le 26/09/2026). Prix : « €15 a month (about £13) », « €349 (about £300) », « no VAT added » (VERITE.md §2), jamais « + VAT ». Garder intact le tableau des règles britanniques (sources officielles vérifiées le 26/09/2026) et n'y ajouter aucune règle. Garder le lien vers la page « in Spain » (spain_note). Ne pas cibler l'Espagne : la page « in Spain » s'en charge.",
-      "donnees": "Semrush Royaume-Uni, 26/09/2026 : « physiotherapy website design » 110/mois, KD 3."
+      "donnees": "Semrush Royaume-Uni, 26/09/2026 : « physiotherapy website design » 110/mois, KD 3.",
+      "termes_necessaires": [
+        "uk",
+        "hcpc",
+        "physiotherapist",
+        "physiotherapy"
+      ]
     },
     {
       "slug": "en-expats",

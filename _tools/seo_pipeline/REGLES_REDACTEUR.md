@@ -60,6 +60,10 @@ brouillon « À REVOIR » pour Angelino.
    vérifie après la relecture (26/09 : « devis » 53 fois et « prix » 34 fois sur
    /fr/prestations). Les fourchettes des guides ChatGPT et Gemini, tirées de peu de
    pages, sont indicatives : ne les suis pas au point de raccourcir le texte.
+   **Termes nécessaires** : les mots listés dans `termes_necessaires` de l'entrée
+   (pays, termes juridiques, nom du métier) ne se réduisent jamais, même « trop
+   cités » ; et aucune réduction dans une section protégée (règles, tableau juridique,
+   FAQ juridique, prix).
    Au plus 5 mesures intermédiaires (`--label essai1` … `essai5`) : ne tourne pas en rond.
    Seuil impossible à atteindre sans enfreindre une règle (santé, faits, protégés) :
    arrête-toi et explique-le dans `points_d_attention`.
@@ -102,7 +106,8 @@ cat, head, `python3 -c`…) est refusée : ne l'essaie pas, utilise Read et Grep
   (angle, cannibalisation, éléments à garder), jamais sur `VERITE.md`.
 - Intègre les expressions manquantes **naturellement**, jamais en liste de
   mots-clés. Respecte les fourchettes : ne dépasse pas le haut de la fourchette.
-- Réduis les expressions signalées « sur-utilisées ».
+- Réduis les expressions signalées « sur-utilisées », sauf les `termes_necessaires`
+  de l'entrée et jamais dans une section protégée.
 - Expressions « à éviter » : retire-les si c'est sans perte ; **garde** prix,
   formules de paiement, « demo » / « démo » / « demo gratis » et « 24 h » / « 24h »
   même si l'outil les juge « à éviter » (c'est l'offre de WebAutonomos).

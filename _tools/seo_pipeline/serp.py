@@ -471,14 +471,20 @@ def cmd_score(slug, label):
 REPETITION = re.compile(r'^(.*) (\d+)/(\d+)\u2013(\d+)$')
 
 
-def repetitions(r):
+def repetitions(r, e=None):
     """Expressions du guide Google nettement trop répétées (SERPmantics les dit « trop
-    citées ») : au moins 10 occurrences et plus du double du haut de la fourchette."""
+    citées ») : au moins 10 occurrences et plus du double du haut de la fourchette.
+    Les « termes_necessaires » de l'entrée (pays, termes juridiques) ne comptent pas :
+    27/09, le rédacteur retirait « UK », « Spanish » ou « number » de réponses juridiques
+    pour passer ce contrôle."""
+    exclus = {norm(t) for t in ((e or {}).get('termes_necessaires') or [])}
     out = []
     for x in ((r.get('google') or {}).get('au_dessus_fourchette') or []):
         m = REPETITION.match(x)
         if m:
             expr, n, haut = m.group(1), int(m.group(2)), int(m.group(4))
+            if norm(expr) in exclus:
+                continue
             if n >= 10 and n > 2 * haut:
                 out.append(f'{expr} {n}× (fourchette {m.group(3)}–{haut})')
     return out
@@ -505,7 +511,7 @@ def cmd_verifier(slug, label='controle'):
         sc = (r.get(cle) or {}).get('score') if isinstance(r.get(cle), dict) else None
         if isinstance(sc, (int, float)) and sc < seuil_rouge():
             manque.append(f'GEO {nom} {sc} en rouge (< {seuil_rouge()}) : à remonter au vert')
-    trop = repetitions(r)
+    trop = repetitions(r, e)
     if trop:
         manque.append('répétitions à réduire (texte peu naturel) : ' + ', '.join(trop))
     if manque:
