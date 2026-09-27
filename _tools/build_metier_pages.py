@@ -193,6 +193,82 @@ THERA['fr'] = dict(
                "en France par exemple, avec un numéro de TVA intracommunautaire, la facture est émise sans TVA "
                "(autoliquidation) ; les psychologues, exonérés, et les praticiens en franchise en base ne récupèrent "
                "pas cette TVA. Nom de domaine inclus la première année, puis environ 12 €/an.",
+    extra=[
+        ('contenu-site', 'Sur votre site', "Que mettre sur le site internet d&#x27;un psychologue ou d&#x27;un thérapeute ?",
+         '<p class="legal-intro">Un site internet efficace pour un thérapeute ou un psychologue répond aux '
+         'questions qu&#x27;une personne se pose avant un premier contact, dans un langage clair, sans jargon ni '
+         'promesse de résultat.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📝</div>'
+         '<h3>Qui vous êtes, présenté simplement</h3>'
+         '<p>Votre formation, votre titre et votre approche, résumés en quelques lignes pour qu&#x27;un visiteur '
+         'sache tout de suite à qui il s&#x27;adresse.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗓️</div>'
+         '<h3>Comment se passe une première séance</h3>'
+         '<p>La durée d&#x27;une séance, le déroulement du premier rendez-vous, l&#x27;adresse et l&#x27;accès du '
+         'cabinet ou le fonctionnement de la visio : ce qu&#x27;une personne veut savoir avant de vous appeler.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✉️</div>'
+         '<h3>Comment vous contacter</h3>'
+         '<p>Un formulaire court (nom, coordonnées et créneau souhaité, sans motif de consultation), un bouton '
+         'WhatsApp et votre numéro pour appeler directement.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div>'
+         '<h3>Un site rapide sur tous les écrans</h3>'
+         '<p>Beaucoup de visiteurs arrivent depuis leur téléphone : un site qui se charge rapidement et '
+         's&#x27;affiche bien sur mobile compte autant pour eux que pour votre référencement.</p></div>'
+         '</div>'
+         '<p class="where">Pour aller plus loin, notre guide sur <a href="https://webautonomos.es/blog/fr/'
+         'site-web-pour-psychologues-et-therapeutes">le site d&#x27;un psychologue ou d&#x27;un thérapeute</a> '
+         'détaille chaque rubrique de contenu.</p>'),
+        ('visibilite-therapeute', 'Se faire trouver',
+         "Comment un thérapeute apparaît-il dans les recherches locales ?",
+         '<p class="legal-intro">Quand une personne cherche un psychologue ou un thérapeute près de chez elle, des '
+         'textes à jour, qui nomment votre activité et votre ville et restent cohérents avec votre fiche Google, '
+         'aident votre site à apparaître dans ces recherches locales.</p>'
+         '<div class="aud-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div>'
+         '<h3>Le référencement de base, inclus</h3>'
+         '<p>Des titres et des textes rédigés autour de votre activité et de votre secteur géographique, '
+         'cohérents avec votre fiche Google : cette optimisation fait partie du prix de votre site, sans '
+         'supplément à prévoir.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div>'
+         '<h3>SEO local et fiche Google, en complément</h3>'
+         '<p>Nous proposons aussi le référencement local (SEO local) pour 15 € HT par mois, et la gestion de '
+         'votre fiche Google pour 29 € HT par mois, avec 49 € HT de création si vous n&#x27;en avez pas encore.'
+         '</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔗</div>'
+         '<h3>Vos réseaux sociaux reliés à votre site</h3>'
+         '<p>Si vous êtes présent sur les réseaux sociaux — Facebook, Instagram, LinkedIn — votre site internet '
+         'renvoie vers vos profils : une présence en ligne cohérente, plutôt que des vitrines séparées.</p></div>'
+         '</div>'
+         '<p class="where">Nos guides sur le <a href="https://webautonomos.es/blog/fr/'
+         'seo-local-independants-guide-complet">SEO local pour indépendants</a> et sur <a href="https://'
+         'webautonomos.es/blog/fr/optimiser-sa-fiche-google-business-profile">l&#x27;optimisation de votre fiche '
+         'Google</a> détaillent la démarche.</p>'),
+        ('pourquoi-webautonomos', 'Notre différence',
+         "Pourquoi un prix fixe de 15 € HT par mois plutôt qu&#x27;un devis d&#x27;agence ?",
+         '<p class="legal-intro">Pour la création de votre site internet de psychologue ou de thérapeute, nous '
+         'utilisons un système propre qui réutilise des composants déjà testés, sans bureaux coûteux ni commerciaux '
+         'à commission : c&#x27;est ce qui permet un prix fixe, là où une agence classique construit son devis '
+         'après un échange.</p>'
+         '<div class="aud-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧩</div>'
+         '<h3>Des textes écrits pour votre pratique</h3>'
+         '<p>Nous rédigeons vos textes à partir de vos informations — votre titre, votre approche, votre façon de '
+         'recevoir — au lieu de vous laisser remplir un modèle vide.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🛠️</div>'
+         '<h3>Le suivi technique compris dans le prix</h3>'
+         '<p>Hébergement, certificat SSL, sauvegardes quotidiennes et maintenance technique sont compris, avec une '
+         'modification par mois après la mise en ligne, sans limite de durée.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">💬</div>'
+         '<h3>Un accompagnement, pas un simple outil en ligne</h3>'
+         '<p>Nous écrivons votre site avec vous : vous décrivez votre activité en quelques minutes, vous '
+         'découvrez votre démo en moins de 24 heures, puis nous faisons ensemble les ajustements avant la mise '
+         'en ligne.</p></div>'
+         '</div>'
+         '<p class="where">Vous voulez aussi vendre en ligne ? Une boutique en ligne n&#x27;est comprise dans '
+         'aucune des deux formules : elle se fait <a href="https://webautonomos.es/fr/prestations">sur devis</a>.'
+         '</p>'),
+    ],
     faq_t='Questions fréquentes',
     faq=[("Un psychologue doit-il afficher son numéro RPPS sur son site ?",
           "Aucune loi ne l'impose expressément sur un site, mais c'est recommandé. La LCEN (art. 19) demande aux "
@@ -232,7 +308,12 @@ THERA['fr'] = dict(
           "Non. En Espagne, un psychologue doit être inscrit à un Colegio et afficher son numéro de colegiado sur "
           "son site (LSSI, art. 10), et un cabinet de psychologie de la santé doit être autorisé comme centre "
           "sanitaire par sa communauté autonome, avec son numéro d'enregistrement dans sa publicité. Nous créons "
-          "aussi des sites pour les francophones installés en Espagne.")],
+          "aussi des sites pour les francophones installés en Espagne."),
+         ("Un nouveau site apparaît-il tout de suite dans les recherches ?",
+          "Pas immédiatement. Le référencement de base, inclus avec votre site, aligne vos titres et vos textes "
+          "sur votre activité et votre fiche Google ; mais le référencement local demande du temps pour "
+          "progresser. Notre service de SEO local, à 15 € HT par mois, est pensé pour cette progression dans la "
+          "durée.")],
     final_t='Voyez votre site avant de payer quoi que ce soit',
     final_sd="Démo gratuite en 24 heures, textes et mentions légales compris. Sans frais d'installation, sans "
              "engagement.",
