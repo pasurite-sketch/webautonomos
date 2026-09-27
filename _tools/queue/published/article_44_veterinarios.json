@@ -82,7 +82,7 @@
    },
    {
     "q": "¿Puedo integrar la reserva de citas online?",
-    "a": "Sí. Integramos un sistema de reserva o enlazamos tu herramienta para que los dueños pidan cita desde la web, lo que también descarga tu teléfono."
+    "a": "Sí. Añadimos a tu web un enlace a la herramienta de citas que ya usas para que los dueños pidan cita desde la web, lo que también descarga tu teléfono."
    },
    {
     "q": "¿Ayuda a que me encuentren en mi zona?",
@@ -175,7 +175,7 @@
    },
    {
     "q": "Puc integrar la reserva de cites en línia?",
-    "a": "Sí. Integrem un sistema de reserva o enllacem la teua eina perquè els propietaris demanen cita des de la web, cosa que també descarrega el teu telèfon."
+    "a": "Sí. Afegim a la teua web un enllaç a l’eina de cites que ja uses perquè els propietaris demanen cita des de la web, cosa que també descarrega el teu telèfon."
    },
    {
     "q": "Ajuda que et troben a la teua zona?",
@@ -268,7 +268,7 @@
    },
    {
     "q": "Can I integrate online appointment booking?",
-    "a": "Yes. We integrate a booking system or link your tool so owners can book from the website, which also frees up your phone."
+    "a": "Yes. We add a link to the booking tool you already use, so owners can book from the website, which also frees up your phone."
    },
    {
     "q": "Does it help clients find me in my area?",

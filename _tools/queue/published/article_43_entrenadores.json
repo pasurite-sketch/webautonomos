@@ -90,7 +90,7 @@
    },
    {
     "q": "¿Puedo integrar reserva de sesiones?",
-    "a": "Sí. Integramos un botón de reserva o enlazamos tu herramienta de citas para que el cliente reserve directamente desde la web."
+    "a": "Sí. Añadimos un botón con el enlace a la herramienta de citas que ya usas para que el cliente reserve directamente desde la web."
    },
    {
     "q": "¿Cuánto cuesta y cuánto tarda?",
@@ -183,7 +183,7 @@
    },
    {
     "q": "Puc integrar reserva de sessions?",
-    "a": "Sí. Integrem un botó de reserva o enllacem la teua eina de cites perquè el client reserve directament des de la web."
+    "a": "Sí. Afegim un botó amb l’enllaç a l’eina de cites que ja uses perquè el client reserve directament des de la web."
    },
    {
     "q": "Quant costa i quant tarda?",
@@ -276,7 +276,7 @@
    },
    {
     "q": "Can I integrate session booking?",
-    "a": "Yes. We integrate a booking button or link your scheduling tool so the client books directly from the website."
+    "a": "Yes. We add a button linking to the booking tool you already use, so the client books directly from the website."
    },
    {
     "q": "How much does it cost and how long does it take?",

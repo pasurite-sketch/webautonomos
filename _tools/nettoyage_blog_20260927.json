@@ -1,0 +1,2891 @@
+{
+ "_lisez_moi": "Nettoyage du blog du 27/09/2026 (demande d'Angelino) : statistiques sans source vérifiable, faux cas clients, promesses contraires à VERITE.md (intégration de réservation, délai de 5 à 10 jours, « des dizaines d'indépendants »). Tables appliquées dans l'ordre es, val, en, fr, sup par _tools/nettoyage_blog_20260927.py. « gardes » : chiffres conservés et pourquoi.",
+ "ordre": [
+  "es",
+  "val",
+  "en",
+  "fr",
+  "sup"
+ ],
+ "es": {
+  "remplacements": [
+   [
+    "El 93% de los españoles busca servicios locales en internet antes de contratar.",
+    "Cada vez más gente busca servicios locales en internet antes de contratar."
+   ],
+   [
+    "Los backlinks representan el 28% del peso en el posicionamiento del Map Pack de Google. Es decir, casi un tercio de tu visibilidad en Google Maps depende de los enlaces que apuntan a tu web.",
+    "Los enlaces que apuntan a tu web son una de las señales que Google tiene en cuenta para decidir quién aparece en el Map Pack, así que también influyen en tu visibilidad en Google Maps."
+   ],
+   [
+    "Laura, fisioterapeuta en Valencia, consiguio en 6 meses solo 8 backlinks locales de calidad y paso de la tercera pagina de Google a la primera para fisioterapeuta Valencia.",
+    "Por ejemplo, a una fisioterapeuta le sirven más unos pocos enlaces de webs locales de confianza (su colegio profesional, un club deportivo de la zona, un medio local) que muchos enlaces de directorios sin relación con su actividad."
+   ],
+   [
+    "Según el estudio de BrightLocal, las señales de citaciones representan aproximadamente un 7% de los factores de ranking en el Map Pack de Google. En sectores competitivos, ese 7% puede ser la diferencia entre aparecer en el top 3 o quedar fuera.",
+    "Las citas locales no son el factor que más pesa en el Map Pack de Google, pero cuentan. En sectores competitivos, pueden marcar la diferencia entre aparecer entre los tres primeros o quedar fuera."
+   ],
+   [
+    "contenido. Según el estudio de BrightLocal, las citaciones representan aproximadamente el 7% de los factores de ranking local. No son el factor principal",
+    "contenido. No son el factor principal"
+   ],
+   [
+    "Los negocios con fotos reciben un 42% más de solicitudes de indicaciones y un 35% más de clics.",
+    "Una ficha con buenas fotos suele recibir más clics y más peticiones de cómo llegar."
+   ],
+   [
+    "en 2026, el 87% de los españoles busca servicios profesionales en Google antes de llamar a nadie.",
+    "hoy, antes de llamar a un profesional, mucha gente lo busca primero en Google."
+   ],
+   [
+    "Según el INE, en 2025 el 94% de los hogares españoles tiene conexión a internet, y el 87% de los consumidores busca información sobre servicios locales en Google antes de tomar una decisión.",
+    "Casi todos los hogares españoles tienen ya conexión a internet, y buscar en Google antes de contratar un servicio local se ha convertido en un hábito."
+   ],
+   [
+    "El Map Pack de Google recibe entre el 60% y el 75% de todos los clics en búsquedas locales.",
+    "El Map Pack de Google, el bloque con el mapa y tres negocios, se lleva buena parte de los clics en las búsquedas locales."
+   ],
+   [
+    "El 76% de las personas que hacen una búsqueda local en el móvil visitan un negocio en las siguientes 24 horas.",
+    "Quien busca un servicio cerca desde el móvil suele tener una necesidad inmediata y decidirse rápido."
+   ],
+   [
+    "WhatsApp Business es el canal número uno: el 98% de los españoles usa WhatsApp.",
+    "WhatsApp Business es el canal número uno: en España casi todo el mundo usa WhatsApp."
+   ],
+   [
+    "El 88% de la gente confía tanto en las reseñas de Google como en las recomendaciones personales.",
+    "Para mucha gente, una reseña en Google pesa casi tanto como la recomendación de un conocido."
+   ],
+   [
+    "Los datos hablan por sí solos: el 93% de la gente lee reseñas antes de elegir un producto o servicio, el 72% no actúa hasta leer opiniones positivas, y los negocios con más de 4 estrellas reciben un 12% más de clics.",
+    "Antes de elegir un producto o servicio, mucha gente lee las reseñas, y una buena nota media con opiniones recientes ayuda a que te elijan a ti."
+   ],
+   [
+    "La tasa de respuesta cae un 50% después de 24 horas.",
+    "Cuanto más tiempo pasa, menos probable es que el cliente se acuerde de dejarla."
+   ],
+   [
+    "Este es uno de los métodos que mejor ha funcionado para miles de negocios.",
+    "Así pedirla se convierte en una rutina más de tu trabajo."
+   ],
+   [
+    "Existen múltiples estrategias para pedir reseñas que han funcionado para miles de empresas.",
+    "Existen varias formas de pedir reseñas que suelen funcionar bien."
+   ],
+   [
+    "El 53% de los usuarios abandona una web que tarda mas de 3 segundos en cargar. El 72% de las busquedas locales se hacen desde el movil, por lo que el diseno responsive es obligatorio.",
+    "Si tu web tarda en cargar, muchos visitantes se irán antes de verla. Y como las búsquedas locales se hacen a menudo desde el móvil, el diseño responsive es obligatorio."
+   ],
+   [
+    "Antonio, fontanero en Valencia, subio de la posicion 8 a la 3 para 'fontanero urgente Valencia' y paso de 0 a 7 llamadas mensuales.",
+    "Con estas herramientas puedes comprobar, por ejemplo, si subes posiciones para «fontanero urgente Valencia» y si eso se traduce en más llamadas."
+   ],
+   [
+    "Los negocios locales con blog reciben un 55% más de tráfico que los que no lo tienen.",
+    "Con el tiempo, un blog bien enfocado puede atraer visitas que de otra forma no llegarían a tu web."
+   ],
+   [
+    "Más del 80% de los consumidores prefieren contactar con negocios por WhatsApp que por teléfono.",
+    "Mucha gente prefiere escribir a un negocio por WhatsApp antes que llamar por teléfono."
+   ],
+   [
+    "Por qué la mayoría de autónomos no escriben",
+    "Por qué tantos autónomos no escriben"
+   ],
+   [
+    "El 80% de los autónomos abandonan la idea de actualizar su web por miedo al folio en blanco.",
+    "Muchos autónomos abandonan la idea de actualizar su web por miedo al folio en blanco."
+   ],
+   [
+    "Es fundamental porque más del 60% de usuarios navegan desde el móvil, y Google penaliza las webs no responsive.",
+    "Es fundamental porque mucha gente navega desde el móvil, y Google penaliza las webs no responsive."
+   ],
+   [
+    "Más del 80% de los españoles busca productos y servicios en internet antes de decidir.",
+    "Cada vez más gente busca productos y servicios en internet antes de decidir."
+   ],
+   [
+    "el email sigue siendo el canal con mayor retorno de inversion: por cada euro invertido, genera una media de 36 euros.",
+    "el email sigue funcionando: escribir a tus propios clientes cuesta muy poco y llega directamente a quien ya te conoce."
+   ],
+   [
+    "El email marketing genera un retorno medio de 36 euros por cada euro invertido, segun un estudio de Litmus. Funciona incluso mejor para negocios pequenos",
+    "El email marketing funciona especialmente bien en negocios pequeños"
+   ],
+   [
+    "email de bienvenida automatico (hasta 80% de apertura)",
+    "email de bienvenida automático"
+   ],
+   [
+    "El asunto lo es todo: el 47% de las personas deciden abrir un email basandose solo en el asunto.",
+    "El asunto lo es todo: mucha gente decide si abre un email solo por el asunto."
+   ],
+   [
+    "Carmen, peluquera en Elda, logro una tasa de apertura del 42% y genero 15 citas directas en 6 meses.",
+    "Por ejemplo, una peluquería puede avisar a sus clientas de los huecos libres de la semana y recibir las citas directamente como respuesta al email."
+   ],
+   [
+    "consiguen tasas de apertura de hasta el 40%, muy superiores a las de las grandes marcas.",
+    "suelen conseguir que sus clientes abran esos emails con más interés que los de una gran marca."
+   ],
+   [
+    "La tasa media de apertura de emails en España está entre el 20% y el 25%. Sin embargo, los autónomos con listas pequeñas y una relación cercana con sus clientes suelen tener tasas más altas, del 30% al 45%. Si tu tasa de apertura baja del 15%, probablemente tus asuntos no son atractivos o estás enviando emails con demasiada frecuencia. Un buen asunto de email puede marcar la diferencia entre un 15% y un 40% de apertura.",
+    "No hay una cifra que sirva para todos: depende de tu sector, de cómo conseguiste los contactos y de lo cercana que sea tu relación con ellos. Lo más útil es compararte contigo mismo: anota la tasa de apertura de cada envío y fíjate en cómo evoluciona de un mes a otro. Si baja de forma clara, revisa tres cosas: que tus asuntos sean concretos y atractivos, que no estés enviando con demasiada frecuencia y que tu lista esté al día (quita los correos que rebotan o que llevan mucho tiempo sin abrir nada)."
+   ],
+   [
+    "Despues de trabajar con decenas de autonomos en la Comunidad Valenciana -- carpinteros en Elda, electricistas en Alicante, dentistas en Valencia, fontaneros en Elche -- hemos visto los mismos errores de marketing digital una y otra vez.",
+    "Carpinteros en Elda, electricistas en Alicante, dentistas en Valencia, fontaneros en Elche: en la Comunidad Valenciana, muchos autónomos repiten los mismos errores de marketing digital una y otra vez."
+   ],
+   [
+    "En 2026, el 65% de los autonomos en Espana todavia no tienen pagina web, perdiendo entre 5 y 15 llamadas al mes de clientes potenciales.",
+    "En 2026, muchos autónomos en España todavía no tienen página web, y cada mes pierden llamadas de clientes que los buscan en Google y no los encuentran."
+   ],
+   [
+    "El 93% de los clientes leen resenas antes de contratar,",
+    "Mucha gente lee las reseñas antes de contratar,"
+   ],
+   [
+    "El 65% de los autónomos en España no tienen web, lo que significa que son invisibles para el 73% de consumidores que buscan servicios en Google antes de contratar.",
+    "Sin web propia, eres mucho menos visible para quien busca servicios en Google antes de contratar."
+   ],
+   [
+    "La recomendación general es destinar entre el 5% y el 10% de tu facturación a marketing. Para un autónomo que factura 30.000 euros al año, eso serían entre 125 y 250 euros al mes. Sin embargo, puedes empezar con mucho menos:",
+    "No hay una cifra que valga para todos: depende de tu sector, de tus márgenes y de cuántos clientes nuevos necesitas. Lo bueno es que puedes empezar con muy poco:"
+   ],
+   [
+    "Fotos y videos en tu ficha de Google: por que duplican tus clics",
+    "Fotos y videos en tu ficha de Google: qué subir y por qué importa"
+   ],
+   [
+    "Segun datos de Google, los negocios con mas de 100 fotos reciben un 520% mas de llamadas que los que no tienen ninguna.",
+    "Una ficha con fotos reales y actualizadas transmite confianza desde el primer vistazo."
+   ],
+   [
+    "Las fichas con imagenes en Google Business reciben un 42% mas de solicitudes de indicaciones y un 35% mas de clics hacia la web. El 60% de los consumidores prefieren negocios con fotos en Google Maps frente a los que no tienen.",
+    "Una ficha con buenas imágenes suele recibir más peticiones de cómo llegar y más clics hacia la web, y mucha gente prefiere elegir un negocio que ha podido ver antes de ir."
+   ],
+   [
+    "Si las fotos duplican tus clics, los videos en Google Maps los triplican.",
+    "Si las fotos ayudan a que te elijan, los vídeos pueden reforzar todavía más esa primera impresión."
+   ],
+   [
+    "en tres meses tu ficha tendra mas contenido visual que el 90% de tus competidores.",
+    "en tres meses tu ficha tendrá más contenido visual que la de muchos de tus competidores."
+   ],
+   [
+    "Google recomienda un mínimo de 10 fotos para que tu ficha se considere completa. Sin embargo, los negocios con más de 25 fotos reciben un 35% más de clics que los que tienen menos de 10.",
+    "No hay un número mágico: lo que cuenta es que tus fotos sean reales, variadas y recientes."
+   ],
+   [
+    "Los negocios con vídeos reciben un 20% más de interacciones que los que solo tienen fotos.",
+    "Un vídeo corto y bien hecho puede ayudarte a destacar frente a fichas que solo tienen fotos."
+   ],
+   [
+    "los errores que hacen perder dinero al 90% de los principiantes.",
+    "los errores que hacen perder dinero a tantos principiantes."
+   ],
+   [
+    "Segun un estudio de BrightLocal, las fichas que publican posts regularmente reciben un 35% mas de clics en el boton de llamada y un 25% mas de solicitudes de ruta en Google Maps.",
+    "Publicar con regularidad indica a Google y a tus clientes que el negocio está activo, y eso puede traducirse en más llamadas y más peticiones de ruta en Google Maps."
+   ],
+   [
+    "Jaime, cerrajero en Alicante, empezo a publicar un post cada lunes y en dos meses las llamadas desde Google Maps crecieron de 8 a 14 al mes.",
+    "Por ejemplo, un cerrajero puede publicar un post cada lunes con un trabajo reciente y comprobar cada mes, en las estadísticas de su ficha, si aumentan las llamadas desde Google Maps."
+   ],
+   [
+    "Olvídate del 90% de los datos que muestra Google Analytics.",
+    "Olvídate de casi todos los datos que muestra Google Analytics."
+   ],
+   [
+    "Si el 80% de tus visitas vienen solo de Instagram, dependes peligrosamente de una sola fuente. Lo ideal para un autónomo es tener un mix equilibrado: 50% Google orgánico, 20% redes sociales, 15% directo, 15% otros canales. Si tu Google orgánico está por debajo del 30%, tu SEO local necesita trabajo.",
+    "Si casi todas tus visitas vienen solo de Instagram, dependes peligrosamente de una sola fuente. Lo ideal para un autónomo es un reparto equilibrado, con la búsqueda orgánica de Google como fuente principal y las redes sociales, las visitas directas y otros canales como complemento. Si Google apenas te trae visitas, tu SEO local necesita trabajo."
+   ],
+   [
+    "Una tasa de rebote por encima del 70% indica un problema:",
+    "Una tasa de rebote muy alta suele indicar un problema:"
+   ],
+   [
+    "Una tasa entre 40% y 60% es normal para una web de servicios locales. Por debajo del 40% es excelente.",
+    "No hay una cifra «normal» que sirva para todas las webs: compara tu tasa de un mes a otro y fíjate sobre todo en las páginas que más visitas reciben."
+   ],
+   [
+    "Una buena web de autónomo convierte entre el 2% y el 5% de sus visitas en contactos. Si tienes 500 visitas al mes y consigues 10-25 contactos, estás dentro del rango normal. Si tienes 500 visitas y solo consigues 1-2 contactos, hay algo mal:",
+    "No hay un porcentaje de referencia que sirva para todos: depende de tu sector, de tu zona y de lo que busca quien llega a tu web. Lo útil es seguir tu propia cifra mes a mes. Si recibes visitas pero casi nadie te contacta, hay algo mal:"
+   ],
+   [
+    "Un electricista local puede generar negocio con 100-200 visitas al mes si están bien orientadas.",
+    "Un electricista local puede generar negocio con relativamente pocas visitas al mes si están bien orientadas."
+   ],
+   [
+    "el 56% de los negocios locales ni siquiera han completado toda la informacion.",
+    "muchos negocios locales ni siquiera han completado toda la información."
+   ],
+   [
+    "Las fichas completamente optimizadas reciben 7 veces mas clics que las incompletas. Las fichas con fotos reciben un 42% mas de solicitudes de indicaciones en Google Maps y un 35% mas de clics hacia la web. El Local Pack de Google (las 3 fichas del mapa) acapara el 44% de todos los clics en busquedas locales.",
+    "Una ficha completa y cuidada suele recibir más clics que una incompleta, y las fotos animan a pedir indicaciones en Google Maps o a visitar tu web. El Local Pack de Google (las 3 fichas del mapa) se lleva buena parte de los clics en las búsquedas locales."
+   ],
+   [
+    "Las fichas con mas de 100 fotos reciben un 520% mas de llamadas.",
+    "Las fotos reales de tu trabajo generan confianza y animan a llamar."
+   ],
+   [
+    "Laura, peluquera en Valencia, paso de 4 a 28 llamadas mensuales en 6 meses siguiendo este plan.",
+    "Si mantienes esta rutina, las estadísticas de tu ficha te dirán mes a mes si aumentan las llamadas y las visitas."
+   ],
+   [
+    "Google recomienda un mínimo de 10 fotos para que tu ficha esté bien optimizada. Las fichas con más de 100 fotos reciben un 520% más de llamadas que las que no tienen fotos.",
+    "No hay un número mágico: lo importante es que tus fotos sean reales, variadas y recientes."
+   ],
+   [
+    "Según Google, el 46% de todas las búsquedas tienen intención local, y el 76% de quienes buscan en el móvil visitan un negocio en 24 horas.",
+    "Muchas búsquedas en Google tienen intención local, y quien busca desde el móvil suele querer una solución rápida y cerca."
+   ],
+   [
+    "Pagas 15 euros al mes por una web, esa web te trae 3 clientes nuevos, y cada cliente te deja 200 euros de beneficio. Segun la Camara de Comercio, solo el 23% de los autonomos espanoles hacen seguimiento del origen de sus clientes.",
+    "Por ejemplo, si pagas 15 euros al mes por una web y esa web te trae 3 clientes nuevos que te dejan 200 euros de beneficio cada uno, la cuenta sale claramente a tu favor. Eso sí, para saberlo tienes que apuntar de dónde llega cada cliente, y muchos autónomos no lo hacen."
+   ],
+   [
+    "Ejemplo: Carlos, pintor en Valencia, invierte 59 euros al mes y recibe 4 trabajos con un beneficio medio de 300 euros cada uno. Su ROI es de 1.933%. Es decir, por cada euro invertido recupera casi 20 euros. Este nivel de ROI es habitual en negocios de servicios locales bien posicionados.",
+    "Por ejemplo, imagina un pintor que invierte 59 euros al mes y consigue así 4 trabajos con un beneficio medio de 300 euros cada uno: su ROI sería de 1.933%. Es decir, por cada euro invertido recuperaría casi 20 euros. No todos los meses salen igual: haz la cuenta con tus propios números."
+   ],
+   [
+    "La recomendación general es entre el 5% y el 10% de la facturación bruta para negocios establecidos, y hasta el 15-20% para negocios nuevos que necesitan darse a conocer. Pero para un autónomo local, más que un porcentaje,",
+    "No existe un porcentaje de la facturación que sirva para todos: depende de tu sector y de si tu negocio acaba de empezar o ya tiene clientela. Para un autónomo local,"
+   ],
+   [
+    "Tienes exactamente 3 segundos para convencerla",
+    "Tienes muy poco tiempo para convencerla"
+   ],
+   [
+    "Los heroes con imagen real del negocio generan un 35% más de confianza que los que usan fotos genéricas.",
+    "Una imagen real de tu negocio transmite más confianza que una foto genérica de banco de imágenes."
+   ],
+   [
+    "El 88% de los consumidores confía en las reseñas online tanto como en las recomendaciones de amigos y familiares. Incluir testimonios reales en tu web es casi tan potente como que un amigo del cliente te recomiende en persona.",
+    "Para mucha gente, una reseña online pesa casi tanto como la recomendación de un amigo o un familiar, así que incluir testimonios reales en tu web es una de las formas más sencillas de generar confianza."
+   ],
+   [
+    "Reducir un formulario de 7 a 4 campos aumenta las conversiones un 50%.",
+    "Cuantos menos campos tenga, más fácil es que la gente lo rellene."
+   ],
+   [
+    "puede multiplicar tus contactos, ya que el 95% de los usuarios de smartphone en España usa WhatsApp.",
+    "puede aumentar tus contactos, porque en España casi todo el mundo usa WhatsApp."
+   ],
+   [
+    "El 88% de los consumidores confía tanto en las reseñas online como en las recomendaciones personales.",
+    "Para mucha gente, una reseña online pesa casi tanto como una recomendación personal."
+   ],
+   [
+    "El Map Pack de Google capta el 60-75% de los clics locales.",
+    "El Map Pack de Google se lleva buena parte de los clics locales."
+   ],
+   [
+    "Eso es el Map Pack de Google, y capta entre el 60% y el 75% de todos los clics en busquedas locales.",
+    "Eso es el Map Pack de Google, y se lleva buena parte de los clics en las búsquedas locales."
+   ],
+   [
+    "Segun un estudio de Moz, el Map Pack recibe entre el 60% y el 75% de todos los clics en busquedas con intencion local. Ademas, el 76% de las personas que hacen una busqueda local en el movil visitan un negocio o llaman en las siguientes 24 horas.",
+    "Como aparece antes que los resultados normales, es lo primero que mira mucha gente cuando busca un servicio cerca. Además, quien hace una búsqueda local desde el móvil suele tener prisa por llamar o acercarse al negocio."
+   ],
+   [
+    " (las fichas con mas de 100 fotos reciben un 520% mas de llamadas)",
+    ""
+   ],
+   [
+    "Los negocios con web propia optimizada para SEO local tienen hasta un 50% mas de probabilidades de aparecer en el Map Pack.",
+    "Una web propia optimizada para SEO local refuerza tus posibilidades de aparecer en el Map Pack."
+   ],
+   [
+    "Lucia, esteticista en Alicante, siguio esta estrategia y paso de 3 a 18 llamadas mensuales desde Google en solo 3 meses.",
+    "Por ejemplo, un centro de estética que sigue este plan puede comprobar mes a mes, en las estadísticas de su ficha, si recibe más llamadas desde Google."
+   ],
+   [
+    "Estos tres puestos reciben entre el 60% y el 75% de todos los clics de búsquedas locales.",
+    "Estos tres puestos se llevan buena parte de los clics de las búsquedas locales."
+   ],
+   [
+    "Los negocios con web propia tienen hasta un 50% más de probabilidades de aparecer en los 3 primeros puestos del Map Pack que los que no la tienen.",
+    "Por eso, una web propia bien trabajada te ayuda a competir por esos tres primeros puestos."
+   ],
+   [
+    "El 87% de los consumidores usa Google para encontrar negocios locales, frente al 48% que consulta redes sociales.",
+    "Para encontrar un negocio local, mucha gente recurre antes a Google que a las redes sociales."
+   ],
+   [
+    "Facebook tiene 22 millones de usuarios activos en Espana, con el grupo de 35-55 anos siendo el mas activo.",
+    "Facebook sigue siendo una red muy usada en España, sobre todo por adultos."
+   ],
+   [
+    "Pero el alcance organico es solo del 2-5% de tus seguidores,",
+    "Pero tus publicaciones sin promoción solo llegan a una pequeña parte de tus seguidores,"
+   ],
+   [
+    "Los Reels generan 3 veces mas alcance que las fotos estaticas.",
+    "Los Reels suelen llegar a más gente que las fotos estáticas."
+   ],
+   [
+    "Raul, pintor en Elche, recibe 12 contactos mensuales desde Google (60% conversion) y 3-4 desde redes (20% conversion). Los datos confirman donde invertir mas tiempo.",
+    "Apunta de dónde llega cada contacto (Google, redes, recomendaciones) y cuántos acaban en trabajo: en pocos meses tus propios datos te dirán dónde invertir más tiempo."
+   ],
+   [
+    "Reduce ausencias un 40%, ahorra tiempo",
+    "Reduce ausencias, ahorra tiempo"
+   ],
+   [
+    "datos de plataformas de reservas muestran que hasta el 40% de ausencias son por falta de recordatorios.",
+    "muchas ausencias se deben simplemente a que el cliente se olvidó de la cita."
+   ],
+   [
+    "según la experiencia de autónomos, cada reserva por WhatsApp te cuesta entre 4 y 8 minutos.",
+    "cada reserva por WhatsApp te cuesta varios minutos de mensajes de ida y vuelta."
+   ],
+   [
+    "Un estudio de Northwestern University revelo que los consumidores confian mas en negocios con una puntuacion de 4.2 a 4.5 estrellas que en aquellos con un perfecto 5.0. Un 5.0 perfecto parece falso. Ademas, el 89% de los consumidores leen las respuestas del negocio a las resenas negativas.",
+    "Una nota perfecta no siempre inspira más confianza: un 5.0 sin ninguna crítica puede parecer falso, y unas pocas reseñas negativas bien respondidas hacen que el resto resulte más creíble. Además, muchos clientes leen cómo responde el negocio a las reseñas negativas."
+   ],
+   [
+    "No ignores la resena, porque segun Google los negocios que responden reciben un 35% mas de clics.",
+    "No ignores la reseña: responder demuestra a quien lee tu ficha que te importan tus clientes."
+   ],
+   [
+    "Estos resultados reciben entre un 20% y 30% mas de clics.",
+    "Estos resultados destacan más en la página y pueden atraer más clics."
+   ],
+   [
+    "Estos resultados destacan más y reciben entre un 20% y un 30% más de clics.",
+    "Estos resultados destacan más y pueden atraer más clics."
+   ],
+   [
+    "En 2026, el 77% de los pacientes buscan profesionales de salud online antes de pedir cita.",
+    "Hoy, muchos pacientes buscan a su dentista o fisioterapeuta en internet antes de pedir cita."
+   ],
+   [
+    "Segun un estudio de Doctoralia, el 82% de los pacientes consultan internet antes de elegir un profesional sanitario.",
+    "Antes de elegir un profesional sanitario, es habitual consultar internet."
+   ],
+   [
+    "El 90% de los pacientes leen opiniones antes de elegir un profesional de salud.",
+    "Y antes de decidirse, muchos leen las opiniones de otros pacientes."
+   ],
+   [
+    "El 77% de los pacientes buscan información online antes de elegir un profesional de salud.",
+    "Muchos pacientes buscan información online antes de elegir un profesional de salud."
+   ],
+   [
+    "Segun los ultimos datos de Google, el 97% de los consumidores buscan servicios locales por internet antes de contratar. En el caso de la fontaneria, las busquedas como \"fontanero urgente Valencia\" o \"fontanero Elche precios\" han crecido un 35% en los ultimos dos anos. Un fontanero en Alicante con una web bien posicionada puede recibir entre 15 y 30 llamadas al mes solo desde Google, sin pagar publicidad ni depender de intermediarios.",
+    "Hoy, antes de contratar un servicio local, mucha gente lo busca primero en internet. En fontanería, además, se busca a menudo con urgencia: quien escribe «fontanero urgente Valencia» o «fontanero Elche precios» necesita a alguien ya. Un fontanero con una web bien posicionada puede recibir llamadas desde Google sin pagar publicidad ni depender de intermediarios."
+   ],
+   [
+    "(el 78% de las busquedas de fontaneros se hacen desde el movil)",
+    "(muchas búsquedas de fontaneros se hacen desde el móvil)"
+   ],
+   [
+    "Antonio, fontanero en Elda con 12 anos de experiencia, monto su web con nosotros y en las primeras 6 semanas recibio 14 llamadas desde Google que se tradujeron en 9 trabajos confirmados. Todo por 15 euros al mes.",
+    "Por ejemplo, un fontanero que lleva años trabajando solo con el boca a boca puede tener su web profesional por 15 euros al mes, con alojamiento, SSL y mantenimiento incluidos."
+   ],
+   [
+    "Reservas online: el cambio que duplica tu agenda",
+    "Reservas online: tu agenda abierta las 24 horas"
+   ],
+   [
+    "pero el 75% de los nuevos pacientes te buscan en Google antes de coger el teléfono.",
+    "pero muchos pacientes nuevos te buscan en Google antes de coger el teléfono."
+   ],
+   [
+    "por qué las reservas online pueden duplicar tu agenda en pocos meses.",
+    "por qué las reservas online pueden ayudarte a llenar la agenda."
+   ],
+   [
+    "Datos del sector: las clínicas con reservas online pueden incrementar su captación entre un 30% y un 50%, especialmente en franjas como noche y fin de semana.",
+    "Con reservas online puedes captar pacientes que, de otro modo, no llamarían, sobre todo por la noche y el fin de semana."
+   ],
+   [
+    "Una buena integración cuesta 1 hora de configuración y se amortiza en la primera semana.",
+    "Una integración sencilla se configura rápido y suele amortizarse pronto."
+   ],
+   [
+    "una clínica de pies puede multiplicar sus nuevas citas en pocos meses.",
+    "una clínica de pies tiene lo necesario para atraer más citas nuevas."
+   ],
+   [
+    "En 2026, el 73% de las personas que buscan apoyo psicológico empiezan por Google.",
+    "Hoy, muchas personas que buscan apoyo psicológico empiezan por Google."
+   ],
+   [
+    "un cambio de algoritmo y tu visibilidad cae un 80% de la noche a la mañana.",
+    "un cambio de algoritmo y tu visibilidad puede caer en picado de la noche a la mañana."
+   ],
+   [
+    "Los estudios que gestionan reservas online con depósito obligatorio tienen hasta un 60% menos de cancelaciones.",
+    "Pedir un depósito al reservar online suele reducir las cancelaciones y los plantones."
+   ],
+   [
+    "Los estudios son claros: la mayoría de visitantes abandona una web que tarda más de 3 segundos en cargar.",
+    "Cuanto más tarda una web en cargar, más visitantes se van antes de ver nada, sobre todo desde el móvil."
+   ],
+   [
+    "Según un estudio de BrightLocal, las categorías de Google Business son el factor número uno que determina en qué búsquedas del Map Pack apareces. Por encima de las reseñas, por encima de la proximidad geográfica y por encima del contenido de tu web.",
+    "Las categorías de Google Business son uno de los factores que más pesan a la hora de decidir en qué búsquedas del Map Pack apareces."
+   ],
+   [
+    "Los negocios locales con blog reciben un 55% más de tráfico.",
+    "Con el tiempo, un blog bien enfocado puede atraer visitas que de otra forma no llegarían a tu web."
+   ],
+   [
+    "El Map Pack de Google capta entre el 60% y el 75% de todos los clics en búsquedas locales.",
+    "El Map Pack de Google se lleva buena parte de los clics en las búsquedas locales."
+   ],
+   [
+    "Los negocios con web propia tienen hasta un 50% más de probabilidades de aparecer en los 3 primeros puestos del Map Pack.",
+    "Por eso, una web propia bien trabajada te ayuda a competir por esos tres primeros puestos."
+   ],
+   [
+    "La tasa media en España está entre el 20% y el 25%. Sin embargo, los autónomos con listas pequeñas suelen tener tasas más altas, del 30% al 45%. Si baja del 15%, probablemente tus asuntos no son atractivos o envías emails con demasiada frecuencia.",
+    "No hay una cifra que sirva para todos: depende de tu sector y de tu lista. Lo más útil es comparar cada envío con tus meses anteriores y, si la tasa baja de forma clara, revisar tus asuntos, la frecuencia de envío y que tu lista esté al día."
+   ],
+   [
+    "Estos resultados reciben entre un 20% y un 30% más de clics.",
+    "Estos resultados destacan más y pueden atraer más clics."
+   ],
+   [
+    "La recomendación general es entre el 5% y el 10% de la facturación bruta para negocios establecidos, y hasta el 15-20% para negocios nuevos. Pero para un autónomo local,",
+    "No existe un porcentaje de la facturación que sirva para todos: depende de tu sector y de si tu negocio acaba de empezar o ya tiene clientela. Para un autónomo local,"
+   ],
+   [
+    ", representando aproximadamente el 7% de los factores de ranking local según BrightLocal.",
+    ", aunque no son el factor que más pesa."
+   ],
+   [
+    "Google recomienda un mínimo de 10 fotos. Los negocios con más de 25 fotos reciben un 35% más de clics.",
+    "No hay un número mágico: lo que cuenta es que tus fotos sean reales, variadas y recientes."
+   ],
+   [
+    "El 65% de los autónomos en España no tienen web, siendo invisibles para el 73% de consumidores que buscan servicios en Google.",
+    "Sin web propia, eres mucho menos visible para quien busca servicios en Google."
+   ],
+   [
+    "La recomendación general es entre el 5% y el 10% de tu facturación. Para un autónomo que factura 30.000 euros al año, eso serían entre 125 y 250 euros al mes. Pero puedes empezar",
+    "No hay una cifra que valga para todos: depende de tu sector, de tus márgenes y de cuántos clientes nuevos necesitas. Lo bueno es que puedes empezar"
+   ],
+   [
+    "El 75% de los pacientes te buscan en Google antes de coger el teléfono.",
+    "Muchos pacientes te buscan en Google antes de coger el teléfono."
+   ],
+   [
+    "La confianza es el 90% de la decisión de coger cita.",
+    "La confianza es lo que más pesa a la hora de coger cita."
+   ],
+   [
+    "Por cada euro invertido genera una media de 36 euros de retorno.",
+    "Escribir a tus propios clientes cuesta muy poco."
+   ],
+   [
+    "Despues de trabajar con decenas de autonomos en la Comunidad Valenciana, hemos visto los mismos errores de marketing digital una y otra vez.",
+    "En la Comunidad Valenciana, muchos autónomos repiten los mismos errores de marketing digital una y otra vez."
+   ],
+   [
+    "puede recibir entre 5 y 15 contactos mensuales desde Google sin pagar publicidad.",
+    "puede recibir contactos desde Google sin pagar publicidad."
+   ],
+   [
+    "Un autonomo bien posicionado en una ciudad mediana como Elda o Elche recibe entre 5 y 15 contactos mensuales desde Google.",
+    "Con una buena posición en Google, un autónomo de una ciudad mediana como Elda o Elche puede recibir contactos de forma regular."
+   ]
+  ],
+  "gardes": [
+   [
+    "No, aparecer en Google Maps es gratuito",
+    "falso positivo CAS: respuesta de FAQ, no es un caso de cliente"
+   ],
+   [
+    "Da igual si eres electricista en Elda",
+    "enumeración de oficios (tú), no es un caso de cliente"
+   ],
+   [
+    "controlas al 100%",
+    "expresión idiomática (al 100 %)"
+   ],
+   [
+    "Desde tu panel de control de Google My Business",
+    "falso positivo CAS: instrucción práctica, no es un caso de cliente"
+   ],
+   [
+    "100% original",
+    "expresión idiomática"
+   ],
+   [
+    "100% gratis",
+    "expresión idiomática"
+   ],
+   [
+    "el 12 % del coste anual",
+    "método de precios de WebAutonomos (automatización)"
+   ],
+   [
+    "el 20 % de esa implantación",
+    "método de precios de WebAutonomos (mantenimiento)"
+   ],
+   [
+    "en torno al 20 % de la implantación",
+    "método de precios de WebAutonomos (mantenimiento)"
+   ],
+   [
+    "¿Por qué el 12 % y no otro porcentaje?",
+    "método de precios de WebAutonomos (pregunta FAQ)"
+   ],
+   [
+    "recuperar entre el 30 y el 50 %",
+    "método de cálculo de WebAutonomos (parte recuperable)"
+   ],
+   [
+    "bajas al 10 o 15 %",
+    "método de cálculo de WebAutonomos (parte recuperable)"
+   ],
+   [
+    "Casi nunca se recupera el 100 %",
+    "expresión (título de sección del método)"
+   ],
+   [
+    "100% natural",
+    "expresión idiomática"
+   ],
+   [
+    "generado al 100% por IA",
+    "expresión idiomática"
+   ],
+   [
+    "100% responsive",
+    "expresión idiomática (oferta WebAutonomos)"
+   ],
+   [
+    "Qonto e IO Investigación de 2026",
+    "estadística con fuente precisa (informe Qonto / IO Investigación 2026)"
+   ],
+   [
+    "el 75 % maneja más de una plataforma",
+    "misma fuente precisa citada en la frase anterior (Qonto / IO Investigación 2026)"
+   ],
+   [
+    "Si eres fontanero en Elche, electricista en Valencia",
+    "enumeración de oficios (tú), no es un caso de cliente"
+   ],
+   [
+    "Completa tu ficha de Google al 100%",
+    "expresión idiomática"
+   ],
+   [
+    "Si eres fontanero en Valencia, electricista en Alicante",
+    "enumeración de oficios (tú), no es un caso de cliente"
+   ],
+   [
+    "Carpinteros en Elda, electricistas en Alicante",
+    "enumeración de oficios, no es un caso de cliente"
+   ],
+   [
+    "según la Encuesta TIC-H del INE (2025)",
+    "estadística con fuente precisa (INE, Encuesta TIC-H 2025)"
+   ],
+   [
+    "su ROI sería de 1.933%",
+    "aritmética de un ejemplo hipotético anónimo"
+   ],
+   [
+    "dependen al 100% de ti",
+    "expresión idiomática"
+   ],
+   [
+    "completa el 100% de tu ficha",
+    "expresión idiomática (completa tu ficha al 100 %)"
+   ],
+   [
+    "completala al 100%",
+    "expresión idiomática (completa tu ficha al 100 %)"
+   ],
+   [
+    "Es 100% mérito",
+    "expresión idiomática"
+   ],
+   [
+    "Aunque sea solo el 20% del importe",
+    "consejo (importe de la señal), no es una estadística"
+   ],
+   [
+    "Primero, una ficha de Google Business",
+    "falso positivo CAS (copia blog-spa-data): consejo, no es un caso de cliente"
+   ],
+   [
+    "(INE, 2025)",
+    "estadística con fuente precisa (INE 2025), copia blog-spa-data / index.html"
+   ]
+  ]
+ },
+ "val": {
+  "remplacements": [
+   [
+    "El 93% dels espanyols busca serveis locals a internet abans de contractar.",
+    "Cada vegada més gent busca serveis locals a internet abans de contractar."
+   ],
+   [
+    "en 2026, el 87% dels espanyols busca serveis professionals en Google abans de telefonar a ningú.",
+    "hui en dia, molta gent busca serveis professionals en Google abans de telefonar a ningú."
+   ],
+   [
+    "Segons l'INE, en 2025 el 94% de les llars espanyoles té connexió a internet, i el 87% dels consumidors busca informació sobre serveis locals en Google abans de prendre una decisió.",
+    "Hui quasi totes les llars espanyoles tenen connexió a internet, i molts consumidors busquen informació sobre serveis locals en Google abans de prendre una decisió."
+   ],
+   [
+    "El Map Pack de Google rep entre el 60% i el 75% de tots els clics en cerques locals.",
+    "El Map Pack de Google (el bloc amb el mapa i tres negocis) sol ser el primer que veu qui fa una cerca local."
+   ],
+   [
+    "El 76% de les persones que fan una cerca local al mòbil visiten un negoci en les següents 24 hores.",
+    "Qui fa una cerca local al mòbil sol tindre una necessitat immediata i, sovint, contacta o visita un negoci poc després."
+   ],
+   [
+    "WhatsApp Business és el canal número u: el 98% dels espanyols usa WhatsApp.",
+    "WhatsApp Business és el canal número u: a Espanya, quasi tothom usa WhatsApp."
+   ],
+   [
+    "El 88% de la gent confia tant en les ressenyes de Google com en les recomanacions personals.",
+    "Per a molta gent, les ressenyes de Google pesen quasi tant com la recomanació d'un conegut."
+   ],
+   [
+    "Les dades parlen per si soles: el 93% de la gent llig ressenyes abans d'elegir un producte o servei, el 72% no actua fins a llegir opinions positives, i els negocis amb més de 4 estrelles reben un 12% més de clics.",
+    "Abans d'elegir un producte o servei, molta gent llig les ressenyes, i sovint no fa el pas fins que troba opinions positives."
+   ],
+   [
+    "La taxa de resposta cau un 50% després de 24 hores.",
+    "Com més temps passa, menys probable és que el client deixe la ressenya."
+   ],
+   [
+    "Els negocis amb fotos reben un 42% més de sol·licituds d'indicacions i un 35% més de clics.",
+    "Una fitxa amb bones fotos crida més l'atenció i pot animar més gent a demanar-te indicacions o a visitar la teua web."
+   ],
+   [
+    "Els backlinks representen el 28% del pes en el posicionament del Map Pack de Google. Es a dir, quasi un terc de la teua visibilitat en Google Maps depen dels enllacos que apunten a la teua web.",
+    "Els backlinks són un dels factors que Google té en compte per a posicionar-te en el Map Pack. És a dir, part de la teua visibilitat en Google Maps depén dels enllaços que apunten a la teua web."
+   ],
+   [
+    "Laura, fisioterapeuta a Valencia, va aconseguir en 6 mesos nomes 8 backlinks locals de qualitat i va passar de la tercera pagina de Google a la primera per a fisioterapeuta Valencia.",
+    "Per exemple, per a una fisioterapeuta de València, uns pocs enllaços locals de qualitat poden valdre més que molts enllaços sense cap relació amb la seua zona o el seu sector."
+   ],
+   [
+    "Segons l'estudi de BrightLocal, les senyals de citacions representen aproximadament un 7% dels factors de rànquing en el Map Pack de Google. En sectors competitius, eixe 7% pot ser la diferència",
+    "Les citacions són un dels senyals que Google té en compte per a ordenar els resultats del Map Pack. En sectors competitius, eixe detall pot ser la diferència"
+   ],
+   [
+    "Segons l'estudi de BrightLocal, les citacions representen aproximadament el 7% dels factors de ranking local.",
+    "Google encara les té en compte a l'hora d'ordenar els resultats locals."
+   ],
+   [
+    "Més del 80% dels consumidors prefereixen contactar amb negocis per WhatsApp que per telèfon.",
+    "Molts clients prefereixen escriure a un negoci per WhatsApp abans que telefonar."
+   ],
+   [
+    "El 80% dels autònoms abandonen la idea d'actualitzar la seua web per por al full en blanc.",
+    "Molts autònoms abandonen la idea d'actualitzar la seua web per por al full en blanc."
+   ],
+   [
+    "Més del 80% dels espanyols busca productes i serveis a internet abans de decidir.",
+    "Cada vegada més gent busca productes i serveis a internet abans de decidir."
+   ],
+   [
+    "Els heroes amb imatge real del negoci generen un 35% més de confiança que els que usen fotos genèriques.",
+    "Un hero amb una imatge real del teu negoci transmet més confiança que una foto genèrica de banc d'imatges."
+   ],
+   [
+    "El 88% dels consumidors confia en les ressenyes online tant com en les recomanacions d'amics i familiars.",
+    "Molta gent es fia de les ressenyes en línia abans de contractar."
+   ],
+   [
+    "Reduir un formulari de 7 a 4 camps augmenta les conversions un 50%.",
+    "Cada camp que lleves és un obstacle menys perquè el visitant l'envie."
+   ],
+   [
+    "ja que el 95% dels usuaris de smartphone a Espanya usa WhatsApp",
+    "perquè a Espanya quasi tothom té WhatsApp al mòbil"
+   ],
+   [
+    "El 88% dels consumidors confia tant en les ressenyes en línia com en les recomanacions personals.",
+    "Per a molta gent, les ressenyes en línia pesen quasi tant com una recomanació personal."
+   ],
+   [
+    "Despres de treballar amb desenes d'autonoms a la Comunitat Valenciana -- fusters a Elda, electricistes a Alacant, dentistes a Valencia, fontaners a Elx -- hem vist els mateixos errors de marqueting digital una i altra vegada.",
+    "Fusters d'Elda, electricistes d'Alacant, fontaners d'Elx o dentistes de València: a la Comunitat Valenciana, molts autònoms cometen els mateixos errors de màrqueting digital una i altra vegada."
+   ],
+   [
+    "En 2026, el 65% dels autonoms a Espanya encara no tenen pagina web, perdent entre 5 i 15 trucades al mes de clients potencials.",
+    "Encara hi ha molts autònoms sense pàgina web, i cada mes perden telefonades de clients potencials que no els troben."
+   ],
+   [
+    "El 93% dels clients lligen ressenyes abans de contractar, i si el teu competidor te 45 ressenyes amb 4,8 estreles i tu en tens 3, endevina a qui van a cridar.",
+    "Molts clients lligen ressenyes abans de contractar, i si el teu competidor té 45 ressenyes amb 4,8 estreles i tu en tens 3, endevina a qui telefonaran."
+   ],
+   [
+    "El 65% dels autònoms a Espanya no tenen web, cosa que significa que són invisibles per al 73% de consumidors que busquen servicis en Google abans de contractar.",
+    "Molts autònoms encara no tenen web, i això els fa invisibles per a qui busca servicis en Google abans de contractar."
+   ],
+   [
+    "La recomanació general és destinar entre el 5% i el 10% de la teua facturació al màrqueting. Per a un autònom que factura 30.000 euros a l'any, això serien entre 125 i 250 euros al mes. Tanmateix, pots començar amb molt menys:",
+    "No hi ha una xifra que valga per a tothom: depén del teu sector, de la competència a la teua zona i de quants clients nous necessites. I pots començar amb poc:"
+   ],
+   [
+    "Segons dades de Google, els negocis amb mes de 100 fotos reben un 520% mes de trucades que els que no en tenen cap.",
+    "Una fitxa amb fotos reals i actualitzades inspira més confiança que una fitxa buida, i pot ajudar-te a rebre més telefonades."
+   ],
+   [
+    "Les fitxes amb imatges en Google Business reben un 42% mes de sol·licituds d'indicacions i un 35% mes de clics cap a la web. El 60% dels consumidors prefereixen negocis amb fotos en Google Maps front als que no en tenen.",
+    "Una fitxa amb imatges crida més l'atenció i convida més a demanar indicacions o a visitar la teua web. I, entre dos negocis semblants, és fàcil que el client es decante pel que ensenya fotos."
+   ],
+   [
+    "Amb 3 fotos per setmana, en tres mesos la teua fitxa tindra mes contingut visual que el 90% dels teus competidors.",
+    "Amb eixe ritme, en pocs mesos la teua fitxa tindrà més contingut visual que la de molts dels teus competidors."
+   ],
+   [
+    "els negocis amb més de 25 fotos reben un 35% més de clics que els que tenen menys de 10.",
+    "com més fotos de qualitat tingues, més completa i atractiva pareixerà la teua fitxa."
+   ],
+   [
+    "Els negocis amb vídeos reben un 20% més d'interaccions que els que només tenen fotos.",
+    "Un vídeo curt pot ajudar la teua fitxa a destacar i a generar més interacció que les fotos soles."
+   ],
+   [
+    "sense cometre els errors que fan perdre diners al 90% dels principiants.",
+    "sense cometre els errors que fan perdre diners a tants principiants."
+   ],
+   [
+    "Segons un estudi de BrightLocal, les fitxes que publiquen posts regularment reben un 35% mes de clics en el boto de trucada i un 25% mes de sol·licituds de ruta en Google Maps.",
+    "Publicar posts amb regularitat mostra a Google i als clients que el teu negoci està actiu, i pot animar més gent a telefonar-te o a demanar la ruta en Google Maps."
+   ],
+   [
+    "Jaime, manyancer a Alacant, va comencar a publicar un post cada dilluns i en dos mesos les trucades des de Google Maps van creixer de 8 a 14 al mes.",
+    "Per exemple, un manyà d'Alacant pot convertir en rutina publicar un post cada dilluns: li costa pocs minuts i manté la fitxa viva."
+   ],
+   [
+    "Aixo es el Map Pack de Google, i capta entre el 60% i el 75% de tots els clics en busquedes locals.",
+    "Això és el Map Pack de Google, i sol ser el primer que mira qui fa una cerca local."
+   ],
+   [
+    "Segons un estudi de Moz, el Map Pack rep entre el 60% i el 75% de tots els clics en busquedes amb intencio local. A mes, el 76% de les persones que fan una busqueda local al mobil visiten un negoci o truquen en les seguents 24 hores.",
+    "Com que apareix per damunt dels resultats orgànics, el Map Pack rep molta atenció en les cerques amb intenció local. A més, qui fa una cerca local al mòbil sol tindre una necessitat immediata i, sovint, telefona o visita el negoci poc després."
+   ],
+   [
+    "puja fotos cada setmana (les fitxes amb mes de 100 fotos reben un 520% mes de trucades)",
+    "puja fotos cada setmana (una fitxa amb moltes fotos reals transmet més confiança)"
+   ],
+   [
+    "Els negocis amb web propia optimitzada per a SEO local tenen fins a un 50% mes de probabilitats d'apareixer en el Map Pack.",
+    "Tindre una web pròpia optimitzada per a SEO local reforça la teua fitxa i pot ajudar-te a aparéixer en el Map Pack."
+   ],
+   [
+    "Lucia, esteticista a Alacant, va seguir esta estrategia i va passar de 3 a 18 trucades mensuals des de Google en nomes 3 mesos.",
+    "Per exemple, un centre d'estètica d'Alacant que seguisca este pla mes a mes tindrà, en poc temps, una fitxa molt més completa i activa que abans."
+   ],
+   [
+    "Estos tres llocs reben entre el 60% i el 75% de tots els clics de cerques locals.",
+    "Estos tres llocs són els més visibles i reben molta atenció en les cerques locals."
+   ],
+   [
+    "Els negocis amb web pròpia tenen fins a un 50% més de probabilitats d'apareixer en els 3 primers llocs del Map Pack que els que no la tenen.",
+    "Per això, una web ben feta pot ajudar-te a entrar en els primers llocs del Map Pack."
+   ],
+   [
+    "l'email segueix sent el canal amb major retorn d'inversio: per cada euro invertit, genera una mitjana de 36 euros.",
+    "l'email continua sent un dels canals més rendibles: arriba directament a la safata d'entrada dels teus clients i costa molt poc."
+   ],
+   [
+    "email de benvinguda automatic (fins al 80% d'obertura),",
+    "email de benvinguda automàtic,"
+   ],
+   [
+    "L'assumpte ho es tot: el 47% de les persones decideixen obrir un email basant-se nomes en l'assumpte.",
+    "L'assumpte ho és tot: molta gent decidix si obri un correu només pel que diu l'assumpte."
+   ],
+   [
+    "Carmen, perruquera a Elda, va aconseguir una taxa d'obertura del 42% i va generar 15 cites directes en 6 mesos.",
+    "Per exemple, una perruqueria d'Elda pot enviar cada mes un correu amb consells de temporada i un enllaç per a reservar, i comprovar quantes cites li arriben per eixa via."
+   ],
+   [
+    "aconseguixen taxos d'apertura de fins al 40%, molt superiors als de les grans marques.",
+    "poden aconseguir que els seus correus s'obriguen més que els de les grans marques, perquè el client els coneix i espera el missatge."
+   ],
+   [
+    "La taxa mitjana d'apertura de correus a Espanya està entre el 20% i el 25%. No obstant això, els autònoms amb llistes xicotetes i una relació pròxima amb els seus clients solen tenir taxos més altes, del 30% al 45%. Si la teua taxa d'apertura baixa del 15%, probablement els teus assumptes no són atractius o estàs enviant correus amb massa freqüència. Un bon assumpte de correu pot marcar la diferència entre un 15% i un 40% d'apertura.",
+    "Depén molt del sector i de la llista: una llista xicoteta de clients que et coneixen sol obrir més els correus que una base de dades freda. La millor referència són els teus propis mesos anteriors. Si la taxa baixa de manera clara, revisa si els assumptes són atractius, si envies correus massa sovint o si la llista necessita una neteja. Un bon assumpte de correu pot marcar una gran diferència."
+   ],
+   [
+    "Oblida't del 90% de les dades que mostra Google Analytics.",
+    "No et perdes en totes les dades que mostra Google Analytics."
+   ],
+   [
+    "Si el 80% de les teues visites venen només d'Instagram, depens perillosament d'una sola font. L'ideal per a un autònom és tindre un mix equilibrat: 50% Google orgànic, 20% xarxes socials, 15% directe, 15% altres canals. Si el teu Google orgànic està per davall del 30%, el teu SEO local necessita treball.",
+    "Si quasi totes les teues visites venen només d'Instagram, depens perillosament d'una sola font. L'ideal per a un autònom és tindre un mix equilibrat, en què Google orgànic tinga un pes important i la resta es reparta entre xarxes socials, visites directes i altres canals. Si Google orgànic et porta poques visites en comparació amb els altres canals, el teu SEO local necessita treball."
+   ],
+   [
+    "Una taxa de rebot per damunt del 70% indica un problema: la web carrega lent, el contingut no respon al que buscaven, o el disseny no genera confiança. Una taxa entre 40% i 60% és normal per a una web de servicis locals. Per davall del 40% és excel·lent.",
+    "Una taxa de rebot molt alta sol indicar un problema: la web carrega lent, el contingut no respon al que buscaven, o el disseny no genera confiança. El que és normal depén del tipus de pàgina i de la procedència de les visites, així que la millor referència és la teua pròpia evolució mes a mes."
+   ],
+   [
+    "Una bona web d'autònom convertix entre el 2% i el 5% de les seues visites en contactes. Si tens 500 visites al mes i aconseguixes 10-25 contactes, estàs dins del rang normal. Si tens 500 visites i només aconseguixes 1-2 contactes, hi ha alguna cosa malament:",
+    "No hi ha una xifra que valga per a totes les webs: depén del sector, del servici i de la procedència de les visites. La referència útil és la teua pròpia evolució: si les visites pugen i els contactes no, o si reps moltes visites i quasi cap contacte, hi ha alguna cosa malament:"
+   ],
+   [
+    "el 56% dels negocis locals ni tan sols han completat tota la informacio.",
+    "molts negocis locals ni tan sols han completat tota la informació."
+   ],
+   [
+    "Les fitxes completament optimitzades reben 7 vegades mes clics que les incompletes. Les fitxes amb fotos reben un 42% mes de sol·licituds d'indicacions en Google Maps i un 35% mes de clics cap a la web. El Local Pack de Google (les 3 fitxes del mapa) acapara el 44% de tots els clics en cerques locals.",
+    "Una fitxa completa i ben cuidada té més opcions de rebre clics que una a mig fer. Les fotos, a més, conviden a demanar indicacions en Google Maps i a visitar la teua web. I el Local Pack de Google (les 3 fitxes del mapa) és un dels blocs que més atenció reben en les cerques locals."
+   ],
+   [
+    "Les fitxes amb mes de 100 fotos reben un 520% mes de telefonades. Puja fotos",
+    "Com més fotos reals i actualitzades tingues, més confiança transmetrà la teua fitxa. Puja fotos"
+   ],
+   [
+    "Laura, perruquera a Valencia, va passar de 4 a 28 telefonades mensuals en 6 mesos seguint este pla.",
+    "Per exemple, una perruqueria de València que seguisca este pla cada setmana mantindrà la fitxa activa amb només uns minuts de dedicació."
+   ],
+   [
+    "Les fitxes amb més de 100 fotos reben un 520% més de telefonades que les que no en tenen.",
+    "Una fitxa amb moltes fotos reals transmet més confiança que una sense imatges."
+   ],
+   [
+    "Segons Google, el 46% de totes les cerques tenen intenció local, i el 76% dels qui busquen al mòbil visiten un negoci en 24 hores.",
+    "Moltes cerques en Google tenen intenció local, i qui busca al mòbil sovint visita o contacta un negoci poc després."
+   ],
+   [
+    "El 53% dels usuaris abandona una web que tarda mes de 3 segons a carregar. El 72% de les cerques locals es fan des del mobil,",
+    "Si una web tarda massa a carregar, molts usuaris se'n van abans de vore-la. Moltes cerques locals es fan des del mòbil,"
+   ],
+   [
+    "Antoni, llauner a Valencia, va pujar de la posicio 8 a la 3 per a 'llauner urgent Valencia' i va passar de 0 a 7 telefonades mensuals.",
+    "Per exemple, un llauner de València pot comprovar en Search Console si puja per a cerques com «llauner urgent València» i creuar-ho amb les telefonades que rep des de la fitxa."
+   ],
+   [
+    "Els negocis locals amb blog reben un 55% més de tràfic que els que no ho tenen.",
+    "Amb el temps, un blog ben cuidat pot portar-te visites que d'una altra manera no arribarien."
+   ],
+   [
+    "Segons la Cambra de Comerc, nomes el 23% dels autonoms espanyols fan seguiment de l'origen dels seus clients.",
+    "Molts autònoms no fan cap seguiment de l'origen dels seus clients."
+   ],
+   [
+    "Carlos, pintor a Valencia, inverteix 59 euros al mes",
+    "imagina un pintor de València que inverteix 59 euros al mes"
+   ],
+   [
+    "Este nivell de ROI es habitual en negocis de serveis locals ben posicionats.",
+    "És només un exemple teòric: els teus números seran uns altres, però el càlcul és el mateix."
+   ],
+   [
+    "La recomanació general és entre el 5% i el 10% de la facturació bruta per a negocis establits, i fins al 15-20% per a negocis nous que necessiten donar-se a conéixer. Però per a un autònom local, més que un percentatge, l'important",
+    "No hi ha un percentatge que valga per a tothom: un negoci nou que necessita donar-se a conéixer sol haver d'invertir més que un de consolidat. Per a un autònom local, l'important"
+   ],
+   [
+    "És fonamental perquè més del 60% d'usuaris naveguen des del mòbil,",
+    "És fonamental perquè molta gent navega des del mòbil,"
+   ],
+   [
+    "dades de plataformes de reserves mostren que fins al 40% d'absències són per falta de recordatoris.",
+    "moltes absències es deuen simplement al fet que el client s'ha oblidat de la cita."
+   ],
+   [
+    "A mes, el 89% dels consumidors lligen les respostes del negoci a les ressenyes negatives.",
+    "A més, molts clients potencials lligen com respon el negoci a les ressenyes negatives."
+   ],
+   [
+    "No ignores la ressenya, perque segons Google els negocis que responen reben un 35% mes de clics.",
+    "No ignores la ressenya: respondre mostra que el negoci està actiu i que cuida els seus clients."
+   ],
+   [
+    "Estos resultats reben entre un 20% i 30% mes de clics.",
+    "Estos resultats criden més l'atenció i poden atraure més clics."
+   ],
+   [
+    "Estos resultats destaquen més i reben entre un 20% i un 30% més de clics.",
+    "Estos resultats destaquen més i poden atraure més clics."
+   ],
+   [
+    "En 2026, el 77% dels pacients busquen professionals de salut en linia abans de demanar cita.",
+    "Hui molts pacients busquen professionals de salut en línia abans de demanar cita."
+   ],
+   [
+    "Segons un estudi de Doctoralia, el 82% dels pacients consulten internet abans de triar un professional sanitari.",
+    "Molts pacients consulten internet abans de triar un professional sanitari."
+   ],
+   [
+    "El 90% dels pacients lligen opinions abans de triar un professional de salut.",
+    "Molts pacients lligen opinions abans de triar un professional de salut."
+   ],
+   [
+    "El 77% dels pacients busquen informació online abans d'elegir un professional de salut.",
+    "Molts pacients busquen informació en línia abans d'elegir un professional de salut."
+   ],
+   [
+    "Segons les ultimes dades de Google, el 97% dels consumidors busquen serveis locals per internet abans de contractar.",
+    "Hui molta gent busca serveis locals per internet abans de contractar."
+   ],
+   [
+    "han crescut un 35% en els ultims dos anys.",
+    "són cada vegada més habituals."
+   ],
+   [
+    "Un fontaner a Alacant amb una web ben posicionada pot rebre entre 15 i 30 trucades al mes nomes des de Google,",
+    "Un fontaner d'Alacant amb una web ben posicionada pot rebre telefonades directament des de Google,"
+   ],
+   [
+    "(el 78% de les busquedes de fontaners es fan des del mobil)",
+    "(moltes cerques de fontaners es fan des del mòbil)"
+   ],
+   [
+    "Antonio, fontaner a Elda amb 12 anys d'experiencia, va muntar la seua web amb nosaltres i en les primeres 6 setmanes va rebre 14 trucades des de Google que es van traduir en 9 treballs confirmats. Tot per 15 euros al mes.",
+    "Per exemple, un fontaner d'Elda pot partir d'eixa demo i tindre la seua web, amb allotjament, SSL, còpies de seguretat i manteniment inclosos, per 15 euros al mes."
+   ],
+   [
+    "però el 75% dels nous pacients et busquen en Google abans d'agafar el telèfon.",
+    "però molts pacients nous et busquen en Google abans d'agafar el telèfon."
+   ],
+   [
+    "Dades del sector: les clíniques amb reserves en línia poden incrementar la seua captació entre un 30% i un 50%, especialment en franges com nit i cap de setmana.",
+    "Les reserves en línia poden ajudar-te a captar pacients que busquen fora d'horari, especialment de nit i en cap de setmana."
+   ],
+   [
+    "En 2026, el 73% de les persones que busquen suport psicològic comencen per Google.",
+    "Hui moltes persones que busquen suport psicològic comencen per Google."
+   ],
+   [
+    "un canvi d'algoritme i la teua visibilitat cau un 80% de la nit al matí.",
+    "un canvi d'algoritme i la teua visibilitat pot caure en picat de la nit al matí."
+   ],
+   [
+    "Els estudis que gestionen reserves en línia amb depòsit obligatori tenen fins a un 60% menys de cancel·lacions.",
+    "Demanar un depòsit en la reserva en línia pot reduir molt les cancel·lacions."
+   ],
+   [
+    "El 87% dels consumidors usa Google per a trobar negocis locals, davant del 48% que consulta xarxes socials.",
+    "Quan algú necessita un servei local, sol buscar-lo en Google abans que en les xarxes socials."
+   ],
+   [
+    "Facebook te 22 milions d'usuaris actius a Espanya, amb el grup de 35-55 anys sent el mes actiu.",
+    "Facebook continua tenint molts usuaris a Espanya, sobretot entre el públic adult."
+   ],
+   [
+    "Pero l'abast organic es nomes del 2-5% dels teus seguidors,",
+    "Però l'abast orgànic és molt baix, perquè només una xicoteta part dels teus seguidors veu cada publicació,"
+   ],
+   [
+    "Els Reels generen 3 vegades mes abast que les fotos estatiques.",
+    "Els Reels solen arribar a més gent que les fotos estàtiques."
+   ],
+   [
+    "Raul, pintor a Elx, rep 12 contactes mensuals des de Google (60% conversio) i 3-4 des de xarxes (20% conversio). Les dades confirmen on invertir mes temps.",
+    "Per exemple, un pintor d'Elx pot apuntar cada mes quants contactes li arriben des de Google i quants des de les xarxes, i quants acaben en treball: eixes dades li diran on invertir més temps."
+   ],
+   [
+    "El Map Pack de Google capta el 60-75% dels clics locals.",
+    "El Map Pack de Google és el primer que veu qui fa una cerca local."
+   ],
+   [
+    "El Map Pack de Google capta entre el 60% i el 75% de tots els clics en busquedes locals.",
+    "El Map Pack de Google sol ser el primer que mira qui fa una cerca local."
+   ],
+   [
+    "Redueix absències un 40%, estalvia temps",
+    "Redueix absències, estalvia temps"
+   ],
+   [
+    "El 75% dels pacients et busquen en Google abans de cridar.",
+    "Molts pacients et busquen en Google abans de telefonar-te."
+   ],
+   [
+    "però el 75% dels nous pacients et busquen en Google abans de cridar.",
+    "però molts pacients nous et busquen en Google abans de telefonar-te."
+   ],
+   [
+    "Les clíniques amb reserves online poden incrementar la captació entre un 30% i un 50%, especialment nit i cap de setmana.",
+    "Les reserves en línia poden ajudar-te a captar pacients fora d'horari, especialment de nit i en cap de setmana."
+   ],
+   [
+    "La confiança és el 90% de la decisió de demanar cita.",
+    "La confiança pesa molt en la decisió de demanar cita."
+   ],
+   [
+    "Oblida't del 90% de les dades de Google Analytics.",
+    "No et perdes en totes les dades de Google Analytics."
+   ],
+   [
+    "L'ideal és un mix: 50% Google, 20% xarxes, 15% directe, 15% altres.",
+    "L'ideal és un mix equilibrat, en què Google orgànic tinga un pes important."
+   ],
+   [
+    "Una taxa per damunt del 70% indica un problema: web lenta, contingut irrellevant o disseny que no genera confiança. Entre 40% i 60% és normal.",
+    "Una taxa molt alta sol indicar un problema: web lenta, contingut irrellevant o disseny que no genera confiança. La millor referència és la teua pròpia evolució mes a mes."
+   ],
+   [
+    "Una bona web d'autònom converteix entre el 2% i el 5% de les visites en contactes. Si tens 500 visites i només 1-2 contactes,",
+    "No hi ha una xifra que valga per a totes les webs: compara't amb tu mateix. Si reps moltes visites i quasi cap contacte,"
+   ],
+   [
+    "El 80% dels autònoms abandonen la idea d'actualitzar la web per por al foli en blanc.",
+    "Molts autònoms abandonen la idea d'actualitzar la web per por al full en blanc."
+   ],
+   [
+    "Les fitxes amb mes de 100 fotos reben un 520% mes de telefonades. Afig almenys",
+    "Una fitxa amb moltes fotos reals transmet més confiança. Afig almenys"
+   ],
+   [
+    "Els negocis locals amb blog reben un 55% mes de trafic.",
+    "Amb el temps, un blog ben cuidat pot portar-te visites que d'una altra manera no arribarien."
+   ],
+   [
+    "Estos tres llocs reben entre el 60% i el 75% de tots els clics de busquedes locals.",
+    "Estos tres llocs són els més visibles i reben molta atenció en les cerques locals."
+   ],
+   [
+    "Els negocis amb web propia tenen fins a un 50% mes de probabilitats d'apareixer en els 3 primers llocs del Map Pack.",
+    "Tindre una web pròpia reforça la teua fitxa i pot ajudar-te a entrar en els primers llocs del Map Pack."
+   ],
+   [
+    "Un fontaner o una perruquera aconsegueixen taxes d'obertura de fins al 40%, molt superiors a les de les grans marques.",
+    "Un fontaner o una perruquera poden aconseguir que els seus correus s'obriguen més que els de les grans marques, perquè el client els coneix."
+   ],
+   [
+    "La taxa mitjana a Espanya esta entre el 20% i el 25%. No obstant, els autonoms amb llistes xicotetes solen tindre taxes mes altes, del 30% al 45%. Si baixa del 15%, probablement els teus assumptes no son atractius o envies emails amb massa frequencia.",
+    "Depén molt del sector i de la llista: una llista xicoteta de clients que et coneixen sol obrir més els correus que una base de dades freda. Compara't amb els teus propis mesos anteriors: si la taxa baixa de manera clara, revisa si els assumptes són atractius o si envies correus massa sovint."
+   ],
+   [
+    "El 77% dels pacients busquen informacio en linia abans de triar un professional de salut.",
+    "Molts pacients busquen informació en línia abans de triar un professional de salut."
+   ],
+   [
+    "Estos resultats reben entre un 20% i un 30% mes de clics.",
+    "Estos resultats criden més l'atenció i poden atraure més clics."
+   ],
+   [
+    "La recomanacio general es entre el 5% i el 10% de la facturacio bruta per a negocis establits, i fins al 15-20% per a negocis nous. Pero per a un autonom local, l'important",
+    "No hi ha un percentatge que valga per a tothom: un negoci nou sol haver d'invertir més que un de consolidat. Per a un autònom local, l'important"
+   ],
+   [
+    "El 88% dels consumidors confia tant en les ressenyes online com en les recomanacions personals.",
+    "Per a molta gent, les ressenyes en línia pesen quasi tant com una recomanació personal."
+   ],
+   [
+    ", representant aproximadament el 7% dels factors de rànquing local segons BrightLocal.",
+    ", encara que no són el factor principal."
+   ],
+   [
+    "El 87% dels clients revisen treballs anteriors abans de demanar pressupost.",
+    "Molts clients revisen treballs anteriors abans de demanar pressupost."
+   ],
+   [
+    "Els negocis amb mes de 25 fotos reben un 35% mes de clics.",
+    "Com més fotos de qualitat tingues, més completa i atractiva pareixerà la teua fitxa."
+   ],
+   [
+    "El 65% dels autonoms a Espanya no tenen web, sent invisibles per al 73% de consumidors que busquen servicis en Google.",
+    "Molts autònoms encara no tenen web, i això els fa invisibles per a qui busca servicis en Google."
+   ],
+   [
+    "La recomanacio general es entre el 5% i el 10% de la teua facturacio. Per a un autonom que factura 30.000 euros a l'any, aixo serien entre 125 i 250 euros al mes. Pero pots comencar amb una web",
+    "No hi ha una xifra que valga per a tothom: depén del teu sector, de la competència a la teua zona i de quants clients nous necessites. I pots començar amb una web"
+   ],
+   [
+    "el canvi que duplica la teua agenda",
+    "el canvi que pot omplir la teua agenda"
+   ],
+   [
+    "poden duplicar la teua agenda en pocs mesos.",
+    "poden ajudar-te a omplir l'agenda."
+   ],
+   [
+    "Una bona integració costa 1 hora de configuració i s'amortitza en la primera setmana.",
+    "Una bona integració no és complicada de configurar."
+   ],
+   [
+    "una clínica de peus pot multiplicar les seues noves cites en pocs mesos.",
+    "una clínica de peus ho té molt més fàcil per a atraure pacients nous."
+   ],
+   [
+    "Este és un dels mètodes que millor ha funcionat per a milers de negocis.",
+    "És un hàbit senzill i fàcil de mantindre."
+   ]
+  ],
+  "gardes": [
+   [
+    "Tant si ets electricista a Elda, fontaner a Elx",
+    "CAS fals positiu: interpel·lació al lector per oficis i ciutats, no és un cas client"
+   ],
+   [
+    "controles al 100",
+    "expressió idiomàtica (al 100 %)"
+   ],
+   [
+    "ves a Inici > Sol·licitar ressenyes",
+    "CAS fals positiu: instruccions d'interfície de Google"
+   ],
+   [
+    "No, aparéixer en Google Maps és gratuït",
+    "CAS fals positiu: resposta de FAQ, no és un cas client"
+   ],
+   [
+    "tot açò és 100% gratis",
+    "expressió idiomàtica (100 % gratis)"
+   ],
+   [
+    "xifrem la implantació en el 12 %",
+    "mètode de preu declarat pel propietari (12 % del cost anual)"
+   ],
+   [
+    "el to serà 100% natural",
+    "expressió idiomàtica"
+   ],
+   [
+    "generat al 100% per IA",
+    "expressió idiomàtica (al 100 %)"
+   ],
+   [
+    "Quasi mai es recupera el 100",
+    "mètode del propietari / expressió (quasi mai es recupera el 100 %)"
+   ],
+   [
+    "calculem la implantació com el 12 %",
+    "mètode de preu declarat pel propietari"
+   ],
+   [
+    "el manteniment és el 20 % d'eixa implantació",
+    "mètode de preu declarat pel propietari"
+   ],
+   [
+    "pots recuperar entre el 30 i el 50 %",
+    "mètode del propietari (recuperació del 30-50 %)"
+   ],
+   [
+    "baixes al 10 o 15 %",
+    "mètode del propietari (10-15 %)"
+   ],
+   [
+    "Per què el 12 % i no un altre percentatge",
+    "mètode de preu declarat pel propietari"
+   ],
+   [
+    "al voltant del 20 % de la implantació",
+    "mètode de preu declarat pel propietari"
+   ],
+   [
+    "Si ets llanterner a Elx, electricista a València",
+    "CAS fals positiu: interpel·lació al lector per oficis i ciutats"
+   ],
+   [
+    "Completa la teua fitxa de Google al 100",
+    "expressió idiomàtica (completa la fitxa al 100 %)"
+   ],
+   [
+    "Segons l'informe de Qonto i IO Investigación de 2026",
+    "estadística amb font precisa (Qonto i IO Investigación 2026)"
+   ],
+   [
+    "el 75 % maneja més d'una plataforma",
+    "mateixa font precisa (informe Qonto i IO Investigación 2026)"
+   ],
+   [
+    "depenen al 100% de tu",
+    "expressió idiomàtica (al 100 %)"
+   ],
+   [
+    "completa el 100% de la teua fitxa",
+    "expressió idiomàtica (completa la fitxa al 100 %)"
+   ],
+   [
+    "completa-la al 100%",
+    "expressió idiomàtica (completa la fitxa al 100 %)"
+   ],
+   [
+    "És 100% mèrit, no diners",
+    "expressió idiomàtica"
+   ],
+   [
+    "Si ets fontaner a Valencia, electricista a Alacant",
+    "CAS fals positiu: interpel·lació al lector per oficis i ciutats"
+   ],
+   [
+    "el 96,3% de les persones de 16 a 74 anys usa internet (INE, 2025)",
+    "estadística amb font precisa (INE 2025)"
+   ],
+   [
+    "que tot siga 100% original",
+    "expressió idiomàtica (100 % original)"
+   ],
+   [
+    "El seu ROI es de 1.933%",
+    "aritmètica d'un exemple explícitament hipotètic (ja anonimitzat)"
+   ],
+   [
+    "són 100% responsive",
+    "expressió idiomàtica (100 % responsive) i fet de l'oferta"
+   ],
+   [
+    "Encara que siga només el 20% de l'import",
+    "consell (import del depòsit), no és una estadística"
+   ],
+   [
+    "El contingut 100% IA sona genèric",
+    "expressió idiomàtica (100 % IA), còpia blog-spa-data.json"
+   ]
+  ]
+ },
+ "en": {
+  "remplacements": [
+   [
+    "93% of Spanish consumers search for local services online before hiring.",
+    "More and more people in Spain search online for local services before hiring anyone."
+   ],
+   [
+    "80% of freelancers give up the idea of updating their website out of fear of the blank page.",
+    "Many freelancers give up on the idea of updating their website out of fear of the blank page."
+   ],
+   [
+    "According to the Spanish Chamber of Commerce, only 23% of Spanish freelancers track where their clients come from.",
+    "Many freelancers never track where their clients come from."
+   ],
+   [
+    "Example: Carlos, a painter in Valencia, invests 59 euros per month",
+    "Example: imagine a painter who invests 59 euros per month"
+   ],
+   [
+    "This level of ROI is common among well-positioned local service businesses.",
+    "Your own figures will be different, but the calculation works exactly the same way."
+   ],
+   [
+    "The general recommendation is between 5% and 10% of gross revenue for established businesses, and up to 15–20% for new ones that need to make themselves known.",
+    "There is no single percentage that suits everyone: established businesses can often spend less, while new ones that need to make themselves known usually have to invest more at the start."
+   ],
+   [
+    "After working with dozens of freelancers across Spain's Comunidad Valenciana -- carpenters in Elda, electricians in Alicante, dentists in Valencia, plumbers in Elche -- we have seen the same digital marketing mistakes over and over again.",
+    "Carpenters, electricians, dentists, plumbers: freelancers across Spain’s Comunidad Valenciana tend to make the same digital marketing mistakes over and over again."
+   ],
+   [
+    "In 2026, 65% of freelancers in Spain still do not have a website, losing between 5 and 15 calls per month from potential clients.",
+    "Many freelancers in Spain still do not have a website, and every month they miss calls from potential clients who cannot find them."
+   ],
+   [
+    "93% of clients read reviews before hiring, and if your competitor",
+    "Many clients read reviews before hiring, and if your competitor"
+   ],
+   [
+    "65% of freelancers in Spain have no website, which means they are invisible to the 73% of consumers who search on Google before hiring.",
+    "Plenty of freelancers in Spain still have no website, which makes them invisible to anyone who searches on Google before hiring."
+   ],
+   [
+    "The general recommendation is to set aside between 5% and 10% of your revenue for marketing. For a freelancer billing 30,000 euros a year, that would be between 125 and 250 euros a month. That said, you can start with far less:",
+    "There is no universal percentage: the right amount depends on your sector, your area and how many new clients you need. What is certain is that you can start small:"
+   ],
+   [
+    "email remains the channel with the highest return on investment: for every euro invested, it generates an average of 36 euros.",
+    "email remains one of the most cost-effective channels you can use."
+   ],
+   [
+    "Email marketing generates an average return of 36 euros for every euro invested, according to a Litmus study.",
+    "Email marketing costs very little and can bring a good return when it is done well."
+   ],
+   [
+    "an automatic welcome email (up to 80% open rate),",
+    "an automatic welcome email (often the one people are most likely to open),"
+   ],
+   [
+    "The subject line is everything: 47% of people decide whether to open an email based solely on the subject.",
+    "The subject line is everything: it is often what decides whether an email gets opened at all."
+   ],
+   [
+    "Carmen, a hairdresser in Elda, achieved a 42% open rate and generated 15 direct appointments in 6 months.",
+    "For example, a hairdresser who sends a short monthly email with a seasonal tip and a booking link gives regular customers an easy reason to come back."
+   ],
+   [
+    "reach open rates of up to 40% — far above those of big brands.",
+    "often gets a warmer response than the generic newsletters of big brands."
+   ],
+   [
+    "The average email open rate in Spain sits between 20% and 25%. Freelancers with small lists and a close relationship with their customers usually see higher figures, from 30% to 45%. If your open rate drops below 15%, your subject lines are probably not compelling, or you are emailing too often. A good subject line can be the difference between 15% and 40%.",
+    "There is no universal figure: it depends on your sector, the size of your list and how well your customers know you. Small lists of customers who know you personally tend to open more than large, cold lists. The most useful benchmark is your own history, so compare each email with your previous months. If your open rate drops, check whether your subject lines are clear and appealing, whether you are emailing too often, and whether your list is still made up of people who actually asked to hear from you."
+   ],
+   [
+    "with concrete examples from businesses in Valencia, Alicante, Elda, and Elche.",
+    "with concrete examples for businesses in Valencia, Alicante, Elda and Elche."
+   ],
+   [
+    "Heroes with real business photos generate 35% more trust than those using generic stock images.",
+    "Real photos of your business usually build more trust than generic stock images."
+   ],
+   [
+    "88% of consumers trust online reviews as much as personal recommendations from friends and family.",
+    "Many people trust online reviews almost as much as a personal recommendation from friends and family."
+   ],
+   [
+    "Reducing a form from 7 to 4 fields increases conversions by 50%.",
+    "Every extra field is one more reason to give up, so cutting a form down to the essentials usually brings in more enquiries."
+   ],
+   [
+    "can multiply your contacts -- in Spain, 95% of smartphone users use WhatsApp, making it the preferred channel for quick inquiries.",
+    "can bring in more contacts -- WhatsApp is so widely used in Spain that it is a natural channel for quick enquiries."
+   ],
+   [
+    "88% of consumers trust online reviews as much as personal recommendations.",
+    "Many people trust online reviews almost as much as a personal recommendation."
+   ],
+   [
+    "Over 80% of Spaniards search for products and services online before making a decision.",
+    "Many people in Spain search online for products and services before making a decision."
+   ],
+   [
+    "without making the mistakes that cost 90% of beginners money.",
+    "without making the mistakes that cost so many beginners money."
+   ],
+   [
+    "The Google Map Pack captures 60-75% of local clicks.",
+    "The Google Map Pack is the first thing people see in many local searches."
+   ],
+   [
+    "That is the Google Map Pack, and it captures between 60% and 75% of all clicks on local searches.",
+    "That is the Google Map Pack, and it is where much of the attention goes on local searches."
+   ],
+   [
+    "According to a Moz study, the Map Pack receives between 60% and 75% of all clicks on searches with local intent. Additionally, 76% of people who perform a local search on mobile visit a business or call within the next 24 hours.",
+    "Because it sits above the organic results, it gets a great deal of attention on searches with local intent. And people who search locally on their phone often need someone soon, so they tend to call or visit quickly."
+   ],
+   [
+    "upload photos weekly (listings with more than 100 photos receive 520% more calls),",
+    "upload photos weekly (a listing with plenty of recent photos looks active and trustworthy),"
+   ],
+   [
+    "Businesses with their own website optimized for local SEO are up to 50% more likely to appear in the Map Pack.",
+    "Having your own website optimised for local SEO can improve your chances of appearing in the Map Pack."
+   ],
+   [
+    "Lucia, a beautician in Alicante, followed this strategy and went from 3 to 18 monthly calls from Google in just 3 months.",
+    "For example, a beauty salon that follows this plan month after month keeps sending Google steady signals of activity, and that consistency is what helps a listing climb."
+   ],
+   [
+    "Those three places receive between 60% and 75% of all clicks on local searches.",
+    "Those three places are the first thing people see, so they get a great deal of the attention."
+   ],
+   [
+    "Businesses with their own website are up to 50% more likely to appear in the top three Map Pack places than those without one.",
+    "A website that backs up your listing can therefore improve your chances of reaching those top three places."
+   ],
+   [
+    "with real examples and the mistakes you must avoid.",
+    "with practical examples and the mistakes you must avoid."
+   ],
+   [
+    "According to a BrightLocal study, listings that publish posts regularly receive 35% more clicks on the call button and 25% more route requests on Google Maps.",
+    "A listing that publishes posts regularly shows potential customers that the business is active, and that can lead to more calls and more direction requests on Google Maps."
+   ],
+   [
+    "Jaime, a locksmith in Alicante, started posting every Monday and within two months his calls from Google Maps grew from 8 to 14 per month.",
+    "For example, a locksmith who posts every Monday, even something as simple as a photo of a recent job, keeps the listing looking active week after week."
+   ],
+   [
+    "It's essential because more than 60% of users browse from mobile, and Google penalizes non-responsive websites.",
+    "It’s essential because many people browse from their phones, and Google favours websites that work well on mobile."
+   ],
+   [
+    "Businesses with photos receive 42% more direction requests and 35% more clicks.",
+    "Good photos make your listing more attractive and can lead to more direction requests and clicks."
+   ],
+   [
+    "According to Google, 46% of all searches have local intent, and 76% of mobile searchers visit a business within 24 hours.",
+    "Many searches have local intent, and people who search on their phone for a nearby service often want to act quickly."
+   ],
+   [
+    "According to a BrightLocal study, Google Business categories are the number one factor determining which Map Pack searches you appear in -- above reviews, geographic proximity, and website content.",
+    "Your Google Business categories are one of the most important factors in deciding which Map Pack searches you appear in."
+   ],
+   [
+    "in 2026, 87% of Spaniards search for professional services on Google before calling anyone.",
+    "more and more people in Spain search for professional services on Google before calling anyone."
+   ],
+   [
+    "According to the INE, in 2025, 94% of Spanish households have internet connection, and 87% of consumers search for information about local services on Google before making a decision.",
+    "Almost every household in Spain is now online, and many people look up local services on Google before making a decision."
+   ],
+   [
+    "Google's Map Pack receives between 60% and 75% of all clicks in local searches.",
+    "Google’s Map Pack is the first thing people see in many local searches."
+   ],
+   [
+    "76% of people who do a local search on mobile visit a business within 24 hours.",
+    "People who search locally on their phone often need someone soon."
+   ],
+   [
+    "WhatsApp Business is the number one channel: 98% of Spaniards use WhatsApp.",
+    "WhatsApp Business is the number one channel, because WhatsApp is part of everyday life in Spain."
+   ],
+   [
+    "Backlinks account for 28% of the weight in Google's Map Pack ranking. In other words, nearly a third of your visibility on Google Maps depends on the links pointing to your website.",
+    "Backlinks are one of the signals Google takes into account when ranking businesses in the Map Pack. In other words, part of your visibility on Google Maps depends on the links pointing to your website."
+   ],
+   [
+    "Laura, a physiotherapist in Valencia, obtained only 8 quality local backlinks over 6 months and moved from page three to page one on Google for physiotherapist Valencia.",
+    "For example, a physiotherapy practice that earns a handful of links from local associations, clubs and news sites over several months is better placed than one that buys hundreds of low-quality links."
+   ],
+   [
+    "88% of people trust Google reviews as much as personal recommendations.",
+    "Many people trust Google reviews almost as much as a personal recommendation."
+   ],
+   [
+    "The data speaks for itself: 93% of people read reviews before choosing a product or service, 72% don't act until reading positive reviews, and businesses with more than 4 stars receive 12% more clicks.",
+    "Reviews carry real weight: many people read them before choosing a product or service, and a strong average rating makes a business much easier to choose."
+   ],
+   [
+    "Response rate drops 50% after 24 hours.",
+    "The longer you wait, the less likely the customer is to leave a review."
+   ],
+   [
+    "This is one of the methods that has worked best for thousands of businesses.",
+    "It is a simple habit that makes asking for reviews part of your routine."
+   ],
+   [
+    "There are multiple strategies to ask for reviews that have worked for thousands of companies.",
+    "There are several simple ways to ask for reviews."
+   ],
+   [
+    "53% of users abandon a website that takes more than 3 seconds to load.",
+    "Many visitors give up on a website that takes too long to load."
+   ],
+   [
+    "72% of local searches are done from mobile, making responsive design mandatory.",
+    "A large share of local searches happen on a mobile phone, which makes responsive design essential."
+   ],
+   [
+    "Antonio, a plumber in Valencia, climbed from position 8 to position 3 for 'emergency plumber Valencia' and went from 0 to 7 monthly calls.",
+    "For example, a plumber can use Search Console to see which searches already show the website, such as ‘emergency plumber Valencia’, and then improve the page that targets them."
+   ],
+   [
+    "Local businesses with a blog receive 55% more traffic than those without one.",
+    "A blog that answers real local questions can bring you extra visits over time."
+   ],
+   [
+    "Moreover, 89% of consumers read the business owner's responses to negative reviews.",
+    "Moreover, many people read how the business owner responds to negative reviews."
+   ],
+   [
+    "Do not ignore the review, as Google reports that businesses that respond get 35% more clicks.",
+    "Do not ignore the review: a reply shows future customers that you care about their experience."
+   ],
+   [
+    "According to BrightLocal's study, citation signals represent approximately 7% of Map Pack ranking factors. In competitive sectors, that 7% can be the difference between appearing in the top 3 or being left out.",
+    "Citations are only one of the many signals Google uses to rank businesses in the Map Pack. But in competitive sectors, even a smaller factor like this can make the difference between appearing in the top 3 or being left out."
+   ],
+   [
+    "According to the BrightLocal study, citations account for roughly 7% of local ranking factors.",
+    "Citations are one of the signals that feed into local rankings."
+   ],
+   [
+    "Forget about 90% of the data Google Analytics shows.",
+    "Forget about the bulk of the data Google Analytics shows."
+   ],
+   [
+    "If 80% of your visits come only from Instagram, you depend dangerously on a single source. The ideal for a freelancer is to have a balanced mix: 50% Google organic, 20% social media, 15% direct, 15% other channels. If your Google organic is below 30%, your local SEO needs work.",
+    "If almost all your visits come from Instagram, you depend dangerously on a single source. The ideal for a freelancer is a balanced mix, with Google organic search as a solid base alongside social media, direct visits and other channels. If Google organic brings you very few visits, your local SEO needs work."
+   ],
+   [
+    "A bounce rate above 70% indicates a problem:",
+    "A very high bounce rate usually points to a problem:"
+   ],
+   [
+    "A rate between 40% and 60% is normal for a local services website. Below 40% is excellent.",
+    "What counts as normal depends on the type of page and where the visits come from, so the most useful comparison is with your own previous months."
+   ],
+   [
+    "A good freelancer website converts between 2% and 5% of its visits into contacts. If you have 500 visits a month and get 10-25 contacts, you are within the normal range. If you have 500 visits and only get 1-2 contacts, something is wrong:",
+    "There is no universal benchmark: it depends on your sector and on where your visits come from. What matters is the trend, so compare your contacts with your visits month by month. If you get plenty of visits but hardly any contacts, something is wrong:"
+   ],
+   [
+    "A local electrician can generate business with 100-200 visits a month if they are well targeted.",
+    "A local electrician can generate business with a fairly modest number of visits, as long as they are well targeted."
+   ],
+   [
+    "Reduce no-shows by 40%, save time",
+    "Reduce no-shows, save time"
+   ],
+   [
+    "and data from booking platforms shows that up to 40% of no-shows are due to lack of reminders.",
+    "and many no-shows happen simply because nobody sent a reminder."
+   ],
+   [
+    "56% of local businesses haven't even completed all their information.",
+    "many local businesses haven’t even completed all their information."
+   ],
+   [
+    "Fully optimized listings receive 7 times more clicks than incomplete ones. Listings with photos receive 42% more requests for directions on Google Maps and 35% more clicks to the website. Google's Local Pack (the 3 map listings) captures 44% of all clicks in local searches.",
+    "A complete, well-optimised listing gives people far more reasons to click than an incomplete one, and photos in particular make it easier for them to find you and visit your website. Google’s Local Pack (the 3 map listings) is the first thing people see in many local searches."
+   ],
+   [
+    "Listings with over 100 photos receive 520% more calls.",
+    "The more real photos your listing has, the more complete and trustworthy it looks."
+   ],
+   [
+    "Laura, a hairdresser in Valencia, went from 4 to 28 monthly calls in 6 months by following this plan.",
+    "For example, a hair salon that sticks to this routine week after week keeps its listing active with very little effort."
+   ],
+   [
+    "Listings with more than 100 photos receive 520% more calls than those with none.",
+    "A listing with plenty of photos looks far more complete and trustworthy than one with none."
+   ],
+   [
+    "Photos and videos on your Google listing: why they double your clicks",
+    "Photos and videos on your Google listing: how they help you get more clicks"
+   ],
+   [
+    "Listings with photos get double the clicks.",
+    "Photos help your listing get more clicks."
+   ],
+   [
+    "According to Google data, businesses with over 100 photos receive 520% more calls than those with none.",
+    "The more good photos your listing has, the easier it is for people to trust you before they call."
+   ],
+   [
+    "in what format and how often to multiply your clicks.",
+    "in what format and how often, so that you get more clicks."
+   ],
+   [
+    "Listings with images on Google Business receive 42% more direction requests and 35% more clicks to the website. 60% of consumers prefer businesses with photos on Google Maps over those without.",
+    "A listing with good images gets more attention, and often more direction requests and clicks to your website. People naturally prefer to choose a business they can actually see."
+   ],
+   [
+    "within three months your listing will have more visual content than 90% of your competitors.",
+    "within three months your listing will have more visual content than many of your competitors."
+   ],
+   [
+    "That said, businesses with more than 25 photos receive 35% more clicks than those with fewer than 10.",
+    "That said, a listing with a good range of photos is far more convincing than one with only a handful."
+   ],
+   [
+    "Businesses with videos receive 20% more interactions than those with photos alone.",
+    "A short video adds something photos alone cannot: it shows your work in action."
+   ],
+   [
+    "If photos double your clicks, videos on Google Maps triple them.",
+    "Photos help your listing get noticed, and videos can help even more."
+   ],
+   [
+    "and they multiply your clicks and calls.",
+    "and they can bring you more clicks and calls."
+   ],
+   [
+    "These results receive between 20% and 30% more clicks.",
+    "These results stand out on the page and can attract more clicks."
+   ],
+   [
+    "Those results stand out and receive between 20% and 30% more clicks.",
+    "Those results stand out and can attract more clicks."
+   ],
+   [
+    "Over 80% of consumers prefer to contact businesses via WhatsApp rather than phone.",
+    "Many customers find it easier to message a business on WhatsApp than to phone."
+   ],
+   [
+    "87% of consumers use Google to find local businesses, compared to 48% who check social media.",
+    "When people need a local service, they tend to search on Google rather than scroll through social media."
+   ],
+   [
+    "Facebook has 22 million active users in Spain, with the 35-55 age group being the most active.",
+    "Facebook still has a large audience in Spain, especially among middle-aged users."
+   ],
+   [
+    "However, organic reach is only 2-5% of your followers,",
+    "However, unpaid posts often reach only a small share of your followers,"
+   ],
+   [
+    "Reels generate 3 times more reach than static photos.",
+    "Reels tend to reach more people than static photos."
+   ],
+   [
+    "Raul, a painter in Elche, receives 12 monthly contacts from Google (60% conversion) and 3-4 from social media (20% conversion). The data confirms where to invest more time.",
+    "For example, a painter who notes where each enquiry came from, and how many turned into jobs, soon sees which channel deserves more time. Your own data will tell you where to invest."
+   ],
+   [
+    "In 2026, 77% of patients search for health professionals online before booking an appointment.",
+    "Today, many patients search for health professionals online before booking an appointment."
+   ],
+   [
+    "According to a Doctoralia study, 82% of patients check the internet before choosing a healthcare professional.",
+    "Many patients check the internet before choosing a healthcare professional."
+   ],
+   [
+    "90% of patients read reviews before choosing a health professional.",
+    "And patients often read reviews before choosing a health professional."
+   ],
+   [
+    "77% of patients look for information online before choosing a healthcare professional.",
+    "Many patients look for information online before choosing a healthcare professional."
+   ],
+   [
+    "With real examples and a live demo.",
+    "With practical examples and a live demo."
+   ],
+   [
+    "According to the latest Google data, 97% of consumers search for local services online before hiring.",
+    "Many people search online for local services before hiring anyone."
+   ],
+   [
+    "have grown 35% in the last two years.",
+    "are exactly how new customers look for a plumber when they need one."
+   ],
+   [
+    "A plumber in Alicante with a well-positioned website can receive between 15 and 30 calls per month from Google alone, without paying for ads or relying on intermediaries.",
+    "A plumber in Alicante with a well-positioned website can get calls straight from Google, without paying for ads or relying on intermediaries."
+   ],
+   [
+    "(78% of plumber searches are done on mobile)",
+    "(people often look for a plumber on their phone, sometimes in an emergency)"
+   ],
+   [
+    "Antonio, a plumber in Elda with 12 years of experience, set up his website with us and in the first 6 weeks received 14 calls from Google that turned into 9 confirmed jobs. All for 15 euros per month.",
+    "If you want to see what yours could look like, we can prepare a demo for your business within 24 hours."
+   ],
+   [
+    "but 75% of new patients look for you on Google before picking up the phone.",
+    "but many new patients look for you on Google before picking up the phone."
+   ],
+   [
+    "why online booking can double your schedule in just a few months.",
+    "why online booking can help you fill your schedule."
+   ],
+   [
+    "Online booking: the change that doubles your schedule",
+    "Online booking: the change that helps fill your schedule"
+   ],
+   [
+    "Sector data: clinics with online booking can increase their acquisition by between 30% and 50%, especially in slots like evenings and weekends.",
+    "Online booking can help a clinic win new patients, especially for slots like evenings and weekends."
+   ],
+   [
+    "A good integration takes 1 hour to set up and pays for itself in the first week.",
+    "A basic integration is quick to set up and can soon pay for itself."
+   ],
+   [
+    "a foot clinic can multiply its new appointments in a few months.",
+    "a foot clinic can win more new appointments over the following months."
+   ],
+   [
+    "In 2026, 73% of people seeking psychological support start with Google.",
+    "Many people looking for psychological support start their search on Google."
+   ],
+   [
+    "one algorithm change and your visibility drops 80% overnight.",
+    "one algorithm change and your visibility can drop overnight."
+   ],
+   [
+    "Studios that manage online bookings with a mandatory deposit have up to 60% fewer cancellations.",
+    "Asking for a deposit when clients book online can noticeably reduce cancellations."
+   ],
+   [
+    "More than half of local searches are made on mobile, often on data and without wifi.",
+    "A large share of local searches are made on mobile, often on data and without wifi."
+   ],
+   [
+    "Local businesses with blogs receive 55% more traffic.",
+    "A blog that answers real local questions can bring you extra visits over time."
+   ],
+   [
+    "The Google Map Pack captures between 60% and 75% of all clicks on local searches.",
+    "The Google Map Pack is the first thing people see in many local searches."
+   ],
+   [
+    "These three spots receive between 60% and 75% of all clicks from local searches.",
+    "These three spots are the first thing people see, so they get a great deal of the attention."
+   ],
+   [
+    "Businesses with their own website are up to 50% more likely to appear in the top 3 positions of the Map Pack.",
+    "A website that backs up your listing can improve your chances of reaching the top 3 positions of the Map Pack."
+   ],
+   [
+    "A plumber or hairdresser can achieve open rates of up to 40%, far higher than those of large brands.",
+    "A plumber or hairdresser often gets a warmer response than the generic newsletters of large brands."
+   ],
+   [
+    "The average open rate in Spain is between 20% and 25%. However, freelancers with small lists often achieve higher rates, from 30% to 45%. If your rate drops below 15%, your subject lines probably need improvement or you are sending too frequently.",
+    "There is no universal figure: it depends on your sector, the size of your list and how well your customers know you. The most useful benchmark is your own history, so compare each email with your previous months. If your rate drops, check your subject lines and whether you are sending too frequently."
+   ],
+   [
+    "77% of patients search online before choosing a health professional.",
+    "Many patients search online before choosing a health professional."
+   ],
+   [
+    "These results receive between 20% and 30% more clicks than standard listings.",
+    "These results stand out from standard listings and can attract more clicks."
+   ],
+   [
+    "The general recommendation is between 5% and 10% of gross revenue for established businesses, and up to 15-20% for new businesses that need visibility.",
+    "There is no single percentage that suits everyone: established businesses can often spend less, while new ones that need visibility usually have to invest more at the start."
+   ],
+   [
+    "representing approximately 7% of local ranking factors according to BrightLocal.",
+    "as one of the signals that feed into local rankings."
+   ],
+   [
+    "87% of clients review previous work before requesting a quote.",
+    "Clients often look at previous work before requesting a quote."
+   ],
+   [
+    "Businesses with more than 25 photos receive 35% more clicks.",
+    "A listing with a good range of photos is far more convincing than one with only a handful."
+   ],
+   [
+    "Businesses with videos receive 20% more interactions than those with photos only.",
+    "A short video adds something photos alone cannot: it shows your work in action."
+   ],
+   [
+    "65% of freelancers in Spain do not have a website, making them invisible to 73% of consumers who search Google before hiring.",
+    "Plenty of freelancers in Spain still have no website, which makes them invisible to anyone who searches on Google before hiring."
+   ],
+   [
+    "The general recommendation is between 5% and 10% of your turnover. For a freelancer billing 30,000 euros per year, that would be between 125 and 250 euros per month. But you can start",
+    "There is no universal percentage: the right amount depends on your sector, your area and how many new clients you need. You can start small"
+   ],
+   [
+    "Forget 90% of the data in Google Analytics.",
+    "Forget the bulk of the data in Google Analytics."
+   ],
+   [
+    "Ideal mix: 50% Google, 20% social, 15% direct, 15% other.",
+    "Ideal mix: a solid base of Google organic search, plus social media, direct visits and other channels."
+   ],
+   [
+    "Over 70% indicates a problem: slow site, irrelevant content or distrustful design. 40%-60% is normal for local service websites.",
+    "A very high rate usually points to a problem: slow site, irrelevant content or distrustful design. What counts as normal depends on the page and where visits come from, so compare with your own previous months."
+   ],
+   [
+    "A good freelancer site converts 2%-5% of visits into contacts. 500 visits and only 1-2 contacts means missing WhatsApp button or unclear call to action.",
+    "There is no universal benchmark, so compare your contacts with your visits month by month. Plenty of visits but hardly any contacts usually means a missing WhatsApp button or an unclear call to action."
+   ],
+   [
+    "80% of freelancers give up updating their website due to blank-page fear.",
+    "Many freelancers give up updating their website out of fear of the blank page."
+   ],
+   [
+    "75% of patients search Google before calling.",
+    "Many patients search Google before calling."
+   ],
+   [
+    "but 75% of new patients search Google before picking up the phone.",
+    "but many new patients search Google before picking up the phone."
+   ],
+   [
+    "Clinics with online booking can increase patient acquisition by 30-50%, especially nights and weekends.",
+    "Online booking can help a clinic win new patients, especially for evening and weekend slots."
+   ],
+   [
+    "Trust is 90% of the decision to book.",
+    "Trust is a huge part of the decision to book."
+   ],
+   [
+    "With free tools and real examples.",
+    "With free tools and practical examples."
+   ]
+  ],
+  "gardes": [
+   [
+    "only place you control 100",
+    "b: idiom (100% under your control)"
+   ],
+   [
+    "only space you control 100",
+    "b: idiom (100% under your control)"
+   ],
+   [
+    "space on the internet you control 100",
+    "b: idiom (100% under your control)"
+   ],
+   [
+    "the tone will be 100",
+    "b: idiom (100% natural)"
+   ],
+   [
+    "Content generated 100",
+    "b: idiom (100% AI-generated)"
+   ],
+   [
+    "You almost never recover 100",
+    "a/b: owner's automation pricing method; idiom"
+   ],
+   [
+    "We price the build at 12",
+    "a: owner's stated pricing method (12% of the task's annual cost)"
+   ],
+   [
+    "Maintenance is 20",
+    "a: owner's stated pricing method (20% maintenance)"
+   ],
+   [
+    "around 20 % of the build cost",
+    "a: owner's stated pricing method (20% maintenance)"
+   ],
+   [
+    "you can recover 30 to 50",
+    "a: owner's stated method (recovering 30-50%)"
+   ],
+   [
+    "you drop to 10 or 15",
+    "a: owner's stated method (10-15%)"
+   ],
+   [
+    "Why 12",
+    "a: owner's stated pricing method (FAQ)"
+   ],
+   [
+    "His ROI is 1,933",
+    "e: arithmetic of an explicitly hypothetical, now anonymous example"
+   ],
+   [
+    "Whether you are a plumber in Valencia, an electrician in Alicante",
+    "not a client case: generic list of trades addressed to the reader"
+   ],
+   [
+    "plumber in Elche, electrician in Valencia, dentist in Alicante",
+    "not a client case: generic list of trades addressed to the reader"
+   ],
+   [
+    "an electrician in Elda, a plumber in Elche, a dentist in Valencia",
+    "not a client case: generic list of trades addressed to the reader"
+   ],
+   [
+    "Complete your Google listing 100",
+    "b: idiom (complete your listing 100%)"
+   ],
+   [
+    "relevance and prominence are 100",
+    "b: idiom (100% within your control)"
+   ],
+   [
+    "complete 100% of your listing",
+    "b: idiom (complete your listing 100%)"
+   ],
+   [
+    "complete it 100",
+    "b: idiom (complete your listing 100%)"
+   ],
+   [
+    "on real cases",
+    "not a client case: testing an automation on real data"
+   ],
+   [
+    "WebAutonomos are 100% responsive",
+    "a/b: WebAutonomos offer; idiom (100% responsive)"
+   ],
+   [
+    "making everything 100",
+    "b: idiom (100% original)"
+   ],
+   [
+    "this guide explains what it is",
+    "not a client case: 'explains' refers to the guide"
+   ],
+   [
+    "home page that explains your approach",
+    "not a client case: 'explains' refers to the home page"
+   ],
+   [
+    "Even if it is only 20% of the amount",
+    "f: advice on deposit size, not a statistic"
+   ],
+   [
+    "all this is 100",
+    "b: idiom (100% free)"
+   ],
+   [
+    "96.3% of people aged 16 to 74",
+    "d: sourced statistic (INE, 2025)"
+   ],
+   [
+    "According to the 2026 report by Qonto",
+    "d: sourced statistic (Qonto and IO Investigación 2026)"
+   ],
+   [
+    "run more than one platform to manage their finances",
+    "d: same sourced report (Qonto and IO Investigación 2026)"
+   ],
+   [
+    "100% merit, not money",
+    "b: idiom (100% merit)"
+   ],
+   [
+    "guide explains what",
+    "not a client case: 'explains' refers to the guide"
+   ],
+   [
+    "AI-generated 100",
+    "b: idiom (100% AI-generated)"
+   ],
+   [
+    "100% AI-generated",
+    "b: idiom (100% AI-generated)"
+   ]
+  ]
+ },
+ "fr": {
+  "remplacements": [
+   [
+    "Les établissements qui en publient reçoivent 42 % de demandes d'itinéraire en plus et 35 % de clics en plus.",
+    "Une fiche bien illustrée donne envie de venir ou d’appeler, et peut vous apporter davantage de demandes d’itinéraire et de clics."
+   ],
+   [
+    "Exemple concret : Charles, peintre à Lyon, investit 59 €/mois (15 € de site + 29 € de Google Business + 15 € de SEO local). Le mois dernier, il a reçu 8 appels depuis Google, dont 4 se sont transformés en chantiers avec une marge moyenne de 300 € chacun.",
+    "Par exemple, imaginons un peintre qui investit 59 €/mois (15 € de site + 29 € de Google Business + 15 € de SEO local). Sur un mois, il reçoit 8 appels depuis Google, dont 4 se transforment en chantiers avec une marge moyenne de 300 € chacun."
+   ],
+   [
+    "Autrement dit, pour chaque euro investi, Charles en récupère près de 20. Ce niveau de",
+    "Autrement dit, dans cet exemple, chaque euro investi en rapporte près de 20. Ce niveau de"
+   ],
+   [
+    "est courant chez les prestataires de services de proximité bien positionnés, parce que",
+    "reste possible pour un prestataire de services de proximité bien positionné, parce que"
+   ],
+   [
+    "Un exemple réel : Marie, kinésithérapeute à Nantes, a commencé à l'étape 0 avec seulement Google Business Profile et WhatsApp. Quand elle a commencé à recevoir 2 à 3 contacts par mois, elle est passée à l'étape 2 avec site + gestion Google Business. En 4 mois, elle est passée de 3 à 12 contacts mensuels. Elle est aujourd'hui à l'étape 3 avec le SEO local et reçoit 18 à 20 demandes par mois. Elle n'a jamais eu besoin d'atteindre l'étape 4 : son agenda est déjà plein.",
+    "Par exemple, une kinésithérapeute peut commencer à l’étape 0, avec seulement Google Business Profile et WhatsApp. Quand les premiers contacts arrivent régulièrement, elle passe à l’étape 2 avec site + gestion Google Business, puis à l’étape 3 avec le SEO local si elle veut davantage de demandes. Rien ne l’oblige à atteindre l’étape 4 : si son agenda est déjà plein, inutile de dépenser plus."
+   ],
+   [
+    "La recommandation générale se situe entre 5 % et 10 % du chiffre d'affaires brut pour une activité établie, et jusqu'à 15-20 % pour une activité nouvelle qui doit se faire connaître.",
+    "Il n’existe pas de pourcentage valable pour tous : tout dépend de votre secteur, de vos marges et de l’ancienneté de votre activité, et une activité nouvelle qui doit se faire connaître a souvent besoin d’investir davantage au départ."
+   ],
+   [
+    "Les enquêtes sur les très petites entreprises convergent :",
+    "Le constat revient souvent dans les très petites entreprises :"
+   ],
+   [
+    "une petite minorité seulement suit l'origine de ses clients",
+    "peu d’indépendants suivent vraiment l’origine de leurs clients"
+   ],
+   [
+    "Cela dépend du secteur et de la ville, mais d'après notre expérience, un indépendant bien positionné dans une ville moyenne comme Lausanne ou Bruxelles reçoit entre 5 et 15 contacts par mois depuis Google. À Lyon ou Nantes, avec plus de concurrence mais aussi plus de demande, les chiffres peuvent être comparables ou supérieurs si l'optimisation est bonne.",
+    "Cela dépend du secteur, de la ville et de la concurrence : il n’existe pas de chiffre valable pour tous. Dans une grande ville comme Lyon ou Nantes, la concurrence est plus forte, mais la demande aussi. Le plus utile est de suivre vos propres contacts mois après mois pour voir si votre présence sur Google progresse."
+   ],
+   [
+    "se fâche deux fois plus, parce qu'il sent",
+    "se fâche encore davantage, parce qu’il sent"
+   ],
+   [
+    "Selon une étude de BrightLocal sur les facteurs de positionnement local, les",
+    "Les"
+   ],
+   [
+    "facteur numéro un",
+    "point de départ"
+   ],
+   [
+    "Devant les avis, devant la proximité géographique et devant le contenu de votre site. Autrement dit, si votre catégorie est mauvaise, tout le reste ne sert à rien.",
+    "Les avis, la proximité géographique et le contenu de votre site comptent aussi, mais si votre catégorie est mauvaise, tout le reste perd beaucoup de son effet."
+   ],
+   [
+    "46 % de toutes les recherches ont une intention locale",
+    "une grande partie des recherches ont une intention locale"
+   ],
+   [
+    "Et voici la donnée la plus importante pour vous : 76 % des personnes effectuant une recherche locale sur mobile se rendent chez un commerçant dans les 24 heures. Autrement dit, près de 8 personnes sur 10 qui cherchent « plombier urgence Bruxelles » vont appeler quelqu'un le jour même.",
+    "Et voici le point le plus important pour vous : une recherche locale sur mobile traduit souvent un besoin immédiat. Autrement dit, quelqu’un qui cherche « plombier urgence Bruxelles » va souvent appeler un professionnel le jour même."
+   ],
+   [
+    "Selon l'étude de BrightLocal, les citations représentent environ 7 % des facteurs de classement local.",
+    "Elles ne représentent qu’une part modeste des facteurs de classement local."
+   ],
+   [
+    "D'après l'étude annuelle de BrightLocal sur les facteurs de positionnement local, les signaux de citations représentent environ",
+    "Les signaux de citations représentent une part modeste"
+   ],
+   [
+    "7 % des facteurs de classement",
+    "des facteurs de classement"
+   ],
+   [
+    "ces 7 % font la différence",
+    "ce petit plus peut faire la différence"
+   ],
+   [
+    "plus de 60 % des internautes naviguent depuis un mobile",
+    "une grande partie des internautes navigue depuis un mobile"
+   ],
+   [
+    "Les chiffres sont nets : le Map Pack capte entre 60 % et 75 % de tous les clics sur les recherches locales. Autrement dit, si vous y figurez, vous avez la majorité des chances que ce client vous appelle, vous.",
+    "Le Map Pack concentre une grande partie des clics sur les recherches locales. Autrement dit, si vous y figurez, vos chances que ce client vous appelle, vous, augmentent nettement."
+   ],
+   [
+    "Les photos réelles inspirent deux fois plus confiance.",
+    "Les photos réelles inspirent davantage confiance."
+   ],
+   [
+    "les fiches comptant plus de 10 photos reçoivent 42 % de demandes d'itinéraire en plus.",
+    "une fiche bien fournie en photos récentes donne plus envie de venir et peut vous apporter davantage de demandes d’itinéraire."
+   ],
+   [
+    "Parce que 76 % des personnes qui font une recherche locale sur mobile se rendent chez un commerçant dans les 24 heures. Et 28 % de ces recherches débouchent sur un achat ou une prise de rendez-vous le jour même.",
+    "Parce qu’une recherche locale sur mobile traduit souvent un besoin immédiat : la personne veut un professionnel près de chez elle, et vite, souvent pour le jour même."
+   ],
+   [
+    "Un plombier de Bruxelles nous racontait que, depuis qu'il a mis le bouton WhatsApp sur son site, il reçoit trois fois plus de demandes que par téléphone.",
+    "Par exemple, un plombier qui ajoute un bouton WhatsApp sur son site peut recevoir des demandes de clients qui n’auraient pas pris la peine d’appeler."
+   ],
+   [
+    "Les études convergent : la quasi-totalité des foyers est connectée, et près de neuf consommateurs sur dix consultent internet pour se renseigner sur un service local avant de trancher.",
+    "Aujourd’hui, internet fait partie du quotidien de presque tous les foyers, et beaucoup de consommateurs le consultent pour se renseigner sur un service local avant de trancher."
+   ],
+   [
+    "Une large majorité de consommateurs préfèrent aujourd'hui contacter une entreprise par messagerie instantanée plutôt que par téléphone.",
+    "Beaucoup de consommateurs préfèrent aujourd’hui contacter une entreprise par messagerie instantanée plutôt que par téléphone."
+   ],
+   [
+    "D'après les études d'ergonomie web, les bandeaux",
+    "Les bandeaux"
+   ],
+   [
+    "35 % de confiance en plus",
+    "davantage confiance"
+   ],
+   [
+    "88 % des consommateurs accordent aux avis en ligne autant de crédit qu'aux recommandations personnelles.",
+    "Beaucoup de consommateurs accordent aux avis en ligne presque autant de crédit qu’aux recommandations personnelles."
+   ],
+   [
+    "88 % des consommateurs",
+    "Beaucoup de consommateurs"
+   ],
+   [
+    "Une étude de HubSpot a montré que passer de 7 à 4 champs",
+    "Passer d’un long formulaire à quelques champs essentiels"
+   ],
+   [
+    "augmente les conversions de 50 %",
+    "peut nettement augmenter le nombre de demandes"
+   ],
+   [
+    "l'e-mail reste le canal au meilleur retour sur investissement : pour chaque euro investi, il rapporte en moyenne 36 euros.",
+    "l’e-mail reste l’un des canaux les plus rentables : il coûte très peu et s’adresse à des personnes qui vous connaissent déjà."
+   ],
+   [
+    "Les chiffres parlent d'eux-mêmes. L'e-mail marketing rapporte en moyenne",
+    "L’e-mail marketing peut offrir"
+   ],
+   [
+    "36 euros pour chaque euro investi",
+    "un excellent retour pour un coût minime"
+   ],
+   [
+    ", selon une étude Litmus. C'est le canal au meilleur retour, devant les réseaux sociaux, la publicité payante et le SEO.",
+    ". C’est souvent l’un des canaux les plus rentables pour un indépendant."
+   ],
+   [
+    "C'est l'e-mail au meilleur taux d'ouverture, jusqu'à 80 %.",
+    "C’est souvent l’e-mail le plus ouvert, car la personne vient de s’inscrire et attend de vos nouvelles."
+   ],
+   [
+    "47 % des gens décident d'ouvrir ou non un e-mail sur le seul objet.",
+    "c’est souvent sur le seul objet que l’on décide d’ouvrir ou non un e-mail."
+   ],
+   [
+    "Le second est ouvert 200 % plus souvent.",
+    "Le second a bien plus de chances d’être ouvert."
+   ],
+   [
+    "Camille, coiffeuse à Lausanne, a commencé à envoyer une newsletter mensuelle à ses 85 clientes, avec un conseil d'entretien capillaire et la promotion du mois. En 6 mois, son taux d'ouverture moyen a atteint 42 %, bien au-dessus de la moyenne du secteur, et lui a apporté 15 rendez-vous directs. « Avant, je ne comptais que sur Instagram, où mes publications étaient vues par 20 personnes. Aujourd'hui, 35 de mes 85 clientes lisent mes e-mails chaque mois », nous explique-t-elle.",
+    "une coiffeuse qui envoie chaque mois une newsletter à ses clientes, avec un conseil d’entretien capillaire et la promotion du mois, reste présente dans leur esprit entre deux rendez-vous. Là où une publication Instagram peut passer inaperçue, son e-mail arrive directement dans la boîte de réception de personnes qui la connaissent déjà."
+   ],
+   [
+    "atteignent des taux d'ouverture allant jusqu'à 40 %, bien au-dessus de ceux des grandes marques.",
+    "peuvent obtenir de très bons taux d’ouverture, parce que leurs destinataires les connaissent personnellement."
+   ],
+   [
+    "Le taux d'ouverture moyen se situe généralement entre 20 % et 25 %. Les indépendants avec de petites listes et une relation proche de leurs clients obtiennent toutefois des taux plus élevés, de 30 % à 45 %. Si votre taux descend sous les 15 %, vos objets ne sont probablement pas assez accrocheurs, ou vous envoyez trop souvent. Un bon objet peut faire la différence entre 15 % et 40 % d'ouverture.",
+    "Il n’existe pas de taux « normal » valable pour tous : tout dépend de votre secteur, de la taille de votre liste et de la relation que vous avez avec vos abonnés. Une petite liste de clients qui vous connaissent ouvre souvent davantage qu’une grande liste anonyme. Le plus utile est de comparer chaque envoi à vos propres mois précédents. Si votre taux baisse nettement, vérifiez vos objets, la fréquence de vos envois et la qualité de votre liste (adresses inactives, inscrits qui ne vous connaissent plus)."
+   ],
+   [
+    "Envoyez vos e-mails le mardi ou le jeudi entre 10 h et 11 h. Ce sont les jours et créneaux aux meilleurs taux d'ouverture d'après les études du secteur.",
+    "Testez plusieurs jours et créneaux d’envoi, par exemple le mardi ou le jeudi en milieu de matinée, puis gardez celui qui donne les meilleurs résultats avec vos propres clients."
+   ],
+   [
+    "La recommandation générale est de consacrer entre 5 % et 10 % de votre chiffre d'affaires au marketing. Pour un indépendant qui facture 30 000 euros par an, cela représente 125 à 250 euros par mois. Vous pouvez toutefois commencer avec bien moins :",
+    "Il n’existe pas de montant valable pour tous : tout dépend de votre secteur, de vos marges et du nombre de nouveaux clients dont vous avez besoin. Vous pouvez commencer avec un budget modeste :"
+   ],
+   [
+    "et où. 53 % des internautes quittent un site qui met plus de 3 secondes à charger.",
+    "et où. Or un site lent fait fuir beaucoup de visiteurs avant même qu’ils aient vu votre page."
+   ],
+   [
+    "vous devancerez 80 % de vos concurrents.",
+    "vous prendrez de l’avance sur beaucoup de vos concurrents."
+   ],
+   [
+    "Les avis sont le premier critère de décision des clients de proximité. 93 % d'entre eux les lisent avant de faire appel à quelqu'un.",
+    "Les avis pèsent lourd dans la décision des clients de proximité, et beaucoup les lisent avant de faire appel à quelqu’un."
+   ],
+   [
+    "Une large majorité d'indépendants n'a toujours pas de site. Ils sont donc invisibles pour les quelque trois quarts de consommateurs qui cherchent un prestataire sur Google avant de faire appel à lui. Un plombier de Bruxelles sans site perd entre 5 et 15 appels par mois, de la part de gens qui tapent",
+    "Beaucoup d’indépendants n’ont toujours pas de site. Ils sont donc invisibles pour tous les consommateurs qui cherchent un prestataire sur Google avant de faire appel à lui. Un plombier de Bruxelles sans site passe à côté des appels de gens qui tapent"
+   ],
+   [
+    "Une large majorité d'indépendants n'a pas de site, ce qui les rend invisibles pour les trois quarts de consommateurs qui cherchent un prestataire sur Google avant de faire appel à lui.",
+    "Beaucoup d’indépendants n’ont pas de site, ce qui les rend invisibles pour tous les consommateurs qui cherchent un prestataire sur Google avant de faire appel à lui."
+   ],
+   [
+    "sans commettre les erreurs qui font perdre de l'argent à 90 % des débutants.",
+    "sans commettre les erreurs qui font perdre de l’argent à tant de débutants."
+   ],
+   [
+    "Selon une étude de BrightLocal, les fiches Google qui publient régulièrement des posts reçoivent",
+    "Les fiches Google qui publient régulièrement des posts peuvent recevoir"
+   ],
+   [
+    "35 % de clics en plus sur le bouton d'appel",
+    "davantage de clics sur le bouton d’appel"
+   ],
+   [
+    "et 25 % de demandes d'itinéraire en plus sur Google Maps.",
+    "et de demandes d’itinéraire sur Google Maps."
+   ],
+   [
+    "Le Map Pack de Google capte 60 à 75 % des clics locaux.",
+    "Le Map Pack de Google concentre une grande partie des clics locaux."
+   ],
+   [
+    "Ces trois places captent 60 à 75 % de tous les clics sur les recherches locales.",
+    "Ces trois places concentrent une grande partie des clics sur les recherches locales."
+   ],
+   [
+    "Les entreprises dotées d'un site ont jusqu'à 50 % de chances supplémentaires de figurer dans les 3 premières places.",
+    "Un site cohérent avec votre fiche renforce vos chances de figurer dans les 3 premières places."
+   ],
+   [
+    "et il capte entre 60 % et 75 % de tous les clics sur les recherches locales.",
+    "et il concentre une grande partie des clics sur les recherches locales."
+   ],
+   [
+    "Les chiffres sont sans appel. D'après une étude de Moz, le",
+    "Parce que le"
+   ],
+   [
+    "Map Pack reçoit entre 60 % et 75 % de tous les clics",
+    "Map Pack attire une grande partie des clics"
+   ],
+   [
+    "Autrement dit, sur 100 personnes qui tapent « électricien Bruxelles », 60 à 75 cliquent sur l'un des trois établissements du Map Pack. Les résultats organiques en dessous se partagent les miettes.",
+    "Autrement dit, quand quelqu’un tape « électricien Bruxelles », il y a de fortes chances qu’il clique sur l’un des trois établissements du Map Pack. Les résultats organiques en dessous se partagent le reste."
+   ],
+   [
+    "Autre donnée parlante : 76 % des personnes qui font une recherche locale sur mobile se rendent chez un commerçant ou appellent dans les 24 heures. Et 28 % de ces recherches se concluent par un achat.",
+    "Autre point important : une recherche locale sur mobile traduit souvent un besoin immédiat, et la personne appelle ou se déplace rapidement."
+   ],
+   [
+    "fiches comptant plus de 100 photos reçoivent 520 % d'appels en plus que celles qui n'en ont aucune.",
+    "fiches riches en photos récentes inspirent davantage confiance et donnent plus envie d’appeler."
+   ],
+   [
+    "Les établissements dotés d'un site optimisé pour le référencement local ont jusqu'à 50 % de chances supplémentaires de figurer dans le Map Pack.",
+    "Un site optimisé pour le référencement local renforce vos chances de figurer dans le Map Pack."
+   ],
+   [
+    "Oubliez 90 % des données qu'affiche Google Analytics.",
+    "Oubliez l’essentiel des données qu’affiche Google Analytics."
+   ],
+   [
+    "Si 80 % de vos visites viennent uniquement d'Instagram, vous dépendez dangereusement d'une seule source. L'idéal pour un indépendant est un équilibre : 50 % de Google organique, 20 % de réseaux sociaux, 15 % de direct, 15 % d'autres canaux. Si votre part de Google organique passe sous les 30 %, votre SEO local demande du travail.",
+    "Si presque toutes vos visites viennent d’Instagram, vous dépendez dangereusement d’une seule source. L’idéal pour un indépendant est un équilibre entre plusieurs sources, avec Google comme pilier. Si la part de vos visites venues de Google baisse mois après mois, votre SEO local demande du travail."
+   ],
+   [
+    "Au-delà de 70 %, il signale un problème : le site charge lentement, le contenu ne répond pas à leur recherche, ou la mise en page n'inspire pas confiance. Entre 40 % et 60 %, c'est normal pour un site de services locaux. En dessous de 40 %, c'est excellent.",
+    "Un taux très élevé signale souvent un problème : le site charge lentement, le contenu ne répond pas à leur recherche, ou la mise en page n’inspire pas confiance. Il n’existe pas de valeur « normale » valable pour tous : tout dépend du type de page et de votre activité, et le plus utile est de suivre son évolution d’un mois sur l’autre."
+   ],
+   [
+    "Un bon site d'indépendant transforme entre 2 % et 5 % de ses visites en prises de contact. Avec 500 visites par mois et 10 à 25 contacts, vous êtes dans la norme. Avec 500 visites et seulement 1 ou 2 contacts, quelque chose cloche :",
+    "Il n’existe pas de taux de référence valable pour tous : comparez surtout vos propres chiffres d’un mois sur l’autre. Si votre site reçoit des visites régulières mais presque aucune demande, quelque chose cloche :"
+   ],
+   [
+    "Une étude de Moz sur les facteurs de classement local a montré que les",
+    "Les"
+   ],
+   [
+    "backlinks pèsent 28 % dans le positionnement au sein du Map Pack",
+    "backlinks comptent parmi les facteurs qui influencent le positionnement au sein du Map Pack"
+   ],
+   [
+    "Autrement dit, près d'un tiers de votre visibilité sur Google Maps dépend des liens qui pointent vers votre site. Pour un indépendant, ignorer ce levier revient à fermer la porte à un tiers de ses clients potentiels.",
+    "Autrement dit, une partie de votre visibilité sur Google Maps dépend des liens qui pointent vers votre site. Pour un indépendant, ignorer ce levier revient à se priver de clients potentiels."
+   ],
+   [
+    "Le taux de réponse chute de 50 % passées 24 heures.",
+    "Plus vous attendez, moins le client a de chances de laisser un avis."
+   ],
+   [
+    "88 % des gens accordent autant de crédit aux avis Google qu'à une recommandation personnelle.",
+    "Beaucoup de gens accordent presque autant de crédit aux avis Google qu’à une recommandation personnelle."
+   ],
+   [
+    "Les chiffres parlent d'eux-mêmes : 93 % des gens lisent les avis avant de choisir un produit ou un service, 72 % n'agissent qu'après avoir lu des retours positifs, et les établissements notés au-dessus de 4 étoiles reçoivent 12 % de clics en plus.",
+    "Avant de choisir un produit ou un service, beaucoup de gens lisent les avis, et nombre d’entre eux attendent d’avoir lu des retours positifs pour passer à l’action. Une bonne note rend aussi votre fiche plus attirante que celles de concurrents moins bien notés."
+   ],
+   [
+    "C'est l'une des méthodes qui a le mieux fonctionné pour des milliers d'entreprises.",
+    "C’est une habitude simple qui fait souvent la différence."
+   ],
+   [
+    "Plusieurs approches ont fait leurs preuves auprès de milliers d'entreprises.",
+    "Plusieurs approches ont fait leurs preuves."
+   ],
+   [
+    "Mais avoir une fiche ne suffit pas : 56 % des établissements locaux n'ont même pas rempli toutes les informations.",
+    "Mais avoir une fiche ne suffit pas : beaucoup d’établissements locaux n’ont même pas rempli toutes les informations."
+   ],
+   [
+    "Les chiffres parlent d'eux-mêmes. D'après Google, les fiches entièrement optimisées reçoivent",
+    "Une fiche entièrement optimisée reçoit"
+   ],
+   [
+    "7 fois plus de clics",
+    "généralement bien plus de clics"
+   ],
+   [
+    "que celles restées incomplètes. Les fiches avec photos obtiennent",
+    "qu’une fiche restée incomplète. Une fiche avec photos obtient aussi"
+   ],
+   [
+    "35 % de clics en plus vers le site",
+    "plus de clics vers le site"
+   ],
+   [
+    "capte 44 % de tous les clics sur les recherches locales",
+    "concentre une grande partie des clics sur les recherches locales"
+   ],
+   [
+    "Les fiches comptant plus de 100 photos reçoivent",
+    "Les fiches riches en photos reçoivent souvent"
+   ],
+   [
+    "2 717 % de demandes d'itinéraire en plus",
+    "plus de demandes d’itinéraire"
+   ],
+   [
+    "que la moyenne. Pas besoin d'un photographe",
+    "que les fiches peu illustrées. Pas besoin d’un photographe"
+   ],
+   [
+    "Les avis sont le premier facteur de confiance pour un client de proximité.",
+    "Les avis sont un facteur de confiance essentiel pour un client de proximité."
+   ],
+   [
+    "93 % des consommateurs",
+    "Beaucoup de consommateurs"
+   ],
+   [
+    "Un exemple réel : Laure, coiffeuse dans le quartier de la Croix-Rousse à Lyon, a commencé à suivre ce plan il y a 6 mois. Elle recevait alors 4 appels par mois depuis sa fiche. Elle en reçoit 28 aujourd'hui. La seule chose qui a changé, c'est la régularité : publier chaque semaine, répondre aux avis et ajouter des photos.",
+    "Prenons l’exemple d’une coiffeuse de quartier qui suit ce plan. Elle n’a rien de compliqué à faire : ce qui fait la différence, c’est la régularité — publier chaque semaine, répondre aux avis et ajouter des photos. Avec le temps, une fiche tenue ainsi a bien plus de chances d’apparaître quand quelqu’un cherche une coiffeuse près de chez lui."
+   ],
+   [
+    "C'est le chiffre le plus parlant de l'enquête du Syndicat des Indépendants sur le temps et les coûts administratifs des TPE : seuls 8 % des professionnels interrogés estiment que leur charge administrative s'est allégée sur cinq ans. Dans la même enquête, 76 % jugent le langage des documents administratifs encore obscur. Chaque gouvernement annonce une simplification ; huit dirigeants sur cent la constatent.",
+    "Sur le terrain, peu de dirigeants de TPE constatent un réel allègement de leur charge administrative, et beaucoup jugent encore obscur le langage des documents administratifs. Chaque gouvernement annonce une simplification ; rares sont ceux qui la constatent vraiment."
+   ],
+   [
+    "Le Syndicat des Indépendants mesure par ailleurs que 85 % des TPE externalisent une partie de ces tâches, pour un coût moyen équivalent à 2 % du chiffre d'affaires.",
+    "Votre propre chiffre peut être très différent : le plus fiable est de le calculer tâche par tâche, comme expliqué dans cet article."
+   ],
+   [
+    "Près de la moitié de ce temps part dans trois choses",
+    "Une bonne partie de ce temps part dans trois choses"
+   ],
+   [
+    "À titre de comparaison, en Espagne la fédération ATA mesure 226 heures par an rien qu'en démarches avec les administrations.",
+    "Et la situation n’est pas propre à la France : en Espagne aussi, les indépendants dénoncent régulièrement le temps perdu en démarches administratives."
+   ],
+   [
+    "Les fiches avec photos reçoivent deux fois plus de clics.",
+    "Les fiches avec photos attirent davantage de clics."
+   ],
+   [
+    "pourquoi elles doublent vos clics",
+    "pourquoi elles font la différence"
+   ],
+   [
+    "Cela dit, les entreprises qui dépassent 25 photos reçoivent 35 % de clics en plus que celles qui en ont moins de 10.",
+    "Cela dit, plus votre fiche est fournie en photos récentes, plus elle a de chances d’attirer des clics."
+   ],
+   [
+    "Les entreprises qui publient des vidéos reçoivent 20 % d'interactions en plus que celles qui s'en tiennent aux photos.",
+    "Une courte vidéo peut aussi susciter davantage d’interactions que des photos seules."
+   ],
+   [
+    "Selon les données de Google, les entreprises qui publient plus de 100 photos reçoivent 520 % d'appels en plus que celles qui n'en ont aucune.",
+    "Une fiche riche en photos récentes inspire davantage confiance et donne plus envie d’appeler qu’une fiche sans images."
+   ],
+   [
+    "Les données de Google ne laissent guère de place au doute : les fiches avec",
+    "Les fiches avec"
+   ],
+   [
+    "Autrement dit, ajouter des photos de qualité à votre fiche revient à doubler votre budget publicitaire, mais gratuitement.",
+    "Autrement dit, ajouter des photos de qualité à votre fiche est l’une des façons les plus simples, et gratuites, de la rendre plus attractive."
+   ],
+   [
+    "Une étude de BrightLocal a montré que",
+    "Bien souvent,"
+   ],
+   [
+    "60 % des consommateurs préfèrent les entreprises qui affichent des photos sur Google Maps",
+    "les consommateurs préfèrent les entreprises qui affichent des photos sur Google Maps"
+   ],
+   [
+    "plus de contenu visuel que 90 % de vos concurrents",
+    "plus de contenu visuel que beaucoup de vos concurrents"
+   ],
+   [
+    "Si les photos doublent vos clics, les",
+    "Si les photos rendent votre fiche plus attractive, les"
+   ],
+   [
+    "les triplent. Très peu",
+    "peuvent aller encore plus loin. Très peu"
+   ],
+   [
+    "Les entreprises locales qui tiennent un blog reçoivent 55 % de trafic en plus que celles qui n'en ont pas.",
+    "Avec le temps, un blog régulier peut vous apporter des visites que vous n’auriez pas eues autrement."
+   ],
+   [
+    "53 % des internautes quittent un site qui met plus de 3 secondes à charger",
+    "beaucoup d’internautes quittent un site qui met trop de temps à charger"
+   ],
+   [
+    "72 % des recherches locales se font depuis un mobile.",
+    "Une grande partie des recherches locales se fait depuis un mobile."
+   ],
+   [
+    "89 % des consommateurs lisent les réponses",
+    "beaucoup de consommateurs lisent aussi les réponses"
+   ],
+   [
+    "D'après Google, les établissements qui répondent à leurs avis reçoivent 35 % de clics en plus que les autres.",
+    "Répondre à vos avis montre au contraire que votre établissement est actif et attentif, ce qui rassure les clients qui hésitent."
+   ],
+   [
+    "Une étude de la Northwestern University a montré que les consommateurs font davantage confiance aux établissements notés entre",
+    "Les consommateurs font souvent davantage confiance à une note"
+   ],
+   [
+    "4,2 et 4,5 étoiles",
+    "très bonne sans être parfaite"
+   ],
+   [
+    "qu'à ceux affichant un 5,0 parfait.",
+    "qu’à un 5,0 impeccable."
+   ],
+   [
+    "D'après une étude BrightLocal,",
+    "Aujourd’hui,"
+   ],
+   [
+    "98 % des consommateurs utilisent internet pour trouver une entreprise locale",
+    "beaucoup de consommateurs utilisent internet pour trouver une entreprise locale"
+   ],
+   [
+    "Mais sur ces 98 %, 87 % passent par Google et seulement 48 % consultent les réseaux sociaux.",
+    "Et pour cela, Google reste en général leur premier réflexe, bien avant les réseaux sociaux."
+   ],
+   [
+    "vos publications atteignent 2 à 5 % de vos abonnés.",
+    "vos publications n’atteignent souvent qu’une petite partie de vos abonnés."
+   ],
+   [
+    "génèrent trois fois plus de portée que les photos fixes.",
+    "touchent souvent bien plus de monde que les photos fixes."
+   ],
+   [
+    "avec les 87 % de clients qui vous cherchent en ligne.",
+    "avec les clients qui vous cherchent en ligne."
+   ],
+   [
+    "Cela peut surprendre, mais les chiffres le confirment.",
+    "Cela peut surprendre, mais c’est logique quand on regarde comment les clients cherchent un prestataire."
+   ],
+   [
+    "Les chiffres disent autre chose :",
+    "En réalité,"
+   ],
+   [
+    ", et sa tranche d'âge la plus active est celle des 35-55 ans. Or c'est précisément le profil type de celui qui fait appel",
+    ", et il touche largement un public adulte. Or c’est souvent ce public qui fait appel"
+   ],
+   [
+    "Avec 50 à 100 € par mois, vous touchez des milliers de personnes dans votre zone.",
+    "Même avec un petit budget mensuel, vous pouvez toucher beaucoup de personnes dans votre zone."
+   ],
+   [
+    "les données des plateformes de réservation montrent que jusqu'à 40 % des absences tiennent à l'absence de rappel.",
+    "beaucoup d’absences s’expliquent tout simplement par un oubli, faute de rappel."
+   ],
+   [
+    "d'après l'expérience des indépendants, chaque réservation traitée par messagerie vous coûte entre 4 et 8 minutes.",
+    "chaque réservation traitée par messagerie vous coûte plusieurs minutes d’échanges."
+   ],
+   [
+    "Ces résultats ressortent mieux et reçoivent 20 à 30 % de clics en plus.",
+    "Ces résultats ressortent mieux et attirent souvent davantage de clics."
+   ],
+   [
+    "20 à 30 % de clics en plus",
+    "souvent davantage de clics"
+   ],
+   [
+    "avec l'exemple réel d'un plombier à Lyon.",
+    "avec l’exemple d’un plombier fictif à Lyon."
+   ],
+   [
+    "77 % des patients cherchent de l'information en ligne avant de choisir un professionnel de santé.",
+    "Beaucoup de patients cherchent de l’information en ligne avant de choisir un professionnel de santé."
+   ],
+   [
+    "En 2026, 77 % des patients cherchent un professionnel de santé en ligne avant de prendre rendez-vous.",
+    "Aujourd’hui, beaucoup de patients cherchent un professionnel de santé en ligne avant de prendre rendez-vous."
+   ],
+   [
+    "D'après une étude de Doctoralia,",
+    "Concrètement,"
+   ],
+   [
+    "82 % des patients consultent internet avant de choisir un professionnel de santé",
+    "beaucoup de patients consultent internet avant de choisir un professionnel de santé"
+   ],
+   [
+    "90 % des patients lisent des avis avant de choisir un professionnel de santé.",
+    "Beaucoup de patients lisent des avis avant de choisir un professionnel de santé."
+   ],
+   [
+    "perd 53 % de ses visiteurs sur mobile.",
+    "fait fuir beaucoup de visiteurs sur mobile."
+   ],
+   [
+    "Les sites de santé qui affichent des tarifs indicatifs reçoivent 35 % de demandes de rendez-vous en plus.",
+    "Afficher des tarifs indicatifs peut vous aider à recevoir davantage de demandes de rendez-vous."
+   ],
+   [
+    "les recherches « kinésithérapeute près de chez moi » ont progressé de 150 % en deux ans.",
+    "les recherches du type « kinésithérapeute près de chez moi » sont de plus en plus courantes."
+   ],
+   [
+    "vous perdez 7 patients potentiels sur 10.",
+    "vous perdez une bonne partie de vos patients potentiels."
+   ],
+   [
+    "En 2026, 73 % des personnes qui cherchent un soutien psychologique commencent par Google.",
+    "Aujourd’hui, beaucoup de personnes qui cherchent un soutien psychologique commencent par Google."
+   ],
+   [
+    "C'est un exemple réel de ce que nous créons pour nos clients.",
+    "C’est un aperçu concret du type de site que nous créons."
+   ],
+   [
+    "D'après les dernières données de Google,",
+    "Aujourd’hui,"
+   ],
+   [
+    "97 % des consommateurs cherchent un service de proximité sur internet",
+    "beaucoup de consommateurs cherchent un service de proximité sur internet"
+   ],
+   [
+    "ont progressé de 35 % en deux ans.",
+    "sont devenues très courantes."
+   ],
+   [
+    "C'est un exemple réel de ce que donnerait votre page.",
+    "C’est un aperçu concret de ce que donnerait votre page."
+   ],
+   [
+    "si votre site met plus de 3 secondes à s'afficher, 53 % des visiteurs s'en vont.",
+    "si votre site met plus de 3 secondes à s’afficher, beaucoup de visiteurs s’en vont."
+   ],
+   [
+    "78 % des recherches de plombier se font depuis un mobile.",
+    "une grande partie des recherches de plombier se fait depuis un mobile."
+   ],
+   [
+    "vous perdez 8 clients potentiels sur 10.",
+    "vous perdez une bonne partie de vos clients potentiels."
+   ],
+   [
+    "La théorie, c'est bien, mais rien ne vaut un exemple réel.",
+    "La théorie, c’est bien, mais rien ne vaut un exemple concret."
+   ],
+   [
+    "Regardons les chiffres : un plombier à Nantes dont le site est bien positionné peut recevoir entre 15 et 30 appels par mois rien que depuis Google.",
+    "Un plombier à Nantes dont le site est bien positionné peut recevoir des appels chaque mois rien que depuis Google."
+   ],
+   [
+    "mais 75 % des nouveaux patients vous cherchent dans Google",
+    "mais beaucoup de nouveaux patients vous cherchent dans Google"
+   ],
+   [
+    "Ce que montre le secteur : les cabinets équipés de la réservation en ligne peuvent augmenter leur acquisition de 30 à 50 %, en particulier sur les créneaux du soir et du week-end.",
+    "La réservation en ligne peut aider un cabinet à attirer de nouveaux patients, en particulier sur les créneaux du soir et du week-end."
+   ],
+   [
+    "et s'amortit dès la première semaine.",
+    "et peut vite se rentabiliser."
+   ],
+   [
+    "un changement d'algorithme et votre visibilité chute de 80 % du jour au lendemain.",
+    "un changement d’algorithme peut faire chuter votre visibilité du jour au lendemain."
+   ],
+   [
+    "Les studios qui gèrent leurs réservations en ligne avec acompte obligatoire enregistrent jusqu'à 60 % d'annulations en moins.",
+    "Gérer vos réservations en ligne avec un acompte obligatoire peut nettement réduire les annulations."
+   ],
+   [
+    "Les études sont sans appel : la majorité des visiteurs abandonnent un site qui met plus de 3 secondes à s'afficher.",
+    "Un site lent fait fuir les visiteurs : beaucoup abandonnent une page qui met plus de quelques secondes à s’afficher."
+   ],
+   [
+    "Plus de la moitié des recherches locales se font depuis un mobile,",
+    "Une grande partie des recherches locales se fait depuis un mobile,"
+   ],
+   [
+    "Un exemple concret : Laure, kinésithérapeute spécialisée en rééducation périnéale à Lyon, a créé son site avec une page dédiée à « rééducation périnéale à Lyon ». En quatre mois, cette seule page lui apporte 12 à 15 demandes de rendez-vous par mois. Entièrement en organique, sans payer de publicité. La clé a été d'associer une spécialité précise à une ville précise.",
+    "Par exemple, une kinésithérapeute spécialisée en rééducation périnéale à Lyon peut créer sur son site une page dédiée à « rééducation périnéale à Lyon ». Une page aussi ciblée a de bonnes chances d’attirer, sans publicité, des patients qui cherchent exactement ce soin. La clé : associer une spécialité précise à une ville précise."
+   ],
+   [
+    "Avec ces trois actions, beaucoup d'indépendants obtiennent entre 5 et 15 nouveaux appels par mois.",
+    "Ces trois actions suffisent souvent à faire sonner le téléphone plus régulièrement."
+   ],
+   [
+    "l'écart entre une fiche qui génère 20 appels par mois et une autre qui n'en génère aucun tient à l'optimisation.",
+    "l’écart entre une fiche qui fait sonner le téléphone et une autre qui ne génère aucun appel tient à l’optimisation."
+   ],
+   [
+    "D'après Google,",
+    "Sur Google,"
+   ],
+   [
+    "42 % de demandes d'itinéraire en plus",
+    "davantage de demandes d’itinéraire"
+   ],
+   [
+    "35 % de clics en plus",
+    "plus de clics"
+   ],
+   [
+    "520 % d'appels en plus",
+    "plus d’appels"
+   ],
+   [
+    "Un exemple réel :",
+    "Un exemple :"
+   ]
+  ],
+  "gardes": [
+   [
+    "12 % du coût annuel",
+    "a. offre ou méthode tarifaire WebAutonomos"
+   ],
+   [
+    "maintenance vaut 20 % de cette mise en œuvre",
+    "a. offre ou méthode tarifaire WebAutonomos"
+   ],
+   [
+    "environ 20 % de la mise en œuvre",
+    "a. offre ou méthode tarifaire WebAutonomos"
+   ],
+   [
+    "vous récupérez entre 30 et 50 %",
+    "a. offre ou méthode tarifaire WebAutonomos"
+   ],
+   [
+    "vous tombez à 10 ou 15 %",
+    "a. offre ou méthode tarifaire WebAutonomos"
+   ],
+   [
+    "Pourquoi 12 % et pas un autre pourcentage",
+    "a. offre ou méthode tarifaire WebAutonomos"
+   ],
+   [
+    "On ne récupère presque jamais 100 %",
+    "b. tournure idiomatique"
+   ],
+   [
+    "100 % responsive",
+    "b. tournure idiomatique"
+   ],
+   [
+    "contrôlez à 100 %",
+    "b. tournure idiomatique"
+   ],
+   [
+    "100 % gratuit",
+    "b. tournure idiomatique"
+   ],
+   [
+    "généré à 100 % par IA",
+    "b. tournure idiomatique"
+   ],
+   [
+    "Complétez 100 %",
+    "b. tournure idiomatique"
+   ],
+   [
+    "contenu 100 % original",
+    "b. tournure idiomatique"
+   ],
+   [
+    "je recommande à 100 %",
+    "b. idiome dans un exemple de format de témoignage (prénom + commune), pas un cas client"
+   ],
+   [
+    "amendes pouvant atteindre 20 millions",
+    "c. chiffre légal / fiscal / officiel"
+   ],
+   [
+    "charges patronales représentent 42 % du brut",
+    "c. chiffre légal / fiscal / officiel"
+   ],
+   [
+    "ramène ce taux à environ 10 %",
+    "c. chiffre légal / fiscal / officiel"
+   ],
+   [
+    "soit environ 10 % d'une année sans production",
+    "c. chiffre légal / fiscal / officiel"
+   ],
+   [
+    "selon Google (2016), 53 %",
+    "d. statistique avec source précise"
+   ],
+   [
+    "(1 200 − 59) / 59 × 100",
+    "e. calcul dans un exemple explicitement hypothétique"
+   ],
+   [
+    "dont 70 % du travail est électrique",
+    "e. calcul dans un exemple explicitement hypothétique"
+   ],
+   [
+    "recevez 10 % de réduction sur votre première prestation",
+    "f. conseil / exemple de texte, pas une statistique"
+   ],
+   [
+    "Et 15 % de réduction sur l'entretien",
+    "f. conseil / exemple de texte, pas une statistique"
+   ],
+   [
+    "vous bénéficiez tous les deux de 10 % de réduction",
+    "f. conseil / exemple de texte, pas une statistique"
+   ],
+   [
+    "La règle des 80/20",
+    "f. conseil / exemple de texte, pas une statistique"
+   ],
+   [
+    "10 % de remise",
+    "f. conseil / exemple de texte, pas une statistique"
+   ],
+   [
+    "Nous vous offrons 50 % de réduction",
+    "f. exemple de mauvaise pratique à éviter, pas une statistique"
+   ],
+   [
+    "Même à 20 % du montant",
+    "f. conseil sur le montant d'un acompte, pas une statistique"
+   ],
+   [
+    "qu'on va pouvoir essayer sur des cas réels",
+    "faux positif : énumération ou test sur données réelles, pas un cas client"
+   ],
+   [
+    "mais sur des cas réels",
+    "faux positif : énumération ou test sur données réelles, pas un cas client"
+   ],
+   [
+    "vérifier sur des cas réels",
+    "faux positif : énumération ou test sur données réelles, pas un cas client"
+   ],
+   [
+    "se vérifie vite sur des cas réels",
+    "faux positif : énumération ou test sur données réelles, pas un cas client"
+   ],
+   [
+    "électricien à Lausanne, plombier à Bruxelles",
+    "faux positif : énumération ou test sur données réelles, pas un cas client"
+   ],
+   [
+    "plombier à Lyon, électricien à Nantes, coiffeuse à Lausanne",
+    "faux positif : énumération ou test sur données réelles, pas un cas client"
+   ],
+   [
+    "menuisiers à Lausanne, électriciens à Nantes",
+    "faux positif : énumération ou test sur données réelles, pas un cas client"
+   ],
+   [
+    "relié à Google Analytics",
+    "faux positif : énumération ou test sur données réelles, pas un cas client"
+   ]
+  ]
+ },
+ "sup": {
+  "remplacements": [
+   [
+    "En WebAutonomos configuramos el sistema de reservas como parte de nuestros servicios de modificaciones incluidos.",
+    "En WebAutonomos podemos añadir a tu web un enlace a la herramienta de reservas que ya usas."
+   ],
+   [
+    "At WebAutonomos we set up the booking system as part of our included modification services.",
+    "At WebAutonomos we can add a link to the booking tool you already use to your website."
+   ],
+   [
+    "Chez WebAutonomos, nous configurons ce système dans le cadre des modifications incluses.",
+    "Chez WebAutonomos, nous pouvons ajouter sur votre site un lien vers l’outil de réservation que vous utilisez déjà."
+   ],
+   [
+    "En WebAutonomos configurem el sistema de reserves com a part dels nostres serveis de modificacions inclosos.",
+    "En WebAutonomos podem afegir a la teua web un enllaç a l’eina de reserves que ja uses."
+   ],
+   [
+    "Sí. Integramos un sistema de reserva o enlazamos tu herramienta de citas para que tus clientas reserven directamente desde la web, a cualquier hora.",
+    "Sí. Añadimos a tu web un botón con el enlace a la herramienta de citas que ya usas, para que tus clientas reserven directamente, a cualquier hora."
+   ],
+   [
+    "Un botón de reserva integrado captura esas citas 24 horas al día, reduce las llamadas que interrumpen tus tratamientos y disminuye los olvidos gracias a los recordatorios automáticos.",
+    "Un botón de reserva que lleve a tu herramienta de citas recoge esas citas a cualquier hora y reduce las llamadas que interrumpen tus tratamientos; si tu herramienta envía recordatorios, también bajan los olvidos."
+   ],
+   [
+    "Sí. Integramos un sistema de reserva o enlazamos tu herramienta para que los dueños pidan cita desde la web, lo que también descarga tu teléfono.",
+    "Sí. Añadimos a tu web un enlace a la herramienta de citas que ya usas para que los dueños pidan cita desde la web, lo que también descarga tu teléfono."
+   ],
+   [
+    "Sí. Integramos un botón de reserva o enlazamos tu herramienta de citas para que el cliente reserve directamente desde la web.",
+    "Sí. Añadimos un botón con el enlace a la herramienta de citas que ya usas para que el cliente reserve directamente desde la web."
+   ],
+   [
+    "Sí. Todas nuestras webs incluyen integración con sistemas de reservas online, para que tus pacientes puedan reservar cita directamente desde tu web.",
+    "Sí. Podemos añadir a tu web un botón con el enlace a la herramienta de reservas que ya usas, para que tus pacientes pidan cita directamente."
+   ],
+   [
+    "Sí. Integramos sistemas de pago y reservas para que tus clientes paguen el depósito al reservar su cita.",
+    "Sí, si tu herramienta de reservas permite cobrar una señal: añadimos a tu web el enlace a esa herramienta, y tus clientes pagan el depósito al reservar su cita."
+   ],
+   [
+    "Después de decenas de proyectos, siempre son los mismos cinco errores los que se repiten.",
+    "Estos son los cinco errores que más cuestan."
+   ],
+   [
+    "Yes. We integrate a booking system or link your scheduling tool so your clients book directly from the website, at any time.",
+    "Yes. We add a button linking to the booking tool you already use, so your clients can book directly, at any time."
+   ],
+   [
+    "An integrated booking button captures those appointments 24 hours a day, cuts down the calls that interrupt your treatments and reduces no-shows thanks to automatic reminders.",
+    "A booking button that links to your scheduling tool captures those appointments at any hour and cuts down the calls that interrupt your treatments; if your tool sends reminders, no-shows drop too."
+   ],
+   [
+    "Yes. We integrate a booking button or link your scheduling tool so the client books directly from the website.",
+    "Yes. We add a button linking to the booking tool you already use, so the client books directly from the website."
+   ],
+   [
+    "Yes. All our websites include integration with online booking systems, so your patients can book an appointment directly from your website.",
+    "Yes. We can add a button linking to the booking tool you already use, so your patients can book an appointment directly from your website."
+   ],
+   [
+    "Yes. We integrate payment and booking systems so your clients pay the deposit when booking their appointment.",
+    "Yes, if your booking tool can take a deposit: we add a link to it on your website, so your clients pay the deposit when they book."
+   ],
+   [
+    "Yes. We integrate a booking system or link your tool so owners can book from the website, which also frees up your phone.",
+    "Yes. We add a link to the booking tool you already use, so owners can book from the website, which also frees up your phone."
+   ],
+   [
+    "A professional website for a self-employed electrician can be ready in five to ten working days, depending on how quickly you supply the information and the photos.",
+    "Your personalised demo is ready in under 24 hours; how soon the website goes live then depends on how quickly you approve it and send your information and photos."
+   ],
+   [
+    "After dozens of projects, it is always the same five mistakes that come back.",
+    "Here are the five mistakes that cost the most."
+   ],
+   [
+    "Après des dizaines de projets, ce sont toujours les mêmes cinq erreurs qui reviennent.",
+    "Voici les cinq erreurs qui coûtent le plus cher."
+   ],
+   [
+    "Après avoir travaillé avec des dizaines d'indépendants, notre réponse est nette : le duo",
+    "Notre réponse est nette : le duo"
+   ],
+   [
+    "Après avoir accompagné des dizaines d'indépendants dans l'amélioration de leur présence sur Google, voici les erreurs que nous voyons revenir sans cesse.",
+    "Voici les erreurs que l’on rencontre souvent quand on travaille sa présence sur Google."
+   ],
+   [
+    "Après avoir audité les citations locales de dizaines d'indépendants, voici les erreurs que nous rencontrons le plus souvent.",
+    "Voici les erreurs de citations locales que l’on rencontre souvent."
+   ],
+   [
+    "Après avoir accompagné des dizaines d'indépendants — menuisiers à Lausanne, électriciens à Nantes, dentistes à Lyon, plombiers à Bruxelles —, nous avons vu revenir sans cesse les mêmes",
+    "Menuisiers, électriciens, dentistes ou plombiers : chez les indépendants, on retrouve souvent les mêmes"
+   ],
+   [
+    "Après avoir géré les fiches Google de dizaines d'indépendants, nous avons vu revenir les mêmes erreurs encore et encore.",
+    "Certaines erreurs reviennent souvent."
+   ],
+   [
+    "Après avoir travaillé avec des dizaines d'indépendants, nous avons identifié la",
+    "Voici la"
+   ],
+   [
+    "C'est exactement ce que nous mettons en place avec nos clients indépendants, et cela fonctionne.",
+    "Voici l’ordre que nous recommandons."
+   ],
+   [
+    "Oui. Nous intégrons un système de réservation ou nous raccordons votre outil, pour que les propriétaires prennent rendez-vous depuis le site — ce qui désengorge aussi votre téléphone.",
+    "Oui. Nous ajoutons sur le site un lien vers l’outil de réservation que vous utilisez déjà, pour que les propriétaires prennent rendez-vous en ligne — ce qui désengorge aussi votre téléphone."
+   ],
+   [
+    "Oui. Nous intégrons un système de réservation ou nous raccordons votre outil d'agenda, pour que vos clientes réservent depuis le site, à n'importe quelle heure.",
+    "Oui. Nous ajoutons sur le site un bouton qui mène à l’outil de réservation que vous utilisez déjà, pour que vos clientes réservent à n’importe quelle heure."
+   ],
+   [
+    "Un bouton de réservation intégré capte ces rendez-vous à toute heure, réduit les appels qui interrompent vos soins, et fait baisser les oublis grâce aux rappels automatiques.",
+    "Un bouton qui mène à votre outil de réservation capte ces rendez-vous à toute heure et réduit les appels qui interrompent vos soins ; si votre outil envoie des rappels, les oublis baissent aussi."
+   ],
+   [
+    "Oui. Nous intégrons les systèmes de paiement et de réservation pour que vos clients versent leur acompte au moment où ils réservent.",
+    "Oui, si votre outil de réservation permet d’encaisser un acompte : nous ajoutons un lien vers cet outil sur votre site, et vos clients versent leur acompte au moment où ils réservent."
+   ],
+   [
+    "Un site professionnel pour un électricien indépendant peut être prêt en 5 à 10 jours ouvrés, selon la rapidité avec laquelle vous fournissez les informations et les photos.",
+    "Votre démo personnalisée est prête en moins de 24 heures ; la mise en ligne dépend ensuite de la rapidité avec laquelle vous la validez et nous envoyez vos informations et vos photos."
+   ],
+   [
+    "Després de desenes de projectes, sempre són els mateixos cinc errors els que es repetixen.",
+    "Estos són els cinc errors que més costen."
+   ],
+   [
+    "Sí. Integrem un sistema de reserva o enllacem la teua eina de cites perquè les teues clientes reserven directament des de la web, a qualsevol hora.",
+    "Sí. Afegim a la teua web un botó amb l’enllaç a l’eina de cites que ja uses, perquè les teues clientes reserven directament, a qualsevol hora."
+   ],
+   [
+    "Un botó de reserva integrat captura eixes cites 24 hores al dia, redueix les trucades que interrompen els teus tractaments i disminueix els oblits gràcies als recordatoris automàtics.",
+    "Un botó de reserva que porte a la teua eina de cites arreplega eixes cites a qualsevol hora i redueix les trucades que interrompen els teus tractaments; si la teua eina envia recordatoris, també baixen els oblits."
+   ],
+   [
+    "Sí. Integrem un sistema de reserva o enllacem la teua eina perquè els propietaris demanen cita des de la web, cosa que també descarrega el teu telèfon.",
+    "Sí. Afegim a la teua web un enllaç a l’eina de cites que ja uses perquè els propietaris demanen cita des de la web, cosa que també descarrega el teu telèfon."
+   ],
+   [
+    "Sí. Integrem un botó de reserva o enllacem la teua eina de cites perquè el client reserve directament des de la web.",
+    "Sí. Afegim un botó amb l’enllaç a l’eina de cites que ja uses perquè el client reserve directament des de la web."
+   ],
+   [
+    "Sí. Totes les nostres webs inclouen integració amb sistemes de reserves en línia, perquè els teus pacients puguen reservar cita directament des de la teua web.",
+    "Sí. Podem afegir a la teua web un botó amb l’enllaç a l’eina de reserves que ja uses, perquè els teus pacients puguen demanar cita directament."
+   ],
+   [
+    "Sí. Integrem sistemes de pagament i reserves perquè els teus clients paguen el depòsit en reservar la seua cita.",
+    "Sí, si la teua eina de reserves permet cobrar una senyal: afegim a la teua web l’enllaç a eixa eina, i els teus clients paguen el depòsit en reservar la seua cita."
+   ],
+   [
+    "Una web professional per a un electricista autònom pot estar llesta en 5 a 10 dies laborables, depenent de la rapidesa amb la que facilites la informació i les fotos.",
+    "La teua demo personalitzada està llesta en menys de 24 hores; la posada en marxa depén després de la rapidesa amb què la valides i ens envies la informació i les fotos."
+   ]
+  ],
+  "gardes": []
+ }
+}
