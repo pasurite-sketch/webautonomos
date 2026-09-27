@@ -1448,14 +1448,15 @@ DENT['en'] = dict(
     badge='For dentists and dental clinics in Spain',
     h1="Websites for <em>dentists and dental clinics</em> in Spain",
     lede="Your clinic, your treatments and how to book, in English and Spanish, with prices, titles and registration "
-         "details set out with Spanish rules in mind. We write it for you, you approve every word, and your free demo "
+         "details set out with local rules in mind. We write it for you, you approve every word, and your free demo "
          "is ready within 24 hours.",
-    pills=['English and Spanish included', 'Written with Spanish rules in mind', 'Free demo in 24 hours'],
-    cta='Get my free demo', cta2='What Spanish rules require',
+    pills=['English and Spanish included', 'Built with local rules in mind', 'Free demo in 24 hours'],
+    cta='Get my free demo', cta2='What the rules require',
     brief_t='In short',
     brief="WebAutonomos builds websites for English-speaking dentists and dental clinics in Spain. We write the copy in "
-          "English and Spanish, plus up to two more languages if you need them, at no extra cost, show your Colegio, colegiado number and clinic registration number, "
-          "and keep the site clear of what Spanish rules ban: patient testimonials, promises of results, implant or "
+          "English and Spanish, plus up to two more languages if you need them, at no extra cost, show your Colegio, "
+          "colegiado number, qualification and clinic registration number, and keep the site clear of what Spanish "
+          "rules ban: patient testimonials, promises of results, implant or "
           "aligner brand names, and “especialista” titles that don't exist in Spain. It costs <strong>€15 + VAT per "
           "month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>, and your demo is "
           "ready within 24 hours.",
@@ -1492,7 +1493,7 @@ DENT['en'] = dict(
     legal_note="Regional rules add detail: in Madrid, consumer law, as the COEM's decalogue explains, requires the "
                "total price of a treatment rather than “from €X” and the previous price next to any discount; "
                "Catalonia's Colegio rules out “first visit free”. Some regions, such as Murcia, require prior "
-               "authorisation of health advertising, websites included: we wait for it before your site goes live. "
+               "authorisation of health advertising, websites included. "
                "Dental clinics must appoint a data protection officer; a dentist practising alone, as an individual, "
                "doesn't have to. This is general information as of September 2026, not legal advice: check with your "
                "Colegio and your regional health department.",
@@ -1507,35 +1508,105 @@ DENT['en'] = dict(
                '<a href="https://webautonomos.es/en/dental-website-design">dental website design for UK '
                'practices</a>.',
     sources_t='Sources',
-    why_ey='Why us', why_t='Built for dentists who work in English',
-    why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
-                                         "or technical jargon."),
-         ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish patients find you as "
+    why_ey='Why us', why_t='Built for practices that work in English',
+    why=[('💬', 'We speak your language', "We work with you in English by email, WhatsApp or video call, with no "
+                                         "local legal or technical jargon to decode."),
+         ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so local patients find you as "
                                            "easily as expats do."),
-         ('📋', 'Registration details in place', "Colegio, colegiado number and clinic registration number shown the "
-                                                "way Spanish rules expect."),
+         ('📋', 'Registration details in place', "Colegio and clinic registration details shown the "
+                                                "way local rules expect."),
          ('📅', 'Easy to book', "A clear button to your online calendar, WhatsApp or phone.")],
     where_t='Anywhere in Spain',
     where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work remotely, "
           "so where your clinic is makes no difference.",
     sect_t='Who it is for',
-    sectors=['🦷 General dentists', '😁 Orthodontics', '🦷 Implant dentistry', '👶 Children’s dentistry',
+    sectors=['🦷 General dentistry', '😁 Orthodontics', '🦷 Implant dentistry', '👶 Children’s dentistry',
              '🪥 Periodontics', '✨ Cosmetic dentistry', '🏥 Dental clinics', '🧑‍⚕️ Group practices'],
-    how_t='Your website in three steps',
+    how_t='Get started in three steps',
     steps=[('Tell us about your clinic', 'Your treatments, your team, your opening hours, your town: it takes two '
                                          'minutes.'),
-           ('We build your demo', 'Within 24 hours, with your copy in English and Spanish and your legal pages.'),
+           ('We build your demo', 'Within 24 hours, with your copy in both languages and your legal pages.'),
            ('You decide', "You check every word and ask for any changes you want. If you like it, it goes live; if "
                          "not, you pay nothing.")],
     price_note=PRIX_EN_SANTE,
+    extra=[
+        ('website-content', 'Content', "What to put on your dental clinic's site",
+         '<p class="legal-intro">Patients choosing a dentist want to see quickly who treats them, which '
+         'treatments the clinic offers and how to book an appointment.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🦷</div>'
+         '<h3>Your treatments, described plainly</h3>'
+         '<p>General dentistry, implants, orthodontics or oral care, described without a promise of '
+         'results (see the rules above), so patients understand what each treatment involves.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧑‍⚕️</div>'
+         '<h3>Your team and their qualifications</h3>'
+         '<p>Your clinical team, introduced with the qualifications they actually hold and the treatments each of '
+         'them carries out, so patients know who will treat them. Registration details appear as set out in '
+         'the rules above.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📅</div>'
+         '<h3>Your schedule and how to book</h3>'
+         '<p>Your opening hours and a clear way to request an appointment, through your contact form, WhatsApp '
+         'or phone, so patients do not have to search for how to reach you.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🌍</div>'
+         '<h3>Care for international patients</h3>'
+         '<p>Say which languages your clinical team and front desk speak during appointments, not only which '
+         'languages your pages are written in, so patients who have moved to Spain know they will be understood '
+         'at the clinic.</p></div>'
+         '</div>'),
+        ('local-search-help', 'Local search', 'How English-speaking patients find you online',
+         '<p class="legal-intro">Getting found by someone searching for a dentist depends on '
+         'more than the design of the site.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div>'
+         '<h3>Basic SEO, included in your price</h3>'
+         '<p>Titles and copy written around your treatments and your area, kept consistent with your Google '
+         'Business Profile, are included at no extra cost.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div>'
+         '<h3>SEO Local and your Google listing, if you want more</h3>'
+         '<p>We also offer SEO Local for €15 + VAT a month, and managing your Google Business Profile for €29 '
+         '+ VAT a month (€49 + VAT to set one up if you do not have a listing yet).</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div>'
+         '<h3>Patients searching in English</h3>'
+         '<p>Expats who have just moved to Spain often search in their own language, typing “English-speaking '
+         'dentist Marbella” or “dentist in Malaga who speaks English”. With copy in both languages, your site can '
+         'answer these searches as well as the local ones.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📚</div>'
+         '<h3>Guides to go further</h3>'
+         '<p>Our blog has practical guides on '
+         '<a href="https://webautonomos.es/blog/en/how-to-rank-your-website-in-local-google">ranking your '
+         'website locally</a> and <a href="https://webautonomos.es/blog/en/optimise-your-google-business-'
+         'profile">optimising your Google Business Profile</a>.</p></div>'
+         '</div>'),
+        ('technical-basics', 'Behind the scenes', 'The technical side, handled for you',
+         '<p class="legal-intro">Alongside the pages you and your patients see, a few technical basics come '
+         'with every site we build.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔒</div>'
+         '<h3>Hosting, SSL and daily backups</h3>'
+         '<p>Your site includes hosting, an SSL certificate, daily backups, 24/7 monitoring and technical '
+         'maintenance, so you do not have to think about the technical side.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔗</div>'
+         '<h3>Links to your social profiles</h3>'
+         '<p>We add links to your Facebook, Instagram or other social profiles on your site, so patients can '
+         'also see what you post there.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✏️</div>'
+         '<h3>One change a month, included</h3>'
+         '<p>Once your site is live, you can ask for one change a month at no extra cost, such as updating your '
+         'team or adding a new treatment. A full redesign or a large new section goes through a fixed quote '
+         'agreed before any work starts.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div>'
+         '<h3>Legal pages included</h3>'
+         '<p>Your legal notice, privacy policy and cookie policy are included.</p></div>'
+         '</div>'),
+    ],
     faq_t='Frequently asked questions',
     faq=[("Can I practise as a dentist in Spain with a UK degree?",
           "Only once it is recognised. New applications for a UK degree now go through homologation by the Ministry "
           "of Science, Innovation and Universities, which requires Spanish at B2 level. Recognitions already granted, "
           "including those given under Spain's Brexit transition rules to people who began their studies before 2021, "
-          "keep their effect. EU dental degrees benefit from automatic recognition, but you still apply to the Ministry "
-          "of Health."),
-         ("What must my clinic's website show?",
+          "keep their effect. EU dental degrees benefit from automatic recognition, but you still apply to the "
+          "Ministry of Health."),
+         ("What must my clinic's site show?",
           "Under article 10 of the LSSI: your name or company name (with its Registro Mercantil details), address, "
           "email and NIF, your Colegio and colegiado number, your qualification and the country that issued it, any "
           "recognition in Spain, the professional rules that apply, and the clinic's authorisation details, including "
@@ -1546,8 +1617,9 @@ DENT['en'] = dict(
           "official ones. Describe what you do, for example “implant treatment” or “orthodontic treatment”, and use only "
           "the titles you actually hold."),
          ("Can I mention Invisalign or an implant brand?",
-          "Not in advertising aimed at patients: Spanish rules ban advertising to the public of medical devices that "
-          "dentists apply themselves (RD 1591/2009, art. 38.9). Describe the treatment instead, such as “clear aligners”."),
+          "Not in advertising aimed at patients: the rules ban advertising to the public of medical devices that "
+          "dentists apply themselves (RD 1591/2009, art. 38.9). Describe the treatment instead, such as “clear "
+          "aligners”."),
          ("Can I show patient reviews or before-and-after photos?",
           "Avoid patient testimonials: health-advertising rules ban them as a way to attract clients (RD 1907/1996, "
           "art. 4.7). There is no specific rule on before-and-after photos, but they are judged under the same bans on "
@@ -1559,7 +1631,12 @@ DENT['en'] = dict(
          ("Do I have to give patients a written quote?",
           "A dentist must provide a written estimate of the treatment and its cost when the patient asks for one (RD "
           "1594/1994, art. 4). In Catalonia a written quote is compulsory unless the patient waives it in their own "
-          "handwriting, and it must include the clinic's registration number."),
+          "handwriting, and it must include the clinic's registration details."),
+         ("Can patients book an appointment directly through the site?",
+          "Not on the site itself: we don't integrate calendar or booking tools such as Doctoralia or Bookitit, or "
+          "clinic management software, and there are no automatic SMS or email reminders. If you already use an "
+          "online booking tool, we can add a link or button to it; patients can also request appointments through "
+          "your contact form, WhatsApp button or phone, the same way any other enquiry reaches you."),
          ("How much does a website cost?",
           "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: design, "
           "hosting, a domain name for the first year, legal pages and one change a month. Dental services, whitening "
