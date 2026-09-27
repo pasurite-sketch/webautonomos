@@ -124,7 +124,7 @@ C['fr'] = dict(
          ("Faut-il se rencontrer ?",
           "Non. Tout se fait à distance, en français, par e-mail, WhatsApp et visioconférence. L'agence est installée à Ontinyent, dans la province de Valence."),
          ("Pouvez-vous m'aider à apparaître sur Google Maps en Espagne ?",
-          "Oui, avec la gestion de votre fiche Google Business : 29 €/mois, et 49 € pour la créer si vous n'en avez pas encore."),
+          "Oui, avec la gestion de votre fiche Google Business : 29 € HT/mois, et 49 € HT pour la créer si vous n'en avez pas encore."),
          ("Que se passe-t-il si je veux arrêter ?",
           "Vous arrêtez de payer, sans durée minimale ni pénalité. Le domaine est à votre nom : vous le gardez, et nous vous aidons à le transférer.")],
     final_t='Voyez votre site avant de payer quoi que ce soit',
@@ -137,22 +137,22 @@ C['en'] = dict(
     description="Websites for English-speaking business owners in Spain, with the legal notice, privacy and cookie policy Spanish law requires. Free demo in 24h, €15/month + VAT.",
     service_name="Web design for expat business owners in Spain",
     crumb_home='Home', crumb='Web design for expats in Spain',
-    badge='For expat business owners in Spain',
+    badge='For self-employed expats in Spain',
     h1='Web design for expats <span class="ul">running a business in Spain</span>',
-    lede="You run your business in English; your website still has to follow Spanish law. We build it for you, with the legal notice, privacy policy and cookie consent included, and send you a free demo within 24 hours.",
+    lede="You work in English; your website still has to follow Spanish law. We build it for you, with the legal notice, privacy policy and cookie consent included, and send you a free demo within 24 hours.",
     pills=['Spanish legal pages included', 'We work in English', 'Free demo in 24 hours'],
     cta='Get my free demo', cta2='What the law requires',
     rating='<b>4.3/5</b> · 8 verified reviews on Trustpilot',
     brief_t='In short',
-    brief="WebAutonomos builds websites for English-speaking freelancers (autónomos) and small businesses in Spain. Every site includes the legal notice, privacy policy and cookie consent that Spanish law requires (the LSSI and the GDPR), hosting and a domain name in your name, for <strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>. Your site can be in up to four languages at no extra cost: English, Spanish, French and Spain's co-official languages (Catalan, Valencian, Galician or Basque). We work with you in English, by email, WhatsApp and video call, and build a free demo within 24 hours. The agency is based in Ontinyent (Valencia province) and works remotely with businesses all over Spain.",
-    legal_ey='Spanish law', legal_t='What a business website in Spain must include',
+    brief="WebAutonomos builds websites for English-speaking freelancers (autónomos) and small companies in Spain. Every site includes the legal notice, privacy policy and cookie consent that Spanish law requires (the LSSI and the GDPR), hosting and a domain name in your name, for <strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>. Each site also sends contact messages straight to your email and includes a WhatsApp button, links to your social media profiles and basic SEO built around your trade and the area you serve. Your site can be in up to four languages at no extra cost: English, Spanish, French and Spain's co-official languages (Catalan, Valencian, Galician or Basque). We work with you in English, by email, WhatsApp and video call, and build a free demo within 24 hours. The agency is based in Ontinyent (Valencia province) and works remotely with clients all over Spain. Local SEO and Google Business Profile management are separate, optional services you can add at any time; <a href=\"/en/services\">see every service in detail</a>.",
+    legal_ey='Spanish law', legal_t='What your website in Spain must include',
     legal_intro="If you trade in Spain, as an autónomo or through a company, your website falls under Spanish law whatever language it is written in: the LSSI applies to every service provider established in Spain. Three things are mandatory.",
     legal_cols=('Requirement', 'Law', 'What it must contain'),
     legal_rows=[
         ('Legal notice (aviso legal)', 'LSSI, Law 34/2002, art. 10',
          "Your full name or company name, your NIF or NIE, your address and your email. Companies add their Mercantile Registry details; regulated professions (psychologists, physiotherapists, dentists…) add their professional association (colegio) and membership number."),
         ('Privacy policy', 'GDPR and Organic Law 3/2018 (LOPDGDD)',
-         "Who processes the data sent through your contact form, why, how long it is kept and how people can exercise their rights."),
+         "Who processes the data submitted through your website, why, how long it is kept and how people can exercise their rights."),
         ('Cookie consent', 'LSSI, art. 22.2 — enforced by the AEPD',
          "Non-essential cookies (analytics, an embedded Google Map, videos) may only load after the visitor agrees."),
     ],
@@ -163,19 +163,22 @@ C['en'] = dict(
               "Cookie banner that keeps Google Maps and analytics blocked until the visitor accepts",
               ".es domain name registered in your name"],
     sources_t='Sources',
-    why_ey='Why us', why_t='Built for people doing business in Spain in English',
+    why_ey='Why us', why_t='Built for people working in Spain in English',
+    why_intro="You don't need to know Spanish web law or how websites are built: we write your legal pages and take care of the design and the technical work.",
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call: no need to decode Spanish technical or legal jargon."),
-         ('⚖️', 'Spanish rules handled', "Legal notice, privacy, cookies and an .es domain in your name: your site is compliant from day one."),
+         ('⚖️', 'Spanish requirements handled', "Legal notice, privacy policy, cookie consent and an .es domain in your name are set up from day one."),
          ('📍', 'Found by your customers', "Google Maps on your site, a WhatsApp button and, if you want, a managed Google Business Profile in Spain."),
          ('🔓', 'No lock-in', "€15/month, cancel any time. The domain stays yours if you leave.")],
     where_t='Anywhere in Spain',
-    where="Costa Blanca, Valencia, Costa del Sol, Barcelona, Madrid, the Balearic or the Canary Islands: we work remotely, so where you are based makes no difference.",
+    where="Costa Blanca, Valencia, Costa del Sol, Barcelona, Madrid, the Balearic or the Canary Islands: we work remotely, so where you are based in Spain makes no difference.",
     sect_t='Every trade',
+    sect_intro="Whatever your trade — from building and renovation work to wellbeing and healthcare — your website is built around the services you actually offer, using your own details and photos.",
     sectors=['🔧 Builders & trades', '🏗️ Renovations', '⚡ Electricians', '🪵 Carpenters',
              '🎨 Painters & decorators', '❄️ Air conditioning', '🧠 Psychologists', '💆 Physiotherapists',
              '🦷 Dentists', '🌿 Wellbeing practitioners', '🖋️ Tattoo artists', '➕ Your trade'],
     how_t='Your website in three steps',
-    steps=[('Tell us about your business', 'Your trade, your services, your town in Spain: it takes two minutes.'),
+    steps_intro="You see your website before you pay: your demo is ready within 24 hours of your first message, and it only goes live if you decide to go ahead.",
+    steps=[('Tell us what you need', 'Your trade, your services, your town in Spain: it takes two minutes.'),
            ('We build your website', 'Within 24 hours your demo is ready, with your photos, your Google reviews and your legal pages.'),
            ('You decide', 'Like it? €15/month and it goes live. If not, you pay nothing.')],
     price_t='One clear price, two ways to pay',
@@ -191,7 +194,7 @@ C['en'] = dict(
     faq=[("Can my website be in English and Spanish?",
           "Yes, at no extra cost. We write both versions, so Spanish-speaking customers find you too, and your prices and terms are available in Spanish, as Spanish consumer law requires for pre-contract information."),
          ("Does my English-language website have to comply with Spanish law?",
-          "Yes, if your business is established in Spain. The LSSI applies to service providers established in Spain whatever language the site is in: you need a legal notice, a privacy policy and cookie consent."),
+          "Yes, if you are established in Spain. The LSSI applies to service providers established in Spain whatever language the site is in: you need a legal notice, a privacy policy and cookie consent."),
          ("What must the legal notice of a website in Spain include?",
           "Your full name or company name, your NIF or NIE, your address and your email. Companies add their Mercantile Registry details; regulated professions add their professional association (colegio) and membership number."),
          ("Do I need a cookie banner?",
@@ -203,7 +206,13 @@ C['en'] = dict(
          ("Do we need to meet in person?",
           "No. Everything is done remotely, in English, by email, WhatsApp and video call. The agency is based in Ontinyent, in Valencia province."),
          ("Can you help me appear on Google Maps in Spain?",
-          "Yes, with Google Business Profile management: €29 a month, plus €49 to create the profile if you don't have one yet."),
+          "Yes, with Google Business Profile management: €29 + VAT a month, plus €49 + VAT to create the profile if you don't have one yet."),
+         ("Does the website include search engine optimisation (SEO)?",
+          "Yes, basic SEO is included at no extra cost: titles and text built around your trade and the area you serve in Spain, so people searching for your service can find you. Local SEO — four blog articles of local content a month plus local keyword work — is a separate, optional service if you want to go further."),
+         ("Do you handle digital marketing and social media too, not just web design?",
+          "Yes, on request. The €15 + VAT a month or €349 + VAT price covers your website, hosting and legal pages. Local SEO and Google Business Profile management are separate services you can add at any time, and social media management or Facebook and Google Ads campaigns are available on request: just ask us."),
+         ("My current website doesn't have the legal pages Spanish law requires. Can you help?",
+          "Yes, by replacing it. We build you a new website the same way and at the same price as any other site, with a free demo in under 24 hours, and the legal notice, privacy policy and cookie consent are included from the start."),
          ("What if I want to cancel?",
           "You simply stop paying — no minimum term, no penalties. The domain is in your name, so you keep it, and we help you transfer it.")],
     final_t='See your website before you pay a thing',
@@ -258,6 +267,9 @@ def page(lang):
                       for fr, en, h in SOURCES)
     why = ''.join('<div class="aud-c"><div class="aud-i" aria-hidden="true">%s</div><h3>%s</h3><p>%s</p></div>'
                   % (ic, E(t), E(d)) for ic, t, d in c['why'])
+    why_intro = '<p class="legal-intro">%s</p>\n  ' % E(c['why_intro']) if c.get('why_intro') else ''
+    steps_intro = '<p class="legal-intro">%s</p>\n  ' % E(c['steps_intro']) if c.get('steps_intro') else ''
+    sect_intro = '<p class="legal-intro">%s</p>\n  ' % E(c['sect_intro']) if c.get('sect_intro') else ''
     sectors = ''.join('<span class="stag">%s</span>' % E(s) for s in c['sectors'])
     steps = ''.join('<div class="step%s"><div class="sn">%d</div><div class="stit">%s</div><div class="sinf">%s</div></div>'
                     % (' ft' if n == 1 else '', n + 1, E(t), E(d)) for n, (t, d) in enumerate(c['steps']))
@@ -380,13 +392,13 @@ def page(lang):
 <section class="blk alt" id="{i['aud']}">
   <p class="ey">{E(c['why_ey'])}</p>
   <h2 style="margin-bottom:36px">{E(c['why_t'])}</h2>
-  <div class="why-g">{why}</div>
+  {why_intro}<div class="why-g">{why}</div>
   <p class="where"><strong>{E(c['where_t'])}</strong>{E(c['where'])}</p>
 </section>
 
 <section class="ss blk" id="{i['steps']}">
   <h2 style="margin-bottom:36px">{E(c['how_t'])}</h2>
-  <div class="sw">{steps}</div>
+  {steps_intro}<div class="sw">{steps}</div>
 </section>
 
 <section class="blk alt" id="{i['price']}">
@@ -398,7 +410,7 @@ def page(lang):
 
 <section class="secs" id="{i['sect']}">
   <h2 style="margin-bottom:24px">{E(c['sect_t'])}</h2>
-  <div class="sg">{sectors}</div>
+  {sect_intro}<div class="sg">{sectors}</div>
 </section>
 
 <section class="proof" id="{i['rev']}">
