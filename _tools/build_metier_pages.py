@@ -1248,7 +1248,7 @@ DENT['fr'] = dict(
     audience="Chirurgiens-dentistes libéraux",
     crumb_home='Accueil', crumb='Dentistes',
     badge='Chirurgiens-dentistes libéraux',
-    h1="Un site internet pour <em>dentistes</em>, construit selon les recommandations de l'Ordre",
+    h1="Création de site internet pour <em>dentiste</em>, selon les recommandations de l'Ordre",
     lede="Votre cabinet, vos soins, vos honoraires et votre prise de rendez-vous, présentés selon le code de "
          "déontologie : informer, sans promotion. Nous l'écrivons pour vous, vous validez chaque contenu, et la démo "
          "est gratuite en 24 heures.",
@@ -1256,12 +1256,12 @@ DENT['fr'] = dict(
     cta='Recevoir ma démo gratuite', cta2='Ce que le code impose',
     brief_t='En bref',
     brief="WebAutonomos crée des sites internet pour les chirurgiens-dentistes libéraux, en France et en Espagne. Le "
-          "site présente votre cabinet, vos soins et votre équipe, avec vos honoraires, vos modes de paiement et votre "
-          "conventionnement, comme l'exigent le code de déontologie et l'arrêté du 30 mai 2018. Il suit les "
+          "site présente votre cabinet, vos soins et votre équipe, avec vos honoraires, vos modalités de règlement et "
+          "votre conventionnement, comme l'exigent le code de déontologie et l'arrêté du 30 mai 2018. Il suit les "
           "recommandations de l'Ordre de juin 2026 : "
           "pas d'avis ni de notes, pas de promotion, pas de photos avant/après, et pas de référencement pour passer "
           "devant vos confrères. Le site coûte <strong>15 € HT par mois</strong> sans frais d'installation ni "
-          "engagement, ou <strong>349 € HT en paiement unique</strong>, et la démo est prête en 24 heures.",
+          "engagement, ou <strong>349 € HT en un seul versement</strong>, et la démo est prête en 24 heures.",
     legal_id='regles', legal_ey='Le code de déontologie', legal_t="Ce que votre site doit respecter",
     legal_intro="Depuis 2020, un chirurgien-dentiste peut communiquer librement auprès du public, y compris sur un "
                 "site internet. Cette communication reste encadrée par le code de déontologie et par les "
@@ -1303,7 +1303,7 @@ DENT['fr'] = dict(
                "(art. L6323-1-9 et L6323-1-5). Informations générales à jour en septembre 2026, qui ne remplacent pas "
                "l'avis de votre conseil départemental de l'Ordre.",
     legal_we_t='Ce que nous mettons en place',
-    legal_we=["Vos honoraires pour les actes les plus pratiqués, vos modes de paiement, votre conventionnement et "
+    legal_we=["Vos honoraires pour les actes les plus pratiqués, vos modalités de règlement, votre conventionnement et "
               "l'accès aux soins (CSS, AME)",
               "Vos titres et orientations avec les formules de l'Ordre, et vos diplômes dans leur libellé exact",
               "Un site sans avis, sans notes, sans photos avant/après et sans promotion",
@@ -1318,7 +1318,7 @@ DENT['fr'] = dict(
                "<a href=\"/fr/site-internet-francophones-espagne\">site internet pour francophones en Espagne</a>.",
     sources_t='Sources',
     why_ey='Pourquoi nous', why_t="Pensé pour les chirurgiens-dentistes",
-    why=[('📋', 'Les honoraires bien présentés', "Actes les plus pratiqués, modes de paiement, conventionnement : ce que "
+    why=[('📋', 'Les honoraires bien présentés', "Actes les plus pratiqués, modalités de règlement, conventionnement : ce que "
                                                "le code exige, lisible pour les patients."),
          ('🏷️', 'Les bons titres', "Spécialités qualifiées, orientations d'omnipraticien et diplômes reconnus, avec "
                                   "les formules de l'Ordre."),
@@ -1341,6 +1341,24 @@ DENT['fr'] = dict(
            ('Vous décidez', "Vous relisez et validez chaque contenu, et demandez les modifications que vous voulez. Si "
                            "le site vous plaît, il est mis en ligne ; sinon, vous ne payez rien.")],
     price_note=PRIX_FR_SANTE,
+    extra=[
+        ('contenu-site-dentiste', 'Sur votre site', "Ce que contient le site de votre cabinet dentaire",
+         """<p class="legal-intro">Un patient qui cherche un dentiste dans sa ville, depuis son mobile ou son ordinateur, veut savoir en quelques secondes où vous trouver, comment vous contacter et à qui il aura affaire. Pour nous, la création de site internet pour dentiste commence par là : répondre clairement à ces questions, dans les limites du code de déontologie rappelées plus haut.</p>
+<div class="why-g">
+<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>Votre cabinet, votre équipe, votre adresse</h3><p>Nous rédigeons la présentation de votre cabinet dentaire et de chaque praticien de votre équipe à partir de vos informations, avec votre adresse et vos horaires bien visibles dès la page d'accueil.</p></div>
+<div class="aud-c"><div class="aud-i" aria-hidden="true">☎️</div><h3>Contact en un geste</h3><p>Votre numéro de téléphone, un bouton WhatsApp et un formulaire de contact qui envoie directement la demande à votre adresse email : le patient choisit ce qui lui convient.</p></div>
+<div class="aud-c"><div class="aud-i" aria-hidden="true">🔎</div><h3>Cohérent avec votre fiche Google</h3><p>Les titres et les textes du site reprennent vos soins et votre ville, et restent cohérents avec votre fiche Google : c'est inclus dans le prix.</p></div>
+<div class="aud-c"><div class="aud-i" aria-hidden="true">🌍</div><h3>Jusqu'à quatre langues, sans supplément</h3><p>Si votre patientèle inclut des résidents ou des visiteurs étrangers, votre site peut être rédigé en français et dans jusqu'à trois autres langues parmi l'anglais, l'espagnol, le catalan, le valencien, le galicien et le basque, sans coût supplémentaire.</p></div>
+</div>
+<p class="where">Votre cabinet dentaire partage ses locaux avec des kinésithérapeutes, par exemple dans une maison de santé ? Leur communication est elle aussi encadrée par leur code de déontologie : voir notre page <a href="https://webautonomos.es/fr/site-internet-kinesitherapeute">site internet pour kinésithérapeute</a>.</p>"""),
+        ('specialise-dentiste', 'Pensé pour un dentiste', "Pourquoi une création de site internet spécifique aux dentistes",
+         """<p class="legal-intro">Une agence généraliste peut créer un site internet correct pour n'importe quelle activité. La création de site internet pour dentiste demande autre chose : connaître le code de déontologie, les formules autorisées par l'Ordre et les limites propres au secteur médical. Omnipraticien, orthodontiste ou chirurgien oral, chaque activité dentaire a ses propres usages, mais un dentiste qui communique sur son activité doit toujours rester loyal et honnête, page après page de son site — c'est notre expertise.</p>
+<div class="why-g">
+<div class="aud-c"><div class="aud-i" aria-hidden="true">⚙️</div><h3>Une gestion technique que vous n'avez pas à suivre</h3><p>Hébergement, certificat de sécurité, sauvegardes quotidiennes, surveillance du site : cette gestion reste de notre côté, avant comme après la mise en ligne. Les fonctionnalités utiles à vos patients — formulaire de contact, bouton WhatsApp, liens vers vos réseaux sociaux — sont incluses sans supplément.</p></div>
+<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>Une présence locale, sans rien à payer</h3><p>Le site occupe un espace visible dans les résultats des moteurs de recherche, grâce à des titres et des textes cohérents avec votre fiche Google : c'est ce qui aide un patient local à trouver son dentiste, dans les limites que l'Ordre autorise.</p></div>
+</div>
+<p class="where">Un site web pensé pour un dentiste ne ressemble pas à celui d'un commerce : beaucoup de sites internet pour dentistes se limitent à une simple présentation en ligne, sans gestion ni suivi réel. La conformité dentaire, elle, reste la même quel que soit le nom de domaine choisi.</p>"""),
+    ],
     faq_t='Questions fréquentes',
     faq=[("Mes honoraires doivent-ils figurer sur mon site ?",
           "Oui. Le code de déontologie (art. R4127-240) impose à un dentiste qui présente son activité, notamment sur un "
@@ -1357,8 +1375,8 @@ DENT['fr'] = dict(
          ("Puis-je payer pour être mieux référencé sur Google ?",
           "Non. L'article R4127-217 interdit d'obtenir, contre paiement ou par tout autre moyen, un référencement qui "
           "fasse apparaître votre site en priorité ; l'Ordre proscrit le référencement prioritaire, payant ou non. Nous "
-          "ne vendons donc ni référencement ni publicité aux dentistes : le site est clair et bien construit, et Google "
-          "l'indexe normalement."),
+          "ne proposons donc aucun référencement prioritaire ni aucune publicité aux dentistes : le site est clair et "
+          "bien construit, et Google l'indexe normalement."),
          ("Puis-je écrire « spécialiste en implantologie » ?",
           "Non. Il n'existe que trois spécialités, réservées aux spécialistes qualifiés : orthopédie dento-faciale, "
           "chirurgie orale et médecine bucco-dentaire. Un omnipraticien doit utiliser les formules de l'Ordre, comme "
@@ -1376,7 +1394,13 @@ DENT['fr'] = dict(
          ("Combien coûte un site pour dentiste ?",
           "15 € HT par mois sans frais d'installation ni engagement, ou 349 € HT en paiement unique, avec les mêmes "
           "services : conception, hébergement, nom de domaine la première année, mentions légales et une modification "
-          "par mois. La démo est gratuite.")],
+          "par mois. La démo est gratuite."),
+         ("Mon site inclut-il des liens vers mes réseaux sociaux ?",
+          "Oui, si vous en avez : le site inclut des liens vers vos profils professionnels sur les réseaux sociaux. Le "
+          "code de déontologie encadre votre communication « par tout moyen » (art. R4127-215-1) : ces profils suivent "
+          "donc les mêmes règles que votre site."),
+         ("Mon site peut-il être proposé en plusieurs langues ?",
+          "Oui, jusqu'à quatre langues au total, sans supplément, et nous rédigeons chaque version nous-mêmes.")],
     final_t='Voyez votre site avant de payer quoi que ce soit',
     final_sd="Démo gratuite en 24 heures, honoraires et mentions obligatoires compris. Sans frais d'installation, sans "
              "engagement.",
