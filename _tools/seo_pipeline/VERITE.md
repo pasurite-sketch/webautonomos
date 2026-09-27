@@ -3,7 +3,7 @@
 > **Règle absolue pour les agents** : toute affirmation factuelle sur WebAutonomos
 > (prix, délais, services, langues, chiffres, clients, ancienneté, résultats)
 > qui n'est pas écrite ici est **interdite**. Le relecteur rejette la page.
-> Tenu à jour par Angelino. Dernière révision : 26/09/2026.
+> Tenu à jour par Angelino. Dernière révision : 27/09/2026.
 > Les lignes marquées **À CONFIRMER** ne doivent pas être utilisées tant
 > qu'Angelino ne les a pas tranchées.
 
@@ -36,7 +36,7 @@
   - mise en conformité de la web du client (confirmé le 25/09/2026) : prix pour les particuliers affichés TVA comprise, informations de réclamation exigées par la région (ex. affiche QR en Andalousie), mention expliquant si et comment les avis affichés sont vérifiés
   - optimisation SEO de base (titres et textes avec service et zone, données cohérentes avec la fiche Google)
 - Domaine : .es au nom du client, **inclus la première année**, ensuite environ **12 €/an** ; le client garde son domaine s'il part
-- Clients en France : domaine en **.fr** (confirmé le 25/09/2026)
+- Clients en France : domaine en **.fr** (confirmé le 25/09/2026), aux mêmes conditions que le .es : inclus la première année, ensuite environ **12 €/an** (confirmé le 27/09/2026)
 - **Clients au Royaume-Uni** (décisions d'Angelino du 26/09/2026) :
   - prix en euros **sans TVA ajoutée** (« prix en € sans TVA ») : 15 €/mois ou 349 € ; sur les pages destinées au Royaume-Uni, écrire « no VAT added », jamais « + VAT » ni « + IVA »
   - équivalent indicatif en livres, toujours avec « about » : **about £13** par mois, **about £300** en paiement unique (taux du 25/09/2026 : 1 € = 0,86 £) ; préciser que le montant en livres dépend du taux de change
@@ -45,7 +45,7 @@
   - pages concernées : /en/dental-website-design et /en/physiotherapy-website-design (générées par `_tools/build_uk_pages.py`)
 - Propriété de la web : avec la formule 349 €, la web est au client (« pagas una vez y la web es tuya », cartes de prix du site) ; en alquiler, ne pas écrire que la web lui appartient (seul le domaine est à lui)
 - **Non inclus, ne jamais l'annoncer** (déclaré par Angelino le 25/09/2026) :
-  - aucune intégration d'agenda ou de système de réservation en ligne (Calendly, Doctoralia, Bookitit, Doctolib, logiciels de clinique…) et aucun rappel automatique par SMS ou email ; les demandes arrivent par le formulaire (email) et par WhatsApp
+  - aucune intégration d'agenda ou de système de réservation en ligne (Calendly, Doctoralia, Bookitit, Doctolib, logiciels de clinique…) et aucun rappel automatique par SMS ou email ; les demandes arrivent par le formulaire (email) et par WhatsApp. **Permis** (confirmé le 27/09/2026) : un simple lien ou bouton vers l'outil de réservation que le client utilise déjà ; écrire « lien », jamais « intégration », « synchronisation » ni « rappels »
   - pas de photos « de alta calidad » ni de reportage photo : WebAutonomos utilise les photos du client (fiche Google, photos envoyées)
   - ne pas écrire « te respondemos con ejemplos reales »
   - adresse email professionnelle (@domaine) : **non incluse** dans 15 €/mes ni 349 € ; configurable **sur demande**, aucun prix à annoncer (25/09/2026)
@@ -157,6 +157,8 @@ qu[eé] dolor resuelve
 - Ne jamais ajouter : promesses de guérison, de soulagement (« qué dolor resuelve ») ou de résultat, titres « especialista » / « especialidades », prix promotionnels ou « offres », avant/après cliniques, demande du motif de consultation dans le formulaire
 - Conserver intactes les sections « règles » / « lo que tu web debe cumplir » existantes des pages métier
 - Ces pages sont en mode **validation** : jamais fusionnées sans l'accord d'Angelino
+- Avis des patients : la décision du 25/09 (avis Google autorisés) vaut pour les pages **espagnoles** (maintenue le 27/09/2026). Les pages **anglaises « in Spain »** gardent leur explication de la règle espagnole (RD 1907/1996, art. 4.7 : témoignages de patients interdits dans la publicité sanitaire) et ne proposent pas d'afficher d'avis de patients.
+- Autorisation préalable de la publicité sanitaire (Murcie et autres régions) : citer la règle, mais **ne jamais promettre que WebAutonomos attend l'autorisation avant la mise en ligne** (faux, 27/09/2026 : « we wait for it before your site goes live » est à retirer)
 - **Pages santé britanniques** (/en/dental-website-design, /en/physiotherapy-website-design) : mêmes interdits, plus les règles britanniques déjà citées dans leur tableau (sources officielles vérifiées le 26/09/2026) : pas de « specialist » ni « specialising in » (dentistes hors liste GDC), pas de nom de médicament sur prescription (Botox), pas de « cure », avis affichés seulement s'ils sont authentiques et sans masquer les avis négatifs (CAP Code 3.44 à 3.50). N'ajoute aucune règle britannique absente du tableau.
 
 ## 10. À CONFIRMER par Angelino

@@ -159,6 +159,17 @@ Relevées sur les pages du 24 et du 25/09/2026 :
   est interdit —, pas de « especialista » / « especialidades », ne demande pas le
   motif de consultation dans le formulaire). Les avis réels de la fiche Google
   sont autorisés (décision d'Angelino, §9).
+- **Densité et répétitions** (27/09 : six pages en « À REVOIR ») : pour faire monter
+  ou baisser une expression, ne touche jamais une réponse juridique, un tableau de règles,
+  un prix ni une carte de prix ; réduis ailleurs. Un terme juridique nécessaire (« colegiado »,
+  « number », « health », « rénovation d'ampleur ») reste, même s'il est « sur-utilisé ».
+  Exemples relevés : 349 € présenté comme prix de « l'abonnement » (fr-menuisier), n° de
+  colegiado retiré d'une réponse LSSI et renvoi « see above » dans le JSON-LD (en-dentists),
+  « physical therapist » ajouté pour placer une expression (en-physio).
+- **Un script, plusieurs langues** : quand un générateur produit aussi une page hors circuit
+  (ex. `build_expat_pages.py` : C['fr'] est hors circuit), ne modifie que la langue de ta page.
+- **Chaque réponse de FAQ se lit seule** (elle est reprise dans le JSON-LD et par les IA) :
+  jamais « see above », « voir le tableau ci-dessus », « ce type de travaux » sans antécédent.
 - **Liens internes** : utilise l'adresse finale de la page (`/blog/es/<slug>`, pas
   `/blog/<slug>`) ; un lien vers une redirection ou une page absente est bloqué par
   `checks.py` (26/09 : trois liens de /dentistas/ passaient par une redirection).

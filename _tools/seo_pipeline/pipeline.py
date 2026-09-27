@@ -157,7 +157,7 @@ Dossier de travail : _tools/seo_pipeline/runs/{slug}/
 def prompt_writer(slug, fix=False):
     e = entree(slug)
     txt = ENTETE.format(entree=json.dumps(e, ensure_ascii=False, indent=2), slug=slug,
-                        langue_guide=cfg()['langues_serpmantics'].get(e['lang'], e['lang']))
+                        langue_guide=e.get('langue_serpmantics') or cfg()['langues_serpmantics'].get(e['lang'], e['lang']))
     if fix == 'affine':
         return txt + """
 Tu es l'agent RÉDACTEUR, en AFFINAGE. Cette page est déjà publiée et a été
@@ -196,7 +196,11 @@ l'arbre de travail. Lis :
 2. _tools/seo_pipeline/runs/{slug}/review.json (verdict du relecteur)
 3. _tools/seo_pipeline/runs/{slug}/checks.json (contrôles automatiques)
 Corrige UNIQUEMENT les problèmes signalés (bloquants des contrôles, problèmes
-du relecteur). Si la page a un générateur, corrige le script et relance-le.
+du relecteur). Quand le relecteur donne le texte attendu, reprends-le mot pour mot.
+Applique aussi les décisions d'Angelino écrites dans `notes` de l'entrée ci-dessus.
+Pendant une correction, ne touche jamais une réponse juridique, un tableau de règles
+ni un prix pour faire monter ou baisser une expression SERPmantics.
+Si la page a un générateur, corrige le script et relance-le.
 VERITE.md a pu être mis à jour par Angelino APRÈS la relecture : si une
 correction demandée contredit VERITE.md, VERITE.md l'emporte. N'applique pas
 cette correction et explique-le dans `points_d_attention` du rapport.
@@ -208,7 +212,7 @@ Relance la mesure : python3 _tools/seo_pipeline/serp.py score {slug} --label fix
 def prompt_review(slug):
     e = entree(slug)
     txt = ENTETE.format(entree=json.dumps(e, ensure_ascii=False, indent=2), slug=slug,
-                        langue_guide=cfg()['langues_serpmantics'].get(e['lang'], e['lang']))
+                        langue_guide=e.get('langue_serpmantics') or cfg()['langues_serpmantics'].get(e['lang'], e['lang']))
     txt += """
 Tu es l'agent RELECTEUR. Tu n'as pas écrit cette modification.
 Lis, en entier :
@@ -247,7 +251,9 @@ def cmd_extract_review(slug, chemin):
         texte = sortie.get('result', '') if isinstance(sortie, dict) else str(sortie)
     except Exception:
         texte = open(chemin, encoding='utf-8', errors='replace').read()
-    v = extraire_json(texte) or {'verdict': 'rejeter', 'resume': 'Verdict illisible : bloqué par sécurité.',
+    v = extraire_json(texte) or {'verdict': 'rejeter', 'illisible': True,
+                                   'resume': 'Verdict illisible : la réponse du relecteur ne contient pas de '
+                                             'verdict JSON (fin des tours ou coupure) ; rejet par précaution.',
                                    'problemes': [], 'confiance': 'basse'}
     if v.get('confiance') == 'basse' and v.get('verdict') == 'approuver':
         v['verdict'] = 'reviser'

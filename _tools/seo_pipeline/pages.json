@@ -321,8 +321,11 @@
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
-      "notes": "SANTÉ. R4321-123, R4321-98. Semrush France 26/09/2026 : « site internet kiné » 20/mois KD 9 ; « site internet kinésithérapeute » 20 KD 9 ; « création site internet kiné » 10 KD 7. Petit volume.",
-      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
+      "notes": "SANTÉ. R4321-123, R4321-98. Semrush France 26/09/2026 : « site internet kiné » 20/mois KD 9 ; « site internet kinésithérapeute » 20 KD 9 ; « création site internet kiné » 10 KD 7. Petit volume. ChatGPT hors cible (27/09) : son guide est bâti sur la surcouche d'accessibilité d'ordremk.fr (expressions sans rapport, 948 à 1 056 mots visés).",
+      "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme.",
+      "geo_hors_cible": [
+        "chatgpt"
+      ]
     },
     {
       "slug": "fr-dentiste",
@@ -340,7 +343,7 @@
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 1,
-      "notes": "SANTÉ. Semrush France 26/09/2026 : « création site internet dentiste » 110/mois KD 11 ; « site internet dentiste » 110 KD 44 ; « site internet cabinet dentaire » 40 KD 60.",
+      "notes": "SANTÉ. Semrush France 26/09/2026 : « création site internet dentiste » 110/mois KD 11 ; « site internet dentiste » 110 KD 44 ; « site internet cabinet dentaire » 40 KD 60. Relecteur (27/09) : la page dit ne vendre aucun référencement aux dentistes ; ne pas appeler « optimisation SEO de base » les titres et textes cohérents avec la fiche Google (le lecteur y lit « référencement ») : décrire ce qui est fait sans le mot SEO. H1 : doit contenir la requête (« création »).",
       "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
@@ -478,7 +481,10 @@
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
-      "notes": "SANTÉ. Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne. Semrush 26/09/2026 : volume quasi nul pour les requêtes anglaises en Espagne ; objectif principal : être cité par les IA (GEO). Les cabinets britanniques ont leurs propres pages (en-uk-*) : garder le lien vers elles (spain_note), ne pas viser le Royaume-Uni ici."
+      "notes": "SANTÉ. Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne. Semrush 26/09/2026 : volume quasi nul pour les requêtes anglaises en Espagne ; objectif principal : être cité par les IA (GEO). Les cabinets britanniques ont leurs propres pages (en-uk-*) : garder le lien vers elles (spain_note), ne pas viser le Royaume-Uni ici. Angelino (27/09/2026) : retirer « we wait for it before your site goes live » (Murcia) dans legal_note : garder la règle régionale, sans dire ce que fait WebAutonomos (VERITE.md §9). Le lien vers l'outil de réservation du client est permis (simple lien, VERITE.md §2). Pas d'avis de patients sur cette page (VERITE.md §9). Gemini hors cible (27/09) : son guide s'appuie sur des pages de cliniques en espagnol (score 4 à 6).",
+      "geo_hors_cible": [
+        "gemini"
+      ]
     },
     {
       "slug": "en-dentists",
@@ -492,7 +498,10 @@
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
-      "notes": "SANTÉ. Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne. Semrush 26/09/2026 : volume quasi nul pour les requêtes anglaises en Espagne ; objectif principal : être cité par les IA (GEO). Les cabinets britanniques ont leurs propres pages (en-uk-*) : garder le lien vers elles (spain_note), ne pas viser le Royaume-Uni ici."
+      "notes": "SANTÉ. Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne. Semrush 26/09/2026 : volume quasi nul pour les requêtes anglaises en Espagne ; objectif principal : être cité par les IA (GEO). Les cabinets britanniques ont leurs propres pages (en-uk-*) : garder le lien vers elles (spain_note), ne pas viser le Royaume-Uni ici. Angelino (27/09/2026) : retirer « we wait for it before your site goes live » (Murcia) dans legal_note : garder la règle régionale, sans dire ce que fait WebAutonomos (VERITE.md §9). Le lien vers l'outil de réservation du client est permis (simple lien, VERITE.md §2). Pas d'avis de patients sur cette page (VERITE.md §9). Gemini hors cible (27/09) : son guide s'appuie sur des pages de cliniques en espagnol (score 4 à 6).",
+      "geo_hors_cible": [
+        "gemini"
+      ]
     },
     {
       "slug": "en-uk-dentists",

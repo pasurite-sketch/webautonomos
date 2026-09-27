@@ -46,7 +46,10 @@ mkdir -p "$RUN"
 log(){ echo "[$(date '+%F %T')] $SLUG — $*" | tee -a "$RUN/run.log"; }
 state(){ python3 "$P/pipeline.py" state "$SLUG" "$@"; }
 
-MODE="$(python3 "$P/pipeline.py" field "$SLUG" mode)"
+# Le VPS peut avoir un pages.json en retard sur GitHub (page ajoutée depuis la dernière
+# synchronisation) : lecture tolérante ici, relecture après la remise à niveau sur origin/main.
+# (27/09 : en-uk-dentists et en-uk-physio sautées pour cette raison.)
+MODE="$(python3 "$P/pipeline.py" field "$SLUG" mode 2>/dev/null || true)"
 [ "$MODE" = "manuel" ] && { log "mode manuel : ignorée"; exit 0; }
 
 REPRISE=0
@@ -105,14 +108,21 @@ controles(){
 
 relecteur(){ # $1 = numéro de passe
   git diff "$BASE" -- . ':(exclude)_tools/seo_pipeline/runs' > "$RUN/diff.patch"
-  log "relecteur (passe $1, $REVIEWER_MODEL)"
-  # shellcheck disable=SC2086
-  claude -p "$(python3 "$P/pipeline.py" prompt review "$SLUG")" \
-    --model "$REVIEWER_MODEL" \
-    --allowedTools "Read,Glob,Grep" \
-    --max-turns 40 \
-    --output-format json ${REVIEWER_EXTRA_ARGS:-} > "$RUN/review_raw_$1.json" || abandon "le relecteur a échoué"
-  VERDICT="$(python3 "$P/pipeline.py" extract-review "$SLUG" "$RUN/review_raw_$1.json")"
+  local essai
+  for essai in 1 2; do
+    log "relecteur (passe $1, $REVIEWER_MODEL)"
+    # shellcheck disable=SC2086
+    claude -p "$(python3 "$P/pipeline.py" prompt review "$SLUG")" \
+      --model "$REVIEWER_MODEL" \
+      --allowedTools "Read,Glob,Grep" \
+      --max-turns 60 \
+      --output-format json ${REVIEWER_EXTRA_ARGS:-} > "$RUN/review_raw_$1.json" || abandon "le relecteur a échoué"
+    VERDICT="$(python3 "$P/pipeline.py" extract-review "$SLUG" "$RUN/review_raw_$1.json")"
+    # réponse sans verdict JSON (fin des tours, coupure) : un seul nouvel essai
+    # (27/09 : fr-psychologue partie en « À REVOIR » sur un verdict illisible)
+    grep -q '"illisible": true' "$RUN/review.json" || break
+    [ "$essai" = 1 ] && log "réponse du relecteur sans verdict lisible : nouvel essai"
+  done
   log "verdict : $VERDICT — contrôles : $([ "$CHECKS_OK" = 1 ] && echo OK || echo ÉCHEC)"
 }
 
@@ -149,6 +159,8 @@ else
   git fetch -q origin main
   git reset -q --hard origin/main
   BASE="$(git rev-parse HEAD)"
+  MODE="$(python3 "$P/pipeline.py" field "$SLUG" mode)" || { log "page inconnue de pages.json : arrêt"; exit 2; }
+  [ "$MODE" = "manuel" ] && { log "mode manuel : ignorée"; exit 0; }
   if [ "$AFFINER" = 1 ]; then
     python3 "$P/pipeline.py" sync >/dev/null 2>&1 || true
     case "$(python3 "$P/pipeline.py" etat "$SLUG")" in
