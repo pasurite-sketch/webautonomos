@@ -144,17 +144,18 @@ DENTAL = dict(
     service_name="Dental website design for UK practices",
     audience="Dental practice owners in the United Kingdom",
     crumb='Dental website design',
-    badge='For dental practices in the UK',
-    h1="Dental website design for <em>UK dental practices</em>",
+    badge='For dentists in the UK',
+    h1="Dental website design for <em>UK dentists</em>",
     lede="Your practice, your team, your fees and how to book, set out the way the GDC's guidance on advertising "
          "expects. We write it for you in English, you approve every word, and your free demo is ready within "
          "24 hours.",
     pills=['Written around GDC guidance', 'Fees and NHS or private status shown clearly', 'Free demo in 24 hours'],
-    brief="WebAutonomos designs websites for dental practices in the UK. We write the copy in English from your "
-          "real details, show what the GDC's guidance on advertising asks a practice website to display "
-          "(qualifications, GDC numbers, complaints procedure, the date of the last update) and keep the site "
-          "clear of what UK advertising rules ban: specialist titles you don't hold, claims you can't back up, "
-          "and prescription-only medicines such as Botox. " + PRIX_BRIEF,
+    brief="WebAutonomos designs websites for dentists in the UK. We write the content in "
+          "English from your real details, show what the GDC's guidance on "
+          "advertising asks a practice website to display (qualifications, GDC numbers, complaints procedure, "
+          "the date of the last update), and keep the website clear of what UK advertising rules ban: "
+          "specialist titles you don't hold, claims you can't back up, and prescription-only medicines such as "
+          "Botox. " + PRIX_BRIEF,
     legal_t='What your dental website has to get right in the UK',
     legal_intro="Dentistry is regulated across the UK by the General Dental Council (GDC), and a practice website "
                 "counts as advertising. These are the points that matter for your site.",
@@ -213,16 +214,119 @@ DENTAL = dict(
               "prescription-only medicine names",
               "A privacy policy and cookie notice adapted to UK law (UK GDPR)",
               "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
-    why_t='Built for UK dental practices',
+    why_t='Built for UK dentistry',
     why=[('📋', 'GDC details in place',
           'Qualifications, GDC numbers, complaints procedure and last-updated date, set out where patients and '
           'the GDC guidance expect them.')] + WHY_COMMUNS,
-    sectors=['🦷 General dental practices', '🏥 Mixed NHS and private practices', '✨ Private practices',
-             '😁 Orthodontic practices', '🧑‍⚕️ Group practices'],
-    steps=[('Tell us about your practice', 'Your treatments, your team, your fees and opening hours: it takes '
-                                           'two minutes.'),
-           ('We build your demo', 'Within 24 hours, with your copy in English and your legal pages.'),
+    sectors=['🦷 General dentistry', '🏥 Mixed NHS and private care', '✨ Private practices',
+             '😁 Orthodontic care', '🧑‍⚕️ Group practices'],
+    steps=[('Tell us about your practice', 'Your treatments, your team, your fees, your location and when '
+                                           'you\'re open: it takes two minutes to share what we need for your '
+                                           'website design.'),
+           ('We build your demo', 'Within 24 hours, with your design, your copy in English and your legal '
+                                  'pages, ready for you to check online.'),
            STEPS_FIN],
+    extra=[
+        ('website-content', 'Content', 'What to include on a dental practice website',
+         '<p class="legal-intro">Patients choosing a dental practice want to find the same things quickly, '
+         'however they land on your website: who treats them, what care is on offer, and how to get in touch. '
+         'Good web design puts these first, instead of burying them under general information. We write this '
+         'content for you in English, for you to check before it goes live.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🦷</div>'
+         '<h3>Your treatments, described plainly</h3>'
+         '<p>General dentistry, hygiene, cosmetic work or orthodontics: each treatment written in plain '
+         'language, without a promise of results (see the rules above), so a new patient understands what it '
+         'involves before they book.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧑‍⚕️</div>'
+         '<h3>Your team and their GDC registration</h3>'
+         '<p>Every dental professional named on the page, introduced with the qualification, the country it comes '
+         'from and the GDC number the rules above require, so patients know who is treating them and can look up '
+         'their registration directly with the GDC.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">💷</div>'
+         '<h3>Fees a patient can read before they call</h3>'
+         '<p>Clear fees shown on your website, the way the rules above require, so patients don\'t have to '
+         'phone or search elsewhere to find out what a visit or a course of treatment costs.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📞</div>'
+         '<h3>More than one way to get in touch</h3>'
+         '<p>A contact form, a phone number and a WhatsApp button, plus a link to the booking tool you already '
+         'use if you have one, so patients who find your website can reach the practice however suits them '
+         'best.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div>'
+         '<h3>Your location and when you\'re open</h3>'
+         '<p>Your address and opening times, so a patient can check when the practice is open before they '
+         'call or make the trip.</p></div>'
+         '</div>'),
+        ('good-design', 'Design', 'What good dental website design looks like',
+         '<p class="legal-intro">Good dental website design isn\'t only about how the page looks or how well '
+         'it performs for SEO; it\'s about whether a visitor finds the information they need and decides to '
+         'get in touch.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎨</div>'
+         '<h3>Clean, modern web design that loads fast</h3>'
+         '<p>Professional web design pairs a clean, modern look with plain headings and short content, '
+         'built to load fast on mobile as well as on desktop, so visitors don\'t give up '
+         'looking before they reach your contact details.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧭</div>'
+         '<h3>An easy path from visitor to enquiry</h3>'
+         '<p>Every page leads somewhere: a clear button to your contact form, phone number or WhatsApp, so a '
+         'visitor who\'s ready to book doesn\'t have to search for how.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div>'
+         '<h3>Design that builds trust</h3>'
+         '<p>Genuine Google reviews, shown with each reviewer\'s permission and without hiding the negative ones '
+         '(see the rules above), your GDC registration and straightforward fees do more for trust than '
+         'decoration. Good design gives these details room instead of hiding them below a slideshow.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏷️</div>'
+         '<h3>Branding that matches the rest of your practice</h3>'
+         '<p>Your logo, colours and photos, carried through consistently, so your website matches your '
+         'practice\'s wider online presence, from your Google Business Profile to social media.</p></div>'
+         '</div>'),
+        ('local-search-help', 'Local search', 'How patients search for a local dental practice',
+         '<p class="legal-intro">Getting found by someone searching for a local dentist depends on more than '
+         'your website design. Search engines and patients read the same pages, so make sure the essentials '
+         'are easy to find.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div>'
+         '<h3>Basic SEO, included in your website</h3>'
+         '<p>Page titles and copy built around your treatments and your local area, kept consistent with your '
+         'Google Business Profile, come at no extra cost, helping your practice appear '
+         'in relevant local search results.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div>'
+         '<h3>Local SEO and your Google listing, if you want more</h3>'
+         '<p>If you want to go further than the basic SEO included in your website, we also offer local SEO and '
+         'help managing your Google Business Profile. Ask us for prices when you get your demo.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div>'
+         '<h3>Searches your website should answer</h3>'
+         '<p>Before they book, patients may search for things like:</p>'
+         '<ul><li>an emergency dentist near them</li><li>a practice accepting new patients</li>'
+         '<li>a dentist open on Saturdays or evenings</li><li>a well-reviewed dental practice nearby</li>'
+         '</ul>'
+         '<p>Many of these searches happen on mobile, so your website needs to read as well on a small screen '
+         'as it does on a desktop.</p></div>'
+         '</div>'),
+        ('technical-basics', 'Behind the scenes', 'What runs behind your website',
+         '<p class="legal-intro">Alongside the pages your patients read online, a few technical basics come '
+         'with every website we build.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔒</div>'
+         '<h3>Hosting, SSL and daily backups</h3>'
+         '<p>Your website includes hosting, an SSL certificate, daily backups, 24/7 monitoring and technical '
+         'maintenance, so the technical side isn\'t something you need to think about.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔗</div>'
+         '<h3>Links to your social media</h3>'
+         '<p>We add links to your Facebook, Instagram or other social media profiles on your website, so '
+         'patients can move easily between your website and your social media.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✏️</div>'
+         '<h3>One change a month, included</h3>'
+         '<p>Once your website is live, you can ask for one change a month at no extra cost, such as updating '
+         'your team, your fees or anything you\'d like to improve. A full redesign or a large new section '
+         'goes through a fixed quote agreed before any work starts.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div>'
+         '<h3>Your policies, ready to publish</h3>'
+         '<p>A privacy policy and cookie notice, adapted to UK law, are included with your website, and every '
+         'word is written for you to check before it goes live.</p></div>'
+         '</div>'),
+    ],
     faq=[("What must a dental practice website show?",
           "Under the GDC's guidance on advertising: each dental professional's qualification, the country it "
           "comes from and their GDC number; the practice name and address; a phone number and email; the GDC's "
@@ -240,8 +344,13 @@ DENTAL = dict(
          FAQ_AVIS,
          ("Do I need to display a CQC rating?",
           "Only if the CQC has rated you: rated providers must show their latest rating on their website "
-          "(regulation 20A). The CQC doesn't rate primary care dental services, so most dental practices have "
-          "no rating to display.")] + FAQ_COMMUNES,
+          "(regulation 20A). The CQC doesn't rate primary care dental services, so most dental providers have "
+          "no rating to display."),
+         ("Can patients book an appointment directly through my website?",
+          "There's no booking system built into the website. If you already use a booking tool, we can add a link "
+          "or button to it, next to your contact form and phone number, so patients still have a quick way "
+          "to book. Otherwise, appointment requests reach you by email through the contact form or by "
+          "WhatsApp.")] + FAQ_COMMUNES,
 )
 SRC_DENTAL = [
     ('GDC Guidance on advertising',
