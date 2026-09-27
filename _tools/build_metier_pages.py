@@ -1067,6 +1067,26 @@ KINE['fr'] = dict(
     final_t='Voyez votre site avant de payer quoi que ce soit',
     final_sd="Démo gratuite en 24 heures, honoraires et mentions obligatoires compris. Sans frais d'installation, sans "
              "engagement.",
+    extra=[('contenu-site', 'Contenu du site', "Site internet kinésithérapeute : ce qu'il doit contenir",
+            '<p class="legal-intro">Notre création de site internet pour kinésithérapeutes comprend la rédaction des '
+            "textes à partir de vos informations, l'hébergement web et une modification par mois après la mise en "
+            "ligne. Voici, concrètement, ce que vos pages contiennent.</p>"
+            '<div class="legal-we"><ul>'
+            "<li><span>Une présentation de votre cabinet et de votre parcours, sans témoignage ni comparaison</span></li>"
+            "<li><span>Vos honoraires, vos modes de paiement et, le cas échéant, vos spécificités reconnues par le "
+            "Conseil national de l'Ordre, présentés selon les règles rappelées plus haut</span></li>"
+            "<li><span>Votre adresse, vos horaires et l'accessibilité du cabinet, avec un formulaire de contact sans "
+            "champ libre sur l'état de santé et un bouton WhatsApp</span></li>"
+            "<li><span>Un lien vers vos réseaux sociaux professionnels, si vous en avez</span></li>"
+            "<li><span>Vos mentions légales complètes : numéro RPPS, numéro d'Ordre, hébergeur et directeur de la "
+            "publication, comme le demandent la LCEN et les recommandations de l'Ordre</span></li>"
+            '<li><span>Votre nom de domaine, en .fr si vous exercez en France, inclus la première année puis environ '
+            '12 €/an, qui reste à vous si vous changez de prestataire</span></li>'
+            '</ul></div>'
+            '<p class="legal-intro"><strong>Création de site internet pour kiné : le même prix, en une ou plusieurs '
+            "langues.</strong> Vous choisissez jusqu'à quatre langues au total, sans supplément, parmi le français, "
+            "l'espagnol, l'anglais, le catalan, le valencien, le galicien et le basque : le prix reste de 15 € HT par "
+            "mois sans frais d'installation ni engagement, ou de 349 € HT en paiement unique.</p>")],
 )
 
 KINE['en'] = dict(
