@@ -615,6 +615,9 @@
 .brief p { font-size:1.04rem; line-height:1.75; color:var(--text); }
 .blk { padding:80px 6%; background:var(--white); }
 .blk.alt { background:var(--off); }
+.secs.w { background:var(--white); }
+.proof.alt { background:var(--off); }
+.proof.alt .tp-card { background:var(--white); }
 .inc-g { max-width:980px; margin:0 auto; padding:0; list-style:none;
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
 .inc-g li { background:var(--white); border:1.5px solid var(--border); border-radius:12px;
@@ -704,6 +707,11 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 .why-g { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:1000px) { .why-g { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px) { .why-g { grid-template-columns:1fr; } table.lt tbody th, table.lt td.law { width:auto; } }
+/* 2, 3 ou 5 cartes : pas de colonne vide à droite sur grand écran */
+@media (min-width:1001px) {
+  .why-g:has(> :nth-child(2):last-child) { grid-template-columns:repeat(2,1fr); max-width:760px; }
+  .why-g:has(> :nth-child(3):last-child), .why-g:has(> :nth-child(5):last-child) { grid-template-columns:repeat(3,1fr); max-width:900px; }
+}
 
 /* ─── pages métier (build_metier_pages.py) ─── */
 .spain-note { max-width:760px; margin:18px auto 0; background:var(--off); border:1.5px solid var(--border); border-radius:12px; padding:14px 18px; font-size:.93rem; color:#334155; line-height:1.6; }
@@ -1024,12 +1032,12 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
   <a class="p-link" href="https://webautonomos.es/fr/tarifs">Voir le détail des tarifs →</a>
 </section>
 
-<section class="secs" id="metiers">
+<section class="secs w" id="metiers">
   <h2 style="margin-bottom:24px">Pour qui</h2>
   <div class="sg"><span class="stag">🦷 Omnipraticiens</span><span class="stag">😁 Orthodontistes (ODF)</span><span class="stag">🩻 Chirurgie orale</span><span class="stag">🩺 Médecine bucco-dentaire</span><span class="stag">👶 Odontologie pédiatrique</span><span class="stag">🔩 Omnipraticiens (implantologie)</span><span class="stag">🏥 Cabinets de groupe</span><span class="stag">🪥 Parodontologie</span></div>
 </section>
 
-<section class="proof" id="avis">
+<section class="proof alt" id="avis">
   <h2>Ce que disent nos clients</h2>
   <div class="tp">
     <div class="tp-head"><span class="tp-score">4,3</span><span class="tp-of">/ 5</span><span class="tp-count">Note moyenne sur 8 avis vérifiés Trustpilot</span></div>
@@ -1040,7 +1048,7 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 </section>
 
 
-<section class="blk alt" id="contenu-site-dentiste">
+<section class="blk" id="contenu-site-dentiste">
   <p class="ey">Sur votre site</p>
   <h2 style="margin-bottom:36px">Ce que contient le site de votre cabinet dentaire</h2>
   <p class="legal-intro">Un patient qui cherche un dentiste dans sa ville, depuis son mobile ou son ordinateur, veut savoir en quelques secondes où vous trouver, comment vous contacter et à qui il aura affaire. Pour nous, la création de site internet pour dentiste commence par là : répondre clairement à ces questions, dans les limites du code de déontologie rappelées plus haut.</p>
@@ -1053,7 +1061,7 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 <p class="where">Votre cabinet dentaire partage ses locaux avec des kinésithérapeutes, par exemple dans une maison de santé ? Leur communication est elle aussi encadrée par leur code de déontologie : voir notre page <a href="https://webautonomos.es/fr/site-internet-kinesitherapeute">site internet pour kinésithérapeute</a>.</p>
 </section>
 
-<section class="blk" id="specialise-dentiste">
+<section class="blk alt" id="specialise-dentiste">
   <p class="ey">Pensé pour un dentiste</p>
   <h2 style="margin-bottom:36px">Pourquoi une création de site internet spécifique aux dentistes</h2>
   <p class="legal-intro">Une agence généraliste peut créer un site internet correct pour n'importe quelle activité. La création de site internet pour dentiste demande autre chose : connaître le code de déontologie, les formules autorisées par l'Ordre et les limites propres au secteur médical. Omnipraticien, orthodontiste ou chirurgien oral, chaque activité dentaire a ses propres usages, mais la communication du cabinet doit rester loyale et honnête sur chaque page du site.</p>
@@ -1062,7 +1070,7 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 <div class="aud-c"><div class="aud-i" aria-hidden="true">✏️</div><h3>Une modification par mois, sans limite de durée</h3><p>Après la mise en ligne, vous pouvez demander une modification par mois, par exemple pour mettre à jour vos honoraires ou vos horaires. Pour un changement plus important, nous vous remettons un devis fermé.</p></div>
 </div>
 </section>
-<section class="blk alt" id="faq">
+<section class="blk" id="faq">
   <h2 style="margin-bottom:36px">Questions fréquentes</h2>
   <div class="faq-l"><details><summary>Mes honoraires doivent-ils figurer sur mon site ?</summary><p>Oui. Le code de déontologie (art. R4127-240) impose à un dentiste qui présente son activité, notamment sur un site, d&#x27;y indiquer ses honoraires, les modes de paiement acceptés et les obligations d&#x27;accès aux soins sans discrimination. L&#x27;Ordre recommande d&#x27;indiquer au moins les honoraires des 5 à 10 actes les plus pratiqués.</p></details><details><summary>Puis-je afficher les avis de mes patients ou une note Google ?</summary><p>Non. Le code interdit les témoignages de tiers (art. R4127-215-1), et l&#x27;Ordre précise qu&#x27;une communication loyale et honnête ne fait appel ni à des témoignages ni à des notations. Répondre publiquement à un avis nominatif peut aussi violer le secret professionnel.</p></details><details><summary>Puis-je montrer des photos avant/après ?</summary><p>L&#x27;Ordre les déconseille : elles suggèrent au patient un résultat positif certain et tendent à être une information trompeuse. Aucun texte ne les interdit expressément, mais le risque disciplinaire existe.</p></details><details><summary>Puis-je payer pour être mieux référencé sur Google ?</summary><p>Non. L&#x27;article R4127-217 interdit d&#x27;obtenir, contre paiement ou par tout autre moyen, un référencement qui fasse apparaître votre site en priorité ; l&#x27;Ordre proscrit le référencement prioritaire, payant ou non. Nous ne proposons donc aucun référencement prioritaire ni aucune publicité aux dentistes : le site est clair et bien construit, et Google l&#x27;indexe normalement.</p></details><details><summary>Puis-je écrire « spécialiste en implantologie » ?</summary><p>Non. Il n&#x27;existe que trois spécialités, réservées aux spécialistes qualifiés : orthopédie dento-faciale, chirurgie orale et médecine bucco-dentaire. Un omnipraticien doit utiliser les formules de l&#x27;Ordre, comme « oriente sa pratique aux actes d&#x27;odontologie chirurgicale ». Vous pouvez citer l&#x27;implantologie parmi vos pratiques, sans la présenter comme relevant de la spécialité de chirurgie orale.</p></details><details><summary>Quand dois-je remettre un devis ?</summary><p>Une information écrite préalable est obligatoire dès que les dépassements d&#x27;honoraires atteignent 70 € (arrêté du 30 mai 2018). Pour les prothèses et l&#x27;orthodontie, le devis suit le modèle de la convention et propose une alternative sans reste à charge ou à reste à charge modéré quand il y en a une.</p></details><details><summary>Un centre de santé peut-il avoir un site ?</summary><p>Oui, sans aucune publicité en faveur du centre (art. L6323-1-9), et son gestionnaire doit y afficher l&#x27;identité et les fonctions de tous les médecins et chirurgiens-dentistes qui y exercent (art. L6323-1-5).</p></details><details><summary>Combien coûte un site pour dentiste ?</summary><p>15 € HT par mois sans frais d&#x27;installation ni engagement, ou 349 € HT en paiement unique, avec les mêmes services : conception, hébergement, nom de domaine la première année, mentions légales et une modification par mois. La démo est gratuite.</p></details><details><summary>Mon site inclut-il des liens vers mes réseaux sociaux ?</summary><p>Oui, si vous en avez : le site inclut des liens vers vos profils professionnels sur les réseaux sociaux. Le code de déontologie encadre votre communication « par tout moyen » (art. R4127-215-1) : ces profils suivent donc les mêmes règles que votre site.</p></details><details><summary>Mon site peut-il être proposé en plusieurs langues ?</summary><p>Oui, jusqu&#x27;à quatre langues au total, sans supplément, et nous rédigeons chaque version nous-mêmes.</p></details></div>
 </section>

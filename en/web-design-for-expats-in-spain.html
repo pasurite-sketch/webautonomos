@@ -614,6 +614,9 @@
 .brief p { font-size:1.04rem; line-height:1.75; color:var(--text); }
 .blk { padding:80px 6%; background:var(--white); }
 .blk.alt { background:var(--off); }
+.secs.w { background:var(--white); }
+.proof.alt { background:var(--off); }
+.proof.alt .tp-card { background:var(--white); }
 .inc-g { max-width:980px; margin:0 auto; padding:0; list-style:none;
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
 .inc-g li { background:var(--white); border:1.5px solid var(--border); border-radius:12px;
@@ -703,6 +706,11 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 .why-g { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:1000px) { .why-g { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px) { .why-g { grid-template-columns:1fr; } table.lt tbody th, table.lt td.law { width:auto; } }
+/* 2, 3 ou 5 cartes : pas de colonne vide à droite sur grand écran */
+@media (min-width:1001px) {
+  .why-g:has(> :nth-child(2):last-child) { grid-template-columns:repeat(2,1fr); max-width:760px; }
+  .why-g:has(> :nth-child(3):last-child), .why-g:has(> :nth-child(5):last-child) { grid-template-columns:repeat(3,1fr); max-width:900px; }
+}
 </style>
 <script type="application/ld+json">
 {
@@ -1066,13 +1074,13 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
   <a class="p-link" href="https://webautonomos.es/en/pricing">See full pricing details →</a>
 </section>
 
-<section class="secs" id="trades">
+<section class="secs w" id="trades">
   <h2 style="margin-bottom:24px">Every trade</h2>
   <p class="legal-intro">Whatever your trade — from building and renovations to wellbeing and healthcare — your website is built around the services you actually offer, using your own details and photos.</p>
   <div class="sg"><span class="stag">🔧 Builders &amp; trades</span><span class="stag">🏗️ Renovations</span><span class="stag">⚡ Electricians</span><span class="stag">🪵 Carpenters</span><span class="stag">🎨 Painters &amp; decorators</span><span class="stag">❄️ Air conditioning</span><span class="stag">🧠 Psychologists</span><span class="stag">💆 Physiotherapists</span><span class="stag">🦷 Dentists</span><span class="stag">🌿 Wellbeing practitioners</span><span class="stag">🖋️ Tattoo artists</span><span class="stag">➕ Your trade</span></div>
 </section>
 
-<section class="proof" id="reviews">
+<section class="proof alt" id="reviews">
   <h2>What our clients say</h2>
   <div class="tp">
     <div class="tp-head"><span class="tp-score">4.3</span><span class="tp-of">/ 5</span><span class="tp-count">Average rating from 8 verified Trustpilot reviews</span></div>
@@ -1082,7 +1090,7 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
   </div>
 </section>
 
-<section class="blk alt" id="faq">
+<section class="blk" id="faq">
   <h2 style="margin-bottom:36px">Frequently asked questions</h2>
   <div class="faq-l"><details><summary>Can my website be in English and Spanish?</summary><p>Yes, at no extra cost. We write both versions, so Spanish-speaking customers find you too, and your prices and terms are available in Spanish, as Spanish consumer law requires for pre-contract information.</p></details><details><summary>Does my English-language website have to comply with Spanish law?</summary><p>Yes, if you are established in Spain. The LSSI applies to service providers established in Spain whatever language the site is in: you need a legal notice, a privacy policy and cookie consent.</p></details><details><summary>What must the legal notice of a website in Spain include?</summary><p>Your full name or company name, your NIF or NIE, your address and your email. Companies add their Mercantile Registry details; regulated professions add their professional association (colegio) and membership number.</p></details><details><summary>Do I need a cookie banner?</summary><p>Yes, as soon as the site uses non-essential cookies: analytics, an embedded Google Map, YouTube videos. They may only load after the visitor agrees. We set the banner up so they stay blocked until then.</p></details><details><summary>I&#x27;m an autónomo with an NIE. Can the website and domain be in my name?</summary><p>Yes. The .es domain is registered in your name from day one. The first year is included, then renewal costs about €12 a year.</p></details><details><summary>How much does a website with WebAutonomos cost?</summary><p>€15 + VAT per month with no setup fee and no lock-in, or a one-off €349 + VAT. Spanish VAT is 21%. Legal pages, hosting and maintenance are included.</p></details><details><summary>Do we need to meet in person?</summary><p>No. Everything is done remotely, in English, by email, WhatsApp and video call. The agency is based in Ontinyent, in Valencia province.</p></details><details><summary>Can you help me appear on Google Maps in Spain?</summary><p>Yes, with Google Business Profile management: €29 + VAT a month, plus €49 + VAT to create the profile if you don&#x27;t have one yet.</p></details><details><summary>Does the website include search engine optimisation (SEO)?</summary><p>Yes, basic SEO is included at no extra cost: titles and text built around your trade and the area you serve in Spain, so people searching for your service can find you. Local SEO — four blog articles of local content a month plus local keywords — is a separate, optional service if you want to go further.</p></details><details><summary>Do you handle digital marketing and social media too, not just web design?</summary><p>Yes, on request. The €15 + VAT a month or €349 + VAT price covers your website, hosting and legal pages. Local SEO and Google Business Profile management are separate services you can add at any time, and we can also help with social media management or Facebook and Google Ads campaigns: just ask us.</p></details><details><summary>My current website doesn&#x27;t have the legal pages Spanish law requires. Can you help?</summary><p>Yes, by replacing it. We build you a new website the same way and at the same price as any other site, with a free demo in under 24 hours, and the legal notice, privacy policy and cookie consent are included from the start.</p></details><details><summary>What if I want to cancel?</summary><p>You simply stop paying — no minimum term, no penalties. The domain is in your name, so you keep it, and we help you transfer it.</p></details><details><summary>Do you set the price according to my budget?</summary><p>No. There are two published prices, with exactly the same services in both: €15 + VAT a month or a one-off €349 + VAT. Extras such as an online shop or a redesign are quoted separately.</p></details><details><summary>Is hosting included, and what comes with it?</summary><p>Hosting is included in both plans, along with an SSL certificate, daily backups, 24/7 monitoring and technical maintenance. You do not need to manage or pay for any of that separately.</p></details><details><summary>Can you build me an online shop, not just a brochure website?</summary><p>Yes, on request. An online shop (e-commerce) is quoted separately and is not included in either plan. Tell us what you want to sell and we will give you a quote.</p></details><details><summary>Could I build the website myself instead, with a tool like Wix or Squarespace?</summary><p>You could, but you would have to prepare the Spanish legal notice, privacy policy and cookie consent yourself, whatever platform you use (Wix, Squarespace, WordPress or any other), because the requirement comes from Spanish law, not from the platform. With WebAutonomos, those pages are written for you, in English, and included in the price.</p></details><details><summary>What should a good business website in Spain include?</summary><p>It should display well on a phone (responsive design), load quickly and say clearly what you do, where you&#x27;re based and how to contact you. In Spain it also needs the legal notice, privacy policy and cookie consent required by law.</p></details><details><summary>Can I make changes to my website after it goes live?</summary><p>Yes — one change a month is included at no extra cost, whatever plan you choose, for as long as your website is live. Anything bigger, such as a redesign or a new major section, is quoted separately with a fixed price agreed in advance.</p></details></div>
 </section>

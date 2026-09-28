@@ -3467,6 +3467,7 @@ def page(m, lang):
             ' on' if n == 0 else '', n, E(x['rev_aria']), n + 1)
     faq = ''.join('<details><summary>%s</summary><p>%s</p></details>' % (E(q), E(a)) for q, a in c['faq'])
     # sections supplémentaires facultatives (contenu utile ajouté par le rédacteur, cf. REGLES_REDACTEUR.md §2)
+    # (la classe alt posée ici est provisoire : H.alterner_fonds recalcule les fonds de toute la page)
     extra_html = ''.join(
         '\n\n<section class="blk%s" id="%s">\n  %s<h2 style="margin-bottom:36px">%s</h2>\n  %s\n</section>'
         % (' alt' if idx % 2 == 0 else '', eid, '<p class="ey">%s</p>\n  ' % E(ey) if ey else '', h2, body)
@@ -3489,7 +3490,7 @@ def page(m, lang):
     legal_js = "event.preventDefault();document.getElementById('%s').style.display='flex'"
     foot_langs = '<a href="%s%s" hreflang="%s">%s</a>' % (BASE, M[autre], autre, autre.upper())
 
-    return f"""<!DOCTYPE html>
+    return H.alterner_fonds(f"""<!DOCTYPE html>
 <html lang="{c['html_lang']}">
 <head>
 <meta charset="utf-8">
@@ -3639,7 +3640,7 @@ def page(m, lang):
 </script>
 </body>
 </html>
-"""
+""")
 
 
 # ═════════════════════════ AUTRES FICHIERS (une seule fois) ════════════════

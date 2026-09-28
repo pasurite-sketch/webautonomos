@@ -615,6 +615,9 @@
 .brief p { font-size:1.04rem; line-height:1.75; color:var(--text); }
 .blk { padding:80px 6%; background:var(--white); }
 .blk.alt { background:var(--off); }
+.secs.w { background:var(--white); }
+.proof.alt { background:var(--off); }
+.proof.alt .tp-card { background:var(--white); }
 .inc-g { max-width:980px; margin:0 auto; padding:0; list-style:none;
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
 .inc-g li { background:var(--white); border:1.5px solid var(--border); border-radius:12px;
@@ -704,6 +707,11 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 .why-g { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:1000px) { .why-g { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px) { .why-g { grid-template-columns:1fr; } table.lt tbody th, table.lt td.law { width:auto; } }
+/* 2, 3 ou 5 cartes : pas de colonne vide à droite sur grand écran */
+@media (min-width:1001px) {
+  .why-g:has(> :nth-child(2):last-child) { grid-template-columns:repeat(2,1fr); max-width:760px; }
+  .why-g:has(> :nth-child(3):last-child), .why-g:has(> :nth-child(5):last-child) { grid-template-columns:repeat(3,1fr); max-width:900px; }
+}
 
 /* ─── pages métier (build_metier_pages.py) ─── */
 .spain-note { max-width:760px; margin:18px auto 0; background:var(--off); border:1.5px solid var(--border); border-radius:12px; padding:14px 18px; font-size:.93rem; color:#334155; line-height:1.6; }
@@ -1056,12 +1064,12 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
   <a class="p-link" href="https://webautonomos.es/fr/tarifs">Voir le détail des tarifs →</a>
 </section>
 
-<section class="secs" id="metiers">
+<section class="secs w" id="metiers">
   <h2 style="margin-bottom:24px">Pour qui</h2>
   <div class="sg"><span class="stag">🧱 Maçons</span><span class="stag">🎨 Peintres</span><span class="stag">🟫 Carreleurs</span><span class="stag">🧰 Plaquistes</span><span class="stag">🏠 Couvreurs</span><span class="stag">🔧 Plombiers</span><span class="stag">⚡ Électriciens</span><span class="stag">🪵 Menuisiers</span></div>
 </section>
 
-<section class="proof" id="avis">
+<section class="proof alt" id="avis">
   <h2>Ce que disent nos clients</h2>
   <div class="tp">
     <div class="tp-head"><span class="tp-score">4,3</span><span class="tp-of">/ 5</span><span class="tp-count">Note moyenne sur 8 avis vérifiés Trustpilot</span></div>
@@ -1072,19 +1080,19 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 </section>
 
 
-<section class="blk alt" id="site-vitrine">
+<section class="blk" id="site-vitrine">
   <p class="ey">Ce qui convainc</p>
   <h2 style="margin-bottom:36px">Que doit contenir le site vitrine d'un artisan ?</h2>
   <p class="legal-intro">Un site vitrine d'artisan répond à trois questions : faites-vous le type de travaux que je cherche, intervenez-vous chez moi, et comment vous joindre ? Tout le reste vient en appui.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">📸</div><h3>Des réalisations classées par type de travaux</h3><p>Une personne qui cherche un ravalement de façade ne veut pas faire défiler des photos de salles de bains. Nous regroupons vos photos par catégorie, avec une légende : matériau, type de travaux, ville.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>Votre zone d'intervention, nommée</h3><p>Citer les communes où vous travaillez permet au visiteur de savoir tout de suite si vous vous déplacez chez lui, et aide Google à comprendre à qui s'adresse votre site.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🛡️</div><h3>Votre assurance et vos qualifications</h3><p>Votre assureur et votre couverture géographique, que le client doit pouvoir connaître avant le contrat, et les labels que vous avez réellement obtenus : autant les montrer dès la page d'accueil.</p></div></div><p class="where">Pour aller plus loin, consultez <a href="https://webautonomos.es/blog/fr/site-web-pour-menuisiers-et-renovation">notre guide pour les entreprises de rénovation</a>.</p>
 </section>
 
-<section class="blk" id="par-metier">
+<section class="blk alt" id="par-metier">
   <p class="ey">Par métier</p>
   <h2 style="margin-bottom:36px">Un site d'artisan adapté aux règles de votre métier</h2>
   <p class="legal-intro">Certains métiers ont leurs propres obligations en ligne. Nous les détaillons page par page.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🔧</div><h3><a href="https://webautonomos.es/fr/site-internet-plombier">Plombiers et chauffagistes</a></h3><p>Tarifs de dépannage accessibles en ligne, devis avant intervention, gaz, pompes à chaleur et entretien des chaudières.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">⚡</div><h3><a href="https://webautonomos.es/fr/site-internet-electricien">Électriciens</a></h3><p>Consuel, qualification IRVE pour les bornes de recharge, photovoltaïque et tarifs de dépannage.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🪵</div><h3><a href="https://webautonomos.es/fr/site-internet-menuisier">Menuisiers</a></h3><p>Fenêtres et aides, encart France Rénov', réalisations bois, alu et PVC.</p></div></div>
 </section>
 
-<section class="blk alt" id="visibilite">
+<section class="blk" id="visibilite">
   <p class="ey">Se faire trouver</p>
   <h2 style="margin-bottom:36px">SEO pour artisans : ce qui est inclus et ce qui est en plus</h2>
   <p class="legal-intro">Commencez par des informations identiques partout : mêmes nom, adresse et téléphone sur votre site internet et sur votre fiche d'établissement. Une partie de ce travail est déjà comprise dans le prix ; le reste est un service à part.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div><h3>Le référencement de base, inclus dans le prix</h3><p>Vos titres et vos textes mentionnent votre métier et les villes où vous intervenez : c'est compris dans les deux formules, sans supplément.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div><h3>Le SEO Local, un service à part</h3><p>Nous proposons aussi le SEO Local pour 15 € HT par mois (quatre articles de blog par mois, mots-clés locaux et un rapport mensuel), et la gestion de votre fiche Google pour 29 € HT par mois (49 € HT de création si vous n'en avez pas encore). Ce sont des services séparés, à ajouter à l'abonnement ou même sans lui.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📚</div><h3>Nos guides sur le sujet</h3><p>Nos articles approfondissent ces sujets : <a href="https://webautonomos.es/blog/fr/positionner-son-site-dans-le-google-local">positionner votre site dans la recherche locale</a>, comment <a href="https://webautonomos.es/blog/fr/optimiser-sa-fiche-google-business-profile">mieux remplir votre fiche professionnelle</a> et comment <a href="https://webautonomos.es/blog/fr/obtenir-plus-avis-google-guide-complet">obtenir plus d'avis</a>.</p></div></div>

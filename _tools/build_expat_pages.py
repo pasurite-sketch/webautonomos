@@ -257,6 +257,11 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 .why-g { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:1000px) { .why-g { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px) { .why-g { grid-template-columns:1fr; } table.lt tbody th, table.lt td.law { width:auto; } }
+/* 2, 3 ou 5 cartes : pas de colonne vide à droite sur grand écran */
+@media (min-width:1001px) {
+  .why-g:has(> :nth-child(2):last-child) { grid-template-columns:repeat(2,1fr); max-width:760px; }
+  .why-g:has(> :nth-child(3):last-child), .why-g:has(> :nth-child(5):last-child) { grid-template-columns:repeat(3,1fr); max-width:900px; }
+}
 """
 
 
@@ -323,7 +328,7 @@ def page(lang):
     legal_js = "event.preventDefault();document.getElementById('%s').style.display='flex'"
     foot_langs = '<a href="%s%s" hreflang="%s">%s</a>' % (BASE, PAGES[autre], autre, autre.upper())
 
-    return f"""<!DOCTYPE html>
+    return H.alterner_fonds(f"""<!DOCTYPE html>
 <html lang="{c['html_lang']}">
 <head>
 <meta charset="utf-8">
@@ -472,7 +477,7 @@ def page(lang):
 </script>
 </body>
 </html>
-"""
+""")
 
 
 def main():

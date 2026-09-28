@@ -615,6 +615,9 @@
 .brief p { font-size:1.04rem; line-height:1.75; color:var(--text); }
 .blk { padding:80px 6%; background:var(--white); }
 .blk.alt { background:var(--off); }
+.secs.w { background:var(--white); }
+.proof.alt { background:var(--off); }
+.proof.alt .tp-card { background:var(--white); }
 .inc-g { max-width:980px; margin:0 auto; padding:0; list-style:none;
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
 .inc-g li { background:var(--white); border:1.5px solid var(--border); border-radius:12px;
@@ -704,6 +707,11 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 .why-g { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:1000px) { .why-g { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px) { .why-g { grid-template-columns:1fr; } table.lt tbody th, table.lt td.law { width:auto; } }
+/* 2, 3 ou 5 cartes : pas de colonne vide à droite sur grand écran */
+@media (min-width:1001px) {
+  .why-g:has(> :nth-child(2):last-child) { grid-template-columns:repeat(2,1fr); max-width:760px; }
+  .why-g:has(> :nth-child(3):last-child), .why-g:has(> :nth-child(5):last-child) { grid-template-columns:repeat(3,1fr); max-width:900px; }
+}
 
 /* ─── pages métier (build_metier_pages.py) ─── */
 .spain-note { max-width:760px; margin:18px auto 0; background:var(--off); border:1.5px solid var(--border); border-radius:12px; padding:14px 18px; font-size:.93rem; color:#334155; line-height:1.6; }
@@ -1008,12 +1016,12 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
   <a class="p-link" href="https://webautonomos.es/fr/tarifs">Voir le détail des tarifs →</a>
 </section>
 
-<section class="secs" id="metiers">
+<section class="secs w" id="metiers">
   <h2 style="margin-bottom:24px">Pour qui</h2>
   <div class="sg"><span class="stag">💆 Kinés libéraux</span><span class="stag">🏃 Kinésithérapie du sport</span><span class="stag">🫁 Kinésithérapie respiratoire</span><span class="stag">🤰 Kinésithérapie en pelvi-périnéologie</span><span class="stag">🧓 Kinésithérapie en gériatrie</span><span class="stag">👶 Kinésithérapie en pédiatrie</span><span class="stag">🏥 Cabinets de groupe</span><span class="stag">🦴 Kinés ostéopathes</span></div>
 </section>
 
-<section class="proof" id="avis">
+<section class="proof alt" id="avis">
   <h2>Ce que disent nos clients</h2>
   <div class="tp">
     <div class="tp-head"><span class="tp-score">4,3</span><span class="tp-of">/ 5</span><span class="tp-count">Note moyenne sur 8 avis vérifiés Trustpilot</span></div>
@@ -1024,7 +1032,7 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 </section>
 
 
-<section class="blk alt" id="contenu-site">
+<section class="blk" id="contenu-site">
   <p class="ey">Contenu du site</p>
   <h2 style="margin-bottom:36px">Site internet kinésithérapeute : ce qu'il doit contenir</h2>
   <p class="legal-intro">Notre création de site internet pour kinésithérapeutes comprend la rédaction des textes à partir de vos informations, l'hébergement web et une modification par mois après la mise en ligne. Voici, concrètement, ce que vos pages contiennent.</p><div class="legal-we"><ul><li><span>Une présentation de votre cabinet et de votre parcours, sans témoignage ni comparaison</span></li><li><span>Vos honoraires, vos modes de paiement et, le cas échéant, vos spécificités reconnues par le Conseil national de l'Ordre, présentés selon les règles rappelées plus haut</span></li><li><span>Votre adresse, vos horaires et l'accessibilité du cabinet, avec un formulaire de contact sans champ libre sur l'état de santé et un bouton WhatsApp</span></li><li><span>Un lien vers vos réseaux sociaux professionnels, si vous en avez</span></li><li><span>Vos mentions légales complètes : numéro RPPS, numéro d'Ordre, hébergeur et directeur de la publication, comme le demandent la LCEN et les recommandations de l'Ordre</span></li><li><span>Votre nom de domaine, en .fr si vous exercez en France, inclus la première année puis environ 12 €/an, qui reste à vous si vous changez de prestataire</span></li></ul></div><p class="legal-intro"><strong>Création de site internet pour kiné : le même prix, en une ou plusieurs langues.</strong> Vous choisissez jusqu'à quatre langues au total, sans supplément, parmi le français, l'espagnol, l'anglais, le catalan, le valencien, le galicien et le basque : le prix reste de 15 € HT par mois sans frais d'installation ni engagement, ou de 349 € HT en paiement unique.</p>

@@ -611,6 +611,9 @@
 .brief p { font-size:1.04rem; line-height:1.75; color:var(--text); }
 .blk { padding:80px 6%; background:var(--white); }
 .blk.alt { background:var(--off); }
+.secs.w { background:var(--white); }
+.proof.alt { background:var(--off); }
+.proof.alt .tp-card { background:var(--white); }
 .inc-g { max-width:980px; margin:0 auto; padding:0; list-style:none;
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
 .inc-g li { background:var(--white); border:1.5px solid var(--border); border-radius:12px;
@@ -700,6 +703,11 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 .why-g { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:1000px) { .why-g { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px) { .why-g { grid-template-columns:1fr; } table.lt tbody th, table.lt td.law { width:auto; } }
+/* 2, 3 ou 5 cartes : pas de colonne vide à droite sur grand écran */
+@media (min-width:1001px) {
+  .why-g:has(> :nth-child(2):last-child) { grid-template-columns:repeat(2,1fr); max-width:760px; }
+  .why-g:has(> :nth-child(3):last-child), .why-g:has(> :nth-child(5):last-child) { grid-template-columns:repeat(3,1fr); max-width:900px; }
+}
 
 /* ─── pages métier (build_metier_pages.py) ─── */
 .spain-note { max-width:760px; margin:18px auto 0; background:var(--off); border:1.5px solid var(--border); border-radius:12px; padding:14px 18px; font-size:.93rem; color:#334155; line-height:1.6; }
@@ -1033,12 +1041,12 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
   <p class="p-note">Prices are set in euros, with no VAT added for UK clients. Pound amounts are approximate, at the rate of 25 September 2026 (€1 = £0.86), and change with the exchange rate. A .co.uk or .uk domain in your name is included for the first year.</p>
 </section>
 
-<section class="secs" id="trades">
+<section class="secs w" id="trades">
   <h2 style="margin-bottom:24px">Who it is for</h2>
   <div class="sg"><span class="stag">🏗️ Builders</span><span class="stag">🔧 Plumbers</span><span class="stag">⚡ Electricians</span><span class="stag">🏠 Roofers</span><span class="stag">🪵 Carpenters and joiners</span><span class="stag">🎨 Painters and decorators</span><span class="stag">🟫 Tilers</span><span class="stag">🌳 Landscapers</span></div>
 </section>
 
-<section class="proof" id="reviews">
+<section class="proof alt" id="reviews">
   <h2>What our clients say</h2>
   <div class="tp">
     <div class="tp-head"><span class="tp-score">4.3</span><span class="tp-of">/ 5</span><span class="tp-count">Average rating from 8 verified Trustpilot reviews</span></div>
@@ -1049,19 +1057,19 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 </section>
 
 
-<section class="blk alt" id="website-content">
+<section class="blk" id="website-content">
   <p class="ey">Content</p>
   <h2 style="margin-bottom:36px">What to put on a tradesman's website</h2>
   <p class="legal-intro">Someone looking for a tradesperson wants to know three things quickly: do you do the job they need, do you cover their area, and how do they reach you? Websites for tradesmen work best when they answer those first.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🗂️</div><h3>Your services, grouped by job</h3><p>Extensions, bathrooms, rewires or roof repairs each get their own section, so a visitor finds their job without scrolling through everything else.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>The towns you cover</h3><p>Naming the towns and villages you work in tells a visitor straight away whether you'll come to them, and helps search engines understand who your site is for.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div><h3>Registrations people can check</h3><p>Gas Safe, NICEIC, NAPIT, TrustMark or a trade association: shown with your number where there is one, so a customer can check it, and only the ones you actually hold.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📸</div><h3>Photos of your own work</h3><p>We build your trades website design around your own job photos, grouped by type of work, with a one-line caption for each.</p></div></div>
 </section>
 
-<section class="blk" id="by-trade">
+<section class="blk alt" id="by-trade">
   <p class="ey">By trade</p>
   <h2 style="margin-bottom:36px">Trades website design that fits your rules</h2>
   <p class="legal-intro">Some trades have their own rules on what they can claim and who can do the work. We cover them page by page.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🔧</div><h3><a href="https://webautonomos.es/en/web-design-for-plumbers">Web design for plumbers</a></h3><p>Gas Safe registration and logo rules, boilers and building regulations, unvented cylinders and the Boiler Upgrade Scheme.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">⚡</div><h3><a href="https://webautonomos.es/en/web-design-for-electricians">Web design for electricians</a></h3><p>Part P and competent person schemes, landlord inspections, EV chargers and solar panels.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🏗️</div><h3>Builders and construction firms</h3><p>For construction website design, the rules above apply in full: building control, CDM duties on home jobs, asbestos and waste.</p></div></div>
 </section>
 
-<section class="blk alt" id="local-search-help">
+<section class="blk" id="local-search-help">
   <p class="ey">Local search</p>
   <h2 style="margin-bottom:36px">How customers find a local tradesperson</h2>
   <p class="legal-intro">Getting found by someone searching for a local tradesperson depends on more than your website design. Search engines and customers read the same pages, so make sure the essentials are easy to find.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div><h3>Basic SEO, included in your website</h3><p>Page titles and copy built around your services and the towns you cover, kept consistent with your Google Business Profile, come at no extra cost.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div><h3>Local SEO and your Google listing, if you want more</h3><p>If you want to go further than the basic SEO included in your website, we also offer local SEO and help managing your Google Business Profile. Ask us for prices when you get your demo.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div><h3>Built for the phone in someone's hand</h3><p>Many people look for a tradesperson on their phone, sometimes in a hurry. Your number, a call button and WhatsApp stay in view on every page.</p></div></div>

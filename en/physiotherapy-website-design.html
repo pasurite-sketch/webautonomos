@@ -611,6 +611,9 @@
 .brief p { font-size:1.04rem; line-height:1.75; color:var(--text); }
 .blk { padding:80px 6%; background:var(--white); }
 .blk.alt { background:var(--off); }
+.secs.w { background:var(--white); }
+.proof.alt { background:var(--off); }
+.proof.alt .tp-card { background:var(--white); }
 .inc-g { max-width:980px; margin:0 auto; padding:0; list-style:none;
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
 .inc-g li { background:var(--white); border:1.5px solid var(--border); border-radius:12px;
@@ -700,6 +703,11 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 .why-g { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:1000px) { .why-g { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px) { .why-g { grid-template-columns:1fr; } table.lt tbody th, table.lt td.law { width:auto; } }
+/* 2, 3 ou 5 cartes : pas de colonne vide à droite sur grand écran */
+@media (min-width:1001px) {
+  .why-g:has(> :nth-child(2):last-child) { grid-template-columns:repeat(2,1fr); max-width:760px; }
+  .why-g:has(> :nth-child(3):last-child), .why-g:has(> :nth-child(5):last-child) { grid-template-columns:repeat(3,1fr); max-width:900px; }
+}
 
 /* ─── pages métier (build_metier_pages.py) ─── */
 .spain-note { max-width:760px; margin:18px auto 0; background:var(--off); border:1.5px solid var(--border); border-radius:12px; padding:14px 18px; font-size:.93rem; color:#334155; line-height:1.6; }
@@ -1009,12 +1017,12 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
   <p class="p-note">Prices are set in euros, with no VAT added for UK clients. Pound amounts are approximate, at the rate of 25 September 2026 (€1 = £0.86), and change with the exchange rate. A .co.uk or .uk domain in your name is included for the first year.</p>
 </section>
 
-<section class="secs" id="trades">
+<section class="secs w" id="trades">
   <h2 style="margin-bottom:24px">Who it is for</h2>
   <div class="sg"><span class="stag">💆 Private physiotherapy clinics</span><span class="stag">🏃 Sports physiotherapy</span><span class="stag">🧑‍⚕️ Independent physiotherapists</span><span class="stag">🏠 Home-visit physiotherapists</span></div>
 </section>
 
-<section class="proof" id="reviews">
+<section class="proof alt" id="reviews">
   <h2>What our clients say</h2>
   <div class="tp">
     <div class="tp-head"><span class="tp-score">4.3</span><span class="tp-of">/ 5</span><span class="tp-count">Average rating from 8 verified Trustpilot reviews</span></div>
@@ -1025,29 +1033,29 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 </section>
 
 
-<section class="blk alt" id="booking-enquiries">
+<section class="blk" id="booking-enquiries">
   <h2 style="margin-bottom:36px">Can patients book appointments through the website?</h2>
   <p class="legal-intro">The website isn't an online booking system, so there's no new software for you or your patients to learn.</p>
   <div class="legal-we"><h3>How patients reach you</h3><ul><li><span>A contact form that sends every enquiry straight to your own email inbox</span></li><li><span>A WhatsApp button, for patients who prefer a faster reply</span></li><li><span>A link to the booking tool you already use, if you have one</span></li></ul></div>
 </section>
 
-<section class="blk" id="seo-basics">
+<section class="blk alt" id="seo-basics">
   <h2 style="margin-bottom:36px">Does the website help me appear in Google searches?</h2>
   <p class="legal-intro">Both plans include basic search engine optimisation (SEO). It isn't ongoing local SEO work — if you want that, ask us and we'll explain what's involved.</p>
   <div class="legal-we"><h3>What's included in your website's SEO</h3><ul><li><span>Page titles and copy that name your treatments and your area</span></li><li><span>Your details kept consistent across your website and your Google Business Profile</span></li></ul></div>
 </section>
 
-<section class="blk alt" id="clinic-content">
+<section class="blk" id="clinic-content">
   <h2 style="margin-bottom:36px">Who writes the content for my physiotherapy website?</h2>
   <p class="legal-intro">We write all the content for you, in English, from the details you send us: your treatments, your team and your practice. It's tailored to you, never generic stock text, and written to be clear and easy for patients to read. You approve it before anything goes live. If your business changes later — new opening hours, a treatment you now offer — just tell us: one change a month is included in both plans.</p>
 </section>
 
-<section class="blk" id="worth-it">
+<section class="blk alt" id="worth-it">
   <h2 style="margin-bottom:36px">Is a website worth it for a small physiotherapy business?</h2>
   <p class="legal-intro">Many patients look for a physio online, often from their phone, and check your website before they call, even when someone has recommended you by name. Even if you work alone, a clear, simple site does the job of a good reception desk, answering the questions patients would otherwise phone to ask.</p>
   <div class="legal-we"><h3>What patients look for</h3><ul><li><span>Your treatments and who provides them</span></li><li><span>How to get in touch, by form, WhatsApp or phone</span></li><li><span>Your fees and opening hours</span></li></ul></div>
 </section>
-<section class="blk alt" id="faq">
+<section class="blk" id="faq">
   <h2 style="margin-bottom:36px">Frequently asked questions</h2>
   <div class="faq-l"><details><summary>Who can call themselves a physiotherapist in the UK?</summary><p>Only professionals registered with the HCPC: “physiotherapist” and “physical therapist” are protected titles, and misusing them with intent to deceive is a criminal offence (Health Professions Order 2001, art. 39).</p></details><details><summary>Can I call myself a Chartered Physiotherapist?</summary><p>Only if you are a qualified member of the Chartered Society of Physiotherapy. The title isn&#x27;t protected by law, but the CSP reserves it for members, and clinics shouldn&#x27;t use “chartered” in their name or publicity.</p></details><details><summary>Which conditions can my website say I treat?</summary><p>The ASA&#x27;s advice lists conditions it is likely to accept for physiotherapy, including back pain, joint pains, muscle spasms and minor sports injuries. For anything else, you need documentary evidence, usually clinical trials, before you make the claim (CAP Code, rule 12.1).</p></details><details><summary>Can I show patient reviews on my website?</summary><p>Yes, if they are genuine and you have the patient&#x27;s permission, and you don&#x27;t hide negative reviews or give positive ones more prominence (CAP Code, rules 3.44 to 3.50). Keep evidence that each testimonial is real.</p></details><details><summary>Does my practice need to register with the CQC?</summary><p>Not if it is a standalone physiotherapy practice in England: physiotherapists aren&#x27;t on the list of professionals whose treatment triggers registration. A clinic whose team includes a listed professional, such as a doctor or nurse, may need to register.</p></details><details><summary>What if I want bigger changes later, like a new section on my site?</summary><p>For bigger changes, such as a redesign or a large new section, we give you a fixed-price quote first, so there are no surprises. One smaller change a month is already included in both plans, at no extra charge.</p></details><details><summary>You&#x27;re based in Spain: how do we work together?</summary><p>Remotely and in English, by email, WhatsApp or video call, and we reply the same day. You tell us about your practice, we build your demo within 24 hours, and you check every word before anything goes live.</p></details><details><summary>How much does it cost, and do you add VAT?</summary><p>€15 a month (about £13) with no setup fee and no lock-in, or a one-off €349 (about £300), with the same services: design, hosting, a .co.uk or .uk domain in your name for the first year, legal pages adapted to UK law and one change a month. No VAT is added for UK clients. Prices are set in euros, so the amount in pounds depends on the exchange rate.</p></details><details><summary>Who owns the website?</summary><p>With the one-off €349 payment, the website is yours. With the monthly plan, the domain is registered in your name and you keep it if you leave.</p></details></div>
 </section>

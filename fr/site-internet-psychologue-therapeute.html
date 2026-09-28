@@ -615,6 +615,9 @@
 .brief p { font-size:1.04rem; line-height:1.75; color:var(--text); }
 .blk { padding:80px 6%; background:var(--white); }
 .blk.alt { background:var(--off); }
+.secs.w { background:var(--white); }
+.proof.alt { background:var(--off); }
+.proof.alt .tp-card { background:var(--white); }
 .inc-g { max-width:980px; margin:0 auto; padding:0; list-style:none;
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
 .inc-g li { background:var(--white); border:1.5px solid var(--border); border-radius:12px;
@@ -704,6 +707,11 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 .why-g { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:1000px) { .why-g { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px) { .why-g { grid-template-columns:1fr; } table.lt tbody th, table.lt td.law { width:auto; } }
+/* 2, 3 ou 5 cartes : pas de colonne vide à droite sur grand écran */
+@media (min-width:1001px) {
+  .why-g:has(> :nth-child(2):last-child) { grid-template-columns:repeat(2,1fr); max-width:760px; }
+  .why-g:has(> :nth-child(3):last-child), .why-g:has(> :nth-child(5):last-child) { grid-template-columns:repeat(3,1fr); max-width:900px; }
+}
 
 /* ─── pages métier (build_metier_pages.py) ─── */
 .spain-note { max-width:760px; margin:18px auto 0; background:var(--off); border:1.5px solid var(--border); border-radius:12px; padding:14px 18px; font-size:.93rem; color:#334155; line-height:1.6; }
@@ -1016,12 +1024,12 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
   <a class="p-link" href="https://webautonomos.es/fr/tarifs">Voir le détail des tarifs →</a>
 </section>
 
-<section class="secs" id="metiers">
+<section class="secs w" id="metiers">
   <h2 style="margin-bottom:24px">Pour qui</h2>
   <div class="sg"><span class="stag">🧠 Psychologues</span><span class="stag">🗣️ Psychothérapeutes</span><span class="stag">🛋️ Psychanalystes</span><span class="stag">🌬️ Sophrologues</span><span class="stag">🌀 Hypnothérapeutes</span><span class="stag">🌿 Naturopathes</span><span class="stag">💆 Praticiens bien-être</span><span class="stag">🧭 Coachs</span></div>
 </section>
 
-<section class="proof" id="avis">
+<section class="proof alt" id="avis">
   <h2>Ce que disent nos clients</h2>
   <div class="tp">
     <div class="tp-head"><span class="tp-score">4,3</span><span class="tp-of">/ 5</span><span class="tp-count">Note moyenne sur 8 avis vérifiés Trustpilot</span></div>
@@ -1032,19 +1040,19 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 </section>
 
 
-<section class="blk alt" id="contenu-site">
+<section class="blk" id="contenu-site">
   <p class="ey">Sur votre site</p>
   <h2 style="margin-bottom:36px">Que mettre sur le site internet d&#x27;un psychologue ou d&#x27;un thérapeute ?</h2>
   <p class="legal-intro">Un site internet efficace pour un thérapeute ou un psychologue répond aux questions qu&#x27;une personne se pose avant un premier contact, dans un langage clair, sans jargon ni promesse de résultat.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">📝</div><h3>Qui vous êtes, présenté simplement</h3><p>Votre formation, votre titre et votre approche, résumés en quelques lignes pour qu&#x27;un visiteur sache tout de suite à qui il s&#x27;adresse.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🗓️</div><h3>Comment se passe une première séance</h3><p>La durée d&#x27;une séance, le déroulement du premier rendez-vous, l&#x27;adresse et l&#x27;accès du cabinet ou le fonctionnement de la visio : ce qu&#x27;une personne veut savoir avant de vous appeler.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">✉️</div><h3>Comment vous contacter</h3><p>Un formulaire court (nom, coordonnées et créneau souhaité, sans motif de consultation), un bouton WhatsApp et votre numéro pour appeler directement.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div><h3>Un site rapide sur tous les écrans</h3><p>Beaucoup de visiteurs arrivent depuis leur téléphone : un site qui se charge rapidement et s&#x27;affiche bien sur mobile compte autant pour eux que pour votre référencement.</p></div></div><p class="where">Pour aller plus loin, notre guide sur <a href="https://webautonomos.es/blog/fr/site-web-pour-psychologues-et-therapeutes">le site d&#x27;un psychologue ou d&#x27;un thérapeute</a> détaille chaque rubrique de contenu.</p>
 </section>
 
-<section class="blk" id="visibilite-therapeute">
+<section class="blk alt" id="visibilite-therapeute">
   <p class="ey">Se faire trouver</p>
   <h2 style="margin-bottom:36px">Comment un thérapeute apparaît-il dans les recherches locales ?</h2>
   <p class="legal-intro">Quand une personne cherche un psychologue ou un thérapeute près de chez elle, des textes à jour, qui nomment votre activité et votre ville et restent cohérents avec votre fiche Google, aident votre site à apparaître dans ces recherches locales.</p><div class="aud-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div><h3>Le référencement de base, inclus</h3><p>Des titres et des textes rédigés autour de votre activité et de votre secteur géographique, cohérents avec votre fiche Google : cette optimisation fait partie du prix de votre site, sans supplément à prévoir.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div><h3>SEO local et fiche Google, en complément</h3><p>Nous proposons aussi le référencement local (SEO local) pour 15 € HT par mois, et la gestion de votre fiche Google pour 29 € HT par mois, avec 49 € HT de création si vous n&#x27;en avez pas encore.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🔗</div><h3>Vos réseaux sociaux reliés à votre site</h3><p>Si vous êtes présent sur les réseaux sociaux — Facebook, Instagram, LinkedIn — votre site internet renvoie vers vos profils : une présence en ligne cohérente, plutôt que des vitrines séparées.</p></div></div><p class="where">Nos guides sur le <a href="https://webautonomos.es/blog/fr/seo-local-independants-guide-complet">SEO local pour indépendants</a> et sur <a href="https://webautonomos.es/blog/fr/optimiser-sa-fiche-google-business-profile">l&#x27;optimisation de votre fiche Google</a> détaillent la démarche.</p>
 </section>
 
-<section class="blk alt" id="pourquoi-webautonomos">
+<section class="blk" id="pourquoi-webautonomos">
   <p class="ey">Notre différence</p>
   <h2 style="margin-bottom:36px">Pourquoi un prix fixe de 15 € HT par mois plutôt qu&#x27;un devis d&#x27;agence ?</h2>
   <p class="legal-intro">Pour la création de votre site internet de psychologue ou de thérapeute, nous utilisons un système propre qui réutilise des composants déjà testés, sans bureaux coûteux ni commerciaux à commission : c&#x27;est ce qui permet un prix fixe, là où une agence classique construit son devis après un échange.</p><div class="aud-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🧩</div><h3>Des textes écrits pour votre pratique</h3><p>Nous rédigeons vos textes à partir de vos informations — votre titre, votre approche, votre façon de recevoir — au lieu de vous laisser remplir un modèle vide.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🛠️</div><h3>Le suivi technique compris dans le prix</h3><p>Hébergement, certificat SSL, sauvegardes quotidiennes et maintenance technique sont compris, avec une modification par mois après la mise en ligne, sans limite de durée.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">💬</div><h3>Un accompagnement, pas un simple outil en ligne</h3><p>Nous écrivons votre site avec vous : vous décrivez votre activité en quelques minutes, vous découvrez votre démo en moins de 24 heures, puis nous faisons ensemble les ajustements avant la mise en ligne.</p></div></div><p class="where">Vous voulez aussi vendre en ligne ? Une boutique en ligne n&#x27;est comprise dans aucune des deux formules : elle se fait <a href="https://webautonomos.es/fr/prestations">sur devis</a>.</p>

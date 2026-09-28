@@ -1186,7 +1186,7 @@ def page(P):
     legal_js = "event.preventDefault();document.getElementById('%s').style.display='flex'"
     foot_langs = '<a href="%s/" hreflang="es">ES</a>\n    <a href="%s/fr/" hreflang="fr">FR</a>' % (BASE, BASE)
 
-    return f"""<!DOCTYPE html>
+    return H.alterner_fonds(f"""<!DOCTYPE html>
 <html lang="{c['html_lang']}">
 <head>
 <meta charset="utf-8">
@@ -1334,7 +1334,7 @@ def page(P):
 </script>
 </body>
 </html>
-"""
+""")
 
 
 # ═════════════════════════ ÉCRITURE ════════════════════════════════════════

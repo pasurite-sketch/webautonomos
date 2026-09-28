@@ -611,6 +611,9 @@
 .brief p { font-size:1.04rem; line-height:1.75; color:var(--text); }
 .blk { padding:80px 6%; background:var(--white); }
 .blk.alt { background:var(--off); }
+.secs.w { background:var(--white); }
+.proof.alt { background:var(--off); }
+.proof.alt .tp-card { background:var(--white); }
 .inc-g { max-width:980px; margin:0 auto; padding:0; list-style:none;
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
 .inc-g li { background:var(--white); border:1.5px solid var(--border); border-radius:12px;
@@ -700,6 +703,11 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 .why-g { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:1000px) { .why-g { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px) { .why-g { grid-template-columns:1fr; } table.lt tbody th, table.lt td.law { width:auto; } }
+/* 2, 3 ou 5 cartes : pas de colonne vide à droite sur grand écran */
+@media (min-width:1001px) {
+  .why-g:has(> :nth-child(2):last-child) { grid-template-columns:repeat(2,1fr); max-width:760px; }
+  .why-g:has(> :nth-child(3):last-child), .why-g:has(> :nth-child(5):last-child) { grid-template-columns:repeat(3,1fr); max-width:900px; }
+}
 
 /* ─── pages métier (build_metier_pages.py) ─── */
 .spain-note { max-width:760px; margin:18px auto 0; background:var(--off); border:1.5px solid var(--border); border-radius:12px; padding:14px 18px; font-size:.93rem; color:#334155; line-height:1.6; }
@@ -1041,12 +1049,12 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
   <p class="p-note">Prices are set in euros, with no VAT added for UK clients. Pound amounts are approximate, at the rate of 25 September 2026 (€1 = £0.86), and change with the exchange rate. A .co.uk or .uk domain in your name is included for the first year.</p>
 </section>
 
-<section class="secs" id="trades">
+<section class="secs w" id="trades">
   <h2 style="margin-bottom:24px">Who it is for</h2>
   <div class="sg"><span class="stag">🦷 General dentistry</span><span class="stag">🏥 Mixed NHS and private care</span><span class="stag">✨ Private practices</span><span class="stag">😁 Orthodontic care</span><span class="stag">🧑‍⚕️ Group practices</span></div>
 </section>
 
-<section class="proof" id="reviews">
+<section class="proof alt" id="reviews">
   <h2>What our clients say</h2>
   <div class="tp">
     <div class="tp-head"><span class="tp-score">4.3</span><span class="tp-of">/ 5</span><span class="tp-count">Average rating from 8 verified Trustpilot reviews</span></div>
@@ -1057,43 +1065,43 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 </section>
 
 
-<section class="blk alt" id="website-content">
+<section class="blk" id="website-content">
   <p class="ey">Content</p>
   <h2 style="margin-bottom:36px">What to include on a dental practice website</h2>
   <p class="legal-intro">Patients choosing a dental practice want to find the same things quickly, however they land on your website: who treats them, what care is on offer, and how to get in touch. Good web design puts these first, instead of burying them under general information. We write this content for you in English, for you to check before it goes live.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🦷</div><h3>Your treatments, described plainly</h3><p>General dentistry, hygiene, cosmetic work or orthodontics: each treatment written in plain language, without a promise of results (see the rules above), so a new patient understands what it involves before they book.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🧑‍⚕️</div><h3>Your team and their GDC registration</h3><p>Every dental professional named on the page, introduced with the qualification, the country it comes from and the GDC number the rules above require, so patients know who is treating them and can look up their registration directly with the GDC.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">💷</div><h3>Fees a patient can read before they call</h3><p>Clear fees shown on your website, the way the rules above require, so patients don't have to phone or search elsewhere to find out what a visit or a course of treatment costs.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📞</div><h3>More than one way to get in touch</h3><p>A contact form, a phone number and a WhatsApp button, plus a link to the booking tool you already use if you have one, so patients who find your website can reach the practice however suits them best.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>Your location and when you're open</h3><p>Your address and opening times, so a patient can check when the practice is open before they call or make the trip.</p></div></div>
 </section>
 
-<section class="blk" id="good-design">
+<section class="blk alt" id="good-design">
   <p class="ey">Design</p>
   <h2 style="margin-bottom:36px">What good dental website design looks like</h2>
   <p class="legal-intro">Good dental website design isn't only about how the page looks or how well it performs for SEO; it's about whether a visitor finds the information they need and decides to get in touch.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🎨</div><h3>Clean, modern web design that loads fast</h3><p>Professional web design pairs a clean, modern look with plain headings and short content, built to load fast on mobile as well as on desktop, so visitors don't give up looking before they reach your contact details.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🧭</div><h3>An easy path from visitor to enquiry</h3><p>Every page leads somewhere: a clear button to your contact form, phone number or WhatsApp, so a visitor who's ready to book doesn't have to search for how.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div><h3>Design that builds trust</h3><p>Genuine Google reviews, shown with each reviewer's permission and without hiding the negative ones (see the rules above), your GDC registration and straightforward fees do more for trust than decoration. Good design gives these details room instead of hiding them below a slideshow.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🏷️</div><h3>Branding that matches the rest of your practice</h3><p>Your logo, colours and photos, carried through consistently, so your website matches your practice's wider online presence, from your Google Business Profile to social media.</p></div></div>
 </section>
 
-<section class="blk alt" id="local-search-help">
+<section class="blk" id="local-search-help">
   <p class="ey">Local search</p>
   <h2 style="margin-bottom:36px">How patients search for a local dental practice</h2>
   <p class="legal-intro">Getting found by someone searching for a local dentist depends on more than your website design. Search engines and patients read the same pages, so make sure the essentials are easy to find.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div><h3>Basic SEO, included in your website</h3><p>Page titles and copy built around your treatments and your local area, kept consistent with your Google Business Profile, come at no extra cost, helping your practice appear in relevant local search results.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div><h3>Local SEO and your Google listing, if you want more</h3><p>If you want to go further than the basic SEO included in your website, we also offer local SEO and help managing your Google Business Profile. Ask us for prices when you get your demo.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div><h3>Searches your website should answer</h3><p>Before they book, patients may search for things like:</p><ul><li>an emergency dentist near them</li><li>a practice accepting new patients</li><li>a dentist open on Saturdays or evenings</li><li>a well-reviewed dental practice nearby</li></ul><p>Many of these searches happen on mobile, so your website needs to read as well on a small screen as it does on a desktop.</p></div></div>
 </section>
 
-<section class="blk" id="technical-basics">
+<section class="blk alt" id="technical-basics">
   <p class="ey">Behind the scenes</p>
   <h2 style="margin-bottom:36px">What runs behind your website</h2>
   <p class="legal-intro">Alongside the pages your patients read online, a few technical basics come with every website we build.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🔒</div><h3>Hosting, SSL and daily backups</h3><p>Your website includes hosting, an SSL certificate, daily backups, 24/7 monitoring and technical maintenance, so the technical side isn't something you need to think about.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🔗</div><h3>Links to your social media</h3><p>We add links to your Facebook, Instagram or other social media profiles on your website, so patients can move easily between your website and your social media.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">✏️</div><h3>One change a month, included</h3><p>Once your website is live, you can ask for one change a month at no extra cost, such as updating your team, your fees or anything you'd like to improve. A full redesign or a large new section goes through a fixed quote agreed before any work starts.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div><h3>Your policies, ready to publish</h3><p>A privacy policy and cookie notice, adapted to UK law, are included with your website, and every word is written for you to check before it goes live.</p></div></div>
 </section>
 
-<section class="blk alt" id="website-mistakes">
+<section class="blk" id="website-mistakes">
   <p class="ey">What to avoid</p>
   <h2 style="margin-bottom:36px">Common mistakes on dental practice websites</h2>
   <p class="legal-intro">Some gaps show up again and again on dental websites, and they tend to cost new enquiries before anyone gets in touch.</p><div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul><li>A layout that is hard to read on mobile, so patients searching from their phone give up before they find your details</li><li>Fees left out, so a visitor has to search elsewhere before they know what a course of treatment costs</li><li>Stock photography and generic copy that could describe any dentist's website, not yours</li><li>No visible GDC registration, complaints procedure or last-updated date, even though the GDC's guidance expects them</li><li>A way to get in touch that is hard to spot, buried below several screens of content</li></ul></div><div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>What to do instead</h3><p>A simple, mobile-friendly layout, your own fees and treatments written in plain English, and the GDC details that patients and the regulator both expect. Together, they help a visitor who is just looking trust what they read and get in touch.</p></div>
 </section>
 
-<section class="blk" id="vs-general-website">
+<section class="blk alt" id="vs-general-website">
   <p class="ey">Compare</p>
   <h2 style="margin-bottom:36px">How dental website design is different from a general business website</h2>
   <p class="legal-intro">General website builders and templates are not written with the GDC's advertising guidance in mind. Here is what changes when your website design starts from those rules, not a generic template.</p><div class="cmp-g"><div class="cmp-c them"><h3>A general website builder</h3><ul><li>A generic template you adapt yourself, with no reference to GDC advertising guidance</li><li>You write and structure the content yourself, including the GDC numbers, fees and complaints procedure the rules require</li><li>SEO settings such as page titles and descriptions, left for you to fill in yourself</li><li>Support often starts with a help centre rather than a person who replies the same day</li></ul></div><div class="cmp-c us"><h3>Dental website design from WebAutonomos</h3><ul><li>Content and layout designed around what the GDC's guidance on advertising expects, from the first draft</li><li>Your treatments, fees and GDC numbers written for you in English, for you to check before anything goes live</li><li>Basic SEO and a design made for mobile, included at no extra cost</li><li>A direct reply the same day, by email or WhatsApp, whenever you have a question</li></ul></div></div><p class="cmp-more"><a href="https://webautonomos.es/en/services">See everything included in your website →</a></p>
 </section>
 
-<section class="blk alt" id="website-experience">
+<section class="blk" id="website-experience">
   <p class="ey">Experience</p>
   <h2 style="margin-bottom:36px">Why the experience on your website matters as much as the design</h2>
   <p class="legal-intro">Choosing a dentist often starts online, making the experience a visitor has on your website worth getting right from day one.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">⏱️</div><h3>Your fees and how to book, within seconds</h3><p>Good dental website design gets out of the way: a visitor should see your fees, your treatments and how to arrange an appointment within a few seconds, not after scrolling past everything else.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div><h3>The same experience on mobile as on desktop</h3><p>Many of your patients will look for you on their phone, so the mobile version of your website shows the same fees, the same GDC details and the same ways to get in touch as the desktop version.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🎯</div><h3>A demo built from your details, not a template</h3><p>Every project starts the same way: we build the demo from your own details, you review it, and we change anything that isn't right before it goes live, so you never start from a blank page.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div><h3>Part of a wider marketing strategy</h3><p>Your website is usually the first stop, but not the only one: local SEO and your Google Business Profile often come next. For a small practice, it makes sense to get these basics right before spending on anything else.</p></div></div><p class="legal-intro">If you would like more background on getting the basics right, our <a href="https://webautonomos.es/blog/#en">blog</a> has practical guides on local SEO and improving your Google Business Profile.</p>

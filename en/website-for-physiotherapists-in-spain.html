@@ -615,6 +615,9 @@
 .brief p { font-size:1.04rem; line-height:1.75; color:var(--text); }
 .blk { padding:80px 6%; background:var(--white); }
 .blk.alt { background:var(--off); }
+.secs.w { background:var(--white); }
+.proof.alt { background:var(--off); }
+.proof.alt .tp-card { background:var(--white); }
 .inc-g { max-width:980px; margin:0 auto; padding:0; list-style:none;
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
 .inc-g li { background:var(--white); border:1.5px solid var(--border); border-radius:12px;
@@ -704,6 +707,11 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 .why-g { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:1000px) { .why-g { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px) { .why-g { grid-template-columns:1fr; } table.lt tbody th, table.lt td.law { width:auto; } }
+/* 2, 3 ou 5 cartes : pas de colonne vide à droite sur grand écran */
+@media (min-width:1001px) {
+  .why-g:has(> :nth-child(2):last-child) { grid-template-columns:repeat(2,1fr); max-width:760px; }
+  .why-g:has(> :nth-child(3):last-child), .why-g:has(> :nth-child(5):last-child) { grid-template-columns:repeat(3,1fr); max-width:900px; }
+}
 
 /* ─── pages métier (build_metier_pages.py) ─── */
 .spain-note { max-width:760px; margin:18px auto 0; background:var(--off); border:1.5px solid var(--border); border-radius:12px; padding:14px 18px; font-size:.93rem; color:#334155; line-height:1.6; }
@@ -1032,12 +1040,12 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
   <a class="p-link" href="https://webautonomos.es/en/pricing">See full pricing details →</a>
 </section>
 
-<section class="secs" id="trades">
+<section class="secs w" id="trades">
   <h2 style="margin-bottom:24px">Who it is for</h2>
   <div class="sg"><span class="stag">💆 Physiotherapists</span><span class="stag">🏃 Sports physiotherapy</span><span class="stag">🦴 Musculoskeletal</span><span class="stag">🧓 Older adults</span><span class="stag">🤰 Women’s health</span><span class="stag">👶 Paediatrics</span><span class="stag">🏠 Home visits</span><span class="stag">🏥 Clinics</span></div>
 </section>
 
-<section class="proof" id="reviews">
+<section class="proof alt" id="reviews">
   <h2>What our clients say</h2>
   <div class="tp">
     <div class="tp-head"><span class="tp-score">4.3</span><span class="tp-of">/ 5</span><span class="tp-count">Average rating from 8 verified Trustpilot reviews</span></div>
@@ -1048,31 +1056,31 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 </section>
 
 
-<section class="blk alt" id="on-your-website">
+<section class="blk" id="on-your-website">
   <p class="ey">On your website</p>
   <h2 style="margin-bottom:36px">What patients look for on a physiotherapy website</h2>
   <p class="legal-intro">When someone searches for a physiotherapist, they check a handful of things before getting in touch: what you treat, whether they can trust you, and how to reach you. These are the parts of your website that answer those questions.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">📝</div><h3>Your treatments, in plain language</h3><p>Manual therapy, sports physiotherapy, rehabilitation after an injury or an operation: described so a new patient understands what kind of session to expect, without a promise of relief or cure.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div><h3>Your training and registration</h3><p>Your qualification and training, your years in practice, and your Colegio and colegiado number (see <a href="#rules">the rules above</a>), so a patient checking your credentials finds them straight away.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">✉️</div><h3>How to get in touch</h3><p>Your contact form asks only for what you need to reply, never for a patient&#8217;s medical history or the reason for the visit.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div><h3>A site that works on any screen</h3><p>Many patients look for a physiotherapist from their phone, so the design has to hold up there as well as on a desktop.</p></div></div>
 </section>
 
-<section class="blk" id="treatment-areas">
+<section class="blk alt" id="treatment-areas">
   <p class="ey">Areas of practice</p>
   <h2 style="margin-bottom:36px">Areas physiotherapists in Spain often cover</h2>
   <p class="legal-intro">Your website copy can set out the areas you work in — from sports and musculoskeletal therapy to paediatric and older-adult care — so a patient searching for a specific type of treatment recognises your practice.</p><div class="aud-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🏃</div><h3>Sports physiotherapy</h3><p>Treatment after a sports injury, from the first assessment to a graded return to training.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🦴</div><h3>Musculoskeletal and manual therapy</h3><p>Hands-on techniques for the neck, back and joints, alongside the exercises a patient does between sessions.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🧠</div><h3>Neurological physiotherapy</h3><p>Rehabilitation for patients living with a neurological condition, with a focus on movement and daily life.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🤰</div><h3>Women’s health and pelvic physiotherapy</h3><p>Pelvic floor treatment, including during pregnancy and after childbirth.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">👶</div><h3>Paediatric physiotherapy</h3><p>Treatment adapted to a child&#8217;s stage of development.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🧓</div><h3>Physiotherapy for older adults</h3><p>Treatment focused on mobility, balance and reducing the risk of falls.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🏠</div><h3>Home visits</h3><p>Stated plainly on your site, for patients who cannot travel to a clinic.</p></div></div>
 </section>
 
-<section class="blk alt" id="getting-found">
+<section class="blk" id="getting-found">
   <p class="ey">Local search</p>
   <h2 style="margin-bottom:36px">How your website helps patients find you</h2>
   <p class="legal-intro">Getting found by someone searching for a physiotherapist near them depends on more than the design: your copy and your Google Business Profile count too.</p><div class="aud-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div><h3>Basic SEO, included in your price</h3><p>Titles and copy written around your treatments and your area — searches like “physiotherapist in Alicante” or “sports physio Valencia” — kept consistent with your Google Business Profile, at no extra cost.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div><h3>SEO Local and your Google listing, if you want more</h3><p>We also offer SEO Local for €15 + VAT a month, and managing your Google Business Profile for €29 + VAT a month (€49 + VAT to set one up if you do not have a listing yet).</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📚</div><h3>Guides to go further</h3><p>Our blog has practical guides on <a href="https://webautonomos.es/blog/en/how-to-rank-your-website-in-local-google">ranking your website locally</a> and <a href="https://webautonomos.es/blog/en/optimise-your-google-business-profile">optimising your Google Business Profile</a>.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🔤</div><h3>“Physiotherapy” or “physical therapy”?</h3><p>British and Irish English say “physiotherapist”, American English “physical therapist”: we write your copy with the term your patients use.</p></div></div>
 </section>
 
-<section class="blk" id="common-gaps">
+<section class="blk alt" id="common-gaps">
   <p class="ey">What to avoid</p>
   <h2 style="margin-bottom:36px">Common gaps on physiotherapy websites</h2>
   <p class="legal-intro">These are the gaps that often make a physiotherapy website less effective, or leave it short of what Spanish rules require.</p><div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul><li>No Colegio or colegiado number, or a registration number missing from an authorised practice</li><li>A single vague page listing every treatment with no detail on what each one involves</li><li>No clear way to book or ask a question: a phone number buried in a footer, no WhatsApp link</li><li>Stock photos and generic text that could belong to any clinic, in any country</li></ul></div><div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>How we help you avoid them</h3><p>Your website sets out your Colegio and registration details in the right place, describes your treatments one by one, and comes with a contact form, a WhatsApp button and legal pages (legal notice, privacy policy and cookie policy). Whether you work alone or in a clinic team, patients can see what you offer, how to reach you and what to expect. You see your demo before you pay anything, ask for the changes you want, and if you decide not to go ahead, you pay nothing.</p></div>
 </section>
 
-<section class="blk alt" id="how-we-work">
+<section class="blk" id="how-we-work">
   <p class="ey">Working with us</p>
   <h2 style="margin-bottom:36px">What working with our team looks like</h2>
   <p class="legal-intro">Buying a website online can feel abstract, especially when English is your first language and legal Spanish is not. Here is how we work with you, before and after your site goes live.</p><div class="aud-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">📧</div><h3>No meeting required</h3><p>You send us the details by email or WhatsApp, in English, and we come back with questions if we need them.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🗓️</div><h3>A demo within 24 hours</h3><p>Your demo is ready within 24 hours. Before your site goes live, you ask for any changes you want, and we reply the same day.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🔐</div><h3>HTTPS and legal pages from day one</h3><p>Your site comes with an SSL certificate (HTTPS), daily backups and its legal pages: legal notice, privacy policy and cookie policy.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🔄</div><h3>Available if things change</h3><p>New treatments, a change of address, different opening hours: one change a month is included, in every language on your site, and you reach us by email or WhatsApp, with a reply the same day.</p></div></div>

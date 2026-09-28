@@ -98,6 +98,9 @@ cat, head, `python3 -c`…) est refusée : ne l'essaie pas, utilise Read et Grep
 - **Ajoute** de vraies sections utiles au lecteur (ce que doit contenir sa web,
   services par type de travail, SEO local, erreurs fréquentes, FAQ), dans le
   style CSS existant de la page. Structure en H2/H3, listes.
+  Sur les pages générées (accueils FR/EN, pages métier FR/EN, pages UK), le
+  fond blanc ou vert pâle de chaque section est recalculé par le générateur
+  (`alterner_fonds`, 29/09/2026) : ne choisis pas la classe `alt` à la main.
 - **Title** : commence par la requête (ou sa forme naturelle), 580 px max
   (~58 caractères). **H1** unique, contient la requête.
 - **Requêtes secondaires** (champ `requetes_secondaires` de l'entrée, s'il

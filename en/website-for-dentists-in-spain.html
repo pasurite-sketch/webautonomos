@@ -615,6 +615,9 @@
 .brief p { font-size:1.04rem; line-height:1.75; color:var(--text); }
 .blk { padding:80px 6%; background:var(--white); }
 .blk.alt { background:var(--off); }
+.secs.w { background:var(--white); }
+.proof.alt { background:var(--off); }
+.proof.alt .tp-card { background:var(--white); }
 .inc-g { max-width:980px; margin:0 auto; padding:0; list-style:none;
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
 .inc-g li { background:var(--white); border:1.5px solid var(--border); border-radius:12px;
@@ -704,6 +707,11 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 .why-g { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:1000px) { .why-g { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px) { .why-g { grid-template-columns:1fr; } table.lt tbody th, table.lt td.law { width:auto; } }
+/* 2, 3 ou 5 cartes : pas de colonne vide à droite sur grand écran */
+@media (min-width:1001px) {
+  .why-g:has(> :nth-child(2):last-child) { grid-template-columns:repeat(2,1fr); max-width:760px; }
+  .why-g:has(> :nth-child(3):last-child), .why-g:has(> :nth-child(5):last-child) { grid-template-columns:repeat(3,1fr); max-width:900px; }
+}
 
 /* ─── pages métier (build_metier_pages.py) ─── */
 .spain-note { max-width:760px; margin:18px auto 0; background:var(--off); border:1.5px solid var(--border); border-radius:12px; padding:14px 18px; font-size:.93rem; color:#334155; line-height:1.6; }
@@ -1008,12 +1016,12 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
   <a class="p-link" href="https://webautonomos.es/en/pricing">See full pricing details →</a>
 </section>
 
-<section class="secs" id="trades">
+<section class="secs w" id="trades">
   <h2 style="margin-bottom:24px">Who it is for</h2>
   <div class="sg"><span class="stag">🦷 General dentistry</span><span class="stag">😁 Orthodontics</span><span class="stag">🦷 Implant dentistry</span><span class="stag">👶 Children’s dentistry</span><span class="stag">🪥 Periodontics</span><span class="stag">✨ Cosmetic dentistry</span><span class="stag">🏥 Dental clinics</span><span class="stag">🧑‍⚕️ Group practices</span></div>
 </section>
 
-<section class="proof" id="reviews">
+<section class="proof alt" id="reviews">
   <h2>What our clients say</h2>
   <div class="tp">
     <div class="tp-head"><span class="tp-score">4.3</span><span class="tp-of">/ 5</span><span class="tp-count">Average rating from 8 verified Trustpilot reviews</span></div>
@@ -1024,19 +1032,19 @@ table.lt tr:last-child th, table.lt tr:last-child td { border-bottom:none; }
 </section>
 
 
-<section class="blk alt" id="website-content">
+<section class="blk" id="website-content">
   <p class="ey">Content</p>
   <h2 style="margin-bottom:36px">What to put on your dental clinic's site</h2>
   <p class="legal-intro">Patients choosing a dentist want to see quickly who treats them, which treatments the clinic offers and how to book an appointment.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🦷</div><h3>Your treatments, described plainly</h3><p>General dentistry, implants, orthodontics or oral care, described without a promise of results (see the rules above), so patients understand what each treatment involves.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🧑‍⚕️</div><h3>Your team and their qualifications</h3><p>Your clinical team, introduced with the qualifications they actually hold and the treatments each of them carries out, so patients know who will treat them. Registration details appear as set out in the rules above.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📅</div><h3>Your schedule and how to book</h3><p>Your opening hours and a clear way to request an appointment, through your contact form, WhatsApp or phone, so patients do not have to search for how to reach you.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🌍</div><h3>Care for international patients</h3><p>Say which languages your clinical team and front desk speak during appointments, not only which languages your pages are written in, so patients who have moved to Spain know they will be understood at the clinic.</p></div></div>
 </section>
 
-<section class="blk" id="local-search-help">
+<section class="blk alt" id="local-search-help">
   <p class="ey">Local search</p>
   <h2 style="margin-bottom:36px">How English-speaking patients find you online</h2>
   <p class="legal-intro">Getting found by someone searching for a dentist depends on more than the design of the site.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div><h3>Basic SEO, included in your price</h3><p>Titles and copy written around your treatments and your area, kept consistent with your Google Business Profile, are included at no extra cost.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div><h3>SEO Local and your Google listing, if you want more</h3><p>We also offer SEO Local for €15 + VAT a month, and managing your Google Business Profile for €29 + VAT a month (€49 + VAT to set one up if you do not have a listing yet).</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>Patients searching in English</h3><p>Expats who have just moved to Spain often search in their own language, typing “English-speaking dentist Marbella” or “dentist in Malaga who speaks English”. With copy in both languages, your site can answer these searches as well as the local ones.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📚</div><h3>Guides to go further</h3><p>Our blog has practical guides on <a href="https://webautonomos.es/blog/en/how-to-rank-your-website-in-local-google">ranking your website locally</a> and <a href="https://webautonomos.es/blog/en/optimise-your-google-business-profile">optimising your Google Business Profile</a>.</p></div></div>
 </section>
 
-<section class="blk alt" id="technical-basics">
+<section class="blk" id="technical-basics">
   <p class="ey">Behind the scenes</p>
   <h2 style="margin-bottom:36px">The technical side, handled for you</h2>
   <p class="legal-intro">Alongside the pages you and your patients see, a few technical basics come with every site we build.</p><div class="why-g"><div class="aud-c"><div class="aud-i" aria-hidden="true">🔒</div><h3>Hosting, SSL and daily backups</h3><p>Your site includes hosting, an SSL certificate, daily backups, 24/7 monitoring and technical maintenance, so you do not have to think about the technical side.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">🔗</div><h3>Links to your social profiles</h3><p>We add links to your Facebook, Instagram or other social profiles on your site, so patients can also see what you post there.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">✏️</div><h3>One change a month, included</h3><p>Once your site is live, you can ask for one change a month at no extra cost, such as updating your team or adding a new treatment. A full redesign or a large new section goes through a fixed quote agreed before any work starts.</p></div><div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div><h3>Legal pages included</h3><p>Your legal notice, privacy policy and cookie policy are included.</p></div></div>

@@ -459,6 +459,9 @@ EXTRA_CSS = """
 .brief p { font-size:1.04rem; line-height:1.75; color:var(--text); }
 .blk { padding:80px 6%; background:var(--white); }
 .blk.alt { background:var(--off); }
+.secs.w { background:var(--white); }
+.proof.alt { background:var(--off); }
+.proof.alt .tp-card { background:var(--white); }
 .inc-g { max-width:980px; margin:0 auto; padding:0; list-style:none;
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
 .inc-g li { background:var(--white); border:1.5px solid var(--border); border-radius:12px;
@@ -523,6 +526,49 @@ a.stag:hover { border-color:var(--green-mid); }
   .hero-acts { flex-direction:column; align-items:stretch; text-align:center; }
 }
 """
+
+
+# ─── alternance des fonds de section ────────────────────────────────────────
+# Entre le hero et le bandeau final, deux sections voisines ne doivent jamais
+# avoir le même fond, sinon elles se lisent comme un seul bloc. Les sections
+# facultatives (extras du rédacteur, blocs présents dans une langue seulement)
+# décalent l'alternance : la classe de fond est donc recalculée ici, une fois la
+# page assemblée, quel que soit le nombre de sections. Appelée par les quatre
+# générateurs (accueils, expatriés, métiers, UK).
+#   brief         fond « off », toujours (il ouvre la page sous le hero)
+#   blk / ss blk  blanc ; + alt  -> fond « off »
+#   secs          fond « off » ; + w -> blanc
+#   proof         blanc ; + alt  -> fond « off » (les cartes d'avis passent en blanc)
+# Toute autre section (hero, final, classe inconnue) est laissée telle quelle.
+_SECTION_RE = re.compile(r'<section class="([^"]*)"')
+
+
+def alterner_fonds(s):
+    """Recalcule la classe de fond des <section> de <main> pour que deux
+    sections voisines n'aient jamais le même fond. Idempotent."""
+    a, b = s.find('<main>'), s.find('</main>')
+    if a < 0 or b < a:
+        return s
+    prec = None  # fond de la section précédente : 'off', 'blanc' ou None
+
+    def fixe(m):
+        nonlocal prec
+        cls = m.group(1).split()
+        voulu = 'blanc' if prec == 'off' else 'off'
+        if 'brief' in cls:
+            prec = 'off'
+            return m.group(0)
+        if 'blk' in cls or 'proof' in cls:
+            cls = [c for c in cls if c != 'alt'] + (['alt'] if voulu == 'off' else [])
+        elif 'secs' in cls:
+            cls = [c for c in cls if c != 'w'] + (['w'] if voulu == 'blanc' else [])
+        else:
+            prec = None
+            return m.group(0)
+        prec = voulu
+        return '<section class="%s"' % ' '.join(cls)
+
+    return s[:a] + _SECTION_RE.sub(fixe, s[a:b]) + s[b:]
 
 CAROUSEL_JS = """(function(){
   var track=document.getElementById('tpTrack');
@@ -762,7 +808,7 @@ def page(lang):
     float_wa = re.sub(r'href="https://wa\.me/[^"]*"', 'href="%s"' % wa, src['float_wa'])
     legal_js = "event.preventDefault();document.getElementById('%s').style.display='flex'"
 
-    return f"""<!DOCTYPE html>
+    return alterner_fonds(f"""<!DOCTYPE html>
 <html lang="{c['html_lang']}">
 <head>
 <meta charset="utf-8">
@@ -926,7 +972,7 @@ def page(lang):
 </script>
 </body>
 </html>
-"""
+""")
 
 
 def controles(nom, s):
