@@ -125,6 +125,20 @@ def abandon(msg):
 
 
 # ═════════════════════════ THÉRAPEUTES ET PSYCHOLOGUES ═════════════════════
+# Lignes communes aux pages artisans FR (menuisier, plombier, électricien, artisan).
+ROW_MENTIONS = ("Mentions légales", "LCEN, art. 1-1 et 19 ; Code de commerce, art. R526-27",
+                "Nom précédé ou suivi de « EI » (ou « entrepreneur individuel ») si vous êtes entrepreneur "
+                "individuel, ou forme, capital et siège pour une société, adresse, téléphone, e-mail, numéro "
+                "d'immatriculation au RNE, numéro de TVA si vous en avez un, directeur de la publication, et nom, "
+                "adresse et téléphone de l'hébergeur.")
+FAQ_AVIS = ("Puis-je afficher mes avis Google sur mon site ?",
+            "Oui. Près des avis, indiquez s'ils font ou non l'objet d'un contrôle, la date de chaque avis et celle "
+            "de l'expérience du client, et la façon dont ils sont classés, l'ordre chronologique devant faire partie "
+            "des critères. Dans une rubrique facile d'accès, précisez s'il y a eu une contrepartie en échange des "
+            "avis, le délai maximal de publication et la durée de conservation d'un avis et, si vous les contrôlez, "
+            "comment (Code de la consommation, art. L111-7-2, D111-10 et D111-11). Publier de faux avis, ou les "
+            "modifier, est une pratique commerciale trompeuse.")
+
 THERA = {}
 THERA['fr'] = dict(
     html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
@@ -175,10 +189,11 @@ THERA['fr'] = dict(
          "Le motif de consultation est une donnée de santé : mieux vaut ne pas le demander dans le formulaire "
          "(principe de minimisation). Nom, coordonnées et créneau souhaité suffisent. Un outil de réservation qui "
          "stocke des données de santé doit passer par un hébergeur certifié HDS."),
-        ('Tous : mentions légales', 'LCEN, art. 1-1 et 19',
-         "Nom (suivi de « EI » si vous êtes entrepreneur individuel), adresse, téléphone, e-mail, numéro "
-         "d'immatriculation, nom du directeur de la publication, nom, adresse et téléphone de l'hébergeur et, pour "
-         "une profession réglementée, votre titre et l'organisme d'inscription."),
+        ('Tous : mentions légales', 'LCEN, art. 1-1 et 19 ; Code de commerce, art. R526-27',
+         "Nom précédé ou suivi de « EI » (ou « entrepreneur individuel ») si vous êtes entrepreneur individuel, "
+         "adresse, téléphone, e-mail, numéro d'immatriculation, nom du directeur de la publication, nom, adresse et "
+         "téléphone de l'hébergeur et, pour une profession réglementée, votre titre, le pays où il a été obtenu, "
+         "l'organisme d'inscription et les règles professionnelles applicables."),
     ],
     legal_note="Psychologue, vous pouvez faire de la publicité : l'assouplissement de 2020 concerne les professions "
                "de santé à ordre (médecins, dentistes, sages-femmes, infirmiers, kinés, pédicures-podologues), et "
@@ -631,14 +646,11 @@ MENU['fr'] = dict(
          "Pour le dépannage, la réparation et l'entretien, menuiserie comprise : taux horaire TTC, mode de décompte du "
          "temps, frais de déplacement et conditions du devis doivent être facilement accessibles en ligne, et un "
          "devis détaillé est remis avant toute intervention."),
-        ("Mentions légales", "LCEN, art. 1-1 et 19",
-         "Nom (suivi de « EI » si vous êtes entrepreneur individuel), adresse, téléphone, e-mail, numéro "
-         "d'immatriculation au RNE, numéro de TVA si vous en avez un, directeur de la publication, et nom, adresse et téléphone de "
-         "l'hébergeur."),
+        ROW_MENTIONS,
     ],
     legal_note="Nouveau au 1er octobre 2026 : l'encart France Rénov' devient obligatoire pour les sites qui proposent "
                "le remplacement de fenêtres ou l'isolation. Et si vous affichez des avis clients, "
-               "indiquez s'ils sont vérifiés et comment, avec leur date (Code de la consommation, art. L111-7-2). "
+               "indiquez s'ils sont contrôlés et comment, avec leur date (Code de la consommation, art. L111-7-2). "
                "Informations générales à jour en septembre 2026, qui ne remplacent pas un conseil juridique.",
     legal_we_t='Ce que nous mettons en place',
     legal_we=["Votre qualité d'artisan, votre numéro RNE et votre assurance (assureur, couverture) indiqués "
@@ -761,9 +773,7 @@ MENU['fr'] = dict(
           "Oui, si vous faites du dépannage, de la réparation ou de l'entretien : l'arrêté du 24 janvier 2017 couvre "
           "la menuiserie. Taux horaire TTC, mode de décompte du temps, frais de déplacement et conditions du devis "
           "doivent être facilement accessibles en ligne, et un devis détaillé est remis avant l'intervention."),
-         ("Puis-je afficher mes avis Google sur mon site ?",
-          "Oui, en indiquant s'ils sont vérifiés et comment, avec la date de chaque avis (Code de la consommation, "
-          "art. L111-7-2). Publier de faux avis, ou les modifier, est une pratique commerciale trompeuse."),
+         FAQ_AVIS,
          ("Le SEO Local est-il inclus dans le prix, ou puis-je l'acheter à part ?",
           "Le référencement de base est inclus : titres et textes construits autour de votre métier. Le SEO Local "
           "(quatre articles de blog par mois, mots-clés locaux, rapport mensuel) est un service séparé à 15 € HT "
@@ -1957,10 +1967,6 @@ ROW_MEDIATEUR = ("Médiateur de la consommation", "Code de la consommation, art.
                  "Si vous travaillez pour des particuliers, le nom, les coordonnées et l'adresse du site de votre "
                  "médiateur doivent apparaître de manière visible et lisible sur votre site. Amende jusqu'à 3 000 € "
                  "(15 000 € pour une société).")
-ROW_MENTIONS = ("Mentions légales", "LCEN, art. 1-1 et 19 ; Code de commerce, art. R526-27",
-                "Nom (précédé ou suivi de « EI » si vous êtes entrepreneur individuel), ou forme, capital et siège "
-                "pour une société, adresse, téléphone, e-mail, numéro d'immatriculation au RNE, numéro de TVA si vous "
-                "en avez un, directeur de la publication, et nom, adresse et téléphone de l'hébergeur.")
 ROW_ASSURANCE = ("Assurance", "Code des assurances, art. L241-1 et L243-2 ; Code de la consommation, art. R111-2",
                  "Si vous êtes soumis à la décennale, l'attestation se joint à chaque devis et chaque facture. Avant "
                  "tout contrat, le client doit aussi pouvoir connaître votre assurance, votre assureur et la "
@@ -1970,11 +1976,6 @@ FAQ_MEDIATEUR = ("Dois-je indiquer un médiateur de la consommation ?",
                  "nom, ses coordonnées et l'adresse de son site internet doivent figurer de manière visible et lisible "
                  "sur votre site, vos conditions générales et vos bons de commande. L'ancienne plateforme européenne "
                  "de règlement des litiges a fermé en juillet 2025 : inutile d'y renvoyer.")
-FAQ_AVIS = ("Puis-je afficher mes avis Google sur mon site ?",
-            "Oui, en indiquant près des avis s'il existe une procédure de contrôle et comment elle fonctionne, la date "
-            "de publication de chaque avis et celle de l'expérience du client, et comment les avis sont classés "
-            "(Code de la consommation, art. L111-7-2 et D111-10). Publier de faux avis, ou les modifier, est une pratique commerciale "
-            "trompeuse.")
 FAQ_SEO = ("Le SEO Local est-il inclus dans le prix, ou puis-je l'acheter à part ?",
            "Le référencement de base est inclus : titres et textes construits autour de votre métier et de votre "
            "zone. Le SEO Local (quatre articles de blog par mois, mots-clés locaux, rapport mensuel) est un service "
