@@ -182,5 +182,5 @@ qu[eé] dolor resuelve
 - [x] Blog : promesses fausses corrigées en ES/EN/FR/VAL (SEO local « inclus », modifications illimitées, intégrations, email pro) (25/09)
 - [x] /fr/tarifs : « Le prix affiché est le prix payé » remplacé par « Les prix affichés sont hors taxes » (25/09)
 - [x] Blog : ne pas ajouter « + IVA » ni modifier le bandeau d'appel à l'action ou le bloc auteur des articles (décision du 25/09)
-- [ ] Home : « el 46% de las búsquedas en Google tienen intención local » (FAQ, 4 langues) : chiffre repris d'une infographie non officielle, à retirer ?
-- [ ] Blog : ~40 statistiques « 70 % » sans source et 2 « cas réels » (Miguel, électricien à Elche ; Antonio, menuisier à Elda) : sont-ils de vrais clients ?
+- [x] Home : « el 46% de las búsquedas… » retiré de la FAQ dans les 4 langues (27/09)
+- [x] Blog : statistiques sans source et faux « cas réels » retirés (27/09, `_tools/nettoyage_blog_20260927.py`) ; catégories Google, prix d'agence, étude Northwestern, offres gratuites d'e-mailing et étoiles Schema corrigés (28/09, `_tools/nettoyage_blog_20260928.py`)

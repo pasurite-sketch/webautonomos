@@ -1,0 +1,201 @@
+{
+ "_lisez_moi": "Nettoyage du blog du 28/09/2026 (suite du 27/09) : affirmations vérifiées le 28/09 sur les sources officielles et corrigées dans les 4 langues. (1) « plus de 4 000 catégories » Google : aucun chiffre officiel publié par Google. (2) « une agence coûte 2 000 à 5 000 € » : sans source ; remplacé par la fourchette sourcée de VERITE.md §7 (Social Media Pymes, Espagne) ou, en français, par le pack S d'IONOS relevé le 23/09. (3) Étude Northwestern : reformulée d'après le rapport du Spiegel Research Center (2017, achats en ligne, pic entre 4,0 et 4,7). (4) Offres gratuites Brevo (300 e-mails/jour, 100 000 contacts), Mailchimp (250 contacts, 500 envois/mois) et MailerLite (250 abonnés, 2 500 e-mails/mois depuis le 16/06/2026). (5) Étoiles des avis via Schema LocalBusiness : Google les exclut pour les avis d'une entreprise sur elle-même (documentation « Review snippet », 08/09/2026).",
+ "ordre": [
+  "es",
+  "val",
+  "en",
+  "fr"
+ ],
+ "es": {
+  "remplacements": [
+   [
+    "Google tiene más de 4.000 categorías predefinidas,",
+    "Google ofrece miles de categorías predefinidas,"
+   ],
+   [
+    "(Google tiene más de 4.000 categorías)",
+    "(Google ofrece miles de categorías)"
+   ],
+   [
+    "Y muchos autónomos pagan 2.000-5.000 euros por una web que podrían tener por una fracción del coste.",
+    "Y muchos autónomos pagan precios de agencia por una web que podrían tener por una fracción del coste."
+   ],
+   [
+    "Una agencia especializada te cobraría entre 2.000 y 5.000 euros.",
+    "En España, una agencia cobra entre 1.500 y 4.000 euros por una web profesional, según Social Media Pymes (agosto de 2026)."
+   ],
+   [
+    "Brevo (antes Sendinblue) permite contactos ilimitados y hasta 300 emails al día gratis. Mailchimp ofrece hasta 500 contactos y 1.000 envíos al mes. MailerLite permite hasta 1.000 suscriptores y 12.000 emails al mes. Si prevés crecer, Brevo es la mejor opción por sus contactos ilimitados.",
+    "Brevo (antes Sendinblue) permite guardar hasta 100.000 contactos y enviar hasta 300 emails al día gratis. Mailchimp ofrece hasta 250 contactos y 500 envíos al mes. MailerLite permite hasta 250 suscriptores y 2.500 emails al mes (límites de septiembre de 2026). Si prevés crecer, Brevo es la mejor opción por su margen de contactos."
+   ],
+   [
+    "Su plan gratis permite enviar 300 emails al día con contactos ilimitados. Mailchimp también tiene un plan gratuito para hasta 500 contactos y 1.000 envíos al mes.",
+    "Su plan gratis permite enviar 300 emails al día y guardar hasta 100.000 contactos. Mailchimp también tiene un plan gratuito, para hasta 250 contactos y 500 envíos al mes."
+   ],
+   [
+    "Mailchimp (hasta 500 contactos gratis)",
+    "Mailchimp (hasta 250 contactos gratis)"
+   ],
+   [
+    "puede mostrar rich snippets con estrellas de valoración, horario, dirección y rango de precios.",
+    "puede mostrar resultados enriquecidos con tu horario, tu dirección o tu rango de precios (las estrellas de valoración, en cambio, no aparecen para las reseñas que una empresa marca sobre sí misma: la documentación de Google las excluye)."
+   ],
+   [
+    "con tu horario, ubicación, valoración y más.",
+    "con tu horario, tu ubicación y más, aunque no las estrellas de tus propias reseñas."
+   ],
+   [
+    "Su plan gratis permite enviar 300 emails al día con contactos ilimitados. Mailchimp tiene plan gratuito para hasta 500 contactos y 1.000 envíos al mes.",
+    "Su plan gratis permite enviar 300 emails al día y guardar hasta 100.000 contactos. Mailchimp tiene un plan gratuito, para hasta 250 contactos y 500 envíos al mes."
+   ]
+  ],
+  "gardes": "Offre WebAutonomos (15 €) inchangée ; « Brevo es la mejor opción » conservé (opinion, cohérente avec les limites vérifiées)."
+ },
+ "val": {
+  "remplacements": [
+   [
+    "Google té més de 4.000 categories predefinides,",
+    "Google ofereix milers de categories predefinides,"
+   ],
+   [
+    "(Google té més de 4.000 categories)",
+    "(Google ofereix milers de categories)"
+   ],
+   [
+    "I molts autònoms paguen 2.000-5.000 euros per una web que podrien tindre per una fracció del cost.",
+    "I molts autònoms paguen preus d'agència per una web que podrien tindre per una fracció del cost."
+   ],
+   [
+    "Una agència especialitzada et cobraria entre 2.000 i 5.000 euros.",
+    "A Espanya, una agència cobra entre 1.500 i 4.000 euros per una web professional, segons Social Media Pymes (agost de 2026)."
+   ],
+   [
+    "Brevo (abans Sendinblue) permet contactes il·limitats i fins a 300 emails al dia gratis. Mailchimp ofereix fins a 500 contactes i 1.000 enviaments al mes. MailerLite permet fins a 1.000 subscriptors i 12.000 emails al mes. Si preveus créixer, Brevo és la millor opció pels seus contactes il·limitats.",
+    "Brevo (abans Sendinblue) permet guardar fins a 100.000 contactes i enviar fins a 300 emails al dia gratis. Mailchimp ofereix fins a 250 contactes i 500 enviaments al mes. MailerLite permet fins a 250 subscriptors i 2.500 emails al mes (límits de setembre de 2026). Si preveus créixer, Brevo és la millor opció pel seu marge de contactes."
+   ],
+   [
+    "El seu plan gratis permet enviar 300 correus al dia amb contactes il·limitats. Mailchimp també té un plan gratuït per a fins a 500 contactes i 1.000 envís al mes.",
+    "El seu plan gratis permet enviar 300 correus al dia i guardar fins a 100.000 contactes. Mailchimp també té un plan gratuït, per a fins a 250 contactes i 500 enviaments al mes."
+   ],
+   [
+    "Mailchimp (fins a 500 contactes gratis)",
+    "Mailchimp (fins a 250 contactes gratis)"
+   ],
+   [
+    "Un estudi de Northwestern University va revelar que els consumidors confien més en negocis amb una puntuació de 4.2 a 4.5 estreles que en aquells amb un perfecte 5.0. Un 5.0 perfecte pareix fals.",
+    "Un estudi de 2017 de la Northwestern University (Spiegel Research Center) sobre compres en línia va trobar que la probabilitat de compra sol ser màxima amb puntuacions d'entre 4,0 i 4,7 estreles i baixa quan s'acosta al 5,0 perfecte. Un 5,0 perfecte pot semblar massa bo per a ser veritat."
+   ],
+   [
+    "pot mostrar rich snippets amb estreles de valoració, horari, direcció i rang de preus.",
+    "pot mostrar resultats enriquits amb el teu horari, la teua direcció o el teu rang de preus (les estreles de valoració, en canvi, no apareixen per a les ressenyes que una empresa marca sobre si mateixa: la documentació de Google les exclou)."
+   ],
+   [
+    "amb el teu horari, la ubicació, la valoració i més.",
+    "amb el teu horari, la ubicació i més, però no les estreles de les teues pròpies ressenyes."
+   ],
+   [
+    "El seu pla gratis permet enviar 300 emails al dia amb contactes il·limitats. Mailchimp té pla gratuït per a fins a 500 contactes i 1.000 enviaments al mes.",
+    "El seu pla gratis permet enviar 300 emails al dia i guardar fins a 100.000 contactes. Mailchimp té un pla gratuït, per a fins a 250 contactes i 500 enviaments al mes."
+   ]
+  ],
+  "gardes": ""
+ },
+ "en": {
+  "remplacements": [
+   [
+    "(Google has over 4,000 categories)",
+    "(Google offers thousands of categories)"
+   ],
+   [
+    "And many freelancers pay 2,000-5,000 euros for a website they could have for a fraction of the cost.",
+    "And many freelancers pay agency prices for a website they could have for a fraction of the cost."
+   ],
+   [
+    "A specialised agency would charge you between 2,000 and 5,000 euros.",
+    "In Spain, an agency charges between 1,500 and 4,000 euros for a professional website, according to Social Media Pymes (August 2026)."
+   ],
+   [
+    "Brevo (formerly Sendinblue) offers unlimited contacts and up to 300 emails per day for free. Mailchimp offers up to 500 contacts and 1,000 sends per month. MailerLite allows up to 1,000 subscribers and 12,000 emails per month. If you plan to grow, Brevo is the best option thanks to its unlimited contacts.",
+    "Brevo (formerly Sendinblue) lets you store up to 100,000 contacts and send up to 300 emails per day for free. Mailchimp offers up to 250 contacts and 500 sends per month. MailerLite allows up to 250 subscribers and 2,500 emails per month (limits as of September 2026). If you plan to grow, Brevo is the best option thanks to its room for contacts."
+   ],
+   [
+    "Its free plan allows 300 emails a day with unlimited contacts. Mailchimp also has a free plan for up to 500 contacts and 1,000 sends a month.",
+    "Its free plan allows 300 emails a day and up to 100,000 stored contacts. Mailchimp also has a free plan, for up to 250 contacts and 500 sends a month."
+   ],
+   [
+    "Mailchimp (up to 500 contacts free)",
+    "Mailchimp (up to 250 contacts free)"
+   ],
+   [
+    "A Northwestern University study found that consumers trust businesses rated 4.2 to 4.5 stars more than those with a perfect 5.0. A perfect score looks fake.",
+    "A 2017 Northwestern University study (Spiegel Research Center) of online shopping found that purchase likelihood usually peaks at ratings between 4.0 and 4.7 stars and falls as ratings approach a perfect 5.0. A perfect score can look too good to be true."
+   ],
+   [
+    "it can display rich snippets with star ratings, opening hours, address and price range.",
+    "it can display rich results with your opening hours, address or price range (review stars, however, are not shown for a business's reviews of itself: Google's documentation excludes them)."
+   ],
+   [
+    "rich snippets with your opening hours, location, rating and more.",
+    "rich snippets with your opening hours, location and more, though not the stars from your own reviews."
+   ],
+   [
+    "Its free plan allows 300 emails per day with unlimited contacts. Mailchimp also has a free plan for up to 500 contacts and 1,000 sends per month.",
+    "Its free plan allows 300 emails per day and up to 100,000 stored contacts. Mailchimp also has a free plan, for up to 250 contacts and 500 sends per month."
+   ]
+  ],
+  "gardes": ""
+ },
+ "fr": {
+  "remplacements": [
+   [
+    "Sa formule gratuite permet d'envoyer 300 e-mails par jour avec un nombre illimité de contacts. Mailchimp propose aussi une formule gratuite jusqu'à 500 contacts et 1 000 envois par mois.",
+    "Sa formule gratuite permet d'envoyer 300 e-mails par jour et de garder jusqu'à 100 000 contacts. Mailchimp propose aussi une formule gratuite, jusqu'à 250 contacts et 500 envois par mois."
+   ],
+   [
+    "Google compte plus de <strong>4 000 catégories</strong> prédéfinies.",
+    "Google propose <strong>plusieurs milliers de catégories</strong> prédéfinies."
+   ],
+   [
+    "Google propose plus de 4 000 catégories,",
+    "Google propose plusieurs milliers de catégories,"
+   ],
+   [
+    "Une agence spécialisée vous facturerait entre 2 000 et 5 000 euros.",
+    "À titre de comparaison, le pack S d'IONOS coûte 199 € puis 45 € HT par mois, soit 1 279 € HT sur deux ans (tarifs relevés en septembre 2026)."
+   ],
+   [
+    "un nombre illimité de contacts et jusqu'à 300 e-mails par jour",
+    "jusqu'à 100 000 contacts et 300 e-mails par jour"
+   ],
+   [
+    "jusqu'à 500 contacts et 1 000 envois par mois",
+    "jusqu'à 250 contacts et 500 envois par mois"
+   ],
+   [
+    "jusqu'à 1 000 abonnés et 12 000 e-mails par mois",
+    "jusqu'à 250 abonnés et 2 500 e-mails par mois (limites en vigueur depuis juin 2026)"
+   ],
+   [
+    "si vous démarrez avec moins de 500 contacts, les trois font l'affaire.",
+    "si vous démarrez avec moins de 250 contacts, les trois font l'affaire."
+   ],
+   [
+    "Brevo est le meilleur choix grâce à ses contacts illimités.",
+    "Brevo est le meilleur choix grâce à sa marge de contacts."
+   ],
+   [
+    "proposent des formules gratuites permettant d'envoyer jusqu'à 300 e-mails par jour.",
+    "proposent des formules gratuites : Brevo permet par exemple d'envoyer jusqu'à 300 e-mails par jour."
+   ],
+   [
+    "votre entreprise peut apparaître avec des étoiles de notation, des horaires, une adresse et même une fourchette de prix.",
+    "votre entreprise peut apparaître avec ses horaires, son adresse et même une fourchette de prix (les étoiles de notation, en revanche, ne s'affichent pas pour les avis qu'une entreprise publie sur elle-même : la documentation de Google les exclut)."
+   ],
+   [
+    "un résultat balisé peut afficher « 4,8 étoiles - 47 avis - Ouvert jusqu'à 19 h - Lyon centre ».",
+    "un résultat balisé peut préciser « Ouvert jusqu'à 19 h - Lyon centre », tandis que les étoiles viennent de votre fiche Google."
+   ]
+  ],
+  "gardes": ""
+ }
+}
