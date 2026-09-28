@@ -38,6 +38,7 @@ E = lambda s: html.escape(s, quote=True)
 URLS = {
     'fr': dict(home='/fr/', demo='/demandez-votre-demo', tarifs='/fr/tarifs',
                prestations='/fr/prestations', questions='/fr/questions', blog='/blog/#fr',
+               how='/fr/comment-ca-marche', contact='/fr/contact',
                diag='/fr/diagnostic-automatisation/',
                vis='/fr/visibilite-ia/',
                cmp='/fr/meilleurs-createurs-de-sites-pour-independants'),
@@ -96,7 +97,7 @@ C['fr'] = dict(
   html_lang='fr', og_locale='fr_FR',
   title="Site internet pas cher pour indépendants et artisans",
   description="Un site internet pas cher, prêt en 24 h avant paiement : 15 €/mois HT, sans frais d'installation ni engagement. Indépendants en France et en Espagne.",
-  nav=[('prestations', 'Prestations'), ('tarifs', 'Tarifs'), ('questions', 'Questions'), ('blog', 'Blog')],
+  nav=[('prestations', 'Prestations'), ('tarifs', 'Tarifs'), ('how', 'Comment ça marche'), ('questions', 'Questions'), ('blog', 'Blog')],
   nav_cta='Démo gratuite', lang_label='Langue',
   badge='Indépendants et artisans · France et Espagne',
   h1='Un site internet pas cher pour indépendants et artisans, <span class="ul">à 15 €/mois tout compris</span>',
@@ -439,6 +440,8 @@ EXTRA_CSS = """
 .nav-links { display:flex; gap:20px; }
 .nav-links a { font-size:0.92rem; font-weight:500; color:#374151; text-decoration:none; transition:color .2s; }
 .nav-links a:hover { color:var(--blue); }
+.nav-links a { white-space:nowrap; }
+@media (max-width:1100px) { .nav-r { gap:14px; } .nav-links { gap:12px; } }
 .lang { display:flex; gap:2px; }
 .lang a { font-size:0.78rem; font-weight:700; color:#64748b; text-decoration:none; padding:5px 7px; border-radius:7px; }
 .lang a:hover { color:var(--text); }

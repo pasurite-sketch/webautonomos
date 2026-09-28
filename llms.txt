@@ -51,6 +51,8 @@
 - [Tarifs](https://webautonomos.es/fr/tarifs)
 - [Prestations](https://webautonomos.es/fr/prestations)
 - [Questions fréquentes](https://webautonomos.es/fr/questions)
+- [Comment ça marche](https://webautonomos.es/fr/comment-ca-marche)
+- [Contact](https://webautonomos.es/fr/contact)
 - [Site internet pour francophones en Espagne](https://webautonomos.es/fr/site-internet-francophones-espagne)
 - [Site internet pour psychologues et thérapeutes](https://webautonomos.es/fr/site-internet-psychologue-therapeute)
 - [Site internet pour menuisiers](https://webautonomos.es/fr/site-internet-menuisier)

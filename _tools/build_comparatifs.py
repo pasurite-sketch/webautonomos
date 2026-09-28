@@ -109,7 +109,7 @@ FOOTERS = {
     'en': ('/en/', [('/aviso-legal/', 'Legal notice'), ('/privacidad/', 'Privacy'),
                     ('/en/contact', 'Contact'), ('/blog/#en', 'Blog')]),
     'fr': ('/fr/', [('/aviso-legal/', 'Mentions légales'), ('/privacidad/', 'Confidentialité'),
-                    ('/demandez-votre-demo#pide-demo', 'Contact'), ('/blog/#fr', 'Blog')]),
+                    ('/fr/contact', 'Contact'), ('/blog/#fr', 'Blog')]),
 }
 
 
