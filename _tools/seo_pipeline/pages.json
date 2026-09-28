@@ -149,7 +149,7 @@
       "objectif_geo": "au_mieux",
       "statut": "fait",
       "priorite": 1,
-      "notes": "SANTÉ. ~160 imp., pos. 42-48. Sous-domaine psicologos.webautonomos.es (démo) aussi indexé. Règles RD 1907/1996. Publiée le 25/09/2026 (PR #12) : score Google 15 → 68, GEO 10 → 33."
+      "notes": "SANTÉ. ~160 imp., pos. 42-48. Sous-domaine psicologos.webautonomos.es (démo) aussi indexé. Règles RD 1907/1996. Publiée le 25/09/2026 (PR #12) : score Google 15 → 68, GEO 10 → 33. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, relue : ne pas la modifier ni la déplacer. Sans ligne sur les testimonios de pacientes, par décision d'Angelino du 28/09 (les avis Google restent affichés) : ne pas l'ajouter."
     },
     {
       "slug": "es-dentistas",
@@ -166,7 +166,7 @@
       ],
       "statut": "fait",
       "priorite": 1,
-      "notes": "SANTÉ. Publiée le 25/09/2026 (PR #5) : score Google 13 → 39, GEO 9 → 19."
+      "notes": "SANTÉ. Publiée le 25/09/2026 (PR #5) : score Google 13 → 39, GEO 9 → 19. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, relue : ne pas la modifier ni la déplacer. Sans ligne sur les testimonios de pacientes, par décision d'Angelino du 28/09 (les avis Google restent affichés) : ne pas l'ajouter."
     },
     {
       "slug": "es-fisioterapeutas",
@@ -180,7 +180,7 @@
       "objectif_geo": "au_mieux",
       "statut": "fait",
       "priorite": 1,
-      "notes": "SANTÉ. Publiée le 25/09/2026 (PR #8) : score Google 42 → 77, GEO 21 → 51."
+      "notes": "SANTÉ. Publiée le 25/09/2026 (PR #8) : score Google 42 → 77, GEO 21 → 51. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, relue : ne pas la modifier ni la déplacer. Sans ligne sur les testimonios de pacientes, par décision d'Angelino du 28/09 (les avis Google restent affichés) : ne pas l'ajouter."
     },
     {
       "slug": "es-servicios",

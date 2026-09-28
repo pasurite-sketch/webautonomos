@@ -698,6 +698,37 @@
 .content-inner ul li{font-size:0.95rem;line-height:1.6;color:var(--text);padding:5px 0 5px 24px;position:relative}
 .content-inner ul li::before{content:'✓';position:absolute;left:0;color:var(--green-mid);font-weight:700}
 .content-inner a{color:var(--green-mid);font-weight:600;text-decoration:underline}
+
+  /* NORMATIVA (patch_normativa_es_20260928.py) */
+  .nrm{padding:64px 6%;}
+  .nrm.nrm-off{background:var(--off);}
+  .nrm.nrm-line{border-top:1px solid var(--border);}
+  .nrm-in{max-width:980px;margin:0 auto;}
+  .nrm-ey{text-align:center;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green-mid);margin-bottom:10px;}
+  .nrm h2{text-align:center;}
+  .nrm-lead{font-size:1.02rem;line-height:1.7;color:#334155;max-width:720px;margin:14px auto 30px;text-align:center;}
+  .nrm-w{overflow-x:auto;border:1.5px solid var(--border);border-radius:16px;background:var(--white);}
+  table.nrm-t{width:100%;border-collapse:collapse;font-size:.92rem;line-height:1.55;color:#334155;}
+  table.nrm-t th,table.nrm-t td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);}
+  table.nrm-t thead th{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-dark);background:var(--off);}
+  table.nrm-t tbody th{font-weight:700;color:var(--blue-dark);width:22%;}
+  table.nrm-t td.ley{color:#64748b;font-size:.84rem;width:24%;}
+  table.nrm-t tr:last-child th,table.nrm-t tr:last-child td{border-bottom:none;}
+  .nrm-note{max-width:760px;margin:20px auto 0;background:#fffbeb;border:1.5px solid #fcd34d;border-radius:12px;padding:14px 18px;font-size:.9rem;line-height:1.6;color:#78350f;}
+  .nrm-we{max-width:760px;margin:26px auto 0;}
+  .nrm-we h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.1rem;color:var(--blue-dark);margin-bottom:10px;text-align:center;}
+  .nrm-we ul{list-style:none;margin:0;padding:0;}
+  .nrm-we li{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:10px 14px 10px 36px;margin-bottom:8px;position:relative;font-size:.93rem;line-height:1.5;color:#334155;}
+  .nrm-we li::before{content:'✓';position:absolute;left:14px;top:10px;color:var(--green-mid);font-weight:700;}
+  .nrm-src{max-width:760px;margin:18px auto 0;font-size:.8rem;line-height:1.6;color:#64748b;}
+  .nrm-src a{color:#64748b;}
+  @media (max-width:640px){
+    table.nrm-t thead{display:none;}
+    table.nrm-t tr{display:block;padding:14px 16px;border-bottom:1px solid var(--border);}
+    table.nrm-t tr:last-child{border-bottom:none;}
+    table.nrm-t tbody th,table.nrm-t td{display:block;padding:0;border:none;width:auto;}
+    table.nrm-t td.ley{margin:4px 0 8px;font-size:.8rem;width:auto;}
+  }
 </style>
 <!-- Canonical -->
 <link rel="canonical" href="https://webautonomos.es/psicologos/">
@@ -1149,6 +1180,22 @@
     <h3>Ir más allá: SEO Local y ficha de Google</h3>
     <p>Si quieres reforzar tu posicionamiento, ofrecemos SEO Local por 15 €/mes + IVA y la gestión de tu ficha de Google por 29 €/mes + IVA (49 € + IVA de creación si todavía no tienes ficha).</p>
     <p>Puedes leer qué es <a href="https://webautonomos.es/blog/es/seo-local-que-es-autonomos">el SEO local y por qué importa</a> y cómo <a href="https://webautonomos.es/blog/es/como-aparecer-google-maps-autonomos">aparecer en Google Maps paso a paso</a>.</p>
+  </div>
+</section>
+
+<!-- NORMATIVA (patch_normativa_es_20260928.py) : règles vérifiées, à garder telles quelles -->
+<section class="nrm nrm-off" id="normativa">
+  <div class="nrm-in">
+    <p class="nrm-ey">Normativa</p>
+    <h2>Lo que tu consulta y tu web deben cumplir</h2>
+    <p class="nrm-lead">En España, lo que puedes decir en tu web depende de tu título: un psicólogo general sanitario es un profesional sanitario regulado, mientras que un terapeuta o un coach no lo es y no puede presentar su trabajo como atención sanitaria. Esto es lo esencial.</p>
+    <div class="nrm-w"><table class="nrm-t">
+      <thead><tr><th scope="col">Tema</th><th scope="col">Norma</th><th scope="col">Qué significa para ti</th></tr></thead>
+      <tbody><tr><th scope="row">Psicólogo</th><td class="ley">Ley 43/1979, art. 2; LSSI (Ley 34/2002), art. 10</td><td>La colegiación en un colegio oficial de psicólogos es obligatoria para ejercer. Tu web debe mostrar tu colegio y tu número de colegiado, tu titulación oficial, el país que la expidió y, en su caso, su reconocimiento en España, además de las normas profesionales que se te aplican (como el código deontológico de tu colegio) y dónde consultarlas.</td></tr><tr><th scope="row">Psicólogo general sanitario</th><td class="ley">Ley 33/2011, disp. adicional 7.ª; RD 1277/2003, art. 6.2</td><td>La actividad sanitaria exige el Máster en Psicología General Sanitaria (o el título de especialista en Psicología Clínica) y un centro autorizado por la consejería de sanidad de tu comunidad. Toda publicidad que sugiera una actividad sanitaria, tu web incluida, debe mostrar el número de registro que la comunidad asigna a tu centro.</td></tr><tr><th scope="row">Título extranjero</th><td class="ley">RD 581/2017; RD 889/2022; Código Penal, art. 403</td><td>Un título de la UE lo reconoce el Ministerio de Sanidad; uno de fuera de la UE, incluido el del Reino Unido a partir de 2021, debe homologarse al Máster en Psicología General Sanitaria ante el Ministerio de Ciencia, Innovación y Universidades (un grado por sí solo no puede homologarse). Ejercer como psicólogo sin un título reconocido en España es delito, y atribuirte públicamente esa condición lo agrava.</td></tr><tr><th scope="row">Terapeutas, coaches e hipnoterapeutas</th><td class="ley">RD 1907/1996, arts. 4 y 5.3; RD 1277/2003, art. 6.2</td><td>Estos títulos no están regulados, pero tu web no puede presentar tu trabajo como atención sanitaria: sin promesas de alivio o curación y sin afirmar que tratas una enfermedad. Estas prohibiciones se aplican a cualquiera que presente su trabajo como relacionado con la salud.</td></tr><tr><th scope="row">Formularios de contacto</th><td class="ley">RGPD, arts. 5 y 9; LOPDGDD, art. 34</td><td>El motivo por el que alguien quiere verte es un dato de salud: tu formulario debería pedir solo el nombre, los datos de contacto y el horario preferido. Si ejerces a título individual, no necesitas delegado de protección de datos.</td></tr><tr><th scope="row">Aviso legal</th><td class="ley">LSSI (Ley 34/2002), art. 10</td><td>Tu nombre o denominación social, tu dirección, tu correo electrónico y otro dato de contacto directo (normalmente, el teléfono), tu NIF y, si muestras precios, si incluyen o no los impuestos aplicables.</td></tr></tbody>
+    </table></div>
+    <p class="nrm-note">Algunas comunidades, como la Región de Murcia, exigen además autorización previa de la publicidad sanitaria, webs incluidas. Información general a septiembre de 2026, que no sustituye al asesoramiento jurídico: consulta a tu colegio y a la consejería de sanidad de tu comunidad. Tú nos das los datos de tu consulta y validas cada texto antes de publicarlo.</p>
+    <div class="nrm-we"><h3>Lo que preparamos en tu web</h3><ul><li>Tu colegio, tu número de colegiado, tu titulación y un enlace a tu código deontológico, además del número de registro de tu centro y los datos de la autorización sanitaria cuando correspondan</li><li>Textos sin promesas de salud ni títulos que no tengas</li><li>Un formulario de contacto sin campo de «motivo de consulta», con una nota que pide no compartir datos de salud</li><li>Un enlace a tu herramienta de reservas, WhatsApp o teléfono, en lugar de recoger datos en la web</li><li>Aviso legal, política de privacidad y de cookies con tus datos</li></ul></div>
+    <p class="nrm-src">Fuentes: <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1980-405" rel="noopener" target="_blank">Ley 43/1979 de colegios de psicólogos (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2011-15623" rel="noopener" target="_blank">Ley 33/2011, disp. adicional 7.ª (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2003-19572" rel="noopener" target="_blank">RD 1277/2003 de centros sanitarios (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1996-18085" rel="noopener" target="_blank">RD 1907/1996 de publicidad sanitaria (BOE)</a> · <a href="https://www.aepd.es/guias/guia-profesionales-sector-sanitario.pdf" rel="noopener" target="_blank">Guía para profesionales del sector sanitario (AEPD)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758" rel="noopener" target="_blank">LSSI, art. 10 (BOE)</a></p>
   </div>
 </section>
 

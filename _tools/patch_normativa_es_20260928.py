@@ -12,9 +12,11 @@ vérifiés sur les sources officielles le 24/09 (menuisiers) et le 28/09/2026
 La section est placée juste avant la FAQ. Le circuit SEO doit la garder telle
 quelle (REGLES_REDACTEUR.md §2, notes de pages.json).
 
-Pages santé (/psicologos/, /dentistas/, /fisioterapeutas/) non traitées : leur
-tableau devrait parler des testimonios de pacientes (RD 1907/1996), sujet réservé
-à Angelino (décision du 25/09 sur les avis Google).
+Pages santé (/psicologos/, /dentistas/, /fisioterapeutas/) ajoutées le même jour sur
+décision d'Angelino (28/09/2026) : on garde les avis Google des patients affichés sur
+ces pages (décision du 25/09) et le tableau ne contient pas de ligne sur les
+testimonios de pacientes (RD 1907/1996, art. 4.7). Contenu traduit des pages « in
+Spain » des mêmes métiers, vérifiées le 24/09/2026 puis relues.
 
     python3 _tools/patch_normativa_es_20260928.py            # essai
     python3 _tools/patch_normativa_es_20260928.py --apply    # écrit
@@ -281,6 +283,167 @@ PAGINAS = {
     ),
 }
 
+AVISO_SANITARIO = ('Aviso legal', 'LSSI (Ley 34/2002), art. 10',
+                   'Tu nombre o denominación social, tu dirección, tu correo electrónico y otro dato de contacto '
+                   'directo (normalmente, el teléfono), tu NIF y, si muestras precios, si incluyen o no los impuestos '
+                   'aplicables.')
+NOTA_SANITARIA = ('Algunas comunidades, como la Región de Murcia, exigen además autorización previa de la publicidad '
+                  'sanitaria, webs incluidas. Información general a septiembre de 2026, que no sustituye al '
+                  'asesoramiento jurídico: consulta a tu colegio y a la consejería de sanidad de tu comunidad. Tú nos '
+                  'das los datos de tu consulta y validas cada texto antes de publicarlo.')
+PAGINAS_SANIDAD = {
+    'psicologos': dict(
+        titulo='Lo que tu consulta y tu web deben cumplir',
+        lead='En España, lo que puedes decir en tu web depende de tu título: un psicólogo general sanitario es un '
+             'profesional sanitario regulado, mientras que un terapeuta o un coach no lo es y no puede presentar su '
+             'trabajo como atención sanitaria. Esto es lo esencial.',
+        filas=[
+            ('Psicólogo', 'Ley 43/1979, art. 2; LSSI (Ley 34/2002), art. 10',
+             'La colegiación en un colegio oficial de psicólogos es obligatoria para ejercer. Tu web debe mostrar tu '
+             'colegio y tu número de colegiado, tu titulación oficial, el país que la expidió y, en su caso, su '
+             'reconocimiento en España, además de las normas profesionales que se te aplican (como el código '
+             'deontológico de tu colegio) y dónde consultarlas.'),
+            ('Psicólogo general sanitario', 'Ley 33/2011, disp. adicional 7.ª; RD 1277/2003, art. 6.2',
+             'La actividad sanitaria exige el Máster en Psicología General Sanitaria (o el título de especialista en '
+             'Psicología Clínica) y un centro autorizado por la consejería de sanidad de tu comunidad. Toda publicidad '
+             'que sugiera una actividad sanitaria, tu web incluida, debe mostrar el número de registro que la '
+             'comunidad asigna a tu centro.'),
+            ('Título extranjero', 'RD 581/2017; RD 889/2022; Código Penal, art. 403',
+             'Un título de la UE lo reconoce el Ministerio de Sanidad; uno de fuera de la UE, incluido el del Reino '
+             'Unido a partir de 2021, debe homologarse al Máster en Psicología General Sanitaria ante el Ministerio de '
+             'Ciencia, Innovación y Universidades (un grado por sí solo no puede homologarse). Ejercer como psicólogo '
+             'sin un título reconocido en España es delito, y atribuirte públicamente esa condición lo agrava.'),
+            ('Terapeutas, coaches e hipnoterapeutas', 'RD 1907/1996, arts. 4 y 5.3; RD 1277/2003, art. 6.2',
+             'Estos títulos no están regulados, pero tu web no puede presentar tu trabajo como atención sanitaria: '
+             'sin promesas de alivio o curación y sin afirmar que tratas una enfermedad. Estas prohibiciones se '
+             'aplican a cualquiera que presente su trabajo como relacionado con la salud.'),
+            ('Formularios de contacto', 'RGPD, arts. 5 y 9; LOPDGDD, art. 34',
+             'El motivo por el que alguien quiere verte es un dato de salud: tu formulario debería pedir solo el '
+             'nombre, los datos de contacto y el horario preferido. Si ejerces a título individual, no necesitas '
+             'delegado de protección de datos.'),
+            AVISO_SANITARIO,
+        ],
+        nota=NOTA_SANITARIA,
+        we=['Tu colegio, tu número de colegiado, tu titulación y un enlace a tu código deontológico, además del '
+            'número de registro de tu centro y los datos de la autorización sanitaria cuando correspondan',
+            'Textos sin promesas de salud ni títulos que no tengas',
+            'Un formulario de contacto sin campo de «motivo de consulta», con una nota que pide no compartir datos de '
+            'salud',
+            'Un enlace a tu herramienta de reservas, WhatsApp o teléfono, en lugar de recoger datos en la web',
+            'Aviso legal, política de privacidad y de cookies con tus datos'],
+        fuentes=[('Ley 43/1979 de colegios de psicólogos (BOE)', 'https://www.boe.es/buscar/act.php?id=BOE-A-1980-405'),
+                 ('Ley 33/2011, disp. adicional 7.ª (BOE)', 'https://www.boe.es/buscar/act.php?id=BOE-A-2011-15623'),
+                 ('RD 1277/2003 de centros sanitarios (BOE)', 'https://www.boe.es/buscar/act.php?id=BOE-A-2003-19572'),
+                 ('RD 1907/1996 de publicidad sanitaria (BOE)', 'https://www.boe.es/buscar/act.php?id=BOE-A-1996-18085'),
+                 ('Guía para profesionales del sector sanitario (AEPD)',
+                  'https://www.aepd.es/guias/guia-profesionales-sector-sanitario.pdf'),
+                 ('LSSI, art. 10 (BOE)', 'https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758')],
+    ),
+    'fisioterapeutas': dict(
+        titulo='Lo que tu consulta de fisioterapia y tu web deben cumplir',
+        lead='La fisioterapia es una profesión sanitaria regulada en España, y eso marca lo que tu web debe mostrar '
+             'y lo que puede decir. Esto es lo esencial.',
+        filas=[
+            ('Colegio y aviso legal', 'Ley 2/1974, art. 3; LSSI (Ley 34/2002), art. 10',
+             'La colegiación en un colegio de fisioterapeutas es obligatoria para ejercer. Tu web debe mostrar tu '
+             'colegio y tu número de colegiado, tu titulación, el país que la expidió y su reconocimiento en España '
+             'si lo hay, las normas profesionales que se te aplican y tu NIF o NIE.'),
+            ('Autorización del centro', 'RD 1277/2003, arts. 3 y 6.2',
+             'Una consulta de fisioterapia (normalmente de tipo C.2.2, con la unidad de fisioterapia U.59) necesita '
+             'autorización previa de la consejería de sanidad de tu comunidad. Toda publicidad que sugiera asistencia '
+             'sanitaria, tu web incluida, debe mostrar el número de registro que te asigna la consejería. La '
+             'Comunidad de Madrid exige también autorización para la fisioterapia exclusivamente a domicilio.'),
+            ('Publicidad sanitaria', 'Ley 44/2003, art. 44; RD 1907/1996, art. 4',
+             'La publicidad debe ser objetiva, prudente y veraz: sin garantías de alivio o curación y sin '
+             'afirmaciones que no tengan respaldo científico.'),
+            ('Código deontológico', 'Código Deontológico del Consejo General de Colegios de Fisioterapeutas, arts. 76 a 81',
+             'Preséntate solo como «Fisioterapeuta»: añadir otra denominación, como «y osteópata», va contra el '
+             'código. Muestra tu nombre, tu número de colegiado y tu colegio en tu publicidad, y no captes clientes '
+             'con publicidad basada en el precio.'),
+            ('Títulos extranjeros', 'RD 581/2017; RD 889/2022; RDL 38/2020, art. 4; Código Penal, art. 403',
+             'Un título de la UE lo reconoce el Ministerio de Sanidad, previa solicitud; una nueva solicitud para un '
+             'título del Reino Unido pasa por la homologación del Ministerio de Ciencia, Innovación y Universidades, '
+             'con español de nivel B2. Ejercer sin un título reconocido en España es delito.'),
+            ('Protección de datos', 'RGPD, art. 9; LOPDGDD, art. 34',
+             'Los datos de salud de un formulario de contacto pertenecen a las categorías especiales de datos: pide '
+             'solo lo necesario. Si ejerces a título individual, no necesitas delegado de protección de datos; una '
+             'clínica, sí.'),
+            ('IVA', 'Ley 37/1992, arts. 20.Uno.3.º y 90.Uno',
+             'La fisioterapia está exenta de IVA cuando tiene por objeto el diagnóstico, la prevención o el '
+             'tratamiento de una lesión o enfermedad; el masaje relajante o estético fuera de un tratamiento tributa '
+             'al 21 %.'),
+        ],
+        nota=NOTA_SANITARIA,
+        we=['Tu colegio, tu número de colegiado, tu titulación y un enlace al código deontológico, además de tu NIF '
+            'o NIE',
+            'El número de registro de tu centro allí donde la web presenta tus servicios',
+            'Textos sin promesas de curación ni ofertas basadas en el precio',
+            'Un enlace a tu herramienta de reservas, WhatsApp o teléfono, y un formulario que pide solo lo necesario',
+            'Tu web en hasta 4 idiomas sin coste adicional'],
+        fuentes=[('RD 1277/2003 de centros sanitarios (BOE)', 'https://www.boe.es/buscar/act.php?id=BOE-A-2003-19572'),
+                 ('RD 1907/1996 de publicidad sanitaria (BOE)', 'https://www.boe.es/buscar/act.php?id=BOE-A-1996-18085'),
+                 ('Código deontológico (Consejo General de Colegios de Fisioterapeutas)',
+                  'https://www.consejo-fisioterapia.org/descargas/codigo-deontologico-cgcfe.pdf'),
+                 ('Preguntas frecuentes para profesionales sanitarios (AEPD)',
+                  'https://www.aepd.es/preguntas-frecuentes/16-salud/2-profesionales-sanitarios'),
+                 ('LSSI, art. 10 (BOE)', 'https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758')],
+    ),
+    'dentistas': dict(
+        titulo='Lo que tu clínica dental y tu web deben cumplir',
+        lead='La odontología es una profesión sanitaria regulada en España, y su publicidad está especialmente '
+             'vigilada. Esto es lo esencial para tu web.',
+        filas=[
+            ('Colegio y aviso legal', 'Ley 2/1974, art. 3; LSSI (Ley 34/2002), art. 10',
+             'La colegiación en un colegio de odontólogos y estomatólogos es obligatoria. Tu web debe mostrar tu '
+             'colegio y tu número de colegiado, tu titulación, el país que la expidió y su reconocimiento en España '
+             'si lo hay, las normas profesionales aplicables, tu NIF y los datos de autorización de la clínica.'),
+            ('Autorización de la clínica', 'RD 1277/2003, art. 6.2; RD 1594/1994, art. 3',
+             'Una clínica dental (tipo C.2.5.1) necesita autorización autonómica, y su número de registro debe '
+             'figurar en toda su publicidad, web incluida. Una consulta dental debe estar dirigida directa y '
+             'personalmente por un dentista.'),
+            ('Publicidad sanitaria', 'Ley 44/2003, art. 44; RD 1907/1996, art. 4',
+             'La publicidad debe ser objetiva, prudente y veraz, sin garantías de resultados.'),
+            ('Títulos', 'Ley 44/2003, disp. adicional 2.ª; código deontológico del Consejo General, art. 56',
+             'En España no hay especialidades odontológicas oficiales, así que no puedes usar títulos como '
+             '«especialista en implantes» o «especialista en ortodoncia». Usa solo los títulos que realmente tienes.'),
+            ('Marcas y «gratis»', 'RD 1591/2009, art. 38.9; Ley 3/1991, art. 22.5',
+             'Está prohibida la publicidad dirigida al público de productos sanitarios que aplica el dentista, como '
+             'marcas de implantes o de alineadores. Llamar «gratis» a algo es engañoso si el paciente tiene que '
+             'pagar cualquier cosa.'),
+            ('Precios y financiación', 'TRLGDCU, art. 20.1.c; Ley 16/2011, art. 9',
+             'Los precios anunciados deben ser el precio final completo. Todo anuncio que mencione el coste de una '
+             'financiación debe incluir un ejemplo representativo con la TAE, y la financiación «al 0 %» gestionada '
+             'a través de la clínica sigue siendo un crédito al consumo.'),
+            ('Títulos extranjeros', 'RD 581/2017; RD 889/2022; RDL 38/2020, art. 4; Código Penal, art. 403',
+             'Los títulos de Odontología de la UE tienen reconocimiento automático, pero debes solicitarlo igualmente '
+             'al Ministerio de Sanidad; una nueva solicitud para un título del Reino Unido pasa por la homologación, '
+             'con español de nivel B2. Ejercer sin un título reconocido es delito.'),
+            ('Protección de datos', 'RGPD, art. 9; LOPDGDD, art. 34',
+             'Las clínicas dentales deben designar un delegado de protección de datos; un dentista que ejerce solo, '
+             'como persona física, no está obligado.'),
+        ],
+        nota='Las normas autonómicas añaden detalles: en Madrid, como explica el decálogo del Colegio de Dentistas '
+             'de Madrid (COEM), la normativa de consumo exige el precio total de un tratamiento en lugar de «desde '
+             'X €» y el precio anterior junto a cualquier descuento; el Colegio de Odontólogos y Estomatólogos de '
+             'Cataluña (COEC) no admite la «primera visita gratis». '
+             + NOTA_SANITARIA.replace('los datos de tu consulta', 'los datos de tu clínica'),
+        we=['Tu colegio, tu número de colegiado, tu titulación y un enlace al código deontológico, además del número '
+            'de registro y la autorización de la clínica',
+            'Tratamientos descritos sin promesas de resultados, marcas ni títulos de «especialista»',
+            'Precios finales completos y, si hay financiación, su ejemplo representativo',
+            'Un enlace a tu herramienta de reservas, WhatsApp o teléfono, y un formulario que pide solo lo necesario',
+            'Tu web en hasta 4 idiomas sin coste adicional'],
+        fuentes=[('RD 1277/2003 de centros sanitarios (BOE)', 'https://www.boe.es/buscar/act.php?id=BOE-A-2003-19572'),
+                 ('RD 1907/1996 de publicidad sanitaria (BOE)', 'https://www.boe.es/buscar/act.php?id=BOE-A-1996-18085'),
+                 ('Decálogo de publicidad dental (Colegio de Dentistas de Madrid)',
+                  'https://coem.org.es/wp-content/uploads/2025/11/DECALOGO_PUBLICIDAD_COEM.pdf'),
+                 ('Clínicas dentales: derechos de los consumidores (Comunidad de Madrid)',
+                  'https://www.comunidad.madrid/consumo/clinicas-dentales-derechos-consumidores'),
+                 ('LSSI, art. 10 (BOE)', 'https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758')],
+    ),
+}
+PAGINAS.update(PAGINAS_SANIDAD)
+
 
 def section(P, fond):
     filas = ''.join('<tr><th scope="row">%s</th><td class="ley">%s</td><td>%s</td></tr>' % (E(a), E(b), E(c))
@@ -316,7 +479,7 @@ def main():
             sys.exit('ABANDON : %s : ancre FAQ trouvée %d fois' % (rel, s.count(ancre)))
         i = s.index(ancre)
         prev = list(re.finditer(r'<section[^>]*>', s[:i]))[-1].group(0)
-        fond = 'nrm-line' if 'var(--off)' in prev else 'nrm-off'
+        fond = 'nrm-line' if ('var(--off)' in prev or re.search(r'class="[^"]*\boff\b', prev)) else 'nrm-off'
         s2 = s.replace(ancre, section(P, fond) + ancre, 1)
         if s2.count('</style>') < 1:
             sys.exit('ABANDON : %s : </style> introuvable' % rel)
