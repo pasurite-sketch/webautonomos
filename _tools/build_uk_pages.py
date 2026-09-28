@@ -334,6 +334,70 @@ DENTAL = dict(
          '<p>A privacy policy and cookie notice, adapted to UK law, are included with your website, and every '
          'word is written for you to check before it goes live.</p></div>'
          '</div>'),
+        ('website-mistakes', 'What to avoid', 'Common mistakes on dental practice websites',
+         '<p class="legal-intro">Some gaps show up again and again on dental websites, and they tend to cost new '
+         'enquiries before anyone gets in touch.</p>'
+         '<div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul>'
+         '<li>A layout that is hard to read on mobile, so patients searching from their phone give up before '
+         'they find your details</li>'
+         '<li>Fees left out, so a visitor has to search elsewhere before they know what a course of treatment '
+         'costs</li>'
+         '<li>Stock photography and generic copy that could describe any dentist\'s website, not yours</li>'
+         '<li>No visible GDC registration, complaints procedure or last-updated date, even though the GDC\'s '
+         'guidance expects them</li>'
+         '<li>A way to get in touch that is hard to spot, buried below several screens of content</li>'
+         '</ul></div>'
+         '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>What to do instead</h3>'
+         '<p>A simple, mobile-friendly layout, your own fees and treatments written in plain English, and the '
+         'GDC details that patients and the regulator both expect. Together, they help a visitor who is just '
+         'looking trust what they read and get in touch.</p></div>'),
+        ('vs-general-website', 'Compare', 'How dental website design is different from a general business website',
+         '<p class="legal-intro">General website builders and templates are not written with the GDC\'s '
+         'advertising guidance in mind. Here is what changes when your website design starts from those rules, '
+         'not a generic template.</p>'
+         '<div class="cmp-g">'
+         '<div class="cmp-c them"><h3>A general website builder</h3><ul>'
+         '<li>A generic template you adapt yourself, with no reference to GDC advertising guidance</li>'
+         '<li>You write and structure the content yourself, including the GDC numbers, fees and complaints '
+         'procedure the rules require</li>'
+         '<li>SEO settings such as page titles and descriptions, left for you to fill in yourself</li>'
+         '<li>Support often starts with a help centre rather than a person who replies the same day</li>'
+         '</ul></div>'
+         '<div class="cmp-c us"><h3>Dental website design from WebAutonomos</h3><ul>'
+         '<li>Content and layout designed around what the GDC\'s guidance on advertising expects, from the first '
+         'draft</li>'
+         '<li>Your treatments, fees and GDC numbers written for you in English, for you to check before anything '
+         'goes live</li>'
+         '<li>Basic SEO and a design made for mobile, included at no extra cost</li>'
+         '<li>A direct reply the same day, by email or WhatsApp, whenever you have a question</li>'
+         '</ul></div>'
+         '</div>'
+         '<p class="cmp-more"><a href="https://webautonomos.es/en/services">See everything included in your '
+         'website →</a></p>'),
+        ('website-experience', 'Experience', 'Why the experience on your website matters as much as the design',
+         '<p class="legal-intro">Choosing a dentist often starts online, making the experience a visitor has on '
+         'your website worth getting right from day one.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">⏱️</div><h3>Your fees and how to book, within '
+         'seconds</h3><p>Good dental website design gets out of the way: a visitor should see your fees, your '
+         'treatments and how to arrange an appointment within a few seconds, not after scrolling past everything '
+         'else.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div><h3>The same experience on mobile as '
+         'on desktop</h3><p>Many of your patients will look for you on their phone, so the mobile version of '
+         'your website shows the same fees, the same GDC details and the same ways to get in touch as the '
+         'desktop version.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎯</div><h3>A demo built from your details, '
+         'not a template</h3><p>Every project starts the same way: we build the demo from your own details, you '
+         'review it, and we change anything that isn\'t right before it goes live, so you never start from a '
+         'blank page.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div><h3>Part of a wider marketing '
+         'strategy</h3><p>Your website is usually the first stop, but not the only one: local SEO and your '
+         'Google Business Profile often come next. For a small practice, it makes sense to get these basics '
+         'right before spending on anything else.</p></div>'
+         '</div>'
+         '<p class="legal-intro">If you would like more background on getting the basics right, our '
+         '<a href="https://webautonomos.es/blog/#en">blog</a> has practical guides on local SEO and improving '
+         'your Google Business Profile.</p>'),
     ],
     faq=[("What must a dental practice website show?",
           "Under the GDC's guidance on advertising: each dental professional's qualification, the country it "
@@ -358,7 +422,23 @@ DENTAL = dict(
           "There's no booking system built into the website. If you already use a booking tool, we can add a link "
           "or button to it, next to your contact form and phone number, so patients still have a quick way "
           "to book. Otherwise, appointment requests reach you by email through the contact form or by "
-          "WhatsApp.")] + FAQ_COMMUNES,
+          "WhatsApp."),
+         ("Does website design really affect my results?",
+          "Yes: a confusing first experience makes visitors leave before they see what you offer, however good "
+          "the work behind it is. Simple design, clear fees and an easy way to get in touch give them what they "
+          "need to decide to contact you."),
+         ("Can a dental website help with marketing?",
+          "Both plans include basic SEO, which helps your website appear online for relevant local searches. If "
+          "you want to go further, we also offer local SEO and help managing your Google Business Profile: ask "
+          "us for prices when you request your demo."),
+         ("Do you offer digital marketing beyond the website itself?",
+          "Yes, on request: alongside your website, we can help with paid advertising, such as Google Ads or "
+          "Facebook ads, and with managing your social media. Ask us and we'll explain what's involved and the "
+          "cost."),
+         ("What makes a good dental website, beyond how it looks?",
+          "A good dental website answers the questions a new patient has before they call: your fees, your "
+          "treatments and how to get in touch, written and structured for you so you don't have to build or "
+          "write any of it yourself.")] + FAQ_COMMUNES,
 )
 SRC_DENTAL = [
     ('GDC Guidance on advertising',
