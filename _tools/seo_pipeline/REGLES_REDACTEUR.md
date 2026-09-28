@@ -92,6 +92,7 @@ cat, head, `python3 -c`…) est refusée : ne l'essaie pas, utilise Read et Grep
   `/demandez-votre-demo`, `/get-your-demo`), formulaire, bloc Trustpilot
   (`<div class="proof-num">…</div>`), avis existants mot pour mot, canonical,
   hreflang, textes légaux, scripts, sections « règles » des pages santé,
+  section « Normativa » (`id="normativa"`) des pages métier espagnoles (28/09/2026),
   et dans les articles du blog le bandeau d'appel à l'action et le bloc auteur
   (décision d'Angelino du 25/09/2026 : on n'y touche pas).
 - **Ajoute** de vraies sections utiles au lecteur (ce que doit contenir sa web,

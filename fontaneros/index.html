@@ -682,6 +682,37 @@
   .reviews-track{display:grid; grid-template-columns:repeat(3,1fr); width:auto;}
   .reviews-carousel .review-card:nth-child(n+4){display:none;}
 }
+
+  /* NORMATIVA (patch_normativa_es_20260928.py) */
+  .nrm{padding:64px 6%;}
+  .nrm.nrm-off{background:var(--off);}
+  .nrm.nrm-line{border-top:1px solid var(--border);}
+  .nrm-in{max-width:980px;margin:0 auto;}
+  .nrm-ey{text-align:center;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green-mid);margin-bottom:10px;}
+  .nrm h2{text-align:center;}
+  .nrm-lead{font-size:1.02rem;line-height:1.7;color:#334155;max-width:720px;margin:14px auto 30px;text-align:center;}
+  .nrm-w{overflow-x:auto;border:1.5px solid var(--border);border-radius:16px;background:var(--white);}
+  table.nrm-t{width:100%;border-collapse:collapse;font-size:.92rem;line-height:1.55;color:#334155;}
+  table.nrm-t th,table.nrm-t td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);}
+  table.nrm-t thead th{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-dark);background:var(--off);}
+  table.nrm-t tbody th{font-weight:700;color:var(--blue-dark);width:22%;}
+  table.nrm-t td.ley{color:#64748b;font-size:.84rem;width:24%;}
+  table.nrm-t tr:last-child th,table.nrm-t tr:last-child td{border-bottom:none;}
+  .nrm-note{max-width:760px;margin:20px auto 0;background:#fffbeb;border:1.5px solid #fcd34d;border-radius:12px;padding:14px 18px;font-size:.9rem;line-height:1.6;color:#78350f;}
+  .nrm-we{max-width:760px;margin:26px auto 0;}
+  .nrm-we h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.1rem;color:var(--blue-dark);margin-bottom:10px;text-align:center;}
+  .nrm-we ul{list-style:none;margin:0;padding:0;}
+  .nrm-we li{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:10px 14px 10px 36px;margin-bottom:8px;position:relative;font-size:.93rem;line-height:1.5;color:#334155;}
+  .nrm-we li::before{content:'✓';position:absolute;left:14px;top:10px;color:var(--green-mid);font-weight:700;}
+  .nrm-src{max-width:760px;margin:18px auto 0;font-size:.8rem;line-height:1.6;color:#64748b;}
+  .nrm-src a{color:#64748b;}
+  @media (max-width:640px){
+    table.nrm-t thead{display:none;}
+    table.nrm-t tr{display:block;padding:14px 16px;border-bottom:1px solid var(--border);}
+    table.nrm-t tr:last-child{border-bottom:none;}
+    table.nrm-t tbody th,table.nrm-t td{display:block;padding:0;border:none;width:auto;}
+    table.nrm-t td.ley{margin:4px 0 8px;font-size:.8rem;width:auto;}
+  }
 </style>
 <!-- Canonical -->
 <link rel="canonical" href="https://webautonomos.es/fontaneros/">
@@ -1092,6 +1123,22 @@
       <p>Para ir más lejos, tenemos guías sobre <a href="https://webautonomos.es/blog/es/como-aparecer-google-maps-autonomos">cómo aparecer en Google Maps</a>, sobre <a href="https://webautonomos.es/blog/es/seo-local-que-es-autonomos">qué es el SEO local</a> y sobre <a href="https://webautonomos.es/blog/es/web-para-fontaneros-guia-completa">cómo conseguir más llamadas con la web de tu fontanería</a>.</p>
       <p>¿Trabajas en otro oficio? Diseñamos páginas similares para <a href="https://webautonomos.es/electricistas/">electricistas</a> y para <a href="https://webautonomos.es/reformas/">empresas de reformas</a>.</p>
     </div>
+  </div>
+</section>
+
+<!-- NORMATIVA (patch_normativa_es_20260928.py) : règles vérifiées, à garder telles quelles -->
+<section class="nrm nrm-off" id="normativa">
+  <div class="nrm-in">
+    <p class="nrm-ey">Normativa</p>
+    <h2>Lo que tu empresa y tu web deben cumplir</h2>
+    <p class="nrm-lead">La fontanería en sí tiene poca regulación en España, pero la calefacción, el agua caliente, el gas y la climatización exigen una empresa habilitada, y la ley de consumo fija reglas para las urgencias, los presupuestos y las reclamaciones. Esto es lo esencial.</p>
+    <div class="nrm-w"><table class="nrm-t">
+      <thead><tr><th scope="col">Tema</th><th scope="col">Norma</th><th scope="col">Qué significa para ti</th></tr></thead>
+      <tbody><tr><th scope="row">Calefacción, agua caliente y climatización</th><td class="ley">RITE (RD 1027/2007), arts. 19 y 36 a 42</td><td>Las instalaciones térmicas fijas las ejecuta una empresa instaladora habilitada: presenta una declaración responsable ante la comunidad autónoma, tiene un seguro de responsabilidad civil de al menos 300.000 € y al menos una persona en plantilla con carné profesional de instalaciones térmicas de edificios.</td></tr><tr><th scope="row">Gas</th><td class="ley">RD 919/2006, ITC-ICG 07 y 09</td><td>Las instalaciones de gas las realiza una empresa instaladora de gas (categoría A, B o C), que emite el certificado de instalación. Las viviendas con gas canalizado pasan una inspección cada cinco años, por la distribuidora o por una empresa instaladora que elija el cliente.</td></tr><tr><th scope="row">Gases fluorados</th><td class="ley">RD 115/2017, arts. 3 y 9</td><td>Instalar un split o una bomba de calor con refrigerante fluorado exige personal con certificado de gases fluorados dentro de una empresa habilitada, y los equipos precargados no herméticamente sellados, como los split, solo se venden al usuario final con prueba de que los instalará una empresa habilitada.</td></tr><tr><th scope="row">Instalaciones de agua</th><td class="ley">CTE DB HS4; normas autonómicas</td><td>No hay un carné estatal de fontanería, pero algunas comunidades tienen reglas propias: en Madrid, registrar una instalación de agua exige el certificado de una empresa instaladora de fontanería. Consulta a la dirección general de industria de tu comunidad.</td></tr><tr><th scope="row">Averías urgentes</th><td class="ley">TRLGDCU, art. 103.h</td><td>No hay derecho de desistimiento de 14 días cuando el cliente te ha pedido que vayas para una reparación o un mantenimiento urgente. Sí lo hay para los servicios adicionales que prestes en esa visita y para los bienes que no sean las piezas de recambio necesarias.</td></tr><tr><th scope="row">Presupuesto por escrito</th><td class="ley">Comunitat Valenciana: Decreto 11/1995; Madrid: Decreto 35/1995; Cataluña: Código de Consumo, art. 251-3</td><td>En estas comunidades, el cliente tiene derecho a un presupuesto detallado por escrito antes de empezar (en Cataluña, cuando no puede calcular el precio por sí mismo), salvo que renuncie de su puño y letra y lo firme: una renuncia preimpresa no vale.</td></tr><tr><th scope="row">Reclamaciones</th><td class="ley">TRLGDCU, art. 21.3; normas autonómicas</td><td>Informa al cliente de dónde puede reclamarte: como mínimo, por el mismo medio por el que empezó la relación contigo (WhatsApp o el formulario de tu web, por ejemplo), por correo postal, por teléfono y por un medio electrónico. Desde el 28 de diciembre de 2025 debes responder en un plazo máximo de 15 días (antes, un mes). Las hojas oficiales son autonómicas: en Andalucía, los negocios sin local deben mostrar un cartel con código QR en presupuestos, facturas y web.</td></tr><tr><th scope="row">Reseñas de clientes</th><td class="ley">TRLGDCU, art. 20.4; Ley 3/1991, art. 27.7 y 27.8</td><td>Indica si compruebas, y cómo, que las reseñas proceden de clientes reales. Desde el 28 de diciembre de 2025 deben referirse a un servicio contratado o usado en los 30 días anteriores a la reseña, y las reseñas falsas están prohibidas expresamente desde el 28 de mayo de 2022.</td></tr><tr><th scope="row">Aviso legal</th><td class="ley">LSSI (Ley 34/2002), art. 10</td><td>Tu nombre o razón social, tu dirección, tu correo electrónico y otro dato de contacto directo (normalmente, el teléfono), tu NIF, los datos del Registro Mercantil si eres una S.L. y, si muestras precios, si incluyen el IVA.</td></tr></tbody>
+    </table></div>
+    <p class="nrm-note">Las normas sobre presupuestos, hojas de reclamaciones e instalaciones de agua son autonómicas: consulta a tu comunidad autónoma. Información general a septiembre de 2026, que no sustituye al asesoramiento jurídico. Tú nos das los datos de tu negocio y validas cada texto antes de publicarlo.</p>
+    <div class="nrm-we"><h3>Lo que preparamos en tu web</h3><ul><li>Un aviso legal con tu nombre, tu NIF y tus datos de contacto, y los de tu sociedad si eres una S.L.</li><li>Tus condiciones de desplazamiento y tus precios para particulares con el IVA incluido</li><li>Las habilitaciones que tienes (RITE, gas, gases fluorados) descritas con exactitud, y ninguna más</li><li>La información de reclamaciones que pide tu comunidad, como el cartel con código QR en Andalucía</li><li>Botón de llamada y WhatsApp siempre visibles en el móvil, para las urgencias</li></ul></div>
+    <p class="nrm-src">Fuentes: <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-15820" rel="noopener" target="_blank">RITE, RD 1027/2007 (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2006-15345" rel="noopener" target="_blank">Reglamento de gas, RD 919/2006 (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2017-1679" rel="noopener" target="_blank">Gases fluorados, RD 115/2017 (BOE)</a> · <a href="https://www.comunidad.madrid/consumo/fraudes-inspecciones-revisiones-gas" rel="noopener" target="_blank">Fraudes en revisiones de gas (Comunidad de Madrid)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555" rel="noopener" target="_blank">Ley General para la Defensa de los Consumidores (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758" rel="noopener" target="_blank">LSSI, art. 10 (BOE)</a></p>
   </div>
 </section>
 

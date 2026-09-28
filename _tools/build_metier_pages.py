@@ -807,18 +807,20 @@ MENU['en'] = dict(
     legal_cols=('Topic', 'Law', 'What it means for you'),
     legal_rows=[
         ('Legal notice', 'LSSI (Ley 34/2002), art. 10',
-         "Your name, address, email and phone, your NIF (for a foreign national, your NIE), your Registro Mercantil "
-         "details if you trade as an S.L., and, if you show prices, whether they include VAT."),
+         "Your name or company name, your address, your email and another direct contact detail (usually your "
+         "phone), your NIF (for a foreign national, your NIE), your Registro Mercantil details if you trade as an "
+         "S.L., and, if you show prices, whether they include VAT."),
         ('Written quotes', 'Comunitat Valenciana: Decreto 11/1995; Madrid: Decreto 35/1995; Catalonia: Consumer Code, '
                            'art. 251-3',
          "In these regions a homeowner is entitled to a detailed written quote with set contents before work starts, "
          "unless they waive it in their own handwriting and sign; a pre-printed waiver is not enough. Madrid's "
          "consumer office also expects renovation firms to offer a price information sheet on their website."),
         ('Complaints', 'Consumer law (TRLGDCU), art. 21.3; regional rules',
-         "Accept complaints through the channel the customer first used (WhatsApp or your web form, for example) as "
-         "well as by post, phone and an electronic channel. Since 28 December 2025 you must reply within 15 days "
-         "(previously a month). Official complaint forms are regional: in Andalucía, businesses without premises "
-         "show a QR complaint poster on quotes, invoices and websites."),
+         "Tell customers where they can complain: at least through the channel your contract with them started on "
+         "(WhatsApp or your web form, for example), by post, by phone and by an electronic channel. Since 28 "
+         "December 2025 you must reply within 15 days at most (previously a month). Official complaint forms are "
+         "regional: in Andalucía, businesses without premises must show a QR complaint poster on quotes, invoices "
+         "and websites."),
         ('10% VAT', 'Ley 37/1992, art. 91.Uno.2.10º',
          "Renovation or repair of a home at least two years old, for an individual using it privately (not rented "
          "out) or a comunidad de propietarios, with materials costing no more than 40% of the price before VAT. "
@@ -1013,13 +1015,14 @@ MENU['en'] = dict(
           "fitted wardrobes supplied and installed, can also be at 10%. The invoice should state the cost of "
           "materials, or that they don't exceed 40% of the price before VAT."),
          ("Do I need to register in the REA?",
-          "Only if you employ staff and work as a contractor or subcontractor on construction sites (Ley 32/2006). "
-          "Self-employed carpenters with no employees are exempt. If you have staff and work directly for a "
-          "homeowner, you only need it if you subcontract part of the job. There is no obligation to show an REA "
-          "number on your website."),
+          "If you work as a contractor or subcontractor on a construction site where there is subcontracting, you "
+          "must be registered in the REA, unless you're self-employed with no employees (Ley 32/2006). If you work "
+          "directly for a homeowner, it only applies if you subcontract part of the job. There is no obligation to "
+          "show an REA number on your website."),
          ("What do I need to do about complaints?",
-          "Accept complaints through the channel the customer first used, as well as by post, phone and an "
-          "electronic channel, and reply within 15 days: a national rule since 28 December 2025 (previously a month). "
+          "Let customers complain at least through the channel your contract with them started on, by post, by phone "
+          "and by an electronic channel, and reply within 15 days at most: a national rule since 28 December 2025 "
+          "(previously a month). "
           "Carry your region's official complaint forms. In Andalucía, businesses without premises must show a QR "
           "complaint poster on quotes, invoices and their website; in Madrid, if you have no premises open to the "
           "public, a notice that complaint forms are available goes wherever you make offers."),
@@ -2014,19 +2017,20 @@ def visibilite_fr(h2, guide):
 
 
 ROW_EN_NOTICE = ('Legal notice', 'LSSI (Ley 34/2002), art. 10',
-                 "Your name, address, email and phone, your NIF (for a foreign national, your NIE), your Registro "
-                 "Mercantil details if you trade as an S.L., and, if you show prices, whether they include VAT.")
+                 "Your name or company name, your address, your email and another direct contact detail (usually "
+                 "your phone), your NIF (for a foreign national, your NIE), your Registro Mercantil details if you "
+                 "trade as an S.L., and, if you show prices, whether they include VAT.")
 ROW_EN_QUOTES = ('Written quotes', 'Comunitat Valenciana: Decreto 11/1995; Madrid: Decreto 35/1995; Catalonia: '
                                    'Consumer Code, art. 251-3',
                  "In these regions a homeowner is entitled to a detailed written quote with set contents before "
                  "work starts (in Catalonia, when they cannot work out the price themselves), unless they waive it in "
                  "their own handwriting and sign; a pre-printed waiver is not enough.")
 ROW_EN_COMPLAINTS = ('Complaints', 'Consumer law (TRLGDCU), art. 21.3; regional rules',
-                     "Accept complaints through the channel the customer first used (WhatsApp or your web form, for "
-                     "example) as well as by post, phone and an electronic channel. Since 28 December 2025 you must "
-                     "reply within 15 days (previously a month). Official complaint forms are regional: in "
-                     "Andalucía, businesses without premises show a QR complaint poster on quotes, invoices and "
-                     "websites.")
+                     "Tell customers where they can complain: at least through the channel your contract with them "
+                     "started on (WhatsApp or your web form, for example), by post, by phone and by an electronic "
+                     "channel. Since 28 December 2025 you must reply within 15 days at most (previously a month). "
+                     "Official complaint forms are regional: in Andalucía, businesses without premises must show a QR "
+                     "complaint poster on quotes, invoices and websites.")
 FAQ_EN_QUOTE = ("Do I have to give customers a written quote?",
                 "It depends on the region. In the Comunitat Valenciana, Madrid and Catalonia, homeowners are "
                 "entitled to a detailed written quote before work starts, with set information such as materials, "
@@ -2036,9 +2040,9 @@ FAQ_EN_QUOTE = ("Do I have to give customers a written quote?",
                 "it is valid for the period it states or, if none is stated, at least 15 days. Other regions have "
                 "their own rules: a written quote is always the safe choice.")
 FAQ_EN_COMPLAINTS = ("What do I need to do about complaints?",
-                     "Accept complaints through the channel the customer first used, as well as by post, phone and "
-                     "an electronic channel, and reply within 15 days: a national rule since 28 December 2025 "
-                     "(previously a month). Carry your region's official complaint forms. In Andalucía, businesses "
+                     "Let customers complain at least through the channel your contract with them started on, by "
+                     "post, by phone and by an electronic channel, and reply within 15 days at most: a national rule "
+                     "since 28 December 2025 (previously a month). Carry your region's official complaint forms. In Andalucía, businesses "
                      "without premises must show a QR complaint poster on quotes, invoices and their website.")
 FAQ_EN_REVIEWS = ("Can I show customer reviews on my website?",
                   "Yes, if you say whether and how you check them. Since December 2025, reviews must relate to a job "
@@ -2340,9 +2344,9 @@ PLOMB['en'] = dict(
          "certificado de instalación. Homes on mains gas are inspected every five years, by the distributor or by a "
          "gas installer the customer chooses."),
         ('F-gases', 'RD 115/2017, arts. 3 and 9',
-         "Installing split air conditioning or heat pumps requires staff with an F-gas certificate, working within "
-         "an authorised company (empresa habilitada). Pre-charged split units can only be sold to end users with "
-         "proof that an authorised company will install them."),
+         "Installing split air conditioning or heat pumps with fluorinated refrigerant requires staff with an F-gas "
+         "certificate, working within an authorised company (empresa habilitada). Pre-charged split units can only "
+         "be sold to end users with proof that an authorised company will install them."),
         ('Water installations', 'CTE DB HS4; regional rules',
          "There is no national plumbing licence, but some regions have their own rules: in Madrid, registering a "
          "water installation requires the certificate of a registered plumbing installer (empresa instaladora de "
@@ -3267,9 +3271,9 @@ ARTI['en'] = dict(
           "bank transfer also leaves the record your customer needs for any tax deduction."),
          FAQ_EN_QUOTE,
          ("Do I need to register in the REA?",
-          "Only if you employ staff and are part of a subcontracting chain on a construction site, as contractor or "
-          "subcontractor (Ley 32/2006). Self-employed builders with no employees are exempt. There is no obligation to show an REA number on your "
-          "website."),
+          "If you work as a contractor or subcontractor on a construction site where there is subcontracting, you "
+          "must be registered in the REA, unless you're self-employed with no employees (Ley 32/2006). There is no "
+          "obligation to show an REA number on your website."),
          FAQ_EN_COMPLAINTS,
          FAQ_EN_REVIEWS,
          FAQ_EN_LANGUAGE,

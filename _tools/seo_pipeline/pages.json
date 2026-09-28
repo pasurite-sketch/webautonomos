@@ -90,7 +90,7 @@
       "objectif_geo": "au_mieux",
       "statut": "fait",
       "priorite": 1,
-      "notes": "Réécrite à la main le 24/09 (score 18 au départ). Mesurer début novembre."
+      "notes": "Réécrite à la main le 24/09 (score 18 au départ). Mesurer début novembre. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, règles vérifiées puis relues : ne pas la modifier ni la déplacer (tableau des règles protégé, REGLES_REDACTEUR.md §2)."
     },
     {
       "slug": "es-fontaneros",
@@ -104,7 +104,7 @@
       "objectif_geo": "au_mieux",
       "statut": "fait",
       "priorite": 1,
-      "notes": "51 imp., pos. 15 (GSC 16 mois). Garder le bloc Trustpilot (<div class=\"proof-num\">4,3★</div>) intact. Publiée le 24/09/2026 (PR #1) : score Google 36 → 50, GEO 16 → 25."
+      "notes": "51 imp., pos. 15 (GSC 16 mois). Garder le bloc Trustpilot (<div class=\"proof-num\">4,3★</div>) intact. Publiée le 24/09/2026 (PR #1) : score Google 36 → 50, GEO 16 → 25. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, règles vérifiées puis relues : ne pas la modifier ni la déplacer (tableau des règles protégé, REGLES_REDACTEUR.md §2)."
     },
     {
       "slug": "es-carpinteros",
@@ -121,7 +121,7 @@
       ],
       "statut": "fait",
       "priorite": 1,
-      "notes": "Garder le bloc Trustpilot intact. L'article blog/es/web-para-carpinteros-reformas vise aussi ce sujet : ajouter un lien vers /carpinteros/ plutôt que concurrencer. Publiée le 25/09/2026 (PR #2) : score Google 45 → 73, GEO 6 → 13."
+      "notes": "Garder le bloc Trustpilot intact. L'article blog/es/web-para-carpinteros-reformas vise aussi ce sujet : ajouter un lien vers /carpinteros/ plutôt que concurrencer. Publiée le 25/09/2026 (PR #2) : score Google 45 → 73, GEO 6 → 13. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, règles vérifiées puis relues : ne pas la modifier ni la déplacer (tableau des règles protégé, REGLES_REDACTEUR.md §2)."
     },
     {
       "slug": "es-electricistas",

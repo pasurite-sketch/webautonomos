@@ -672,6 +672,37 @@
   .reviews-track{display:grid; grid-template-columns:repeat(3,1fr); width:auto;}
   .reviews-carousel .review-card:nth-child(n+4){display:none;}
 }
+
+  /* NORMATIVA (patch_normativa_es_20260928.py) */
+  .nrm{padding:64px 6%;}
+  .nrm.nrm-off{background:var(--off);}
+  .nrm.nrm-line{border-top:1px solid var(--border);}
+  .nrm-in{max-width:980px;margin:0 auto;}
+  .nrm-ey{text-align:center;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green-mid);margin-bottom:10px;}
+  .nrm h2{text-align:center;}
+  .nrm-lead{font-size:1.02rem;line-height:1.7;color:#334155;max-width:720px;margin:14px auto 30px;text-align:center;}
+  .nrm-w{overflow-x:auto;border:1.5px solid var(--border);border-radius:16px;background:var(--white);}
+  table.nrm-t{width:100%;border-collapse:collapse;font-size:.92rem;line-height:1.55;color:#334155;}
+  table.nrm-t th,table.nrm-t td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);}
+  table.nrm-t thead th{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-dark);background:var(--off);}
+  table.nrm-t tbody th{font-weight:700;color:var(--blue-dark);width:22%;}
+  table.nrm-t td.ley{color:#64748b;font-size:.84rem;width:24%;}
+  table.nrm-t tr:last-child th,table.nrm-t tr:last-child td{border-bottom:none;}
+  .nrm-note{max-width:760px;margin:20px auto 0;background:#fffbeb;border:1.5px solid #fcd34d;border-radius:12px;padding:14px 18px;font-size:.9rem;line-height:1.6;color:#78350f;}
+  .nrm-we{max-width:760px;margin:26px auto 0;}
+  .nrm-we h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.1rem;color:var(--blue-dark);margin-bottom:10px;text-align:center;}
+  .nrm-we ul{list-style:none;margin:0;padding:0;}
+  .nrm-we li{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:10px 14px 10px 36px;margin-bottom:8px;position:relative;font-size:.93rem;line-height:1.5;color:#334155;}
+  .nrm-we li::before{content:'✓';position:absolute;left:14px;top:10px;color:var(--green-mid);font-weight:700;}
+  .nrm-src{max-width:760px;margin:18px auto 0;font-size:.8rem;line-height:1.6;color:#64748b;}
+  .nrm-src a{color:#64748b;}
+  @media (max-width:640px){
+    table.nrm-t thead{display:none;}
+    table.nrm-t tr{display:block;padding:14px 16px;border-bottom:1px solid var(--border);}
+    table.nrm-t tr:last-child{border-bottom:none;}
+    table.nrm-t tbody th,table.nrm-t td{display:block;padding:0;border:none;width:auto;}
+    table.nrm-t td.ley{margin:4px 0 8px;font-size:.8rem;width:auto;}
+  }
 </style>
 <!-- Canonical -->
 <link rel="canonical" href="https://webautonomos.es/electricistas/">
@@ -923,6 +954,22 @@
   <p class="vnote" style="margin-top:14px;">¿Te gusta? Tu web 100% personalizada estará lista en 24 horas · <a href="#pide-demo" style="color:var(--green-mid);text-decoration:underline;font-weight:700;">Pídela ahora ↓</a></p>
   <div style="text-align:center; margin-top:28px;">
     <a href="#pide-demo" class="hero-cta" style="display:inline-flex; background:var(--grad); color:var(--white);">Quiero una web para mi empresa →</a>
+  </div>
+</section>
+
+<!-- NORMATIVA (patch_normativa_es_20260928.py) : règles vérifiées, à garder telles quelles -->
+<section class="nrm nrm-off" id="normativa">
+  <div class="nrm-in">
+    <p class="nrm-ey">Normativa</p>
+    <h2>Lo que tu empresa y tu web deben cumplir</h2>
+    <p class="nrm-lead">En España, las instalaciones eléctricas de baja tensión están reservadas a empresas instaladoras habilitadas, y solo ellas pueden firmar el certificado que permite conectar una instalación. La ley de consumo fija además las reglas de presupuestos, urgencias y reclamaciones. Esto es lo esencial.</p>
+    <div class="nrm-w"><table class="nrm-t">
+      <thead><tr><th scope="col">Tema</th><th scope="col">Norma</th><th scope="col">Qué significa para ti</th></tr></thead>
+      <tbody><tr><th scope="row">Empresa instaladora</th><td class="ley">REBT (RD 842/2002), art. 22; ITC-BT-03</td><td>Solo una empresa instaladora en baja tensión puede instalar, mantener o reparar instalaciones de baja tensión. Presentas una declaración responsable ante la comunidad autónoma donde te establezcas; vale en toda España y sin caducidad, y la comunidad te asigna un número y comunica tus datos al Registro Integrado Industrial.</td></tr><tr><th scope="row">Requisitos</th><td class="ley">ITC-BT-03, apartados 3, 4 y 5.8 y apéndice I</td><td>Al menos un instalador en baja tensión de tu categoría (básica o especialista), con cualquier tipo de contrato desde septiembre de 2025, y un seguro de responsabilidad civil de al menos 600.000 € por siniestro en la categoría básica o 900.000 € en la especialista.</td></tr><tr><th scope="row">Certificado de instalación (boletín)</th><td class="ley">ITC-BT-04, apartados 5.4 y 5.5; ITC-BT-03, apartado 5.9</td><td>Solo la empresa que hizo el trabajo emite el certificado, firmado por uno de sus instaladores, y la distribuidora no conecta sin él. Está prohibido facilitar certificados de instalaciones que la empresa no ha realizado.</td></tr><tr><th scope="row">Trabajar sin habilitación</th><td class="ley">Ley 21/1992 de Industria, arts. 31 y 34; Cataluña: Ley 9/2014, art. 26.4.c</td><td>Ejecutar instalaciones sin haber presentado la declaración responsable es una infracción grave según la Ley de Industria. Cataluña tiene su propio régimen, que la califica de muy grave.</td></tr><tr><th scope="row">Puntos de recarga</th><td class="ley">ITC-BT-52 (RD 1053/2014); ITC-BT-03, apartado 3; Ley de Propiedad Horizontal, art. 17.5</td><td>Cualquier empresa instaladora en baja tensión puede instalarlos: basta la categoría básica. En una comunidad, el propietario que instala un punto de recarga para uso privado en su plaza individual de garaje solo tiene que comunicarlo antes a la comunidad.</td></tr><tr><th scope="row">Autoconsumo</th><td class="ley">RD 244/2019, art. 20.1; ITC-BT-03, apartado 3</td><td>Debe instalarlo una empresa instaladora: categoría básica para generadores de menos de 10 kW, especialista desde 10 kW. En baja tensión y por debajo de 100 kW, la comunidad inscribe de oficio la instalación en el registro de autoconsumo una vez presentado el certificado.</td></tr><tr><th scope="row">Averías urgentes</th><td class="ley">TRLGDCU, art. 103.h</td><td>No hay derecho de desistimiento de 14 días cuando el cliente te ha pedido que vayas para una reparación o un mantenimiento urgente. Sí lo hay para los servicios adicionales que prestes en esa visita y para los bienes que no sean las piezas de recambio necesarias.</td></tr><tr><th scope="row">Presupuesto por escrito</th><td class="ley">Comunitat Valenciana: Decreto 11/1995; Madrid: Decreto 35/1995; Cataluña: Código de Consumo, art. 251-3</td><td>En estas comunidades, el cliente tiene derecho a un presupuesto detallado por escrito antes de empezar (en Cataluña, cuando no puede calcular el precio por sí mismo), salvo que renuncie de su puño y letra y lo firme: una renuncia preimpresa no vale.</td></tr><tr><th scope="row">Reclamaciones</th><td class="ley">TRLGDCU, art. 21.3; normas autonómicas</td><td>Informa al cliente de dónde puede reclamarte: como mínimo, por el mismo medio por el que empezó la relación contigo (WhatsApp o el formulario de tu web, por ejemplo), por correo postal, por teléfono y por un medio electrónico. Desde el 28 de diciembre de 2025 debes responder en un plazo máximo de 15 días (antes, un mes). Las hojas oficiales son autonómicas: en Andalucía, los negocios sin local deben mostrar un cartel con código QR en presupuestos, facturas y web.</td></tr><tr><th scope="row">Reseñas de clientes</th><td class="ley">TRLGDCU, art. 20.4; Ley 3/1991, art. 27.7 y 27.8</td><td>Indica si compruebas, y cómo, que las reseñas proceden de clientes reales. Desde el 28 de diciembre de 2025 deben referirse a un servicio contratado o usado en los 30 días anteriores a la reseña, y las reseñas falsas están prohibidas expresamente desde el 28 de mayo de 2022.</td></tr><tr><th scope="row">Aviso legal</th><td class="ley">LSSI (Ley 34/2002), art. 10</td><td>Tu nombre o razón social, tu dirección, tu correo electrónico y otro dato de contacto directo (normalmente, el teléfono), tu NIF, los datos del Registro Mercantil si eres una S.L. y, si muestras precios, si incluyen el IVA.</td></tr></tbody>
+    </table></div>
+    <p class="nrm-note">La habilitación se tramita en la dirección general de industria de tu comunidad, y las normas sobre presupuestos y hojas de reclamaciones también son autonómicas. Información general a septiembre de 2026, que no sustituye al asesoramiento jurídico. Tú nos das los datos de tu negocio y validas cada texto antes de publicarlo.</p>
+    <div class="nrm-we"><h3>Lo que preparamos en tu web</h3><ul><li>Un aviso legal con tu nombre, tu NIF y tus datos de contacto, y los de tu sociedad si eres una S.L.</li><li>Tu habilitación descrita con exactitud: empresa instaladora, categoría y solo los trabajos que cubre</li><li>Tus condiciones de desplazamiento y tus precios para particulares con el IVA incluido</li><li>La información de reclamaciones que pide tu comunidad, como el cartel con código QR en Andalucía</li><li>Botón de llamada y WhatsApp siempre visibles en el móvil, para las averías</li></ul></div>
+    <p class="nrm-src">Fuentes: <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2002-18099" rel="noopener" target="_blank">REBT, RD 842/2002 (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-17363" rel="noopener" target="_blank">Ley 21/1992 de Industria (BOE)</a> · <a href="https://industria.gob.es/registros-industriales/RII/Paginas/consultas-publicas.aspx" rel="noopener" target="_blank">Registro Integrado Industrial (Ministerio de Industria)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2019-5089" rel="noopener" target="_blank">Autoconsumo, RD 244/2019 (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1960-10906" rel="noopener" target="_blank">Ley de Propiedad Horizontal (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555" rel="noopener" target="_blank">Ley General para la Defensa de los Consumidores (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758" rel="noopener" target="_blank">LSSI, art. 10 (BOE)</a></p>
   </div>
 </section>
 

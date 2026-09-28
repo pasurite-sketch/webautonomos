@@ -681,6 +681,37 @@
   .gd-band{background:var(--off)}.gd figure{margin:28px 0 24px}.gd figure img{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 18px 48px rgba(15,32,96,.14);border:1px solid var(--border)}.gd figcaption{font-size:.92rem;color:#64748b;text-align:center;margin-top:10px;line-height:1.5}
   .gd .wy-grid{margin-top:24px}
   .gd .wy-card{cursor:default}
+
+  /* NORMATIVA (patch_normativa_es_20260928.py) */
+  .nrm{padding:64px 6%;}
+  .nrm.nrm-off{background:var(--off);}
+  .nrm.nrm-line{border-top:1px solid var(--border);}
+  .nrm-in{max-width:980px;margin:0 auto;}
+  .nrm-ey{text-align:center;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green-mid);margin-bottom:10px;}
+  .nrm h2{text-align:center;}
+  .nrm-lead{font-size:1.02rem;line-height:1.7;color:#334155;max-width:720px;margin:14px auto 30px;text-align:center;}
+  .nrm-w{overflow-x:auto;border:1.5px solid var(--border);border-radius:16px;background:var(--white);}
+  table.nrm-t{width:100%;border-collapse:collapse;font-size:.92rem;line-height:1.55;color:#334155;}
+  table.nrm-t th,table.nrm-t td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);}
+  table.nrm-t thead th{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-dark);background:var(--off);}
+  table.nrm-t tbody th{font-weight:700;color:var(--blue-dark);width:22%;}
+  table.nrm-t td.ley{color:#64748b;font-size:.84rem;width:24%;}
+  table.nrm-t tr:last-child th,table.nrm-t tr:last-child td{border-bottom:none;}
+  .nrm-note{max-width:760px;margin:20px auto 0;background:#fffbeb;border:1.5px solid #fcd34d;border-radius:12px;padding:14px 18px;font-size:.9rem;line-height:1.6;color:#78350f;}
+  .nrm-we{max-width:760px;margin:26px auto 0;}
+  .nrm-we h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.1rem;color:var(--blue-dark);margin-bottom:10px;text-align:center;}
+  .nrm-we ul{list-style:none;margin:0;padding:0;}
+  .nrm-we li{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:10px 14px 10px 36px;margin-bottom:8px;position:relative;font-size:.93rem;line-height:1.5;color:#334155;}
+  .nrm-we li::before{content:'✓';position:absolute;left:14px;top:10px;color:var(--green-mid);font-weight:700;}
+  .nrm-src{max-width:760px;margin:18px auto 0;font-size:.8rem;line-height:1.6;color:#64748b;}
+  .nrm-src a{color:#64748b;}
+  @media (max-width:640px){
+    table.nrm-t thead{display:none;}
+    table.nrm-t tr{display:block;padding:14px 16px;border-bottom:1px solid var(--border);}
+    table.nrm-t tr:last-child{border-bottom:none;}
+    table.nrm-t tbody th,table.nrm-t td{display:block;padding:0;border:none;width:auto;}
+    table.nrm-t td.ley{margin:4px 0 8px;font-size:.8rem;width:auto;}
+  }
 </style>
 <!-- Canonical -->
 <link rel="canonical" href="https://webautonomos.es/reformas/">
@@ -1120,6 +1151,22 @@
     <li><strong>Pensada solo para ordenador.</strong> Buena parte de tus clientes te buscará desde el móvil: si la web no se lee bien en una pantalla pequeña, se van.</li>
   </ul>
   <p>Si quieres comparar precios antes de decidir, consulta <a href="https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-autonomos-espana">cuánto cuesta una página web en 2026</a> frente a agencias, freelances y constructores web.</p>
+</section>
+
+<!-- NORMATIVA (patch_normativa_es_20260928.py) : règles vérifiées, à garder telles quelles -->
+<section class="nrm nrm-off" id="normativa">
+  <div class="nrm-in">
+    <p class="nrm-ey">Normativa</p>
+    <h2>Lo que tu empresa de reformas y tu web deben cumplir</h2>
+    <p class="nrm-lead">Las reformas no son una profesión regulada en sí, pero las licencias, la ley de consumo, el IVA y algunas normas concretas, como la del amianto, deciden qué puedes anunciar y cómo presupuestar. Esto es lo esencial.</p>
+    <div class="nrm-w"><table class="nrm-t">
+      <thead><tr><th scope="col">Tema</th><th scope="col">Norma</th><th scope="col">Qué significa para ti</th></tr></thead>
+      <tbody><tr><th scope="row">Licencias de obra</th><td class="ley">TRLSRU (RDLeg 7/2015), art. 11.3; leyes urbanísticas autonómicas</td><td>Según su alcance, una obra puede necesitar licencia, declaración responsable o comunicación previa ante el ayuntamiento. La presenta el propietario, como promotor, pero las leyes de la Comunidad de Madrid, la Comunitat Valenciana y Andalucía también sancionan al constructor y permiten paralizar la obra si se ejecuta sin ella.</td></tr><tr><th scope="row">Presupuesto por escrito</th><td class="ley">Comunitat Valenciana: Decreto 11/1995; Madrid: Decreto 35/1995; Cataluña: Código de Consumo, art. 251-3</td><td>En estas comunidades, el cliente tiene derecho a un presupuesto detallado por escrito antes de empezar (en Cataluña, cuando no puede calcular el precio por sí mismo), salvo que renuncie de su puño y letra y lo firme: una renuncia preimpresa no vale. La Comunidad de Madrid indica además que las empresas de reformas deben ofrecer una hoja informativa de precios en su web.</td></tr><tr><th scope="row">Contratos firmados en casa del cliente o a distancia</th><td class="ley">TRLGDCU, arts. 93, 99.3, 102, 103 y 105</td><td>El cliente tiene 14 días para desistir, o 30 si la visita no fue solicitada, y el plazo se amplía hasta 12 meses si no le informas de ese derecho. Solo puedes empezar antes de que acaben esos 14 días si lo pide expresamente en un soporte duradero. No hay desistimiento para una reparación urgente que te pidió, y la transformación sustancial de un edificio queda excluida.</td></tr><tr><th scope="row">Amianto (fibrocemento)</th><td class="ley">RD 396/2006, arts. 11, 12 y 17</td><td>Solo las empresas inscritas en el RERA pueden retirar tejados o bajantes de fibrocemento (uralita), con un plan de trabajo aprobado por la autoridad laboral antes de cada obra (o un plan general para trabajos cortos e imprevistos). No anuncies la retirada de fibrocemento si no estás inscrito.</td></tr><tr><th scope="row">Residuos de obra</th><td class="ley">RD 105/2008, arts. 2 y 5 y disp. adicional 1.ª; Ley 7/2022</td><td>Quien ejecuta la obra es el poseedor de los residuos. Salvo en obras menores domiciliarias, que siguen las ordenanzas municipales, entrégalos a un gestor autorizado, separados por fracciones, y guarda la documentación cinco años.</td></tr><tr><th scope="row">IVA del 10 %</th><td class="ley">Ley 37/1992, art. 91.Uno.2.10.º</td><td>Renovación o reparación de una vivienda con al menos dos años, para un particular que la usa (no alquilada) o para una comunidad de propietarios, siempre que el coste de los materiales que aportes no supere el 40 % de la base imponible.</td></tr><tr><th scope="row">Pagos en efectivo</th><td class="ley">Ley 7/2012, art. 7</td><td>Un trabajo de 1.000 € o más no puede pagarse en efectivo, y los pagos fraccionados de una misma obra se suman. El límite es de 10.000 € para personas físicas que justifiquen no tener su domicilio fiscal en España y no actúen como empresarios.</td></tr><tr><th scope="row">Subcontratación (REA)</th><td class="ley">Ley 32/2006, arts. 2 y 4</td><td>Si te contratan o subcontratan en una obra de construcción en la que hay subcontratación, debes estar inscrito en el REA, salvo que seas autónomo sin trabajadores asalariados. No hace falta mostrar el número en tu web.</td></tr><tr><th scope="row">Reclamaciones</th><td class="ley">TRLGDCU, art. 21.3; normas autonómicas</td><td>Informa al cliente de dónde puede reclamarte: como mínimo, por el mismo medio por el que empezó la relación contigo (WhatsApp o el formulario de tu web, por ejemplo), por correo postal, por teléfono y por un medio electrónico. Desde el 28 de diciembre de 2025 debes responder en un plazo máximo de 15 días (antes, un mes). Las hojas oficiales son autonómicas: en Andalucía, los negocios sin local deben mostrar un cartel con código QR en presupuestos, facturas y web.</td></tr><tr><th scope="row">Reseñas de clientes</th><td class="ley">TRLGDCU, art. 20.4; Ley 3/1991, art. 27.7 y 27.8</td><td>Indica si compruebas, y cómo, que las reseñas proceden de clientes reales. Desde el 28 de diciembre de 2025 deben referirse a un servicio contratado o usado en los 30 días anteriores a la reseña, y las reseñas falsas están prohibidas expresamente desde el 28 de mayo de 2022.</td></tr><tr><th scope="row">Aviso legal</th><td class="ley">LSSI (Ley 34/2002), art. 10</td><td>Tu nombre o razón social, tu dirección, tu correo electrónico y otro dato de contacto directo (normalmente, el teléfono), tu NIF, los datos del Registro Mercantil si eres una S.L. y, si muestras precios, si incluyen el IVA.</td></tr></tbody>
+    </table></div>
+    <p class="nrm-note">Las licencias son municipales, y las normas sobre presupuestos y hojas de reclamaciones son autonómicas: consulta a tu ayuntamiento y a tu comunidad autónoma. Información general a septiembre de 2026, que no sustituye al asesoramiento jurídico. Tú nos das los datos de tu negocio y validas cada texto antes de publicarlo.</p>
+    <div class="nrm-we"><h3>Lo que preparamos en tu web</h3><ul><li>Un aviso legal con tu nombre, tu NIF y tus datos de contacto, y los de tu sociedad si eres una S.L.</li><li>Tus precios para particulares con el IVA incluido y tus servicios descritos con exactitud, incluida cualquier inscripción que necesiten</li><li>La información de reclamaciones que pide tu comunidad, como el cartel con código QR en Andalucía</li><li>Un formulario para pedir presupuesto, un botón de WhatsApp y tu teléfono, para que el cliente te contacte directamente</li><li>Las reseñas de clientes, con una nota que indica si se comprueban y cómo</li></ul></div>
+    <p class="nrm-src">Fuentes: <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11723" rel="noopener" target="_blank">TRLSRU, RDLeg 7/2015 (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2006-6474" rel="noopener" target="_blank">Amianto, RD 396/2006 (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2008-2486" rel="noopener" target="_blank">Residuos de construcción, RD 105/2008 (BOE)</a> · <a href="https://sede.agenciatributaria.gob.es/Sede/iva/iva-operaciones-inmobiliarias/preguntas-frecuentes-sobre-obras-reparaciones-inmuebles.html" rel="noopener" target="_blank">IVA en obras de renovación (Agencia Tributaria)</a> · <a href="https://www.comunidad.madrid/consumo/reformas-hogar" rel="noopener" target="_blank">Reformas en el hogar (Comunidad de Madrid)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555" rel="noopener" target="_blank">Ley General para la Defensa de los Consumidores (BOE)</a> · <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758" rel="noopener" target="_blank">LSSI, art. 10 (BOE)</a></p>
+  </div>
 </section>
 
 <!-- FAQ -->
