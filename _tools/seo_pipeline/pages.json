@@ -731,6 +731,90 @@
       ]
     },
     {
+      "slug": "en-uk-tradesmen",
+      "url": "https://webautonomos.es/en/web-design-for-tradesmen",
+      "lang": "en",
+      "langue_serpmantics": "en-gb",
+      "requete": "web design for tradesmen",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "websites for tradesmen",
+        "trades website design",
+        "construction website design"
+      ],
+      "fichier": "en/web-design-for-tradesmen.html",
+      "generateur": "_tools/build_uk_pages.py",
+      "mode": "auto",
+      "objectif_geo": "au_mieux",
+      "statut": "a_faire",
+      "priorite": 1,
+      "notes": "ROYAUME-UNI, artisans. Page créée le 28/09/2026 par _tools/build_uk_pages.py : modifier TRADES puis relancer. Tableau des règles britanniques, notes et réponses juridiques relus par une vérification indépendante le 28/09/2026 : protégés comme ceux des pages santé britanniques (prix « €15 a month (about £13) », « no VAT added »). Page mère : liens vers web-design-for-plumbers et web-design-for-electricians. « construction website design » : vérifier sur la page de résultats qu'elle vise aussi de petites entreprises avant d'en faire plus qu'une section. Éviter « tradesman website », « website for tradesmen » et « websites for builders » (KD 66 à 74).",
+      "donnees": "Semrush Royaume-Uni, 28/09/2026 (volume mensuel, KD) : construction website design 720 (4) ; web design for tradesmen 590 (3) ; websites for tradesmen 480 (7) ; trades website design 170 (7) ; tradesman website 170 (66) ; web design for builders 140 (6) ; websites for builders 140 (72).",
+      "termes_necessaires": [
+        "uk",
+        "regulations",
+        "tradesmen",
+        "customer"
+      ]
+    },
+    {
+      "slug": "en-uk-plumbers",
+      "url": "https://webautonomos.es/en/web-design-for-plumbers",
+      "lang": "en",
+      "langue_serpmantics": "en-gb",
+      "requete": "web design for plumbers",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "websites for plumbers",
+        "plumber website design",
+        "plumbing website design",
+        "gas engineer website design"
+      ],
+      "fichier": "en/web-design-for-plumbers.html",
+      "generateur": "_tools/build_uk_pages.py",
+      "mode": "auto",
+      "objectif_geo": "au_mieux",
+      "statut": "a_faire",
+      "priorite": 1,
+      "notes": "ROYAUME-UNI, artisans. Page créée le 28/09/2026 par _tools/build_uk_pages.py : modifier PLUMB_UK puis relancer. Tableau des règles britanniques, notes et réponses juridiques relus par une vérification indépendante le 28/09/2026 : protégés comme ceux des pages santé britanniques (prix « €15 a month (about £13) », « no VAT added »).",
+      "donnees": "Semrush Royaume-Uni, 28/09/2026 (volume mensuel, KD) : web design for plumbers 390 (9) ; websites for plumbers 320 (9) ; plumber website design 210 (11) ; plumbing website design 140 (14) ; plumber website 90 (23) ; gas engineer website design 40 (0).",
+      "termes_necessaires": [
+        "uk",
+        "gas",
+        "safe",
+        "registered",
+        "regulations"
+      ]
+    },
+    {
+      "slug": "en-uk-electricians",
+      "url": "https://webautonomos.es/en/web-design-for-electricians",
+      "lang": "en",
+      "langue_serpmantics": "en-gb",
+      "requete": "web design for electricians",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "electrician website",
+        "electrician website design",
+        "websites for electricians"
+      ],
+      "fichier": "en/web-design-for-electricians.html",
+      "generateur": "_tools/build_uk_pages.py",
+      "mode": "auto",
+      "objectif_geo": "au_mieux",
+      "statut": "a_faire",
+      "priorite": 1,
+      "notes": "ROYAUME-UNI, artisans. Page créée le 28/09/2026 par _tools/build_uk_pages.py : modifier ELEC_UK puis relancer. Tableau des règles britanniques, notes et réponses juridiques relus par une vérification indépendante le 28/09/2026 : protégés comme ceux des pages santé britanniques (prix « €15 a month (about £13) », « no VAT added »).",
+      "donnees": "Semrush Royaume-Uni, 28/09/2026 (volume mensuel, KD) : websites for electricians 390 (30) ; web design for electricians 320 (7) ; electrician website 320 (16) ; electrician website design 260 (20) ; electrical contractor website design 20 (9).",
+      "termes_necessaires": [
+        "uk",
+        "scheme",
+        "regulations",
+        "notifiable",
+        "electrical"
+      ]
+    },
+    {
       "slug": "en-expats",
       "url": "https://webautonomos.es/en/web-design-for-expats-in-spain",
       "lang": "en",

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Pages pour les cabinets britanniques (26/09/2026).
+"""Pages pour les cabinets et les artisans britanniques (26 et 28/09/2026).
 
 Angelino accepte des clients au Royaume-Uni (décision du 26/09/2026). Deux pages
 dédiées, distinctes des pages métier « in Spain » de build_metier_pages.py (qui
@@ -8,6 +8,14 @@ visent les anglophones installés en Espagne) :
     /en/physiotherapy-website-design   kinésithérapeutes britanniques
 Requêtes visées (Semrush Royaume-Uni, 26/09/2026) : « dental website design »
 720/mois KD 15 ; « physiotherapy website design » 110/mois KD 3.
+
+Artisans (décision d'Angelino du 28/09/2026, Semrush Royaume-Uni du même jour) :
+    /en/web-design-for-tradesmen       « web design for tradesmen » 590/mois KD 3 (page mère)
+    /en/web-design-for-plumbers        « web design for plumbers » 390/mois KD 9
+    /en/web-design-for-electricians    « web design for electricians » 320/mois KD 7
+Règles vérifiées le 28/09/2026 (legislation.gov.uk, gov.uk, HSE, Ofgem, CMA, ICO),
+puis relues par une vérification indépendante. Les pages « in Spain » des mêmes
+métiers (build_metier_pages.py) y renvoient, et inversement.
 
 Prix : en euros, sans TVA ajoutée pour les clients britanniques, avec l'équivalent
 indicatif en livres (VERITE.md §2 bis). Domaine .co.uk ou .uk, textes légaux
@@ -504,11 +512,535 @@ SRC_PHYSIO = [
      'https://www.legislation.gov.uk/uksi/2014/2936/schedule/1/paragraph/4'),
 ] + SRC_COMMUNES
 
+# ═════════════════════════ ARTISANS BRITANNIQUES (28/09/2026) ══════════════
+# Trois pages décidées par Angelino le 28/09/2026 (Semrush Royaume-Uni, même jour) :
+#   /en/web-design-for-tradesmen      « web design for tradesmen » 590/mois KD 3 (page mère)
+#   /en/web-design-for-plumbers       « web design for plumbers » 390/mois KD 9
+#   /en/web-design-for-electricians   « web design for electricians » 320/mois KD 7
+# Règles vérifiées le 28/09/2026 sur legislation.gov.uk, gov.uk, HSE, Ofgem, CMA et ICO.
+ROW_UK_DETAILS = ('Business details', 'Electronic Commerce Regulations 2002, reg. 6; Trading Disclosures '
+                                      'Regulations 2015, regs 24 and 25',
+                  "Your business name, a geographic address and an email address, plus, where they apply, your "
+                  "Companies House (or other public register) number, your VAT number, the body that authorises "
+                  "your trade, such as Gas Safe Register, and whether prices include VAT. A company also shows its "
+                  "registered name, registered office and the part of the UK where it is registered.")
+ROW_UK_CONTRATS = ('Jobs agreed at the customer\'s home', 'Consumer Contracts Regulations 2013, regs 19, 28, 29 '
+                                                          'and 36',
+                   "The customer can usually cancel within 14 days, and you can only start sooner if they ask on "
+                   "paper or by email. Failing to give written cancellation information is a criminal offence. "
+                   "There is no cancellation right for urgent repairs they called you out for, except for extra "
+                   "work or other goods.")
+ROW_UK_AVIS = ('Reviews, logos and approvals', 'Digital Markets, Competition and Consumers Act 2024, Sch. 20, '
+                                               'paras 3, 4 and 13',
+               "Under the DMCC Act, in force since 6 April 2025, it is banned outright to show a trust mark or "
+               "quality mark you are not entitled to, to claim an approval you don't have, to post or buy fake "
+               "reviews, to hide that a review was incentivised, or to hide negative reviews or give positive ones "
+               "more prominence.")
+FAQ_UK_CANCEL = ("Can customers cancel after an emergency call-out?",
+                 "Not for the urgent repair itself: the Consumer Contracts Regulations 2013 (reg. 28) exclude "
+                 "contracts where the customer specifically asked you to visit to carry out urgent repairs or "
+                 "maintenance. The 14-day cancellation right still applies to extra work you agree during that "
+                 "visit, and to goods other than the replacement parts you necessarily used.")
+FAQ_UK_AVIS = ("Can I show reviews and trade body logos on my website?",
+               "Yes, if they are genuine and you are entitled to them. Under the Digital Markets, Competition and "
+               "Consumers Act 2024, in force since 6 April 2025, showing a trust mark or quality mark without "
+               "authorisation, claiming an approval you don't have, posting or buying fake reviews and hiding "
+               "negative reviews while publishing positive ones are all banned outright. After an investigation, the "
+               "CMA can fine up to £300,000 or 10% of worldwide turnover, whichever is higher.")
+WHY_TRADES = [
+    ('💷', 'A price a sole trader can plan for',
+     '€15 a month (about £%d) with no setup fee and no lock-in, or €349 (about £%d) once. No VAT added.'
+     % (GBP_MOIS, GBP_UNIQUE)),
+    ('👀', 'See it before you pay',
+     "Your demo is ready within 24 hours. If it isn't right for you, you pay nothing."),
+    ('💬', 'We work in English', 'Email, WhatsApp or video call, and we reply the same day.'),
+]
+FAQ_TRADES = [
+    ("You're based in Spain: how do we work together?",
+     "Remotely and in English, by email, WhatsApp or video call, and we reply the same day. You tell us about "
+     "your business, we build your demo within 24 hours, and you check every word before anything goes live."),
+    FAQ_COMMUNES[1],
+    FAQ_COMMUNES[2],
+]
+STEPS_TRADES = [('Tell us about your business', 'Your trade, the areas you cover, your registrations and a few job '
+                                                'photos: it takes two minutes.'),
+                ('We build your demo', 'Within 24 hours, with your services, your copy in English and your legal '
+                                       'pages, ready for you to check online.'),
+                STEPS_FIN]
+COMMUN_TRADES = dict(
+    COMMUN,
+    where="England, Scotland, Wales or Northern Ireland: we're based in Valencia, Spain, and work remotely, so "
+          "where your business is makes no difference.",
+    final_sd='Free demo within 24 hours, with your services and legal pages. No setup fee, no lock-in.',
+)
+
+
+def local_search_uk(trade):
+    return ('local-search-help', 'Local search', 'How customers find a local %s' % trade,
+            '<p class="legal-intro">Getting found by someone searching for a local %s depends on more than your '
+            'website design. Search engines and customers read the same pages, so make sure the essentials are '
+            'easy to find.</p>'
+            '<div class="why-g">'
+            '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div>'
+            '<h3>Basic SEO, included in your website</h3>'
+            '<p>Page titles and copy built around your services and the towns you cover, kept consistent with your '
+            'Google Business Profile, come at no extra cost.</p></div>'
+            '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div>'
+            '<h3>Local SEO and your Google listing, if you want more</h3>'
+            '<p>If you want to go further than the basic SEO included in your website, we also offer local SEO and '
+            'help managing your Google Business Profile. Ask us for prices when you get your demo.</p></div>'
+            '<div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div>'
+            '<h3>Built for the phone in someone\'s hand</h3>'
+            '<p>Many people look for a tradesperson on their phone, sometimes in a hurry. Your number, a call '
+            'button and WhatsApp stay in view on every page.</p></div>'
+            '</div>' % trade)
+
+
+TRADES = dict(
+    COMMUN_TRADES,
+    title="Web design for tradesmen in the UK: €15/month",
+    description="Web design for tradesmen in the UK: your services, registrations and legal pages, built around UK "
+                "consumer rules. Free demo in 24h, €15/month, no VAT added.",
+    service_name="Web design for tradesmen in the UK",
+    audience="Tradespeople and small building firms in the United Kingdom",
+    crumb='Web design for tradesmen',
+    badge='For tradespeople and builders in the UK',
+    h1="Web design for <em>tradesmen</em> in the UK",
+    lede="Your services, the areas you cover, your registrations and a quote request in one tap, written with UK "
+         "consumer rules in mind. We write it for you in English, you approve every word, and your free demo is "
+         "ready within 24 hours.",
+    pills=['Registrations shown as you hold them', 'Built around UK consumer rules', 'Free demo in 24 hours'],
+    brief="WebAutonomos designs websites for tradespeople and small building firms in the UK: builders, plumbers, "
+          "electricians, roofers, carpenters and more. We write the copy in English from your real details, show "
+          "your trade body and scheme registrations as you hold them, and include the information UK law expects "
+          "on a business website. " + PRIX_BRIEF,
+    legal_t='What UK rules mean for a tradesman\'s website',
+    legal_intro="Your website counts as advertising, and the quotes and jobs that come from it are consumer "
+                "contracts. These are the rules that matter for tradespeople and builders.",
+    legal_rows=[
+        ROW_UK_DETAILS,
+        ROW_UK_CONTRATS,
+        ('What you say is binding', 'Consumer Rights Act 2015, ss. 49 to 52',
+         "Work must be done with reasonable care and skill. What you tell a customer, on your website or in your "
+         "quote, can become part of the contract if they rely on it; if no price or finish date was agreed, a "
+         "reasonable price and a reasonable time apply."),
+        ROW_UK_AVIS,
+        ('Building regulations (England)', 'Building Regulations 2010, reg. 12 and Sch. 3',
+         "Notifiable work, such as a new circuit, a consumer unit, a boiler or replacement windows, needs building "
+         "control approval unless an installer registered with a competent person scheme self-certifies it. "
+         "Homeowners can check scheme membership online."),
+        ('Health and safety on home jobs', 'Construction (Design and Management) Regulations 2015, regs 7 and 15',
+         "On a domestic job the client's duties pass to you as the contractor (or to the principal contractor if "
+         "there are several), and you draw up a construction phase plan before work starts."),
+        ('Asbestos', 'Control of Asbestos Regulations 2012, regs 8 and 9',
+         "Higher-risk work, such as most work on asbestos insulating board, pipe lagging, sprayed coatings or loose "
+         "fill, needs an HSE-licensed contractor, and some lower-risk work must be notified before it starts."),
+        ('Construction waste (England)', 'Waste (England and Wales) Regulations 2011, reg. 24',
+         "A builder who carries their own construction or demolition waste registers with the Environment Agency as "
+         "an upper-tier waste carrier: the free lower tier doesn't cover it."),
+        ROW_COOKIES,
+    ],
+    legal_note="Building control, waste and some other rules differ in Wales, Scotland and Northern Ireland: check "
+               "the rules where you work. This is general information as of September 2026, not legal advice.",
+    spain_note='<strong>Working in Spain?</strong> Spanish rules are different. See '
+               '<a href="https://webautonomos.es/en/website-for-builders-in-spain">websites for builders and '
+               'renovation companies in Spain</a>.',
+    legal_we=["Your business details as the E-Commerce Regulations list them, plus your company details if you "
+              "trade as a limited company",
+              "Your trade body and scheme registrations shown as you hold them, with nothing you're not entitled to",
+              "Reviews shown honestly: genuine, without hiding the negative ones or giving the positive ones more "
+              "prominence",
+              "A privacy policy and cookie notice adapted to UK law (UK GDPR and PECR)",
+              "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
+    why_t='Built for UK trades',
+    why=[('🧰', 'Your trade, your way', 'Services, areas covered, registrations and job photos, set out the way '
+                                       'customers look for them.')] + WHY_TRADES,
+    sectors=['🏗️ Builders', '🔧 Plumbers', '⚡ Electricians', '🏠 Roofers', '🪵 Carpenters and joiners',
+             '🎨 Painters and decorators', '🟫 Tilers', '🌳 Landscapers'],
+    steps=STEPS_TRADES,
+    extra=[
+        ('website-content', 'Content', "What to put on a tradesman's website",
+         '<p class="legal-intro">Someone looking for a tradesperson wants to know three things quickly: do you do '
+         'the job they need, do you cover their area, and how do they reach you? Websites for tradesmen work '
+         'best when they answer those first.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗂️</div>'
+         '<h3>Your services, grouped by job</h3>'
+         '<p>Extensions, bathrooms, rewires or roof repairs each get their own section, so a visitor finds their '
+         'job without scrolling through everything else.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div>'
+         '<h3>The towns you cover</h3>'
+         '<p>Naming the towns and villages you work in tells a visitor straight away whether you\'ll come to them, '
+         'and helps search engines understand who your site is for.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
+         '<h3>Registrations people can check</h3>'
+         '<p>Gas Safe, NICEIC, NAPIT, TrustMark or a trade association: shown with your number where there is one, '
+         'so a customer can check it, and only the ones you actually hold.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📸</div>'
+         '<h3>Photos of your own work</h3>'
+         '<p>We build your trades website design around your own job photos, grouped by type of work, with a '
+         'one-line caption for each.</p></div>'
+         '</div>'),
+        ('by-trade', 'By trade', 'Trades website design that fits your rules',
+         '<p class="legal-intro">Some trades have their own rules on what they can claim and who can do the work. '
+         'We cover them page by page.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔧</div>'
+         '<h3><a href="https://webautonomos.es/en/web-design-for-plumbers">Web design for plumbers</a></h3>'
+         '<p>Gas Safe registration and logo rules, boilers and building regulations, unvented cylinders and the '
+         'Boiler Upgrade Scheme.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">⚡</div>'
+         '<h3><a href="https://webautonomos.es/en/web-design-for-electricians">Web design for electricians</a>'
+         '</h3>'
+         '<p>Part P and competent person schemes, landlord inspections, EV chargers and solar panels.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏗️</div>'
+         '<h3>Builders and construction firms</h3>'
+         '<p>For construction website design, the rules above apply in full: building control, CDM duties on home '
+         'jobs, asbestos and waste.</p></div>'
+         '</div>'),
+        local_search_uk('tradesperson'),
+    ],
+    faq=[("What must a tradesman's website show by law?",
+          "Under the Electronic Commerce Regulations 2002 (reg. 6): your business name, a geographic address and "
+          "an email address, plus, where they apply, your Companies House (or other public register) number, your "
+          "VAT number, the body that authorises your trade, such as Gas Safe Register, and whether your prices "
+          "include VAT. A company must also show its registered name, company number, registered office and the "
+          "part of the UK where it is registered (Trading Disclosures Regulations 2015, regs 24 and 25)."),
+         ("Can a customer cancel a job they agreed at home?",
+          "Usually, yes: a contract agreed at the customer's home gives them 14 days to cancel (Consumer Contracts "
+          "Regulations 2013). You can only start within those 14 days if they ask you to on a durable medium, such "
+          "as paper or email, and if they then cancel they pay a proportionate amount for the work done, provided "
+          "you gave them the cancellation information. Failing to give written "
+          "cancellation information for such a contract is a criminal offence, and the cancellation period then "
+          "extends by up to 12 months. Contracts of £42 or less are exempt."),
+         ("Is my quote binding?",
+          "What you say or write to a customer, including your quote, can become part of the contract if they "
+          "rely on it (Consumer Rights Act 2015, ss. 50 to 52). If no price was agreed, they only have to pay a "
+          "reasonable price, and if no finish date was agreed, the work must be done within a reasonable time."),
+         FAQ_UK_AVIS,
+         FAQ_UK_CANCEL,
+         ("What are my health and safety duties on a home job?",
+          "Under the Construction (Design and Management) Regulations 2015, a domestic client's duties pass to the "
+          "contractor, or to the principal contractor if there is more than one, and the contractor draws up a "
+          "construction phase plan before setting up the site."),
+         ("Do builders need a waste carrier registration?",
+          "In England, yes, if you carry your own construction or demolition waste: you need an upper-tier "
+          "registration with the Environment Agency, because the free lower tier doesn't cover construction "
+          "waste. Householders must check a carrier's registration before handing over their waste."),
+         ("Is TrustMark compulsory?",
+          "Not in general. TrustMark is the government-endorsed quality scheme for work in and around the home, "
+          "and registration is required for some funded schemes, such as ECO4, which runs until 31 December 2026, "
+          "and the Warm Homes: Local Grant in England."),
+         ("Is there VAT on insulation, heat pumps and solar panels?",
+          "Installing energy-saving materials in homes, such as insulation, heat pumps, solar panels and "
+          "batteries, is zero-rated until 31 March 2027, then goes back to 5% (VAT Notice 708/6). Gas and oil "
+          "boilers and ordinary central heating systems are not included; wood-fuelled boilers are.")] + FAQ_TRADES,
+)
+SRC_TRADES = [
+    ('E-Commerce Regulations 2002, reg. 6', 'https://www.legislation.gov.uk/uksi/2002/2013/regulation/6'),
+    ('Consumer Contracts Regulations 2013, reg. 28', 'https://www.legislation.gov.uk/uksi/2013/3134/regulation/28'),
+    ('Consumer Rights Act 2015, s. 50', 'https://www.legislation.gov.uk/ukpga/2015/15/section/50'),
+    ('DMCC Act 2024, Sch. 20', 'https://www.legislation.gov.uk/ukpga/2024/13/schedule/20'),
+    ('Building regulations approval', 'https://www.gov.uk/building-regulations-approval'),
+    ('HSE, CDM 2015 for domestic clients', 'https://www.hse.gov.uk/construction/cdm/2015/domestic-clients.htm'),
+    ('HSE, licensed asbestos work', 'https://www.hse.gov.uk/asbestos/licensing/licensed-contractor.htm'),
+    ('Waste carrier registration', 'https://www.gov.uk/register-renew-waste-carrier-broker-dealer-england'),
+    ('VAT on energy-saving materials', 'https://www.gov.uk/guidance/vat-on-energy-saving-materials-and-heating-equipment-notice-7086'),
+    ('PECR, reg. 6', 'https://www.legislation.gov.uk/uksi/2003/2426/regulation/6'),
+]
+
+PLUMB_UK = dict(
+    COMMUN_TRADES,
+    title="Web design for plumbers in the UK: €15/month",
+    description="Web design for plumbers and heating engineers in the UK: Gas Safe details, services and legal "
+                "pages, built around UK rules. Free demo in 24h, €15/month.",
+    service_name="Web design for plumbers and heating engineers in the UK",
+    audience="Plumbers, heating engineers and gas engineers in the United Kingdom",
+    crumb='Web design for plumbers',
+    badge='For plumbers and heating engineers in the UK',
+    h1="Web design for <em>plumbers</em> and heating engineers",
+    lede="Your services, your Gas Safe details, the areas you cover and a call or WhatsApp in one tap, written "
+         "with UK rules in mind. We write it for you in English, you approve every word, and your free demo is "
+         "ready within 24 hours.",
+    pills=['Gas Safe details shown as you hold them', 'Call and WhatsApp in one tap', 'Free demo in 24 hours'],
+    brief="WebAutonomos designs websites for plumbers, heating engineers and gas engineers in the UK. We write the "
+          "copy in English from your real details, show your Gas Safe registration and other schemes as you hold "
+          "them, and include the information UK law expects on a business website. " + PRIX_BRIEF,
+    legal_t='What UK rules mean for a plumbing and heating website',
+    legal_intro="Gas work is one of the few trades where the law says who may do the job, and your website is where "
+                "customers check. These are the rules that matter for plumbers and heating engineers.",
+    legal_rows=[
+        ('Gas Safe registration', 'Gas Safety (Installation and Use) Regulations 1998, reg. 3',
+         "Any business doing gas work for payment must be on the Gas Safe Register, and falsely pretending to be "
+         "registered is an offence. Northern Ireland has the same rule under its 2004 regulations."),
+        ('The Gas Safe logo', 'Gas Safe Register brand enforcement policy; DMCC Act 2024, Sch. 20, para. 3',
+         "Only registered businesses may display the Gas Safe logo or a registration number, and only with their "
+         "registered trading name. Showing a quality mark you're not entitled to is also banned outright."),
+        ('Boiler replacements', 'Building Regulations 2010, Sch. 3 and Sch. 4',
+         "Replacing a gas boiler is notifiable building work. A Gas Safe registered installer can self-certify "
+         "it, and the homeowner receives a Building Regulations compliance certificate."),
+        ('Unvented hot water cylinders', 'Building Regulations 2010, reg. 12 and Sch. 4, para. 1(l); Approved '
+                                         'Document G, paras 3.40 to 3.42',
+         "Fitting an unvented cylinder of more than 15 litres is notifiable work. Approved Document G says it "
+         "should be done by someone competent, for example a scheme member or a holder of a current unvented "
+         "skills card."),
+        ('Heat pumps', 'Boiler Upgrade Scheme (England and Wales) Regulations 2022, as amended in 2026',
+         "The Boiler Upgrade Scheme gives £7,500 towards an air source or ground source heat pump and £2,500 "
+         "towards an air-to-air heat pump, in England and Wales. Only an MCS-certified installer can apply for "
+         "the customer."),
+        ('F-gas', 'Regulation (EU) 517/2014 as it applies in Great Britain, art. 11; Fluorinated Greenhouse Gases '
+                  'Regulations 2015',
+         "Installing a split system that contains F-gas refrigerant needs an engineer with an F-gas certificate "
+         "working for a certified company, and split units can only be sold to householders with proof of "
+         "certified installation."),
+        ROW_UK_CONTRATS,
+        ROW_UK_AVIS,
+        ROW_UK_DETAILS,
+        ROW_COOKIES,
+    ],
+    legal_note="Building control and water rules differ in Wales, Scotland and Northern Ireland, and the Boiler "
+               "Upgrade Scheme only covers England and Wales. This is general information as of September 2026, not legal "
+               "advice.",
+    spain_note='<strong>Working in Spain?</strong> Spanish rules are different. See '
+               '<a href="https://webautonomos.es/en/website-for-plumbers-in-spain">websites for plumbers and '
+               'heating engineers in Spain</a>.',
+    legal_we=["Your Gas Safe registration number and trading name, only if you're registered, with a link to the "
+              "public register",
+              "Your other schemes (MCS, WaterSafe, competent person schemes) shown as you hold them",
+              "Emergency call-out details and a call button that stay in view on mobile",
+              "A privacy policy and cookie notice adapted to UK law (UK GDPR and PECR)",
+              "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
+    why_t='Built for plumbing and heating businesses',
+    why=[('🔥', 'Gas Safe details in place', 'Your registration number and trading name, where customers look for '
+                                            'them and can check them.')] + WHY_TRADES,
+    sectors=['🔧 Plumbers', '🔥 Gas engineers', '♨️ Heating engineers', '🌡️ Heat pump installers',
+             '🚿 Bathroom fitters', '🚰 Emergency plumbers', '🛠️ Boiler servicing', '💧 Drainage'],
+    steps=STEPS_TRADES,
+    extra=[
+        ('website-content', 'Content', 'What a plumber website design should show',
+         '<p class="legal-intro">A good plumber website design answers a worried visitor quickly: can you fix '
+         'their problem, do you cover their area, are you registered for gas work, and how do they reach you now? '
+         'Websites for plumbers work best when those answers sit near the top.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🚨</div>'
+         '<h3>Emergency call-outs first</h3>'
+         '<p>Your hours, the towns you cover and a call button at the top of the page, for the customer with a '
+         'leak who won\'t read further.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔥</div>'
+         '<h3>Your Gas Safe details</h3>'
+         '<p>Your registration number, shown with your registered trading name, so a customer can check it on the '
+         'public register before booking gas work.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗂️</div>'
+         '<h3>One section per service</h3>'
+         '<p>Boiler installation and servicing, bathrooms, heat pumps and landlord gas safety checks each get '
+         'their own section in your plumbing website design.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏠</div>'
+         '<h3>Landlords as regular customers</h3>'
+         '<p>Landlords must have gas appliances and flues checked at least every 12 months (Gas Safety '
+         'Regulations, reg. 36): a page for them brings in recurring work.</p></div>'
+         '</div>'
+         '<p class="where">Working as a gas engineer? The same gas engineer website design applies: registration '
+         'first, then services.</p>'),
+        local_search_uk('plumber'),
+    ],
+    faq=[("Do I need to be Gas Safe registered?",
+          "Yes, for any business doing gas work for payment: the Gas Safety (Installation and Use) Regulations 1998 (reg. 3) "
+          "require it, and falsely pretending to be registered is a separate offence. Gas Safe Register replaced "
+          "CORGI in 2009 in Great Britain and in 2010 in Northern Ireland, so avoid “CORGI registered” on your "
+          "website."),
+         ("Can I show the Gas Safe logo on my website?",
+          "Only if your business is registered, and only with your registered trading name, under Gas Safe "
+          "Register's brand rules. Customers can check your number on the Gas Safe website or by phone, and can "
+          "ask to see your engineer's ID card, which lists the types of gas work they are qualified for."),
+         ("Do homeowners have to service their boiler every year?",
+          "No law requires owner-occupiers to service their own boiler, but the HSE strongly advises having gas "
+          "appliances serviced at least once a year. Landlords are different: they must have every gas appliance "
+          "and flue they provide checked at least every 12 months and give tenants the gas safety record."),
+         ("What grants are there for heat pumps?",
+          "In England and Wales, the Boiler Upgrade Scheme gives £7,500 towards an air source or ground source heat "
+          "pump and £2,500 towards an air-to-air heat pump, with £9,000 for an air or ground source heat pump in "
+          "homes heated by oil or LPG with no mains gas, until March 2027. Only an MCS-certified installer can apply for the customer, and installing heat pumps in "
+          "homes is zero-rated for VAT until 31 March 2027."),
+         ("Do I need an F-gas certificate to fit heat pumps?",
+          "For split systems that contain F-gas refrigerant, yes: the engineer needs a personal F-gas certificate "
+          "and must work for an F-gas certified company. Split units can only be sold to householders with proof "
+          "that a certified company will install them."),
+         ("Who can fit an unvented hot water cylinder?",
+          "Someone competent: Approved Document G gives as examples a member of a competent person scheme, who can "
+          "self-certify the work, or a holder of a current skills card for unvented hot water systems. Fitting a cylinder of more than 15 litres is "
+          "notifiable building work, so without a scheme member, building control must be told before work "
+          "starts."),
+         ("Do I need to join WaterSafe or another approved contractor scheme?",
+          "It isn't compulsory. In England and Wales, members of approved contractor schemes can skip advance "
+          "notice to the water company for some jobs, certify their work, and their certificate gives the "
+          "customer a legal defence under the Water Supply (Water Fittings) Regulations 1999."),
+         FAQ_UK_CANCEL,
+         FAQ_UK_AVIS] + FAQ_TRADES,
+)
+SRC_PLUMB_UK = [
+    ('Gas Safety (Installation and Use) Regulations 1998, reg. 3',
+     'https://www.legislation.gov.uk/uksi/1998/2451/regulation/3'),
+    ('HSE, domestic gas safety FAQs', 'https://www.hse.gov.uk/gas/domestic/faqs.htm'),
+    ('Approved Document G', 'https://assets.publishing.service.gov.uk/media/66f6c6ce3b919067bb4828cc/ADG_with_2024_amendments.pdf'),
+    ('Boiler Upgrade Scheme', 'https://www.gov.uk/apply-boiler-upgrade-scheme/what-you-can-get'),
+    ('F-gas qualifications', 'https://www.gov.uk/guidance/qualifications-required-to-work-on-equipment-containing-f-gas'),
+    ('Water Fittings Regulations 1999, reg. 7', 'https://www.legislation.gov.uk/uksi/1999/1148/regulation/7'),
+    ('Consumer Contracts Regulations 2013, reg. 28', 'https://www.legislation.gov.uk/uksi/2013/3134/regulation/28'),
+    ('DMCC Act 2024, Sch. 20', 'https://www.legislation.gov.uk/ukpga/2024/13/schedule/20'),
+    ('E-Commerce Regulations 2002, reg. 6', 'https://www.legislation.gov.uk/uksi/2002/2013/regulation/6'),
+]
+
+ELEC_UK = dict(
+    COMMUN_TRADES,
+    title="Web design for electricians in the UK: €15/month",
+    description="Web design for electricians in the UK: scheme registration, services and legal pages, built around "
+                "Part P and UK consumer rules. Free demo in 24h, €15/month.",
+    service_name="Web design for electricians in the UK",
+    audience="Electricians and electrical contractors in the United Kingdom",
+    crumb='Web design for electricians',
+    badge='For electricians in the UK',
+    h1="Web design for <em>electricians</em> in the UK",
+    lede="Your services, your scheme registration, the areas you cover and a call or WhatsApp in one tap, written "
+         "with Part P and UK consumer rules in mind. We write it for you in English, you approve every word, and "
+         "your free demo is ready within 24 hours.",
+    pills=['Scheme registration shown as you hold it', 'Built around Part P', 'Free demo in 24 hours'],
+    brief="WebAutonomos designs websites for electricians and electrical contractors in the UK. We write the copy "
+          "in English from your real details, show your competent person scheme registration as you hold it, and "
+          "include the information UK law expects on a business website. " + PRIX_BRIEF,
+    legal_t='What UK rules mean for an electrician website',
+    legal_intro="Anyone can call themselves an electrician in the UK, so what customers look for is your scheme "
+                "registration. These are the rules that matter for your website.",
+    legal_rows=[
+        ('Notifiable work (England)', 'Building Regulations 2010, reg. 12(6A)',
+         "A new circuit, replacing a consumer unit, or any addition or alteration to circuits in a special location, "
+         "such as the space around a bath or shower, needs building control approval, unless a registered competent "
+         "person self-certifies it."),
+        ('Competent person schemes', 'Building Regulations 2010, Sch. 3',
+         "For electrical work in homes, the authorised schemes are NICEIC (run by Certsure), NAPIT, Blue Flame "
+         "and OFTEC. ELECSA and Stroma no longer run schemes for this work."),
+        ('Electrical work in Wales', 'Building Regulations 2010, Sch. 4 (Wales)',
+         "The rule is wider: electrical work in a home is notifiable unless it's on a short exempt list, so adding "
+         "to circuits in a kitchen or outdoors, or work on a generator such as solar panels, is notifiable."),
+        ('BS 7671', 'Electricity at Work Regulations 1989; HSE, HSR25, para. 9',
+         "BS 7671 isn't law in itself, but the HSE says following it is likely to achieve compliance with the "
+         "Electricity at Work Regulations. Amendment 4 was published in April 2026."),
+        ('Rented homes (England)', 'Electrical Safety Standards in the Private Rented Sector and Social Rented '
+                                   'Sector (England) Regulations 2020',
+         "Landlords, social landlords included, must have the electrics inspected and tested by a qualified person "
+         "at least every 5 years. Wales and Scotland have their own 5-year rules."),
+        ('EV chargers', 'Electric Vehicles (Smart Charge Points) Regulations 2021; OZEV grant guidance',
+         "Home chargers sold in Great Britain must be smart chargers. OZEV grants of up to £500, for flat owners and "
+         "renters with off-street parking or for homes with on-street parking, run until 31 March 2027, through an "
+         "OZEV-authorised installer."),
+        ROW_UK_CONTRATS,
+        ROW_UK_AVIS,
+        ROW_UK_DETAILS,
+        ROW_COOKIES,
+    ],
+    legal_note="Scotland uses building warrants and approved certifiers of construction, and Northern Ireland's "
+               "building regulations have no domestic electrical safety part. This is general information as of "
+               "September 2026, not legal advice.",
+    spain_note='<strong>Working in Spain?</strong> Spanish rules are different. See '
+               '<a href="https://webautonomos.es/en/website-for-electricians-in-spain">websites for electricians '
+               'in Spain</a>.',
+    legal_we=["Your competent person scheme and registration number, only if you're registered, so customers can "
+              "check them",
+              "Your services grouped by type of job, from consumer units to EV chargers",
+              "A page for landlords, if you carry out electrical inspections for rented homes",
+              "A privacy policy and cookie notice adapted to UK law (UK GDPR and PECR)",
+              "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
+    why_t='Built for electricians',
+    why=[('⚡', 'Your registration in place', 'Your scheme and number, where customers look for them and can check '
+                                            'them.')] + WHY_TRADES,
+    sectors=['⚡ Domestic electricians', '🏢 Electrical contractors', '🔌 Rewires and consumer units',
+             '🚗 EV charger installers', '☀️ Solar PV installers', '📋 Landlord inspections', '💡 Lighting',
+             '📶 Smart home and data'],
+    steps=STEPS_TRADES,
+    extra=[
+        ('website-content', 'Content', 'What an electrician website design should show',
+         '<p class="legal-intro">A customer looking for an electrician website wants to see what you do, whether '
+         'you cover their area, and whether you can sign off the work. Good electrician website design puts those '
+         'first.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
+         '<h3>Your scheme registration</h3>'
+         '<p>NICEIC, NAPIT or another authorised scheme, with your registration number, so a customer can check it '
+         'on the Competent Persons Register before booking notifiable work.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗂️</div>'
+         '<h3>One section per type of job</h3>'
+         '<p>Fault finding, rewires, consumer units, EV chargers and solar each get their own section, so a '
+         'visitor finds their job without scrolling past the rest.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏠</div>'
+         '<h3>A page for landlords</h3>'
+         '<p>Landlords need their electrics inspected at least every 5 years, and since 2025–26 that includes social '
+         'housing: a page for them brings in recurring work.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📸</div>'
+         '<h3>Photos of your own work</h3>'
+         '<p>Neat consumer units and finished installations, from your own photos, with a one-line caption for '
+         'each job.</p></div>'
+         '</div>'),
+        local_search_uk('electrician'),
+    ],
+    faq=[("Do electricians need a licence in the UK?",
+          "There's no legal licence or protected title for electricians, but the law still requires competence "
+          "for electrical work (Electricity at Work Regulations 1989, reg. 16). In England and Wales, registration "
+          "with a competent person scheme lets you self-certify notifiable work in homes instead of going through "
+          "building control, and it is what customers can check."),
+         ("What electrical work is notifiable in England?",
+          "Under the Building Regulations 2010 (reg. 12(6A)): installing a new circuit, replacing a consumer unit, "
+          "and any addition or alteration to existing circuits in a special location, such as the space around a "
+          "bath or shower, or a room with a swimming pool or sauna heater. Wales has a wider rule, with only a short list of exempt work."),
+         ("Which schemes can I join to self-certify?",
+          "For electrical work in homes, the competent person schemes listed in the Building Regulations are "
+          "NICEIC (run by Certsure), NAPIT, Blue Flame and OFTEC. ELECSA and Stroma no longer run schemes for this work, "
+          "so an old logo from either should come off your website."),
+         ("Is BS 7671 a legal requirement?",
+          "Not in itself: it's a non-statutory standard, but the HSE says following it is likely to achieve "
+          "compliance with the relevant parts of the Electricity at Work Regulations 1989, and the rented-home "
+          "rules refer to it directly. The current version is BS 7671:2018 with Amendment 4, published in April "
+          "2026; Amendment 3 remains usable until about mid-October 2026."),
+         ("How often do landlords need an electrical inspection?",
+          "In England, at least every 5 years, carried out by a qualified and competent person, and since "
+          "2025–26 the rule covers social housing too. Wales requires an electrical condition report at least "
+          "every 5 years, and Scotland an inspection before the tenancy starts and at most 5 years apart."),
+         ("Can I fit EV chargers for the OZEV grant?",
+          "Only as an OZEV-authorised installer. There are two grants of up to £500: one for flat owners and "
+          "renters with private off-street parking, and one for homes with on-street parking, using a "
+          "cross-pavement solution. This is their final year: they end on 31 March 2027. Home chargers sold in "
+          "Great Britain must also meet the smart charge point regulations."),
+         ("Do solar panels fall under Part P?",
+          "Solar PV on a roof is electrical work covered by Part P. In England it is usually notifiable, as it "
+          "normally needs a new circuit, and in Wales it always is; microgeneration installers can self-certify "
+          "through their own schemes. Installing solar panels and batteries in homes is zero-rated "
+          "for VAT until 31 March 2027."),
+         FAQ_UK_CANCEL,
+         FAQ_UK_AVIS] + FAQ_TRADES,
+)
+SRC_ELEC_UK = [
+    ('Building Regulations 2010, reg. 12', 'https://www.legislation.gov.uk/uksi/2010/2214/regulation/12'),
+    ('Competent person schemes', 'https://www.gov.uk/guidance/competent-person-scheme-current-schemes-and-how-schemes-are-authorised'),
+    ('HSE, HSR25', 'https://www.hse.gov.uk/pubns/priced/hsr25.pdf'),
+    ('Electrical safety standards in rented homes',
+     'https://www.gov.uk/government/publications/electrical-safety-standards-in-the-private-and-social-rented-sectors-guidance/electrical-safety-standards-in-the-private-and-social-rented-sectors-guidance'),
+    ('EV chargepoint grants', 'https://www.gov.uk/guidance/electric-vehicle-chargepoint-grants'),
+    ('Smart Charge Points Regulations 2021', 'https://www.legislation.gov.uk/uksi/2021/1467/regulation/4'),
+    ('Consumer Contracts Regulations 2013, reg. 28', 'https://www.legislation.gov.uk/uksi/2013/3134/regulation/28'),
+    ('DMCC Act 2024, Sch. 20', 'https://www.legislation.gov.uk/ukpga/2024/13/schedule/20'),
+    ('E-Commerce Regulations 2002, reg. 6', 'https://www.legislation.gov.uk/uksi/2002/2013/regulation/6'),
+]
+
+
 PAGES = {
     'dental': dict(url='/en/dental-website-design', C=DENTAL, SOURCES=SRC_DENTAL,
                    llms='Dental website design for UK practices'),
     'physio': dict(url='/en/physiotherapy-website-design', C=PHYSIO, SOURCES=SRC_PHYSIO,
                    llms='Physiotherapy website design for UK clinics'),
+    'tradesmen': dict(url='/en/web-design-for-tradesmen', C=TRADES, SOURCES=SRC_TRADES,
+                      llms='Web design for tradesmen in the UK', avis='menuisiers'),
+    'plumbers': dict(url='/en/web-design-for-plumbers', C=PLUMB_UK, SOURCES=SRC_PLUMB_UK,
+                     llms='Web design for plumbers and heating engineers in the UK', avis='menuisiers'),
+    'electricians': dict(url='/en/web-design-for-electricians', C=ELEC_UK, SOURCES=SRC_ELEC_UK,
+                         llms='Web design for electricians in the UK', avis='menuisiers'),
 }
 
 
@@ -542,7 +1074,7 @@ def page(P):
             ' hl' if p['hl'] else '', '<span class="pc-b">%s</span>' % E(p['badge']) if p['badge'] else '',
             E(p['name']), E(p['amt']), E(p['per']), ''.join('<li>%s</li>' % E(t) for t in p['pts']))
     slides, dots = '', ''
-    for n, (txt, who, tr) in enumerate(BM.trier_avis(LANG, BM.METIERS['dentistes']['avis_ordre'])):
+    for n, (txt, who, tr) in enumerate(BM.trier_avis(LANG, BM.METIERS[P.get('avis', 'dentistes')]['avis_ordre'])):
         slides += ('<div class="tp-slide"><div class="tp-card"><div class="tp-stars" aria-hidden="true">★★★★★</div>'
                    '<blockquote>« %s »</blockquote><div class="tp-who">— %s%s</div></div></div>') % (
             E(txt), E(who), '<span class="tp-tr">%s</span>' % E(tr) if tr else '')

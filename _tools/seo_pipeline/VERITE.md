@@ -3,7 +3,7 @@
 > **Règle absolue pour les agents** : toute affirmation factuelle sur WebAutonomos
 > (prix, délais, services, langues, chiffres, clients, ancienneté, résultats)
 > qui n'est pas écrite ici est **interdite**. Le relecteur rejette la page.
-> Tenu à jour par Angelino. Dernière révision : 27/09/2026.
+> Tenu à jour par Angelino. Dernière révision : 28/09/2026.
 > Les lignes marquées **À CONFIRMER** ne doivent pas être utilisées tant
 > qu'Angelino ne les a pas tranchées.
 
@@ -42,7 +42,7 @@
   - équivalent indicatif en livres, toujours avec « about » : **about £13** par mois, **about £300** en paiement unique (taux du 25/09/2026 : 1 € = 0,86 £) ; préciser que le montant en livres dépend du taux de change
   - domaine **.co.uk ou .uk** au nom du client, fourni comme le .es (inclus la première année) ; prix du renouvellement non confirmé : ne pas l'annoncer
   - textes légaux (privacy policy, cookie notice) **adaptés au droit britannique (UK GDPR)**
-  - pages concernées : /en/dental-website-design et /en/physiotherapy-website-design (générées par `_tools/build_uk_pages.py`)
+  - pages concernées : /en/dental-website-design, /en/physiotherapy-website-design et, depuis le 28/09/2026, /en/web-design-for-tradesmen, /en/web-design-for-plumbers et /en/web-design-for-electricians (générées par `_tools/build_uk_pages.py`)
 - Propriété de la web : avec la formule 349 €, la web est au client (« pagas una vez y la web es tuya », cartes de prix du site) ; en alquiler, ne pas écrire que la web lui appartient (seul le domaine est à lui)
 - **Non inclus, ne jamais l'annoncer** (déclaré par Angelino le 25/09/2026) :
   - aucune intégration d'agenda ou de système de réservation en ligne (Calendly, Doctoralia, Bookitit, Doctolib, logiciels de clinique…) et aucun rappel automatique par SMS ou email ; les demandes arrivent par le formulaire (email) et par WhatsApp. **Permis** (confirmé le 27/09/2026) : un simple lien ou bouton vers l'outil de réservation que le client utilise déjà ; écrire « lien », jamais « intégration », « synchronisation » ni « rappels »

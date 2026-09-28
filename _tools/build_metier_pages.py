@@ -2366,7 +2366,8 @@ PLOMB['en'] = dict(
               "The complaint information your region asks for, such as the QR poster in Andalucía",
               "A call button and WhatsApp always visible on mobile, and your site in up to four languages, English "
               "and Spanish included, at no extra cost"],
-    spain_note='',
+    spain_note='<strong>Working in the UK instead?</strong> UK rules are different. See '
+               '<a href="https://webautonomos.es/en/web-design-for-plumbers">web design for plumbers and heating engineers in the UK</a>.',
     sources_t='Sources',
     why_ey='Why us', why_t='Built for tradespeople who work in English',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
@@ -2741,7 +2742,8 @@ ELEC['en'] = dict(
               "The complaint information your region asks for, such as the QR poster in Andalucía",
               "A call button and WhatsApp always visible on mobile, and your site in up to four languages, English "
               "and Spanish included, at no extra cost"],
-    spain_note='',
+    spain_note='<strong>Working in the UK instead?</strong> UK rules are different. See '
+               '<a href="https://webautonomos.es/en/web-design-for-electricians">web design for electricians in the UK</a>.',
     sources_t='Sources',
     why_ey='Why us', why_t='Built for tradespeople who work in English',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
@@ -3170,7 +3172,8 @@ ARTI['en'] = dict(
               "A quote request form, a WhatsApp button and your phone number, so customers contact you directly",
               "Customer reviews shown with a note on how they are checked, and your site in up to four languages, "
               "English and Spanish included, at no extra cost"],
-    spain_note='',
+    spain_note='<strong>Working in the UK instead?</strong> UK rules are different. See '
+               '<a href="https://webautonomos.es/en/web-design-for-tradesmen">web design for tradesmen in the UK</a>.',
     sources_t='Sources',
     why_ey='Why us', why_t='Built for builders who work in English',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
