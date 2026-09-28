@@ -628,8 +628,8 @@
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 2,
-      "notes": "Page créée le 28/09/2026 pour les anglophones installés en Espagne. Requête à confirmer par Angelino : l'article blog/en/website-for-plumbers-complete-guide vise des requêtes proches ; vérifier dans la Search Console lequel des deux reçoit les impressions avant de lancer la page. Rules table, notes and legal answers checked by an independent review on 28/09/2026: do not change them for keyword density.",
-      "donnees": "Aucun volume mesuré (base Espagne, requêtes anglaises) : requête sautée tant qu'Angelino ne la confirme pas.",
+      "notes": "Page créée le 28/09/2026 pour les anglophones installés en Espagne. Hors circuit tant qu'Angelino ne passe pas requete_a_confirmer à false : aucune demande mesurée (voir donnees), pas de conflit avec le blog. Rules table, notes and legal answers checked by an independent review on 28/09/2026: do not change them for keyword density.",
+      "donnees": "Search Console, 3 mois au 28/09/2026, requêtes contenant « websites » : aucune impression pour « websites for plumbers », « websites for electricians » ni « websites for builders » (ni pour les articles du blog). Sur 238 impressions « websites … », 203 viennent du Royaume-Uni et 2 d'Espagne ; en tête : websites for carpenters 75, carpenters websites 53.",
       "termes_necessaires": [
         "spain",
         "spanish",
@@ -650,8 +650,8 @@
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 2,
-      "notes": "Page créée le 28/09/2026 pour les anglophones installés en Espagne. Requête à confirmer par Angelino : l'article blog/en/website-for-electricians vise des requêtes proches ; vérifier dans la Search Console lequel des deux reçoit les impressions avant de lancer la page. Rules table, notes and legal answers checked by an independent review on 28/09/2026: do not change them for keyword density.",
-      "donnees": "Aucun volume mesuré (base Espagne, requêtes anglaises) : requête sautée tant qu'Angelino ne la confirme pas.",
+      "notes": "Page créée le 28/09/2026 pour les anglophones installés en Espagne. Hors circuit tant qu'Angelino ne passe pas requete_a_confirmer à false : aucune demande mesurée (voir donnees), pas de conflit avec le blog. Rules table, notes and legal answers checked by an independent review on 28/09/2026: do not change them for keyword density.",
+      "donnees": "Search Console, 3 mois au 28/09/2026, requêtes contenant « websites » : aucune impression pour « websites for plumbers », « websites for electricians » ni « websites for builders » (ni pour les articles du blog). Sur 238 impressions « websites … », 203 viennent du Royaume-Uni et 2 d'Espagne ; en tête : websites for carpenters 75, carpenters websites 53.",
       "termes_necessaires": [
         "spain",
         "spanish",
@@ -673,8 +673,8 @@
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 2,
-      "notes": "Page créée le 28/09/2026 pour les anglophones installés en Espagne. Requête à confirmer par Angelino : l'article blog/en/website-for-carpenters-and-renovations vise des requêtes proches ; vérifier dans la Search Console lequel des deux reçoit les impressions avant de lancer la page. Rules table, notes and legal answers checked by an independent review on 28/09/2026: do not change them for keyword density.",
-      "donnees": "Aucun volume mesuré (base Espagne, requêtes anglaises) : requête sautée tant qu'Angelino ne la confirme pas.",
+      "notes": "Page créée le 28/09/2026 pour les anglophones installés en Espagne. Hors circuit tant qu'Angelino ne passe pas requete_a_confirmer à false : aucune demande mesurée (voir donnees), pas de conflit avec le blog. Rules table, notes and legal answers checked by an independent review on 28/09/2026: do not change them for keyword density.",
+      "donnees": "Search Console, 3 mois au 28/09/2026, requêtes contenant « websites » : aucune impression pour « websites for plumbers », « websites for electricians » ni « websites for builders » (ni pour les articles du blog). Sur 238 impressions « websites … », 203 viennent du Royaume-Uni et 2 d'Espagne ; en tête : websites for carpenters 75, carpenters websites 53.",
       "termes_necessaires": [
         "spain",
         "spanish",
