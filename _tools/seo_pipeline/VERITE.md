@@ -3,7 +3,7 @@
 > **Règle absolue pour les agents** : toute affirmation factuelle sur WebAutonomos
 > (prix, délais, services, langues, chiffres, clients, ancienneté, résultats)
 > qui n'est pas écrite ici est **interdite**. Le relecteur rejette la page.
-> Tenu à jour par Angelino. Dernière révision : 28/09/2026.
+> Tenu à jour par Angelino. Dernière révision : 29/09/2026.
 > Les lignes marquées **À CONFIRMER** ne doivent pas être utilisées tant
 > qu'Angelino ne les a pas tranchées.
 
@@ -47,6 +47,7 @@
 - **Non inclus, ne jamais l'annoncer** (déclaré par Angelino le 25/09/2026) :
   - aucune intégration d'agenda ou de système de réservation en ligne (Calendly, Doctoralia, Bookitit, Doctolib, logiciels de clinique…) et aucun rappel automatique par SMS ou email ; les demandes arrivent par le formulaire (email) et par WhatsApp. **Permis** (confirmé le 27/09/2026) : un simple lien ou bouton vers l'outil de réservation que le client utilise déjà ; écrire « lien », jamais « intégration », « synchronisation » ni « rappels »
   - pas de photos « de alta calidad » ni de reportage photo : WebAutonomos utilise les photos du client (fiche Google, photos envoyées)
+  - aucune localisation des serveurs : ne pas écrire « serveurs européens » / « servidores europeos » / « European servers » (retiré du site le 29/09/2026 ; les sites clients vérifiés ce jour-là sont servis par Cloudflare, réseau mondial). « Hébergement » suffit
   - ne pas écrire « te respondemos con ejemplos reales »
   - adresse email professionnelle (@domaine) : **non incluse** dans 15 €/mes ni 349 € ; configurable **sur demande**, aucun prix à annoncer (25/09/2026)
   - pas de modifications illimitées après la mise en ligne (une par mois), pas d'« intégrations avancées » gratuites
@@ -148,6 +149,10 @@ unlimited (modifications|changes)
 SEO local (incluido|inclus|compris|inclòs) (en|dans)
 local SEO included
 ejemplo real\b
+serveurs? europ[ée]ens
+servidores europeos
+servidors europeus
+european servers
 qu[eé] dolor resuelve
 ```
 
