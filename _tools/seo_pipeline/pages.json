@@ -364,6 +364,84 @@
       ]
     },
     {
+      "slug": "fr-artisan",
+      "url": "https://webautonomos.es/fr/site-internet-artisan",
+      "lang": "fr",
+      "requete": "création site internet artisan",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "site internet artisan",
+        "site web artisan",
+        "création site vitrine artisan",
+        "seo pour artisans"
+      ],
+      "fichier": "fr/site-internet-artisan.html",
+      "generateur": "_tools/build_metier_pages.py",
+      "mode": "auto",
+      "objectif_geo": "au_mieux",
+      "statut": "a_faire",
+      "priorite": 1,
+      "notes": "Page créée le 28/09/2026 : page mère des métiers du bâtiment (liens vers plombier, électricien, menuisier), hreflang avec /reformas/ et /en/website-for-builders-in-spain. Remplace la page « rénovation » du plan (« site internet entreprise rénovation » : 30/mois). Tableau des règles, notes et réponses juridiques relus par une vérification indépendante le 28/09/2026 : ne pas les modifier pour la densité.",
+      "donnees": "Semrush France, relevé du 28/09/2026 (volume mensuel, KD) : création site internet artisan 590 (19) ; site internet artisan 390 (9) ; site web artisan 260 (19) ; agence web artisan 110 (18) ; creation site internet pour artisan 90 (22) ; création site vitrine artisan 70 (8) ; seo pour artisans 70 (7) ; site internet entreprise rénovation 30 (6).",
+      "termes_necessaires": [
+        "artisan",
+        "qualification",
+        "assurance",
+        "devis"
+      ]
+    },
+    {
+      "slug": "fr-plombier",
+      "url": "https://webautonomos.es/fr/site-internet-plombier",
+      "lang": "fr",
+      "requete": "création site internet plombier",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "site internet plombier",
+        "création site internet chauffagiste",
+        "création site vitrine plombier",
+        "référencement site internet plombier"
+      ],
+      "fichier": "fr/site-internet-plombier.html",
+      "generateur": "_tools/build_metier_pages.py",
+      "mode": "auto",
+      "objectif_geo": "au_mieux",
+      "statut": "a_faire",
+      "priorite": 1,
+      "notes": "Page créée le 28/09/2026. Cannibalisation : l'article blog/fr/site-web-pour-plombiers-guide-complet est le guide informatif ; la page garde l'intention commerciale et renvoie vers lui, sans reprendre son titre. Tableau des règles, notes et réponses juridiques relus par une vérification indépendante le 28/09/2026 : ne pas les modifier pour la densité.",
+      "donnees": "Semrush France, relevé du 28/09/2026 (volume mensuel, KD) : site internet plombier 260 (13) ; création site internet plombier 210 (11) ; création site internet chauffagiste 110 (9) ; créer un site internet de plombier 110 (11) ; création site vitrine plombier 90 (6) ; référencement site internet plombier 90 (12) ; creation site chauffagiste 90 (8) ; agence web plombier 70 (6) ; site web plombier 70 (12).",
+      "termes_necessaires": [
+        "plombier",
+        "dépannage",
+        "devis",
+        "tarifs"
+      ]
+    },
+    {
+      "slug": "fr-electricien",
+      "url": "https://webautonomos.es/fr/site-internet-electricien",
+      "lang": "fr",
+      "requete": "création site internet électricien",
+      "requete_a_confirmer": false,
+      "requetes_secondaires": [
+        "site internet électricien"
+      ],
+      "fichier": "fr/site-internet-electricien.html",
+      "generateur": "_tools/build_metier_pages.py",
+      "mode": "auto",
+      "objectif_geo": "au_mieux",
+      "statut": "a_faire",
+      "priorite": 2,
+      "notes": "Page créée le 28/09/2026. Cannibalisation : l'article blog/fr/site-web-pour-electriciens est le guide informatif ; la page garde l'intention commerciale et renvoie vers lui. Tableau des règles, notes et réponses juridiques relus par une vérification indépendante le 28/09/2026 : ne pas les modifier pour la densité.",
+      "donnees": "Semrush France, relevé du 28/09/2026 (volume mensuel, KD) : création site internet électricien 170 (20) ; site internet électricien 90 (6).",
+      "termes_necessaires": [
+        "électricien",
+        "qualification",
+        "dépannage",
+        "installation"
+      ]
+    },
+    {
       "slug": "fr-francophones-espagne",
       "url": "https://webautonomos.es/fr/site-internet-francophones-espagne",
       "lang": "fr",
@@ -536,6 +614,73 @@
         "patient",
         "colegiado",
         "clinic"
+      ]
+    },
+    {
+      "slug": "en-plumbers",
+      "url": "https://webautonomos.es/en/website-for-plumbers-in-spain",
+      "lang": "en",
+      "requete": "websites for plumbers",
+      "requete_a_confirmer": true,
+      "fichier": "en/website-for-plumbers-in-spain.html",
+      "generateur": "_tools/build_metier_pages.py",
+      "mode": "auto",
+      "objectif_geo": "au_mieux",
+      "statut": "a_faire",
+      "priorite": 2,
+      "notes": "Page créée le 28/09/2026 pour les anglophones installés en Espagne. Requête à confirmer par Angelino : l'article blog/en/website-for-plumbers-complete-guide vise des requêtes proches ; vérifier dans la Search Console lequel des deux reçoit les impressions avant de lancer la page. Rules table, notes and legal answers checked by an independent review on 28/09/2026: do not change them for keyword density.",
+      "donnees": "Aucun volume mesuré (base Espagne, requêtes anglaises) : requête sautée tant qu'Angelino ne la confirme pas.",
+      "termes_necessaires": [
+        "spain",
+        "spanish",
+        "gas",
+        "heating",
+        "installation"
+      ]
+    },
+    {
+      "slug": "en-electricians",
+      "url": "https://webautonomos.es/en/website-for-electricians-in-spain",
+      "lang": "en",
+      "requete": "websites for electricians",
+      "requete_a_confirmer": true,
+      "fichier": "en/website-for-electricians-in-spain.html",
+      "generateur": "_tools/build_metier_pages.py",
+      "mode": "auto",
+      "objectif_geo": "au_mieux",
+      "statut": "a_faire",
+      "priorite": 2,
+      "notes": "Page créée le 28/09/2026 pour les anglophones installés en Espagne. Requête à confirmer par Angelino : l'article blog/en/website-for-electricians vise des requêtes proches ; vérifier dans la Search Console lequel des deux reçoit les impressions avant de lancer la page. Rules table, notes and legal answers checked by an independent review on 28/09/2026: do not change them for keyword density.",
+      "donnees": "Aucun volume mesuré (base Espagne, requêtes anglaises) : requête sautée tant qu'Angelino ne la confirme pas.",
+      "termes_necessaires": [
+        "spain",
+        "spanish",
+        "empresa",
+        "instaladora",
+        "installation",
+        "certificate"
+      ]
+    },
+    {
+      "slug": "en-builders",
+      "url": "https://webautonomos.es/en/website-for-builders-in-spain",
+      "lang": "en",
+      "requete": "websites for builders",
+      "requete_a_confirmer": true,
+      "fichier": "en/website-for-builders-in-spain.html",
+      "generateur": "_tools/build_metier_pages.py",
+      "mode": "auto",
+      "objectif_geo": "au_mieux",
+      "statut": "a_faire",
+      "priorite": 2,
+      "notes": "Page créée le 28/09/2026 pour les anglophones installés en Espagne. Requête à confirmer par Angelino : l'article blog/en/website-for-carpenters-and-renovations vise des requêtes proches ; vérifier dans la Search Console lequel des deux reçoit les impressions avant de lancer la page. Rules table, notes and legal answers checked by an independent review on 28/09/2026: do not change them for keyword density.",
+      "donnees": "Aucun volume mesuré (base Espagne, requêtes anglaises) : requête sautée tant qu'Angelino ne la confirme pas.",
+      "termes_necessaires": [
+        "spain",
+        "spanish",
+        "permit",
+        "works",
+        "vat"
       ]
     },
     {

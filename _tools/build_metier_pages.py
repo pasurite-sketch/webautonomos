@@ -38,6 +38,38 @@ Métiers :
                                                dispositifs interdites (RD 1591/2009),
                                                prix complets et TAE du financement
     /dentistas/                                (espagnol, page existante)
+  plombiers et plumbers (28/09/2026)
+    /fr/site-internet-plombier                 règles françaises : tarifs de dépannage et
+                                               devis (arrêté du 24/01/2017), urgence
+                                               (L221-10, L221-28), logos officiels
+                                               (CPI L731-2), aides PAC (décret 2026-822),
+                                               encart France Rénov', gaz, fluides, entretien
+    /en/website-for-plumbers-in-spain          règles espagnoles : RITE, gaz (RD 919/2006),
+                                               gaz fluorés (RD 115/2017), fontanería
+                                               régionale, urgences (TRLGDCU art. 103),
+                                               RD 58/1988
+    /fontaneros/                               (espagnol, page existante)
+  électriciens et electricians (28/09/2026)
+    /fr/site-internet-electricien              règles françaises : dépannage, qualification
+                                               (C. artisanat L121-1), Consuel (D342-19),
+                                               IRVE (D353-2), photovoltaïque (S21, TVA
+                                               5,5 %), diagnostic (CCH L271-6)
+    /en/website-for-electricians-in-spain      règles espagnoles : empresa instaladora
+                                               (REBT, ITC-BT-03, RD 770/2025), boletín,
+                                               bornes (ITC-BT-52, LPH 17.5), autoconsumo,
+                                               diplômes britanniques
+    /electricistas/                            (espagnol, page existante)
+  artisans du bâtiment et builders (28/09/2026)
+    /fr/site-internet-artisan                  page mère des métiers du bâtiment (requête
+                                               « création site internet artisan ») :
+                                               qualification, mot « artisan », décennale,
+                                               hors établissement, démarchage (opt-in au
+                                               11/08/2026), RGE (L224-114), encart France
+                                               Rénov', TVA réduite sans attestation, garanties
+    /en/website-for-builders-in-spain          règles espagnoles : permis municipaux, LOE,
+                                               amiante (RERA), déchets, IVA 10 %, espèces
+                                               (Ley 7/2012), réclamations, devis
+    /reformas/                                 (espagnol, page existante)
 
 Faits juridiques vérifiés le 23-24/09/2026 (sources officielles, voir THERA_SOURCES),
 puis relus par une vérification indépendante le 24/09/2026 :
@@ -1909,6 +1941,1368 @@ DENT_SOURCES = {
     ],
 }
 
+# ═════════════════════════ PLOMBIERS ET PLUMBERS (28/09/2026) ═════════════
+PRIX_FR_BAT = ("Prix hors taxes : l'IVA espagnole de 21 % s'ajoute. Si votre entreprise est établie dans un autre "
+               "pays de l'UE, en France par exemple, avec un numéro de TVA intracommunautaire, la facture est émise "
+               "sans TVA (autoliquidation). Nom de domaine inclus la première année, puis environ 12 €/an.")
+PRIX_EN_BAT = ("Prices exclude VAT (21% IVA on the mainland and the Balearics; the Canary Islands, Ceuta and Melilla "
+               "have their own taxes). As a VAT-registered autónomo you can normally deduct it. Domain name included "
+               "for the first year, then about €12/year.")
+
+# Textes communs aux pages bâtiment : médiateur, avis, mentions légales, services complémentaires.
+ROW_MEDIATEUR = ("Médiateur de la consommation", "Code de la consommation, art. L616-1, R616-1 et L641-1",
+                 "Si vous travaillez pour des particuliers, le nom, les coordonnées et l'adresse du site de votre "
+                 "médiateur doivent apparaître de manière visible et lisible sur votre site. Amende jusqu'à 3 000 € "
+                 "(15 000 € pour une société).")
+ROW_MENTIONS = ("Mentions légales", "LCEN, art. 1-1 et 19 ; Code de commerce, art. R526-27",
+                "Nom (précédé ou suivi de « EI » si vous êtes entrepreneur individuel), ou forme, capital et siège "
+                "pour une société, adresse, téléphone, e-mail, numéro d'immatriculation au RNE, numéro de TVA si vous "
+                "en avez un, directeur de la publication, et nom, adresse et téléphone de l'hébergeur.")
+ROW_ASSURANCE = ("Assurance", "Code des assurances, art. L241-1 et L243-2 ; Code de la consommation, art. R111-2",
+                 "Si vous êtes soumis à la décennale, l'attestation se joint à chaque devis et chaque facture. Avant "
+                 "tout contrat, le client doit aussi pouvoir connaître votre assurance, votre assureur et la "
+                 "couverture géographique : autant l'indiquer dès le premier contact.")
+FAQ_MEDIATEUR = ("Dois-je indiquer un médiateur de la consommation ?",
+                 "Oui, si vous travaillez pour des particuliers, quelle que soit la taille de votre entreprise. Son "
+                 "nom, ses coordonnées et l'adresse de son site internet doivent figurer de manière visible et lisible "
+                 "sur votre site, vos conditions générales et vos bons de commande. L'ancienne plateforme européenne "
+                 "de règlement des litiges a fermé en juillet 2025 : inutile d'y renvoyer.")
+FAQ_AVIS = ("Puis-je afficher mes avis Google sur mon site ?",
+            "Oui, en indiquant près des avis s'il existe une procédure de contrôle et comment elle fonctionne, la date "
+            "de publication de chaque avis et celle de l'expérience du client, et comment les avis sont classés "
+            "(Code de la consommation, art. L111-7-2 et D111-10). Publier de faux avis, ou les modifier, est une pratique commerciale "
+            "trompeuse.")
+FAQ_SEO = ("Le SEO Local est-il inclus dans le prix, ou puis-je l'acheter à part ?",
+           "Le référencement de base est inclus : titres et textes construits autour de votre métier et de votre "
+           "zone. Le SEO Local (quatre articles de blog par mois, mots-clés locaux, rapport mensuel) est un service "
+           "séparé à 15 € HT par mois, tout comme la gestion de votre fiche Google (29 € HT par mois, plus 49 € HT "
+           "de création si vous n'avez pas encore de fiche) : les deux s'achètent indépendamment de l'abonnement.")
+
+
+def faq_prix_fr(metier):
+    return ("Combien coûte un site pour %s ?" % metier,
+            "15 € HT par mois sans frais d'installation ni engagement, ou 349 € HT en paiement unique, avec les "
+            "mêmes services : conception, hébergement, nom de domaine la première année, mentions légales et une "
+            "modification par mois. Le site peut être en plusieurs langues sans supplément (jusqu'à 4), et la démo "
+            "est gratuite.")
+
+
+def visibilite_fr(h2, guide):
+    return ('visibilite', 'Se faire trouver', h2,
+            "<p class=\"legal-intro\">Commencez par des informations identiques partout : mêmes nom, adresse et "
+            "téléphone sur votre site internet et sur votre fiche d'établissement. Une partie de ce travail est déjà "
+            "comprise dans le prix ; le reste est un service à part.</p>"
+            "<div class=\"why-g\">"
+            "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🔍</div>"
+            "<h3>Le référencement de base, inclus dans le prix</h3>"
+            "<p>Vos titres et vos textes mentionnent votre métier et les villes où vous intervenez : c'est compris "
+            "dans les deux formules, sans supplément.</p></div>"
+            "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📈</div>"
+            "<h3>Le SEO Local, un service à part</h3>"
+            "<p>Nous proposons aussi le SEO Local pour 15 € HT par mois (quatre articles de blog par mois, mots-clés "
+            "locaux et un rapport mensuel), et la gestion de votre fiche Google pour 29 € HT par mois (49 € HT de "
+            "création si vous n'en avez pas encore). Ce sont des services séparés, à ajouter à l'abonnement ou même "
+            "sans lui.</p></div>"
+            "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📚</div>"
+            "<h3>Nos guides sur le sujet</h3>"
+            "<p>Nos articles approfondissent ces sujets : " + guide + "comment "
+            "<a href=\"https://webautonomos.es/blog/fr/optimiser-sa-fiche-google-business-profile\">mieux remplir "
+            "votre fiche professionnelle</a> et comment "
+            "<a href=\"https://webautonomos.es/blog/fr/obtenir-plus-avis-google-guide-complet\">obtenir plus "
+            "d'avis</a>.</p></div>"
+            "</div>")
+
+
+ROW_EN_NOTICE = ('Legal notice', 'LSSI (Ley 34/2002), art. 10',
+                 "Your name, address, email and phone, your NIF (for a foreign national, your NIE), your Registro "
+                 "Mercantil details if you trade as an S.L., and, if you show prices, whether they include VAT.")
+ROW_EN_QUOTES = ('Written quotes', 'Comunitat Valenciana: Decreto 11/1995; Madrid: Decreto 35/1995; Catalonia: '
+                                   'Consumer Code, art. 251-3',
+                 "In these regions a homeowner is entitled to a detailed written quote with set contents before "
+                 "work starts (in Catalonia, when they cannot work out the price themselves), unless they waive it in "
+                 "their own handwriting and sign; a pre-printed waiver is not enough.")
+ROW_EN_COMPLAINTS = ('Complaints', 'Consumer law (TRLGDCU), art. 21.3; regional rules',
+                     "Accept complaints through the channel the customer first used (WhatsApp or your web form, for "
+                     "example) as well as by post, phone and an electronic channel. Since 28 December 2025 you must "
+                     "reply within 15 days (previously a month). Official complaint forms are regional: in "
+                     "Andalucía, businesses without premises show a QR complaint poster on quotes, invoices and "
+                     "websites.")
+FAQ_EN_QUOTE = ("Do I have to give customers a written quote?",
+                "It depends on the region. In the Comunitat Valenciana, Madrid and Catalonia, homeowners are "
+                "entitled to a detailed written quote before work starts, with set information such as materials, "
+                "labour rates, dates and the total with VAT; in Catalonia, whenever the customer can't work out the "
+                "price themselves. They can only waive it in their own handwriting, with their signature. In the "
+                "Balearics, customers are entitled to a free written quote whenever the price can't be set directly; "
+                "it is valid for the period it states or, if none is stated, at least 15 days. Other regions have "
+                "their own rules: a written quote is always the safe choice.")
+FAQ_EN_COMPLAINTS = ("What do I need to do about complaints?",
+                     "Accept complaints through the channel the customer first used, as well as by post, phone and "
+                     "an electronic channel, and reply within 15 days: a national rule since 28 December 2025 "
+                     "(previously a month). Carry your region's official complaint forms. In Andalucía, businesses "
+                     "without premises must show a QR complaint poster on quotes, invoices and their website.")
+FAQ_EN_REVIEWS = ("Can I show customer reviews on my website?",
+                  "Yes, if you say whether and how you check them. Since December 2025, reviews must relate to a job "
+                  "done in the 30 days before the review, and adding or commissioning fake reviews has been banned "
+                  "outright since 2022.")
+FAQ_EN_LANGUAGE = ("Do my quotes have to be in Spanish?",
+                   "Pre-contract information, including quotes, must be given at least in Spanish, so a bilingual "
+                   "quote is the safe choice even for British customers. Where there is a co-official language "
+                   "(Catalonia, the Valencian Community, the Balearics…), customers can ask for it in that language "
+                   "too; in Catalonia they are entitled to quotes and invoices in Catalan. Your website comes in English and Spanish, plus up to two more "
+                   "languages, at no extra cost.")
+FAQ_EN_GBP = ("Do I need Google Business Profile management as well as a website?",
+              "No, it's optional. Your website already comes with basic SEO: titles and copy built around your trade "
+              "and your area. If you want more, we also manage Google Business Profiles for €29 + VAT a month (€49 + "
+              "VAT to set one up if you don't have one yet), and offer SEO Local for €15 + VAT a month.")
+FAQ_EN_PRICE = ("How much does a website cost?",
+                "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: "
+                "design, hosting, a domain name for the first year, legal pages and one change a month. English and "
+                "Spanish are included, and the demo is free.")
+FAQ_EN_UK = ("Are UK qualifications recognised in Spain?",
+             "Not automatically. Since 1 January 2021 the UK counts as a third country for professional "
+             "qualifications, so a City & Guilds or NVQ certificate does not by itself make you an authorised "
+             "installer. For plumbing and heating work, the routes include your region's exam for gas installers, "
+             "a recognised course or experience in an installer company plus a regional exam for the carné "
+             "profesional RITE, an approved F-gas course, homologation of your qualification, accreditation of your "
+             "work experience (legal residence and at least three years, with at least 2,000 hours worked, in the "
+             "last 15 years), an ENAC-accredited certification or a Spanish qualification.")
+
+
+def local_search_en(guide):
+    return ('local-search-help', 'Local search', 'How your website helps you appear in local searches',
+            '<p class="legal-intro">Getting found in your area is not only about the website itself: homeowners '
+            'also ask around, post jobs on directories, or search directly for a trusted tradesperson nearby.</p>'
+            '<div class="why-g">'
+            '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F50D</div>'
+            '<h3>Basic SEO, included in your price</h3>'
+            '<p>Titles and copy written around your trade and the towns you cover, kept consistent with your Google '
+            'Business Profile, come with your website at no extra cost.</p></div>'
+            '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4C8</div>'
+            '<h3>SEO Local and your Google listing, if you want more</h3>'
+            '<p>We also offer SEO Local for €15 + VAT a month, and managing your Google Business Profile for €29 + '
+            'VAT a month (€49 + VAT to set one up if you do not have a listing yet).</p></div>'
+            '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4DA</div>'
+            '<h3>Guides to go further</h3>'
+            '<p>Our blog has practical guides on ' + guide +
+            '<a href="https://webautonomos.es/blog/en/how-to-rank-your-website-in-local-google">ranking your '
+            'website locally</a> and <a href="https://webautonomos.es/blog/en/optimise-your-google-business-'
+            'profile">optimising your Google Business Profile</a>.</p></div>'
+            '</div>')
+
+
+PLOMB = {}
+PLOMB['fr'] = dict(
+    html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
+    title="Création de site internet pour plombier : 15 €/mois",
+    description="Création de site internet pour plombier et chauffagiste : tarifs de dépannage, devis, pompes à "
+                "chaleur, encart France Rénov', mentions légales. Démo gratuite en 24 h, 15 €/mois HT.",
+    service_name="Création de site internet pour plombiers et chauffagistes",
+    audience="Plombiers, chauffagistes, installateurs de pompes à chaleur et dépanneurs sanitaires",
+    crumb_home='Accueil', crumb='Plombiers',
+    badge='Plombiers, chauffagistes, installateurs de pompes à chaleur',
+    h1="Création de site internet pour <em>plombier</em> et chauffagiste",
+    lede="Vos services, vos zones d'intervention, un appel ou un message WhatsApp en un geste, et vos tarifs de "
+         "dépannage présentés selon l'arrêté du 24 janvier 2017. Nous l'écrivons pour vous et vous envoyons une démo gratuite "
+         "en 24 heures.",
+    pills=['Tarifs de dépannage accessibles', 'Appel et WhatsApp en un geste', 'Démo gratuite en 24 h'],
+    cta='Recevoir ma démo gratuite', cta2='Ce que la loi impose',
+    brief_t='En bref',
+    brief="WebAutonomos crée des sites internet pour les plombiers, les chauffagistes et les installateurs de pompes "
+          "à chaleur, en France et en Espagne. Nous rédigeons vos textes, présentons vos services (dépannage, salle "
+          "de bains, chauffage, entretien) et plaçons, à partir des informations que vous nous donnez, ce que la loi "
+          "demande à un professionnel du dépannage : taux "
+          "horaires TTC, frais de déplacement et conditions du devis accessibles en ligne, médiateur de la "
+          "consommation, mentions légales et, si vous proposez des pompes à chaleur, un chauffe-eau solaire ou "
+          "thermodynamique, l'encart France Rénov' obligatoire à partir du 1<sup>er</sup> octobre 2026. Le site coûte <strong>15 € HT par mois</strong> sans "
+          "frais d'installation ni engagement, ou <strong>349 € HT en paiement unique</strong>, jusqu'à 4 langues "
+          "sans supplément si vous le souhaitez, et la démo est prête en 24 heures.",
+    legal_id='regles', legal_ey='Les règles', legal_t="Ce que votre site doit montrer",
+    legal_intro="Le dépannage est l'un des rares métiers où un texte dit ce que votre site doit afficher : l'arrêté "
+                "du 24 janvier 2017 vise nommément la plomberie, les sanitaires et le génie climatique. S'y ajoutent "
+                "les règles des contrats conclus chez le client et celles de la rénovation énergétique. Voici "
+                "l'essentiel pour une activité en France.",
+    legal_cols=('Sujet', 'Texte', 'Ce que ça change pour vous'),
+    legal_rows=[
+        ("Tarifs de dépannage", "Arrêté du 24 janvier 2017, art. 2 et 3 ; Code de la consommation, art. L131-5",
+         "Taux horaires TTC, mode de décompte du temps, prix forfaitaires, frais de déplacement et caractère gratuit "
+         "ou payant du devis doivent être aisément accessibles sur tout espace en ligne dédié à votre entreprise, "
+         "votre site compris. Amende jusqu'à 3 000 € (15 000 € pour une société)."),
+        ("Devis et note", "Arrêté du 24 janvier 2017, art. 4 et 5",
+         "Un devis détaillé est remis avant toute prestation de dépannage, de réparation ou d'entretien, sans seuil "
+         "de montant ni exception pour l'urgence. Le client est informé qu'il peut garder les pièces remplacées, et "
+         "une note détaillée lui est remise avant le paiement."),
+        ("Urgence au domicile", "Code de la consommation, art. L221-10 et L221-28",
+         "Pour une réparation urgente que le client vous a expressément demandée chez lui, pas de délai de "
+         "rétractation ni d'attente de 7 jours avant le paiement, mais seulement pour les pièces et travaux "
+         "strictement nécessaires à l'urgence. Pour le reste, un contrat signé chez lui ouvre 14 jours de "
+         "rétractation, sans aucun paiement pendant 7 jours."),
+        ("Logos et mentions officielles", "Code de la propriété intellectuelle, art. L731-2 et L731-3 ; Code de la "
+                                          "consommation, art. L121-4",
+         "Dans une publicité de dépannage, utiliser sans autorisation les signes ou coordonnées d'un service public "
+         "est passible d'une amende administrative jusqu'à 100 000 €. Se dire « agréé » sans l'être, ou afficher un label qu'on n'a "
+         "pas, est une pratique commerciale trompeuse."),
+        ROW_ASSURANCE,
+        ("RGE et aides au chauffage", "Décret n° 2026-822 ; Code de la consommation, art. L224-114 et L242-51",
+         "Depuis le 1er septembre 2026, MaPrimeRénov' « par geste » finance encore les pompes à chaleur air/eau, "
+         "géothermiques et solarothermiques, mais plus les chaudières bois ni les chauffe-eau thermodynamiques. Quand "
+         "l'aide exige un label, RGE en général, vous indiquez par écrit avant le contrat, et dans le contrat, si vous "
+         "le détenez, avec le justificatif. Sinon : jusqu'à 75 000 € d'amende et contrat nul."),
+        ("Encart France Rénov'", "Code de la consommation, art. L122-26 ; arrêté du 7 juillet 2026",
+         "À partir du 1er octobre 2026, un site qui propose des pompes à chaleur, un chauffe-eau solaire ou d'autres "
+         "travaux de rénovation énergétique affiche une bannière avec le message officiel de France Rénov', "
+         "cliquable vers le service public. Amende jusqu'à 15 000 € (75 000 € pour une société)."),
+        ROW_MEDIATEUR,
+        ("Qualification et mot « artisan »", "Code de l'artisanat, art. L121-1, R121-1, R121-3, L151-2, R211-1 et L241-2",
+         "La plomberie, le chauffage et le gaz ne s'exercent qu'avec une qualification (CAP, BEP, titre "
+         "équivalent ou trois ans d'expérience) ou sous le contrôle effectif et permanent d'une personne qualifiée : "
+         "7 500 € d'amende sinon. Le mot « artisan » suppose la qualité d'artisan, sous peine de 7 500 € d'amende."),
+        ROW_MENTIONS,
+    ],
+    legal_note="Nouveau au 1er octobre 2026 : l'encart France Rénov' devient obligatoire pour les sites qui proposent "
+               "des pompes à chaleur ou d'autres travaux de rénovation énergétique. Et si vous affichez des avis "
+               "clients, indiquez s'ils sont contrôlés et comment, avec leur date (Code de la consommation, "
+               "art. L111-7-2). Vous nous fournissez ces informations et validez chaque contenu. Informations "
+               "générales à jour en septembre 2026, qui ne remplacent pas un conseil juridique.",
+    legal_we_t='Ce que nous mettons en place',
+    legal_we=["Une page de tarifs avec votre taux horaire TTC, votre décompte du temps, vos frais de déplacement et "
+              "les conditions de votre devis, accessible depuis chaque page",
+              "Un bouton d'appel et un bouton WhatsApp toujours visibles sur mobile, pour les demandes urgentes",
+              "Votre qualité d'artisan si vous l'avez, votre numéro RNE et votre assurance (assureur, couverture) "
+              "indiqués clairement",
+              "Le logo RGE ou l'appellation « Professionnel du Gaz » seulement si vous les détenez, et l'encart "
+              "France Rénov' si vous proposez des pompes à chaleur, un chauffe-eau solaire ou thermodynamique",
+              "Les coordonnées de votre médiateur, des mentions légales complètes et des avis présentés avec leur "
+              "date et leur mode de contrôle"],
+    spain_note="<strong>Vous travaillez en Espagne ?</strong> Les règles changent : le chauffage, l'eau chaude et la "
+               "climatisation y sont réservés aux entreprises habilitées au titre du RITE, le gaz à une empresa "
+               "instaladora de gas, et plusieurs communautés (Valence, Madrid, Catalogne) donnent au client droit à "
+               "un devis écrit préalable. Nous connaissons aussi ces règles : "
+               "<a href=\"/fr/site-internet-francophones-espagne\">site internet pour francophones en Espagne</a>.",
+    sources_t='Sources',
+    why_ey='Pourquoi nous', why_t="Pensé pour les plombiers et chauffagistes",
+    why=[('📞', 'Joignable en un geste', "Bouton d'appel et WhatsApp toujours visibles sur mobile : la personne qui a "
+                                        "une fuite vous contacte sans chercher votre numéro."),
+         ('💶', 'Des tarifs clairs', "Taux horaire, déplacement, devis : vos conditions sont présentées comme "
+                                    "l'arrêté de 2017 le demande, avant même le premier appel."),
+         ('🔥', 'Chauffage et pompes à chaleur', "Installation, entretien, remplacement : chaque service a sa section, "
+                                                "avec l'encart France Rénov' quand il est requis."),
+         ('📍', 'Trouvé près de chez vous', "Titres et textes pensés pour les recherches « plombier + votre ville », "
+                                           "et votre fiche Google si vous le souhaitez.")],
+    where_t='En France et en Espagne',
+    where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que vous interveniez à "
+          "Lyon, à Toulouse ou sur la Costa del Sol, rien ne change.",
+    sect_t='Pour qui',
+    sectors=['🔧 Plombiers', '🔥 Chauffagistes', '♨️ Pompes à chaleur', '🚿 Salles de bains',
+             '🚰 Recherche de fuites', '🧰 Entretien de chaudières', '❄️ Climatisation', '🪠 Débouchage'],
+    how_t='Votre projet en trois étapes',
+    steps=[('Vous décrivez votre activité', "Vos services, votre zone d'intervention, vos tarifs de dépannage et "
+                                           "quelques photos de chantier : deux minutes suffisent."),
+           ('Nous préparons votre démo', "En moins de 24 heures, avec vos services, votre page de tarifs et vos "
+                                        "mentions légales."),
+           ('Vous décidez', "Vous demandez les modifications que vous voulez. Si le site vous plaît, il est mis en "
+                           "ligne ; sinon, vous ne payez rien.")],
+    price_note=PRIX_FR_BAT,
+    extra=[
+        ('page-tarifs', 'Vos tarifs', "Que mettre sur la page de tarifs d'un plombier ?",
+         "<p class=\"legal-intro\">Tout ce que l'arrêté du 24 janvier 2017 demande, en langage simple : le client "
+         "sait ce que coûte un déplacement avant de vous appeler. Nous la rédigeons à partir de vos prix, et vous "
+         "validez chaque ligne.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🕒</div>"
+         "<h3>Taux horaire et forfaits TTC</h3>"
+         "<p>Votre taux horaire toutes taxes comprises, le mode de décompte du temps (par demi-heure, par quart "
+         "d'heure) et vos prestations au forfait, comme un débouchage ou le remplacement d'un mécanisme de chasse "
+         "d'eau.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🚐</div>"
+         "<h3>Frais de déplacement</h3>"
+         "<p>Un montant fixe, ou un prix par zone : nommer les communes couvertes évite les mauvaises surprises et "
+         "les appels de clients trop éloignés.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📄</div>"
+         "<h3>Devis gratuit ou payant</h3>"
+         "<p>Dites-le clairement, avec son prix s'il est payant et, le cas échéant, s'il est déduit de la facture "
+         "quand le client accepte les travaux.</p></div>"
+         "</div>"),
+        ('services', 'Vos services', "Dépannage, installation, chauffage : une section par service",
+         "<p class=\"legal-intro\">Une personne qui cherche un chauffagiste pour sa pompe à chaleur ne lit pas la "
+         "même page que celle qui a une fuite sous l'évier. Nous séparons vos services pour que chacun trouve vite "
+         "le sien.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🚰</div>"
+         "<h3>Dépannage et fuites</h3>"
+         "<p>Vos horaires d'intervention, les communes couvertes et un bouton d'appel en haut de la section : c'est "
+         "ce que cherche un client pressé.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🚿</div>"
+         "<h3>Salles de bains et sanitaires</h3>"
+         "<p>Vos réalisations en photos, classées par type de travaux : douche à l'italienne, remplacement de "
+         "baignoire, sanitaires. Nous partons de vos propres photos de chantier.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🧰</div>"
+         "<h3>Entretien de chaudière et de pompe à chaleur</h3>"
+         "<p>L'entretien d'une chaudière de 4 à 400 kW est obligatoire chaque année, celui d'une pompe à chaleur de "
+         "4 à 70 kW au moins tous les deux ans. Une section dédiée le rappelle à vos clients.</p></div>"
+         "</div>"
+         "<p class=\"where\">Pour aller plus loin, consultez "
+         "<a href=\"https://webautonomos.es/blog/fr/site-web-pour-plombiers-guide-complet\">notre guide pour "
+         "recevoir plus d'appels</a>.</p>"),
+        visibilite_fr("Référencement du site internet d'un plombier : ce qui est inclus",
+                      "<a href=\"https://webautonomos.es/blog/fr/positionner-son-site-dans-le-google-local\">"
+                      "positionner votre site dans la recherche locale</a>, "),
+    ],
+    faq_t='Questions fréquentes',
+    faq=[("Un plombier doit-il afficher ses tarifs sur son site internet ?",
+          "Oui, s'il fait du dépannage, de la réparation ou de l'entretien : l'arrêté du 24 janvier 2017 vise la "
+          "plomberie, les sanitaires et le génie climatique. Taux horaires TTC, mode de décompte du temps, prix "
+          "forfaitaires, frais de déplacement et caractère gratuit ou payant du devis doivent être aisément "
+          "accessibles sur tout espace en ligne dédié à l'entreprise. Amende jusqu'à 3 000 € (15 000 € pour une "
+          "société)."),
+         ("Le devis est-il obligatoire pour un dépannage urgent ?",
+          "Oui. L'arrêté du 24 janvier 2017 impose un devis détaillé avant toute prestation de dépannage, de "
+          "réparation ou d'entretien, sans seuil de montant ni exception pour l'urgence. Les prestations payées au "
+          "forfait dans le cadre d'un contrat d'entretien ou de garantie en sont exclues. Le client doit aussi être "
+          "informé qu'il peut garder les pièces remplacées."),
+         ("Le client peut-il se rétracter après une intervention en urgence ?",
+          "Non, pour une réparation urgente qu'il a expressément demandée à son domicile, et seulement pour les "
+          "pièces et travaux strictement nécessaires à l'urgence (Code de la consommation, art. L221-28) ; vous "
+          "pouvez alors être payé tout de suite (art. L221-10). Pour des travaux supplémentaires proposés sur place, "
+          "les règles habituelles s'appliquent : 14 jours de rétractation et aucun paiement pendant 7 jours."),
+         ("Qu'est-ce que l'encart France Rénov' obligatoire au 1er octobre 2026 ?",
+          "À partir du 1er octobre 2026 (Code de la consommation, art. L122-26, et arrêté du 7 juillet 2026), tout "
+          "professionnel qui propose des travaux de rénovation énergétique ou de production d'énergie renouvelable "
+          "dans un logement, en ligne ou dans sa publicité, affiche le message officiel : « Avant de vous engager, le "
+          "service public vous informe gratuitement pour préparer et sécuriser votre projet : "
+          "www.france-renov.gouv.fr ». Sur un site, c'est une bannière cliquable vers le service public. Amende "
+          "jusqu'à 15 000 € (75 000 € pour une société). Si vous installez des pompes à chaleur, vous êtes "
+          "concerné ; nous ajoutons la bannière."),
+         ("Quelles aides pour une pompe à chaleur depuis septembre 2026 ?",
+          "Pour les demandes déposées depuis le 1er septembre 2026 (décret n° 2026-822), MaPrimeRénov' « par geste » "
+          "finance encore les pompes à chaleur air/eau, géothermiques et solarothermiques, et le raccordement à un "
+          "réseau de chaleur ; les chaudières bois et les chauffe-eau thermodynamiques n'y sont plus. Les "
+          "certificats d'économies d'énergie restent une autre piste. Dans les deux cas, les travaux sont faits par "
+          "un professionnel RGE."),
+         ("Un plombier peut-il écrire « agréé » sur son site ?",
+          "Seulement s'il a réellement reçu un agrément, en nommant l'organisme qui l'a délivré : une certification "
+          "ou une qualification (RGE, PG) n'est pas un agrément. Se dire agréé à tort, ou afficher un label comme RGE "
+          "sans l'avoir obtenu, est une pratique commerciale trompeuse (Code de la consommation, art. L121-4). L'appellation « Professionnel du Gaz » (PG) est volontaire : affichez-la si vous la "
+          "détenez. Pour le gaz, c'est le certificat de conformité, établi par l'installateur et visé par un "
+          "organisme habilité, qui compte pour chaque installation neuve ou modifiée."),
+         ("Faut-il une attestation pour poser une pompe à chaleur ou une climatisation ?",
+          "Oui, dès que l'installation touche au circuit de fluide frigorigène, pour un appareil en split par "
+          "exemple : l'entreprise doit détenir une attestation de capacité, une par établissement (Code de "
+          "l'environnement, art. R543-78 et R543-99). Exception : un équipement hermétique préchargé contenant moins de 2 kg de "
+          "fluide, dont la mise en service se limite à un raccordement."),
+         ("L'entretien des chaudières et des pompes à chaleur est-il obligatoire ?",
+          "Oui. Une chaudière de 4 à 400 kW s'entretient chaque année civile, avec une attestation remise au client "
+          "dans les 15 jours (Code de l'environnement, art. R224-41-4 à R224-41-8). Une pompe à chaleur de 4 à "
+          "70 kW s'entretient au moins tous les deux ans (art. R224-44-3). Rappeler ces échéances sur votre site "
+          "aide vos clients à y penser."),
+         FAQ_MEDIATEUR,
+         FAQ_AVIS,
+         FAQ_SEO,
+         faq_prix_fr('plombier')],
+    final_t='Voyez votre site avant de payer quoi que ce soit',
+    final_sd="Démo gratuite en 24 heures, avec vos services, votre page de tarifs et vos mentions légales. Sans frais "
+             "d'installation, sans engagement.",
+)
+
+PLOMB['en'] = dict(
+    html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
+    title="Websites for plumbers in Spain: €15/month, free demo",
+    description="Websites for English-speaking plumbers and heating engineers in Spain: RITE, gas and F-gas rules, "
+                "call-outs, legal notice. Free demo in 24h, €15/month + VAT.",
+    service_name="Web design for plumbers and heating engineers in Spain",
+    audience="English-speaking plumbers, heating engineers, gas engineers and air-conditioning installers in Spain",
+    crumb_home='Home', crumb='Plumbers and heating engineers',
+    badge='For plumbers and heating engineers in Spain',
+    h1="Websites for <em>plumbers</em> and heating engineers in Spain",
+    lede="Your services, the areas you cover, a call or a WhatsApp message in one tap, in English and Spanish, and "
+         "the information Spanish rules expect from a plumbing and heating business. We write it for you and send "
+         "you a free demo within 24 hours.",
+    pills=['English and Spanish included', 'Spanish rules built in', 'Free demo in 24 hours'],
+    cta='Get my free demo', cta2='What Spanish rules require',
+    brief_t='In short',
+    brief="WebAutonomos builds websites for English-speaking plumbers, heating engineers, gas engineers and "
+          "air-conditioning installers working in Spain. We present your services, write the copy in English and "
+          "Spanish (up to four languages) at no extra cost, and include the information Spanish law expects on a "
+          "business website, such as a legal notice with your NIF or NIE, prices for homeowners shown with VAT included, and the complaint information your region "
+          "asks for. It costs <strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a "
+          "<strong>one-off €349 + VAT</strong>. We work with you in English, and your demo is ready within 24 hours.",
+    legal_id='rules', legal_ey='Spanish rules', legal_t='What your business and your website have to get right',
+    legal_intro="Plumbing on its own is lightly regulated in Spain, but heating, hot water, gas and air conditioning "
+                "are not: they need an authorised company. Consumer law then sets the rules for call-outs, quotes and "
+                "complaints. These are the points that matter.",
+    legal_cols=('Topic', 'Law', 'What it means for you'),
+    legal_rows=[
+        ('Heating, hot water and air conditioning', 'RITE (RD 1027/2007), arts. 19 and 36 to 42',
+         "Fixed heating, cooling, ventilation and hot-water installations must be carried out by an empresa "
+         "instaladora habilitada. It files a declaración responsable with the region, holds at least €300,000 of "
+         "civil liability cover, and has at least one staff member with the carné profesional RITE."),
+        ('Gas', 'RD 919/2006, ITC-ICG 07 and 09',
+         "Gas installations are carried out by an empresa instaladora de gas (category A, B or C), which issues the "
+         "certificado de instalación. Homes on mains gas are inspected every five years, by the distributor or by a "
+         "gas installer the customer chooses."),
+        ('F-gases', 'RD 115/2017, arts. 3 and 9',
+         "Installing split air conditioning or heat pumps requires staff with an F-gas certificate, working within "
+         "an authorised company (empresa habilitada). Pre-charged split units can only be sold to end users with "
+         "proof that an authorised company will install them."),
+        ('Water installations', 'CTE DB HS4; regional rules',
+         "There is no national plumbing licence, but some regions have their own rules: in Madrid, registering a "
+         "water installation requires the certificate of a registered plumbing installer (empresa instaladora de "
+         "fontanería). Check with your region's industry department."),
+        ('Urgent call-outs', 'Consumer law (TRLGDCU), art. 103',
+         "There is no 14-day right of withdrawal when the customer called you out for an urgent repair or "
+         "maintenance job. The right still applies to any extra services, and to goods other than the spare parts "
+         "you necessarily used."),
+        ROW_EN_QUOTES,
+        ROW_EN_COMPLAINTS,
+        ROW_EN_NOTICE,
+    ],
+    legal_note="Rules on quotes, complaint forms and water installations are regional, so check with your comunidad "
+               "autónoma. This is general information as of September 2026, not legal advice.",
+    legal_we_t='What we set up for you',
+    legal_we=["A proper legal notice with your name, NIF or NIE and contact details, plus your company details if you "
+              "trade as an S.L.",
+              "Your call-out terms and your prices for homeowners shown with VAT included",
+              "The work you are authorised for (heating, gas, air conditioning) described accurately, and nothing "
+              "more",
+              "The complaint information your region asks for, such as the QR poster in Andalucía",
+              "A call button and WhatsApp always visible on mobile, and your site in up to four languages, English "
+              "and Spanish included, at no extra cost"],
+    spain_note='',
+    sources_t='Sources',
+    why_ey='Why us', why_t='Built for tradespeople who work in English',
+    why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
+                                         "or technical jargon."),
+         ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish "
+                                                   "homeowners find you as easily as expats do."),
+         ('📞', 'One tap to call you', "A call button and WhatsApp always in view on mobile: someone with a leak "
+                                      "reaches you without hunting for your number."),
+         ('📍', 'Found locally', "Titles and copy written for searches like “plumber Jávea” or “fontanero "
+                                "Torrevieja”, in both languages.")],
+    where_t='Anywhere in Spain',
+    where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work "
+          "remotely, so where your van is based does not change how we work with you.",
+    sect_t='Who it is for',
+    sectors=['🔧 Plumbers', '🔥 Heating engineers', '♨️ Heat pumps and aerothermal', '🚿 Bathroom fitters',
+             '🚰 Leak detection', '🧰 Boiler servicing', '❄️ Air conditioning', '🔥 Gas engineers'],
+    how_t='Your website in three steps',
+    steps=[('Tell us about your business', 'Your services, the areas you cover and a few job photos: it takes two '
+                                           'minutes.'),
+           ('We build your demo', 'Within 24 hours, with your services, your copy in English and Spanish, and your '
+                                  'legal pages.'),
+           ('You decide', "Ask for any changes you want. If you like it, it goes live; if not, you pay nothing.")],
+    price_note=PRIX_EN_BAT,
+    extra=[
+        ('what-to-include', 'On your website', "What should a plumber's website in Spain show?",
+         '<p class="legal-intro">A homeowner wants to know quickly whether you handle their problem, whether you '
+         'cover their town, and how to reach you. These are the parts that answer those questions.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F5C2️</div>'
+         '<h3>Services grouped by type of job</h3>'
+         '<p>Emergency repairs, bathrooms, heating and air conditioning each get their own section, so a visitor '
+         'with a leak does not scroll past heat pumps to find your number.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
+         '<h3>Your authorisations, stated accurately</h3>'
+         '<p>If your company is authorised for heating, gas or F-gas work, say so, with the category that applies. '
+         'Claiming an authorisation you do not hold is misleading advertising.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4B6</div>'
+         '<h3>Clear call-out terms</h3>'
+         '<p>Your call-out charge and hourly rate, shown with VAT included for homeowners, so customers know what to '
+         'expect before they ring.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CD</div>'
+         '<h3>The towns you cover</h3>'
+         '<p>Naming the towns you work in (Jávea, Torrevieja or Fuengirola, for example) helps both readers and '
+         'Google understand who your site is for.</p></div>'
+         '</div>'
+         '<p class="where">For a longer read, see our guide to '
+         '<a href="https://webautonomos.es/blog/en/website-for-plumbers-complete-guide">getting more calls from '
+         'a plumber&#8217;s website</a>.</p>'),
+        local_search_en(''),
+    ],
+    faq_t='Frequently asked questions',
+    faq=[("Do I need to be registered to install heating or air conditioning in Spain?",
+          "Yes. Fixed heating, cooling, ventilation and hot-water installations must be carried out by an empresa "
+          "instaladora habilitada under the RITE (RD 1027/2007): it files a declaración responsable with the region, "
+          "holds at least €300,000 of civil liability cover, and has at least one staff member with the carné "
+          "profesional RITE. Installing split air conditioning or heat pumps also needs staff with an F-gas "
+          "certificate (RD 115/2017)."),
+         FAQ_EN_UK,
+         ("Who carries out the five-yearly gas inspection?",
+          "For homes on mains gas, the distributor arranges it every five years and must give three months' notice; "
+          "the customer can instead have it done by an authorised gas installer of their choice. Whoever carries out "
+          "the inspection may not also repair the faults it finds. The Comunidad de Madrid warns that the "
+          "distributor sends individual written notice, that maintenance contracts sold as compulsory are not, and "
+          "that nothing is paid in hand to the distributor's inspector: the charge comes on the next gas bill."),
+         ("Can customers cancel after an emergency call-out?",
+          "Not for the urgent repair itself. Under article 103 of the consumer law (TRLGDCU), there is no right of "
+          "withdrawal when the customer specifically asked you to visit for an urgent repair or maintenance job. "
+          "The 14-day right still applies to extra services you provide during that visit, and to goods other than "
+          "the spare parts you necessarily used."),
+         FAQ_EN_QUOTE,
+         ("How often must boilers and air conditioning be serviced in Spain?",
+          "The RITE sets minimum intervals for homes: every two years for gas wall-mounted boilers up to 70 kW, "
+          "every four years for air conditioning and hot-water heat pumps up to 12 kW, and every five years for gas "
+          "water heaters up to 24.4 kW. Installations from 5 kW are maintained by an authorised maintenance company "
+          "(empresa mantenedora)."),
+         ("What guarantee do I owe on a repair?",
+          "For the repair, installation or maintenance of household appliances, Royal Decree 58/1988 sets a "
+          "guarantee of at least three months, an itemised invoice showing parts, labour and call-out charge, and "
+          "the customer's right to a written quote valid for at least 30 days, which they can waive in writing. Its "
+          "wording covers any durable household appliance, whatever energy it uses. For other work, legal minimums "
+          "still apply: parts and equipment you supply and install carry the 3-year legal guarantee, gas work is "
+          "guaranteed for 4 years against faulty workmanship, and Catalonia requires at least 6 months on services. "
+          "Put your guarantee in writing."),
+         FAQ_EN_COMPLAINTS,
+         FAQ_EN_REVIEWS,
+         FAQ_EN_LANGUAGE,
+         FAQ_EN_GBP,
+         FAQ_EN_PRICE],
+    final_t='See your website before you pay a thing',
+    final_sd="Free demo within 24 hours, with your services and legal pages. No setup fee, no lock-in.",
+)
+
+PLOMB_SOURCES = {
+    'fr': [
+        ("Arrêté du 24 janvier 2017, dépannage dans le bâtiment (Légifrance)",
+         'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033935513'),
+        ("Dépannage à domicile : choisir le bon professionnel (DGCCRF)",
+         'https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/plomberie-serrurerie-chauffage-choisir-le-bon-professionnel-pour-un-depannage-domicile'),
+        ("Arrêté du 7 juillet 2026, message France Rénov' (Légifrance)",
+         'https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054569418'),
+        ("Décret n° 2026-822, MaPrimeRénov' (Légifrance)", 'https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054750363'),
+        ("Arrêté du 23 février 2018, installations de gaz, art. 21 (Légifrance)",
+         'https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043233805'),
+        ("Assurance décennale (Service-public)", 'https://entreprendre.service-public.gouv.fr/vosdroits/F2034'),
+        ("Médiateur de la consommation (Service-public)", 'https://entreprendre.service-public.gouv.fr/vosdroits/F33338'),
+    ],
+    'en': [
+        ("RITE, RD 1027/2007 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2007-15820'),
+        ("Gas regulation, RD 919/2006 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2006-15345'),
+        ("F-gases, RD 115/2017 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2017-1679'),
+        ("Spanish consumer law, TRLGDCU (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555'),
+        ("Repairs to household appliances, RD 58/1988 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-1988-2809'),
+        ("Fake gas inspections (Comunidad de Madrid)", 'https://www.comunidad.madrid/consumo/fraudes-inspecciones-revisiones-gas'),
+        ("LSSI, art. 10 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758'),
+    ],
+}
+
+# ═════════════════════════ ÉLECTRICIENS ET ELECTRICIANS (28/09/2026) ══════
+ELEC = {}
+ELEC['fr'] = dict(
+    html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
+    title="Création de site internet pour électricien : 15 €/mois",
+    description="Création de site internet pour électricien : tarifs de dépannage, Consuel, bornes de recharge, "
+                "photovoltaïque, encart France Rénov'. Démo gratuite en 24 h, 15 €/mois HT.",
+    service_name="Création de site internet pour électriciens",
+    audience="Électriciens, installateurs de bornes de recharge et de panneaux photovoltaïques",
+    crumb_home='Accueil', crumb='Électriciens',
+    badge='Électriciens, bornes de recharge, photovoltaïque',
+    h1="Création de site internet pour <em>électricien</em> : vos chantiers, vos qualifications",
+    lede="Vos services, de la mise en sécurité aux bornes de recharge, vos zones d'intervention, vos qualifications "
+         "présentées telles que vous les détenez et vos tarifs de dépannage accessibles comme la loi le demande. Nous l'écrivons "
+         "pour vous et vous envoyons une démo gratuite en 24 heures.",
+    pills=['Vos qualifications en avant', 'Tarifs de dépannage accessibles', 'Démo gratuite en 24 h'],
+    cta='Recevoir ma démo gratuite', cta2='Ce que la loi impose',
+    brief_t='En bref',
+    brief="WebAutonomos crée des sites internet pour les électriciens et les installateurs de bornes de recharge et "
+          "de panneaux photovoltaïques, en France et en Espagne. Nous rédigeons vos textes, présentons vos services "
+          "et vos qualifications (IRVE, RGE, Qualifelec) telles que vous les détenez, et plaçons, à partir des "
+          "informations que vous nous donnez, ce que la loi demande : tarifs de dépannage accessibles en ligne, médiateur de la consommation, mentions légales et, si "
+          "vous proposez du photovoltaïque ou d'autres travaux de rénovation énergétique, l'encart France Rénov' "
+          "obligatoire à partir du 1<sup>er</sup> octobre 2026. Le site coûte <strong>15 € HT par mois</strong> sans "
+          "frais d'installation ni engagement, ou <strong>349 € HT en paiement unique</strong>, jusqu'à 4 langues "
+          "sans supplément si vous le souhaitez, et la démo est prête en 24 heures.",
+    legal_id='regles', legal_ey='Les règles', legal_t="Ce que votre site doit montrer",
+    legal_intro="Un électricien a plus de règles à respecter qu'il n'y paraît : l'arrêté du 24 janvier 2017 pour le "
+                "dépannage, le Consuel pour la mise en service, une qualification propre aux bornes de recharge, et "
+                "celles des aides au photovoltaïque. Voici l'essentiel pour une activité en France.",
+    legal_cols=('Sujet', 'Texte', 'Ce que ça change pour vous'),
+    legal_rows=[
+        ("Tarifs de dépannage et devis", "Arrêté du 24 janvier 2017 ; Code de la consommation, art. L131-5",
+         "L'électricité est visée. Taux horaires TTC, décompte du temps, forfaits, frais de déplacement et "
+         "caractère gratuit ou payant du devis doivent être aisément accessibles sur votre site, et un devis détaillé "
+         "est remis avant toute intervention de dépannage, de réparation ou d'entretien. Amende jusqu'à 3 000 € (15 000 € pour une société)."),
+        ("Qualification et mot « artisan »", "Code de l'artisanat, art. L121-1, R121-1, R121-3, L151-2, R211-1 et L241-2",
+         "Les installations électriques ne s'exercent qu'avec une qualification (CAP, BEP, titre équivalent ou trois "
+         "ans d'expérience) ou sous le contrôle effectif et permanent d'une personne qualifiée : 7 500 € d'amende "
+         "sinon. Le mot « artisan » suppose la qualité d'artisan, sous peine de 7 500 € d'amende."),
+        ROW_ASSURANCE,
+        ("Consuel", "Code de l'énergie, art. D342-19 et D342-20",
+         "Avant la mise sous tension d'une installation neuve, d'une installation entièrement rénovée mise hors "
+         "tension par le distributeur, ou d'une production photovoltaïque qui modifie l'installation intérieure : "
+         "attestation de conformité établie par l'installateur et visée par Consuel."),
+        ("Bornes de recharge", "Code de l'énergie, art. D353-2",
+         "Hors installations de 3,7 kW ou moins dans un logement privé, une borne est posée par un professionnel "
+         "titulaire d'une qualification IRVE délivrée par un organisme agréé. Le crédit d'impôt borne ne s'applique "
+         "plus aux dépenses payées depuis le 1er janvier 2026."),
+        ("Photovoltaïque", "Arrêté du 6 octobre 2021, art. 1 et annexe 5 ; CGI, art. 278-0 bis P",
+         "Pour vendre son électricité avec l'obligation d'achat, l'installation doit être réalisée par un "
+         "installateur qualifié ou certifié. Même condition pour la TVA à 5,5 % des installations de 9 kWc ou moins "
+         "sur un logement, depuis le 1er octobre 2025, avec des équipements conformes aux critères fixés par "
+         "arrêté."),
+        ("Labels et qualifications", "Code de la consommation, art. L121-4",
+         "Afficher un certificat, un label ou une qualification (Qualifelec, IRVE, RGE) sans l'avoir obtenu est une "
+         "pratique commerciale trompeuse. Montrez chaque qualification avec le domaine qu'elle couvre."),
+        ("Encart France Rénov'", "Code de la consommation, art. L122-26 ; arrêté du 7 juillet 2026",
+         "À partir du 1er octobre 2026, un site qui propose du photovoltaïque, une pompe à chaleur ou d'autres "
+         "travaux de rénovation énergétique d'un logement affiche une bannière avec le message officiel de France "
+         "Rénov', cliquable vers le service public. Amende jusqu'à 15 000 € (75 000 € pour une société)."),
+        ROW_MEDIATEUR,
+        ROW_MENTIONS,
+    ],
+    legal_note="Nouveau au 1er octobre 2026 : l'encart France Rénov' devient obligatoire pour les sites qui proposent "
+               "du photovoltaïque ou d'autres travaux de rénovation énergétique. Et si vous affichez des avis clients, "
+               "indiquez s'ils sont contrôlés et comment, avec leur date (Code de la consommation, art. L111-7-2). "
+               "Vous nous fournissez ces informations et validez chaque contenu. Informations générales à jour en "
+               "septembre 2026, qui ne remplacent pas un conseil juridique.",
+    legal_we_t='Ce que nous mettons en place',
+    legal_we=["Une page de tarifs avec votre taux horaire TTC, vos frais de déplacement et les conditions de votre "
+              "devis, si vous faites du dépannage",
+              "Vos qualifications (Qualifelec, IRVE, RGE) avec leur domaine, seulement celles que vous détenez",
+              "Votre qualité d'artisan si vous l'avez, votre numéro RNE et votre assurance (assureur, couverture) "
+              "indiqués clairement",
+              "L'encart France Rénov' et son lien, si vous proposez du photovoltaïque, des pompes à chaleur ou "
+              "d'autres travaux d'économies d'énergie",
+              "Les coordonnées de votre médiateur, des mentions légales complètes et des avis présentés avec leur "
+              "date et leur mode de contrôle"],
+    spain_note="<strong>Vous travaillez en Espagne ?</strong> Les règles changent : seule une empresa instaladora en "
+               "baja tensión, déclarée auprès de la communauté autonome, peut réaliser une installation électrique et "
+               "délivrer le certificat d'installation (le « boletín »), et plusieurs communautés (Valence, Madrid, "
+               "Catalogne) donnent au client droit à un devis écrit préalable. Nous connaissons aussi ces règles : "
+               "<a href=\"/fr/site-internet-francophones-espagne\">site internet pour francophones en Espagne</a>.",
+    sources_t='Sources',
+    why_ey='Pourquoi nous', why_t="Pensé pour les électriciens",
+    why=[('🔌', 'Vos spécialités bien rangées', "Dépannage, rénovation, bornes de recharge, photovoltaïque : une "
+                                              "section par service, pour que chacun trouve le sien."),
+         ('🏅', 'Vos qualifications en avant', "Qualifelec, IRVE, RGE : chaque qualification apparaît avec son "
+                                              "domaine, et seulement celles que vous détenez."),
+         ('📞', 'Joignable en un geste', "Bouton d'appel et WhatsApp toujours visibles sur mobile, pour les coupures "
+                                        "et les pannes qui n'attendent pas."),
+         ('📍', 'Trouvé près de chez vous', "Titres et textes pensés pour les recherches « électricien + votre ville », "
+                                           "et votre fiche Google si vous le souhaitez.")],
+    where_t='En France et en Espagne',
+    where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que vous interveniez à "
+          "Bordeaux, à Lille ou sur la Costa Blanca, rien ne change.",
+    sect_t='Pour qui',
+    sectors=['⚡ Électriciens', '🔌 Dépannage électrique', '🏠 Rénovation électrique', '🚗 Bornes de recharge',
+             '☀️ Photovoltaïque', '💡 Éclairage', '🏢 Électricité tertiaire', '📶 Domotique et réseaux'],
+    how_t='Votre projet en trois étapes',
+    steps=[('Vous décrivez votre activité', "Vos services, vos qualifications, votre zone d'intervention et quelques "
+                                           "photos de chantier : deux minutes suffisent."),
+           ('Nous préparons votre démo', "En moins de 24 heures, avec vos services, vos qualifications et vos "
+                                        "mentions légales."),
+           ('Vous décidez', "Vous demandez les modifications que vous voulez. Si le site vous plaît, il est mis en "
+                           "ligne ; sinon, vous ne payez rien.")],
+    price_note=PRIX_FR_BAT,
+    extra=[
+        ('specialites', 'Vos services', "Quels services mettre en avant sur le site d'un électricien ?",
+         "<p class=\"legal-intro\">Chaque service répond à un besoin différent, avec ses propres règles : les "
+         "présenter séparément aide le visiteur et vous évite les promesses approximatives.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🔌</div>"
+         "<h3>Dépannage et mise en sécurité</h3>"
+         "<p>Vos horaires d'intervention, les communes couvertes, un bouton d'appel et un lien vers vos tarifs de "
+         "dépannage : l'essentiel pour une panne.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🏠</div>"
+         "<h3>Rénovation et mise en conformité</h3>"
+         "<p>Tableau électrique, remise aux normes, rénovation complète : précisez quand vous vous chargez de "
+         "l'attestation Consuel, exigée avant la remise sous tension d'une installation entièrement rénovée que le "
+         "distributeur a mise hors tension à la demande du client.</p>"
+         "</div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🚗</div>"
+         "<h3>Bornes de recharge</h3>"
+         "<p>Votre qualification IRVE, les puissances que vous posez, et le cas de la copropriété : le syndicat des "
+         "copropriétaires ne peut s'opposer sans motif sérieux et légitime à l'équipement d'une place privative, "
+         "aux frais du demandeur (« droit à la prise »).</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">☀️</div>"
+         "<h3>Photovoltaïque</h3>"
+         "<p>Vos qualifications, les démarches que vous prenez en charge (Consuel, raccordement) et l'encart France "
+         "Rénov' obligatoire à partir du 1er octobre 2026.</p></div>"
+         "</div>"
+         "<p class=\"where\">Pour aller plus loin, consultez "
+         "<a href=\"https://webautonomos.es/blog/fr/site-web-pour-electriciens\">notre guide : ce qu'il vous faut "
+         "et par où commencer</a>.</p>"),
+        visibilite_fr("Référencement du site d'un électricien : ce qui est inclus",
+                      "<a href=\"https://webautonomos.es/blog/fr/map-pack-google-comment-y-figurer\">figurer dans "
+                      "les résultats de Google Maps</a>, "),
+    ],
+    faq_t='Questions fréquentes',
+    faq=[("Un électricien doit-il afficher ses tarifs sur son site internet ?",
+          "Oui, s'il fait du dépannage, de la réparation ou de l'entretien : l'arrêté du 24 janvier 2017 vise "
+          "l'électricité. Taux horaires TTC, mode de décompte du temps, prix forfaitaires, frais de déplacement et "
+          "caractère gratuit ou payant du devis doivent être aisément accessibles sur tout espace en ligne dédié à "
+          "l'entreprise, et un devis détaillé est remis avant l'intervention. Amende jusqu'à 3 000 € (15 000 € pour "
+          "une société)."),
+         ("Faut-il une qualification pour être électricien ?",
+          "Oui. Les installations électriques font partie des activités qui ne peuvent être exercées que par une "
+          "personne qualifiée, ou sous son contrôle effectif et permanent (Code de l'artisanat, art. L121-1) : CAP, "
+          "BEP ou titre équivalent, ou trois ans d'expérience dans le métier. Exercer sans cette qualification est "
+          "puni de 7 500 € d'amende."),
+         ("Quand l'attestation Consuel est-elle obligatoire ?",
+          "Avant la mise sous tension d'une installation électrique neuve raccordée au réseau, d'une installation "
+          "entièrement rénovée que le distributeur a mise hors tension à la demande du client, et d'une installation "
+          "de production, photovoltaïque par exemple, qui modifie l'installation intérieure (Code de l'énergie, "
+          "art. D342-19). L'installateur établit l'attestation et la fait viser par Consuel."),
+         ("Quelle qualification pour installer une borne de recharge ?",
+          "Une qualification IRVE délivrée par un organisme agréé, dès que la borne dépasse 3,7 kW ou qu'elle est "
+          "installée ailleurs que dans un logement privé (Code de l'énergie, art. D353-2). Pour les dépenses payées "
+          "depuis le 1er janvier 2026, le crédit d'impôt borne n'existe plus ; en immeuble collectif, le programme "
+          "Advenir peut encore aider les copropriétés et leurs résidents."),
+         ("Un électricien peut-il réaliser le diagnostic électrique d'une vente ?",
+          "Non. Le diagnostic de l'installation électrique exigé pour une vente est réalisé par un diagnostiqueur "
+          "certifié, qui ne doit avoir aucun lien avec une entreprise pouvant faire des travaux sur l'installation "
+          "(Code de la construction et de l'habitation, art. L271-6). Vous pouvez en revanche proposer la mise en "
+          "sécurité ou la mise aux normes qui suit le diagnostic."),
+         ("Le photovoltaïque est-il concerné par l'encart France Rénov' ?",
+          "Oui. L'arrêté du 7 juillet 2026 vise les travaux de rénovation énergétique des logements « en vue de la "
+          "réalisation d'économies d'énergie ou de production d'énergie renouvelable ». À partir du 1er octobre 2026, "
+          "un site qui propose des panneaux photovoltaïques sur des logements affiche donc la bannière officielle, "
+          "cliquable vers le service public. Amende jusqu'à 15 000 € (75 000 € pour une société)."),
+         ("Faut-il être qualifié pour installer du photovoltaïque ?",
+          "Pour que votre client puisse vendre son électricité avec l'obligation d'achat, oui : l'installateur doit "
+          "être qualifié ou certifié (arrêté du 6 octobre 2021, annexe 5). La TVA à 5,5 % des installations de "
+          "9 kWc ou moins sur un logement, en vigueur depuis le 1er octobre 2025, suppose aussi une installation "
+          "réalisée par un professionnel qualifié ou certifié, avec des équipements conformes aux critères fixés par "
+          "arrêté."),
+         ("Mes qualifications doivent-elles figurer sur mon site ?",
+          "Ce n'est pas obligatoire, mais si vous les affichez, elles doivent être exactes : afficher un certificat, "
+          "un label ou une qualification sans l'avoir obtenu est une pratique commerciale trompeuse (Code de la "
+          "consommation, art. L121-4). Nous présentons chaque qualification avec le domaine qu'elle couvre."),
+         FAQ_MEDIATEUR,
+         FAQ_AVIS,
+         FAQ_SEO,
+         faq_prix_fr('électricien')],
+    final_t='Voyez votre site avant de payer quoi que ce soit',
+    final_sd="Démo gratuite en 24 heures, avec vos services, vos qualifications et vos mentions légales. Sans frais "
+             "d'installation, sans engagement.",
+)
+
+ELEC['en'] = dict(
+    html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
+    title="Websites for electricians in Spain: €15/month, free demo",
+    description="Websites for English-speaking electricians in Spain: empresa instaladora rules, the boletín, EV "
+                "chargers, solar, legal notice. Free demo in 24h, €15/month + VAT.",
+    service_name="Web design for electricians in Spain",
+    audience="English-speaking electricians, EV charger installers and solar installers in Spain",
+    crumb_home='Home', crumb='Electricians',
+    badge='For electricians working in Spain',
+    h1="Websites for <em>electricians</em> in Spain",
+    lede="Your services, the areas you cover, a call or a WhatsApp message in one tap, in English and Spanish, and "
+         "your authorisation presented accurately. We write it for you and send you a free demo "
+         "within 24 hours.",
+    pills=['English and Spanish included', 'Spanish rules built in', 'Free demo in 24 hours'],
+    cta='Get my free demo', cta2='What Spanish rules require',
+    brief_t='In short',
+    brief="WebAutonomos builds websites for English-speaking electricians, EV charger installers and solar installers "
+          "working in Spain. We present your services, write the copy in English and Spanish (up to four languages) "
+          "at no extra cost, and include the information Spanish law expects on a business website, such as a legal "
+          "notice with your NIF or NIE, prices for "
+          "homeowners shown with VAT included, and the complaint information your region asks for. It costs "
+          "<strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + "
+          "VAT</strong>. We work with you in English, and your demo is ready within 24 hours.",
+    legal_id='rules', legal_ey='Spanish rules', legal_t='What your business and your website have to get right',
+    legal_intro="In Spain, electrical work is reserved to registered installation companies, and only they can sign "
+                "the certificate that gets an installation connected. Consumer law then sets the rules for quotes, "
+                "call-outs and complaints. These are the points that matter.",
+    legal_cols=('Topic', 'Law', 'What it means for you'),
+    legal_rows=[
+        ('Empresa instaladora', 'REBT (RD 842/2002), art. 22; ITC-BT-03',
+         "Only an empresa instaladora en baja tensión may install, maintain or repair low-voltage installations. You "
+         "file a declaración responsable with the region where you are established; it is valid across Spain with "
+         "no expiry date, and the region gives you a number and sends your details to the Registro Integrado "
+         "Industrial."),
+        ('Requirements', 'ITC-BT-03, §3, §4, §5.8 and Appendix I',
+         "At least one qualified instalador en baja tensión for your category (básica or especialista), under any "
+         "type of contract since September 2025, and civil liability cover of at least €600,000 per claim for "
+         "básica or €900,000 for especialista."),
+        ('Installation certificate (boletín)', 'ITC-BT-04, §5.4 and 5.5; ITC-BT-03, §5.9',
+         "Only the company that did the work issues the certificado de instalación, signed by one of its own "
+         "installers, and the supplier will not connect without it. Supplying certificates for work the company did "
+         "not do is prohibited."),
+        ('Working without registration', 'Ley 21/1992 de Industria, arts. 31 and 34',
+         "Carrying out installations without filing the declaración responsable is a serious offence under the "
+         "Industry Act. Catalonia has its own regime, which treats it as very serious."),
+        ('EV chargers', 'ITC-BT-52 (RD 1053/2014); ITC-BT-03, §3; Ley de Propiedad Horizontal, art. 17.5',
+         "Any empresa instaladora may install a charger: the básica category is enough. In a comunidad, an owner "
+         "installing one in their own parking space only has to notify the community beforehand."),
+        ('Solar self-consumption', 'RD 244/2019; ITC-BT-03, §3',
+         "Installed by an empresa instaladora: básica for generators under 10 kW, especialista from 10 kW. For "
+         "low-voltage systems under 100 kW, the region registers the installation itself once the installation "
+         "certificate is filed."),
+        ROW_EN_QUOTES,
+        ROW_EN_COMPLAINTS,
+        ROW_EN_NOTICE,
+    ],
+    legal_note="Registration is handled by your region's industry department, and rules on quotes and complaint forms "
+               "are regional too. This is general information as of September 2026, not legal advice.",
+    legal_we_t='What we set up for you',
+    legal_we=["A proper legal notice with your name, NIF or NIE and contact details, plus your company details if you "
+              "trade as an S.L.",
+              "Your authorisation described accurately: empresa instaladora category, and only the work it covers",
+              "Your call-out terms and your prices for homeowners shown with VAT included",
+              "The complaint information your region asks for, such as the QR poster in Andalucía",
+              "A call button and WhatsApp always visible on mobile, and your site in up to four languages, English "
+              "and Spanish included, at no extra cost"],
+    spain_note='',
+    sources_t='Sources',
+    why_ey='Why us', why_t='Built for tradespeople who work in English',
+    why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
+                                         "or technical jargon."),
+         ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish "
+                                                   "homeowners find you as easily as expats do."),
+         ('🔌', 'Every service in its place', "Repairs, rewires, EV chargers and solar each get their own section, "
+                                             "with the authorisation that applies."),
+         ('📍', 'Found locally', "Titles and copy written for searches like “electrician Jávea” or “electricista "
+                                "Marbella”, in both languages.")],
+    where_t='Anywhere in Spain',
+    where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work "
+          "remotely, so where your van is based does not change how we work with you.",
+    sect_t='Who it is for',
+    sectors=['⚡ Electricians', '🔌 Repairs and fault finding', '🏠 Rewires and upgrades', '🚗 EV chargers',
+             '☀️ Solar installers', '💡 Lighting', '🏢 Commercial electrical work', '📶 Smart home and networks'],
+    how_t='Your website in three steps',
+    steps=[('Tell us about your business', 'Your services, the areas you cover and a few job photos: it takes two '
+                                           'minutes.'),
+           ('We build your demo', 'Within 24 hours, with your services, your copy in English and Spanish, and your '
+                                  'legal pages.'),
+           ('You decide', "Ask for any changes you want. If you like it, it goes live; if not, you pay nothing.")],
+    price_note=PRIX_EN_BAT,
+    extra=[
+        ('what-to-include', 'On your website', "What should an electrician's website in Spain show?",
+         '<p class="legal-intro">A homeowner wants to see what you do, whether you cover their town, and whether you '
+         'can legally sign off the work. These are the parts that answer those questions.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
+         '<h3>Your authorisation, stated accurately</h3>'
+         '<p>That your business is a registered empresa instaladora, with its category (básica or especialista), '
+         'is what tells a customer you can issue the boletín their supplier will ask for.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F5C2️</div>'
+         '<h3>Services grouped by type of job</h3>'
+         '<p>Repairs and fault finding, rewires, EV chargers and solar each get their own section, so a visitor '
+         'finds the work they need without scrolling through everything else.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4B6</div>'
+         '<h3>Clear call-out terms</h3>'
+         '<p>Your call-out charge and hourly rate, shown with VAT included for homeowners, so customers know what to '
+         'expect before they ring.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CD</div>'
+         '<h3>The towns you cover</h3>'
+         '<p>Naming the towns you work in (Jávea, Marbella or Santa Pola, for example) helps both readers and Google '
+         'understand who your site is for.</p></div>'
+         '</div>'
+         '<p class="where">For a longer read, see our guide to '
+         '<a href="https://webautonomos.es/blog/en/website-for-electricians">what an electrician&#8217;s website '
+         'needs</a>.</p>'),
+        local_search_en(''),
+    ],
+    faq_t='Frequently asked questions',
+    faq=[("Do I need to be registered to work as an electrician in Spain?",
+          "Yes. Only an empresa instaladora en baja tensión may install, maintain or repair low-voltage "
+          "installations (REBT, art. 22). As a sole trader or company, you file a declaración responsable with the "
+          "region where you are established, with at least one qualified installer and civil liability cover of at "
+          "least €600,000 per claim for the básica category. Working without it is a serious offence under the "
+          "Industry Act (Ley 21/1992), and a very serious one in Catalonia."),
+         ("Can I work as an electrician in Spain with UK qualifications?",
+          "Not on the strength of the UK certificate alone. Since 1 January 2021 the UK counts as a third country for "
+          "qualifications, and there is no regional exam for electricians. The routes are homologation of your "
+          "qualification, accreditation of your work experience (legal residence and at least three years, with at "
+          "least 2,000 hours worked, in the last 15 years), an ENAC-accredited personal certification, or a Spanish qualification such "
+          "as the certificado de profesionalidad ELEE0109."),
+         ("What is a boletín and who can issue it?",
+          "The boletín is the certificado de instalación eléctrica (CIE). Only the empresa instaladora that did the "
+          "work issues it, signed by one of its own qualified installers, and it is filed with the region; the "
+          "electricity supplier will not connect a new installation without it. A company may not supply "
+          "certificates for work it did not carry out."),
+         ("Can I install EV chargers in Spain?",
+          "Yes, if your business is a registered empresa instaladora: the básica category covers chargers (ITC-BT-03, "
+          "§3). Under ITC-BT-04, a charging installation needs a project above 50 kW, outdoors above 10 kW, or for mode 4 charging. In a comunidad de "
+          "propietarios, an owner installing a charger in their own parking space only has to notify the community "
+          "beforehand (Ley de Propiedad Horizontal, art. 17.5)."),
+         ("Can my customers deduct the cost of a charger or solar panels from income tax?",
+          "For 2026, yes, within limits. Homeowners can deduct 15% of the cost of a charger installed by "
+          "31 December 2026 in a property they own, on a base of up to €4,000, and a new deduction covers solar "
+          "self-consumption installed in 2026: 10%, or 20% in a residential building, on a base of up to €5,000, "
+          "with the installation certificate. Payment must be by card, transfer, nominative cheque or bank deposit, "
+          "never in cash. Point "
+          "customers to the Agencia Tributaria for the details that apply to them."),
+         ("When does an installation need an OCA inspection?",
+          "Only for the types listed in ITC-BT-05: for example premises open to the public, installations with fire "
+          "or explosion risk, swimming pools above 10 kW, or EV charging that needs a project. Under the national "
+          "rules, an ordinary home installation does not need an initial inspection by an OCA."),
+         FAQ_EN_QUOTE,
+         ("Can customers cancel after an emergency call-out?",
+          "Not for the urgent repair itself. Under article 103 of the consumer law (TRLGDCU), there is no right of "
+          "withdrawal when the customer specifically asked you to visit for an urgent repair or maintenance job. "
+          "The 14-day right still applies to extra services you provide during that visit, and to goods other than "
+          "the spare parts you necessarily used."),
+         FAQ_EN_REVIEWS,
+         FAQ_EN_LANGUAGE,
+         FAQ_EN_GBP,
+         FAQ_EN_PRICE],
+    final_t='See your website before you pay a thing',
+    final_sd="Free demo within 24 hours, with your services and legal pages. No setup fee, no lock-in.",
+)
+
+ELEC_SOURCES = {
+    'fr': [
+        ("Arrêté du 24 janvier 2017, dépannage dans le bâtiment (Légifrance)",
+         'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033935513'),
+        ("Code de l'énergie, art. D342-19, Consuel (Légifrance)",
+         'https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050741348'),
+        ("Code de l'énergie, art. D353-2, bornes de recharge (Légifrance)",
+         'https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049851527'),
+        ("Arrêté du 6 octobre 2021, obligation d'achat photovoltaïque (Légifrance)",
+         'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000044173060'),
+        ("Arrêté du 7 juillet 2026, message France Rénov' (Légifrance)",
+         'https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054569418'),
+        ("Code de l'artisanat, art. L121-1, qualification (Légifrance)",
+         'https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047362238'),
+        ("Médiateur de la consommation (Service-public)", 'https://entreprendre.service-public.gouv.fr/vosdroits/F33338'),
+    ],
+    'en': [
+        ("Low-voltage regulation, REBT (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2002-18099'),
+        ("Industry Act, Ley 21/1992 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-1992-17363'),
+        ("Industrial registry search (Ministerio de Industria)",
+         'https://industria.gob.es/registros-industriales/RII/Paginas/consultas-publicas.aspx'),
+        ("Self-consumption, RD 244/2019 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2019-5089'),
+        ("Ley de Propiedad Horizontal (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-1960-10906'),
+        ("UK qualifications in Spain (Ministerio de Educación)",
+         'https://www.educacionfpydeportes.gob.es/reinounido/en/brexit/titulos-britanicos-en-espan-a.html'),
+        ("Spanish consumer law, TRLGDCU (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555'),
+    ],
+}
+
+# ═════════════════════════ ARTISANS DU BÂTIMENT ET BUILDERS (28/09/2026) ══
+ARTI = {}
+ARTI['fr'] = dict(
+    html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
+    title="Création de site internet pour artisan : 15 €/mois",
+    description="Création de site internet pour artisan du bâtiment : réalisations, devis, assurance, médiateur, "
+                "encart France Rénov'. Démo gratuite en 24 h, 15 €/mois HT, sans engagement.",
+    service_name="Création de site internet pour artisans du bâtiment",
+    audience="Artisans du bâtiment et de la rénovation : maçons, peintres, carreleurs, plaquistes, couvreurs, "
+             "plombiers, électriciens et menuisiers",
+    crumb_home='Accueil', crumb='Artisans du bâtiment',
+    badge='Artisans du bâtiment et de la rénovation',
+    h1="Création de site internet pour <em>artisan</em> du bâtiment",
+    lede="Vos réalisations, vos métiers, les communes où vous intervenez, une demande de devis en un clic, et les "
+         "mentions que la loi impose dès que vous travaillez pour des particuliers. Nous l'écrivons pour vous et vous "
+         "envoyons une démo gratuite en 24 heures.",
+    pills=['Un site vitrine clé en main', 'Mentions obligatoires en ordre', 'Démo gratuite en 24 h'],
+    cta='Recevoir ma démo gratuite', cta2='Ce que la loi impose',
+    brief_t='En bref',
+    brief="WebAutonomos crée des sites internet pour les artisans du bâtiment et de la rénovation (maçons, peintres, "
+          "carreleurs, plaquistes, couvreurs, plombiers, électriciens, menuisiers), en France et en Espagne. Nous "
+          "mettons vos réalisations en valeur, rédigeons les textes et plaçons, à partir des informations que vous "
+          "nous donnez, ce que la loi demande quand vous travaillez pour des particuliers : assurance, médiateur de la consommation, mentions légales et, si vous "
+          "proposez de l'isolation ou d'autres travaux de rénovation énergétique, l'encart France Rénov' obligatoire "
+          "à partir du 1<sup>er</sup> octobre 2026. Le site coûte <strong>15 € HT par mois</strong> sans frais "
+          "d'installation ni engagement, ou <strong>349 € HT en paiement unique</strong>, jusqu'à 4 langues sans "
+          "supplément si vous le souhaitez, et la démo est prête en 24 heures.",
+    legal_id='regles', legal_ey='Les règles', legal_t="Ce que votre site et vos devis doivent montrer",
+    legal_intro="Dès que vous travaillez pour des particuliers, le Code de l'artisanat, le Code des assurances et le "
+                "Code de la consommation disent ce que votre site, vos devis et vos factures doivent montrer, et "
+                "comment vous pouvez trouver des clients. Voici l'essentiel pour une entreprise du bâtiment en France.",
+    legal_cols=('Sujet', 'Texte', 'Ce que ça change pour vous'),
+    legal_rows=[
+        ("Qualification", "Code de l'artisanat, art. L121-1, R121-1, R121-3 et L151-2",
+         "La construction, l'entretien et la réparation des bâtiments ne s'exercent qu'avec une qualification dans "
+         "chaque métier exercé (CAP, BEP, titre équivalent ou trois ans d'expérience) ou sous le contrôle effectif et "
+         "permanent d'une personne qualifiée. Sinon : 7 500 € d'amende."),
+        ("Le mot « artisan »", "Code de l'artisanat, art. L211-1, R211-1, L241-1 et L241-2",
+         "Réservé à ceux qui ont la qualité d'artisan : un CAP, un BEP, un titre équivalent ou trois ans "
+         "d'expérience dans le métier. L'immatriculation seule ne suffit pas. L'usage abusif du mot dans votre nom, "
+         "votre enseigne ou votre publicité est puni de 7 500 € d'amende."),
+        ("Assurance décennale", "Code des assurances, art. L241-1, L243-2 et L243-3 ; Code de la consommation, "
+                                "art. R111-2",
+         "L'attestation se joint à chaque devis et chaque facture, et le client doit pouvoir connaître avant le "
+         "contrat votre assureur et la couverture géographique. Travailler sans l'assurance obligatoire est puni de "
+         "6 mois de prison et 75 000 € d'amende."),
+        ("Devis signé chez le client", "Code de la consommation, art. L221-2, L221-9, L221-10 et L221-18",
+         "Un contrat signé au domicile du client lui ouvre 14 jours de rétractation, avec le formulaire type à "
+         "remettre, et vous ne pouvez recevoir aucun paiement ni acompte pendant 7 jours. Exceptions : les "
+         "réparations urgentes qu'il vous a expressément demandées chez lui, la construction neuve et la "
+         "transformation importante d'un bâtiment."),
+        ("Démarchage", "Code de la consommation, art. L223-1 et L223-8",
+         "Depuis le 11 août 2026, appeler un particulier suppose son accord préalable, sauf contrat en cours. Pour la "
+         "rénovation énergétique, les énergies renouvelables et l'adaptation du logement au vieillissement ou au "
+         "handicap, l'appel est interdit même avec son accord, comme les SMS, courriels et réseaux sociaux depuis "
+         "juillet 2025 : laissez le client venir à vous."),
+        ("RGE, labels et aides", "Code de la consommation, art. L121-4, L224-114 et L242-51 ; décret n° 2026-822",
+         "Afficher RGE, Qualibat ou un autre label sans l'avoir obtenu est une pratique commerciale trompeuse. Quand "
+         "une aide exige un label, vous indiquez par écrit avant le contrat, et dans le contrat, si vous le détenez, "
+         "avec le justificatif. Depuis le 1er septembre 2026, MaPrimeRénov' « par geste » ne finance plus "
+         "l'isolation, qui reste aidée dans une rénovation d'ampleur."),
+        ("Encart France Rénov'", "Code de la consommation, art. L122-26 ; arrêté du 7 juillet 2026",
+         "À partir du 1er octobre 2026, un site qui propose de l'isolation, un changement de fenêtres, une pompe à "
+         "chaleur ou d'autres travaux de rénovation énergétique d'un logement affiche une bannière avec le message "
+         "officiel de France Rénov', cliquable vers le service public. Amende jusqu'à 15 000 € (75 000 € pour une "
+         "société)."),
+        ROW_MEDIATEUR,
+        ROW_MENTIONS,
+    ],
+    legal_note="Nouveau au 1er octobre 2026 : l'encart France Rénov' devient obligatoire pour les sites qui proposent "
+               "des travaux de rénovation énergétique. Si vous faites du dépannage, de la réparation ou de "
+               "l'entretien, vos tarifs doivent aussi être accessibles en ligne (arrêté du 24 janvier 2017). Et si "
+               "vous affichez des avis clients, indiquez s'ils sont contrôlés et comment, avec leur date (Code de la "
+               "consommation, art. L111-7-2). Vous nous fournissez ces informations et validez chaque contenu. "
+               "Informations générales à jour en septembre 2026, qui ne remplacent pas un conseil juridique.",
+    legal_we_t='Ce que nous mettons en place',
+    legal_we=["Votre qualité d'artisan si vous l'avez, votre numéro RNE et votre assurance (assureur, couverture "
+              "géographique) indiqués clairement",
+              "Les labels (RGE, Qualibat…) seulement si vous les détenez, avec les travaux qu'ils couvrent",
+              "L'encart France Rénov' et son lien, si vous proposez de l'isolation ou d'autres travaux de "
+              "rénovation énergétique",
+              "Un formulaire de demande de devis, un bouton WhatsApp et votre téléphone, pour que le client vous "
+              "contacte directement",
+              "Les coordonnées de votre médiateur, des mentions légales complètes et des avis présentés avec leur "
+              "date et leur mode de contrôle"],
+    spain_note="<strong>Vous travaillez en Espagne ?</strong> Les règles changent : droit du client à un devis écrit "
+               "préalable dans plusieurs communautés (Valence, Madrid, Catalogne), sauf renonciation manuscrite, "
+               "formulaires de réclamation régionaux, permis de travaux délivrés par la mairie, et IVA à 10 % sous "
+               "conditions pour la rénovation du logement d'un particulier. Nous connaissons aussi ces règles : "
+               "<a href=\"/fr/site-internet-francophones-espagne\">site internet pour francophones en Espagne</a>.",
+    sources_t='Sources',
+    why_ey='Pourquoi nous', why_t="Pensé pour les artisans du bâtiment",
+    why=[('📸', 'Vos chantiers en photos', "Salles de bains, façades, toitures, cloisons : vos réalisations "
+                                          "classées par type de travaux, avec avant et après si vous en avez."),
+         ('📝', 'Une demande de devis simple', "Formulaire, WhatsApp ou téléphone : le particulier décrit son projet "
+                                              "et vous recevez la demande directement."),
+         ('📄', 'Les mentions à jour', "Assurance, médiateur, mentions légales, encart France Rénov' : ce que la loi "
+                                      "demande est en place, et vous validez chaque contenu."),
+         ('📍', 'Trouvé près de chez vous', "Titres et textes pensés pour les recherches « votre métier + votre "
+                                           "ville », et votre fiche Google si vous le souhaitez.")],
+    where_t='En France et en Espagne',
+    where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que votre entreprise "
+          "soit en Normandie, en Provence ou sur la Costa Blanca, rien ne change.",
+    sect_t='Pour qui',
+    sectors=['🧱 Maçons', '🎨 Peintres', '🟫 Carreleurs', '🧰 Plaquistes', '🏠 Couvreurs', '🔧 Plombiers',
+             '⚡ Électriciens', '🪵 Menuisiers'],
+    how_t='Votre projet en trois étapes',
+    steps=[('Vous décrivez votre activité', "Vos métiers, votre zone d'intervention, quelques photos de chantier : "
+                                           "deux minutes suffisent."),
+           ('Nous préparons votre démo', "En moins de 24 heures, avec vos réalisations, vos textes et vos mentions "
+                                        "légales."),
+           ('Vous décidez', "Vous demandez les modifications que vous voulez. Si le site vous plaît, il est mis en "
+                           "ligne ; sinon, vous ne payez rien.")],
+    price_note=PRIX_FR_BAT,
+    extra=[
+        ('site-vitrine', 'Ce qui convainc', "Que doit contenir le site vitrine d'un artisan ?",
+         "<p class=\"legal-intro\">Un site vitrine d'artisan répond à trois questions : faites-vous le type de "
+         "travaux que je cherche, intervenez-vous chez moi, et comment vous joindre ? Tout le reste vient en "
+         "appui.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📸</div>"
+         "<h3>Des réalisations classées par type de travaux</h3>"
+         "<p>Une personne qui cherche un ravalement de façade ne veut pas faire défiler des photos de salles de "
+         "bains. Nous regroupons vos photos par catégorie, avec une légende : matériau, type de travaux, "
+         "ville.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📍</div>"
+         "<h3>Votre zone d'intervention, nommée</h3>"
+         "<p>Citer les communes où vous travaillez permet au visiteur de savoir tout de suite si vous vous "
+         "déplacez chez lui, et aide Google à comprendre à qui s'adresse votre site.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🛡️</div>"
+         "<h3>Votre assurance et vos qualifications</h3>"
+         "<p>Votre assureur et votre couverture géographique, que le client doit pouvoir connaître avant le "
+         "contrat, et les labels que vous avez réellement obtenus : autant les montrer dès la page d'accueil.</p>"
+         "</div>"
+         "</div>"
+         "<p class=\"where\">Pour aller plus loin, consultez "
+         "<a href=\"https://webautonomos.es/blog/fr/site-web-pour-menuisiers-et-renovation\">notre guide pour les "
+         "entreprises de rénovation</a>.</p>"),
+        ('par-metier', 'Par métier', "Un site d'artisan adapté aux règles de votre métier",
+         "<p class=\"legal-intro\">Certains métiers ont leurs propres obligations en ligne. Nous les détaillons "
+         "page par page.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🔧</div>"
+         "<h3><a href=\"https://webautonomos.es/fr/site-internet-plombier\">Plombiers et chauffagistes</a></h3>"
+         "<p>Tarifs de dépannage accessibles en ligne, devis avant intervention, gaz, pompes à chaleur et entretien "
+         "des chaudières.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">⚡</div>"
+         "<h3><a href=\"https://webautonomos.es/fr/site-internet-electricien\">Électriciens</a></h3>"
+         "<p>Consuel, qualification IRVE pour les bornes de recharge, photovoltaïque et tarifs de dépannage.</p>"
+         "</div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🪵</div>"
+         "<h3><a href=\"https://webautonomos.es/fr/site-internet-menuisier\">Menuisiers</a></h3>"
+         "<p>Fenêtres et aides, encart France Rénov', réalisations bois, alu et PVC.</p></div>"
+         "</div>"),
+        visibilite_fr("SEO pour artisans : ce qui est inclus et ce qui est en plus",
+                      "<a href=\"https://webautonomos.es/blog/fr/positionner-son-site-dans-le-google-local\">"
+                      "positionner votre site dans la recherche locale</a>, "),
+    ],
+    faq_t='Questions fréquentes',
+    faq=[("Que doit contenir le site internet d'un artisan ?",
+          "Vos métiers et vos réalisations, les communes où vous intervenez, un moyen simple de demander un devis, et "
+          "les mentions obligatoires : identité, coordonnées, numéro d'immatriculation, hébergeur, médiateur de la "
+          "consommation si vous travaillez pour des particuliers, et vos tarifs si vous faites du dépannage. Votre "
+          "assureur et votre couverture géographique doivent être communiqués avant le contrat : le site est le moyen "
+          "le plus simple. Si vous proposez des travaux de rénovation énergétique, ajoutez l'encart France Rénov' à "
+          "partir du 1er octobre 2026."),
+         ("Puis-je me présenter comme artisan sur mon site ?",
+          "Oui si vous avez la qualité d'artisan : un CAP, un BEP, un titre de niveau équivalent ou trois ans "
+          "d'expérience dans le métier, en plus de l'immatriculation (Code de l'artisanat, art. R211-1). Utiliser le "
+          "mot « artisan » ou un dérivé dans votre nom, votre enseigne ou votre publicité sans y avoir droit est puni "
+          "de 7 500 € d'amende (art. L241-2)."),
+         ("Faut-il une qualification pour travailler dans le bâtiment ?",
+          "Oui. La construction, l'entretien et la réparation des bâtiments, comme les installations électriques, de "
+          "gaz et de chauffage, ne peuvent être exercés que par une personne qualifiée ou sous son contrôle effectif "
+          "et permanent (Code de l'artisanat, art. L121-1) : CAP, BEP, titre équivalent ou trois ans d'expérience, "
+          "pour chaque métier exercé. Sinon : 7 500 € d'amende."),
+         ("L'assurance décennale doit-elle figurer sur mon site ?",
+          "Aucun texte n'impose ce canal. L'attestation doit être jointe à chaque devis et chaque facture (Code des "
+          "assurances, art. L243-2), et le client doit pouvoir connaître votre assureur et la couverture "
+          "géographique avant le contrat (Code de la consommation, art. R111-2) : l'indiquer sur votre site est la "
+          "façon la plus simple d'y répondre."),
+         ("Un client peut-il annuler un devis signé chez lui ?",
+          "Oui : un contrat conclu au domicile du client lui ouvre 14 jours de rétractation, avec le formulaire type "
+          "joint au contrat, et vous ne pouvez recevoir aucun paiement ni acompte pendant 7 jours (Code de la "
+          "consommation, art. L221-9, L221-10 et L221-18). Si le client demande expressément, par écrit, que le "
+          "chantier commence avant la fin du délai et se rétracte ensuite, il paie le travail déjà fait (art. L221-25). "
+          "Les réparations urgentes qu'il vous a demandées chez lui sont exclues, comme la construction neuve et la "
+          "transformation importante d'un bâtiment (art. L221-2)."),
+         ("Ai-je le droit de démarcher des clients par téléphone ?",
+          "Depuis le 11 août 2026, seulement les particuliers qui y ont consenti au préalable, sauf contrat en cours "
+          "(Code de la consommation, art. L223-1). Pour la rénovation énergétique, les énergies renouvelables et "
+          "l'adaptation du logement au vieillissement ou au handicap, l'appel est interdit même avec leur accord, et "
+          "la prospection par SMS, messagerie, courriel ou réseaux sociaux l'est depuis juillet 2025 (art. L223-8). "
+          "Sanctions : jusqu'à 75 000 € d'amende (375 000 € pour une société), et le contrat est nul (art. L242-16 "
+          "et L242-16-1)."),
+         ("Qu'est-ce que l'encart France Rénov' obligatoire au 1er octobre 2026 ?",
+          "À partir du 1er octobre 2026 (Code de la consommation, art. L122-26, et arrêté du 7 juillet 2026), tout "
+          "professionnel qui propose des travaux de rénovation énergétique d'un logement, en ligne ou dans sa "
+          "publicité, affiche le message officiel : « Avant de vous engager, le service public vous informe "
+          "gratuitement pour préparer et sécuriser votre projet : www.france-renov.gouv.fr ». Sur un site, c'est une "
+          "bannière cliquable vers le service public. Amende jusqu'à 15 000 € (75 000 € pour une société)."),
+         ("L'isolation est-elle encore aidée par MaPrimeRénov' ?",
+          "Plus « par geste » : pour les demandes déposées depuis le 1er septembre 2026 (décret n° 2026-822), ce "
+          "parcours ne finance plus l'isolation des murs ni des combles. Elle reste aidée dans une rénovation "
+          "d'ampleur, pour un logement classé E, F ou G qui gagne au moins deux classes, avec Mon Accompagnateur "
+          "Rénov' et au moins deux gestes d'isolation. Les travaux sont faits par une entreprise RGE."),
+         ("Faut-il encore une attestation de TVA pour les travaux à taux réduit ?",
+          "Non : depuis la loi de finances pour 2025, l'attestation n'est plus obligatoire. Pour la TVA à 10 % ou 5,5 % dans un "
+          "logement achevé depuis plus de deux ans, le client certifie sur le devis ou la facture que les travaux "
+          "portent sur un tel logement (Code général des impôts, art. 279-0 bis et 278-0 bis A). Pour une réparation "
+          "ou un entretien de moins de 1 000 € TTC, cette mention n'est pas exigée, mais la facture indique le nom et "
+          "l'adresse du client et de l'immeuble, la nature des travaux et l'ancienneté du logement."),
+         ("Quelles garanties dois-je à mes clients après les travaux ?",
+          "Pour des travaux qui constituent un ouvrage (construction, rénovation lourde), à partir de leur réception : "
+          "un an de garantie de parfait achèvement pour les désordres "
+          "signalés (Code civil, art. 1792-6), au moins deux ans de garantie de bon fonctionnement pour les "
+          "équipements dissociables (art. 1792-3), et dix ans de garantie décennale pour les dommages qui "
+          "compromettent la solidité de l'ouvrage ou le rendent impropre à sa destination (art. 1792)."),
+         ("La facture électronique me concerne-t-elle ?",
+          "Oui, pour les factures entre entreprises. Depuis le 1er septembre 2026, toutes les entreprises, artisans "
+          "compris, doivent pouvoir recevoir des factures électroniques ; pour les TPE et PME, l'émission devient "
+          "obligatoire le 1er septembre 2027. Pour les travaux facturés à des particuliers, c'est la transmission "
+          "des données de vente à l'administration qui s'applique, à la même date."),
+         FAQ_AVIS,
+         ("Le SEO pour artisans est-il inclus dans le prix ?",
+          "Le référencement de base est inclus : titres et textes construits autour de vos métiers et des communes "
+          "où vous intervenez. Le SEO Local (quatre articles de blog par mois, mots-clés locaux, rapport mensuel) est "
+          "un service séparé à 15 € HT par mois, tout comme la gestion de votre fiche Google (29 € HT par mois, plus "
+          "49 € HT de création si vous n'avez pas encore de fiche) : les deux s'achètent indépendamment de "
+          "l'abonnement."),
+         faq_prix_fr('artisan')],
+    final_t='Voyez votre site avant de payer quoi que ce soit',
+    final_sd="Démo gratuite en 24 heures, avec vos réalisations et vos mentions légales. Sans frais d'installation, "
+             "sans engagement.",
+)
+
+ARTI['en'] = dict(
+    html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
+    title="Websites for builders in Spain: €15/month, free demo",
+    description="Websites for English-speaking builders and renovation companies in Spain: permits, quotes, 10% VAT, "
+                "asbestos, legal notice. Free demo in 24h, €15/month + VAT.",
+    service_name="Web design for builders and renovation companies in Spain",
+    audience="English-speaking builders, renovation companies, painters, tilers and roofers in Spain",
+    crumb_home='Home', crumb='Builders and renovations',
+    badge='For builders and renovation companies in Spain',
+    h1="Websites for <em>builders</em> and renovation companies in Spain",
+    lede="Your projects in photos, the areas you cover, a quote request in one click, in English and Spanish, and the "
+         "information Spanish consumer law expects. We write it for you and send you a free demo within 24 hours.",
+    pills=['English and Spanish included', 'Spanish rules built in', 'Free demo in 24 hours'],
+    cta='Get my free demo', cta2='What Spanish rules require',
+    brief_t='In short',
+    brief="WebAutonomos builds websites for English-speaking builders, renovation companies, painters, tilers and "
+          "roofers working in Spain. We show your projects, write the copy in English and Spanish (up to four "
+          "languages) at no extra cost, and include the information Spanish law expects on a business website, such "
+          "as a legal notice with your NIF or NIE, "
+          "prices for homeowners shown with VAT included, and the complaint information your region asks for. It "
+          "costs <strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + "
+          "VAT</strong>. We work with you in English, and your demo is ready within 24 hours.",
+    legal_id='rules', legal_ey='Spanish rules', legal_t='What your business and your website have to get right',
+    legal_intro="Building work in Spain is not a licensed trade in itself, but permits, consumer law, tax and a few "
+                "specific rules, such as asbestos, decide what you can advertise and how you quote. These are the "
+                "points that matter.",
+    legal_cols=('Topic', 'Law', 'What it means for you'),
+    legal_rows=[
+        ('Building permits', 'TRLSRU (RDLeg 7/2015), art. 11.3; regional planning laws',
+         "Works need either a licencia de obra or a declaración responsable filed with the town hall, depending on "
+         "their size. The owner usually files it, but regional laws (Madrid, Valencia, Andalucía) can also fine the "
+         "builder and have the site stopped when works go ahead without one."),
+        ROW_EN_QUOTES,
+        ('Contracts signed at the customer\'s home', 'Consumer law (TRLGDCU), arts. 99.3, 102 and 103',
+         "The customer has 14 days to cancel, or 30 days if your visit was not requested. Work can start earlier "
+         "only at their express request on a durable medium, and there is no right to cancel an urgent repair they "
+         "called you out for."),
+        ('Asbestos (uralita)', 'RD 396/2006, arts. 11, 12 and 17',
+         "Only companies registered in the RERA may remove asbestos-cement roofs or pipes, with a work plan approved "
+         "by the regional labour authority before each job (or a general plan for short, unplanned jobs). Don't advertise uralita removal unless you are "
+         "registered."),
+        ('Construction waste', 'RD 105/2008, arts. 2 and 5 and DA 1ª; Ley 7/2022',
+         "On larger jobs you are the legal holder of the waste: use an authorised waste manager and keep the delivery "
+         "records for five years. Rubble from minor home repairs follows the town hall's bylaws."),
+        ('10% VAT', 'Ley 37/1992, art. 91.Uno.2.10º',
+         "Renovation or repair of a home at least two years old, for an individual using it privately (not rented "
+         "out) or a comunidad de propietarios, with materials costing no more than 40% of the price before VAT."),
+        ('Cash payments', 'Ley 7/2012, art. 7',
+         "A job worth €1,000 or more cannot be paid in cash, and instalments on the same job count together. The "
+         "limit is €10,000 for private individuals whose tax residence is outside Spain."),
+        ROW_EN_COMPLAINTS,
+        ROW_EN_NOTICE,
+    ],
+    legal_note="Permits are municipal, and rules on quotes and complaint forms are regional, so check with your town "
+               "hall and your comunidad autónoma. This is general information as of September 2026, not legal "
+               "advice.",
+    legal_we_t='What we set up for you',
+    legal_we=["A proper legal notice with your name, NIF or NIE and contact details, plus your company details if you "
+              "trade as an S.L.",
+              "Prices for homeowners shown with VAT included, and your services described accurately, including "
+              "any registration they need",
+              "The complaint information your region asks for, such as the QR poster in Andalucía",
+              "A quote request form, a WhatsApp button and your phone number, so customers contact you directly",
+              "Customer reviews shown with a note on how they are checked, and your site in up to four languages, "
+              "English and Spanish included, at no extra cost"],
+    spain_note='',
+    sources_t='Sources',
+    why_ey='Why us', why_t='Built for builders who work in English',
+    why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
+                                         "or technical jargon."),
+         ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish "
+                                                   "homeowners find you as easily as expats do."),
+         ('📸', 'Your projects, shown properly', "Kitchens, bathrooms, full renovations, roofs: your project photos "
+                                                "organised by type of job."),
+         ('📍', 'Found locally', "Titles and copy written for searches like “builder Jávea” or “reformas "
+                                "Torrevieja”, in both languages.")],
+    where_t='Anywhere in Spain',
+    where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work "
+          "remotely, so where your yard is does not change how we work with you.",
+    sect_t='Who it is for',
+    sectors=['🏗️ Builders', '🏠 Renovation companies', '🎨 Painters and decorators', '🟫 Tilers',
+             '🏘️ Roofers', '🧱 Bricklayers', '🛁 Kitchen and bathroom fitters', '🏊 Pool builders'],
+    how_t='Your website in three steps',
+    steps=[('Tell us about your business', 'Your trades, the areas you cover and a few project photos: it takes two '
+                                           'minutes.'),
+           ('We build your demo', 'Within 24 hours, with your projects, your copy in English and Spanish, and your '
+                                  'legal pages.'),
+           ('You decide', "Ask for any changes you want. If you like it, it goes live; if not, you pay nothing.")],
+    price_note=PRIX_EN_BAT,
+    extra=[
+        ('what-to-include', 'On your website', "What should a builder's website in Spain show?",
+         '<p class="legal-intro">A homeowner comparing builders wants to see finished work like theirs, know that '
+         'you cover their town, and find a simple way to ask for a quote.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F5C2️</div>'
+         '<h3>A portfolio organised by type of job</h3>'
+         '<p>Kitchens, bathrooms, full renovations, roofs and pools, grouped so a visitor looking for one type of '
+         'work does not scroll past the others. We build it from your own project photos.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CD</div>'
+         '<h3>The areas you cover, stated clearly</h3>'
+         '<p>Naming the towns you work in (Jávea, Torrevieja or Marbella, for example) helps both readers and '
+         'Google understand who your site is for.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4DD</div>'
+         '<h3>How you quote and get paid</h3>'
+         '<p>A written quote, a clear payment schedule and payment by transfer: saying so on your website reassures '
+         'customers who have heard about renovation problems.</p></div>'
+         '</div>'
+         '<p class="where">For a longer read, see our article on '
+         '<a href="https://webautonomos.es/blog/en/website-for-carpenters-and-renovations">websites for carpenters '
+         'and renovation companies</a>.</p>'),
+        ('by-trade', 'By trade', 'A website that fits the rules of your trade',
+         '<p class="legal-intro">Some trades have their own rules in Spain. We cover them page by page.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F527</div>'
+         '<h3><a href="https://webautonomos.es/en/website-for-plumbers-in-spain">Plumbers and heating '
+         'engineers</a></h3>'
+         '<p>RITE authorisation for heating and air conditioning, gas installers, F-gas certificates and urgent '
+         'call-outs.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">⚡</div>'
+         '<h3><a href="https://webautonomos.es/en/website-for-electricians-in-spain">Electricians</a></h3>'
+         '<p>Registration as an empresa instaladora, the boletín, EV chargers and solar self-consumption.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001FAB5</div>'
+         '<h3><a href="https://webautonomos.es/en/website-for-carpenters-in-spain">Carpenters and joiners</a></h3>'
+         '<p>Written quotes, 10% VAT on home renovation, and when you need to register in the REA.</p></div>'
+         '</div>'),
+        local_search_en(''),
+    ],
+    faq_t='Frequently asked questions',
+    faq=[("Who has to get the building permit, me or the homeowner?",
+          "The owner, as promoter of the works, usually files the licencia de obra or declaración responsable with "
+          "the town hall. But regional planning laws also hold the builder responsible: in the Comunidad de Madrid, "
+          "the Comunitat Valenciana and Andalucía, the builder who carries out works without the required permit can "
+          "be fined and see the site stopped. Check that the permit exists before you start."),
+         ("Do the LOE 1, 3 and 10-year guarantees apply to renovation work?",
+          "Only to new builds and to works that change a building's architectural configuration: a full refurbishment, "
+          "essential changes to the façade, volume or structure, or a change of use (Ley 38/1999, arts. 2 and 17). "
+          "Those works, and works on protected buildings, need a project, signed by an architect for homes (art. 10). An ordinary kitchen or bathroom refit falls "
+          "outside the LOE; consumer law and your contract apply instead."),
+         ("Can I remove uralita (asbestos) roofing?",
+          "Only if your company is registered in the RERA, the register of companies working with asbestos, and the "
+          "regional labour authority has approved a work plan for that job (RD 396/2006, arts. 11, 12 and 17). "
+          "Otherwise, leave it to a registered specialist and don't advertise the service."),
+         ("Can I charge 10% VAT on renovation work?",
+          "Mainly for renovation or repair of a home: the customer is an individual using it privately (not rented "
+          "out) or a comunidad de propietarios, the home is at least two years old, and the materials you supply "
+          "cost no more than 40% of the price before VAT. Otherwise the rate is 21%. It's good practice to state the "
+          "cost of materials, or that they don't exceed 40% of the price before VAT."),
+         ("Can my customers claim tax relief on energy-efficiency work?",
+          "For work paid by 31 December 2026, homeowners can deduct 20% or 40% of energy-efficiency works from income "
+          "tax, and 60% for works on a whole residential building until the end of 2027. They need energy "
+          "certificates before and after the works, issued by a qualified technician (the one after the works "
+          "before 1 January 2027 for the 20% and 40% deductions), and must pay by card, transfer, nominative cheque "
+          "or bank deposit, never in cash. Equipment running on fossil fuels, such as gas boilers, does not count."),
+         ("Can customers pay me in cash?",
+          "Not if the job is worth €1,000 or more, and splitting the price into smaller cash payments doesn't help: "
+          "they are added together (Ley 7/2012, art. 7). For private individuals whose tax residence is outside Spain, the limit is €10,000. Payment by "
+          "bank transfer also leaves the record your customer needs for any tax deduction."),
+         FAQ_EN_QUOTE,
+         ("Do I need to register in the REA?",
+          "Only if you employ staff and are part of a subcontracting chain on a construction site, as contractor or "
+          "subcontractor (Ley 32/2006). Self-employed builders with no employees are exempt. There is no obligation to show an REA number on your "
+          "website."),
+         FAQ_EN_COMPLAINTS,
+         FAQ_EN_REVIEWS,
+         FAQ_EN_LANGUAGE,
+         FAQ_EN_GBP,
+         FAQ_EN_PRICE],
+    final_t='See your website before you pay a thing',
+    final_sd="Free demo within 24 hours, with your projects and legal pages. No setup fee, no lock-in.",
+)
+
+ARTI_SOURCES = {
+    'fr': [
+        ("Code de l'artisanat, art. L121-1, qualification (Légifrance)",
+         'https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047362238'),
+        ("Assurance décennale (Service-public)", 'https://entreprendre.service-public.gouv.fr/vosdroits/F2034'),
+        ("Arrêté du 7 juillet 2026, message France Rénov' (Légifrance)",
+         'https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054569418'),
+        ("Décret n° 2026-822, MaPrimeRénov' (Légifrance)", 'https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054750363'),
+        ("MaPrimeRénov' rénovation d'ampleur (France Rénov')",
+         'https://france-renov.gouv.fr/aides/maprimerenov-renovation-ampleur'),
+        ("Médiateur de la consommation (Service-public)", 'https://entreprendre.service-public.gouv.fr/vosdroits/F33338'),
+        ("Facturation électronique : calendrier (impots.gouv.fr)",
+         'https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation'),
+    ],
+    'en': [
+        ("Land and urban planning law, TRLSRU (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2015-11723'),
+        ("Building Act, Ley 38/1999 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-1999-21567'),
+        ("Asbestos, RD 396/2006 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2006-6474'),
+        ("Construction waste, RD 105/2008 (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2008-2486'),
+        ("VAT on home repairs, FAQ (Tax Agency)",
+         'https://sede.agenciatributaria.gob.es/Sede/iva/iva-operaciones-inmobiliarias/preguntas-frecuentes-sobre-obras-reparaciones-inmuebles.html'),
+        ("Home renovations (Comunidad de Madrid)", 'https://www.comunidad.madrid/consumo/reformas-hogar'),
+        ("Spanish consumer law, TRLGDCU (BOE)", 'https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555'),
+    ],
+}
+
+
 METIERS = {
     'therapeutes': dict(
         es='/psicologos/',
@@ -1962,6 +3356,45 @@ METIERS = {
                      "Websites for dentists and dental clinics in Spain")},
         tags={'fr': ['🦷 Dentistes'],
               'en': ['🦷 Dentists']},
+    ),
+    'plombiers': dict(
+        es='/fontaneros/',
+        fr='/fr/site-internet-plombier',
+        en='/en/website-for-plumbers-in-spain',
+        C=PLOMB, SOURCES=PLOMB_SOURCES,
+        avis_ordre=['Lee Robinson', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés'],
+        llms={'fr': ("- [Site internet pour chirurgiens-dentistes](https://webautonomos.es/fr/site-internet-dentiste)",
+                     "Site internet pour plombiers et chauffagistes"),
+              'en': ("- [Websites for dentists and dental clinics in Spain](https://webautonomos.es/en/website-for-dentists-in-spain)",
+                     "Websites for plumbers and heating engineers in Spain")},
+        tags={'fr': ['🔧 Plombiers', '❄️ Climatisation'],
+              'en': ['🔧 Plumbers', '❄️ Air conditioning']},
+    ),
+    'electriciens': dict(
+        es='/electricistas/',
+        fr='/fr/site-internet-electricien',
+        en='/en/website-for-electricians-in-spain',
+        C=ELEC, SOURCES=ELEC_SOURCES,
+        avis_ordre=['Lee Robinson', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés'],
+        llms={'fr': ("- [Site internet pour plombiers et chauffagistes](https://webautonomos.es/fr/site-internet-plombier)",
+                     "Site internet pour électriciens"),
+              'en': ("- [Websites for plumbers and heating engineers in Spain](https://webautonomos.es/en/website-for-plumbers-in-spain)",
+                     "Websites for electricians in Spain")},
+        tags={'fr': ['⚡ Électriciens'],
+              'en': ['⚡ Electricians']},
+    ),
+    'artisans': dict(
+        es='/reformas/',
+        fr='/fr/site-internet-artisan',
+        en='/en/website-for-builders-in-spain',
+        C=ARTI, SOURCES=ARTI_SOURCES,
+        avis_ordre=['Lee Robinson', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés'],
+        llms={'fr': ("- [Site internet pour électriciens](https://webautonomos.es/fr/site-internet-electricien)",
+                     "Site internet pour artisans du bâtiment"),
+              'en': ("- [Websites for electricians in Spain](https://webautonomos.es/en/website-for-electricians-in-spain)",
+                     "Websites for builders and renovation companies in Spain")},
+        tags={'fr': ['🏗️ Rénovation', '🎨 Peintres'],
+              'en': ['🏗️ Builders & renovations', '🎨 Painters & decorators']},
     ),
 }
 
