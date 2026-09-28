@@ -374,13 +374,13 @@ PHYSIO = dict(
     crumb='Physiotherapy website design',
     badge='For physiotherapists and clinics in the UK',
     h1="Physiotherapy website design for <em>UK physiotherapists and clinics</em>",
-    lede="Your clinic, your team, your treatments and how to book, written with HCPC standards and UK advertising "
+    lede="Your business, your team, your treatments and how to book, written with HCPC standards and UK advertising "
          "rules in mind. We write it for you in English, you approve every word, and your free demo is ready "
          "within 24 hours.",
     pills=['Written around HCPC and CAP rules', "No health claims you can't back up", 'Free demo in 24 hours'],
     brief="WebAutonomos designs websites for physiotherapists and physiotherapy clinics in the UK. We write the "
           "copy in English from your real details, present your team with the titles they are entitled to use, "
-          "and keep the site clear of what UK rules ban: health claims you can't back up, misuse of protected "
+          "and keep the copy clear of what UK rules ban: health claims you can't back up, misuse of protected "
           "titles, and fake or cherry-picked reviews. " + PRIX_BRIEF,
     legal_t='What your physiotherapy website has to get right in the UK',
     legal_intro="Physiotherapy is a regulated profession across the UK: the titles are protected by law, and the "
@@ -436,8 +436,8 @@ PHYSIO = dict(
           'Protected titles, HCPC registration and CSP membership shown the way the rules allow.')] + WHY_COMMUNS,
     sectors=['💆 Private physiotherapy clinics', '🏃 Sports physiotherapy', '🧑‍⚕️ Independent physiotherapists',
              '🏠 Home-visit physiotherapists'],
-    steps=[('Tell us about your clinic', 'Your treatments, your team, your fees and opening hours: it takes '
-                                         'two minutes.'),
+    steps=[('Tell us about your business', 'Your treatments, your team, your fees and opening hours: it takes '
+                                           'two minutes.'),
            ('We build your demo', 'Within 24 hours, with your copy in English and your legal pages.'),
            STEPS_FIN],
     faq=[("Who can call themselves a physiotherapist in the UK?",
@@ -457,39 +457,108 @@ PHYSIO = dict(
           "Not if it is a standalone physiotherapy practice in England: physiotherapists aren't on the list of "
           "professionals whose treatment triggers registration. A clinic whose team includes a listed "
           "professional, such as a doctor or nurse, may need to register."),
-         ("What if I want bigger changes later, like a new section on my site?",
+         ("What if I want bigger changes later, like a new section on my pages?",
           "For bigger changes, such as a redesign or a large new section, we give you a fixed-price quote first, so "
           "there are no surprises. One smaller change a month is already included in both plans, at no extra "
-          "charge.")] + FAQ_COMMUNES,
+          "charge."),
+         ("Can I stop my monthly plan at any time?",
+          "Yes: let us know by email or WhatsApp and you simply stop paying, with no penalty and no minimum "
+          "term."),
+         ("Do I get an email address at my own domain?",
+          "Not as standard — a contact form that reaches your own inbox is included. An email address at your "
+          "own domain can be added on request."),
+         ("Can my physiotherapy pages be available in more than one language?",
+          "Yes — up to four languages at no extra cost, from Spanish, English, French, Catalan, Valencian, "
+          "Galician and Basque. We write every version for you."),
+         ("Do you design for solo practitioners as well as bigger teams?",
+          "Yes — the same service works whether you're a sole practitioner or run a full team. We "
+          "write the content around whoever provides your treatments."),
+         ("What does the basic SEO in both plans cover?",
+          "Page titles and copy that name your treatments and your area, and your details kept consistent with "
+          "your Google Business Profile. It isn't ongoing local SEO work: if you want that, ask us and we'll "
+          "explain what's involved."),
+         ("Is there a setup fee to get my physiotherapy pages online?",
+          "No — the monthly plan has no setup fee, and the one-off plan is a single payment. Either way, you "
+          "see your pages online before you decide, since your free demo comes first."),
+         ("Can I include links to my social media?",
+          "Yes — links to your existing social media profiles are included, so patients can follow you easily, "
+          "alongside your contact form and WhatsApp button."),
+         ("Does the free demo commit me to anything?",
+          "No — you only pay if you're happy with your demo and decide to go ahead. You can try it with no "
+          "obligation, and if it isn't right for you, there's nothing to pay."),
+         ("Can you manage my Google Business Profile too?",
+          "Yes — that's a separate service, so ask us and we'll explain what's involved and what it costs."),
+         ("Can you help with social media or ads too?",
+          "Managing your social media, or running Facebook or Google Ads, isn't part of the standard plans, but "
+          "we can help on request: ask us and we'll explain what's possible."),
+         ("Can I sell products such as braces or supports?",
+          "An online shop isn't part of the standard plans, but it can be added on request, with a separate quote "
+          "once we know what you need.")] + FAQ_COMMUNES,
     extra=[
         ('booking-enquiries', '', "Can patients book appointments through the website?",
-         '<p class="legal-intro">The website isn\'t an online booking system, so there\'s no new software for you '
-         'or your patients to learn.</p>\n  <div class="legal-we"><h3>How patients reach you</h3><ul>'
+         '<p class="legal-intro">No: it isn\'t an online booking system, so there\'s no new software for '
+         'you or your patients to learn.</p>\n  <div class="legal-we"><h3>How patients reach you</h3><ul>'
          '<li><span>A contact form that sends every enquiry straight to your own email inbox</span></li>'
          '<li><span>A WhatsApp button, for patients who prefer a faster reply</span></li>'
-         '<li><span>A link to the booking tool you already use, if you have one</span></li></ul></div>'),
+         '<li><span>A link to the booking tool you already use, if you have one</span></li></ul></div>\n  '
+         '<p class="legal-intro" style="margin-top:26px">If you already use a booking tool, we add a link or '
+         'button to it; we don\'t build a live connection between the two.</p>'),
         ('seo-basics', '', "Does the website help me appear in Google searches?",
          '<p class="legal-intro">Both plans include basic search engine optimisation (SEO). It isn\'t ongoing '
          'local SEO work — if you want that, ask us and we\'ll explain what\'s involved.</p>\n  '
-         '<div class="legal-we"><h3>What\'s included in your website\'s SEO</h3><ul>'
+         '<div class="legal-we"><h3>What your SEO setup includes</h3><ul>'
          '<li><span>Page titles and copy that name your treatments and your area</span></li>'
-         '<li><span>Your details kept consistent across your website and your Google Business Profile</span></li>'
-         '</ul></div>'),
-        ('clinic-content', '', "Who writes the content for my physiotherapy website?",
+         '<li><span>Your details kept consistent with your Google Business Profile</span></li>'
+         '<li><span>Clear headings that help search engines match your pages to relevant local search results, '
+         'such as “physio near me”</span></li></ul></div>\n  '
+         '<p class="legal-intro" style="margin-top:26px">Many enquiries start with a search, so your titles, '
+         'headings and Google Business Profile should all give the same name, treatments and area. If you treat '
+         'patients across more than one town or several areas, list them clearly so search engines and patients '
+         'can match you to the right one. Whether visitors are booking a call or just looking for your opening '
+         'hours, the same clear structure helps them find what they need quickly.</p>'),
+        ('clinic-content', '', "Who writes the content for my physiotherapy pages?",
          '<p class="legal-intro">We write all the content for you, in English, from the details you send us: '
-         'your treatments, your team and your practice. It\'s tailored to you, never generic stock '
-         'text, and written to be clear and easy for patients to read. You approve it before anything '
-         'goes live. If your business changes later — new opening hours, a treatment you now offer — just '
-         'tell us: one change a month is included in both plans.</p>'),
+         'your treatments — whether that\'s manual therapy, sports massage or acupuncture — your team and '
+         'your business. It\'s tailored to you, never generic stock '
+         'text, and written to be clear and easy for patients to read. You approve it before anything goes live. '
+         'If your business changes later — new opening hours, a treatment you now offer — just tell us: one '
+         'change a month is included in both plans.</p>'),
         ('worth-it', '', "Is a website worth it for a small physiotherapy business?",
-         '<p class="legal-intro">Many patients look for a physio online, often from their phone, and check your '
-         'website before they call, even when someone has recommended you by name. Even if you work alone, '
-         'a clear, simple site does the job of a good reception desk, answering the questions patients would '
-         'otherwise phone to ask.</p>\n  '
+         '<p class="legal-intro">Yes — even a solo physiotherapist benefits from a clear website: it builds trust '
+         'and a digital presence before a patient looking for care ever calls. Many patients look for a physio '
+         'online, often from their phone, whether it\'s for a sports injury or ongoing back pain, and check your '
+         'details before they call — even when someone recommended you by name or noticed your sign on the high '
+         'street.</p>\n  '
+         '<p class="legal-intro">Even if you work alone, a clear, simple website does the job of a good reception '
+         'desk, answering the questions patients would otherwise phone to ask.</p>\n  '
          '<div class="legal-we"><h3>What patients look for</h3><ul>'
          '<li><span>Your treatments and who provides them</span></li>'
          '<li><span>How to get in touch, by form, WhatsApp or phone</span></li>'
-         '<li><span>Your fees and opening hours</span></li></ul></div>'),
+         '<li><span>Your fees and opening hours</span></li></ul></div>\n  '
+         '<p class="legal-intro" style="margin-top:26px">A simple, well-organised website also makes it easier for '
+         'new patients to choose you over one with no online presence at all.</p>'),
+        ('good-design', 'Good design', "What good physiotherapy website design looks like",
+         '<p class="legal-intro">Good physiotherapy website design puts the essentials where a visitor expects '
+         'them: your treatments, your team, your fees and opening hours, and a clear way to get in touch.</p>\n  '
+         '<p class="legal-intro">Design choices should support that information, not slow a visitor down while '
+         'they look for it. Good web design is about clarity, not decoration.</p>\n  '
+         '<div class="legal-we"><h3>Common mistakes on physiotherapy websites</h3><ul>'
+         '<li><span>Treatments listed without saying who provides them or where you are</span></li>'
+         '<li><span>No visible way to get in touch from the page a patient lands on</span></li>'
+         '<li><span>Health claims that can\'t be backed up with evidence, which UK advertising rules don\'t '
+         'allow</span></li></ul></div>\n  '
+         '<p class="legal-intro" style="margin-top:26px">Clear design also helps new patients who found you '
+         'online, rather than through a recommendation, feel confident enough to get in touch.</p>'),
+        ('no-tech-skills', 'Getting started', "Do I need any technical skills to get a physiotherapy website?",
+         '<p class="legal-intro">No — you don\'t need any technical skills to get started.</p>\n  '
+         '<p class="legal-intro">You send us your details, we handle the whole process — design, content and '
+         'hosting — and you approve the result before it goes live.</p>\n  '
+         '<div class="legal-we"><h3>What you don\'t have to do</h3><ul>'
+         '<li><span>Write your own text from scratch — we draft it from what you send us</span></li>'
+         '<li><span>Set up hosting, security or backups yourself</span></li>'
+         '<li><span>Learn any new software to keep it running</span></li></ul></div>\n  '
+         '<p class="legal-intro" style="margin-top:26px">Later changes don\'t need any technical know-how '
+         'either: just tell us, and one change a month is included.</p>'),
     ],
 )
 SRC_PHYSIO = [
