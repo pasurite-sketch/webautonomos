@@ -119,7 +119,8 @@ def cmd_review_seuils(slug):
 
 def cmd_sync():
     """Relit sur GitHub l'état des PR ouvertes par le circuit : fusionnée → publie,
-    fermée sans fusion → ferme (la page redevient disponible)."""
+    fermée sans fusion → ferme (la page redevient disponible), sauf un brouillon
+    d'affinage fermé : la page déjà publiée reste « publie »."""
     st = state()
     change = False
     for slug, v in list(st.items()):
@@ -129,11 +130,18 @@ def cmd_sync():
         if not m:
             continue
         try:
-            etat = subprocess.run(['gh', 'pr', 'view', m.group(0), '--json', 'state', '-q', '.state'],
-                                  capture_output=True, text=True, timeout=60).stdout.strip()
+            sortie = subprocess.run(['gh', 'pr', 'view', m.group(0), '--json', 'state,headRefName',
+                                     '-q', '.state + " " + .headRefName'],
+                                    capture_output=True, text=True, timeout=60).stdout.split()
         except Exception:
             continue
+        etat, branche = (sortie + ['', ''])[:2]
         nouveau = {'MERGED': 'publie', 'CLOSED': 'ferme'}.get(etat)
+        # Brouillon d'AFFINAGE fermé sans fusion : la page publiée avant reste en ligne,
+        # elle reste donc « publie » (sinon `next` la reprendrait comme une page neuve).
+        if etat == 'CLOSED' and branche.endswith('-affinage'):
+            nouveau = 'publie'
+            etat = 'CLOSED (affinage)'
         if nouveau:
             v['statut'] = nouveau
             print(f'{slug} : {etat} → {nouveau}')

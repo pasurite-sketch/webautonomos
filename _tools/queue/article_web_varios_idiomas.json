@@ -1,0 +1,787 @@
+{
+  "publish_date": "2026-10-08",
+  "slug": "web-en-varios-idiomas",
+  "category": "web",
+  "image": "🌍",
+  "readTime": 7,
+  "lastmod": "2026-10-08",
+  "fr": {
+    "slug": "site-internet-bilingue",
+    "date": "8 Octobre 2026",
+    "title": "Site internet bilingue pour votre activité en Espagne : quand est-il utile et comment bien le faire",
+    "seoTitle": "Site internet bilingue : quand et comment | WebAutonomos",
+    "metaDescription": "Site bilingue français-espagnol en Espagne : quand est-il utile, comment l'organiser (URL, hreflang), quoi traduire et quelles erreurs éviter.",
+    "keywords": [
+      "site internet bilingue",
+      "site bilingue français espagnol",
+      "site multilingue Espagne",
+      "hreflang"
+    ],
+    "excerpt": "Francophone installé en Espagne ? Voici quand un site bilingue français-espagnol vaut la peine et comment l'organiser pour que vos clients, et Google, comprennent chaque version.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Vous êtes francophone et vous travaillez en Espagne, avec des clients espagnols, francophones et parfois touristes ? Voici quand deux langues sont rentables, comment organiser le site pour que Google comprenne chaque version, quoi traduire et quelles erreurs éviter, en citant la documentation officielle de Google avec la date de la version consultée."
+      },
+      {
+        "type": "heading",
+        "text": "Quand un site bilingue est-il vraiment utile ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Quand une partie réelle de vos clients cherche, compare et décide dans une autre langue. Pour un francophone en Espagne, la question se pose souvent à l'envers : votre site est en français parce que c'est votre langue, mais vos clients espagnols cherchent en espagnol et vous trouvent difficilement."
+      },
+      {
+        "type": "paragraph",
+        "text": "Autre cas : les francophones installés sur la Costa Blanca ou ailleurs, qui se débrouillent en espagnol mais préfèrent lire en français avant de confier un chantier ou un dossier. Le tourisme aussi : un restaurant reçoit des visiteurs qui cherchent sur mobile, dans leur langue. Enfin, en Catalogne, dans la Communauté valencienne ou aux Baléares, une version dans la langue co-officielle est un signe de proximité."
+      },
+      {
+        "type": "heading",
+        "text": "Et quand n'est-ce pas la peine ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Quand personne ne lira la seconde version : si votre clientèle locale vous parle en espagnol, une version française n'ajoute que des pages à entretenir. Et quand vous ne pouvez pas répondre dans cette langue : un site impeccable en catalan crée une attente déçue si personne ne répond en catalan au téléphone. Proposez les langues dans lesquelles vous savez accueillir, établir un devis et régler un problème."
+      },
+      {
+        "type": "heading",
+        "text": "Traduction automatique ou versions rédigées par une personne ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "La traduction automatique fait un bon brouillon, mais c'est sur votre site que le client décide s'il vous fait confiance. Un terme technique mal traduit ou une phrase qui sonne faux suffit à le faire douter. Une personne adapte aussi exemples, moyens de paiement et jours fériés."
+      },
+      {
+        "type": "paragraph",
+        "text": "Et Google ? Ses règles concernant le spam, sur Google Search Central, mises à jour le 28 août 2026, définissent l'abus de contenu à grande échelle comme la génération de nombreuses pages dans le but principal de manipuler le classement plutôt que d'aider les utilisateurs, quelle que soit la méthode. Parmi les exemples figure la création de nombreuses pages à partir d'autres contenus par des transformations automatiques, traduction comprise, lorsqu'elles apportent peu de valeur. Ses conseils sur le contenu généré par l'IA, mis à jour le 10 décembre 2025, vont dans le même sens."
+      },
+      {
+        "type": "paragraph",
+        "text": "Traduire votre propre site n'est donc pas interdit : Google vise le volume sans valeur. Le vrai risque est de perdre la confiance du client."
+      },
+      {
+        "type": "heading",
+        "text": "Comment organiser un site en plusieurs langues ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Le guide de Google Search Central sur les sites multirégionaux et multilingues, mis à jour le 10 décembre 2025, pose les bases. Chaque langue doit avoir sa propre URL, plutôt que de changer le texte avec des cookies ou selon le navigateur, sinon Google risque de ne pas trouver toutes les versions. Le plus simple est souvent un sous-dossier par langue, du type /fr/ ou /es/, que le guide décrit comme facile à mettre en place et à maintenir."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ne redirigez pas automatiquement le visiteur selon la langue que vous lui supposez : Google le déconseille, car cela peut empêcher de voir toutes les versions. Placez un sélecteur de langue visible dans l'en-tête, qui mène à la même page dans l'autre langue. Et gardez une seule langue par page : Google détermine la langue d'après le contenu visible, pas d'après l'attribut lang ni l'URL."
+      },
+      {
+        "type": "heading",
+        "text": "Le hreflang, qu'est-ce que c'est, en clair ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "C'est une balise invisible qui indique à Google les versions de chaque page dans d'autres langues, pour qu'il montre à chacun la sienne. La documentation de Google Search Central sur les versions localisées, mise à jour le 21 septembre 2026, fixe les règles. Chaque version doit se citer elle-même ainsi que toutes les autres ; si deux pages ne pointent pas l'une vers l'autre, Google ignore les balises. Les codes suivent la norme ISO 639-1, par exemple fr, es, en ou ca, avec une région facultative comme fr-BE. La valeur x-default désigne la page de repli pour les autres langues."
+      },
+      {
+        "type": "paragraph",
+        "text": "De plus, des versions localisées ne sont considérées comme des doublons que si le contenu principal n'est pas traduit : traduire le menu ne suffit pas."
+      },
+      {
+        "type": "heading",
+        "text": "Que faut-il traduire, et comment tout garder à jour ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Inutile de traduire les anciens articles de blog, mais le client doit pouvoir faire tout le parcours dans sa langue : ce que vous proposez, combien cela coûte, comment vous joindre et ce que vous faites de ses données."
+      },
+      {
+        "type": "table",
+        "caption": "Ce qui doit exister dans chaque langue",
+        "headers": [
+          "Page",
+          "À adapter",
+          "Erreur fréquente"
+        ],
+        "rows": [
+          [
+            "Services",
+            "Les termes que le client connaît",
+            "Traduire le jargon mot à mot"
+          ],
+          [
+            "Tarifs",
+            "Mêmes prix et conditions",
+            "Une version aux anciens prix"
+          ],
+          [
+            "Contact",
+            "Formulaire, confirmation et horaires",
+            "Réponse automatique dans une seule langue"
+          ],
+          [
+            "Pages légales",
+            "Mentions légales, confidentialité et cookies",
+            "Bandeau cookies non traduit"
+          ],
+          [
+            "FAQ",
+            "Les questions de chaque public",
+            "Copier les mêmes questions"
+          ]
+        ],
+        "note": "Mieux vaut ne pas lier une page non traduite que l'afficher à moitié."
+      },
+      {
+        "type": "paragraph",
+        "text": "Gardez aussi les versions synchronisées : quand vous changez un prix, un horaire ou un service, faites-le dans toutes les langues à la fois, sinon la version espagnole affichera encore le tarif de l'an dernier."
+      },
+      {
+        "type": "heading",
+        "text": "Cherche-t-on avec les mêmes mots dans chaque langue ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Non. Traduire vos mots-clés n'est pas les rechercher. Un Français installé à Alicante tapera peut-être plombier francophone, tandis qu'un client espagnol cherchera fontanero avec le nom de son quartier. Un touriste, lui, cherche ce qu'il veut faire, pas le nom technique de votre service."
+      },
+      {
+        "type": "paragraph",
+        "text": "Tapez votre service dans Google dans chaque langue et observez la saisie semi-automatique et les recherches associées. Si votre site existe, le rapport sur les performances de Google Search Console montre les requêtes réelles qui vous amènent des visiteurs."
+      },
+      {
+        "type": "heading",
+        "text": "Comment les langues fonctionnent-elles sur Google Business Profile ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Selon les consignes relatives à la représentation de votre établissement sur Google, dans l'aide Fiche d'établissement (consultées le 28 septembre 2026), le nom doit être le nom réel et il n'est pas permis de le répéter en plusieurs langues ou alphabets, même si votre enseigne le fait. L'article Modifier votre fiche d'établissement décrit un champ de description unique, sans mentionner de version par langue."
+      },
+      {
+        "type": "paragraph",
+        "text": "Rédigez la description dans la langue principale de votre clientèle, liez le site dans cette langue et répondez à chaque avis dans la langue où il a été écrit."
+      },
+      {
+        "type": "heading",
+        "text": "Quelles erreurs éviter ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Les drapeaux pour les langues. Un drapeau représente un pays, pas une langue : le français ne se parle pas qu'en France, ni l'espagnol qu'en Espagne. Écrivez le nom de chaque langue dans cette langue : Français, Español, English."
+      },
+      {
+        "type": "paragraph",
+        "text": "Les pages à moitié traduites. Un menu en français sur un texte en espagnol déroute le visiteur et Google, qui détermine la langue d'après le contenu visible. Si une page n'est pas traduite, ne la liez pas."
+      },
+      {
+        "type": "paragraph",
+        "text": "Le traducteur du navigateur comme seule option. Il ne crée aucune page que Google puisse indexer dans une autre langue, peut malmener le nom de vos services et ne traduit ni vos e-mails ni vos devis."
+      },
+      {
+        "type": "paragraph",
+        "text": "Les formulaires et e-mails oubliés. Le visiteur écrit en français et reçoit une confirmation en espagnol, ou le bandeau cookies n'existe que dans une langue. Vérifiez formulaire, confirmation, e-mail automatique, message prérempli WhatsApp et pages légales."
+      },
+      {
+        "type": "conclusion",
+        "text": "Un site bilingue est rentable quand vos clients utilisent vraiment les deux langues et que vous pouvez les accueillir dans chacune. WebAutonomos crée des sites jusqu'à 4 langues sans surcoût, au choix parmi l'espagnol, l'anglais, le français, le catalan, le valencien, le galicien et le basque, et rédige lui-même chaque version. La modification mensuelle incluse s'applique dans toutes les langues. Comptez 15 € par mois sans frais de mise en service ni engagement, ou 349 € en paiement unique pour les mêmes services, avec hébergement, SSL, sauvegardes quotidiennes, maintenance et pages légales inclus. Vous recevez une démo personnalisée en moins de 24 heures et ne payez qu'après l'avoir validée."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mon site est en français : dois-je ajouter l'espagnol ?",
+        "a": "Si une partie de vos clients est espagnole, oui : ils cherchent en espagnol. Ajoutez cette version si vous pouvez leur répondre en espagnol."
+      },
+      {
+        "q": "La traduction automatique pénalise-t-elle le référencement ?",
+        "a": "Google n'interdit pas de traduire votre site. Ses règles concernant le spam, mises à jour le 28 août 2026, visent la génération de nombreuses pages sans valeur pour l'utilisateur. Le vrai sujet est la qualité : faites relire chaque version."
+      },
+      {
+        "q": "Faut-il un nom de domaine par langue ?",
+        "a": "Non. Le sous-dossier par langue fait partie des structures décrites par Google Search Central dans son guide mis à jour le 10 décembre 2025, et c'est souvent l'option la plus simple."
+      },
+      {
+        "q": "Puis-je afficher le nom de mon entreprise en deux langues sur Google ?",
+        "a": "Non. Les consignes de la fiche d'établissement Google, consultées le 28 septembre 2026, ne permettent pas de répéter le même nom en plusieurs langues. Utilisez le nom réel sous lequel on vous connaît."
+      }
+    ]
+  },
+  "es": {
+    "date": "8 Octubre 2026",
+    "title": "Web en varios idiomas para tu negocio en España: cuándo compensa y cómo hacerlo bien",
+    "seoTitle": "Web en varios idiomas: cuándo compensa | WebAutonomos",
+    "metaDescription": "¿Tu web necesita otro idioma? Cuándo compensa, cómo organizarla con una URL por idioma y hreflang, qué traducir y qué errores evitar.",
+    "keywords": [
+      "web en varios idiomas",
+      "página web multilingüe",
+      "web bilingüe para autónomos",
+      "hreflang"
+    ],
+    "excerpt": "Clientes extranjeros, turismo o lengua cooficial: cuándo merece la pena tener la web en varios idiomas y cómo hacerlo para que tus clientes y Google entiendan cada versión.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Clientes extranjeros, turistas o una comunidad con lengua cooficial: tarde o temprano te preguntas si tu web necesita otro idioma. Aquí verás cuándo merece la pena, cómo organizar la web para que Google entienda cada versión, qué traducir y qué errores evitar, citando la documentación oficial de Google con la fecha de la versión consultada."
+      },
+      {
+        "type": "heading",
+        "text": "¿Cuándo compensa tener la web en otro idioma?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Compensa cuando una parte real de tus clientes busca, compara y decide en otro idioma. Primer caso: los extranjeros que viven aquí. Si eres electricista en la Costa Blanca, seguramente atiendes a personas que se manejan en castellano a diario, pero prefieren leer en su idioma antes de contratar algo importante."
+      },
+      {
+        "type": "paragraph",
+        "text": "Segundo caso: el turismo. Un restaurante o una escuela de vela reciben visitantes que buscan desde el móvil, en su idioma, a menudo la víspera. Tercer caso: las lenguas cooficiales. En Cataluña, la Comunitat Valenciana, las Illes Balears, Galicia o el País Vasco, una versión en la lengua cooficial transmite cercanía y te hace visible para quien busca en ella."
+      },
+      {
+        "type": "heading",
+        "text": "¿Y cuándo no merece la pena?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Cuando tu clientela no la va a usar: un taller de barrio cuyos clientes hablan castellano solo sumaría páginas que mantener. Y cuando no puedes atender en ese idioma: una web impecable en inglés crea una expectativa que se rompe si nadie contesta en inglés al teléfono. Elige los idiomas en los que puedes atender, presupuestar y resolver una incidencia."
+      },
+      {
+        "type": "heading",
+        "text": "¿Traducción automática o versiones escritas por una persona?"
+      },
+      {
+        "type": "paragraph",
+        "text": "La traducción automática sirve como borrador, pero tu web es donde el cliente decide si confía en ti. Un término técnico mal traducido o una frase que suena rara bastan para que piense que no le vas a entender. Una persona adapta además ejemplos, formas de pago y festivos."
+      },
+      {
+        "type": "paragraph",
+        "text": "¿Y qué dice Google? Sus políticas de spam en Google Search Central, actualizadas el 28 de agosto de 2026, definen el abuso de contenido a escala como generar muchas páginas con el objetivo principal de manipular el posicionamiento y no de ayudar a los usuarios, sin importar cómo se creen. Entre los ejemplos cita crear muchas páginas a partir de otros contenidos mediante transformaciones automáticas, incluida la traducción, cuando aportan poco valor. Su guía sobre contenido generado con IA, actualizada el 10 de diciembre de 2025, va en la misma línea."
+      },
+      {
+        "type": "paragraph",
+        "text": "Traducir tu propia web no está prohibido: Google persigue el volumen sin valor. El riesgo real es perder la confianza del cliente."
+      },
+      {
+        "type": "heading",
+        "text": "¿Cómo se organiza una web en varios idiomas?"
+      },
+      {
+        "type": "paragraph",
+        "text": "La guía de Google Search Central sobre sitios multirregionales y multilingües, actualizada el 10 de diciembre de 2025, fija lo básico. Cada idioma necesita su propia URL, en vez de cambiar el texto con cookies o según el navegador, porque Google podría no encontrar todas las versiones. Lo más práctico suele ser una subcarpeta por idioma, del tipo /en/ o /fr/, que la guía describe como fácil de configurar y de mantener."
+      },
+      {
+        "type": "paragraph",
+        "text": "No redirijas automáticamente al visitante según el idioma que supones que habla: Google lo desaconseja porque puede impedir ver todas las versiones. Pon un selector de idioma visible en la cabecera, que lleve a la misma página en el otro idioma y no a la portada. Y usa un solo idioma por página: Google determina el idioma por el contenido visible, no por el atributo lang ni por la URL."
+      },
+      {
+        "type": "heading",
+        "text": "¿Qué es hreflang, explicado sin tecnicismos?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Es una etiqueta invisible que indica a Google qué versiones en otros idiomas tiene cada página, para que muestre a cada persona la suya. La documentación de Google Search Central sobre versiones localizadas, actualizada el 21 de septiembre de 2026, marca las reglas. Cada versión debe enumerarse a sí misma y a todas las demás; si dos páginas no se apuntan mutuamente, Google ignora las etiquetas. Los códigos siguen la norma ISO 639-1, como es, en, fr, ca, gl o eu, con una región opcional como en-GB; el valenciano usa ca, porque esa norma lo recoge junto al catalán. El valor x-default señala la página de reserva para otros idiomas."
+      },
+      {
+        "type": "paragraph",
+        "text": "Además, las versiones localizadas solo se consideran duplicadas si el contenido principal queda sin traducir: traducir el menú no basta."
+      },
+      {
+        "type": "heading",
+        "text": "¿Qué hay que traducir y cómo mantenerlo al día?"
+      },
+      {
+        "type": "paragraph",
+        "text": "No hace falta traducir los artículos antiguos del blog, pero sí que el cliente pueda hacer todo el recorrido en su idioma: qué ofreces, cuánto cuesta, cómo contactarte y qué haces con sus datos."
+      },
+      {
+        "type": "table",
+        "caption": "Qué debe existir en cada idioma",
+        "headers": [
+          "Página",
+          "Qué adaptar",
+          "Error frecuente"
+        ],
+        "rows": [
+          [
+            "Servicios",
+            "Términos que el cliente reconoce",
+            "Traducir la jerga palabra por palabra"
+          ],
+          [
+            "Precios",
+            "Mismas tarifas y condiciones",
+            "Una versión con precios antiguos"
+          ],
+          [
+            "Contacto",
+            "Formulario, confirmación y horario",
+            "Respuesta automática en un solo idioma"
+          ],
+          [
+            "Páginas legales",
+            "Aviso legal, privacidad y cookies",
+            "Aviso de cookies sin traducir"
+          ],
+          [
+            "Preguntas frecuentes",
+            "Dudas propias de cada público",
+            "Copiar las mismas preguntas"
+          ]
+        ],
+        "note": "Mejor no enlazar una página sin traducir que mostrarla a medias."
+      },
+      {
+        "type": "paragraph",
+        "text": "Y mantén las versiones sincronizadas: cuando cambies un precio, un horario o un servicio, hazlo en todos los idiomas a la vez, o la versión inglesa seguirá mostrando la tarifa del año pasado."
+      },
+      {
+        "type": "heading",
+        "text": "¿La gente busca con las mismas palabras en cada idioma?"
+      },
+      {
+        "type": "paragraph",
+        "text": "No. Traducir tus palabras clave no es investigarlas. Un residente británico puede buscar English speaking electrician seguido de su ciudad, un francófono puede añadir francophone y un turista busca lo que quiere hacer, no el nombre técnico de tu servicio. En las comunidades bilingües, parte de tu clientela seguirá buscando en castellano aunque hable la lengua cooficial."
+      },
+      {
+        "type": "paragraph",
+        "text": "Escribe tu servicio en Google en cada idioma y mira el autocompletado y las búsquedas relacionadas. Si ya tienes web, el informe de rendimiento de Google Search Console muestra las consultas reales con las que te encuentran."
+      },
+      {
+        "type": "heading",
+        "text": "¿Cómo funcionan los idiomas en Google Business Profile?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Según las directrices para mostrar adecuadamente tu empresa en Google, del centro de ayuda de Perfil de Empresa (consultadas el 28 de septiembre de 2026), el nombre debe ser el nombre real del negocio y no se permite repetirlo en varios idiomas o alfabetos, aunque tu rótulo lo haga. El artículo Editar tu Perfil de Empresa describe un único campo de descripción, sin mencionar versiones por idioma."
+      },
+      {
+        "type": "paragraph",
+        "text": "Escribe la descripción en el idioma principal de tu clientela, enlaza la web en ese idioma y responde a cada reseña en el idioma en que te la escribieron."
+      },
+      {
+        "type": "heading",
+        "text": "¿Qué errores conviene evitar?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Usar banderas para los idiomas. Una bandera representa un país, no una lengua: el español no es solo de España y el inglés no es solo del Reino Unido. Escribe el nombre de cada idioma en su lengua: Español, English, Français, Valencià."
+      },
+      {
+        "type": "paragraph",
+        "text": "Dejar páginas a medias. Un menú en inglés con el texto en castellano confunde al visitante y a Google, que decide el idioma por el contenido visible. Si una página no está traducida, no la enlaces."
+      },
+      {
+        "type": "paragraph",
+        "text": "Confiar solo en el traductor del navegador. No crea páginas que Google pueda indexar en otro idioma, puede estropear el nombre de tus servicios y no traduce tus correos ni tus presupuestos."
+      },
+      {
+        "type": "paragraph",
+        "text": "Olvidar formularios y correos. El visitante escribe en francés y recibe la confirmación en castellano, o el aviso de cookies solo aparece en un idioma. Revisa formulario, confirmación, correo automático, mensaje predefinido de WhatsApp y páginas legales."
+      },
+      {
+        "type": "conclusion",
+        "text": "Una web en varios idiomas compensa cuando tus clientes usan de verdad esos idiomas y puedes atenderlos en cada uno. En WebAutonomos hacemos webs en hasta 4 idiomas sin coste adicional, a elegir entre castellano, inglés, francés, catalán, valenciano, gallego y euskera, y escribimos nosotros cada versión. La modificación mensual incluida se aplica en todos los idiomas. Cuesta 15 € al mes sin permanencia ni gastos de alta, o 349 € en pago único con los mismos servicios, con alojamiento, SSL, copias de seguridad diarias, mantenimiento y textos legales incluidos. Te preparamos una demo personalizada en menos de 24 horas y solo pagas cuando la apruebas."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿La traducción automática perjudica el posicionamiento?",
+        "a": "Google no prohíbe traducir tu web. Sus políticas de spam, actualizadas el 28 de agosto de 2026, persiguen generar muchas páginas sin valor para el usuario. El problema real es la calidad: revisa cada versión."
+      },
+      {
+        "q": "¿Qué código hreflang uso para el valenciano?",
+        "a": "El código ca. Google Search Central pide códigos de la norma ISO 639-1 en su documentación actualizada el 21 de septiembre de 2026, y esa norma recoge el valenciano junto al catalán bajo ca."
+      },
+      {
+        "q": "¿Puedo poner el nombre de mi negocio en dos idiomas en Google?",
+        "a": "No. Las directrices del Perfil de Empresa de Google, consultadas el 28 de septiembre de 2026, no permiten repetir el mismo nombre en varios idiomas. Usa el nombre real con el que te conocen."
+      },
+      {
+        "q": "¿Cuántos idiomas necesita mi web?",
+        "a": "Los que usa tu clientela y en los que puedes atender. A menudo basta con castellano y un segundo idioma."
+      }
+    ]
+  },
+  "val": {
+    "slug": "web-en-diversos-idiomes",
+    "date": "8 Octubre 2026",
+    "title": "Web en diversos idiomes per al teu negoci: quan compensa i com fer-la bé",
+    "seoTitle": "Web en diversos idiomes: quan compensa | WebAutonomos",
+    "metaDescription": "Web en valencià, castellà i anglés? Quan compensa, com organitzar-la amb una URL per idioma i hreflang, què traduir i quins errors evitar.",
+    "keywords": [
+      "web en diversos idiomes",
+      "web en valencià i castellà",
+      "pàgina web multilingüe",
+      "hreflang"
+    ],
+    "excerpt": "Valencià, castellà i, si treballes amb turisme, anglés: quan compensa tindre la web en diversos idiomes i com fer-ho perquè la clientela i Google entenguen cada versió.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Si tens un negoci a la Comunitat Valenciana, la pregunta arriba tard o prompte: la web, en valencià, en castellà o en tots dos? I cal afegir-hi l'anglés si treballes amb turistes? Ací veuràs quan compensa, com organitzar-la perquè Google entenga cada versió, què traduir i quins errors evitar, citant la documentació oficial de Google amb la data de la versió consultada."
+      },
+      {
+        "type": "heading",
+        "text": "Quan compensa tindre la web en més d'un idioma?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Quan una part real dels teus clients busca, compara i decidix en un altre idioma. Ací, valencià i castellà són la base per a molts negocis: el valencià transmet proximitat a una part de la clientela i et fa visible quan algú busca en valencià, i el castellà t'obri a qui busca en castellà."
+      },
+      {
+        "type": "paragraph",
+        "text": "Després hi ha el turisme i els residents estrangers. Hui, qui arriba a Dénia o a Gandia busca des del mòbil, en anglés o en francés, sovint la vespra. Si la teua web els respon en la seua llengua, amb horaris, preus i manera de reservar, tens molt de guanyat."
+      },
+      {
+        "type": "heading",
+        "text": "I quan no val la pena?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Quan la teua clientela no la farà servir: si tens un taller de barri i els clients et parlen en valencià o en castellà, una versió en anglés només afig pàgines que cal mantindre. I quan no pots atendre en eixe idioma: una web impecable en anglés crea una expectativa que es trenca si ningú no respon en anglés al telèfon. Tria els idiomes en què pots atendre, fer un pressupost i resoldre una incidència."
+      },
+      {
+        "type": "heading",
+        "text": "Traducció automàtica o versions escrites per una persona?"
+      },
+      {
+        "type": "paragraph",
+        "text": "La traducció automàtica servix com a esborrany, però la web és on el client decidix si confia en tu. Un terme tècnic mal traduït o una frase estranya són suficients perquè pense que no l'entendràs. En valencià es nota: un traductor automàtic pot barrejar formes que no són d'ací o calcs del castellà."
+      },
+      {
+        "type": "paragraph",
+        "text": "I què diu Google? Les seues polítiques sobre spam a Google Search Central, actualitzades el 28 d'agost de 2026, definixen l'abús de contingut a escala com generar moltes pàgines amb l'objectiu principal de manipular el posicionament i no d'ajudar els usuaris, siga quina siga la manera com s'han creat. Entre els exemples, cita crear moltes pàgines a partir d'altres continguts per mitjà de transformacions automàtiques, incloent-hi la traducció, quan aporten poc valor. La seua guia sobre contingut generat amb IA, actualitzada el 10 de desembre de 2025, va en la mateixa línia."
+      },
+      {
+        "type": "paragraph",
+        "text": "Traduir la teua pròpia web no està prohibit: Google perseguix el volum sense valor. El risc real és perdre la confiança del client."
+      },
+      {
+        "type": "heading",
+        "text": "Com s'organitza una web en diversos idiomes?"
+      },
+      {
+        "type": "paragraph",
+        "text": "La guia de Google Search Central sobre llocs multiregionals i multilingües, actualitzada el 10 de desembre de 2025, fixa el que és bàsic. Cada idioma necessita la seua pròpia URL, en compte de canviar el text amb cookies o segons el navegador, perquè Google podria no trobar totes les versions. El més pràctic sol ser una subcarpeta per idioma, del tipus /es/ o /en/, que la guia descriu com a fàcil de configurar i de mantindre."
+      },
+      {
+        "type": "paragraph",
+        "text": "No redirigisques automàticament el visitant segons l'idioma que suposes que parla: Google ho desaconsella perquè pot impedir veure totes les versions. Posa un selector d'idioma visible a la capçalera, que porte a la mateixa pàgina en l'altre idioma. I un sol idioma per pàgina: Google determina l'idioma pel contingut visible, no per l'atribut lang ni per la URL."
+      },
+      {
+        "type": "heading",
+        "text": "Què és l'etiqueta hreflang, explicada sense tecnicismes?"
+      },
+      {
+        "type": "paragraph",
+        "text": "És un codi invisible per al visitant que li diu a Google: esta pàgina existix també en estos idiomes, i ací les tens. La documentació de Google Search Central sobre versions localitzades, actualitzada el 21 de setembre de 2026, marca les regles. Cada versió ha d'enumerar-se a si mateixa i a totes les altres; si dos pàgines no s'apunten mútuament, Google ignora les etiquetes. Els codis seguixen la norma ISO 639-1, com ca, es, en o fr, amb una regió opcional com en-GB; el valencià fa servir ca, perquè eixa norma el recull junt amb el català. El valor x-default indica la pàgina de reserva per a altres idiomes."
+      },
+      {
+        "type": "paragraph",
+        "text": "A més, les versions localitzades només es consideren duplicades si el contingut principal queda sense traduir: traduir el menú no és suficient."
+      },
+      {
+        "type": "heading",
+        "text": "Què cal traduir i com es manté al dia?"
+      },
+      {
+        "type": "paragraph",
+        "text": "No cal traduir els articles antics del blog, però sí que el client puga fer tot el recorregut en la seua llengua: què oferixes, quant costa, com contactar-te i què fas amb les seues dades."
+      },
+      {
+        "type": "table",
+        "caption": "Què ha d'existir en cada idioma",
+        "headers": [
+          "Pàgina",
+          "Què cal adaptar",
+          "Error freqüent"
+        ],
+        "rows": [
+          [
+            "Serveis",
+            "Termes que el client reconeix",
+            "Traduir l'argot paraula per paraula"
+          ],
+          [
+            "Preus",
+            "Mateixes tarifes i condicions",
+            "Una versió amb preus antics"
+          ],
+          [
+            "Contacte",
+            "Formulari, confirmació i horari",
+            "Resposta automàtica en un sol idioma"
+          ],
+          [
+            "Pàgines legals",
+            "Avís legal, privacitat i cookies",
+            "Avís de cookies sense traduir"
+          ],
+          [
+            "Preguntes freqüents",
+            "Dubtes propis de cada públic",
+            "Copiar les mateixes preguntes"
+          ]
+        ],
+        "note": "Millor no enllaçar una pàgina sense traduir que mostrar-la a mitges."
+      },
+      {
+        "type": "paragraph",
+        "text": "I mantín les versions sincronitzades: quan canvies un preu, un horari o un servei, fes-ho en tots els idiomes alhora, o la versió en anglés continuarà mostrant la tarifa de l'any passat."
+      },
+      {
+        "type": "heading",
+        "text": "La gent busca amb les mateixes paraules en cada idioma?"
+      },
+      {
+        "type": "paragraph",
+        "text": "No. Traduir les paraules clau no és investigar-les. Un resident britànic pot buscar English speaking electrician amb el nom del seu poble, i ací mateix hi ha qui busca fontaner i qui busca fontanero per al mateix encàrrec. Per això la versió en castellà no fa nosa encara que la teua clientela parle valencià."
+      },
+      {
+        "type": "paragraph",
+        "text": "Escriu el teu servei en Google en cada idioma i fixa't en l'autocompletat i en les cerques relacionades. Si ja tens web, l'informe de rendiment de Google Search Console mostra les consultes reals amb què et troben."
+      },
+      {
+        "type": "heading",
+        "text": "Com funcionen els idiomes en Google Business Profile?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Segons les directrius per a representar la teua empresa a Google, del centre d'ajuda de Perfil d'Empresa (consultades el 28 de setembre de 2026), el nom ha de ser el real i no es permet repetir-lo en diversos idiomes o alfabets, encara que el teu rètol ho faça. L'article sobre com editar el Perfil d'Empresa descriu un únic camp de descripció, sense esmentar versions per idioma."
+      },
+      {
+        "type": "paragraph",
+        "text": "Escriu la descripció en l'idioma principal de la teua clientela, enllaça la web en eixe idioma i respon a cada ressenya en l'idioma en què te l'han escrita."
+      },
+      {
+        "type": "heading",
+        "text": "Quins errors convé evitar?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fer servir banderes per als idiomes. Una bandera representa un país, no una llengua: l'anglés no és només del Regne Unit, i el castellà no es parla només a Espanya. Escriu el nom de cada idioma en la seua llengua: Valencià, Castellano, English, Français."
+      },
+      {
+        "type": "paragraph",
+        "text": "Deixar pàgines a mitges. Un menú en anglés amb el text en castellà confon el visitant i Google, que decidix l'idioma pel contingut visible. Si una pàgina no està traduïda, no l'enllaces."
+      },
+      {
+        "type": "paragraph",
+        "text": "Confiar només en el traductor del navegador. No crea pàgines que Google puga indexar en un altre idioma, pot espatlar el nom dels teus serveis i no traduïx els teus correus ni els pressupostos."
+      },
+      {
+        "type": "paragraph",
+        "text": "Oblidar formularis i correus. El visitant escriu en francés i rep la confirmació en castellà, o l'avís de cookies només apareix en un idioma. Revisa formulari, confirmació, correu automàtic, missatge predefinit de WhatsApp i pàgines legals."
+      },
+      {
+        "type": "conclusion",
+        "text": "Una web en diversos idiomes compensa quan la teua clientela fa servir de veritat eixos idiomes i pots atendre-la en cadascun. A WebAutonomos fem webs en fins a 4 idiomes sense cost addicional, a triar entre castellà, anglés, francés, català, valencià, gallec i basc, i escrivim nosaltres cada versió. La modificació mensual inclosa s'aplica en tots els idiomes. Costa 15 € al mes sense permanència ni despeses d'alta, o 349 € en un sol pagament amb els mateixos serveis, amb allotjament, SSL, còpies de seguretat diàries, manteniment i textos legals inclosos. Et preparem una demo personalitzada en menys de 24 hores i només pagues quan l'aproves."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quin codi hreflang faig servir per al valencià?",
+        "a": "El codi ca. Google Search Central demana codis de la norma ISO 639-1 en la documentació actualitzada el 21 de setembre de 2026, i eixa norma recull el valencià junt amb el català sota ca."
+      },
+      {
+        "q": "La traducció automàtica perjudica el posicionament?",
+        "a": "Google no prohibix traduir la teua web. Les seues polítiques sobre spam, actualitzades el 28 d'agost de 2026, perseguixen generar moltes pàgines sense valor per a l'usuari. El problema real és la qualitat: revisa cada versió."
+      },
+      {
+        "q": "Necessite la web en anglés si treballe amb turistes?",
+        "a": "Si els turistes són una part important de la teua clientela i pots atendre'ls en anglés, sí. Si només en reps de tant en tant, prioritza el valencià i el castellà."
+      },
+      {
+        "q": "Puc posar el nom del negoci en valencià i en castellà en Google?",
+        "a": "No. Les directrius del Perfil d'Empresa de Google, consultades el 28 de setembre de 2026, no permeten repetir el mateix nom en diversos idiomes. Usa el nom real amb què et coneixen."
+      }
+    ]
+  },
+  "en": {
+    "slug": "multilingual-website-for-your-business-in-spain",
+    "date": "Oct 8, 2026",
+    "title": "A multilingual website for your business in Spain: when it pays off and how to do it well",
+    "seoTitle": "Multilingual website in Spain: worth it? | WebAutonomos",
+    "metaDescription": "Running a business in Spain? When an English and Spanish website pays off, how to set it up with hreflang, what to translate and mistakes to avoid.",
+    "keywords": [
+      "multilingual website Spain",
+      "bilingual website for business in Spain",
+      "English Spanish website",
+      "hreflang"
+    ],
+    "excerpt": "Running a business in Spain as an English speaker? Here is when an English and Spanish website is worth it, and how to set it up so that customers and Google understand each version.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "If you run a business in Spain and English is your first language, your website probably started in English, yet your customers include Spanish locals, English-speaking residents and holidaymakers. This guide covers when a bilingual site pays off, how to organise it so that Google understands each version, what to translate and which mistakes to avoid, citing Google's official documentation with the date of the version we checked."
+      },
+      {
+        "type": "heading",
+        "text": "When does a second language pay off?"
+      },
+      {
+        "type": "paragraph",
+        "text": "When some of your actual customers search, compare and decide in another language. For English speakers in Spain, the question often comes the other way round: your site is in English because that is your language, while your Spanish customers search in Spanish and struggle to find you."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then there are English-speaking residents: British, Irish or Scandinavian people on the Costa del Sol who manage in Spanish day to day but would rather read in English before hiring a builder or an accountant. Tourism counts too: a restaurant gets visitors searching on their phones, in their own language. And in regions with a co-official language, such as Catalonia, the Valencian Community or Galicia, a version in that language signals closeness to local customers."
+      },
+      {
+        "type": "heading",
+        "text": "When is it not worth it?"
+      },
+      {
+        "type": "paragraph",
+        "text": "When nobody will read it: if your customers are all English-speaking residents, or all local Spaniards, a second version just adds pages to maintain. And when you cannot serve customers in that language: a polished Spanish site creates an expectation that falls flat if nobody can answer in Spanish on the phone. Offer the languages in which you can welcome customers, quote and sort out problems."
+      },
+      {
+        "type": "heading",
+        "text": "Machine translation or versions written by a person?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Machine translation makes a decent first draft, but your website is where customers decide whether to trust you. One mistranslated technical term or an awkward sentence is enough to make a Spanish customer hesitate. A person also adapts examples, payment methods and bank holidays."
+      },
+      {
+        "type": "paragraph",
+        "text": "What does Google say? Its spam policies on Google Search Central, last updated on 28 August 2026, define scaled content abuse as generating many pages mainly to manipulate search rankings rather than to help users, no matter how the content is created. Among the examples is creating many pages from other content through automated transformations, translation included, where little value is provided to users. Its guidance on AI-generated content, last updated on 10 December 2025, makes the same point."
+      },
+      {
+        "type": "paragraph",
+        "text": "So translating your own site is not forbidden: Google targets volume without value. The real risk is losing the customer's trust."
+      },
+      {
+        "type": "heading",
+        "text": "How should a multilingual site be organised?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Google Search Central's guide to managing multi-regional and multilingual sites, last updated on 10 December 2025, sets out the basics. Each language needs its own URL, rather than swapping the text with cookies or browser settings, otherwise Google might not find all your versions. The simplest option is usually one subfolder per language, such as /en/ or /es/, which the guide describes as easy to set up and low maintenance."
+      },
+      {
+        "type": "paragraph",
+        "text": "Do not redirect visitors automatically based on the language you assume they speak: Google advises against it because it can stop people seeing every version. Add a visible language switcher in the header that leads to the same page in the other language. And keep one language per page: Google works out the language from the visible content, not from the lang attribute or the URL."
+      },
+      {
+        "type": "heading",
+        "text": "What is hreflang, in plain English?"
+      },
+      {
+        "type": "paragraph",
+        "text": "It is an invisible tag that tells Google which other-language versions each page has, so it can show each person the right one. Google Search Central's documentation on localised versions of your pages, last updated on 21 September 2026, sets the rules. Each version must list itself as well as all the others; if two pages do not point to each other, Google ignores the tags. Codes follow the ISO 639-1 standard, such as en, es, fr or ca, with an optional region such as en-GB; reserved codes such as UK have no effect. The x-default value marks the fallback page for other languages."
+      },
+      {
+        "type": "paragraph",
+        "text": "Also, localised versions are only treated as duplicates if the main content is left untranslated: translating the menu is not enough."
+      },
+      {
+        "type": "heading",
+        "text": "What must be translated, and how do you keep it in sync?"
+      },
+      {
+        "type": "paragraph",
+        "text": "You need not translate old blog posts, but customers must be able to complete the whole journey in their language: what you offer, what it costs, how to contact you and what you do with their data."
+      },
+      {
+        "type": "table",
+        "caption": "What should exist in every language",
+        "headers": [
+          "Page",
+          "What to adapt",
+          "Common mistake"
+        ],
+        "rows": [
+          [
+            "Services",
+            "Terms the customer recognises",
+            "Translating jargon word for word"
+          ],
+          [
+            "Prices",
+            "Same rates and terms everywhere",
+            "One version with old prices"
+          ],
+          [
+            "Contact",
+            "Form, confirmation and opening hours",
+            "Automatic reply in one language only"
+          ],
+          [
+            "Legal pages",
+            "Legal notice, privacy and cookies",
+            "Untranslated cookie banner"
+          ],
+          [
+            "FAQ",
+            "Each audience's own questions",
+            "Copying the same questions"
+          ]
+        ],
+        "note": "Better not to link to an untranslated page than to show it half translated."
+      },
+      {
+        "type": "paragraph",
+        "text": "Keep the versions in sync too: when you change a price, your opening hours or a service, do it in every language at once, or the Spanish version will keep showing last year's rates."
+      },
+      {
+        "type": "heading",
+        "text": "Do people search with the same words in every language?"
+      },
+      {
+        "type": "paragraph",
+        "text": "No. Translating keywords is not the same as researching them. An English-speaking resident might type English speaking electrician followed by their town, while a Spanish customer searches for electricista with the name of their neighbourhood. A tourist searches for what they want to do, not for the technical name of your service."
+      },
+      {
+        "type": "paragraph",
+        "text": "Type your service into Google in each language and look at the autocomplete suggestions and related searches. If you have a site, the Performance report in Google Search Console shows the real queries that bring you visitors."
+      },
+      {
+        "type": "heading",
+        "text": "How do languages work on your Google Business Profile?"
+      },
+      {
+        "type": "paragraph",
+        "text": "According to Google's guidelines for representing your business on Google, in the Business Profile Help Centre (checked on 28 September 2026), the name must be your real-world business name, and repeating it in several languages or scripts is not allowed, even if your shop sign does. The Help Centre article on editing your Business Profile describes a single description field, with no mention of a version per language."
+      },
+      {
+        "type": "paragraph",
+        "text": "Write the description in your customers' main language, link to your site in that language and reply to each review in the language it was written in."
+      },
+      {
+        "type": "heading",
+        "text": "Which mistakes should you avoid?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Flags for languages. A flag stands for a country, not a language: English is not only British and Spanish is not only spoken in Spain. Write the name of each language in that language: English, Español, Français."
+      },
+      {
+        "type": "paragraph",
+        "text": "Half-translated pages. An English menu over Spanish body text confuses visitors and Google, which works out the language from the visible content. If a page is not translated yet, do not link to it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Browser translation as the only option. It creates no page that Google can index in another language, can mangle the names of your services and does not translate your emails or quotes."
+      },
+      {
+        "type": "paragraph",
+        "text": "Forgotten forms and emails. The visitor writes in English and gets a confirmation in Spanish, or the cookie banner exists in one language only. Check the form, confirmation, automatic email, pre-filled WhatsApp message and legal pages."
+      },
+      {
+        "type": "conclusion",
+        "text": "A multilingual website pays off when your customers really use those languages and you can serve them in each one. WebAutonomos builds websites in up to 4 languages at no extra cost, chosen from Spanish, English, French, Catalan, Valencian, Galician and Basque, and writes each version itself. The one monthly change included applies across all languages. It costs 15 € a month with no setup fee and no lock-in, or 349 € paid once for the same services, with hosting, SSL, daily backups, maintenance and legal pages included. You get a personalised demo in under 24 hours and only pay once you have approved it."
+      }
+    ],
+    "faq": [
+      {
+        "q": "My site is only in English. Should I add Spanish?",
+        "a": "If some of your customers are Spanish, yes: they search in Spanish. Add it if you can reply to them in Spanish."
+      },
+      {
+        "q": "Does machine translation hurt my search rankings?",
+        "a": "Google does not ban translating your site. Its spam policies, last updated on 28 August 2026, target generating many pages with little value for users. The real issue is quality, so have each version reviewed."
+      },
+      {
+        "q": "Should I use en-GB or just en in hreflang?",
+        "a": "If your English pages are for any English speaker, en is enough. Google's documentation on localised versions, last updated on 21 September 2026, accepts regions such as en-GB, but UK has no effect as a region code."
+      },
+      {
+        "q": "Can I show my business name in two languages on Google?",
+        "a": "No. Google's Business Profile guidelines, checked on 28 September 2026, do not allow the same name to be repeated in several languages. Use the real name customers know you by."
+      }
+    ]
+  }
+}

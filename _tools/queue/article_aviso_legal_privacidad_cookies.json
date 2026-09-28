@@ -1,0 +1,811 @@
+{
+ "publish_date": "2026-10-12",
+ "slug": "aviso-legal-privacidad-cookies-web",
+ "category": "legal",
+ "image": "⚖️",
+ "readTime": 7,
+ "lastmod": "2026-10-12",
+ "fr": {
+  "slug": "mentions-legales-site-internet-espagne",
+  "date": "12 Octubre 2026",
+  "title": "Mentions légales, confidentialité et cookies : ce que votre site doit afficher en Espagne (2026)",
+  "seoTitle": "Mentions légales, RGPD et cookies en Espagne | WebAutonomos",
+  "metaDescription": "Entreprise en Espagne : aviso legal (LSSI), politique de confidentialité (RGPD) et consentement aux cookies selon l'AEPD, expliqués simplement.",
+  "keywords": [
+   "mentions légales site internet Espagne",
+   "politique de confidentialité RGPD Espagne",
+   "bannière cookies AEPD",
+   "obligations légales site web LSSI"
+  ],
+  "excerpt": "Vous exercez en Espagne ? Ce que votre site doit afficher : aviso legal (art. 10 LSSI), politique de confidentialité (art. 13 RGPD), cookies selon l'AEPD, accessibilité et une liste de contrôle.",
+  "content": [
+   {
+    "type": "intro",
+    "text": "Vous avez lancé votre activité en Espagne et votre site présente vos services ? Il doit alors respecter le droit espagnol. Trois pages sont attendues : l'aviso legal, équivalent espagnol des mentions légales, la politique de confidentialité et la politique de cookies. Ce guide détaille le contenu de chacune, article de loi à l'appui, avec une liste de contrôle finale. Si votre entreprise est établie en France, elle relève en principe des règles françaises, que nous ne détaillons pas ici. Cet article fournit une information générale à jour en septembre 2026 et ne constitue pas un conseil juridique."
+   },
+   {
+    "type": "heading",
+    "text": "Votre site est-il concerné sans vente en ligne ?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Oui. La loi 34/2002 (LSSI) s'applique aux prestataires établis en Espagne (article 2). Son annexe inclut les services non payés par l'utilisateur s'ils constituent une activité économique pour le prestataire : un site vitrine présentant vos services entre donc dans son champ. Si vous collectez des données via un formulaire, s'appliquent aussi le règlement général sur la protection des données (RGPD) et la loi organique espagnole 3/2018 (LOPDGDD)."
+   },
+   {
+    "type": "heading",
+    "text": "L'aviso legal : les informations de l'article 10 de la LSSI"
+   },
+   {
+    "type": "paragraph",
+    "text": "L'article 10.1 de la LSSI impose un accès permanent, facile, direct et gratuit à : votre nom ou dénomination sociale ; votre résidence ou domicile ou, à défaut, l'adresse d'un établissement permanent en Espagne ; votre adresse électronique et tout autre moyen de communication directe et effective ; votre NIF, le numéro d'identification fiscale espagnol ; vos données d'inscription au Registro Mercantil (registre du commerce) ou à un autre registre public, le cas échéant ; les références de l'autorisation administrative préalable et de l'organe de contrôle, si votre activité en exige une ; et les codes de conduite auxquels vous adhérez."
+   },
+   {
+    "type": "paragraph",
+    "text": "Si vous affichez des prix, l'article 10.1.f exige qu'ils soient clairs et exacts et précisent si les impôts applicables et, le cas échéant, les frais de livraison sont inclus. Le plus simple : une page dédiée, accessible depuis le pied de chaque page, ce que l'article 10.2 considère comme suffisant."
+   },
+   {
+    "type": "heading",
+    "text": "Professions réglementées et de santé"
+   },
+   {
+    "type": "paragraph",
+    "text": "Si vous exercez une profession réglementée, comme psychologue de santé, kinésithérapeute, dentiste ou infirmier, l'article 10.1.d de la LSSI ajoute : l'ordre professionnel (colegio) et votre numéro d'inscription (número de colegiado) ; votre titre ; l'État de l'Union européenne ou de l'Espace économique européen qui l'a délivré et, le cas échéant, sa reconnaissance ; et les règles professionnelles applicables avec le moyen de les consulter. Si votre cabinet a besoin d'une autorisation sanitaire de la communauté autonome (article 3 du décret royal 1277/2003), indiquez ses références et l'organe qui l'a délivrée (article 10.1.c de la LSSI). Les données de santé étant une catégorie particulière (article 9 du RGPD), ne demandez que l'indispensable."
+   },
+   {
+    "type": "heading",
+    "text": "Politique de confidentialité : ce qu'exige l'article 13 du RGPD"
+   },
+   {
+    "type": "paragraph",
+    "text": "Lorsque vous collectez des données, l'article 13 du RGPD vous oblige à informer la personne, au moment même, de : votre identité et vos coordonnées de responsable du traitement et, le cas échéant, celles du délégué à la protection des données ; les finalités et la base juridique ; vos intérêts légitimes, si c'est la base retenue ; les destinataires, par exemple votre hébergeur ou votre messagerie ; les transferts hors de l'Union européenne, s'il y en a ; la durée de conservation ou le critère pour la fixer ; les droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité ; le droit de retirer son consentement ; le droit de réclamation auprès de l'Agence espagnole de protection des données (AEPD) ; le caractère obligatoire ou non des données et les conséquences d'un refus ; et l'existence éventuelle de décisions automatisées ou de profilage."
+   },
+   {
+    "type": "heading",
+    "text": "Formulaires : information par couches et cases non cochées"
+   },
+   {
+    "type": "paragraph",
+    "text": "Inutile de tout recopier sous le formulaire : l'article 11 de la LOPDGDD permet une information de base : le responsable, la finalité et la possibilité d'exercer les droits des articles 15 à 22 du RGPD, avec un lien vers la politique complète. Pour répondre à une demande, la base juridique est souvent une mesure précontractuelle demandée par la personne ou son consentement (article 6.1 du RGPD)."
+   },
+   {
+    "type": "paragraph",
+    "text": "Pour envoyer des offres commerciales, demandez un consentement distinct : l'article 21 de la LSSI interdit les courriels commerciaux non sollicités ni expressément autorisés, sauf envers des clients existants pour des produits similaires, et le considérant 32 du RGPD rappelle que des cases cochées par défaut ne valent pas consentement. En pratique : une case séparée, non cochée."
+   },
+   {
+    "type": "heading",
+    "text": "Cookies : un consentement réel"
+   },
+   {
+    "type": "paragraph",
+    "text": "L'article 22.2 de la LSSI n'autorise les cookies que si l'utilisateur y consent après une information claire et complète sur leurs finalités. Les cookies strictement nécessaires au service demandé, comme ceux de session ou ceux qui retiennent la langue choisie, en sont exclus. Le guide de l'AEPD sur l'utilisation des cookies, mis à jour en mai 2024, fixe les règles : aucun cookie non exempté avant acceptation ; un bouton Refuser dans la même couche, au même niveau et aussi visible que Accepter ; poursuivre la navigation ne vaut pas consentement ; pas d'options pré-cochées ; retirer son consentement doit être aussi simple que le donner ; et pas de mur de cookies sans alternative."
+   },
+   {
+    "type": "heading",
+    "text": "Mesure d'audience : une exemption étroite"
+   },
+   {
+    "type": "paragraph",
+    "text": "Le guide de l'AEPD rappelle que les cookies d'analyse ne sont pas, en principe, exemptés. Son document sur la mesure d'audience (janvier 2024) n'admet l'exemption que s'ils servent uniquement à mesurer l'audience pour le seul compte de l'éditeur, produisent des statistiques anonymes, ne sont ni croisés avec d'autres données ni transmis à des tiers, et ne suivent pas l'utilisateur d'un site à l'autre. Sinon, demandez le consentement, comme pour les vidéos intégrées, les cartes ou les pixels de réseaux sociaux."
+   },
+   {
+    "type": "heading",
+    "text": "La loi 11/2023 sur l'accessibilité vous concerne-t-elle ?"
+   },
+   {
+    "type": "paragraph",
+    "text": "La loi 11/2023, qui transpose l'Acte européen sur l'accessibilité (directive UE 2019/882), s'applique depuis le 28 juin 2025. Son article 2.2 vise des services précis fournis aux consommateurs, dont le commerce électronique, c'est-à-dire les contrats conclus à distance via un site ou une application ; un site qui présente simplement vos services ne figure pas, en tant que tel, dans cette liste. De plus, l'article 3.3 exempte les microentreprises qui fournissent des services, et l'annexe VII de la loi 11/2023 définit la microentreprise comme celle qui emploie moins de 10 personnes et dont le chiffre d'affaires annuel ou le total du bilan annuel ne dépasse pas 2 millions d'euros. Si vous n'êtes pas une microentreprise et vendez en ligne à des consommateurs, vous pouvez être concerné ; en cas de doute, consultez un professionnel."
+   },
+   {
+    "type": "heading",
+    "text": "Ce que vous risquez : les sanctions"
+   },
+   {
+    "type": "paragraph",
+    "text": "L'article 39 de la LSSI fixe les amendes : jusqu'à 30 000 euros pour les infractions légères, de 30 001 à 150 000 euros pour les graves et de 150 001 à 600 000 euros pour les très graves. Ne pas afficher les informations de l'article 10 est en général léger (article 38.4.b), et grave si le manquement sur l'identité, le contact ou les prix est significatif (article 38.3.b). Utiliser des cookies sans information ni consentement est léger (article 38.4.g) et grave en cas de récidive dans les trois ans après une décision définitive (article 38.3.i) ; c'est l'AEPD qui sanctionne (article 43.1). L'autorité peut aussi adresser un avertissement avec un délai pour corriger (article 39 ter). En protection des données, omettre l'obligation d'information est très grave (article 72.1.h de la LOPDGDD) et informer de façon incomplète, léger (article 74.a), avec les amendes de l'article 83 du RGPD."
+   },
+   {
+    "type": "heading",
+    "text": "Liste de contrôle pour votre site"
+   },
+   {
+    "type": "table",
+    "caption": "Liste de contrôle de votre site (ignorez ce qui ne vous concerne pas)",
+    "headers": [
+     "Élément",
+     "Où sur le site",
+     "Base légale"
+    ],
+    "rows": [
+     [
+      "Nom ou dénomination sociale, domicile, e-mail, autre contact direct et NIF",
+      "Aviso legal, lien en pied de page",
+      "Art. 10.1.a et e LSSI"
+     ],
+     [
+      "Registro Mercantil ou autre registre public, le cas échéant",
+      "Aviso legal",
+      "Art. 10.1.b LSSI"
+     ],
+     [
+      "Autorisation préalable et organe de contrôle, le cas échéant",
+      "Aviso legal",
+      "Art. 10.1.c LSSI"
+     ],
+     [
+      "Ordre professionnel, numéro d'inscription, titre et règles professionnelles",
+      "Aviso legal",
+      "Art. 10.1.d LSSI"
+     ],
+     [
+      "Prix clairs, taxes incluses ou non",
+      "Tarifs ou services",
+      "Art. 10.1.f LSSI"
+     ],
+     [
+      "Politique de confidentialité complète",
+      "Page dédiée, lien en pied de page",
+      "Art. 13 RGPD"
+     ],
+     [
+      "Information de base avec lien vers la politique",
+      "Sous chaque formulaire",
+      "Art. 11 LOPDGDD"
+     ],
+     [
+      "Case distincte et non cochée pour les offres",
+      "Formulaire",
+      "Art. 21 LSSI ; considérant 32 RGPD"
+     ],
+     [
+      "Bannière avec Accepter et Refuser au même niveau",
+      "Première visite",
+      "Art. 22.2 LSSI ; guide AEPD"
+     ],
+     [
+      "Politique de cookies et accès permanent aux réglages",
+      "Page dédiée et pied de page",
+      "Art. 22.2 LSSI ; guide AEPD"
+     ],
+     [
+      "Accessibilité, si vous vendez en ligne aux consommateurs sans être une microentreprise",
+      "Tout le site",
+      "Art. 2.2 et 3.3 loi 11/2023"
+     ]
+    ],
+    "note": "Sources officielles consultées le 28 septembre 2026 : loi 34/2002 (LSSI, texte consolidé du BOE), règlement (UE) 2016/679 (RGPD), loi organique 3/2018 (LOPDGDD), loi 11/2023, décret royal 1277/2003 et guides de l'AEPD sur les cookies (mai 2024) et la mesure d'audience (janvier 2024)."
+   },
+   {
+    "type": "conclusion",
+    "text": "Ces trois pages disent qui vous êtes, ce que vous faites des données et respectent le choix de chaque visiteur. Chez WebAutonomos, l'aviso legal, la politique de confidentialité et la politique de cookies sont inclus dans chaque site. Nous réalisons le design et rédigeons les textes à partir de vos informations réelles ; vous restez responsable de leur exactitude et de leur mise à jour. Vous avez le choix entre 15 € par mois, sans frais de mise en service ni engagement, ou 349 € en un paiement unique, avec les mêmes services : hébergement, certificat SSL, sauvegardes quotidiennes et maintenance inclus, ainsi qu'une modification par mois. Nous vous préparons une démo en moins de 24 heures, et vous ne payez qu'après l'avoir validée."
+   }
+  ],
+  "faq": [
+   {
+    "q": "Mon site ne vend rien : ai-je besoin d'un aviso legal ?",
+    "a": "En général, oui. L'annexe de la LSSI inclut les services non payés par l'utilisateur dès lors qu'ils constituent une activité économique pour le prestataire. Un site professionnel qui présente vos services en fait partie : il doit afficher les informations de l'article 10 de la LSSI."
+   },
+   {
+    "q": "Un lien vers la politique de confidentialité en pied de page suffit-il ?",
+    "a": "La politique complète peut figurer sur une page dédiée. Mais sous chaque formulaire, vous devez donner l'information de base (responsable, finalité et droits) avec un lien vers le reste, comme le permet l'article 11 de la LOPDGDD."
+   },
+   {
+    "q": "Je n'utilise que des cookies techniques : faut-il une bannière ?",
+    "a": "Les cookies strictement nécessaires au service demandé sont exemptés de consentement (article 22.2 de la LSSI), même si l'AEPD recommande de les mentionner au moins de façon générale. Dès que vous ajoutez une mesure d'audience non exemptée, des vidéos, des cartes ou des pixels tiers, il faut une bannière avec Accepter et Refuser au même niveau."
+   },
+   {
+    "q": "Les cookies de mesure d'audience exigent-ils un consentement ?",
+    "a": "En principe, oui. Le document de l'AEPD de janvier 2024 ne les exempte que s'ils servent uniquement à mesurer l'audience pour le compte de l'éditeur, produisent des statistiques anonymes et ne sont ni transmis à des tiers ni utilisés pour suivre l'utilisateur d'un site à l'autre."
+   },
+   {
+    "q": "Je suis kinésithérapeute : que dois-je ajouter ?",
+    "a": "L'article 10.1.d de la LSSI exige l'ordre professionnel (colegio) et votre numéro d'inscription, votre titre, l'État qui l'a délivré et, le cas échéant, sa reconnaissance, ainsi que les règles professionnelles applicables et le moyen de les consulter. Si votre cabinet dispose d'une autorisation sanitaire, ajoutez ses références (article 10.1.c de la LSSI)."
+   },
+   {
+    "q": "La loi 11/2023 sur l'accessibilité s'applique-t-elle à mon site ?",
+    "a": "Seulement si vous fournissez aux consommateurs l'un des services de son article 2.2, comme le commerce électronique, et que vous n'êtes pas une microentreprise. Selon l'annexe VII de la loi 11/2023, une microentreprise emploie moins de 10 personnes et ne dépasse pas 2 millions d'euros de chiffre d'affaires annuel ou de total de bilan. Un site vitrine sans vente en ligne ne figure pas dans cette liste."
+   }
+  ]
+ },
+ "es": {
+  "date": "12 Octubre 2026",
+  "title": "Aviso legal, privacidad y cookies: lo que tu web debe mostrar por ley en España (2026)",
+  "seoTitle": "Aviso legal, privacidad y cookies en tu web | WebAutonomos",
+  "metaDescription": "Qué datos exige la LSSI en el aviso legal, qué debe decir tu política de privacidad y cómo pedir el consentimiento de cookies según la AEPD.",
+  "keywords": [
+   "aviso legal página web",
+   "política de privacidad web autónomo",
+   "política de cookies AEPD",
+   "obligaciones legales web LSSI"
+  ],
+  "excerpt": "Guía clara para autónomos y pequeños negocios: datos del aviso legal (art. 10 LSSI), política de privacidad (art. 13 RGPD), banner de cookies según la AEPD, accesibilidad y una checklist final.",
+  "content": [
+   {
+    "type": "intro",
+    "text": "Tu web es tu escaparate, pero también un espacio regulado. Si eres autónomo o tienes un pequeño negocio en España, la ley te pide: mostrar quién está detrás de la página, explicar qué haces con los datos de quien te escribe y pedir permiso antes de usar ciertas cookies. Repasamos el aviso legal, la política de privacidad y la de cookies, con el artículo exacto de cada obligación y una checklist final. Este artículo ofrece información general actualizada a septiembre de 2026 y no constituye asesoramiento jurídico."
+   },
+   {
+    "type": "heading",
+    "text": "¿Afecta a tu web aunque no vendas online?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Sí. La Ley 34/2002 (LSSI) se aplica a los prestadores establecidos en España (artículo 2). Su anexo incluye los servicios que el usuario no paga si son una actividad económica para quien los ofrece, así que una web que presenta tus servicios entra en su ámbito. Si además recoges datos, por ejemplo con un formulario, se aplican el Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales (LOPDGDD)."
+   },
+   {
+    "type": "heading",
+    "text": "Aviso legal: los datos del artículo 10 de la LSSI"
+   },
+   {
+    "type": "paragraph",
+    "text": "El artículo 10.1 de la LSSI obliga a ofrecer, de forma permanente, fácil, directa y gratuita: tu nombre o denominación social; tu residencia o domicilio o, en su defecto, la dirección de un establecimiento permanente en España; tu correo electrónico y cualquier otro dato que permita una comunicación directa y efectiva; tu NIF; los datos de inscripción en el Registro Mercantil u otro registro público, si es tu caso; los datos de la autorización administrativa previa y del órgano supervisor, si tu actividad la necesita; y los códigos de conducta a los que estés adherido."
+   },
+   {
+    "type": "paragraph",
+    "text": "Si publicas precios, el artículo 10.1.f exige que sean claros y exactos e indiquen si incluyen los impuestos aplicables y, en su caso, los gastos de envío. Lo más práctico es una página de aviso legal enlazada desde el pie de todas las páginas, lo que el artículo 10.2 da por válido."
+   },
+   {
+    "type": "heading",
+    "text": "Profesiones reguladas y sanitarias"
+   },
+   {
+    "type": "paragraph",
+    "text": "Si ejerces una profesión regulada, como la psicología sanitaria, la fisioterapia, la odontología o la enfermería, el artículo 10.1.d de la LSSI añade: el colegio profesional y tu número de colegiado; tu título; el Estado de la Unión Europea o del Espacio Económico Europeo donde se expidió y, en su caso, su homologación; y las normas profesionales aplicables y dónde consultarlas. Si tu consulta necesita autorización sanitaria de la comunidad autónoma (artículo 3 del Real Decreto 1277/2003), indica sus datos y el órgano que la concede (artículo 10.1.c de la LSSI). Y como los datos de salud son una categoría especial (artículo 9 del RGPD), pide solo lo imprescindible."
+   },
+   {
+    "type": "heading",
+    "text": "Política de privacidad: lo que exige el artículo 13 del RGPD"
+   },
+   {
+    "type": "paragraph",
+    "text": "Al recoger datos de una persona, el artículo 13 del RGPD te obliga a informarle en ese momento de: tu identidad y contacto como responsable y, si lo tienes, el del delegado de protección de datos; los fines y la base jurídica del tratamiento; tus intereses legítimos, si esa es la base; los destinatarios, por ejemplo tu proveedor de alojamiento o de correo; las transferencias fuera de la Unión Europea, si las hay; el plazo de conservación o el criterio para fijarlo; los derechos de acceso, rectificación, supresión, limitación, oposición y portabilidad; el derecho a retirar el consentimiento; el derecho a reclamar ante la Agencia Española de Protección de Datos (AEPD); si facilitar los datos es obligatorio y qué pasa si no se facilitan; y si hay decisiones automatizadas o perfiles."
+   },
+   {
+    "type": "heading",
+    "text": "Formularios: información por capas y casillas sin marcar"
+   },
+   {
+    "type": "paragraph",
+    "text": "No hace falta pegar todo eso junto al formulario: el artículo 11 de la LOPDGDD permite dar una información básica, con el responsable, la finalidad y la posibilidad de ejercer los derechos de los artículos 15 a 22 del RGPD, y enlazar a la política completa. Para responder a una consulta, la base suele ser una medida precontractual pedida por el interesado o su consentimiento (artículo 6.1 del RGPD)."
+   },
+   {
+    "type": "paragraph",
+    "text": "Para enviar promociones, pide un consentimiento aparte: el artículo 21 de la LSSI prohíbe las comunicaciones comerciales por correo electrónico no solicitadas ni autorizadas expresamente, salvo con clientes previos y productos similares, y el considerando 32 del RGPD recuerda que las casillas ya marcadas no son consentimiento. En la práctica: una casilla separada y desmarcada."
+   },
+   {
+    "type": "heading",
+    "text": "Cookies: un consentimiento de verdad"
+   },
+   {
+    "type": "paragraph",
+    "text": "El artículo 22.2 de la LSSI solo permite usar cookies si el usuario consiente tras recibir información clara y completa sobre sus fines. Quedan fuera las estrictamente necesarias para el servicio que el usuario ha pedido, como las de sesión o las que recuerdan el idioma elegido. La Guía sobre el uso de las cookies de la AEPD, actualizada en mayo de 2024, concreta las reglas: las cookies no exentas no se usan hasta que el usuario acepta; el botón Rechazar va en la misma capa, al mismo nivel y con la misma visibilidad que Aceptar; seguir navegando no es consentimiento; no valen las opciones premarcadas; retirar el consentimiento debe ser tan fácil como darlo; y no se admiten muros de cookies sin alternativa."
+   },
+   {
+    "type": "heading",
+    "text": "Cookies de analítica: la excepción es estrecha"
+   },
+   {
+    "type": "paragraph",
+    "text": "La guía de la AEPD recuerda que las cookies de análisis no están, en principio, exentas. Su documento sobre medición de audiencia (enero de 2024) solo admite la exención si se limitan a medir la audiencia por cuenta exclusiva del titular de la web, producen estadísticas anónimas, no se cruzan con otros datos, no se comunican a terceros y no siguen al usuario entre sitios. Si no, pide consentimiento, igual que para vídeos incrustados, mapas o píxeles de redes sociales."
+   },
+   {
+    "type": "heading",
+    "text": "¿Te afecta la Ley 11/2023 de accesibilidad?"
+   },
+   {
+    "type": "paragraph",
+    "text": "La Ley 11/2023, que traspone el Acta Europea de Accesibilidad (Directiva UE 2019/882), se aplica desde el 28 de junio de 2025. Su artículo 2.2 enumera servicios concretos prestados a consumidores, entre ellos el comercio electrónico, es decir, contratar a distancia a través de una web o aplicación; una web que solo presenta tus servicios no figura, como tal, en esa lista. Además, el artículo 3.3 exime a las microempresas que prestan servicios, y el anexo VII de la Ley 11/2023 define la microempresa como la que emplea a menos de 10 personas y no supera los 2 millones de euros de volumen de negocios anual o de balance general anual. Si no eres microempresa y vendes online a consumidores, puede afectarte; si dudas, consulta a un profesional."
+   },
+   {
+    "type": "heading",
+    "text": "Qué te juegas: las sanciones"
+   },
+   {
+    "type": "paragraph",
+    "text": "El artículo 39 de la LSSI fija las multas: hasta 30.000 euros por infracciones leves, de 30.001 a 150.000 euros por graves y de 150.001 a 600.000 euros por muy graves. No mostrar los datos del artículo 10 es, en general, leve (artículo 38.4.b), y grave si el incumplimiento sobre identidad, contacto o precios es significativo (artículo 38.3.b). Usar cookies sin informar o sin consentimiento es leve (artículo 38.4.g) y grave si se reincide en tres años tras resolución firme (artículo 38.3.i); estas las sanciona la AEPD (artículo 43.1). La autoridad puede optar por un apercibimiento con plazo para corregir (artículo 39 ter). En protección de datos, omitir el deber de informar es muy grave (artículo 72.1.h de la LOPDGDD) e informar de forma incompleta, leve (artículo 74.a), con las multas del artículo 83 del RGPD."
+   },
+   {
+    "type": "heading",
+    "text": "Checklist para revisar tu web"
+   },
+   {
+    "type": "table",
+    "caption": "Checklist legal de tu web (omite lo que no aplique a tu actividad)",
+    "headers": [
+     "Elemento",
+     "Dónde en la web",
+     "Base legal"
+    ],
+    "rows": [
+     [
+      "Nombre o razón social, domicilio, email, otro contacto directo y NIF",
+      "Aviso legal, enlazado en el pie",
+      "Art. 10.1.a y e LSSI"
+     ],
+     [
+      "Registro Mercantil u otro registro público, si aplica",
+      "Aviso legal",
+      "Art. 10.1.b LSSI"
+     ],
+     [
+      "Autorización previa y órgano supervisor, si aplica",
+      "Aviso legal",
+      "Art. 10.1.c LSSI"
+     ],
+     [
+      "Colegio, número de colegiado, título y normas profesionales",
+      "Aviso legal",
+      "Art. 10.1.d LSSI"
+     ],
+     [
+      "Precios claros, con o sin impuestos",
+      "Tarifas o servicios",
+      "Art. 10.1.f LSSI"
+     ],
+     [
+      "Política de privacidad completa",
+      "Página propia, enlazada en el pie",
+      "Art. 13 RGPD"
+     ],
+     [
+      "Información básica con enlace a la política",
+      "Junto a cada formulario",
+      "Art. 11 LOPDGDD"
+     ],
+     [
+      "Casilla aparte y sin marcar para promociones",
+      "Formulario",
+      "Art. 21 LSSI; considerando 32 RGPD"
+     ],
+     [
+      "Banner con Aceptar y Rechazar al mismo nivel",
+      "Primera visita",
+      "Art. 22.2 LSSI; guía AEPD"
+     ],
+     [
+      "Política de cookies y acceso fijo a la configuración",
+      "Página propia y pie",
+      "Art. 22.2 LSSI; guía AEPD"
+     ],
+     [
+      "Accesibilidad, si vendes online a consumidores y no eres microempresa",
+      "Toda la web",
+      "Arts. 2.2 y 3.3 Ley 11/2023"
+     ]
+    ],
+    "note": "Fuentes oficiales consultadas el 28 de septiembre de 2026: Ley 34/2002 (LSSI, texto consolidado del BOE), Reglamento (UE) 2016/679 (RGPD), Ley Orgánica 3/2018 (LOPDGDD), Ley 11/2023, Real Decreto 1277/2003 y guías de la AEPD sobre cookies (mayo de 2024) y medición de audiencia (enero de 2024)."
+   },
+   {
+    "type": "conclusion",
+    "text": "Estas tres páginas dicen quién eres, qué haces con los datos y respetan la decisión de cada visitante. En WebAutonomos, esas tres páginas legales están incluidas en cada web. Diseñamos la web y redactamos los textos a partir de tus datos reales; tú sigues siendo responsable de que esa información sea correcta y esté al día. Puedes elegir entre 15 € al mes, sin cuota de alta ni permanencia, o 349 € en un único pago, con los mismos servicios: alojamiento, certificado SSL, copias de seguridad diarias y mantenimiento incluidos, además de un cambio al mes. Te preparamos una demo en menos de 24 horas y solo pagas si la apruebas."
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Necesito aviso legal si mi web no vende nada?",
+    "a": "En general, sí. El anexo de la LSSI incluye los servicios que el usuario no paga siempre que sean una actividad económica para quien los presta. Una web profesional que presenta tus servicios lo es, así que debe mostrar los datos del artículo 10 de la LSSI."
+   },
+   {
+    "q": "¿Basta con enlazar la política de privacidad en el pie de página?",
+    "a": "La política completa puede estar en una página propia enlazada desde el pie. Pero junto a cada formulario debes dar la información básica (responsable, finalidad y derechos) y enlazar al resto, como permite el artículo 11 de la LOPDGDD."
+   },
+   {
+    "q": "Si solo uso cookies técnicas, ¿necesito banner?",
+    "a": "Las cookies estrictamente necesarias para el servicio que pide el usuario están exentas de consentimiento (artículo 22.2 de la LSSI), aunque la AEPD recomienda informar de ellas al menos de forma genérica. Si añades analítica no exenta, vídeos, mapas o píxeles de terceros, necesitas un banner con Aceptar y Rechazar al mismo nivel."
+   },
+   {
+    "q": "¿Las cookies de analítica necesitan consentimiento?",
+    "a": "En principio, sí. El documento de la AEPD de enero de 2024 solo las exime si sirven exclusivamente para medir la audiencia por cuenta del titular de la web, producen estadísticas anónimas y no se comparten con terceros ni permiten seguir al usuario entre sitios."
+   },
+   {
+    "q": "Soy psicólogo sanitario: ¿qué más debo añadir?",
+    "a": "El artículo 10.1.d de la LSSI exige el colegio profesional y tu número de colegiado, tu título, el Estado donde se expidió y, en su caso, su homologación, y las normas profesionales aplicables con el modo de consultarlas. Si tu consulta tiene autorización sanitaria, añade también sus datos (artículo 10.1.c de la LSSI)."
+   },
+   {
+    "q": "¿La Ley 11/2023 de accesibilidad obliga a mi web?",
+    "a": "Solo si prestas a consumidores alguno de los servicios de su artículo 2.2, como el comercio electrónico, y no eres microempresa. Según el anexo VII de la Ley 11/2023, es microempresa la que emplea a menos de 10 personas y no supera los 2 millones de euros de volumen de negocios anual o de balance. Una web de presentación sin venta online no figura en esa lista."
+   }
+  ]
+ },
+ "val": {
+  "slug": "avis-legal-privacitat-cookies-web",
+  "date": "12 Octubre 2026",
+  "title": "Avís legal, privacitat i cookies: el que la teua web ha de mostrar per llei a Espanya (2026)",
+  "seoTitle": "Avís legal, privacitat i cookies a la web | WebAutonomos",
+  "metaDescription": "Quines dades exigix la LSSI en l'avís legal, què ha de dir la teua política de privacitat i com demanar el consentiment de cookies segons l'AEPD.",
+  "keywords": [
+   "avís legal pàgina web",
+   "política de privacitat web autònom",
+   "política de cookies AEPD",
+   "obligacions legals web LSSI"
+  ],
+  "excerpt": "Guia clara per a autònoms i xicotets negocis: dades de l'avís legal (art. 10 LSSI), política de privacitat (art. 13 RGPD), bàner de cookies segons l'AEPD, accessibilitat i una llista de comprovació final.",
+  "content": [
+   {
+    "type": "intro",
+    "text": "La teua web és el teu aparador, però també un espai regulat. Si eres autònom o tens un xicotet negoci a Espanya, la llei et demana mostrar qui hi ha darrere de la pàgina, explicar què fas amb les dades de qui t'escriu i demanar permís abans d'utilitzar determinades cookies (galetes). Repassem l'avís legal, la política de privacitat i la de cookies, amb l'article exacte de cada obligació i una llista de comprovació final. Este article oferix informació general actualitzada a setembre de 2026 i no constituïx assessorament jurídic."
+   },
+   {
+    "type": "heading",
+    "text": "Afecta la teua web encara que no vengues en línia?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Sí. La Llei 34/2002 (LSSI) s'aplica als prestadors establits a Espanya (article 2). El seu annex inclou els serveis que l'usuari no paga si constituïxen una activitat econòmica per a qui els oferix, així que una web que presenta els teus serveis entra en el seu àmbit. Si, a més, arreplegues dades amb un formulari, s'apliquen el Reglament general de protecció de dades (RGPD) i la Llei orgànica 3/2018 de protecció de dades personals (LOPDGDD)."
+   },
+   {
+    "type": "heading",
+    "text": "Avís legal: les dades de l'article 10 de la LSSI"
+   },
+   {
+    "type": "paragraph",
+    "text": "L'article 10.1 de la LSSI obliga a oferir, de manera permanent, fàcil, directa i gratuïta: el teu nom o denominació social; la teua residència o domicili o, si no n'hi ha, l'adreça d'un establiment permanent a Espanya; el teu correu electrònic i qualsevol altra dada que permeta una comunicació directa i efectiva; el teu NIF; les dades d'inscripció en el Registre Mercantil o en un altre registre públic, si és el teu cas; les dades de l'autorització administrativa prèvia i de l'òrgan supervisor, si la teua activitat la necessita; i els codis de conducta als quals estigues adherit."
+   },
+   {
+    "type": "paragraph",
+    "text": "Si publiques preus, l'article 10.1.f exigix que siguen clars i exactes i indiquen si inclouen els impostos aplicables i, si és el cas, les despeses d'enviament. El més pràctic és una pàgina d'avís legal enllaçada des del peu de totes les pàgines, cosa que l'article 10.2 considera vàlida."
+   },
+   {
+    "type": "heading",
+    "text": "Professions regulades i sanitàries"
+   },
+   {
+    "type": "paragraph",
+    "text": "Si exercixes una professió regulada, com la psicologia sanitària, la fisioteràpia, l'odontologia o la infermeria, l'article 10.1.d de la LSSI afig: el col·legi professional i el teu número de col·legiat; el teu títol; l'Estat de la Unió Europea o de l'Espai Econòmic Europeu on es va expedir i, si és el cas, l'homologació; i les normes professionals aplicables i on consultar-les. Si la teua consulta necessita autorització sanitària de la comunitat autònoma (article 3 del Reial decret 1277/2003), indica'n les dades i l'òrgan que la concedix (article 10.1.c de la LSSI). I com que les dades de salut són una categoria especial (article 9 del RGPD), demana només allò imprescindible."
+   },
+   {
+    "type": "heading",
+    "text": "Política de privacitat: el que exigix l'article 13 del RGPD"
+   },
+   {
+    "type": "paragraph",
+    "text": "Quan arreplegues dades d'una persona, l'article 13 del RGPD t'obliga a informar-la en eixe moment de: la teua identitat i contacte com a responsable i, si en tens, el del delegat de protecció de dades; les finalitats i la base jurídica del tractament; els teus interessos legítims, si és la base triada; els destinataris, per exemple el teu proveïdor d'allotjament o de correu; les transferències fora de la Unió Europea, si n'hi ha; el termini de conservació o el criteri per a fixar-lo; els drets d'accés, rectificació, supressió, limitació, oposició i portabilitat; el dret a retirar el consentiment; el dret a reclamar davant de l'Agència Espanyola de Protecció de Dades (AEPD); si facilitar les dades és obligatori i què passa si no es faciliten; i si hi ha decisions automatitzades o elaboració de perfils."
+   },
+   {
+    "type": "heading",
+    "text": "Formularis: informació per capes i caselles sense marcar"
+   },
+   {
+    "type": "paragraph",
+    "text": "No cal enganxar tot això al costat del formulari: l'article 11 de la LOPDGDD permet donar una informació bàsica, amb el responsable, la finalitat i la possibilitat d'exercir els drets dels articles 15 a 22 del RGPD, i enllaçar a la política completa. Per a respondre una consulta, la base sol ser una mesura precontractual demanada per la persona interessada o el seu consentiment (article 6.1 del RGPD)."
+   },
+   {
+    "type": "paragraph",
+    "text": "Per a enviar promocions, demana un consentiment a part: l'article 21 de la LSSI prohibix les comunicacions comercials per correu electrònic no sol·licitades ni autoritzades expressament, excepte amb clients previs i productes semblants, i el considerant 32 del RGPD recorda que les caselles ja marcades no són consentiment. A la pràctica: una casella separada i desmarcada."
+   },
+   {
+    "type": "heading",
+    "text": "Cookies: un consentiment de veritat"
+   },
+   {
+    "type": "paragraph",
+    "text": "L'article 22.2 de la LSSI només permet utilitzar cookies si l'usuari hi consent després de rebre informació clara i completa sobre les seues finalitats. En queden fora les estrictament necessàries per al servei que l'usuari ha demanat, com les de sessió o les que recorden l'idioma triat. La guia de l'AEPD sobre l'ús de les cookies, actualitzada al maig de 2024, concreta les regles: les cookies no exemptes no s'utilitzen fins que l'usuari accepta; el botó Rebutjar va en la mateixa capa, al mateix nivell i amb la mateixa visibilitat que Acceptar; continuar navegant no és consentiment; no valen les opcions premarcades; retirar el consentiment ha de ser tan fàcil com donar-lo; i no s'admeten murs de cookies sense alternativa."
+   },
+   {
+    "type": "heading",
+    "text": "Cookies d'analítica: l'excepció és estreta"
+   },
+   {
+    "type": "paragraph",
+    "text": "La guia de l'AEPD recorda que les cookies d'anàlisi no estan, en principi, exemptes. El seu document sobre mesurament d'audiència (gener de 2024) només admet l'exempció si es limiten a mesurar l'audiència per compte exclusiu del titular de la web, produïxen estadístiques anònimes, no es creuen amb altres dades, no es comuniquen a tercers i no seguixen l'usuari entre llocs web. Si no, demana consentiment, igual que per a vídeos incrustats, mapes o píxels de xarxes socials."
+   },
+   {
+    "type": "heading",
+    "text": "T'afecta la Llei 11/2023 d'accessibilitat?"
+   },
+   {
+    "type": "paragraph",
+    "text": "La Llei 11/2023, que transposa l'Acta Europea d'Accessibilitat (Directiva UE 2019/882), s'aplica des del 28 de juny de 2025. El seu article 2.2 enumera serveis concrets prestats a consumidors, entre els quals el comerç electrònic, és a dir, contractar a distància a través d'una web o aplicació; una web que només presenta els teus serveis no figura, com a tal, en eixa llista. A més, l'article 3.3 eximix les microempreses que presten serveis, i l'annex VII de la Llei 11/2023 definix la microempresa com la que ocupa menys de 10 persones i no supera els 2 milions d'euros de volum de negocis anual o de balanç general anual. Si no eres microempresa i vens en línia a consumidors, et pot afectar; si dubtes, consulta un professional."
+   },
+   {
+    "type": "heading",
+    "text": "Què t'hi jugues: les sancions"
+   },
+   {
+    "type": "paragraph",
+    "text": "L'article 39 de la LSSI fixa les multes: fins a 30.000 euros per les infraccions lleus, de 30.001 a 150.000 euros per les greus i de 150.001 a 600.000 euros per les molt greus. No mostrar les dades de l'article 10 és, en general, lleu (article 38.4.b), i greu si l'incompliment sobre identitat, contacte o preus és significatiu (article 38.3.b). Utilitzar cookies sense informar o sense consentiment és lleu (article 38.4.g) i greu si s'hi reincidix en tres anys després d'una resolució ferma (article 38.3.i); estes infraccions les sanciona l'AEPD (article 43.1). L'autoritat pot optar per un advertiment amb un termini per a corregir (article 39 ter). En protecció de dades, ometre el deure d'informar és molt greu (article 72.1.h de la LOPDGDD) i informar de manera incompleta, lleu (article 74.a), amb les multes de l'article 83 del RGPD."
+   },
+   {
+    "type": "heading",
+    "text": "Llista de comprovació per a la teua web"
+   },
+   {
+    "type": "table",
+    "caption": "Llista de comprovació de la teua web (omet el que no t'afecte)",
+    "headers": [
+     "Element",
+     "On a la web",
+     "Base legal"
+    ],
+    "rows": [
+     [
+      "Nom o denominació social, domicili, correu, un altre contacte directe i NIF",
+      "Avís legal, enllaçat al peu",
+      "Art. 10.1.a i e LSSI"
+     ],
+     [
+      "Registre Mercantil o un altre registre públic, si és el cas",
+      "Avís legal",
+      "Art. 10.1.b LSSI"
+     ],
+     [
+      "Autorització prèvia i òrgan supervisor, si és el cas",
+      "Avís legal",
+      "Art. 10.1.c LSSI"
+     ],
+     [
+      "Col·legi, número de col·legiat, títol i normes professionals",
+      "Avís legal",
+      "Art. 10.1.d LSSI"
+     ],
+     [
+      "Preus clars, amb impostos o sense",
+      "Tarifes o serveis",
+      "Art. 10.1.f LSSI"
+     ],
+     [
+      "Política de privacitat completa",
+      "Pàgina pròpia, enllaçada al peu",
+      "Art. 13 RGPD"
+     ],
+     [
+      "Informació bàsica amb enllaç a la política",
+      "Al costat de cada formulari",
+      "Art. 11 LOPDGDD"
+     ],
+     [
+      "Casella a part i sense marcar per a promocions",
+      "Formulari",
+      "Art. 21 LSSI; considerant 32 RGPD"
+     ],
+     [
+      "Bàner amb Acceptar i Rebutjar al mateix nivell",
+      "Primera visita",
+      "Art. 22.2 LSSI; guia AEPD"
+     ],
+     [
+      "Política de cookies i accés fix a la configuració",
+      "Pàgina pròpia i peu",
+      "Art. 22.2 LSSI; guia AEPD"
+     ],
+     [
+      "Accessibilitat, si vens en línia a consumidors i no eres microempresa",
+      "Tota la web",
+      "Arts. 2.2 i 3.3 Llei 11/2023"
+     ]
+    ],
+    "note": "Fonts oficials consultades el 28 de setembre de 2026: Llei 34/2002 (LSSI, text consolidat del BOE), Reglament (UE) 2016/679 (RGPD), Llei orgànica 3/2018 (LOPDGDD), Llei 11/2023, Reial decret 1277/2003 i guies de l'AEPD sobre cookies (maig de 2024) i mesurament d'audiència (gener de 2024)."
+   },
+   {
+    "type": "conclusion",
+    "text": "Estes tres pàgines diuen qui eres, què fas amb les dades i respecten la decisió de cada visitant. A WebAutonomos, l'avís legal, la política de privacitat i la de cookies estan incloses en cada web. Dissenyem la web i redactem els textos a partir de les teues dades reals; tu continues sent responsable que eixa informació siga correcta i estiga al dia. Pots triar entre 15 € al mes, sense quota d'alta ni permanència, o 349 € en un pagament únic, amb els mateixos serveis: allotjament, certificat SSL, còpies de seguretat diàries i manteniment inclosos, a més d'un canvi al mes. Et preparem una demo en menys de 24 hores i només pagues si l'aproves."
+   }
+  ],
+  "faq": [
+   {
+    "q": "Necessite avís legal si la meua web no ven res?",
+    "a": "En general, sí. L'annex de la LSSI inclou els serveis que l'usuari no paga sempre que siguen una activitat econòmica per a qui els presta. Una web professional que presenta els teus serveis ho és, així que ha de mostrar les dades de l'article 10 de la LSSI."
+   },
+   {
+    "q": "N'hi ha prou amb un enllaç a la política de privacitat al peu de pàgina?",
+    "a": "La política completa pot estar en una pàgina pròpia enllaçada des del peu. Però al costat de cada formulari has de donar la informació bàsica (responsable, finalitat i drets) i enllaçar a la resta, com permet l'article 11 de la LOPDGDD."
+   },
+   {
+    "q": "Si només utilitze cookies tècniques, necessite bàner?",
+    "a": "Les cookies estrictament necessàries per al servei que demana l'usuari estan exemptes de consentiment (article 22.2 de la LSSI), tot i que l'AEPD recomana informar-ne almenys de manera genèrica. Si hi afiges analítica no exempta, vídeos, mapes o píxels de tercers, necessites un bàner amb Acceptar i Rebutjar al mateix nivell."
+   },
+   {
+    "q": "Les cookies d'analítica necessiten consentiment?",
+    "a": "En principi, sí. El document de l'AEPD de gener de 2024 només les eximix si servixen exclusivament per a mesurar l'audiència per compte del titular de la web, produïxen estadístiques anònimes i no es compartixen amb tercers ni permeten seguir l'usuari entre llocs web."
+   },
+   {
+    "q": "Com a psicòleg sanitari, què més he d'afegir a l'avís legal?",
+    "a": "L'article 10.1.d de la LSSI exigix el col·legi professional i el teu número de col·legiat, el teu títol, l'Estat on es va expedir i, si és el cas, l'homologació, i les normes professionals aplicables amb la manera de consultar-les. Si la teua consulta té autorització sanitària, afig-ne també les dades (article 10.1.c de la LSSI)."
+   },
+   {
+    "q": "M'obliga la Llei 11/2023 d'accessibilitat?",
+    "a": "Només si prestes a consumidors algun dels serveis del seu article 2.2, com el comerç electrònic, i no eres microempresa. Segons l'annex VII de la Llei 11/2023, és microempresa la que ocupa menys de 10 persones i no supera els 2 milions d'euros de volum de negocis anual o de balanç. Una web de presentació sense venda en línia no figura en eixa llista."
+   }
+  ]
+ },
+ "en": {
+  "slug": "legal-notice-privacy-and-cookies-website-spain",
+  "date": "Oct 12, 2026",
+  "title": "Legal notice, privacy and cookies: what your business website in Spain must show (2026)",
+  "seoTitle": "Legal notice, privacy and cookies in Spain | WebAutonomos",
+  "metaDescription": "Running a business in Spain? What the LSSI requires in your legal notice, what your privacy policy must say and how to get cookie consent right.",
+  "keywords": [
+   "legal notice website Spain",
+   "privacy policy Spain small business",
+   "cookie consent Spain AEPD",
+   "LSSI website requirements"
+  ],
+  "excerpt": "A plain-English guide for self-employed people and small businesses in Spain: the aviso legal (art. 10 LSSI), the privacy policy (art. 13 GDPR), cookie consent under the AEPD guide, accessibility and a checklist.",
+  "content": [
+   {
+    "type": "intro",
+    "text": "If you run a business in Spain, your website must follow Spanish rules, whatever language it is written in. Three pages are expected: the aviso legal (legal notice), the privacy policy and the cookie policy. This guide explains what each must contain, with the exact article behind every obligation, and ends with a checklist you can use on your own site. It gives general information as of September 2026 and is not legal advice."
+   },
+   {
+    "type": "heading",
+    "text": "Does this apply if you do not sell online?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Yes. Law 34/2002 on information society services (LSSI) applies to providers established in Spain (article 2). Its annex also covers services the user does not pay for, as long as they are an economic activity for the provider, so a website presenting your services falls within its scope. If you also collect personal data, for example through a contact form, the General Data Protection Regulation (GDPR, called RGPD in Spain) and Spain's Organic Law 3/2018 on data protection (LOPDGDD) apply as well."
+   },
+   {
+    "type": "heading",
+    "text": "The aviso legal: the details required by article 10 LSSI"
+   },
+   {
+    "type": "paragraph",
+    "text": "Article 10.1 of the LSSI requires permanent, easy, direct and free access to: your name or company name; your residence or registered address or, failing that, the address of a permanent establishment in Spain; your email address and any other detail allowing direct and effective communication; your NIF, the Spanish tax identification number; your entry in the Registro Mercantil (Companies Register) or another public register, if applicable; details of any prior administrative authorisation your activity needs and of the supervising body; and any codes of conduct you have signed up to."
+   },
+   {
+    "type": "paragraph",
+    "text": "If you publish prices, article 10.1.f requires them to be clear and accurate, stating whether applicable taxes and, where relevant, delivery costs are included. The practical solution is a legal notice page linked from the footer of every page, which article 10.2 treats as meeting the obligation. If your clients read Spanish, offering these pages in Spanish as well is a sensible choice."
+   },
+   {
+    "type": "heading",
+    "text": "Regulated and health professions"
+   },
+   {
+    "type": "paragraph",
+    "text": "If you practise a regulated profession, such as health psychology, physiotherapy, dentistry or nursing, article 10.1.d of the LSSI adds: your professional association (colegio) and membership number (número de colegiado); your qualification; the EU or EEA state that issued it and, where applicable, its recognition; and the professional rules that apply to you and where to consult them. If your practice needs a health authorisation from the regional government (article 3 of Royal Decree 1277/2003), give its details and the issuing body (article 10.1.c LSSI). As health data is a special category (article 9 GDPR), ask only for what is essential."
+   },
+   {
+    "type": "heading",
+    "text": "Privacy policy: what article 13 GDPR requires"
+   },
+   {
+    "type": "paragraph",
+    "text": "When you collect someone's data, article 13 GDPR requires you to tell them, at that moment: your identity and contact details as controller and, if you have one, those of your data protection officer; the purposes and legal basis of the processing; your legitimate interests, if that is the basis; the recipients, such as your hosting or email provider; any transfers outside the European Union; how long you will keep the data or the criteria used to decide; the rights of access, rectification, erasure, restriction, objection and portability; the right to withdraw consent; the right to complain to the Spanish data protection authority, the Agencia Española de Protección de Datos (AEPD); whether providing the data is required and what happens if it is not; and any automated decision-making or profiling."
+   },
+   {
+    "type": "heading",
+    "text": "Contact forms: layered information and unticked boxes"
+   },
+   {
+    "type": "paragraph",
+    "text": "You do not need to paste all of that beside the form. Article 11 of the LOPDGDD allows basic information, covering the controller, the purpose and how to exercise the rights in articles 15 to 22 GDPR, plus a link to the full policy. To answer an enquiry, the legal basis is usually a pre-contractual step requested by the person or their consent (article 6.1 GDPR)."
+   },
+   {
+    "type": "paragraph",
+    "text": "To send promotions, ask for separate consent: article 21 of the LSSI prohibits commercial emails that were neither requested nor expressly authorised, except to existing customers about similar products, and recital 32 GDPR states that pre-ticked boxes do not constitute consent. In practice: a separate box, unticked by default."
+   },
+   {
+    "type": "heading",
+    "text": "Cookies: consent that means something"
+   },
+   {
+    "type": "paragraph",
+    "text": "Article 22.2 of the LSSI only allows cookies if the user consents after receiving clear and complete information about their purposes. Cookies strictly necessary for the service the user has asked for, such as session cookies or those remembering the chosen language, are exempt. The AEPD's cookie guide (Guía sobre el uso de las cookies, updated in May 2024) sets out the rules: no non-exempt cookies until the user accepts; a Reject button in the same layer, at the same level and with the same visibility as Accept; carrying on browsing is not consent; no pre-ticked options; withdrawing consent must be as easy as giving it; and no cookie walls without an alternative."
+   },
+   {
+    "type": "heading",
+    "text": "Analytics cookies: a narrow exemption"
+   },
+   {
+    "type": "paragraph",
+    "text": "The AEPD guide points out that analytics cookies are not, in principle, exempt. Its document on audience measurement tools (January 2024) only allows an exemption if they are limited to measuring audience solely on behalf of the site owner, produce anonymous statistics, are not combined with other data, are not passed to third parties and do not track users across sites. Otherwise, ask for consent, as you would for embedded videos, maps or social media pixels."
+   },
+   {
+    "type": "heading",
+    "text": "Does the accessibility law (Law 11/2023) apply to you?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Law 11/2023, which transposes the European Accessibility Act (Directive (EU) 2019/882), has applied since 28 June 2025. Its article 2.2 lists specific services provided to consumers, including e-commerce, meaning contracts concluded at a distance through a website or app; a site that simply presents your services is not, as such, on that list. In addition, article 3.3 exempts microenterprises that provide services, and Annex VII of Law 11/2023 defines a microenterprise as one employing fewer than 10 people with an annual turnover or annual balance sheet total not exceeding €2 million. If you are not a microenterprise and sell online to consumers, it may apply to you; if in doubt, ask a professional."
+   },
+   {
+    "type": "heading",
+    "text": "What is at stake: penalties"
+   },
+   {
+    "type": "paragraph",
+    "text": "Article 39 of the LSSI sets the fines: up to €30,000 for minor infringements, €30,001 to €150,000 for serious ones and €150,001 to €600,000 for very serious ones. Failing to show the article 10 details is generally minor (article 38.4.b), and serious if the failure on identity, contact details or prices is significant (article 38.3.b). Using cookies without information or consent is minor (article 38.4.g) and serious if repeated within three years of a final decision (article 38.3.i); these cases are sanctioned by the AEPD (article 43.1). The authority may instead issue a warning with a deadline to put things right (article 39 ter). Under data protection law, failing to inform at all is very serious (article 72.1.h LOPDGDD) and incomplete information is minor (article 74.a), with fines set under article 83 GDPR."
+   },
+   {
+    "type": "heading",
+    "text": "Checklist for your website"
+   },
+   {
+    "type": "table",
+    "caption": "Legal checklist for your website (skip anything that does not apply to your business)",
+    "headers": [
+     "Item",
+     "Where on the site",
+     "Legal basis"
+    ],
+    "rows": [
+     [
+      "Name or company name, address, email, other direct contact and NIF",
+      "Aviso legal, linked in the footer",
+      "Art. 10.1.a and e LSSI"
+     ],
+     [
+      "Companies Register or other public register, if applicable",
+      "Aviso legal",
+      "Art. 10.1.b LSSI"
+     ],
+     [
+      "Prior authorisation and supervising body, if applicable",
+      "Aviso legal",
+      "Art. 10.1.c LSSI"
+     ],
+     [
+      "Professional association, membership number, qualification and professional rules",
+      "Aviso legal",
+      "Art. 10.1.d LSSI"
+     ],
+     [
+      "Clear prices, stating whether taxes are included",
+      "Prices or services page",
+      "Art. 10.1.f LSSI"
+     ],
+     [
+      "Full privacy policy",
+      "Own page, linked in the footer",
+      "Art. 13 GDPR"
+     ],
+     [
+      "Basic information with a link to the policy",
+      "Next to every form",
+      "Art. 11 LOPDGDD"
+     ],
+     [
+      "Separate unticked box for promotions",
+      "Form",
+      "Art. 21 LSSI; recital 32 GDPR"
+     ],
+     [
+      "Banner with Accept and Reject at the same level",
+      "First visit",
+      "Art. 22.2 LSSI; AEPD guide"
+     ],
+     [
+      "Cookie policy and permanent access to settings",
+      "Own page and footer",
+      "Art. 22.2 LSSI; AEPD guide"
+     ],
+     [
+      "Accessibility, if you sell online to consumers and are not a microenterprise",
+      "Whole site",
+      "Arts. 2.2 and 3.3 Law 11/2023"
+     ]
+    ],
+    "note": "Official sources checked on 28 September 2026: Law 34/2002 (LSSI, BOE consolidated text), Regulation (EU) 2016/679 (GDPR), Organic Law 3/2018 (LOPDGDD), Law 11/2023, Royal Decree 1277/2003 and the AEPD guides on cookies (May 2024) and audience measurement (January 2024)."
+   },
+   {
+    "type": "conclusion",
+    "text": "These three pages say who you are, explain what you do with personal data and respect each visitor's choice. At WebAutonomos, the legal notice, privacy policy and cookie policy are included in every website. We create the design and write the texts from your real details; you remain responsible for making sure that information is accurate and up to date. You can choose €15 a month with no setup fee and no lock-in, or €349 paid once, with the same services: hosting, SSL certificate, daily backups and maintenance included, plus one change a month. We prepare a demo in under 24 hours, and you only pay once you have approved it."
+   }
+  ],
+  "faq": [
+   {
+    "q": "Do I need a legal notice if my website does not sell anything?",
+    "a": "Generally, yes. The LSSI annex covers services the user does not pay for, as long as they are an economic activity for the provider. A professional website presenting your services qualifies, so it must show the details listed in article 10 LSSI."
+   },
+   {
+    "q": "Is a privacy policy link in the footer enough?",
+    "a": "The full policy can sit on its own page linked from the footer. But next to every form you must give the basic information (controller, purpose and rights) with a link to the rest, as article 11 of the LOPDGDD allows."
+   },
+   {
+    "q": "Do I need a cookie banner if I only use technical cookies?",
+    "a": "Cookies strictly necessary for the service the user asked for are exempt from consent (article 22.2 LSSI), although the AEPD recommends mentioning them at least in general terms. As soon as you add non-exempt analytics, embedded videos, maps or third-party pixels, you need a banner with Accept and Reject at the same level."
+   },
+   {
+    "q": "Do analytics cookies need consent?",
+    "a": "In principle, yes. The AEPD document of January 2024 only exempts them if they are used solely to measure audience on behalf of the site owner, produce anonymous statistics and are neither shared with third parties nor used to track users across sites."
+   },
+   {
+    "q": "My website is only in English. Do Spanish rules still apply?",
+    "a": "Yes, if your business is established in Spain: article 2 of the LSSI applies to providers established in Spain, and the language of the site does not change that. If your customers read Spanish, offering the legal pages in Spanish too is a sensible choice."
+   },
+   {
+    "q": "Does the accessibility law (Law 11/2023) apply to my website?",
+    "a": "Only if you provide consumers with one of the services in its article 2.2, such as e-commerce, and you are not a microenterprise. Under Annex VII of Law 11/2023, a microenterprise employs fewer than 10 people and has an annual turnover or balance sheet total not exceeding €2 million. A showcase site without online sales is not on that list."
+   }
+  ]
+ }
+}

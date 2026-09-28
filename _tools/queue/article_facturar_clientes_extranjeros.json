@@ -1,0 +1,699 @@
+{
+  "publish_date": "2026-10-15",
+  "slug": "facturar-clientes-otros-paises-ue-reino-unido",
+  "category": "legal",
+  "image": "🧾",
+  "readTime": 7,
+  "lastmod": "2026-10-15",
+  "fr": {
+    "slug": "facturer-un-client-etranger-depuis-l-espagne",
+    "date": "15 Octobre 2026",
+    "title": "Facturer un client étranger depuis l'Espagne : TVA pour vos clients de l'UE et du Royaume-Uni",
+    "seoTitle": "Facturer un client étranger depuis l'Espagne | WebAutonomos",
+    "metaDescription": "Autónomo en Espagne avec des clients en France, en Belgique ou au Royaume-Uni : quand facturer sans IVA, quelle mention, ROI, VIES, modelo 349, OSS.",
+    "keywords": [
+      "facturer un client étranger depuis l'Espagne",
+      "autónomo client français TVA",
+      "inversión del sujeto pasivo autoliquidation",
+      "modelo 349 Espagne services"
+    ],
+    "excerpt": "Entreprise ou particulier, UE ou Royaume-Uni : quelle TVA appliquer, quelle mention porter sur la facture et quelles déclarations déposer, règle officielle à l'appui.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Vous exercez en Espagne comme autónomo et vos clients sont en France, en Belgique ou au Royaume-Uni ? Reste la facture : faut-il de l'IVA, quelle mention écrire, quelle déclaration déposer ? Ce guide résume les règles en vigueur en septembre 2026 pour un autónomo établi en Espagne péninsulaire ou aux Baléares qui fournit des services, pas des biens."
+      },
+      {
+        "type": "heading",
+        "text": "Deux questions décident de tout"
+      },
+      {
+        "type": "paragraph",
+        "text": "Votre client est-il une entreprise (ou un professionnel agissant comme tel) ou un particulier ? Est-il dans l'UE ou hors de l'UE ? L'article 69 de la loi espagnole 37/1992 sur l'IVA en déduit le lieu de la prestation. L'article 70 ajoute des règles spéciales (immeubles, transport, restauration, manifestations, entre autres) : si elles vous concernent, cela dépend ; vérifiez avec l'outil « Localizador de prestación de servicios » de l'Agencia Tributaria. Et même sans IVA espagnole, la facture reste obligatoire (Real Decreto 1619/2012, article 2)."
+      },
+      {
+        "type": "heading",
+        "text": "Client professionnel en France, en Belgique ou ailleurs dans l'UE"
+      },
+      {
+        "type": "paragraph",
+        "text": "Selon l'article 69 de la loi 37/1992, un service rendu à une entreprise est imposable là où elle est établie. Pour un client français ou belge, pas d'IVA espagnole : le client déclare la TVA dans son pays par autoliquidation, comme l'explique l'Agencia Tributaria (miroir de l'article 84 de la même loi, appliqué en Espagne quand le prestataire n'y est pas établi)."
+      },
+      {
+        "type": "paragraph",
+        "text": "L'article 6 du Real Decreto 1619/2012 exige sur la facture la mention « Inversión del sujeto pasivo » et le numéro de TVA intracommunautaire du client (FR ou BE, par exemple). Il autorise d'autres mentions : vous pouvez ajouter « Autoliquidation ». Si le client est une entreprise, l'article 11 du Real Decreto 1619/2012 impose d'émettre la facture avant le 16 du mois suivant le fait générateur."
+      },
+      {
+        "type": "paragraph",
+        "text": "Avant la première facture, inscrivez-vous au Registro de Operadores Intracomunitarios (ROI). Selon l'Agencia Tributaria, la demande se fait avec le modelo 036 (case 582, et date prévue de la première opération en case 584) ; sans réponse en trois mois, elle peut être considérée comme refusée. Vérifiez le numéro du client dans VIES (site de l'Agencia Tributaria ou portail de la Commission européenne) et gardez la réponse, qui sert de preuve si vous consultez avec votre propre numéro. Sans numéro valable, n'appliquez pas l'autoliquidation d'office : cela dépend."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ces factures se déclarent à la case 59 du modelo 303 (instructions 2026 de l'Agencia Tributaria) et dans le modelo 349 avec la clé « S », uniquement pour les périodes concernées. Selon l'article 81 du règlement de l'IVA (Real Decreto 1624/1992), le 349 est trimestriel tant que ni le trimestre ni les quatre précédents ne dépassent 50 000 euros de ces opérations, à déposer dans les 20 premiers jours du mois suivant (dernier trimestre : jusqu'au 30 janvier) ; sinon, il est mensuel."
+      },
+      {
+        "type": "heading",
+        "text": "Client particulier dans un autre pays de l'UE"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ici, la règle s'inverse : l'article 69 de la loi 37/1992 situe en Espagne le service rendu à un particulier, puisque vous y êtes établi. Vous facturez l'IVA espagnole comme à un client local ; le taux normal est de 21 % selon l'article 90 de la loi 37/1992, sauf taux réduit ou exonération."
+      },
+      {
+        "type": "paragraph",
+        "text": "L'exception clé concerne les services fournis par voie électronique (article 69.Tres) : selon l'Agencia Tributaria, des services automatisés avec une intervention humaine minimale, comme l'hébergement de sites, les téléchargements ou l'enseignement à distance automatisé. Le conseil par courriel et les cours d'un professeur en ligne n'en font pas partie."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pour ces services, l'article 73 de la loi 37/1992 fixe un seuil annuel de 10 000 euros hors taxe pour le total fourni à des consommateurs d'autres pays de l'UE (avec télécommunications, radiodiffusion et ventes à distance de biens). Si vous êtes établi uniquement en Espagne et n'avez dépassé ce seuil ni l'an dernier ni cette année, vous appliquez l'IVA espagnole (option possible pour la destination, deux ans minimum selon cet article 73). Au-delà, c'est la TVA du pays du client. Le guichet unique (ventanilla única, régime de l'Union) est facultatif et évite de s'immatriculer dans chaque pays : formulaire 035, modelo 369 trimestriel et case 123 du modelo 303, selon l'Agencia Tributaria."
+      },
+      {
+        "type": "heading",
+        "text": "Clients au Royaume-Uni après le Brexit"
+      },
+      {
+        "type": "paragraph",
+        "text": "Le Royaume-Uni est hors de l'UE : pas de ROI, de VIES ni de modelo 349 pour ces clients. Pour une entreprise britannique, le service est imposable là où elle est établie (article 69 de la loi 37/1992), donc sans IVA espagnole. Le règlement de facturation n'impose pas de formule ici ; mieux vaut indiquer « Operación no sujeta al IVA español (artículo 69 de la Ley 37/1992) ». L'opération va en case 120 du modelo 303. Au Royaume-Uni, selon la VAT Notice 741A de HMRC, le client applique le « reverse charge » ; son numéro se vérifie avec le service « Check a UK VAT number » de HMRC."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pour un particulier britannique, l'IVA espagnole s'applique en principe (article 69.Uno.2.º). Mais l'article 69.Dos exclut certains services lorsque le particulier est établi ou réside hors de l'UE (sauf Canaries, Ceuta et Melilla), notamment : cessions de droits d'auteur, brevets, licences, marques et autres droits de propriété intellectuelle ou industrielle ; publicité ; conseil, audit, ingénierie, bureaux d'études, avocats, consultants, experts-comptables ou fiscaux et similaires (sauf si liés à un immeuble en Espagne) ; traitement de données et fourniture d'informations ; traduction, correction ou composition de textes et interprétariat (liste complète : lettres a) à l)). Pas d'IVA espagnole, sauf utilisation effective en Espagne (article 70.Dos)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Les services électroniques à des particuliers britanniques ne sont pas soumis en Espagne selon l'Agencia Tributaria (sauf utilisation effective ici), mais HMRC indique qu'ils sont taxables au Royaume-Uni et qu'un prestataire non établi doit s'y immatriculer, sauf vente via une plateforme qui prend la taxe en charge."
+      },
+      {
+        "type": "heading",
+        "text": "Et la retenue d'IRPF ?"
+      },
+      {
+        "type": "paragraph",
+        "text": "En principe, aucune. L'article 99 de la loi 35/2006 sur l'IRPF et l'article 76 de son règlement (Real Decreto 439/2007) n'imposent la retenue aux non-résidents que s'ils opèrent en Espagne par un établissement stable ou dans des cas précis. Un client étranger sans établissement en Espagne ne retient rien : votre facture n'a pas de ligne d'IRPF. S'il a une succursale ou un bureau en Espagne, cela dépend. Attention : selon l'article 109 du règlement de l'IRPF, un professionnel n'est dispensé du modelo 130 que si au moins 70 % de ses revenus de l'année précédente ont subi une retenue."
+      },
+      {
+        "type": "heading",
+        "text": "Récapitulatif"
+      },
+      {
+        "type": "table",
+        "caption": "IVA des services aux clients de l'UE et du Royaume-Uni (septembre 2026)",
+        "headers": [
+          "Client",
+          "IVA espagnole ?",
+          "Mention sur la facture",
+          "Déclarations"
+        ],
+        "rows": [
+          [
+            "Entreprise de l'UE avec numéro de TVA valable",
+            "Non (art. 69 loi 37/1992)",
+            "« Inversión del sujeto pasivo » et numéro du client",
+            "ROI préalable (036) ; 303, case 59 ; 349, clé S"
+          ],
+          [
+            "Particulier de l'UE (règle générale)",
+            "Oui (art. 69 loi 37/1992)",
+            "IVA espagnole",
+            "303"
+          ],
+          [
+            "Particulier de l'UE, services électroniques",
+            "Oui jusqu'à 10 000 euros (art. 73 loi 37/1992) ; au-delà, TVA de son pays",
+            "Taxe applicable",
+            "303 ; guichet unique (035 et 369) au-delà du seuil"
+          ],
+          [
+            "Entreprise du Royaume-Uni",
+            "Non (art. 69 loi 37/1992)",
+            "Conseillée : « Operación no sujeta al IVA español (art. 69 Ley 37/1992) »",
+            "303, case 120"
+          ],
+          [
+            "Particulier du Royaume-Uni, services de l'art. 69.Dos",
+            "Non, sauf utilisation en Espagne (art. 70.Dos loi 37/1992)",
+            "Conseillée : « Operación no sujeta (art. 69.Dos Ley 37/1992) »",
+            "303, case 120"
+          ],
+          [
+            "Particulier du Royaume-Uni, services électroniques",
+            "Non en Espagne (Agencia Tributaria)",
+            "Cela dépend : TVA britannique (HMRC)",
+            "303, case 120 ; immatriculation au Royaume-Uni"
+          ],
+          [
+            "Particulier du Royaume-Uni, autres services",
+            "Oui (art. 69 loi 37/1992)",
+            "IVA espagnole",
+            "303"
+          ]
+        ],
+        "note": "Sources officielles consultées le 28 septembre 2026 : loi 37/1992 sur l'IVA, Real Decreto 1619/2012, Real Decreto 1624/1992, loi 35/2006 et Real Decreto 439/2007 (IRPF), pages de l'Agencia Tributaria (ROI, VIES, modelos 303 et 349, services électroniques, guichet unique) et guides de HMRC (VAT Notice 741A et services numériques)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ce guide est une information générale sur les règles en vigueur en septembre 2026, pas un conseil fiscal : faites vérifier votre cas par votre gestor ou asesor avant de facturer."
+      },
+      {
+        "type": "conclusion",
+        "text": "Bien facturer un client étranger revient à vérifier trois choses : qui il est, où il se trouve et ce que vous lui fournissez. Et ce client regardera d'abord votre site : mieux vaut qu'il le lise dans sa langue. WebAutonomos crée des sites multilingues, jusqu'à 4 langues sans supplément (espagnol, anglais, français, catalan, valencien, galicien ou basque), et nous rédigeons nous-mêmes chaque version. Comptez 15 € par mois sans frais d'installation ni engagement, ou 349 € en paiement unique, avec les mêmes services : hébergement, SSL, sauvegardes, maintenance et pages légales inclus. Vous recevez une démo en moins de 24 heures et ne payez qu'après l'avoir validée."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Dois-je facturer de l'IVA à une entreprise française ou belge ?",
+        "a": "Non, si elle a un numéro de TVA valable dans VIES et que vous êtes inscrit au ROI. Mention « Inversión del sujeto pasivo », puis modelos 303 et 349."
+      },
+      {
+        "q": "Que mettre sur la facture d'une entreprise britannique ?",
+        "a": "Pas d'IVA espagnole et une mention du type « Operación no sujeta al IVA español (artículo 69 de la Ley 37/1992) ». Ni ROI ni modelo 349."
+      },
+      {
+        "q": "Mon client étranger doit-il pratiquer une retenue d'IRPF ?",
+        "a": "En général, non : sans établissement stable en Espagne, il n'y est pas tenu selon l'article 99 de la loi 35/2006 sur l'IRPF. Vérifiez si vous devez déposer le modelo 130."
+      },
+      {
+        "q": "Quand ai-je besoin du guichet unique ?",
+        "a": "Pour des services à des particuliers taxables dans un autre pays de l'UE, par exemple des services électroniques au-delà du seuil de 10 000 euros de l'article 73 de la loi 37/1992. Il est facultatif."
+      }
+    ]
+  },
+  "es": {
+    "date": "15 Octubre 2026",
+    "title": "Cómo facturar a clientes de la UE y del Reino Unido siendo autónomo en España",
+    "seoTitle": "Facturar a clientes extranjeros: IVA 2026 | WebAutonomos",
+    "metaDescription": "Autónomo en España con clientes en la UE o el Reino Unido: cuándo no hay IVA, qué mención poner en la factura, ROI, VIES, modelo 349 y ventanilla única.",
+    "keywords": [
+      "facturar a clientes extranjeros autónomo",
+      "inversión del sujeto pasivo factura",
+      "operación no sujeta IVA Reino Unido",
+      "modelo 349 prestación de servicios"
+    ],
+    "excerpt": "Empresa o particular, UE o Reino Unido: qué IVA aplicar, qué mención poner en la factura y qué declaraciones presentar, con la norma oficial en cada paso.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Un cliente en Francia, Bélgica o el Reino Unido puede contratarte sin salir de su oficina. Las dudas llegan con la factura: ¿lleva IVA?, ¿qué mención pongo?, ¿hay algún modelo más? Esta guía resume las reglas vigentes en septiembre de 2026 para un autónomo establecido en la península o en Baleares que presta servicios, no bienes, a clientes de la UE o del Reino Unido."
+      },
+      {
+        "type": "heading",
+        "text": "Dos preguntas lo deciden todo"
+      },
+      {
+        "type": "paragraph",
+        "text": "Todo depende de dos datos: si tu cliente es empresa (o profesional que actúa como tal) o particular, y si está en la UE o fuera. Con ellos, el artículo 69 de la Ley 37/1992 del IVA fija dónde se presta el servicio. El artículo 70 añade reglas especiales (inmuebles, transporte, restauración o eventos, entre otras): si te afectan, depende; revísalo con el Localizador de prestación de servicios de la Agencia Tributaria. Y aunque no haya IVA español, la factura es obligatoria (Real Decreto 1619/2012, artículo 2)."
+      },
+      {
+        "type": "heading",
+        "text": "Cliente empresa de otro país de la UE"
+      },
+      {
+        "type": "paragraph",
+        "text": "Según el artículo 69 de la Ley 37/1992, el servicio a una empresa se localiza donde esta está establecida. Si está en otro Estado miembro, no hay IVA español: el cliente lo declara en su país por inversión del sujeto pasivo, como explica la Agencia Tributaria (el mismo mecanismo que el artículo 84 aplica en España cuando el proveedor no está establecido aquí)."
+      },
+      {
+        "type": "paragraph",
+        "text": "El artículo 6 del Real Decreto 1619/2012 exige en la factura la mención «Inversión del sujeto pasivo» y el número de IVA del cliente. Si el cliente es empresario, el artículo 11 del Real Decreto 1619/2012 obliga a expedirla antes del día 16 del mes siguiente al devengo."
+      },
+      {
+        "type": "paragraph",
+        "text": "Antes de la primera factura debes estar en el Registro de Operadores Intracomunitarios (ROI). Según la Agencia Tributaria, el alta se pide con el modelo 036 (casilla 582, con la fecha prevista de la primera operación en la casilla 584); sin respuesta en tres meses, puede entenderse denegada. Comprueba el número del cliente en el VIES (sede de la Agencia Tributaria o portal de la Comisión Europea) y guarda la respuesta, que sirve de prueba si consultas con tu NIF-IVA. Sin número válido, no apliques la inversión sin más: depende."
+      },
+      {
+        "type": "paragraph",
+        "text": "Estas facturas van en la casilla 59 del modelo 303 (instrucciones de 2026 de la Agencia Tributaria) y en el modelo 349 con la clave «S», solo en los periodos con operaciones. Por el artículo 81 del Reglamento del IVA (Real Decreto 1624/1992), el 349 es trimestral mientras ni el trimestre ni los cuatro anteriores superen 50.000 euros de estas operaciones, y se presenta en los 20 primeros días del mes siguiente (el último trimestre, hasta el 30 de enero); si no, es mensual."
+      },
+      {
+        "type": "heading",
+        "text": "Cliente particular de otro país de la UE"
+      },
+      {
+        "type": "paragraph",
+        "text": "Aquí la regla se invierte: el artículo 69 de la Ley 37/1992 localiza en España el servicio a un particular, porque tú estás establecido aquí. Facturas con IVA español, como a un cliente local; el tipo general es del 21 % según el artículo 90 de la Ley 37/1992, salvo tipo reducido o exención."
+      },
+      {
+        "type": "paragraph",
+        "text": "La excepción clave son los servicios prestados por vía electrónica (artículo 69.Tres): según la Agencia Tributaria, servicios automatizados con intervención humana mínima, como el alojamiento de webs, las descargas o la enseñanza a distancia automatizada. No lo son el asesoramiento por correo electrónico ni las clases de un profesor por internet."
+      },
+      {
+        "type": "paragraph",
+        "text": "Para ellos, el artículo 73 de la Ley 37/1992 fija un límite anual de 10.000 euros, sin impuesto, para el total prestado a consumidores de otros países de la UE (con telecomunicaciones, radiodifusión y ventas a distancia de bienes). Si estás establecido solo en España y no lo superaste el año anterior ni lo superas este año, aplicas IVA español (puedes optar por el destino, al menos dos años, según ese artículo 73). Por encima, aplicas el IVA del país del cliente. La ventanilla única (régimen de la Unión) es opcional y evita darte de alta en cada país: formulario 035, modelo 369 trimestral y casilla 123 del modelo 303, según la Agencia Tributaria."
+      },
+      {
+        "type": "heading",
+        "text": "Clientes del Reino Unido después del Brexit"
+      },
+      {
+        "type": "paragraph",
+        "text": "El Reino Unido está fuera de la UE: con sus clientes no hay ROI, VIES ni modelo 349. A una empresa británica, el servicio se localiza donde está establecida (artículo 69 de la Ley 37/1992) y no lleva IVA español. El reglamento de facturación no fija una frase para este caso; conviene indicar «Operación no sujeta al IVA español (artículo 69 de la Ley 37/1992)». Va en la casilla 120 del modelo 303. En el Reino Unido, según la guía VAT Notice 741A de HMRC, el cliente aplica el «reverse charge»; su número se comprueba en el servicio «Check a UK VAT number» de HMRC."
+      },
+      {
+        "type": "paragraph",
+        "text": "A un particular británico se le aplica, en general, IVA español (artículo 69.Uno.2.º). Pero el artículo 69.Dos excluye ciertos servicios cuando el particular está establecido o reside fuera de la UE (salvo en Canarias, Ceuta o Melilla), entre ellos: cesiones de derechos de autor, patentes, licencias, marcas y demás propiedad intelectual o industrial; publicidad; asesoramiento, auditoría, ingeniería, gabinete de estudios, abogacía, consultores, expertos contables o fiscales y similares (salvo los relacionados con inmuebles en España); tratamiento de datos y suministro de informaciones; y traducción, corrección o composición de textos e interpretación (lista completa: letras a) a l)). No llevan IVA español, salvo que el cliente los utilice efectivamente en España (artículo 70.Dos)."
+      },
+      {
+        "type": "paragraph",
+        "text": "¿Y los servicios electrónicos a particulares británicos? La Agencia Tributaria los considera no sujetos en España, salvo uso efectivo aquí, pero HMRC indica que tributan en el Reino Unido y que el proveedor no establecido allí debe registrarse en su IVA, salvo si vende mediante una plataforma que asume el impuesto."
+      },
+      {
+        "type": "heading",
+        "text": "¿Y la retención de IRPF?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Normalmente no hay. El artículo 99 de la Ley 35/2006 del IRPF y el artículo 76 de su Reglamento (Real Decreto 439/2007) solo obligan a retener a los no residentes que operan en España mediante establecimiento permanente o en supuestos concretos. Un cliente extranjero sin establecimiento aquí no retiene: tu factura va sin IRPF. Si tiene sucursal u oficina en España, depende. Ojo: según el artículo 109 del Reglamento del IRPF, un profesional solo se libra del modelo 130 si al menos el 70 % de sus ingresos del año anterior tuvo retención."
+      },
+      {
+        "type": "heading",
+        "text": "Resumen"
+      },
+      {
+        "type": "table",
+        "caption": "IVA de servicios a clientes de la UE y del Reino Unido (septiembre de 2026)",
+        "headers": [
+          "Tipo de cliente",
+          "¿IVA español?",
+          "Mención en la factura",
+          "Declaraciones"
+        ],
+        "rows": [
+          [
+            "Empresa de la UE con NIF-IVA válido",
+            "No (art. 69 Ley 37/1992)",
+            "«Inversión del sujeto pasivo» y NIF-IVA del cliente",
+            "ROI previo (036); 303, casilla 59; 349, clave S"
+          ],
+          [
+            "Particular de la UE (regla general)",
+            "Sí (art. 69 Ley 37/1992)",
+            "IVA español",
+            "303"
+          ],
+          [
+            "Particular de la UE, servicios electrónicos",
+            "Sí hasta 10.000 euros (art. 73 Ley 37/1992); después, IVA de su país",
+            "IVA aplicable",
+            "303; ventanilla única (035 y 369) por encima del límite"
+          ],
+          [
+            "Empresa del Reino Unido",
+            "No (art. 69 Ley 37/1992)",
+            "Recomendada: «Operación no sujeta al IVA español (art. 69 Ley 37/1992)»",
+            "303, casilla 120"
+          ],
+          [
+            "Particular del Reino Unido, servicios del art. 69.Dos",
+            "No, salvo uso efectivo en España (art. 70.Dos Ley 37/1992)",
+            "Recomendada: «Operación no sujeta (art. 69.Dos Ley 37/1992)»",
+            "303, casilla 120"
+          ],
+          [
+            "Particular del Reino Unido, servicios electrónicos",
+            "No en España (Agencia Tributaria)",
+            "Depende: IVA británico (HMRC)",
+            "303, casilla 120; registro en el Reino Unido"
+          ],
+          [
+            "Particular del Reino Unido, otros servicios",
+            "Sí (art. 69 Ley 37/1992)",
+            "IVA español",
+            "303"
+          ]
+        ],
+        "note": "Fuentes oficiales consultadas el 28 de septiembre de 2026: Ley 37/1992 del IVA, Real Decreto 1619/2012, Real Decreto 1624/1992, Ley 35/2006 y Real Decreto 439/2007 (IRPF), páginas de la Agencia Tributaria (ROI, VIES, modelos 303 y 349, servicios electrónicos, ventanilla única) y guías de HMRC (VAT Notice 741A y servicios digitales)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Esta guía es información general sobre la normativa vigente en septiembre de 2026, no asesoramiento fiscal: revisa tu caso con tu gestor o asesor antes de facturar."
+      },
+      {
+        "type": "conclusion",
+        "text": "Facturar bien a un cliente extranjero se reduce a tres comprobaciones: quién es, dónde está y qué le prestas. Y antes de contratarte, ese cliente mirará tu web: mejor que la lea en su idioma. En WebAutonomos creamos webs en hasta 4 idiomas sin coste adicional (castellano, inglés, francés, catalán, valenciano, gallego o euskera), y cada versión la redactamos nosotros. Cuesta 15 € al mes, sin gastos de alta ni permanencia, o 349 € en un único pago, con los mismos servicios: alojamiento, SSL, copias de seguridad, mantenimiento y textos legales incluidos. Te enseñamos una demo en menos de 24 horas y solo pagas cuando la apruebas."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Pongo IVA en la factura a una empresa francesa o belga?",
+        "a": "No, si tiene un NIF-IVA válido en el VIES y tú estás en el ROI. Pones «Inversión del sujeto pasivo» y su número de IVA, y la declaras en los modelos 303 y 349."
+      },
+      {
+        "q": "¿Qué pongo en la factura a una empresa del Reino Unido?",
+        "a": "Sin IVA español, con una referencia como «Operación no sujeta al IVA español (artículo 69 de la Ley 37/1992)». No necesitas ROI ni modelo 349."
+      },
+      {
+        "q": "¿Tengo que aplicar retención de IRPF a un cliente extranjero?",
+        "a": "En general, no: un cliente sin establecimiento permanente en España no está obligado a retener según el artículo 99 de la Ley 35/2006 del IRPF. Revisa si debes presentar el modelo 130."
+      },
+      {
+        "q": "¿Cuándo necesito la ventanilla única?",
+        "a": "Solo para servicios a particulares que tributan en otro país de la UE, por ejemplo servicios electrónicos por encima del límite de 10.000 euros del artículo 73 de la Ley 37/1992. Es un régimen opcional."
+      }
+    ]
+  },
+  "val": {
+    "slug": "facturar-clients-altres-paisos",
+    "date": "15 Octubre 2026",
+    "title": "Com facturar a clients de la UE i del Regne Unit si eres autònom a Espanya",
+    "seoTitle": "Facturar a clients estrangers: IVA 2026 | WebAutonomos",
+    "metaDescription": "Autònom a Espanya amb clients a la UE o al Regne Unit: quan no hi ha IVA, quina menció posar en la factura, ROI, VIES, model 349 i finestreta única.",
+    "keywords": [
+      "facturar a clients estrangers autònom",
+      "inversió del subjecte passiu factura",
+      "operació no subjecta IVA Regne Unit",
+      "model 349 prestació de servicis"
+    ],
+    "excerpt": "Empresa o particular, UE o Regne Unit: quin IVA aplicar, quina menció posar en la factura i quines declaracions presentar, amb la norma oficial en cada pas.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Un client de França, de Bèlgica o del Regne Unit et pot contractar sense eixir de la seua oficina. Els dubtes arriben amb la factura: porta IVA?, quina menció pose?, cal presentar algun model més? Esta guia resumix les regles vigents al setembre de 2026 per a un autònom establit a la península o a les Balears que presta servicis, no béns, a clients de la UE o del Regne Unit."
+      },
+      {
+        "type": "heading",
+        "text": "Dos preguntes ho decidixen tot"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tot depén de dos dades: si el teu client és una empresa (o un professional que actua com a tal) o un particular, i si està a la UE o fora. Amb elles, l'article 69 de la Llei 37/1992 de l'IVA fixa on es presta el servici. L'article 70 afig regles especials (immobles, transport, restauració o esdeveniments, entre altres): si t'afecten, depén; revisa-ho amb el Localizador de prestación de servicios de l'Agència Tributària. I encara que no hi haja IVA espanyol, la factura és obligatòria (Reial decret 1619/2012, article 2)."
+      },
+      {
+        "type": "heading",
+        "text": "Client empresa d'un altre país de la UE"
+      },
+      {
+        "type": "paragraph",
+        "text": "Segons l'article 69 de la Llei 37/1992, el servici a una empresa es localitza on esta està establida. Si està en un altre estat membre, no hi ha IVA espanyol: el client el declara en el seu país per inversió del subjecte passiu, com explica l'Agència Tributària (el mateix mecanisme que l'article 84 aplica a Espanya quan el proveïdor no està establit ací)."
+      },
+      {
+        "type": "paragraph",
+        "text": "L'article 6 del Reial decret 1619/2012 exigix en la factura la menció «Inversión del sujeto pasivo» i el número d'IVA del client, i permet afegir-hi altres mencions, com la versió en valencià. Si el client és empresari, l'article 11 del Reial decret 1619/2012 obliga a expedir-la abans del dia 16 del mes següent a la meritació."
+      },
+      {
+        "type": "paragraph",
+        "text": "Abans de la primera factura has d'estar en el Registre d'Operadors Intracomunitaris (ROI). Segons l'Agència Tributària, l'alta es demana amb el model 036 (casella 582, amb la data prevista de la primera operació en la casella 584); sense resposta en tres mesos, es pot entendre denegada. Comprova el número del client en el VIES (seu de l'Agència Tributària o portal de la Comissió Europea) i guarda la resposta, que servix de prova si consultes amb el teu NIF-IVA. Sense número vàlid, no apliques la inversió sense més: depén."
+      },
+      {
+        "type": "paragraph",
+        "text": "Estes factures van en la casella 59 del model 303 (instruccions de 2026 de l'Agència Tributària) i en el model 349 amb la clau «S», només en els períodes amb operacions. Per l'article 81 del Reglament de l'IVA (Reial decret 1624/1992), el 349 és trimestral mentres ni el trimestre ni els quatre anteriors superen 50.000 euros d'estes operacions, i es presenta en els 20 primers dies del mes següent (l'últim trimestre, fins al 30 de gener); si no, és mensual."
+      },
+      {
+        "type": "heading",
+        "text": "Client particular d'un altre país de la UE"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ací la regla s'invertix: l'article 69 de la Llei 37/1992 localitza a Espanya el servici a un particular, perquè tu estàs establit ací. Factures amb IVA espanyol, com a un client local; el tipus general és del 21 % segons l'article 90 de la Llei 37/1992, llevat de tipus reduït o exempció."
+      },
+      {
+        "type": "paragraph",
+        "text": "L'excepció clau són els servicis prestats per via electrònica (article 69.Tres): segons l'Agència Tributària, servicis automatitzats amb una intervenció humana mínima, com l'allotjament de webs, les descàrregues o l'ensenyament a distància automatitzat. No ho són l'assessorament per correu electrònic ni les classes d'un professor per internet."
+      },
+      {
+        "type": "paragraph",
+        "text": "Per a estos servicis, l'article 73 de la Llei 37/1992 fixa un límit anual de 10.000 euros, sense impost, per al total prestat a consumidors d'altres països de la UE (amb telecomunicacions, radiodifusió i vendes a distància de béns). Si estàs establit només a Espanya i no el vas superar l'any anterior ni el superes enguany, apliques IVA espanyol (pots optar per la destinació, almenys dos anys, segons eixe article 73). Per damunt, apliques l'IVA del país del client. La finestreta única (règim de la Unió) és opcional i evita donar-te d'alta en cada país: formulari 035, model 369 trimestral i casella 123 del model 303, segons l'Agència Tributària."
+      },
+      {
+        "type": "heading",
+        "text": "Clients del Regne Unit després del Brexit"
+      },
+      {
+        "type": "paragraph",
+        "text": "El Regne Unit està fora de la UE: amb els seus clients no hi ha ROI, VIES ni model 349. A una empresa britànica, el servici es localitza on està establida (article 69 de la Llei 37/1992) i no porta IVA espanyol. El reglament de facturació no fixa una frase per a este cas; convé indicar «Operación no sujeta al IVA español (artículo 69 de la Ley 37/1992)» o l'equivalent en valencià. Va en la casella 120 del model 303. Al Regne Unit, segons la guia VAT Notice 741A d'HMRC, el client aplica el «reverse charge»; el seu número es comprova en el servici «Check a UK VAT number» d'HMRC."
+      },
+      {
+        "type": "paragraph",
+        "text": "A un particular britànic se li aplica, en general, IVA espanyol (article 69.Uno.2.º). Però l'article 69.Dos exclou certs servicis quan el particular està establit o residix fora de la UE (excepte a les Canàries, Ceuta o Melilla), entre ells: cessions de drets d'autor, patents, llicències, marques i altres drets de propietat intel·lectual o industrial; publicitat; assessorament, auditoria, enginyeria, gabinet d'estudis, advocacia, consultors, experts comptables o fiscals i semblants (excepte els relacionats amb immobles a Espanya); tractament de dades i subministrament d'informacions; i traducció, correcció o composició de textos i interpretació (llista completa: lletres a) a l)). No porten IVA espanyol, llevat que el client els utilitze efectivament a Espanya (article 70.Dos)."
+      },
+      {
+        "type": "paragraph",
+        "text": "I els servicis electrònics a particulars britànics? L'Agència Tributària els considera no subjectes a Espanya, llevat d'ús efectiu ací, però HMRC indica que tributen al Regne Unit i que el proveïdor no establit allà s'ha de registrar en el seu IVA, excepte si ven per mitjà d'una plataforma que assumix l'impost."
+      },
+      {
+        "type": "heading",
+        "text": "I la retenció d'IRPF?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Normalment no n'hi ha. L'article 99 de la Llei 35/2006 de l'IRPF i l'article 76 del seu Reglament (Reial decret 439/2007) només obliguen a retindre els no residents que operen a Espanya per mitjà d'un establiment permanent o en supòsits concrets. Un client estranger sense establiment ací no practica retenció: la teua factura va sense IRPF. Si té sucursal o oficina a Espanya, depén. Compte: segons l'article 109 del Reglament de l'IRPF, un professional només s'estalvia el model 130 si almenys el 70 % dels ingressos de l'any anterior va tindre retenció."
+      },
+      {
+        "type": "heading",
+        "text": "Resum"
+      },
+      {
+        "type": "table",
+        "caption": "IVA dels servicis a clients de la UE i del Regne Unit (setembre de 2026)",
+        "headers": [
+          "Tipus de client",
+          "IVA espanyol?",
+          "Menció en la factura",
+          "Declaracions"
+        ],
+        "rows": [
+          [
+            "Empresa de la UE amb NIF-IVA vàlid",
+            "No (art. 69 Llei 37/1992)",
+            "«Inversión del sujeto pasivo» i NIF-IVA del client",
+            "ROI previ (036); 303, casella 59; 349, clau S"
+          ],
+          [
+            "Particular de la UE (regla general)",
+            "Sí (art. 69 Llei 37/1992)",
+            "IVA espanyol",
+            "303"
+          ],
+          [
+            "Particular de la UE, servicis electrònics",
+            "Sí fins a 10.000 euros (art. 73 Llei 37/1992); després, IVA del seu país",
+            "IVA aplicable",
+            "303; finestreta única (035 i 369) per damunt del límit"
+          ],
+          [
+            "Empresa del Regne Unit",
+            "No (art. 69 Llei 37/1992)",
+            "Recomanada: «Operación no sujeta al IVA español (art. 69 Ley 37/1992)»",
+            "303, casella 120"
+          ],
+          [
+            "Particular del Regne Unit, servicis de l'art. 69.Dos",
+            "No, llevat d'ús efectiu a Espanya (art. 70.Dos Llei 37/1992)",
+            "Recomanada: «Operación no sujeta (art. 69.Dos Ley 37/1992)»",
+            "303, casella 120"
+          ],
+          [
+            "Particular del Regne Unit, servicis electrònics",
+            "No a Espanya (Agència Tributària)",
+            "Depén: IVA britànic (HMRC)",
+            "303, casella 120; registre al Regne Unit"
+          ],
+          [
+            "Particular del Regne Unit, altres servicis",
+            "Sí (art. 69 Llei 37/1992)",
+            "IVA espanyol",
+            "303"
+          ]
+        ],
+        "note": "Fonts oficials consultades el 28 de setembre de 2026: Llei 37/1992 de l'IVA, Reial decret 1619/2012, Reial decret 1624/1992, Llei 35/2006 i Reial decret 439/2007 (IRPF), pàgines de l'Agència Tributària (ROI, VIES, models 303 i 349, servicis electrònics, finestreta única) i guies d'HMRC (VAT Notice 741A i servicis digitals)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Esta guia és informació general sobre la normativa vigent al setembre de 2026, no assessorament fiscal: revisa el teu cas amb el teu gestor o assessor abans de facturar."
+      },
+      {
+        "type": "conclusion",
+        "text": "Facturar bé a un client estranger es reduïx a tres comprovacions: qui és, on està i què li prestes. I abans de contractar-te, eixe client mirarà la teua web: millor que la puga llegir en la seua llengua. A WebAutonomos creem webs en fins a 4 idiomes sense cost addicional (castellà, anglés, francés, català, valencià, gallec o basc), i cada versió la redactem nosaltres. Costa 15 € al mes, sense despeses d'alta ni permanència, o 349 € en un sol pagament, amb els mateixos servicis: allotjament, SSL, còpies de seguretat, manteniment i textos legals inclosos. Et mostrem una demo en menys de 24 hores i només pagues quan l'aproves."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Pose IVA en la factura a una empresa francesa o belga?",
+        "a": "No, si té un NIF-IVA vàlid en el VIES i tu estàs en el ROI. Poses «Inversión del sujeto pasivo» i el seu número d'IVA, i la declares en els models 303 i 349."
+      },
+      {
+        "q": "Què pose en la factura a una empresa del Regne Unit?",
+        "a": "Sense IVA espanyol, amb una referència com «Operación no sujeta al IVA español (artículo 69 de la Ley 37/1992)». No necessites ROI ni model 349."
+      },
+      {
+        "q": "He d'aplicar retenció d'IRPF a un client estranger?",
+        "a": "En general, no: un client sense establiment permanent a Espanya no està obligat a retindre segons l'article 99 de la Llei 35/2006 de l'IRPF. Revisa si has de presentar el model 130."
+      },
+      {
+        "q": "Quan necessite la finestreta única?",
+        "a": "Només per a servicis a particulars que tributen en un altre país de la UE, per exemple servicis electrònics per damunt del límit de 10.000 euros de l'article 73 de la Llei 37/1992. És un règim opcional."
+      }
+    ]
+  },
+  "en": {
+    "slug": "invoicing-clients-in-other-eu-countries-and-the-uk",
+    "date": "Oct 15, 2026",
+    "title": "Invoicing clients in other EU countries and the UK as an autónomo in Spain",
+    "seoTitle": "Invoicing EU and UK clients from Spain: VAT | WebAutonomos",
+    "metaDescription": "Self-employed in Spain with UK or EU clients? When Spanish VAT applies, what the invoice must say, ROI, VIES, Modelo 349 and the One-Stop Shop.",
+    "keywords": [
+      "invoicing EU and UK clients from Spain",
+      "Spanish VAT for UK clients",
+      "reverse charge invoice Spain autónomo",
+      "Modelo 349 services"
+    ],
+    "excerpt": "Business or consumer, EU or UK: which VAT applies, what the invoice must say and which returns to file, with the official rule behind each step.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "A client in London, Paris or Brussels can hire you without leaving their desk. The questions start with the invoice: Spanish VAT (IVA) or not? What must it say? Any extra return? This guide sums up the rules in force in September 2026 for an autónomo established in mainland Spain or the Balearic Islands who supplies services, not goods, to clients in the EU or the UK."
+      },
+      {
+        "type": "heading",
+        "text": "Two questions decide everything"
+      },
+      {
+        "type": "paragraph",
+        "text": "Is your client a business (or a professional acting as such) or a private individual? Are they in the EU or outside it, like the UK? From those answers, Article 69 of Spain's VAT Act (Ley 37/1992) sets the place of supply. Article 70 adds special rules (property, transport, restaurant services or events, among others): if one applies, it depends, so check the Agencia Tributaria's service locator (Localizador de prestación de servicios). And even without Spanish VAT, an invoice is compulsory (Real Decreto 1619/2012, Article 2)."
+      },
+      {
+        "type": "heading",
+        "text": "Business clients in another EU country"
+      },
+      {
+        "type": "paragraph",
+        "text": "Under Article 69 of Ley 37/1992, a service supplied to a business is taxed where that business is established. For a client in Ireland, France or any other member state, there is no Spanish VAT: the client accounts for the VAT in their own country through the reverse charge, as the Spanish Tax Agency (Agencia Tributaria) explains. It mirrors Article 84 of the Act, applied in Spain when the supplier is not established here."
+      },
+      {
+        "type": "paragraph",
+        "text": "Article 6 of Real Decreto 1619/2012 requires the wording ‘Inversión del sujeto pasivo’ and the client's VAT number, and allows extra wording such as ‘Reverse charge’. Under Article 11 of Real Decreto 1619/2012, a business client must be invoiced before the 16th of the month after the VAT became chargeable."
+      },
+      {
+        "type": "paragraph",
+        "text": "Before the first invoice, you must be on the Register of Intra-Community Operators (Registro de Operadores Intracomunitarios, ROI). According to the Agencia Tributaria, you apply on Modelo 036 (box 582, with the expected date of your first transaction in box 584); with no decision within three months, the application may be treated as refused. Check your client's number in VIES, on the Agencia Tributaria website or the European Commission's VIES portal, and keep the reply, which proves the check if you use your own EU VAT number. No valid number? Do not apply the reverse charge by default: it depends."
+      },
+      {
+        "type": "paragraph",
+        "text": "These invoices go in box 59 of your Modelo 303 VAT return (Agencia Tributaria's 2026 instructions) and in Modelo 349 under key ‘S’, only for periods with such supplies. Under Article 81 of the VAT Regulation (Real Decreto 1624/1992), Modelo 349 is quarterly as long as neither the quarter nor any of the previous four exceeds €50,000 of these supplies, due within the first 20 days of the following month (last quarter: by 30 January); otherwise it is monthly."
+      },
+      {
+        "type": "heading",
+        "text": "Private clients in another EU country"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here the rule flips: Article 69 of Ley 37/1992 places a service to a private individual in Spain, where you are established. You charge Spanish VAT as for a local client; the standard rate is 21% under Article 90 of Ley 37/1992, unless a reduced rate or exemption applies."
+      },
+      {
+        "type": "paragraph",
+        "text": "The key exception is electronically supplied services (Article 69.Tres): according to the Agencia Tributaria, essentially automated services with minimal human intervention, such as website hosting, downloads or automated distance learning. Advice by email and lessons given by a teacher over the internet are not."
+      },
+      {
+        "type": "paragraph",
+        "text": "For these services, Article 73 of Ley 37/1992 sets a €10,000 annual limit, excluding VAT, on the total supplied to consumers in other EU countries (together with telecoms, broadcasting and distance sales of goods). If you are established only in Spain and stayed below it last year and so far this year, you charge Spanish VAT (you may opt for destination taxation, for at least two years under that Article 73). Above it, the client's country's VAT applies. The One-Stop Shop (ventanilla única, Union scheme) is optional and spares you registering in each country: Form 035, a quarterly Modelo 369 and box 123 of Modelo 303, says the Agencia Tributaria."
+      },
+      {
+        "type": "heading",
+        "text": "UK clients after Brexit"
+      },
+      {
+        "type": "paragraph",
+        "text": "The UK is outside the EU: no ROI, VIES or Modelo 349 for UK clients. For a UK business, the service is taxed where it is established (Article 69 of Ley 37/1992), so there is no Spanish VAT. The invoicing regulation sets no compulsory wording here, but it is sensible to state ‘Operación no sujeta al IVA español (artículo 69 de la Ley 37/1992)’. It goes in box 120 of Modelo 303. On the UK side, HMRC's VAT Notice 741A says the UK business accounts for the VAT under the reverse charge; check its number with HMRC's ‘Check a UK VAT number’ service. You may invoice in English and in pounds (Article 12 of Real Decreto 1619/2012), but any Spanish VAT charged must be shown in euros."
+      },
+      {
+        "type": "paragraph",
+        "text": "For a UK private client, Spanish VAT is the general rule (Article 69.Uno.2.º). However, Article 69.Dos takes certain services out of Spanish VAT when the individual is established or lives outside the EU (other than in the Canary Islands, Ceuta or Melilla), including: transfers of copyright, patents, licences, trade marks and other intellectual or industrial property rights; advertising; advisory, audit, engineering, research, legal, consultancy, accounting or tax services and similar (except those connected with property in Spain); data processing and the supply of information; and translation, proofreading or composition of texts and interpreting (full list: letters a) to l)). They carry no Spanish VAT unless the client actually uses them in Spain (Article 70.Dos)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Electronically supplied services to UK consumers are outside the scope of Spanish VAT according to the Agencia Tributaria (unless effectively used in Spain), but HMRC says they are liable to UK VAT and a supplier based outside the UK must register there, unless it sells through a platform that accounts for the VAT."
+      },
+      {
+        "type": "heading",
+        "text": "What about IRPF withholding?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Usually none. Article 99 of the IRPF Act (Ley 35/2006) and Article 76 of its Regulation (Real Decreto 439/2007) only make non-residents withhold if they operate in Spain through a permanent establishment or in specific cases. A foreign client with no establishment in Spain does not withhold: no IRPF line on your invoice. If they have a branch or office in Spain, it depends. Note that under Article 109 of the IRPF Regulation, a professional is only exempt from Modelo 130 payments on account if at least 70% of the previous year's income was subject to withholding."
+      },
+      {
+        "type": "heading",
+        "text": "Summary"
+      },
+      {
+        "type": "table",
+        "caption": "VAT on services invoiced from Spain to EU and UK clients (September 2026)",
+        "headers": [
+          "Client",
+          "Spanish VAT?",
+          "Invoice wording",
+          "Returns"
+        ],
+        "rows": [
+          [
+            "EU business with a valid VAT number",
+            "No (Art. 69 Ley 37/1992)",
+            "‘Inversión del sujeto pasivo’ and client's VAT number",
+            "ROI first (036); 303, box 59; 349, key S"
+          ],
+          [
+            "EU consumer (general rule)",
+            "Yes (Art. 69 Ley 37/1992)",
+            "Spanish VAT",
+            "303"
+          ],
+          [
+            "EU consumer, electronically supplied services",
+            "Yes up to €10,000 (Art. 73 Ley 37/1992); above it, their country's VAT",
+            "Applicable VAT",
+            "303; One-Stop Shop (035 and 369) above the limit"
+          ],
+          [
+            "UK business",
+            "No (Art. 69 Ley 37/1992)",
+            "Recommended: ‘Operación no sujeta al IVA español (art. 69 Ley 37/1992)’",
+            "303, box 120"
+          ],
+          [
+            "UK consumer, Article 69.Dos services",
+            "No, unless used in Spain (Art. 70.Dos Ley 37/1992)",
+            "Recommended: ‘Operación no sujeta (art. 69.Dos Ley 37/1992)’",
+            "303, box 120"
+          ],
+          [
+            "UK consumer, electronically supplied services",
+            "Not in Spain (Agencia Tributaria)",
+            "It depends: UK VAT (HMRC)",
+            "303, box 120; UK VAT registration"
+          ],
+          [
+            "UK consumer, other services",
+            "Yes (Art. 69 Ley 37/1992)",
+            "Spanish VAT",
+            "303"
+          ]
+        ],
+        "note": "Official sources checked on 28 September 2026: Ley 37/1992 (VAT Act), Real Decreto 1619/2012, Real Decreto 1624/1992, Ley 35/2006 and Real Decreto 439/2007 (IRPF), Agencia Tributaria pages (ROI, VIES, Modelos 303 and 349, electronic services, One-Stop Shop) and HMRC guidance (VAT Notice 741A and digital services to consumers)."
+      },
+      {
+        "type": "paragraph",
+        "text": "This guide is general information on the rules in force in September 2026, not tax advice: check your own case with a gestor or tax adviser (asesor) before you invoice."
+      },
+      {
+        "type": "conclusion",
+        "text": "Invoicing a foreign client correctly comes down to three checks: who they are, where they are and what you supply. And that client will check your website first, so it helps if it speaks their language. WebAutonomos builds websites in up to 4 languages at no extra cost (Spanish, English, French, Catalan, Valencian, Galician or Basque), and we write every version ourselves. It costs €15 a month with no setup fee and no lock-in, or €349 as a one-off payment, with the same services: hosting, SSL, backups, maintenance and legal pages included. You get a demo in under 24 hours and only pay once you approve it."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I charge Spanish VAT to a business client in Ireland or France?",
+        "a": "No, if they have a valid VAT number in VIES and you are on the ROI. Write ‘Inversión del sujeto pasivo’ and their VAT number, then report it in Modelos 303 and 349."
+      },
+      {
+        "q": "What should my invoice to a UK business say?",
+        "a": "No Spanish VAT, plus a reference such as ‘Operación no sujeta al IVA español (artículo 69 de la Ley 37/1992)’. You need neither the ROI nor Modelo 349."
+      },
+      {
+        "q": "Will a foreign client withhold IRPF from my invoice?",
+        "a": "Generally not: a client with no permanent establishment in Spain is not required to withhold under Article 99 of Ley 35/2006. Check whether you need to file Modelo 130."
+      },
+      {
+        "q": "When do I need the One-Stop Shop?",
+        "a": "Only for services to consumers that are taxed in another EU country, for example electronically supplied services above the €10,000 limit in Article 73 of Ley 37/1992. It is optional."
+      }
+    ]
+  }
+}
