@@ -1617,9 +1617,29 @@
      "url": "https://webautonomos.es/blog/fr/seo-local-independants-guide-complet"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Vue en légère plongée d'une place de quartier méditerranéenne avec terrasses, arbres et passants, un matin ensoleillé.",
-   "fichier": "seo-local-barrio-comercios"
+   "fichier": "seo-local-barrio-comercios",
+   "v": 1,
+   "fait_le": "2026-09-29T18:45:38",
+   "textes": {
+    "es": {
+     "alt": "Vista elevada de una plaza mediterránea soleada con terrazas de cafeterías, árboles y peatones paseando.",
+     "legende": "Una plaza mediterránea reúne comercios, terrazas y vida de barrio."
+    },
+    "val": {
+     "alt": "Vista elevada d'una plaça mediterrània assolellada amb terrasses, arbres i vianants passejant.",
+     "legende": "Una plaça mediterrània reuneix comerços, terrasses i vida de barri."
+    },
+    "en": {
+     "alt": "Elevated view of a sunny Mediterranean square with café terraces, trees and people walking.",
+     "legende": "A Mediterranean square brings together shops, café terraces and neighborhood life."
+    },
+    "fr": {
+     "alt": "Vue en légère plongée d'une place méditerranéenne ensoleillée, avec terrasses, arbres et passants.",
+     "legende": "Une place méditerranéenne réunit commerces, terrasses et vie de quartier."
+    }
+   }
   },
   {
    "id": "art-04",

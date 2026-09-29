@@ -730,6 +730,42 @@
    "v": 1,
    "alt": "Un livreur à vélo s'arrête à un carrefour ensoleillé et regarde autour de lui, avec son téléphone fixé au guidon.",
    "legende": "Un livreur consulte son téléphone pour s'orienter pendant son trajet."
+  },
+  "blog/es/seo-local-que-es-autonomos.html": {
+   "sujet": "art-03",
+   "fichier": "seo-local-barrio-comercios",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Vista elevada de una plaza mediterránea soleada con terrazas de cafeterías, árboles y peatones paseando.",
+   "legende": "Una plaza mediterránea reúne comercios, terrazas y vida de barrio."
+  },
+  "blog/val/seo-local-guia-completa-per-a-autonoms.html": {
+   "sujet": "art-03",
+   "fichier": "seo-local-barrio-comercios",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Vista elevada d'una plaça mediterrània assolellada amb terrasses, arbres i vianants passejant.",
+   "legende": "Una plaça mediterrània reuneix comerços, terrasses i vida de barri."
+  },
+  "blog/en/local-seo-for-freelancers-complete-guide.html": {
+   "sujet": "art-03",
+   "fichier": "seo-local-barrio-comercios",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Elevated view of a sunny Mediterranean square with café terraces, trees and people walking.",
+   "legende": "A Mediterranean square brings together shops, café terraces and neighborhood life."
+  },
+  "blog/fr/seo-local-independants-guide-complet.html": {
+   "sujet": "art-03",
+   "fichier": "seo-local-barrio-comercios",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Vue en légère plongée d'une place méditerranéenne ensoleillée, avec terrasses, arbres et passants.",
+   "legende": "Une place méditerranéenne réunit commerces, terrasses et vie de quartier."
   }
  }
 }
