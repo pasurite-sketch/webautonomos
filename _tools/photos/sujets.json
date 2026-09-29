@@ -1204,9 +1204,29 @@
      "url": "https://webautonomos.es/en/faq"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un électricien et une conseillère discutent autour d'une table haute dans un café ; elle répond à ses questions avec les mains, deux tasses de café entre eux.",
-   "fichier": "preguntas-frecuentes-conversacion-cafe"
+   "fichier": "preguntas-frecuentes-conversacion-cafe",
+   "v": 1,
+   "fait_le": "2026-09-29T16:01:00",
+   "textes": {
+    "es": {
+     "alt": "Un electricista y una asesora conversan en una mesa alta de un café, con dos tazas entre ambos.",
+     "legende": "Una conversación informal para resolver dudas y compartir información."
+    },
+    "val": {
+     "alt": "Un electricista i una assessora conversen en una taula alta d'un café, amb dues tasses entre ells.",
+     "legende": "Una conversa informal per a resoldre dubtes i compartir informació."
+    },
+    "en": {
+     "alt": "An electrician and a consultant talk at a high café table, with two cups between them.",
+     "legende": "An informal conversation to answer questions and share information."
+    },
+    "fr": {
+     "alt": "Un électricien et une conseillère discutent à une table haute de café, avec deux tasses entre eux.",
+     "legende": "Un échange informel pour répondre aux questions et partager des informations."
+    }
+   }
   },
   {
    "id": "page-contact",
