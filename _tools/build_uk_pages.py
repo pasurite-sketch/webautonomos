@@ -901,8 +901,8 @@ PLUMB_UK = dict(
     extra=[
         ('website-content', 'Content', 'What a plumber website design should show',
          '<p class="legal-intro">A good plumber website design answers a worried visitor quickly: can you fix '
-         'their problem, do you cover their area, are you registered for gas work, and how do they reach you now? '
-         'Websites for plumbers work best when those answers sit near the top.</p>'
+         'their problem, do you cover their area, are you Gas Safe registered, and how do they reach you now? '
+         'Websites for plumbers perform best when those answers sit near the top.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🚨</div>'
          '<h3>Emergency call-outs first</h3>'
@@ -911,7 +911,7 @@ PLUMB_UK = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔥</div>'
          '<h3>Your Gas Safe details</h3>'
          '<p>Your registration number, shown with your registered trading name, so a customer can check it on the '
-         'public register before booking gas work.</p></div>'
+         'public register before they hire you.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗂️</div>'
          '<h3>One section per service</h3>'
          '<p>Boiler installation and servicing, bathrooms, heat pumps and landlord gas safety checks each get '
@@ -919,10 +919,95 @@ PLUMB_UK = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏠</div>'
          '<h3>Landlords as regular customers</h3>'
          '<p>Landlords must have gas appliances and flues checked at least every 12 months (Gas Safety '
-         'Regulations, reg. 36): a page for them brings in recurring work.</p></div>'
+         'Regulations, reg. 36): a page for them brings in repeat business.</p></div>'
          '</div>'
          '<p class="where">Working as a gas engineer? The same gas engineer website design applies: registration '
          'first, then services.</p>'),
+        ('good-design', 'Design', 'What good web design looks like for a plumbing business',
+         '<p class="legal-intro">Good web design for a plumbing business isn\'t only about how the page looks: '
+         'it is about whether a visitor finds what they need fast enough to call, especially with a leak or a '
+         'boiler that won\'t start.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎨</div>'
+         '<h3>A clear, mobile-first layout</h3>'
+         '<p>Someone searching in a hurry won\'t wait for a slow page or zoom in to read it, so a professional '
+         'layout keeps things simple, the copy short and the page fast to load, just as readable on a small screen '
+         'as on a desktop.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧭</div>'
+         '<h3>An easy path to a call or a quote</h3>'
+         '<p>Every page leads somewhere: a clear call button, WhatsApp link or contact form, so someone who wants '
+         'to book doesn\'t have to search for how.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div>'
+         '<h3>Layout that earns trust</h3>'
+         '<p>Genuine feedback shown without hiding anything negative (see the rules above), your Gas Safe '
+         'registration and straightforward pricing do more for trust than decoration.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏷️</div>'
+         '<h3>Branding that matches the rest of your business</h3>'
+         '<p>Your logo, colours and photos of your own jobs, carried through consistently, so your site matches '
+         'your van, your invoices and your social media.</p></div>'
+         '</div>'),
+        ('website-mistakes', 'What to avoid', 'Common mistakes on plumbing websites',
+         '<p class="legal-intro">Some gaps show up again and again on plumbing websites, and each one can send a '
+         'visitor off to call someone else.</p>'
+         '<div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul>'
+         '<li>A layout that is hard to read on mobile, so a visitor searching from their phone with a leak gives '
+         'up before they find how to contact you</li>'
+         '<li>No visible Gas Safe registration, so a visitor cannot check you on the public register before '
+         'agreeing to gas work</li>'
+         '<li>Stock photography and generic copy that could describe any plumbing business, not yours</li>'
+         '<li>A call button or way to get a quote that is buried below several screens of content</li>'
+         '<li>A slow site that takes too long to load, especially on a mobile connection</li>'
+         '</ul></div>'
+         '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>What to do instead</h3>'
+         '<p>A simple, professional, mobile-friendly layout, photos of your own jobs and the Gas Safe registration '
+         'a visitor can check. Together, they help someone who is just browsing trust what they see and get in '
+         'touch.</p></div>'),
+        ('vs-general-website', 'Compare', 'Built around your business, not a generic template',
+         '<p class="legal-intro">A general website builder gives you a template to adapt, even one aimed at '
+         'your industry, but your Gas Safe registration and your own services are still yours to add. Here is '
+         'what changes when the design starts from your registration and services, not a generic template.</p>'
+         '<div class="cmp-g">'
+         '<div class="cmp-c them"><h3>A general website builder</h3><ul>'
+         '<li>A generic template you adapt yourself, with no reference to your Gas Safe registration or the jobs '
+         'you take on</li>'
+         '<li>You write and structure the content yourself, including your services, the areas you cover and how '
+         'to contact you</li>'
+         '<li>Search engine optimisation (SEO) settings, such as page titles and descriptions, left for you to '
+         'fill in yourself</li>'
+         '<li>Support often means searching a knowledge base rather than a person who replies the same day</li>'
+         '</ul></div>'
+         '<div class="cmp-c us"><h3>What WebAutonomos builds for a plumbing business</h3><ul>'
+         '<li>Content and layout designed to earn trust from the first visit, based on your services, your Gas '
+         'Safe registration and how a visitor can contact you</li>'
+         '<li>Your services, registrations and legal pages written for you in English, for you to check before '
+         'anything goes live</li>'
+         '<li>Basic SEO and hosting included at no extra charge, with a professional layout made for mobile</li>'
+         '<li>A direct reply the same day, by email or WhatsApp, whenever you need support</li>'
+         '</ul></div>'
+         '</div>'
+         '<p class="cmp-more"><a href="https://webautonomos.es/en/services">See everything included in your '
+         'website →</a></p>'
+         '<p class="legal-intro">Need a wider trades website, or cover more than one trade? See '
+         '<a href="https://webautonomos.es/en/web-design-for-tradesmen">web design for tradesmen</a> or '
+         '<a href="https://webautonomos.es/en/web-design-for-electricians">web design for electricians</a>.</p>'),
+        ('landlords', 'Landlords', 'Serving landlords and letting agents',
+         '<p class="legal-intro">Landlords and letting agents are a source of ongoing jobs for many plumbing and '
+         'heating companies, and a dedicated page makes it easy for them to see you\'re set up for it.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📅</div>'
+         '<h3>Annual gas safety checks, made clear</h3>'
+         '<p>Landlords must have every gas appliance and flue they provide checked at least every 12 months (Gas '
+         'Safety Regulations, reg. 36). A short, clear page explaining what the check covers and how to arrange '
+         'one answers their questions before they call.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏘️</div>'
+         '<h3>Several properties, one call</h3>'
+         '<p>A landlord or letting agent managing several properties in the same local area often prefers one '
+         'company they can call for every gas safety check, rather than searching again each time.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div>'
+         '<h3>The gas safety record, sorted</h3>'
+         '<p>Landlords have to give their tenants the gas safety record after each check. Saying on your page how '
+         'you send it to them is one less thing for them to chase.</p></div>'
+         '</div>'),
         local_search_uk('plumber'),
     ],
     faq=[("Do I need to be Gas Safe registered?",
@@ -957,7 +1042,22 @@ PLUMB_UK = dict(
           "notice to the water company for some jobs, certify their work, and their certificate gives the "
           "customer a legal defence under the Water Supply (Water Fittings) Regulations 1999."),
          FAQ_UK_CANCEL,
-         FAQ_UK_AVIS] + FAQ_TRADES,
+         FAQ_UK_AVIS,
+         ("Does website design really affect my results?",
+          "Yes: a confusing first experience makes visitors leave before they see what you offer, however good the "
+          "job itself is. A simple design, straightforward pricing information and an easy way to get a quote or "
+          "make a call give them what they need to decide to contact you."),
+         ("Can a plumbing website support marketing?",
+          "Yes: both plans include basic SEO, with page titles and copy built around your services and the areas "
+          "you cover. If you want to go further, we also offer local SEO and managing your Google Business "
+          "Profile: ask us and we'll explain what it covers."),
+         ("Do you offer digital marketing beyond the website itself?",
+          "Yes, if you ask: alongside your website, we can assist with paid advertising, such as Google Ads or "
+          "Facebook ads, and with managing your social media. Ask us and we'll explain what's involved."),
+         ("What makes a good plumbing website, beyond how it looks?",
+          "A good website answers the questions someone has before they call: your services, your Gas Safe "
+          "registration and how to reach you. We write and structure all of this for you, so you don't have to "
+          "build or write any of it yourself.")] + FAQ_TRADES,
 )
 SRC_PLUMB_UK = [
     ('Gas Safety (Installation and Use) Regulations 1998, reg. 3',
