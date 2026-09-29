@@ -2372,9 +2372,29 @@
      "url": "https://webautonomos.es/blog/fr/email-marketing-independants-guide-debutant"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une libraire indépendante emballe une commande dans du papier kraft sur son comptoir, une tasse de thé à côté ; étagères floues en arrière-plan.",
-   "fichier": "email-marketing-libreria-clientes"
+   "fichier": "email-marketing-libreria-clientes",
+   "v": 1,
+   "fait_le": "2026-09-29T22:36:25",
+   "textes": {
+    "es": {
+     "alt": "Una librera independiente envuelve un pedido en papel kraft sobre el mostrador, con una taza y estanterías al fondo.",
+     "legende": "La librera prepara cuidadosamente un pedido en su tienda."
+    },
+    "val": {
+     "alt": "Una llibretera independent embolica una comanda amb paper kraft al taulell, amb una tassa i prestatgeries al fons.",
+     "legende": "La llibretera prepara amb cura una comanda a la seua botiga."
+    },
+    "en": {
+     "alt": "An independent bookseller wraps an order in kraft paper at the counter, with a cup and bookshelves in the background.",
+     "legende": "The bookseller carefully prepares an order in her shop."
+    },
+    "fr": {
+     "alt": "Une libraire indépendante emballe une commande dans du papier kraft sur son comptoir, avec une tasse et des étagères en arrière-plan.",
+     "legende": "La libraire prépare soigneusement une commande dans sa boutique."
+    }
+   }
   },
   {
    "id": "art-17",

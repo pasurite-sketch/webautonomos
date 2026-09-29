@@ -1199,6 +1199,42 @@
    "v": 1,
    "alt": "Vue en plongée d'un quartier méditerranéen aux toits de tuiles et commerces aux auvents colorés, à l'heure dorée.",
    "legende": "Les toits et les terrasses d'un quartier méditerranéen au coucher du soleil."
+  },
+  "blog/es/email-marketing-autonomos-guia-basica.html": {
+   "sujet": "art-16",
+   "fichier": "email-marketing-libreria-clientes",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una librera independiente envuelve un pedido en papel kraft sobre el mostrador, con una taza y estanterías al fondo.",
+   "legende": "La librera prepara cuidadosamente un pedido en su tienda."
+  },
+  "blog/val/marketing-per-correu-guia-basica.html": {
+   "sujet": "art-16",
+   "fichier": "email-marketing-libreria-clientes",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una llibretera independent embolica una comanda amb paper kraft al taulell, amb una tassa i prestatgeries al fons.",
+   "legende": "La llibretera prepara amb cura una comanda a la seua botiga."
+  },
+  "blog/en/email-marketing-for-freelancers-beginners-guide.html": {
+   "sujet": "art-16",
+   "fichier": "email-marketing-libreria-clientes",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "An independent bookseller wraps an order in kraft paper at the counter, with a cup and bookshelves in the background.",
+   "legende": "The bookseller carefully prepares an order in her shop."
+  },
+  "blog/fr/email-marketing-independants-guide-debutant.html": {
+   "sujet": "art-16",
+   "fichier": "email-marketing-libreria-clientes",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une libraire indépendante emballe une commande dans du papier kraft sur son comptoir, avec une tasse et des étagères en arrière-plan.",
+   "legende": "La libraire prépare soigneusement une commande dans sa boutique."
   }
  }
 }
