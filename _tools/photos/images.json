@@ -180,6 +180,42 @@
    "v": 1,
    "alt": "La main d'une commerçante tourne la clé dans la serrure de la porte en bois de sa boutique au crépuscule.",
    "legende": "La commerçante ferme sa boutique dans la lumière dorée du soir."
+  },
+  "blog/es/facturar-clientes-otros-paises-ue-reino-unido.html": {
+   "sujet": "file-facturar-clientes-otros-paises-ue-reino-unido",
+   "fichier": "autonomo-clientes-europa-despacho",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un diseñador independiente cierra una caja de cartón con cinta adhesiva en un estudio luminoso con plantas.",
+   "legende": "Preparar un paquete en el estudio forma parte del trabajo con clientes de otros países."
+  },
+  "blog/val/facturar-clients-altres-paisos.html": {
+   "sujet": "file-facturar-clientes-otros-paises-ue-reino-unido",
+   "fichier": "autonomo-clientes-europa-despacho",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un dissenyador independent tanca una caixa de cartó amb cinta adhesiva en un estudi lluminós amb plantes.",
+   "legende": "Preparar un paquet a l'estudi forma part del treball amb clients d'altres països."
+  },
+  "blog/en/invoicing-clients-in-other-eu-countries-and-the-uk.html": {
+   "sujet": "file-facturar-clientes-otros-paises-ue-reino-unido",
+   "fichier": "autonomo-clientes-europa-despacho",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A freelance designer seals a cardboard box with tape in a bright studio filled with plants.",
+   "legende": "Packing a parcel in the studio can be part of working with clients abroad."
+  },
+  "blog/fr/facturer-un-client-etranger-depuis-l-espagne.html": {
+   "sujet": "file-facturar-clientes-otros-paises-ue-reino-unido",
+   "fichier": "autonomo-clientes-europa-despacho",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un graphiste indépendant ferme un carton avec du ruban adhésif dans un bureau lumineux avec des plantes.",
+   "legende": "Préparer un colis au bureau peut faire partie du travail avec des clients étrangers."
   }
  }
 }

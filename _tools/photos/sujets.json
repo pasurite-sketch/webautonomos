@@ -292,9 +292,29 @@
      "spa": "fr/facturer-un-client-etranger-depuis-l-espagne"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un graphiste indépendant, vu de profil dans son bureau lumineux, ferme au ruban adhésif un carton kraft uni destiné à un client à l'étranger ; plantes et lampe d'architecte.",
-   "fichier": "autonomo-clientes-europa-despacho"
+   "fichier": "autonomo-clientes-europa-despacho",
+   "v": 1,
+   "fait_le": "2026-09-29T14:26:47",
+   "textes": {
+    "es": {
+     "alt": "Un diseñador independiente cierra una caja de cartón con cinta adhesiva en un estudio luminoso con plantas.",
+     "legende": "Preparar un paquete en el estudio forma parte del trabajo con clientes de otros países."
+    },
+    "val": {
+     "alt": "Un dissenyador independent tanca una caixa de cartó amb cinta adhesiva en un estudi lluminós amb plantes.",
+     "legende": "Preparar un paquet a l'estudi forma part del treball amb clients d'altres països."
+    },
+    "en": {
+     "alt": "A freelance designer seals a cardboard box with tape in a bright studio filled with plants.",
+     "legende": "Packing a parcel in the studio can be part of working with clients abroad."
+    },
+    "fr": {
+     "alt": "Un graphiste indépendant ferme un carton avec du ruban adhésif dans un bureau lumineux avec des plantes.",
+     "legende": "Préparer un colis au bureau peut faire partie du travail avec des clients étrangers."
+    }
+   }
   },
   {
    "id": "page-tarifs",
