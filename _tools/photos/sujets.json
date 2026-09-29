@@ -343,9 +343,29 @@
      "pas_avant": "2026-10-23"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une fleuriste compose un bouquet sur le comptoir en bois de sa boutique en fin de journée ; seaux de fleurs fraîches tout autour, lumière chaude.",
-   "fichier": "precio-web-autonomo-floristeria-cuentas"
+   "fichier": "precio-web-autonomo-floristeria-cuentas",
+   "v": 1,
+   "fait_le": "2026-09-29T14:28:18",
+   "textes": {
+    "es": {
+     "alt": "Una florista prepara un ramo de flores variadas sobre un mostrador de madera en una tienda iluminada.",
+     "legende": "Preparar un ramo requiere tiempo, materiales y trabajo artesanal."
+    },
+    "val": {
+     "alt": "Una florista prepara un ramell de flors variades sobre un taulell de fusta en una botiga lluminosa.",
+     "legende": "Preparar un ramell requerix temps, materials i treball artesanal."
+    },
+    "en": {
+     "alt": "A florist arranges a mixed bouquet on a wooden counter in a bright flower shop.",
+     "legende": "Creating a bouquet takes time, materials and skilled work."
+    },
+    "fr": {
+     "alt": "Une fleuriste compose un bouquet de fleurs variées sur un comptoir en bois dans une boutique lumineuse.",
+     "legende": "Composer un bouquet demande du temps, des matériaux et un savoir-faire."
+    }
+   }
   },
   {
    "id": "page-comparatifs",

@@ -216,6 +216,34 @@
    "v": 1,
    "alt": "Un graphiste indépendant ferme un carton avec du ruban adhésif dans un bureau lumineux avec des plantes.",
    "legende": "Préparer un colis au bureau peut faire partie du travail avec des clients étrangers."
+  },
+  "fr/tarifs.html": {
+   "sujet": "page-tarifs",
+   "fichier": "precio-web-autonomo-floristeria-cuentas",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une fleuriste compose un bouquet de fleurs variées sur un comptoir en bois dans une boutique lumineuse.",
+   "legende": "Composer un bouquet demande du temps, des matériaux et un savoir-faire."
+  },
+  "en/pricing.html": {
+   "sujet": "page-tarifs",
+   "fichier": "precio-web-autonomo-floristeria-cuentas",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A florist arranges a mixed bouquet on a wooden counter in a bright flower shop.",
+   "legende": "Creating a bouquet takes time, materials and skilled work."
+  },
+  "precios.html": {
+   "sujet": "page-tarifs",
+   "fichier": "precio-web-autonomo-floristeria-cuentas",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una florista prepara un ramo de flores variadas sobre un mostrador de madera en una tienda iluminada.",
+   "legende": "Preparar un ramo requiere tiempo, materiales y trabajo artesanal.",
+   "pas_avant": "2026-10-23"
   }
  }
 }
