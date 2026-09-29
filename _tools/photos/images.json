@@ -541,6 +541,33 @@
    "v": 1,
    "alt": "An entrepreneur enjoys coffee on a flower-filled Valencia balcony overlooking terracotta rooftops and a church tower.",
    "legende": "A quiet coffee break on a balcony overlooking Valencia."
+  },
+  "como-funciona.html": {
+   "sujet": "page-fonctionnement",
+   "fichier": "como-funciona-llamada-asesora-web",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una asesora web habla por teléfono en una oficina luminosa, con una taza de café y una planta sobre el escritorio.",
+   "legende": "Una conversación de trabajo en un despacho tranquilo y luminoso."
+  },
+  "fr/comment-ca-marche.html": {
+   "sujet": "page-fonctionnement",
+   "fichier": "como-funciona-llamada-asesora-web",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une conseillère web téléphone dans un bureau lumineux, avec une tasse de café et une plante sur le bureau.",
+   "legende": "Un échange professionnel dans un bureau calme et lumineux."
+  },
+  "en/how.html": {
+   "sujet": "page-fonctionnement",
+   "fichier": "como-funciona-llamada-asesora-web",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A web consultant talks on the phone in a bright office, with a coffee cup and plant on the desk.",
+   "legende": "A work conversation in a calm, light-filled office."
   }
  }
 }

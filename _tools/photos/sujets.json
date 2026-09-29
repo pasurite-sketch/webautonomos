@@ -1154,9 +1154,29 @@
      "url": "https://webautonomos.es/en/how"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une conseillère web téléphone en souriant dans un petit bureau lumineux, tasse de café et plante sur le bureau, le regard tourné vers la fenêtre.",
-   "fichier": "como-funciona-llamada-asesora-web"
+   "fichier": "como-funciona-llamada-asesora-web",
+   "v": 1,
+   "fait_le": "2026-09-29T15:52:44",
+   "textes": {
+    "es": {
+     "alt": "Una asesora web habla por teléfono en una oficina luminosa, con una taza de café y una planta sobre el escritorio.",
+     "legende": "Una conversación de trabajo en un despacho tranquilo y luminoso."
+    },
+    "val": {
+     "alt": "Una assessora web parla per telèfon en una oficina lluminosa, amb una tassa de café i una planta sobre la taula.",
+     "legende": "Una conversa de treball en un despatx tranquil i lluminós."
+    },
+    "en": {
+     "alt": "A web consultant talks on the phone in a bright office, with a coffee cup and plant on the desk.",
+     "legende": "A work conversation in a calm, light-filled office."
+    },
+    "fr": {
+     "alt": "Une conseillère web téléphone dans un bureau lumineux, avec une tasse de café et une plante sur le bureau.",
+     "legende": "Un échange professionnel dans un bureau calme et lumineux."
+    }
+   }
   },
   {
    "id": "page-questions",
