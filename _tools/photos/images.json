@@ -1307,6 +1307,42 @@
    "v": 1,
    "alt": "Un restaurateur consulte attentivement son téléphone après le service, dans une salle où les chaises sont retournées sur les tables.",
    "legende": "Le restaurateur consulte son téléphone après la fermeture du restaurant."
+  },
+  "blog/es/schema-local-business-que-es-como-implementar.html": {
+   "sujet": "art-19",
+   "fichier": "schema-local-business-datos-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un zapatero repara un zapato de cuero en su banco de trabajo, rodeado de herramientas, suelas y hormas.",
+   "legende": "Un artesano repara calzado de cuero en su taller."
+  },
+  "blog/val/schema-localbusiness-guia-practica.html": {
+   "sujet": "art-19",
+   "fichier": "schema-local-business-datos-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un sabater repara una sabata de cuir al seu banc de treball, envoltat d'eines, soles i formes.",
+   "legende": "Un artesà repara calçat de cuir al seu taller."
+  },
+  "blog/en/schema-localbusiness-practical-guide.html": {
+   "sujet": "art-19",
+   "fichier": "schema-local-business-datos-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A cobbler repairs a leather shoe at his workbench, surrounded by tools, soles and shoe lasts.",
+   "legende": "A craftsperson repairs leather footwear in the workshop."
+  },
+  "blog/fr/schema-localbusiness-guide-pratique.html": {
+   "sujet": "art-19",
+   "fichier": "schema-local-business-datos-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un cordonnier répare une chaussure en cuir à son établi, entouré d'outils, de semelles et de formes.",
+   "legende": "Un artisan répare des chaussures en cuir dans son atelier."
   }
  }
 }

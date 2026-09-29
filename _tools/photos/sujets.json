@@ -2547,9 +2547,29 @@
      "url": "https://webautonomos.es/blog/fr/schema-localbusiness-guide-pratique"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un cordonnier répare une chaussure en cuir à son établi, entouré d'outils et de semelles.",
-   "fichier": "schema-local-business-datos-negocio"
+   "fichier": "schema-local-business-datos-negocio",
+   "v": 1,
+   "fait_le": "2026-09-29T22:41:36",
+   "textes": {
+    "es": {
+     "alt": "Un zapatero repara un zapato de cuero en su banco de trabajo, rodeado de herramientas, suelas y hormas.",
+     "legende": "Un artesano repara calzado de cuero en su taller."
+    },
+    "val": {
+     "alt": "Un sabater repara una sabata de cuir al seu banc de treball, envoltat d'eines, soles i formes.",
+     "legende": "Un artesà repara calçat de cuir al seu taller."
+    },
+    "en": {
+     "alt": "A cobbler repairs a leather shoe at his workbench, surrounded by tools, soles and shoe lasts.",
+     "legende": "A craftsperson repairs leather footwear in the workshop."
+    },
+    "fr": {
+     "alt": "Un cordonnier répare une chaussure en cuir à son établi, entouré d'outils, de semelles et de formes.",
+     "legende": "Un artisan répare des chaussures en cuir dans son atelier."
+    }
+   }
   },
   {
    "id": "art-20",
