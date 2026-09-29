@@ -382,37 +382,29 @@ def a_des_pages_actives(s, jour=None):
 
 
 def construire_prompt(s):
-    lignes = ["Génère une photo réaliste ENTIÈREMENT NOUVELLE et SANS AUCUN TEXTE (ni lettre, ni chiffre, ni "
-              "logo, ni panneau, ni légende), au format paysage 1536×1024, pour illustrer cette page du site "
-              "webautonomos.es : %s" % s['url'],
-              "Sujet de la page : %s" % s['titre']]
-    if s.get('resume'):
-        lignes.append("Ce que dit la page : %s" % s['resume'])
+    """Prompt purement visuel. Essais du 29/09 : avec l'URL, le résumé de la page
+    et une longue liste d'interdits dans le prompt, ChatGPT a ressorti deux fois
+    une ancienne image du compte au lieu d'en générer une ; une phrase courte et
+    visuelle donne une photo neuve. L'URL et le résumé voyagent à côté
+    (charge_utile), pas dans le texte donné à la génération d'image."""
     if s.get('scene'):
-        lignes.append("Scène à photographier : %s" % s['scene'])
+        scene = s['scene'].rstrip('.')
     else:
-        lignes.append("Scène à photographier : choisis une situation concrète et vivante qui illustre ce sujet "
-                      "pour un professionnel indépendant. Évite les clichés : personne devant un ordinateur "
-                      "portable, mains sur un clavier, poignée de main.")
-    lignes.append("Décor : %s." % MARCHES.get(s.get('marche'), MARCHES['europe']))
-    lignes.append("Style : photographie documentaire prise avec un appareil 35 mm, lumière naturelle, couleurs "
-                  "naturelles, profondeur de champ réaliste ; aucun rendu d'illustration ni de 3D.")
-    interdits = ["aucun texte, lettre, chiffre, logo ou nom de marque lisible (enseignes, écrans, vêtements, "
-                 "emballages, documents)",
-                 "aucun objet porteur d'écriture dans le cadre : ni papier écrit, ni carte, ni menu, ni livre ouvert, "
-                 "ni affiche, ni étiquette, ni plaque, ni tableau", "écrans éteints, flous ou vus de dos",
-                 "personne ne regarde l'objectif", "aucune personne connue", "pas de filigrane"]
+        scene = ("une scène concrète et vivante du travail d'un professionnel indépendant, sur le thème « %s », "
+                 "sans ordinateur portable ni poignée de main" % s['titre'])
+    marche = MARCHES.get(s.get('marche'), MARCHES['europe'])
+    interdits = ("Aucun texte, aucune lettre, aucun chiffre, aucun logo ; aucun papier, carte, écran, enseigne ni "
+                 "étiquette lisibles ; personne ne regarde l'objectif")
     if s.get('sante'):
-        interdits += ["aucun patient reconnaissable", "pas d'avant/après", "pas de soin en gros plan ni de sang"]
-    lignes.append("Interdits : " + " ; ".join(interdits) + ".")
-    lignes.append("Rappel : une photographie, pas une infographie ni un schéma. Aucun texte nulle part dans l'image. "
-                  "Crée l'image à partir de ce seul texte, sans partir d'aucune image existante.")
-    return "\n".join(lignes)
+        interdits += " ; aucun patient reconnaissable, pas d'avant/après, pas de soin en gros plan"
+    return ("Photographie réaliste, format paysage : %s.\nDécor : %s.\nLumière naturelle, rendu de photographie "
+            "documentaire, couleurs naturelles.\n%s." % (scene, marche, interdits))
 
 
 def charge_utile(s, restants):
-    return {'sujet_id': s['id'], 'titre': s['titre'], 'url': s['url'], 'prompt': construire_prompt(s),
-            'langues': langues(s), 'consignes_textes': CONSIGNES_TEXTES, 'restants': restants}
+    return {'sujet_id': s['id'], 'titre': s['titre'], 'url': s['url'], 'resume': s.get('resume') or '',
+            'prompt': construire_prompt(s), 'langues': langues(s), 'consignes_textes': CONSIGNES_TEXTES,
+            'restants': restants}
 
 
 # --------------------------------------------------------------------------
