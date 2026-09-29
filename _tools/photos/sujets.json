@@ -104,10 +104,11 @@
      "spa": "fr/devenir-autonomo-en-espagne"
     }
    ],
-   "statut": "pret",
+   "statut": "saute",
    "scene": "Un homme d'une quarantaine d'années, récemment installé en Espagne, attend son tour dans la salle d'attente claire d'un bureau administratif, une chemise cartonnée de documents sur les genoux ; rangées de chaises, carrelage clair.",
    "fichier": "autonomo-extranjero-tramites-oficina",
-   "marche_force": "es"
+   "marche_force": "es",
+   "note": "Les générations n'ont pas respecté la scène demandée."
   },
   {
    "id": "file-web-en-varios-idiomas",
