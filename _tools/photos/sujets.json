@@ -3641,9 +3641,29 @@
      "url": "https://webautonomos.es/blog/fr/site-web-pour-coachs"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une coach professionnelle écoute attentivement un petit groupe assis en cercle dans une salle lumineuse.",
-   "fichier": "coach-sesion-grupo"
+   "fichier": "coach-sesion-grupo",
+   "v": 1,
+   "fait_le": "2026-09-29T23:34:49",
+   "textes": {
+    "es": {
+     "alt": "Una coach profesional escucha atentamente a un pequeño grupo sentado en círculo en una sala luminosa y acogedora.",
+     "legende": "La coach escucha a las personas durante una sesión de grupo."
+    },
+    "val": {
+     "alt": "Una coach professional escolta atentament un grup menut assegut en cercle en una sala lluminosa i acollidora.",
+     "legende": "La coach escolta les persones durant una sessió de grup."
+    },
+    "en": {
+     "alt": "A professional coach listens attentively to a small group seated in a circle in a bright, welcoming room.",
+     "legende": "The coach listens to participants during a group session."
+    },
+    "fr": {
+     "alt": "Une coach professionnelle écoute attentivement un petit groupe assis en cercle dans une salle lumineuse et accueillante.",
+     "legende": "La coach écoute les participants pendant une séance de groupe."
+    }
+   }
   },
   {
    "id": "art-41",

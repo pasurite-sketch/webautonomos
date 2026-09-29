@@ -1973,6 +1973,42 @@
    "v": 1,
    "alt": "Salle d'attente de psychologie vide, avec deux fauteuils, une lampe douce, des plantes et une fenêtre lumineuse.",
    "legende": "Un espace calme et accueillant pour recevoir les personnes en consultation."
+  },
+  "blog/es/web-para-coaches.html": {
+   "sujet": "art-40",
+   "fichier": "coach-sesion-grupo",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una coach profesional escucha atentamente a un pequeño grupo sentado en círculo en una sala luminosa y acogedora.",
+   "legende": "La coach escucha a las personas durante una sesión de grupo."
+  },
+  "blog/val/web-per-a-coaches.html": {
+   "sujet": "art-40",
+   "fichier": "coach-sesion-grupo",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una coach professional escolta atentament un grup menut assegut en cercle en una sala lluminosa i acollidora.",
+   "legende": "La coach escolta les persones durant una sessió de grup."
+  },
+  "blog/en/website-for-coaches.html": {
+   "sujet": "art-40",
+   "fichier": "coach-sesion-grupo",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A professional coach listens attentively to a small group seated in a circle in a bright, welcoming room.",
+   "legende": "The coach listens to participants during a group session."
+  },
+  "blog/fr/site-web-pour-coachs.html": {
+   "sujet": "art-40",
+   "fichier": "coach-sesion-grupo",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une coach professionnelle écoute attentivement un petit groupe assis en cercle dans une salle lumineuse et accueillante.",
+   "legende": "La coach écoute les participants pendant une séance de groupe."
   }
  }
 }
