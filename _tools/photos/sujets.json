@@ -1559,9 +1559,29 @@
      "url": "https://webautonomos.es/blog/fr/apparaitre-sur-google-maps-guide-complet"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un livreur à vélo s'arrête à un carrefour ensoleillé et regarde autour de lui pour s'orienter, téléphone fixé au guidon (écran invisible) ; rue animée.",
-   "fichier": "aparecer-google-maps-movil-calle"
+   "fichier": "aparecer-google-maps-movil-calle",
+   "v": 1,
+   "fait_le": "2026-09-29T18:02:50",
+   "textes": {
+    "es": {
+     "alt": "Un repartidor en bicicleta se detiene en un cruce soleado y mira a su alrededor, con el móvil sujeto al manillar.",
+     "legende": "Un repartidor consulta su teléfono para orientarse durante el trayecto."
+    },
+    "val": {
+     "alt": "Un repartidor amb bicicleta s'atura en un encreuament assolellat i mira al seu voltant, amb el mòbil al manillar.",
+     "legende": "Un repartidor consulta el mòbil per a orientar-se durant el trajecte."
+    },
+    "en": {
+     "alt": "A bicycle courier pauses at a sunny intersection and looks around, with a phone mounted on the handlebars.",
+     "legende": "A courier checks the route while making a delivery."
+    },
+    "fr": {
+     "alt": "Un livreur à vélo s'arrête à un carrefour ensoleillé et regarde autour de lui, avec son téléphone fixé au guidon.",
+     "legende": "Un livreur consulte son téléphone pour s'orienter pendant son trajet."
+    }
+   }
   },
   {
    "id": "art-03",

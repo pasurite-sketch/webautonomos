@@ -694,6 +694,42 @@
    "v": 1,
    "alt": "Un autónomo toma café en una terraza soleada por la mañana, con un cuaderno cerrado junto a la taza.",
    "legende": "Una pausa para tomar café y reflexionar en una terraza al aire libre."
+  },
+  "blog/es/como-aparecer-google-maps-autonomos.html": {
+   "sujet": "art-02",
+   "fichier": "aparecer-google-maps-movil-calle",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un repartidor en bicicleta se detiene en un cruce soleado y mira a su alrededor, con el móvil sujeto al manillar.",
+   "legende": "Un repartidor consulta su teléfono para orientarse durante el trayecto."
+  },
+  "blog/val/apareixer-en-google-maps-guia-completa.html": {
+   "sujet": "art-02",
+   "fichier": "aparecer-google-maps-movil-calle",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un repartidor amb bicicleta s'atura en un encreuament assolellat i mira al seu voltant, amb el mòbil al manillar.",
+   "legende": "Un repartidor consulta el mòbil per a orientar-se durant el trajecte."
+  },
+  "blog/en/how-to-appear-on-google-maps-complete-guide.html": {
+   "sujet": "art-02",
+   "fichier": "aparecer-google-maps-movil-calle",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A bicycle courier pauses at a sunny intersection and looks around, with a phone mounted on the handlebars.",
+   "legende": "A courier checks the route while making a delivery."
+  },
+  "blog/fr/apparaitre-sur-google-maps-guide-complet.html": {
+   "sujet": "art-02",
+   "fichier": "aparecer-google-maps-movil-calle",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un livreur à vélo s'arrête à un carrefour ensoleillé et regarde autour de lui, avec son téléphone fixé au guidon.",
+   "legende": "Un livreur consulte son téléphone pour s'orienter pendant son trajet."
   }
  }
 }
