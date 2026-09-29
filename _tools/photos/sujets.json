@@ -1435,9 +1435,29 @@
      "url": "https://webautonomos.es/blog/"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un indépendant boit un café à une table de terrasse par un matin ensoleillé, pensif, un carnet fermé posé à côté de la tasse.",
-   "fichier": "blog-autonomos-lectura-terraza"
+   "fichier": "blog-autonomos-lectura-terraza",
+   "v": 1,
+   "fait_le": "2026-09-29T17:58:16",
+   "textes": {
+    "es": {
+     "alt": "Un autónomo toma café en una terraza soleada por la mañana, con un cuaderno cerrado junto a la taza.",
+     "legende": "Una pausa para tomar café y reflexionar en una terraza al aire libre."
+    },
+    "val": {
+     "alt": "Un autònom pren café en una terrassa assolellada de matí, amb una llibreta tancada al costat de la tassa.",
+     "legende": "Una pausa per a prendre café i reflexionar en una terrassa a l'aire lliure."
+    },
+    "en": {
+     "alt": "A self-employed man drinks coffee on a sunny terrace in the morning, with a closed notebook beside his cup.",
+     "legende": "A coffee break and a moment to reflect on an outdoor terrace."
+    },
+    "fr": {
+     "alt": "Un indépendant boit un café sur une terrasse ensoleillée le matin, avec un carnet fermé à côté de sa tasse.",
+     "legende": "Une pause café et un moment de réflexion sur une terrasse en plein air."
+    }
+   }
   },
   {
    "id": "art-01",

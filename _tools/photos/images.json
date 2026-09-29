@@ -685,6 +685,15 @@
    "v": 1,
    "alt": "Una pareja consulta un teléfono en una calle empedrada del centro histórico de Valencia al anochecer.",
    "legende": "Una pareja consulta el móvil mientras pasea por el centro histórico de Valencia."
+  },
+  "blog/index.html": {
+   "sujet": "page-blog",
+   "fichier": "blog-autonomos-lectura-terraza",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un autónomo toma café en una terraza soleada por la mañana, con un cuaderno cerrado junto a la taza.",
+   "legende": "Una pausa para tomar café y reflexionar en una terraza al aire libre."
   }
  }
 }
