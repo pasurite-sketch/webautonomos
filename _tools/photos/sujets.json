@@ -443,9 +443,29 @@
      "url": "https://webautonomos.es/en/services"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Dans un atelier de menuiserie, une conseillère web écoute le menuisier qui lui montre une planche de bois massif ; copeaux, établi et outils à main.",
-   "fichier": "servicios-web-autonomo-taller"
+   "fichier": "servicios-web-autonomo-taller",
+   "v": 1,
+   "fait_le": "2026-09-29T14:31:53",
+   "textes": {
+    "es": {
+     "alt": "Una asesora escucha a un carpintero que le muestra una tabla de madera en su taller luminoso.",
+     "legende": "Una conversación en el taller ayuda a conocer el oficio y sus necesidades."
+    },
+    "val": {
+     "alt": "Una assessora escolta un fuster que li mostra una taula de fusta al seu taller lluminós.",
+     "legende": "Una conversa al taller ajuda a conéixer l'ofici i les seues necessitats."
+    },
+    "en": {
+     "alt": "A consultant listens as a carpenter shows her a wooden plank in his bright workshop.",
+     "legende": "A conversation in the workshop helps explore the craft and its needs."
+    },
+    "fr": {
+     "alt": "Une conseillère écoute un menuisier qui lui montre une planche de bois dans son atelier lumineux.",
+     "legende": "Un échange à l'atelier permet de comprendre le métier et ses besoins."
+    }
+   }
   },
   {
    "id": "metier-therapeute",

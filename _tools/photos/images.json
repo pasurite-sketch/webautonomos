@@ -271,6 +271,33 @@
    "v": 1,
    "alt": "An entrepreneur reflects beside a window in a bright coworking space, holding a pen beside her notebook.",
    "legende": "A calm workspace offers room to compare options and plan a project."
+  },
+  "servicios.html": {
+   "sujet": "page-services",
+   "fichier": "servicios-web-autonomo-taller",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una asesora escucha a un carpintero que le muestra una tabla de madera en su taller luminoso.",
+   "legende": "Una conversación en el taller ayuda a conocer el oficio y sus necesidades."
+  },
+  "fr/prestations.html": {
+   "sujet": "page-services",
+   "fichier": "servicios-web-autonomo-taller",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une conseillère écoute un menuisier qui lui montre une planche de bois dans son atelier lumineux.",
+   "legende": "Un échange à l'atelier permet de comprendre le métier et ses besoins."
+  },
+  "en/services.html": {
+   "sujet": "page-services",
+   "fichier": "servicios-web-autonomo-taller",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A consultant listens as a carpenter shows her a wooden plank in his bright workshop.",
+   "legende": "A conversation in the workshop helps explore the craft and its needs."
   }
  }
 }
