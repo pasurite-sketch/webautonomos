@@ -2045,6 +2045,42 @@
    "v": 1,
    "alt": "Une esthéticienne prépare ses produits dans une cabine lumineuse avec table de soin, serviettes roulées, bougies et plantes.",
    "legende": "La professionnelle organise les produits avant une séance dans la cabine."
+  },
+  "blog/es/web-para-nutricionistas-dietistas.html": {
+   "sujet": "art-42",
+   "fichier": "nutricionista-consulta-alimentos",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una nutricionista coloca frutas y verduras frescas sobre la mesa de su consulta luminosa, sin pacientes presentes.",
+   "legende": "La profesional prepara alimentos frescos en su espacio de consulta."
+  },
+  "blog/val/web-per-a-nutricionistes.html": {
+   "sujet": "art-42",
+   "fichier": "nutricionista-consulta-alimentos",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una nutricionista col·loca fruites i verdures fresques sobre la taula de la consulta lluminosa, sense pacients presents.",
+   "legende": "La professional prepara aliments frescos al seu espai de consulta."
+  },
+  "blog/en/website-for-dietitians-and-nutritionists.html": {
+   "sujet": "art-42",
+   "fichier": "nutricionista-consulta-alimentos",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A nutritionist arranges fresh fruit and vegetables on a table in her bright consultation room, with no patients present.",
+   "legende": "The nutritionist prepares fresh produce in her consultation space."
+  },
+  "blog/fr/site-web-pour-dieteticiens-nutritionnistes.html": {
+   "sujet": "art-42",
+   "fichier": "nutricionista-consulta-alimentos",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une nutritionniste dispose des fruits et légumes frais sur la table de son cabinet lumineux, sans patient présent.",
+   "legende": "La professionnelle prépare des produits frais dans son espace de consultation."
   }
  }
 }

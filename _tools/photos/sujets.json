@@ -3757,10 +3757,30 @@
      "url": "https://webautonomos.es/blog/fr/site-web-pour-dieteticiens-nutritionnistes"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une nutritionniste dispose des fruits et légumes frais sur la table de son cabinet. Aucun patient.",
    "fichier": "nutricionista-consulta-alimentos",
-   "sante_force": true
+   "sante_force": true,
+   "v": 1,
+   "fait_le": "2026-09-29T23:39:22",
+   "textes": {
+    "es": {
+     "alt": "Una nutricionista coloca frutas y verduras frescas sobre la mesa de su consulta luminosa, sin pacientes presentes.",
+     "legende": "La profesional prepara alimentos frescos en su espacio de consulta."
+    },
+    "val": {
+     "alt": "Una nutricionista col·loca fruites i verdures fresques sobre la taula de la consulta lluminosa, sense pacients presents.",
+     "legende": "La professional prepara aliments frescos al seu espai de consulta."
+    },
+    "en": {
+     "alt": "A nutritionist arranges fresh fruit and vegetables on a table in her bright consultation room, with no patients present.",
+     "legende": "The nutritionist prepares fresh produce in her consultation space."
+    },
+    "fr": {
+     "alt": "Une nutritionniste dispose des fruits et légumes frais sur la table de son cabinet lumineux, sans patient présent.",
+     "legende": "La professionnelle prépare des produits frais dans son espace de consultation."
+    }
+   }
   },
   {
    "id": "art-43",
