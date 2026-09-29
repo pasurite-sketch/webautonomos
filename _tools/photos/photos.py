@@ -404,7 +404,7 @@ def construire_prompt(s):
         interdits += ["aucun patient reconnaissable", "pas d'avant/après", "pas de soin en gros plan ni de sang"]
     lignes.append("Interdits : " + " ; ".join(interdits) + ".")
     lignes.append("Rappel : une photographie, pas une infographie ni un schéma. Aucun texte nulle part dans l'image. "
-                  "N'utilise aucune image existante ni le contenu d'une autre conversation.")
+                  "Crée l'image à partir de ce seul texte, sans partir d'aucune image existante.")
     return "\n".join(lignes)
 
 
