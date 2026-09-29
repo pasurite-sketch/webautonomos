@@ -2140,9 +2140,29 @@
      "url": "https://webautonomos.es/blog/fr/reseaux-sociaux-independants-lesquels-choisir"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une pâtissière dispose des gâteaux sur une table en bois et les photographie avec son téléphone près d'une fenêtre (écran invisible).",
-   "fichier": "redes-sociales-autonoma-foto-producto"
+   "fichier": "redes-sociales-autonoma-foto-producto",
+   "v": 1,
+   "fait_le": "2026-09-29T21:57:34",
+   "textes": {
+    "es": {
+     "alt": "Una pastelera fotografía con su móvil una selección de tartas y pasteles sobre una mesa de madera junto a una ventana.",
+     "legende": "Una pastelera prepara y fotografía sus creaciones en el obrador."
+    },
+    "val": {
+     "alt": "Una pastissera fotografia amb el mòbil una selecció de pastissos sobre una taula de fusta prop d'una finestra.",
+     "legende": "Una pastissera prepara i fotografia les seues creacions al taller."
+    },
+    "en": {
+     "alt": "A pastry chef photographs an assortment of cakes and tarts on a wooden table beside a window.",
+     "legende": "A pastry chef prepares and photographs her creations in the bakery."
+    },
+    "fr": {
+     "alt": "Une pâtissière photographie avec son téléphone des gâteaux disposés sur une table en bois près d'une fenêtre.",
+     "legende": "Une pâtissière prépare et photographie ses créations dans son atelier."
+    }
+   }
   },
   {
    "id": "art-13",
