@@ -1271,6 +1271,42 @@
    "v": 1,
    "alt": "Accueil lumineux d'une clinique avec comptoir en bois, plantes et salle d'attente vide ; une réceptionniste travaille de dos.",
    "legende": "Un espace d'accueil lumineux et calme reçoit les visiteurs."
+  },
+  "blog/es/responder-resenas-negativas-google.html": {
+   "sujet": "art-18",
+   "fichier": "responder-resenas-negativas-restaurante",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un restaurador consulta atentamente su teléfono en una mesa después del servicio, con las sillas sobre las mesas del café.",
+   "legende": "El restaurador revisa su teléfono cuando el local ya ha cerrado."
+  },
+  "blog/val/respondre-ressenyes-negatives-en-google.html": {
+   "sujet": "art-18",
+   "fichier": "responder-resenas-negativas-restaurante",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un restaurador consulta atentament el mòbil en una taula després del servici, amb les cadires damunt de les taules del café.",
+   "legende": "El restaurador revisa el mòbil quan el local ja ha tancat."
+  },
+  "blog/en/how-to-reply-to-negative-google-reviews.html": {
+   "sujet": "art-18",
+   "fichier": "responder-resenas-negativas-restaurante",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A restaurant owner studies his phone at a table after service, with chairs turned upside down on the café tables.",
+   "legende": "The restaurant owner checks his phone after closing time."
+  },
+  "blog/fr/repondre-aux-avis-negatifs-google.html": {
+   "sujet": "art-18",
+   "fichier": "responder-resenas-negativas-restaurante",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un restaurateur consulte attentivement son téléphone après le service, dans une salle où les chaises sont retournées sur les tables.",
+   "legende": "Le restaurateur consulte son téléphone après la fermeture du restaurant."
   }
  }
 }

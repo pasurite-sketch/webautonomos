@@ -2489,9 +2489,29 @@
      "url": "https://webautonomos.es/blog/fr/repondre-aux-avis-negatifs-google"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un restaurateur, seul à une table après le service, lit attentivement sur son téléphone (écran invisible), l'air concentré ; chaises retournées sur les tables.",
-   "fichier": "responder-resenas-negativas-restaurante"
+   "fichier": "responder-resenas-negativas-restaurante",
+   "v": 1,
+   "fait_le": "2026-09-29T22:40:02",
+   "textes": {
+    "es": {
+     "alt": "Un restaurador consulta atentamente su teléfono en una mesa después del servicio, con las sillas sobre las mesas del café.",
+     "legende": "El restaurador revisa su teléfono cuando el local ya ha cerrado."
+    },
+    "val": {
+     "alt": "Un restaurador consulta atentament el mòbil en una taula després del servici, amb les cadires damunt de les taules del café.",
+     "legende": "El restaurador revisa el mòbil quan el local ja ha tancat."
+    },
+    "en": {
+     "alt": "A restaurant owner studies his phone at a table after service, with chairs turned upside down on the café tables.",
+     "legende": "The restaurant owner checks his phone after closing time."
+    },
+    "fr": {
+     "alt": "Un restaurateur consulte attentivement son téléphone après le service, dans une salle où les chaises sont retournées sur les tables.",
+     "legende": "Le restaurateur consulte son téléphone après la fermeture du restaurant."
+    }
+   }
   },
   {
    "id": "art-19",
