@@ -1838,6 +1838,33 @@
    "v": 1,
    "alt": "La propriétaire d'un magasin de vélos règle la selle d'un vélo exposé en regardant vers l'entrée de la boutique.",
    "legende": "La commerçante prépare un vélo dans son magasin avant d'accueillir les clients."
+  },
+  "blog/es/facturacion-electronica-autonomos-obligatoria.html": {
+   "sujet": "art-36",
+   "fichier": "facturacion-electronica-comercio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una tendera entrega una bolsa de papel kraft a una clienta sobre el mostrador de una tienda de alimentación de barrio.",
+   "legende": "La tendera entrega una compra a una clienta en su comercio."
+  },
+  "blog/val/facturacio-electronica-obligatoria.html": {
+   "sujet": "art-36",
+   "fichier": "facturacion-electronica-comercio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una botiguera dona una bossa de paper kraft a una clienta per damunt del taulell d'una botiga de queviures.",
+   "legende": "La botiguera entrega una compra a una clienta al seu comerç."
+  },
+  "blog/en/mandatory-e-invoicing-for-freelancers.html": {
+   "sujet": "art-36",
+   "fichier": "facturacion-electronica-comercio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A shopkeeper hands a kraft paper bag to a customer across the counter of a neighborhood grocery store.",
+   "legende": "The shopkeeper hands a customer her groceries at the counter."
   }
  }
 }
