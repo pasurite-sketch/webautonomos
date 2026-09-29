@@ -1937,6 +1937,42 @@
    "v": 1,
    "alt": "Une podologue prépare une salle de consultation lumineuse, avec fauteuil de soins et instruments bien rangés.",
    "legende": "La podologue organise le matériel avant le prochain rendez-vous."
+  },
+  "blog/es/web-para-psicologos-terapeutas.html": {
+   "sujet": "art-39",
+   "fichier": "psicologo-sala-espera-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Sala de espera de psicología vacía, con dos sillones, una lámpara cálida, plantas y luz natural junto a una ventana.",
+   "legende": "Un espacio tranquilo y acogedor para recibir a las personas en consulta."
+  },
+  "blog/val/web-per-a-psicolegs-i-terapeutes.html": {
+   "sujet": "art-39",
+   "fichier": "psicologo-sala-espera-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Sala d'espera de psicologia buida, amb dos butaques, una llum càlida, plantes i llum natural al costat d'una finestra.",
+   "legende": "Un espai tranquil i acollidor per a rebre les persones en consulta."
+  },
+  "blog/en/website-for-psychologists-and-therapists.html": {
+   "sujet": "art-39",
+   "fichier": "psicologo-sala-espera-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "An empty psychology waiting room with two armchairs, a warm lamp, plants and natural light beside a window.",
+   "legende": "A calm, welcoming space for people visiting the practice."
+  },
+  "blog/fr/site-web-pour-psychologues-et-therapeutes.html": {
+   "sujet": "art-39",
+   "fichier": "psicologo-sala-espera-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Salle d'attente de psychologie vide, avec deux fauteuils, une lampe douce, des plantes et une fenêtre lumineuse.",
+   "legende": "Un espace calme et accueillant pour recevoir les personnes en consultation."
   }
  }
 }

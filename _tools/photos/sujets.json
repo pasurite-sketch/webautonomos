@@ -3582,10 +3582,30 @@
      "url": "https://webautonomos.es/blog/fr/site-web-pour-psychologues-et-therapeutes"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Salle d'attente d'un cabinet de psychologie : deux fauteuils, une lampe douce et des plantes ; ambiance calme, personne.",
    "fichier": "psicologo-sala-espera-consulta",
-   "sante_force": true
+   "sante_force": true,
+   "v": 1,
+   "fait_le": "2026-09-29T23:33:31",
+   "textes": {
+    "es": {
+     "alt": "Sala de espera de psicología vacía, con dos sillones, una lámpara cálida, plantas y luz natural junto a una ventana.",
+     "legende": "Un espacio tranquilo y acogedor para recibir a las personas en consulta."
+    },
+    "val": {
+     "alt": "Sala d'espera de psicologia buida, amb dos butaques, una llum càlida, plantes i llum natural al costat d'una finestra.",
+     "legende": "Un espai tranquil i acollidor per a rebre les persones en consulta."
+    },
+    "en": {
+     "alt": "An empty psychology waiting room with two armchairs, a warm lamp, plants and natural light beside a window.",
+     "legende": "A calm, welcoming space for people visiting the practice."
+    },
+    "fr": {
+     "alt": "Salle d'attente de psychologie vide, avec deux fauteuils, une lampe douce, des plantes et une fenêtre lumineuse.",
+     "legende": "Un espace calme et accueillant pour recevoir les personnes en consultation."
+    }
+   }
   },
   {
    "id": "art-40",
