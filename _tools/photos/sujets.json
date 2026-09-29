@@ -1394,10 +1394,30 @@
      "url": "https://webautonomos.es/marketing"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un couple cherche un restaurant sur son téléphone (écran invisible) dans une ruelle pavée du centre historique de Valence au crépuscule, sous des lampadaires.",
    "fichier": "seo-local-busqueda-movil-valencia",
-   "marche_force": "es"
+   "marche_force": "es",
+   "v": 1,
+   "fait_le": "2026-09-29T16:49:27",
+   "textes": {
+    "es": {
+     "alt": "Una pareja consulta un teléfono en una calle empedrada del centro histórico de Valencia al anochecer.",
+     "legende": "Una pareja consulta el móvil mientras pasea por el centro histórico de Valencia."
+    },
+    "val": {
+     "alt": "Una parella consulta un mòbil en un carrer empedrat del centre històric de València al capvespre.",
+     "legende": "Una parella consulta el mòbil mentre passeja pel centre històric de València."
+    },
+    "en": {
+     "alt": "A couple checks a phone on a cobbled street in Valencia's historic centre at dusk.",
+     "legende": "A couple checks their phone while exploring Valencia's historic centre."
+    },
+    "fr": {
+     "alt": "Un couple consulte un téléphone dans une ruelle pavée du centre historique de Valence au crépuscule.",
+     "legende": "Un couple consulte son téléphone en se promenant dans le centre historique de Valence."
+    }
+   }
   },
   {
    "id": "page-blog",

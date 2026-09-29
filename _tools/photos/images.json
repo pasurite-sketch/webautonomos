@@ -676,6 +676,15 @@
    "v": 1,
    "alt": "A woman walks along a shopping street speaking into her phone, with blurred shopfronts behind her.",
    "legende": "Checking in by phone while walking along a shopping street."
+  },
+  "marketing.html": {
+   "sujet": "page-marketing",
+   "fichier": "seo-local-busqueda-movil-valencia",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una pareja consulta un teléfono en una calle empedrada del centro histórico de Valencia al anochecer.",
+   "legende": "Una pareja consulta el móvil mientras pasea por el centro histórico de Valencia."
   }
  }
 }
