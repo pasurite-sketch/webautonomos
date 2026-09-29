@@ -415,6 +415,15 @@
    "v": 1,
    "alt": "Un fontanero trabaja bajo el fregadero de una cocina moderna con una llave inglesa y una caja de herramientas abierta.",
    "legende": "Reparar una instalación bajo el fregadero requiere herramientas y experiencia."
+  },
+  "en/web-design-for-plumbers.html": {
+   "sujet": "metier-plombier-uk",
+   "fichier": "fontanero-caldera-reino-unido",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A heating technician kneels beside a white radiator and adjusts its valve in a bright living room.",
+   "legende": "Checking and bleeding a radiator is part of routine heating maintenance."
   }
  }
 }

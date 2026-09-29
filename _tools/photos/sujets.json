@@ -793,9 +793,29 @@
      "url": "https://webautonomos.es/en/web-design-for-plumbers"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un chauffagiste britannique purge un radiateur sous une fenêtre à guillotine, dans le salon d'une maison au Royaume-Uni ; caisse à outils au sol.",
-   "fichier": "fontanero-caldera-reino-unido"
+   "fichier": "fontanero-caldera-reino-unido",
+   "v": 1,
+   "fait_le": "2026-09-29T15:10:55",
+   "textes": {
+    "es": {
+     "alt": "Un técnico se arrodilla junto a un radiador blanco y ajusta la válvula en un salón luminoso.",
+     "legende": "Revisar y purgar un radiador forma parte del mantenimiento de la calefacción."
+    },
+    "val": {
+     "alt": "Un tècnic s'agenolla al costat d'un radiador blanc i n'ajusta la vàlvula en una sala lluminosa.",
+     "legende": "Revisar i purgar un radiador forma part del manteniment de la calefacció."
+    },
+    "en": {
+     "alt": "A heating technician kneels beside a white radiator and adjusts its valve in a bright living room.",
+     "legende": "Checking and bleeding a radiator is part of routine heating maintenance."
+    },
+    "fr": {
+     "alt": "Un chauffagiste s'agenouille près d'un radiateur blanc et en règle la valve dans un salon lumineux.",
+     "legende": "Vérifier et purger un radiateur fait partie de l'entretien du chauffage."
+    }
+   }
   },
   {
    "id": "metier-electricien",
