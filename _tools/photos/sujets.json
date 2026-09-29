@@ -147,10 +147,11 @@
      "spa": "fr/site-internet-bilingue"
     }
    ],
-   "statut": "pret",
+   "statut": "saute",
    "scene": "La gérante d'un petit café de bord de mer accueille en terrasse un couple de touristes étrangers et leur tend la carte, vue de dos ; mer, palmiers et parasols flous en arrière-plan.",
    "fichier": "negocio-clientes-internacionales-costa",
-   "marche_force": "es"
+   "marche_force": "es",
+   "note": "Les deux générations n'ont pas représenté la scène demandée."
   },
   {
    "id": "file-aviso-legal-privacidad-cookies-web",
