@@ -1061,6 +1061,70 @@ ELEC_UK = dict(
          '<p>Neat consumer units and finished installations, from your own photos, with a one-line caption for '
          'each job.</p></div>'
          '</div>'),
+        ('good-design', 'Design', 'What a good electrician website looks like',
+         '<p class="legal-intro">A good electrician website is about more than how it looks: it is about '
+         'whether a visitor finds what they need and gets in touch.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎨</div>'
+         '<h3>A clear, mobile-first layout</h3>'
+         '<p>Many people search for an electrician on their phone, so professional web design keeps the layout '
+         'simple, the copy short and the site fast to load: it reads just as well on a small screen as on a '
+         'desktop.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧭</div>'
+         '<h3>An easy path to a quote</h3>'
+         '<p>Every page on your site leads somewhere: a clear way to get a quote, call you or contact you on '
+         'WhatsApp, so a visitor who is ready to book does not have to search for how.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div>'
+         '<h3>Design that earns trust</h3>'
+         '<p>Genuine Google reviews, shown without hiding the negative ones (see the rules above), your scheme '
+         'registration and straightforward pricing do more for trust than decoration.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏷️</div>'
+         '<h3>Branding that matches the rest of your business</h3>'
+         '<p>Your logo, colours and photos of your best finished jobs, carried through consistently, so your '
+         'website matches your van, your invoices and your social media.</p></div>'
+         '</div>'),
+        ('website-mistakes', 'What to avoid', 'Common mistakes on electrician websites',
+         '<p class="legal-intro">Some gaps show up again and again on electrician websites, and each one can '
+         'send a visitor off to call someone else.</p>'
+         '<div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul>'
+         '<li>A layout that is hard to read on mobile, so a visitor searching from their phone gives up before '
+         'they find how to contact you</li>'
+         '<li>No visible scheme registration, so a visitor cannot check you on the Competent Persons Register '
+         'before booking</li>'
+         '<li>Stock photography and generic copy that could describe any electrician\'s website, not yours</li>'
+         '<li>A way to get a quote that is buried below several screens of content</li>'
+         '<li>A slow site that takes too long to load, especially on a mobile connection</li>'
+         '</ul></div>'
+         '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>What to do instead</h3>'
+         '<p>A simple, professional, mobile-friendly layout, photos of your own jobs and the scheme registration '
+         'details a visitor can check. Together, they help someone who is just browsing trust what they see and '
+         'get a quote.</p></div>'),
+        ('vs-general-website', 'Compare', 'How electrician website design differs from a general website builder',
+         '<p class="legal-intro">A general website builder gives you a template to adapt, even one labelled for '
+         'electricians, but your scheme registration and your own services are still yours to add. Here is what '
+         'changes when your website design starts from your registrations and services, not a generic '
+         'template.</p>'
+         '<div class="cmp-g">'
+         '<div class="cmp-c them"><h3>A general website builder</h3><ul>'
+         '<li>A generic template you adapt yourself, with no reference to your scheme registration or the jobs '
+         'you take on</li>'
+         '<li>You write and structure the content yourself, including your services, the areas you cover and how '
+         'to contact you</li>'
+         '<li>Basic search engine optimisation (SEO) settings, such as page titles and descriptions, left for you '
+         'to fill in yourself</li>'
+         '<li>Support often means searching a knowledge base rather than a person who replies the same day</li>'
+         '</ul></div>'
+         '<div class="cmp-c us"><h3>Electrician website design from WebAutonomos</h3><ul>'
+         '<li>Content and layout designed to earn trust from the first visit, based on your services, your '
+         'scheme registration and how a visitor can contact you</li>'
+         '<li>Your services, registrations and legal pages written for you in English, for you to check before '
+         'anything goes live</li>'
+         '<li>Basic SEO and hosting included at no extra charge, with a professional design made for mobile</li>'
+         '<li>A direct reply the same day, by email or WhatsApp, whenever you need support</li>'
+         '</ul></div>'
+         '</div>'
+         '<p class="cmp-more"><a href="https://webautonomos.es/en/services">See everything included in your '
+         'website →</a></p>'),
         local_search_uk('electrician'),
     ],
     faq=[("Do electricians need a licence in the UK?",
@@ -1096,7 +1160,22 @@ ELEC_UK = dict(
           "through their own schemes. Installing solar panels and batteries in homes is zero-rated "
           "for VAT until 31 March 2027."),
          FAQ_UK_CANCEL,
-         FAQ_UK_AVIS] + FAQ_TRADES,
+         FAQ_UK_AVIS,
+         ("Does website design really affect my results?",
+          "Yes: a confusing first experience makes visitors leave before they see what you offer, however good "
+          "the job itself is. A simple design, straightforward pricing information and an easy way to get a "
+          "quote give them what they need to decide to contact you."),
+         ("Can an electrician website support marketing?",
+          "Yes: both plans include basic SEO, with page titles and copy built around your services and the towns "
+          "you cover. If you want to go further, we also offer local SEO and managing your Google Business "
+          "Profile: ask us for prices when you get your demo."),
+         ("Do you offer digital marketing beyond the website itself?",
+          "Yes, if you ask: alongside your website, we can assist with paid advertising, such as Google Ads or "
+          "Facebook ads, and with managing your social media. Ask us and we'll explain what's involved."),
+         ("What makes a good electrician website, beyond how it looks?",
+          "A good electrician website answers the questions a new customer has before they call: your services, "
+          "your scheme registration and how to reach you. We write and structure all of this for you, so you "
+          "don't have to build or write any of it yourself.")] + FAQ_TRADES,
 )
 SRC_ELEC_UK = [
     ('Building Regulations 2010, reg. 12', 'https://www.legislation.gov.uk/uksi/2010/2214/regulation/12'),
