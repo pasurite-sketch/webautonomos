@@ -3932,9 +3932,29 @@
      "url": "https://webautonomos.es/blog/fr/vitesse-du-site-et-referencement"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un serveur apporte à vive allure deux cafés à une terrasse animée, léger flou de mouvement.",
-   "fichier": "velocidad-web-servicio-rapido"
+   "fichier": "velocidad-web-servicio-rapido",
+   "v": 1,
+   "fait_le": "2026-09-29T23:43:25",
+   "textes": {
+    "es": {
+     "alt": "Un camarero lleva dos cafés en una bandeja por una terraza concurrida, con un ligero desenfoque de movimiento.",
+     "legende": "El camarero sirve cafés en una terraza animada y soleada."
+    },
+    "val": {
+     "alt": "Un cambrer porta dos cafés en una safata per una terrassa concorreguda, amb un lleuger desenfocament de moviment.",
+     "legende": "El cambrer servix cafés en una terrassa animada i assolellada."
+    },
+    "en": {
+     "alt": "A waiter carries two coffees on a tray across a busy terrace, with slight motion blur.",
+     "legende": "The waiter serves coffee on a lively, sunlit terrace."
+    },
+    "fr": {
+     "alt": "Un serveur apporte deux cafés sur un plateau dans une terrasse animée, avec un léger flou de mouvement.",
+     "legende": "Le serveur apporte des cafés sur une terrasse ensoleillée et animée."
+    }
+   }
   },
   {
    "id": "art-46",

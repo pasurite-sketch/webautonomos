@@ -2153,6 +2153,42 @@
    "v": 1,
    "alt": "Une vétérinaire caresse un golden retriever calme sur la table d'examen d'une clinique lumineuse.",
    "legende": "La vétérinaire prend soin du chien avec douceur pendant la visite."
+  },
+  "blog/es/velocidad-web-y-posicionamiento.html": {
+   "sujet": "art-45",
+   "fichier": "velocidad-web-servicio-rapido",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un camarero lleva dos cafés en una bandeja por una terraza concurrida, con un ligero desenfoque de movimiento.",
+   "legende": "El camarero sirve cafés en una terraza animada y soleada."
+  },
+  "blog/val/velocitat-de-la-web-i-posicionament.html": {
+   "sujet": "art-45",
+   "fichier": "velocidad-web-servicio-rapido",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un cambrer porta dos cafés en una safata per una terrassa concorreguda, amb un lleuger desenfocament de moviment.",
+   "legende": "El cambrer servix cafés en una terrassa animada i assolellada."
+  },
+  "blog/en/website-speed-and-search-rankings.html": {
+   "sujet": "art-45",
+   "fichier": "velocidad-web-servicio-rapido",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A waiter carries two coffees on a tray across a busy terrace, with slight motion blur.",
+   "legende": "The waiter serves coffee on a lively, sunlit terrace."
+  },
+  "blog/fr/vitesse-du-site-et-referencement.html": {
+   "sujet": "art-45",
+   "fichier": "velocidad-web-servicio-rapido",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un serveur apporte deux cafés sur un plateau dans une terrasse animée, avec un léger flou de mouvement.",
+   "legende": "Le serveur apporte des cafés sur une terrasse ensoleillée et animée."
   }
  }
 }
