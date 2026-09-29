@@ -42,7 +42,6 @@ ETAT = os.path.expanduser(os.environ.get('PHOTOS_ETAT', '~/.local/state/photos')
 os.makedirs(ETAT, exist_ok=True)
 CLE = os.environ.get('PHOTOS_API_CLE', '')
 PORT = int(os.environ.get('PHOTOS_PORT', '8787'))
-RESERVATION_S = 20 * 60          # un sujet donné au GPT n'est pas redonné pendant 20 min
 MAX_OCTETS = 25 * 1024 * 1024
 
 log = logging.getLogger('photos')
@@ -52,15 +51,20 @@ log.addHandler(_h)
 log.setLevel(logging.INFO)
 
 _verrou_threads = threading.Lock()
-_FICHIER_RESERVATIONS = os.path.join(ETAT, 'reservations.json')
-_reservations = L.lire_json(_FICHIER_RESERVATIONS, {})   # page en cours, gardée d'un redémarrage à l'autre
+
+# Page en cours : la dernière donnée au GPT, tant qu'elle n'a ni photo ni « passer ».
+# Un seul utilisateur, donc toute photo reçue lui revient : le GPT invente parfois
+# l'identifiant (29/09 : « art-31 » pour la page art-33, dont la photo a écrasé
+# celle d'art-31). Gardée dans un fichier d'un redémarrage à l'autre.
+_FICHIER_COURANT = os.path.join(ETAT, 'courant.json')
 
 
-def _garder_reservations():
-    try:
-        L.ecrire_json(_FICHIER_RESERVATIONS, _reservations)
-    except OSError as e:
-        log.warning('réservations non enregistrées : %s', e)
+def _courant():
+    return L.lire_json(_FICHIER_COURANT, {}).get('sujet')
+
+
+def _fixer_courant(sid):
+    L.ecrire_json(_FICHIER_COURANT, {'sujet': sid, 'depuis': time.strftime('%Y-%m-%d %H:%M:%S')})
 
 
 class Verrou:
@@ -86,17 +90,15 @@ def suivante():
     with Verrou():
         P.synchro()
         data = P.charger()
-        now = time.time()
         prets = [s for s in data['sujets'] if s.get('statut') == 'pret' and P.a_des_pages_actives(s)]
-        # Un seul utilisateur : la page en cours (donnée, ni envoyée ni passée)
-        # revient, avec son prompt à jour, au lieu de sauter à la suivante.
-        en_cours = [s for s in prets if now - _reservations.get(s['id'], 0) < RESERVATION_S]
-        s = en_cours[0] if en_cours else (prets[0] if prets else None)
+        # La page en cours (ni envoyée ni passée) revient, avec son prompt à jour.
+        en_cours = next((s for s in prets if s['id'] == _courant()), None)
+        s = en_cours or (prets[0] if prets else None)
         if s is not None:
-            _reservations[s['id']] = now
-            _garder_reservations()
+            _fixer_courant(s['id'])
             log.info('suivante -> %s%s', s['id'], ' (page en cours)' if en_cours else '')
             return 200, P.charge_utile(s, len(prets))
+        _fixer_courant(None)
     return 200, {'termine': True, 'restants': 0,
                  'message': 'Toutes les pages prévues ont leur photo. Rien à générer pour le moment.'}
 
@@ -138,30 +140,22 @@ def _premiere_image(refs):
 
 
 def _resoudre(sid):
-    """Identifiant du sujet, même approximatif. ChatGPT recopie parfois mal un
-    identifiant long (29/09 : « file-aviso-legal-privacidad-cookies » pour
-    « …-cookies-web ») : on accepte un identifiant qui désigne un seul sujet
-    sans ambiguïté, sinon la page en cours (un seul utilisateur)."""
-    data = P.charger()
-    ids = [s['id'] for s in data['sujets']]
+    """Sujet auquel attribuer la photo : toujours la page en cours s'il y en a
+    une (l'identifiant envoyé par le GPT n'est pas fiable), sinon l'identifiant
+    exact."""
+    ids = {s['id'] for s in P.charger()['sujets']}
+    courant = _courant()
+    if courant in ids:
+        if sid != courant:
+            log.warning('sujet_id « %s » envoyé par le GPT : attribué à la page en cours %s', sid, courant)
+        return courant
     if sid in ids:
         return sid
-    proches = [i for i in ids if sid and (i.startswith(sid) or sid.startswith(i) or sid in i)]
-    if len(proches) == 1:
-        log.info('sujet « %s » compris comme %s', sid, proches[0])
-        return proches[0]
-    now = time.time()
-    en_cours = [i for i, t in _reservations.items() if now - t < RESERVATION_S and i in ids]
-    if len(en_cours) == 1:
-        log.info('sujet « %s » inconnu : page en cours %s', sid, en_cours[0])
-        return en_cours[0]
-    raise L.PhotoErreur('sujet inconnu : %s. Utilise le sujet_id exact reçu de obtenirSuivante.' % sid)
+    raise L.PhotoErreur("Aucune page en cours : tape « suivante » pour recevoir la page à illustrer.")
 
 
 def recevoir_photo(corps):
-    sid = (corps.get('sujet_id') or '').strip()
-    if sid or _reservations:
-        sid = _resoudre(sid)
+    sid = _resoudre((corps.get('sujet_id') or '').strip())
     ref = _premiere_image(corps.get('openaiFileIdRefs'))
     if not sid:
         return 400, {'ok': False, 'erreur': 'sujet_id manquant.'}
@@ -184,8 +178,7 @@ def recevoir_photo(corps):
             fichiers = P.en_boucle(lambda: P.appliquer(sid, chemin, textes),
                                    'Photo auto : %s' % titre[:80])
             s = P.trouver(P.charger(), sid)
-            _reservations.pop(sid, None)
-            _garder_reservations()
+            _fixer_courant(None)
     finally:
         try:
             os.remove(chemin)
@@ -257,8 +250,7 @@ def passer(corps):
 
     with Verrou():
         P.en_boucle(operation, 'Photos auto : sujet %s laissé de côté' % sid)
-        _reservations.pop(sid, None)
-        _garder_reservations()
+        _fixer_courant(None)
     log.info('passer %s', sid)
     return 200, {'ok': True, 'message': 'Sujet %s laissé de côté.' % sid}
 
