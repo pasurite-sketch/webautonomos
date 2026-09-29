@@ -2430,10 +2430,30 @@
      "url": "https://webautonomos.es/blog/fr/site-web-pour-dentistes-et-kinesitherapeutes"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Accueil lumineux d'une clinique : comptoir en bois clair, plantes, salle d'attente vide aux chaises design ; une réceptionniste vue de dos.",
    "fichier": "clinica-salud-recepcion-luminosa",
-   "sante_force": true
+   "sante_force": true,
+   "v": 1,
+   "fait_le": "2026-09-29T22:38:12",
+   "textes": {
+    "es": {
+     "alt": "Recepción luminosa de una clínica con mostrador de madera, plantas y sala de espera vacía; una recepcionista trabaja de espaldas.",
+     "legende": "Un espacio de recepción luminoso y tranquilo da la bienvenida a los visitantes."
+    },
+    "val": {
+     "alt": "Recepció lluminosa d'una clínica amb taulell de fusta, plantes i sala d'espera buida; una recepcionista treballa d'esquena.",
+     "legende": "Un espai de recepció lluminós i tranquil dona la benvinguda als visitants."
+    },
+    "en": {
+     "alt": "Bright clinic reception with a wooden desk, plants and an empty waiting area; a receptionist works with her back to the camera.",
+     "legende": "A bright, calm reception area welcomes visitors."
+    },
+    "fr": {
+     "alt": "Accueil lumineux d'une clinique avec comptoir en bois, plantes et salle d'attente vide ; une réceptionniste travaille de dos.",
+     "legende": "Un espace d'accueil lumineux et calme reçoit les visiteurs."
+    }
+   }
   },
   {
    "id": "art-18",

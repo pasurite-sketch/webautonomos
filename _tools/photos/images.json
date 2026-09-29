@@ -1235,6 +1235,42 @@
    "v": 1,
    "alt": "Une libraire indépendante emballe une commande dans du papier kraft sur son comptoir, avec une tasse et des étagères en arrière-plan.",
    "legende": "La libraire prépare soigneusement une commande dans sa boutique."
+  },
+  "blog/es/web-para-clinica-dental-fisioterapeuta.html": {
+   "sujet": "art-17",
+   "fichier": "clinica-salud-recepcion-luminosa",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Recepción luminosa de una clínica con mostrador de madera, plantas y sala de espera vacía; una recepcionista trabaja de espaldas.",
+   "legende": "Un espacio de recepción luminoso y tranquilo da la bienvenida a los visitantes."
+  },
+  "blog/val/web-per-a-dentistes-i-fisioterapeutes.html": {
+   "sujet": "art-17",
+   "fichier": "clinica-salud-recepcion-luminosa",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Recepció lluminosa d'una clínica amb taulell de fusta, plantes i sala d'espera buida; una recepcionista treballa d'esquena.",
+   "legende": "Un espai de recepció lluminós i tranquil dona la benvinguda als visitants."
+  },
+  "blog/en/website-for-dentists-and-physiotherapists.html": {
+   "sujet": "art-17",
+   "fichier": "clinica-salud-recepcion-luminosa",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Bright clinic reception with a wooden desk, plants and an empty waiting area; a receptionist works with her back to the camera.",
+   "legende": "A bright, calm reception area welcomes visitors."
+  },
+  "blog/fr/site-web-pour-dentistes-et-kinesitherapeutes.html": {
+   "sujet": "art-17",
+   "fichier": "clinica-salud-recepcion-luminosa",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Accueil lumineux d'une clinique avec comptoir en bois, plantes et salle d'attente vide ; une réceptionniste travaille de dos.",
+   "legende": "Un espace d'accueil lumineux et calme reçoit les visiteurs."
   }
  }
 }
