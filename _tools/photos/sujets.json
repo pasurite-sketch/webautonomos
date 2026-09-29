@@ -3816,9 +3816,29 @@
      "url": "https://webautonomos.es/blog/fr/site-web-pour-coachs-sportifs"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un coach sportif déroule des tapis de sol et prépare des élastiques dans un petit studio de sport au lever du jour.",
-   "fichier": "entrenador-personal-estudio"
+   "fichier": "entrenador-personal-estudio",
+   "v": 1,
+   "fait_le": "2026-09-29T23:40:41",
+   "textes": {
+    "es": {
+     "alt": "Un entrenador despliega una esterilla y prepara bandas elásticas en un pequeño estudio deportivo iluminado por el sol de la mañana.",
+     "legende": "El entrenador prepara el espacio y el material antes de comenzar la sesión."
+    },
+    "val": {
+     "alt": "Un entrenador desplega una estoreta i prepara bandes elàstiques en un estudi esportiu menut il·luminat pel sol del matí.",
+     "legende": "L'entrenador prepara l'espai i el material abans de començar la sessió."
+    },
+    "en": {
+     "alt": "A fitness coach unrolls a mat and prepares resistance bands in a small studio lit by the morning sun.",
+     "legende": "The coach prepares the space and equipment before the session begins."
+    },
+    "fr": {
+     "alt": "Un coach sportif déroule un tapis et prépare des élastiques dans un petit studio baigné par la lumière du matin.",
+     "legende": "Le coach prépare l'espace et le matériel avant de commencer la séance."
+    }
+   }
   },
   {
    "id": "art-44",
