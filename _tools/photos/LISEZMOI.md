@@ -11,8 +11,8 @@ AI Overview, ChatGPT, Gemini) en attendent sur toutes les pages analysées.
 | 1. Repérer les pages sans photo, les regrouper par sujet | VPS, `photos.py inventaire` (chaque nuit) |
 | 2. Lire la page | VPS : titre, introduction, scène préparée dans `sujets.json` |
 | 3. Rédiger le prompt (avec l'URL) | VPS, `photos.py` (`construire_prompt`) |
-| 4. Générer la photo | ChatGPT, GPT « Photos WebAutonomos », abonnement d'Angelino : il tape « suivante » |
-| 5. Télécharger et réduire la photo | VPS, `serveur.py` : 1600×900 en JPEG, WebP et WebP 800 px |
+| 4. Générer la photo | ChatGPT, GPT « Photos WebAutonomos », abonnement d'Angelino : « suivante » affiche la photo, « ok » l'envoie (et enchaîne la suivante) |
+| 5. Contrôler, télécharger et réduire la photo | VPS, `serveur.py` : refus de toute image avec du texte (RapidOCR) ou déjà reçue, puis 1600×900 en JPEG, WebP et WebP 800 px |
 | 6. Poser la photo et publier | VPS : pages, données des articles, commit et push (GitHub Actions déploie) |
 
 Le GPT ne fait qu'une chose que le serveur ne peut pas faire : générer l'image
@@ -61,6 +61,19 @@ Photo réaliste, sans texte, logo ni marque lisibles, écrans flous ou éteints,
 personne ne regarde l'objectif. Jamais présentée comme un client, un patient ou
 un cas réel (légende comprise). Pages santé : aucun patient reconnaissable, pas
 d'avant/après, pas de soin en gros plan.
+
+## Contrôles des photos reçues
+
+Le 29/09, le premier essai a produit une infographie sur les pneus au lieu de la
+scène demandée. Depuis :
+
+- rien ne part sans le « ok » d'Angelino, qui voit la photo dans ChatGPT ;
+- le serveur refuse toute image où RapidOCR lit du texte (une seule zone suffit)
+  et toute image déjà reçue ; le GPT reçoit la raison et régénère ;
+- chaque image reçue est gardée dans `~/.local/state/photos/recues/` (refusées
+  dans `refusees/`), avec son nom, son identifiant et son empreinte au journal ;
+- une photo publiée par erreur se retire partout avec
+  `photos.py annuler SUJET` (sur le VPS, `PHOTOS_ROBOT=1` : synchro + push).
 
 ## Commandes utiles (Mac ou VPS)
 

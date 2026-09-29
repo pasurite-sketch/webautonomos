@@ -339,6 +339,32 @@ def poser_bloc_spa(s, slug, cfg):
     return s[:a + 1] + nouveau + (',' if blocs else '') + s[a + 1:]
 
 
+def retirer_bloc_spa(s, slug, cfg):
+    """index.html sans le bloc image (de ce fichier) de l'article `slug`."""
+    _, blocs = _blocs_article(s, slug)
+    cible = 'src:"/assets/%s.jpg"' % cfg['fichier']
+    for i, (d, e) in enumerate(blocs):
+        if s[d:e].startswith('{type:"image"') and cible in s[d:e]:
+            if i > 0:
+                return s[:s.rfind(',', blocs[i - 1][1], d)] + s[e:]
+            if len(blocs) > 1:
+                return s[:d] + s[s.find(',', e) + 1:]
+            return s[:d] + s[e:]
+    return s
+
+
+def _ecrire_file(path, brut, d):
+    """Réécrit un JSON de la file dans la convention de l'original."""
+    m = re.match(r'\{\s*\n( +)"', brut)
+    retrait = len(m.group(1)) if m else 2
+    # accents bruts ou échappés, comme dans le fichier d'origine
+    ascii_ = not re.search(r'[^\x00-\x7f]', brut)
+    with open(path, 'w', encoding='utf-8') as fh:
+        json.dump(d, fh, ensure_ascii=ascii_, indent=retrait)
+        if brut.endswith('\n'):
+            fh.write('\n')
+
+
 def poser_bloc_file(path, cfg_par_langue):
     """Article en file d'attente (_tools/queue/*.json) : bloc image après
     l'introduction de chaque langue. publish_next.py le reprendra tel quel."""
@@ -351,18 +377,48 @@ def poser_bloc_file(path, cfg_par_langue):
         pos = 1 if contenu and contenu[0].get('type') == 'intro' else 0
         contenu.insert(pos, bloc_image(cfg))
         d[lg]['content'] = contenu
-    m = re.match(r'\{\s*\n( +)"', brut)
-    retrait = len(m.group(1)) if m else 2
-    # même convention que le fichier d'origine : accents bruts ou échappés
-    ascii_ = not re.search(r'[^\x00-\x7f]', brut)
-    with open(path, 'w', encoding='utf-8') as fh:
-        json.dump(d, fh, ensure_ascii=ascii_, indent=retrait)
-        fh.write('\n')
+    _ecrire_file(path, brut, d)
+
+
+def retirer_bloc_file(path, fichier):
+    """Retire d'un article en file le bloc image de ce fichier. True si modifié."""
+    brut = open(path, encoding='utf-8').read()
+    d = json.loads(brut)
+    cible = '/assets/%s.jpg' % fichier
+    modifie = False
+    for v in d.values():
+        if isinstance(v, dict) and isinstance(v.get('content'), list):
+            garde = [b for b in v['content'] if not (b.get('type') == 'image' and b.get('src') == cible)]
+            if len(garde) != len(v['content']):
+                v['content'] = garde
+                modifie = True
+    if modifie:
+        _ecrire_file(path, brut, d)
+    return modifie
 
 
 # --------------------------------------------------------------------------
 # Image
 # --------------------------------------------------------------------------
+
+_OCR = None
+
+
+def textes_dans_image(chemin):
+    """Textes lisibles détectés dans l'image (RapidOCR, local et gratuit).
+    Les photos du site n'en contiennent aucun : une seule zone suffit à refuser.
+    Renvoie None si le détecteur n'est pas installé (environnement ~/photos/venv
+    du VPS), la liste des textes sinon."""
+    global _OCR
+    try:
+        if _OCR is None:
+            from rapidocr_onnxruntime import RapidOCR
+            _OCR = RapidOCR()
+    except ImportError:
+        return None
+    resultat, _ = _OCR(chemin)
+    return [txt.strip() for _, txt, score in (resultat or []) if score >= 0.6 and len(txt.strip()) >= 3]
+
 
 def traiter_image(source, fichier, dossier=ASSETS):
     """Recadre en 16:9 et écrit les trois fichiers du site : .jpg (secours),

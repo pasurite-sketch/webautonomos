@@ -1,0 +1,264 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Photos WebAutonomos",
+    "description": "Donne la prochaine page du site webautonomos.es à illustrer, avec le prompt de sa photo, et reçoit la photo générée pour la mettre en ligne.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://photos.webautonomos.es"
+    }
+  ],
+  "paths": {
+    "/suivante": {
+      "get": {
+        "operationId": "obtenirSuivante",
+        "summary": "Prochaine page à illustrer, avec le prompt de la photo et les langues des textes à rédiger.",
+        "responses": {
+          "200": {
+            "description": "Sujet à traiter, ou termine=true quand plus aucune page n'attend de photo.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "termine": {
+                      "type": "boolean",
+                      "description": "true quand il n'y a plus rien à illustrer."
+                    },
+                    "sujet_id": {
+                      "type": "string",
+                      "description": "Identifiant à renvoyer tel quel avec la photo."
+                    },
+                    "titre": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string",
+                      "description": "Adresse de la page à illustrer."
+                    },
+                    "prompt": {
+                      "type": "string",
+                      "description": "Texte à utiliser tel quel pour générer la photo."
+                    },
+                    "langues": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "Langues des textes alt et legende à rédiger (es, val, en, fr)."
+                    },
+                    "consignes_textes": {
+                      "type": "string"
+                    },
+                    "restants": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/photo": {
+      "post": {
+        "operationId": "envoyerPhoto",
+        "summary": "Envoie la photo générée pour un sujet, avec son texte alternatif et sa légende dans chaque langue.",
+        "x-openai-isConsequential": false,
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "sujet_id",
+                  "textes",
+                  "openaiFileIdRefs"
+                ],
+                "properties": {
+                  "sujet_id": {
+                    "type": "string",
+                    "description": "Le sujet_id reçu de obtenirSuivante."
+                  },
+                  "textes": {
+                    "type": "array",
+                    "description": "Un élément par langue demandée dans « langues ».",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "langue",
+                        "alt"
+                      ],
+                      "properties": {
+                        "langue": {
+                          "type": "string",
+                          "description": "es, val, en ou fr"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "description": "Description factuelle de la photo, 80 à 125 caractères, dans cette langue."
+                        },
+                        "legende": {
+                          "type": "string",
+                          "description": "Légende utile au lecteur, 60 à 110 caractères, dans cette langue."
+                        }
+                      }
+                    }
+                  },
+                  "openaiFileIdRefs": {
+                    "type": "array",
+                    "description": "L'image générée dans cette conversation pour ce sujet (une seule).",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Photo posée et publiée (ou prête pour un article pas encore paru).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    },
+                    "message": {
+                      "type": "string"
+                    },
+                    "pages": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "erreur": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/passer": {
+      "post": {
+        "operationId": "passerSujet",
+        "summary": "Laisse un sujet de côté (il ne sera plus proposé).",
+        "x-openai-isConsequential": false,
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "sujet_id"
+                ],
+                "properties": {
+                  "sujet_id": {
+                    "type": "string"
+                  },
+                  "raison": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Sujet laissé de côté.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/etat": {
+      "get": {
+        "operationId": "obtenirEtat",
+        "summary": "Avancement de l'illustration du site.",
+        "responses": {
+          "200": {
+            "description": "Compteurs et prochain sujet.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "photos_faites": {
+                      "type": "integer"
+                    },
+                    "restantes": {
+                      "type": "integer"
+                    },
+                    "laissees_de_cote": {
+                      "type": "integer"
+                    },
+                    "pages_illustrees": {
+                      "type": "integer"
+                    },
+                    "prochain": {
+                      "type": "object",
+                      "properties": {
+                        "sujet_id": {
+                          "type": "string"
+                        },
+                        "titre": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+    },
+    "securitySchemes": {
+      "cleApi": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "security": [
+    {
+      "cleApi": [
+
+      ]
+    }
+  ]
+}

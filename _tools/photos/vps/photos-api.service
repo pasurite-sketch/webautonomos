@@ -6,7 +6,8 @@ Wants=network-online.target
 [Service]
 EnvironmentFile=%h/.config/photos/env
 WorkingDirectory=%h/photos/webautonomos
-ExecStart=/usr/bin/python3 %h/photos/webautonomos/_tools/photos/serveur.py
+# environnement ~/photos/venv : Pillow + RapidOCR (détection du texte dans les photos reçues)
+ExecStart=%h/photos/venv/bin/python %h/photos/webautonomos/_tools/photos/serveur.py
 Restart=always
 RestartSec=5
 

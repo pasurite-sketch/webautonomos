@@ -11,6 +11,7 @@ fait le reste par serveur.py. Ces commandes servent au VPS et au Mac :
     python3 _tools/photos/photos.py essai        # teste la position sur toutes les pages, sans rien écrire
     python3 _tools/photos/photos.py appliquer ID IMAGE TEXTES.json   # pose une photo à la main
     python3 _tools/photos/photos.py reappliquer  # remet les photos effacées par une régénération
+    python3 _tools/photos/photos.py annuler ID   # retire la photo d'un sujet partout, le remet en file
     python3 _tools/photos/photos.py verifier     # chaque photo prévue est en place, une seule fois
     python3 _tools/photos/photos.py nuit         # VPS : inventaire + réapplication + contrôle + push
 
@@ -381,7 +382,8 @@ def a_des_pages_actives(s, jour=None):
 
 
 def construire_prompt(s):
-    lignes = ["Génère une photo réaliste, au format paysage 1536×1024, pour illustrer cette page du site "
+    lignes = ["Génère une photo réaliste ENTIÈREMENT NOUVELLE et SANS AUCUN TEXTE (ni lettre, ni chiffre, ni "
+              "logo, ni panneau, ni légende), au format paysage 1536×1024, pour illustrer cette page du site "
               "webautonomos.es : %s" % s['url'],
               "Sujet de la page : %s" % s['titre']]
     if s.get('resume'):
@@ -401,6 +403,8 @@ def construire_prompt(s):
     if s.get('sante'):
         interdits += ["aucun patient reconnaissable", "pas d'avant/après", "pas de soin en gros plan ni de sang"]
     lignes.append("Interdits : " + " ; ".join(interdits) + ".")
+    lignes.append("Rappel : une photographie, pas une infographie ni un schéma. Aucun texte nulle part dans l'image. "
+                  "N'utilise aucune image existante ni le contenu d'une autre conversation.")
     return "\n".join(lignes)
 
 
@@ -503,6 +507,50 @@ def appliquer(sid, image, textes, jour=None):
     return sorted(modifies)
 
 
+def annuler(sid):
+    """Retire la photo d'un sujet partout (pages, données des articles, file
+    d'attente, fichiers de assets/) et remet le sujet en « pret ». La version
+    est gardée : la prochaine photo prendra v+1, ce qui contourne les caches."""
+    data = charger()
+    s = trouver(data, sid)
+    imgs = L.lire_json(L.IMAGES_JSON, {})
+    pages_cfg = imgs.setdefault('pages', {})
+    fichier = s['fichier']
+    modifies = set()
+    index0 = index = open(L.INDEX, encoding='utf-8').read()
+    for p in s['pages']:
+        cfg = pages_cfg.pop(p['html'], None) or {'fichier': fichier}
+        if p.get('spa') and index.count('slug:"%s"' % p['spa']) == 1:
+            index = L.retirer_bloc_spa(index, p['spa'], cfg)
+        chemin = os.path.join(L.ROOT, p['html'])
+        if os.path.isfile(chemin):
+            h = lire(p['html'])
+            h2 = L._retirer(h, cfg)
+            if h2 != h:
+                with open(chemin, 'w', encoding='utf-8') as fh:
+                    fh.write(h2)
+                modifies.add(p['html'])
+    if s.get('file') and os.path.isfile(os.path.join(L.ROOT, s['file'])):
+        if L.retirer_bloc_file(os.path.join(L.ROOT, s['file']), fichier):
+            modifies.add(s['file'])
+    if index != index0:
+        with open(L.INDEX, 'w', encoding='utf-8') as fh:
+            fh.write(index)
+        _valider_index(index)
+        modifies.add('index.html')
+    for ext in ('.jpg', '.webp', '-800.webp'):
+        f = os.path.join(L.ASSETS, fichier + ext)
+        if os.path.isfile(f):
+            os.remove(f)
+            modifies.add('assets/%s%s' % (fichier, ext))
+    s['statut'] = 'pret'
+    for k in ('fait_le', 'textes'):
+        s.pop(k, None)
+    L.ecrire_json(L.IMAGES_JSON, imgs)
+    L.ecrire_json(L.SUJETS_JSON, data)
+    return sorted(modifies | {'_tools/photos/images.json', '_tools/photos/sujets.json'})
+
+
 def reappliquer(jour=None):
     """Remet chaque photo prévue là où elle manque : page régénérée sans son
     générateur à jour, page gelée arrivée à sa date, article publié depuis."""
@@ -579,7 +627,7 @@ def publier(fichiers, message):
     """Commit + push. False si le push est refusé (quelqu'un a poussé entre-temps)."""
     if not robot():
         return True
-    _git('add', '-f', '--', *fichiers)
+    _git('add', '-A', '-f', '--', *fichiers)  # -A : enregistre aussi les fichiers supprimés
     if not _git('diff', '--cached', '--quiet').returncode:
         return True
     r = _git('-c', 'user.name=photos-bot', '-c', 'user.email=photos-bot@users.noreply.github.com',
@@ -668,6 +716,10 @@ def main(argv):
     elif cmd == 'reappliquer':
         for f in reappliquer():
             print('  réappliqué :', f)
+    elif cmd == 'annuler':
+        sid = argv[1]
+        for f in en_boucle(lambda: annuler(sid), 'Photos auto : photo retirée (%s), sujet remis en file' % sid):
+            print('  modifié :', f)
     elif cmd == 'verifier':
         pb = verifier()
         print('\n'.join(pb) if pb else 'toutes les photos prévues sont en place')

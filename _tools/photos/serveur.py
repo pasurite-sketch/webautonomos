@@ -142,6 +142,9 @@ def recevoir_photo(corps):
                                              'un alt pour chaque langue.' % ', '.join(manque)}
     chemin = _telecharger(ref['download_link'])
     try:
+        refus = _controler(chemin, sid, ref)
+        if refus:
+            return 422, {'ok': False, 'erreur': refus}
         with Verrou():
             titre = s['titre']
             fichiers = P.en_boucle(lambda: P.appliquer(sid, chemin, textes),
@@ -155,13 +158,55 @@ def recevoir_photo(corps):
             pass
     pages = [p['url'] for p in s['pages'] if L.active(p)]
     en_attente = [p['url'] for p in s['pages'] if not L.active(p)]
+    apercu = 'https://webautonomos.es/assets/%s.jpg?v=%s' % (s['fichier'], s.get('v'))
     log.info('photo %s v%s -> %d fichiers', sid, s.get('v'), len(fichiers))
     msg = 'Photo posée sur %d page(s), en ligne dans 2 minutes environ.' % len(pages)
     if s.get('type') == 'file' and not s.get('publie'):
         msg = 'Photo prête : elle paraîtra avec l\'article le %s.' % s.get('publication')
     if en_attente:
         msg += ' %d page(s) gelée(s) la recevront automatiquement à la fin du gel.' % len(en_attente)
-    return 200, {'ok': True, 'sujet_id': sid, 'version': s.get('v'), 'pages': pages, 'message': msg}
+    return 200, {'ok': True, 'sujet_id': sid, 'version': s.get('v'), 'pages': pages,
+                 'photo_publiee': apercu, 'message': msg + ' Photo reçue : ' + apercu}
+
+
+def _controler(chemin, sid, ref):
+    """Refuse une image déjà reçue ou qui contient du texte. Garde chaque image
+    reçue (acceptée ou refusée) dans ~/.local/state/photos/recues/ pour contrôle."""
+    import hashlib
+    import shutil
+    from PIL import Image
+    data = open(chemin, 'rb').read()
+    empreinte = hashlib.sha1(data).hexdigest()
+    try:
+        w, h = Image.open(chemin).size
+    except Exception:  # noqa: BLE001
+        w = h = 0
+    log.info('reçue pour %s : name=%s id=%s mime=%s %d×%d %d octets sha1=%s', sid, ref.get('name'), ref.get('id'),
+             ref.get('mime_type'), w, h, len(data), empreinte[:12])
+    dossier = os.path.join(ETAT, 'recues')
+    os.makedirs(os.path.join(dossier, 'refusees'), exist_ok=True)
+    index_f = os.path.join(dossier, 'index.json')
+    index = L.lire_json(index_f, {})
+    ext = {'image/png': '.png', 'image/webp': '.webp', 'image/jpeg': '.jpg'}.get(ref.get('mime_type'), '.img')
+    nom = '%s-%s%s' % (sid, time.strftime('%Y%m%d-%H%M%S'), ext)
+    if empreinte in index:
+        shutil.copy(chemin, os.path.join(dossier, 'refusees', nom))
+        return ("Cette image a déjà été envoyée (pour %s). Génère une photo entièrement nouvelle pour ce sujet, "
+                "puis renvoie-la." % index[empreinte]['sujet'])
+    textes = L.textes_dans_image(chemin)
+    if textes is None:
+        log.warning('détecteur de texte absent : contrôle sauté')
+    elif textes:
+        shutil.copy(chemin, os.path.join(dossier, 'refusees', nom))
+        log.warning('refusée (texte) pour %s : %s', sid, ' | '.join(textes[:5]))
+        extrait = ', '.join('« %s »' % t[:40] for t in textes[:3])
+        return ("L'image contient du texte lisible (%s). Les photos du site ne doivent contenir aucun texte, lettre, "
+                "chiffre ni logo : génère une nouvelle photo réaliste sans aucun texte, montre-la, et attends « ok »."
+                % extrait)
+    shutil.copy(chemin, os.path.join(dossier, nom))
+    index[empreinte] = {'sujet': sid, 'fichier': nom, 'le': time.strftime('%Y-%m-%d %H:%M:%S')}
+    L.ecrire_json(index_f, index)
+    return None
 
 
 def passer(corps):

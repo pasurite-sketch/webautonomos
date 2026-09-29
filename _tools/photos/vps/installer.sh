@@ -5,6 +5,7 @@
 #   bash installer.sh cle        # 1. clé de déploiement GitHub (à ajouter au dépôt, écriture autorisée)
 #   bash installer.sh clone      # 2. clone dédié du robot : ~/photos/webautonomos
 #   bash installer.sh env        # 3. ~/.config/photos/env (clé API du GPT générée ici)
+#   bash installer.sh venv       # 3 bis. ~/photos/venv : Pillow + RapidOCR (refus des photos avec du texte)
 #   bash installer.sh cloudflared  # 4. binaire cloudflared dans ~/.local/bin
 #   bash installer.sh tunnel     # 5. après « cloudflared tunnel login » : tunnel + DNS photos.webautonomos.es
 #   bash installer.sh services   # 6. services systemd utilisateur (API, tunnel, nuit)
@@ -50,6 +51,15 @@ etape_env() {
   echo "fichier de configuration : $ENVF (clé API non affichée)"
 }
 
+etape_venv() {
+  [ -x "$HOME/photos/venv/bin/python" ] || python3 -m venv "$HOME/photos/venv"
+  "$HOME/photos/venv/bin/pip" install -q --disable-pip-version-check rapidocr-onnxruntime Pillow
+  # la version d'OpenCV tirée par RapidOCR exige libGL, absente du serveur
+  "$HOME/photos/venv/bin/pip" uninstall -y -q opencv-python || true
+  "$HOME/photos/venv/bin/pip" install -q --disable-pip-version-check opencv-python-headless
+  "$HOME/photos/venv/bin/python" -c "import rapidocr_onnxruntime, PIL; print('venv prêt, Pillow', PIL.__version__)"
+}
+
 etape_cloudflared() {
   mkdir -p "$HOME/.local/bin"
   if [ ! -x "$CF" ]; then
@@ -91,7 +101,7 @@ etape_etat() {
 }
 
 case "${1:-}" in
-  cle) etape_cle ;; clone) etape_clone ;; env) etape_env ;; cloudflared) etape_cloudflared ;;
+  cle) etape_cle ;; clone) etape_clone ;; env) etape_env ;; venv) etape_venv ;; cloudflared) etape_cloudflared ;;
   tunnel) etape_tunnel ;; services) etape_services ;; etat) etape_etat ;;
   *) sed -n '2,13p' "$0" ;;
 esac
