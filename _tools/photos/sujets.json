@@ -1354,9 +1354,29 @@
      "url": "https://webautonomos.es/en/ai-visibility/"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une femme pose une question à voix haute à son téléphone (écran invisible) en marchant dans une rue commerçante ; façades de boutiques floues en arrière-plan.",
-   "fichier": "busqueda-voz-asistente-ia-calle"
+   "fichier": "busqueda-voz-asistente-ia-calle",
+   "v": 1,
+   "fait_le": "2026-09-29T16:32:42",
+   "textes": {
+    "es": {
+     "alt": "Una mujer camina por una calle comercial y habla a su teléfono, con escaparates desenfocados al fondo.",
+     "legende": "Consultar el teléfono mientras se pasea por una calle comercial."
+    },
+    "val": {
+     "alt": "Una dona camina per un carrer comercial i parla al mòbil, amb aparadors desenfocats al fons.",
+     "legende": "Consultar el mòbil mentre es passeja per un carrer comercial."
+    },
+    "en": {
+     "alt": "A woman walks along a shopping street speaking into her phone, with blurred shopfronts behind her.",
+     "legende": "Checking in by phone while walking along a shopping street."
+    },
+    "fr": {
+     "alt": "Une femme marche dans une rue commerçante en parlant à son téléphone, avec des vitrines floues en arrière-plan.",
+     "legende": "Consulter son téléphone en marchant dans une rue commerçante."
+    }
+   }
   },
   {
    "id": "page-marketing",

@@ -649,6 +649,33 @@
    "v": 1,
    "alt": "A business owner drinks coffee beside her desk in a bright office with plants and city views.",
    "legende": "A quiet office break with natural light and a view outside."
+  },
+  "visibilidad-ia/index.html": {
+   "sujet": "page-visibilite-ia",
+   "fichier": "busqueda-voz-asistente-ia-calle",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una mujer camina por una calle comercial y habla a su teléfono, con escaparates desenfocados al fondo.",
+   "legende": "Consultar el teléfono mientras se pasea por una calle comercial."
+  },
+  "fr/visibilite-ia/index.html": {
+   "sujet": "page-visibilite-ia",
+   "fichier": "busqueda-voz-asistente-ia-calle",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une femme marche dans une rue commerçante en parlant à son téléphone, avec des vitrines floues en arrière-plan.",
+   "legende": "Consulter son téléphone en marchant dans une rue commerçante."
+  },
+  "en/ai-visibility/index.html": {
+   "sujet": "page-visibilite-ia",
+   "fichier": "busqueda-voz-asistente-ia-calle",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A woman walks along a shopping street speaking into her phone, with blurred shopfronts behind her.",
+   "legende": "Checking in by phone while walking along a shopping street."
   }
  }
 }
