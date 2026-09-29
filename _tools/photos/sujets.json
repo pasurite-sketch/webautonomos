@@ -2721,9 +2721,29 @@
      "url": "https://webautonomos.es/blog/fr/choisir-les-categories-google-business"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un quincaillier range des outils à main sur un présentoir mural bien organisé dans sa quincaillerie de quartier.",
-   "fichier": "categorias-google-business-ferreteria"
+   "fichier": "categorias-google-business-ferreteria",
+   "v": 1,
+   "fait_le": "2026-09-29T22:46:50",
+   "textes": {
+    "es": {
+     "alt": "Un ferretero ordena herramientas de mano en un expositor mural de su tienda de barrio.",
+     "legende": "Un comerciante organiza las herramientas en su ferretería."
+    },
+    "val": {
+     "alt": "Un ferreter ordena eines manuals en un expositor de paret de la seua botiga de barri.",
+     "legende": "Un comerciant organitza les eines a la seua ferreteria."
+    },
+    "en": {
+     "alt": "A hardware shop owner arranges hand tools on a neatly organized wall display in his neighborhood store.",
+     "legende": "A shopkeeper organizes tools in his hardware store."
+    },
+    "fr": {
+     "alt": "Un quincaillier range des outils à main sur un présentoir mural dans sa quincaillerie de quartier.",
+     "legende": "Un commerçant organise les outils dans sa quincaillerie."
+    }
+   }
   },
   {
    "id": "art-23",
