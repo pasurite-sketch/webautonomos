@@ -3006,9 +3006,29 @@
      "url": "https://webautonomos.es/blog/fr/obtenir-des-backlinks-locaux"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Réunion d'une association de commerçants dans l'arrière-salle d'un café : six personnes discutent autour d'une table.",
-   "fichier": "backlinks-locales-asociacion-comerciantes"
+   "fichier": "backlinks-locales-asociacion-comerciantes",
+   "v": 1,
+   "fait_le": "2026-09-29T22:56:33",
+   "textes": {
+    "es": {
+     "alt": "Seis comerciantes conversan alrededor de una mesa de madera en la sala trasera de un café luminoso.",
+     "legende": "Comerciantes del barrio comparten ideas durante una reunión informal."
+    },
+    "val": {
+     "alt": "Sis comerciants conversen al voltant d'una taula de fusta a la sala del darrere d'un café lluminós.",
+     "legende": "Comerciants del barri compartixen idees durant una reunió informal."
+    },
+    "en": {
+     "alt": "Six local business owners talk around a wooden table in the bright back room of a café.",
+     "legende": "Local shopkeepers share ideas during an informal meeting."
+    },
+    "fr": {
+     "alt": "Six commerçants discutent autour d'une table en bois dans l'arrière-salle lumineuse d'un café.",
+     "legende": "Des commerçants du quartier échangent lors d'une réunion informelle."
+    }
+   }
   },
   {
    "id": "art-28",
