@@ -2369,6 +2369,42 @@
    "v": 1,
    "alt": "La gérante d'une petite agence de voyages discute avec un associé près d'une fenêtre, une tasse de café à la main.",
    "legende": "Un échange informel entre collègues dans un bureau lumineux."
+  },
+  "blog/es/reservas-online-autonomos-2026.html": {
+   "sujet": "art-60",
+   "fichier": "reservas-online-agenda-peluqueria",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una peluquera seca el cabello de una clienta mientras mira un teléfono colocado sobre el mostrador del salón.",
+   "legende": "La peluquera sigue trabajando mientras consulta el teléfono durante el servicio."
+  },
+  "blog/val/reserves-en-linia-per-a-autonoms.html": {
+   "sujet": "art-60",
+   "fichier": "reservas-online-agenda-peluqueria",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una perruquera eixuga els cabells d'una clienta mentre mira un telèfon damunt del taulell del saló.",
+   "legende": "La perruquera continua treballant mentre consulta el telèfon durant el servei."
+  },
+  "blog/en/online-booking-for-freelancers.html": {
+   "sujet": "art-60",
+   "fichier": "reservas-online-agenda-peluqueria",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A hairstylist blow-dries a client's hair while glancing at a phone on the salon counter.",
+   "legende": "The hairstylist continues the appointment while checking the phone."
+  },
+  "blog/fr/reservation-en-ligne-pour-independants.html": {
+   "sujet": "art-60",
+   "fichier": "reservas-online-agenda-peluqueria",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une coiffeuse sèche les cheveux d'une cliente tout en jetant un œil à un téléphone posé sur le comptoir.",
+   "legende": "La coiffeuse poursuit la prestation tout en consultant son téléphone."
   }
  }
 }
