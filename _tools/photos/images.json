@@ -1379,6 +1379,42 @@
    "v": 1,
    "alt": "La gérante d'un institut de beauté répartit des jetons en bois dans trois bocaux en verre sur une table.",
    "legende": "La gérante organise des jetons dans son espace de travail."
+  },
+  "blog/es/que-debe-tener-web-profesional-autonomo.html": {
+   "sujet": "art-21",
+   "fichier": "elementos-web-profesional-muestras",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una diseñadora de interiores organiza muestras de madera, tejidos y azulejos sobre una gran mesa de trabajo.",
+   "legende": "La diseñadora compara materiales y texturas para un proyecto de interiorismo."
+  },
+  "blog/val/elements-imprescindibles-d-una-web.html": {
+   "sujet": "art-21",
+   "fichier": "elementos-web-profesional-muestras",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una dissenyadora d'interiors organitza mostres de fusta, teixits i taulells damunt d'una gran taula de treball.",
+   "legende": "La dissenyadora compara materials i textures per a un projecte d'interiorisme."
+  },
+  "blog/en/essential-elements-of-a-professional-website.html": {
+   "sujet": "art-21",
+   "fichier": "elementos-web-profesional-muestras",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "An interior designer arranges samples of wood, fabric and tiles across a large worktable.",
+   "legende": "The designer compares materials and textures for an interior design project."
+  },
+  "blog/fr/elements-indispensables-site-professionnel.html": {
+   "sujet": "art-21",
+   "fichier": "elementos-web-profesional-muestras",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une architecte d'intérieur dispose des échantillons de bois, de tissu et de carrelage sur une grande table.",
+   "legende": "L'architecte d'intérieur compare les matériaux et les textures d'un projet."
   }
  }
 }

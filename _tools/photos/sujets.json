@@ -2663,9 +2663,29 @@
      "url": "https://webautonomos.es/blog/fr/elements-indispensables-site-professionnel"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une architecte d'intérieur dispose des échantillons (bois, tissu, carrelage) sur une grande table, comme les éléments d'un projet.",
-   "fichier": "elementos-web-profesional-muestras"
+   "fichier": "elementos-web-profesional-muestras",
+   "v": 1,
+   "fait_le": "2026-09-29T22:44:30",
+   "textes": {
+    "es": {
+     "alt": "Una diseñadora de interiores organiza muestras de madera, tejidos y azulejos sobre una gran mesa de trabajo.",
+     "legende": "La diseñadora compara materiales y texturas para un proyecto de interiorismo."
+    },
+    "val": {
+     "alt": "Una dissenyadora d'interiors organitza mostres de fusta, teixits i taulells damunt d'una gran taula de treball.",
+     "legende": "La dissenyadora compara materials i textures per a un projecte d'interiorisme."
+    },
+    "en": {
+     "alt": "An interior designer arranges samples of wood, fabric and tiles across a large worktable.",
+     "legende": "The designer compares materials and textures for an interior design project."
+    },
+    "fr": {
+     "alt": "Une architecte d'intérieur dispose des échantillons de bois, de tissu et de carrelage sur une grande table.",
+     "legende": "L'architecte d'intérieur compare les matériaux et les textures d'un projet."
+    }
+   }
   },
   {
    "id": "art-22",
