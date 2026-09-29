@@ -658,9 +658,29 @@
      "url": "https://webautonomos.es/en/dental-website-design"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Salle de soins d'un cabinet dentaire britannique : fauteuil dentaire vide, un dentiste en tenue bleu marine se lave les mains à l'évier ; par la fenêtre, une rue de maisons mitoyennes en briques, floue.",
-   "fichier": "clinica-dental-reino-unido"
+   "fichier": "clinica-dental-reino-unido",
+   "v": 1,
+   "fait_le": "2026-09-29T14:56:40",
+   "textes": {
+    "es": {
+     "alt": "Un dentista se lava las manos junto al lavabo en una clínica luminosa con un sillón dental vacío.",
+     "legende": "La higiene de manos forma parte de la preparación diaria en una consulta dental."
+    },
+    "val": {
+     "alt": "Un dentista es llava les mans al costat de la pica en una clínica lluminosa amb un silló dental buit.",
+     "legende": "La higiene de mans forma part de la preparació diària en una consulta dental."
+    },
+    "en": {
+     "alt": "A dentist washes his hands at a sink in a bright clinic with an empty dental chair.",
+     "legende": "Hand hygiene is part of the daily preparation in a dental practice."
+    },
+    "fr": {
+     "alt": "Un dentiste se lave les mains au lavabo dans un cabinet lumineux avec un fauteuil dentaire vide.",
+     "legende": "L'hygiène des mains fait partie de la préparation quotidienne au cabinet dentaire."
+    }
+   }
   },
   {
    "id": "metier-menuisier",
