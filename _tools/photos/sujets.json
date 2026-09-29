@@ -1908,9 +1908,29 @@
      "url": "https://webautonomos.es/blog/fr/choisir-ses-mots-cles-locaux"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une commerçante observe les passants depuis le seuil de sa boutique de quartier, bras croisés, sourire aux lèvres.",
-   "fichier": "palabras-clave-locales-planificacion"
+   "fichier": "palabras-clave-locales-planificacion",
+   "v": 1,
+   "fait_le": "2026-09-29T21:12:54",
+   "textes": {
+    "es": {
+     "alt": "Una comerciante sonríe desde la entrada de su tienda mientras observa a los peatones de una calle arbolada.",
+     "legende": "La responsable de una tienda observa el movimiento de su calle comercial."
+    },
+    "val": {
+     "alt": "Una comerciant somriu des de l'entrada de la seua botiga mentre observa els vianants d'un carrer arbrat.",
+     "legende": "La responsable d'una botiga observa el moviment del seu carrer comercial."
+    },
+    "en": {
+     "alt": "A shopkeeper smiles in her doorway as she watches pedestrians on a tree-lined shopping street.",
+     "legende": "A shopkeeper watches the activity along her neighborhood street."
+    },
+    "fr": {
+     "alt": "Une commerçante sourit sur le seuil de sa boutique en observant les passants d'une rue commerçante arborée.",
+     "legende": "Une commerçante observe l'activité de sa rue de quartier."
+    }
+   }
   },
   {
    "id": "art-09",
