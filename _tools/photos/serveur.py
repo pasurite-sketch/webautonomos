@@ -52,7 +52,15 @@ log.addHandler(_h)
 log.setLevel(logging.INFO)
 
 _verrou_threads = threading.Lock()
-_reservations = {}
+_FICHIER_RESERVATIONS = os.path.join(ETAT, 'reservations.json')
+_reservations = L.lire_json(_FICHIER_RESERVATIONS, {})   # page en cours, gardée d'un redémarrage à l'autre
+
+
+def _garder_reservations():
+    try:
+        L.ecrire_json(_FICHIER_RESERVATIONS, _reservations)
+    except OSError as e:
+        log.warning('réservations non enregistrées : %s', e)
 
 
 class Verrou:
@@ -86,6 +94,7 @@ def suivante():
         s = en_cours[0] if en_cours else (prets[0] if prets else None)
         if s is not None:
             _reservations[s['id']] = now
+            _garder_reservations()
             log.info('suivante -> %s%s', s['id'], ' (page en cours)' if en_cours else '')
             return 200, P.charge_utile(s, len(prets))
     return 200, {'termine': True, 'restants': 0,
@@ -128,8 +137,31 @@ def _premiere_image(refs):
     return None
 
 
+def _resoudre(sid):
+    """Identifiant du sujet, même approximatif. ChatGPT recopie parfois mal un
+    identifiant long (29/09 : « file-aviso-legal-privacidad-cookies » pour
+    « …-cookies-web ») : on accepte un identifiant qui désigne un seul sujet
+    sans ambiguïté, sinon la page en cours (un seul utilisateur)."""
+    data = P.charger()
+    ids = [s['id'] for s in data['sujets']]
+    if sid in ids:
+        return sid
+    proches = [i for i in ids if sid and (i.startswith(sid) or sid.startswith(i) or sid in i)]
+    if len(proches) == 1:
+        log.info('sujet « %s » compris comme %s', sid, proches[0])
+        return proches[0]
+    now = time.time()
+    en_cours = [i for i, t in _reservations.items() if now - t < RESERVATION_S and i in ids]
+    if len(en_cours) == 1:
+        log.info('sujet « %s » inconnu : page en cours %s', sid, en_cours[0])
+        return en_cours[0]
+    raise L.PhotoErreur('sujet inconnu : %s. Utilise le sujet_id exact reçu de obtenirSuivante.' % sid)
+
+
 def recevoir_photo(corps):
     sid = (corps.get('sujet_id') or '').strip()
+    if sid or _reservations:
+        sid = _resoudre(sid)
     ref = _premiere_image(corps.get('openaiFileIdRefs'))
     if not sid:
         return 400, {'ok': False, 'erreur': 'sujet_id manquant.'}
@@ -153,6 +185,7 @@ def recevoir_photo(corps):
                                    'Photo auto : %s' % titre[:80])
             s = P.trouver(P.charger(), sid)
             _reservations.pop(sid, None)
+            _garder_reservations()
     finally:
         try:
             os.remove(chemin)
@@ -212,7 +245,7 @@ def _controler(chemin, sid, ref):
 
 
 def passer(corps):
-    sid = (corps.get('sujet_id') or '').strip()
+    sid = _resoudre((corps.get('sujet_id') or '').strip())
 
     def operation():
         data = P.charger()
@@ -225,6 +258,7 @@ def passer(corps):
     with Verrou():
         P.en_boucle(operation, 'Photos auto : sujet %s laissé de côté' % sid)
         _reservations.pop(sid, None)
+        _garder_reservations()
     log.info('passer %s', sid)
     return 200, {'ok': True, 'message': 'Sujet %s laissé de côté.' % sid}
 
