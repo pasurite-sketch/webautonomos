@@ -43,10 +43,29 @@
      "spa": "fr/wix-ou-wordpress"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une céramiste indépendante, dans son atelier, compare deux croquis de mise en page posés côte à côte sur son établi (blocs gris, aucun texte), un crayon à la main ; pots en terre, tours de potier et lumière de fin d'après-midi.",
    "fichier": "elegir-herramienta-web-taller-ceramica",
-   "v": 1
+   "v": 2,
+   "fait_le": "2026-09-29T11:10:34",
+   "textes": {
+    "es": {
+     "alt": "Una ceramista trabaja una pieza de barro en su taller, rodeada de estanterías con piezas y utensilios.",
+     "legende": "Una artesana da forma a una pieza de cerámica en su taller."
+    },
+    "val": {
+     "alt": "Una ceramista treballa una peça de fang al seu taller, envoltada de prestatgeries amb peces i utensilis.",
+     "legende": "Una artesana dona forma a una peça de ceràmica al seu taller."
+    },
+    "en": {
+     "alt": "A ceramic artist shapes a clay vessel in her studio, surrounded by shelves of pottery and tools.",
+     "legende": "A ceramic artist shapes a vessel by hand in her workshop."
+    },
+    "fr": {
+     "alt": "Une céramiste façonne une pièce en argile dans son atelier, entourée d’étagères de poteries et d’outils.",
+     "legende": "Une artisane façonne à la main une pièce en céramique dans son atelier."
+    }
+   }
   },
   {
    "id": "file-alta-autonomo-extranjero-espana",

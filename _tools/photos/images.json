@@ -36,6 +36,42 @@
    "v": 1,
    "alt": "A small business owner reviewing her new website on a laptop and a phone at a table outside her shop in Valencia",
    "legende": "Most people meet a business through its website long before they walk through the door."
+  },
+  "blog/es/wix-o-wordpress.html": {
+   "sujet": "file-wix-o-wordpress",
+   "fichier": "elegir-herramienta-web-taller-ceramica",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 2,
+   "alt": "Una ceramista trabaja una pieza de barro en su taller, rodeada de estanterías con piezas y utensilios.",
+   "legende": "Una artesana da forma a una pieza de cerámica en su taller."
+  },
+  "blog/val/wix-o-wordpress.html": {
+   "sujet": "file-wix-o-wordpress",
+   "fichier": "elegir-herramienta-web-taller-ceramica",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 2,
+   "alt": "Una ceramista treballa una peça de fang al seu taller, envoltada de prestatgeries amb peces i utensilis.",
+   "legende": "Una artesana dona forma a una peça de ceràmica al seu taller."
+  },
+  "blog/en/wix-or-wordpress.html": {
+   "sujet": "file-wix-o-wordpress",
+   "fichier": "elegir-herramienta-web-taller-ceramica",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 2,
+   "alt": "A ceramic artist shapes a clay vessel in her studio, surrounded by shelves of pottery and tools.",
+   "legende": "A ceramic artist shapes a vessel by hand in her workshop."
+  },
+  "blog/fr/wix-ou-wordpress.html": {
+   "sujet": "file-wix-o-wordpress",
+   "fichier": "elegir-herramienta-web-taller-ceramica",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 2,
+   "alt": "Une céramiste façonne une pièce en argile dans son atelier, entourée d’étagères de poteries et d’outils.",
+   "legende": "Une artisane façonne à la main une pièce en céramique dans son atelier."
   }
  }
 }
