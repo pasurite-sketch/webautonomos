@@ -388,6 +388,33 @@
    "v": 1,
    "alt": "A carpenter planes a wooden panel by hand in his workshop, surrounded by wood shavings and tools.",
    "legende": "Crafting wood by hand requires precision and the right tools."
+  },
+  "fr/site-internet-plombier.html": {
+   "sujet": "metier-plombier",
+   "fichier": "fontanero-reparando-fregadero-cocina",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un plombier intervient sous l'évier d'une cuisine moderne avec une clé à molette et une caisse à outils ouverte.",
+   "legende": "Réparer une installation sous l'évier demande des outils et de l'expérience."
+  },
+  "en/website-for-plumbers-in-spain.html": {
+   "sujet": "metier-plombier",
+   "fichier": "fontanero-reparando-fregadero-cocina",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A plumber works beneath a kitchen sink with an adjustable wrench and an open toolbox nearby.",
+   "legende": "Repairing pipework beneath a sink calls for tools and practical experience."
+  },
+  "demo-fontanero.html": {
+   "sujet": "metier-plombier",
+   "fichier": "fontanero-reparando-fregadero-cocina",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un fontanero trabaja bajo el fregadero de una cocina moderna con una llave inglesa y una caja de herramientas abierta.",
+   "legende": "Reparar una instalación bajo el fregadero requiere herramientas y experiencia."
   }
  }
 }

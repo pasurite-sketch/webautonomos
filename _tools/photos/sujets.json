@@ -753,9 +753,29 @@
      "url": "https://webautonomos.es/demo-fontanero"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un plombier à genoux sous l'évier d'une cuisine moderne, clé à molette en main, sa caisse à outils ouverte à côté ; carrelage clair, lumière du jour.",
-   "fichier": "fontanero-reparando-fregadero-cocina"
+   "fichier": "fontanero-reparando-fregadero-cocina",
+   "v": 1,
+   "fait_le": "2026-09-29T15:08:58",
+   "textes": {
+    "es": {
+     "alt": "Un fontanero trabaja bajo el fregadero de una cocina moderna con una llave inglesa y una caja de herramientas abierta.",
+     "legende": "Reparar una instalación bajo el fregadero requiere herramientas y experiencia."
+    },
+    "val": {
+     "alt": "Un lampista treballa davall de l'aigüera d'una cuina moderna amb una clau anglesa i una caixa d'eines oberta.",
+     "legende": "Reparar una instal·lació davall de l'aigüera requerix ferramentes i experiència."
+    },
+    "en": {
+     "alt": "A plumber works beneath a kitchen sink with an adjustable wrench and an open toolbox nearby.",
+     "legende": "Repairing pipework beneath a sink calls for tools and practical experience."
+    },
+    "fr": {
+     "alt": "Un plombier intervient sous l'évier d'une cuisine moderne avec une clé à molette et une caisse à outils ouverte.",
+     "legende": "Réparer une installation sous l'évier demande des outils et de l'expérience."
+    }
+   }
   },
   {
    "id": "metier-plombier-uk",
