@@ -1487,6 +1487,33 @@
    "v": 1,
    "alt": "Un facteur à vélo dépose une enveloppe dans une boîte aux lettres au cours de sa tournée dans une rue ensoleillée.",
    "legende": "Un facteur effectue une livraison dans une rue résidentielle méditerranéenne."
+  },
+  "blog/es/digitalizacion-autonomos-espana-por-donde-empezar.html": {
+   "sujet": "art-24",
+   "fichier": "digitalizacion-autonomos-taller-familiar",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una joven muestra su teléfono a un carpintero mayor en un taller familiar lleno de herramientas y madera.",
+   "legende": "Una hija comparte algo en el móvil con su padre en el taller."
+  },
+  "blog/val/digitalitzacio-per-a-autonoms-per-on-comencar.html": {
+   "sujet": "art-24",
+   "fichier": "digitalizacion-autonomos-taller-familiar",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una jove mostra el mòbil a un fuster major en un taller familiar ple d'eines i fusta.",
+   "legende": "Una filla comparteix una cosa al mòbil amb son pare al taller."
+  },
+  "blog/en/going-digital-as-a-freelancer-where-to-start.html": {
+   "sujet": "art-24",
+   "fichier": "digitalizacion-autonomos-taller-familiar",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A young woman shows her phone to an older carpenter in a family workshop filled with tools and timber.",
+   "legende": "A daughter shares something on her phone with her father in the workshop."
   }
  }
 }

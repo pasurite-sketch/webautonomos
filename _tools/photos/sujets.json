@@ -2832,9 +2832,29 @@
      "spa": "en/going-digital-as-a-freelancer-where-to-start"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Dans l'atelier familial, une fille montre son téléphone à son père menuisier (écran tourné vers eux, invisible) ; outils anciens accrochés au mur.",
-   "fichier": "digitalizacion-autonomos-taller-familiar"
+   "fichier": "digitalizacion-autonomos-taller-familiar",
+   "v": 1,
+   "fait_le": "2026-09-29T22:49:54",
+   "textes": {
+    "es": {
+     "alt": "Una joven muestra su teléfono a un carpintero mayor en un taller familiar lleno de herramientas y madera.",
+     "legende": "Una hija comparte algo en el móvil con su padre en el taller."
+    },
+    "val": {
+     "alt": "Una jove mostra el mòbil a un fuster major en un taller familiar ple d'eines i fusta.",
+     "legende": "Una filla comparteix una cosa al mòbil amb son pare al taller."
+    },
+    "en": {
+     "alt": "A young woman shows her phone to an older carpenter in a family workshop filled with tools and timber.",
+     "legende": "A daughter shares something on her phone with her father in the workshop."
+    },
+    "fr": {
+     "alt": "Une jeune femme montre son téléphone à un menuisier âgé dans un atelier familial rempli d'outils et de bois.",
+     "legende": "Une fille partage quelque chose sur son téléphone avec son père à l'atelier."
+    }
+   }
   },
   {
    "id": "art-25",
