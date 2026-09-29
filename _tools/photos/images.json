@@ -839,6 +839,42 @@
    "v": 1,
    "alt": "Une cliente souriante écrit sur son téléphone à la sortie d'un salon de coiffure, tandis que la coiffeuse la salue depuis la porte.",
    "legende": "Une cliente consulte son téléphone en sortant du salon, tandis que la coiffeuse lui fait signe."
+  },
+  "blog/es/configurar-whatsapp-business-gratis-autonomos.html": {
+   "sujet": "art-06",
+   "fichier": "whatsapp-business-autonomo-furgoneta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un cerrajero sentado en la puerta lateral abierta de una furgoneta blanca consulta su teléfono, con herramientas ordenadas detrás.",
+   "legende": "Un profesional revisa un mensaje desde su vehículo de trabajo."
+  },
+  "blog/val/configurar-whatsapp-business-gratis.html": {
+   "sujet": "art-06",
+   "fichier": "whatsapp-business-autonomo-furgoneta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un manyà assegut a la porta lateral oberta d'una furgoneta blanca consulta el mòbil, amb eines ordenades al darrere.",
+   "legende": "Un professional revisa un missatge des del seu vehicle de treball."
+  },
+  "blog/en/set-up-whatsapp-business-for-free.html": {
+   "sujet": "art-06",
+   "fichier": "whatsapp-business-autonomo-furgoneta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A locksmith seated in the open side door of a plain white van checks his phone, with neatly arranged tools behind him.",
+   "legende": "A tradesperson checks a message from his work vehicle."
+  },
+  "blog/fr/configurer-whatsapp-business-gratuitement.html": {
+   "sujet": "art-06",
+   "fichier": "whatsapp-business-autonomo-furgoneta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un serrurier assis dans la porte latérale ouverte d'une camionnette blanche consulte son téléphone, avec des outils rangés derrière lui.",
+   "legende": "Un artisan consulte un message depuis son véhicule de travail."
   }
  }
 }

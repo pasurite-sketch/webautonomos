@@ -1792,9 +1792,29 @@
      "url": "https://webautonomos.es/blog/fr/configurer-whatsapp-business-gratuitement"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un serrurier assis dans sa camionnette blanche unie, porte latérale ouverte, répond à un message sur son téléphone (écran invisible) ; outils rangés derrière lui.",
-   "fichier": "whatsapp-business-autonomo-furgoneta"
+   "fichier": "whatsapp-business-autonomo-furgoneta",
+   "v": 1,
+   "fait_le": "2026-09-29T19:23:59",
+   "textes": {
+    "es": {
+     "alt": "Un cerrajero sentado en la puerta lateral abierta de una furgoneta blanca consulta su teléfono, con herramientas ordenadas detrás.",
+     "legende": "Un profesional revisa un mensaje desde su vehículo de trabajo."
+    },
+    "val": {
+     "alt": "Un manyà assegut a la porta lateral oberta d'una furgoneta blanca consulta el mòbil, amb eines ordenades al darrere.",
+     "legende": "Un professional revisa un missatge des del seu vehicle de treball."
+    },
+    "en": {
+     "alt": "A locksmith seated in the open side door of a plain white van checks his phone, with neatly arranged tools behind him.",
+     "legende": "A tradesperson checks a message from his work vehicle."
+    },
+    "fr": {
+     "alt": "Un serrurier assis dans la porte latérale ouverte d'une camionnette blanche consulte son téléphone, avec des outils rangés derrière lui.",
+     "legende": "Un artisan consulte un message depuis son véhicule de travail."
+    }
+   }
   },
   {
    "id": "art-07",
