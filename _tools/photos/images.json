@@ -72,6 +72,42 @@
    "v": 2,
    "alt": "Une céramiste façonne une pièce en argile dans son atelier, entourée d’étagères de poteries et d’outils.",
    "legende": "Une artisane façonne à la main une pièce en céramique dans son atelier."
+  },
+  "blog/es/alta-autonomo-extranjero-espana.html": {
+   "sujet": "file-alta-autonomo-extranjero-espana",
+   "fichier": "autonomo-extranjero-tramites-oficina",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un hombre abre las contraventanas de su taller en una calle soleada de estilo mediterráneo.",
+   "legende": "Un artesano abre su nuevo taller mientras entra la luz de la mañana."
+  },
+  "blog/val/alta-autonom-estranger.html": {
+   "sujet": "file-alta-autonomo-extranjero-espana",
+   "fichier": "autonomo-extranjero-tramites-oficina",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un home obri les finestres del seu taller en un carrer assolellat d’estil mediterrani.",
+   "legende": "Un artesà obri el seu nou taller mentre hi entra la llum del matí."
+  },
+  "blog/en/becoming-an-autonomo-in-spain-as-a-foreigner.html": {
+   "sujet": "file-alta-autonomo-extranjero-espana",
+   "fichier": "autonomo-extranjero-tramites-oficina",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A man opens the shutters of his workshop on a sunny Mediterranean-style street.",
+   "legende": "A craftsman opens his new workshop as morning sunlight streams inside."
+  },
+  "blog/fr/devenir-autonomo-en-espagne.html": {
+   "sujet": "file-alta-autonomo-extranjero-espana",
+   "fichier": "autonomo-extranjero-tramites-oficina",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un homme ouvre les volets de son atelier dans une rue ensoleillée d’inspiration méditerranéenne.",
+   "legende": "Un artisan ouvre son nouvel atelier tandis que la lumière du matin entre."
   }
  }
 }
