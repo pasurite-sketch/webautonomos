@@ -11,7 +11,7 @@ AI Overview, ChatGPT, Gemini) en attendent sur toutes les pages analysées.
 | 1. Repérer les pages sans photo, les regrouper par sujet | VPS, `photos.py inventaire` (chaque nuit) |
 | 2. Lire la page | VPS : titre, introduction, scène préparée dans `sujets.json` |
 | 3. Rédiger le prompt (avec l'URL) | VPS, `photos.py` (`construire_prompt`) |
-| 4. Générer la photo | ChatGPT, GPT « Photos WebAutonomos », abonnement d'Angelino : « suivante » affiche la photo, « ok » l'envoie (et enchaîne la suivante) |
+| 4. Générer la photo | ChatGPT, GPT « Photos WebAutonomos », abonnement d'Angelino : « suivante » affiche le prompt, Angelino le copie-colle, la photo se génère, « ok » l'envoie (et affiche le prompt suivant) |
 | 5. Contrôler, télécharger et réduire la photo | VPS, `serveur.py` : refus de toute image avec du texte (RapidOCR) ou déjà reçue, puis 1600×900 en JPEG, WebP et WebP 800 px |
 | 6. Poser la photo et publier | VPS : pages, données des articles, commit et push (GitHub Actions déploie) |
 
