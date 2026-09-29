@@ -1103,10 +1103,30 @@
      "url": "https://webautonomos.es/en/web-design-for-expats-in-spain"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une entrepreneuse installée à Valence prend un café sur un balcon fleuri, un ordinateur portable fermé à côté d'elle ; vue sur les toits de tuiles et un clocher.",
    "fichier": "emprendedora-extranjera-valencia-balcon",
-   "marche_force": "es"
+   "marche_force": "es",
+   "v": 1,
+   "fait_le": "2026-09-29T15:48:21",
+   "textes": {
+    "es": {
+     "alt": "Una emprendedora toma café en un balcón florido de Valencia, con tejados de terracota y un campanario al fondo.",
+     "legende": "Una pausa en el balcón, con vistas a los tejados de Valencia."
+    },
+    "val": {
+     "alt": "Una emprenedora pren cafè en un balcó florit de València, amb teulades de terracota i un campanar al fons.",
+     "legende": "Una pausa al balcó, amb vistes a les teulades de València."
+    },
+    "en": {
+     "alt": "An entrepreneur enjoys coffee on a flower-filled Valencia balcony overlooking terracotta rooftops and a church tower.",
+     "legende": "A quiet coffee break on a balcony overlooking Valencia."
+    },
+    "fr": {
+     "alt": "Une entrepreneuse prend un café sur un balcon fleuri à Valence, avec des toits en terre cuite et un clocher en arrière-plan.",
+     "legende": "Une pause café sur un balcon avec vue sur les toits de Valence."
+    }
+   }
   },
   {
    "id": "page-fonctionnement",

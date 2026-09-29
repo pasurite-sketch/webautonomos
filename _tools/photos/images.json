@@ -523,6 +523,24 @@
    "v": 1,
    "alt": "Un peluquero consulta su teléfono en un salón luminoso y vacío antes de abrir, rodeado de sillones y espejos.",
    "legende": "Un momento tranquilo en el salón antes de recibir a los primeros clientes."
+  },
+  "fr/site-internet-francophones-espagne.html": {
+   "sujet": "page-expatries",
+   "fichier": "emprendedora-extranjera-valencia-balcon",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une entrepreneuse prend un café sur un balcon fleuri à Valence, avec des toits en terre cuite et un clocher en arrière-plan.",
+   "legende": "Une pause café sur un balcon avec vue sur les toits de Valence."
+  },
+  "en/web-design-for-expats-in-spain.html": {
+   "sujet": "page-expatries",
+   "fichier": "emprendedora-extranjera-valencia-balcon",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "An entrepreneur enjoys coffee on a flower-filled Valencia balcony overlooking terracotta rooftops and a church tower.",
+   "legende": "A quiet coffee break on a balcony overlooking Valencia."
   }
  }
 }
