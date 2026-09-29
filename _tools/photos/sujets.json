@@ -3238,9 +3238,29 @@
      "url": "https://webautonomos.es/blog/fr/google-ads-pour-independants-guide-debutant"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un couple propriétaire d'un gîte rural prend son café à la table de la cuisine en regardant par la fenêtre, campagne ensoleillée au-dehors.",
-   "fichier": "google-ads-autonomo-reservas"
+   "fichier": "google-ads-autonomo-reservas",
+   "v": 1,
+   "fait_le": "2026-09-29T23:17:16",
+   "textes": {
+    "es": {
+     "alt": "Una pareja propietaria de una casa rural toma café en la cocina mientras contempla el paisaje soleado desde la ventana.",
+     "legende": "Los propietarios disfrutan de una pausa tranquila en la cocina de su alojamiento."
+    },
+    "val": {
+     "alt": "Una parella propietària d'una casa rural pren café a la cuina mentre contempla el paisatge assolellat des de la finestra.",
+     "legende": "Els propietaris gaudixen d'una pausa tranquil·la a la cuina del seu allotjament."
+    },
+    "en": {
+     "alt": "A couple who own a rural guesthouse drink coffee in the kitchen while looking out at the sunny countryside.",
+     "legende": "The owners enjoy a quiet break in their guesthouse kitchen."
+    },
+    "fr": {
+     "alt": "Un couple propriétaire d'un gîte rural prend un café dans la cuisine en contemplant la campagne ensoleillée par la fenêtre.",
+     "legende": "Les propriétaires profitent d'une pause tranquille dans la cuisine de leur gîte."
+    }
+   }
   },
   {
    "id": "art-34",

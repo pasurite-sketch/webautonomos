@@ -1730,6 +1730,42 @@
    "v": 1,
    "alt": "Une traductrice indépendante dicte à son téléphone posé sur un support dans un bureau lumineux garni de plantes.",
    "legende": "La traductrice dicte du contenu depuis son espace de travail à domicile."
+  },
+  "blog/es/google-ads-autonomos-guia-basica.html": {
+   "sujet": "art-33",
+   "fichier": "google-ads-autonomo-reservas",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una pareja propietaria de una casa rural toma café en la cocina mientras contempla el paisaje soleado desde la ventana.",
+   "legende": "Los propietarios disfrutan de una pausa tranquila en la cocina de su alojamiento."
+  },
+  "blog/val/google-ads-guia-basica-per-a-autonoms.html": {
+   "sujet": "art-33",
+   "fichier": "google-ads-autonomo-reservas",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una parella propietària d'una casa rural pren café a la cuina mentre contempla el paisatge assolellat des de la finestra.",
+   "legende": "Els propietaris gaudixen d'una pausa tranquil·la a la cuina del seu allotjament."
+  },
+  "blog/en/google-ads-for-freelancers-beginners-guide.html": {
+   "sujet": "art-33",
+   "fichier": "google-ads-autonomo-reservas",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A couple who own a rural guesthouse drink coffee in the kitchen while looking out at the sunny countryside.",
+   "legende": "The owners enjoy a quiet break in their guesthouse kitchen."
+  },
+  "blog/fr/google-ads-pour-independants-guide-debutant.html": {
+   "sujet": "art-33",
+   "fichier": "google-ads-autonomo-reservas",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un couple propriétaire d'un gîte rural prend un café dans la cuisine en contemplant la campagne ensoleillée par la fenêtre.",
+   "legende": "Les propriétaires profitent d'une pause tranquille dans la cuisine de leur gîte."
   }
  }
 }
