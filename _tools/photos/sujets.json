@@ -3990,9 +3990,29 @@
      "url": "https://webautonomos.es/blog/fr/construire-sa-marque-personnelle"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un barbier au style affirmé pose ses outils sur son plan de travail, dans un salon au décor très personnel (plantes, miroir ancien, fauteuil en cuir).",
-   "fichier": "marca-personal-autonomo-barberia"
+   "fichier": "marca-personal-autonomo-barberia",
+   "v": 1,
+   "fait_le": "2026-09-29T23:44:45",
+   "textes": {
+    "es": {
+     "alt": "Un barbero ordena sus herramientas sobre el mostrador de un salón luminoso con plantas, espejo antiguo y sillón de cuero.",
+     "legende": "El barbero prepara sus herramientas en un salón de estilo personal."
+    },
+    "val": {
+     "alt": "Un barber ordena les seues ferramentes sobre el taulell d'un saló lluminós amb plantes, espill antic i butaca de cuir.",
+     "legende": "El barber prepara les ferramentes en un saló amb estil propi."
+    },
+    "en": {
+     "alt": "A barber arranges his tools on the counter of a bright shop with plants, an antique mirror and a leather chair.",
+     "legende": "The barber prepares his tools in a shop with distinctive style."
+    },
+    "fr": {
+     "alt": "Un barbier range ses outils sur le comptoir d'un salon lumineux avec des plantes, un miroir ancien et un fauteuil en cuir.",
+     "legende": "Le barbier prépare ses outils dans un salon au style personnel."
+    }
+   }
   },
   {
    "id": "art-47",

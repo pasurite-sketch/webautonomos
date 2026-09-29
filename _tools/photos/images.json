@@ -2189,6 +2189,42 @@
    "v": 1,
    "alt": "Un serveur apporte deux cafés sur un plateau dans une terrasse animée, avec un léger flou de mouvement.",
    "legende": "Le serveur apporte des cafés sur une terrasse ensoleillée et animée."
+  },
+  "blog/es/marca-personal-para-autonomos.html": {
+   "sujet": "art-46",
+   "fichier": "marca-personal-autonomo-barberia",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un barbero ordena sus herramientas sobre el mostrador de un salón luminoso con plantas, espejo antiguo y sillón de cuero.",
+   "legende": "El barbero prepara sus herramientas en un salón de estilo personal."
+  },
+  "blog/val/construir-la-teua-marca-personal.html": {
+   "sujet": "art-46",
+   "fichier": "marca-personal-autonomo-barberia",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un barber ordena les seues ferramentes sobre el taulell d'un saló lluminós amb plantes, espill antic i butaca de cuir.",
+   "legende": "El barber prepara les ferramentes en un saló amb estil propi."
+  },
+  "blog/en/building-your-personal-brand.html": {
+   "sujet": "art-46",
+   "fichier": "marca-personal-autonomo-barberia",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A barber arranges his tools on the counter of a bright shop with plants, an antique mirror and a leather chair.",
+   "legende": "The barber prepares his tools in a shop with distinctive style."
+  },
+  "blog/fr/construire-sa-marque-personnelle.html": {
+   "sujet": "art-46",
+   "fichier": "marca-personal-autonomo-barberia",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un barbier range ses outils sur le comptoir d'un salon lumineux avec des plantes, un miroir ancien et un fauteuil en cuir.",
+   "legende": "Le barbier prépare ses outils dans un salon au style personnel."
   }
  }
 }
