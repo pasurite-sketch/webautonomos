@@ -488,9 +488,29 @@
      "url": "https://webautonomos.es/en/website-for-therapists-in-spain"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Cabinet de psychologue lumineux et apaisant : deux fauteuils face à face, une plante, une lampe douce et une boîte de mouchoirs sur une table basse ; la thérapeute, vue de dos, arrange un coussin. Aucun patient.",
-   "fichier": "consulta-psicologia-sala-terapia"
+   "fichier": "consulta-psicologia-sala-terapia",
+   "v": 1,
+   "fait_le": "2026-09-29T14:35:09",
+   "textes": {
+    "es": {
+     "alt": "Una terapeuta, de espaldas, coloca un cojín en un sillón de un gabinete luminoso con plantas.",
+     "legende": "Preparar un espacio tranquilo y acogedor forma parte de la atención terapéutica."
+    },
+    "val": {
+     "alt": "Una terapeuta, d'esquena, col·loca un coixí en una butaca d'un gabinet lluminós amb plantes.",
+     "legende": "Preparar un espai tranquil i acollidor forma part de l'atenció terapèutica."
+    },
+    "en": {
+     "alt": "A therapist, seen from behind, arranges a cushion on an armchair in a bright room with plants.",
+     "legende": "Preparing a calm, welcoming space is part of therapeutic care."
+    },
+    "fr": {
+     "alt": "Une thérapeute, vue de dos, arrange un coussin sur un fauteuil dans un cabinet lumineux avec des plantes.",
+     "legende": "Préparer un espace calme et accueillant fait partie de l'accueil thérapeutique."
+    }
+   }
   },
   {
    "id": "metier-kine",

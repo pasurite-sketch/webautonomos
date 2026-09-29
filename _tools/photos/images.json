@@ -298,6 +298,24 @@
    "v": 1,
    "alt": "A consultant listens as a carpenter shows her a wooden plank in his bright workshop.",
    "legende": "A conversation in the workshop helps explore the craft and its needs."
+  },
+  "fr/site-internet-psychologue-therapeute.html": {
+   "sujet": "metier-therapeute",
+   "fichier": "consulta-psicologia-sala-terapia",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une thérapeute, vue de dos, arrange un coussin sur un fauteuil dans un cabinet lumineux avec des plantes.",
+   "legende": "Préparer un espace calme et accueillant fait partie de l'accueil thérapeutique."
+  },
+  "en/website-for-therapists-in-spain.html": {
+   "sujet": "metier-therapeute",
+   "fichier": "consulta-psicologia-sala-terapia",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A therapist, seen from behind, arranges a cushion on an armchair in a bright room with plants.",
+   "legende": "Preparing a calm, welcoming space is part of therapeutic care."
   }
  }
 }
