@@ -1163,6 +1163,42 @@
    "v": 1,
    "alt": "Une fleuriste compose un bouquet de saison sur son comptoir, avec un téléphone sur un petit trépied au premier plan.",
    "legende": "La fleuriste prépare un bouquet tout en filmant son travail avec son téléphone."
+  },
+  "blog/es/que-es-map-pack-google-como-salir.html": {
+   "sujet": "art-15",
+   "fichier": "map-pack-google-barrio-vista-aerea",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Vista elevada de un barrio mediterráneo con tejados de teja y comercios con toldos de colores al atardecer.",
+   "legende": "Los tejados y las terrazas de un barrio mediterráneo al caer la tarde."
+  },
+  "blog/val/map-pack-de-google-com-apareixer-hi.html": {
+   "sujet": "art-15",
+   "fichier": "map-pack-google-barrio-vista-aerea",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Vista elevada d'un barri mediterrani amb teulades de teula i comerços amb tendals de colors al capvespre.",
+   "legende": "Les teulades i les terrasses d'un barri mediterrani al capvespre."
+  },
+  "blog/en/google-map-pack-how-to-appear.html": {
+   "sujet": "art-15",
+   "fichier": "map-pack-google-barrio-vista-aerea",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Elevated view of a Mediterranean neighborhood with tiled roofs and shops with colorful awnings at golden hour.",
+   "legende": "Rooftops and terraces in a Mediterranean neighborhood at sunset."
+  },
+  "blog/fr/map-pack-google-comment-y-figurer.html": {
+   "sujet": "art-15",
+   "fichier": "map-pack-google-barrio-vista-aerea",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Vue en plongée d'un quartier méditerranéen aux toits de tuiles et commerces aux auvents colorés, à l'heure dorée.",
+   "legende": "Les toits et les terrasses d'un quartier méditerranéen au coucher du soleil."
   }
  }
 }
