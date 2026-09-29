@@ -533,9 +533,29 @@
      "url": "https://webautonomos.es/en/website-for-physiotherapists-in-spain"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Salle de kinésithérapie moderne : table de soins, ballons de rééducation, espaliers au mur ; un kinésithérapeute en tenue de travail règle la hauteur de la table. Personne d'autre dans la pièce.",
-   "fichier": "consulta-fisioterapia-sala-tratamiento"
+   "fichier": "consulta-fisioterapia-sala-tratamiento",
+   "v": 1,
+   "fait_le": "2026-09-29T14:38:43",
+   "textes": {
+    "es": {
+     "alt": "Un fisioterapeuta ajusta la altura de una camilla en una sala luminosa con espalderas y balones.",
+     "legende": "Preparar la camilla y el material forma parte del trabajo diario en fisioterapia."
+    },
+    "val": {
+     "alt": "Un fisioterapeuta ajusta l'altura d'una llitera en una sala lluminosa amb espatlleres i pilotes.",
+     "legende": "Preparar la llitera i el material forma part del treball diari en fisioteràpia."
+    },
+    "en": {
+     "alt": "A physiotherapist adjusts a treatment table in a bright room with wall bars and exercise balls.",
+     "legende": "Preparing the treatment table and equipment is part of daily physiotherapy work."
+    },
+    "fr": {
+     "alt": "Un kinésithérapeute règle la hauteur d'une table de soins dans une salle lumineuse avec espaliers et ballons.",
+     "legende": "Préparer la table et le matériel fait partie du travail quotidien en kinésithérapie."
+    }
+   }
   },
   {
    "id": "metier-kine-uk",

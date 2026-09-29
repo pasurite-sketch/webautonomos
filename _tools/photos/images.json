@@ -316,6 +316,24 @@
    "v": 1,
    "alt": "A therapist, seen from behind, arranges a cushion on an armchair in a bright room with plants.",
    "legende": "Preparing a calm, welcoming space is part of therapeutic care."
+  },
+  "fr/site-internet-kinesitherapeute.html": {
+   "sujet": "metier-kine",
+   "fichier": "consulta-fisioterapia-sala-tratamiento",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un kinésithérapeute règle la hauteur d'une table de soins dans une salle lumineuse avec espaliers et ballons.",
+   "legende": "Préparer la table et le matériel fait partie du travail quotidien en kinésithérapie."
+  },
+  "en/website-for-physiotherapists-in-spain.html": {
+   "sujet": "metier-kine",
+   "fichier": "consulta-fisioterapia-sala-tratamiento",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A physiotherapist adjusts a treatment table in a bright room with wall bars and exercise balls.",
+   "legende": "Preparing the treatment table and equipment is part of daily physiotherapy work."
   }
  }
 }
