@@ -2225,6 +2225,42 @@
    "v": 1,
    "alt": "Un barbier range ses outils sur le comptoir d'un salon lumineux avec des plantes, un miroir ancien et un fauteuil en cuir.",
    "legende": "Le barbier prépare ses outils dans un salon au style personnel."
+  },
+  "blog/es/preguntas-respuestas-ficha-google.html": {
+   "sujet": "art-47",
+   "fichier": "preguntas-respuestas-ficha-google-tienda",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La encargada de una tienda de deportes muestra una bota de senderismo a un cliente en el mostrador.",
+   "legende": "La dependienta ayuda al cliente a elegir calzado de montaña."
+  },
+  "blog/val/preguntes-i-respostes-de-la-fitxa.html": {
+   "sujet": "art-47",
+   "fichier": "preguntas-respuestas-ficha-google-tienda",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La responsable d'una botiga d'esports mostra una bota de senderisme a un client al taulell.",
+   "legende": "La dependenta ajuda el client a triar calçat de muntanya."
+  },
+  "blog/en/questions-and-answers-on-your-google-listing.html": {
+   "sujet": "art-47",
+   "fichier": "preguntas-respuestas-ficha-google-tienda",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A sports shop manager shows a hiking boot to a customer across the counter.",
+   "legende": "The shop assistant helps the customer choose hiking footwear."
+  },
+  "blog/fr/questions-reponses-fiche-google.html": {
+   "sujet": "art-47",
+   "fichier": "preguntas-respuestas-ficha-google-tienda",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La gérante d'un magasin de sport présente une chaussure de randonnée à un client au comptoir.",
+   "legende": "La vendeuse aide le client à choisir des chaussures de randonnée."
   }
  }
 }

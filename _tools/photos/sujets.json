@@ -4048,9 +4048,29 @@
      "url": "https://webautonomos.es/blog/fr/questions-reponses-fiche-google"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "La gérante d'un magasin de sport conseille un client au comptoir en lui montrant une paire de chaussures de randonnée sans marque visible.",
-   "fichier": "preguntas-respuestas-ficha-google-tienda"
+   "fichier": "preguntas-respuestas-ficha-google-tienda",
+   "v": 1,
+   "fait_le": "2026-09-29T23:45:56",
+   "textes": {
+    "es": {
+     "alt": "La encargada de una tienda de deportes muestra una bota de senderismo a un cliente en el mostrador.",
+     "legende": "La dependienta ayuda al cliente a elegir calzado de montaña."
+    },
+    "val": {
+     "alt": "La responsable d'una botiga d'esports mostra una bota de senderisme a un client al taulell.",
+     "legende": "La dependenta ajuda el client a triar calçat de muntanya."
+    },
+    "en": {
+     "alt": "A sports shop manager shows a hiking boot to a customer across the counter.",
+     "legende": "The shop assistant helps the customer choose hiking footwear."
+    },
+    "fr": {
+     "alt": "La gérante d'un magasin de sport présente une chaussure de randonnée à un client au comptoir.",
+     "legende": "La vendeuse aide le client à choisir des chaussures de randonnée."
+    }
+   }
   },
   {
    "id": "art-48",
