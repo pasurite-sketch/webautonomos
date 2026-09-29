@@ -803,6 +803,42 @@
    "v": 1,
    "alt": "Un couple de restaurateurs discute à une table de leur salle vide avant le service, avec deux tasses de café.",
    "legende": "Les restaurateurs échangent tranquillement avant le début du service."
+  },
+  "blog/es/como-conseguir-resenas-google-negocio.html": {
+   "sujet": "art-05",
+   "fichier": "conseguir-resenas-google-clienta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una clienta sonríe mientras escribe en su teléfono al salir de una peluquería; la peluquera la saluda desde la puerta.",
+   "legende": "Una clienta consulta su teléfono al salir del salón, mientras la peluquera se despide."
+  },
+  "blog/val/aconseguir-mes-ressenyes-en-google.html": {
+   "sujet": "art-05",
+   "fichier": "conseguir-resenas-google-clienta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una clienta somriu mentre escriu al mòbil en eixir d'una perruqueria; la perruquera la saluda des de la porta.",
+   "legende": "Una clienta consulta el mòbil en eixir del saló, mentre la perruquera s'acomiada."
+  },
+  "blog/en/how-to-get-more-google-reviews.html": {
+   "sujet": "art-05",
+   "fichier": "conseguir-resenas-google-clienta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A smiling customer types on her phone outside a hair salon as the hairdresser waves from the doorway.",
+   "legende": "A customer checks her phone after leaving the salon as the stylist waves goodbye."
+  },
+  "blog/fr/obtenir-plus-avis-google-guide-complet.html": {
+   "sujet": "art-05",
+   "fichier": "conseguir-resenas-google-clienta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une cliente souriante écrit sur son téléphone à la sortie d'un salon de coiffure, tandis que la coiffeuse la salue depuis la porte.",
+   "legende": "Une cliente consulte son téléphone en sortant du salon, tandis que la coiffeuse lui fait signe."
   }
  }
 }
