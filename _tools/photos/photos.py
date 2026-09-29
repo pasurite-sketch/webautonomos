@@ -398,7 +398,9 @@ def construire_prompt(s):
     lignes.append("Style : photographie documentaire prise avec un appareil 35 mm, lumière naturelle, couleurs "
                   "naturelles, profondeur de champ réaliste ; aucun rendu d'illustration ni de 3D.")
     interdits = ["aucun texte, lettre, chiffre, logo ou nom de marque lisible (enseignes, écrans, vêtements, "
-                 "emballages, documents)", "écrans éteints, flous ou vus de dos",
+                 "emballages, documents)",
+                 "aucun objet porteur d'écriture dans le cadre : ni papier écrit, ni carte, ni menu, ni livre ouvert, "
+                 "ni affiche, ni étiquette, ni plaque, ni tableau", "écrans éteints, flous ou vus de dos",
                  "personne ne regarde l'objectif", "aucune personne connue", "pas de filigrane"]
     if s.get('sante'):
         interdits += ["aucun patient reconnaissable", "pas d'avant/après", "pas de soin en gros plan ni de sang"]

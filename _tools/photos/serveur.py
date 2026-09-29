@@ -80,11 +80,13 @@ def suivante():
         data = P.charger()
         now = time.time()
         prets = [s for s in data['sujets'] if s.get('statut') == 'pret' and P.a_des_pages_actives(s)]
-        for s in prets:
-            if now - _reservations.get(s['id'], 0) < RESERVATION_S:
-                continue
+        # Un seul utilisateur : la page en cours (donnée, ni envoyée ni passée)
+        # revient, avec son prompt à jour, au lieu de sauter à la suivante.
+        en_cours = [s for s in prets if now - _reservations.get(s['id'], 0) < RESERVATION_S]
+        s = en_cours[0] if en_cours else (prets[0] if prets else None)
+        if s is not None:
             _reservations[s['id']] = now
-            log.info('suivante -> %s', s['id'])
+            log.info('suivante -> %s%s', s['id'], ' (page en cours)' if en_cours else '')
             return 200, P.charge_utile(s, len(prets))
     return 200, {'termine': True, 'restants': 0,
                  'message': 'Toutes les pages prévues ont leur photo. Rien à générer pour le moment.'}

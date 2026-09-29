@@ -104,11 +104,11 @@
      "spa": "fr/devenir-autonomo-en-espagne"
     }
    ],
-   "statut": "saute",
-   "scene": "Un homme d'une quarantaine d'années, récemment installé en Espagne, attend son tour dans la salle d'attente claire d'un bureau administratif, une chemise cartonnée de documents sur les genoux ; rangées de chaises, carrelage clair.",
+   "statut": "pret",
+   "scene": "Un homme d'une quarantaine d'années, récemment installé en Espagne, ouvre les volets de son nouvel atelier dans une rue ensoleillée de Valence, l'air confiant.",
    "fichier": "autonomo-extranjero-tramites-oficina",
    "marche_force": "es",
-   "note": "Les générations n'ont pas respecté la scène demandée."
+   "note": "remis en file le 29/09 : l'ancienne scène (chemise de documents) piégeait le générateur (texte)"
   },
   {
    "id": "file-web-en-varios-idiomas",
@@ -148,7 +148,7 @@
     }
    ],
    "statut": "saute",
-   "scene": "La gérante d'un petit café de bord de mer accueille en terrasse un couple de touristes étrangers et leur tend la carte, vue de dos ; mer, palmiers et parasols flous en arrière-plan.",
+   "scene": "La gérante d'un petit café de bord de mer sert deux cafés en souriant à un couple de touristes étrangers attablés en terrasse ; mer, palmiers et parasols flous en arrière-plan.",
    "fichier": "negocio-clientes-internacionales-costa",
    "marche_force": "es",
    "note": "Les deux générations n'ont pas représenté la scène demandée."
@@ -191,7 +191,7 @@
     }
    ],
    "statut": "saute",
-   "scene": "Les mains d'une commerçante rangent des documents administratifs dans des classeurs de couleur sur une étagère de son arrière-boutique ; une tablette éteinte posée à côté, lumière douce.",
+   "scene": "Gros plan sur la main d'une commerçante qui tourne la clé dans la serrure de la porte en bois de sa boutique, en fin de journée, lumière dorée.",
    "fichier": "documentos-legales-negocio-archivador",
    "note": "Les générations n'ont pas respecté la scène demandée."
   },
@@ -233,7 +233,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un graphiste indépendant, vu de profil dans son bureau à domicile, emballe un colis d'échantillons imprimés destiné à un client à l'étranger ; au mur, une carte d'Europe stylisée sans aucune inscription.",
+   "scene": "Un graphiste indépendant, vu de profil dans son bureau lumineux, ferme au ruban adhésif un carton kraft uni destiné à un client à l'étranger ; plantes et lampe d'architecte.",
    "fichier": "autonomo-clientes-europa-despacho"
   },
   {
@@ -264,7 +264,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une fleuriste fait ses comptes en fin de journée sur le comptoir en bois de sa boutique, avec un carnet et une calculatrice ; seaux de fleurs fraîches tout autour, lumière chaude.",
+   "scene": "Une fleuriste compose un bouquet sur le comptoir en bois de sa boutique en fin de journée ; seaux de fleurs fraîches tout autour, lumière chaude.",
    "fichier": "precio-web-autonomo-floristeria-cuentas"
   },
   {
@@ -294,7 +294,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une jeune entrepreneuse, assise à une grande table d'espace de coworking, compare deux tablettes posées côte à côte (écrans flous) en prenant des notes ; plantes et suspensions en arrière-plan.",
+   "scene": "Une jeune entrepreneuse, assise à une grande table d'espace de coworking, réfléchit en regardant par la fenêtre, un stylo à la main ; plantes et suspensions en arrière-plan.",
    "fichier": "comparar-creadores-web-coworking"
   },
   {
@@ -324,7 +324,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Dans un atelier de menuiserie, une conseillère web montre au menuisier, sur une tablette vue de biais (écran flou), l'avancement de son futur site ; copeaux, établi et outils à main.",
+   "scene": "Dans un atelier de menuiserie, une conseillère web écoute le menuisier qui lui montre une planche de bois massif ; copeaux, établi et outils à main.",
    "fichier": "servicios-web-autonomo-taller"
   },
   {
@@ -349,7 +349,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Cabinet de psychologue lumineux et apaisant : deux fauteuils face à face, une plante, une bibliothèque et une boîte de mouchoirs sur une table basse ; la thérapeute, vue de dos, prépare ses notes. Aucun patient.",
+   "scene": "Cabinet de psychologue lumineux et apaisant : deux fauteuils face à face, une plante, une lampe douce et une boîte de mouchoirs sur une table basse ; la thérapeute, vue de dos, arrange un coussin. Aucun patient.",
    "fichier": "consulta-psicologia-sala-terapia"
   },
   {
@@ -419,7 +419,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Cabinet dentaire moderne et lumineux : fauteuil vide, plateau d'instruments rangé ; une dentiste de profil, masque abaissé, regarde une radiographie panoramique floue sur un écran.",
+   "scene": "Cabinet dentaire moderne et lumineux : fauteuil vide ; une dentiste de profil, masque abaissé, prépare son plateau d'instruments.",
    "fichier": "clinica-dental-gabinete-moderno"
   },
   {
@@ -514,7 +514,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un chauffagiste britannique entretient une chaudière murale à condensation dans une cuisine au Royaume-Uni, caisse à outils sur le plan de travail, radiateur sous une fenêtre à guillotine ; aucun logo.",
+   "scene": "Un chauffagiste britannique purge un radiateur sous une fenêtre à guillotine, dans le salon d'une maison au Royaume-Uni ; caisse à outils au sol.",
    "fichier": "fontanero-caldera-reino-unido"
   },
   {
@@ -544,7 +544,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une électricienne vérifie un tableau électrique neuf avec un multimètre dans l'entrée d'un appartement rénové ; câbles bien rangés, gants et caisse à outils.",
+   "scene": "Une électricienne tire des câbles dans une gaine au mur d'un appartement en rénovation, caisse à outils ouverte à ses pieds.",
    "fichier": "electricista-cuadro-electrico-vivienda"
   },
   {
@@ -609,7 +609,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un artisan britannique repeint la porte d'entrée d'une maison mitoyenne en briques, échelle et bâches de protection sur le trottoir ; aucun numéro ni plaque lisible.",
+   "scene": "Un artisan britannique repeint des volets en bois posés sur des tréteaux, dans le jardin d'une maison mitoyenne en briques.",
    "fichier": "reformas-fachada-reino-unido"
   },
   {
@@ -634,7 +634,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une boulangère remonte le rideau métallique de sa boutique au lever du jour, dans une rue calme ; vitrine de pains dorés, aucune enseigne lisible.",
+   "scene": "Une boulangère sort une plaque de pains dorés du four de sa boulangerie au lever du jour ; farine et paniers en osier.",
    "fichier": "autonomo-abriendo-negocio-manana"
   },
   {
@@ -715,7 +715,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une conseillère web prend des notes pendant un appel téléphonique dans un petit bureau lumineux ; tasse, carnet et plante, elle regarde par la fenêtre.",
+   "scene": "Une conseillère web téléphone en souriant dans un petit bureau lumineux, tasse de café et plante sur le bureau, le regard tourné vers la fenêtre.",
    "fichier": "como-funciona-llamada-asesora-web"
   },
   {
@@ -805,7 +805,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Bureau administratif d'une petite entreprise, calme et ordonné : bacs à courrier vides, classeurs bien rangés ; la gérante boit un café en regardant par la fenêtre.",
+   "scene": "Bureau d'une petite entreprise, calme et ordonné : bureau dégagé, plantes vertes ; la gérante boit un café en regardant par la fenêtre.",
    "fichier": "automatizacion-oficina-ordenada"
   },
   {
@@ -855,7 +855,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un couple cherche un restaurant sur son téléphone dans une ruelle du centre historique de Valence au crépuscule ; terrasses éclairées, écran invisible.",
+   "scene": "Un couple cherche un restaurant sur son téléphone (écran invisible) dans une ruelle pavée du centre historique de Valence au crépuscule, sous des lampadaires.",
    "fichier": "seo-local-busqueda-movil-valencia",
    "marche_force": "es"
   },
@@ -876,7 +876,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un indépendant lit sur une tablette (écran flou) à une table de terrasse, stylo et carnet à côté, par un matin ensoleillé.",
+   "scene": "Un indépendant boit un café à une table de terrasse par un matin ensoleillé, pensif, un carnet fermé posé à côté de la tasse.",
    "fichier": "blog-autonomos-lectura-terraza"
   },
   {
@@ -980,7 +980,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un livreur à vélo s'arrête à un carrefour et consulte son itinéraire sur le téléphone fixé au guidon (écran flou) ; rue commerçante animée.",
+   "scene": "Un livreur à vélo s'arrête à un carrefour ensoleillé et regarde autour de lui pour s'orienter, téléphone fixé au guidon (écran invisible) ; rue animée.",
    "fichier": "aparecer-google-maps-movil-calle"
   },
   {
@@ -1018,7 +1018,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Vue en légère plongée d'une place de quartier bordée de commerces (boulangerie, quincaillerie, café) le matin, avec des passants ; aucune enseigne lisible.",
+   "scene": "Vue en légère plongée d'une place de quartier méditerranéenne avec terrasses, arbres et passants, un matin ensoleillé.",
    "fichier": "seo-local-barrio-comercios"
   },
   {
@@ -1057,7 +1057,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un couple de restaurateurs examine un devis papier (texte flou) à une table de leur salle vide avant le service.",
+   "scene": "Un couple de restaurateurs discute à une table de leur salle vide avant le service, deux tasses de café entre eux.",
    "fichier": "cuanto-cuesta-web-presupuesto-restaurante"
   },
   {
@@ -1133,7 +1133,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un serrurier assis dans sa camionnette, porte latérale ouverte, répond à un message sur son téléphone (écran flou) ; outils rangés derrière lui.",
+   "scene": "Un serrurier assis dans sa camionnette blanche unie, porte latérale ouverte, répond à un message sur son téléphone (écran invisible) ; outils rangés derrière lui.",
    "fichier": "whatsapp-business-autonomo-furgoneta"
   },
   {
@@ -1171,7 +1171,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une couturière prépare un colis pour un client dans son atelier, un mètre ruban autour du cou ; rouleaux de tissu colorés en arrière-plan.",
+   "scene": "Une couturière emballe une création dans un carton uni dans son atelier, un mètre ruban autour du cou ; rouleaux de tissu colorés en arrière-plan.",
    "fichier": "conseguir-clientes-internet-taller-costura"
   },
   {
@@ -1209,7 +1209,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une professionnelle réorganise des notes adhésives colorées (sans texte lisible) sur une vitre de son bureau, l'air concentré.",
+   "scene": "Une commerçante observe les passants depuis le seuil de sa boutique de quartier, bras croisés, sourire aux lèvres.",
    "fichier": "palabras-clave-locales-planificacion"
   },
   {
@@ -1247,7 +1247,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un électricien installe une borne de recharge murale dans le garage d'une maison individuelle ; câbles, perceuse, voiture électrique floue.",
+   "scene": "Un électricien tire des câbles dans une gaine au plafond du garage d'une maison individuelle, debout sur un escabeau, perceuse à la ceinture.",
    "fichier": "electricista-instalando-cargador-coche"
   },
   {
@@ -1285,7 +1285,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "La propriétaire d'un café met à jour une ardoise (sans texte lisible) à l'entrée de son établissement, tôt le matin.",
+   "scene": "La propriétaire d'un café installe les chaises de sa terrasse tôt le matin, dans une rue calme et ensoleillée.",
    "fichier": "ficha-google-horarios-negocio"
   },
   {
@@ -1323,7 +1323,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Depuis l'intérieur d'une boutique d'optique, vue vers la rue : des passants s'arrêtent devant la vitrine lumineuse.",
+   "scene": "Un opticien ajuste avec soin une monture sur le visage d'une cliente vue de profil, dans sa boutique lumineuse.",
    "fichier": "posicionar-negocio-local-escaparate"
   },
   {
@@ -1399,7 +1399,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un plombier répond à un appel, sourire aux lèvres, en descendant de sa camionnette devant un immeuble résidentiel.",
+   "scene": "Un plombier répond à un appel, sourire aux lèvres, en descendant de sa camionnette blanche unie devant un immeuble résidentiel.",
    "fichier": "fontanero-recibiendo-llamada-cliente"
   },
   {
@@ -1513,7 +1513,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une libraire indépendante glisse des marque-pages dans des commandes à expédier, une tasse de thé à côté ; étagères de livres en arrière-plan.",
+   "scene": "Une libraire indépendante emballe une commande dans du papier kraft sur son comptoir, une tasse de thé à côté ; étagères floues en arrière-plan.",
    "fichier": "email-marketing-libreria-clientes"
   },
   {
@@ -1628,7 +1628,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un cordonnier classe des fiches cartonnées (sans texte lisible) dans un fichier en bois, dans son échoppe pleine d'outils et de semelles.",
+   "scene": "Un cordonnier répare une chaussure en cuir à son établi, entouré d'outils et de semelles.",
    "fichier": "schema-local-business-datos-negocio"
   },
   {
@@ -1666,7 +1666,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "La gérante d'un institut de beauté répartit des jetons en bois dans trois bocaux en verre sur son bureau, un carnet ouvert à côté.",
+   "scene": "La gérante d'un institut de beauté répartit des jetons en bois dans trois bocaux en verre posés sur son bureau.",
    "fichier": "presupuesto-marketing-autonomo-planificacion"
   },
   {
@@ -1742,7 +1742,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un quincaillier range des boîtes sur des rayonnages classés avec soin dans sa quincaillerie de quartier ; aucune étiquette lisible.",
+   "scene": "Un quincaillier range des outils à main sur un présentoir mural bien organisé dans sa quincaillerie de quartier.",
    "fichier": "categorias-google-business-ferreteria"
   },
   {
@@ -1780,7 +1780,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un facteur glisse du courrier dans une rangée de boîtes aux lettres d'un immeuble ; aucun nom lisible.",
+   "scene": "Un facteur à vélo remonte une rue résidentielle ensoleillée, sacoches pleines.",
    "fichier": "citas-locales-nap-direccion-negocio"
   },
   {
@@ -1813,7 +1813,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un menuisier âgé et sa fille regardent ensemble une tablette (écran flou) dans l'atelier familial, outils anciens accrochés au mur.",
+   "scene": "Dans l'atelier familial, une fille montre son téléphone à son père menuisier (écran tourné vers eux, invisible) ; outils anciens accrochés au mur.",
    "fichier": "digitalizacion-autonomos-taller-familiar"
   },
   {
@@ -1889,7 +1889,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "La propriétaire d'une maison d'hôtes photographie sa terrasse décorée avec un appareil reflex, bougainvilliers en fleurs.",
+   "scene": "La propriétaire d'une maison d'hôtes photographie sa terrasse fleurie avec un appareil photo sans marque visible, bougainvilliers en fleurs.",
    "fichier": "fotos-ficha-google-alojamiento-terraza"
   },
   {
@@ -1965,7 +1965,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un peintre en bâtiment regarde, perplexe, un carton de prospectus invendus (texte illisible) dans le coffre de sa voiture.",
+   "scene": "Un peintre en bâtiment, assis sur le hayon de sa camionnette, regarde son téléphone d'un air perplexe (écran invisible).",
    "fichier": "errores-marketing-autonomo-folletos"
   },
   {
@@ -2003,7 +2003,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Gros plan sur une main qui fixe une plaque d'adresse vierge (sans inscription) près de la porte d'entrée d'un petit commerce.",
+   "scene": "Gros plan sur une main qui tourne pour la première fois une clé dans la serrure de la porte d'un nouveau local commercial.",
    "fichier": "elegir-dominio-direccion-negocio"
   },
   {
@@ -2041,7 +2041,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une traductrice indépendante dicte à son téléphone posé sur un support, dans un bureau lumineux garni de dictionnaires ; écran invisible.",
+   "scene": "Une traductrice indépendante dicte à son téléphone posé sur un support, dans un bureau lumineux garni de plantes ; écran invisible.",
    "fichier": "inteligencia-artificial-autonoma-despacho"
   },
   {
@@ -2079,7 +2079,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un couple propriétaire d'un gîte rural suit ses réservations sur une tablette (écran flou) à la table de la cuisine, café fumant.",
+   "scene": "Un couple propriétaire d'un gîte rural prend son café à la table de la cuisine en regardant par la fenêtre, campagne ensoleillée au-dehors.",
    "fichier": "google-ads-autonomo-reservas"
   },
   {
@@ -2155,7 +2155,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "La propriétaire d'un magasin de vélos note des chiffres dans un carnet près de sa caisse (écriture illisible), vélos alignés derrière elle.",
+   "scene": "La propriétaire d'un magasin de vélos règle la selle d'un vélo exposé en jetant un œil vers la porte d'entrée.",
    "fichier": "medir-resultados-web-negocio"
   },
   {
@@ -2188,7 +2188,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Sur le comptoir d'une épicerie, l'épicière tend un ticket de caisse (texte illisible) à côté d'un terminal de paiement.",
+   "scene": "Une épicière tend un sac en papier kraft à une cliente par-dessus le comptoir de son épicerie de quartier.",
    "fichier": "facturacion-electronica-comercio"
   },
   {
@@ -2303,7 +2303,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Salle d'attente d'un cabinet de psychologie : deux fauteuils, lampe douce, plantes et bibliothèque ; ambiance calme, personne.",
+   "scene": "Salle d'attente d'un cabinet de psychologie : deux fauteuils, une lampe douce et des plantes ; ambiance calme, personne.",
    "fichier": "psicologo-sala-espera-consulta",
    "sante_force": true
   },
@@ -2342,7 +2342,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une coach professionnelle anime une séance en petit groupe dans une salle lumineuse, un tableau de papier (sans texte lisible) en arrière-plan.",
+   "scene": "Une coach professionnelle écoute attentivement un petit groupe assis en cercle dans une salle lumineuse.",
    "fichier": "coach-sesion-grupo"
   },
   {
@@ -2418,7 +2418,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une nutritionniste dispose des fruits et légumes frais sur la table de son cabinet, balance de cuisine et carnet à côté. Aucun patient.",
+   "scene": "Une nutritionniste dispose des fruits et légumes frais sur la table de son cabinet. Aucun patient.",
    "fichier": "nutricionista-consulta-alimentos",
    "sante_force": true
   },
@@ -2457,7 +2457,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un coach sportif prépare kettlebells et élastiques dans un petit studio de sport au lever du jour.",
+   "scene": "Un coach sportif déroule des tapis de sol et prépare des élastiques dans un petit studio de sport au lever du jour.",
    "fichier": "entrenador-personal-estudio"
   },
   {
@@ -2571,7 +2571,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un barbier au style affirmé pose ses outils sur son plan de travail, dans un salon au décor très personnel (disques vinyles, plantes).",
+   "scene": "Un barbier au style affirmé pose ses outils sur son plan de travail, dans un salon au décor très personnel (plantes, miroir ancien, fauteuil en cuir).",
    "fichier": "marca-personal-autonomo-barberia"
   },
   {
@@ -2609,7 +2609,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "La gérante d'un magasin de sport répond aux questions d'un client au comptoir en lui montrant une paire de chaussures de randonnée.",
+   "scene": "La gérante d'un magasin de sport conseille un client au comptoir en lui montrant une paire de chaussures de randonnée sans marque visible.",
    "fichier": "preguntas-respuestas-ficha-google-tienda"
   },
   {
@@ -2648,7 +2648,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un plombier, tard le soir, à la table de sa cuisine, entouré de piles de factures et de tickets sous une lampe de bureau.",
+   "scene": "Un plombier, tard le soir, assis seul à la table de sa cuisine sous une lampe, se frotte les yeux, fatigué, devant un ordinateur portable fermé.",
    "fichier": "papeleo-autonomo-noche-facturas"
   },
   {
@@ -2687,7 +2687,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une gestionnaire compare deux piles de documents distinctes sur son bureau, lunettes relevées sur le front.",
+   "scene": "Une gestionnaire réfléchit, lunettes relevées sur le front, en regardant par la fenêtre de son bureau.",
    "fichier": "factura-electronica-verifactu-gestoria"
   },
   {
@@ -2726,7 +2726,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "La gérante d'une petite agence de voyages réfléchit avec son associé devant un tableau blanc couvert de schémas (sans texte lisible).",
+   "scene": "La gérante d'une petite agence de voyages et son associé discutent debout près d'une fenêtre, tasses de café à la main.",
    "fichier": "contratar-o-automatizar-decision"
   },
   {
@@ -2764,7 +2764,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une coiffeuse regarde son agenda papier plein de ratures pendant que le téléphone sonne sur le comptoir, une cliente attend dans le fauteuil.",
+   "scene": "Une coiffeuse en plein brushing jette un œil à son téléphone qui vibre sur le comptoir (écran invisible), une cliente dans le fauteuil.",
    "fichier": "reservas-online-agenda-peluqueria"
   },
   {
@@ -2842,7 +2842,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Sur un bureau, une main pose un sablier à côté d'une calculatrice et d'un carnet de calculs (chiffres illisibles).",
+   "scene": "Sur un bureau en bois, une main pose un sablier à côté d'une tasse de café fumante.",
    "fichier": "coste-automatizar-tiempo-calculo"
   },
   {
@@ -2881,7 +2881,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Une gérante trie des cartes de tâches (texte illisible) en deux colonnes sur une table en bois.",
+   "scene": "Une gérante répartit des outils dans deux caisses en bois distinctes sur son établi, l'air concentré.",
    "fichier": "tareas-automatizar-prioridades"
   },
   {
@@ -2920,7 +2920,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "La créatrice d'une boutique en ligne de savons artisanaux emballe des commandes pendant qu'une imprimante d'étiquettes fonctionne toute seule à côté d'elle.",
+   "scene": "La créatrice d'une boutique en ligne de savons artisanaux emballe des savons dans du papier kraft sur un grand plan de travail.",
    "fichier": "automatizar-sin-programar-tienda-online"
   },
   {
@@ -2959,7 +2959,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Dans le petit entrepôt d'une entreprise, un rouleau d'étiquettes emmêlé déborde d'une imprimante ; l'employé se gratte la tête.",
+   "scene": "Dans le petit entrepôt d'une entreprise, un employé regarde, perplexe, un tapis roulant de cartons bruns unis à l'arrêt.",
    "fichier": "errores-automatizacion-caros"
   },
   {
@@ -3076,7 +3076,7 @@
     }
    ],
    "statut": "pret",
-   "scene": "Un artisan suit un plan de montage étape par étape, les pièces d'un meuble alignées au sol dans l'ordre.",
+   "scene": "Un artisan monte un meuble étape par étape, les pièces alignées au sol dans l'ordre et la visserie dans un bol.",
    "fichier": "automatizar-proceso-paso-a-paso"
   }
  ]
