@@ -1127,6 +1127,42 @@
    "v": 1,
    "alt": "Un plombier sourit au téléphone en descendant d'une camionnette blanche devant un immeuble résidentiel.",
    "legende": "Un artisan répond à un appel avant de commencer son intervention."
+  },
+  "blog/es/google-posts-publicar-fiche-google.html": {
+   "sujet": "art-14",
+   "fichier": "google-posts-floristeria-publicacion",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una florista prepara un ramo de temporada en su mostrador, con un teléfono sobre un pequeño trípode en primer plano.",
+   "legende": "La florista prepara un ramo mientras graba el proceso con su teléfono."
+  },
+  "blog/val/google-posts-publicar-en-la-fitxa.html": {
+   "sujet": "art-14",
+   "fichier": "google-posts-floristeria-publicacion",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una florista prepara un ram de temporada al taulell, amb un mòbil sobre un trípode menut en primer pla.",
+   "legende": "La florista prepara un ram mentre grava el procés amb el mòbil."
+  },
+  "blog/en/google-posts-publishing-on-your-listing.html": {
+   "sujet": "art-14",
+   "fichier": "google-posts-floristeria-publicacion",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A florist arranges a seasonal bouquet at her counter, with a phone on a small tripod in the foreground.",
+   "legende": "The florist prepares a bouquet while recording the process on her phone."
+  },
+  "blog/fr/google-posts-publier-sur-sa-fiche.html": {
+   "sujet": "art-14",
+   "fichier": "google-posts-floristeria-publicacion",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une fleuriste compose un bouquet de saison sur son comptoir, avec un téléphone sur un petit trépied au premier plan.",
+   "legende": "La fleuriste prépare un bouquet tout en filmant son travail avec son téléphone."
   }
  }
 }

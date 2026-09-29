@@ -2256,9 +2256,29 @@
      "url": "https://webautonomos.es/blog/fr/google-posts-publier-sur-sa-fiche"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une fleuriste compose un bouquet de saison sur son comptoir ; au premier plan, un téléphone posé sur un petit trépied, prêt pour la photo.",
-   "fichier": "google-posts-floristeria-publicacion"
+   "fichier": "google-posts-floristeria-publicacion",
+   "v": 1,
+   "fait_le": "2026-09-29T22:27:28",
+   "textes": {
+    "es": {
+     "alt": "Una florista prepara un ramo de temporada en su mostrador, con un teléfono sobre un pequeño trípode en primer plano.",
+     "legende": "La florista prepara un ramo mientras graba el proceso con su teléfono."
+    },
+    "val": {
+     "alt": "Una florista prepara un ram de temporada al taulell, amb un mòbil sobre un trípode menut en primer pla.",
+     "legende": "La florista prepara un ram mentre grava el procés amb el mòbil."
+    },
+    "en": {
+     "alt": "A florist arranges a seasonal bouquet at her counter, with a phone on a small tripod in the foreground.",
+     "legende": "The florist prepares a bouquet while recording the process on her phone."
+    },
+    "fr": {
+     "alt": "Une fleuriste compose un bouquet de saison sur son comptoir, avec un téléphone sur un petit trépied au premier plan.",
+     "legende": "La fleuriste prépare un bouquet tout en filmant son travail avec son téléphone."
+    }
+   }
   },
   {
    "id": "art-15",
