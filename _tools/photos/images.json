@@ -424,6 +424,33 @@
    "v": 1,
    "alt": "A heating technician kneels beside a white radiator and adjusts its valve in a bright living room.",
    "legende": "Checking and bleeding a radiator is part of routine heating maintenance."
+  },
+  "fr/site-internet-electricien.html": {
+   "sujet": "metier-electricien",
+   "fichier": "electricista-cuadro-electrico-vivienda",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une électricienne fait passer des câbles dans une gaine murale d'un appartement en rénovation, avec ses outils à proximité.",
+   "legende": "Le câblage et l'installation font partie du travail d'une électricienne."
+  },
+  "en/website-for-electricians-in-spain.html": {
+   "sujet": "metier-electricien",
+   "fichier": "electricista-cuadro-electrico-vivienda",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "An electrician feeds cables into a wall conduit in a renovated apartment, with tools nearby.",
+   "legende": "Wiring and installation are part of an electrician's work."
+  },
+  "demo-electricista.html": {
+   "sujet": "metier-electricien",
+   "fichier": "electricista-cuadro-electrico-vivienda",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una electricista introduce cables en un conducto de la pared de un piso en renovación, con herramientas cerca.",
+   "legende": "El cableado y la instalación forman parte del trabajo de una electricista."
   }
  }
 }

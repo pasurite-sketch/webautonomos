@@ -843,9 +843,29 @@
      "url": "https://webautonomos.es/demo-electricista"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une électricienne tire des câbles dans une gaine au mur d'un appartement en rénovation, caisse à outils ouverte à ses pieds.",
-   "fichier": "electricista-cuadro-electrico-vivienda"
+   "fichier": "electricista-cuadro-electrico-vivienda",
+   "v": 1,
+   "fait_le": "2026-09-29T15:17:38",
+   "textes": {
+    "es": {
+     "alt": "Una electricista introduce cables en un conducto de la pared de un piso en renovación, con herramientas cerca.",
+     "legende": "El cableado y la instalación forman parte del trabajo de una electricista."
+    },
+    "val": {
+     "alt": "Una electricista passa cables per un conducte de la paret d'un pis en renovació, amb ferramentes a prop.",
+     "legende": "El cablejat i la instal·lació formen part del treball d'una electricista."
+    },
+    "en": {
+     "alt": "An electrician feeds cables into a wall conduit in a renovated apartment, with tools nearby.",
+     "legende": "Wiring and installation are part of an electrician's work."
+    },
+    "fr": {
+     "alt": "Une électricienne fait passer des câbles dans une gaine murale d'un appartement en rénovation, avec ses outils à proximité.",
+     "legende": "Le câblage et l'installation font partie du travail d'une électricienne."
+    }
+   }
   },
   {
    "id": "metier-electricien-uk",
