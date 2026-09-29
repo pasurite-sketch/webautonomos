@@ -370,6 +370,24 @@
    "v": 1,
    "alt": "A dentist washes his hands at a sink in a bright clinic with an empty dental chair.",
    "legende": "Hand hygiene is part of the daily preparation in a dental practice."
+  },
+  "fr/site-internet-menuisier.html": {
+   "sujet": "metier-menuisier",
+   "fichier": "carpintero-taller-ajustando-puerta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un menuisier rabote une pièce de bois à la main dans son atelier, parmi les copeaux et les outils.",
+   "legende": "Le travail artisanal du bois demande de la précision et des outils adaptés."
+  },
+  "en/website-for-carpenters-in-spain.html": {
+   "sujet": "metier-menuisier",
+   "fichier": "carpintero-taller-ajustando-puerta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A carpenter planes a wooden panel by hand in his workshop, surrounded by wood shavings and tools.",
+   "legende": "Crafting wood by hand requires precision and the right tools."
   }
  }
 }

@@ -703,9 +703,29 @@
      "url": "https://webautonomos.es/en/website-for-carpenters-in-spain"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un menuisier ajuste au rabot une porte de placard en bois massif dans son atelier ; sciure dans un rayon de lumière, établi et serre-joints.",
-   "fichier": "carpintero-taller-ajustando-puerta"
+   "fichier": "carpintero-taller-ajustando-puerta",
+   "v": 1,
+   "fait_le": "2026-09-29T15:02:46",
+   "textes": {
+    "es": {
+     "alt": "Un carpintero trabaja una pieza de madera con un cepillo manual en su taller, entre virutas y herramientas.",
+     "legende": "El trabajo artesanal de la madera requiere precisión y herramientas adecuadas."
+    },
+    "val": {
+     "alt": "Un fuster treballa una peça de fusta amb un ribot manual al seu taller, entre encenalls i ferramentes.",
+     "legende": "El treball artesanal de la fusta requerix precisió i ferramentes adequades."
+    },
+    "en": {
+     "alt": "A carpenter planes a wooden panel by hand in his workshop, surrounded by wood shavings and tools.",
+     "legende": "Crafting wood by hand requires precision and the right tools."
+    },
+    "fr": {
+     "alt": "Un menuisier rabote une pièce de bois à la main dans son atelier, parmi les copeaux et les outils.",
+     "legende": "Le travail artisanal du bois demande de la précision et des outils adaptés."
+    }
+   }
   },
   {
    "id": "metier-plombier",
