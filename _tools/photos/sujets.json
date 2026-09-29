@@ -928,9 +928,29 @@
      "url": "https://webautonomos.es/en/website-for-builders-in-spain"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Deux artisans du bâtiment posent du carrelage dans une salle de bains en rénovation ; niveau à bulle, seau de colle, lumière naturelle par la fenêtre.",
-   "fichier": "reformas-alicatado-bano-obra"
+   "fichier": "reformas-alicatado-bano-obra",
+   "v": 1,
+   "fait_le": "2026-09-29T15:23:49",
+   "textes": {
+    "es": {
+     "alt": "Dos albañiles colocan baldosas grandes en el suelo de un baño en renovación, usando un nivel y herramientas.",
+     "legende": "La colocación de baldosas requiere precisión y una buena preparación del soporte."
+    },
+    "val": {
+     "alt": "Dos professionals col·loquen taulells grans al sòl d'un bany en renovació, amb un nivell i ferramentes.",
+     "legende": "La col·locació de taulells requerix precisió i una bona preparació de la superfície."
+    },
+    "en": {
+     "alt": "Two tradespeople lay large floor tiles in a bathroom under renovation, using a level and hand tools.",
+     "legende": "Tiling requires precision and careful preparation of the surface."
+    },
+    "fr": {
+     "alt": "Deux artisans posent de grands carreaux dans une salle de bains en rénovation, avec un niveau et des outils.",
+     "legende": "La pose de carrelage demande de la précision et une bonne préparation du support."
+    }
+   }
   },
   {
    "id": "metier-artisan-uk",
