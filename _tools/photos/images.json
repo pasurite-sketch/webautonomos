@@ -144,6 +144,42 @@
    "v": 1,
    "alt": "Une serveuse apporte des cafés à un couple en terrasse au bord de la mer, sous des parasols et des palmiers.",
    "legende": "Une terrasse en bord de mer peut accueillir des visiteurs de différents pays."
+  },
+  "blog/es/aviso-legal-privacidad-cookies-web.html": {
+   "sujet": "file-aviso-legal-privacidad-cookies-web",
+   "fichier": "documentos-legales-negocio-archivador",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La mano de una comerciante gira la llave en la cerradura de la puerta de madera de su tienda al atardecer.",
+   "legende": "La tienda cierra al final del día bajo la luz dorada del atardecer."
+  },
+  "blog/val/avis-legal-privacitat-cookies-web.html": {
+   "sujet": "file-aviso-legal-privacidad-cookies-web",
+   "fichier": "documentos-legales-negocio-archivador",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La mà d'una comerciant gira la clau del pany de la porta de fusta de la seua botiga al capvespre.",
+   "legende": "La botiga tanca al final del dia sota la llum daurada del capvespre."
+  },
+  "blog/en/legal-notice-privacy-and-cookies-website-spain.html": {
+   "sujet": "file-aviso-legal-privacidad-cookies-web",
+   "fichier": "documentos-legales-negocio-archivador",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A shopkeeper's hand turns a key in the lock of a wooden shop door in the warm evening light.",
+   "legende": "A shopkeeper locks the door as golden evening light falls."
+  },
+  "blog/fr/mentions-legales-site-internet-espagne.html": {
+   "sujet": "file-aviso-legal-privacidad-cookies-web",
+   "fichier": "documentos-legales-negocio-archivador",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La main d'une commerçante tourne la clé dans la serrure de la porte en bois de sa boutique au crépuscule.",
+   "legende": "La commerçante ferme sa boutique dans la lumière dorée du soir."
   }
  }
 }

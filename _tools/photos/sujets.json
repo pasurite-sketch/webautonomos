@@ -230,10 +230,30 @@
      "spa": "fr/mentions-legales-site-internet-espagne"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Gros plan sur la main d'une commerçante qui tourne la clé dans la serrure de la porte en bois de sa boutique, en fin de journée, lumière dorée.",
    "fichier": "documentos-legales-negocio-archivador",
-   "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution"
+   "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution",
+   "v": 1,
+   "fait_le": "2026-09-29T14:24:43",
+   "textes": {
+    "es": {
+     "alt": "La mano de una comerciante gira la llave en la cerradura de la puerta de madera de su tienda al atardecer.",
+     "legende": "La tienda cierra al final del día bajo la luz dorada del atardecer."
+    },
+    "val": {
+     "alt": "La mà d'una comerciant gira la clau del pany de la porta de fusta de la seua botiga al capvespre.",
+     "legende": "La botiga tanca al final del dia sota la llum daurada del capvespre."
+    },
+    "en": {
+     "alt": "A shopkeeper's hand turns a key in the lock of a wooden shop door in the warm evening light.",
+     "legende": "A shopkeeper locks the door as golden evening light falls."
+    },
+    "fr": {
+     "alt": "La main d'une commerçante tourne la clé dans la serrure de la porte en bois de sa boutique au crépuscule.",
+     "legende": "La commerçante ferme sa boutique dans la lumière dorée du soir."
+    }
+   }
   },
   {
    "id": "file-facturar-clientes-otros-paises-ue-reino-unido",
