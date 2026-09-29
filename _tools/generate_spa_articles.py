@@ -458,6 +458,21 @@ def render(article, lang, alternates):
             body.append('            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">%s</p>' % E(text))
         elif kind == 'table':
             body.append(render_table(b))
+        elif kind == 'image':
+            src = (b.get('src') or '').strip()
+            base = src.rsplit('.', 1)[0]
+            v = b.get('v') or '1'
+            w = b.get('width') or 1600
+            h = b.get('height') or 900
+            fig = ['            <figure class="my-10">',
+                   '                <picture>',
+                   '                    <source type="image/webp" srcset="%s-800.webp?v=%s 800w, %s.webp?v=%s %sw" sizes="(max-width: 820px) calc(100vw - 40px), 780px">' % (base, v, base, v, w),
+                   '                    <img src="%s?v=%s" alt="%s" width="%s" height="%s" loading="lazy" decoding="async" class="w-full rounded-2xl">' % (src, v, E(b.get('alt') or ''), w, h),
+                   '                </picture>']
+            if b.get('caption'):
+                fig.append('                <figcaption class="text-sm text-gray-500 mt-3">%s</figcaption>' % E(b['caption']))
+            fig.append('            </figure>')
+            body.append('\n'.join(fig))
         else:
             body.append('            <p class="text-gray-700 leading-relaxed mb-4">%s</p>' % E(text))
     toc.append('                    <li><a href="#faq" class="toc-link">%s</a></li>' % E(ui['faq']))
