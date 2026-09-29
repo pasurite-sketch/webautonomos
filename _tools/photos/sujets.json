@@ -573,9 +573,29 @@
      "url": "https://webautonomos.es/en/physiotherapy-website-design"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Salle de soins d'un cabinet de kinésithérapie au Royaume-Uni, dans une maison victorienne : table de traitement, élastiques de rééducation, fenêtre à guillotine ; le kinésithérapeute, de profil, prépare la salle. Aucun patient.",
-   "fichier": "clinica-fisioterapia-reino-unido"
+   "fichier": "clinica-fisioterapia-reino-unido",
+   "v": 1,
+   "fait_le": "2026-09-29T14:46:31",
+   "textes": {
+    "es": {
+     "alt": "Un fisioterapeuta prepara una camilla en una clínica luminosa con ventanas altas y material de rehabilitación.",
+     "legende": "Preparar la sala y el equipo forma parte del trabajo diario en fisioterapia."
+    },
+    "val": {
+     "alt": "Un fisioterapeuta prepara una llitera en una clínica lluminosa amb finestres altes i material de rehabilitació.",
+     "legende": "Preparar la sala i l'equip forma part del treball diari en fisioteràpia."
+    },
+    "en": {
+     "alt": "A physiotherapist prepares a treatment table in a bright clinic with tall windows and rehabilitation equipment.",
+     "legende": "Preparing the room and equipment is part of daily physiotherapy work."
+    },
+    "fr": {
+     "alt": "Un kinésithérapeute prépare une table de soins dans un cabinet lumineux aux hautes fenêtres, avec du matériel de rééducation.",
+     "legende": "Préparer la salle et le matériel fait partie du travail quotidien en kinésithérapie."
+    }
+   }
   },
   {
    "id": "metier-dentiste",
