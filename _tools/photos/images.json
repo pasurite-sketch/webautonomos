@@ -1091,6 +1091,42 @@
    "v": 1,
    "alt": "Une pâtissière photographie avec son téléphone des gâteaux disposés sur une table en bois près d'une fenêtre.",
    "legende": "Une pâtissière prépare et photographie ses créations dans son atelier."
+  },
+  "blog/es/web-para-fontaneros-guia-completa.html": {
+   "sujet": "art-13",
+   "fichier": "fontanero-recibiendo-llamada-cliente",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un fontanero sonríe mientras habla por teléfono al bajar de una furgoneta blanca frente a un edificio residencial.",
+   "legende": "Un profesional atiende una llamada antes de comenzar su trabajo."
+  },
+  "blog/val/web-per-a-fontaners-guia-completa.html": {
+   "sujet": "art-13",
+   "fichier": "fontanero-recibiendo-llamada-cliente",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un llanterner somriu mentre parla per telèfon en baixar d'una furgoneta blanca davant d'un edifici residencial.",
+   "legende": "Un professional atén una telefonada abans de començar la faena."
+  },
+  "blog/en/website-for-plumbers-complete-guide.html": {
+   "sujet": "art-13",
+   "fichier": "fontanero-recibiendo-llamada-cliente",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A plumber smiles while taking a phone call as he steps out of a plain white van outside a residential building.",
+   "legende": "A tradesperson takes a call before starting the job."
+  },
+  "blog/fr/site-web-pour-plombiers-guide-complet.html": {
+   "sujet": "art-13",
+   "fichier": "fontanero-recibiendo-llamada-cliente",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un plombier sourit au téléphone en descendant d'une camionnette blanche devant un immeuble résidentiel.",
+   "legende": "Un artisan répond à un appel avant de commencer son intervention."
   }
  }
 }

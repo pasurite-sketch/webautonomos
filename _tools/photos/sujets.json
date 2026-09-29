@@ -2198,9 +2198,29 @@
      "url": "https://webautonomos.es/blog/fr/site-web-pour-plombiers-guide-complet"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un plombier répond à un appel, sourire aux lèvres, en descendant de sa camionnette blanche unie devant un immeuble résidentiel.",
-   "fichier": "fontanero-recibiendo-llamada-cliente"
+   "fichier": "fontanero-recibiendo-llamada-cliente",
+   "v": 1,
+   "fait_le": "2026-09-29T22:05:22",
+   "textes": {
+    "es": {
+     "alt": "Un fontanero sonríe mientras habla por teléfono al bajar de una furgoneta blanca frente a un edificio residencial.",
+     "legende": "Un profesional atiende una llamada antes de comenzar su trabajo."
+    },
+    "val": {
+     "alt": "Un llanterner somriu mentre parla per telèfon en baixar d'una furgoneta blanca davant d'un edifici residencial.",
+     "legende": "Un professional atén una telefonada abans de començar la faena."
+    },
+    "en": {
+     "alt": "A plumber smiles while taking a phone call as he steps out of a plain white van outside a residential building.",
+     "legende": "A tradesperson takes a call before starting the job."
+    },
+    "fr": {
+     "alt": "Un plombier sourit au téléphone en descendant d'une camionnette blanche devant un immeuble résidentiel.",
+     "legende": "Un artisan répond à un appel avant de commencer son intervention."
+    }
+   }
   },
   {
    "id": "art-14",
