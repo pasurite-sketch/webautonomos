@@ -3125,24 +3125,24 @@
    "statut": "fait",
    "scene": "Gros plan sur une main qui tourne pour la première fois une clé dans la serrure de la porte d'un nouveau local commercial.",
    "fichier": "elegir-dominio-direccion-negocio",
-   "v": 3,
-   "fait_le": "2026-09-29T23:05:58",
+   "v": 4,
+   "fait_le": "2026-09-29T23:17:20",
    "textes": {
     "es": {
-     "alt": "Una pareja propietaria de una casa rural toma café en la cocina mientras contempla el paisaje soleado desde la ventana.",
-     "legende": "Los propietarios disfrutan de una pausa tranquila en la cocina de su alojamiento."
+     "alt": "Una mano gira por primera vez la llave en la cerradura de la puerta acristalada de un local comercial nuevo y luminoso",
+     "legende": "Como la dirección de un local, el dominio es el lugar donde tus clientes te encuentran."
     },
     "val": {
-     "alt": "Una parella propietària d'una casa rural pren café a la cuina mentre contempla el paisatge assolellat des de la finestra.",
-     "legende": "Els propietaris gaudixen d'una pausa tranquil·la a la cuina del seu allotjament."
+     "alt": "Una mà gira per primera vegada la clau al pany de la porta de vidre d'un local comercial nou i lluminós",
+     "legende": "Com l'adreça d'un local, el domini és el lloc on els clients et troben."
     },
     "en": {
-     "alt": "A couple who own a rural guesthouse drink coffee in the kitchen while looking out at the sunny countryside.",
-     "legende": "The owners enjoy a quiet break in their guesthouse kitchen."
+     "alt": "A hand turning a key for the first time in the glass door of bright new commercial premises",
+     "legende": "Like a shop's street address, your domain is where customers come to find you."
     },
     "fr": {
-     "alt": "Un couple propriétaire d'un gîte rural prend un café dans la cuisine en contemplant la campagne ensoleillée par la fenêtre.",
-     "legende": "Les propriétaires profitent d'une pause tranquille dans la cuisine de leur gîte."
+     "alt": "Une main tourne pour la première fois la clé dans la serrure de la porte vitrée d'un nouveau local commercial lumineux",
+     "legende": "Comme l'adresse d'un local, le nom de domaine est l'endroit où vos clients vous trouvent."
     }
    }
   },
