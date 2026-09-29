@@ -4166,9 +4166,29 @@
      "spa": "fr/facture-electronique-1er-septembre-2026"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une gestionnaire réfléchit, lunettes relevées sur le front, en regardant par la fenêtre de son bureau.",
-   "fichier": "factura-electronica-verifactu-gestoria"
+   "fichier": "factura-electronica-verifactu-gestoria",
+   "v": 1,
+   "fait_le": "2026-09-29T23:48:14",
+   "textes": {
+    "es": {
+     "alt": "Una mujer con gafas sobre la cabeza mira pensativa por la ventana desde su escritorio luminoso.",
+     "legende": "Una pausa para reflexionar en un despacho bañado por la luz natural."
+    },
+    "val": {
+     "alt": "Una dona amb les ulleres damunt del cap mira pensativa per la finestra des del seu escriptori lluminós.",
+     "legende": "Una pausa per a reflexionar en un despatx banyat de llum natural."
+    },
+    "en": {
+     "alt": "A woman with glasses on her head gazes thoughtfully out of the window from her bright office desk.",
+     "legende": "A moment of reflection in an office filled with natural light."
+    },
+    "fr": {
+     "alt": "Une gestionnaire, lunettes sur le front, regarde pensivement par la fenêtre de son bureau lumineux.",
+     "legende": "Une pause de réflexion dans un bureau baigné de lumière naturelle."
+    }
+   }
   },
   {
    "id": "art-50",

@@ -2297,6 +2297,42 @@
    "v": 1,
    "alt": "Un plombier fatigué se frotte les yeux à la table de la cuisine, près d'un ordinateur fermé, tard le soir.",
    "legende": "Après sa journée de travail, l'artisan prend un moment de repos chez lui."
+  },
+  "blog/es/factura-electronica-plazos-2026-2027.html": {
+   "sujet": "art-49",
+   "fichier": "factura-electronica-verifactu-gestoria",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una mujer con gafas sobre la cabeza mira pensativa por la ventana desde su escritorio luminoso.",
+   "legende": "Una pausa para reflexionar en un despacho bañado por la luz natural."
+  },
+  "blog/val/factura-electronica-dues-normes.html": {
+   "sujet": "art-49",
+   "fichier": "factura-electronica-verifactu-gestoria",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una dona amb les ulleres damunt del cap mira pensativa per la finestra des del seu escriptori lluminós.",
+   "legende": "Una pausa per a reflexionar en un despatx banyat de llum natural."
+  },
+  "blog/en/e-invoicing-deadlines-france-spain.html": {
+   "sujet": "art-49",
+   "fichier": "factura-electronica-verifactu-gestoria",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A woman with glasses on her head gazes thoughtfully out of the window from her bright office desk.",
+   "legende": "A moment of reflection in an office filled with natural light."
+  },
+  "blog/fr/facture-electronique-1er-septembre-2026.html": {
+   "sujet": "art-49",
+   "fichier": "factura-electronica-verifactu-gestoria",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une gestionnaire, lunettes sur le front, regarde pensivement par la fenêtre de son bureau lumineux.",
+   "legende": "Une pause de réflexion dans un bureau baigné de lumière naturelle."
   }
  }
 }
