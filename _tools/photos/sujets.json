@@ -3354,9 +3354,29 @@
      "url": "https://webautonomos.es/blog/fr/mesurer-les-resultats-de-son-site"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "La propriétaire d'un magasin de vélos règle la selle d'un vélo exposé en jetant un œil vers la porte d'entrée.",
-   "fichier": "medir-resultados-web-negocio"
+   "fichier": "medir-resultados-web-negocio",
+   "v": 1,
+   "fait_le": "2026-09-29T23:23:55",
+   "textes": {
+    "es": {
+     "alt": "La propietaria de una tienda de bicicletas ajusta el sillín de una bicicleta mientras mira hacia la entrada del local.",
+     "legende": "La comerciante prepara una bicicleta en su tienda antes de atender."
+    },
+    "val": {
+     "alt": "La propietària d'una botiga de bicicletes ajusta el selló d'una bicicleta mentre mira cap a l'entrada del local.",
+     "legende": "La comerciant prepara una bicicleta a la botiga abans d'atendre."
+    },
+    "en": {
+     "alt": "A bicycle shop owner adjusts the saddle of a bike while glancing toward the shop entrance.",
+     "legende": "The shopkeeper prepares a bicycle in her store before serving customers."
+    },
+    "fr": {
+     "alt": "La propriétaire d'un magasin de vélos règle la selle d'un vélo exposé en regardant vers l'entrée de la boutique.",
+     "legende": "La commerçante prépare un vélo dans son magasin avant d'accueillir les clients."
+    }
+   }
   },
   {
    "id": "art-36",

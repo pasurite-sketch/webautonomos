@@ -1802,6 +1802,42 @@
    "v": 1,
    "alt": "Un tatoueur dessine un motif floral sur du papier translucide à sa table lumineuse, dans son studio.",
    "legende": "Le tatoueur prépare un motif à la main dans son espace de travail."
+  },
+  "blog/es/medir-resultados-web-google-analytics.html": {
+   "sujet": "art-35",
+   "fichier": "medir-resultados-web-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La propietaria de una tienda de bicicletas ajusta el sillín de una bicicleta mientras mira hacia la entrada del local.",
+   "legende": "La comerciante prepara una bicicleta en su tienda antes de atender."
+  },
+  "blog/val/mesurar-els-resultats-de-la-teua-web.html": {
+   "sujet": "art-35",
+   "fichier": "medir-resultados-web-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La propietària d'una botiga de bicicletes ajusta el selló d'una bicicleta mentre mira cap a l'entrada del local.",
+   "legende": "La comerciant prepara una bicicleta a la botiga abans d'atendre."
+  },
+  "blog/en/measuring-your-website-results.html": {
+   "sujet": "art-35",
+   "fichier": "medir-resultados-web-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A bicycle shop owner adjusts the saddle of a bike while glancing toward the shop entrance.",
+   "legende": "The shopkeeper prepares a bicycle in her store before serving customers."
+  },
+  "blog/fr/mesurer-les-resultats-de-son-site.html": {
+   "sujet": "art-35",
+   "fichier": "medir-resultados-web-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La propriétaire d'un magasin de vélos règle la selle d'un vélo exposé en regardant vers l'entrée de la boutique.",
+   "legende": "La commerçante prépare un vélo dans son magasin avant d'accueillir les clients."
   }
  }
 }
