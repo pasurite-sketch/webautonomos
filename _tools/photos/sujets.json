@@ -618,9 +618,29 @@
      "url": "https://webautonomos.es/en/website-for-dentists-in-spain"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Cabinet dentaire moderne et lumineux : fauteuil vide ; une dentiste de profil, masque abaissé, prépare son plateau d'instruments.",
-   "fichier": "clinica-dental-gabinete-moderno"
+   "fichier": "clinica-dental-gabinete-moderno",
+   "v": 1,
+   "fait_le": "2026-09-29T14:51:12",
+   "textes": {
+    "es": {
+     "alt": "Una dentista prepara una bandeja de instrumentos junto a un sillón dental vacío en una clínica luminosa.",
+     "legende": "La preparación del instrumental forma parte de la rutina en una consulta dental."
+    },
+    "val": {
+     "alt": "Una dentista prepara una safata d'instruments al costat d'un silló dental buit en una clínica lluminosa.",
+     "legende": "La preparació de l'instrumental forma part de la rutina en una consulta dental."
+    },
+    "en": {
+     "alt": "A dentist prepares an instrument tray beside an empty dental chair in a bright, modern clinic.",
+     "legende": "Preparing instruments is part of the daily routine in a dental practice."
+    },
+    "fr": {
+     "alt": "Une dentiste prépare un plateau d'instruments près d'un fauteuil dentaire vide dans un cabinet lumineux.",
+     "legende": "La préparation des instruments fait partie du quotidien d'un cabinet dentaire."
+    }
+   }
   },
   {
    "id": "metier-dentiste-uk",

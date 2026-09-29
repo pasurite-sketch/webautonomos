@@ -343,6 +343,24 @@
    "v": 1,
    "alt": "A physiotherapist prepares a treatment table in a bright clinic with tall windows and rehabilitation equipment.",
    "legende": "Preparing the room and equipment is part of daily physiotherapy work."
+  },
+  "fr/site-internet-dentiste.html": {
+   "sujet": "metier-dentiste",
+   "fichier": "clinica-dental-gabinete-moderno",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une dentiste prépare un plateau d'instruments près d'un fauteuil dentaire vide dans un cabinet lumineux.",
+   "legende": "La préparation des instruments fait partie du quotidien d'un cabinet dentaire."
+  },
+  "en/website-for-dentists-in-spain.html": {
+   "sujet": "metier-dentiste",
+   "fichier": "clinica-dental-gabinete-moderno",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A dentist prepares an instrument tray beside an empty dental chair in a bright, modern clinic.",
+   "legende": "Preparing instruments is part of the daily routine in a dental practice."
   }
  }
 }
