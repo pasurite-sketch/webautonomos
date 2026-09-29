@@ -968,9 +968,29 @@
      "url": "https://webautonomos.es/en/web-design-for-tradesmen"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un artisan britannique repeint des volets en bois posés sur des tréteaux, dans le jardin d'une maison mitoyenne en briques.",
-   "fichier": "reformas-fachada-reino-unido"
+   "fichier": "reformas-fachada-reino-unido",
+   "v": 1,
+   "fait_le": "2026-09-29T15:28:14",
+   "textes": {
+    "es": {
+     "alt": "Un artesano pinta contraventanas de madera sobre caballetes en el jardín de una casa británica de ladrillo.",
+     "legende": "El mantenimiento de la madera requiere paciencia y un acabado cuidadoso."
+    },
+    "val": {
+     "alt": "Un artesà pinta porticons de fusta sobre cavallets al jardí d'una casa britànica de rajola.",
+     "legende": "El manteniment de la fusta requerix paciència i un acabat acurat."
+    },
+    "en": {
+     "alt": "A tradesman paints wooden shutters on trestles in the garden of a British brick townhouse.",
+     "legende": "Maintaining wood takes patience and careful finishing."
+    },
+    "fr": {
+     "alt": "Un artisan repeint des volets en bois sur des tréteaux dans le jardin d'une maison britannique en briques.",
+     "legende": "L'entretien du bois demande de la patience et une finition soignée."
+    }
+   }
   },
   {
    "id": "page-accueils",
