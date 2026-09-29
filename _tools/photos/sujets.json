@@ -3122,9 +3122,29 @@
      "url": "https://webautonomos.es/blog/fr/choisir-le-nom-de-domaine-de-son-site"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Gros plan sur une main qui tourne pour la première fois une clé dans la serrure de la porte d'un nouveau local commercial.",
-   "fichier": "elegir-dominio-direccion-negocio"
+   "fichier": "elegir-dominio-direccion-negocio",
+   "v": 1,
+   "fait_le": "2026-09-29T23:00:36",
+   "textes": {
+    "es": {
+     "alt": "Una mano gira una llave en la cerradura de la puerta de un nuevo local comercial, con el interior desenfocado al fondo.",
+     "legende": "La llave abre por primera vez la puerta de un nuevo negocio."
+    },
+    "val": {
+     "alt": "Una mà gira una clau al pany de la porta d'un nou local comercial, amb l'interior desenfocat al fons.",
+     "legende": "La clau obri per primera vegada la porta d'un negoci nou."
+    },
+    "en": {
+     "alt": "A hand turns a key in the lock of a new business entrance, with the interior softly blurred in the background.",
+     "legende": "The key opens the door of a new business for the first time."
+    },
+    "fr": {
+     "alt": "Une main tourne une clé dans la serrure de la porte d'un nouveau local commercial, avec l'intérieur flou en arrière-plan.",
+     "legende": "La clé ouvre pour la première fois la porte d'un nouveau commerce."
+    }
+   }
   },
   {
    "id": "art-32",

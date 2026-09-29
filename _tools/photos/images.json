@@ -1658,6 +1658,42 @@
    "v": 1,
    "alt": "Un peintre en bâtiment, assis à l'arrière de sa camionnette, consulte son téléphone avec perplexité.",
    "legende": "Le peintre consulte son téléphone pendant une pause près de sa camionnette."
+  },
+  "blog/es/como-elegir-dominio-web-negocio.html": {
+   "sujet": "art-31",
+   "fichier": "elegir-dominio-direccion-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una mano gira una llave en la cerradura de la puerta de un nuevo local comercial, con el interior desenfocado al fondo.",
+   "legende": "La llave abre por primera vez la puerta de un nuevo negocio."
+  },
+  "blog/val/triar-el-domini-del-teu-negoci.html": {
+   "sujet": "art-31",
+   "fichier": "elegir-dominio-direccion-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una mà gira una clau al pany de la porta d'un nou local comercial, amb l'interior desenfocat al fons.",
+   "legende": "La clau obri per primera vegada la porta d'un negoci nou."
+  },
+  "blog/en/how-to-choose-your-domain-name.html": {
+   "sujet": "art-31",
+   "fichier": "elegir-dominio-direccion-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A hand turns a key in the lock of a new business entrance, with the interior softly blurred in the background.",
+   "legende": "The key opens the door of a new business for the first time."
+  },
+  "blog/fr/choisir-le-nom-de-domaine-de-son-site.html": {
+   "sujet": "art-31",
+   "fichier": "elegir-dominio-direccion-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une main tourne une clé dans la serrure de la porte d'un nouveau local commercial, avec l'intérieur flou en arrière-plan.",
+   "legende": "La clé ouvre pour la première fois la porte d'un nouveau commerce."
   }
  }
 }
