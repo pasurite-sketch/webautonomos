@@ -1058,9 +1058,29 @@
      "url": "https://webautonomos.es/get-your-demo"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un coiffeur, dans son salon vide avant l'ouverture, regarde son téléphone avec un sourire satisfait (écran invisible) ; fauteuils et miroirs derrière lui.",
-   "fichier": "autonomo-recibe-demo-web-movil"
+   "fichier": "autonomo-recibe-demo-web-movil",
+   "v": 1,
+   "fait_le": "2026-09-29T15:37:45",
+   "textes": {
+    "es": {
+     "alt": "Un peluquero consulta su teléfono en un salón luminoso y vacío antes de abrir, rodeado de sillones y espejos.",
+     "legende": "Un momento tranquilo en el salón antes de recibir a los primeros clientes."
+    },
+    "val": {
+     "alt": "Un perruquer consulta el telèfon en un saló lluminós i buit abans d'obrir, entre butaques i espills.",
+     "legende": "Un moment tranquil al saló abans de rebre els primers clients."
+    },
+    "en": {
+     "alt": "A hairdresser checks his phone in a bright, empty salon before opening, surrounded by styling chairs and mirrors.",
+     "legende": "A quiet moment in the salon before the first clients arrive."
+    },
+    "fr": {
+     "alt": "Un coiffeur consulte son téléphone dans un salon lumineux et vide avant l'ouverture, entouré de fauteuils et de miroirs.",
+     "legende": "Un moment calme au salon avant l'arrivée des premiers clients."
+    }
+   }
   },
   {
    "id": "page-expatries",

@@ -505,6 +505,24 @@
    "v": 1,
    "alt": "A baker removes a tray of golden loaves from the oven at sunrise in a flour-dusted bakery.",
    "legende": "Bakery work starts early, with fresh bread coming straight from the oven."
+  },
+  "demandez-votre-demo.html": {
+   "sujet": "page-demande-demo",
+   "fichier": "autonomo-recibe-demo-web-movil",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un peluquero consulta su teléfono en un salón luminoso y vacío antes de abrir, rodeado de sillones y espejos.",
+   "legende": "Un momento tranquilo en el salón antes de recibir a los primeros clientes."
+  },
+  "get-your-demo.html": {
+   "sujet": "page-demande-demo",
+   "fichier": "autonomo-recibe-demo-web-movil",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un peluquero consulta su teléfono en un salón luminoso y vacío antes de abrir, rodeado de sillones y espejos.",
+   "legende": "Un momento tranquilo en el salón antes de recibir a los primeros clientes."
   }
  }
 }
