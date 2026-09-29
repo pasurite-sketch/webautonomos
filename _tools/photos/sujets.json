@@ -1304,9 +1304,29 @@
      "url": "https://webautonomos.es/en/automation-diagnostic/"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Bureau d'une petite entreprise, calme et ordonné : bureau dégagé, plantes vertes ; la gérante boit un café en regardant par la fenêtre.",
-   "fichier": "automatizacion-oficina-ordenada"
+   "fichier": "automatizacion-oficina-ordenada",
+   "v": 1,
+   "fait_le": "2026-09-29T16:28:22",
+   "textes": {
+    "es": {
+     "alt": "Una empresaria toma café junto a su escritorio en una oficina luminosa con plantas y vistas a la ciudad.",
+     "legende": "Una pausa tranquila en la oficina, con luz natural y vistas al exterior."
+    },
+    "val": {
+     "alt": "Una empresària pren café al costat de la taula de treball en una oficina lluminosa amb plantes i vistes a la ciutat.",
+     "legende": "Una pausa tranquil·la a l'oficina, amb llum natural i vistes a l'exterior."
+    },
+    "en": {
+     "alt": "A business owner drinks coffee beside her desk in a bright office with plants and city views.",
+     "legende": "A quiet office break with natural light and a view outside."
+    },
+    "fr": {
+     "alt": "Une cheffe d'entreprise boit un café près de son bureau lumineux, entourée de plantes, avec vue sur la ville.",
+     "legende": "Une pause au bureau, baignée de lumière naturelle et tournée vers l'extérieur."
+    }
+   }
   },
   {
    "id": "page-visibilite-ia",
