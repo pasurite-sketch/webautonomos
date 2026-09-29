@@ -487,6 +487,24 @@
    "v": 1,
    "alt": "A tradesman paints wooden shutters on trestles in the garden of a British brick townhouse.",
    "legende": "Maintaining wood takes patience and careful finishing."
+  },
+  "fr/index.html": {
+   "sujet": "page-accueils",
+   "fichier": "autonomo-abriendo-negocio-manana",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une boulangère sort une plaque de pains dorés du four au lever du jour, dans une boulangerie farinée.",
+   "legende": "Le travail en boulangerie commence tôt, avec le pain tout juste sorti du four."
+  },
+  "en/index.html": {
+   "sujet": "page-accueils",
+   "fichier": "autonomo-abriendo-negocio-manana",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A baker removes a tray of golden loaves from the oven at sunrise in a flour-dusted bakery.",
+   "legende": "Bakery work starts early, with fresh bread coming straight from the oven."
   }
  }
 }

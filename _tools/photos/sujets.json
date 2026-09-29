@@ -1013,9 +1013,29 @@
      "url": "https://webautonomos.es/en/"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une boulangère sort une plaque de pains dorés du four de sa boulangerie au lever du jour ; farine et paniers en osier.",
-   "fichier": "autonomo-abriendo-negocio-manana"
+   "fichier": "autonomo-abriendo-negocio-manana",
+   "v": 1,
+   "fait_le": "2026-09-29T15:31:26",
+   "textes": {
+    "es": {
+     "alt": "Una panadera saca una bandeja de panes dorados del horno al amanecer, en una panadería con cestas y harina.",
+     "legende": "El trabajo de panadería empieza temprano, con el pan recién salido del horno."
+    },
+    "val": {
+     "alt": "Una fornera trau una safata de pans daurats del forn a trenc d'alba, en una fleca amb cistelles i farina.",
+     "legende": "El treball de forneria comença de bon matí, amb el pa acabat d'eixir del forn."
+    },
+    "en": {
+     "alt": "A baker removes a tray of golden loaves from the oven at sunrise in a flour-dusted bakery.",
+     "legende": "Bakery work starts early, with fresh bread coming straight from the oven."
+    },
+    "fr": {
+     "alt": "Une boulangère sort une plaque de pains dorés du four au lever du jour, dans une boulangerie farinée.",
+     "legende": "Le travail en boulangerie commence tôt, avec le pain tout juste sorti du four."
+    }
+   }
   },
   {
    "id": "page-demande-demo",
