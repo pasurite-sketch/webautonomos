@@ -1865,6 +1865,42 @@
    "v": 1,
    "alt": "A shopkeeper hands a kraft paper bag to a customer across the counter of a neighborhood grocery store.",
    "legende": "The shopkeeper hands a customer her groceries at the counter."
+  },
+  "blog/es/crear-contenido-web-sin-saber-escribir.html": {
+   "sujet": "art-37",
+   "fichier": "crear-contenido-web-artesano-grabando",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un herrero artesano explica su oficio junto a un pequeño micrófono, mientras al fondo se trabaja el metal con una amoladora.",
+   "legende": "El artesano comparte su experiencia desde el taller de herrería."
+  },
+  "blog/val/crear-contingut-sense-saber-escriure.html": {
+   "sujet": "art-37",
+   "fichier": "crear-contenido-web-artesano-grabando",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ferrer artesà explica el seu ofici al costat d'un micròfon menut, mentre al fons treballen el metall amb una esmoladora.",
+   "legende": "L'artesà compartix la seua experiència des del taller de ferreria."
+  },
+  "blog/en/create-web-content-without-being-a-writer.html": {
+   "sujet": "art-37",
+   "fichier": "crear-contenido-web-artesano-grabando",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A blacksmith talks about his craft beside a small microphone as metal is being ground in the background.",
+   "legende": "The artisan shares his experience from the metalworking workshop."
+  },
+  "blog/fr/creer-du-contenu-web-sans-savoir-ecrire.html": {
+   "sujet": "art-37",
+   "fichier": "crear-contenido-web-artesano-grabando",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ferronnier d'art présente son métier devant un petit micro, tandis qu'une meuleuse projette des étincelles en arrière-plan.",
+   "legende": "L'artisan partage son expérience depuis son atelier de ferronnerie."
   }
  }
 }
