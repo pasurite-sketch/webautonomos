@@ -244,6 +244,33 @@
    "alt": "Una florista prepara un ramo de flores variadas sobre un mostrador de madera en una tienda iluminada.",
    "legende": "Preparar un ramo requiere tiempo, materiales y trabajo artesanal.",
    "pas_avant": "2026-10-23"
+  },
+  "mejores-creadores-paginas-web-autonomos.html": {
+   "sujet": "page-comparatifs",
+   "fichier": "comparar-creadores-web-coworking",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una emprendedora piensa junto a la ventana en un espacio de coworking luminoso, con un bolígrafo y un cuaderno.",
+   "legende": "Un espacio de trabajo tranquilo permite comparar opciones y planificar un proyecto."
+  },
+  "fr/meilleurs-createurs-de-sites-pour-independants.html": {
+   "sujet": "page-comparatifs",
+   "fichier": "comparar-creadores-web-coworking",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une entrepreneuse réfléchit près d'une fenêtre dans un espace de coworking lumineux, un stylo à la main.",
+   "legende": "Un espace de travail calme permet de comparer les options et de planifier un projet."
+  },
+  "en/best-website-builders-for-freelancers-in-spain.html": {
+   "sujet": "page-comparatifs",
+   "fichier": "comparar-creadores-web-coworking",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "An entrepreneur reflects beside a window in a bright coworking space, holding a pen beside her notebook.",
+   "legende": "A calm workspace offers room to compare options and plan a project."
   }
  }
 }

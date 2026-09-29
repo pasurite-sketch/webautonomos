@@ -393,9 +393,29 @@
      "url": "https://webautonomos.es/en/best-website-builders-for-freelancers-in-spain"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une jeune entrepreneuse, assise à une grande table d'espace de coworking, réfléchit en regardant par la fenêtre, un stylo à la main ; plantes et suspensions en arrière-plan.",
-   "fichier": "comparar-creadores-web-coworking"
+   "fichier": "comparar-creadores-web-coworking",
+   "v": 1,
+   "fait_le": "2026-09-29T14:30:25",
+   "textes": {
+    "es": {
+     "alt": "Una emprendedora piensa junto a la ventana en un espacio de coworking luminoso, con un bolígrafo y un cuaderno.",
+     "legende": "Un espacio de trabajo tranquilo permite comparar opciones y planificar un proyecto."
+    },
+    "val": {
+     "alt": "Una emprenedora pensa vora la finestra en un espai de coworking lluminós, amb un bolígraf i una llibreta.",
+     "legende": "Un espai de treball tranquil permet comparar opcions i planificar un projecte."
+    },
+    "en": {
+     "alt": "An entrepreneur reflects beside a window in a bright coworking space, holding a pen beside her notebook.",
+     "legende": "A calm workspace offers room to compare options and plan a project."
+    },
+    "fr": {
+     "alt": "Une entrepreneuse réfléchit près d'une fenêtre dans un espace de coworking lumineux, un stylo à la main.",
+     "legende": "Un espace de travail calme permet de comparer les options et de planifier un projet."
+    }
+   }
   },
   {
    "id": "page-services",
