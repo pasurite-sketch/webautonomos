@@ -2441,6 +2441,42 @@
    "v": 1,
    "alt": "Un menuisier fait une pause près de la fenêtre de son atelier, une tasse à la main, devant un meuble inachevé.",
    "legende": "L'artisan contemple l'extérieur pendant une pause dans son atelier."
+  },
+  "blog/es/cuanto-cuesta-automatizar-un-proceso-formula.html": {
+   "sujet": "art-62",
+   "fichier": "coste-automatizar-tiempo-calculo",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una mano coloca un reloj de arena sobre un escritorio de madera junto a una taza de café humeante.",
+   "legende": "Un reloj de arena y un café evocan el valor del tiempo en el trabajo."
+  },
+  "blog/val/cuanto-cuesta-automatizar-un-proceso-formula.html": {
+   "sujet": "art-62",
+   "fichier": "coste-automatizar-tiempo-calculo",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una mà col·loca un rellotge d'arena sobre un escriptori de fusta, al costat d'una tassa de café fumejant.",
+   "legende": "Un rellotge d'arena i un café evoquen el valor del temps en la faena."
+  },
+  "blog/en/cuanto-cuesta-automatizar-un-proceso-formula.html": {
+   "sujet": "art-62",
+   "fichier": "coste-automatizar-tiempo-calculo",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A hand places an hourglass on a wooden desk beside a steaming cup of coffee.",
+   "legende": "An hourglass and coffee evoke the value of time at work."
+  },
+  "blog/fr/combien-coute-automatiser-un-processus.html": {
+   "sujet": "art-62",
+   "fichier": "coste-automatizar-tiempo-calculo",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une main pose un sablier sur un bureau en bois, à côté d'une tasse de café fumante.",
+   "legende": "Un sablier et un café évoquent la valeur du temps au travail."
   }
  }
 }

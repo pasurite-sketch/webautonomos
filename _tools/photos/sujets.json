@@ -4401,9 +4401,29 @@
      "spa": "fr/combien-coute-automatiser-un-processus"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Sur un bureau en bois, une main pose un sablier à côté d'une tasse de café fumante.",
-   "fichier": "coste-automatizar-tiempo-calculo"
+   "fichier": "coste-automatizar-tiempo-calculo",
+   "v": 1,
+   "fait_le": "2026-09-29T23:53:01",
+   "textes": {
+    "es": {
+     "alt": "Una mano coloca un reloj de arena sobre un escritorio de madera junto a una taza de café humeante.",
+     "legende": "Un reloj de arena y un café evocan el valor del tiempo en el trabajo."
+    },
+    "val": {
+     "alt": "Una mà col·loca un rellotge d'arena sobre un escriptori de fusta, al costat d'una tassa de café fumejant.",
+     "legende": "Un rellotge d'arena i un café evoquen el valor del temps en la faena."
+    },
+    "en": {
+     "alt": "A hand places an hourglass on a wooden desk beside a steaming cup of coffee.",
+     "legende": "An hourglass and coffee evoke the value of time at work."
+    },
+    "fr": {
+     "alt": "Une main pose un sablier sur un bureau en bois, à côté d'une tasse de café fumante.",
+     "legende": "Un sablier et un café évoquent la valeur du temps au travail."
+    }
+   }
   },
   {
    "id": "art-63",
