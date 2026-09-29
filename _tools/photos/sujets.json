@@ -883,9 +883,29 @@
      "url": "https://webautonomos.es/en/web-design-for-electricians"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un électricien britannique pose une prise murale britannique à trois broches dans un mur fraîchement enduit, un testeur accroché à la ceinture ; intérieur de maison au Royaume-Uni.",
-   "fichier": "electricista-enchufe-reino-unido"
+   "fichier": "electricista-enchufe-reino-unido",
+   "v": 1,
+   "fait_le": "2026-09-29T15:20:09",
+   "textes": {
+    "es": {
+     "alt": "Un electricista instala una toma de corriente británica en una pared de una vivienda, con herramientas a mano.",
+     "legende": "La instalación de enchufes forma parte de los trabajos habituales de electricidad."
+    },
+    "val": {
+     "alt": "Un electricista instal·la una presa de corrent britànica en una paret d'un habitatge, amb ferramentes a mà.",
+     "legende": "La instal·lació de preses de corrent forma part dels treballs habituals d'electricitat."
+    },
+    "en": {
+     "alt": "An electrician installs a British wall socket in a home, with tools close at hand.",
+     "legende": "Installing wall sockets is a common part of domestic electrical work."
+    },
+    "fr": {
+     "alt": "Un électricien installe une prise murale britannique dans une maison, avec ses outils à portée de main.",
+     "legende": "La pose de prises murales fait partie des travaux courants d'électricité domestique."
+    }
+   }
   },
   {
    "id": "metier-artisan",

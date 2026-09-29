@@ -451,6 +451,15 @@
    "v": 1,
    "alt": "Una electricista introduce cables en un conducto de la pared de un piso en renovación, con herramientas cerca.",
    "legende": "El cableado y la instalación forman parte del trabajo de una electricista."
+  },
+  "en/web-design-for-electricians.html": {
+   "sujet": "metier-electricien-uk",
+   "fichier": "electricista-enchufe-reino-unido",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "An electrician installs a British wall socket in a home, with tools close at hand.",
+   "legende": "Installing wall sockets is a common part of domestic electrical work."
   }
  }
 }
