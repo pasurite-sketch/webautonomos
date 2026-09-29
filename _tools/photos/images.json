@@ -2513,6 +2513,42 @@
    "v": 1,
    "alt": "Une artisane range des outils à main dans deux caisses en bois sur son établi, dans un atelier lumineux.",
    "legende": "L'artisane organise ses outils dans son atelier."
+  },
+  "blog/es/automatizar-sin-saber-programar.html": {
+   "sujet": "art-64",
+   "fichier": "automatizar-sin-programar-tienda-online",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una artesana envuelve jabones hechos a mano en papel kraft sobre una mesa de trabajo de madera.",
+   "legende": "La creadora prepara cuidadosamente los pedidos de su tienda de jabones."
+  },
+  "blog/val/automatitzar-sense-saber-programar.html": {
+   "sujet": "art-64",
+   "fichier": "automatizar-sin-programar-tienda-online",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una artesana embolica sabons fets a mà amb paper kraft sobre una taula de treball de fusta.",
+   "legende": "La creadora prepara amb cura les comandes de la seua botiga de sabons."
+  },
+  "blog/en/automate-without-coding.html": {
+   "sujet": "art-64",
+   "fichier": "automatizar-sin-programar-tienda-online",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A craftswoman wraps handmade soaps in kraft paper on a wooden worktable.",
+   "legende": "The maker carefully prepares orders for her handmade soap shop."
+  },
+  "blog/fr/automatiser-sans-savoir-programmer.html": {
+   "sujet": "art-64",
+   "fichier": "automatizar-sin-programar-tienda-online",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une artisane emballe des savons faits main dans du papier kraft sur une grande table en bois.",
+   "legende": "La créatrice prépare soigneusement les commandes de sa boutique de savons."
   }
  }
 }

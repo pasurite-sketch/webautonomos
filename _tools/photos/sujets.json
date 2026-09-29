@@ -4519,9 +4519,29 @@
      "spa": "fr/automatiser-sans-savoir-programmer"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "La créatrice d'une boutique en ligne de savons artisanaux emballe des savons dans du papier kraft sur un grand plan de travail.",
-   "fichier": "automatizar-sin-programar-tienda-online"
+   "fichier": "automatizar-sin-programar-tienda-online",
+   "v": 1,
+   "fait_le": "2026-09-29T23:55:43",
+   "textes": {
+    "es": {
+     "alt": "Una artesana envuelve jabones hechos a mano en papel kraft sobre una mesa de trabajo de madera.",
+     "legende": "La creadora prepara cuidadosamente los pedidos de su tienda de jabones."
+    },
+    "val": {
+     "alt": "Una artesana embolica sabons fets a mà amb paper kraft sobre una taula de treball de fusta.",
+     "legende": "La creadora prepara amb cura les comandes de la seua botiga de sabons."
+    },
+    "en": {
+     "alt": "A craftswoman wraps handmade soaps in kraft paper on a wooden worktable.",
+     "legende": "The maker carefully prepares orders for her handmade soap shop."
+    },
+    "fr": {
+     "alt": "Une artisane emballe des savons faits main dans du papier kraft sur une grande table en bois.",
+     "legende": "La créatrice prépare soigneusement les commandes de sa boutique de savons."
+    }
+   }
   },
   {
    "id": "art-65",
