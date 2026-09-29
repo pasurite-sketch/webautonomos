@@ -1766,6 +1766,42 @@
    "v": 1,
    "alt": "Un couple propriétaire d'un gîte rural prend un café dans la cuisine en contemplant la campagne ensoleillée par la fenêtre.",
    "legende": "Les propriétaires profitent d'une pause tranquille dans la cuisine de leur gîte."
+  },
+  "blog/es/web-para-tatuadores-estudio-tattoo.html": {
+   "sujet": "art-34",
+   "fichier": "estudio-tatuaje-tatuador-dibujando",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un tatuador dibuja un diseño floral sobre papel translúcido en una mesa de luz de su estudio.",
+   "legende": "El tatuador prepara un diseño a mano en su espacio de trabajo."
+  },
+  "blog/val/web-per-a-tatuadors.html": {
+   "sujet": "art-34",
+   "fichier": "estudio-tatuaje-tatuador-dibujando",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un tatuador dibuixa un disseny floral sobre paper translúcid en una taula de llum del seu estudi.",
+   "legende": "El tatuador prepara un disseny a mà al seu espai de treball."
+  },
+  "blog/en/website-for-tattoo-artists.html": {
+   "sujet": "art-34",
+   "fichier": "estudio-tatuaje-tatuador-dibujando",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A tattoo artist draws a floral design on translucent paper at a light table in his studio.",
+   "legende": "The tattoo artist prepares a design by hand in his workspace."
+  },
+  "blog/fr/site-web-pour-tatoueurs.html": {
+   "sujet": "art-34",
+   "fichier": "estudio-tatuaje-tatuador-dibujando",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un tatoueur dessine un motif floral sur du papier translucide à sa table lumineuse, dans son studio.",
+   "legende": "Le tatoueur prépare un motif à la main dans son espace de travail."
   }
  }
 }

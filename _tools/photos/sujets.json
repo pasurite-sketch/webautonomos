@@ -3296,9 +3296,29 @@
      "url": "https://webautonomos.es/blog/fr/site-web-pour-tatoueurs"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un tatoueur dessine un motif sur papier calque à sa table lumineuse, dans un studio propre aux murs couverts de croquis (sans texte).",
-   "fichier": "estudio-tatuaje-tatuador-dibujando"
+   "fichier": "estudio-tatuaje-tatuador-dibujando",
+   "v": 1,
+   "fait_le": "2026-09-29T23:22:38",
+   "textes": {
+    "es": {
+     "alt": "Un tatuador dibuja un diseño floral sobre papel translúcido en una mesa de luz de su estudio.",
+     "legende": "El tatuador prepara un diseño a mano en su espacio de trabajo."
+    },
+    "val": {
+     "alt": "Un tatuador dibuixa un disseny floral sobre paper translúcid en una taula de llum del seu estudi.",
+     "legende": "El tatuador prepara un disseny a mà al seu espai de treball."
+    },
+    "en": {
+     "alt": "A tattoo artist draws a floral design on translucent paper at a light table in his studio.",
+     "legende": "The tattoo artist prepares a design by hand in his workspace."
+    },
+    "fr": {
+     "alt": "Un tatoueur dessine un motif floral sur du papier translucide à sa table lumineuse, dans son studio.",
+     "legende": "Le tatoueur prépare un motif à la main dans son espace de travail."
+    }
+   }
   },
   {
    "id": "art-35",
