@@ -23,6 +23,8 @@ import html as H
 import os
 import re
 import sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'photos'))
+from photos_lib import injecter as poser_photo  # photo prévue par _tools/photos/images.json
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://webautonomos.es'
@@ -257,7 +259,7 @@ def main():
         return 0
 
     with open(OUT, 'w', encoding='utf-8') as fh:
-        fh.write(page)
+        fh.write(poser_photo(OUT, page))
     print('\nblog/index.html ecrit : %d octets, %d liens.' % (len(page.encode('utf-8')), total))
     return 0
 

@@ -437,6 +437,7 @@ la main. Un ré-export depuis Lovable les écraserait toutes les trois, sans ave
 | Slugs VAL et EN des tableaux SPA | corrigés le 2026-09-01 après les migrations | 95 champs `slug:` ; `generate_spa_articles.py` recréerait alors 95 fichiers sous les anciens slugs et masquerait 190 redirections 301 |
 | `<noscript>` de repli dans le `<body>` | ajouté le 2026-09-01 | Le seul `<h1>` et les 1 200 mots que voit un crawler sans JavaScript sur `/` |
 | Formule tarifaire de 4 champs de métadonnées | corrigée le 2026-09-01 | « 15 €/mes sin alta, sin permanencia » redeviendrait « desde 15… » dans `Organization.description` (JSON-LD statique et bundle) et dans `seo.demoFontanero` / `seo.demoElectricista` |
+| Blocs `image` des articles (données SPA) | `_tools/photos/photos.py`, depuis le 2026-09-29 | La photo des articles dans les données ; les fichiers de `blog/` la gardent, mais une régénération la perdrait |
 
 **La formule tarifaire.** Quatre champs de métadonnées portent « 15 €/mes sin alta, sin
 permanencia ». Les **16 autres occurrences de « desde 15 »** dans `index.html` sont des corps
@@ -462,6 +463,12 @@ Le montage React utilise `createRoot().render()`, qui écrase le conteneur au pr
 le repli disparaît dès que le JavaScript s'exécute, sans conflit d'hydratation. `hydrateRoot`
 aurait exigé une correspondance exacte et interdit ce procédé.
 
+
+## Photos automatiques (`_tools/photos/`)
+
+- Une photo par page : générée par le GPT « Photos WebAutonomos » (abonnement ChatGPT d'Angelino), réduite et posée par le VPS. Mode d'emploi : `_tools/photos/LISEZMOI.md`.
+- Les générateurs de pages appellent `poser_photo()` juste avant d'écrire leurs fichiers. **Ne pas retirer ces crochets** : sans eux, une régénération efface les photos.
+- `_tools/photos/images.json` décrit la photo de chaque page. Ne pas retoucher à la main une figure `<!-- photo:auto -->` : modifier `images.json`, puis lancer `python3 _tools/photos/photos.py reappliquer`.
 
 ## Rappels Importants
 

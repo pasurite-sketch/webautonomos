@@ -40,6 +40,8 @@ import shutil
 import subprocess
 import sys
 import tempfile
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'photos'))
+from photos_lib import injecter as poser_photo  # photo prévue par _tools/photos/images.json
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://webautonomos.es'
@@ -501,6 +503,7 @@ def main():
             if a in s:
                 abandon('%s : %s subsiste' % (rel, a))
     # écriture (seulement ce qui change réellement)
+    ecrire = {r: poser_photo(r, s) for r, s in ecrire.items()}
     ecrire = {r: s for r, s in ecrire.items() if not os.path.exists(r) or lire(r) != s}
     print('\n'.join(rapport))
     if check:

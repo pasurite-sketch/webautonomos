@@ -29,6 +29,8 @@ import re
 import subprocess
 import sys
 import tempfile
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'photos'))
+from photos_lib import injecter as poser_photo  # photo prévue par _tools/photos/images.json
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://webautonomos.es'
@@ -1055,7 +1057,7 @@ def main():
             print('  ✓ %s/index.html valide (%d octets) — non écrit' % (lang, len(s.encode())))
             continue
         os.makedirs(os.path.dirname(dest), exist_ok=True)
-        open(dest, 'w', encoding='utf-8').write(s)
+        open(dest, 'w', encoding='utf-8').write(poser_photo(dest, s))
         print('  ✓ %s/index.html écrit (%d octets)' % (lang, len(s.encode())))
     hreflang_accueil(check)
 

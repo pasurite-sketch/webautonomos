@@ -1,0 +1,10 @@
+[Unit]
+Description=Photos WebAutonomos - inventaire, réapplication et contrôle de nuit
+
+[Service]
+Type=oneshot
+EnvironmentFile=%h/.config/photos/env
+WorkingDirectory=%h/photos/webautonomos
+ExecStart=/usr/bin/flock %h/.local/state/photos/verrou /usr/bin/python3 %h/photos/webautonomos/_tools/photos/photos.py nuit
+# le serveur repart sur le code du jour
+ExecStartPost=/usr/bin/systemctl --user restart photos-api.service

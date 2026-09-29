@@ -1,0 +1,3060 @@
+{
+ "_lisez_moi": [
+  "File de l'automatisation « une photo par page » (voir _tools/photos/LISEZMOI.md).",
+  "statut : pret = à générer ; fait = photo en ligne ; saute = laissé de côté par Angelino.",
+  "scene : ce que la photo doit montrer (sinon ChatGPT choisit). fichier : nom des fichiers dans assets/.",
+  "pages[].pas_avant : page gelée pour une mesure SEO, la photo n'y est posée qu'à partir de cette date."
+ ],
+ "sujets": [
+  {
+   "id": "file-wix-o-wordpress",
+   "type": "file",
+   "publication": "2026-10-01",
+   "file": "_tools/queue/article_wix_o_wordpress.json",
+   "priorite": 1,
+   "titre": "Wix o WordPress: cuál elegir para tu web de autónomo en 2026",
+   "url": "https://webautonomos.es/blog/es/wix-o-wordpress",
+   "resume": "Quieres una web para tu negocio y siempre salen los mismos dos nombres: Wix y WordPress. Con Wix alquilas una herramienta completa en la que todo viene resuelto. Con WordPress usas un software libre, con la libertad y el mantenimiento que eso implica. Aquí verás cuánto cuesta cada uno a tres años, qué te pide y a qué tipo de autónomo le encaja. Todos los precios se han comproba",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/wix-o-wordpress.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/wix-o-wordpress",
+     "spa": "es/wix-o-wordpress"
+    },
+    {
+     "html": "blog/val/wix-o-wordpress.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/wix-o-wordpress",
+     "spa": "val/wix-o-wordpress"
+    },
+    {
+     "html": "blog/en/wix-or-wordpress.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/wix-or-wordpress",
+     "spa": "en/wix-or-wordpress"
+    },
+    {
+     "html": "blog/fr/wix-ou-wordpress.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/wix-ou-wordpress",
+     "spa": "fr/wix-ou-wordpress"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une céramiste indépendante, dans son atelier, compare deux croquis de mise en page posés côte à côte sur son établi (blocs gris, aucun texte), un crayon à la main ; pots en terre, tours de potier et lumière de fin d'après-midi.",
+   "fichier": "elegir-herramienta-web-taller-ceramica"
+  },
+  {
+   "id": "file-alta-autonomo-extranjero-espana",
+   "type": "file",
+   "publication": "2026-10-05",
+   "file": "_tools/queue/article_alta_autonomo_extranjero.json",
+   "priorite": 2,
+   "titre": "Alta de autónomo extranjero en España: pasos antes de tu primera factura (2026)",
+   "url": "https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana",
+   "resume": "Te has instalado en España, o vas a hacerlo, y quieres trabajar por tu cuenta. Antes de tu primera factura pasas por tres ventanillas: extranjería, la Agencia Tributaria y la Seguridad Social. Esta guía sigue ese orden y sirve también como lista de control si asesoras a clientes extranjeros. Cada cifra se ha comprobado en fuentes oficiales el 28 de septiembre de 2026. Es inform",
+   "marche": "es",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/alta-autonomo-extranjero-espana.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana",
+     "spa": "es/alta-autonomo-extranjero-espana"
+    },
+    {
+     "html": "blog/val/alta-autonom-estranger.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/alta-autonom-estranger",
+     "spa": "val/alta-autonom-estranger"
+    },
+    {
+     "html": "blog/en/becoming-an-autonomo-in-spain-as-a-foreigner.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/becoming-an-autonomo-in-spain-as-a-foreigner",
+     "spa": "en/becoming-an-autonomo-in-spain-as-a-foreigner"
+    },
+    {
+     "html": "blog/fr/devenir-autonomo-en-espagne.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/devenir-autonomo-en-espagne",
+     "spa": "fr/devenir-autonomo-en-espagne"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un homme d'une quarantaine d'années, récemment installé en Espagne, attend son tour dans la salle d'attente claire d'un bureau administratif, une chemise cartonnée de documents sur les genoux ; rangées de chaises, carrelage clair.",
+   "fichier": "autonomo-extranjero-tramites-oficina",
+   "marche_force": "es"
+  },
+  {
+   "id": "file-web-en-varios-idiomas",
+   "type": "file",
+   "publication": "2026-10-08",
+   "file": "_tools/queue/article_web_varios_idiomas.json",
+   "priorite": 3,
+   "titre": "Web en varios idiomas para tu negocio en España: cuándo compensa y cómo hacerlo bien",
+   "url": "https://webautonomos.es/blog/es/web-en-varios-idiomas",
+   "resume": "Clientes extranjeros, turistas o una comunidad con lengua cooficial: tarde o temprano te preguntas si tu web necesita otro idioma. Aquí verás cuándo merece la pena, cómo organizar la web para que Google entienda cada versión, qué traducir y qué errores evitar, citando la documentación oficial de Google con la fecha de la versión consultada.",
+   "marche": "es",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/web-en-varios-idiomas.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-en-varios-idiomas",
+     "spa": "es/web-en-varios-idiomas"
+    },
+    {
+     "html": "blog/val/web-en-diversos-idiomes.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-en-diversos-idiomes",
+     "spa": "val/web-en-diversos-idiomes"
+    },
+    {
+     "html": "blog/en/multilingual-website-for-your-business-in-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/multilingual-website-for-your-business-in-spain",
+     "spa": "en/multilingual-website-for-your-business-in-spain"
+    },
+    {
+     "html": "blog/fr/site-internet-bilingue.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-internet-bilingue",
+     "spa": "fr/site-internet-bilingue"
+    }
+   ],
+   "statut": "pret",
+   "scene": "La gérante d'un petit café de bord de mer accueille en terrasse un couple de touristes étrangers et leur tend la carte, vue de dos ; mer, palmiers et parasols flous en arrière-plan.",
+   "fichier": "negocio-clientes-internacionales-costa",
+   "marche_force": "es"
+  },
+  {
+   "id": "file-aviso-legal-privacidad-cookies-web",
+   "type": "file",
+   "publication": "2026-10-12",
+   "file": "_tools/queue/article_aviso_legal_privacidad_cookies.json",
+   "priorite": 4,
+   "titre": "Aviso legal, privacidad y cookies: lo que tu web debe mostrar por ley en España (2026)",
+   "url": "https://webautonomos.es/blog/es/aviso-legal-privacidad-cookies-web",
+   "resume": "Tu web es tu escaparate, pero también un espacio regulado. Si eres autónomo o tienes un pequeño negocio en España, la ley te pide: mostrar quién está detrás de la página, explicar qué haces con los datos de quien te escribe y pedir permiso antes de usar ciertas cookies. Repasamos el aviso legal, la política de privacidad y la de cookies, con el artículo exacto de cada obligació",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/aviso-legal-privacidad-cookies-web.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/aviso-legal-privacidad-cookies-web",
+     "spa": "es/aviso-legal-privacidad-cookies-web"
+    },
+    {
+     "html": "blog/val/avis-legal-privacitat-cookies-web.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/avis-legal-privacitat-cookies-web",
+     "spa": "val/avis-legal-privacitat-cookies-web"
+    },
+    {
+     "html": "blog/en/legal-notice-privacy-and-cookies-website-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/legal-notice-privacy-and-cookies-website-spain",
+     "spa": "en/legal-notice-privacy-and-cookies-website-spain"
+    },
+    {
+     "html": "blog/fr/mentions-legales-site-internet-espagne.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/mentions-legales-site-internet-espagne",
+     "spa": "fr/mentions-legales-site-internet-espagne"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Les mains d'une commerçante rangent des documents administratifs dans des classeurs de couleur sur une étagère de son arrière-boutique ; une tablette éteinte posée à côté, lumière douce.",
+   "fichier": "documentos-legales-negocio-archivador"
+  },
+  {
+   "id": "file-facturar-clientes-otros-paises-ue-reino-unido",
+   "type": "file",
+   "publication": "2026-10-15",
+   "file": "_tools/queue/article_facturar_clientes_extranjeros.json",
+   "priorite": 5,
+   "titre": "Cómo facturar a clientes de la UE y del Reino Unido siendo autónomo en España",
+   "url": "https://webautonomos.es/blog/es/facturar-clientes-otros-paises-ue-reino-unido",
+   "resume": "Un cliente en Francia, Bélgica o el Reino Unido puede contratarte sin salir de su oficina. Las dudas llegan con la factura: ¿lleva IVA?, ¿qué mención pongo?, ¿hay algún modelo más? Esta guía resume las reglas vigentes en septiembre de 2026 para un autónomo establecido en la península o en Baleares que presta servicios, no bienes, a clientes de la UE o del Reino Unido.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/facturar-clientes-otros-paises-ue-reino-unido.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/facturar-clientes-otros-paises-ue-reino-unido",
+     "spa": "es/facturar-clientes-otros-paises-ue-reino-unido"
+    },
+    {
+     "html": "blog/val/facturar-clients-altres-paisos.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/facturar-clients-altres-paisos",
+     "spa": "val/facturar-clients-altres-paisos"
+    },
+    {
+     "html": "blog/en/invoicing-clients-in-other-eu-countries-and-the-uk.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/invoicing-clients-in-other-eu-countries-and-the-uk",
+     "spa": "en/invoicing-clients-in-other-eu-countries-and-the-uk"
+    },
+    {
+     "html": "blog/fr/facturer-un-client-etranger-depuis-l-espagne.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/facturer-un-client-etranger-depuis-l-espagne",
+     "spa": "fr/facturer-un-client-etranger-depuis-l-espagne"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un graphiste indépendant, vu de profil dans son bureau à domicile, emballe un colis d'échantillons imprimés destiné à un client à l'étranger ; au mur, une carte d'Europe stylisée sans aucune inscription.",
+   "fichier": "autonomo-clientes-europa-despacho"
+  },
+  {
+   "id": "page-tarifs",
+   "type": "page",
+   "priorite": 10,
+   "titre": "Prix d'un site internet professionnel : nos tarifs",
+   "url": "https://webautonomos.es/fr/tarifs",
+   "resume": "Chez WebAutonomos, 15 €/mois, sans frais de mise en service et sans engagement — ou 349 € en paiement unique. Hébergement, nom de domaine, certificat SSL et maintenance compris. Vous ne payez rien avant d'avoir validé la démonstration de votre site, et vous arrêtez quand vous voulez.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "fr/tarifs.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/tarifs"
+    },
+    {
+     "html": "en/pricing.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/pricing"
+    },
+    {
+     "html": "precios.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/precios",
+     "pas_avant": "2026-10-23"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une fleuriste fait ses comptes en fin de journée sur le comptoir en bois de sa boutique, avec un carnet et une calculatrice ; seaux de fleurs fraîches tout autour, lumière chaude.",
+   "fichier": "precio-web-autonomo-floristeria-cuentas"
+  },
+  {
+   "id": "page-comparatifs",
+   "type": "page",
+   "priorite": 11,
+   "titre": "Mejores creadores de páginas web para autónomos en 2026",
+   "url": "https://webautonomos.es/mejores-creadores-paginas-web-autonomos",
+   "resume": "No hay una única respuesta buena: depende de cuánto tiempo tengas y de si quieres hacerla tú. Comparamos los creadores de páginas web más usados en España y también las opciones donde alguien la hace por ti. Precios consultados entre el 14 y el 23 de septiembre de 2026, sin IVA.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "mejores-creadores-paginas-web-autonomos.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/mejores-creadores-paginas-web-autonomos"
+    },
+    {
+     "html": "fr/meilleurs-createurs-de-sites-pour-independants.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/meilleurs-createurs-de-sites-pour-independants"
+    },
+    {
+     "html": "en/best-website-builders-for-freelancers-in-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/best-website-builders-for-freelancers-in-spain"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une jeune entrepreneuse, assise à une grande table d'espace de coworking, compare deux tablettes posées côte à côte (écrans flous) en prenant des notes ; plantes et suspensions en arrière-plan.",
+   "fichier": "comparar-creadores-web-coworking"
+  },
+  {
+   "id": "page-services",
+   "type": "page",
+   "priorite": 12,
+   "titre": "Servicios web para autónomos",
+   "url": "https://webautonomos.es/servicios",
+   "resume": "Páginas web profesionales por 15 €/mes, SEO local para aparecer en Google Maps y gestión completa de tu ficha de Google My Business. Todo sin permanencia.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "servicios.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/servicios"
+    },
+    {
+     "html": "fr/prestations.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/prestations"
+    },
+    {
+     "html": "en/services.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/services"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Dans un atelier de menuiserie, une conseillère web montre au menuisier, sur une tablette vue de biais (écran flou), l'avancement de son futur site ; copeaux, établi et outils à main.",
+   "fichier": "servicios-web-autonomo-taller"
+  },
+  {
+   "id": "metier-therapeute",
+   "type": "page",
+   "priorite": 20,
+   "titre": "Un site internet pour psychologues et thérapeutes, prêt en 24 heures",
+   "url": "https://webautonomos.es/fr/site-internet-psychologue-therapeute",
+   "resume": "Votre site dit qui vous êtes, comment vous travaillez et comment prendre rendez-vous, dans le respect des règles de votre profession. Nous l'écrivons pour vous et vous envoyons une démo gratuite en 24 heures.",
+   "marche": "europe",
+   "sante": true,
+   "pages": [
+    {
+     "html": "fr/site-internet-psychologue-therapeute.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/site-internet-psychologue-therapeute"
+    },
+    {
+     "html": "en/website-for-therapists-in-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/website-for-therapists-in-spain"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Cabinet de psychologue lumineux et apaisant : deux fauteuils face à face, une plante, une bibliothèque et une boîte de mouchoirs sur une table basse ; la thérapeute, vue de dos, prépare ses notes. Aucun patient.",
+   "fichier": "consulta-psicologia-sala-terapia"
+  },
+  {
+   "id": "metier-kine",
+   "type": "page",
+   "priorite": 21,
+   "titre": "Un site internet pour kinésithérapeutes, pensé pour votre code de déontologie",
+   "url": "https://webautonomos.es/fr/site-internet-kinesitherapeute",
+   "resume": "Votre cabinet, vos spécificités, vos honoraires et votre agenda en ligne, présentés selon les recommandations de l'Ordre : un site qui informe, sans rien de commercial. Nous l'écrivons pour vous, vous validez chaque contenu, et la démo est gratuite en 24 heures.",
+   "marche": "europe",
+   "sante": true,
+   "pages": [
+    {
+     "html": "fr/site-internet-kinesitherapeute.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/site-internet-kinesitherapeute"
+    },
+    {
+     "html": "en/website-for-physiotherapists-in-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/website-for-physiotherapists-in-spain"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Salle de kinésithérapie moderne : table de soins, ballons de rééducation, espaliers au mur ; un kinésithérapeute en tenue de travail règle la hauteur de la table. Personne d'autre dans la pièce.",
+   "fichier": "consulta-fisioterapia-sala-tratamiento"
+  },
+  {
+   "id": "metier-kine-uk",
+   "type": "page",
+   "priorite": 22,
+   "titre": "Physiotherapy website design for UK physiotherapists and clinics",
+   "url": "https://webautonomos.es/en/physiotherapy-website-design",
+   "resume": "Your clinic, your team, your treatments and how to book, written with HCPC standards and UK advertising rules in mind. We write it for you in English, you approve every word, and your free demo is ready within 24 hours.",
+   "marche": "uk",
+   "sante": true,
+   "pages": [
+    {
+     "html": "en/physiotherapy-website-design.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/physiotherapy-website-design"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Salle de soins d'un cabinet de kinésithérapie au Royaume-Uni, dans une maison victorienne : table de traitement, élastiques de rééducation, fenêtre à guillotine ; le kinésithérapeute, de profil, prépare la salle. Aucun patient.",
+   "fichier": "clinica-fisioterapia-reino-unido"
+  },
+  {
+   "id": "metier-dentiste",
+   "type": "page",
+   "priorite": 23,
+   "titre": "Création de site internet pour dentiste, selon les recommandations de l'Ordre",
+   "url": "https://webautonomos.es/fr/site-internet-dentiste",
+   "resume": "Votre cabinet, vos soins, vos honoraires et votre prise de rendez-vous, présentés selon le code de déontologie : informer, sans promotion. Nous l'écrivons pour vous, vous validez chaque contenu, et la démo est gratuite en 24 heures.",
+   "marche": "europe",
+   "sante": true,
+   "pages": [
+    {
+     "html": "fr/site-internet-dentiste.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/site-internet-dentiste"
+    },
+    {
+     "html": "en/website-for-dentists-in-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/website-for-dentists-in-spain"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Cabinet dentaire moderne et lumineux : fauteuil vide, plateau d'instruments rangé ; une dentiste de profil, masque abaissé, regarde une radiographie panoramique floue sur un écran.",
+   "fichier": "clinica-dental-gabinete-moderno"
+  },
+  {
+   "id": "metier-dentiste-uk",
+   "type": "page",
+   "priorite": 24,
+   "titre": "Dental website design for UK dentists",
+   "url": "https://webautonomos.es/en/dental-website-design",
+   "resume": "Your practice, your team, your fees and how to book, set out the way the GDC's guidance on advertising expects. We write it for you in English, you approve every word, and your free demo is ready within 24 hours.",
+   "marche": "uk",
+   "sante": true,
+   "pages": [
+    {
+     "html": "en/dental-website-design.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/dental-website-design"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Salle de soins d'un cabinet dentaire britannique : fauteuil dentaire vide, un dentiste en tenue bleu marine se lave les mains à l'évier ; par la fenêtre, une rue de maisons mitoyennes en briques, floue.",
+   "fichier": "clinica-dental-reino-unido"
+  },
+  {
+   "id": "metier-menuisier",
+   "type": "page",
+   "priorite": 25,
+   "titre": "Création de site internet pour menuisiers : montrez votre travail",
+   "url": "https://webautonomos.es/fr/site-internet-menuisier",
+   "resume": "Vos réalisations en photos, vos zones d'intervention, un devis demandé en un clic, et les mentions que la loi impose dès que vous travaillez pour des particuliers. Nous l'écrivons pour vous et vous envoyons une démo gratuite en 24 heures.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "fr/site-internet-menuisier.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/site-internet-menuisier"
+    },
+    {
+     "html": "en/website-for-carpenters-in-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/website-for-carpenters-in-spain"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un menuisier ajuste au rabot une porte de placard en bois massif dans son atelier ; sciure dans un rayon de lumière, établi et serre-joints.",
+   "fichier": "carpintero-taller-ajustando-puerta"
+  },
+  {
+   "id": "metier-plombier",
+   "type": "page",
+   "priorite": 26,
+   "titre": "Création de site internet pour plombier et chauffagiste",
+   "url": "https://webautonomos.es/fr/site-internet-plombier",
+   "resume": "Vos services, vos zones d'intervention, un appel ou un message WhatsApp en un geste, et vos tarifs de dépannage présentés selon l'arrêté du 24 janvier 2017. Nous l'écrivons pour vous et vous envoyons une démo gratuite en 24 heures.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "fr/site-internet-plombier.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/site-internet-plombier"
+    },
+    {
+     "html": "en/website-for-plumbers-in-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/website-for-plumbers-in-spain"
+    },
+    {
+     "html": "demo-fontanero.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/demo-fontanero"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un plombier à genoux sous l'évier d'une cuisine moderne, clé à molette en main, sa caisse à outils ouverte à côté ; carrelage clair, lumière du jour.",
+   "fichier": "fontanero-reparando-fregadero-cocina"
+  },
+  {
+   "id": "metier-plombier-uk",
+   "type": "page",
+   "priorite": 27,
+   "titre": "Web design for plumbers and heating engineers",
+   "url": "https://webautonomos.es/en/web-design-for-plumbers",
+   "resume": "Your services, your Gas Safe details, the areas you cover and a call or WhatsApp in one tap, written with UK rules in mind. We write it for you in English, you approve every word, and your free demo is ready within 24 hours.",
+   "marche": "uk",
+   "sante": false,
+   "pages": [
+    {
+     "html": "en/web-design-for-plumbers.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/web-design-for-plumbers"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un chauffagiste britannique entretient une chaudière murale à condensation dans une cuisine au Royaume-Uni, caisse à outils sur le plan de travail, radiateur sous une fenêtre à guillotine ; aucun logo.",
+   "fichier": "fontanero-caldera-reino-unido"
+  },
+  {
+   "id": "metier-electricien",
+   "type": "page",
+   "priorite": 28,
+   "titre": "Création de site internet pour électricien : vos chantiers, vos qualifications",
+   "url": "https://webautonomos.es/fr/site-internet-electricien",
+   "resume": "Vos services, de la mise en sécurité aux bornes de recharge, vos zones d'intervention, vos qualifications présentées telles que vous les détenez et vos tarifs de dépannage accessibles comme la loi le demande. Nous l'écrivons pour vous et vous envoyons une démo gratuite en 24 heures.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "fr/site-internet-electricien.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/site-internet-electricien"
+    },
+    {
+     "html": "en/website-for-electricians-in-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/website-for-electricians-in-spain"
+    },
+    {
+     "html": "demo-electricista.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/demo-electricista"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une électricienne vérifie un tableau électrique neuf avec un multimètre dans l'entrée d'un appartement rénové ; câbles bien rangés, gants et caisse à outils.",
+   "fichier": "electricista-cuadro-electrico-vivienda"
+  },
+  {
+   "id": "metier-electricien-uk",
+   "type": "page",
+   "priorite": 29,
+   "titre": "Web design for electricians in the UK",
+   "url": "https://webautonomos.es/en/web-design-for-electricians",
+   "resume": "Your services, your scheme registration, the areas you cover and a call or WhatsApp in one tap, written with Part P and UK consumer rules in mind. We write it for you in English, you approve every word, and your free demo is ready within 24 hours.",
+   "marche": "uk",
+   "sante": false,
+   "pages": [
+    {
+     "html": "en/web-design-for-electricians.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/web-design-for-electricians"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un électricien britannique pose une prise murale britannique à trois broches dans un mur fraîchement enduit, un testeur accroché à la ceinture ; intérieur de maison au Royaume-Uni.",
+   "fichier": "electricista-enchufe-reino-unido"
+  },
+  {
+   "id": "metier-artisan",
+   "type": "page",
+   "priorite": 30,
+   "titre": "Création de site internet pour artisan du bâtiment",
+   "url": "https://webautonomos.es/fr/site-internet-artisan",
+   "resume": "Vos réalisations, vos métiers, les communes où vous intervenez, une demande de devis en un clic, et les mentions que la loi impose dès que vous travaillez pour des particuliers. Nous l'écrivons pour vous et vous envoyons une démo gratuite en 24 heures.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "fr/site-internet-artisan.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/site-internet-artisan"
+    },
+    {
+     "html": "en/website-for-builders-in-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/website-for-builders-in-spain"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Deux artisans du bâtiment posent du carrelage dans une salle de bains en rénovation ; niveau à bulle, seau de colle, lumière naturelle par la fenêtre.",
+   "fichier": "reformas-alicatado-bano-obra"
+  },
+  {
+   "id": "metier-artisan-uk",
+   "type": "page",
+   "priorite": 31,
+   "titre": "Web design for tradesmen in the UK",
+   "url": "https://webautonomos.es/en/web-design-for-tradesmen",
+   "resume": "Your services, the areas you cover, your registrations and a quote request in one tap, written with UK consumer rules in mind. We write it for you in English, you approve every word, and your free demo is ready within 24 hours.",
+   "marche": "uk",
+   "sante": false,
+   "pages": [
+    {
+     "html": "en/web-design-for-tradesmen.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/web-design-for-tradesmen"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un artisan britannique repeint la porte d'entrée d'une maison mitoyenne en briques, échelle et bâches de protection sur le trottoir ; aucun numéro ni plaque lisible.",
+   "fichier": "reformas-fachada-reino-unido"
+  },
+  {
+   "id": "page-accueils",
+   "type": "page",
+   "priorite": 32,
+   "titre": "Un site internet pas cher pour indépendants et artisans, à 15 €/mois tout compris",
+   "url": "https://webautonomos.es/fr/",
+   "resume": "Nous créons votre site professionnel avec vos services, vos photos et vos avis Google, et nous vous l'envoyons en 24 heures — avant que vous ne payiez quoi que ce soit. En France comme en Espagne.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "fr/index.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/"
+    },
+    {
+     "html": "en/index.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une boulangère remonte le rideau métallique de sa boutique au lever du jour, dans une rue calme ; vitrine de pains dorés, aucune enseigne lisible.",
+   "fichier": "autonomo-abriendo-negocio-manana"
+  },
+  {
+   "id": "page-demande-demo",
+   "type": "page",
+   "priorite": 33,
+   "titre": "Un site qui transforme chaque visite en un appel, un rendez-vous ou un nouveau client.",
+   "url": "https://webautonomos.es/demandez-votre-demo",
+   "resume": "Nous construisons votre site professionnel avec vos photos, vos services et vos avis Google — et nous vous l'envoyons en 24 heures, avant que vous ne décidiez quoi que ce soit.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "demandez-votre-demo.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/demandez-votre-demo"
+    },
+    {
+     "html": "get-your-demo.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/get-your-demo"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un coiffeur, dans son salon vide avant l'ouverture, regarde son téléphone avec un sourire satisfait (écran invisible) ; fauteuils et miroirs derrière lui.",
+   "fichier": "autonomo-recibe-demo-web-movil"
+  },
+  {
+   "id": "page-expatries",
+   "type": "page",
+   "priorite": 34,
+   "titre": "Site internet pour les francophones qui travaillent en Espagne",
+   "url": "https://webautonomos.es/fr/site-internet-francophones-espagne",
+   "resume": "Vous travaillez en Espagne, en français ou pas : votre site, lui, doit respecter la loi espagnole. Nous le créons pour vous, avec l'aviso legal, la politique de confidentialité et la gestion des cookies, et nous vous envoyons une démo gratuite en 24 heures.",
+   "marche": "es",
+   "sante": false,
+   "pages": [
+    {
+     "html": "fr/site-internet-francophones-espagne.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/site-internet-francophones-espagne"
+    },
+    {
+     "html": "en/web-design-for-expats-in-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/web-design-for-expats-in-spain"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une entrepreneuse installée à Valence prend un café sur un balcon fleuri, un ordinateur portable fermé à côté d'elle ; vue sur les toits de tuiles et un clocher.",
+   "fichier": "emprendedora-extranjera-valencia-balcon",
+   "marche_force": "es"
+  },
+  {
+   "id": "page-fonctionnement",
+   "type": "page",
+   "priorite": 35,
+   "titre": "Cómo funciona: tu web lista en 24 horas",
+   "url": "https://webautonomos.es/como-funciona",
+   "resume": "Así de fácil. Tres pasos, sin complicaciones técnicas y sin que tengas que tocar nada: nos encargamos de todo.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "como-funciona.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/como-funciona"
+    },
+    {
+     "html": "fr/comment-ca-marche.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/comment-ca-marche"
+    },
+    {
+     "html": "en/how.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/how"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une conseillère web prend des notes pendant un appel téléphonique dans un petit bureau lumineux ; tasse, carnet et plante, elle regarde par la fenêtre.",
+   "fichier": "como-funciona-llamada-asesora-web"
+  },
+  {
+   "id": "page-questions",
+   "type": "page",
+   "priorite": 36,
+   "titre": "Preguntas frecuentes",
+   "url": "https://webautonomos.es/preguntas",
+   "resume": "Todo lo que necesitas saber antes de empezar. Si te queda alguna duda, escríbenos: respondemos en menos de 24 horas.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "preguntas.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/preguntas"
+    },
+    {
+     "html": "fr/questions.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/questions"
+    },
+    {
+     "html": "en/faq.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/faq"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un électricien et une conseillère discutent autour d'une table haute dans un café ; elle répond à ses questions avec les mains, deux tasses de café entre eux.",
+   "fichier": "preguntas-frecuentes-conversacion-cafe"
+  },
+  {
+   "id": "page-contact",
+   "type": "page",
+   "priorite": 37,
+   "titre": "Contacta con WebAutonomos",
+   "url": "https://webautonomos.es/contacto",
+   "resume": "¿Listo para tener tu web profesional? Escríbenos por WhatsApp, llámanos o mándanos un email. Respondemos en menos de 24 horas y sin compromiso.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "contacto.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/contacto"
+    },
+    {
+     "html": "fr/contact.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/contact"
+    },
+    {
+     "html": "en/contact.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/contact"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Les mains d'une personne assise sur un muret ensoleillé qui enregistre un message vocal sur son téléphone (écran invisible), devant une rue commerçante floue.",
+   "fichier": "contacto-mensaje-whatsapp-movil"
+  },
+  {
+   "id": "page-diagnostic",
+   "type": "page",
+   "priorite": 38,
+   "titre": "Automatización de procesos para autónomos y pymes.",
+   "url": "https://webautonomos.es/diagnostico-automatizacion/",
+   "resume": "Precio cerrado. Presupuesto en menos de 48 horas. Sin coste de estudio previo, sin factura sorpresa, sin «depende» después de firmar.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "diagnostico-automatizacion/index.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/diagnostico-automatizacion/"
+    },
+    {
+     "html": "fr/diagnostic-automatisation/index.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/diagnostic-automatisation/"
+    },
+    {
+     "html": "en/automation-diagnostic/index.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/automation-diagnostic/"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Bureau administratif d'une petite entreprise, calme et ordonné : bacs à courrier vides, classeurs bien rangés ; la gérante boit un café en regardant par la fenêtre.",
+   "fichier": "automatizacion-oficina-ordenada"
+  },
+  {
+   "id": "page-visibilite-ia",
+   "type": "page",
+   "priorite": 39,
+   "titre": "¿Te recomienda ChatGPT cuando alguien busca tu oficio en tu ciudad?",
+   "url": "https://webautonomos.es/visibilidad-ia/",
+   "resume": "Tus clientes ya preguntan a la IA en vez de a Google. Te decimos gratis si apareces tú o tu competencia.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "visibilidad-ia/index.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/visibilidad-ia/"
+    },
+    {
+     "html": "fr/visibilite-ia/index.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/visibilite-ia/"
+    },
+    {
+     "html": "en/ai-visibility/index.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/ai-visibility/"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une femme pose une question à voix haute à son téléphone (écran invisible) en marchant dans une rue commerçante ; façades de boutiques floues en arrière-plan.",
+   "fichier": "busqueda-voz-asistente-ia-calle"
+  },
+  {
+   "id": "page-marketing",
+   "type": "page",
+   "priorite": 40,
+   "titre": "SEO local para autónomos: aparece en Google Maps cuando te buscan en tu zona",
+   "url": "https://webautonomos.es/marketing",
+   "resume": "Tener web no basta: hay que salir donde te buscan. SEO local desde 15 €/mes y gestión de tu ficha de Google desde 29 €/mes, sin permanencia. Contratas lo que necesitas y lo dejas cuando quieras.",
+   "marche": "es",
+   "sante": false,
+   "pages": [
+    {
+     "html": "marketing.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/marketing"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un couple cherche un restaurant sur son téléphone dans une ruelle du centre historique de Valence au crépuscule ; terrasses éclairées, écran invisible.",
+   "fichier": "seo-local-busqueda-movil-valencia",
+   "marche_force": "es"
+  },
+  {
+   "id": "page-blog",
+   "type": "page",
+   "priorite": 41,
+   "titre": "Blog para autónomos",
+   "url": "https://webautonomos.es/blog/",
+   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos de la Comunidad Valenciana. 226 artículos disponibles.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/index.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un indépendant lit sur une tablette (écran flou) à une table de terrasse, stylo et carnet à côté, par un matin ensoleillé.",
+   "fichier": "blog-autonomos-lectura-terraza"
+  },
+  {
+   "id": "art-01",
+   "type": "article",
+   "priorite": 100,
+   "titre": "5 razones por las que tu negocio necesita una página web en 2026",
+   "url": "https://webautonomos.es/blog/es/5-razones-pagina-web-negocio-2026",
+   "resume": "En la era digital, crear una página web ya no es un lujo, sino una necesidad para cualquier persona que desarrolle una actividad económica. Si eres autónomo o tienes una pequeña empresa en España, este artículo te mostrará por qué 2026 es el año perfecto para dar el salto online y conseguir resultados reales.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/5-razones-pagina-web-negocio-2026.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/5-razones-pagina-web-negocio-2026",
+     "spa": "es/5-razones-pagina-web-negocio-2026"
+    },
+    {
+     "html": "blog/val/5-raons-per-a-tindre-web-en-2026.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/5-raons-per-a-tindre-web-en-2026",
+     "spa": "val/5-raons-per-a-tindre-web-en-2026"
+    },
+    {
+     "html": "blog/fr/5-raisons-davoir-un-site-web-en-2026.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/5-raisons-davoir-un-site-web-en-2026"
+    },
+    {
+     "html": "blog/en/5-reasons-your-business-needs-a-website-in-2026.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/5-reasons-your-business-needs-a-website-in-2026",
+     "spa": "en/5-reasons-your-business-needs-a-website-in-2026"
+    }
+   ],
+   "statut": "fait",
+   "scene": "Photo existante (29/09/2026), générée dans ChatGPT par Angelino.",
+   "fichier": "small-business-owner-website-spain",
+   "pages_en_plus": [
+    {
+     "html": "blog/en/5-reasons-your-business-needs-a-website-in-2026.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/5-reasons-your-business-needs-a-website-in-2026",
+     "spa": "en/5-reasons-your-business-needs-a-website-in-2026"
+    }
+   ],
+   "v": 1,
+   "fait_le": "2026-09-29T04:21:41",
+   "textes": {
+    "es": {
+     "alt": "Una autónoma con delantal revisa la web de su tienda en un portátil y en el móvil, en una terraza de Valencia al atardecer",
+     "legende": "Muchos clientes conocen un negocio por su web mucho antes de cruzar la puerta."
+    },
+    "val": {
+     "alt": "Una autònoma amb davantal revisa la web de la seua botiga al portàtil i al mòbil, en una terrassa de València al capvespre",
+     "legende": "Molts clients coneixen un negoci per la seua web molt abans de creuar-ne la porta."
+    },
+    "en": {
+     "alt": "A small business owner reviewing her new website on a laptop and a phone at a table outside her shop in Valencia",
+     "legende": "Most people meet a business through its website long before they walk through the door."
+    },
+    "fr": {
+     "alt": "Une commerçante en tablier consulte le site de sa boutique sur un ordinateur portable et un téléphone, en terrasse au crépuscule",
+     "legende": "Bien des clients découvrent un commerce par son site bien avant d'en pousser la porte."
+    }
+   }
+  },
+  {
+   "id": "art-02",
+   "type": "article",
+   "priorite": 101,
+   "titre": "Cómo aparecer en Google Maps: Guía completa para autónomos",
+   "url": "https://webautonomos.es/blog/es/como-aparecer-google-maps-autonomos",
+   "resume": "Google Maps es la herramienta más poderosa para que los clientes locales te encuentren. En esta guía completa te explicamos cómo funciona el sistema, cómo crear tu perfil de empresa y cómo optimizarlo para atraer más clientes a tu negocio.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/como-aparecer-google-maps-autonomos.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/como-aparecer-google-maps-autonomos",
+     "spa": "es/como-aparecer-google-maps-autonomos"
+    },
+    {
+     "html": "blog/val/apareixer-en-google-maps-guia-completa.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/apareixer-en-google-maps-guia-completa",
+     "spa": "val/apareixer-en-google-maps-guia-completa"
+    },
+    {
+     "html": "blog/en/how-to-appear-on-google-maps-complete-guide.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/how-to-appear-on-google-maps-complete-guide",
+     "spa": "en/how-to-appear-on-google-maps-complete-guide"
+    },
+    {
+     "html": "blog/fr/apparaitre-sur-google-maps-guide-complet.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/apparaitre-sur-google-maps-guide-complet"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un livreur à vélo s'arrête à un carrefour et consulte son itinéraire sur le téléphone fixé au guidon (écran flou) ; rue commerçante animée.",
+   "fichier": "aparecer-google-maps-movil-calle"
+  },
+  {
+   "id": "art-03",
+   "type": "article",
+   "priorite": 102,
+   "titre": "SEO Local: Qué es y por qué es clave para autónomos y empresas de servicios",
+   "url": "https://webautonomos.es/blog/es/seo-local-que-es-autonomos",
+   "resume": "Si eres autónomo, tienes una empresa de servicios o gestionas un negocio local, el SEO local es tu mejor aliado para conseguir más clientes potenciales. En esta guía completa te explicamos qué es, cómo funciona y cómo puede ayudarte a destacar en internet sin necesidad de gran inversión en publicidad.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/seo-local-que-es-autonomos.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/seo-local-que-es-autonomos",
+     "spa": "es/seo-local-que-es-autonomos"
+    },
+    {
+     "html": "blog/val/seo-local-guia-completa-per-a-autonoms.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/seo-local-guia-completa-per-a-autonoms",
+     "spa": "val/seo-local-guia-completa-per-a-autonoms"
+    },
+    {
+     "html": "blog/en/local-seo-for-freelancers-complete-guide.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/local-seo-for-freelancers-complete-guide",
+     "spa": "en/local-seo-for-freelancers-complete-guide"
+    },
+    {
+     "html": "blog/fr/seo-local-independants-guide-complet.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/seo-local-independants-guide-complet"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Vue en légère plongée d'une place de quartier bordée de commerces (boulangerie, quincaillerie, café) le matin, avec des passants ; aucune enseigne lisible.",
+   "fichier": "seo-local-barrio-comercios"
+  },
+  {
+   "id": "art-04",
+   "type": "article",
+   "priorite": 103,
+   "titre": "¿Cuánto cuesta una página web para autónomos en España? Precios reales 2026",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-autonomos-espana",
+   "resume": "Una de las preguntas más frecuentes que recibimos es: ¿cuánto cuesta crear una página web? La respuesta puede variar considerablemente dependiendo de muchos factores. En esta guía completa analizamos todas las opciones del mercado español para que los trabajadores autónomos y pequeñas empresas puedan tomar la mejor decisión.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/cuanto-cuesta-pagina-web-autonomos-espana.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-autonomos-espana",
+     "spa": "es/cuanto-cuesta-pagina-web-autonomos-espana",
+     "pas_avant": "2026-10-23"
+    },
+    {
+     "html": "blog/val/quant-costa-una-pagina-web-per-a-autonoms.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/quant-costa-una-pagina-web-per-a-autonoms",
+     "spa": "val/quant-costa-una-pagina-web-per-a-autonoms"
+    },
+    {
+     "html": "blog/en/how-much-does-a-website-cost-for-freelancers.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/how-much-does-a-website-cost-for-freelancers",
+     "spa": "en/how-much-does-a-website-cost-for-freelancers"
+    },
+    {
+     "html": "blog/fr/combien-coute-un-site-web-pour-independants.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/combien-coute-un-site-web-pour-independants"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un couple de restaurateurs examine un devis papier (texte flou) à une table de leur salle vide avant le service.",
+   "fichier": "cuanto-cuesta-web-presupuesto-restaurante"
+  },
+  {
+   "id": "art-05",
+   "type": "article",
+   "priorite": 104,
+   "titre": "Cómo conseguir más reseñas en Google para tu negocio: Guía completa 2026",
+   "url": "https://webautonomos.es/blog/es/como-conseguir-resenas-google-negocio",
+   "resume": "Las reseñas de Google son el factor más imprescindible para que nuevos clientes te elijan. Una empresa con 50 reseñas de 4.5 estrellas siempre ganará al negocio que tiene 5 reseñas, aunque sean de 5 estrellas. En esta guía completa hemos recopilado los mejores consejos para conseguir más reseñas de forma ética y efectiva para aumentar la visibilidad de tu negocio.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/como-conseguir-resenas-google-negocio.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/como-conseguir-resenas-google-negocio",
+     "spa": "es/como-conseguir-resenas-google-negocio"
+    },
+    {
+     "html": "blog/val/aconseguir-mes-ressenyes-en-google.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/aconseguir-mes-ressenyes-en-google",
+     "spa": "val/aconseguir-mes-ressenyes-en-google"
+    },
+    {
+     "html": "blog/en/how-to-get-more-google-reviews.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/how-to-get-more-google-reviews",
+     "spa": "en/how-to-get-more-google-reviews"
+    },
+    {
+     "html": "blog/fr/obtenir-plus-avis-google-guide-complet.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/obtenir-plus-avis-google-guide-complet"
+    }
+   ],
+   "statut": "pret",
+   "scene": "À la sortie d'un salon de coiffure, une femme tape sur son téléphone en souriant (écran invisible) pendant que la coiffeuse lui fait un signe depuis la porte.",
+   "fichier": "conseguir-resenas-google-clienta"
+  },
+  {
+   "id": "art-06",
+   "type": "article",
+   "priorite": 105,
+   "titre": "Cómo Configurar WhatsApp Business Gratis: Guía Completa para Autónomos 2026",
+   "url": "https://webautonomos.es/blog/es/configurar-whatsapp-business-gratis-autonomos",
+   "resume": "WhatsApp Business es la solución de mensajería profesional que todo autónomo debería usar para mejorar la comunicación con los clientes. Si todavía usas WhatsApp personal, estás perdiendo funciones que pueden transformar tu negocio.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/configurar-whatsapp-business-gratis-autonomos.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/configurar-whatsapp-business-gratis-autonomos",
+     "spa": "es/configurar-whatsapp-business-gratis-autonomos"
+    },
+    {
+     "html": "blog/val/configurar-whatsapp-business-gratis.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/configurar-whatsapp-business-gratis",
+     "spa": "val/configurar-whatsapp-business-gratis"
+    },
+    {
+     "html": "blog/en/set-up-whatsapp-business-for-free.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/set-up-whatsapp-business-for-free",
+     "spa": "en/set-up-whatsapp-business-for-free"
+    },
+    {
+     "html": "blog/fr/configurer-whatsapp-business-gratuitement.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/configurer-whatsapp-business-gratuitement"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un serrurier assis dans sa camionnette, porte latérale ouverte, répond à un message sur son téléphone (écran flou) ; outils rangés derrière lui.",
+   "fichier": "whatsapp-business-autonomo-furgoneta"
+  },
+  {
+   "id": "art-07",
+   "type": "article",
+   "priorite": 106,
+   "titre": "Cómo conseguir clientes por internet si eres autónomo",
+   "url": "https://webautonomos.es/blog/es/como-conseguir-clientes-por-internet",
+   "resume": "Si eres autónomo en la Comunidad Valenciana y quieres conseguir clientes por internet, esta guía es para ti. Da igual si eres electricista en Elda, fontanero en Elche, dentista en Valencia o carpintero en Alicante: hoy, antes de llamar a un profesional, mucha gente lo busca primero en Google.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/como-conseguir-clientes-por-internet.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/como-conseguir-clientes-por-internet",
+     "spa": "es/como-conseguir-clientes-por-internet"
+    },
+    {
+     "html": "blog/val/aconseguir-clients-per-internet.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/aconseguir-clients-per-internet",
+     "spa": "val/aconseguir-clients-per-internet"
+    },
+    {
+     "html": "blog/en/how-to-find-clients-online.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/how-to-find-clients-online",
+     "spa": "en/how-to-find-clients-online"
+    },
+    {
+     "html": "blog/fr/comment-trouver-des-clients-sur-internet.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/comment-trouver-des-clients-sur-internet"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une couturière prépare un colis pour un client dans son atelier, un mètre ruban autour du cou ; rouleaux de tissu colorés en arrière-plan.",
+   "fichier": "conseguir-clientes-internet-taller-costura"
+  },
+  {
+   "id": "art-08",
+   "type": "article",
+   "priorite": 107,
+   "titre": "Palabras clave locales: cómo elegir las que traen clientes a tu negocio",
+   "url": "https://webautonomos.es/blog/es/palabras-clave-locales-como-elegir",
+   "resume": "Si eres autónomo en la Comunidad Valenciana y quieres que tus clientes te encuentren en Google, todo empieza por elegir las palabras clave locales correctas. No sirve de nada tener la mejor web del mundo si nadie la encuentra cuando busca 'fontanero en Elda' o 'dentista en Alicante'.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/palabras-clave-locales-como-elegir.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/palabras-clave-locales-como-elegir",
+     "spa": "es/palabras-clave-locales-como-elegir"
+    },
+    {
+     "html": "blog/val/paraules-clau-locals-com-triar-les.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/paraules-clau-locals-com-triar-les",
+     "spa": "val/paraules-clau-locals-com-triar-les"
+    },
+    {
+     "html": "blog/en/how-to-choose-local-keywords.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/how-to-choose-local-keywords",
+     "spa": "en/how-to-choose-local-keywords"
+    },
+    {
+     "html": "blog/fr/choisir-ses-mots-cles-locaux.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/choisir-ses-mots-cles-locaux"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une professionnelle réorganise des notes adhésives colorées (sans texte lisible) sur une vitre de son bureau, l'air concentré.",
+   "fichier": "palabras-clave-locales-planificacion"
+  },
+  {
+   "id": "art-09",
+   "type": "article",
+   "priorite": 108,
+   "titre": "Qué debe tener la web de un electricista: guía práctica 2026",
+   "url": "https://webautonomos.es/blog/es/pagina-web-para-electricistas",
+   "resume": "Si trabajas como electricista autónomo en la Comunidad Valenciana, sabes que el boca a boca ya no basta: tus clientes buscan en Google «electricista en Valencia» o «electricista urgente Alicante» antes de llamar a nadie. Una buena página web para electricistas es lo que decide si te encuentran a ti o a la empresa de al lado. En esta guía repasamos qué necesita, cuánto cuesta y…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/pagina-web-para-electricistas.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/pagina-web-para-electricistas",
+     "spa": "es/pagina-web-para-electricistas"
+    },
+    {
+     "html": "blog/val/pagina-web-per-a-electricistes.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/pagina-web-per-a-electricistes",
+     "spa": "val/pagina-web-per-a-electricistes"
+    },
+    {
+     "html": "blog/en/website-for-electricians.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-electricians",
+     "spa": "en/website-for-electricians"
+    },
+    {
+     "html": "blog/fr/site-web-pour-electriciens.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-electriciens"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un électricien installe une borne de recharge murale dans le garage d'une maison individuelle ; câbles, perceuse, voiture électrique floue.",
+   "fichier": "electricista-instalando-cargador-coche"
+  },
+  {
+   "id": "art-10",
+   "type": "article",
+   "priorite": 109,
+   "titre": "10 trucos para optimizar tu ficha de Google Business Profile",
+   "url": "https://webautonomos.es/blog/es/optimizar-ficha-google-business-profile",
+   "resume": "Tu ficha de Google Business Profile (antes Google My Business) es, junto con tu web, la herramienta mas potente para atraer clientes locales. Pero tener una ficha creada no basta: muchos negocios locales ni siquiera han completado toda la información. Si quieres optimizar Google Business Profile para que destaque sobre tu competencia en Valencia, Alicante, Elda o Elche, aqui…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/optimizar-ficha-google-business-profile.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/optimizar-ficha-google-business-profile",
+     "spa": "es/optimizar-ficha-google-business-profile"
+    },
+    {
+     "html": "blog/val/optimitzar-fitxa-google-business-profile.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/optimitzar-fitxa-google-business-profile",
+     "spa": "val/optimitzar-fitxa-google-business-profile"
+    },
+    {
+     "html": "blog/en/optimise-your-google-business-profile.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/optimise-your-google-business-profile",
+     "spa": "en/optimise-your-google-business-profile"
+    },
+    {
+     "html": "blog/fr/optimiser-sa-fiche-google-business-profile.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/optimiser-sa-fiche-google-business-profile"
+    }
+   ],
+   "statut": "pret",
+   "scene": "La propriétaire d'un café met à jour une ardoise (sans texte lisible) à l'entrée de son établissement, tôt le matin.",
+   "fichier": "ficha-google-horarios-negocio"
+  },
+  {
+   "id": "art-11",
+   "type": "article",
+   "priorite": 110,
+   "titre": "Como posicionar tu web en Google si eres un negocio local",
+   "url": "https://webautonomos.es/blog/es/como-posicionar-web-en-google-local",
+   "resume": "Tienes tu web, tienes tu ficha de Google, pero sigues sin aparecer cuando alguien busca tu servicio en tu ciudad. El problema no es que Google no sepa que existes: es que tu web no esta optimizada para posicionar en Google local. En esta guia te damos la estrategia paso a paso, con tecnicas de on-page SEO especificas para negocios locales en la Comunidad Valenciana, para que…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/como-posicionar-web-en-google-local.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/como-posicionar-web-en-google-local",
+     "spa": "es/como-posicionar-web-en-google-local"
+    },
+    {
+     "html": "blog/val/posicionar-la-web-en-el-google-local.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/posicionar-la-web-en-el-google-local",
+     "spa": "val/posicionar-la-web-en-el-google-local"
+    },
+    {
+     "html": "blog/en/how-to-rank-your-website-in-local-google.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/how-to-rank-your-website-in-local-google",
+     "spa": "en/how-to-rank-your-website-in-local-google"
+    },
+    {
+     "html": "blog/fr/positionner-son-site-dans-le-google-local.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/positionner-son-site-dans-le-google-local"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Depuis l'intérieur d'une boutique d'optique, vue vers la rue : des passants s'arrêtent devant la vitrine lumineuse.",
+   "fichier": "posicionar-negocio-local-escaparate"
+  },
+  {
+   "id": "art-12",
+   "type": "article",
+   "priorite": 111,
+   "titre": "Redes sociales para autonomos: cuales deberias usar realmente",
+   "url": "https://webautonomos.es/blog/es/redes-sociales-autonomos-cuales-usar",
+   "resume": "\"Tienes que estar en Instagram. Y en Facebook. Y en TikTok. Y hacer videos. Y publicar cada dia.\" Si eres autonomo en la Comunidad Valenciana, seguro que has escuchado esto mas de una vez. Pero la verdad es que las redes sociales para autonomos no funcionan igual que para las grandes marcas. Un electricista en Elda o una peluquera en Alicante no necesita un millon de…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/redes-sociales-autonomos-cuales-usar.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/redes-sociales-autonomos-cuales-usar",
+     "spa": "es/redes-sociales-autonomos-cuales-usar"
+    },
+    {
+     "html": "blog/val/xarxes-socials-quines-triar.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/xarxes-socials-quines-triar",
+     "spa": "val/xarxes-socials-quines-triar"
+    },
+    {
+     "html": "blog/en/social-media-for-freelancers-which-to-choose.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/social-media-for-freelancers-which-to-choose",
+     "spa": "en/social-media-for-freelancers-which-to-choose"
+    },
+    {
+     "html": "blog/fr/reseaux-sociaux-independants-lesquels-choisir.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/reseaux-sociaux-independants-lesquels-choisir"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une pâtissière dispose des gâteaux sur une table en bois et les photographie avec son téléphone près d'une fenêtre (écran invisible).",
+   "fichier": "redes-sociales-autonoma-foto-producto"
+  },
+  {
+   "id": "art-13",
+   "type": "article",
+   "priorite": 112,
+   "titre": "Cómo conseguir más llamadas con la web de tu fontanería",
+   "url": "https://webautonomos.es/blog/es/web-para-fontaneros-guia-completa",
+   "resume": "Si eres fontanero autonomo en la Comunidad Valenciana y todavia no tienes una web para fontaneros que funcione de verdad, estas perdiendo llamadas cada dia. Cuando alguien tiene una fuga de agua en Valencia o necesita cambiar una caldera en Alicante, lo primero que hace es buscar en Google. Y si no apareces, el trabajo se lo lleva otro. En esta guia te mostramos exactamente…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/web-para-fontaneros-guia-completa.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-para-fontaneros-guia-completa",
+     "spa": "es/web-para-fontaneros-guia-completa"
+    },
+    {
+     "html": "blog/val/web-per-a-fontaners-guia-completa.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-per-a-fontaners-guia-completa",
+     "spa": "val/web-per-a-fontaners-guia-completa"
+    },
+    {
+     "html": "blog/en/website-for-plumbers-complete-guide.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-plumbers-complete-guide",
+     "spa": "en/website-for-plumbers-complete-guide"
+    },
+    {
+     "html": "blog/fr/site-web-pour-plombiers-guide-complet.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-plombiers-guide-complet"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un plombier répond à un appel, sourire aux lèvres, en descendant de sa camionnette devant un immeuble résidentiel.",
+   "fichier": "fontanero-recibiendo-llamada-cliente"
+  },
+  {
+   "id": "art-14",
+   "type": "article",
+   "priorite": 113,
+   "titre": "Google Posts: como publicar en tu ficha de Google para atraer mas clientes",
+   "url": "https://webautonomos.es/blog/es/google-posts-publicar-fiche-google",
+   "resume": "Sabias que puedes publicar contenido directamente en tu ficha de Google y que aparece cuando alguien busca tu negocio? Los Google Posts son una de las funciones mas potentes y menos utilizadas de Google Business Profile. Si eres autonomo en Valencia, Alicante, Elda o Elche, publicar en tu ficha de Google al menos una vez a la semana puede multiplicar las interacciones con tu…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/google-posts-publicar-fiche-google.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/google-posts-publicar-fiche-google",
+     "spa": "es/google-posts-publicar-fiche-google"
+    },
+    {
+     "html": "blog/val/google-posts-publicar-en-la-fitxa.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/google-posts-publicar-en-la-fitxa",
+     "spa": "val/google-posts-publicar-en-la-fitxa"
+    },
+    {
+     "html": "blog/en/google-posts-publishing-on-your-listing.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/google-posts-publishing-on-your-listing",
+     "spa": "en/google-posts-publishing-on-your-listing"
+    },
+    {
+     "html": "blog/fr/google-posts-publier-sur-sa-fiche.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/google-posts-publier-sur-sa-fiche"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une fleuriste compose un bouquet de saison sur son comptoir ; au premier plan, un téléphone posé sur un petit trépied, prêt pour la photo.",
+   "fichier": "google-posts-floristeria-publicacion"
+  },
+  {
+   "id": "art-15",
+   "type": "article",
+   "priorite": 114,
+   "titre": "Que es el Map Pack de Google y como conseguir que tu negocio aparezca",
+   "url": "https://webautonomos.es/blog/es/que-es-map-pack-google-como-salir",
+   "resume": "Si alguna vez has buscado \"fontanero en Valencia\" o \"peluqueria Alicante\" en Google, habras visto un bloque con un mapa y tres negocios destacados justo arriba de todos los resultados. Eso es el Map Pack de Google, y se lleva buena parte de los clics en las búsquedas locales. Para un autonomo en la Comunidad Valenciana, aparecer ahi significa recibir mas llamadas, mas visitas…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/que-es-map-pack-google-como-salir.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/que-es-map-pack-google-como-salir",
+     "spa": "es/que-es-map-pack-google-como-salir"
+    },
+    {
+     "html": "blog/val/map-pack-de-google-com-apareixer-hi.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/map-pack-de-google-com-apareixer-hi",
+     "spa": "val/map-pack-de-google-com-apareixer-hi"
+    },
+    {
+     "html": "blog/en/google-map-pack-how-to-appear.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/google-map-pack-how-to-appear",
+     "spa": "en/google-map-pack-how-to-appear"
+    },
+    {
+     "html": "blog/fr/map-pack-google-comment-y-figurer.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/map-pack-google-comment-y-figurer"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Vue aérienne d'un quartier méditerranéen aux toits de tuiles avec quelques commerces aux auvents colorés, à l'heure dorée.",
+   "fichier": "map-pack-google-barrio-vista-aerea"
+  },
+  {
+   "id": "art-16",
+   "type": "article",
+   "priorite": 115,
+   "titre": "Email marketing para autonomos: empieza sin gastar un euro",
+   "url": "https://webautonomos.es/blog/es/email-marketing-autonomos-guia-basica",
+   "resume": "El email marketing para autonomos es una de las herramientas mas rentables y menos aprovechadas del marketing digital. Mientras todo el mundo habla de redes sociales y TikTok, el email sigue funcionando: escribir a tus propios clientes cuesta muy poco y llega directamente a quien ya te conoce. Y lo mejor es que puedes empezar completamente gratis. Si eres fontanero en…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/email-marketing-autonomos-guia-basica.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/email-marketing-autonomos-guia-basica",
+     "spa": "es/email-marketing-autonomos-guia-basica"
+    },
+    {
+     "html": "blog/val/marketing-per-correu-guia-basica.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/marketing-per-correu-guia-basica",
+     "spa": "val/marketing-per-correu-guia-basica"
+    },
+    {
+     "html": "blog/en/email-marketing-for-freelancers-beginners-guide.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/email-marketing-for-freelancers-beginners-guide",
+     "spa": "en/email-marketing-for-freelancers-beginners-guide"
+    },
+    {
+     "html": "blog/fr/email-marketing-independants-guide-debutant.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/email-marketing-independants-guide-debutant"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une libraire indépendante glisse des marque-pages dans des commandes à expédier, une tasse de thé à côté ; étagères de livres en arrière-plan.",
+   "fichier": "email-marketing-libreria-clientes"
+  },
+  {
+   "id": "art-17",
+   "type": "article",
+   "priorite": 116,
+   "titre": "Qué debe tener la web de una clínica dental o de fisioterapia",
+   "url": "https://webautonomos.es/blog/es/web-para-clinica-dental-fisioterapeuta",
+   "resume": "Si eres dentista o fisioterapeuta autonomo en la Comunidad Valenciana, probablemente te has preguntado si realmente necesitas una web para clinica dental o fisioterapia. La respuesta corta: si, y mas que nunca. Hoy, muchos pacientes buscan a su dentista o fisioterapeuta en internet antes de pedir cita. Si no tienes presencia digital, esos pacientes eligen a tu competencia en…",
+   "marche": "europe",
+   "sante": true,
+   "pages": [
+    {
+     "html": "blog/es/web-para-clinica-dental-fisioterapeuta.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-para-clinica-dental-fisioterapeuta",
+     "spa": "es/web-para-clinica-dental-fisioterapeuta"
+    },
+    {
+     "html": "blog/val/web-per-a-dentistes-i-fisioterapeutes.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-per-a-dentistes-i-fisioterapeutes",
+     "spa": "val/web-per-a-dentistes-i-fisioterapeutes"
+    },
+    {
+     "html": "blog/en/website-for-dentists-and-physiotherapists.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-dentists-and-physiotherapists",
+     "spa": "en/website-for-dentists-and-physiotherapists"
+    },
+    {
+     "html": "blog/fr/site-web-pour-dentistes-et-kinesitherapeutes.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-dentistes-et-kinesitherapeutes"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Accueil lumineux d'une clinique : comptoir en bois clair, plantes, salle d'attente vide aux chaises design ; une réceptionniste vue de dos.",
+   "fichier": "clinica-salud-recepcion-luminosa",
+   "sante_force": true
+  },
+  {
+   "id": "art-18",
+   "type": "article",
+   "priorite": 117,
+   "titre": "Como responder a resenas negativas en Google sin perder clientes",
+   "url": "https://webautonomos.es/blog/es/responder-resenas-negativas-google",
+   "resume": "Acabas de abrir Google y lo ves: una resena de 1 estrella en tu ficha de negocio. El estomago se te encoge. Cada dia, miles de autonomos en Valencia, Alicante, Elda y Elche se enfrentan a resenas negativas en Google. La buena noticia es que una mala opinion no tiene por que ser el fin del mundo. De hecho, si sabes responder a resenas negativas en Google de forma profesional,…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/responder-resenas-negativas-google.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/responder-resenas-negativas-google",
+     "spa": "es/responder-resenas-negativas-google"
+    },
+    {
+     "html": "blog/val/respondre-ressenyes-negatives-en-google.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/respondre-ressenyes-negatives-en-google",
+     "spa": "val/respondre-ressenyes-negatives-en-google"
+    },
+    {
+     "html": "blog/en/how-to-reply-to-negative-google-reviews.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/how-to-reply-to-negative-google-reviews",
+     "spa": "en/how-to-reply-to-negative-google-reviews"
+    },
+    {
+     "html": "blog/fr/repondre-aux-avis-negatifs-google.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/repondre-aux-avis-negatifs-google"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un restaurateur, seul à une table après le service, lit attentivement sur son téléphone (écran invisible), l'air concentré ; chaises retournées sur les tables.",
+   "fichier": "responder-resenas-negativas-restaurante"
+  },
+  {
+   "id": "art-19",
+   "type": "article",
+   "priorite": 118,
+   "titre": "Schema LocalBusiness: que es y por que tu web lo necesita",
+   "url": "https://webautonomos.es/blog/es/schema-local-business-que-es-como-implementar",
+   "resume": "Si tienes un negocio local en la Comunidad Valenciana y quieres que Google entienda perfectamente quien eres, donde estas y que ofreces, necesitas conocer Schema LocalBusiness. Son esos datos estructurados invisibles que le dicen a Google en su propio idioma todo sobre tu negocio. No los ven tus clientes, pero marcan la diferencia entre aparecer con un resultado plano en…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/schema-local-business-que-es-como-implementar.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/schema-local-business-que-es-como-implementar",
+     "spa": "es/schema-local-business-que-es-como-implementar"
+    },
+    {
+     "html": "blog/val/schema-localbusiness-guia-practica.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/schema-localbusiness-guia-practica",
+     "spa": "val/schema-localbusiness-guia-practica"
+    },
+    {
+     "html": "blog/en/schema-localbusiness-practical-guide.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/schema-localbusiness-practical-guide",
+     "spa": "en/schema-localbusiness-practical-guide"
+    },
+    {
+     "html": "blog/fr/schema-localbusiness-guide-pratique.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/schema-localbusiness-guide-pratique"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un cordonnier classe des fiches cartonnées (sans texte lisible) dans un fichier en bois, dans son échoppe pleine d'outils et de semelles.",
+   "fichier": "schema-local-business-datos-negocio"
+  },
+  {
+   "id": "art-20",
+   "type": "article",
+   "priorite": 119,
+   "titre": "Cuanto deberia gastar un autonomo en marketing digital?",
+   "url": "https://webautonomos.es/blog/es/presupuesto-marketing-digital-autonomos",
+   "resume": "Es la pregunta que todo autonomo se hace tarde o temprano: cuanto debo invertir en presupuesto de marketing digital para que mi negocio crezca? La respuesta no es un numero magico, sino una estrategia adaptada a tu situacion. Un fontanero en Elda que acaba de darse de alta no tiene las mismas necesidades que un dentista en Valencia con 10 anos de clientela. En esta guia te…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/presupuesto-marketing-digital-autonomos.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/presupuesto-marketing-digital-autonomos",
+     "spa": "es/presupuesto-marketing-digital-autonomos"
+    },
+    {
+     "html": "blog/val/pressupost-de-marketing-digital.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/pressupost-de-marketing-digital",
+     "spa": "val/pressupost-de-marketing-digital"
+    },
+    {
+     "html": "blog/en/digital-marketing-budget-for-freelancers.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/digital-marketing-budget-for-freelancers",
+     "spa": "en/digital-marketing-budget-for-freelancers"
+    },
+    {
+     "html": "blog/fr/budget-marketing-digital-independants.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/budget-marketing-digital-independants"
+    }
+   ],
+   "statut": "pret",
+   "scene": "La gérante d'un institut de beauté répartit des jetons en bois dans trois bocaux en verre sur son bureau, un carnet ouvert à côté.",
+   "fichier": "presupuesto-marketing-autonomo-planificacion"
+  },
+  {
+   "id": "art-21",
+   "type": "article",
+   "priorite": 120,
+   "titre": "Los 7 elementos que toda web de autónomo debe tener",
+   "url": "https://webautonomos.es/blog/es/que-debe-tener-web-profesional-autonomo",
+   "resume": "Tener una web está bien. Pero tener una web profesional con los elementos correctos es lo que marca la diferencia entre recibir llamadas de clientes o que tu página sea invisible. Si eres autónomo en la Comunidad Valenciana y ya diste el paso de crear tu sitio web, es hora de comprobar que incluye todo lo que un cliente necesita para confiar en ti y contactarte. En este…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/que-debe-tener-web-profesional-autonomo.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/que-debe-tener-web-profesional-autonomo",
+     "spa": "es/que-debe-tener-web-profesional-autonomo"
+    },
+    {
+     "html": "blog/val/elements-imprescindibles-d-una-web.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/elements-imprescindibles-d-una-web",
+     "spa": "val/elements-imprescindibles-d-una-web"
+    },
+    {
+     "html": "blog/en/essential-elements-of-a-professional-website.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/essential-elements-of-a-professional-website",
+     "spa": "en/essential-elements-of-a-professional-website"
+    },
+    {
+     "html": "blog/fr/elements-indispensables-site-professionnel.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/elements-indispensables-site-professionnel"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une architecte d'intérieur dispose des échantillons (bois, tissu, carrelage) sur une grande table, comme les éléments d'un projet.",
+   "fichier": "elementos-web-profesional-muestras"
+  },
+  {
+   "id": "art-22",
+   "type": "article",
+   "priorite": 121,
+   "titre": "Categorías de Google Business: cómo elegir las correctas para tu negocio",
+   "url": "https://webautonomos.es/blog/es/categorias-google-business-como-elegir",
+   "resume": "Las categorías de Google Business son uno de los factores que más influyen en que tu negocio aparezca (o no) en Google Maps cuando un cliente te busca. Elegir la categoría equivocada es como poner un cartel de \"panadería\" en tu taller mecánico: Google no te mostrará a las personas correctas. Si eres autónomo en Valencia, Alicante, Elda o Elche, en este artículo te enseñamos a…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/categorias-google-business-como-elegir.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/categorias-google-business-como-elegir",
+     "spa": "es/categorias-google-business-como-elegir"
+    },
+    {
+     "html": "blog/val/categories-google-business-com-triar-les.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/categories-google-business-com-triar-les",
+     "spa": "val/categories-google-business-com-triar-les"
+    },
+    {
+     "html": "blog/en/how-to-choose-google-business-categories.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/how-to-choose-google-business-categories",
+     "spa": "en/how-to-choose-google-business-categories"
+    },
+    {
+     "html": "blog/fr/choisir-les-categories-google-business.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/choisir-les-categories-google-business"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un quincaillier range des boîtes sur des rayonnages classés avec soin dans sa quincaillerie de quartier ; aucune étiquette lisible.",
+   "fichier": "categorias-google-business-ferreteria"
+  },
+  {
+   "id": "art-23",
+   "type": "article",
+   "priorite": 122,
+   "titre": "Citas locales y NAP: qué son y por qué son vitales para tu SEO",
+   "url": "https://webautonomos.es/blog/es/citas-locales-nap-que-son-por-que-importan",
+   "resume": "Si trabajas tu SEO local y no has oído hablar de las citas locales NAP, estás dejando escapar una de las señales más importantes que Google usa para posicionar negocios en los resultados de búsqueda. NAP significa Name, Address, Phone (nombre, dirección y teléfono), y la coherencia de estos datos en internet es crucial para que Google confíe en tu negocio. En esta guía te…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/citas-locales-nap-que-son-por-que-importan.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/citas-locales-nap-que-son-por-que-importan",
+     "spa": "es/citas-locales-nap-que-son-por-que-importan"
+    },
+    {
+     "html": "blog/val/cites-locals-nap-guia-completa.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/cites-locals-nap-guia-completa",
+     "spa": "val/cites-locals-nap-guia-completa"
+    },
+    {
+     "html": "blog/en/local-citations-nap-complete-guide.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/local-citations-nap-complete-guide",
+     "spa": "en/local-citations-nap-complete-guide"
+    },
+    {
+     "html": "blog/fr/citations-locales-nap-guide-complet.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/citations-locales-nap-guide-complet"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un facteur glisse du courrier dans une rangée de boîtes aux lettres d'un immeuble ; aucun nom lisible.",
+   "fichier": "citas-locales-nap-direccion-negocio"
+  },
+  {
+   "id": "art-24",
+   "type": "article",
+   "priorite": 123,
+   "titre": "Digitalización para autónomos en España: por dónde empezar en 2026",
+   "url": "https://webautonomos.es/blog/es/digitalizacion-autonomos-espana-por-donde-empezar",
+   "resume": "La digitalización autónomos España ya no es una opción: es una necesidad. Si eres fontanero en Elche, electricista en Valencia, dentista en Alicante o carpintero en Elda y sigues dependiendo solo del boca a boca, estás dejando escapar oportunidades cada día. La buena noticia es que digitalizar tu negocio en 2026 es más fácil y barato que nunca, especialmente gracias a ayudas…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/digitalizacion-autonomos-espana-por-donde-empezar.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/digitalizacion-autonomos-espana-por-donde-empezar",
+     "spa": "es/digitalizacion-autonomos-espana-por-donde-empezar"
+    },
+    {
+     "html": "blog/val/digitalitzacio-per-a-autonoms-per-on-comencar.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/digitalitzacio-per-a-autonoms-per-on-comencar",
+     "spa": "val/digitalitzacio-per-a-autonoms-per-on-comencar"
+    },
+    {
+     "html": "blog/en/going-digital-as-a-freelancer-where-to-start.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/going-digital-as-a-freelancer-where-to-start",
+     "spa": "en/going-digital-as-a-freelancer-where-to-start"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un menuisier âgé et sa fille regardent ensemble une tablette (écran flou) dans l'atelier familial, outils anciens accrochés au mur.",
+   "fichier": "digitalizacion-autonomos-taller-familiar"
+  },
+  {
+   "id": "art-25",
+   "type": "article",
+   "priorite": 124,
+   "titre": "Qué debe tener la web de un carpintero o de una reforma",
+   "url": "https://webautonomos.es/blog/es/web-para-carpinteros-reformas",
+   "resume": "Si eres carpintero o tienes una empresa de reformas en la Comunidad Valenciana, sabes que tu mejor tarjeta de visita es el trabajo bien hecho. Pero si ese trabajo no se ve online, estas perdiendo clientes cada dia. Una web para carpinteros y reformas bien disenada convierte tus proyectos terminados en solicitudes de presupuesto constantes. En esta guia te explicamos…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/web-para-carpinteros-reformas.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-para-carpinteros-reformas",
+     "spa": "es/web-para-carpinteros-reformas"
+    },
+    {
+     "html": "blog/val/web-per-a-fusters-i-reformes.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-per-a-fusters-i-reformes",
+     "spa": "val/web-per-a-fusters-i-reformes"
+    },
+    {
+     "html": "blog/en/website-for-carpenters-and-renovations.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-carpenters-and-renovations",
+     "spa": "en/website-for-carpenters-and-renovations"
+    },
+    {
+     "html": "blog/fr/site-web-pour-menuisiers-et-renovation.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-menuisiers-et-renovation"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une cuisine sur mesure en bois tout juste installée ; le menuisier passe un chiffon sur le plan de travail, lumière d'une grande fenêtre.",
+   "fichier": "carpintero-cocina-a-medida-terminada"
+  },
+  {
+   "id": "art-26",
+   "type": "article",
+   "priorite": 125,
+   "titre": "Fotos y videos en tu ficha de Google: qué subir y por qué importa",
+   "url": "https://webautonomos.es/blog/es/fotos-videos-ficha-google-importancia",
+   "resume": "Tu ficha de Google Business Profile es tu escaparate digital. Y como en cualquier escaparate, lo que se ve es lo que vende. Las fotos y videos en tu ficha de Google no son un complemento decorativo: son la diferencia entre que un cliente te llame a ti o a tu competencia. Una ficha con fotos reales y actualizadas transmite confianza desde el primer vistazo. Si eres autonomo en…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/fotos-videos-ficha-google-importancia.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/fotos-videos-ficha-google-importancia",
+     "spa": "es/fotos-videos-ficha-google-importancia"
+    },
+    {
+     "html": "blog/val/fotos-i-videos-en-la-fitxa-de-google.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/fotos-i-videos-en-la-fitxa-de-google",
+     "spa": "val/fotos-i-videos-en-la-fitxa-de-google"
+    },
+    {
+     "html": "blog/en/photos-and-videos-on-your-google-listing.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/photos-and-videos-on-your-google-listing",
+     "spa": "en/photos-and-videos-on-your-google-listing"
+    },
+    {
+     "html": "blog/fr/photos-et-videos-sur-sa-fiche-google.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/photos-et-videos-sur-sa-fiche-google"
+    }
+   ],
+   "statut": "pret",
+   "scene": "La propriétaire d'une maison d'hôtes photographie sa terrasse décorée avec un appareil reflex, bougainvilliers en fleurs.",
+   "fichier": "fotos-ficha-google-alojamiento-terraza"
+  },
+  {
+   "id": "art-27",
+   "type": "article",
+   "priorite": 126,
+   "titre": "Backlinks locales: como conseguir enlaces que impulsen tu negocio",
+   "url": "https://webautonomos.es/blog/es/backlinks-locales-como-conseguir",
+   "resume": "En el mundo del SEO local, los backlinks locales son como las recomendaciones boca a boca, pero en version digital. Cuando la web del Ayuntamiento de Elche, la Camara de Comercio de Alicante o el periodico Informacion enlazan a tu web, Google interpreta eso como una senal de confianza: este negocio es legitimo y relevante en su zona. En esta guia te ensenamos estrategias…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/backlinks-locales-como-conseguir.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/backlinks-locales-como-conseguir",
+     "spa": "es/backlinks-locales-como-conseguir"
+    },
+    {
+     "html": "blog/val/backlinks-locals-com-aconseguir-ne.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/backlinks-locals-com-aconseguir-ne",
+     "spa": "val/backlinks-locals-com-aconseguir-ne"
+    },
+    {
+     "html": "blog/en/how-to-get-local-backlinks.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/how-to-get-local-backlinks",
+     "spa": "en/how-to-get-local-backlinks"
+    },
+    {
+     "html": "blog/fr/obtenir-des-backlinks-locaux.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/obtenir-des-backlinks-locaux"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Réunion d'une association de commerçants dans l'arrière-salle d'un café : six personnes discutent autour d'une table.",
+   "fichier": "backlinks-locales-asociacion-comerciantes"
+  },
+  {
+   "id": "art-28",
+   "type": "article",
+   "priorite": 127,
+   "titre": "Los 10 errores de marketing digital que cometen los autonomos (y como evitarlos)",
+   "url": "https://webautonomos.es/blog/es/errores-marketing-digital-autonomos",
+   "resume": "Carpinteros en Elda, electricistas en Alicante, dentistas en Valencia, fontaneros en Elche: en la Comunidad Valenciana, muchos autónomos repiten los mismos errores de marketing digital una y otra vez. Errores que cuestan clientes, tiempo y dinero. La buena noticia es que todos tienen solucion, y en muchos casos es mas sencilla de lo que imaginas. Este articulo es un recorrido…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/errores-marketing-digital-autonomos.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/errores-marketing-digital-autonomos",
+     "spa": "es/errores-marketing-digital-autonomos"
+    },
+    {
+     "html": "blog/val/errors-de-marketing-digital-a-evitar.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/errors-de-marketing-digital-a-evitar",
+     "spa": "val/errors-de-marketing-digital-a-evitar"
+    },
+    {
+     "html": "blog/en/digital-marketing-mistakes-to-avoid.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/digital-marketing-mistakes-to-avoid",
+     "spa": "en/digital-marketing-mistakes-to-avoid"
+    },
+    {
+     "html": "blog/fr/erreurs-marketing-digital-a-eviter.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/erreurs-marketing-digital-a-eviter"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un peintre en bâtiment regarde, perplexe, un carton de prospectus invendus (texte illisible) dans le coffre de sa voiture.",
+   "fichier": "errores-marketing-autonomo-folletos"
+  },
+  {
+   "id": "art-31",
+   "type": "article",
+   "priorite": 128,
+   "titre": "Cómo elegir el dominio perfecto para tu negocio",
+   "url": "https://webautonomos.es/blog/es/como-elegir-dominio-web-negocio",
+   "resume": "El dominio es la dirección de tu negocio en internet. Es lo primero que ven tus clientes y lo que escriben para encontrarte. Un buen dominio transmite profesionalidad, es fácil de recordar y te ayuda a posicionarte en Google. En esta guía te explicamos cómo elegirlo bien, qué extensión usar y los errores más comunes que debes evitar.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/como-elegir-dominio-web-negocio.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/como-elegir-dominio-web-negocio",
+     "spa": "es/como-elegir-dominio-web-negocio"
+    },
+    {
+     "html": "blog/val/triar-el-domini-del-teu-negoci.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/triar-el-domini-del-teu-negoci",
+     "spa": "val/triar-el-domini-del-teu-negoci"
+    },
+    {
+     "html": "blog/en/how-to-choose-your-domain-name.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/how-to-choose-your-domain-name",
+     "spa": "en/how-to-choose-your-domain-name"
+    },
+    {
+     "html": "blog/fr/choisir-le-nom-de-domaine-de-son-site.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/choisir-le-nom-de-domaine-de-son-site"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Gros plan sur une main qui fixe une plaque d'adresse vierge (sans inscription) près de la porte d'entrée d'un petit commerce.",
+   "fichier": "elegir-dominio-direccion-negocio"
+  },
+  {
+   "id": "art-32",
+   "type": "article",
+   "priorite": 129,
+   "titre": "IA para autónomos: 10 herramientas que ya puedes usar en tu negocio",
+   "url": "https://webautonomos.es/blog/es/inteligencia-artificial-autonomos-herramientas",
+   "resume": "La inteligencia artificial ya no es cosa de grandes empresas. En 2026, cualquier autónomo puede usar herramientas de IA para ahorrar tiempo, crear contenido, gestionar clientes y tomar mejores decisiones de negocio. No necesitas conocimientos técnicos ni grandes presupuestos. En esta guía te presentamos 10 herramientas de IA que puedes empezar a usar hoy mismo, muchas de ellas…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/inteligencia-artificial-autonomos-herramientas.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/inteligencia-artificial-autonomos-herramientas",
+     "spa": "es/inteligencia-artificial-autonomos-herramientas"
+    },
+    {
+     "html": "blog/val/ia-per-a-autonoms-eines-concretes.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/ia-per-a-autonoms-eines-concretes",
+     "spa": "val/ia-per-a-autonoms-eines-concretes"
+    },
+    {
+     "html": "blog/en/ai-for-freelancers-practical-tools.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/ai-for-freelancers-practical-tools",
+     "spa": "en/ai-for-freelancers-practical-tools"
+    },
+    {
+     "html": "blog/fr/ia-pour-independants-outils-concrets.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/ia-pour-independants-outils-concrets"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une traductrice indépendante dicte à son téléphone posé sur un support, dans un bureau lumineux garni de dictionnaires ; écran invisible.",
+   "fichier": "inteligencia-artificial-autonoma-despacho"
+  },
+  {
+   "id": "art-33",
+   "type": "article",
+   "priorite": 130,
+   "titre": "Google Ads para autónomos: guía básica sin tirar dinero",
+   "url": "https://webautonomos.es/blog/es/google-ads-autonomos-guia-basica",
+   "resume": "Google Ads puede ser la forma más rápida de conseguir clientes para tu negocio. O la más rápida de tirar dinero si no sabes lo que haces. La diferencia está en la configuración. En esta guía te explicamos cómo crear tu primera campaña de Google Ads como autónomo, con un presupuesto mínimo y sin cometer los errores que hacen perder dinero a tantos principiantes.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/google-ads-autonomos-guia-basica.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/google-ads-autonomos-guia-basica",
+     "spa": "es/google-ads-autonomos-guia-basica"
+    },
+    {
+     "html": "blog/val/google-ads-guia-basica-per-a-autonoms.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/google-ads-guia-basica-per-a-autonoms",
+     "spa": "val/google-ads-guia-basica-per-a-autonoms"
+    },
+    {
+     "html": "blog/en/google-ads-for-freelancers-beginners-guide.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/google-ads-for-freelancers-beginners-guide",
+     "spa": "en/google-ads-for-freelancers-beginners-guide"
+    },
+    {
+     "html": "blog/fr/google-ads-pour-independants-guide-debutant.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/google-ads-pour-independants-guide-debutant"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un couple propriétaire d'un gîte rural suit ses réservations sur une tablette (écran flou) à la table de la cuisine, café fumant.",
+   "fichier": "google-ads-autonomo-reservas"
+  },
+  {
+   "id": "art-34",
+   "type": "article",
+   "priorite": 131,
+   "titre": "Páginas web para tatuadores y estudios de tattoo: lo que necesitas",
+   "url": "https://webautonomos.es/blog/es/web-para-tatuadores-estudio-tattoo",
+   "resume": "Si eres tatuador, tu portfolio lo es todo. Instagram es genial para mostrar tu trabajo, pero no te pertenece: un cambio de algoritmo y tu visibilidad puede caer en picado de la noche a la mañana. Una web propia es tu galería permanente, tu sistema de reservas y tu carta de presentación profesional. En esta guía te explicamos qué necesita la web de un estudio de tattoo para…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/web-para-tatuadores-estudio-tattoo.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-para-tatuadores-estudio-tattoo",
+     "spa": "es/web-para-tatuadores-estudio-tattoo"
+    },
+    {
+     "html": "blog/val/web-per-a-tatuadors.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-per-a-tatuadors",
+     "spa": "val/web-per-a-tatuadors"
+    },
+    {
+     "html": "blog/en/website-for-tattoo-artists.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-tattoo-artists",
+     "spa": "en/website-for-tattoo-artists"
+    },
+    {
+     "html": "blog/fr/site-web-pour-tatoueurs.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-tatoueurs"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un tatoueur dessine un motif sur papier calque à sa table lumineuse, dans un studio propre aux murs couverts de croquis (sans texte).",
+   "fichier": "estudio-tatuaje-tatuador-dibujando"
+  },
+  {
+   "id": "art-35",
+   "type": "article",
+   "priorite": 132,
+   "titre": "Cómo saber si tu web funciona: métricas básicas para autónomos",
+   "url": "https://webautonomos.es/blog/es/medir-resultados-web-google-analytics",
+   "resume": "Tienes una web pero no sabes si está funcionando. No recibes llamadas, no sabes cuántas visitas tienes ni de dónde vienen. Tranquilo: con 5 métricas básicas y 10 minutos a la semana puedes saber exactamente qué está pasando y qué mejorar. En esta guía te explicamos cómo configurar Google Analytics 4 sin tecnicismos y qué números mirar realmente para tomar decisiones que…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/medir-resultados-web-google-analytics.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/medir-resultados-web-google-analytics",
+     "spa": "es/medir-resultados-web-google-analytics"
+    },
+    {
+     "html": "blog/val/mesurar-els-resultats-de-la-teua-web.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/mesurar-els-resultats-de-la-teua-web",
+     "spa": "val/mesurar-els-resultats-de-la-teua-web"
+    },
+    {
+     "html": "blog/en/measuring-your-website-results.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/measuring-your-website-results",
+     "spa": "en/measuring-your-website-results"
+    },
+    {
+     "html": "blog/fr/mesurer-les-resultats-de-son-site.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/mesurer-les-resultats-de-son-site"
+    }
+   ],
+   "statut": "pret",
+   "scene": "La propriétaire d'un magasin de vélos note des chiffres dans un carnet près de sa caisse (écriture illisible), vélos alignés derrière elle.",
+   "fichier": "medir-resultados-web-negocio"
+  },
+  {
+   "id": "art-36",
+   "type": "article",
+   "priorite": 133,
+   "titre": "Facturación electrónica obligatoria para autónomos: lo que debes saber",
+   "url": "https://webautonomos.es/blog/es/facturacion-electronica-autonomos-obligatoria",
+   "resume": "La facturación electrónica deja de ser una opción. La Ley Crea y Crece obliga a todos los autónomos y empresas a emitir facturas en formato electrónico de forma progresiva. Si eres autónomo, esta guía te explica qué es, cuándo te aplica, qué herramientas gratuitas puedes usar y cómo evitar errores que invaliden tus facturas. Sin tecnicismos, sin alarmismo.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/facturacion-electronica-autonomos-obligatoria.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/facturacion-electronica-autonomos-obligatoria",
+     "spa": "es/facturacion-electronica-autonomos-obligatoria"
+    },
+    {
+     "html": "blog/val/facturacio-electronica-obligatoria.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/facturacio-electronica-obligatoria",
+     "spa": "val/facturacio-electronica-obligatoria"
+    },
+    {
+     "html": "blog/en/mandatory-e-invoicing-for-freelancers.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/mandatory-e-invoicing-for-freelancers",
+     "spa": "en/mandatory-e-invoicing-for-freelancers"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Sur le comptoir d'une épicerie, l'épicière tend un ticket de caisse (texte illisible) à côté d'un terminal de paiement.",
+   "fichier": "facturacion-electronica-comercio"
+  },
+  {
+   "id": "art-37",
+   "type": "article",
+   "priorite": 134,
+   "titre": "Cómo crear contenido para tu web sin saber escribir",
+   "url": "https://webautonomos.es/blog/es/crear-contenido-web-sin-saber-escribir",
+   "resume": "Tienes una web pero las páginas siguen vacías porque te bloqueas cuando intentas escribir. Tranquilo: no necesitas ser escritor para tener una web que convierte. En esta guía te enseñamos una metodología práctica para crear contenido auténtico y eficaz, aunque odies escribir o no sepas por dónde empezar. Y si no tienes tiempo, te explicamos también cómo delegarlo a nuestro…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/crear-contenido-web-sin-saber-escribir.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/crear-contenido-web-sin-saber-escribir",
+     "spa": "es/crear-contenido-web-sin-saber-escribir"
+    },
+    {
+     "html": "blog/val/crear-contingut-sense-saber-escriure.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/crear-contingut-sense-saber-escriure",
+     "spa": "val/crear-contingut-sense-saber-escriure"
+    },
+    {
+     "html": "blog/en/create-web-content-without-being-a-writer.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/create-web-content-without-being-a-writer",
+     "spa": "en/create-web-content-without-being-a-writer"
+    },
+    {
+     "html": "blog/fr/creer-du-contenu-web-sans-savoir-ecrire.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/creer-du-contenu-web-sans-savoir-ecrire"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un ferronnier d'art raconte son métier devant un petit micro posé sur son établi ; étincelles de meuleuse en arrière-plan.",
+   "fichier": "crear-contenido-web-artesano-grabando"
+  },
+  {
+   "id": "art-38",
+   "type": "article",
+   "priorite": 135,
+   "titre": "Páginas web para podólogos y clínicas de pies: la guía completa",
+   "url": "https://webautonomos.es/blog/es/web-para-podologos-clinica-pies",
+   "resume": "Tu clínica de pies funciona bien con boca a boca, pero muchos pacientes nuevos te buscan en Google antes de coger el teléfono. Si no te encuentran online, simplemente eligen al podólogo que sí tiene web. En esta guía te explicamos qué debe tener una web de podología eficaz, cómo presentar tus tratamientos sin asustar al paciente y por qué las reservas online pueden ayudarte a…",
+   "marche": "europe",
+   "sante": true,
+   "pages": [
+    {
+     "html": "blog/es/web-para-podologos-clinica-pies.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-para-podologos-clinica-pies",
+     "spa": "es/web-para-podologos-clinica-pies"
+    },
+    {
+     "html": "blog/val/web-per-a-podolegs.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-per-a-podolegs",
+     "spa": "val/web-per-a-podolegs"
+    },
+    {
+     "html": "blog/en/website-for-podiatrists.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-podiatrists",
+     "spa": "en/website-for-podiatrists"
+    },
+    {
+     "html": "blog/fr/site-web-pour-podologues.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-podologues"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Cabinet de podologie propre et lumineux : fauteuil de soins, instruments rangés, la podologue vue de dos prépare la salle. Aucun patient.",
+   "fichier": "clinica-podologia-consulta",
+   "sante_force": true
+  },
+  {
+   "id": "art-39",
+   "type": "article",
+   "priorite": 136,
+   "titre": "Qué debe tener la web de un psicólogo: guía completa 2026",
+   "url": "https://webautonomos.es/blog/es/web-para-psicologos-terapeutas",
+   "resume": "Si eres psicólogo o terapeuta en España, tu página web no es un lujo: es tu consulta digital. Hoy, muchas personas que buscan apoyo psicológico empiezan por Google. Buscan profesionales cercanos, leen sobre su enfoque terapéutico y evalúan si les transmite confianza antes de llamar. Si no te encuentran online, eligen a otro profesional. En esta guía te explicamos exactamente…",
+   "marche": "europe",
+   "sante": true,
+   "pages": [
+    {
+     "html": "blog/es/web-para-psicologos-terapeutas.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-para-psicologos-terapeutas",
+     "spa": "es/web-para-psicologos-terapeutas"
+    },
+    {
+     "html": "blog/val/web-per-a-psicolegs-i-terapeutes.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-per-a-psicolegs-i-terapeutes",
+     "spa": "val/web-per-a-psicolegs-i-terapeutes"
+    },
+    {
+     "html": "blog/en/website-for-psychologists-and-therapists.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-psychologists-and-therapists",
+     "spa": "en/website-for-psychologists-and-therapists"
+    },
+    {
+     "html": "blog/fr/site-web-pour-psychologues-et-therapeutes.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-psychologues-et-therapeutes"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Salle d'attente d'un cabinet de psychologie : deux fauteuils, lampe douce, plantes et bibliothèque ; ambiance calme, personne.",
+   "fichier": "psicologo-sala-espera-consulta",
+   "sante_force": true
+  },
+  {
+   "id": "art-40",
+   "type": "article",
+   "priorite": 137,
+   "titre": "Web para coaches: cómo conseguir clientes con una web profesional",
+   "url": "https://webautonomos.es/blog/es/web-para-coaches",
+   "resume": "Como coach, tu producto es la confianza. Antes de contratarte, tus clientes potenciales te buscan en Google, leen tu historia y deciden si eres la persona adecuada para acompañarles. Si no tienes una web profesional, esa decisión se toma sin ti. En esta guía te explicamos por qué un coach necesita una web propia, qué debe incluir y cómo convertir a un visitante en tu próximo…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/web-para-coaches.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-para-coaches",
+     "spa": "es/web-para-coaches"
+    },
+    {
+     "html": "blog/val/web-per-a-coaches.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-per-a-coaches",
+     "spa": "val/web-per-a-coaches"
+    },
+    {
+     "html": "blog/en/website-for-coaches.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-coaches",
+     "spa": "en/website-for-coaches"
+    },
+    {
+     "html": "blog/fr/site-web-pour-coachs.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-coachs"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une coach professionnelle anime une séance en petit groupe dans une salle lumineuse, un tableau de papier (sans texte lisible) en arrière-plan.",
+   "fichier": "coach-sesion-grupo"
+  },
+  {
+   "id": "art-41",
+   "type": "article",
+   "priorite": 138,
+   "titre": "Web para centros de estética: cómo llenar tu agenda de citas",
+   "url": "https://webautonomos.es/blog/es/web-para-centros-estetica-belleza",
+   "resume": "Un centro de estética entra por los ojos, y hoy los ojos de tus clientas están en Google y en el móvil. Antes de reservar un tratamiento, buscan tu nombre, miran tus fotos, leen tus reseñas y comprueban si pueden pedir cita fácilmente. Si no tienes una web profesional, esa clienta acaba en el centro de al lado. En esta guía te explicamos cómo una web bien hecha llena tu agenda…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/web-para-centros-estetica-belleza.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-para-centros-estetica-belleza",
+     "spa": "es/web-para-centros-estetica-belleza"
+    },
+    {
+     "html": "blog/val/web-per-a-centres-d-estetica.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-per-a-centres-d-estetica",
+     "spa": "val/web-per-a-centres-d-estetica"
+    },
+    {
+     "html": "blog/en/website-for-beauty-salons.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-beauty-salons",
+     "spa": "en/website-for-beauty-salons"
+    },
+    {
+     "html": "blog/fr/site-web-pour-instituts-de-beaute.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-instituts-de-beaute"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Cabine d'un institut de beauté : table de soin, serviettes roulées, bougies ; l'esthéticienne prépare ses produits.",
+   "fichier": "centro-estetica-cabina-tratamiento"
+  },
+  {
+   "id": "art-42",
+   "type": "article",
+   "priorite": 139,
+   "titre": "Web para nutricionistas: cómo llenar tu agenda de pacientes",
+   "url": "https://webautonomos.es/blog/es/web-para-nutricionistas-dietistas",
+   "resume": "Cada vez más personas buscan un nutricionista en Google antes de pedir cita, y muchas consultas ya se hacen online. Antes de confiarte su alimentación y su salud, tus futuros pacientes quieren saber quién eres, qué formación tienes y cómo trabajas. Si no tienes una web profesional, esa confianza se la lleva otro. En esta guía te explicamos por qué un nutricionista necesita una…",
+   "marche": "europe",
+   "sante": true,
+   "pages": [
+    {
+     "html": "blog/es/web-para-nutricionistas-dietistas.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-para-nutricionistas-dietistas",
+     "spa": "es/web-para-nutricionistas-dietistas"
+    },
+    {
+     "html": "blog/val/web-per-a-nutricionistes.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-per-a-nutricionistes",
+     "spa": "val/web-per-a-nutricionistes"
+    },
+    {
+     "html": "blog/en/website-for-dietitians-and-nutritionists.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-dietitians-and-nutritionists",
+     "spa": "en/website-for-dietitians-and-nutritionists"
+    },
+    {
+     "html": "blog/fr/site-web-pour-dieteticiens-nutritionnistes.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-dieteticiens-nutritionnistes"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une nutritionniste dispose des fruits et légumes frais sur la table de son cabinet, balance de cuisine et carnet à côté. Aucun patient.",
+   "fichier": "nutricionista-consulta-alimentos",
+   "sante_force": true
+  },
+  {
+   "id": "art-43",
+   "type": "article",
+   "priorite": 140,
+   "titre": "Web para entrenadores personales: cómo captar clientes",
+   "url": "https://webautonomos.es/blog/es/web-para-entrenadores-personales",
+   "resume": "Un entrenador personal vende resultados y confianza, y hoy tus futuros clientes te buscan en Google e Instagram antes de contratarte. Quieren ver tu método, tus transformaciones y saber si encajas con lo que buscan. Sin una web profesional, esa decisión se toma sin ti. En esta guía te explicamos por qué un entrenador personal necesita una web propia y cómo convertirla en una…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/web-para-entrenadores-personales.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-para-entrenadores-personales",
+     "spa": "es/web-para-entrenadores-personales"
+    },
+    {
+     "html": "blog/val/web-per-a-entrenadors-personals.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-per-a-entrenadors-personals",
+     "spa": "val/web-per-a-entrenadors-personals"
+    },
+    {
+     "html": "blog/en/website-for-personal-trainers.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-personal-trainers",
+     "spa": "en/website-for-personal-trainers"
+    },
+    {
+     "html": "blog/fr/site-web-pour-coachs-sportifs.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-coachs-sportifs"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un coach sportif prépare kettlebells et élastiques dans un petit studio de sport au lever du jour.",
+   "fichier": "entrenador-personal-estudio"
+  },
+  {
+   "id": "art-44",
+   "type": "article",
+   "priorite": 141,
+   "titre": "Web para clínicas veterinarias: confianza y nuevos pacientes",
+   "url": "https://webautonomos.es/blog/es/web-para-clinicas-veterinarias",
+   "resume": "Cuando la mascota de alguien se pone enferma, lo primero que hace su dueño es buscar un veterinario en Google, muchas veces con urgencia. Antes de llevar a su animal, quiere saber qué servicios ofreces, dónde estás, tus horarios y si otros confían en ti. Si tu clínica no tiene una web profesional, ese cliente acaba en la de al lado. En esta guía te explicamos por qué una…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/web-para-clinicas-veterinarias.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/web-para-clinicas-veterinarias",
+     "spa": "es/web-para-clinicas-veterinarias"
+    },
+    {
+     "html": "blog/val/web-per-a-cliniques-veterinaries.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/web-per-a-cliniques-veterinaries",
+     "spa": "val/web-per-a-cliniques-veterinaries"
+    },
+    {
+     "html": "blog/en/website-for-veterinary-clinics.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-for-veterinary-clinics",
+     "spa": "en/website-for-veterinary-clinics"
+    },
+    {
+     "html": "blog/fr/site-web-pour-cliniques-veterinaires.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/site-web-pour-cliniques-veterinaires"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une vétérinaire caresse un golden retriever calme sur la table d'examen de sa clinique.",
+   "fichier": "clinica-veterinaria-perro-consulta"
+  },
+  {
+   "id": "art-45",
+   "type": "article",
+   "priorite": 142,
+   "titre": "Por qué la velocidad de tu web afecta a Google",
+   "url": "https://webautonomos.es/blog/es/velocidad-web-y-posicionamiento",
+   "resume": "Tienes una web bonita, pero tarda una eternidad en cargar. El problema es que, mientras el visitante espera, ya se ha ido, y Google lo sabe. La velocidad de tu web no es un detalle técnico: afecta directamente a tu posicionamiento en Google y a cuántos clientes se quedan. En esta guía te explicamos, sin tecnicismos, por qué la velocidad importa tanto y qué puedes hacer al…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/velocidad-web-y-posicionamiento.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/velocidad-web-y-posicionamiento",
+     "spa": "es/velocidad-web-y-posicionamiento"
+    },
+    {
+     "html": "blog/val/velocitat-de-la-web-i-posicionament.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/velocitat-de-la-web-i-posicionament",
+     "spa": "val/velocitat-de-la-web-i-posicionament"
+    },
+    {
+     "html": "blog/en/website-speed-and-search-rankings.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/website-speed-and-search-rankings",
+     "spa": "en/website-speed-and-search-rankings"
+    },
+    {
+     "html": "blog/fr/vitesse-du-site-et-referencement.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/vitesse-du-site-et-referencement"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un serveur apporte à vive allure deux cafés à une terrasse animée, léger flou de mouvement.",
+   "fichier": "velocidad-web-servicio-rapido"
+  },
+  {
+   "id": "art-46",
+   "type": "article",
+   "priorite": 143,
+   "titre": "Cómo construir tu marca personal como autónomo",
+   "url": "https://webautonomos.es/blog/es/marca-personal-para-autonomos",
+   "resume": "Como autónomo, tú eres tu negocio. La gente no contrata a una empresa anónima: contrata a una persona en la que confía. Esa confianza es tu marca personal, y hoy se construye, sobre todo, online. Antes de trabajar contigo, tus clientes te buscan, leen sobre ti y deciden. En esta guía te explicamos qué es la marca personal, por qué es tu mejor activo como autónomo y cómo…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/marca-personal-para-autonomos.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/marca-personal-para-autonomos",
+     "spa": "es/marca-personal-para-autonomos"
+    },
+    {
+     "html": "blog/val/construir-la-teua-marca-personal.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/construir-la-teua-marca-personal",
+     "spa": "val/construir-la-teua-marca-personal"
+    },
+    {
+     "html": "blog/en/building-your-personal-brand.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/building-your-personal-brand",
+     "spa": "en/building-your-personal-brand"
+    },
+    {
+     "html": "blog/fr/construire-sa-marque-personnelle.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/construire-sa-marque-personnelle"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un barbier au style affirmé pose ses outils sur son plan de travail, dans un salon au décor très personnel (disques vinyles, plantes).",
+   "fichier": "marca-personal-autonomo-barberia"
+  },
+  {
+   "id": "art-47",
+   "type": "article",
+   "priorite": 144,
+   "titre": "Las Preguntas y Respuestas de tu ficha de Google",
+   "url": "https://webautonomos.es/blog/es/preguntas-respuestas-ficha-google",
+   "resume": "Hay una sección de tu ficha de Google que casi nadie usa y que puede darte (o quitarte) clientes: las Preguntas y Respuestas. Cualquiera puede hacer una pregunta pública sobre tu negocio... y cualquiera puede responderla, incluso quien no tiene ni idea. Si no la controlas, estás dejando que otros hablen por ti. En esta guía te explicamos qué son las Preguntas y Respuestas de…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/preguntas-respuestas-ficha-google.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/preguntas-respuestas-ficha-google",
+     "spa": "es/preguntas-respuestas-ficha-google"
+    },
+    {
+     "html": "blog/val/preguntes-i-respostes-de-la-fitxa.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/preguntes-i-respostes-de-la-fitxa",
+     "spa": "val/preguntes-i-respostes-de-la-fitxa"
+    },
+    {
+     "html": "blog/en/questions-and-answers-on-your-google-listing.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/questions-and-answers-on-your-google-listing",
+     "spa": "en/questions-and-answers-on-your-google-listing"
+    },
+    {
+     "html": "blog/fr/questions-reponses-fiche-google.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/questions-reponses-fiche-google"
+    }
+   ],
+   "statut": "pret",
+   "scene": "La gérante d'un magasin de sport répond aux questions d'un client au comptoir en lui montrant une paire de chaussures de randonnée.",
+   "fichier": "preguntas-respuestas-ficha-google-tienda"
+  },
+  {
+   "id": "art-48",
+   "type": "article",
+   "priorite": 145,
+   "titre": "El papeleo te roba 226 horas al año",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-papeleo-autonomo",
+   "resume": "Nadie te factura el papeleo. No aparece en tus gastos, no lo revisas a final de mes, y no lo tienes en cuenta cuando calculas si un cliente te sale rentable. Pero lo pagas todos los días. Y ahora hay un dato que le pone cifras: 226 horas al año. Casi un mes entero de trabajo, solo en trámites.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/cuanto-cuesta-papeleo-autonomo.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/cuanto-cuesta-papeleo-autonomo",
+     "spa": "es/cuanto-cuesta-papeleo-autonomo"
+    },
+    {
+     "html": "blog/val/la-paperassa-et-lleva-226-hores.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/la-paperassa-et-lleva-226-hores",
+     "spa": "val/la-paperassa-et-lleva-226-hores"
+    },
+    {
+     "html": "blog/en/what-paperwork-really-costs-a-freelancer.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/what-paperwork-really-costs-a-freelancer",
+     "spa": "en/what-paperwork-really-costs-a-freelancer"
+    },
+    {
+     "html": "blog/fr/ce-que-la-paperasse-coute-vraiment.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/ce-que-la-paperasse-coute-vraiment",
+     "spa": "fr/ce-que-la-paperasse-coute-vraiment"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un plombier, tard le soir, à la table de sa cuisine, entouré de piles de factures et de tickets sous une lampe de bureau.",
+   "fichier": "papeleo-autonomo-noche-facturas"
+  },
+  {
+   "id": "art-49",
+   "type": "article",
+   "priorite": 146,
+   "titre": "Factura electrónica: dos normas que se confunden",
+   "url": "https://webautonomos.es/blog/es/factura-electronica-plazos-2026-2027",
+   "resume": "Hay dos normas en marcha y casi todo el mundo las confunde. Verifactu regula el software con el que emites facturas. La factura electrónica de la Ley Crea y Crece regula el formato y el canal por el que viajan entre empresas. Son obligaciones distintas, con calendarios distintos, y la confusión hace que mucha gente deje de prestar atención justo cuando debería empezar a…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/factura-electronica-plazos-2026-2027.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/factura-electronica-plazos-2026-2027",
+     "spa": "es/factura-electronica-plazos-2026-2027"
+    },
+    {
+     "html": "blog/val/factura-electronica-dues-normes.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/factura-electronica-dues-normes",
+     "spa": "val/factura-electronica-dues-normes"
+    },
+    {
+     "html": "blog/en/e-invoicing-deadlines-france-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/e-invoicing-deadlines-france-spain",
+     "spa": "en/e-invoicing-deadlines-france-spain"
+    },
+    {
+     "html": "blog/fr/facture-electronique-1er-septembre-2026.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/facture-electronique-1er-septembre-2026",
+     "spa": "fr/facture-electronique-1er-septembre-2026"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une gestionnaire compare deux piles de documents distinctes sur son bureau, lunettes relevées sur le front.",
+   "fichier": "factura-electronica-verifactu-gestoria"
+  },
+  {
+   "id": "art-50",
+   "type": "article",
+   "priorite": 147,
+   "titre": "¿Contratar o automatizar?",
+   "url": "https://webautonomos.es/blog/es/contratar-o-automatizar",
+   "resume": "La pregunta llega en cuanto lo administrativo desborda: ¿hay que contratar a alguien, o buscar una herramienta? Casi siempre está mal planteada, porque los dos costes se conocen mal. Un empleado cuesta más de lo que dice la nómina. Una automatización cuesta menos de lo que se teme, pero solo hace una parte del trabajo. Aquí están los números de ambos.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/contratar-o-automatizar.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/contratar-o-automatizar",
+     "spa": "es/contratar-o-automatizar"
+    },
+    {
+     "html": "blog/val/contractar-o-automatitzar.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/contractar-o-automatitzar",
+     "spa": "val/contractar-o-automatitzar"
+    },
+    {
+     "html": "blog/en/hire-or-automate.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/hire-or-automate",
+     "spa": "en/hire-or-automate"
+    },
+    {
+     "html": "blog/fr/embaucher-ou-automatiser.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/embaucher-ou-automatiser",
+     "spa": "fr/embaucher-ou-automatiser"
+    }
+   ],
+   "statut": "pret",
+   "scene": "La gérante d'une petite agence de voyages réfléchit avec son associé devant un tableau blanc couvert de schémas (sans texte lisible).",
+   "fichier": "contratar-o-automatizar-decision"
+  },
+  {
+   "id": "art-60",
+   "type": "article",
+   "priorite": 148,
+   "titre": "Reservas online para autónomos en 2026: cómo automatizar tus citas",
+   "url": "https://webautonomos.es/blog/es/reservas-online-autonomos-2026",
+   "resume": "En 2026 seguir gestionando la agenda con WhatsApp y llamadas es perder dinero y tiempo. El teléfono suena mientras atiendes a un cliente, llegan mensajes a las once de la noche y, sobre todo, muchas ausencias se deben simplemente a que el cliente se olvidó de la cita. La buena noticia: implementar reservas online es más fácil y barato que nunca. En esta guía te explicamos paso…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/reservas-online-autonomos-2026.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/reservas-online-autonomos-2026",
+     "spa": "es/reservas-online-autonomos-2026"
+    },
+    {
+     "html": "blog/val/reserves-en-linia-per-a-autonoms.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/reserves-en-linia-per-a-autonoms",
+     "spa": "val/reserves-en-linia-per-a-autonoms"
+    },
+    {
+     "html": "blog/en/online-booking-for-freelancers.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/online-booking-for-freelancers",
+     "spa": "en/online-booking-for-freelancers"
+    },
+    {
+     "html": "blog/fr/reservation-en-ligne-pour-independants.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/reservation-en-ligne-pour-independants"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une coiffeuse regarde son agenda papier plein de ratures pendant que le téléphone sonne sur le comptoir, une cliente attend dans le fauteuil.",
+   "fichier": "reservas-online-agenda-peluqueria"
+  },
+  {
+   "id": "art-61",
+   "type": "article",
+   "priorite": 149,
+   "titre": "Lo que no haces, por falta de tiempo",
+   "url": "https://webautonomos.es/blog/es/lo-que-no-haces-por-falta-de-tiempo",
+   "resume": "Siempre se mide lo que se hace. Las horas dedicadas, las tareas repetidas, el tiempo que gustaría recuperar. Pero hay otra categoría, invisible en todos los cálculos: lo que no haces. No por dejadez — porque nunca hubo tiempo. Y esas tareas no cuestan horas. Cuestan facturación que no entra.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/lo-que-no-haces-por-falta-de-tiempo.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/lo-que-no-haces-por-falta-de-tiempo",
+     "spa": "es/lo-que-no-haces-por-falta-de-tiempo"
+    },
+    {
+     "html": "blog/val/el-que-no-fas-per-falta-de-temps.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/el-que-no-fas-per-falta-de-temps",
+     "spa": "val/el-que-no-fas-per-falta-de-temps"
+    },
+    {
+     "html": "blog/en/what-you-never-get-round-to.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/what-you-never-get-round-to",
+     "spa": "en/what-you-never-get-round-to"
+    },
+    {
+     "html": "blog/fr/ce-que-vous-ne-faites-pas-faute-de-temps.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/ce-que-vous-ne-faites-pas-faute-de-temps",
+     "spa": "fr/ce-que-vous-ne-faites-pas-faute-de-temps"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un menuisier regarde par la fenêtre de son atelier, une tasse à la main ; une maquette de meuble inachevée attend sur l'établi.",
+   "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente"
+  },
+  {
+   "id": "art-62",
+   "type": "article",
+   "priorite": 150,
+   "titre": "Cuánto cuesta automatizar: la fórmula, no el rango",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-automatizar-un-proceso-formula",
+   "resume": "Busca «cuánto cuesta automatizar un proceso» y verás lo mismo en todas partes: rangos que van de 1.500 a 60.000 euros, una lista de factores que mueven el precio, y una frase final que lo resume todo. El importe exacto sale de una auditoría previa. Es verdad. Y no te sirve de nada cuando lo que necesitas es saber si te compensa antes de pedir cita con nadie.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/cuanto-cuesta-automatizar-un-proceso-formula.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/cuanto-cuesta-automatizar-un-proceso-formula",
+     "spa": "es/cuanto-cuesta-automatizar-un-proceso-formula"
+    },
+    {
+     "html": "blog/val/cuanto-cuesta-automatizar-un-proceso-formula.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/cuanto-cuesta-automatizar-un-proceso-formula",
+     "spa": "val/cuanto-cuesta-automatizar-un-proceso-formula"
+    },
+    {
+     "html": "blog/en/cuanto-cuesta-automatizar-un-proceso-formula.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/cuanto-cuesta-automatizar-un-proceso-formula",
+     "spa": "en/cuanto-cuesta-automatizar-un-proceso-formula"
+    },
+    {
+     "html": "blog/fr/combien-coute-automatiser-un-processus.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/combien-coute-automatiser-un-processus",
+     "spa": "fr/combien-coute-automatiser-un-processus"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Sur un bureau, une main pose un sablier à côté d'une calculatrice et d'un carnet de calculs (chiffres illisibles).",
+   "fichier": "coste-automatizar-tiempo-calculo"
+  },
+  {
+   "id": "art-63",
+   "type": "article",
+   "priorite": 151,
+   "titre": "Qué tareas automatizar primero (y cuáles no)",
+   "url": "https://webautonomos.es/blog/es/que-tareas-automatizar-primero",
+   "resume": "La pregunta llega siempre en el mismo orden. Se empieza por la tarea que molesta — grabar facturas, perseguir impagados, cuadrar el banco — y se busca una herramienta para quitársela de encima. Es un mal punto de partida. La tarea que más te molesta casi nunca es la que mejor se amortiza, y la diferencia entre una y otra se cuenta en miles de euros.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/que-tareas-automatizar-primero.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/que-tareas-automatizar-primero",
+     "spa": "es/que-tareas-automatizar-primero"
+    },
+    {
+     "html": "blog/val/quines-tasques-automatitzar-primer.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/quines-tasques-automatitzar-primer",
+     "spa": "val/quines-tasques-automatitzar-primer"
+    },
+    {
+     "html": "blog/en/which-tasks-to-automate-first.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/which-tasks-to-automate-first",
+     "spa": "en/which-tasks-to-automate-first"
+    },
+    {
+     "html": "blog/fr/quelles-taches-automatiser-en-premier.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/quelles-taches-automatiser-en-premier",
+     "spa": "fr/quelles-taches-automatiser-en-premier"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une gérante trie des cartes de tâches (texte illisible) en deux colonnes sur une table en bois.",
+   "fichier": "tareas-automatizar-prioridades"
+  },
+  {
+   "id": "art-64",
+   "type": "article",
+   "priorite": 152,
+   "titre": "Automatizar sin saber programar: hasta dónde llegas tú solo",
+   "url": "https://webautonomos.es/blog/es/automatizar-sin-saber-programar",
+   "resume": "«Yo de programación no tengo ni idea.» Es la primera frase de casi todas las conversaciones sobre automatización, y casi siempre sobra. En 2026 puedes montar tú solo cosas que hace cinco años exigían un desarrollador. Pero hay un límite, y el problema no es reconocerlo tarde: es no saber dónde está hasta que ya has perdido un fin de semana peleándote con una herramienta. Este…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/automatizar-sin-saber-programar.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/automatizar-sin-saber-programar",
+     "spa": "es/automatizar-sin-saber-programar"
+    },
+    {
+     "html": "blog/val/automatitzar-sense-saber-programar.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/automatitzar-sense-saber-programar",
+     "spa": "val/automatitzar-sense-saber-programar"
+    },
+    {
+     "html": "blog/en/automate-without-coding.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/automate-without-coding",
+     "spa": "en/automate-without-coding"
+    },
+    {
+     "html": "blog/fr/automatiser-sans-savoir-programmer.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/automatiser-sans-savoir-programmer",
+     "spa": "fr/automatiser-sans-savoir-programmer"
+    }
+   ],
+   "statut": "pret",
+   "scene": "La créatrice d'une boutique en ligne de savons artisanaux emballe des commandes pendant qu'une imprimante d'étiquettes fonctionne toute seule à côté d'elle.",
+   "fichier": "automatizar-sin-programar-tienda-online"
+  },
+  {
+   "id": "art-65",
+   "type": "article",
+   "priorite": 153,
+   "titre": "Los 5 errores más caros al automatizar (y cómo evitarlos)",
+   "url": "https://webautonomos.es/blog/es/errores-mas-caros-al-automatizar",
+   "resume": "Uno imagina que una automatización, como mucho, no sirve para nada. La realidad es menos amable: una automatización mal planteada cuesta más que no automatizar nada. Inmoviliza dinero al principio, exige mantenimiento, y sobre todo te hace confiar en un proceso que, un día, se equivoca sin avisar. Estos son los cinco errores que más cuestan. Ninguno es técnico: son errores de…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/errores-mas-caros-al-automatizar.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/errores-mas-caros-al-automatizar",
+     "spa": "es/errores-mas-caros-al-automatizar"
+    },
+    {
+     "html": "blog/val/errors-mes-cars-al-automatitzar.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/errors-mes-cars-al-automatitzar",
+     "spa": "val/errors-mes-cars-al-automatitzar"
+    },
+    {
+     "html": "blog/en/costliest-automation-mistakes.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/costliest-automation-mistakes",
+     "spa": "en/costliest-automation-mistakes"
+    },
+    {
+     "html": "blog/fr/erreurs-les-plus-couteuses-en-automatisation.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/erreurs-les-plus-couteuses-en-automatisation",
+     "spa": "fr/erreurs-les-plus-couteuses-en-automatisation"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Dans le petit entrepôt d'une entreprise, un rouleau d'étiquettes emmêlé déborde d'une imprimante ; l'employé se gratte la tête.",
+   "fichier": "errores-automatizacion-caros"
+  },
+  {
+   "id": "art-66",
+   "type": "article",
+   "priorite": 154,
+   "titre": "Qué NO deberías automatizar nunca",
+   "url": "https://webautonomos.es/blog/es/que-no-deberias-automatizar-nunca",
+   "resume": "Vivimos de la automatización, y aun así vamos a dedicar este artículo a decirte cuándo no tocarla. No es falsa modestia: es la mejor forma de no estropear lo que te da valor. Algunas tareas ganan al automatizarse; otras pierden algo irremplazable en cuanto una máquina se mete de por medio. Saber trazar esa línea te evita dos errores simétricos: automatizar lo que debía seguir…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/que-no-deberias-automatizar-nunca.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/que-no-deberias-automatizar-nunca",
+     "spa": "es/que-no-deberias-automatizar-nunca"
+    },
+    {
+     "html": "blog/val/que-no-hauries-d-automatitzar-mai.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/que-no-hauries-d-automatitzar-mai",
+     "spa": "val/que-no-hauries-d-automatitzar-mai"
+    },
+    {
+     "html": "blog/en/what-you-should-never-automate.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/what-you-should-never-automate",
+     "spa": "en/what-you-should-never-automate"
+    },
+    {
+     "html": "blog/fr/ce-qu-il-ne-faut-jamais-automatiser.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/ce-qu-il-ne-faut-jamais-automatiser",
+     "spa": "fr/ce-qu-il-ne-faut-jamais-automatiser"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Une chocolatière fait goûter un chocolat à une cliente par-dessus le comptoir de sa boutique, sourires échangés.",
+   "fichier": "no-automatizar-trato-humano"
+  },
+  {
+   "id": "art-67",
+   "type": "article",
+   "priorite": 155,
+   "titre": "El mantenimiento: el coste de la automatización que nadie te cuenta",
+   "url": "https://webautonomos.es/blog/es/mantenimiento-coste-automatizacion",
+   "resume": "Cuando se cifra una automatización, casi siempre se mira un solo número: cuánto cuesta el montaje. Es el número que te anuncian, el que figura en el presupuesto, el que comparas. Y es el número equivocado para decidir. Una automatización no es una compra que se paga una vez: es un alquiler que se paga mientras funciona. El montaje es el primer mes, no el precio total. Este…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/mantenimiento-coste-automatizacion.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/mantenimiento-coste-automatizacion",
+     "spa": "es/mantenimiento-coste-automatizacion"
+    },
+    {
+     "html": "blog/val/manteniment-el-cost-amagat-de-l-automatitzacio.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/manteniment-el-cost-amagat-de-l-automatitzacio",
+     "spa": "val/manteniment-el-cost-amagat-de-l-automatitzacio"
+    },
+    {
+     "html": "blog/en/maintenance-the-hidden-cost-of-automation.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/maintenance-the-hidden-cost-of-automation",
+     "spa": "en/maintenance-the-hidden-cost-of-automation"
+    },
+    {
+     "html": "blog/fr/maintenance-le-cout-cache-de-l-automatisation.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/maintenance-le-cout-cache-de-l-automatisation",
+     "spa": "fr/maintenance-le-cout-cache-de-l-automatisation"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un technicien graisse les engrenages d'une vieille machine dans un atelier propre et bien éclairé.",
+   "fichier": "mantenimiento-automatizacion-coste"
+  },
+  {
+   "id": "art-68",
+   "type": "article",
+   "priorite": 156,
+   "titre": "Cómo es automatizar un proceso, paso a paso",
+   "url": "https://webautonomos.es/blog/es/como-es-automatizar-un-proceso-paso-a-paso",
+   "resume": "Buena parte de los autónomos que ganarían automatizando no lo hacen, por una razón muy humana: no saben qué esperar. La palabra evoca una obra técnica, larga, oscura, donde se firma un cheque sin entender bien qué se compra. La realidad es mucho más terrenal. Automatizar una tarea sigue siempre más o menos los mismos pasos, y ninguno exige que seas experto en nada. Este es el…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/como-es-automatizar-un-proceso-paso-a-paso.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/como-es-automatizar-un-proceso-paso-a-paso",
+     "spa": "es/como-es-automatizar-un-proceso-paso-a-paso"
+    },
+    {
+     "html": "blog/val/com-es-automatitzar-un-proces-pas-a-pas.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/com-es-automatitzar-un-proces-pas-a-pas",
+     "spa": "val/com-es-automatitzar-un-proces-pas-a-pas"
+    },
+    {
+     "html": "blog/en/how-automating-a-process-works-step-by-step.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/how-automating-a-process-works-step-by-step",
+     "spa": "en/how-automating-a-process-works-step-by-step"
+    },
+    {
+     "html": "blog/fr/comment-se-passe-l-automatisation-etape-par-etape.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/comment-se-passe-l-automatisation-etape-par-etape",
+     "spa": "fr/comment-se-passe-l-automatisation-etape-par-etape"
+    }
+   ],
+   "statut": "pret",
+   "scene": "Un artisan suit un plan de montage étape par étape, les pièces d'un meuble alignées au sol dans l'ordre.",
+   "fichier": "automatizar-proceso-paso-a-paso"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "_lisez_moi": "Photo affichée par chaque page (clé = fichier HTML). Écrit par _tools/photos/photos.py ; lu par les générateurs via photos_lib.injecter.",
+ "pages": {
+  "blog/es/5-razones-pagina-web-negocio-2026.html": {
+   "sujet": "art-01",
+   "fichier": "small-business-owner-website-spain",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una autónoma con delantal revisa la web de su tienda en un portátil y en el móvil, en una terraza de Valencia al atardecer",
+   "legende": "Muchos clientes conocen un negocio por su web mucho antes de cruzar la puerta."
+  },
+  "blog/val/5-raons-per-a-tindre-web-en-2026.html": {
+   "sujet": "art-01",
+   "fichier": "small-business-owner-website-spain",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una autònoma amb davantal revisa la web de la seua botiga al portàtil i al mòbil, en una terrassa de València al capvespre",
+   "legende": "Molts clients coneixen un negoci per la seua web molt abans de creuar-ne la porta."
+  },
+  "blog/fr/5-raisons-davoir-un-site-web-en-2026.html": {
+   "sujet": "art-01",
+   "fichier": "small-business-owner-website-spain",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une commerçante en tablier consulte le site de sa boutique sur un ordinateur portable et un téléphone, en terrasse au crépuscule",
+   "legende": "Bien des clients découvrent un commerce par son site bien avant d'en pousser la porte."
+  },
+  "blog/en/5-reasons-your-business-needs-a-website-in-2026.html": {
+   "sujet": "art-01",
+   "fichier": "small-business-owner-website-spain",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A small business owner reviewing her new website on a laptop and a phone at a table outside her shop in Valencia",
+   "legende": "Most people meet a business through its website long before they walk through the door."
+  }
+ }
+}

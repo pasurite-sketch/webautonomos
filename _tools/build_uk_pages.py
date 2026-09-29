@@ -43,6 +43,8 @@ import os
 import re
 import subprocess
 import sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'photos'))
+from photos_lib import injecter as poser_photo  # photo prévue par _tools/photos/images.json
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -1365,6 +1367,7 @@ def main():
             print('  ✓ llms.txt à modifier — non écrit')
         return
     for rel, s in ecrits.items():
+        s = poser_photo(rel, s)
         ancien = open(rel, encoding='utf-8').read() if os.path.exists(rel) else None
         if ancien != s:
             open(rel, 'w', encoding='utf-8').write(s)

@@ -47,6 +47,8 @@ import re
 import shutil
 import subprocess
 import sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'photos'))
+from photos_lib import injecter as poser_photo  # photo prévue par _tools/photos/images.json
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://webautonomos.es'
@@ -570,7 +572,7 @@ def main():
         os.makedirs(os.path.dirname(d), exist_ok=True)
         shutil.copy2(rel, d)
     for rel, s in list(ecrits.items()) + list(modifs.items()):
-        open(rel, 'w', encoding='utf-8').write(s)
+        open(rel, 'w', encoding='utf-8').write(poser_photo(rel, s))
     for rel in ecrits:
         print('  ✓ %s créé (%d octets)' % (rel, len(ecrits[rel].encode())))
     print('  ✓ %s : hreflang, Weebly et Webnode corrigés' % ES)

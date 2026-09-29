@@ -1,0 +1,12 @@
+[Unit]
+Description=Photos WebAutonomos - tunnel Cloudflare vers https://photos.webautonomos.es
+After=network-online.target photos-api.service
+Wants=network-online.target
+
+[Service]
+ExecStart=%h/.local/bin/cloudflared --no-autoupdate --config %h/.cloudflared/photos.yml tunnel run
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

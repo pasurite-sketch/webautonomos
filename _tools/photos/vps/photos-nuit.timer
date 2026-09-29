@@ -1,0 +1,10 @@
+[Unit]
+Description=Photos WebAutonomos - chaque nuit à 4 h 40 (heure de Madrid)
+
+[Timer]
+OnCalendar=*-*-* 04:40:00
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target
