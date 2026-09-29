@@ -4342,9 +4342,29 @@
      "spa": "fr/ce-que-vous-ne-faites-pas-faute-de-temps"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un menuisier regarde par la fenêtre de son atelier, une tasse à la main ; une maquette de meuble inachevée attend sur l'établi.",
-   "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente"
+   "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente",
+   "v": 1,
+   "fait_le": "2026-09-29T23:51:48",
+   "textes": {
+    "es": {
+     "alt": "Un carpintero hace una pausa junto a la ventana de su taller, con una taza en la mano y un mueble sin terminar.",
+     "legende": "El artesano contempla el exterior durante una pausa en su taller."
+    },
+    "val": {
+     "alt": "Un fuster fa una pausa vora la finestra del taller, amb una tassa a la mà i un moble inacabat.",
+     "legende": "L'artesà contempla l'exterior durant una pausa al taller."
+    },
+    "en": {
+     "alt": "A carpenter pauses by his workshop window, holding a mug beside an unfinished wooden piece of furniture.",
+     "legende": "The craftsperson looks outside during a quiet break in the workshop."
+    },
+    "fr": {
+     "alt": "Un menuisier fait une pause près de la fenêtre de son atelier, une tasse à la main, devant un meuble inachevé.",
+     "legende": "L'artisan contemple l'extérieur pendant une pause dans son atelier."
+    }
+   }
   },
   {
    "id": "art-62",

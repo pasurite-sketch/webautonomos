@@ -2405,6 +2405,42 @@
    "v": 1,
    "alt": "Une coiffeuse sèche les cheveux d'une cliente tout en jetant un œil à un téléphone posé sur le comptoir.",
    "legende": "La coiffeuse poursuit la prestation tout en consultant son téléphone."
+  },
+  "blog/es/lo-que-no-haces-por-falta-de-tiempo.html": {
+   "sujet": "art-61",
+   "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un carpintero hace una pausa junto a la ventana de su taller, con una taza en la mano y un mueble sin terminar.",
+   "legende": "El artesano contempla el exterior durante una pausa en su taller."
+  },
+  "blog/val/el-que-no-fas-per-falta-de-temps.html": {
+   "sujet": "art-61",
+   "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un fuster fa una pausa vora la finestra del taller, amb una tassa a la mà i un moble inacabat.",
+   "legende": "L'artesà contempla l'exterior durant una pausa al taller."
+  },
+  "blog/en/what-you-never-get-round-to.html": {
+   "sujet": "art-61",
+   "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A carpenter pauses by his workshop window, holding a mug beside an unfinished wooden piece of furniture.",
+   "legende": "The craftsperson looks outside during a quiet break in the workshop."
+  },
+  "blog/fr/ce-que-vous-ne-faites-pas-faute-de-temps.html": {
+   "sujet": "art-61",
+   "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un menuisier fait une pause près de la fenêtre de son atelier, une tasse à la main, devant un meuble inachevé.",
+   "legende": "L'artisan contemple l'extérieur pendant une pause dans son atelier."
   }
  }
 }
