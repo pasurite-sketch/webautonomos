@@ -2009,6 +2009,42 @@
    "v": 1,
    "alt": "Une coach professionnelle écoute attentivement un petit groupe assis en cercle dans une salle lumineuse et accueillante.",
    "legende": "La coach écoute les participants pendant une séance de groupe."
+  },
+  "blog/es/web-para-centros-estetica-belleza.html": {
+   "sujet": "art-41",
+   "fichier": "centro-estetica-cabina-tratamiento",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una esteticista prepara sus productos en una cabina luminosa con camilla, toallas enrolladas, velas y plantas.",
+   "legende": "La profesional organiza los productos antes de una sesión en la cabina."
+  },
+  "blog/val/web-per-a-centres-d-estetica.html": {
+   "sujet": "art-41",
+   "fichier": "centro-estetica-cabina-tratamiento",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una esteticista prepara els productes en una cabina lluminosa amb llitera, tovalloles enrotllades, ciris i plantes.",
+   "legende": "La professional organitza els productes abans d'una sessió a la cabina."
+  },
+  "blog/en/website-for-beauty-salons.html": {
+   "sujet": "art-41",
+   "fichier": "centro-estetica-cabina-tratamiento",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A beauty therapist prepares products in a bright treatment room with a treatment bed, rolled towels, candles and plants.",
+   "legende": "The therapist arranges the products before a session in the treatment room."
+  },
+  "blog/fr/site-web-pour-instituts-de-beaute.html": {
+   "sujet": "art-41",
+   "fichier": "centro-estetica-cabina-tratamiento",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une esthéticienne prépare ses produits dans une cabine lumineuse avec table de soin, serviettes roulées, bougies et plantes.",
+   "legende": "La professionnelle organise les produits avant une séance dans la cabine."
   }
  }
 }
