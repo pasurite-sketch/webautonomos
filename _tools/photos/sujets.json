@@ -2948,9 +2948,29 @@
      "url": "https://webautonomos.es/blog/fr/photos-et-videos-sur-sa-fiche-google"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "La propriétaire d'une maison d'hôtes photographie sa terrasse fleurie avec un appareil photo sans marque visible, bougainvilliers en fleurs.",
-   "fichier": "fotos-ficha-google-alojamiento-terraza"
+   "fichier": "fotos-ficha-google-alojamiento-terraza",
+   "v": 1,
+   "fait_le": "2026-09-29T22:55:08",
+   "textes": {
+    "es": {
+     "alt": "La propietaria de una casa rural fotografía su terraza florida, con buganvillas y muebles de exterior bajo la luz del sol.",
+     "legende": "La propietaria fotografía la terraza florida de su alojamiento."
+    },
+    "val": {
+     "alt": "La propietària d'una casa rural fotografia la terrassa florida, amb buguenvíl·lies i mobiliari d'exterior a ple sol.",
+     "legende": "La propietària fotografia la terrassa florida del seu allotjament."
+    },
+    "en": {
+     "alt": "A guesthouse owner photographs her flower-filled terrace, with bougainvillea and outdoor furniture in bright sunlight.",
+     "legende": "The owner photographs the flower-filled terrace of her guesthouse."
+    },
+    "fr": {
+     "alt": "La propriétaire d'une maison d'hôtes photographie sa terrasse fleurie, avec des bougainvilliers et du mobilier extérieur au soleil.",
+     "legende": "La propriétaire photographie la terrasse fleurie de sa maison d'hôtes."
+    }
+   }
   },
   {
    "id": "art-27",

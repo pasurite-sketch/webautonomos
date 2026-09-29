@@ -1550,6 +1550,42 @@
    "v": 1,
    "alt": "Un menuisier essuie le plan de travail en bois d'une cuisine sur mesure récemment installée, éclairée par une grande fenêtre.",
    "legende": "Le menuisier soigne les finitions d'une cuisine en bois tout juste installée."
+  },
+  "blog/es/fotos-videos-ficha-google-importancia.html": {
+   "sujet": "art-26",
+   "fichier": "fotos-ficha-google-alojamiento-terraza",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La propietaria de una casa rural fotografía su terraza florida, con buganvillas y muebles de exterior bajo la luz del sol.",
+   "legende": "La propietaria fotografía la terraza florida de su alojamiento."
+  },
+  "blog/val/fotos-i-videos-en-la-fitxa-de-google.html": {
+   "sujet": "art-26",
+   "fichier": "fotos-ficha-google-alojamiento-terraza",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La propietària d'una casa rural fotografia la terrassa florida, amb buguenvíl·lies i mobiliari d'exterior a ple sol.",
+   "legende": "La propietària fotografia la terrassa florida del seu allotjament."
+  },
+  "blog/en/photos-and-videos-on-your-google-listing.html": {
+   "sujet": "art-26",
+   "fichier": "fotos-ficha-google-alojamiento-terraza",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A guesthouse owner photographs her flower-filled terrace, with bougainvillea and outdoor furniture in bright sunlight.",
+   "legende": "The owner photographs the flower-filled terrace of her guesthouse."
+  },
+  "blog/fr/photos-et-videos-sur-sa-fiche-google.html": {
+   "sujet": "art-26",
+   "fichier": "fotos-ficha-google-alojamiento-terraza",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La propriétaire d'une maison d'hôtes photographie sa terrasse fleurie, avec des bougainvilliers et du mobilier extérieur au soleil.",
+   "legende": "La propriétaire photographie la terrasse fleurie de sa maison d'hôtes."
   }
  }
 }
