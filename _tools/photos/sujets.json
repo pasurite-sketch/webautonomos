@@ -2024,9 +2024,29 @@
      "url": "https://webautonomos.es/blog/fr/optimiser-sa-fiche-google-business-profile"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "La propriétaire d'un café installe les chaises de sa terrasse tôt le matin, dans une rue calme et ensoleillée.",
-   "fichier": "ficha-google-horarios-negocio"
+   "fichier": "ficha-google-horarios-negocio",
+   "v": 1,
+   "fait_le": "2026-09-29T21:23:50",
+   "textes": {
+    "es": {
+     "alt": "La dueña de una cafetería coloca las sillas de la terraza a primera hora, en una calle tranquila y soleada.",
+     "legende": "La propietaria prepara la terraza de su café antes de abrir."
+    },
+    "val": {
+     "alt": "La propietària d'una cafeteria col·loca les cadires de la terrassa de bon matí, en un carrer tranquil i assolellat.",
+     "legende": "La propietària prepara la terrassa del café abans d'obrir."
+    },
+    "en": {
+     "alt": "A café owner arranges terrace chairs early in the morning on a quiet, sunny street.",
+     "legende": "The café owner prepares the terrace before opening."
+    },
+    "fr": {
+     "alt": "La propriétaire d'un café installe les chaises de sa terrasse tôt le matin, dans une rue calme et ensoleillée.",
+     "legende": "La propriétaire prépare la terrasse de son café avant l'ouverture."
+    }
+   }
   },
   {
    "id": "art-11",

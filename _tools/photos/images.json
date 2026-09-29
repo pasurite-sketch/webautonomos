@@ -983,6 +983,42 @@
    "v": 1,
    "alt": "Un électricien sur un escabeau guide des câbles dans une gaine au plafond d'un garage lumineux.",
    "legende": "Un électricien installe des câbles au plafond d'un garage."
+  },
+  "blog/es/optimizar-ficha-google-business-profile.html": {
+   "sujet": "art-10",
+   "fichier": "ficha-google-horarios-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La dueña de una cafetería coloca las sillas de la terraza a primera hora, en una calle tranquila y soleada.",
+   "legende": "La propietaria prepara la terraza de su café antes de abrir."
+  },
+  "blog/val/optimitzar-fitxa-google-business-profile.html": {
+   "sujet": "art-10",
+   "fichier": "ficha-google-horarios-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La propietària d'una cafeteria col·loca les cadires de la terrassa de bon matí, en un carrer tranquil i assolellat.",
+   "legende": "La propietària prepara la terrassa del café abans d'obrir."
+  },
+  "blog/en/optimise-your-google-business-profile.html": {
+   "sujet": "art-10",
+   "fichier": "ficha-google-horarios-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A café owner arranges terrace chairs early in the morning on a quiet, sunny street.",
+   "legende": "The café owner prepares the terrace before opening."
+  },
+  "blog/fr/optimiser-sa-fiche-google-business-profile.html": {
+   "sujet": "art-10",
+   "fichier": "ficha-google-horarios-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La propriétaire d'un café installe les chaises de sa terrasse tôt le matin, dans une rue calme et ensoleillée.",
+   "legende": "La propriétaire prépare la terrasse de son café avant l'ouverture."
   }
  }
 }
