@@ -2605,9 +2605,29 @@
      "url": "https://webautonomos.es/blog/fr/budget-marketing-digital-independants"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "La gérante d'un institut de beauté répartit des jetons en bois dans trois bocaux en verre posés sur son bureau.",
-   "fichier": "presupuesto-marketing-autonomo-planificacion"
+   "fichier": "presupuesto-marketing-autonomo-planificacion",
+   "v": 1,
+   "fait_le": "2026-09-29T22:42:52",
+   "textes": {
+    "es": {
+     "alt": "La gerente de un centro de belleza clasifica fichas de madera en tres tarros de cristal sobre una mesa.",
+     "legende": "La gerente organiza pequeñas fichas en su espacio de trabajo."
+    },
+    "val": {
+     "alt": "La gerent d'un centre de bellesa classifica fitxes de fusta en tres pots de vidre damunt d'una taula.",
+     "legende": "La gerent organitza xicotetes fitxes al seu espai de treball."
+    },
+    "en": {
+     "alt": "A beauty studio manager sorts wooden tokens into three glass jars on a table in her workspace.",
+     "legende": "The manager organizes small tokens in her workspace."
+    },
+    "fr": {
+     "alt": "La gérante d'un institut de beauté répartit des jetons en bois dans trois bocaux en verre sur une table.",
+     "legende": "La gérante organise des jetons dans son espace de travail."
+    }
+   }
   },
   {
    "id": "art-21",

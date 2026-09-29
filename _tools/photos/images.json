@@ -1343,6 +1343,42 @@
    "v": 1,
    "alt": "Un cordonnier répare une chaussure en cuir à son établi, entouré d'outils, de semelles et de formes.",
    "legende": "Un artisan répare des chaussures en cuir dans son atelier."
+  },
+  "blog/es/presupuesto-marketing-digital-autonomos.html": {
+   "sujet": "art-20",
+   "fichier": "presupuesto-marketing-autonomo-planificacion",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La gerente de un centro de belleza clasifica fichas de madera en tres tarros de cristal sobre una mesa.",
+   "legende": "La gerente organiza pequeñas fichas en su espacio de trabajo."
+  },
+  "blog/val/pressupost-de-marketing-digital.html": {
+   "sujet": "art-20",
+   "fichier": "presupuesto-marketing-autonomo-planificacion",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La gerent d'un centre de bellesa classifica fitxes de fusta en tres pots de vidre damunt d'una taula.",
+   "legende": "La gerent organitza xicotetes fitxes al seu espai de treball."
+  },
+  "blog/en/digital-marketing-budget-for-freelancers.html": {
+   "sujet": "art-20",
+   "fichier": "presupuesto-marketing-autonomo-planificacion",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A beauty studio manager sorts wooden tokens into three glass jars on a table in her workspace.",
+   "legende": "The manager organizes small tokens in her workspace."
+  },
+  "blog/fr/budget-marketing-digital-independants.html": {
+   "sujet": "art-20",
+   "fichier": "presupuesto-marketing-autonomo-planificacion",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La gérante d'un institut de beauté répartit des jetons en bois dans trois bocaux en verre sur une table.",
+   "legende": "La gérante organise des jetons dans son espace de travail."
   }
  }
 }
