@@ -4107,9 +4107,29 @@
      "spa": "fr/ce-que-la-paperasse-coute-vraiment"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un plombier, tard le soir, assis seul à la table de sa cuisine sous une lampe, se frotte les yeux, fatigué, devant un ordinateur portable fermé.",
-   "fichier": "papeleo-autonomo-noche-facturas"
+   "fichier": "papeleo-autonomo-noche-facturas",
+   "v": 1,
+   "fait_le": "2026-09-29T23:47:00",
+   "textes": {
+    "es": {
+     "alt": "Un fontanero cansado se frota los ojos sentado a la mesa de la cocina, junto a un portátil cerrado, de noche.",
+     "legende": "Al terminar la jornada, el profesional descansa un momento en casa."
+    },
+    "val": {
+     "alt": "Un llanterner cansat es frega els ulls assegut a la taula de la cuina, al costat d'un portàtil tancat, de nit.",
+     "legende": "En acabar la jornada, el professional descansa un moment a casa."
+    },
+    "en": {
+     "alt": "A tired plumber rubs his eyes at the kitchen table beside a closed laptop late at night.",
+     "legende": "After a long workday, the tradesperson takes a moment to rest at home."
+    },
+    "fr": {
+     "alt": "Un plombier fatigué se frotte les yeux à la table de la cuisine, près d'un ordinateur fermé, tard le soir.",
+     "legende": "Après sa journée de travail, l'artisan prend un moment de repos chez lui."
+    }
+   }
   },
   {
    "id": "art-49",

@@ -2261,6 +2261,42 @@
    "v": 1,
    "alt": "La gérante d'un magasin de sport présente une chaussure de randonnée à un client au comptoir.",
    "legende": "La vendeuse aide le client à choisir des chaussures de randonnée."
+  },
+  "blog/es/cuanto-cuesta-papeleo-autonomo.html": {
+   "sujet": "art-48",
+   "fichier": "papeleo-autonomo-noche-facturas",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un fontanero cansado se frota los ojos sentado a la mesa de la cocina, junto a un portátil cerrado, de noche.",
+   "legende": "Al terminar la jornada, el profesional descansa un momento en casa."
+  },
+  "blog/val/la-paperassa-et-lleva-226-hores.html": {
+   "sujet": "art-48",
+   "fichier": "papeleo-autonomo-noche-facturas",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un llanterner cansat es frega els ulls assegut a la taula de la cuina, al costat d'un portàtil tancat, de nit.",
+   "legende": "En acabar la jornada, el professional descansa un moment a casa."
+  },
+  "blog/en/what-paperwork-really-costs-a-freelancer.html": {
+   "sujet": "art-48",
+   "fichier": "papeleo-autonomo-noche-facturas",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A tired plumber rubs his eyes at the kitchen table beside a closed laptop late at night.",
+   "legende": "After a long workday, the tradesperson takes a moment to rest at home."
+  },
+  "blog/fr/ce-que-la-paperasse-coute-vraiment.html": {
+   "sujet": "art-48",
+   "fichier": "papeleo-autonomo-noche-facturas",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un plombier fatigué se frotte les yeux à la table de la cuisine, près d'un ordinateur fermé, tard le soir.",
+   "legende": "Après sa journée de travail, l'artisan prend un moment de repos chez lui."
   }
  }
 }
