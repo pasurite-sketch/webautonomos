@@ -190,9 +190,10 @@
      "spa": "fr/mentions-legales-site-internet-espagne"
     }
    ],
-   "statut": "pret",
+   "statut": "saute",
    "scene": "Les mains d'une commerçante rangent des documents administratifs dans des classeurs de couleur sur une étagère de son arrière-boutique ; une tablette éteinte posée à côté, lumière douce.",
-   "fichier": "documentos-legales-negocio-archivador"
+   "fichier": "documentos-legales-negocio-archivador",
+   "note": "Les générations n'ont pas respecté la scène demandée."
   },
   {
    "id": "file-facturar-clientes-otros-paises-ue-reino-unido",
