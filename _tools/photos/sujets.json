@@ -1676,9 +1676,29 @@
      "url": "https://webautonomos.es/blog/fr/combien-coute-un-site-web-pour-independants"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un couple de restaurateurs discute à une table de leur salle vide avant le service, deux tasses de café entre eux.",
-   "fichier": "cuanto-cuesta-web-presupuesto-restaurante"
+   "fichier": "cuanto-cuesta-web-presupuesto-restaurante",
+   "v": 1,
+   "fait_le": "2026-09-29T19:15:14",
+   "textes": {
+    "es": {
+     "alt": "Una pareja de restauradores conversa en una mesa de su comedor vacío antes del servicio, con dos tazas de café.",
+     "legende": "Los restauradores comparten un momento de conversación antes de comenzar el servicio."
+    },
+    "val": {
+     "alt": "Una parella de restauradors conversa en una taula del menjador buit abans del servici, amb dues tasses de café.",
+     "legende": "Els restauradors comparteixen una estona de conversa abans de començar el servici."
+    },
+    "en": {
+     "alt": "A restaurant-owning couple talks at a table in their empty dining room before service, with two cups of coffee.",
+     "legende": "The restaurant owners share a quiet conversation before service begins."
+    },
+    "fr": {
+     "alt": "Un couple de restaurateurs discute à une table de leur salle vide avant le service, avec deux tasses de café.",
+     "legende": "Les restaurateurs échangent tranquillement avant le début du service."
+    }
+   }
   },
   {
    "id": "art-05",
