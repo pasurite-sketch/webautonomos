@@ -1514,6 +1514,42 @@
    "v": 1,
    "alt": "A young woman shows her phone to an older carpenter in a family workshop filled with tools and timber.",
    "legende": "A daughter shares something on her phone with her father in the workshop."
+  },
+  "blog/es/web-para-carpinteros-reformas.html": {
+   "sujet": "art-25",
+   "fichier": "carpintero-cocina-a-medida-terminada",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un carpintero limpia la encimera de madera de una cocina a medida recién instalada, iluminada por una gran ventana.",
+   "legende": "El carpintero repasa los acabados de una cocina de madera recién instalada."
+  },
+  "blog/val/web-per-a-fusters-i-reformes.html": {
+   "sujet": "art-25",
+   "fichier": "carpintero-cocina-a-medida-terminada",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un fuster neteja el taulell de fusta d'una cuina a mida acabada d'instal·lar, il·luminada per una finestra gran.",
+   "legende": "El fuster repassa els acabats d'una cuina de fusta acabada d'instal·lar."
+  },
+  "blog/en/website-for-carpenters-and-renovations.html": {
+   "sujet": "art-25",
+   "fichier": "carpintero-cocina-a-medida-terminada",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A carpenter wipes the wooden countertop of a newly installed fitted kitchen, illuminated by a large window.",
+   "legende": "The carpenter checks the finish of a newly installed wooden kitchen."
+  },
+  "blog/fr/site-web-pour-menuisiers-et-renovation.html": {
+   "sujet": "art-25",
+   "fichier": "carpintero-cocina-a-medida-terminada",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un menuisier essuie le plan de travail en bois d'une cuisine sur mesure récemment installée, éclairée par une grande fenêtre.",
+   "legende": "Le menuisier soigne les finitions d'une cuisine en bois tout juste installée."
   }
  }
 }

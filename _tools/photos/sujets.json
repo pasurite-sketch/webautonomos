@@ -2890,9 +2890,29 @@
      "url": "https://webautonomos.es/blog/fr/site-web-pour-menuisiers-et-renovation"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une cuisine sur mesure en bois tout juste installée ; le menuisier passe un chiffon sur le plan de travail, lumière d'une grande fenêtre.",
-   "fichier": "carpintero-cocina-a-medida-terminada"
+   "fichier": "carpintero-cocina-a-medida-terminada",
+   "v": 1,
+   "fait_le": "2026-09-29T22:51:48",
+   "textes": {
+    "es": {
+     "alt": "Un carpintero limpia la encimera de madera de una cocina a medida recién instalada, iluminada por una gran ventana.",
+     "legende": "El carpintero repasa los acabados de una cocina de madera recién instalada."
+    },
+    "val": {
+     "alt": "Un fuster neteja el taulell de fusta d'una cuina a mida acabada d'instal·lar, il·luminada per una finestra gran.",
+     "legende": "El fuster repassa els acabats d'una cuina de fusta acabada d'instal·lar."
+    },
+    "en": {
+     "alt": "A carpenter wipes the wooden countertop of a newly installed fitted kitchen, illuminated by a large window.",
+     "legende": "The carpenter checks the finish of a newly installed wooden kitchen."
+    },
+    "fr": {
+     "alt": "Un menuisier essuie le plan de travail en bois d'une cuisine sur mesure récemment installée, éclairée par une grande fenêtre.",
+     "legende": "Le menuisier soigne les finitions d'une cuisine en bois tout juste installée."
+    }
+   }
   },
   {
    "id": "art-26",
