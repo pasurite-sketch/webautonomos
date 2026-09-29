@@ -1966,9 +1966,29 @@
      "url": "https://webautonomos.es/blog/fr/site-web-pour-electriciens"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un électricien tire des câbles dans une gaine au plafond du garage d'une maison individuelle, debout sur un escabeau, perceuse à la ceinture.",
-   "fichier": "electricista-instalando-cargador-coche"
+   "fichier": "electricista-instalando-cargador-coche",
+   "v": 1,
+   "fait_le": "2026-09-29T21:22:27",
+   "textes": {
+    "es": {
+     "alt": "Un electricista trabaja desde una escalera y guía cables por un conducto en el techo de un garaje luminoso.",
+     "legende": "Un electricista instala cableado en el techo de un garaje."
+    },
+    "val": {
+     "alt": "Un electricista treballa des d'una escala i guia cables per un conducte al sostre d'un garatge lluminós.",
+     "legende": "Un electricista instal·la cablejat al sostre d'un garatge."
+    },
+    "en": {
+     "alt": "An electrician works from a step ladder, guiding wires through conduit along the ceiling of a bright garage.",
+     "legende": "An electrician installs wiring along a garage ceiling."
+    },
+    "fr": {
+     "alt": "Un électricien sur un escabeau guide des câbles dans une gaine au plafond d'un garage lumineux.",
+     "legende": "Un électricien installe des câbles au plafond d'un garage."
+    }
+   }
   },
   {
    "id": "art-10",

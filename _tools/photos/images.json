@@ -947,6 +947,42 @@
    "v": 1,
    "alt": "Une commerçante sourit sur le seuil de sa boutique en observant les passants d'une rue commerçante arborée.",
    "legende": "Une commerçante observe l'activité de sa rue de quartier."
+  },
+  "blog/es/pagina-web-para-electricistas.html": {
+   "sujet": "art-09",
+   "fichier": "electricista-instalando-cargador-coche",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un electricista trabaja desde una escalera y guía cables por un conducto en el techo de un garaje luminoso.",
+   "legende": "Un electricista instala cableado en el techo de un garaje."
+  },
+  "blog/val/pagina-web-per-a-electricistes.html": {
+   "sujet": "art-09",
+   "fichier": "electricista-instalando-cargador-coche",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un electricista treballa des d'una escala i guia cables per un conducte al sostre d'un garatge lluminós.",
+   "legende": "Un electricista instal·la cablejat al sostre d'un garatge."
+  },
+  "blog/en/website-for-electricians.html": {
+   "sujet": "art-09",
+   "fichier": "electricista-instalando-cargador-coche",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "An electrician works from a step ladder, guiding wires through conduit along the ceiling of a bright garage.",
+   "legende": "An electrician installs wiring along a garage ceiling."
+  },
+  "blog/fr/site-web-pour-electriciens.html": {
+   "sujet": "art-09",
+   "fichier": "electricista-instalando-cargador-coche",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un électricien sur un escabeau guide des câbles dans une gaine au plafond d'un garage lumineux.",
+   "legende": "Un électricien installe des câbles au plafond d'un garage."
   }
  }
 }
