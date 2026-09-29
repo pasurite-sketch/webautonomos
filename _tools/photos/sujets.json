@@ -167,11 +167,31 @@
      "spa": "fr/site-internet-bilingue"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "La gérante d'un petit café de bord de mer sert deux cafés en souriant à un couple de touristes étrangers attablés en terrasse ; mer, palmiers et parasols flous en arrière-plan.",
    "fichier": "negocio-clientes-internacionales-costa",
    "marche_force": "es",
-   "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution"
+   "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution",
+   "v": 1,
+   "fait_le": "2026-09-29T14:16:08",
+   "textes": {
+    "es": {
+     "alt": "Una camarera sirve café a una pareja sentada en una terraza junto al mar, bajo sombrillas y palmeras.",
+     "legende": "Una terraza junto al mar puede recibir visitantes de distintos países."
+    },
+    "val": {
+     "alt": "Una cambrera servix café a una parella en una terrassa vora la mar, amb palmeres i ombrel·les.",
+     "legende": "Una terrassa vora la mar pot acollir visitants de diferents països."
+    },
+    "en": {
+     "alt": "A waitress serves coffee to a couple on a seaside terrace, with palm trees and umbrellas in the background.",
+     "legende": "A seaside terrace can welcome visitors from different countries."
+    },
+    "fr": {
+     "alt": "Une serveuse apporte des cafés à un couple en terrasse au bord de la mer, sous des parasols et des palmiers.",
+     "legende": "Une terrasse en bord de mer peut accueillir des visiteurs de différents pays."
+    }
+   }
   },
   {
    "id": "file-aviso-legal-privacidad-cookies-web",
