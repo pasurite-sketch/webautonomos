@@ -4460,9 +4460,29 @@
      "spa": "fr/quelles-taches-automatiser-en-premier"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une gérante répartit des outils dans deux caisses en bois distinctes sur son établi, l'air concentré.",
-   "fichier": "tareas-automatizar-prioridades"
+   "fichier": "tareas-automatizar-prioridades",
+   "v": 1,
+   "fait_le": "2026-09-29T23:54:17",
+   "textes": {
+    "es": {
+     "alt": "Una artesana organiza herramientas de mano en dos cajas de madera sobre su banco de trabajo, en un taller luminoso.",
+     "legende": "La profesional clasifica sus herramientas en el taller."
+    },
+    "val": {
+     "alt": "Una artesana organitza ferramentes de mà en dues caixes de fusta sobre el banc de treball, en un taller lluminós.",
+     "legende": "La professional classifica les ferramentes al taller."
+    },
+    "en": {
+     "alt": "A craftswoman sorts hand tools into two wooden crates on her workbench in a bright workshop.",
+     "legende": "The craftswoman organizes her tools in the workshop."
+    },
+    "fr": {
+     "alt": "Une artisane range des outils à main dans deux caisses en bois sur son établi, dans un atelier lumineux.",
+     "legende": "L'artisane organise ses outils dans son atelier."
+    }
+   }
   },
   {
    "id": "art-64",

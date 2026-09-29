@@ -2477,6 +2477,42 @@
    "v": 1,
    "alt": "Une main pose un sablier sur un bureau en bois, à côté d'une tasse de café fumante.",
    "legende": "Un sablier et un café évoquent la valeur du temps au travail."
+  },
+  "blog/es/que-tareas-automatizar-primero.html": {
+   "sujet": "art-63",
+   "fichier": "tareas-automatizar-prioridades",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una artesana organiza herramientas de mano en dos cajas de madera sobre su banco de trabajo, en un taller luminoso.",
+   "legende": "La profesional clasifica sus herramientas en el taller."
+  },
+  "blog/val/quines-tasques-automatitzar-primer.html": {
+   "sujet": "art-63",
+   "fichier": "tareas-automatizar-prioridades",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una artesana organitza ferramentes de mà en dues caixes de fusta sobre el banc de treball, en un taller lluminós.",
+   "legende": "La professional classifica les ferramentes al taller."
+  },
+  "blog/en/which-tasks-to-automate-first.html": {
+   "sujet": "art-63",
+   "fichier": "tareas-automatizar-prioridades",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A craftswoman sorts hand tools into two wooden crates on her workbench in a bright workshop.",
+   "legende": "The craftswoman organizes her tools in the workshop."
+  },
+  "blog/fr/quelles-taches-automatiser-en-premier.html": {
+   "sujet": "art-63",
+   "fichier": "tareas-automatizar-prioridades",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une artisane range des outils à main dans deux caisses en bois sur son établi, dans un atelier lumineux.",
+   "legende": "L'artisane organise ses outils dans son atelier."
   }
  }
 }
