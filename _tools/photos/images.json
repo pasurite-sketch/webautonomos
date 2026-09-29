@@ -595,6 +595,33 @@
    "v": 1,
    "alt": "An electrician and a consultant talk at a high café table, with two cups between them.",
    "legende": "An informal conversation to answer questions and share information."
+  },
+  "contacto.html": {
+   "sujet": "page-contact",
+   "fichier": "contacto-mensaje-whatsapp-movil",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una persona sentada en un muro soleado graba un mensaje de voz con su teléfono, frente a una calle comercial desenfocada.",
+   "legende": "Enviar un mensaje de voz permite contactar de forma sencilla y directa."
+  },
+  "fr/contact.html": {
+   "sujet": "page-contact",
+   "fichier": "contacto-mensaje-whatsapp-movil",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une personne assise sur un muret ensoleillé enregistre un message vocal sur son téléphone, devant une rue commerçante floue.",
+   "legende": "Un message vocal permet de prendre contact simplement et directement."
+  },
+  "en/contact.html": {
+   "sujet": "page-contact",
+   "fichier": "contacto-mensaje-whatsapp-movil",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A person seated on a sunny stone wall records a voice message on a phone, with a blurred shopping street behind.",
+   "legende": "A voice message offers a simple, direct way to get in touch."
   }
  }
 }

@@ -1254,9 +1254,29 @@
      "url": "https://webautonomos.es/en/contact"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Les mains d'une personne assise sur un muret ensoleillé qui enregistre un message vocal sur son téléphone (écran invisible), devant une rue commerçante floue.",
-   "fichier": "contacto-mensaje-whatsapp-movil"
+   "fichier": "contacto-mensaje-whatsapp-movil",
+   "v": 1,
+   "fait_le": "2026-09-29T16:10:24",
+   "textes": {
+    "es": {
+     "alt": "Una persona sentada en un muro soleado graba un mensaje de voz con su teléfono, frente a una calle comercial desenfocada.",
+     "legende": "Enviar un mensaje de voz permite contactar de forma sencilla y directa."
+    },
+    "val": {
+     "alt": "Una persona asseguda en un muret assolellat grava un missatge de veu amb el mòbil, davant d'un carrer comercial desenfocat.",
+     "legende": "Enviar un missatge de veu permet contactar de manera senzilla i directa."
+    },
+    "en": {
+     "alt": "A person seated on a sunny stone wall records a voice message on a phone, with a blurred shopping street behind.",
+     "legende": "A voice message offers a simple, direct way to get in touch."
+    },
+    "fr": {
+     "alt": "Une personne assise sur un muret ensoleillé enregistre un message vocal sur son téléphone, devant une rue commerçante floue.",
+     "legende": "Un message vocal permet de prendre contact simplement et directement."
+    }
+   }
   },
   {
    "id": "page-diagnostic",
