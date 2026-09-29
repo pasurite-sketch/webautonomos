@@ -3064,9 +3064,29 @@
      "url": "https://webautonomos.es/blog/fr/erreurs-marketing-digital-a-eviter"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un peintre en bâtiment, assis sur le hayon de sa camionnette, regarde son téléphone d'un air perplexe (écran invisible).",
-   "fichier": "errores-marketing-autonomo-folletos"
+   "fichier": "errores-marketing-autonomo-folletos",
+   "v": 1,
+   "fait_le": "2026-09-29T22:58:24",
+   "textes": {
+    "es": {
+     "alt": "Un pintor de obra, sentado en la parte trasera de su furgoneta, consulta el móvil con gesto de desconcierto.",
+     "legende": "El pintor revisa su teléfono durante una pausa junto a la furgoneta."
+    },
+    "val": {
+     "alt": "Un pintor d'obra, assegut a la part posterior de la furgoneta, consulta el mòbil amb gest de desconcert.",
+     "legende": "El pintor revisa el mòbil durant una pausa al costat de la furgoneta."
+    },
+    "en": {
+     "alt": "A house painter sits on the back of his work van, looking puzzled as he checks his phone.",
+     "legende": "The painter checks his phone during a break beside the van."
+    },
+    "fr": {
+     "alt": "Un peintre en bâtiment, assis à l'arrière de sa camionnette, consulte son téléphone avec perplexité.",
+     "legende": "Le peintre consulte son téléphone pendant une pause près de sa camionnette."
+    }
+   }
   },
   {
    "id": "art-31",

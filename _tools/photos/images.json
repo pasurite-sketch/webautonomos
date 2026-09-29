@@ -1622,6 +1622,42 @@
    "v": 1,
    "alt": "Six commerçants discutent autour d'une table en bois dans l'arrière-salle lumineuse d'un café.",
    "legende": "Des commerçants du quartier échangent lors d'une réunion informelle."
+  },
+  "blog/es/errores-marketing-digital-autonomos.html": {
+   "sujet": "art-28",
+   "fichier": "errores-marketing-autonomo-folletos",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un pintor de obra, sentado en la parte trasera de su furgoneta, consulta el móvil con gesto de desconcierto.",
+   "legende": "El pintor revisa su teléfono durante una pausa junto a la furgoneta."
+  },
+  "blog/val/errors-de-marketing-digital-a-evitar.html": {
+   "sujet": "art-28",
+   "fichier": "errores-marketing-autonomo-folletos",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un pintor d'obra, assegut a la part posterior de la furgoneta, consulta el mòbil amb gest de desconcert.",
+   "legende": "El pintor revisa el mòbil durant una pausa al costat de la furgoneta."
+  },
+  "blog/en/digital-marketing-mistakes-to-avoid.html": {
+   "sujet": "art-28",
+   "fichier": "errores-marketing-autonomo-folletos",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A house painter sits on the back of his work van, looking puzzled as he checks his phone.",
+   "legende": "The painter checks his phone during a break beside the van."
+  },
+  "blog/fr/erreurs-marketing-digital-a-eviter.html": {
+   "sujet": "art-28",
+   "fichier": "errores-marketing-autonomo-folletos",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un peintre en bâtiment, assis à l'arrière de sa camionnette, consulte son téléphone avec perplexité.",
+   "legende": "Le peintre consulte son téléphone pendant une pause près de sa camionnette."
   }
  }
 }
