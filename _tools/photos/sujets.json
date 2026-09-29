@@ -3523,10 +3523,30 @@
      "url": "https://webautonomos.es/blog/fr/site-web-pour-podologues"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Cabinet de podologie propre et lumineux : fauteuil de soins, instruments rangés, la podologue vue de dos prépare la salle. Aucun patient.",
    "fichier": "clinica-podologia-consulta",
-   "sante_force": true
+   "sante_force": true,
+   "v": 1,
+   "fait_le": "2026-09-29T23:31:57",
+   "textes": {
+    "es": {
+     "alt": "Una podóloga prepara la sala de consulta en una clínica luminosa, con sillón de tratamiento e instrumentos ordenados.",
+     "legende": "La podóloga organiza el instrumental antes de recibir al siguiente paciente."
+    },
+    "val": {
+     "alt": "Una podòloga prepara la sala de consulta en una clínica lluminosa, amb butaca de tractament i instruments ordenats.",
+     "legende": "La podòloga organitza l'instrumental abans de rebre el següent pacient."
+    },
+    "en": {
+     "alt": "A podiatrist prepares a bright treatment room with a treatment chair and neatly arranged instruments.",
+     "legende": "The podiatrist organizes the equipment before the next appointment."
+    },
+    "fr": {
+     "alt": "Une podologue prépare une salle de consultation lumineuse, avec fauteuil de soins et instruments bien rangés.",
+     "legende": "La podologue organise le matériel avant le prochain rendez-vous."
+    }
+   }
   },
   {
    "id": "art-39",

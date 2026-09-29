@@ -1901,6 +1901,42 @@
    "v": 1,
    "alt": "Un ferronnier d'art présente son métier devant un petit micro, tandis qu'une meuleuse projette des étincelles en arrière-plan.",
    "legende": "L'artisan partage son expérience depuis son atelier de ferronnerie."
+  },
+  "blog/es/web-para-podologos-clinica-pies.html": {
+   "sujet": "art-38",
+   "fichier": "clinica-podologia-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una podóloga prepara la sala de consulta en una clínica luminosa, con sillón de tratamiento e instrumentos ordenados.",
+   "legende": "La podóloga organiza el instrumental antes de recibir al siguiente paciente."
+  },
+  "blog/val/web-per-a-podolegs.html": {
+   "sujet": "art-38",
+   "fichier": "clinica-podologia-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una podòloga prepara la sala de consulta en una clínica lluminosa, amb butaca de tractament i instruments ordenats.",
+   "legende": "La podòloga organitza l'instrumental abans de rebre el següent pacient."
+  },
+  "blog/en/website-for-podiatrists.html": {
+   "sujet": "art-38",
+   "fichier": "clinica-podologia-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A podiatrist prepares a bright treatment room with a treatment chair and neatly arranged instruments.",
+   "legende": "The podiatrist organizes the equipment before the next appointment."
+  },
+  "blog/fr/site-web-pour-podologues.html": {
+   "sujet": "art-38",
+   "fichier": "clinica-podologia-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une podologue prépare une salle de consultation lumineuse, avec fauteuil de soins et instruments bien rangés.",
+   "legende": "La podologue organise le matériel avant le prochain rendez-vous."
   }
  }
 }
