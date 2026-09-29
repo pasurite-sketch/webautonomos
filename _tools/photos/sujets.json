@@ -879,28 +879,20 @@
      "spa": "val/5-raons-per-a-tindre-web-en-2026"
     },
     {
-     "html": "blog/fr/5-raisons-davoir-un-site-web-en-2026.html",
-     "lang": "fr",
-     "url": "https://webautonomos.es/blog/fr/5-raisons-davoir-un-site-web-en-2026"
-    },
-    {
      "html": "blog/en/5-reasons-your-business-needs-a-website-in-2026.html",
      "lang": "en",
      "url": "https://webautonomos.es/blog/en/5-reasons-your-business-needs-a-website-in-2026",
      "spa": "en/5-reasons-your-business-needs-a-website-in-2026"
+    },
+    {
+     "html": "blog/fr/5-raisons-davoir-un-site-web-en-2026.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/5-raisons-davoir-un-site-web-en-2026"
     }
    ],
    "statut": "fait",
    "scene": "Photo existante (29/09/2026), générée dans ChatGPT par Angelino.",
    "fichier": "small-business-owner-website-spain",
-   "pages_en_plus": [
-    {
-     "html": "blog/en/5-reasons-your-business-needs-a-website-in-2026.html",
-     "lang": "en",
-     "url": "https://webautonomos.es/blog/en/5-reasons-your-business-needs-a-website-in-2026",
-     "spa": "en/5-reasons-your-business-needs-a-website-in-2026"
-    }
-   ],
    "v": 1,
    "fait_le": "2026-09-29T04:21:41",
    "textes": {
@@ -920,7 +912,15 @@
      "alt": "Une commerçante en tablier consulte le site de sa boutique sur un ordinateur portable et un téléphone, en terrasse au crépuscule",
      "legende": "Bien des clients découvrent un commerce par son site bien avant d'en pousser la porte."
     }
-   }
+   },
+   "pages_en_plus": [
+    {
+     "html": "blog/en/5-reasons-your-business-needs-a-website-in-2026.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/5-reasons-your-business-needs-a-website-in-2026",
+     "spa": "en/5-reasons-your-business-needs-a-website-in-2026"
+    }
+   ]
   },
   {
    "id": "art-02",
