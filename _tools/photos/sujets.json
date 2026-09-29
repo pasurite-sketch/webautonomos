@@ -43,9 +43,29 @@
      "spa": "fr/wix-ou-wordpress"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une céramiste indépendante, dans son atelier, compare deux croquis de mise en page posés côte à côte sur son établi (blocs gris, aucun texte), un crayon à la main ; pots en terre, tours de potier et lumière de fin d'après-midi.",
-   "fichier": "elegir-herramienta-web-taller-ceramica"
+   "fichier": "elegir-herramienta-web-taller-ceramica",
+   "v": 1,
+   "fait_le": "2026-09-29T10:25:05",
+   "textes": {
+    "es": {
+     "alt": "Una ceramista compara dos bocetos de páginas web sobre el banco de trabajo de su taller, con un lápiz en la mano.",
+     "legende": "Dos diseños sobre papel ayudan a comparar cómo podría organizarse la web de un pequeño negocio."
+    },
+    "val": {
+     "alt": "Una ceramista compara dos esbossos de pàgines web al banc de treball del seu taller, amb un llapis a la mà.",
+     "legende": "Dos dissenys en paper permeten comparar com podria organitzar-se la web d’un xicotet negoci."
+    },
+    "en": {
+     "alt": "A ceramic artist compares two website layout sketches on her workshop bench, holding a pencil in one hand.",
+     "legende": "Two paper layouts offer a simple way to compare how a small business website could be organised."
+    },
+    "fr": {
+     "alt": "Une céramiste compare deux esquisses de pages web sur son établi, un crayon à la main, dans son atelier.",
+     "legende": "Deux maquettes papier permettent de comparer l’organisation possible du site d’une petite entreprise."
+    }
+   }
   },
   {
    "id": "file-alta-autonomo-extranjero-espana",
