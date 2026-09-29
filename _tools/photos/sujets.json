@@ -3874,9 +3874,29 @@
      "url": "https://webautonomos.es/blog/fr/site-web-pour-cliniques-veterinaires"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une vétérinaire caresse un golden retriever calme sur la table d'examen de sa clinique.",
-   "fichier": "clinica-veterinaria-perro-consulta"
+   "fichier": "clinica-veterinaria-perro-consulta",
+   "v": 1,
+   "fait_le": "2026-09-29T23:42:17",
+   "textes": {
+    "es": {
+     "alt": "Una veterinaria acaricia a un golden retriever tranquilo sobre la mesa de exploración de una clínica luminosa.",
+     "legende": "La veterinaria ofrece un trato amable a un perro durante la visita."
+    },
+    "val": {
+     "alt": "Una veterinària acaricia un golden retriever tranquil damunt de la taula d'exploració d'una clínica lluminosa.",
+     "legende": "La veterinària tracta amb cura el gos durant la visita."
+    },
+    "en": {
+     "alt": "A veterinarian gently pets a calm golden retriever on an examination table in a bright clinic.",
+     "legende": "The veterinarian gives the dog gentle attention during its visit."
+    },
+    "fr": {
+     "alt": "Une vétérinaire caresse un golden retriever calme sur la table d'examen d'une clinique lumineuse.",
+     "legende": "La vétérinaire prend soin du chien avec douceur pendant la visite."
+    }
+   }
   },
   {
    "id": "art-45",

@@ -2117,6 +2117,42 @@
    "v": 1,
    "alt": "Un coach sportif déroule un tapis et prépare des élastiques dans un petit studio baigné par la lumière du matin.",
    "legende": "Le coach prépare l'espace et le matériel avant de commencer la séance."
+  },
+  "blog/es/web-para-clinicas-veterinarias.html": {
+   "sujet": "art-44",
+   "fichier": "clinica-veterinaria-perro-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una veterinaria acaricia a un golden retriever tranquilo sobre la mesa de exploración de una clínica luminosa.",
+   "legende": "La veterinaria ofrece un trato amable a un perro durante la visita."
+  },
+  "blog/val/web-per-a-cliniques-veterinaries.html": {
+   "sujet": "art-44",
+   "fichier": "clinica-veterinaria-perro-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una veterinària acaricia un golden retriever tranquil damunt de la taula d'exploració d'una clínica lluminosa.",
+   "legende": "La veterinària tracta amb cura el gos durant la visita."
+  },
+  "blog/en/website-for-veterinary-clinics.html": {
+   "sujet": "art-44",
+   "fichier": "clinica-veterinaria-perro-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A veterinarian gently pets a calm golden retriever on an examination table in a bright clinic.",
+   "legende": "The veterinarian gives the dog gentle attention during its visit."
+  },
+  "blog/fr/site-web-pour-cliniques-veterinaires.html": {
+   "sujet": "art-44",
+   "fichier": "clinica-veterinaria-perro-consulta",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une vétérinaire caresse un golden retriever calme sur la table d'examen d'une clinique lumineuse.",
+   "legende": "La vétérinaire prend soin du chien avec douceur pendant la visite."
   }
  }
 }
