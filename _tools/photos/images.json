@@ -2333,6 +2333,42 @@
    "v": 1,
    "alt": "Une gestionnaire, lunettes sur le front, regarde pensivement par la fenêtre de son bureau lumineux.",
    "legende": "Une pause de réflexion dans un bureau baigné de lumière naturelle."
+  },
+  "blog/es/contratar-o-automatizar.html": {
+   "sujet": "art-50",
+   "fichier": "contratar-o-automatizar-decision",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La gerente de una pequeña agencia de viajes conversa con un compañero junto a una ventana, ambos con tazas de café.",
+   "legende": "Una charla informal entre compañeros en un despacho luminoso."
+  },
+  "blog/val/contractar-o-automatitzar.html": {
+   "sujet": "art-50",
+   "fichier": "contratar-o-automatizar-decision",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La gerent d'una agència de viatges menuda conversa amb un company prop d'una finestra, tots dos amb tasses de café.",
+   "legende": "Una conversa informal entre companys en un despatx lluminós."
+  },
+  "blog/en/hire-or-automate.html": {
+   "sujet": "art-50",
+   "fichier": "contratar-o-automatizar-decision",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "The manager of a small travel agency talks with a colleague by a window, both holding cups of coffee.",
+   "legende": "An informal conversation between colleagues in a bright office."
+  },
+  "blog/fr/embaucher-ou-automatiser.html": {
+   "sujet": "art-50",
+   "fichier": "contratar-o-automatizar-decision",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "La gérante d'une petite agence de voyages discute avec un associé près d'une fenêtre, une tasse de café à la main.",
+   "legende": "Un échange informel entre collègues dans un bureau lumineux."
   }
  }
 }

@@ -4225,9 +4225,29 @@
      "spa": "fr/embaucher-ou-automatiser"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "La gérante d'une petite agence de voyages et son associé discutent debout près d'une fenêtre, tasses de café à la main.",
-   "fichier": "contratar-o-automatizar-decision"
+   "fichier": "contratar-o-automatizar-decision",
+   "v": 1,
+   "fait_le": "2026-09-29T23:49:27",
+   "textes": {
+    "es": {
+     "alt": "La gerente de una pequeña agencia de viajes conversa con un compañero junto a una ventana, ambos con tazas de café.",
+     "legende": "Una charla informal entre compañeros en un despacho luminoso."
+    },
+    "val": {
+     "alt": "La gerent d'una agència de viatges menuda conversa amb un company prop d'una finestra, tots dos amb tasses de café.",
+     "legende": "Una conversa informal entre companys en un despatx lluminós."
+    },
+    "en": {
+     "alt": "The manager of a small travel agency talks with a colleague by a window, both holding cups of coffee.",
+     "legende": "An informal conversation between colleagues in a bright office."
+    },
+    "fr": {
+     "alt": "La gérante d'une petite agence de voyages discute avec un associé près d'une fenêtre, une tasse de café à la main.",
+     "legende": "Un échange informel entre collègues dans un bureau lumineux."
+    }
+   }
   },
   {
    "id": "art-60",
