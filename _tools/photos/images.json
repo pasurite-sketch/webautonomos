@@ -1451,6 +1451,42 @@
    "v": 1,
    "alt": "Un quincaillier range des outils à main sur un présentoir mural dans sa quincaillerie de quartier.",
    "legende": "Un commerçant organise les outils dans sa quincaillerie."
+  },
+  "blog/es/citas-locales-nap-que-son-por-que-importan.html": {
+   "sujet": "art-23",
+   "fichier": "citas-locales-nap-direccion-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un cartero en bicicleta introduce un sobre en un buzón durante su recorrido por una calle soleada.",
+   "legende": "Un cartero realiza una entrega en una calle residencial mediterránea."
+  },
+  "blog/val/cites-locals-nap-guia-completa.html": {
+   "sujet": "art-23",
+   "fichier": "citas-locales-nap-direccion-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un carter en bicicleta introdueix un sobre en una bústia durant el seu recorregut per un carrer assolellat.",
+   "legende": "Un carter fa una entrega en un carrer residencial mediterrani."
+  },
+  "blog/en/local-citations-nap-complete-guide.html": {
+   "sujet": "art-23",
+   "fichier": "citas-locales-nap-direccion-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A postman on a bicycle places an envelope in a mailbox while riding along a sunny residential street.",
+   "legende": "A postman makes a delivery on a Mediterranean residential street."
+  },
+  "blog/fr/citations-locales-nap-guide-complet.html": {
+   "sujet": "art-23",
+   "fichier": "citas-locales-nap-direccion-negocio",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un facteur à vélo dépose une enveloppe dans une boîte aux lettres au cours de sa tournée dans une rue ensoleillée.",
+   "legende": "Un facteur effectue une livraison dans une rue résidentielle méditerranéenne."
   }
  }
 }

@@ -2779,9 +2779,29 @@
      "url": "https://webautonomos.es/blog/fr/citations-locales-nap-guide-complet"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un facteur à vélo remonte une rue résidentielle ensoleillée, sacoches pleines.",
-   "fichier": "citas-locales-nap-direccion-negocio"
+   "fichier": "citas-locales-nap-direccion-negocio",
+   "v": 1,
+   "fait_le": "2026-09-29T22:48:34",
+   "textes": {
+    "es": {
+     "alt": "Un cartero en bicicleta introduce un sobre en un buzón durante su recorrido por una calle soleada.",
+     "legende": "Un cartero realiza una entrega en una calle residencial mediterránea."
+    },
+    "val": {
+     "alt": "Un carter en bicicleta introdueix un sobre en una bústia durant el seu recorregut per un carrer assolellat.",
+     "legende": "Un carter fa una entrega en un carrer residencial mediterrani."
+    },
+    "en": {
+     "alt": "A postman on a bicycle places an envelope in a mailbox while riding along a sunny residential street.",
+     "legende": "A postman makes a delivery on a Mediterranean residential street."
+    },
+    "fr": {
+     "alt": "Un facteur à vélo dépose une enveloppe dans une boîte aux lettres au cours de sa tournée dans une rue ensoleillée.",
+     "legende": "Un facteur effectue une livraison dans une rue résidentielle méditerranéenne."
+    }
+   }
   },
   {
    "id": "art-24",
