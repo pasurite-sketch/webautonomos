@@ -1694,6 +1694,42 @@
    "v": 1,
    "alt": "Une main tourne une clé dans la serrure de la porte d'un nouveau local commercial, avec l'intérieur flou en arrière-plan.",
    "legende": "La clé ouvre pour la première fois la porte d'un nouveau commerce."
+  },
+  "blog/es/inteligencia-artificial-autonomos-herramientas.html": {
+   "sujet": "art-32",
+   "fichier": "inteligencia-artificial-autonoma-despacho",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una traductora autónoma dicta a su teléfono sobre un soporte en un despacho luminoso lleno de plantas.",
+   "legende": "La traductora dicta contenido desde su espacio de trabajo en casa."
+  },
+  "blog/val/ia-per-a-autonoms-eines-concretes.html": {
+   "sujet": "art-32",
+   "fichier": "inteligencia-artificial-autonoma-despacho",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una traductora autònoma dicta al mòbil sobre un suport en un despatx lluminós ple de plantes.",
+   "legende": "La traductora dicta contingut des del seu espai de treball a casa."
+  },
+  "blog/en/ai-for-freelancers-practical-tools.html": {
+   "sujet": "art-32",
+   "fichier": "inteligencia-artificial-autonoma-despacho",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A freelance translator dictates to a smartphone on a stand in a bright, plant-filled home office.",
+   "legende": "The translator dictates content from her home workspace."
+  },
+  "blog/fr/ia-pour-independants-outils-concrets.html": {
+   "sujet": "art-32",
+   "fichier": "inteligencia-artificial-autonoma-despacho",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une traductrice indépendante dicte à son téléphone posé sur un support dans un bureau lumineux garni de plantes.",
+   "legende": "La traductrice dicte du contenu depuis son espace de travail à domicile."
   }
  }
 }

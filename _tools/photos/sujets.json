@@ -3180,9 +3180,29 @@
      "url": "https://webautonomos.es/blog/fr/ia-pour-independants-outils-concrets"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une traductrice indépendante dicte à son téléphone posé sur un support, dans un bureau lumineux garni de plantes ; écran invisible.",
-   "fichier": "inteligencia-artificial-autonoma-despacho"
+   "fichier": "inteligencia-artificial-autonoma-despacho",
+   "v": 1,
+   "fait_le": "2026-09-29T23:01:57",
+   "textes": {
+    "es": {
+     "alt": "Una traductora autónoma dicta a su teléfono sobre un soporte en un despacho luminoso lleno de plantas.",
+     "legende": "La traductora dicta contenido desde su espacio de trabajo en casa."
+    },
+    "val": {
+     "alt": "Una traductora autònoma dicta al mòbil sobre un suport en un despatx lluminós ple de plantes.",
+     "legende": "La traductora dicta contingut des del seu espai de treball a casa."
+    },
+    "en": {
+     "alt": "A freelance translator dictates to a smartphone on a stand in a bright, plant-filled home office.",
+     "legende": "The translator dictates content from her home workspace."
+    },
+    "fr": {
+     "alt": "Une traductrice indépendante dicte à son téléphone posé sur un support dans un bureau lumineux garni de plantes.",
+     "legende": "La traductrice dicte du contenu depuis son espace de travail à domicile."
+    }
+   }
   },
   {
    "id": "art-33",
