@@ -2549,6 +2549,42 @@
    "v": 1,
    "alt": "Une artisane emballe des savons faits main dans du papier kraft sur une grande table en bois.",
    "legende": "La créatrice prépare soigneusement les commandes de sa boutique de savons."
+  },
+  "blog/es/errores-mas-caros-al-automatizar.html": {
+   "sujet": "art-65",
+   "fichier": "errores-automatizacion-caros",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un trabajador observa desconcertado una cinta transportadora detenida, rodeada de cajas de cartón lisas en un almacén.",
+   "legende": "El empleado revisa la cinta transportadora parada en el almacén."
+  },
+  "blog/val/errors-mes-cars-al-automatitzar.html": {
+   "sujet": "art-65",
+   "fichier": "errores-automatizacion-caros",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un treballador observa desconcertat una cinta transportadora aturada, envoltada de caixes de cartó llises en un magatzem.",
+   "legende": "L'empleat revisa la cinta transportadora parada al magatzem."
+  },
+  "blog/en/costliest-automation-mistakes.html": {
+   "sujet": "art-65",
+   "fichier": "errores-automatizacion-caros",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A puzzled worker looks at a stopped conveyor belt surrounded by plain cardboard boxes in a warehouse.",
+   "legende": "The employee checks the stopped conveyor belt in the warehouse."
+  },
+  "blog/fr/erreurs-les-plus-couteuses-en-automatisation.html": {
+   "sujet": "art-65",
+   "fichier": "errores-automatizacion-caros",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un employé regarde, perplexe, un tapis roulant à l'arrêt, entouré de cartons bruns dans un entrepôt.",
+   "legende": "L'employé examine le tapis roulant immobilisé dans l'entrepôt."
   }
  }
 }
