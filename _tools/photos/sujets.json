@@ -4637,9 +4637,29 @@
      "spa": "fr/ce-qu-il-ne-faut-jamais-automatiser"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une chocolatière fait goûter un chocolat à une cliente par-dessus le comptoir de sa boutique, sourires échangés.",
-   "fichier": "no-automatizar-trato-humano"
+   "fichier": "no-automatizar-trato-humano",
+   "v": 1,
+   "fait_le": "2026-09-29T23:58:11",
+   "textes": {
+    "es": {
+     "alt": "Una chocolatera ofrece una pequeña degustación a una clienta sonriente en el mostrador de su tienda.",
+     "legende": "La chocolatera comparte una muestra de sus dulces artesanales con una clienta."
+    },
+    "val": {
+     "alt": "Una xocolatera oferix una xicoteta degustació a una clienta somrient al taulell de la botiga.",
+     "legende": "La xocolatera compartix una mostra dels seus dolços artesanals amb una clienta."
+    },
+    "en": {
+     "alt": "A chocolatier offers a small chocolate sample to a smiling customer across the shop counter.",
+     "legende": "The chocolatier shares a taste of her handmade sweets with a customer."
+    },
+    "fr": {
+     "alt": "Une chocolatière propose une dégustation à une cliente souriante par-dessus le comptoir de sa boutique.",
+     "legende": "La chocolatière fait découvrir ses créations à une cliente."
+    }
+   }
   },
   {
    "id": "art-67",

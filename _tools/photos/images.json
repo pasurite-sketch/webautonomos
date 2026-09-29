@@ -2585,6 +2585,42 @@
    "v": 1,
    "alt": "Un employé regarde, perplexe, un tapis roulant à l'arrêt, entouré de cartons bruns dans un entrepôt.",
    "legende": "L'employé examine le tapis roulant immobilisé dans l'entrepôt."
+  },
+  "blog/es/que-no-deberias-automatizar-nunca.html": {
+   "sujet": "art-66",
+   "fichier": "no-automatizar-trato-humano",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una chocolatera ofrece una pequeña degustación a una clienta sonriente en el mostrador de su tienda.",
+   "legende": "La chocolatera comparte una muestra de sus dulces artesanales con una clienta."
+  },
+  "blog/val/que-no-hauries-d-automatitzar-mai.html": {
+   "sujet": "art-66",
+   "fichier": "no-automatizar-trato-humano",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una xocolatera oferix una xicoteta degustació a una clienta somrient al taulell de la botiga.",
+   "legende": "La xocolatera compartix una mostra dels seus dolços artesanals amb una clienta."
+  },
+  "blog/en/what-you-should-never-automate.html": {
+   "sujet": "art-66",
+   "fichier": "no-automatizar-trato-humano",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A chocolatier offers a small chocolate sample to a smiling customer across the shop counter.",
+   "legende": "The chocolatier shares a taste of her handmade sweets with a customer."
+  },
+  "blog/fr/ce-qu-il-ne-faut-jamais-automatiser.html": {
+   "sujet": "art-66",
+   "fichier": "no-automatizar-trato-humano",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une chocolatière propose une dégustation à une cliente souriante par-dessus le comptoir de sa boutique.",
+   "legende": "La chocolatière fait découvrir ses créations à une cliente."
   }
  }
 }
