@@ -1850,9 +1850,29 @@
      "url": "https://webautonomos.es/blog/fr/comment-trouver-des-clients-sur-internet"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Une couturière emballe une création dans un carton uni dans son atelier, un mètre ruban autour du cou ; rouleaux de tissu colorés en arrière-plan.",
-   "fichier": "conseguir-clientes-internet-taller-costura"
+   "fichier": "conseguir-clientes-internet-taller-costura",
+   "v": 1,
+   "fait_le": "2026-09-29T21:04:15",
+   "textes": {
+    "es": {
+     "alt": "Una costurera empaqueta una prenda en una caja de cartón lisa en su taller, con una cinta métrica al cuello y telas al fondo.",
+     "legende": "Una costurera prepara cuidadosamente un pedido en su taller."
+    },
+    "val": {
+     "alt": "Una modista empaqueta una peça en una caixa de cartó llisa al seu taller, amb una cinta mètrica al coll i teles al fons.",
+     "legende": "Una modista prepara amb cura una comanda al seu taller."
+    },
+    "en": {
+     "alt": "A seamstress packs a garment into a plain cardboard box in her studio, with a measuring tape around her neck and fabrics behind her.",
+     "legende": "A seamstress carefully prepares an order in her studio."
+    },
+    "fr": {
+     "alt": "Une couturière emballe un vêtement dans un carton uni, avec un mètre ruban autour du cou et des tissus en arrière-plan.",
+     "legende": "Une couturière prépare soigneusement une commande dans son atelier."
+    }
+   }
   },
   {
    "id": "art-08",

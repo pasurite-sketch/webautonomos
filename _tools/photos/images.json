@@ -875,6 +875,42 @@
    "v": 1,
    "alt": "Un serrurier assis dans la porte latérale ouverte d'une camionnette blanche consulte son téléphone, avec des outils rangés derrière lui.",
    "legende": "Un artisan consulte un message depuis son véhicule de travail."
+  },
+  "blog/es/como-conseguir-clientes-por-internet.html": {
+   "sujet": "art-07",
+   "fichier": "conseguir-clientes-internet-taller-costura",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una costurera empaqueta una prenda en una caja de cartón lisa en su taller, con una cinta métrica al cuello y telas al fondo.",
+   "legende": "Una costurera prepara cuidadosamente un pedido en su taller."
+  },
+  "blog/val/aconseguir-clients-per-internet.html": {
+   "sujet": "art-07",
+   "fichier": "conseguir-clientes-internet-taller-costura",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Una modista empaqueta una peça en una caixa de cartó llisa al seu taller, amb una cinta mètrica al coll i teles al fons.",
+   "legende": "Una modista prepara amb cura una comanda al seu taller."
+  },
+  "blog/en/how-to-find-clients-online.html": {
+   "sujet": "art-07",
+   "fichier": "conseguir-clientes-internet-taller-costura",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A seamstress packs a garment into a plain cardboard box in her studio, with a measuring tape around her neck and fabrics behind her.",
+   "legende": "A seamstress carefully prepares an order in her studio."
+  },
+  "blog/fr/comment-trouver-des-clients-sur-internet.html": {
+   "sujet": "art-07",
+   "fichier": "conseguir-clientes-internet-taller-costura",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Une couturière emballe un vêtement dans un carton uni, avec un mètre ruban autour du cou et des tissus en arrière-plan.",
+   "legende": "Une couturière prépare soigneusement une commande dans son atelier."
   }
  }
 }
