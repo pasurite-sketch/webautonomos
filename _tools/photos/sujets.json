@@ -2082,9 +2082,29 @@
      "url": "https://webautonomos.es/blog/fr/positionner-son-site-dans-le-google-local"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un opticien ajuste avec soin une monture sur le visage d'une cliente vue de profil, dans sa boutique lumineuse.",
-   "fichier": "posicionar-negocio-local-escaparate"
+   "fichier": "posicionar-negocio-local-escaparate",
+   "v": 1,
+   "fait_le": "2026-09-29T21:53:35",
+   "textes": {
+    "es": {
+     "alt": "Un óptico ajusta con cuidado las gafas de una clienta sentada en una tienda luminosa.",
+     "legende": "Un óptico ayuda a una clienta a ajustar sus gafas en la tienda."
+    },
+    "val": {
+     "alt": "Un òptic ajusta amb cura les ulleres d'una clienta asseguda en una botiga lluminosa.",
+     "legende": "Un òptic ajuda una clienta a ajustar-se les ulleres a la botiga."
+    },
+    "en": {
+     "alt": "An optician carefully adjusts a seated customer's glasses in a bright optical shop.",
+     "legende": "An optician helps a customer adjust her glasses in the shop."
+    },
+    "fr": {
+     "alt": "Un opticien ajuste avec soin les lunettes d'une cliente assise dans une boutique lumineuse.",
+     "legende": "Un opticien aide une cliente à ajuster ses lunettes dans sa boutique."
+    }
+   }
   },
   {
    "id": "art-12",

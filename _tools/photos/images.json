@@ -1019,6 +1019,42 @@
    "v": 1,
    "alt": "La propriétaire d'un café installe les chaises de sa terrasse tôt le matin, dans une rue calme et ensoleillée.",
    "legende": "La propriétaire prépare la terrasse de son café avant l'ouverture."
+  },
+  "blog/es/como-posicionar-web-en-google-local.html": {
+   "sujet": "art-11",
+   "fichier": "posicionar-negocio-local-escaparate",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un óptico ajusta con cuidado las gafas de una clienta sentada en una tienda luminosa.",
+   "legende": "Un óptico ayuda a una clienta a ajustar sus gafas en la tienda."
+  },
+  "blog/val/posicionar-la-web-en-el-google-local.html": {
+   "sujet": "art-11",
+   "fichier": "posicionar-negocio-local-escaparate",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un òptic ajusta amb cura les ulleres d'una clienta asseguda en una botiga lluminosa.",
+   "legende": "Un òptic ajuda una clienta a ajustar-se les ulleres a la botiga."
+  },
+  "blog/en/how-to-rank-your-website-in-local-google.html": {
+   "sujet": "art-11",
+   "fichier": "posicionar-negocio-local-escaparate",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "An optician carefully adjusts a seated customer's glasses in a bright optical shop.",
+   "legende": "An optician helps a customer adjust her glasses in the shop."
+  },
+  "blog/fr/positionner-son-site-dans-le-google-local.html": {
+   "sujet": "art-11",
+   "fichier": "posicionar-negocio-local-escaparate",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un opticien ajuste avec soin les lunettes d'une cliente assise dans une boutique lumineuse.",
+   "legende": "Un opticien aide une cliente à ajuster ses lunettes dans sa boutique."
   }
  }
 }
