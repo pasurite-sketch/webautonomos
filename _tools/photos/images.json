@@ -3227,6 +3227,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Sun Workshop website, featuring a web consultant speaking on the phone in a bright office.",
    "legende": "Sun Workshop’s website adapts to desktop and mobile and presents the local business."
+  },
+  "preguntas.html": {
+   "sujet": "page-questions",
+   "fichier": "preguntas-frecuentes-conversacion-cafe-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Portátil y móvil muestran la web Electricidad Voltio con un electricista y una asesora conversando en un café.",
+   "legende": "La web de Electricidad Voltio se adapta a ordenador y móvil y facilita el contacto."
   }
  }
 }
