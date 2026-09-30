@@ -241,9 +241,20 @@
    "site": "d'un atelier d'artisan à Valence",
    "maquette": {
     "es": {
-     "statut": "pret",
+     "statut": "fait",
      "fichier": "autonomo-extranjero-tramites-oficina-maquette-es",
-     "v": 1
+     "v": 2,
+     "fait_le": "2026-09-30T10:57:52",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
+       "legende": "Example website showing an artisan workshop on a laptop and smartphone."
+      },
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de un taller artesanal en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de un taller artesanal en un portátil y un teléfono móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
