@@ -3207,8 +3207,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "contacto-mensaje-whatsapp-movil-maquette-en"
+     "statut": "fait",
+     "fichier": "contacto-mensaje-whatsapp-movil-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T19:04:18",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web Rosa Grocery, con una mujer grabando un mensaje de voz en la imagen principal.",
+       "legende": "La web de Rosa Grocery se adapta a las pantallas de ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web Rosa Grocery, amb una dona gravant un missatge de veu en la imatge principal.",
+       "legende": "La web de Rosa Grocery s’adapta a les pantalles d’ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the Rosa Grocery website, with a woman recording a voice message in the hero image.",
+       "legende": "The Rosa Grocery website adapts to desktop and mobile screens."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Rosa Grocery, avec une femme enregistrant un message vocal dans l’image principale.",
+       "legende": "Le site Rosa Grocery s’adapte aux écrans d’ordinateur et de mobile."
+      }
+     }
     }
    },
    "ecrans": {

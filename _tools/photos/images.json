@@ -3272,6 +3272,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Épicerie Rose, avec une femme enregistrant un message vocal sur la photo principale.",
    "legende": "Le site Épicerie Rose est présenté en versions ordinateur et mobile."
+  },
+  "en/contact.html": {
+   "sujet": "page-contact",
+   "fichier": "contacto-mensaje-whatsapp-movil-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Rosa Grocery website, with a woman recording a voice message in the hero image.",
+   "legende": "The Rosa Grocery website adapts to desktop and mobile screens."
   }
  }
 }
