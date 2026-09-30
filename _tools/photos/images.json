@@ -2695,5 +2695,15 @@
    "legende": "L'artisan assemble le meuble en gardant les pièces et la visserie bien organisées."
   }
  },
- "maquettes": {}
+ "maquettes": {
+  "blog/es/wix-o-wordpress.html": {
+   "sujet": "file-wix-o-wordpress",
+   "fichier": "elegir-herramienta-web-taller-ceramica-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de una ceramista, con fotos de sus piezas y diseño adaptado a ambas pantallas.",
+   "legende": "Ejemplo de web de cerámica artesanal en ordenador y móvil."
+  }
+ }
 }

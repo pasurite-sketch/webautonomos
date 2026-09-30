@@ -69,8 +69,16 @@
    "site": "d'une céramiste (boutique d'atelier avec photos de poteries)",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-es"
+     "statut": "fait",
+     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T10:22:13",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una ceramista, con fotos de sus piezas y diseño adaptado a ambas pantallas.",
+       "legende": "Ejemplo de web de cerámica artesanal en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
