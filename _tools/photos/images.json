@@ -3020,6 +3020,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Parkside Dental website, featuring a dentist preparing instruments in a bright clinic.",
    "legende": "Parkside Dental’s website adapts to desktop and mobile, featuring a bright dental clinic."
+  },
+  "en/dental-website-design.html": {
+   "sujet": "metier-dentiste-uk",
+   "fichier": "clinica-dental-reino-unido-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Elmwood Dental website, featuring a dentist washing his hands in a bright clinic.",
+   "legende": "Elmwood Dental’s website adapts to desktop and mobile with a treatment-room image."
   }
  }
 }
