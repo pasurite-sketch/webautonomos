@@ -2948,6 +2948,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site d'une menuiserie avec un artisan et une cliente dans l'atelier.",
    "legende": "Exemple de site de menuiserie adapté à l'ordinateur et au mobile."
+  },
+  "en/services.html": {
+   "sujet": "page-services",
+   "fichier": "servicios-web-autonomo-taller-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display a carpentry website featuring a craftsperson and client in the workshop.",
+   "legende": "Example carpentry website adapted for desktop and mobile."
   }
  }
 }
