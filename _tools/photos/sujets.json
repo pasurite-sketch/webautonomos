@@ -1570,8 +1570,28 @@
    "site": "d'un cabinet de kinésithérapie britannique",
    "maquette": {
     "en": {
-     "statut": "pret",
-     "fichier": "clinica-fisioterapia-reino-unido-maquette-en"
+     "statut": "fait",
+     "fichier": "clinica-fisioterapia-reino-unido-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T14:56:14",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Riverside Physio con un fisioterapeuta preparando una sala luminosa.",
+       "legende": "La web de Riverside Physio se adapta a ordenador y móvil con una imagen de la clínica."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Riverside Physio amb un fisioterapeuta preparant una sala lluminosa.",
+       "legende": "La web de Riverside Physio s'adapta a ordinador i mòbil amb una imatge de la clínica."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Riverside Physio website, featuring a physiotherapist preparing a bright treatment room.",
+       "legende": "Riverside Physio’s website adapts to desktop and mobile with a clinic photograph."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Riverside Physio, avec un kinésithérapeute préparant une salle lumineuse.",
+       "legende": "Le site Riverside Physio s’adapte à l’ordinateur et au mobile avec une photo du cabinet."
+      }
+     }
     }
    },
    "ecrans": {

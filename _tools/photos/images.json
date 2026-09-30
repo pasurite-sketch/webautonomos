@@ -2993,6 +2993,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Costa Physio website, with a physiotherapist adjusting a treatment table in a bright clinic.",
    "legende": "Costa Physio’s website adapts to desktop and mobile, featuring a bright physiotherapy treatment room."
+  },
+  "en/physiotherapy-website-design.html": {
+   "sujet": "metier-kine-uk",
+   "fichier": "clinica-fisioterapia-reino-unido-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Riverside Physio website, featuring a physiotherapist preparing a bright treatment room.",
+   "legende": "Riverside Physio’s website adapts to desktop and mobile with a clinic photograph."
   }
  }
 }
