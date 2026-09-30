@@ -1246,8 +1246,28 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "servicios-web-autonomo-taller-maquette-fr"
+     "statut": "fait",
+     "fichier": "servicios-web-autonomo-taller-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T14:19:05",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una carpintería con un artesano y una clienta en el taller.",
+       "legende": "Ejemplo de una web de carpintería adaptada a ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d'una fusteria amb un artesà i una clienta al taller.",
+       "legende": "Exemple d'una web de fusteria adaptada a ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display a carpentry website featuring a craftsperson and client in the workshop.",
+       "legende": "Example carpentry website adapted for desktop and mobile."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'une menuiserie avec un artisan et une cliente dans l'atelier.",
+       "legende": "Exemple de site de menuiserie adapté à l'ordinateur et au mobile."
+      }
+     }
     },
     "en": {
      "statut": "pret",
