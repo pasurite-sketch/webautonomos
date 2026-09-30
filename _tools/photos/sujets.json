@@ -2653,8 +2653,28 @@
    "site": "d'un salon de coiffure",
    "maquette": {
     "fr": {
-     "statut": "pret",
-     "fichier": "autonomo-recibe-demo-web-movil-maquette-fr"
+     "statut": "fait",
+     "fichier": "autonomo-recibe-demo-web-movil-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T18:17:52",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Salon Élise con un peluquero sonriente en su salón antes de abrir.",
+       "legende": "La web de Salon Élise se adapta a ordenador y móvil y permite reservar cita."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Salon Élise amb un perruquer somrient al seu saló abans d'obrir.",
+       "legende": "La web de Salon Élise s'adapta a ordinador i mòbil i permet reservar cita."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Salon Élise website, featuring a smiling hairdresser in his salon before opening.",
+       "legende": "Salon Élise’s website adapts to desktop and mobile and lets visitors book an appointment."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Salon Élise, avec un coiffeur souriant dans son salon avant l'ouverture.",
+       "legende": "Le site Salon Élise s’adapte à l’ordinateur et au mobile et permet de réserver."
+      }
+     }
     },
     "en": {
      "statut": "pret",

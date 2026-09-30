@@ -3164,6 +3164,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Golden Wheat Bakery website, featuring a baker taking fresh bread from the oven.",
    "legende": "Golden Wheat Bakery’s website adapts to desktop and mobile and showcases freshly baked bread."
+  },
+  "demandez-votre-demo.html": {
+   "sujet": "page-demande-demo",
+   "fichier": "autonomo-recibe-demo-web-movil-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un téléphone affichent le site Salon Élise, avec un coiffeur souriant dans son salon avant l'ouverture.",
+   "legende": "Le site Salon Élise s’adapte à l’ordinateur et au mobile et permet de réserver."
   }
  }
 }
