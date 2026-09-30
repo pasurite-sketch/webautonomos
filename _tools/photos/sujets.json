@@ -3183,8 +3183,28 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "contacto-mensaje-whatsapp-movil-maquette-fr"
+     "statut": "fait",
+     "fichier": "contacto-mensaje-whatsapp-movil-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T19:01:53",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web Épicerie Rose con una mujer grabando un mensaje de voz en la foto principal.",
+       "legende": "La web de Épicerie Rose aparece adaptada a ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web Épicerie Rose amb una dona gravant un missatge de veu en la foto principal.",
+       "legende": "La web d’Épicerie Rose es mostra adaptada a ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the Épicerie Rose website, featuring a woman recording a voice message in the main photo.",
+       "legende": "The Épicerie Rose website is shown in desktop and mobile layouts."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Épicerie Rose, avec une femme enregistrant un message vocal sur la photo principale.",
+       "legende": "Le site Épicerie Rose est présenté en versions ordinateur et mobile."
+      }
+     }
     },
     "en": {
      "statut": "pret",
