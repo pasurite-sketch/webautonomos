@@ -2903,6 +2903,15 @@
    "alt": "Un portátil y un móvil muestran la web de una floristería con un ramo de flores en la página principal.",
    "legende": "Ejemplo de una web de floristería adaptada a ordenador y móvil.",
    "pas_avant": "2026-10-23"
+  },
+  "mejores-creadores-paginas-web-autonomos.html": {
+   "sujet": "page-comparatifs",
+   "fichier": "comparar-creadores-web-coworking-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Nexo Servicios con una emprendedora en un espacio de coworking.",
+   "legende": "Ejemplo de una web de servicios profesionales adaptada a ordenador y móvil."
   }
  }
 }
