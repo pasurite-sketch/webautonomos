@@ -2553,8 +2553,28 @@
    "site": "d'une boulangerie",
    "maquette": {
     "fr": {
-     "statut": "pret",
-     "fichier": "autonomo-abriendo-negocio-manana-maquette-fr"
+     "statut": "fait",
+     "fichier": "autonomo-abriendo-negocio-manana-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T18:13:58",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web de Boulangerie Blé d'Or con una panadera sacando pan del horno.",
+       "legende": "La web de la panadería se adapta a ordenador y móvil y destaca sus panes y bollería."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web de Boulangerie Blé d'Or amb una fornera traient pa del forn.",
+       "legende": "La web de la panaderia s'adapta a ordinador i mòbil i destaca els pans i la brioixeria."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Boulangerie Blé d'Or website, featuring a baker taking bread from the oven.",
+       "legende": "The bakery website adapts to desktop and mobile and showcases its bread and pastries."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Boulangerie Blé d'Or, avec une boulangère sortant du pain du four.",
+       "legende": "Le site de la boulangerie s’adapte à l’ordinateur et au mobile et met en valeur pains et viennoiseries."
+      }
+     }
     },
     "en": {
      "statut": "pret",
