@@ -450,7 +450,10 @@ def _site(s):
 def construire_prompt_maquette(s, lang):
     """Même forme que le prompt des photos : il commence par « Photographie
     réaliste », que le GPT reconnaît. Les textes des écrans sont donnés mot pour
-    mot, dans la langue de la page : le générateur les écrit alors sans faute."""
+    mot, dans la langue de la page. 30/09 : dans une même conversation, ChatGPT
+    reprenait le contenu de l'image précédente (des poteries partout) ; la
+    grande photo du site reprend donc la scène de la photo de la page, et rien
+    ne doit entourer les appareils."""
     support = SUPPORTS[sum(map(ord, s['id'])) % len(SUPPORTS)]
     e = (s.get('ecrans') or {}).get(lang)
     if e:
@@ -459,11 +462,13 @@ def construire_prompt_maquette(s, lang):
                   % (e['nom'], e['titre'], BOUTONS[e['bouton']][lang]))
     else:
         textes = "des titres et des paragraphes représentés par de simples barres grises"
-    return ("Photographie réaliste, format paysage : un ordinateur portable de style MacBook ouvert et un "
-            "smartphone posés côte à côte sur %s ; les deux écrans affichent le même site web %s, en version "
-            "ordinateur et en version mobile : une grande photo, des blocs de couleur et %s.\n"
+    photo = ("La grande photo en haut du site montre : %s. " % s['scene'].rstrip('.')) if s.get('scene') else ''
+    return ("Photographie réaliste, entièrement nouvelle et indépendante des images précédentes, format paysage : "
+            "un ordinateur portable de style MacBook ouvert et un smartphone posés côte à côte sur %s, sans aucun "
+            "autre objet autour ; les deux écrans affichent le même site web %s, en version ordinateur et en "
+            "version mobile. %sLe site contient aussi des blocs de couleur et %s.\n"
             "Lumière naturelle, rendu de photographie produit, couleurs naturelles.\n"
-            "Aucun logo ni marque sur les appareils." % (support, _site(s), textes))
+            "Aucun logo ni marque sur les appareils." % (support, _site(s), photo, textes))
 
 
 def suivi(s, genre, lang=None):
