@@ -92,11 +92,15 @@ milieu de la page.
   du milieu ; page à sections, entre deux sections (FAQ, témoignages,
   formulaires et contact ignorés) ; page simple, avant l'intertitre du milieu ;
   page sans intertitre, en fin de contenu. Marqueurs `<!-- maquette:auto -->`.
-- Écrans sans texte lisible (barres grises) ; le serveur tolère quelques zones
-  de texte sur une maquette (refus à partir de 8), Angelino valide par « ok ».
+- Une maquette par sujet ET par langue (choix d'Angelino, 30/09) : 299, une par
+  page. Les écrans portent quelques textes lisibles dans la langue de la page,
+  donnés mot pour mot dans le prompt (champ `ecrans` : nom d'une entreprise
+  fictive, titre court, type de bouton traduit par `BOUTONS`) ; le reste en
+  barres grises. Le serveur ne refuse qu'un écran couvert de texte (30 zones).
   Légende « Exemple de site… » : jamais le site d'un vrai client, aucun logo.
-- `photos.py prompt ID maquette`, `annuler ID maquette`, `essai maquette`,
-  `appliquer ID IMAGE TEXTES.json maquette`.
+- Les deux premières maquettes (barres grises, une par sujet) ont été retirées.
+- `photos.py prompt ID maquette LANGUE`, `annuler ID maquette [LANGUE]`, `essai maquette`,
+  `appliquer ID IMAGE TEXTES.json maquette LANGUE`.
 
 ## Commandes utiles (Mac ou VPS)
 

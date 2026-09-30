@@ -148,15 +148,6 @@
         "text": "Réponse courte : pas pour Wix, un peu pour WordPress.com, nettement plus pour WordPress installé chez un hébergeur. Wix fonctionne avec un éditeur glisser-déposer et des modèles : vous déplacez les blocs, changez textes et photos, et voyez le résultat tout de suite. WordPress se gère aussi sans coder, grâce à son éditeur par blocs, mais il demande plus de choix (thème, extensions, réglages) et, en auto-hébergé, l'installation et le paramétrage. Rien d'insurmontable, mais prévoyez du temps de prise en main."
       },
       {
-        "type": "image",
-        "src": "/assets/elegir-herramienta-web-taller-ceramica-maquette.jpg",
-        "width": 1600,
-        "height": 900,
-        "v": "1",
-        "alt": "Un ordinateur et un smartphone affichent un site de céramique avec des photos de poteries et deux mises en page.",
-        "caption": "Exemple de site de céramiste en version ordinateur et mobile."
-      },
-      {
         "type": "heading",
         "text": "Qui s'occupe de la maintenance et de la sécurité ?"
       },
@@ -384,15 +375,6 @@
       {
         "type": "paragraph",
         "text": "En pocas palabras: para Wix no, para WordPress.com algunos, y para WordPress en tu propio hosting, bastantes más. Wix funciona con un editor de arrastrar y soltar y plantillas: mueves bloques, cambias textos y fotos y ves el resultado al momento. WordPress también se maneja sin programar con su editor de bloques, pero exige más decisiones (tema, plugins, ajustes) y, si lo alojas tú, la instalación y la configuración. Nada imposible, pero necesitarás tiempo para aprender."
-      },
-      {
-        "type": "image",
-        "src": "/assets/elegir-herramienta-web-taller-ceramica-maquette.jpg",
-        "width": 1600,
-        "height": 900,
-        "v": "1",
-        "alt": "Portátil y móvil muestran una web de cerámica artesanal, con fotos de piezas y diseño adaptado a cada pantalla.",
-        "caption": "Ejemplo de web de una ceramista en versión de escritorio y móvil."
       },
       {
         "type": "heading",
@@ -625,15 +607,6 @@
         "text": "En poques paraules: per a Wix no, per a WordPress.com alguns, i per a WordPress en el teu propi allotjament, bastants més. Wix funciona amb un editor d'arrossegar i deixar anar i plantilles: mous blocs, canvies textos i fotos i veus el resultat a l'instant. WordPress també es gestiona sense programar amb el seu editor de blocs, però exigix més decisions (tema, extensions, ajustos) i, si l'allotges tu, la instal·lació i la configuració. Res impossible, però necessitaràs temps per a aprendre."
       },
       {
-        "type": "image",
-        "src": "/assets/elegir-herramienta-web-taller-ceramica-maquette.jpg",
-        "width": 1600,
-        "height": 900,
-        "v": "1",
-        "alt": "Portàtil i mòbil mostren una web de ceràmica artesanal, amb fotos de peces i disseny adaptat a cada pantalla.",
-        "caption": "Exemple de web d'una ceramista en versió d'ordinador i mòbil."
-      },
-      {
         "type": "heading",
         "text": "Qui s'encarrega del manteniment i la seguretat?"
       },
@@ -862,15 +835,6 @@
       {
         "type": "paragraph",
         "text": "Short answer: not for Wix, a little for WordPress.com, and noticeably more for WordPress on your own hosting. Wix uses a drag-and-drop editor and templates you customise: you move blocks, change text and photos and see the result straight away. WordPress can also be run without coding thanks to its block editor, but it involves more decisions (theme, plugins, settings) and, if you host it yourself, the installation and configuration. Nothing impossible, but expect to spend time learning."
-      },
-      {
-        "type": "image",
-        "src": "/assets/elegir-herramienta-web-taller-ceramica-maquette.jpg",
-        "width": 1600,
-        "height": 900,
-        "v": "1",
-        "alt": "A laptop and smartphone display a ceramics website with pottery photos and layouts adapted to each screen.",
-        "caption": "Example website for a ceramic artist on desktop and mobile."
       },
       {
         "type": "heading",

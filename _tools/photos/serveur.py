@@ -60,13 +60,15 @@ _FICHIER_COURANT = os.path.join(ETAT, 'courant.json')
 
 
 def _courant():
-    """(sujet, genre) de la page en cours ; genre = photo ou maquette."""
+    """(sujet, genre, langue) de la page en cours ; genre = photo ou maquette,
+    langue renseignée pour une maquette (une par langue)."""
     c = L.lire_json(_FICHIER_COURANT, {})
-    return c.get('sujet'), c.get('genre') or 'photo'
+    return c.get('sujet'), c.get('genre') or 'photo', c.get('langue')
 
 
-def _fixer_courant(sid, genre='photo'):
-    L.ecrire_json(_FICHIER_COURANT, {'sujet': sid, 'genre': genre, 'depuis': time.strftime('%Y-%m-%d %H:%M:%S')})
+def _fixer_courant(sid, genre='photo', lang=None):
+    L.ecrire_json(_FICHIER_COURANT, {'sujet': sid, 'genre': genre, 'langue': lang,
+                                     'depuis': time.strftime('%Y-%m-%d %H:%M:%S')})
 
 
 class Verrou:
@@ -93,17 +95,19 @@ def suivante():
         P.synchro()
         data = P.charger()
         # Les photos d'abord, puis les maquettes MacBook + smartphone (30/09).
-        prets = [(s, 'photo') for s in data['sujets'] if s.get('statut') == 'pret' and P.a_des_pages_actives(s)]
-        prets += [(s, 'maquette') for s in data['sujets']
-                  if P.suivi(s, 'maquette').get('statut') == 'pret' and P.a_des_pages_actives(s)]
+        prets = [(s, 'photo', None) for s in data['sujets']
+                 if s.get('statut') == 'pret' and P.a_des_pages_actives(s)]
+        prets += [(s, 'maquette', lg) for s in data['sujets'] if P.a_des_pages_actives(s)
+                  for lg, m in P.maquettes_de(s) if m.get('statut') == 'pret']
         # La page en cours (ni envoyée ni passée) revient, avec son prompt à jour.
-        en_cours = next(((s, g) for s, g in prets if (s['id'], g) == _courant()), None)
+        en_cours = next(((s, g, lg) for s, g, lg in prets if (s['id'], g, lg) == _courant()), None)
         choix = en_cours or (prets[0] if prets else None)
         if choix is not None:
-            s, genre = choix
-            _fixer_courant(s['id'], genre)
-            log.info('suivante -> %s (%s)%s', s['id'], genre, ' (page en cours)' if en_cours else '')
-            return 200, P.charge_utile(s, len(prets), genre)
+            s, genre, lang = choix
+            _fixer_courant(s['id'], genre, lang)
+            log.info('suivante -> %s (%s%s)%s', s['id'], genre, ' ' + lang if lang else '',
+                     ' (page en cours)' if en_cours else '')
+            return 200, P.charge_utile(s, len(prets), genre, lang)
         _fixer_courant(None)
     return 200, {'termine': True, 'restants': 0,
                  'message': 'Toutes les pages prévues ont leur photo. Rien à générer pour le moment.'}
@@ -150,16 +154,16 @@ def _resoudre(sid):
     une (l'identifiant envoyé par le GPT n'est pas fiable), sinon l'identifiant
     exact."""
     ids = {s['id'] for s in P.charger()['sujets']}
-    courant, genre = _courant()
+    courant, genre, lang = _courant()
     if courant in ids:
         if sid != courant:
             log.warning('sujet_id « %s » envoyé par le GPT : attribué à la page en cours %s', sid, courant)
-        return courant, genre
+        return courant, genre, lang
     raise L.PhotoErreur("Aucune page en cours : tape « suivante » pour recevoir la page à illustrer.")
 
 
 def recevoir_photo(corps):
-    sid, genre = _resoudre((corps.get('sujet_id') or '').strip())
+    sid, genre, lang = _resoudre((corps.get('sujet_id') or '').strip())
     ref = _premiere_image(corps.get('openaiFileIdRefs'))
     if not sid:
         return 400, {'ok': False, 'erreur': 'sujet_id manquant.'}
@@ -168,7 +172,8 @@ def recevoir_photo(corps):
     # contrôles avant le téléchargement : le lien d'OpenAI n'est valable que 5 minutes
     s = P.trouver(P.charger(), sid)
     textes = P.normaliser_textes(corps.get('textes'))
-    manque = [lg for lg in P.langues(s) if not textes.get(lg, {}).get('alt')]
+    attendues = [lang] if genre == 'maquette' else P.langues(s)
+    manque = [lg for lg in attendues if not textes.get(lg, {}).get('alt')]
     if manque:
         return 400, {'ok': False, 'erreur': 'Il manque le texte alternatif pour : %s. Renvoie la photo avec '
                                              'un alt pour chaque langue.' % ', '.join(manque)}
@@ -179,7 +184,7 @@ def recevoir_photo(corps):
             return 422, {'ok': False, 'erreur': refus}
         with Verrou():
             titre = s['titre']
-            fichiers = P.en_boucle(lambda: P.appliquer(sid, chemin, textes, genre=genre),
+            fichiers = P.en_boucle(lambda: P.appliquer(sid, chemin, textes, genre=genre, lang=lang),
                                    '%s auto : %s' % ('Maquette' if genre == 'maquette' else 'Photo', titre[:80]))
             s = P.trouver(P.charger(), sid)
             _fixer_courant(None)
@@ -188,9 +193,10 @@ def recevoir_photo(corps):
             os.remove(chemin)
         except OSError:
             pass
-    pages = [p['url'] for p in s['pages'] if L.active(p)]
-    en_attente = [p['url'] for p in s['pages'] if not L.active(p)]
-    obj = P.suivi(s, genre)
+    concernees = [p for p in s['pages'] if genre == 'photo' or p['lang'] == lang]
+    pages = [p['url'] for p in concernees if L.active(p)]
+    en_attente = [p['url'] for p in concernees if not L.active(p)]
+    obj = P.suivi(s, genre, lang)
     apercu = 'https://webautonomos.es/assets/%s.jpg?v=%s' % (obj['fichier'], obj.get('v'))
     log.info('%s %s v%s -> %d fichiers', genre, sid, obj.get('v'), len(fichiers))
     quoi = 'Maquette' if genre == 'maquette' else 'Photo'
@@ -228,9 +234,9 @@ def _controler(chemin, sid, ref, genre='photo'):
         return ("Cette image a déjà été envoyée (pour %s). Génère une photo entièrement nouvelle pour ce sujet, "
                 "puis renvoie-la." % index[empreinte]['sujet'])
     textes = L.textes_dans_image(chemin)
-    # Maquettes : les écrans montrent un site, quelques zones de texte sont
-    # tolérées (Angelino valide par « ok ») ; un écran couvert de texte est refusé.
-    seuil = 8 if genre == 'maquette' else 1
+    # Maquettes : les écrans portent volontairement quelques textes lisibles
+    # (nom, titre, bouton) ; seul un écran couvert de texte est refusé.
+    seuil = 30 if genre == 'maquette' else 1
     if textes is None:
         log.warning('détecteur de texte absent : contrôle sauté')
     elif len(textes) >= seuil:
@@ -247,11 +253,11 @@ def _controler(chemin, sid, ref, genre='photo'):
 
 
 def passer(corps):
-    sid, genre = _resoudre((corps.get('sujet_id') or '').strip())
+    sid, genre, lang = _resoudre((corps.get('sujet_id') or '').strip())
 
     def operation():
         data = P.charger()
-        obj = P.suivi(P.trouver(data, sid), genre)
+        obj = P.suivi(P.trouver(data, sid), genre, lang)
         obj['statut'] = 'saute'
         obj['note'] = (corps.get('raison') or 'laissé de côté depuis le GPT')[:200]
         L.ecrire_json(L.SUJETS_JSON, data)
@@ -268,16 +274,16 @@ def etat():
     data = P.charger()
     compte = {'photo': {}, 'maquette': {}}
     for s in data['sujets']:
-        for genre in compte:
-            st = P.suivi(s, genre).get('statut')
-            compte[genre][st] = compte[genre].get(st, 0) + 1
-    sid, genre = _courant()
+        compte['photo'][s.get('statut')] = compte['photo'].get(s.get('statut'), 0) + 1
+        for lg, m in P.maquettes_de(s):
+            compte['maquette'][m.get('statut')] = compte['maquette'].get(m.get('statut'), 0) + 1
+    sid, genre, lang = _courant()
     return 200, {'photos_faites': compte['photo'].get('fait', 0), 'photos_restantes': compte['photo'].get('pret', 0),
                  'maquettes_faites': compte['maquette'].get('fait', 0),
                  'maquettes_restantes': compte['maquette'].get('pret', 0),
                  'laissees_de_cote': compte['photo'].get('saute', 0) + compte['maquette'].get('saute', 0),
                  'pages_avec_photo': len(L.images()), 'pages_avec_maquette': len(L.maquettes()),
-                 'page_en_cours': sid and {'sujet_id': sid, 'genre': genre}}
+                 'page_en_cours': sid and {'sujet_id': sid, 'genre': genre, 'langue': lang}}
 
 
 # --------------------------------------------------------------------------

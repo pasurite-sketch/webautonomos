@@ -66,31 +66,47 @@
      "legende": "Une artisane façonne à la main une pièce en céramique dans son atelier."
     }
    },
+   "site": "d'une céramiste (boutique d'atelier avec photos de poteries)",
    "maquette": {
-    "statut": "fait",
-    "fichier": "elegir-herramienta-web-taller-ceramica-maquette",
-    "v": 1,
-    "fait_le": "2026-09-30T10:01:04",
-    "textes": {
-     "es": {
-      "alt": "Portátil y móvil muestran una web de cerámica artesanal, con fotos de piezas y diseño adaptado a cada pantalla.",
-      "legende": "Ejemplo de web de una ceramista en versión de escritorio y móvil."
-     },
-     "val": {
-      "alt": "Portàtil i mòbil mostren una web de ceràmica artesanal, amb fotos de peces i disseny adaptat a cada pantalla.",
-      "legende": "Exemple de web d'una ceramista en versió d'ordinador i mòbil."
-     },
-     "en": {
-      "alt": "A laptop and smartphone display a ceramics website with pottery photos and layouts adapted to each screen.",
-      "legende": "Example website for a ceramic artist on desktop and mobile."
-     },
-     "fr": {
-      "alt": "Un ordinateur et un smartphone affichent un site de céramique avec des photos de poteries et deux mises en page.",
-      "legende": "Exemple de site de céramiste en version ordinateur et mobile."
-     }
+    "es": {
+     "statut": "pret",
+     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-fr"
     }
    },
-   "site": "d'une céramiste (boutique d'atelier avec photos de poteries)"
+   "ecrans": {
+    "es": {
+     "nom": "Cerámica Alba",
+     "titre": "Piezas hechas a mano",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Ceràmica Alba",
+     "titre": "Peces fetes a mà",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Alba Ceramics",
+     "titre": "Handmade pottery",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Céramique Alba",
+     "titre": "Pièces faites main",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "file-alta-autonomo-extranjero-espana",
@@ -154,31 +170,47 @@
    },
    "note": "remis en file le 29/09 : l'ancienne scène (chemise de documents) piégeait le générateur (texte)",
    "marche_force": "es",
+   "site": "d'un atelier d'artisan à Valence",
    "maquette": {
-    "statut": "fait",
-    "fichier": "autonomo-extranjero-tramites-oficina-maquette",
-    "v": 1,
-    "fait_le": "2026-09-30T10:02:55",
-    "textes": {
-     "es": {
-      "alt": "Un portátil y un móvil muestran la web de un taller artesanal de cerámica, con fotografías de piezas y diseño adaptable.",
-      "legende": "Ejemplo de una web de taller artesanal vista en ordenador y móvil."
-     },
-     "val": {
-      "alt": "Un portàtil i un mòbil mostren la web d'un taller artesanal de ceràmica, amb fotografies de peces i disseny adaptable.",
-      "legende": "Exemple d'una web de taller artesanal vista en ordinador i mòbil."
-     },
-     "en": {
-      "alt": "A laptop and smartphone display a ceramics workshop website with pottery photos and a responsive layout.",
-      "legende": "An artisan workshop website shown on desktop and mobile."
-     },
-     "fr": {
-      "alt": "Un ordinateur et un smartphone affichent le site d'un atelier de céramique avec des photos de pièces artisanales.",
-      "legende": "Exemple de site d'atelier artisanal affiché sur ordinateur et mobile."
-     }
+    "es": {
+     "statut": "pret",
+     "fichier": "autonomo-extranjero-tramites-oficina-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "autonomo-extranjero-tramites-oficina-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "autonomo-extranjero-tramites-oficina-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "autonomo-extranjero-tramites-oficina-maquette-fr"
     }
    },
-   "site": "d'un atelier d'artisan à Valence"
+   "ecrans": {
+    "es": {
+     "nom": "Taller Nord",
+     "titre": "Artesanía en Valencia",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Taller Nord",
+     "titre": "Artesania a València",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Nord Workshop",
+     "titre": "Handcrafted in Valencia",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Atelier Nord",
+     "titre": "Artisanat à Valence",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "file-web-en-varios-idiomas",
@@ -242,11 +274,47 @@
    },
    "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution",
    "marche_force": "es",
+   "site": "d'un café de bord de mer",
    "maquette": {
-    "statut": "pret",
-    "fichier": "negocio-clientes-internacionales-costa-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "negocio-clientes-internacionales-costa-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "negocio-clientes-internacionales-costa-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "negocio-clientes-internacionales-costa-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "negocio-clientes-internacionales-costa-maquette-fr"
+    }
    },
-   "site": "d'un café de bord de mer"
+   "ecrans": {
+    "es": {
+     "nom": "Café Marina",
+     "titre": "Desayunos frente al mar",
+     "bouton": "carta"
+    },
+    "val": {
+     "nom": "Cafè Marina",
+     "titre": "Esmorzars davant del mar",
+     "bouton": "carta"
+    },
+    "en": {
+     "nom": "Café Marina",
+     "titre": "Breakfast by the sea",
+     "bouton": "carta"
+    },
+    "fr": {
+     "nom": "Café Marina",
+     "titre": "Petits-déjeuners face à la mer",
+     "bouton": "carta"
+    }
+   }
   },
   {
    "id": "file-aviso-legal-privacidad-cookies-web",
@@ -309,11 +377,47 @@
     }
    },
    "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution",
+   "site": "d'une boutique de décoration",
    "maquette": {
-    "statut": "pret",
-    "fichier": "documentos-legales-negocio-archivador-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "documentos-legales-negocio-archivador-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "documentos-legales-negocio-archivador-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "documentos-legales-negocio-archivador-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "documentos-legales-negocio-archivador-maquette-fr"
+    }
    },
-   "site": "d'une boutique de décoration"
+   "ecrans": {
+    "es": {
+     "nom": "Casa Olivo",
+     "titre": "Decoración para tu hogar",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Casa Olivera",
+     "titre": "Decoració per a la teua llar",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Casa Olivo",
+     "titre": "Home decor and gifts",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Maison Olivier",
+     "titre": "Décoration pour la maison",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "file-facturar-clientes-otros-paises-ue-reino-unido",
@@ -375,11 +479,47 @@
      "legende": "Préparer un colis au bureau peut faire partie du travail avec des clients étrangers."
     }
    },
+   "site": "d'un graphiste indépendant (portfolio)",
    "maquette": {
-    "statut": "pret",
-    "fichier": "autonomo-clientes-europa-despacho-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "autonomo-clientes-europa-despacho-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "autonomo-clientes-europa-despacho-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "autonomo-clientes-europa-despacho-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "autonomo-clientes-europa-despacho-maquette-fr"
+    }
    },
-   "site": "d'un graphiste indépendant (portfolio)"
+   "ecrans": {
+    "es": {
+     "nom": "Estudio Vela",
+     "titre": "Diseño gráfico e identidad",
+     "bouton": "portfolio"
+    },
+    "val": {
+     "nom": "Estudi Vela",
+     "titre": "Disseny gràfic i identitat",
+     "bouton": "portfolio"
+    },
+    "en": {
+     "nom": "Vela Studio",
+     "titre": "Graphic design and branding",
+     "bouton": "portfolio"
+    },
+    "fr": {
+     "nom": "Studio Vela",
+     "titre": "Graphisme et identité visuelle",
+     "bouton": "portfolio"
+    }
+   }
   },
   {
    "id": "page-tarifs",
@@ -431,11 +571,38 @@
      "legende": "Composer un bouquet demande du temps, des matériaux et un savoir-faire."
     }
    },
+   "site": "d'une fleuriste",
    "maquette": {
-    "statut": "pret",
-    "fichier": "precio-web-autonomo-floristeria-cuentas-maquette"
+    "fr": {
+     "statut": "pret",
+     "fichier": "precio-web-autonomo-floristeria-cuentas-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "precio-web-autonomo-floristeria-cuentas-maquette-en"
+    },
+    "es": {
+     "statut": "pret",
+     "fichier": "precio-web-autonomo-floristeria-cuentas-maquette-es"
+    }
    },
-   "site": "d'une fleuriste"
+   "ecrans": {
+    "fr": {
+     "nom": "Fleurs d'Aurore",
+     "titre": "Bouquets du jour",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Aurora Flowers",
+     "titre": "Fresh bouquets every day",
+     "bouton": "tienda"
+    },
+    "es": {
+     "nom": "Floristería Aurora",
+     "titre": "Ramos frescos cada día",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "page-comparatifs",
@@ -486,11 +653,38 @@
      "legende": "Un espace de travail calme permet de comparer les options et de planifier un projet."
     }
    },
+   "site": "d'une jeune entreprise de services",
    "maquette": {
-    "statut": "pret",
-    "fichier": "comparar-creadores-web-coworking-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "comparar-creadores-web-coworking-maquette-es"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "comparar-creadores-web-coworking-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "comparar-creadores-web-coworking-maquette-en"
+    }
    },
-   "site": "d'une jeune entreprise de services"
+   "ecrans": {
+    "es": {
+     "nom": "Nexo Servicios",
+     "titre": "Soluciones para tu negocio",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Nexo Services",
+     "titre": "Des solutions pour votre activité",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Nexo Services",
+     "titre": "Solutions for your business",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "page-services",
@@ -541,11 +735,38 @@
      "legende": "Un échange à l'atelier permet de comprendre le métier et ses besoins."
     }
    },
+   "site": "d'une menuiserie",
    "maquette": {
-    "statut": "pret",
-    "fichier": "servicios-web-autonomo-taller-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "servicios-web-autonomo-taller-maquette-es"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "servicios-web-autonomo-taller-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "servicios-web-autonomo-taller-maquette-en"
+    }
    },
-   "site": "d'une menuiserie"
+   "ecrans": {
+    "es": {
+     "nom": "Carpintería Roble",
+     "titre": "Muebles a medida",
+     "bouton": "presupuesto"
+    },
+    "fr": {
+     "nom": "Menuiserie Chêne",
+     "titre": "Mobilier sur mesure",
+     "bouton": "presupuesto"
+    },
+    "en": {
+     "nom": "Oak Joinery",
+     "titre": "Bespoke furniture",
+     "bouton": "presupuesto"
+    }
+   }
   },
   {
    "id": "metier-therapeute",
@@ -591,11 +812,29 @@
      "legende": "Préparer un espace calme et accueillant fait partie de l'accueil thérapeutique."
     }
    },
+   "site": "d'un cabinet de psychologue",
    "maquette": {
-    "statut": "pret",
-    "fichier": "consulta-psicologia-sala-terapia-maquette"
+    "fr": {
+     "statut": "pret",
+     "fichier": "consulta-psicologia-sala-terapia-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "consulta-psicologia-sala-terapia-maquette-en"
+    }
    },
-   "site": "d'un cabinet de psychologue"
+   "ecrans": {
+    "fr": {
+     "nom": "Cabinet Claire Martin",
+     "titre": "Psychologue à Lyon",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Serena Therapy",
+     "titre": "Therapy in English in Valencia",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "metier-kine",
@@ -641,11 +880,29 @@
      "legende": "Préparer la table et le matériel fait partie du travail quotidien en kinésithérapie."
     }
    },
+   "site": "d'un cabinet de kinésithérapie",
    "maquette": {
-    "statut": "pret",
-    "fichier": "consulta-fisioterapia-sala-tratamiento-maquette"
+    "fr": {
+     "statut": "pret",
+     "fichier": "consulta-fisioterapia-sala-tratamiento-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "consulta-fisioterapia-sala-tratamiento-maquette-en"
+    }
    },
-   "site": "d'un cabinet de kinésithérapie"
+   "ecrans": {
+    "fr": {
+     "nom": "Kiné Rivière",
+     "titre": "Cabinet de kinésithérapie",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Costa Physio",
+     "titre": "Physiotherapy in Alicante",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "metier-kine-uk",
@@ -686,11 +943,20 @@
      "legende": "Préparer la salle et le matériel fait partie du travail quotidien en kinésithérapie."
     }
    },
+   "site": "d'un cabinet de kinésithérapie britannique",
    "maquette": {
-    "statut": "pret",
-    "fichier": "clinica-fisioterapia-reino-unido-maquette"
+    "en": {
+     "statut": "pret",
+     "fichier": "clinica-fisioterapia-reino-unido-maquette-en"
+    }
    },
-   "site": "d'un cabinet de kinésithérapie britannique"
+   "ecrans": {
+    "en": {
+     "nom": "Riverside Physio",
+     "titre": "Physiotherapy clinic in Bristol",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "metier-dentiste",
@@ -736,11 +1002,29 @@
      "legende": "La préparation des instruments fait partie du quotidien d'un cabinet dentaire."
     }
    },
+   "site": "d'un cabinet dentaire",
    "maquette": {
-    "statut": "pret",
-    "fichier": "clinica-dental-gabinete-moderno-maquette"
+    "fr": {
+     "statut": "pret",
+     "fichier": "clinica-dental-gabinete-moderno-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "clinica-dental-gabinete-moderno-maquette-en"
+    }
    },
-   "site": "d'un cabinet dentaire"
+   "ecrans": {
+    "fr": {
+     "nom": "Cabinet dentaire du Parc",
+     "titre": "Soins dentaires à Nantes",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Parkside Dental",
+     "titre": "Dental clinic in Málaga",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "metier-dentiste-uk",
@@ -781,11 +1065,20 @@
      "legende": "L'hygiène des mains fait partie de la préparation quotidienne au cabinet dentaire."
     }
    },
+   "site": "d'un cabinet dentaire britannique",
    "maquette": {
-    "statut": "pret",
-    "fichier": "clinica-dental-reino-unido-maquette"
+    "en": {
+     "statut": "pret",
+     "fichier": "clinica-dental-reino-unido-maquette-en"
+    }
    },
-   "site": "d'un cabinet dentaire britannique"
+   "ecrans": {
+    "en": {
+     "nom": "Elmwood Dental",
+     "titre": "Dental practice in Leeds",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "metier-menuisier",
@@ -831,11 +1124,29 @@
      "legende": "Le travail artisanal du bois demande de la précision et des outils adaptés."
     }
    },
+   "site": "d'un menuisier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "carpintero-taller-ajustando-puerta-maquette"
+    "fr": {
+     "statut": "pret",
+     "fichier": "carpintero-taller-ajustando-puerta-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "carpintero-taller-ajustando-puerta-maquette-en"
+    }
    },
-   "site": "d'un menuisier"
+   "ecrans": {
+    "fr": {
+     "nom": "Menuiserie Bois Clair",
+     "titre": "Menuiserie sur mesure",
+     "bouton": "presupuesto"
+    },
+    "en": {
+     "nom": "Timber & Co",
+     "titre": "Carpentry in Alicante",
+     "bouton": "presupuesto"
+    }
+   }
   },
   {
    "id": "metier-plombier",
@@ -886,11 +1197,38 @@
      "legende": "Réparer une installation sous l'évier demande des outils et de l'expérience."
     }
    },
+   "site": "d'un plombier chauffagiste",
    "maquette": {
-    "statut": "pret",
-    "fichier": "fontanero-reparando-fregadero-cocina-maquette"
+    "fr": {
+     "statut": "pret",
+     "fichier": "fontanero-reparando-fregadero-cocina-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "fontanero-reparando-fregadero-cocina-maquette-en"
+    },
+    "es": {
+     "statut": "pret",
+     "fichier": "fontanero-reparando-fregadero-cocina-maquette-es"
+    }
    },
-   "site": "d'un plombier chauffagiste"
+   "ecrans": {
+    "fr": {
+     "nom": "Plomberie Durand",
+     "titre": "Dépannage et chauffage",
+     "bouton": "llamar"
+    },
+    "en": {
+     "nom": "Costa Plumbing",
+     "titre": "Plumbing and heating in Valencia",
+     "bouton": "llamar"
+    },
+    "es": {
+     "nom": "Fontanería Ríos",
+     "titre": "Averías y calefacción",
+     "bouton": "llamar"
+    }
+   }
   },
   {
    "id": "metier-plombier-uk",
@@ -931,11 +1269,20 @@
      "legende": "Vérifier et purger un radiateur fait partie de l'entretien du chauffage."
     }
    },
+   "site": "d'un chauffagiste britannique",
    "maquette": {
-    "statut": "pret",
-    "fichier": "fontanero-caldera-reino-unido-maquette"
+    "en": {
+     "statut": "pret",
+     "fichier": "fontanero-caldera-reino-unido-maquette-en"
+    }
    },
-   "site": "d'un chauffagiste britannique"
+   "ecrans": {
+    "en": {
+     "nom": "Hartley Plumbing & Heating",
+     "titre": "Boiler servicing and repairs",
+     "bouton": "llamar"
+    }
+   }
   },
   {
    "id": "metier-electricien",
@@ -986,11 +1333,38 @@
      "legende": "Le câblage et l'installation font partie du travail d'une électricienne."
     }
    },
+   "site": "d'une électricienne",
    "maquette": {
-    "statut": "pret",
-    "fichier": "electricista-cuadro-electrico-vivienda-maquette"
+    "fr": {
+     "statut": "pret",
+     "fichier": "electricista-cuadro-electrico-vivienda-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "electricista-cuadro-electrico-vivienda-maquette-en"
+    },
+    "es": {
+     "statut": "pret",
+     "fichier": "electricista-cuadro-electrico-vivienda-maquette-es"
+    }
    },
-   "site": "d'une électricienne"
+   "ecrans": {
+    "fr": {
+     "nom": "Électricité Lumen",
+     "titre": "Installation et dépannage",
+     "bouton": "presupuesto"
+    },
+    "en": {
+     "nom": "Lumen Electrical",
+     "titre": "Electricians in Alicante",
+     "bouton": "presupuesto"
+    },
+    "es": {
+     "nom": "Electricidad Lumen",
+     "titre": "Instalaciones y averías",
+     "bouton": "presupuesto"
+    }
+   }
   },
   {
    "id": "metier-electricien-uk",
@@ -1031,11 +1405,20 @@
      "legende": "La pose de prises murales fait partie des travaux courants d'électricité domestique."
     }
    },
+   "site": "d'un électricien britannique",
    "maquette": {
-    "statut": "pret",
-    "fichier": "electricista-enchufe-reino-unido-maquette"
+    "en": {
+     "statut": "pret",
+     "fichier": "electricista-enchufe-reino-unido-maquette-en"
+    }
    },
-   "site": "d'un électricien britannique"
+   "ecrans": {
+    "en": {
+     "nom": "Brightwire Electrical",
+     "titre": "Electricians in Manchester",
+     "bouton": "presupuesto"
+    }
+   }
   },
   {
    "id": "metier-artisan",
@@ -1081,11 +1464,29 @@
      "legende": "La pose de carrelage demande de la précision et une bonne préparation du support."
     }
    },
+   "site": "d'une entreprise de rénovation",
    "maquette": {
-    "statut": "pret",
-    "fichier": "reformas-alicatado-bano-obra-maquette"
+    "fr": {
+     "statut": "pret",
+     "fichier": "reformas-alicatado-bano-obra-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "reformas-alicatado-bano-obra-maquette-en"
+    }
    },
-   "site": "d'une entreprise de rénovation"
+   "ecrans": {
+    "fr": {
+     "nom": "Rénov Habitat",
+     "titre": "Rénovation intérieure",
+     "bouton": "presupuesto"
+    },
+    "en": {
+     "nom": "Casa Build",
+     "titre": "Home renovations in Spain",
+     "bouton": "presupuesto"
+    }
+   }
   },
   {
    "id": "metier-artisan-uk",
@@ -1126,11 +1527,20 @@
      "legende": "L'entretien du bois demande de la patience et une finition soignée."
     }
    },
+   "site": "d'un artisan du bâtiment britannique",
    "maquette": {
-    "statut": "pret",
-    "fichier": "reformas-fachada-reino-unido-maquette"
+    "en": {
+     "statut": "pret",
+     "fichier": "reformas-fachada-reino-unido-maquette-en"
+    }
    },
-   "site": "d'un artisan du bâtiment britannique"
+   "ecrans": {
+    "en": {
+     "nom": "Keystone Building",
+     "titre": "Home improvements and repairs",
+     "bouton": "presupuesto"
+    }
+   }
   },
   {
    "id": "page-accueils",
@@ -1176,11 +1586,29 @@
      "legende": "Le travail en boulangerie commence tôt, avec le pain tout juste sorti du four."
     }
    },
+   "site": "d'une boulangerie",
    "maquette": {
-    "statut": "pret",
-    "fichier": "autonomo-abriendo-negocio-manana-maquette"
+    "fr": {
+     "statut": "pret",
+     "fichier": "autonomo-abriendo-negocio-manana-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "autonomo-abriendo-negocio-manana-maquette-en"
+    }
    },
-   "site": "d'une boulangerie"
+   "ecrans": {
+    "fr": {
+     "nom": "Boulangerie Blé d'Or",
+     "titre": "Pains et viennoiseries maison",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Golden Wheat Bakery",
+     "titre": "Freshly baked every morning",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "page-demande-demo",
@@ -1194,12 +1622,12 @@
    "pages": [
     {
      "html": "demandez-votre-demo.html",
-     "lang": "es",
+     "lang": "fr",
      "url": "https://webautonomos.es/demandez-votre-demo"
     },
     {
      "html": "get-your-demo.html",
-     "lang": "es",
+     "lang": "en",
      "url": "https://webautonomos.es/get-your-demo"
     }
    ],
@@ -1209,28 +1637,38 @@
    "v": 1,
    "fait_le": "2026-09-29T15:37:45",
    "textes": {
-    "es": {
-     "alt": "Un peluquero consulta su teléfono en un salón luminoso y vacío antes de abrir, rodeado de sillones y espejos.",
-     "legende": "Un momento tranquilo en el salón antes de recibir a los primeros clientes."
-    },
-    "val": {
-     "alt": "Un perruquer consulta el telèfon en un saló lluminós i buit abans d'obrir, entre butaques i espills.",
-     "legende": "Un moment tranquil al saló abans de rebre els primers clients."
-    },
-    "en": {
-     "alt": "A hairdresser checks his phone in a bright, empty salon before opening, surrounded by styling chairs and mirrors.",
-     "legende": "A quiet moment in the salon before the first clients arrive."
-    },
     "fr": {
      "alt": "Un coiffeur consulte son téléphone dans un salon lumineux et vide avant l'ouverture, entouré de fauteuils et de miroirs.",
      "legende": "Un moment calme au salon avant l'arrivée des premiers clients."
+    },
+    "en": {
+     "alt": "A hairdresser checks his phone in a bright, empty salon before opening, surrounded by chairs and mirrors.",
+     "legende": "A quiet moment in the salon before the first clients arrive."
     }
    },
+   "site": "d'un salon de coiffure",
    "maquette": {
-    "statut": "pret",
-    "fichier": "autonomo-recibe-demo-web-movil-maquette"
+    "fr": {
+     "statut": "pret",
+     "fichier": "autonomo-recibe-demo-web-movil-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "autonomo-recibe-demo-web-movil-maquette-en"
+    }
    },
-   "site": "d'un salon de coiffure"
+   "ecrans": {
+    "fr": {
+     "nom": "Salon Élise",
+     "titre": "Coiffure femme et homme",
+     "bouton": "reserva"
+    },
+    "en": {
+     "nom": "Elise Hair Studio",
+     "titre": "Hair salon in Alicante",
+     "bouton": "reserva"
+    }
+   }
   },
   {
    "id": "page-expatries",
@@ -1277,11 +1715,29 @@
     }
    },
    "marche_force": "es",
+   "site": "d'une entreprise installée à Valence",
    "maquette": {
-    "statut": "pret",
-    "fichier": "emprendedora-extranjera-valencia-balcon-maquette"
+    "fr": {
+     "statut": "pret",
+     "fichier": "emprendedora-extranjera-valencia-balcon-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "emprendedora-extranjera-valencia-balcon-maquette-en"
+    }
    },
-   "site": "d'une entreprise installée à Valence"
+   "ecrans": {
+    "fr": {
+     "nom": "Valence Services",
+     "titre": "Votre partenaire à Valence",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Valencia Home Services",
+     "titre": "Your partner in Valencia",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "page-fonctionnement",
@@ -1332,11 +1788,38 @@
      "legende": "Un échange professionnel dans un bureau calme et lumineux."
     }
    },
+   "site": "d'une petite entreprise locale",
    "maquette": {
-    "statut": "pret",
-    "fichier": "como-funciona-llamada-asesora-web-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "como-funciona-llamada-asesora-web-maquette-es"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "como-funciona-llamada-asesora-web-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "como-funciona-llamada-asesora-web-maquette-en"
+    }
    },
-   "site": "d'une petite entreprise locale"
+   "ecrans": {
+    "es": {
+     "nom": "Taller Sol",
+     "titre": "Tu negocio de barrio",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Atelier Soleil",
+     "titre": "Votre commerce de quartier",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Sun Workshop",
+     "titre": "Your local business",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "page-questions",
@@ -1387,11 +1870,38 @@
      "legende": "Un échange informel pour répondre aux questions et partager des informations."
     }
    },
+   "site": "d'un électricien",
    "maquette": {
-    "statut": "pret",
-    "fichier": "preguntas-frecuentes-conversacion-cafe-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "preguntas-frecuentes-conversacion-cafe-maquette-es"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "preguntas-frecuentes-conversacion-cafe-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "preguntas-frecuentes-conversacion-cafe-maquette-en"
+    }
    },
-   "site": "d'un électricien"
+   "ecrans": {
+    "es": {
+     "nom": "Electricidad Voltio",
+     "titre": "Electricista en Elche",
+     "bouton": "llamar"
+    },
+    "fr": {
+     "nom": "Électricité Volta",
+     "titre": "Électricien à Lille",
+     "bouton": "llamar"
+    },
+    "en": {
+     "nom": "Volta Electrical",
+     "titre": "Electrician in Alicante",
+     "bouton": "llamar"
+    }
+   }
   },
   {
    "id": "page-contact",
@@ -1442,11 +1952,38 @@
      "legende": "Un message vocal permet de prendre contact simplement et directement."
     }
    },
+   "site": "d'un commerce de quartier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "contacto-mensaje-whatsapp-movil-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "contacto-mensaje-whatsapp-movil-maquette-es"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "contacto-mensaje-whatsapp-movil-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "contacto-mensaje-whatsapp-movil-maquette-en"
+    }
    },
-   "site": "d'un commerce de quartier"
+   "ecrans": {
+    "es": {
+     "nom": "Ultramarinos Rosa",
+     "titre": "Tu tienda de siempre",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Épicerie Rose",
+     "titre": "Votre épicerie de quartier",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Rosa Grocery",
+     "titre": "Your local corner shop",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "page-diagnostic",
@@ -1497,11 +2034,38 @@
      "legende": "Une pause au bureau, baignée de lumière naturelle et tournée vers l'extérieur."
     }
    },
+   "site": "d'une petite entreprise de services",
    "maquette": {
-    "statut": "pret",
-    "fichier": "automatizacion-oficina-ordenada-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "automatizacion-oficina-ordenada-maquette-es"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "automatizacion-oficina-ordenada-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "automatizacion-oficina-ordenada-maquette-en"
+    }
    },
-   "site": "d'une petite entreprise de services"
+   "ecrans": {
+    "es": {
+     "nom": "Gestiones Norte",
+     "titre": "Servicios para empresas",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Nord Gestion",
+     "titre": "Services aux entreprises",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "North Admin",
+     "titre": "Business services",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "page-visibilite-ia",
@@ -1552,11 +2116,38 @@
      "legende": "Consulter son téléphone en marchant dans une rue commerçante."
     }
    },
+   "site": "d'une boutique de quartier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "busqueda-voz-asistente-ia-calle-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "busqueda-voz-asistente-ia-calle-maquette-es"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "busqueda-voz-asistente-ia-calle-maquette-fr"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "busqueda-voz-asistente-ia-calle-maquette-en"
+    }
    },
-   "site": "d'une boutique de quartier"
+   "ecrans": {
+    "es": {
+     "nom": "Zapatería Paso",
+     "titre": "Calzado en Valencia",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Chaussures Pas",
+     "titre": "Chaussures à Bordeaux",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Step Shoes",
+     "titre": "Shoe shop in Valencia",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "page-marketing",
@@ -1598,11 +2189,20 @@
     }
    },
    "marche_force": "es",
+   "site": "d'un restaurant",
    "maquette": {
-    "statut": "pret",
-    "fichier": "seo-local-busqueda-movil-valencia-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "seo-local-busqueda-movil-valencia-maquette-es"
+    }
    },
-   "site": "d'un restaurant"
+   "ecrans": {
+    "es": {
+     "nom": "Restaurante La Plaza",
+     "titre": "Cocina mediterránea",
+     "bouton": "reserva"
+    }
+   }
   },
   {
    "id": "page-blog",
@@ -1643,11 +2243,20 @@
      "legende": "Une pause café et un moment de réflexion sur une terrasse en plein air."
     }
    },
+   "site": "d'un blog de conseils pour indépendants",
    "maquette": {
-    "statut": "pret",
-    "fichier": "blog-autonomos-lectura-terraza-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "blog-autonomos-lectura-terraza-maquette-es"
+    }
    },
-   "site": "d'un blog de conseils pour indépendants"
+   "ecrans": {
+    "es": {
+     "nom": "Blog Autónomo",
+     "titre": "Guías para tu negocio",
+     "bouton": "leer"
+    }
+   }
   },
   {
    "id": "art-01",
@@ -1714,11 +2323,47 @@
      "spa": "en/5-reasons-your-business-needs-a-website-in-2026"
     }
    ],
+   "site": "d'une boutique de décoration",
    "maquette": {
-    "statut": "pret",
-    "fichier": "small-business-owner-website-spain-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "small-business-owner-website-spain-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "small-business-owner-website-spain-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "small-business-owner-website-spain-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "small-business-owner-website-spain-maquette-fr"
+    }
    },
-   "site": "d'une boutique de décoration"
+   "ecrans": {
+    "es": {
+     "nom": "Casa Lavanda",
+     "titre": "Decoración y regalos",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Casa Lavanda",
+     "titre": "Decoració i regals",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Casa Lavanda",
+     "titre": "Home decor and gifts",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Maison Lavande",
+     "titre": "Décoration et cadeaux",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "art-02",
@@ -1777,11 +2422,47 @@
      "legende": "Un livreur consulte son téléphone pour s'orienter pendant son trajet."
     }
    },
+   "site": "d'un commerce local avec un plan d'accès",
    "maquette": {
-    "statut": "pret",
-    "fichier": "aparecer-google-maps-movil-calle-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "aparecer-google-maps-movil-calle-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "aparecer-google-maps-movil-calle-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "aparecer-google-maps-movil-calle-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "aparecer-google-maps-movil-calle-maquette-fr"
+    }
    },
-   "site": "d'un commerce local avec un plan d'accès"
+   "ecrans": {
+    "es": {
+     "nom": "Panadería Trigo",
+     "titre": "Cómo llegar",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Forn Blat",
+     "titre": "Com arribar",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Trigo Bakery",
+     "titre": "Find us",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Boulangerie Froment",
+     "titre": "Nous trouver",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-03",
@@ -1840,11 +2521,47 @@
      "legende": "Une place méditerranéenne réunit commerces, terrasses et vie de quartier."
     }
    },
+   "site": "d'un commerce de quartier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "seo-local-barrio-comercios-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "seo-local-barrio-comercios-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "seo-local-barrio-comercios-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "seo-local-barrio-comercios-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "seo-local-barrio-comercios-maquette-fr"
+    }
    },
-   "site": "d'un commerce de quartier"
+   "ecrans": {
+    "es": {
+     "nom": "Ferretería Centro",
+     "titre": "Tu tienda de barrio",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Ferreteria Centre",
+     "titre": "La teua botiga de barri",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Centro Hardware",
+     "titre": "Your local hardware store",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Quincaillerie du Centre",
+     "titre": "Votre quincaillerie de quartier",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-04",
@@ -1904,11 +2621,47 @@
      "legende": "Les restaurateurs échangent tranquillement avant le début du service."
     }
    },
+   "site": "d'un restaurant",
    "maquette": {
-    "statut": "pret",
-    "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-fr"
+    }
    },
-   "site": "d'un restaurant"
+   "ecrans": {
+    "es": {
+     "nom": "Restaurante Olivo",
+     "titre": "Cocina de mercado",
+     "bouton": "reserva"
+    },
+    "val": {
+     "nom": "Restaurant Olivera",
+     "titre": "Cuina de mercat",
+     "bouton": "reserva"
+    },
+    "en": {
+     "nom": "Olivo Restaurant",
+     "titre": "Market-fresh cooking",
+     "bouton": "reserva"
+    },
+    "fr": {
+     "nom": "Restaurant L'Olivier",
+     "titre": "Cuisine du marché",
+     "bouton": "reserva"
+    }
+   }
   },
   {
    "id": "art-05",
@@ -1967,11 +2720,47 @@
      "legende": "Une cliente consulte son téléphone en sortant du salon, tandis que la coiffeuse lui fait signe."
     }
    },
+   "site": "d'un salon de coiffure",
    "maquette": {
-    "statut": "pret",
-    "fichier": "conseguir-resenas-google-clienta-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "conseguir-resenas-google-clienta-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "conseguir-resenas-google-clienta-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "conseguir-resenas-google-clienta-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "conseguir-resenas-google-clienta-maquette-fr"
+    }
    },
-   "site": "d'un salon de coiffure"
+   "ecrans": {
+    "es": {
+     "nom": "Peluquería Brisa",
+     "titre": "Cortes y color",
+     "bouton": "reserva"
+    },
+    "val": {
+     "nom": "Perruqueria Brisa",
+     "titre": "Talls i color",
+     "bouton": "reserva"
+    },
+    "en": {
+     "nom": "Brisa Hair Salon",
+     "titre": "Cuts and colour",
+     "bouton": "reserva"
+    },
+    "fr": {
+     "nom": "Salon Brise",
+     "titre": "Coupes et couleurs",
+     "bouton": "reserva"
+    }
+   }
   },
   {
    "id": "art-06",
@@ -2030,11 +2819,47 @@
      "legende": "Un artisan consulte un message depuis son véhicule de travail."
     }
    },
+   "site": "d'un serrurier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "whatsapp-business-autonomo-furgoneta-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "whatsapp-business-autonomo-furgoneta-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "whatsapp-business-autonomo-furgoneta-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "whatsapp-business-autonomo-furgoneta-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "whatsapp-business-autonomo-furgoneta-maquette-fr"
+    }
    },
-   "site": "d'un serrurier"
+   "ecrans": {
+    "es": {
+     "nom": "Cerrajería Llave",
+     "titre": "Aperturas urgentes 24 h",
+     "bouton": "llamar"
+    },
+    "val": {
+     "nom": "Serralleria Clau",
+     "titre": "Obertures urgents 24 h",
+     "bouton": "llamar"
+    },
+    "en": {
+     "nom": "Llave Locksmiths",
+     "titre": "24-hour emergency locksmith",
+     "bouton": "llamar"
+    },
+    "fr": {
+     "nom": "Serrurerie Clé",
+     "titre": "Dépannage 24 h/24",
+     "bouton": "llamar"
+    }
+   }
   },
   {
    "id": "art-07",
@@ -2093,11 +2918,47 @@
      "legende": "Une couturière prépare soigneusement une commande dans son atelier."
     }
    },
+   "site": "d'une couturière",
    "maquette": {
-    "statut": "pret",
-    "fichier": "conseguir-clientes-internet-taller-costura-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "conseguir-clientes-internet-taller-costura-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "conseguir-clientes-internet-taller-costura-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "conseguir-clientes-internet-taller-costura-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "conseguir-clientes-internet-taller-costura-maquette-fr"
+    }
    },
-   "site": "d'une couturière"
+   "ecrans": {
+    "es": {
+     "nom": "Costura Hilo",
+     "titre": "Arreglos y confección",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Costura Fil",
+     "titre": "Arranjaments i confecció",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Hilo Tailoring",
+     "titre": "Alterations and dressmaking",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Couture Fil d'Or",
+     "titre": "Retouches et création",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-08",
@@ -2156,11 +3017,47 @@
      "legende": "Une commerçante observe l'activité de sa rue de quartier."
     }
    },
+   "site": "d'une boutique de quartier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "palabras-clave-locales-planificacion-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "palabras-clave-locales-planificacion-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "palabras-clave-locales-planificacion-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "palabras-clave-locales-planificacion-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "palabras-clave-locales-planificacion-maquette-fr"
+    }
    },
-   "site": "d'une boutique de quartier"
+   "ecrans": {
+    "es": {
+     "nom": "Mercería Botón",
+     "titre": "Hilos, botones y más",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Merceria Botó",
+     "titre": "Fils, botons i més",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Botón Haberdashery",
+     "titre": "Threads, buttons and more",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Mercerie Bouton",
+     "titre": "Fils, boutons et plus",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "art-09",
@@ -2219,11 +3116,47 @@
      "legende": "Un électricien installe des câbles au plafond d'un garage."
     }
    },
+   "site": "d'un électricien",
    "maquette": {
-    "statut": "pret",
-    "fichier": "electricista-instalando-cargador-coche-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "electricista-instalando-cargador-coche-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "electricista-instalando-cargador-coche-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "electricista-instalando-cargador-coche-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "electricista-instalando-cargador-coche-maquette-fr"
+    }
    },
-   "site": "d'un électricien"
+   "ecrans": {
+    "es": {
+     "nom": "Electricidad Chispa",
+     "titre": "Puntos de recarga",
+     "bouton": "presupuesto"
+    },
+    "val": {
+     "nom": "Electricitat Espurna",
+     "titre": "Punts de recàrrega",
+     "bouton": "presupuesto"
+    },
+    "en": {
+     "nom": "Chispa Electrical",
+     "titre": "EV charger installation",
+     "bouton": "presupuesto"
+    },
+    "fr": {
+     "nom": "Électricité Étincelle",
+     "titre": "Bornes de recharge",
+     "bouton": "presupuesto"
+    }
+   }
   },
   {
    "id": "art-10",
@@ -2282,11 +3215,47 @@
      "legende": "La propriétaire prépare la terrasse de son café avant l'ouverture."
     }
    },
+   "site": "d'un café",
    "maquette": {
-    "statut": "pret",
-    "fichier": "ficha-google-horarios-negocio-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "ficha-google-horarios-negocio-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "ficha-google-horarios-negocio-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "ficha-google-horarios-negocio-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "ficha-google-horarios-negocio-maquette-fr"
+    }
    },
-   "site": "d'un café"
+   "ecrans": {
+    "es": {
+     "nom": "Café Aroma",
+     "titre": "Abierto desde las 8",
+     "bouton": "carta"
+    },
+    "val": {
+     "nom": "Cafè Aroma",
+     "titre": "Obert des de les 8",
+     "bouton": "carta"
+    },
+    "en": {
+     "nom": "Café Aroma",
+     "titre": "Open from 8 am",
+     "bouton": "carta"
+    },
+    "fr": {
+     "nom": "Café Arôme",
+     "titre": "Ouvert dès 8 h",
+     "bouton": "carta"
+    }
+   }
   },
   {
    "id": "art-11",
@@ -2345,11 +3314,47 @@
      "legende": "Un opticien aide une cliente à ajuster ses lunettes dans sa boutique."
     }
    },
+   "site": "d'un opticien",
    "maquette": {
-    "statut": "pret",
-    "fichier": "posicionar-negocio-local-escaparate-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "posicionar-negocio-local-escaparate-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "posicionar-negocio-local-escaparate-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "posicionar-negocio-local-escaparate-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "posicionar-negocio-local-escaparate-maquette-fr"
+    }
    },
-   "site": "d'un opticien"
+   "ecrans": {
+    "es": {
+     "nom": "Óptica Visión",
+     "titre": "Revisión de la vista",
+     "bouton": "cita"
+    },
+    "val": {
+     "nom": "Òptica Visió",
+     "titre": "Revisió de la vista",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Visión Opticians",
+     "titre": "Eye tests and glasses",
+     "bouton": "cita"
+    },
+    "fr": {
+     "nom": "Optique Vision",
+     "titre": "Examen de vue et lunettes",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "art-12",
@@ -2408,11 +3413,47 @@
      "legende": "Une pâtissière prépare et photographie ses créations dans son atelier."
     }
    },
+   "site": "d'une pâtisserie",
    "maquette": {
-    "statut": "pret",
-    "fichier": "redes-sociales-autonoma-foto-producto-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "redes-sociales-autonoma-foto-producto-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "redes-sociales-autonoma-foto-producto-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "redes-sociales-autonoma-foto-producto-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "redes-sociales-autonoma-foto-producto-maquette-fr"
+    }
    },
-   "site": "d'une pâtisserie"
+   "ecrans": {
+    "es": {
+     "nom": "Pastelería Dulce",
+     "titre": "Tartas por encargo",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Pastisseria Dolça",
+     "titre": "Pastissos per encàrrec",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Dulce Patisserie",
+     "titre": "Cakes made to order",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Pâtisserie Douceur",
+     "titre": "Gâteaux sur commande",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "art-13",
@@ -2471,11 +3512,47 @@
      "legende": "Un artisan répond à un appel avant de commencer son intervention."
     }
    },
+   "site": "d'un plombier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "fontanero-recibiendo-llamada-cliente-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "fontanero-recibiendo-llamada-cliente-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "fontanero-recibiendo-llamada-cliente-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "fontanero-recibiendo-llamada-cliente-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "fontanero-recibiendo-llamada-cliente-maquette-fr"
+    }
    },
-   "site": "d'un plombier"
+   "ecrans": {
+    "es": {
+     "nom": "Fontanería Caudal",
+     "titre": "Urgencias de fontanería",
+     "bouton": "llamar"
+    },
+    "val": {
+     "nom": "Fontaneria Cabal",
+     "titre": "Urgències de fontaneria",
+     "bouton": "llamar"
+    },
+    "en": {
+     "nom": "Caudal Plumbing",
+     "titre": "Emergency plumber",
+     "bouton": "llamar"
+    },
+    "fr": {
+     "nom": "Plomberie Martin",
+     "titre": "Plombier urgence",
+     "bouton": "llamar"
+    }
+   }
   },
   {
    "id": "art-14",
@@ -2534,11 +3611,47 @@
      "legende": "La fleuriste prépare un bouquet tout en filmant son travail avec son téléphone."
     }
    },
+   "site": "d'une fleuriste",
    "maquette": {
-    "statut": "pret",
-    "fichier": "google-posts-floristeria-publicacion-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "google-posts-floristeria-publicacion-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "google-posts-floristeria-publicacion-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "google-posts-floristeria-publicacion-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "google-posts-floristeria-publicacion-maquette-fr"
+    }
    },
-   "site": "d'une fleuriste"
+   "ecrans": {
+    "es": {
+     "nom": "Floristería Jazmín",
+     "titre": "Flores de temporada",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Floristeria Gessamí",
+     "titre": "Flors de temporada",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Jazmín Florist",
+     "titre": "Seasonal flowers",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Fleuriste Jasmin",
+     "titre": "Fleurs de saison",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "art-15",
@@ -2597,11 +3710,47 @@
      "legende": "Les toits et les terrasses d'un quartier méditerranéen au coucher du soleil."
     }
    },
+   "site": "d'un commerce local",
    "maquette": {
-    "statut": "pret",
-    "fichier": "map-pack-google-barrio-vista-aerea-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "map-pack-google-barrio-vista-aerea-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "map-pack-google-barrio-vista-aerea-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "map-pack-google-barrio-vista-aerea-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "map-pack-google-barrio-vista-aerea-maquette-fr"
+    }
    },
-   "site": "d'un commerce local"
+   "ecrans": {
+    "es": {
+     "nom": "Frutería Huerta",
+     "titre": "Fruta fresca del día",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Fruiteria Horta",
+     "titre": "Fruita fresca del dia",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Huerta Greengrocer",
+     "titre": "Fresh fruit every day",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Primeur du Jardin",
+     "titre": "Fruits frais du jour",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-16",
@@ -2660,11 +3809,47 @@
      "legende": "La libraire prépare soigneusement une commande dans sa boutique."
     }
    },
+   "site": "d'une librairie indépendante",
    "maquette": {
-    "statut": "pret",
-    "fichier": "email-marketing-libreria-clientes-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "email-marketing-libreria-clientes-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "email-marketing-libreria-clientes-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "email-marketing-libreria-clientes-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "email-marketing-libreria-clientes-maquette-fr"
+    }
    },
-   "site": "d'une librairie indépendante"
+   "ecrans": {
+    "es": {
+     "nom": "Librería Página",
+     "titre": "Libros para todos",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Llibreria Pàgina",
+     "titre": "Llibres per a tothom",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Página Books",
+     "titre": "Books for everyone",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Librairie La Page",
+     "titre": "Des livres pour tous",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "art-17",
@@ -2724,11 +3909,47 @@
     }
    },
    "sante_force": true,
+   "site": "d'une clinique dentaire et de kinésithérapie",
    "maquette": {
-    "statut": "pret",
-    "fichier": "clinica-salud-recepcion-luminosa-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "clinica-salud-recepcion-luminosa-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "clinica-salud-recepcion-luminosa-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "clinica-salud-recepcion-luminosa-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "clinica-salud-recepcion-luminosa-maquette-fr"
+    }
    },
-   "site": "d'une clinique dentaire et de kinésithérapie"
+   "ecrans": {
+    "es": {
+     "nom": "Clínica Salud Mar",
+     "titre": "Dental y fisioterapia",
+     "bouton": "cita"
+    },
+    "val": {
+     "nom": "Clínica Salut Mar",
+     "titre": "Dental i fisioteràpia",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Salud Mar Clinic",
+     "titre": "Dental care and physiotherapy",
+     "bouton": "cita"
+    },
+    "fr": {
+     "nom": "Centre Santé Mer",
+     "titre": "Dentaire et kinésithérapie",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "art-18",
@@ -2787,11 +4008,47 @@
      "legende": "Le restaurateur consulte son téléphone après la fermeture du restaurant."
     }
    },
+   "site": "d'un restaurant",
    "maquette": {
-    "statut": "pret",
-    "fichier": "responder-resenas-negativas-restaurante-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "responder-resenas-negativas-restaurante-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "responder-resenas-negativas-restaurante-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "responder-resenas-negativas-restaurante-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "responder-resenas-negativas-restaurante-maquette-fr"
+    }
    },
-   "site": "d'un restaurant"
+   "ecrans": {
+    "es": {
+     "nom": "Taberna Sal",
+     "titre": "Tapas y vinos",
+     "bouton": "reserva"
+    },
+    "val": {
+     "nom": "Taverna Sal",
+     "titre": "Tapes i vins",
+     "bouton": "reserva"
+    },
+    "en": {
+     "nom": "Sal Tavern",
+     "titre": "Tapas and wine",
+     "bouton": "reserva"
+    },
+    "fr": {
+     "nom": "Taverne du Sel",
+     "titre": "Tapas et vins",
+     "bouton": "reserva"
+    }
+   }
   },
   {
    "id": "art-19",
@@ -2850,11 +4107,47 @@
      "legende": "Un artisan répare des chaussures en cuir dans son atelier."
     }
    },
+   "site": "d'un cordonnier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "schema-local-business-datos-negocio-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "schema-local-business-datos-negocio-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "schema-local-business-datos-negocio-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "schema-local-business-datos-negocio-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "schema-local-business-datos-negocio-maquette-fr"
+    }
    },
-   "site": "d'un cordonnier"
+   "ecrans": {
+    "es": {
+     "nom": "Zapatería Suela",
+     "titre": "Reparación de calzado",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Sabateria Sola",
+     "titre": "Reparació de calçat",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Suela Shoe Repairs",
+     "titre": "Shoe repairs",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Cordonnerie Semelle",
+     "titre": "Réparation de chaussures",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-20",
@@ -2913,11 +4206,47 @@
      "legende": "La gérante organise des jetons dans son espace de travail."
     }
    },
+   "site": "d'un institut de beauté",
    "maquette": {
-    "statut": "pret",
-    "fichier": "presupuesto-marketing-autonomo-planificacion-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-fr"
+    }
    },
-   "site": "d'un institut de beauté"
+   "ecrans": {
+    "es": {
+     "nom": "Belleza Nácar",
+     "titre": "Tratamientos faciales",
+     "bouton": "cita"
+    },
+    "val": {
+     "nom": "Bellesa Nacre",
+     "titre": "Tractaments facials",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Nácar Beauty",
+     "titre": "Facial treatments",
+     "bouton": "cita"
+    },
+    "fr": {
+     "nom": "Institut Nacre",
+     "titre": "Soins du visage",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "art-21",
@@ -2976,11 +4305,47 @@
      "legende": "L'architecte d'intérieur compare les matériaux et les textures d'un projet."
     }
    },
+   "site": "d'une architecte d'intérieur",
    "maquette": {
-    "statut": "pret",
-    "fichier": "elementos-web-profesional-muestras-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "elementos-web-profesional-muestras-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "elementos-web-profesional-muestras-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "elementos-web-profesional-muestras-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "elementos-web-profesional-muestras-maquette-fr"
+    }
    },
-   "site": "d'une architecte d'intérieur"
+   "ecrans": {
+    "es": {
+     "nom": "Estudio Nido",
+     "titre": "Interiorismo",
+     "bouton": "portfolio"
+    },
+    "val": {
+     "nom": "Estudi Niu",
+     "titre": "Interiorisme",
+     "bouton": "portfolio"
+    },
+    "en": {
+     "nom": "Nido Interiors",
+     "titre": "Interior design",
+     "bouton": "portfolio"
+    },
+    "fr": {
+     "nom": "Studio Nid",
+     "titre": "Architecture intérieure",
+     "bouton": "portfolio"
+    }
+   }
   },
   {
    "id": "art-22",
@@ -3039,11 +4404,47 @@
      "legende": "Un commerçant organise les outils dans sa quincaillerie."
     }
    },
+   "site": "d'une quincaillerie",
    "maquette": {
-    "statut": "pret",
-    "fichier": "categorias-google-business-ferreteria-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "categorias-google-business-ferreteria-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "categorias-google-business-ferreteria-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "categorias-google-business-ferreteria-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "categorias-google-business-ferreteria-maquette-fr"
+    }
    },
-   "site": "d'une quincaillerie"
+   "ecrans": {
+    "es": {
+     "nom": "Ferretería Tornillo",
+     "titre": "Todo para tu casa",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Ferreteria Caragol",
+     "titre": "Tot per a la teua casa",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Tornillo Hardware",
+     "titre": "Everything for your home",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Quincaillerie Boulon",
+     "titre": "Tout pour la maison",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "art-23",
@@ -3102,11 +4503,47 @@
      "legende": "Un facteur effectue une livraison dans une rue résidentielle méditerranéenne."
     }
    },
+   "site": "d'un commerce de quartier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "citas-locales-nap-direccion-negocio-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "citas-locales-nap-direccion-negocio-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "citas-locales-nap-direccion-negocio-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "citas-locales-nap-direccion-negocio-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "citas-locales-nap-direccion-negocio-maquette-fr"
+    }
    },
-   "site": "d'un commerce de quartier"
+   "ecrans": {
+    "es": {
+     "nom": "Droguería Mayo",
+     "titre": "Tu droguería de barrio",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Drogueria Maig",
+     "titre": "La teua drogueria de barri",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Mayo Household Store",
+     "titre": "Your local household store",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Droguerie Mai",
+     "titre": "Votre droguerie de quartier",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-24",
@@ -3160,11 +4597,38 @@
      "legende": "Une fille partage quelque chose sur son téléphone avec son père à l'atelier."
     }
    },
+   "site": "d'une menuiserie familiale",
    "maquette": {
-    "statut": "pret",
-    "fichier": "digitalizacion-autonomos-taller-familiar-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "digitalizacion-autonomos-taller-familiar-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "digitalizacion-autonomos-taller-familiar-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "digitalizacion-autonomos-taller-familiar-maquette-en"
+    }
    },
-   "site": "d'une menuiserie familiale"
+   "ecrans": {
+    "es": {
+     "nom": "Carpintería Familia Sanz",
+     "titre": "Tres generaciones",
+     "bouton": "presupuesto"
+    },
+    "val": {
+     "nom": "Fusteria Família Sanz",
+     "titre": "Tres generacions",
+     "bouton": "presupuesto"
+    },
+    "en": {
+     "nom": "Sanz Family Joinery",
+     "titre": "Three generations",
+     "bouton": "presupuesto"
+    }
+   }
   },
   {
    "id": "art-25",
@@ -3223,11 +4687,47 @@
      "legende": "Le menuisier soigne les finitions d'une cuisine en bois tout juste installée."
     }
    },
+   "site": "d'un menuisier cuisiniste",
    "maquette": {
-    "statut": "pret",
-    "fichier": "carpintero-cocina-a-medida-terminada-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "carpintero-cocina-a-medida-terminada-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "carpintero-cocina-a-medida-terminada-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "carpintero-cocina-a-medida-terminada-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "carpintero-cocina-a-medida-terminada-maquette-fr"
+    }
    },
-   "site": "d'un menuisier cuisiniste"
+   "ecrans": {
+    "es": {
+     "nom": "Cocinas Madera",
+     "titre": "Cocinas a medida",
+     "bouton": "presupuesto"
+    },
+    "val": {
+     "nom": "Cuines Fusta",
+     "titre": "Cuines a mida",
+     "bouton": "presupuesto"
+    },
+    "en": {
+     "nom": "Madera Kitchens",
+     "titre": "Made-to-measure kitchens",
+     "bouton": "presupuesto"
+    },
+    "fr": {
+     "nom": "Cuisines Bois",
+     "titre": "Cuisines sur mesure",
+     "bouton": "presupuesto"
+    }
+   }
   },
   {
    "id": "art-26",
@@ -3286,11 +4786,47 @@
      "legende": "La propriétaire photographie la terrasse fleurie de sa maison d'hôtes."
     }
    },
+   "site": "d'une maison d'hôtes",
    "maquette": {
-    "statut": "pret",
-    "fichier": "fotos-ficha-google-alojamiento-terraza-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-fr"
+    }
    },
-   "site": "d'une maison d'hôtes"
+   "ecrans": {
+    "es": {
+     "nom": "Casa Buganvilla",
+     "titre": "Casa rural con encanto",
+     "bouton": "reserva"
+    },
+    "val": {
+     "nom": "Casa Buguenvíl·lea",
+     "titre": "Casa rural amb encant",
+     "bouton": "reserva"
+    },
+    "en": {
+     "nom": "Casa Buganvilla",
+     "titre": "Charming country guesthouse",
+     "bouton": "reserva"
+    },
+    "fr": {
+     "nom": "Maison Bougainvillier",
+     "titre": "Maison d'hôtes de charme",
+     "bouton": "reserva"
+    }
+   }
   },
   {
    "id": "art-27",
@@ -3349,11 +4885,47 @@
      "legende": "Des commerçants du quartier échangent lors d'une réunion informelle."
     }
    },
+   "site": "d'une association de commerçants",
    "maquette": {
-    "statut": "pret",
-    "fichier": "backlinks-locales-asociacion-comerciantes-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "backlinks-locales-asociacion-comerciantes-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "backlinks-locales-asociacion-comerciantes-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "backlinks-locales-asociacion-comerciantes-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "backlinks-locales-asociacion-comerciantes-maquette-fr"
+    }
    },
-   "site": "d'une association de commerçants"
+   "ecrans": {
+    "es": {
+     "nom": "Comercios del Centro",
+     "titre": "Compra en tu barrio",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Comerços del Centre",
+     "titre": "Compra al teu barri",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Centro Traders",
+     "titre": "Shop local",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Commerçants du Centre",
+     "titre": "Achetez local",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-28",
@@ -3412,11 +4984,47 @@
      "legende": "Le peintre consulte son téléphone pendant une pause près de sa camionnette."
     }
    },
+   "site": "d'un peintre en bâtiment",
    "maquette": {
-    "statut": "pret",
-    "fichier": "errores-marketing-autonomo-folletos-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "errores-marketing-autonomo-folletos-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "errores-marketing-autonomo-folletos-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "errores-marketing-autonomo-folletos-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "errores-marketing-autonomo-folletos-maquette-fr"
+    }
    },
-   "site": "d'un peintre en bâtiment"
+   "ecrans": {
+    "es": {
+     "nom": "Pinturas Brocha",
+     "titre": "Pintura de interiores",
+     "bouton": "presupuesto"
+    },
+    "val": {
+     "nom": "Pintures Brotxa",
+     "titre": "Pintura d'interiors",
+     "bouton": "presupuesto"
+    },
+    "en": {
+     "nom": "Brocha Painters",
+     "titre": "Interior painting",
+     "bouton": "presupuesto"
+    },
+    "fr": {
+     "nom": "Peinture Pinceau",
+     "titre": "Peinture intérieure",
+     "bouton": "presupuesto"
+    }
+   }
   },
   {
    "id": "art-31",
@@ -3475,11 +5083,47 @@
      "legende": "Comme l'adresse d'un local, le nom de domaine est l'endroit où vos clients vous trouvent."
     }
    },
+   "site": "d'une boutique récemment ouverte",
    "maquette": {
-    "statut": "pret",
-    "fichier": "elegir-dominio-direccion-negocio-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "elegir-dominio-direccion-negocio-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "elegir-dominio-direccion-negocio-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "elegir-dominio-direccion-negocio-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "elegir-dominio-direccion-negocio-maquette-fr"
+    }
    },
-   "site": "d'une boutique récemment ouverte"
+   "ecrans": {
+    "es": {
+     "nom": "Tienda Nueva Luz",
+     "titre": "Recién abierta",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Botiga Nova Llum",
+     "titre": "Acabada d'obrir",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Nueva Luz Store",
+     "titre": "Now open",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Boutique Nouvelle Lune",
+     "titre": "Nouvelle ouverture",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "art-32",
@@ -3538,11 +5182,47 @@
      "legende": "La traductrice dicte du contenu depuis son espace de travail à domicile."
     }
    },
+   "site": "d'une traductrice indépendante",
    "maquette": {
-    "statut": "pret",
-    "fichier": "inteligencia-artificial-autonoma-despacho-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "inteligencia-artificial-autonoma-despacho-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "inteligencia-artificial-autonoma-despacho-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "inteligencia-artificial-autonoma-despacho-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "inteligencia-artificial-autonoma-despacho-maquette-fr"
+    }
    },
-   "site": "d'une traductrice indépendante"
+   "ecrans": {
+    "es": {
+     "nom": "Traducciones Clara",
+     "titre": "Traducción inglés y español",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Traduccions Clara",
+     "titre": "Traducció anglés i espanyol",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Clara Translations",
+     "titre": "English–Spanish translation",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Traductions Claire",
+     "titre": "Traduction anglais et espagnol",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-33",
@@ -3601,11 +5281,47 @@
      "legende": "Les propriétaires profitent d'une pause tranquille dans la cuisine de leur gîte."
     }
    },
+   "site": "d'un gîte rural",
    "maquette": {
-    "statut": "pret",
-    "fichier": "google-ads-autonomo-reservas-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "google-ads-autonomo-reservas-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "google-ads-autonomo-reservas-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "google-ads-autonomo-reservas-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "google-ads-autonomo-reservas-maquette-fr"
+    }
    },
-   "site": "d'un gîte rural"
+   "ecrans": {
+    "es": {
+     "nom": "Casa Rural El Olmo",
+     "titre": "Descanso en la montaña",
+     "bouton": "reserva"
+    },
+    "val": {
+     "nom": "Casa Rural L'Om",
+     "titre": "Descans a la muntanya",
+     "bouton": "reserva"
+    },
+    "en": {
+     "nom": "El Olmo Guesthouse",
+     "titre": "Rest in the mountains",
+     "bouton": "reserva"
+    },
+    "fr": {
+     "nom": "Gîte L'Orme",
+     "titre": "Repos à la montagne",
+     "bouton": "reserva"
+    }
+   }
   },
   {
    "id": "art-34",
@@ -3664,11 +5380,47 @@
      "legende": "Le tatoueur prépare un motif à la main dans son espace de travail."
     }
    },
+   "site": "d'un studio de tatouage",
    "maquette": {
-    "statut": "pret",
-    "fichier": "estudio-tatuaje-tatuador-dibujando-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "estudio-tatuaje-tatuador-dibujando-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "estudio-tatuaje-tatuador-dibujando-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "estudio-tatuaje-tatuador-dibujando-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "estudio-tatuaje-tatuador-dibujando-maquette-fr"
+    }
    },
-   "site": "d'un studio de tatouage"
+   "ecrans": {
+    "es": {
+     "nom": "Tinta Norte Tattoo",
+     "titre": "Diseños a medida",
+     "bouton": "cita"
+    },
+    "val": {
+     "nom": "Tinta Nord Tattoo",
+     "titre": "Dissenys a mida",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Tinta Norte Tattoo",
+     "titre": "Custom designs",
+     "bouton": "cita"
+    },
+    "fr": {
+     "nom": "Encre Nord Tattoo",
+     "titre": "Créations sur mesure",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "art-35",
@@ -3727,11 +5479,47 @@
      "legende": "La commerçante prépare un vélo dans son magasin avant d'accueillir les clients."
     }
    },
+   "site": "d'un magasin de vélos",
    "maquette": {
-    "statut": "pret",
-    "fichier": "medir-resultados-web-negocio-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "medir-resultados-web-negocio-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "medir-resultados-web-negocio-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "medir-resultados-web-negocio-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "medir-resultados-web-negocio-maquette-fr"
+    }
    },
-   "site": "d'un magasin de vélos"
+   "ecrans": {
+    "es": {
+     "nom": "Bicis Rueda",
+     "titre": "Venta y taller",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Bicis Roda",
+     "titre": "Venda i taller",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Rueda Bikes",
+     "titre": "Sales and repairs",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Vélos Roue Libre",
+     "titre": "Vente et atelier",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "art-36",
@@ -3785,11 +5573,38 @@
      "legende": "L'épicière remet ses achats à une cliente dans son commerce."
     }
    },
+   "site": "d'une épicerie de quartier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "facturacion-electronica-comercio-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "facturacion-electronica-comercio-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "facturacion-electronica-comercio-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "facturacion-electronica-comercio-maquette-en"
+    }
    },
-   "site": "d'une épicerie de quartier"
+   "ecrans": {
+    "es": {
+     "nom": "Colmado Laurel",
+     "titre": "Productos locales",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Botiga Llorer",
+     "titre": "Productes locals",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Laurel Deli",
+     "titre": "Local produce",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-37",
@@ -3848,11 +5663,47 @@
      "legende": "L'artisan partage son expérience depuis son atelier de ferronnerie."
     }
    },
+   "site": "d'un ferronnier d'art",
    "maquette": {
-    "statut": "pret",
-    "fichier": "crear-contenido-web-artesano-grabando-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "crear-contenido-web-artesano-grabando-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "crear-contenido-web-artesano-grabando-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "crear-contenido-web-artesano-grabando-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "crear-contenido-web-artesano-grabando-maquette-fr"
+    }
    },
-   "site": "d'un ferronnier d'art"
+   "ecrans": {
+    "es": {
+     "nom": "Forja Yunque",
+     "titre": "Forja artesanal",
+     "bouton": "portfolio"
+    },
+    "val": {
+     "nom": "Forja Enclusa",
+     "titre": "Forja artesanal",
+     "bouton": "portfolio"
+    },
+    "en": {
+     "nom": "Yunque Ironworks",
+     "titre": "Handmade ironwork",
+     "bouton": "portfolio"
+    },
+    "fr": {
+     "nom": "Ferronnerie Enclume",
+     "titre": "Ferronnerie d'art",
+     "bouton": "portfolio"
+    }
+   }
   },
   {
    "id": "art-38",
@@ -3912,11 +5763,47 @@
     }
    },
    "sante_force": true,
+   "site": "d'un cabinet de podologie",
    "maquette": {
-    "statut": "pret",
-    "fichier": "clinica-podologia-consulta-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "clinica-podologia-consulta-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "clinica-podologia-consulta-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "clinica-podologia-consulta-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "clinica-podologia-consulta-maquette-fr"
+    }
    },
-   "site": "d'un cabinet de podologie"
+   "ecrans": {
+    "es": {
+     "nom": "Podología Paso",
+     "titre": "Cuidado de tus pies",
+     "bouton": "cita"
+    },
+    "val": {
+     "nom": "Podologia Pas",
+     "titre": "Cura dels teus peus",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Paso Podiatry",
+     "titre": "Foot care clinic",
+     "bouton": "cita"
+    },
+    "fr": {
+     "nom": "Cabinet de podologie Pas",
+     "titre": "Soins des pieds",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "art-39",
@@ -3976,11 +5863,47 @@
     }
    },
    "sante_force": true,
+   "site": "d'un cabinet de psychologie",
    "maquette": {
-    "statut": "pret",
-    "fichier": "psicologo-sala-espera-consulta-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "psicologo-sala-espera-consulta-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "psicologo-sala-espera-consulta-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "psicologo-sala-espera-consulta-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "psicologo-sala-espera-consulta-maquette-fr"
+    }
    },
-   "site": "d'un cabinet de psychologie"
+   "ecrans": {
+    "es": {
+     "nom": "Psicología Calma",
+     "titre": "Terapia individual y de pareja",
+     "bouton": "cita"
+    },
+    "val": {
+     "nom": "Psicologia Calma",
+     "titre": "Teràpia individual i de parella",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Calma Psychology",
+     "titre": "Individual and couples therapy",
+     "bouton": "cita"
+    },
+    "fr": {
+     "nom": "Cabinet Calme",
+     "titre": "Thérapie individuelle et de couple",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "art-40",
@@ -4039,11 +5962,47 @@
      "legende": "La coach écoute les participants pendant une séance de groupe."
     }
    },
+   "site": "d'une coach professionnelle",
    "maquette": {
-    "statut": "pret",
-    "fichier": "coach-sesion-grupo-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "coach-sesion-grupo-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "coach-sesion-grupo-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "coach-sesion-grupo-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "coach-sesion-grupo-maquette-fr"
+    }
    },
-   "site": "d'une coach professionnelle"
+   "ecrans": {
+    "es": {
+     "nom": "Coaching Rumbo",
+     "titre": "Sesiones de coaching",
+     "bouton": "cita"
+    },
+    "val": {
+     "nom": "Coaching Rumb",
+     "titre": "Sessions de coaching",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Rumbo Coaching",
+     "titre": "Coaching sessions",
+     "bouton": "cita"
+    },
+    "fr": {
+     "nom": "Coaching Cap",
+     "titre": "Séances de coaching",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "art-41",
@@ -4102,11 +6061,47 @@
      "legende": "La professionnelle organise les produits avant une séance dans la cabine."
     }
    },
+   "site": "d'un centre d'esthétique",
    "maquette": {
-    "statut": "pret",
-    "fichier": "centro-estetica-cabina-tratamiento-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "centro-estetica-cabina-tratamiento-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "centro-estetica-cabina-tratamiento-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "centro-estetica-cabina-tratamiento-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "centro-estetica-cabina-tratamiento-maquette-fr"
+    }
    },
-   "site": "d'un centre d'esthétique"
+   "ecrans": {
+    "es": {
+     "nom": "Estética Luna",
+     "titre": "Tu momento de calma",
+     "bouton": "cita"
+    },
+    "val": {
+     "nom": "Estètica Lluna",
+     "titre": "El teu moment de calma",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Luna Beauty Studio",
+     "titre": "Your moment of calm",
+     "bouton": "cita"
+    },
+    "fr": {
+     "nom": "Institut Luna",
+     "titre": "Votre moment de calme",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "art-42",
@@ -4166,11 +6161,47 @@
     }
    },
    "sante_force": true,
+   "site": "d'une nutritionniste",
    "maquette": {
-    "statut": "pret",
-    "fichier": "nutricionista-consulta-alimentos-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "nutricionista-consulta-alimentos-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "nutricionista-consulta-alimentos-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "nutricionista-consulta-alimentos-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "nutricionista-consulta-alimentos-maquette-fr"
+    }
    },
-   "site": "d'une nutritionniste"
+   "ecrans": {
+    "es": {
+     "nom": "Nutrición Verde",
+     "titre": "Consulta de nutrición",
+     "bouton": "cita"
+    },
+    "val": {
+     "nom": "Nutrició Verda",
+     "titre": "Consulta de nutrició",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Verde Nutrition",
+     "titre": "Nutrition consultations",
+     "bouton": "cita"
+    },
+    "fr": {
+     "nom": "Nutrition Verte",
+     "titre": "Consultation de nutrition",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "art-43",
@@ -4229,11 +6260,47 @@
      "legende": "Le coach prépare l'espace et le matériel avant de commencer la séance."
     }
    },
+   "site": "d'un coach sportif",
    "maquette": {
-    "statut": "pret",
-    "fichier": "entrenador-personal-estudio-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "entrenador-personal-estudio-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "entrenador-personal-estudio-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "entrenador-personal-estudio-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "entrenador-personal-estudio-maquette-fr"
+    }
    },
-   "site": "d'un coach sportif"
+   "ecrans": {
+    "es": {
+     "nom": "Entrena con Leo",
+     "titre": "Entrenamiento personal",
+     "bouton": "reserva"
+    },
+    "val": {
+     "nom": "Entrena amb Leo",
+     "titre": "Entrenament personal",
+     "bouton": "reserva"
+    },
+    "en": {
+     "nom": "Train with Leo",
+     "titre": "Personal training",
+     "bouton": "reserva"
+    },
+    "fr": {
+     "nom": "Coach Léo",
+     "titre": "Coaching sportif",
+     "bouton": "reserva"
+    }
+   }
   },
   {
    "id": "art-44",
@@ -4292,11 +6359,47 @@
      "legende": "La vétérinaire prend soin du chien avec douceur pendant la visite."
     }
    },
+   "site": "d'une clinique vétérinaire",
    "maquette": {
-    "statut": "pret",
-    "fichier": "clinica-veterinaria-perro-consulta-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "clinica-veterinaria-perro-consulta-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "clinica-veterinaria-perro-consulta-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "clinica-veterinaria-perro-consulta-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "clinica-veterinaria-perro-consulta-maquette-fr"
+    }
    },
-   "site": "d'une clinique vétérinaire"
+   "ecrans": {
+    "es": {
+     "nom": "Clínica Veterinaria Huellas",
+     "titre": "Cuidamos de tu mascota",
+     "bouton": "cita"
+    },
+    "val": {
+     "nom": "Clínica Veterinària Petjades",
+     "titre": "Cuidem la teua mascota",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Huellas Vet Clinic",
+     "titre": "Caring for your pets",
+     "bouton": "cita"
+    },
+    "fr": {
+     "nom": "Clinique vétérinaire Empreintes",
+     "titre": "Nous prenons soin de votre animal",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "art-45",
@@ -4355,11 +6458,47 @@
      "legende": "Le serveur apporte des cafés sur une terrasse ensoleillée et animée."
     }
    },
+   "site": "d'un café",
    "maquette": {
-    "statut": "pret",
-    "fichier": "velocidad-web-servicio-rapido-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "velocidad-web-servicio-rapido-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "velocidad-web-servicio-rapido-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "velocidad-web-servicio-rapido-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "velocidad-web-servicio-rapido-maquette-fr"
+    }
    },
-   "site": "d'un café"
+   "ecrans": {
+    "es": {
+     "nom": "Café Rápido",
+     "titre": "Café para llevar",
+     "bouton": "carta"
+    },
+    "val": {
+     "nom": "Cafè Ràpid",
+     "titre": "Cafè per a emportar",
+     "bouton": "carta"
+    },
+    "en": {
+     "nom": "Café Rápido",
+     "titre": "Coffee to go",
+     "bouton": "carta"
+    },
+    "fr": {
+     "nom": "Café Express",
+     "titre": "Café à emporter",
+     "bouton": "carta"
+    }
+   }
   },
   {
    "id": "art-46",
@@ -4418,11 +6557,47 @@
      "legende": "Le barbier prépare ses outils dans un salon au style personnel."
     }
    },
+   "site": "d'un barbier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "marca-personal-autonomo-barberia-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "marca-personal-autonomo-barberia-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "marca-personal-autonomo-barberia-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "marca-personal-autonomo-barberia-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "marca-personal-autonomo-barberia-maquette-fr"
+    }
    },
-   "site": "d'un barbier"
+   "ecrans": {
+    "es": {
+     "nom": "Barbería Navaja",
+     "titre": "Corte y barba",
+     "bouton": "reserva"
+    },
+    "val": {
+     "nom": "Barberia Navalla",
+     "titre": "Tall i barba",
+     "bouton": "reserva"
+    },
+    "en": {
+     "nom": "Navaja Barbers",
+     "titre": "Cuts and beard trims",
+     "bouton": "reserva"
+    },
+    "fr": {
+     "nom": "Barbier Rasoir",
+     "titre": "Coupe et barbe",
+     "bouton": "reserva"
+    }
+   }
   },
   {
    "id": "art-47",
@@ -4481,11 +6656,47 @@
      "legende": "La vendeuse aide le client à choisir des chaussures de randonnée."
     }
    },
+   "site": "d'un magasin de sport",
    "maquette": {
-    "statut": "pret",
-    "fichier": "preguntas-respuestas-ficha-google-tienda-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-fr"
+    }
    },
-   "site": "d'un magasin de sport"
+   "ecrans": {
+    "es": {
+     "nom": "Deportes Cumbre",
+     "titre": "Montaña y senderismo",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Esports Cim",
+     "titre": "Muntanya i senderisme",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Cumbre Outdoor",
+     "titre": "Hiking and mountain gear",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Sports Sommet",
+     "titre": "Montagne et randonnée",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "art-48",
@@ -4545,11 +6756,47 @@
      "legende": "Après sa journée de travail, l'artisan prend un moment de repos chez lui."
     }
    },
+   "site": "d'un plombier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "papeleo-autonomo-noche-facturas-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "papeleo-autonomo-noche-facturas-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "papeleo-autonomo-noche-facturas-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "papeleo-autonomo-noche-facturas-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "papeleo-autonomo-noche-facturas-maquette-fr"
+    }
    },
-   "site": "d'un plombier"
+   "ecrans": {
+    "es": {
+     "nom": "Fontanería Grifo",
+     "titre": "Reparaciones en el día",
+     "bouton": "llamar"
+    },
+    "val": {
+     "nom": "Fontaneria Aixeta",
+     "titre": "Reparacions en el dia",
+     "bouton": "llamar"
+    },
+    "en": {
+     "nom": "Grifo Plumbing",
+     "titre": "Same-day repairs",
+     "bouton": "llamar"
+    },
+    "fr": {
+     "nom": "Plomberie Robinet",
+     "titre": "Réparations dans la journée",
+     "bouton": "llamar"
+    }
+   }
   },
   {
    "id": "art-49",
@@ -4609,11 +6856,47 @@
      "legende": "Une pause de réflexion dans un bureau baigné de lumière naturelle."
     }
    },
+   "site": "d'un cabinet de gestion",
    "maquette": {
-    "statut": "pret",
-    "fichier": "factura-electronica-verifactu-gestoria-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "factura-electronica-verifactu-gestoria-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "factura-electronica-verifactu-gestoria-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "factura-electronica-verifactu-gestoria-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "factura-electronica-verifactu-gestoria-maquette-fr"
+    }
    },
-   "site": "d'un cabinet de gestion"
+   "ecrans": {
+    "es": {
+     "nom": "Gestoría Cuenta",
+     "titre": "Asesoría para autónomos",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Gestoria Compte",
+     "titre": "Assessoria per a autònoms",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Cuenta Advisors",
+     "titre": "Advice for the self-employed",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Cabinet Compte Juste",
+     "titre": "Conseil aux indépendants",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-50",
@@ -4673,11 +6956,47 @@
      "legende": "Un échange informel entre collègues dans un bureau lumineux."
     }
    },
+   "site": "d'une agence de voyages",
    "maquette": {
-    "statut": "pret",
-    "fichier": "contratar-o-automatizar-decision-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "contratar-o-automatizar-decision-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "contratar-o-automatizar-decision-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "contratar-o-automatizar-decision-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "contratar-o-automatizar-decision-maquette-fr"
+    }
    },
-   "site": "d'une agence de voyages"
+   "ecrans": {
+    "es": {
+     "nom": "Viajes Brújula",
+     "titre": "Viajes a medida",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Viatges Brúixola",
+     "titre": "Viatges a mida",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Brújula Travel",
+     "titre": "Tailor-made trips",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Voyages Boussole",
+     "titre": "Voyages sur mesure",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-60",
@@ -4736,11 +7055,47 @@
      "legende": "La coiffeuse poursuit la prestation tout en consultant son téléphone."
     }
    },
+   "site": "d'un salon de coiffure avec réservation en ligne",
    "maquette": {
-    "statut": "pret",
-    "fichier": "reservas-online-agenda-peluqueria-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "reservas-online-agenda-peluqueria-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "reservas-online-agenda-peluqueria-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "reservas-online-agenda-peluqueria-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "reservas-online-agenda-peluqueria-maquette-fr"
+    }
    },
-   "site": "d'un salon de coiffure avec réservation en ligne"
+   "ecrans": {
+    "es": {
+     "nom": "Peluquería Onda",
+     "titre": "Reserva tu cita online",
+     "bouton": "reserva"
+    },
+    "val": {
+     "nom": "Perruqueria Ona",
+     "titre": "Reserva la teua cita en línia",
+     "bouton": "reserva"
+    },
+    "en": {
+     "nom": "Onda Hair",
+     "titre": "Book your appointment online",
+     "bouton": "reserva"
+    },
+    "fr": {
+     "nom": "Salon Onde",
+     "titre": "Réservez en ligne",
+     "bouton": "reserva"
+    }
+   }
   },
   {
    "id": "art-61",
@@ -4800,11 +7155,47 @@
      "legende": "L'artisan contemple l'extérieur pendant une pause dans son atelier."
     }
    },
+   "site": "d'un menuisier",
    "maquette": {
-    "statut": "pret",
-    "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-fr"
+    }
    },
-   "site": "d'un menuisier"
+   "ecrans": {
+    "es": {
+     "nom": "Carpintería Pino",
+     "titre": "Proyectos en madera",
+     "bouton": "presupuesto"
+    },
+    "val": {
+     "nom": "Fusteria Pi",
+     "titre": "Projectes en fusta",
+     "bouton": "presupuesto"
+    },
+    "en": {
+     "nom": "Pino Carpentry",
+     "titre": "Woodwork projects",
+     "bouton": "presupuesto"
+    },
+    "fr": {
+     "nom": "Menuiserie Pin",
+     "titre": "Projets en bois",
+     "bouton": "presupuesto"
+    }
+   }
   },
   {
    "id": "art-62",
@@ -4864,11 +7255,47 @@
      "legende": "Un sablier et un café évoquent la valeur du temps au travail."
     }
    },
+   "site": "d'une petite entreprise",
    "maquette": {
-    "statut": "pret",
-    "fichier": "coste-automatizar-tiempo-calculo-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "coste-automatizar-tiempo-calculo-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "coste-automatizar-tiempo-calculo-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "coste-automatizar-tiempo-calculo-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "coste-automatizar-tiempo-calculo-maquette-fr"
+    }
    },
-   "site": "d'une petite entreprise"
+   "ecrans": {
+    "es": {
+     "nom": "Taller Reloj",
+     "titre": "Reparación de relojes",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Taller Rellotge",
+     "titre": "Reparació de rellotges",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Reloj Watch Repairs",
+     "titre": "Watch repairs",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Atelier Horloge",
+     "titre": "Réparation de montres",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-63",
@@ -4928,11 +7355,47 @@
      "legende": "L'artisane organise ses outils dans son atelier."
     }
    },
+   "site": "d'un atelier d'artisan",
    "maquette": {
-    "statut": "pret",
-    "fichier": "tareas-automatizar-prioridades-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "tareas-automatizar-prioridades-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "tareas-automatizar-prioridades-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "tareas-automatizar-prioridades-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "tareas-automatizar-prioridades-maquette-fr"
+    }
    },
-   "site": "d'un atelier d'artisan"
+   "ecrans": {
+    "es": {
+     "nom": "Taller Cuero",
+     "titre": "Marroquinería artesana",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Taller Cuiro",
+     "titre": "Marroquineria artesana",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Cuero Leather Workshop",
+     "titre": "Handmade leather goods",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Atelier Cuir",
+     "titre": "Maroquinerie artisanale",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-64",
@@ -4992,11 +7455,47 @@
      "legende": "La créatrice prépare soigneusement les commandes de sa boutique de savons."
     }
    },
+   "site": "d'une boutique en ligne de savons artisanaux",
    "maquette": {
-    "statut": "pret",
-    "fichier": "automatizar-sin-programar-tienda-online-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "automatizar-sin-programar-tienda-online-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "automatizar-sin-programar-tienda-online-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "automatizar-sin-programar-tienda-online-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "automatizar-sin-programar-tienda-online-maquette-fr"
+    }
    },
-   "site": "d'une boutique en ligne de savons artisanaux"
+   "ecrans": {
+    "es": {
+     "nom": "Jabones Lavanda",
+     "titre": "Jabón natural hecho a mano",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Sabons Lavanda",
+     "titre": "Sabó natural fet a mà",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Lavanda Soaps",
+     "titre": "Natural handmade soap",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Savonnerie Lavande",
+     "titre": "Savon naturel fait main",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "art-65",
@@ -5056,11 +7555,47 @@
      "legende": "L'employé examine le tapis roulant immobilisé dans l'entrepôt."
     }
    },
+   "site": "d'une petite entreprise de logistique",
    "maquette": {
-    "statut": "pret",
-    "fichier": "errores-automatizacion-caros-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "errores-automatizacion-caros-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "errores-automatizacion-caros-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "errores-automatizacion-caros-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "errores-automatizacion-caros-maquette-fr"
+    }
    },
-   "site": "d'une petite entreprise de logistique"
+   "ecrans": {
+    "es": {
+     "nom": "Envíos Rápidos",
+     "titre": "Paquetería local",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Enviaments Ràpids",
+     "titre": "Paqueteria local",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Rápidos Deliveries",
+     "titre": "Local parcel delivery",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Envois Rapides",
+     "titre": "Livraison de colis locale",
+     "bouton": "contacto"
+    }
+   }
   },
   {
    "id": "art-66",
@@ -5120,11 +7655,47 @@
      "legende": "La chocolatière fait découvrir ses créations à une cliente."
     }
    },
+   "site": "d'une chocolaterie",
    "maquette": {
-    "statut": "pret",
-    "fichier": "no-automatizar-trato-humano-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "no-automatizar-trato-humano-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "no-automatizar-trato-humano-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "no-automatizar-trato-humano-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "no-automatizar-trato-humano-maquette-fr"
+    }
    },
-   "site": "d'une chocolaterie"
+   "ecrans": {
+    "es": {
+     "nom": "Chocolates Cacao",
+     "titre": "Bombones artesanos",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Xocolates Cacau",
+     "titre": "Bombons artesans",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Cacao Chocolates",
+     "titre": "Handmade chocolates",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Chocolaterie Cacao",
+     "titre": "Chocolats artisanaux",
+     "bouton": "tienda"
+    }
+   }
   },
   {
    "id": "art-67",
@@ -5184,11 +7755,47 @@
      "legende": "Un entretien régulier contribue à préserver les machines de l'atelier."
     }
    },
+   "site": "d'un atelier de mécanique",
    "maquette": {
-    "statut": "pret",
-    "fichier": "mantenimiento-automatizacion-coste-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "mantenimiento-automatizacion-coste-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "mantenimiento-automatizacion-coste-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "mantenimiento-automatizacion-coste-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "mantenimiento-automatizacion-coste-maquette-fr"
+    }
    },
-   "site": "d'un atelier de mécanique"
+   "ecrans": {
+    "es": {
+     "nom": "Taller Motor",
+     "titre": "Mecánica y revisiones",
+     "bouton": "cita"
+    },
+    "val": {
+     "nom": "Taller Motor",
+     "titre": "Mecànica i revisions",
+     "bouton": "cita"
+    },
+    "en": {
+     "nom": "Motor Garage",
+     "titre": "Servicing and repairs",
+     "bouton": "cita"
+    },
+    "fr": {
+     "nom": "Garage Moteur",
+     "titre": "Mécanique et révisions",
+     "bouton": "cita"
+    }
+   }
   },
   {
    "id": "art-68",
@@ -5248,11 +7855,47 @@
      "legende": "L'artisan assemble le meuble en gardant les pièces et la visserie bien organisées."
     }
    },
+   "site": "d'un fabricant de meubles",
    "maquette": {
-    "statut": "pret",
-    "fichier": "automatizar-proceso-paso-a-paso-maquette"
+    "es": {
+     "statut": "pret",
+     "fichier": "automatizar-proceso-paso-a-paso-maquette-es"
+    },
+    "val": {
+     "statut": "pret",
+     "fichier": "automatizar-proceso-paso-a-paso-maquette-val"
+    },
+    "en": {
+     "statut": "pret",
+     "fichier": "automatizar-proceso-paso-a-paso-maquette-en"
+    },
+    "fr": {
+     "statut": "pret",
+     "fichier": "automatizar-proceso-paso-a-paso-maquette-fr"
+    }
    },
-   "site": "d'un fabricant de meubles"
+   "ecrans": {
+    "es": {
+     "nom": "Muebles Nogal",
+     "titre": "Muebles de madera maciza",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Mobles Noguera",
+     "titre": "Mobles de fusta massissa",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Nogal Furniture",
+     "titre": "Solid wood furniture",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Meubles Noyer",
+     "titre": "Meubles en bois massif",
+     "bouton": "tienda"
+    }
+   }
   }
  ]
 }

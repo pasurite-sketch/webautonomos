@@ -7,11 +7,11 @@ fait le reste par serveur.py. Ces commandes servent au VPS et au Mac :
 
     python3 _tools/photos/photos.py inventaire   # met la file à jour (sujets.json)
     python3 _tools/photos/photos.py statut       # avancement et prochains sujets
-    python3 _tools/photos/photos.py prompt ID [maquette]   # prompt que recevra ChatGPT
+    python3 _tools/photos/photos.py prompt ID [maquette LANGUE]   # prompt que recevra ChatGPT
     python3 _tools/photos/photos.py essai        # teste la position sur toutes les pages, sans rien écrire
-    python3 _tools/photos/photos.py appliquer ID IMAGE TEXTES.json [maquette]   # pose une image à la main
+    python3 _tools/photos/photos.py appliquer ID IMAGE TEXTES.json [maquette LANGUE]   # pose une image à la main
     python3 _tools/photos/photos.py reappliquer  # remet les photos effacées par une régénération
-    python3 _tools/photos/photos.py annuler ID [maquette]  # retire l'image d'un sujet partout, la remet en file
+    python3 _tools/photos/photos.py annuler ID [maquette [LANGUE]]  # retire une image partout, la remet en file
     python3 _tools/photos/photos.py verifier     # chaque photo prévue est en place, une seule fois
     python3 _tools/photos/photos.py nuit         # VPS : inventaire + réapplication + contrôle + push
 
@@ -147,6 +147,17 @@ def url_de(rel):
 
 
 def langue_de(rel):
+    """Langue déclarée par la page (<html lang>), sinon déduite du chemin.
+    30/09 : demandez-votre-demo.html (fr) et get-your-demo.html (en), à la
+    racine, passaient pour espagnoles."""
+    try:
+        with open(os.path.join(L.ROOT, rel), encoding='utf-8', errors='ignore') as fh:
+            m = re.search(r'<html[^>]*\blang="([a-zA-Z-]+)"', fh.read(4000))
+    except OSError:
+        m = None
+    if m:
+        lg = m.group(1).lower()
+        return 'val' if lg.startswith(('ca', 'va')) else lg[:2]
     for lg in ('fr', 'en', 'val'):
         if rel.startswith(lg + '/') or rel.startswith('blog/%s/' % lg):
             return lg
@@ -297,7 +308,7 @@ def _sujets_pages(gel, poses):
 
 
 GARDER = ('statut', 'scene', 'fichier', 'v', 'fait_le', 'textes', 'priorite_manuelle', 'note',
-          'marche_force', 'sante_force', 'pages_en_plus', 'site', 'maquette')
+          'marche_force', 'sante_force', 'pages_en_plus', 'site', 'maquette', 'ecrans')
 
 
 def inventaire(ecrire=True):
@@ -337,7 +348,7 @@ def inventaire(ecrire=True):
             s['statut'] = 'pret'
             ajoutes.append(s['id'])
         s.setdefault('fichier', 'photo-' + s['id'])
-        suivi(s, 'maquette')
+        maquettes_de(s)
         sujets.append(s)
     # Sujets sortis de l'inventaire (article de la file publié, page supprimée) :
     # conservés s'ils ont une photo, pour pouvoir la refaire.
@@ -405,6 +416,21 @@ def construire_prompt(s):
 # Deuxième image (30/09/2026) : maquette MacBook + smartphone qui montre le site
 # de l'activité de la page (celle de sa photo). Écrans sans texte lisible
 # (barres grises) ; jamais présentée comme le site d'un vrai client.
+# Maquettes par langue (choix d'Angelino, 30/09) : les écrans portent quelques
+# textes lisibles dans la langue de la page (nom, titre, bouton, dans « ecrans »).
+BOUTONS = {
+    'cita': {'es': 'Pide cita', 'val': 'Demana cita', 'en': 'Book an appointment', 'fr': 'Prendre rendez-vous'},
+    'presupuesto': {'es': 'Pide presupuesto', 'val': 'Demana pressupost', 'en': 'Get a quote', 'fr': 'Demander un devis'},
+    'reserva': {'es': 'Reserva ahora', 'val': 'Reserva ara', 'en': 'Book now', 'fr': 'Réserver'},
+    'contacto': {'es': 'Contacto', 'val': 'Contacte', 'en': 'Contact us', 'fr': 'Nous contacter'},
+    'tienda': {'es': 'Ver la tienda', 'val': 'Veure la botiga', 'en': 'Shop now', 'fr': 'Voir la boutique'},
+    'carta': {'es': 'Ver la carta', 'val': 'Veure la carta', 'en': 'See the menu', 'fr': 'Voir la carte'},
+    'llamar': {'es': 'Llama ahora', 'val': 'Truca ara', 'en': 'Call now', 'fr': 'Appeler'},
+    'portfolio': {'es': 'Ver trabajos', 'val': 'Veure treballs', 'en': 'View our work', 'fr': 'Voir les réalisations'},
+    'leer': {'es': 'Leer más', 'val': 'Llegir més', 'en': 'Read more', 'fr': 'Lire la suite'},
+}
+NOMS_COURTS = {'es': 'ES', 'val': 'VAL', 'en': 'EN', 'fr': 'FR'}
+
 SUPPORTS = ("un bureau en bois clair près d'une fenêtre", "une table blanche lumineuse",
             "un comptoir en bois de boutique", "une table de terrasse de café, en plein jour")
 
@@ -421,32 +447,51 @@ def _site(s):
     return s.get('site') or ("d'une activité liée au thème « %s »" % s['titre'])
 
 
-def construire_prompt_maquette(s):
+def construire_prompt_maquette(s, lang):
     """Même forme que le prompt des photos : il commence par « Photographie
-    réaliste », que le GPT reconnaît, et reste purement visuel."""
+    réaliste », que le GPT reconnaît. Les textes des écrans sont donnés mot pour
+    mot, dans la langue de la page : le générateur les écrit alors sans faute."""
     support = SUPPORTS[sum(map(ord, s['id'])) % len(SUPPORTS)]
+    e = (s.get('ecrans') or {}).get(lang)
+    if e:
+        textes = ("quelques textes courts et lisibles, écrits exactement ainsi : le nom « %s », le titre « %s » et "
+                  "un bouton « %s » ; le reste du texte est représenté par de simples barres grises"
+                  % (e['nom'], e['titre'], BOUTONS[e['bouton']][lang]))
+    else:
+        textes = "des titres et des paragraphes représentés par de simples barres grises"
     return ("Photographie réaliste, format paysage : un ordinateur portable de style MacBook ouvert et un "
-            "smartphone posés côte à côte sur %s ; les deux écrans affichent le site web %s, avec une grande "
-            "photo, des blocs de couleur et des boutons, en version ordinateur et en version mobile.\n"
+            "smartphone posés côte à côte sur %s ; les deux écrans affichent le même site web %s, en version "
+            "ordinateur et en version mobile : une grande photo, des blocs de couleur et %s.\n"
             "Lumière naturelle, rendu de photographie produit, couleurs naturelles.\n"
-            "Aucun logo ni marque sur les appareils ; aucun texte lisible sur les écrans : les titres et les "
-            "paragraphes sont de simples barres grises." % (support, _site(s)))
+            "Aucun logo ni marque sur les appareils." % (support, _site(s), textes))
 
 
-def suivi(s, genre):
+def suivi(s, genre, lang=None):
     """Objet qui porte statut, version, fichier et textes d'une image : le sujet
-    lui-même pour la photo, son sous-objet « maquette » pour la maquette."""
-    if genre == 'maquette':
-        return s.setdefault('maquette', {'statut': 'pret', 'fichier': s['fichier'] + '-maquette'})
-    return s
+    lui-même pour la photo ; pour la maquette, une entrée par langue du
+    sous-objet « maquette » (fichiers <fichier>-maquette-<langue>)."""
+    if genre != 'maquette':
+        return s
+    m = s.setdefault('maquette', {})
+    if 'statut' in m:          # ancien format du 30/09 au matin : une maquette par sujet
+        m.clear()
+    return m.setdefault(lang, {'statut': 'pret', 'fichier': '%s-maquette-%s' % (s['fichier'], lang)})
 
 
-def charge_utile(s, restants, genre='photo'):
+def maquettes_de(s):
+    """[(langue, suivi)] des maquettes d'un sujet, dans l'ordre de ses pages."""
+    return [(lg, suivi(s, 'maquette', lg)) for lg in langues(s)]
+
+
+def charge_utile(s, restants, genre='photo', lang=None):
     maq = genre == 'maquette'
-    return {'sujet_id': s['id'], 'genre': genre, 'titre': ('Maquette — ' if maq else '') + s['titre'],
-            'url': s['url'], 'resume': s.get('resume') or '',
-            'prompt': construire_prompt_maquette(s) if maq else construire_prompt(s),
-            'langues': langues(s), 'consignes_textes': CONSIGNES_TEXTES_MAQUETTE if maq else CONSIGNES_TEXTES,
+    return {'sujet_id': s['id'], 'genre': genre, 'langue': lang,
+            'titre': ('Maquette %s — ' % NOMS_COURTS.get(lang, '') if maq else '') + s['titre'],
+            'url': next((p['url'] for p in s['pages'] if p['lang'] == lang), s['url']) if maq else s['url'],
+            'resume': s.get('resume') or '',
+            'prompt': construire_prompt_maquette(s, lang) if maq else construire_prompt(s),
+            'langues': [lang] if maq else langues(s),
+            'consignes_textes': CONSIGNES_TEXTES_MAQUETTE if maq else CONSIGNES_TEXTES,
             'restants': restants}
 
 
@@ -491,16 +536,17 @@ def _ecrire_index(index, index0):
         raise L.PhotoErreur('index.html serait devenu illisible : rien écrit')
 
 
-def appliquer(sid, image, textes, jour=None, genre='photo'):
+def appliquer(sid, image, textes, jour=None, genre='photo', lang=None):
     """Traite l'image et la pose sur toutes les pages du sujet : la photo après
     l'introduction, la maquette (genre='maquette') au milieu de la page.
     Renvoie les fichiers modifiés (relatifs au dépôt)."""
     maq = genre == 'maquette'
     data = charger()
     s = trouver(data, sid)
-    obj = suivi(s, genre)
+    obj = suivi(s, genre, lang)
+    pages = [p for p in s['pages'] if not maq or p['lang'] == lang]
     textes = normaliser_textes(textes)
-    manque = [lg for lg in langues(s) if not textes.get(lg, {}).get('alt')]
+    manque = [lg for lg in dict.fromkeys(p['lang'] for p in pages) if not textes.get(lg, {}).get('alt')]
     if manque:
         raise L.PhotoErreur('texte alternatif manquant pour : %s' % ', '.join(manque))
     v = int(obj.get('v') or 0) + 1
@@ -514,7 +560,7 @@ def appliquer(sid, image, textes, jour=None, genre='photo'):
     pages_cfg = imgs.setdefault('maquettes' if maq else 'pages', {})
     index0 = index = open(L.INDEX, encoding='utf-8').read()
     file_cfg = {}
-    for p in s['pages']:
+    for p in pages:
         t = textes[p['lang']]
         cfg = {'sujet': sid, 'fichier': fichier, 'largeur': L.LARGEUR, 'hauteur': L.HAUTEUR,
                'v': v, 'alt': t['alt'], 'legende': t['legende']}
@@ -552,21 +598,21 @@ def appliquer(sid, image, textes, jour=None, genre='photo'):
     return sorted(modifies)
 
 
-def annuler(sid, genre='photo'):
+def annuler(sid, genre='photo', lang=None):
     """Retire une image d'un sujet partout (pages, données des articles, file
     d'attente, fichiers de assets/) et la remet en « pret ». La version est
     gardée : la prochaine prendra v+1, ce qui contourne les caches."""
     maq = genre == 'maquette'
     data = charger()
     s = trouver(data, sid)
-    obj = suivi(s, genre)
+    obj = suivi(s, genre, lang)
     imgs = L.lire_json(L.IMAGES_JSON, {})
     pages_cfg = imgs.setdefault('maquettes' if maq else 'pages', {})
     fichier = obj['fichier']
     marques = (L.MAQ_DEBUT, L.MAQ_FIN) if maq else (L.MARQUE_DEBUT, L.MARQUE_FIN)
     modifies = set()
     index0 = index = open(L.INDEX, encoding='utf-8').read()
-    for p in s['pages']:
+    for p in [p for p in s['pages'] if not maq or p['lang'] == lang]:
         cfg = pages_cfg.pop(p['html'], None) or {'fichier': fichier}
         if p.get('spa') and index.count('slug:"%s"' % p['spa']) == 1:
             index = L.retirer_bloc_spa(index, p['spa'], cfg)
@@ -701,17 +747,18 @@ def cmd_statut():
     data = charger()
     pages = sum(len(s['pages']) for s in data['sujets'])
     print('Sujets : %d — %d pages' % (len(data['sujets']), pages))
-    for genre in ('photo', 'maquette'):
-        compte = {}
-        for s in data['sujets']:
-            st = suivi(s, genre).get('statut')
-            compte[st] = compte.get(st, 0) + 1
-        print('  %-9s %s' % (genre + 's', ', '.join('%s %d' % kv for kv in sorted(compte.items()))))
-    print('Prochains :')
-    prochains = [(s, 'photo') for s in data['sujets'] if s.get('statut') == 'pret']
-    prochains += [(s, 'maquette') for s in data['sujets'] if suivi(s, 'maquette').get('statut') == 'pret']
-    for s, genre in prochains[:12]:
-        print('  %-9s %-24s %2d page(s)  %s' % (genre, s['id'], len(s['pages']), s['titre'][:62]))
+    photos, maqs = {}, {}
+    for s in data['sujets']:
+        photos[s.get('statut')] = photos.get(s.get('statut'), 0) + 1
+        for lg, m in maquettes_de(s):
+            maqs[m.get('statut')] = maqs.get(m.get('statut'), 0) + 1
+    print('  photos    %s' % ', '.join('%s %d' % kv for kv in sorted(photos.items())))
+    print('  maquettes %s (une par sujet et par langue)' % ', '.join('%s %d' % kv for kv in sorted(maqs.items())))
+    print('Prochaines :')
+    prochains = [(s, 'photo', '') for s in data['sujets'] if s.get('statut') == 'pret']
+    prochains += [(s, 'maquette', lg) for s in data['sujets'] for lg, m in maquettes_de(s) if m.get('statut') == 'pret']
+    for s, genre, lg in prochains[:12]:
+        print('  %-9s %-4s %-24s %s' % (genre, lg, s['id'], s['titre'][:62]))
 
 
 def cmd_essai(genre='photo'):
@@ -762,22 +809,24 @@ def main(argv):
         cmd_statut()
     elif cmd == 'prompt':
         s = trouver(charger(), argv[1])
-        print(construire_prompt_maquette(s) if argv[2:] == ['maquette'] else construire_prompt(s))
+        print(construire_prompt_maquette(s, argv[3]) if argv[2:3] == ['maquette'] else construire_prompt(s))
     elif cmd == 'essai':
         return 1 if cmd_essai('maquette' if argv[1:] == ['maquette'] else 'photo') else 0
     elif cmd == 'appliquer':
         textes = json.load(open(argv[3], encoding='utf-8'))
-        genre = 'maquette' if argv[4:] == ['maquette'] else 'photo'
-        for f in appliquer(argv[1], argv[2], textes, genre=genre):
+        genre, lang = ('maquette', argv[5]) if argv[4:5] == ['maquette'] else ('photo', None)
+        for f in appliquer(argv[1], argv[2], textes, genre=genre, lang=lang):
             print('  modifié :', f)
     elif cmd == 'reappliquer':
         for f in reappliquer():
             print('  réappliqué :', f)
     elif cmd == 'annuler':
-        sid, genre = argv[1], ('maquette' if argv[2:] == ['maquette'] else 'photo')
-        for f in en_boucle(lambda: annuler(sid, genre),
-                           'Photos auto : %s retirée (%s), remise en file' % (genre, sid)):
-            print('  modifié :', f)
+        sid, genre = argv[1], ('maquette' if argv[2:3] == ['maquette'] else 'photo')
+        langs = argv[3:4] or ([lg for lg in langues(trouver(charger(), sid))] if genre == 'maquette' else [None])
+        for lang in langs:
+            for f in en_boucle(lambda: annuler(sid, genre, lang),
+                               'Photos auto : %s %s retirée (%s), remise en file' % (genre, lang or '', sid)):
+                print('  modifié :', f)
     elif cmd == 'verifier':
         pb = verifier()
         print('\n'.join(pb) if pb else 'toutes les photos prévues sont en place')
