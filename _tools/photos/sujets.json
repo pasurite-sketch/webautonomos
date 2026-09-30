@@ -2395,8 +2395,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "reformas-alicatado-bano-obra-maquette-en"
+     "statut": "fait",
+     "fichier": "reformas-alicatado-bano-obra-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T18:09:13",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Casa Build con dos profesionales colocando azulejos en un baño en reforma.",
+       "legende": "La web de Casa Build se adapta a ordenador y móvil y muestra trabajos de renovación."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Casa Build amb dos professionals col·locant taulells en un bany en reforma.",
+       "legende": "La web de Casa Build s'adapta a ordinador i mòbil i mostra treballs de renovació."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Casa Build website, featuring two workers tiling a bathroom during renovation.",
+       "legende": "Casa Build’s website adapts to desktop and mobile and showcases renovation work."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Casa Build, avec deux artisans posant du carrelage dans une salle de bains en rénovation.",
+       "legende": "Le site Casa Build s’adapte à l’ordinateur et au mobile et présente des travaux de rénovation."
+      }
+     }
     }
    },
    "ecrans": {

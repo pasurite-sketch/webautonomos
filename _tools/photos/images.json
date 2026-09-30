@@ -3128,6 +3128,15 @@
    "v": 1,
    "alt": "Un ordinateur et un téléphone affichent le site Rénov Habitat, avec deux artisans posant du carrelage dans une salle de bains en rénovation.",
    "legende": "Le site Rénov Habitat s’adapte à l’ordinateur et au mobile et présente des travaux de rénovation."
+  },
+  "en/website-for-builders-in-spain.html": {
+   "sujet": "metier-artisan",
+   "fichier": "reformas-alicatado-bano-obra-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Casa Build website, featuring two workers tiling a bathroom during renovation.",
+   "legende": "Casa Build’s website adapts to desktop and mobile and showcases renovation work."
   }
  }
 }
