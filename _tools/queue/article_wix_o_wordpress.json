@@ -616,6 +616,15 @@
         "text": "En poques paraules: per a Wix no, per a WordPress.com alguns, i per a WordPress en el teu propi allotjament, bastants més. Wix funciona amb un editor d'arrossegar i deixar anar i plantilles: mous blocs, canvies textos i fotos i veus el resultat a l'instant. WordPress també es gestiona sense programar amb el seu editor de blocs, però exigix més decisions (tema, extensions, ajustos) i, si l'allotges tu, la instal·lació i la configuració. Res impossible, però necessitaràs temps per a aprendre."
       },
       {
+        "type": "image",
+        "src": "/assets/elegir-herramienta-web-taller-ceramica-maquette-val.jpg",
+        "width": 1600,
+        "height": 900,
+        "v": "1",
+        "alt": "Un portàtil i un mòbil mostren una web de ceràmica artesanal, amb fotografies de peces i disseny adaptable a les dues pantalles.",
+        "caption": "Exemple de web de ceràmica artesanal en ordinador i mòbil."
+      },
+      {
         "type": "heading",
         "text": "Qui s'encarrega del manteniment i la seguretat?"
       },
