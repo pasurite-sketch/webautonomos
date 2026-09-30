@@ -3159,8 +3159,28 @@
    "site": "d'un commerce de quartier",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "contacto-mensaje-whatsapp-movil-maquette-es"
+     "statut": "fait",
+     "fichier": "contacto-mensaje-whatsapp-movil-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T18:45:05",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Ultramarinos Rosa, con una fotografía de una mujer grabando un mensaje de voz.",
+       "legende": "La web de Ultramarinos Rosa se muestra adaptada a ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d’Ultramarinos Rosa, amb una dona gravant un missatge de veu.",
+       "legende": "La web d’Ultramarinos Rosa es mostra adaptada a ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the Ultramarinos Rosa website, featuring a woman recording a voice message.",
+       "legende": "The Ultramarinos Rosa website is shown in desktop and mobile layouts."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Ultramarinos Rosa, avec une femme enregistrant un message vocal.",
+       "legende": "Le site Ultramarinos Rosa est présenté en versions ordinateur et mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",

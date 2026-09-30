@@ -3254,6 +3254,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Volta Electrical website, featuring an electrician and a consultant talking in a café.",
    "legende": "Volta Electrical’s website adapts to desktop and mobile and makes it easy to get in touch."
+  },
+  "contacto.html": {
+   "sujet": "page-contact",
+   "fichier": "contacto-mensaje-whatsapp-movil-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Ultramarinos Rosa, con una fotografía de una mujer grabando un mensaje de voz.",
+   "legende": "La web de Ultramarinos Rosa se muestra adaptada a ordenador y móvil."
   }
  }
 }
