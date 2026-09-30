@@ -2474,8 +2474,28 @@
    "site": "d'un artisan du bâtiment britannique",
    "maquette": {
     "en": {
-     "statut": "pret",
-     "fichier": "reformas-fachada-reino-unido-maquette-en"
+     "statut": "fait",
+     "fichier": "reformas-fachada-reino-unido-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T18:11:39",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Keystone Building con un profesional pintando contraventanas en el jardín de una casa.",
+       "legende": "La web de Keystone Building se adapta a ordenador y móvil y muestra un trabajo de mejora del hogar."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Keystone Building amb un professional pintant persianes al jardí d'una casa.",
+       "legende": "La web de Keystone Building s'adapta a ordinador i mòbil i mostra un treball de millora de la llar."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Keystone Building website, featuring a tradesman painting shutters in a house garden.",
+       "legende": "Keystone Building’s website adapts to desktop and mobile and showcases home improvement work."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Keystone Building, avec un artisan peignant des volets dans un jardin.",
+       "legende": "Le site Keystone Building s’adapte à l’ordinateur et au mobile et présente un travail de rénovation."
+      }
+     }
     }
    },
    "ecrans": {

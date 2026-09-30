@@ -3137,6 +3137,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Casa Build website, featuring two workers tiling a bathroom during renovation.",
    "legende": "Casa Build’s website adapts to desktop and mobile and showcases renovation work."
+  },
+  "en/web-design-for-tradesmen.html": {
+   "sujet": "metier-artisan-uk",
+   "fichier": "reformas-fachada-reino-unido-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Keystone Building website, featuring a tradesman painting shutters in a house garden.",
+   "legende": "Keystone Building’s website adapts to desktop and mobile and showcases home improvement work."
   }
  }
 }
