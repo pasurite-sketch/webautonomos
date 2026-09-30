@@ -3299,6 +3299,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Nord Gestion, avec une femme prenant un café dans un bureau lumineux.",
    "legende": "Le site Nord Gestion s’adapte aux écrans d’ordinateur et de mobile."
+  },
+  "en/automation-diagnostic/index.html": {
+   "sujet": "page-diagnostic",
+   "fichier": "automatizacion-oficina-ordenada-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the North Admin website, featuring a woman drinking coffee in a bright office.",
+   "legende": "The North Admin website adapts to desktop and mobile screens."
   }
  }
 }
