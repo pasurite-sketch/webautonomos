@@ -107,8 +107,6 @@
    "statut": "fait",
    "scene": "Un homme d'une quarantaine d'années, récemment installé en Espagne, ouvre les volets de son nouvel atelier dans une rue ensoleillée de Valence, l'air confiant.",
    "fichier": "autonomo-extranjero-tramites-oficina",
-   "marche_force": "es",
-   "note": "remis en file le 29/09 : l'ancienne scène (chemise de documents) piégeait le générateur (texte)",
    "v": 1,
    "fait_le": "2026-09-29T12:00:23",
    "textes": {
@@ -128,7 +126,9 @@
      "alt": "Un homme ouvre les volets de son atelier dans une rue ensoleillée d’inspiration méditerranéenne.",
      "legende": "Un artisan ouvre son nouvel atelier tandis que la lumière du matin entre."
     }
-   }
+   },
+   "note": "remis en file le 29/09 : l'ancienne scène (chemise de documents) piégeait le générateur (texte)",
+   "marche_force": "es"
   },
   {
    "id": "file-web-en-varios-idiomas",
@@ -170,8 +170,6 @@
    "statut": "fait",
    "scene": "La gérante d'un petit café de bord de mer sert deux cafés en souriant à un couple de touristes étrangers attablés en terrasse ; mer, palmiers et parasols flous en arrière-plan.",
    "fichier": "negocio-clientes-internacionales-costa",
-   "marche_force": "es",
-   "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution",
    "v": 1,
    "fait_le": "2026-09-29T14:16:08",
    "textes": {
@@ -191,7 +189,9 @@
      "alt": "Une serveuse apporte des cafés à un couple en terrasse au bord de la mer, sous des parasols et des palmiers.",
      "legende": "Une terrasse en bord de mer peut accueillir des visiteurs de différents pays."
     }
-   }
+   },
+   "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution",
+   "marche_force": "es"
   },
   {
    "id": "file-aviso-legal-privacidad-cookies-web",
@@ -233,7 +233,6 @@
    "statut": "fait",
    "scene": "Gros plan sur la main d'une commerçante qui tourne la clé dans la serrure de la porte en bois de sa boutique, en fin de journée, lumière dorée.",
    "fichier": "documentos-legales-negocio-archivador",
-   "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution",
    "v": 1,
    "fait_le": "2026-09-29T14:24:43",
    "textes": {
@@ -253,7 +252,8 @@
      "alt": "La main d'une commerçante tourne la clé dans la serrure de la porte en bois de sa boutique au crépuscule.",
      "legende": "La commerçante ferme sa boutique dans la lumière dorée du soir."
     }
-   }
+   },
+   "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution"
   },
   {
    "id": "file-facturar-clientes-otros-paises-ue-reino-unido",
@@ -1106,7 +1106,6 @@
    "statut": "fait",
    "scene": "Une entrepreneuse installée à Valence prend un café sur un balcon fleuri, un ordinateur portable fermé à côté d'elle ; vue sur les toits de tuiles et un clocher.",
    "fichier": "emprendedora-extranjera-valencia-balcon",
-   "marche_force": "es",
    "v": 1,
    "fait_le": "2026-09-29T15:48:21",
    "textes": {
@@ -1126,7 +1125,8 @@
      "alt": "Une entrepreneuse prend un café sur un balcon fleuri à Valence, avec des toits en terre cuite et un clocher en arrière-plan.",
      "legende": "Une pause café sur un balcon avec vue sur les toits de Valence."
     }
-   }
+   },
+   "marche_force": "es"
   },
   {
    "id": "page-fonctionnement",
@@ -1397,7 +1397,6 @@
    "statut": "fait",
    "scene": "Un couple cherche un restaurant sur son téléphone (écran invisible) dans une ruelle pavée du centre historique de Valence au crépuscule, sous des lampadaires.",
    "fichier": "seo-local-busqueda-movil-valencia",
-   "marche_force": "es",
    "v": 1,
    "fait_le": "2026-09-29T16:49:27",
    "textes": {
@@ -1417,7 +1416,8 @@
      "alt": "Un couple consulte un téléphone dans une ruelle pavée du centre historique de Valence au crépuscule.",
      "legende": "Un couple consulte son téléphone en se promenant dans le centre historique de Valence."
     }
-   }
+   },
+   "marche_force": "es"
   },
   {
    "id": "page-blog",
@@ -2433,7 +2433,6 @@
    "statut": "fait",
    "scene": "Accueil lumineux d'une clinique : comptoir en bois clair, plantes, salle d'attente vide aux chaises design ; une réceptionniste vue de dos.",
    "fichier": "clinica-salud-recepcion-luminosa",
-   "sante_force": true,
    "v": 1,
    "fait_le": "2026-09-29T22:38:12",
    "textes": {
@@ -2453,7 +2452,8 @@
      "alt": "Accueil lumineux d'une clinique avec comptoir en bois, plantes et salle d'attente vide ; une réceptionniste travaille de dos.",
      "legende": "Un espace d'accueil lumineux et calme reçoit les visiteurs."
     }
-   }
+   },
+   "sante_force": true
   },
   {
    "id": "art-18",
@@ -3526,7 +3526,6 @@
    "statut": "fait",
    "scene": "Cabinet de podologie propre et lumineux : fauteuil de soins, instruments rangés, la podologue vue de dos prépare la salle. Aucun patient.",
    "fichier": "clinica-podologia-consulta",
-   "sante_force": true,
    "v": 1,
    "fait_le": "2026-09-29T23:31:57",
    "textes": {
@@ -3546,7 +3545,8 @@
      "alt": "Une podologue prépare une salle de consultation lumineuse, avec fauteuil de soins et instruments bien rangés.",
      "legende": "La podologue organise le matériel avant le prochain rendez-vous."
     }
-   }
+   },
+   "sante_force": true
   },
   {
    "id": "art-39",
@@ -3585,7 +3585,6 @@
    "statut": "fait",
    "scene": "Salle d'attente d'un cabinet de psychologie : deux fauteuils, une lampe douce et des plantes ; ambiance calme, personne.",
    "fichier": "psicologo-sala-espera-consulta",
-   "sante_force": true,
    "v": 1,
    "fait_le": "2026-09-29T23:33:31",
    "textes": {
@@ -3605,7 +3604,8 @@
      "alt": "Salle d'attente de psychologie vide, avec deux fauteuils, une lampe douce, des plantes et une fenêtre lumineuse.",
      "legende": "Un espace calme et accueillant pour recevoir les personnes en consultation."
     }
-   }
+   },
+   "sante_force": true
   },
   {
    "id": "art-40",
@@ -3760,7 +3760,6 @@
    "statut": "fait",
    "scene": "Une nutritionniste dispose des fruits et légumes frais sur la table de son cabinet. Aucun patient.",
    "fichier": "nutricionista-consulta-alimentos",
-   "sante_force": true,
    "v": 1,
    "fait_le": "2026-09-29T23:39:22",
    "textes": {
@@ -3780,7 +3779,8 @@
      "alt": "Une nutritionniste dispose des fruits et légumes frais sur la table de son cabinet lumineux, sans patient présent.",
      "legende": "La professionnelle prépare des produits frais dans son espace de consultation."
     }
-   }
+   },
+   "sante_force": true
   },
   {
    "id": "art-43",
