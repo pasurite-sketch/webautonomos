@@ -251,8 +251,16 @@
      "v": 1
     },
     "en": {
-     "statut": "pret",
-     "fichier": "autonomo-extranjero-tramites-oficina-maquette-en"
+     "statut": "fait",
+     "fichier": "autonomo-extranjero-tramites-oficina-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T10:54:52",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
+       "legende": "Example website showing an artisan workshop site on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",

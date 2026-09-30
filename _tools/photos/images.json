@@ -2731,6 +2731,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site d'une céramiste avec des photos de poteries artisanales.",
    "legende": "Exemple de boutique de céramique artisanale sur ordinateur et mobile."
+  },
+  "blog/en/becoming-an-autonomo-in-spain-as-a-foreigner.html": {
+   "sujet": "file-alta-autonomo-extranjero-espana",
+   "fichier": "autonomo-extranjero-tramites-oficina-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
+   "legende": "Example website showing an artisan workshop site on laptop and smartphone."
   }
  }
 }
