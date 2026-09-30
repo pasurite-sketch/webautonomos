@@ -2884,6 +2884,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site d'une fleuriste avec un bouquet en page d'accueil.",
    "legende": "Exemple de site de fleuriste adapté aux écrans d'ordinateur et de mobile."
+  },
+  "en/pricing.html": {
+   "sujet": "page-tarifs",
+   "fichier": "precio-web-autonomo-floristeria-cuentas-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display a florist website featuring a bouquet on the homepage.",
+   "legende": "Example florist website adapted for desktop and mobile."
   }
  }
 }
