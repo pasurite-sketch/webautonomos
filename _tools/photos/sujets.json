@@ -1491,8 +1491,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "consulta-fisioterapia-sala-tratamiento-maquette-en"
+     "statut": "fait",
+     "fichier": "consulta-fisioterapia-sala-tratamiento-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T14:47:33",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Costa Physio con un fisioterapeuta ajustando una camilla en una clínica luminosa.",
+       "legende": "La web de Costa Physio se adapta a ordenador y móvil con una imagen de la sala de tratamiento."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Costa Physio amb un fisioterapeuta ajustant una llitera en una clínica lluminosa.",
+       "legende": "La web de Costa Physio s'adapta a ordinador i mòbil amb una imatge de la sala de tractament."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Costa Physio website, with a physiotherapist adjusting a treatment table in a bright clinic.",
+       "legende": "Costa Physio’s website adapts to desktop and mobile, featuring a bright physiotherapy treatment room."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Costa Physio, avec un kinésithérapeute réglant une table de soins.",
+       "legende": "Le site Costa Physio s’adapte à l’ordinateur et au mobile, avec une salle de soins lumineuse."
+      }
+     }
     }
    },
    "ecrans": {

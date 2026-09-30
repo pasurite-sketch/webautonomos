@@ -2984,6 +2984,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site d'un cabinet de kinésithérapie avec une salle de soins moderne.",
    "legende": "Exemple de site de kinésithérapie adapté à l'ordinateur et au mobile."
+  },
+  "en/website-for-physiotherapists-in-spain.html": {
+   "sujet": "metier-kine",
+   "fichier": "consulta-fisioterapia-sala-tratamiento-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Costa Physio website, with a physiotherapist adjusting a treatment table in a bright clinic.",
+   "legende": "Costa Physio’s website adapts to desktop and mobile, featuring a bright physiotherapy treatment room."
   }
  }
 }
