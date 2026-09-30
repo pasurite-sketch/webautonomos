@@ -37,6 +37,16 @@ INDEX = os.path.join(ROOT, 'index.html')
 LARGEUR, HAUTEUR = 1600, 900
 MARQUE_DEBUT = '<!-- photo:auto -->'
 MARQUE_FIN = '<!-- /photo:auto -->'
+# Deuxième image (30/09/2026) : maquette MacBook + smartphone, au milieu de la page.
+MAQ_DEBUT = '<!-- maquette:auto -->'
+MAQ_FIN = '<!-- /maquette:auto -->'
+# Sections (id, classe) et intertitres qui ne comptent pas pour trouver le milieu
+# d'une page : FAQ, témoignages, formulaires, contact.
+_HORS_MILIEU = re.compile(r'faq|pregunt|question|formul|contact|t[ée]moign|testimon|opini', re.I)
+_TITRES_HORS_MILIEU = re.compile(
+    r'preguntas frecuentes|questions fr[ée]quentes|frequently asked|\bfaq\b|suelen preguntar|'
+    r'ce que disent|lo que dicen|what our clients|t[ée]moignages|testimonios|testimonials|opiniones|'
+    r'contact', re.I)
 INTRO_ARTICLE = '<p class="text-lg text-gray-700 leading-relaxed mb-6">'
 
 # Paragraphes qui complètent l'introduction d'une page simple : la photo passe
@@ -82,6 +92,10 @@ def images():
     return lire_json(IMAGES_JSON, {}).get('pages', {})
 
 
+def maquettes():
+    return lire_json(IMAGES_JSON, {}).get('maquettes', {})
+
+
 def aujourdhui():
     return datetime.date.today().isoformat()
 
@@ -113,7 +127,7 @@ def figure_article(cfg):
     return '\n'.join(lignes)
 
 
-def figure_page(cfg, entre_sections):
+def figure_page(cfg, entre_sections, marques=(MARQUE_DEBUT, MARQUE_FIN)):
     """Balisage autonome (styles en ligne) : il ne dépend d'aucune feuille de
     style, donc il s'affiche pareil sur tous les gabarits du site."""
     base = '/assets/' + cfg['fichier']
@@ -121,7 +135,7 @@ def figure_page(cfg, entre_sections):
     w, h = cfg.get('largeur', LARGEUR), cfg.get('hauteur', HAUTEUR)
     marge, retrait = ('40px auto', '0 20px') if entre_sections else ('28px auto', '0')
     lignes = [
-        MARQUE_DEBUT,
+        marques[0],
         '<figure class="photo-auto" style="max-width:880px;margin:%s;padding:%s;box-sizing:border-box">' % (marge, retrait),
         '<picture>',
         '<source type="image/webp" srcset="%s-800.webp?v=%s 800w, %s.webp?v=%s %sw" sizes="(max-width: 920px) calc(100vw - 40px), 880px">' % (base, v, base, v, w),
@@ -129,7 +143,7 @@ def figure_page(cfg, entre_sections):
         '</picture>']
     if cfg.get('legende'):
         lignes.append('<figcaption style="margin:10px 0 0;font-size:14px;line-height:1.5;color:#6b7280;text-align:center">%s</figcaption>' % E(cfg['legende']))
-    lignes += ['</figure>', MARQUE_FIN]
+    lignes += ['</figure>', marques[1]]
     return '\n'.join(lignes)
 
 
@@ -198,15 +212,15 @@ def point_insertion(h):
     return j + len('</p>'), 'page', False
 
 
-def _retirer(h, cfg):
-    """Retire la photo déjà posée (marqueurs, ou figure d'article portant le
+def _retirer(h, cfg, marques=(MARQUE_DEBUT, MARQUE_FIN)):
+    """Retire l'image déjà posée (marqueurs, ou figure d'article portant le
     même fichier) pour pouvoir la remplacer."""
-    a = h.find(MARQUE_DEBUT)
+    a = h.find(marques[0])
     if a >= 0:
-        b = h.find(MARQUE_FIN, a)
+        b = h.find(marques[1], a)
         if b < 0:
-            raise PhotoErreur('marqueur de fin de photo absent')
-        b += len(MARQUE_FIN)
+            raise PhotoErreur('marqueur de fin absent (%s)' % marques[0])
+        b += len(marques[1])
         if h[a - 1:a] == '\n':
             a -= 1
         return h[:a] + h[b:]
@@ -217,17 +231,85 @@ def _retirer(h, cfg):
     return h
 
 
-def injecter(rel, h, cfg=None, jour=None):
-    """Page `h` avec sa photo (d'après images.json si `cfg` est absent).
-    Sans photo prévue, ou avant sa date, la page revient inchangée."""
+def _sections(h, depart):
+    """Sections de premier niveau qui commencent après `depart` :
+    (début, balise ouvrante, contenu)."""
+    out, fin_prec = [], -1
+    for m in re.finditer(r'<section\b[^>]*>', h):
+        if m.start() < fin_prec:
+            continue          # section imbriquée
+        fin = _fin_element(h, m.start(), 'section')
+        fin_prec = fin
+        if m.start() > depart:
+            out.append((m.start(), m.group(0), h[m.end():fin]))
+    return out
+
+
+def point_milieu(h):
+    """(index, gabarit, entre_sections) : où poser la maquette, au milieu de la
+    page, en ignorant FAQ, témoignages, formulaires et contact."""
+    a = h.find(MARQUE_FIN)
+    if a >= 0:
+        depart = a
+    else:
+        try:
+            depart = point_insertion(h)[0]
+        except PhotoErreur:
+            depart = 0
+    # 1. Articles : intertitres numérotés (seccion-N).
+    h2 = [m.start() for m in re.finditer(r'<h2\b[^>]*\bid="seccion-\d+"', h) if m.start() > depart]
+    if len(h2) >= 2:
+        return h2[len(h2) // 2], ('article' if INTRO_ARTICLE in h else 'page'), False
+    # 2. Pages à sections : entre deux sections.
+    cands = []
+    for debut, balise, contenu in _sections(h, depart):
+        t = re.search(r'<h2\b[^>]*>(.*?)</h2>', contenu, re.S)
+        if not t or '<form' in contenu:
+            continue
+        if _HORS_MILIEU.search(balise) or _TITRES_HORS_MILIEU.search(re.sub(r'<[^>]+>', '', t.group(1))):
+            continue
+        cands.append(debut)
+    if len(cands) >= 2:
+        return cands[len(cands) // 2], 'page', True
+    # 3. Pages simples : intertitres.
+    h2 = [m.start() for m in re.finditer(r'<h2\b[^>]*>(.*?)</h2>', h, re.S)
+          if m.start() > depart and not _TITRES_HORS_MILIEU.search(re.sub(r'<[^>]+>', '', m.group(1)))]
+    if len(h2) >= 2:
+        return h2[len(h2) // 2], 'page', False
+    # 4. Pages sans intertitre (FAQ, contact, démos) : fin du contenu, loin de la photo.
+    j = h.rfind('</main>')
+    if j > depart:
+        return j, 'page', False
+    raise PhotoErreur('aucune position trouvée pour la maquette')
+
+
+def injecter(rel, h, cfg=None, jour=None, maquette=None):
+    """Page `h` avec sa photo et sa maquette (d'après images.json quand `cfg`
+    ou `maquette` sont absents). Sans image prévue, ou avant sa date, la page
+    revient inchangée."""
+    cle = cle_page(rel)
     if cfg is None:
-        cfg = images().get(cle_page(rel))
-    if not cfg or not active(cfg, jour):
-        return h
-    h = _retirer(h, cfg)
-    pos, gabarit, entre = point_insertion(h)
-    bloc = figure_article(cfg) if gabarit == 'article' else figure_page(cfg, entre)
-    return h[:pos] + '\n' + bloc + h[pos:]
+        cfg = images().get(cle)
+    if maquette is None:
+        maquette = maquettes().get(cle)
+    if cfg and active(cfg, jour):
+        h = _retirer(h, cfg)
+        pos, gabarit, entre = point_insertion(h)
+        bloc = figure_article(cfg) if gabarit == 'article' else figure_page(cfg, entre)
+        h = h[:pos] + '\n' + bloc + h[pos:]
+    if maquette and active(maquette, jour):
+        h = _retirer(h, maquette, (MAQ_DEBUT, MAQ_FIN))
+        pos, gabarit, entre = point_milieu(h)
+        if gabarit == 'article':
+            bloc = figure_article(maquette)
+        else:
+            bloc = figure_page(maquette, entre, (MAQ_DEBUT, MAQ_FIN))
+        # au début de la ligne de l'intertitre : même rendu que le générateur
+        debut_ligne = h.rfind('\n', 0, pos) + 1
+        if not h[debut_ligne:pos].strip():
+            pos = debut_ligne
+        h = h[:pos] + bloc + '\n' + h[pos:]
+    return h
 
 
 def compte_photo(h, cfg):
@@ -325,14 +407,22 @@ def a_bloc_image(s, slug, cfg):
     return any(s[d:e].startswith('{type:"image"') and cible in s[d:e] for d, e in blocs)
 
 
-def poser_bloc_spa(s, slug, cfg):
-    """index.html avec le bloc image de l'article `slug` (ex. « es/mon-article »),
-    juste après son introduction ; un bloc image existant est remplacé."""
+def poser_bloc_spa(s, slug, cfg, milieu=False):
+    """index.html avec le bloc image de l'article `slug` (ex. « es/mon-article ») :
+    la photo juste après l'introduction ; la maquette (milieu=True) avant
+    l'intertitre du milieu. Le bloc déjà posé pour ce fichier est remplacé."""
+    s = retirer_bloc_spa(s, slug, cfg)
     a, blocs = _blocs_article(s, slug)
     nouveau = js_valeur(bloc_image(cfg))
-    for d, e in blocs:
-        if s[d:e].startswith('{type:"image"'):
-            return s[:d] + nouveau + s[e:]
+    if milieu:
+        titres = [d for d, e in blocs if s[d:e].startswith('{type:"heading"')]
+        if len(titres) >= 2:
+            d = titres[len(titres) // 2]
+            return s[:d] + nouveau + ',' + s[d:]
+        if blocs:
+            e = blocs[-1][1]
+            return s[:e] + ',' + nouveau + s[e:]
+        return s[:a + 1] + nouveau + s[a + 1:]
     if blocs and s[blocs[0][0]:blocs[0][1]].startswith('{type:"intro"'):
         pos = blocs[0][1]
         return s[:pos] + ',' + nouveau + s[pos:]
@@ -365,17 +455,23 @@ def _ecrire_file(path, brut, d):
             fh.write('\n')
 
 
-def poser_bloc_file(path, cfg_par_langue):
+def poser_bloc_file(path, cfg_par_langue, milieu=False):
     """Article en file d'attente (_tools/queue/*.json) : bloc image après
-    l'introduction de chaque langue. publish_next.py le reprendra tel quel."""
+    l'introduction (photo) ou avant l'intertitre du milieu (maquette), dans
+    chaque langue. publish_next.py le reprendra tel quel."""
     brut = open(path, encoding='utf-8').read()
     d = json.loads(brut)
     for lg, cfg in cfg_par_langue.items():
         if lg not in d:
             continue
-        contenu = [b for b in d[lg]['content'] if b.get('type') != 'image']
-        pos = 1 if contenu and contenu[0].get('type') == 'intro' else 0
-        contenu.insert(pos, bloc_image(cfg))
+        bloc = bloc_image(cfg)
+        contenu = [b for b in d[lg]['content'] if not (b.get('type') == 'image' and b.get('src') == bloc['src'])]
+        if milieu:
+            titres = [i for i, b in enumerate(contenu) if b.get('type') == 'heading']
+            pos = titres[len(titres) // 2] if len(titres) >= 2 else len(contenu)
+        else:
+            pos = 1 if contenu and contenu[0].get('type') == 'intro' else 0
+        contenu.insert(pos, bloc)
         d[lg]['content'] = contenu
     _ecrire_file(path, brut, d)
 

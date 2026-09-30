@@ -37,7 +37,10 @@ au lieu de son résultat. Exécuter la commande, puis coller.
      réduite et publiée ; le GPT affiche aussitôt le prompt de la page suivante ;
    - une autre version : recoller le même prompt ;
    - `passer` : la page est laissée de côté.
-4. `état` : combien de photos faites et restantes.
+4. `état` : combien de photos et de maquettes faites et restantes.
+
+Une fois les photos terminées, la même boucle enchaîne sur les maquettes
+(MacBook + smartphone) : le titre affiché commence par « Maquette — ».
 
 Pourquoi ce copier-coller (tests du 29/09) : quand le GPT reprenait lui-même le
 prompt reçu de l'action, ChatGPT affichait une image sans rapport (infographies

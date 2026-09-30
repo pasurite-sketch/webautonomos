@@ -60,11 +60,13 @@ _FICHIER_COURANT = os.path.join(ETAT, 'courant.json')
 
 
 def _courant():
-    return L.lire_json(_FICHIER_COURANT, {}).get('sujet')
+    """(sujet, genre) de la page en cours ; genre = photo ou maquette."""
+    c = L.lire_json(_FICHIER_COURANT, {})
+    return c.get('sujet'), c.get('genre') or 'photo'
 
 
-def _fixer_courant(sid):
-    L.ecrire_json(_FICHIER_COURANT, {'sujet': sid, 'depuis': time.strftime('%Y-%m-%d %H:%M:%S')})
+def _fixer_courant(sid, genre='photo'):
+    L.ecrire_json(_FICHIER_COURANT, {'sujet': sid, 'genre': genre, 'depuis': time.strftime('%Y-%m-%d %H:%M:%S')})
 
 
 class Verrou:
@@ -90,14 +92,18 @@ def suivante():
     with Verrou():
         P.synchro()
         data = P.charger()
-        prets = [s for s in data['sujets'] if s.get('statut') == 'pret' and P.a_des_pages_actives(s)]
+        # Les photos d'abord, puis les maquettes MacBook + smartphone (30/09).
+        prets = [(s, 'photo') for s in data['sujets'] if s.get('statut') == 'pret' and P.a_des_pages_actives(s)]
+        prets += [(s, 'maquette') for s in data['sujets']
+                  if P.suivi(s, 'maquette').get('statut') == 'pret' and P.a_des_pages_actives(s)]
         # La page en cours (ni envoyée ni passée) revient, avec son prompt à jour.
-        en_cours = next((s for s in prets if s['id'] == _courant()), None)
-        s = en_cours or (prets[0] if prets else None)
-        if s is not None:
-            _fixer_courant(s['id'])
-            log.info('suivante -> %s%s', s['id'], ' (page en cours)' if en_cours else '')
-            return 200, P.charge_utile(s, len(prets))
+        en_cours = next(((s, g) for s, g in prets if (s['id'], g) == _courant()), None)
+        choix = en_cours or (prets[0] if prets else None)
+        if choix is not None:
+            s, genre = choix
+            _fixer_courant(s['id'], genre)
+            log.info('suivante -> %s (%s)%s', s['id'], genre, ' (page en cours)' if en_cours else '')
+            return 200, P.charge_utile(s, len(prets), genre)
         _fixer_courant(None)
     return 200, {'termine': True, 'restants': 0,
                  'message': 'Toutes les pages prévues ont leur photo. Rien à générer pour le moment.'}
@@ -144,18 +150,16 @@ def _resoudre(sid):
     une (l'identifiant envoyé par le GPT n'est pas fiable), sinon l'identifiant
     exact."""
     ids = {s['id'] for s in P.charger()['sujets']}
-    courant = _courant()
+    courant, genre = _courant()
     if courant in ids:
         if sid != courant:
             log.warning('sujet_id « %s » envoyé par le GPT : attribué à la page en cours %s', sid, courant)
-        return courant
-    if sid in ids:
-        return sid
+        return courant, genre
     raise L.PhotoErreur("Aucune page en cours : tape « suivante » pour recevoir la page à illustrer.")
 
 
 def recevoir_photo(corps):
-    sid = _resoudre((corps.get('sujet_id') or '').strip())
+    sid, genre = _resoudre((corps.get('sujet_id') or '').strip())
     ref = _premiere_image(corps.get('openaiFileIdRefs'))
     if not sid:
         return 400, {'ok': False, 'erreur': 'sujet_id manquant.'}
@@ -170,13 +174,13 @@ def recevoir_photo(corps):
                                              'un alt pour chaque langue.' % ', '.join(manque)}
     chemin = _telecharger(ref['download_link'])
     try:
-        refus = _controler(chemin, sid, ref)
+        refus = _controler(chemin, sid, ref, genre)
         if refus:
             return 422, {'ok': False, 'erreur': refus}
         with Verrou():
             titre = s['titre']
-            fichiers = P.en_boucle(lambda: P.appliquer(sid, chemin, textes),
-                                   'Photo auto : %s' % titre[:80])
+            fichiers = P.en_boucle(lambda: P.appliquer(sid, chemin, textes, genre=genre),
+                                   '%s auto : %s' % ('Maquette' if genre == 'maquette' else 'Photo', titre[:80]))
             s = P.trouver(P.charger(), sid)
             _fixer_courant(None)
     finally:
@@ -186,18 +190,20 @@ def recevoir_photo(corps):
             pass
     pages = [p['url'] for p in s['pages'] if L.active(p)]
     en_attente = [p['url'] for p in s['pages'] if not L.active(p)]
-    apercu = 'https://webautonomos.es/assets/%s.jpg?v=%s' % (s['fichier'], s.get('v'))
-    log.info('photo %s v%s -> %d fichiers', sid, s.get('v'), len(fichiers))
-    msg = 'Photo posée sur %d page(s), en ligne dans 2 minutes environ.' % len(pages)
+    obj = P.suivi(s, genre)
+    apercu = 'https://webautonomos.es/assets/%s.jpg?v=%s' % (obj['fichier'], obj.get('v'))
+    log.info('%s %s v%s -> %d fichiers', genre, sid, obj.get('v'), len(fichiers))
+    quoi = 'Maquette' if genre == 'maquette' else 'Photo'
+    msg = '%s posée sur %d page(s), en ligne dans 2 minutes environ.' % (quoi, len(pages))
     if s.get('type') == 'file' and not s.get('publie'):
-        msg = 'Photo prête : elle paraîtra avec l\'article le %s.' % s.get('publication')
+        msg = '%s prête : elle paraîtra avec l\'article le %s.' % (quoi, s.get('publication'))
     if en_attente:
         msg += ' %d page(s) gelée(s) la recevront automatiquement à la fin du gel.' % len(en_attente)
-    return 200, {'ok': True, 'sujet_id': sid, 'version': s.get('v'), 'pages': pages,
+    return 200, {'ok': True, 'sujet_id': sid, 'genre': genre, 'version': obj.get('v'), 'pages': pages,
                  'photo_publiee': apercu, 'message': msg + ' Photo reçue : ' + apercu}
 
 
-def _controler(chemin, sid, ref):
+def _controler(chemin, sid, ref, genre='photo'):
     """Refuse une image déjà reçue ou qui contient du texte. Garde chaque image
     reçue (acceptée ou refusée) dans ~/.local/state/photos/recues/ pour contrôle."""
     import hashlib
@@ -222,9 +228,12 @@ def _controler(chemin, sid, ref):
         return ("Cette image a déjà été envoyée (pour %s). Génère une photo entièrement nouvelle pour ce sujet, "
                 "puis renvoie-la." % index[empreinte]['sujet'])
     textes = L.textes_dans_image(chemin)
+    # Maquettes : les écrans montrent un site, quelques zones de texte sont
+    # tolérées (Angelino valide par « ok ») ; un écran couvert de texte est refusé.
+    seuil = 8 if genre == 'maquette' else 1
     if textes is None:
         log.warning('détecteur de texte absent : contrôle sauté')
-    elif textes:
+    elif len(textes) >= seuil:
         shutil.copy(chemin, os.path.join(dossier, 'refusees', nom))
         log.warning('refusée (texte) pour %s : %s', sid, ' | '.join(textes[:5]))
         extrait = ', '.join('« %s »' % t[:40] for t in textes[:3])
@@ -238,13 +247,13 @@ def _controler(chemin, sid, ref):
 
 
 def passer(corps):
-    sid = _resoudre((corps.get('sujet_id') or '').strip())
+    sid, genre = _resoudre((corps.get('sujet_id') or '').strip())
 
     def operation():
         data = P.charger()
-        s = P.trouver(data, sid)
-        s['statut'] = 'saute'
-        s['note'] = (corps.get('raison') or 'laissé de côté depuis le GPT')[:200]
+        obj = P.suivi(P.trouver(data, sid), genre)
+        obj['statut'] = 'saute'
+        obj['note'] = (corps.get('raison') or 'laissé de côté depuis le GPT')[:200]
         L.ecrire_json(L.SUJETS_JSON, data)
         return ['_tools/photos/sujets.json']
 
@@ -257,14 +266,18 @@ def passer(corps):
 
 def etat():
     data = P.charger()
-    compte = {}
+    compte = {'photo': {}, 'maquette': {}}
     for s in data['sujets']:
-        compte[s.get('statut')] = compte.get(s.get('statut'), 0) + 1
-    prochain = next((s for s in data['sujets'] if s.get('statut') == 'pret' and P.a_des_pages_actives(s)), None)
-    return 200, {'photos_faites': compte.get('fait', 0), 'restantes': compte.get('pret', 0),
-                 'laissees_de_cote': compte.get('saute', 0),
-                 'pages_illustrees': len(L.images()),
-                 'prochain': prochain and {'sujet_id': prochain['id'], 'titre': prochain['titre']}}
+        for genre in compte:
+            st = P.suivi(s, genre).get('statut')
+            compte[genre][st] = compte[genre].get(st, 0) + 1
+    sid, genre = _courant()
+    return 200, {'photos_faites': compte['photo'].get('fait', 0), 'photos_restantes': compte['photo'].get('pret', 0),
+                 'maquettes_faites': compte['maquette'].get('fait', 0),
+                 'maquettes_restantes': compte['maquette'].get('pret', 0),
+                 'laissees_de_cote': compte['photo'].get('saute', 0) + compte['maquette'].get('saute', 0),
+                 'pages_avec_photo': len(L.images()), 'pages_avec_maquette': len(L.maquettes()),
+                 'page_en_cours': sid and {'sujet_id': sid, 'genre': genre}}
 
 
 # --------------------------------------------------------------------------

@@ -7,11 +7,11 @@ fait le reste par serveur.py. Ces commandes servent au VPS et au Mac :
 
     python3 _tools/photos/photos.py inventaire   # met la file à jour (sujets.json)
     python3 _tools/photos/photos.py statut       # avancement et prochains sujets
-    python3 _tools/photos/photos.py prompt ID    # prompt que recevra ChatGPT
+    python3 _tools/photos/photos.py prompt ID [maquette]   # prompt que recevra ChatGPT
     python3 _tools/photos/photos.py essai        # teste la position sur toutes les pages, sans rien écrire
-    python3 _tools/photos/photos.py appliquer ID IMAGE TEXTES.json   # pose une photo à la main
+    python3 _tools/photos/photos.py appliquer ID IMAGE TEXTES.json [maquette]   # pose une image à la main
     python3 _tools/photos/photos.py reappliquer  # remet les photos effacées par une régénération
-    python3 _tools/photos/photos.py annuler ID   # retire la photo d'un sujet partout, le remet en file
+    python3 _tools/photos/photos.py annuler ID [maquette]  # retire l'image d'un sujet partout, la remet en file
     python3 _tools/photos/photos.py verifier     # chaque photo prévue est en place, une seule fois
     python3 _tools/photos/photos.py nuit         # VPS : inventaire + réapplication + contrôle + push
 
@@ -297,7 +297,7 @@ def _sujets_pages(gel, poses):
 
 
 GARDER = ('statut', 'scene', 'fichier', 'v', 'fait_le', 'textes', 'priorite_manuelle', 'note',
-          'marche_force', 'sante_force', 'pages_en_plus')
+          'marche_force', 'sante_force', 'pages_en_plus', 'site', 'maquette')
 
 
 def inventaire(ecrire=True):
@@ -319,7 +319,7 @@ def inventaire(ecrire=True):
             a = next((orphelins[p['html']] for p in s['pages'] if p['html'] in orphelins), None)
             if a is not None:
                 par_id.pop(a['id'], None)
-                a = {k: v for k, v in a.items() if k in ('scene', 'fichier', 'note', 'statut')}
+                a = {k: v for k, v in a.items() if k in ('scene', 'fichier', 'note', 'statut', 'site', 'maquette')}
         if a:
             for k in GARDER:
                 if k in a:
@@ -337,6 +337,7 @@ def inventaire(ecrire=True):
             s['statut'] = 'pret'
             ajoutes.append(s['id'])
         s.setdefault('fichier', 'photo-' + s['id'])
+        suivi(s, 'maquette')
         sujets.append(s)
     # Sujets sortis de l'inventaire (article de la file publié, page supprimée) :
     # conservés s'ils ont une photo, pour pouvoir la refaire.
@@ -401,9 +402,51 @@ def construire_prompt(s):
             "documentaire, couleurs naturelles.\n%s." % (scene, marche, interdits))
 
 
-def charge_utile(s, restants):
-    return {'sujet_id': s['id'], 'titre': s['titre'], 'url': s['url'], 'resume': s.get('resume') or '',
-            'prompt': construire_prompt(s), 'langues': langues(s), 'consignes_textes': CONSIGNES_TEXTES,
+# Deuxième image (30/09/2026) : maquette MacBook + smartphone qui montre le site
+# de l'activité de la page (celle de sa photo). Écrans sans texte lisible
+# (barres grises) ; jamais présentée comme le site d'un vrai client.
+SUPPORTS = ("un bureau en bois clair près d'une fenêtre", "une table blanche lumineuse",
+            "un comptoir en bois de boutique", "une table de terrasse de café, en plein jour")
+
+CONSIGNES_TEXTES_MAQUETTE = (
+    "Pour chaque langue de « langues », rédige dans cette langue : un texte alternatif « alt » de 80 à 125 "
+    "caractères qui décrit l'ordinateur portable et le smartphone et ce qu'affichent leurs écrans (le site de "
+    "l'activité, en version ordinateur et mobile), sans commencer par « photo de » ni « image de » ; une légende "
+    "« legende » de 50 à 100 caractères qui commence par « Exemple de site » (es : « Ejemplo de web », "
+    "val : « Exemple de web », en : « Example website »). Jamais le site d'un client réel ; pas de nom de marque."
+)
+
+
+def _site(s):
+    return s.get('site') or ("d'une activité liée au thème « %s »" % s['titre'])
+
+
+def construire_prompt_maquette(s):
+    """Même forme que le prompt des photos : il commence par « Photographie
+    réaliste », que le GPT reconnaît, et reste purement visuel."""
+    support = SUPPORTS[sum(map(ord, s['id'])) % len(SUPPORTS)]
+    return ("Photographie réaliste, format paysage : un ordinateur portable de style MacBook ouvert et un "
+            "smartphone posés côte à côte sur %s ; les deux écrans affichent le site web %s, avec une grande "
+            "photo, des blocs de couleur et des boutons, en version ordinateur et en version mobile.\n"
+            "Lumière naturelle, rendu de photographie produit, couleurs naturelles.\n"
+            "Aucun logo ni marque sur les appareils ; aucun texte lisible sur les écrans : les titres et les "
+            "paragraphes sont de simples barres grises." % (support, _site(s)))
+
+
+def suivi(s, genre):
+    """Objet qui porte statut, version, fichier et textes d'une image : le sujet
+    lui-même pour la photo, son sous-objet « maquette » pour la maquette."""
+    if genre == 'maquette':
+        return s.setdefault('maquette', {'statut': 'pret', 'fichier': s['fichier'] + '-maquette'})
+    return s
+
+
+def charge_utile(s, restants, genre='photo'):
+    maq = genre == 'maquette'
+    return {'sujet_id': s['id'], 'genre': genre, 'titre': ('Maquette — ' if maq else '') + s['titre'],
+            'url': s['url'], 'resume': s.get('resume') or '',
+            'prompt': construire_prompt_maquette(s) if maq else construire_prompt(s),
+            'langues': langues(s), 'consignes_textes': CONSIGNES_TEXTES_MAQUETTE if maq else CONSIGNES_TEXTES,
             'restants': restants}
 
 
@@ -437,23 +480,38 @@ def _valider_index(nouveau):
     return True
 
 
-def appliquer(sid, image, textes, jour=None):
-    """Traite l'image et pose la photo sur toutes les pages du sujet.
+def _ecrire_index(index, index0):
+    with open(L.INDEX, 'w', encoding='utf-8') as fh:
+        fh.write(index)
+    try:
+        _valider_index(index)
+    except SystemExit:
+        with open(L.INDEX, 'w', encoding='utf-8') as fh:
+            fh.write(index0)
+        raise L.PhotoErreur('index.html serait devenu illisible : rien écrit')
+
+
+def appliquer(sid, image, textes, jour=None, genre='photo'):
+    """Traite l'image et la pose sur toutes les pages du sujet : la photo après
+    l'introduction, la maquette (genre='maquette') au milieu de la page.
     Renvoie les fichiers modifiés (relatifs au dépôt)."""
+    maq = genre == 'maquette'
     data = charger()
     s = trouver(data, sid)
+    obj = suivi(s, genre)
     textes = normaliser_textes(textes)
     manque = [lg for lg in langues(s) if not textes.get(lg, {}).get('alt')]
     if manque:
         raise L.PhotoErreur('texte alternatif manquant pour : %s' % ', '.join(manque))
-    v = int(s.get('v') or 0) + 1
-    fichier = s['fichier']
+    v = int(obj.get('v') or 0) + 1
+    fichier = obj['fichier']
     L.traiter_image(image, fichier)
     modifies = {'assets/%s%s' % (fichier, ext) for ext in ('.jpg', '.webp', '-800.webp')}
     imgs = L.lire_json(L.IMAGES_JSON, {})
-    imgs.setdefault('_lisez_moi', "Photo affichée par chaque page (clé = fichier HTML). Écrit par "
-                                  "_tools/photos/photos.py ; lu par les générateurs via photos_lib.injecter.")
-    pages_cfg = imgs.setdefault('pages', {})
+    imgs['_lisez_moi'] = ("Images de chaque page (clé = fichier HTML) : « pages » pour la photo, « maquettes » "
+                          "pour la maquette MacBook + smartphone. Écrit par _tools/photos/photos.py ; lu par les "
+                          "générateurs via photos_lib.injecter.")
+    pages_cfg = imgs.setdefault('maquettes' if maq else 'pages', {})
     index0 = index = open(L.INDEX, encoding='utf-8').read()
     file_cfg = {}
     for p in s['pages']:
@@ -469,47 +527,43 @@ def appliquer(sid, image, textes, jour=None):
         if not L.active(cfg, jour):
             continue
         if p.get('spa') and index.count('slug:"%s"' % p['spa']) == 1:
-            index = L.poser_bloc_spa(index, p['spa'], cfg)
+            index = L.poser_bloc_spa(index, p['spa'], cfg, milieu=maq)
         chemin = os.path.join(L.ROOT, p['html'])
         if os.path.isfile(chemin):
             h = lire(p['html'])
-            h2 = L.injecter(p['html'], h, cfg, jour)
+            h2 = (L.injecter(p['html'], h, None, jour, maquette=cfg) if maq
+                  else L.injecter(p['html'], h, cfg, jour))
             if L.compte_photo(h2, cfg) != 1:
-                raise L.PhotoErreur('photo mal posée dans %s' % p['html'])
+                raise L.PhotoErreur('%s mal posée dans %s' % (genre, p['html']))
             if h2 != h:
                 with open(chemin, 'w', encoding='utf-8') as fh:
                     fh.write(h2)
                 modifies.add(p['html'])
     if file_cfg:
-        L.poser_bloc_file(os.path.join(L.ROOT, s['file']), file_cfg)
+        L.poser_bloc_file(os.path.join(L.ROOT, s['file']), file_cfg, milieu=maq)
         modifies.add(s['file'])
     if index != index0:
-        with open(L.INDEX, 'w', encoding='utf-8') as fh:
-            fh.write(index)
-        try:
-            _valider_index(index)
-        except SystemExit:
-            with open(L.INDEX, 'w', encoding='utf-8') as fh:
-                fh.write(index0)
-            raise L.PhotoErreur('index.html serait devenu illisible : rien écrit')
+        _ecrire_index(index, index0)
         modifies.add('index.html')
-    s.update(statut='fait', v=v, fait_le=datetime.datetime.now().isoformat(timespec='seconds'),
-             textes=textes)
+    obj.update(statut='fait', v=v, fait_le=datetime.datetime.now().isoformat(timespec='seconds'), textes=textes)
     L.ecrire_json(L.IMAGES_JSON, imgs)
     L.ecrire_json(L.SUJETS_JSON, data)
     modifies |= {'_tools/photos/images.json', '_tools/photos/sujets.json'}
     return sorted(modifies)
 
 
-def annuler(sid):
-    """Retire la photo d'un sujet partout (pages, données des articles, file
-    d'attente, fichiers de assets/) et remet le sujet en « pret ». La version
-    est gardée : la prochaine photo prendra v+1, ce qui contourne les caches."""
+def annuler(sid, genre='photo'):
+    """Retire une image d'un sujet partout (pages, données des articles, file
+    d'attente, fichiers de assets/) et la remet en « pret ». La version est
+    gardée : la prochaine prendra v+1, ce qui contourne les caches."""
+    maq = genre == 'maquette'
     data = charger()
     s = trouver(data, sid)
+    obj = suivi(s, genre)
     imgs = L.lire_json(L.IMAGES_JSON, {})
-    pages_cfg = imgs.setdefault('pages', {})
-    fichier = s['fichier']
+    pages_cfg = imgs.setdefault('maquettes' if maq else 'pages', {})
+    fichier = obj['fichier']
+    marques = (L.MAQ_DEBUT, L.MAQ_FIN) if maq else (L.MARQUE_DEBUT, L.MARQUE_FIN)
     modifies = set()
     index0 = index = open(L.INDEX, encoding='utf-8').read()
     for p in s['pages']:
@@ -519,7 +573,7 @@ def annuler(sid):
         chemin = os.path.join(L.ROOT, p['html'])
         if os.path.isfile(chemin):
             h = lire(p['html'])
-            h2 = L._retirer(h, cfg)
+            h2 = L._retirer(h, cfg, marques)
             if h2 != h:
                 with open(chemin, 'w', encoding='utf-8') as fh:
                     fh.write(h2)
@@ -528,70 +582,65 @@ def annuler(sid):
         if L.retirer_bloc_file(os.path.join(L.ROOT, s['file']), fichier):
             modifies.add(s['file'])
     if index != index0:
-        with open(L.INDEX, 'w', encoding='utf-8') as fh:
-            fh.write(index)
-        _valider_index(index)
+        _ecrire_index(index, index0)
         modifies.add('index.html')
     for ext in ('.jpg', '.webp', '-800.webp'):
         f = os.path.join(L.ASSETS, fichier + ext)
         if os.path.isfile(f):
             os.remove(f)
             modifies.add('assets/%s%s' % (fichier, ext))
-    s['statut'] = 'pret'
+    obj['statut'] = 'pret'
     for k in ('fait_le', 'textes'):
-        s.pop(k, None)
+        obj.pop(k, None)
     L.ecrire_json(L.IMAGES_JSON, imgs)
     L.ecrire_json(L.SUJETS_JSON, data)
     return sorted(modifies | {'_tools/photos/images.json', '_tools/photos/sujets.json'})
 
 
 def reappliquer(jour=None):
-    """Remet chaque photo prévue là où elle manque : page régénérée sans son
-    générateur à jour, page gelée arrivée à sa date, article publié depuis."""
-    imgs = L.images()
+    """Remet chaque image prévue (photo et maquette) là où elle manque : page
+    régénérée, page gelée arrivée à sa date, article publié depuis."""
+    photos, maqs = L.images(), L.maquettes()
     data = charger()
     spa = {p['html']: p['spa'] for s in data['sujets'] for p in s['pages'] if p.get('spa')}
     index0 = index = open(L.INDEX, encoding='utf-8').read()
     modifies = set()
-    for rel, cfg in sorted(imgs.items()):
-        if not L.active(cfg, jour):
-            continue
-        if not os.path.isfile(os.path.join(L.ASSETS, cfg['fichier'] + '.jpg')):
-            print('  ! fichiers absents pour %s (%s)' % (rel, cfg['fichier']))
-            continue
-        slug = spa.get(rel)
-        if slug and index.count('slug:"%s"' % slug) == 1 and not L.a_bloc_image(index, slug, cfg):
-            index = L.poser_bloc_spa(index, slug, cfg)
+    for rel in sorted(set(photos) | set(maqs)):
+        for cfg, milieu in ((photos.get(rel), False), (maqs.get(rel), True)):
+            if not cfg or not L.active(cfg, jour):
+                continue
+            if not os.path.isfile(os.path.join(L.ASSETS, cfg['fichier'] + '.jpg')):
+                print('  ! fichiers absents pour %s (%s)' % (rel, cfg['fichier']))
+            slug = spa.get(rel)
+            if slug and index.count('slug:"%s"' % slug) == 1 and not L.a_bloc_image(index, slug, cfg):
+                index = L.poser_bloc_spa(index, slug, cfg, milieu=milieu)
         chemin = os.path.join(L.ROOT, rel)
         if os.path.isfile(chemin):
             h = lire(rel)
-            if L.compte_photo(h, cfg) == 1 and 'v=%s"' % cfg.get('v', 1) in h:
-                continue
-            h2 = L.injecter(rel, h, cfg, jour)
+            h2 = L.injecter(rel, h, jour=jour)
             if h2 != h:
                 with open(chemin, 'w', encoding='utf-8') as fh:
                     fh.write(h2)
                 modifies.add(rel)
     if index != index0:
-        with open(L.INDEX, 'w', encoding='utf-8') as fh:
-            fh.write(index)
-        _valider_index(index)
+        _ecrire_index(index, index0)
         modifies.add('index.html')
     return sorted(modifies)
 
 
 def verifier(jour=None):
     problemes = []
-    for rel, cfg in sorted(L.images().items()):
-        if not L.active(cfg, jour):
-            continue
-        for ext in ('.jpg', '.webp', '-800.webp'):
-            if not os.path.isfile(os.path.join(L.ASSETS, cfg['fichier'] + ext)):
-                problemes.append('%s : assets/%s%s absent' % (rel, cfg['fichier'], ext))
-        if os.path.isfile(os.path.join(L.ROOT, rel)):
-            n = L.compte_photo(lire(rel), cfg)
-            if n != 1:
-                problemes.append('%s : photo présente %d fois' % (rel, n))
+    for nom, dico in (('photo', L.images()), ('maquette', L.maquettes())):
+        for rel, cfg in sorted(dico.items()):
+            if not L.active(cfg, jour):
+                continue
+            for ext in ('.jpg', '.webp', '-800.webp'):
+                if not os.path.isfile(os.path.join(L.ASSETS, cfg['fichier'] + ext)):
+                    problemes.append('%s : assets/%s%s absent' % (rel, cfg['fichier'], ext))
+            if os.path.isfile(os.path.join(L.ROOT, rel)):
+                n = L.compte_photo(lire(rel), cfg)
+                if n != 1:
+                    problemes.append('%s : %s présente %d fois' % (rel, nom, n))
     return problemes
 
 
@@ -650,21 +699,26 @@ def en_boucle(operation, message, essais=3):
 
 def cmd_statut():
     data = charger()
-    compte = {}
-    for s in data['sujets']:
-        compte[s.get('statut')] = compte.get(s.get('statut'), 0) + 1
     pages = sum(len(s['pages']) for s in data['sujets'])
-    print('Sujets : %d (%s) — %d pages' % (len(data['sujets']),
-          ', '.join('%s %d' % kv for kv in sorted(compte.items())), pages))
+    print('Sujets : %d — %d pages' % (len(data['sujets']), pages))
+    for genre in ('photo', 'maquette'):
+        compte = {}
+        for s in data['sujets']:
+            st = suivi(s, genre).get('statut')
+            compte[st] = compte.get(st, 0) + 1
+        print('  %-9s %s' % (genre + 's', ', '.join('%s %d' % kv for kv in sorted(compte.items()))))
     print('Prochains :')
-    for s in [x for x in data['sujets'] if x.get('statut') == 'pret'][:12]:
-        print('  %-24s %2d page(s)  %s' % (s['id'], len(s['pages']), s['titre'][:70]))
+    prochains = [(s, 'photo') for s in data['sujets'] if s.get('statut') == 'pret']
+    prochains += [(s, 'maquette') for s in data['sujets'] if suivi(s, 'maquette').get('statut') == 'pret']
+    for s, genre in prochains[:12]:
+        print('  %-9s %-24s %2d page(s)  %s' % (genre, s['id'], len(s['pages']), s['titre'][:62]))
 
 
-def cmd_essai():
-    """Pose une photo fictive sur chaque page de la file, sans rien écrire."""
+def cmd_essai(genre='photo'):
+    """Pose une image fictive (photo ou maquette) sur chaque page de la file,
+    sans rien écrire, et montre où elle tombe."""
     data = charger()
-    faux = {'fichier': 'essai-photo', 'alt': 'essai', 'legende': 'essai', 'v': 1}
+    faux = {'fichier': 'essai-' + genre, 'alt': 'essai', 'legende': 'essai', 'v': 1}
     erreurs = 0
     for s in data['sujets']:
         for p in s['pages']:
@@ -673,16 +727,23 @@ def cmd_essai():
                 continue
             h = lire(p['html'])
             try:
-                pos, gabarit, entre = L.point_insertion(L._retirer(h, faux))
-                h2 = L.injecter(p['html'], h, faux)
+                if genre == 'maquette':
+                    base = L.injecter(p['html'], h, None, None, maquette={})  # photo déjà prévue
+                    pos, gabarit, entre = L.point_milieu(base)
+                    h2 = L.injecter(p['html'], h, None, None, maquette=faux)
+                    apres = re.sub(r'<[^>]+>', ' ', base[pos:pos + 400])
+                    repere = re.sub(r'\s+', ' ', apres).strip()[:55]
+                else:
+                    pos, gabarit, entre = L.point_insertion(L._retirer(h, faux))
+                    h2 = L.injecter(p['html'], h, faux)
+                    repere = re.sub(r'\s+', ' ', h[max(0, pos - 70):pos])[-55:]
                 ok = (L.compte_photo(h2, faux) == 1 and h2.count('<figure') == h2.count('</figure>')
                       and len(h2) > len(h))
-                avant = re.sub(r'\s+', ' ', h[max(0, pos - 70):pos])
-                print('%s %-9s %-62s …%s' % ('ok' if ok else 'KO', gabarit + ('+' if entre else ''),
-                                            p['html'][:62], avant[-60:]))
+                print('%s %-9s %-58s %s' % ('ok' if ok else 'KO', gabarit + ('+' if entre else ''),
+                                           p['html'][:58], repere))
                 erreurs += not ok
             except L.PhotoErreur as e:
-                print('KO %-72s %s' % (p['html'], e))
+                print('KO %-68s %s' % (p['html'], e))
                 erreurs += 1
     print('%d erreur(s)' % erreurs)
     return erreurs
@@ -700,19 +761,22 @@ def main(argv):
     elif cmd == 'statut':
         cmd_statut()
     elif cmd == 'prompt':
-        print(construire_prompt(trouver(charger(), argv[1])))
+        s = trouver(charger(), argv[1])
+        print(construire_prompt_maquette(s) if argv[2:] == ['maquette'] else construire_prompt(s))
     elif cmd == 'essai':
-        return 1 if cmd_essai() else 0
+        return 1 if cmd_essai('maquette' if argv[1:] == ['maquette'] else 'photo') else 0
     elif cmd == 'appliquer':
         textes = json.load(open(argv[3], encoding='utf-8'))
-        for f in appliquer(argv[1], argv[2], textes):
+        genre = 'maquette' if argv[4:] == ['maquette'] else 'photo'
+        for f in appliquer(argv[1], argv[2], textes, genre=genre):
             print('  modifié :', f)
     elif cmd == 'reappliquer':
         for f in reappliquer():
             print('  réappliqué :', f)
     elif cmd == 'annuler':
-        sid = argv[1]
-        for f in en_boucle(lambda: annuler(sid), 'Photos auto : photo retirée (%s), sujet remis en file' % sid):
+        sid, genre = argv[1], ('maquette' if argv[2:] == ['maquette'] else 'photo')
+        for f in en_boucle(lambda: annuler(sid, genre),
+                           'Photos auto : %s retirée (%s), remise en file' % (genre, sid)):
             print('  modifié :', f)
     elif cmd == 'verifier':
         pb = verifier()

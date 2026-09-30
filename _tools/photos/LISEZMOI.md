@@ -75,6 +75,29 @@ scène demandée. Depuis :
 - une photo publiée par erreur se retire partout avec
   `photos.py annuler SUJET` (sur le VPS, `PHOTOS_ROBOT=1` : synchro + push).
 
+## Deuxième image : maquette MacBook + smartphone (30/09/2026)
+
+Chaque page reçoit aussi une maquette : un ordinateur portable de style MacBook
+et un smartphone qui affichent le site de l'activité de la page (celle de sa
+photo : le site d'une fleuriste pour les tarifs, d'un plombier pour la page
+plombier…). Choix d'Angelino : générée par ChatGPT page par page, placée au
+milieu de la page.
+
+- Même GPT, mêmes gestes : une fois les photos terminées, « suivante » donne
+  « Maquette — titre » et son prompt ; copier-coller, puis « ok ».
+- `sujets.json` : sous-objet `maquette` de chaque sujet (statut, fichier
+  `<fichier>-maquette`, version, textes) et champ `site` (ce que montrent les
+  écrans). `images.json` : section `maquettes`.
+- Position (`photos_lib.point_milieu`) : article, avant l'intertitre numéroté
+  du milieu ; page à sections, entre deux sections (FAQ, témoignages,
+  formulaires et contact ignorés) ; page simple, avant l'intertitre du milieu ;
+  page sans intertitre, en fin de contenu. Marqueurs `<!-- maquette:auto -->`.
+- Écrans sans texte lisible (barres grises) ; le serveur tolère quelques zones
+  de texte sur une maquette (refus à partir de 8), Angelino valide par « ok ».
+  Légende « Exemple de site… » : jamais le site d'un vrai client, aucun logo.
+- `photos.py prompt ID maquette`, `annuler ID maquette`, `essai maquette`,
+  `appliquer ID IMAGE TEXTES.json maquette`.
+
 ## Commandes utiles (Mac ou VPS)
 
 ```bash
