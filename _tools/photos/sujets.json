@@ -1831,8 +1831,28 @@
    "site": "d'un menuisier",
    "maquette": {
     "fr": {
-     "statut": "pret",
-     "fichier": "carpintero-taller-ajustando-puerta-maquette-fr"
+     "statut": "fait",
+     "fichier": "carpintero-taller-ajustando-puerta-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T15:42:55",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Menuiserie Bois Clair con un carpintero trabajando una pieza de madera en su taller.",
+       "legende": "La web de Menuiserie Bois Clair se adapta a ordenador y móvil y destaca el trabajo artesanal."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Menuiserie Bois Clair amb un fuster treballant una peça de fusta al seu taller.",
+       "legende": "La web de Menuiserie Bois Clair s'adapta a ordinador i mòbil i destaca el treball artesanal."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Menuiserie Bois Clair website, featuring a carpenter working on wood in his workshop.",
+       "legende": "Menuiserie Bois Clair’s website adapts to desktop and mobile and highlights craftsmanship."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Menuiserie Bois Clair, avec un menuisier travaillant le bois dans son atelier.",
+       "legende": "Le site Menuiserie Bois Clair s’adapte à l’ordinateur et au mobile et met en valeur le travail artisanal."
+      }
+     }
     },
     "en": {
      "statut": "pret",
