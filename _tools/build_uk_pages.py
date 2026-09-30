@@ -914,15 +914,16 @@ PLUMB_UK = dict(
          'public register before they hire you.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗂️</div>'
          '<h3>One section per service</h3>'
-         '<p>Boiler installation and servicing, bathrooms, heat pumps and landlord gas safety checks each get '
-         'their own section in your plumbing website design.</p></div>'
+         '<p>Boiler installation and servicing, bathrooms, drain unblocking, heat pumps and landlord gas safety '
+         'checks each get their own section in your plumbing website design.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏠</div>'
          '<h3>Landlords as regular customers</h3>'
          '<p>Landlords must have gas appliances and flues checked at least every 12 months (Gas Safety '
          'Regulations, reg. 36): a page for them brings in repeat business.</p></div>'
          '</div>'
          '<p class="where">Working as a gas engineer? The same gas engineer website design applies: registration '
-         'first, then services.</p>'),
+         'first, then services. For more on what to include, see our <a href="https://webautonomos.es/blog/en/'
+         'website-for-plumbers-complete-guide">guide to getting more calls from your website</a>.</p>'),
         ('good-design', 'Design', 'What good web design looks like for a plumbing business',
          '<p class="legal-intro">Good web design for a plumbing business isn\'t only about how the page looks: '
          'it is about whether a visitor finds what they need fast enough to call, especially with a leak or a '
@@ -1009,6 +1010,64 @@ PLUMB_UK = dict(
          'you send it to them is one less thing for them to chase.</p></div>'
          '</div>'),
         local_search_uk('plumber'),
+        ('local-trust-plumbers', 'Local & trust', 'Local search and trust for small plumbing companies',
+         '<p class="legal-intro">Many customers find a local plumber through a search, and what they see once they '
+         'land decides whether they call. A small plumbing company doesn\'t need a marketing team for that: a few '
+         'concrete details do the work.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>Jobs you\'ve done nearby</h3>'
+         '<p>A few photos of your own jobs, each with the town where you did it, show a visitor that you already '
+         'work in their area.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">⭐</div><h3>Reviews a visitor can check</h3>'
+         '<p>A link to your Google reviews lets a visitor read them in full, where they were posted, rather than '
+         'taking a few quotes on trust.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div><h3>Who will knock on the door</h3>'
+         '<p>Your name, a photo of you or your van and how you prefer to be contacted: someone deciding who to let '
+         'into their home wants to know who is coming.</p></div>'
+         '</div>'
+         '<p class="where">More on ranking locally in <a href="https://webautonomos.es/blog/en/'
+         'how-to-rank-your-website-in-local-google">how to rank your website locally on Google</a>.</p>'),
+        ('website-speed-plumbers', 'Performance', 'Website speed and Core Web Vitals for a plumbing website',
+         '<p class="legal-intro">A visitor calling about a leak won\'t wait for a slow page, and Google measures '
+         'loading speed too: Core Web Vitals, including Largest Contentful Paint, are part of the page experience '
+         'signals it looks at alongside the content itself.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">⚡</div><h3>Largest Contentful Paint</h3>'
+         '<p>It measures how long the largest element on screen, often your main photo or heading, takes to appear. '
+         'A light, well-compressed main photo helps it appear sooner, on a phone as much as on a desktop.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔎</div><h3>Test it yourself</h3>'
+         '<p>Google\'s free PageSpeed Insights tool shows how quickly your homepage loads on a phone and on a '
+         'desktop, and which images or scripts slow it down. Try it before you choose what to change.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🛠️</div><h3>Included, not managed by you</h3>'
+         '<p>Hosting, an SSL certificate, daily backups, 24/7 monitoring and technical maintenance are part of both '
+         'plans, so the technical side of your website isn\'t something you have to manage yourself.</p></div>'
+         '</div>'
+         '<p class="where">More detail in <a href="https://webautonomos.es/blog/en/website-speed-and-search-'
+         'rankings">why your website\'s speed affects your Google ranking</a>.</p>'),
+        ('plumbing-website-cost', 'Pricing', 'What does a plumbing website cost?',
+         '<p class="legal-intro">A plumbing website\'s cost depends on what\'s bundled in, not only on the design '
+         'itself: hosting, legal pages, ongoing changes and support are billed separately with some providers.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div><h3>What\'s included in one price</h3>'
+         '<ul style="list-style:none;padding:0;display:grid;gap:6px;text-align:left;font-size:.92rem;color:#334155">'
+         '<li>Design, copy and your Gas Safe details written for you</li>'
+         '<li>Hosting, an SSL certificate and legal pages</li>'
+         '<li>One change a month, with no lock-in</li>'
+         '</ul>'
+         '<p style="margin-top:10px">With WebAutonomos, all of it sits under one price: €15 a month (about £%d) '
+         'with no setup fee, or €349 (about £%d) once, no VAT added. Pound amounts depend on the exchange '
+         'rate.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔧</div><h3>Bigger changes, quoted separately</h3>'
+         '<p>A full redesign or a large new section is quoted once you know what you need, rather than folded into '
+         'a monthly price that would have to cover every possibility.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📊</div><h3>Comparing quotes from other providers</h3>'
+         '<p>What a website costs varies widely by provider. Three things usually explain the difference:</p>'
+         '<ul style="list-style:none;padding:0;display:grid;gap:6px;text-align:left;font-size:.92rem;color:#334155">'
+         '<li>How much of the design and copy you write yourself</li>'
+         '<li>Whether you pay a one-off fee, a monthly fee, or both</li>'
+         '<li>How the site is built, and how easy it is to update afterwards</li>'
+         '</ul></div>'
+         '</div>' % (GBP_MOIS, GBP_UNIQUE)),
     ],
     faq=[("Do I need to be Gas Safe registered?",
           "Yes, for any business doing gas work for payment: the Gas Safety (Installation and Use) Regulations 1998 (reg. 3) "
@@ -1057,7 +1116,20 @@ PLUMB_UK = dict(
          ("What makes a good plumbing website, beyond how it looks?",
           "A good website answers the questions someone has before they call: your services, your Gas Safe "
           "registration and how to reach you. We write and structure all of this for you, so you don't have to "
-          "build or write any of it yourself.")] + FAQ_TRADES,
+          "build or write any of it yourself."),
+         ("Does website speed affect a plumbing website's Google ranking?",
+          "Yes: Core Web Vitals, including Largest Contentful Paint, are part of Google's page experience signals, "
+          "and a slow page also loses visitors before they call. Hosting, an SSL certificate, 24/7 monitoring and "
+          "technical maintenance are included in both plans, so you don't have to manage the technical side "
+          "yourself."),
+         ("What should a service area page cover?",
+          "The towns and postcodes you actually cover, so a visitor and Google both know if you're near them. If "
+          "you regularly cover several areas, a short list on your main services page usually does the job, "
+          "without needing a separate page for every town."),
+         ("Do I need a privacy policy on my plumbing website?",
+          "Yes: UK GDPR requires a privacy policy explaining what you do with visitors' data, and the Privacy and "
+          "Electronic Communications Regulations (PECR) cover cookies. Both plans include a privacy policy and "
+          "cookie notice adapted to UK law, ready before your site goes live.")] + FAQ_TRADES,
 )
 SRC_PLUMB_UK = [
     ('Gas Safety (Installation and Use) Regulations 1998, reg. 3',
