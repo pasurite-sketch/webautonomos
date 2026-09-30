@@ -257,9 +257,24 @@
      }
     },
     "val": {
-     "statut": "pret",
+     "statut": "fait",
      "fichier": "autonomo-extranjero-tramites-oficina-maquette-val",
-     "v": 1
+     "v": 2,
+     "fait_le": "2026-09-30T11:00:07",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
+       "legende": "Example website showing an artisan workshop on a laptop and smartphone."
+      },
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de un taller artesanal en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de un taller artesanal en un portátil y un teléfono móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un taller artesanal en versions d'escriptori i mòbil.",
+       "legende": "Exemple de web d'un taller artesanal en un portàtil i un telèfon mòbil."
+      }
+     }
     },
     "en": {
      "statut": "fait",
