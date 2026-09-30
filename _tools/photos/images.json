@@ -3002,6 +3002,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Riverside Physio website, featuring a physiotherapist preparing a bright treatment room.",
    "legende": "Riverside Physio’s website adapts to desktop and mobile with a clinic photograph."
+  },
+  "fr/site-internet-dentiste.html": {
+   "sujet": "metier-dentiste",
+   "fichier": "clinica-dental-gabinete-moderno-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un téléphone affichent le site du Cabinet dentaire du Parc, avec une dentiste préparant ses instruments.",
+   "legende": "Le site du cabinet dentaire s’adapte à l’ordinateur et au mobile avec une photo du cabinet."
   }
  }
 }

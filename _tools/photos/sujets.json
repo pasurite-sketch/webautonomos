@@ -1649,8 +1649,28 @@
    "site": "d'un cabinet dentaire",
    "maquette": {
     "fr": {
-     "statut": "pret",
-     "fichier": "clinica-dental-gabinete-moderno-maquette-fr"
+     "statut": "fait",
+     "fichier": "clinica-dental-gabinete-moderno-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T14:58:11",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web de Cabinet dentaire du Parc con una dentista preparando instrumentos en una clínica luminosa.",
+       "legende": "La web del gabinete dental se adapta a ordenador y móvil con una imagen de la clínica."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web de Cabinet dentaire du Parc amb una dentista preparant instruments en una clínica lluminosa.",
+       "legende": "La web del consultori dental s'adapta a ordinador i mòbil amb una imatge de la clínica."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Cabinet dentaire du Parc website, featuring a dentist preparing instruments in a bright clinic.",
+       "legende": "The dental practice website adapts to desktop and mobile, featuring a bright clinic image."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site du Cabinet dentaire du Parc, avec une dentiste préparant ses instruments.",
+       "legende": "Le site du cabinet dentaire s’adapte à l’ordinateur et au mobile avec une photo du cabinet."
+      }
+     }
     },
     "en": {
      "statut": "pret",
