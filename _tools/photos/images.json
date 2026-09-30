@@ -2803,6 +2803,15 @@
    "v": 1,
    "alt": "Un ordinateur portable et un smartphone affichent le même site de café en bord de mer, en versions ordinateur et mobile.",
    "legende": "Exemple de site de café en bord de mer sur ordinateur portable et smartphone."
+  },
+  "blog/es/aviso-legal-privacidad-cookies-web.html": {
+   "sujet": "file-aviso-legal-privacidad-cookies-web",
+   "fichier": "documentos-legales-negocio-archivador-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la misma web de una tienda de decoración en versiones de escritorio y móvil.",
+   "legende": "Ejemplo de web de una tienda de decoración en un portátil y un teléfono móvil."
   }
  }
 }
