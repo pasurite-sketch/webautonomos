@@ -3290,6 +3290,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web Gestiones Norte, con una empresaria tomando café junto a una ventana.",
    "legende": "La web de Gestiones Norte se adapta a ordenador y móvil."
+  },
+  "fr/diagnostic-automatisation/index.html": {
+   "sujet": "page-diagnostic",
+   "fichier": "automatizacion-oficina-ordenada-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site Nord Gestion, avec une femme prenant un café dans un bureau lumineux.",
+   "legende": "Le site Nord Gestion s’adapte aux écrans d’ordinateur et de mobile."
   }
  }
 }

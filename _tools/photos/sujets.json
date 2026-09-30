@@ -3325,8 +3325,28 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "automatizacion-oficina-ordenada-maquette-fr"
+     "statut": "fait",
+     "fichier": "automatizacion-oficina-ordenada-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T19:22:09",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web Nord Gestion, con una mujer tomando café en una oficina luminosa.",
+       "legende": "La web de Nord Gestion se adapta a las pantallas de ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web Nord Gestion, amb una dona prenent café en una oficina lluminosa.",
+       "legende": "La web de Nord Gestion s’adapta a les pantalles d’ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the Nord Gestion website, featuring a woman drinking coffee in a bright office.",
+       "legende": "The Nord Gestion website adapts to desktop and mobile screens."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Nord Gestion, avec une femme prenant un café dans un bureau lumineux.",
+       "legende": "Le site Nord Gestion s’adapte aux écrans d’ordinateur et de mobile."
+      }
+     }
     },
     "en": {
      "statut": "pret",
