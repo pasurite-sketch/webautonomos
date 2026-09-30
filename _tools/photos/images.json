@@ -2821,6 +2821,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la mateixa web d'una botiga de decoració en versions d'escriptori i mòbil.",
    "legende": "Exemple de web d'una botiga de decoració en un portàtil i un telèfon mòbil."
+  },
+  "blog/en/legal-notice-privacy-and-cookies-website-spain.html": {
+   "sujet": "file-aviso-legal-privacidad-cookies-web",
+   "fichier": "documentos-legales-negocio-archivador-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the same home decor shop website in desktop and mobile layouts.",
+   "legende": "Example home decor shop website shown on a laptop and smartphone."
   }
  }
 }
