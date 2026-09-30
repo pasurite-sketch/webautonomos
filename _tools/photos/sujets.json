@@ -814,8 +814,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "autonomo-clientes-europa-despacho-maquette-en"
+     "statut": "fait",
+     "fichier": "autonomo-clientes-europa-despacho-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T12:58:04",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de un diseñador gráfico en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de portfolio de diseño gráfico mostrado en un portátil y un teléfono."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un dissenyador gràfic en versions d'escriptori i mòbil.",
+       "legende": "Exemple de portfoli de disseny gràfic en un portàtil i un telèfon."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the same graphic designer portfolio website in desktop and mobile layouts.",
+       "legende": "Example graphic design portfolio shown on a laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le même portfolio de graphiste en versions ordinateur et mobile.",
+       "legende": "Exemple de portfolio de graphiste affiché sur ordinateur et smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",

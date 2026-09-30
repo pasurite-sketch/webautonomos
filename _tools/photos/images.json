@@ -2857,6 +2857,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la mateixa web d'un dissenyador gràfic en versions d'escriptori i mòbil.",
    "legende": "Exemple de portfoli de disseny gràfic en un portàtil i un telèfon."
+  },
+  "blog/en/invoicing-clients-in-other-eu-countries-and-the-uk.html": {
+   "sujet": "file-facturar-clientes-otros-paises-ue-reino-unido",
+   "fichier": "autonomo-clientes-europa-despacho-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the same graphic designer portfolio website in desktop and mobile layouts.",
+   "legende": "Example graphic design portfolio shown on a laptop and smartphone."
   }
  }
 }
