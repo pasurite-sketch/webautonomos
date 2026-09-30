@@ -4696,9 +4696,29 @@
      "spa": "fr/maintenance-le-cout-cache-de-l-automatisation"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un technicien graisse les engrenages d'une vieille machine dans un atelier propre et bien éclairé.",
-   "fichier": "mantenimiento-automatizacion-coste"
+   "fichier": "mantenimiento-automatizacion-coste",
+   "v": 1,
+   "fait_le": "2026-09-30T08:22:03",
+   "textes": {
+    "es": {
+     "alt": "Un técnico engrasa los engranajes de una máquina antigua en un taller limpio y luminoso.",
+     "legende": "El mantenimiento regular ayuda a conservar la maquinaria del taller."
+    },
+    "val": {
+     "alt": "Un tècnic greixa els engranatges d'una màquina antiga en un taller net i lluminós.",
+     "legende": "El manteniment regular ajuda a conservar la maquinària del taller."
+    },
+    "en": {
+     "alt": "A technician oils the gears of an old machine in a clean, brightly lit workshop.",
+     "legende": "Regular maintenance helps keep workshop machinery in working order."
+    },
+    "fr": {
+     "alt": "Un technicien graisse les engrenages d'une vieille machine dans un atelier propre et lumineux.",
+     "legende": "Un entretien régulier contribue à préserver les machines de l'atelier."
+    }
+   }
   },
   {
    "id": "art-68",

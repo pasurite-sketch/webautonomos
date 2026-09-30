@@ -2621,6 +2621,42 @@
    "v": 1,
    "alt": "Une chocolatière propose une dégustation à une cliente souriante par-dessus le comptoir de sa boutique.",
    "legende": "La chocolatière fait découvrir ses créations à une cliente."
+  },
+  "blog/es/mantenimiento-coste-automatizacion.html": {
+   "sujet": "art-67",
+   "fichier": "mantenimiento-automatizacion-coste",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un técnico engrasa los engranajes de una máquina antigua en un taller limpio y luminoso.",
+   "legende": "El mantenimiento regular ayuda a conservar la maquinaria del taller."
+  },
+  "blog/val/manteniment-el-cost-amagat-de-l-automatitzacio.html": {
+   "sujet": "art-67",
+   "fichier": "mantenimiento-automatizacion-coste",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un tècnic greixa els engranatges d'una màquina antiga en un taller net i lluminós.",
+   "legende": "El manteniment regular ajuda a conservar la maquinària del taller."
+  },
+  "blog/en/maintenance-the-hidden-cost-of-automation.html": {
+   "sujet": "art-67",
+   "fichier": "mantenimiento-automatizacion-coste",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A technician oils the gears of an old machine in a clean, brightly lit workshop.",
+   "legende": "Regular maintenance helps keep workshop machinery in working order."
+  },
+  "blog/fr/maintenance-le-cout-cache-de-l-automatisation.html": {
+   "sujet": "art-67",
+   "fichier": "mantenimiento-automatizacion-coste",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un technicien graisse les engrenages d'une vieille machine dans un atelier propre et lumineux.",
+   "legende": "Un entretien régulier contribue à préserver les machines de l'atelier."
   }
  }
 }
