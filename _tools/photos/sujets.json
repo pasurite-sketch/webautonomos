@@ -986,8 +986,28 @@
      }
     },
     "es": {
-     "statut": "pret",
-     "fichier": "precio-web-autonomo-floristeria-cuentas-maquette-es"
+     "statut": "fait",
+     "fichier": "precio-web-autonomo-floristeria-cuentas-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T14:06:19",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una floristería con un ramo de flores en la página principal.",
+       "legende": "Ejemplo de una web de floristería adaptada a ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d'una floristeria amb un ram de flors en la pàgina principal.",
+       "legende": "Exemple d'una web de floristeria adaptada a ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display a florist website featuring a bouquet on the homepage.",
+       "legende": "Example florist website adapted for desktop and mobile."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'une fleuriste avec un bouquet en page d'accueil.",
+       "legende": "Exemple de site de fleuriste adapté aux écrans d'ordinateur et de mobile."
+      }
+     }
     }
    },
    "ecrans": {
