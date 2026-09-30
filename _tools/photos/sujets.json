@@ -2762,8 +2762,28 @@
    "site": "d'une entreprise installée à Valence",
    "maquette": {
     "fr": {
-     "statut": "pret",
-     "fichier": "emprendedora-extranjera-valencia-balcon-maquette-fr"
+     "statut": "fait",
+     "fichier": "emprendedora-extranjera-valencia-balcon-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T18:21:55",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Valence Services con una emprendedora tomando café en una terraza de Valencia.",
+       "legende": "La web de Valence Services se adapta a ordenador y móvil y presenta sus servicios."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Valence Services amb una emprenedora prenent café en una terrassa de València.",
+       "legende": "La web de Valence Services s'adapta a ordinador i mòbil i presenta els seus serveis."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Valence Services website, featuring an entrepreneur having coffee on a terrace in Valencia.",
+       "legende": "Valence Services’ website adapts to desktop and mobile and presents its services."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Valence Services, avec une entrepreneuse prenant un café sur une terrasse à Valence.",
+       "legende": "Le site Valence Services s’adapte à l’ordinateur et au mobile et présente ses services."
+      }
+     }
     },
     "en": {
      "statut": "pret",

@@ -3182,6 +3182,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Elise Hair Studio website, featuring a smiling hairdresser in his salon.",
    "legende": "Elise Hair Studio’s website adapts to desktop and mobile and lets visitors book an appointment."
+  },
+  "fr/site-internet-francophones-espagne.html": {
+   "sujet": "page-expatries",
+   "fichier": "emprendedora-extranjera-valencia-balcon-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un téléphone affichent le site Valence Services, avec une entrepreneuse prenant un café sur une terrasse à Valence.",
+   "legende": "Le site Valence Services s’adapte à l’ordinateur et au mobile et présente ses services."
   }
  }
 }
