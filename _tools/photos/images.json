@@ -3038,6 +3038,15 @@
    "v": 1,
    "alt": "Un ordinateur et un téléphone affichent le site Menuiserie Bois Clair, avec un menuisier travaillant le bois dans son atelier.",
    "legende": "Le site Menuiserie Bois Clair s’adapte à l’ordinateur et au mobile et met en valeur le travail artisanal."
+  },
+  "en/website-for-carpenters-in-spain.html": {
+   "sujet": "metier-menuisier",
+   "fichier": "carpintero-taller-ajustando-puerta-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Timber & Co website, featuring a carpenter planing wood in his workshop.",
+   "legende": "Timber & Co’s website adapts to desktop and mobile and showcases carpentry work."
   }
  }
 }

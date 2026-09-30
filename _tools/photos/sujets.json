@@ -1855,8 +1855,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "carpintero-taller-ajustando-puerta-maquette-en"
+     "statut": "fait",
+     "fichier": "carpintero-taller-ajustando-puerta-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T15:47:40",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Timber & Co con un carpintero trabajando madera en su taller.",
+       "legende": "La web de Timber & Co se adapta a ordenador y móvil y destaca el trabajo de carpintería."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Timber & Co amb un fuster treballant la fusta al seu taller.",
+       "legende": "La web de Timber & Co s'adapta a ordinador i mòbil i destaca el treball de fusteria."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Timber & Co website, featuring a carpenter planing wood in his workshop.",
+       "legende": "Timber & Co’s website adapts to desktop and mobile and showcases carpentry work."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Timber & Co, avec un menuisier travaillant le bois dans son atelier.",
+       "legende": "Le site Timber & Co s’adapte à l’ordinateur et au mobile et met en valeur la menuiserie."
+      }
+     }
     }
    },
    "ecrans": {
