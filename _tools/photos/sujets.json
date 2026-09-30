@@ -2923,8 +2923,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "como-funciona-llamada-asesora-web-maquette-en"
+     "statut": "fait",
+     "fichier": "como-funciona-llamada-asesora-web-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T18:33:30",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Sun Workshop con una asesora hablando por teléfono en una oficina luminosa.",
+       "legende": "La web de Sun Workshop se adapta a ordenador y móvil y presenta el negocio local."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Sun Workshop amb una assessora parlant per telèfon en una oficina lluminosa.",
+       "legende": "La web de Sun Workshop s'adapta a ordinador i mòbil i presenta el negoci local."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Sun Workshop website, featuring a web consultant speaking on the phone in a bright office.",
+       "legende": "Sun Workshop’s website adapts to desktop and mobile and presents the local business."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Sun Workshop, avec une conseillère au téléphone dans un bureau lumineux.",
+       "legende": "Le site Sun Workshop s’adapte à l’ordinateur et au mobile et présente l’activité locale."
+      }
+     }
     }
    },
    "ecrans": {

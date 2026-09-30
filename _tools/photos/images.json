@@ -3218,6 +3218,15 @@
    "v": 1,
    "alt": "Un ordinateur et un téléphone affichent le site Atelier Soleil, avec une conseillère au téléphone dans un bureau lumineux.",
    "legende": "Le site Atelier Soleil s’adapte à l’ordinateur et au mobile et présente l’activité locale."
+  },
+  "en/how.html": {
+   "sujet": "page-fonctionnement",
+   "fichier": "como-funciona-llamada-asesora-web-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Sun Workshop website, featuring a web consultant speaking on the phone in a bright office.",
+   "legende": "Sun Workshop’s website adapts to desktop and mobile and presents the local business."
   }
  }
 }
