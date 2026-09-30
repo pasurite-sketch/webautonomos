@@ -1944,8 +1944,28 @@
    "site": "d'un plombier chauffagiste",
    "maquette": {
     "fr": {
-     "statut": "pret",
-     "fichier": "fontanero-reparando-fregadero-cocina-maquette-fr"
+     "statut": "fait",
+     "fichier": "fontanero-reparando-fregadero-cocina-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T16:17:30",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Plomberie Durand con un fontanero reparando tuberías bajo un fregadero.",
+       "legende": "La web de Plomberie Durand se adapta a ordenador y móvil y presenta un servicio de fontanería."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Plomberie Durand amb un lampista reparant canonades davall d'una pica.",
+       "legende": "La web de Plomberie Durand s'adapta a ordinador i mòbil i presenta un servei de lampisteria."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Plomberie Durand website, featuring a plumber repairing pipes beneath a kitchen sink.",
+       "legende": "Plomberie Durand’s website adapts to desktop and mobile and presents its plumbing services."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Plomberie Durand, avec un plombier réparant des tuyaux sous un évier.",
+       "legende": "Le site Plomberie Durand s’adapte à l’ordinateur et au mobile et présente ses services de plomberie."
+      }
+     }
     },
     "en": {
      "statut": "pret",
