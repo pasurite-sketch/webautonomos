@@ -2767,6 +2767,15 @@
    "v": 1,
    "alt": "Un ordinateur portable et un smartphone affichent le même site d’atelier artisanal, en version ordinateur et mobile.",
    "legende": "Exemple de site d’atelier artisanal affiché sur un ordinateur et un smartphone."
+  },
+  "blog/es/web-en-varios-idiomas.html": {
+   "sujet": "file-web-en-varios-idiomas",
+   "fichier": "negocio-clientes-internacionales-costa-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la misma web de un café junto al mar, en versión de escritorio y móvil.",
+   "legende": "Ejemplo de web de un café junto al mar en un portátil y un teléfono móvil."
   }
  }
 }

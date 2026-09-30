@@ -401,8 +401,28 @@
    "site": "d'un café de bord de mer",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "negocio-clientes-internacionales-costa-maquette-es"
+     "statut": "fait",
+     "fichier": "negocio-clientes-internacionales-costa-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T11:14:45",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de un café junto al mar, en versión de escritorio y móvil.",
+       "legende": "Ejemplo de web de un café junto al mar en un portátil y un teléfono móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un café vora la mar, en versió d'escriptori i mòbil.",
+       "legende": "Exemple de web d'un café vora la mar en un portàtil i un telèfon mòbil."
+      },
+      "en": {
+       "alt": "Laptop and smartphone display the same seaside café website in desktop and mobile layouts.",
+       "legende": "Example website for a seaside café shown on a laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le même site de café en bord de mer, en versions ordinateur et mobile.",
+       "legende": "Exemple de site de café en bord de mer sur ordinateur portable et smartphone."
+      }
+     }
     },
     "val": {
      "statut": "pret",

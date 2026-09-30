@@ -284,6 +284,15 @@
         "text": "No redirijas automáticamente al visitante según el idioma que supones que habla: Google lo desaconseja porque puede impedir ver todas las versiones. Pon un selector de idioma visible en la cabecera, que lleve a la misma página en el otro idioma y no a la portada. Y usa un solo idioma por página: Google determina el idioma por el contenido visible, no por el atributo lang ni por la URL."
       },
       {
+        "type": "image",
+        "src": "/assets/negocio-clientes-internacionales-costa-maquette-es.jpg",
+        "width": 1600,
+        "height": 900,
+        "v": "1",
+        "alt": "Un portátil y un móvil muestran la misma web de un café junto al mar, en versión de escritorio y móvil.",
+        "caption": "Ejemplo de web de un café junto al mar en un portátil y un teléfono móvil."
+      },
+      {
         "type": "heading",
         "text": "¿Qué es hreflang, explicado sin tecnicismos?"
       },
