@@ -1359,8 +1359,28 @@
    "site": "d'un cabinet de psychologue",
    "maquette": {
     "fr": {
-     "statut": "pret",
-     "fichier": "consulta-psicologia-sala-terapia-maquette-fr"
+     "statut": "fait",
+     "fichier": "consulta-psicologia-sala-terapia-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T14:27:56",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de un gabinete de psicología con una terapeuta preparando la consulta.",
+       "legende": "Ejemplo de una web de psicología adaptada a ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d'un gabinet de psicologia amb una terapeuta preparant la consulta.",
+       "legende": "Exemple d'una web de psicologia adaptada a ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display a psychologist's website with a therapist preparing the consultation room.",
+       "legende": "Example psychologist website adapted for desktop and mobile."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'un cabinet de psychologie avec la thérapeute préparant le cabinet.",
+       "legende": "Exemple de site de psychologue adapté à l'ordinateur et au mobile."
+      }
+     }
     },
     "en": {
      "statut": "pret",
