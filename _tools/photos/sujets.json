@@ -265,8 +265,28 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "autonomo-extranjero-tramites-oficina-maquette-val"
+     "statut": "fait",
+     "fichier": "autonomo-extranjero-tramites-oficina-maquette-val",
+     "v": 1,
+     "fait_le": "2026-09-30T10:40:22",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de un taller artesanal de Valencia, con fotografías de cerámica y diseño adaptable.",
+       "legende": "Ejemplo de una web de taller artesanal en ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d'un taller artesanal de València, amb fotografies de ceràmica i disseny adaptable.",
+       "legende": "Exemple de web de taller artesanal en ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display a Valencia craft studio website with pottery photos and a responsive layout.",
+       "legende": "Example of a craft studio website on desktop and mobile."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'un atelier artisanal de Valence avec des photos de céramique.",
+       "legende": "Exemple de site d'atelier artisanal sur ordinateur et mobile."
+      }
+     }
     },
     "en": {
      "statut": "pret",
