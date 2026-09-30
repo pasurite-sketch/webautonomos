@@ -2785,6 +2785,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la mateixa web d'un café vora la mar en versions d'escriptori i mòbil.",
    "legende": "Exemple de web d'un café vora la mar en un portàtil i un telèfon mòbil."
+  },
+  "blog/en/multilingual-website-for-your-business-in-spain.html": {
+   "sujet": "file-web-en-varios-idiomas",
+   "fichier": "negocio-clientes-internacionales-costa-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and smartphone display the same seaside café website in desktop and mobile layouts.",
+   "legende": "Example website for a seaside café shown on a laptop and smartphone."
   }
  }
 }

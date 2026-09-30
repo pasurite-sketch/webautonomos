@@ -710,6 +710,15 @@
         "text": "Do not redirect visitors automatically based on the language you assume they speak: Google advises against it because it can stop people seeing every version. Add a visible language switcher in the header that leads to the same page in the other language. And keep one language per page: Google works out the language from the visible content, not from the lang attribute or the URL."
       },
       {
+        "type": "image",
+        "src": "/assets/negocio-clientes-internacionales-costa-maquette-en.jpg",
+        "width": 1600,
+        "height": 900,
+        "v": "1",
+        "alt": "Laptop and smartphone display the same seaside café website in desktop and mobile layouts.",
+        "caption": "Example website for a seaside café shown on a laptop and smartphone."
+      },
+      {
         "type": "heading",
         "text": "What is hreflang, in plain English?"
       },
