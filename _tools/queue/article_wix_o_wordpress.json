@@ -855,6 +855,15 @@
         "text": "Short answer: not for Wix, a little for WordPress.com, and noticeably more for WordPress on your own hosting. Wix uses a drag-and-drop editor and templates you customise: you move blocks, change text and photos and see the result straight away. WordPress can also be run without coding thanks to its block editor, but it involves more decisions (theme, plugins, settings) and, if you host it yourself, the installation and configuration. Nothing impossible, but expect to spend time learning."
       },
       {
+        "type": "image",
+        "src": "/assets/elegir-herramienta-web-taller-ceramica-maquette-en.jpg",
+        "width": 1600,
+        "height": 900,
+        "v": "1",
+        "alt": "A laptop and smartphone display a ceramic artist's website with handmade pottery photos and a responsive layout.",
+        "caption": "Example of a handmade ceramics shop on desktop and mobile."
+      },
+      {
         "type": "heading",
         "text": "Who looks after maintenance and security?"
       },

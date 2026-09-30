@@ -105,8 +105,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-en"
+     "statut": "fait",
+     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T10:29:04",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una ceramista, con fotografías de piezas artesanales y diseño adaptable.",
+       "legende": "Ejemplo de tienda de cerámica artesanal en ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d'una ceramista, amb fotografies de peces artesanals i disseny adaptable.",
+       "legende": "Exemple de botiga de ceràmica artesanal en ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display a ceramic artist's website with handmade pottery photos and a responsive layout.",
+       "legende": "Example of a handmade ceramics shop on desktop and mobile."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'une céramiste avec des photos de poteries artisanales.",
+       "legende": "Exemple de boutique de céramique artisanale sur ordinateur et mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
