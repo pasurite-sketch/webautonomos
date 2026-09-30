@@ -3191,6 +3191,15 @@
    "v": 1,
    "alt": "Un ordinateur et un téléphone affichent le site Valence Services, avec une entrepreneuse prenant un café sur une terrasse à Valence.",
    "legende": "Le site Valence Services s’adapte à l’ordinateur et au mobile et présente ses services."
+  },
+  "en/web-design-for-expats-in-spain.html": {
+   "sujet": "page-expatries",
+   "fichier": "emprendedora-extranjera-valencia-balcon-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Valencia Home Services website, featuring an entrepreneur enjoying coffee on a terrace in Valencia.",
+   "legende": "Valencia Home Services’ website adapts to desktop and mobile and presents its services."
   }
  }
 }

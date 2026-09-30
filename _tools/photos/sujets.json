@@ -2786,8 +2786,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "emprendedora-extranjera-valencia-balcon-maquette-en"
+     "statut": "fait",
+     "fichier": "emprendedora-extranjera-valencia-balcon-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T18:25:11",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Valencia Home Services con una emprendedora tomando café en una terraza valenciana.",
+       "legende": "La web de Valencia Home Services se adapta a ordenador y móvil y presenta sus servicios."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Valencia Home Services amb una emprenedora prenent café en una terrassa valenciana.",
+       "legende": "La web de Valencia Home Services s'adapta a ordinador i mòbil i presenta els seus serveis."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Valencia Home Services website, featuring an entrepreneur enjoying coffee on a terrace in Valencia.",
+       "legende": "Valencia Home Services’ website adapts to desktop and mobile and presents its services."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Valencia Home Services, avec une entrepreneuse prenant un café sur une terrasse à Valence.",
+       "legende": "Le site Valencia Home Services s’adapte à l’ordinateur et au mobile et présente ses services."
+      }
+     }
     }
    },
    "ecrans": {
