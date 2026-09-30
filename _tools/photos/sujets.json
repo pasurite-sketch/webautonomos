@@ -3467,8 +3467,28 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "busqueda-voz-asistente-ia-calle-maquette-fr"
+     "statut": "fait",
+     "fichier": "busqueda-voz-asistente-ia-calle-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T19:38:59",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web Chaussures Pas, con una mujer usando el teléfono en una calle comercial.",
+       "legende": "La web de Chaussures Pas se adapta a ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web Chaussures Pas, amb una dona usant el telèfon en un carrer comercial.",
+       "legende": "La web de Chaussures Pas s’adapta a ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the Chaussures Pas website, featuring a woman using her phone on a shopping street.",
+       "legende": "The Chaussures Pas website adapts to desktop and mobile screens."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Chaussures Pas, avec une femme utilisant son téléphone dans une rue commerçante.",
+       "legende": "Le site Chaussures Pas s’adapte aux écrans d’ordinateur et de mobile."
+      }
+     }
     },
     "en": {
      "statut": "pret",

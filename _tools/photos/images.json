@@ -3317,6 +3317,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web Zapatería Paso, con una mujer usando el teléfono en una calle comercial.",
    "legende": "La web de Zapatería Paso se adapta a ordenador y móvil."
+  },
+  "fr/visibilite-ia/index.html": {
+   "sujet": "page-visibilite-ia",
+   "fichier": "busqueda-voz-asistente-ia-calle-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site Chaussures Pas, avec une femme utilisant son téléphone dans une rue commerçante.",
+   "legende": "Le site Chaussures Pas s’adapte aux écrans d’ordinateur et de mobile."
   }
  }
 }
