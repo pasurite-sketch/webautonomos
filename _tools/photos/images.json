@@ -2731,15 +2731,6 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site d'une céramiste avec des photos de poteries artisanales.",
    "legende": "Exemple de boutique de céramique artisanale sur ordinateur et mobile."
-  },
-  "blog/val/alta-autonom-estranger.html": {
-   "sujet": "file-alta-autonomo-extranjero-espana",
-   "fichier": "autonomo-extranjero-tramites-oficina-maquette-val",
-   "largeur": 1600,
-   "hauteur": 900,
-   "v": 1,
-   "alt": "Un portàtil i un mòbil mostren la web d'un taller artesanal de València, amb fotografies de ceràmica i disseny adaptable.",
-   "legende": "Exemple de web de taller artesanal en ordinador i mòbil."
   }
  }
 }
