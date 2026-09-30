@@ -3281,6 +3281,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display the Rosa Grocery website, with a woman recording a voice message in the hero image.",
    "legende": "The Rosa Grocery website adapts to desktop and mobile screens."
+  },
+  "diagnostico-automatizacion/index.html": {
+   "sujet": "page-diagnostic",
+   "fichier": "automatizacion-oficina-ordenada-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web Gestiones Norte, con una empresaria tomando café junto a una ventana.",
+   "legende": "La web de Gestiones Norte se adapta a ordenador y móvil."
   }
  }
 }

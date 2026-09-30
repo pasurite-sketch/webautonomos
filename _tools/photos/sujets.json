@@ -3301,8 +3301,28 @@
    "site": "d'une petite entreprise de services",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "automatizacion-oficina-ordenada-maquette-es"
+     "statut": "fait",
+     "fichier": "automatizacion-oficina-ordenada-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T19:20:23",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web Gestiones Norte, con una empresaria tomando café junto a una ventana.",
+       "legende": "La web de Gestiones Norte se adapta a ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web Gestiones Norte, amb una empresària prenent café al costat d’una finestra.",
+       "legende": "La web de Gestiones Norte s’adapta a ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the Gestiones Norte website, featuring a businesswoman having coffee by a window.",
+       "legende": "The Gestiones Norte website adapts to desktop and mobile screens."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Gestiones Norte, avec une cheffe d’entreprise prenant un café près d’une fenêtre.",
+       "legende": "Le site Gestiones Norte s’adapte aux écrans d’ordinateur et de mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
