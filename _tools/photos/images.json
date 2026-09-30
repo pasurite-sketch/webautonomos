@@ -3092,6 +3092,15 @@
    "v": 1,
    "alt": "Un ordinateur et un téléphone affichent le site Électricité Lumen, avec une électricienne installant des câbles dans un logement en rénovation.",
    "legende": "Le site Électricité Lumen s’adapte à l’ordinateur et au mobile et présente ses services électriques."
+  },
+  "en/website-for-electricians-in-spain.html": {
+   "sujet": "metier-electricien",
+   "fichier": "electricista-cuadro-electrico-vivienda-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Lumen Electrical website, featuring an electrician installing cables in a home under renovation.",
+   "legende": "Lumen Electrical’s website adapts to desktop and mobile and showcases its electrical services."
   }
  }
 }
