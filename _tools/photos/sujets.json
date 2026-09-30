@@ -1968,8 +1968,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "fontanero-reparando-fregadero-cocina-maquette-en"
+     "statut": "fait",
+     "fichier": "fontanero-reparando-fregadero-cocina-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T16:29:51",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Costa Plumbing con un fontanero reparando tuberías bajo el fregadero.",
+       "legende": "La web de Costa Plumbing se adapta a ordenador y móvil y presenta sus servicios."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Costa Plumbing amb un lampista reparant canonades davall de la pica.",
+       "legende": "La web de Costa Plumbing s'adapta a ordinador i mòbil i presenta els seus serveis."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Costa Plumbing website, featuring a plumber repairing pipes beneath a kitchen sink.",
+       "legende": "Costa Plumbing’s website adapts to desktop and mobile and presents its services."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Costa Plumbing, avec un plombier réparant des tuyaux sous un évier.",
+       "legende": "Le site Costa Plumbing s’adapte à l’ordinateur et au mobile et présente ses services."
+      }
+     }
     },
     "es": {
      "statut": "pret",

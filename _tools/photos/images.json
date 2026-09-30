@@ -3056,6 +3056,15 @@
    "v": 1,
    "alt": "Un ordinateur et un téléphone affichent le site Plomberie Durand, avec un plombier réparant des tuyaux sous un évier.",
    "legende": "Le site Plomberie Durand s’adapte à l’ordinateur et au mobile et présente ses services de plomberie."
+  },
+  "en/website-for-plumbers-in-spain.html": {
+   "sujet": "metier-plombier",
+   "fichier": "fontanero-reparando-fregadero-cocina-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Costa Plumbing website, featuring a plumber repairing pipes beneath a kitchen sink.",
+   "legende": "Costa Plumbing’s website adapts to desktop and mobile and presents its services."
   }
  }
 }
