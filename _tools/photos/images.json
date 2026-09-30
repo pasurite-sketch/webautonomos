@@ -1,5 +1,5 @@
 {
- "_lisez_moi": "Photo affichée par chaque page (clé = fichier HTML). Écrit par _tools/photos/photos.py ; lu par les générateurs via photos_lib.injecter.",
+ "_lisez_moi": "Images de chaque page (clé = fichier HTML) : « pages » pour la photo, « maquettes » pour la maquette MacBook + smartphone. Écrit par _tools/photos/photos.py ; lu par les générateurs via photos_lib.injecter.",
  "pages": {
   "blog/es/5-razones-pagina-web-negocio-2026.html": {
    "sujet": "art-01",
@@ -2693,6 +2693,44 @@
    "v": 1,
    "alt": "Un artisan monte un meuble en bois avec un tournevis, les pièces alignées et les vis dans un bol.",
    "legende": "L'artisan assemble le meuble en gardant les pièces et la visserie bien organisées."
+  }
+ },
+ "maquettes": {
+  "blog/es/wix-o-wordpress.html": {
+   "sujet": "file-wix-o-wordpress",
+   "fichier": "elegir-herramienta-web-taller-ceramica-maquette",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Portátil y móvil muestran una web de cerámica artesanal, con fotos de piezas y diseño adaptado a cada pantalla.",
+   "legende": "Ejemplo de web de una ceramista en versión de escritorio y móvil."
+  },
+  "blog/val/wix-o-wordpress.html": {
+   "sujet": "file-wix-o-wordpress",
+   "fichier": "elegir-herramienta-web-taller-ceramica-maquette",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Portàtil i mòbil mostren una web de ceràmica artesanal, amb fotos de peces i disseny adaptat a cada pantalla.",
+   "legende": "Exemple de web d'una ceramista en versió d'ordinador i mòbil."
+  },
+  "blog/en/wix-or-wordpress.html": {
+   "sujet": "file-wix-o-wordpress",
+   "fichier": "elegir-herramienta-web-taller-ceramica-maquette",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display a ceramics website with pottery photos and layouts adapted to each screen.",
+   "legende": "Example website for a ceramic artist on desktop and mobile."
+  },
+  "blog/fr/wix-ou-wordpress.html": {
+   "sujet": "file-wix-o-wordpress",
+   "fichier": "elegir-herramienta-web-taller-ceramica-maquette",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent un site de céramique avec des photos de poteries et deux mises en page.",
+   "legende": "Exemple de site de céramiste en version ordinateur et mobile."
   }
  }
 }
