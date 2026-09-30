@@ -2899,8 +2899,28 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "como-funciona-llamada-asesora-web-maquette-fr"
+     "statut": "fait",
+     "fichier": "como-funciona-llamada-asesora-web-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T18:31:20",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Atelier Soleil con una asesora hablando por teléfono en una oficina luminosa.",
+       "legende": "La web de Atelier Soleil se adapta a ordenador y móvil y presenta el negocio local."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Atelier Soleil amb una assessora parlant per telèfon en una oficina lluminosa.",
+       "legende": "La web d'Atelier Soleil s'adapta a ordinador i mòbil i presenta el negoci local."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Atelier Soleil website, featuring a web consultant speaking on the phone in a bright office.",
+       "legende": "Atelier Soleil’s website adapts to desktop and mobile and presents the local business."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Atelier Soleil, avec une conseillère au téléphone dans un bureau lumineux.",
+       "legende": "Le site Atelier Soleil s’adapte à l’ordinateur et au mobile et présente l’activité locale."
+      }
+     }
     },
     "en": {
      "statut": "pret",
