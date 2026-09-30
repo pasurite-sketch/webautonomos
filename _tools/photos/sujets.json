@@ -2208,8 +2208,28 @@
      }
     },
     "es": {
-     "statut": "pret",
-     "fichier": "electricista-cuadro-electrico-vivienda-maquette-es"
+     "statut": "fait",
+     "fichier": "electricista-cuadro-electrico-vivienda-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T17:51:36",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Electricidad Lumen con una electricista instalando cables en una vivienda en obras.",
+       "legende": "La web de Electricidad Lumen se adapta a ordenador y móvil y presenta sus servicios eléctricos."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Electricidad Lumen amb una electricista instal·lant cables en un habitatge en obres.",
+       "legende": "La web d'Electricidad Lumen s'adapta a ordinador i mòbil i presenta els seus serveis elèctrics."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Electricidad Lumen website, featuring an electrician installing cables in a home under renovation.",
+       "legende": "Electricidad Lumen’s website adapts to desktop and mobile and showcases its electrical services."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Electricidad Lumen, avec une électricienne installant des câbles dans un logement en rénovation.",
+       "legende": "Le site Electricidad Lumen s’adapte à l’ordinateur et au mobile et présente ses services électriques."
+      }
+     }
     }
    },
    "ecrans": {

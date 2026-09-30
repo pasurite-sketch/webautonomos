@@ -3101,6 +3101,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Lumen Electrical website, featuring an electrician installing cables in a home under renovation.",
    "legende": "Lumen Electrical’s website adapts to desktop and mobile and showcases its electrical services."
+  },
+  "demo-electricista.html": {
+   "sujet": "metier-electricien",
+   "fichier": "electricista-cuadro-electrico-vivienda-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Portátil y móvil muestran la web Electricidad Lumen con una electricista instalando cables en una vivienda en obras.",
+   "legende": "La web de Electricidad Lumen se adapta a ordenador y móvil y presenta sus servicios eléctricos."
   }
  }
 }
