@@ -497,6 +497,15 @@
         "text": "No redirigisques automàticament el visitant segons l'idioma que suposes que parla: Google ho desaconsella perquè pot impedir veure totes les versions. Posa un selector d'idioma visible a la capçalera, que porte a la mateixa pàgina en l'altre idioma. I un sol idioma per pàgina: Google determina l'idioma pel contingut visible, no per l'atribut lang ni per la URL."
       },
       {
+        "type": "image",
+        "src": "/assets/negocio-clientes-internacionales-costa-maquette-val.jpg",
+        "width": 1600,
+        "height": 900,
+        "v": "1",
+        "alt": "Un portàtil i un mòbil mostren la mateixa web d'un café vora la mar en versions d'escriptori i mòbil.",
+        "caption": "Exemple de web d'un café vora la mar en un portàtil i un telèfon mòbil."
+      },
+      {
         "type": "heading",
         "text": "Què és l'etiqueta hreflang, explicada sense tecnicismes?"
       },

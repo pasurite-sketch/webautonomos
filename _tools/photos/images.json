@@ -2776,6 +2776,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la misma web de un café junto al mar, en versión de escritorio y móvil.",
    "legende": "Ejemplo de web de un café junto al mar en un portátil y un teléfono móvil."
+  },
+  "blog/val/web-en-diversos-idiomes.html": {
+   "sujet": "file-web-en-varios-idiomas",
+   "fichier": "negocio-clientes-internacionales-costa-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la mateixa web d'un café vora la mar en versions d'escriptori i mòbil.",
+   "legende": "Exemple de web d'un café vora la mar en un portàtil i un telèfon mòbil."
   }
  }
 }
