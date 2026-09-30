@@ -2975,6 +2975,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display a psychologist's website with a bright, calming therapy room.",
    "legende": "Example psychologist website adapted for desktop and mobile."
+  },
+  "fr/site-internet-kinesitherapeute.html": {
+   "sujet": "metier-kine",
+   "fichier": "consulta-fisioterapia-sala-tratamiento-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site d'un cabinet de kinésithérapie avec une salle de soins moderne.",
+   "legende": "Exemple de site de kinésithérapie adapté à l'ordinateur et au mobile."
   }
  }
 }

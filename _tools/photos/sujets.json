@@ -1467,8 +1467,28 @@
    "site": "d'un cabinet de kinésithérapie",
    "maquette": {
     "fr": {
-     "statut": "pret",
-     "fichier": "consulta-fisioterapia-sala-tratamiento-maquette-fr"
+     "statut": "fait",
+     "fichier": "consulta-fisioterapia-sala-tratamiento-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T14:40:08",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una clínica de fisioterapia con una sala de tratamiento moderna.",
+       "legende": "Ejemplo de una web de fisioterapia adaptada a ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d'una clínica de fisioteràpia amb una sala de tractament moderna.",
+       "legende": "Exemple d'una web de fisioteràpia adaptada a ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display a physiotherapy clinic website with a modern treatment room.",
+       "legende": "Example physiotherapy website adapted for desktop and mobile."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'un cabinet de kinésithérapie avec une salle de soins moderne.",
+       "legende": "Exemple de site de kinésithérapie adapté à l'ordinateur et au mobile."
+      }
+     }
     },
     "en": {
      "statut": "pret",
