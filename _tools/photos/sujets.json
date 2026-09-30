@@ -2371,8 +2371,28 @@
    "site": "d'une entreprise de rénovation",
    "maquette": {
     "fr": {
-     "statut": "pret",
-     "fichier": "reformas-alicatado-bano-obra-maquette-fr"
+     "statut": "fait",
+     "fichier": "reformas-alicatado-bano-obra-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T17:56:29",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Rénov Habitat con dos profesionales colocando azulejos en un baño en reforma.",
+       "legende": "La web de Rénov Habitat se adapta a ordenador y móvil y muestra trabajos de renovación."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Rénov Habitat amb dos professionals col·locant taulells en un bany en reforma.",
+       "legende": "La web de Rénov Habitat s'adapta a ordinador i mòbil i mostra treballs de renovació."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Rénov Habitat website, featuring two workers tiling a bathroom during renovation.",
+       "legende": "Rénov Habitat’s website adapts to desktop and mobile and showcases renovation work."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Rénov Habitat, avec deux artisans posant du carrelage dans une salle de bains en rénovation.",
+       "legende": "Le site Rénov Habitat s’adapte à l’ordinateur et au mobile et présente des travaux de rénovation."
+      }
+     }
     },
     "en": {
      "statut": "pret",

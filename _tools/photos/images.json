@@ -3119,6 +3119,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Brightwire Electrical website, featuring an electrician installing a British wall socket.",
    "legende": "Brightwire Electrical’s website adapts to desktop and mobile and showcases its services."
+  },
+  "fr/site-internet-artisan.html": {
+   "sujet": "metier-artisan",
+   "fichier": "reformas-alicatado-bano-obra-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un téléphone affichent le site Rénov Habitat, avec deux artisans posant du carrelage dans une salle de bains en rénovation.",
+   "legende": "Le site Rénov Habitat s’adapte à l’ordinateur et au mobile et présente des travaux de rénovation."
   }
  }
 }
