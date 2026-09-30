@@ -3155,6 +3155,15 @@
    "v": 1,
    "alt": "Un ordinateur et un téléphone affichent le site Boulangerie Blé d'Or, avec une boulangère sortant du pain du four.",
    "legende": "Le site de la boulangerie s’adapte à l’ordinateur et au mobile et met en valeur pains et viennoiseries."
+  },
+  "en/index.html": {
+   "sujet": "page-accueils",
+   "fichier": "autonomo-abriendo-negocio-manana-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Golden Wheat Bakery website, featuring a baker taking fresh bread from the oven.",
+   "legende": "Golden Wheat Bakery’s website adapts to desktop and mobile and showcases freshly baked bread."
   }
  }
 }

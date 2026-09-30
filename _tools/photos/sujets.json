@@ -2577,8 +2577,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "autonomo-abriendo-negocio-manana-maquette-en"
+     "statut": "fait",
+     "fichier": "autonomo-abriendo-negocio-manana-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T18:16:33",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Golden Wheat Bakery con una panadera sacando pan recién hecho del horno.",
+       "legende": "La web de Golden Wheat Bakery se adapta a ordenador y móvil y destaca el pan recién horneado."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Golden Wheat Bakery amb una fornera traient pa acabat de fer del forn.",
+       "legende": "La web de Golden Wheat Bakery s'adapta a ordinador i mòbil i destaca el pa acabat de coure."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Golden Wheat Bakery website, featuring a baker taking fresh bread from the oven.",
+       "legende": "Golden Wheat Bakery’s website adapts to desktop and mobile and showcases freshly baked bread."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Golden Wheat Bakery, avec une boulangère sortant du pain du four.",
+       "legende": "Le site Golden Wheat Bakery s’adapte à l’ordinateur et au mobile et met en valeur le pain frais."
+      }
+     }
     }
    },
    "ecrans": {
