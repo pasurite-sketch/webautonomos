@@ -2076,8 +2076,28 @@
    "site": "d'un chauffagiste britannique",
    "maquette": {
     "en": {
-     "statut": "pret",
-     "fichier": "fontanero-caldera-reino-unido-maquette-en"
+     "statut": "fait",
+     "fichier": "fontanero-caldera-reino-unido-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T17:00:42",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Hartley Plumbing & Heating con un técnico revisando un radiador en una vivienda.",
+       "legende": "La web de Hartley Plumbing & Heating se adapta a ordenador y móvil y presenta sus servicios."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Hartley Plumbing & Heating amb un tècnic revisant un radiador en una vivenda.",
+       "legende": "La web de Hartley Plumbing & Heating s'adapta a ordinador i mòbil i presenta els seus serveis."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Hartley Plumbing & Heating website, featuring a technician servicing a radiator in a home.",
+       "legende": "Hartley Plumbing & Heating’s website adapts to desktop and mobile and showcases its services."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Hartley Plumbing & Heating, avec un technicien intervenant sur un radiateur.",
+       "legende": "Le site Hartley Plumbing & Heating s’adapte à l’ordinateur et au mobile et présente ses services."
+      }
+     }
     }
    },
    "ecrans": {
