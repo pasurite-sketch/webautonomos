@@ -3245,6 +3245,15 @@
    "v": 1,
    "alt": "Un ordinateur et un téléphone affichent le site Électricité Volta, avec un électricien et une conseillère discutant dans un café.",
    "legende": "Le site Électricité Volta s’adapte à l’ordinateur et au mobile et facilite la prise de contact."
+  },
+  "en/faq.html": {
+   "sujet": "page-questions",
+   "fichier": "preguntas-frecuentes-conversacion-cafe-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Volta Electrical website, featuring an electrician and a consultant talking in a café.",
+   "legende": "Volta Electrical’s website adapts to desktop and mobile and makes it easy to get in touch."
   }
  }
 }
