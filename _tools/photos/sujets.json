@@ -3443,8 +3443,28 @@
    "site": "d'une boutique de quartier",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "busqueda-voz-asistente-ia-calle-maquette-es"
+     "statut": "fait",
+     "fichier": "busqueda-voz-asistente-ia-calle-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T19:37:21",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web Zapatería Paso, con una mujer usando el teléfono en una calle comercial.",
+       "legende": "La web de Zapatería Paso se adapta a ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web Zapatería Paso, amb una dona usant el telèfon en un carrer comercial.",
+       "legende": "La web de Zapatería Paso s’adapta a ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the Zapatería Paso website, featuring a woman using her phone on a shopping street.",
+       "legende": "The Zapatería Paso website adapts to desktop and mobile screens."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Zapatería Paso, avec une femme utilisant son téléphone dans une rue commerçante.",
+       "legende": "Le site Zapatería Paso s’adapte aux écrans d’ordinateur et de mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",

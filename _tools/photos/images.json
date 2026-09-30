@@ -3308,6 +3308,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display the North Admin website, featuring a woman drinking coffee in a bright office.",
    "legende": "The North Admin website adapts to desktop and mobile screens."
+  },
+  "visibilidad-ia/index.html": {
+   "sujet": "page-visibilite-ia",
+   "fichier": "busqueda-voz-asistente-ia-calle-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web Zapatería Paso, con una mujer usando el teléfono en una calle comercial.",
+   "legende": "La web de Zapatería Paso se adapta a ordenador y móvil."
   }
  }
 }
