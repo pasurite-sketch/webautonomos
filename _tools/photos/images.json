@@ -3173,6 +3173,15 @@
    "v": 1,
    "alt": "Un ordinateur et un téléphone affichent le site Salon Élise, avec un coiffeur souriant dans son salon avant l'ouverture.",
    "legende": "Le site Salon Élise s’adapte à l’ordinateur et au mobile et permet de réserver."
+  },
+  "get-your-demo.html": {
+   "sujet": "page-demande-demo",
+   "fichier": "autonomo-recibe-demo-web-movil-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Elise Hair Studio website, featuring a smiling hairdresser in his salon.",
+   "legende": "Elise Hair Studio’s website adapts to desktop and mobile and lets visitors book an appointment."
   }
  }
 }

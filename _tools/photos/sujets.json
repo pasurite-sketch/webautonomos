@@ -2677,8 +2677,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "autonomo-recibe-demo-web-movil-maquette-en"
+     "statut": "fait",
+     "fichier": "autonomo-recibe-demo-web-movil-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T18:20:11",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Elise Hair Studio con un peluquero sonriente en su salón.",
+       "legende": "La web de Elise Hair Studio se adapta a ordenador y móvil y permite reservar cita."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Elise Hair Studio amb un perruquer somrient al seu saló.",
+       "legende": "La web d'Elise Hair Studio s'adapta a ordinador i mòbil i permet reservar cita."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Elise Hair Studio website, featuring a smiling hairdresser in his salon.",
+       "legende": "Elise Hair Studio’s website adapts to desktop and mobile and lets visitors book an appointment."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Elise Hair Studio, avec un coiffeur souriant dans son salon.",
+       "legende": "Le site Elise Hair Studio s’adapte à l’ordinateur et au mobile et permet de réserver."
+      }
+     }
     }
    },
    "ecrans": {
