@@ -81,6 +81,15 @@
         "text": "Ne redirigez pas automatiquement le visiteur selon la langue que vous lui supposez : Google le déconseille, car cela peut empêcher de voir toutes les versions. Placez un sélecteur de langue visible dans l'en-tête, qui mène à la même page dans l'autre langue. Et gardez une seule langue par page : Google détermine la langue d'après le contenu visible, pas d'après l'attribut lang ni l'URL."
       },
       {
+        "type": "image",
+        "src": "/assets/negocio-clientes-internacionales-costa-maquette-fr.jpg",
+        "width": 1600,
+        "height": 900,
+        "v": "1",
+        "alt": "Un ordinateur portable et un smartphone affichent le même site de café en bord de mer, en versions ordinateur et mobile.",
+        "caption": "Exemple de site de café en bord de mer sur ordinateur portable et smartphone."
+      },
+      {
         "type": "heading",
         "text": "Le hreflang, qu'est-ce que c'est, en clair ?"
       },

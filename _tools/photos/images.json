@@ -2794,6 +2794,15 @@
    "v": 1,
    "alt": "Laptop and smartphone display the same seaside café website in desktop and mobile layouts.",
    "legende": "Example website for a seaside café shown on a laptop and smartphone."
+  },
+  "blog/fr/site-internet-bilingue.html": {
+   "sujet": "file-web-en-varios-idiomas",
+   "fichier": "negocio-clientes-internacionales-costa-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur portable et un smartphone affichent le même site de café en bord de mer, en versions ordinateur et mobile.",
+   "legende": "Exemple de site de café en bord de mer sur ordinateur portable et smartphone."
   }
  }
 }
