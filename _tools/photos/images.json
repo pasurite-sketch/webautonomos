@@ -3011,6 +3011,15 @@
    "v": 1,
    "alt": "Un ordinateur et un téléphone affichent le site du Cabinet dentaire du Parc, avec une dentiste préparant ses instruments.",
    "legende": "Le site du cabinet dentaire s’adapte à l’ordinateur et au mobile avec une photo du cabinet."
+  },
+  "en/website-for-dentists-in-spain.html": {
+   "sujet": "metier-dentiste",
+   "fichier": "clinica-dental-gabinete-moderno-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Parkside Dental website, featuring a dentist preparing instruments in a bright clinic.",
+   "legende": "Parkside Dental’s website adapts to desktop and mobile, featuring a bright dental clinic."
   }
  }
 }

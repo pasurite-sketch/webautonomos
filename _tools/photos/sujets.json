@@ -1673,8 +1673,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "clinica-dental-gabinete-moderno-maquette-en"
+     "statut": "fait",
+     "fichier": "clinica-dental-gabinete-moderno-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T15:37:06",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Parkside Dental con una dentista preparando instrumentos en una clínica luminosa.",
+       "legende": "La web de Parkside Dental se adapta a ordenador y móvil con una imagen de la clínica."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Parkside Dental amb una dentista preparant instruments en una clínica lluminosa.",
+       "legende": "La web de Parkside Dental s'adapta a ordinador i mòbil amb una imatge de la clínica."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Parkside Dental website, featuring a dentist preparing instruments in a bright clinic.",
+       "legende": "Parkside Dental’s website adapts to desktop and mobile, featuring a bright dental clinic."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Parkside Dental, avec une dentiste préparant ses instruments dans un cabinet lumineux.",
+       "legende": "Le site Parkside Dental s’adapte à l’ordinateur et au mobile avec une photo du cabinet."
+      }
+     }
     }
    },
    "ecrans": {
