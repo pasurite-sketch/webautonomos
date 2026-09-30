@@ -1802,7 +1802,7 @@ DENT['en'] = dict(
          ('📅', 'Easy to book', "A clear button to your online calendar, WhatsApp or phone.")],
     where_t='Anywhere in Spain',
     where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work remotely, "
-          "so where your clinic is makes no difference.",
+          "so your clinic's location makes no difference.",
     sect_t='Who it is for',
     sectors=['🦷 General dentistry', '😁 Orthodontics', '🦷 Implant dentistry', '👶 Children’s dentistry',
              '🪥 Periodontics', '✨ Cosmetic dentistry', '🏥 Dental clinics', '🧑‍⚕️ Group practices'],
@@ -1815,27 +1815,30 @@ DENT['en'] = dict(
     price_note=PRIX_EN_SANTE,
     extra=[
         ('website-content', 'Content', "What to put on your dental clinic's site",
-         '<p class="legal-intro">Patients choosing a dentist want to see quickly who treats them, which '
-         'treatments the clinic offers and how to book an appointment.</p>'
+         '<p class="legal-intro">Patients choosing a dental clinic, or “clínica dental”, want clear '
+         'information about who treats them, the main oral health treatments on offer and how to book '
+         'a visit.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🦷</div>'
          '<h3>Your treatments, described plainly</h3>'
-         '<p>General dentistry, implants, orthodontics or oral care, described without a promise of '
-         'results (see the rules above), so patients understand what each treatment involves.</p></div>'
+         '<p>General dentistry, dental implants, orthodontics or oral care — from routine check-ups to '
+         'more advanced treatments such as crowns, bone grafts or straightening teeth — described without a '
+         'promise of results (see the rules above), so patients understand what each case involves.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧑‍⚕️</div>'
          '<h3>Your team and their qualifications</h3>'
-         '<p>Your clinical team, introduced with the qualifications they actually hold and the treatments each of '
-         'them carries out, so patients know who will treat them. Registration details appear as set out in '
-         'the rules above.</p></div>'
+         '<p>Your clinical team, introduced with the qualifications they actually hold, their training and '
+         'experience, and the treatments each of them carries out, so patients know who will provide their '
+         'care. Registration details appear as set out in the rules above.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📅</div>'
          '<h3>Your schedule and how to book</h3>'
-         '<p>Your opening hours and a clear way to request an appointment, through your contact form, WhatsApp '
-         'or phone, so patients do not have to search for how to reach you.</p></div>'
+         '<p>Your opening hours and a clear way to send a request for a dental visit, through your contact '
+         'form, WhatsApp or phone, so patients can pick whichever way suits them best.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🌍</div>'
          '<h3>Care for international patients</h3>'
          '<p>Say which languages your clinical team and front desk speak during appointments, not only which '
-         'languages your pages are written in, so patients who have moved to Spain know they will be understood '
-         'at the clinic.</p></div>'
+         'languages your pages are written in. In some cases the two are different, which can help patients '
+         'feel understood at the clinic and settle into a smoother experience receiving care after they move '
+         'to Spain.</p></div>'
          '</div>'),
         ('local-search-help', 'Local search', 'How English-speaking patients find you online',
          '<p class="legal-intro">Getting found by someone searching for a dentist depends on '
@@ -1844,21 +1847,23 @@ DENT['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div>'
          '<h3>Basic SEO, included in your price</h3>'
          '<p>Titles and copy written around your treatments and your area, kept consistent with your Google '
-         'Business Profile, are included at no extra cost.</p></div>'
+         'Business Profile, are part of your dental clinic\'s digital presence and included at no extra '
+         'cost.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div>'
          '<h3>SEO Local and your Google listing, if you want more</h3>'
          '<p>We also offer SEO Local for €15 + VAT a month, and managing your Google Business Profile for €29 '
          '+ VAT a month (€49 + VAT to set one up if you do not have a listing yet).</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div>'
          '<h3>Patients searching in English</h3>'
-         '<p>Expats who have just moved to Spain often search in their own language, typing “English-speaking '
-         'dentist Marbella” or “dentist in Malaga who speaks English”. With copy in both languages, your site can '
-         'answer these searches as well as the local ones.</p></div>'
+         '<p>Expats who have just moved to Spain often search for healthcare in their own language, typing '
+         '“English-speaking dentist Marbella” or “dentist in Malaga who speaks English”, while local patients '
+         'search for “clínica dental” plus their town. With copy in both languages, your site can answer '
+         'whichever of these fits best.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📚</div>'
          '<h3>Guides to go further</h3>'
-         '<p>Our blog has practical guides on '
+         '<p>Our blog has practical guides to help you with '
          '<a href="https://webautonomos.es/blog/en/how-to-rank-your-website-in-local-google">ranking your '
-         'website locally</a> and <a href="https://webautonomos.es/blog/en/optimise-your-google-business-'
+         'site locally</a> and <a href="https://webautonomos.es/blog/en/optimise-your-google-business-'
          'profile">optimising your Google Business Profile</a>.</p></div>'
          '</div>'),
         ('technical-basics', 'Behind the scenes', 'The technical side, handled for you',
@@ -1926,7 +1931,7 @@ DENT['en'] = dict(
           "hosting, a domain name for the first year, legal pages and one change a month. Dental services, whitening "
           "included, are VAT-exempt, so you usually can't deduct the VAT on our invoice (only in part if you also sell "
           "taxed services or products).")],
-    final_t='See your website before you pay a thing',
+    final_t='See your site before you pay a thing',
     final_sd="Free demo within 24 hours, copy and legal pages included. No setup fee, no lock-in.",
 )
 
