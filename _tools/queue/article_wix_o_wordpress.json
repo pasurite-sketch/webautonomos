@@ -148,6 +148,15 @@
         "text": "Réponse courte : pas pour Wix, un peu pour WordPress.com, nettement plus pour WordPress installé chez un hébergeur. Wix fonctionne avec un éditeur glisser-déposer et des modèles : vous déplacez les blocs, changez textes et photos, et voyez le résultat tout de suite. WordPress se gère aussi sans coder, grâce à son éditeur par blocs, mais il demande plus de choix (thème, extensions, réglages) et, en auto-hébergé, l'installation et le paramétrage. Rien d'insurmontable, mais prévoyez du temps de prise en main."
       },
       {
+        "type": "image",
+        "src": "/assets/elegir-herramienta-web-taller-ceramica-maquette-fr.jpg",
+        "width": 1600,
+        "height": 900,
+        "v": "1",
+        "alt": "Un ordinateur et un smartphone affichent le site d'une céramiste avec des photos de poteries artisanales.",
+        "caption": "Exemple de boutique de céramique artisanale sur ordinateur et mobile."
+      },
+      {
         "type": "heading",
         "text": "Qui s'occupe de la maintenance et de la sécurité ?"
       },

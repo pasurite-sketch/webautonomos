@@ -2722,6 +2722,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display a ceramic artist's website with handmade pottery photos and a responsive layout.",
    "legende": "Example of a handmade ceramics shop on desktop and mobile."
+  },
+  "blog/fr/wix-ou-wordpress.html": {
+   "sujet": "file-wix-o-wordpress",
+   "fichier": "elegir-herramienta-web-taller-ceramica-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site d'une céramiste avec des photos de poteries artisanales.",
+   "legende": "Exemple de boutique de céramique artisanale sur ordinateur et mobile."
   }
  }
 }
