@@ -3110,6 +3110,15 @@
    "v": 1,
    "alt": "Portátil y móvil muestran la web Electricidad Lumen con una electricista instalando cables en una vivienda en obras.",
    "legende": "La web de Electricidad Lumen se adapta a ordenador y móvil y presenta sus servicios eléctricos."
+  },
+  "en/web-design-for-electricians.html": {
+   "sujet": "metier-electricien-uk",
+   "fichier": "electricista-enchufe-reino-unido-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and phone display the Brightwire Electrical website, featuring an electrician installing a British wall socket.",
+   "legende": "Brightwire Electrical’s website adapts to desktop and mobile and showcases its services."
   }
  }
 }

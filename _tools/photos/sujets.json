@@ -2292,8 +2292,28 @@
    "site": "d'un électricien britannique",
    "maquette": {
     "en": {
-     "statut": "pret",
-     "fichier": "electricista-enchufe-reino-unido-maquette-en"
+     "statut": "fait",
+     "fichier": "electricista-enchufe-reino-unido-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T17:53:31",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Brightwire Electrical con un electricista instalando un enchufe británico.",
+       "legende": "La web de Brightwire Electrical se adapta a ordenador y móvil y presenta sus servicios."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Brightwire Electrical amb un electricista instal·lant un endoll britànic.",
+       "legende": "La web de Brightwire Electrical s'adapta a ordinador i mòbil i presenta els seus serveis."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Brightwire Electrical website, featuring an electrician installing a British wall socket.",
+       "legende": "Brightwire Electrical’s website adapts to desktop and mobile and showcases its services."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Brightwire Electrical, avec un électricien installant une prise britannique.",
+       "legende": "Le site Brightwire Electrical s’adapte à l’ordinateur et au mobile et présente ses services."
+      }
+     }
     }
    },
    "ecrans": {
