@@ -2891,10 +2891,10 @@ ARTI['fr'] = dict(
     crumb_home='Accueil', crumb='Artisans du bâtiment',
     badge='Artisans du bâtiment et de la rénovation',
     h1="Création de site internet pour <em>artisan</em> du bâtiment",
-    lede="Vos réalisations, vos métiers, les communes où vous intervenez, une demande de devis en un clic, et les "
-         "mentions que la loi impose dès que vous travaillez pour des particuliers. Nous l'écrivons pour vous et vous "
+    lede="Vos réalisations, vos métiers, les communes où vous intervenez, une demande de devis en un clic, et ce que "
+         "la loi impose dès que vous travaillez pour des particuliers. Nous l'écrivons pour vous et vous "
          "envoyons une démo gratuite en 24 heures.",
-    pills=['Un site vitrine clé en main', 'Mentions obligatoires en ordre', 'Démo gratuite en 24 h'],
+    pills=['Un site vitrine clé en main', 'Obligations légales en ordre', 'Démo gratuite en 24 h'],
     cta='Recevoir ma démo gratuite', cta2='Ce que la loi impose',
     brief_t='En bref',
     brief="WebAutonomos crée des sites internet pour les artisans du bâtiment et de la rénovation (maçons, peintres, "
@@ -2974,11 +2974,11 @@ ARTI['fr'] = dict(
                                           "classées par type de travaux, avec avant et après si vous en avez."),
          ('📝', 'Une demande de devis simple', "Formulaire, WhatsApp ou téléphone : le particulier décrit son projet "
                                               "et vous recevez la demande directement."),
-         ('📄', 'Les mentions à jour', "Assurance, médiateur, mentions légales, encart France Rénov' : ce que la loi "
+         ('📄', 'Vos obligations à jour', "Assurance, médiateur, mentions légales, encart France Rénov' : ce que la loi "
                                       "demande est en place, et vous validez chaque contenu."),
          ('📍', 'Trouvé près de chez vous', "Titres et textes pensés pour les recherches « votre métier + votre "
                                            "ville », et votre fiche Google si vous le souhaitez.")],
-    where_t='En France et en Espagne',
+    where_t='Où que soit votre entreprise',
     where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que votre entreprise "
           "soit en Normandie, en Provence ou sur la Costa Blanca, rien ne change.",
     sect_t='Pour qui',
@@ -2987,7 +2987,7 @@ ARTI['fr'] = dict(
     how_t='Votre projet en trois étapes',
     steps=[('Vous décrivez votre activité', "Vos métiers, votre zone d'intervention, quelques photos de chantier : "
                                            "deux minutes suffisent."),
-           ('Nous préparons votre démo', "En moins de 24 heures, avec vos réalisations, vos textes et vos mentions "
+           ('Nous préparons votre démo', "En moins de 24 heures, avec vos réalisations, vos textes et vos informations "
                                         "légales."),
            ('Vous décidez', "Vous demandez les modifications que vous voulez. Si le site vous plaît, il est mis en "
                            "ligne ; sinon, vous ne payez rien.")],
@@ -3035,6 +3035,26 @@ ARTI['fr'] = dict(
         visibilite_fr("SEO pour artisans : ce qui est inclus et ce qui est en plus",
                       "<a href=\"https://webautonomos.es/blog/fr/positionner-son-site-dans-le-google-local\">"
                       "positionner votre site dans la recherche locale</a>, "),
+        ('budget', 'Le prix, en clair', "Un site pour artisan revient-il moins cher qu'en agence ?",
+         "<p class=\"legal-intro\">Sur le marché espagnol, où WebAutonomos est établi, un site professionnel "
+         "réalisé par un freelance coûte de 800 € à 2 000 €, et par une agence de 1 500 € à 4 000 €, hors "
+         "maintenance, selon un "
+         "<a href=\"https://www.socialmediapymes.com/cuanto-cuesta-una-web/\" rel=\"noopener\" target=\"_blank\">"
+         "article de Social Media Pymes</a> publié en août 2026. Chez WebAutonomos, c'est 15 € HT par mois sans "
+         "engagement, ou 349 € HT en paiement unique : dans les deux cas, l'hébergement, le nom de domaine la "
+         "première année et la maintenance sont compris.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">💶</div>"
+         "<h3>Un montant fixe, sans rallonge</h3>"
+         "<p>Pas de facture surprise pour l'hébergement, la maintenance ou la modification incluse chaque mois : "
+         "ces éléments sont compris dans l'abonnement comme dans le paiement unique.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🧾</div>"
+         "<h3>Un devis pour le reste</h3>"
+         "<p>Une boutique en ligne se fait sur devis. Une refonte complète ou une nouvelle grande section passe "
+         "par un devis fermé, sans surprise.</p></div>"
+         "</div>"
+         "<p class=\"where\">Le coût réel sur 24 mois, comparé aux autres solutions : "
+         "<a href=\"https://webautonomos.es/fr/tarifs\">le prix d'un site internet chez WebAutonomos</a>.</p>"),
     ],
     faq_t='Questions fréquentes',
     faq=[("Que doit contenir le site internet d'un artisan ?",
@@ -3110,8 +3130,8 @@ ARTI['fr'] = dict(
           "l'abonnement."),
          faq_prix_fr('artisan')],
     final_t='Voyez votre site avant de payer quoi que ce soit',
-    final_sd="Démo gratuite en 24 heures, avec vos réalisations et vos mentions légales. Sans frais d'installation, "
-             "sans engagement.",
+    final_sd="Démo gratuite en 24 heures, avec vos réalisations et vos obligations légales en ordre. Sans frais "
+             "d'installation, sans engagement.",
 )
 
 ARTI['en'] = dict(
