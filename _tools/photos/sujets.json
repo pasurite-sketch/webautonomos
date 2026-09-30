@@ -3041,8 +3041,28 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "preguntas-frecuentes-conversacion-cafe-maquette-fr"
+     "statut": "fait",
+     "fichier": "preguntas-frecuentes-conversacion-cafe-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T18:40:32",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Électricité Volta con un electricista y una asesora conversando en un café.",
+       "legende": "La web de Électricité Volta se adapta a ordenador y móvil y facilita el contacto."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Électricité Volta amb un electricista i una assessora conversant en una cafeteria.",
+       "legende": "La web d'Électricité Volta s'adapta a ordinador i mòbil i facilita el contacte."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Électricité Volta website, featuring an electrician and consultant talking in a café.",
+       "legende": "Électricité Volta’s website adapts to desktop and mobile and makes it easy to get in touch."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Électricité Volta, avec un électricien et une conseillère discutant dans un café.",
+       "legende": "Le site Électricité Volta s’adapte à l’ordinateur et au mobile et facilite la prise de contact."
+      }
+     }
     },
     "en": {
      "statut": "pret",
