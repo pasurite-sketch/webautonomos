@@ -1104,8 +1104,28 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "comparar-creadores-web-coworking-maquette-fr"
+     "statut": "fait",
+     "fichier": "comparar-creadores-web-coworking-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T14:09:18",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Nexo Services con una emprendedora en un espacio de coworking.",
+       "legende": "Ejemplo de una web de servicios profesionales adaptada a ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web de Nexo Services amb una emprenedora en un espai de coworking.",
+       "legende": "Exemple d'una web de serveis professionals adaptada a ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the Nexo Services website featuring an entrepreneur in a coworking space.",
+       "legende": "Example professional services website adapted for desktop and mobile."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site de Nexo Services avec une entrepreneuse dans un espace de coworking.",
+       "legende": "Exemple de site de services professionnels adapté à l'ordinateur et au mobile."
+      }
+     }
     },
     "en": {
      "statut": "pret",

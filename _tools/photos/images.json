@@ -2912,6 +2912,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Nexo Servicios con una emprendedora en un espacio de coworking.",
    "legende": "Ejemplo de una web de servicios profesionales adaptada a ordenador y móvil."
+  },
+  "fr/meilleurs-createurs-de-sites-pour-independants.html": {
+   "sujet": "page-comparatifs",
+   "fichier": "comparar-creadores-web-coworking-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site de Nexo Services avec une entrepreneuse dans un espace de coworking.",
+   "legende": "Exemple de site de services professionnels adapté à l'ordinateur et au mobile."
   }
  }
 }
