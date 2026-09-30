@@ -1383,8 +1383,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "consulta-psicologia-sala-terapia-maquette-en"
+     "statut": "fait",
+     "fichier": "consulta-psicologia-sala-terapia-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T14:30:30",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una psicóloga con una sala de consulta luminosa y tranquila.",
+       "legende": "Ejemplo de una web de psicología adaptada a ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d'una psicòloga amb una consulta lluminosa i tranquil·la.",
+       "legende": "Exemple d'una web de psicologia adaptada a ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display a psychologist's website with a bright, calming therapy room.",
+       "legende": "Example psychologist website adapted for desktop and mobile."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'une psychologue avec un cabinet lumineux et apaisant.",
+       "legende": "Exemple de site de psychologue adapté à l'ordinateur et au mobile."
+      }
+     }
     }
    },
    "ecrans": {

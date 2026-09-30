@@ -2966,6 +2966,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site d'un cabinet de psychologie avec la thérapeute préparant le cabinet.",
    "legende": "Exemple de site de psychologue adapté à l'ordinateur et au mobile."
+  },
+  "en/website-for-therapists-in-spain.html": {
+   "sujet": "metier-therapeute",
+   "fichier": "consulta-psicologia-sala-terapia-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display a psychologist's website with a bright, calming therapy room.",
+   "legende": "Example psychologist website adapted for desktop and mobile."
   }
  }
 }
