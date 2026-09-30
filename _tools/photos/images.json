@@ -3326,6 +3326,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Chaussures Pas, avec une femme utilisant son téléphone dans une rue commerçante.",
    "legende": "Le site Chaussures Pas s’adapte aux écrans d’ordinateur et de mobile."
+  },
+  "en/ai-visibility/index.html": {
+   "sujet": "page-visibilite-ia",
+   "fichier": "busqueda-voz-asistente-ia-calle-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Step Shoes website, featuring a woman using her phone on a shopping street.",
+   "legende": "The Step Shoes website adapts to desktop and mobile screens."
   }
  }
 }

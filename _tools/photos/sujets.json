@@ -3491,8 +3491,28 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "busqueda-voz-asistente-ia-calle-maquette-en"
+     "statut": "fait",
+     "fichier": "busqueda-voz-asistente-ia-calle-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T19:40:20",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web Step Shoes, con una mujer usando el teléfono en una calle comercial.",
+       "legende": "La web Step Shoes se adapta a las pantallas de ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web Step Shoes, amb una dona usant el telèfon en un carrer comercial.",
+       "legende": "La web Step Shoes s’adapta a les pantalles d’ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the Step Shoes website, featuring a woman using her phone on a shopping street.",
+       "legende": "The Step Shoes website adapts to desktop and mobile screens."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Step Shoes, avec une femme utilisant son téléphone dans une rue commerçante.",
+       "legende": "Le site Step Shoes s’adapte aux écrans d’ordinateur et de mobile."
+      }
+     }
     }
    },
    "ecrans": {
