@@ -1992,8 +1992,28 @@
      }
     },
     "es": {
-     "statut": "pret",
-     "fichier": "fontanero-reparando-fregadero-cocina-maquette-es"
+     "statut": "fait",
+     "fichier": "fontanero-reparando-fregadero-cocina-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T16:42:41",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Fontanería Ríos con un fontanero reparando tuberías bajo el fregadero.",
+       "legende": "La web de Fontanería Ríos se adapta a ordenador y móvil y presenta sus servicios."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Fontanería Ríos amb un lampista reparant canonades davall de la pica.",
+       "legende": "La web de Fontanería Ríos s'adapta a ordinador i mòbil i presenta els seus serveis."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Fontanería Ríos website, featuring a plumber repairing pipes beneath a kitchen sink.",
+       "legende": "Fontanería Ríos’s website adapts to desktop and mobile and presents its services."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Fontanería Ríos, avec un plombier réparant des tuyaux sous un évier.",
+       "legende": "Le site Fontanería Ríos s’adapte à l’ordinateur et au mobile et présente ses services."
+      }
+     }
     }
    },
    "ecrans": {

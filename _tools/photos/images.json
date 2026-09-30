@@ -3065,6 +3065,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Costa Plumbing website, featuring a plumber repairing pipes beneath a kitchen sink.",
    "legende": "Costa Plumbing’s website adapts to desktop and mobile and presents its services."
+  },
+  "demo-fontanero.html": {
+   "sujet": "metier-plombier",
+   "fichier": "fontanero-reparando-fregadero-cocina-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Portátil y móvil muestran la web Fontanería Ríos con un fontanero reparando tuberías bajo el fregadero.",
+   "legende": "La web de Fontanería Ríos se adapta a ordenador y móvil y presenta sus servicios."
   }
  }
 }
