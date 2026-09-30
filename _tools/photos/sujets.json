@@ -4755,9 +4755,29 @@
      "spa": "fr/comment-se-passe-l-automatisation-etape-par-etape"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "scene": "Un artisan monte un meuble étape par étape, les pièces alignées au sol dans l'ordre et la visserie dans un bol.",
-   "fichier": "automatizar-proceso-paso-a-paso"
+   "fichier": "automatizar-proceso-paso-a-paso",
+   "v": 1,
+   "fait_le": "2026-09-30T08:23:53",
+   "textes": {
+    "es": {
+     "alt": "Un artesano monta un mueble de madera con un destornillador, con las piezas ordenadas y los tornillos en un cuenco.",
+     "legende": "El montaje del mueble avanza con las piezas y la tornillería organizadas."
+    },
+    "val": {
+     "alt": "Un artesà munta un moble de fusta amb un tornavís, amb les peces ordenades i els caragols en un bol.",
+     "legende": "El muntatge del moble avança amb les peces i els caragols organitzats."
+    },
+    "en": {
+     "alt": "A craftsperson assembles a wooden piece of furniture with a screwdriver, with parts laid out and screws in a bowl.",
+     "legende": "The furniture is assembled with the parts and hardware neatly organized."
+    },
+    "fr": {
+     "alt": "Un artisan monte un meuble en bois avec un tournevis, les pièces alignées et les vis dans un bol.",
+     "legende": "L'artisan assemble le meuble en gardant les pièces et la visserie bien organisées."
+    }
+   }
   }
  ]
 }

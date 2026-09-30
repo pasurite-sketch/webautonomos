@@ -2657,6 +2657,42 @@
    "v": 1,
    "alt": "Un technicien graisse les engrenages d'une vieille machine dans un atelier propre et lumineux.",
    "legende": "Un entretien régulier contribue à préserver les machines de l'atelier."
+  },
+  "blog/es/como-es-automatizar-un-proceso-paso-a-paso.html": {
+   "sujet": "art-68",
+   "fichier": "automatizar-proceso-paso-a-paso",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un artesano monta un mueble de madera con un destornillador, con las piezas ordenadas y los tornillos en un cuenco.",
+   "legende": "El montaje del mueble avanza con las piezas y la tornillería organizadas."
+  },
+  "blog/val/com-es-automatitzar-un-proces-pas-a-pas.html": {
+   "sujet": "art-68",
+   "fichier": "automatizar-proceso-paso-a-paso",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un artesà munta un moble de fusta amb un tornavís, amb les peces ordenades i els caragols en un bol.",
+   "legende": "El muntatge del moble avança amb les peces i els caragols organitzats."
+  },
+  "blog/en/how-automating-a-process-works-step-by-step.html": {
+   "sujet": "art-68",
+   "fichier": "automatizar-proceso-paso-a-paso",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A craftsperson assembles a wooden piece of furniture with a screwdriver, with parts laid out and screws in a bowl.",
+   "legende": "The furniture is assembled with the parts and hardware neatly organized."
+  },
+  "blog/fr/comment-se-passe-l-automatisation-etape-par-etape.html": {
+   "sujet": "art-68",
+   "fichier": "automatizar-proceso-paso-a-paso",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un artisan monte un meuble en bois avec un tournevis, les pièces alignées et les vis dans un bol.",
+   "legende": "L'artisan assemble le meuble en gardant les pièces et la visserie bien organisées."
   }
  }
 }
