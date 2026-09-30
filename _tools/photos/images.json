@@ -2731,6 +2731,42 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent un site de céramique avec des photos de poteries et deux mises en page.",
    "legende": "Exemple de site de céramiste en version ordinateur et mobile."
+  },
+  "blog/es/alta-autonomo-extranjero-espana.html": {
+   "sujet": "file-alta-autonomo-extranjero-espana",
+   "fichier": "autonomo-extranjero-tramites-oficina-maquette",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de un taller artesanal de cerámica, con fotografías de piezas y diseño adaptable.",
+   "legende": "Ejemplo de una web de taller artesanal vista en ordenador y móvil."
+  },
+  "blog/val/alta-autonom-estranger.html": {
+   "sujet": "file-alta-autonomo-extranjero-espana",
+   "fichier": "autonomo-extranjero-tramites-oficina-maquette",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web d'un taller artesanal de ceràmica, amb fotografies de peces i disseny adaptable.",
+   "legende": "Exemple d'una web de taller artesanal vista en ordinador i mòbil."
+  },
+  "blog/en/becoming-an-autonomo-in-spain-as-a-foreigner.html": {
+   "sujet": "file-alta-autonomo-extranjero-espana",
+   "fichier": "autonomo-extranjero-tramites-oficina-maquette",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display a ceramics workshop website with pottery photos and a responsive layout.",
+   "legende": "An artisan workshop website shown on desktop and mobile."
+  },
+  "blog/fr/devenir-autonomo-en-espagne.html": {
+   "sujet": "file-alta-autonomo-extranjero-espana",
+   "fichier": "autonomo-extranjero-tramites-oficina-maquette",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site d'un atelier de céramique avec des photos de pièces artisanales.",
+   "legende": "Exemple de site d'atelier artisanal affiché sur ordinateur et mobile."
   }
  }
 }

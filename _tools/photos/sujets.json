@@ -155,8 +155,28 @@
    "note": "remis en file le 29/09 : l'ancienne scène (chemise de documents) piégeait le générateur (texte)",
    "marche_force": "es",
    "maquette": {
-    "statut": "pret",
-    "fichier": "autonomo-extranjero-tramites-oficina-maquette"
+    "statut": "fait",
+    "fichier": "autonomo-extranjero-tramites-oficina-maquette",
+    "v": 1,
+    "fait_le": "2026-09-30T10:02:55",
+    "textes": {
+     "es": {
+      "alt": "Un portátil y un móvil muestran la web de un taller artesanal de cerámica, con fotografías de piezas y diseño adaptable.",
+      "legende": "Ejemplo de una web de taller artesanal vista en ordenador y móvil."
+     },
+     "val": {
+      "alt": "Un portàtil i un mòbil mostren la web d'un taller artesanal de ceràmica, amb fotografies de peces i disseny adaptable.",
+      "legende": "Exemple d'una web de taller artesanal vista en ordinador i mòbil."
+     },
+     "en": {
+      "alt": "A laptop and smartphone display a ceramics workshop website with pottery photos and a responsive layout.",
+      "legende": "An artisan workshop website shown on desktop and mobile."
+     },
+     "fr": {
+      "alt": "Un ordinateur et un smartphone affichent le site d'un atelier de céramique avec des photos de pièces artisanales.",
+      "legende": "Exemple de site d'atelier artisanal affiché sur ordinateur et mobile."
+     }
+    }
    },
    "site": "d'un atelier d'artisan à Valence"
   },
