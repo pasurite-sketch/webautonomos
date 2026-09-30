@@ -2875,8 +2875,28 @@
    "site": "d'une petite entreprise locale",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "como-funciona-llamada-asesora-web-maquette-es"
+     "statut": "fait",
+     "fichier": "como-funciona-llamada-asesora-web-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T18:26:39",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web Taller Sol con una asesora hablando por teléfono en una oficina luminosa.",
+       "legende": "La web de Taller Sol se adapta a ordenador y móvil y presenta el negocio local."
+      },
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web Taller Sol amb una assessora parlant per telèfon en una oficina lluminosa.",
+       "legende": "La web de Taller Sol s'adapta a ordinador i mòbil i presenta el negoci local."
+      },
+      "en": {
+       "alt": "Laptop and phone display the Taller Sol website, featuring a web consultant speaking on the phone in a bright office.",
+       "legende": "Taller Sol’s website adapts to desktop and mobile and presents the local business."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un téléphone affichent le site Taller Sol, avec une conseillère au téléphone dans un bureau lumineux.",
+       "legende": "Le site Taller Sol s’adapte à l’ordinateur et au mobile et présente l’activité locale."
+      }
+     }
     },
     "fr": {
      "statut": "pret",

@@ -3200,6 +3200,15 @@
    "v": 1,
    "alt": "Laptop and phone display the Valencia Home Services website, featuring an entrepreneur enjoying coffee on a terrace in Valencia.",
    "legende": "Valencia Home Services’ website adapts to desktop and mobile and presents its services."
+  },
+  "como-funciona.html": {
+   "sujet": "page-fonctionnement",
+   "fichier": "como-funciona-llamada-asesora-web-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Portátil y móvil muestran la web Taller Sol con una asesora hablando por teléfono en una oficina luminosa.",
+   "legende": "La web de Taller Sol se adapta a ordenador y móvil y presenta el negocio local."
   }
  }
 }
