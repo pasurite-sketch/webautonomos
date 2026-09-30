@@ -81,6 +81,15 @@
     "text": "Pour envoyer des offres commerciales, demandez un consentement distinct : l'article 21 de la LSSI interdit les courriels commerciaux non sollicités ni expressément autorisés, sauf envers des clients existants pour des produits similaires, et le considérant 32 du RGPD rappelle que des cases cochées par défaut ne valent pas consentement. En pratique : une case séparée, non cochée."
    },
    {
+    "type": "image",
+    "src": "/assets/documentos-legales-negocio-archivador-maquette-fr.jpg",
+    "width": 1600,
+    "height": 900,
+    "v": "1",
+    "alt": "Un ordinateur portable et un smartphone affichent le même site de décoration en versions ordinateur et mobile.",
+    "caption": "Exemple de site de décoration affiché sur un ordinateur portable et un smartphone."
+   },
+   {
     "type": "heading",
     "text": "Cookies : un consentement réel"
    },

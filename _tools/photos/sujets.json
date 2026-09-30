@@ -656,8 +656,28 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "documentos-legales-negocio-archivador-maquette-fr"
+     "statut": "fait",
+     "fichier": "documentos-legales-negocio-archivador-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T12:37:27",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de una tienda de decoración en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de una tienda de decoración en un portátil y un teléfono móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'una botiga de decoració en versions d'escriptori i mòbil.",
+       "legende": "Exemple de web d'una botiga de decoració en un portàtil i un telèfon mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the same home decor shop website in desktop and mobile layouts.",
+       "legende": "Example home decor shop website shown on a laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le même site de décoration en versions ordinateur et mobile.",
+       "legende": "Exemple de site de décoration affiché sur un ordinateur portable et un smartphone."
+      }
+     }
     }
    },
    "ecrans": {

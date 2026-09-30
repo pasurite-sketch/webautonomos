@@ -2830,6 +2830,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display the same home decor shop website in desktop and mobile layouts.",
    "legende": "Example home decor shop website shown on a laptop and smartphone."
+  },
+  "blog/fr/mentions-legales-site-internet-espagne.html": {
+   "sujet": "file-aviso-legal-privacidad-cookies-web",
+   "fichier": "documentos-legales-negocio-archivador-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur portable et un smartphone affichent le même site de décoration en versions ordinateur et mobile.",
+   "legende": "Exemple de site de décoration affiché sur un ordinateur portable et un smartphone."
   }
  }
 }
