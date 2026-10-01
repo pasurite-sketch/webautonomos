@@ -5311,8 +5311,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "fontanero-recibiendo-llamada-cliente-maquette-val"
+     "statut": "fait",
+     "fichier": "fontanero-recibiendo-llamada-cliente-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T13:57:25",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren una web de fontaneria amb un professional al costat de la seua furgoneta.",
+       "legende": "Exemple d’una web de fontaneria adaptada a ordinador i telèfon mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",

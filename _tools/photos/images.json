@@ -3795,6 +3795,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran una web de fontanería con un profesional junto a su furgoneta de servicio.",
    "legende": "Ejemplo de una web de fontanería adaptada a ordenador y móvil."
+  },
+  "blog/val/web-per-a-fontaners-guia-completa.html": {
+   "sujet": "art-13",
+   "fichier": "fontanero-recibiendo-llamada-cliente-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren una web de fontaneria amb un professional al costat de la seua furgoneta.",
+   "legende": "Exemple d’una web de fontaneria adaptada a ordinador i telèfon mòbil."
   }
  }
 }
