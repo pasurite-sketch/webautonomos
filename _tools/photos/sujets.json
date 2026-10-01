@@ -4418,8 +4418,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "whatsapp-business-autonomo-furgoneta-maquette-fr"
+     "statut": "fait",
+     "fichier": "whatsapp-business-autonomo-furgoneta-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T10:19:39",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site de Serrurerie Clé avec un serrurier dans sa camionnette.",
+       "legende": "Exemple de site de serrurier adapté à l’ordinateur et au mobile."
+      }
+     }
     }
    },
    "ecrans": {
