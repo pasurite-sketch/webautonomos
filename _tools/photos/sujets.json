@@ -4513,8 +4513,16 @@
    "site": "d'une couturière",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "conseguir-clientes-internet-taller-costura-maquette-es"
+     "statut": "fait",
+     "fichier": "conseguir-clientes-internet-taller-costura-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T10:48:23",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Costura Hilo con una modista preparando un pedido en su taller.",
+       "legende": "Ejemplo de web de costura adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
