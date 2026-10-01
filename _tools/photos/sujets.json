@@ -3988,8 +3988,16 @@
    "site": "d'un commerce de quartier",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "seo-local-barrio-comercios-maquette-es"
+     "statut": "fait",
+     "fichier": "seo-local-barrio-comercios-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T09:08:26",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una ferretería local con un mapa y fotografías de herramientas.",
+       "legende": "Ejemplo de web de una ferretería adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

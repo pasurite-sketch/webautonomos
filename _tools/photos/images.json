@@ -3425,6 +3425,15 @@
    "v": 1,
    "alt": "Un ordinateur portable et un smartphone affichent le site d’une boulangerie avec une carte et des photos de pain.",
    "legende": "Exemple de site de boulangerie adapté à l’ordinateur et au mobile."
+  },
+  "blog/es/seo-local-que-es-autonomos.html": {
+   "sujet": "art-03",
+   "fichier": "seo-local-barrio-comercios-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de una ferretería local con un mapa y fotografías de herramientas.",
+   "legende": "Ejemplo de web de una ferretería adaptada a ordenador y móvil."
   }
  }
 }
