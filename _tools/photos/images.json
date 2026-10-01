@@ -4011,6 +4011,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Zapatería Suela mientras un zapatero repara un zapato de cuero.",
    "legende": "Ejemplo de web de una zapatería adaptada a ordenador y móvil."
+  },
+  "blog/val/schema-localbusiness-guia-practica.html": {
+   "sujet": "art-19",
+   "fichier": "schema-local-business-datos-negocio-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web de Sabateria Sola mentre un sabater repara una sabata de cuir.",
+   "legende": "Exemple de web d'una sabateria adaptada a ordinador i mòbil."
   }
  }
 }
