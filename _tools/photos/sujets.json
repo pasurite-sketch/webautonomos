@@ -4680,8 +4680,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "palabras-clave-locales-planificacion-maquette-fr"
+     "statut": "fait",
+     "fichier": "palabras-clave-locales-planificacion-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T12:44:57",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Mercerie Bouton avec une commerçante souriante dans sa boutique.",
+       "legende": "Exemple de site de mercerie adapté à l’ordinateur et au mobile."
+      }
+     }
     }
    },
    "ecrans": {
