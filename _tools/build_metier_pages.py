@@ -2191,7 +2191,7 @@ PLOMB['fr'] = dict(
                                         "une fuite vous contacte sans chercher votre numéro."),
          ('💶', 'Des tarifs clairs', "Taux horaire, déplacement, devis : vos conditions sont présentées comme "
                                     "l'arrêté de 2017 le demande, avant même le premier appel."),
-         ('🔥', 'Chauffage et pompes à chaleur', "Installation, entretien, remplacement : chaque service a sa section, "
+         ('🔥', 'Chauffage et pompes à chaleur', "Installation et maintenance : chaque service a sa section, "
                                                 "avec l'encart France Rénov' quand il est requis."),
          ('📍', 'Trouvé près de chez vous', "Titres et textes pensés pour les recherches « plombier + votre ville », "
                                            "et votre fiche Google si vous le souhaitez.")],
@@ -2204,21 +2204,21 @@ PLOMB['fr'] = dict(
     how_t='Votre projet en trois étapes',
     steps=[('Vous décrivez votre activité', "Vos services, votre zone d'intervention, vos tarifs de dépannage et "
                                            "quelques photos de chantier : deux minutes suffisent."),
-           ('Nous préparons votre démo', "En moins de 24 heures, avec vos services, votre page de tarifs et vos "
+           ('Nous préparons votre démo', "En moins de 24 heures, avec votre page de tarifs et vos "
                                         "mentions légales."),
            ('Vous décidez', "Vous demandez les modifications que vous voulez. Si le site vous plaît, il est mis en "
                            "ligne ; sinon, vous ne payez rien.")],
     price_note=PRIX_FR_BAT,
     extra=[
         ('page-tarifs', 'Vos tarifs', "Que mettre sur la page de tarifs d'un plombier ?",
-         "<p class=\"legal-intro\">Tout ce que l'arrêté du 24 janvier 2017 demande, en langage simple : le client "
-         "sait ce que coûte un déplacement avant de vous appeler. Nous la rédigeons à partir de vos prix, et vous "
+         "<p class=\"legal-intro\">Tout ce que l'arrêté du 24 janvier 2017 demande, en langage simple : chacun sait "
+         "ce que coûte un déplacement avant de vous appeler. Nous la rédigeons à partir de vos prix, et vous "
          "validez chaque ligne.</p>"
          "<div class=\"why-g\">"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🕒</div>"
          "<h3>Taux horaire et forfaits TTC</h3>"
          "<p>Votre taux horaire toutes taxes comprises, le mode de décompte du temps (par demi-heure, par quart "
-         "d'heure) et vos prestations au forfait, comme un débouchage ou le remplacement d'un mécanisme de chasse "
+         "d'heure) et vos prestations au forfait, comme un débouchage ou la réparation d'un mécanisme de chasse "
          "d'eau.</p></div>"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🚐</div>"
          "<h3>Frais de déplacement</h3>"
@@ -2227,7 +2227,7 @@ PLOMB['fr'] = dict(
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📄</div>"
          "<h3>Devis gratuit ou payant</h3>"
          "<p>Dites-le clairement, avec son prix s'il est payant et, le cas échéant, s'il est déduit de la facture "
-         "quand le client accepte les travaux.</p></div>"
+         "en cas d'acceptation des travaux.</p></div>"
          "</div>"),
         ('services', 'Vos services', "Dépannage, installation, chauffage : une section par service",
          "<p class=\"legal-intro\">Une personne qui cherche un chauffagiste pour sa pompe à chaleur ne lit pas la "
@@ -2237,10 +2237,10 @@ PLOMB['fr'] = dict(
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🚰</div>"
          "<h3>Dépannage et fuites</h3>"
          "<p>Vos horaires d'intervention, les communes couvertes et un bouton d'appel en haut de la section : c'est "
-         "ce que cherche un client pressé.</p></div>"
+         "ce que recherche une personne pressée.</p></div>"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🚿</div>"
          "<h3>Salles de bains et sanitaires</h3>"
-         "<p>Vos réalisations en photos, classées par type de travaux : douche à l'italienne, remplacement de "
+         "<p>Vos réalisations en photos, classées par type de travaux : douche à l'italienne, pose de "
          "baignoire, sanitaires. Nous partons de vos propres photos de chantier.</p></div>"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🧰</div>"
          "<h3>Entretien de chaudière et de pompe à chaleur</h3>"
@@ -2303,10 +2303,18 @@ PLOMB['fr'] = dict(
           "aide vos clients à y penser."),
          FAQ_MEDIATEUR,
          FAQ_AVIS,
+         ("Un site internet aide-t-il vraiment un plombier à trouver des clients ?",
+          "Oui, s'il dit clairement ce que vous faites, où vous intervenez et comment vous joindre. Ses titres et "
+          "ses textes nomment votre métier et vos communes : c'est ce qui l'aide à apparaître dans Google quand "
+          "quelqu'un tape « plombier » suivi du nom de sa ville. Le bouton WhatsApp et le formulaire de contact "
+          "transforment ensuite une visite en demande de devis. Le site complète aussi le bouche-à-oreille : la "
+          "personne à qui l'on a recommandé votre entreprise de plomberie peut y vérifier vos prestations avant de "
+          "vous contacter. Aucun site ne garantit un nombre de demandes : votre place dans Google dépend aussi de "
+          "la concurrence locale et de vos avis."),
          FAQ_SEO,
          faq_prix_fr('plombier')],
     final_t='Voyez votre site avant de payer quoi que ce soit',
-    final_sd="Démo gratuite en 24 heures, avec vos services, votre page de tarifs et vos mentions légales. Sans frais "
+    final_sd="Démo gratuite en 24 heures, avec votre page de tarifs et vos mentions légales. Sans frais "
              "d'installation, sans engagement.",
 )
 
