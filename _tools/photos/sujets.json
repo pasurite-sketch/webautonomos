@@ -5955,8 +5955,16 @@
    "site": "d'un restaurant",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "responder-resenas-negativas-restaurante-maquette-es"
+     "statut": "fait",
+     "fichier": "responder-resenas-negativas-restaurante-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T15:09:32",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Taberna Sal, con un restaurador revisando su teléfono tras el servicio.",
+       "legende": "Ejemplo de web de restaurante adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
