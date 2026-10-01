@@ -3576,8 +3576,16 @@
    "site": "d'un restaurant",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "seo-local-busqueda-movil-valencia-maquette-es"
+     "statut": "fait",
+     "fichier": "seo-local-busqueda-movil-valencia-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T08:23:36",
+     "textes": {
+      "es": {
+       "alt": "Ordenador portátil y móvil muestran la web adaptable de un restaurante con fotos y opción de reserva.",
+       "legende": "Ejemplo de web de restaurante adaptada a ordenador y móvil."
+      }
+     }
     }
    },
    "ecrans": {
