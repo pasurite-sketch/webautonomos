@@ -3957,6 +3957,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display a dental and physiotherapy clinic website with a bright, welcoming reception.",
    "legende": "Example website for a dental and physiotherapy clinic, adapted to desktop and mobile."
+  },
+  "blog/fr/site-web-pour-dentistes-et-kinesitherapeutes.html": {
+   "sujet": "art-17",
+   "fichier": "clinica-salud-recepcion-luminosa-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur portable et un smartphone affichent le site d’un centre dentaire et de kinésithérapie lumineux.",
+   "legende": "Exemple de site pour un centre dentaire et de kinésithérapie, sur ordinateur et mobile."
   }
  }
 }

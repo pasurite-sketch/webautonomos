@@ -5860,8 +5860,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "clinica-salud-recepcion-luminosa-maquette-fr"
+     "statut": "fait",
+     "fichier": "clinica-salud-recepcion-luminosa-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T15:08:10",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site d’un centre dentaire et de kinésithérapie lumineux.",
+       "legende": "Exemple de site pour un centre dentaire et de kinésithérapie, sur ordinateur et mobile."
+      }
+     }
     }
    },
    "ecrans": {
