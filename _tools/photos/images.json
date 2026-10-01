@@ -3858,6 +3858,15 @@
    "v": 1,
    "alt": "Un ordinateur portable et un smartphone affichent le site d’une fleuriste qui compose un bouquet de saison.",
    "legende": "Exemple de site de fleuriste adapté aux écrans d’ordinateur et de téléphone."
+  },
+  "blog/es/que-es-map-pack-google-como-salir.html": {
+   "sujet": "art-15",
+   "fichier": "map-pack-google-barrio-vista-aerea-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de una frutería con una vista de un barrio mediterráneo y comercios locales.",
+   "legende": "Ejemplo de una web de comercio local adaptada a ordenador y móvil."
   }
  }
 }

@@ -5561,8 +5561,16 @@
    "site": "d'un commerce local",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "map-pack-google-barrio-vista-aerea-maquette-es"
+     "statut": "fait",
+     "fichier": "map-pack-google-barrio-vista-aerea-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T14:08:18",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una frutería con una vista de un barrio mediterráneo y comercios locales.",
+       "legende": "Ejemplo de una web de comercio local adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
