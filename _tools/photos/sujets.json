@@ -5454,8 +5454,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "google-posts-floristeria-publicacion-maquette-en"
+     "statut": "fait",
+     "fichier": "google-posts-floristeria-publicacion-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T14:05:48",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display a florist website featuring a florist arranging a seasonal bouquet beside a tripod-mounted phone.",
+       "legende": "Example of a florist website adapted for desktop and mobile screens."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
