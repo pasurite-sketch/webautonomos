@@ -4132,8 +4132,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-val"
+     "statut": "fait",
+     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T09:27:43",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador portàtil i un mòbil mostren la web del Restaurant Olivera en versions d’escriptori i mòbil.",
+       "legende": "Exemple de web de restaurant adaptada a ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",

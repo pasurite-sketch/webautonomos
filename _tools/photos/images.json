@@ -3471,6 +3471,15 @@
    "alt": "Un portátil y un móvil muestran la web de Restaurante Olivo con una fotografía del local y su menú.",
    "legende": "Ejemplo de web de restaurante adaptada a ordenador y móvil.",
    "pas_avant": "2026-10-23"
+  },
+  "blog/val/quant-costa-una-pagina-web-per-a-autonoms.html": {
+   "sujet": "art-04",
+   "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinador portàtil i un mòbil mostren la web del Restaurant Olivera en versions d’escriptori i mòbil.",
+   "legende": "Exemple de web de restaurant adaptada a ordinador i mòbil."
   }
  }
 }
