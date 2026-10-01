@@ -3443,6 +3443,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web d’una ferreteria amb un mapa i imatges d’eines.",
    "legende": "Exemple de web d’una ferreteria adaptada a ordinador i mòbil."
+  },
+  "blog/en/local-seo-for-freelancers-complete-guide.html": {
+   "sujet": "art-03",
+   "fichier": "seo-local-barrio-comercios-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and smartphone display a local hardware store website with a location map and tool photos.",
+   "legende": "Example of a hardware store website adapted for desktop and mobile."
   }
  }
 }
