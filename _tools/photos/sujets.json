@@ -5824,8 +5824,16 @@
    "site": "d'une clinique dentaire et de kinésithérapie",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "clinica-salud-recepcion-luminosa-maquette-es"
+     "statut": "fait",
+     "fichier": "clinica-salud-recepcion-luminosa-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T14:38:38",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una clínica dental y de fisioterapia con una recepción luminosa.",
+       "legende": "Ejemplo de web de clínica adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

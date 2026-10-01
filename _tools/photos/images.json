@@ -3930,6 +3930,15 @@
    "v": 1,
    "alt": "Un ordinateur portable et un smartphone affichent le site d’une librairie où une libraire prépare une commande.",
    "legende": "Exemple de site de librairie indépendante adapté aux écrans d’ordinateur et de téléphone."
+  },
+  "blog/es/web-para-clinica-dental-fisioterapeuta.html": {
+   "sujet": "art-17",
+   "fichier": "clinica-salud-recepcion-luminosa-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de una clínica dental y de fisioterapia con una recepción luminosa.",
+   "legende": "Ejemplo de web de clínica adaptada a ordenador y móvil."
   }
  }
 }
