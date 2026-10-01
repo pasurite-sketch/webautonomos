@@ -3762,8 +3762,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "small-business-owner-website-spain-maquette-fr"
+     "statut": "fait",
+     "fichier": "small-business-owner-website-spain-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T08:31:43",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site d’une boutique de décoration en versions ordinateur et mobile.",
+       "legende": "Exemple de site de boutique de décoration sur ordinateur et mobile."
+      }
+     }
     }
    },
    "ecrans": {
