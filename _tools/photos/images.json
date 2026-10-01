@@ -3867,6 +3867,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de una frutería con una vista de un barrio mediterráneo y comercios locales.",
    "legende": "Ejemplo de una web de comercio local adaptada a ordenador y móvil."
+  },
+  "blog/val/map-pack-de-google-com-apareixer-hi.html": {
+   "sujet": "art-15",
+   "fichier": "map-pack-google-barrio-vista-aerea-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web d’una fruiteria amb una vista d’un barri mediterrani i comerços locals.",
+   "legende": "Exemple de web de comerç local adaptada a ordinador i telèfon mòbil."
   }
  }
 }

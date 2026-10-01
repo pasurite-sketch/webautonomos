@@ -5573,8 +5573,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "map-pack-google-barrio-vista-aerea-maquette-val"
+     "statut": "fait",
+     "fichier": "map-pack-google-barrio-vista-aerea-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T14:09:37",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d’una fruiteria amb una vista d’un barri mediterrani i comerços locals.",
+       "legende": "Exemple de web de comerç local adaptada a ordinador i telèfon mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
