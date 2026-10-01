@@ -4942,8 +4942,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "ficha-google-horarios-negocio-maquette-fr"
+     "statut": "fait",
+     "fichier": "ficha-google-horarios-negocio-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T13:37:35",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent un site de café avec une femme qui installe les chaises de la terrasse.",
+       "legende": "Exemple de site de café adapté aux écrans d’ordinateur et de téléphone."
+      }
+     }
     }
    },
    "ecrans": {
