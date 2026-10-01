@@ -4287,8 +4287,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "conseguir-resenas-google-clienta-maquette-fr"
+     "statut": "fait",
+     "fichier": "conseguir-resenas-google-clienta-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T10:01:08",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site du Salon Brise avec une cliente souriante et une coiffeuse.",
+       "legende": "Exemple de site de salon de coiffure adapté à l’ordinateur et au mobile."
+      }
+     }
     }
    },
    "ecrans": {
