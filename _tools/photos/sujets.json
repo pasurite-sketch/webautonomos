@@ -6360,8 +6360,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "elementos-web-profesional-muestras-maquette-val"
+     "statut": "fait",
+     "fichier": "elementos-web-profesional-muestras-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T21:00:46",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d’Estudi Niu, amb una interiorista organitzant mostres de materials sobre una taula.",
+       "legende": "Exemple de web d’interiorisme adaptada a ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
