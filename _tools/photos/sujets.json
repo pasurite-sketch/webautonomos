@@ -6229,8 +6229,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-val"
+     "statut": "fait",
+     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T20:29:17",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web de Bellesa Nacre, amb una esteticista repartint fitxes de fusta en tres pots.",
+       "legende": "Exemple de web d’un centre d’estètica adaptada a ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
