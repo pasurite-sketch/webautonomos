@@ -5728,8 +5728,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "email-marketing-libreria-clientes-maquette-fr"
+     "statut": "fait",
+     "fichier": "email-marketing-libreria-clientes-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T14:28:23",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site d’une librairie où une libraire prépare une commande.",
+       "legende": "Exemple de site de librairie indépendante adapté aux écrans d’ordinateur et de téléphone."
+      }
+     }
     }
    },
    "ecrans": {
