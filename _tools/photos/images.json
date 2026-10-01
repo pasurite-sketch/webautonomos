@@ -3669,6 +3669,15 @@
    "v": 1,
    "alt": "Laptop and smartphone display a responsive electrician website featuring an electrician installing ceiling wiring.",
    "legende": "An example of an electrician’s website displayed on desktop and mobile screens."
+  },
+  "blog/fr/site-web-pour-electriciens.html": {
+   "sujet": "art-09",
+   "fichier": "electricista-instalando-cargador-coche-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur portable et un smartphone affichent un site d’électricien avec un professionnel installant des câbles au plafond.",
+   "legende": "Exemple de site d’électricien adapté aux écrans d’ordinateur et de téléphone."
   }
  }
 }

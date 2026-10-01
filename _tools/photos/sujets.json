@@ -4811,8 +4811,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "electricista-instalando-cargador-coche-maquette-fr"
+     "statut": "fait",
+     "fichier": "electricista-instalando-cargador-coche-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T13:16:13",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent un site d’électricien avec un professionnel installant des câbles au plafond.",
+       "legende": "Exemple de site d’électricien adapté aux écrans d’ordinateur et de téléphone."
+      }
+     }
     }
    },
    "ecrans": {
