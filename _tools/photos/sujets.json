@@ -6348,8 +6348,16 @@
    "site": "d'une architecte d'intérieur",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "elementos-web-profesional-muestras-maquette-es"
+     "statut": "fait",
+     "fichier": "elementos-web-profesional-muestras-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T20:59:11",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Estudio Nido, con una diseñadora de interiores organizando muestras de materiales.",
+       "legende": "Ejemplo de web de interiorismo adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

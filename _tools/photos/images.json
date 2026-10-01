@@ -4074,6 +4074,15 @@
    "v": 1,
    "alt": "Un ordinateur portable et un smartphone affichent le site de l’Institut Nacre, avec une esthéticienne répartissant des jetons dans trois bocaux.",
    "legende": "Exemple de site d’institut de beauté adapté aux écrans d’ordinateur et de mobile."
+  },
+  "blog/es/que-debe-tener-web-profesional-autonomo.html": {
+   "sujet": "art-21",
+   "fichier": "elementos-web-profesional-muestras-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Estudio Nido, con una diseñadora de interiores organizando muestras de materiales.",
+   "legende": "Ejemplo de web de interiorismo adaptada a ordenador y móvil."
   }
  }
 }
