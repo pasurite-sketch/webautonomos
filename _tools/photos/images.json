@@ -3642,6 +3642,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Mercerie Bouton avec une commerçante souriante dans sa boutique.",
    "legende": "Exemple de site de mercerie adapté à l’ordinateur et au mobile."
+  },
+  "blog/es/pagina-web-para-electricistas.html": {
+   "sujet": "art-09",
+   "fichier": "electricista-instalando-cargador-coche-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Electricidad Chispa con un electricista instalando cables en un garaje.",
+   "legende": "Ejemplo de web de electricista adaptada a ordenador y móvil."
   }
  }
 }
