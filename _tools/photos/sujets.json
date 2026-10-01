@@ -4787,8 +4787,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "electricista-instalando-cargador-coche-maquette-val"
+     "statut": "fait",
+     "fichier": "electricista-instalando-cargador-coche-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T13:11:35",
+     "textes": {
+      "val": {
+       "alt": "Ordinador portàtil i mòbil mostren una web d’electricista amb una fotografia d’un professional instal·lant cables.",
+       "legende": "Exemple de web d’electricista adaptada a ordinador i telèfon mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
