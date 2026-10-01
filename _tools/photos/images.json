@@ -3831,6 +3831,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de una floristería con una profesional preparando un ramo de temporada.",
    "legende": "Ejemplo de una web de floristería adaptada a ordenador y móvil."
+  },
+  "blog/val/google-posts-publicar-en-la-fitxa.html": {
+   "sujet": "art-14",
+   "fichier": "google-posts-floristeria-publicacion-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web d’una floristeria amb una professional preparant un ram de temporada.",
+   "legende": "Exemple de web de floristeria adaptada a ordinador i telèfon mòbil."
   }
  }
 }

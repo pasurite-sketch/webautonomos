@@ -5442,8 +5442,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "google-posts-floristeria-publicacion-maquette-val"
+     "statut": "fait",
+     "fichier": "google-posts-floristeria-publicacion-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T14:02:50",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d’una floristeria amb una professional preparant un ram de temporada.",
+       "legende": "Exemple de web de floristeria adaptada a ordinador i telèfon mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
