@@ -5204,8 +5204,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "redes-sociales-autonoma-foto-producto-maquette-fr"
+     "statut": "fait",
+     "fichier": "redes-sociales-autonoma-foto-producto-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T13:52:57",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent un site de pâtisserie avec une pâtissière photographiant des gâteaux.",
+       "legende": "Exemple de site de pâtisserie adapté aux écrans d’ordinateur et de téléphone."
+      }
+     }
     }
    },
    "ecrans": {
