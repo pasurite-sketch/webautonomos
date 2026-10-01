@@ -3480,6 +3480,15 @@
    "v": 1,
    "alt": "Un ordinador portàtil i un mòbil mostren la web del Restaurant Olivera en versions d’escriptori i mòbil.",
    "legende": "Exemple de web de restaurant adaptada a ordinador i mòbil."
+  },
+  "blog/en/how-much-does-a-website-cost-for-freelancers.html": {
+   "sujet": "art-04",
+   "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and smartphone display the Olivo Restaurant website in desktop and mobile layouts, with a restaurant photo and booking button.",
+   "legende": "Example of a restaurant website adapted for desktop and mobile."
   }
  }
 }

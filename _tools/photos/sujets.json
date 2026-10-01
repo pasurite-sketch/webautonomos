@@ -4144,8 +4144,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-en"
+     "statut": "fait",
+     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T09:31:23",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the Olivo Restaurant website in desktop and mobile layouts, with a restaurant photo and booking button.",
+       "legende": "Example of a restaurant website adapted for desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
