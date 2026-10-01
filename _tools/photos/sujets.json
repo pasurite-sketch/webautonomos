@@ -6372,8 +6372,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "elementos-web-profesional-muestras-maquette-en"
+     "statut": "fait",
+     "fichier": "elementos-web-profesional-muestras-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T21:08:01",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Nido Interiors website, with an interior designer arranging material samples on a table.",
+       "legende": "Example of an interior design website adapted for desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",

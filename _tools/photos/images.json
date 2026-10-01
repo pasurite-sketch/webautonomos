@@ -4092,6 +4092,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la web d’Estudi Niu, amb una interiorista organitzant mostres de materials sobre una taula.",
    "legende": "Exemple de web d’interiorisme adaptada a ordinador i mòbil."
+  },
+  "blog/en/essential-elements-of-a-professional-website.html": {
+   "sujet": "art-21",
+   "fichier": "elementos-web-profesional-muestras-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Nido Interiors website, with an interior designer arranging material samples on a table.",
+   "legende": "Example of an interior design website adapted for desktop and mobile."
   }
  }
 }
