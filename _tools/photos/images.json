@@ -4101,6 +4101,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display the Nido Interiors website, with an interior designer arranging material samples on a table.",
    "legende": "Example of an interior design website adapted for desktop and mobile."
+  },
+  "blog/fr/elements-indispensables-site-professionnel.html": {
+   "sujet": "art-21",
+   "fichier": "elementos-web-profesional-muestras-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur portable et un smartphone affichent le site de Studio Nid, avec une architecte d’intérieur disposant des échantillons de matériaux.",
+   "legende": "Exemple de site d’architecture intérieure adapté aux écrans d’ordinateur et de mobile."
   }
  }
 }

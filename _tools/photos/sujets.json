@@ -6384,8 +6384,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "elementos-web-profesional-muestras-maquette-fr"
+     "statut": "fait",
+     "fichier": "elementos-web-profesional-muestras-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T21:10:36",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site de Studio Nid, avec une architecte d’intérieur disposant des échantillons de matériaux.",
+       "legende": "Exemple de site d’architecture intérieure adapté aux écrans d’ordinateur et de mobile."
+      }
+     }
     }
    },
    "ecrans": {
