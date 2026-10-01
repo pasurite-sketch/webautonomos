@@ -6241,8 +6241,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-en"
+     "statut": "fait",
+     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T20:39:49",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Nácar Beauty website, with an esthetician arranging wooden tokens in glass jars.",
+       "legende": "Example of a beauty salon website adapted for desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
