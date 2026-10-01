@@ -4644,8 +4644,16 @@
    "site": "d'une boutique de quartier",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "palabras-clave-locales-planificacion-maquette-es"
+     "statut": "fait",
+     "fichier": "palabras-clave-locales-planificacion-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T11:29:35",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Mercería Botón con la comerciante en la entrada de su tienda.",
+       "legende": "Ejemplo de web de mercería adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

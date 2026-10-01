@@ -3606,6 +3606,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Couture Fil d'Or avec une couturière préparant une commande dans son atelier.",
    "legende": "Exemple de site de couture adapté à l’ordinateur et au mobile."
+  },
+  "blog/es/palabras-clave-locales-como-elegir.html": {
+   "sujet": "art-08",
+   "fichier": "palabras-clave-locales-planificacion-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Mercería Botón con la comerciante en la entrada de su tienda.",
+   "legende": "Ejemplo de web de mercería adaptada a ordenador y móvil."
   }
  }
 }
