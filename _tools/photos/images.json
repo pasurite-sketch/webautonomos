@@ -4020,6 +4020,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la web de Sabateria Sola mentre un sabater repara una sabata de cuir.",
    "legende": "Exemple de web d'una sabateria adaptada a ordinador i mòbil."
+  },
+  "blog/en/schema-localbusiness-practical-guide.html": {
+   "sujet": "art-19",
+   "fichier": "schema-local-business-datos-negocio-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Suela Shoe Repairs website while a cobbler repairs a leather shoe.",
+   "legende": "Example of a shoe-repair website adapted for desktop and mobile."
   }
  }
 }

@@ -6110,8 +6110,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "schema-local-business-datos-negocio-maquette-en"
+     "statut": "fait",
+     "fichier": "schema-local-business-datos-negocio-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T18:47:10",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Suela Shoe Repairs website while a cobbler repairs a leather shoe.",
+       "legende": "Example of a shoe-repair website adapted for desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
