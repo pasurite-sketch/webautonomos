@@ -4120,8 +4120,16 @@
    "site": "d'un restaurant",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-es"
+     "statut": "fait",
+     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T09:24:18",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Restaurante Olivo con una fotografía del local y su menú.",
+       "legende": "Ejemplo de web de restaurante adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

@@ -3461,6 +3461,16 @@
    "v": 1,
    "alt": "Un ordinateur portable et un smartphone affichent le site d’une quincaillerie avec une carte et des photos d’outils.",
    "legende": "Exemple de site de quincaillerie adapté à l’ordinateur et au mobile."
+  },
+  "blog/es/cuanto-cuesta-pagina-web-autonomos-espana.html": {
+   "sujet": "art-04",
+   "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Restaurante Olivo con una fotografía del local y su menú.",
+   "legende": "Ejemplo de web de restaurante adaptada a ordenador y móvil.",
+   "pas_avant": "2026-10-23"
   }
  }
 }
