@@ -5049,8 +5049,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "posicionar-negocio-local-escaparate-maquette-val"
+     "statut": "fait",
+     "fichier": "posicionar-negocio-local-escaparate-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T13:40:48",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren una web d’òptica amb un professional ajustant les ulleres a una clienta.",
+       "legende": "Exemple d’una web d’òptica adaptada a ordinador i telèfon mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
