@@ -5073,8 +5073,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "posicionar-negocio-local-escaparate-maquette-fr"
+     "statut": "fait",
+     "fichier": "posicionar-negocio-local-escaparate-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T13:44:51",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone présentent un site d’opticien avec un professionnel ajustant les lunettes d’une cliente.",
+       "legende": "Exemple de site d’opticien adapté aux écrans d’ordinateur et de téléphone."
+      }
+     }
     }
    },
    "ecrans": {
