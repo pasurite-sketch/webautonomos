@@ -4656,8 +4656,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "palabras-clave-locales-planificacion-maquette-val"
+     "statut": "fait",
+     "fichier": "palabras-clave-locales-planificacion-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T11:31:22",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web de Merceria Botó amb la comerciant a la porta de la botiga.",
+       "legende": "Exemple de web de merceria adaptada a ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",

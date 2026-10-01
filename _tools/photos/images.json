@@ -3615,6 +3615,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Mercería Botón con la comerciante en la entrada de su tienda.",
    "legende": "Ejemplo de web de mercería adaptada a ordenador y móvil."
+  },
+  "blog/val/paraules-clau-locals-com-triar-les.html": {
+   "sujet": "art-08",
+   "fichier": "palabras-clave-locales-planificacion-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web de Merceria Botó amb la comerciant a la porta de la botiga.",
+   "legende": "Exemple de web de merceria adaptada a ordinador i mòbil."
   }
  }
 }
