@@ -5979,8 +5979,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "responder-resenas-negativas-restaurante-maquette-en"
+     "statut": "fait",
+     "fichier": "responder-resenas-negativas-restaurante-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T16:57:12",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Sal Tavern website, with a restaurateur reviewing his phone after service.",
+       "legende": "Example of a restaurant website adapted for desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
