@@ -3738,8 +3738,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "small-business-owner-website-spain-maquette-val"
+     "statut": "fait",
+     "fichier": "small-business-owner-website-spain-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T08:28:27",
+     "textes": {
+      "val": {
+       "alt": "Ordinador portàtil i mòbil mostren una botiga de decoració amb fotografies de productes i disseny adaptable.",
+       "legende": "Exemple de web d’una botiga de decoració per a ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
