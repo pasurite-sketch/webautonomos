@@ -5323,8 +5323,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "fontanero-recibiendo-llamada-cliente-maquette-en"
+     "statut": "fait",
+     "fichier": "fontanero-recibiendo-llamada-cliente-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T13:59:12",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display a plumbing website featuring a plumber beside his white service van.",
+       "legende": "Example of a plumbing website adapted for desktop and mobile screens."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
