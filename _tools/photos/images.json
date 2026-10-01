@@ -3903,6 +3903,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de una librería, con una librera preparando un paquete entre estanterías.",
    "legende": "Ejemplo de web de una librería independiente adaptada a ordenador y móvil."
+  },
+  "blog/val/marketing-per-correu-guia-basica.html": {
+   "sujet": "art-16",
+   "fichier": "email-marketing-libreria-clientes-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web d’una llibreria amb una llibretera preparant una comanda.",
+   "legende": "Exemple de web de llibreria independent adaptada a ordinador i mòbil."
   }
  }
 }

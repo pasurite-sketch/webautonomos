@@ -5704,8 +5704,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "email-marketing-libreria-clientes-maquette-val"
+     "statut": "fait",
+     "fichier": "email-marketing-libreria-clientes-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T14:18:11",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d’una llibreria amb una llibretera preparant una comanda.",
+       "legende": "Exemple de web de llibreria independent adaptada a ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
