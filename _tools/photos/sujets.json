@@ -5466,8 +5466,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "google-posts-floristeria-publicacion-maquette-fr"
+     "statut": "fait",
+     "fichier": "google-posts-floristeria-publicacion-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T14:06:57",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site d’une fleuriste qui compose un bouquet de saison.",
+       "legende": "Exemple de site de fleuriste adapté aux écrans d’ordinateur et de téléphone."
+      }
+     }
     }
    },
    "ecrans": {
