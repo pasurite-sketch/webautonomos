@@ -5037,8 +5037,16 @@
    "site": "d'un opticien",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "posicionar-negocio-local-escaparate-maquette-es"
+     "statut": "fait",
+     "fichier": "posicionar-negocio-local-escaparate-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T13:39:09",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran una web de óptica con un profesional ajustando las gafas a una clienta.",
+       "legende": "Ejemplo de una web de óptica adaptada a ordenador y teléfono móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
