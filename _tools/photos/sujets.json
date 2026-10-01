@@ -6122,8 +6122,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "schema-local-business-datos-negocio-maquette-fr"
+     "statut": "fait",
+     "fichier": "schema-local-business-datos-negocio-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T18:48:51",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site de Cordonnerie Semelle, avec un artisan réparant une chaussure en cuir.",
+       "legende": "Exemple de site de cordonnerie adapté aux écrans d’ordinateur et de mobile."
+      }
+     }
     }
    },
    "ecrans": {
