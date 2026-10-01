@@ -3893,8 +3893,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "aparecer-google-maps-movil-calle-maquette-fr"
+     "statut": "fait",
+     "fichier": "aparecer-google-maps-movil-calle-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T08:54:00",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site d’une boulangerie avec une carte et des photos de pain.",
+       "legende": "Exemple de site de boulangerie adapté à l’ordinateur et au mobile."
+      }
+     }
     }
    },
    "ecrans": {

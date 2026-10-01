@@ -3416,6 +3416,15 @@
    "v": 1,
    "alt": "Laptop and smartphone display a bakery website with a location map and bread photos in desktop and mobile layouts.",
    "legende": "Example website for a bakery, adapted for desktop and mobile."
+  },
+  "blog/fr/apparaitre-sur-google-maps-guide-complet.html": {
+   "sujet": "art-02",
+   "fichier": "aparecer-google-maps-movil-calle-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur portable et un smartphone affichent le site d’une boulangerie avec une carte et des photos de pain.",
+   "legende": "Exemple de site de boulangerie adapté à l’ordinateur et au mobile."
   }
  }
 }
