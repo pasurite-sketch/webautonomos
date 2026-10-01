@@ -5716,8 +5716,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "email-marketing-libreria-clientes-maquette-en"
+     "statut": "fait",
+     "fichier": "email-marketing-libreria-clientes-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T14:23:27",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display an independent bookstore website featuring a bookseller wrapping an order.",
+       "legende": "Example of an independent bookstore website adapted for desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
