@@ -3939,6 +3939,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de una clínica dental y de fisioterapia con una recepción luminosa.",
    "legende": "Ejemplo de web de clínica adaptada a ordenador y móvil."
+  },
+  "blog/val/web-per-a-dentistes-i-fisioterapeutes.html": {
+   "sujet": "art-17",
+   "fichier": "clinica-salud-recepcion-luminosa-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web d’una clínica dental i de fisioteràpia amb una recepció lluminosa.",
+   "legende": "Exemple de web de clínica adaptada a ordinador i mòbil."
   }
  }
 }

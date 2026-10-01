@@ -5836,8 +5836,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "clinica-salud-recepcion-luminosa-maquette-val"
+     "statut": "fait",
+     "fichier": "clinica-salud-recepcion-luminosa-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T14:59:07",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d’una clínica dental i de fisioteràpia amb una recepció lluminosa.",
+       "legende": "Exemple de web de clínica adaptada a ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
