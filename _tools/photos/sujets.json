@@ -6217,8 +6217,16 @@
    "site": "d'un institut de beauté",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-es"
+     "statut": "fait",
+     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T18:55:13",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Belleza Nácar, con una esteticista organizando fichas de madera en tres tarros.",
+       "legende": "Ejemplo de web de un centro de estética adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
