@@ -4406,8 +4406,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "whatsapp-business-autonomo-furgoneta-maquette-en"
+     "statut": "fait",
+     "fichier": "whatsapp-business-autonomo-furgoneta-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T10:10:11",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Llave Locksmiths website with a locksmith checking his phone in a service van.",
+       "legende": "Example of a locksmith website adapted for desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
