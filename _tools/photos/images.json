@@ -3876,6 +3876,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la web d’una fruiteria amb una vista d’un barri mediterrani i comerços locals.",
    "legende": "Exemple de web de comerç local adaptada a ordinador i telèfon mòbil."
+  },
+  "blog/en/google-map-pack-how-to-appear.html": {
+   "sujet": "art-15",
+   "fichier": "map-pack-google-barrio-vista-aerea-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display a greengrocer website with a sunlit Mediterranean town and colorful local shops.",
+   "legende": "Example of a local greengrocer website adapted for desktop and mobile screens."
   }
  }
 }
