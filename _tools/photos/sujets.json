@@ -4156,8 +4156,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-fr"
+     "statut": "fait",
+     "fichier": "cuanto-cuesta-web-presupuesto-restaurante-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T09:41:54",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site du Restaurant L’Olivier en versions ordinateur et mobile.",
+       "legende": "Exemple de site de restaurant adapté à l’ordinateur et au mobile."
+      }
+     }
     }
    },
    "ecrans": {
