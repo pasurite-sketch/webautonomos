@@ -5597,8 +5597,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "map-pack-google-barrio-vista-aerea-maquette-fr"
+     "statut": "fait",
+     "fichier": "map-pack-google-barrio-vista-aerea-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T14:12:00",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site d’un primeur avec une vue de village méditerranéen et des étals colorés.",
+       "legende": "Exemple de site de primeur adapté aux écrans d’ordinateur et de téléphone."
+      }
+     }
     }
    },
    "ecrans": {
