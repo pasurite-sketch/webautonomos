@@ -5991,8 +5991,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "responder-resenas-negativas-restaurante-maquette-fr"
+     "statut": "fait",
+     "fichier": "responder-resenas-negativas-restaurante-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T16:59:29",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site de la Taverne du Sel, avec un restaurateur consultant son téléphone après le service.",
+       "legende": "Exemple de site de restaurant adapté aux écrans d’ordinateur et de mobile."
+      }
+     }
     }
    },
    "ecrans": {
