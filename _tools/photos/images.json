@@ -3498,6 +3498,15 @@
    "v": 1,
    "alt": "Un ordinateur portable et un smartphone affichent le site du Restaurant L’Olivier en versions ordinateur et mobile.",
    "legende": "Exemple de site de restaurant adapté à l’ordinateur et au mobile."
+  },
+  "blog/es/como-conseguir-resenas-google-negocio.html": {
+   "sujet": "art-05",
+   "fichier": "conseguir-resenas-google-clienta-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Peluquería Brisa con una clienta y una estilista en la imagen principal.",
+   "legende": "Ejemplo de web de peluquería adaptada a ordenador y móvil."
   }
  }
 }

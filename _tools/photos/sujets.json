@@ -4251,8 +4251,16 @@
    "site": "d'un salon de coiffure",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "conseguir-resenas-google-clienta-maquette-es"
+     "statut": "fait",
+     "fichier": "conseguir-resenas-google-clienta-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T09:45:36",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Peluquería Brisa con una clienta y una estilista en la imagen principal.",
+       "legende": "Ejemplo de web de peluquería adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
