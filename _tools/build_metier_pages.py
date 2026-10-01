@@ -383,7 +383,8 @@ THERA['en'] = dict(
     pills=['Spanish rules built in', 'We work in English', 'Free demo in 24 hours'],
     cta='Get my free demo', cta2='What Spanish rules require',
     brief_t='In short',
-    brief="WebAutonomos builds websites for English-speaking psychologists, psychotherapists, counsellors, "
+    brief="WebAutonomos builds websites for English-speaking "
+          "psychologists, psychotherapists, counsellors, "
           "hypnotherapists and coaches practising in Spain. We write the copy from your information, show your "
           "Colegio and colegiado number if you are a psychologist, keep health claims and patient testimonials off "
           "the site, and use a contact form that doesn't ask for health details. It costs <strong>€15 + VAT per "
@@ -441,7 +442,8 @@ THERA['en'] = dict(
          ('📅', 'Easy to book', "A clear button to your online calendar, WhatsApp or phone, with in-person or "
                                "online sessions stated plainly."),
          ('📍', 'Found by English speakers', "Titles and copy written for searches like “English-speaking "
-                                            "therapist in Alicante” or “counsellor Valencia”.")],
+                                            "therapist in Alicante” or “counsellor Valencia”, so potential "
+                                            "clients looking for help can find you.")],
     where_t='Anywhere in Spain',
     where="Costa Blanca, Valencia, Costa del Sol, Barcelona, Madrid, the Balearic or the Canary Islands: we work "
           "remotely, so where your practice is makes no difference.",
@@ -559,6 +561,13 @@ THERA['en'] = dict(
           "A name, a way to reach the person and a preferred time. Not the reason for the consultation: that is "
           "health data under the GDPR, and data should be limited to what is necessary. We add a short note asking "
           "people not to share health details in the form."),
+         ("What makes a good therapist website?",
+          "One that tells a visitor quickly who you are, how you work (in person, online or both) and how to "
+          "reach you, is easy to read on a phone, and only makes the claims the Spanish rules allow for your "
+          "title."),
+         ("What happens if I don't like the free demo?",
+          "Nothing: there's no cost and no obligation. You see your own site, built with your information, before "
+          "you pay anything, and you only go ahead if you're happy with it."),
          ("How much does a website cost?",
           "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: "
           "design, hosting, a domain name for the first year, legal pages and one change a month. The demo is "
