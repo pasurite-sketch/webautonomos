@@ -4668,8 +4668,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "palabras-clave-locales-planificacion-maquette-en"
+     "statut": "fait",
+     "fichier": "palabras-clave-locales-planificacion-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T11:39:55",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Botón Haberdashery website with a smiling shopkeeper at her store entrance.",
+       "legende": "Example of a haberdashery website adapted for desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",

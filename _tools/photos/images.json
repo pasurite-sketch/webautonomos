@@ -3624,6 +3624,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la web de Merceria Botó amb la comerciant a la porta de la botiga.",
    "legende": "Exemple de web de merceria adaptada a ordinador i mòbil."
+  },
+  "blog/en/how-to-choose-local-keywords.html": {
+   "sujet": "art-08",
+   "fichier": "palabras-clave-locales-planificacion-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Botón Haberdashery website with a smiling shopkeeper at her store entrance.",
+   "legende": "Example of a haberdashery website adapted for desktop and mobile."
   }
  }
 }
