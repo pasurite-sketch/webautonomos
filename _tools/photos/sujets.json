@@ -5967,8 +5967,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "responder-resenas-negativas-restaurante-maquette-val"
+     "statut": "fait",
+     "fichier": "responder-resenas-negativas-restaurante-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T16:04:51",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web de Taverna Sal, amb un restaurador revisant el telèfon després del servei.",
+       "legende": "Exemple de web de restaurant adaptada a ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",

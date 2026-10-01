@@ -3975,6 +3975,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Taberna Sal, con un restaurador revisando su teléfono tras el servicio.",
    "legende": "Ejemplo de web de restaurante adaptada a ordenador y móvil."
+  },
+  "blog/val/respondre-ressenyes-negatives-en-google.html": {
+   "sujet": "art-18",
+   "fichier": "responder-resenas-negativas-restaurante-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web de Taverna Sal, amb un restaurador revisant el telèfon després del servei.",
+   "legende": "Exemple de web de restaurant adaptada a ordinador i mòbil."
   }
  }
 }
