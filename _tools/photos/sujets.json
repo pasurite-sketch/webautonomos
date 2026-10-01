@@ -5692,8 +5692,16 @@
    "site": "d'une librairie indépendante",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "email-marketing-libreria-clientes-maquette-es"
+     "statut": "fait",
+     "fichier": "email-marketing-libreria-clientes-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T14:15:08",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una librería, con una librera preparando un paquete entre estanterías.",
+       "legende": "Ejemplo de web de una librería independiente adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

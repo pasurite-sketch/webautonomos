@@ -3894,6 +3894,15 @@
    "v": 1,
    "alt": "Un ordinateur portable et un smartphone affichent le site d’un primeur avec une vue de village méditerranéen et des étals colorés.",
    "legende": "Exemple de site de primeur adapté aux écrans d’ordinateur et de téléphone."
+  },
+  "blog/es/email-marketing-autonomos-guia-basica.html": {
+   "sujet": "art-16",
+   "fichier": "email-marketing-libreria-clientes-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de una librería, con una librera preparando un paquete entre estanterías.",
+   "legende": "Ejemplo de web de una librería independiente adaptada a ordenador y móvil."
   }
  }
 }
