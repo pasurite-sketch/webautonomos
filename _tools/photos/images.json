@@ -3786,6 +3786,15 @@
    "v": 1,
    "alt": "Un ordinateur portable et un smartphone affichent un site de pâtisserie avec une pâtissière photographiant des gâteaux.",
    "legende": "Exemple de site de pâtisserie adapté aux écrans d’ordinateur et de téléphone."
+  },
+  "blog/es/web-para-fontaneros-guia-completa.html": {
+   "sujet": "art-13",
+   "fichier": "fontanero-recibiendo-llamada-cliente-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran una web de fontanería con un profesional junto a su furgoneta de servicio.",
+   "legende": "Ejemplo de una web de fontanería adaptada a ordenador y móvil."
   }
  }
 }
