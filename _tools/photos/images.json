@@ -3759,6 +3759,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de una pastelería con una repostera fotografiando tartas.",
    "legende": "Ejemplo de una web de pastelería adaptada a ordenador y móvil."
+  },
+  "blog/val/xarxes-socials-quines-triar.html": {
+   "sujet": "art-12",
+   "fichier": "redes-sociales-autonoma-foto-producto-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren una web de pastisseria amb una pastissera fotografiant diversos pastissos.",
+   "legende": "Exemple de web de pastisseria adaptada a ordinador i telèfon mòbil."
   }
  }
 }
