@@ -5335,8 +5335,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "fontanero-recibiendo-llamada-cliente-maquette-fr"
+     "statut": "fait",
+     "fichier": "fontanero-recibiendo-llamada-cliente-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T14:00:28",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent un site de plomberie avec un plombier près de sa camionnette blanche.",
+       "legende": "Exemple de site de plomberie adapté aux écrans d’ordinateur et de téléphone."
+      }
+     }
     }
    },
    "ecrans": {
