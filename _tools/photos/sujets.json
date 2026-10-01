@@ -6253,8 +6253,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-fr"
+     "statut": "fait",
+     "fichier": "presupuesto-marketing-autonomo-planificacion-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T20:41:39",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site de l’Institut Nacre, avec une esthéticienne répartissant des jetons dans trois bocaux.",
+       "legende": "Exemple de site d’institut de beauté adapté aux écrans d’ordinateur et de mobile."
+      }
+     }
     }
    },
    "ecrans": {
