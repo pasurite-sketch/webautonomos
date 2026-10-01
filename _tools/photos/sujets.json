@@ -4799,8 +4799,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "electricista-instalando-cargador-coche-maquette-en"
+     "statut": "fait",
+     "fichier": "electricista-instalando-cargador-coche-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T13:13:45",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display a responsive electrician website featuring an electrician installing ceiling wiring.",
+       "legende": "An example of an electrician’s website displayed on desktop and mobile screens."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
