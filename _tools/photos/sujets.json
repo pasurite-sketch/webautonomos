@@ -3726,8 +3726,16 @@
    "site": "d'une boutique de décoration",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "small-business-owner-website-spain-maquette-es"
+     "statut": "fait",
+     "fichier": "small-business-owner-website-spain-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T08:27:00",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran una tienda de decoración con fotografías de productos y diseño adaptable.",
+       "legende": "Ejemplo de web de una tienda de decoración para ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
