@@ -5430,8 +5430,16 @@
    "site": "d'une fleuriste",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "google-posts-floristeria-publicacion-maquette-es"
+     "statut": "fait",
+     "fichier": "google-posts-floristeria-publicacion-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T14:01:30",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una floristería con una profesional preparando un ramo de temporada.",
+       "legende": "Ejemplo de una web de floristería adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
