@@ -5168,8 +5168,16 @@
    "site": "d'une pâtisserie",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "redes-sociales-autonoma-foto-producto-maquette-es"
+     "statut": "fait",
+     "fichier": "redes-sociales-autonoma-foto-producto-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T13:46:34",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una pastelería con una repostera fotografiando tartas.",
+       "legende": "Ejemplo de una web de pastelería adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
