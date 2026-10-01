@@ -4024,8 +4024,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "seo-local-barrio-comercios-maquette-fr"
+     "statut": "fait",
+     "fichier": "seo-local-barrio-comercios-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-01T09:23:14",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le site d’une quincaillerie avec une carte et des photos d’outils.",
+       "legende": "Exemple de site de quincaillerie adapté à l’ordinateur et au mobile."
+      }
+     }
     }
    },
    "ecrans": {
