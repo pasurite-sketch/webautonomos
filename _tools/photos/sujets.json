@@ -5848,8 +5848,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "clinica-salud-recepcion-luminosa-maquette-en"
+     "statut": "fait",
+     "fichier": "clinica-salud-recepcion-luminosa-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T15:05:06",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display a dental and physiotherapy clinic website with a bright, welcoming reception.",
+       "legende": "Example website for a dental and physiotherapy clinic, adapted to desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
