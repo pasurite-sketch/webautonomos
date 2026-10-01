@@ -3750,8 +3750,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "small-business-owner-website-spain-maquette-en"
+     "statut": "fait",
+     "fichier": "small-business-owner-website-spain-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-01T08:29:55",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display a home decor shop website with product photos in desktop and mobile layouts.",
+       "legende": "Example website for a home decor shop on desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
