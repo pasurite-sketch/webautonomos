@@ -4382,8 +4382,16 @@
    "site": "d'un serrurier",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "whatsapp-business-autonomo-furgoneta-maquette-es"
+     "statut": "fait",
+     "fichier": "whatsapp-business-autonomo-furgoneta-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T10:03:11",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Cerrajería Llave con un cerrajero junto a su furgoneta.",
+       "legende": "Ejemplo de web de cerrajería adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
