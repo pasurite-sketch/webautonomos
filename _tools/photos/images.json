@@ -3507,6 +3507,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Peluquería Brisa con una clienta y una estilista en la imagen principal.",
    "legende": "Ejemplo de web de peluquería adaptada a ordenador y móvil."
+  },
+  "blog/val/aconseguir-mes-ressenyes-en-google.html": {
+   "sujet": "art-05",
+   "fichier": "conseguir-resenas-google-clienta-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinador i un mòbil mostren la web de Perruqueria Brisa amb una clienta i una estilista a la imatge principal.",
+   "legende": "Exemple de web de perruqueria adaptada a ordinador i mòbil."
   }
  }
 }
