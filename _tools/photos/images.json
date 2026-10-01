@@ -3516,6 +3516,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web de Perruqueria Brisa amb una clienta i una estilista a la imatge principal.",
    "legende": "Exemple de web de perruqueria adaptada a ordinador i mòbil."
+  },
+  "blog/en/how-to-get-more-google-reviews.html": {
+   "sujet": "art-05",
+   "fichier": "conseguir-resenas-google-clienta-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and smartphone display the Brisa Hair Salon website with a smiling customer and stylist in the hero image.",
+   "legende": "Example of a hair salon website adapted for desktop and mobile."
   }
  }
 }
