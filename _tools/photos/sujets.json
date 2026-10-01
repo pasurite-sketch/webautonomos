@@ -3869,8 +3869,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "aparecer-google-maps-movil-calle-maquette-val"
+     "statut": "fait",
+     "fichier": "aparecer-google-maps-movil-calle-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T08:40:12",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador portàtil i un mòbil mostren la web d’un forn amb un mapa d’ubicació i fotografies de pa.",
+       "legende": "Exemple de web d’un forn adaptada a ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
