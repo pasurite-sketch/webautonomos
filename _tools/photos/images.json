@@ -3407,6 +3407,15 @@
    "v": 1,
    "alt": "Un ordinador portàtil i un mòbil mostren la web d’un forn amb un mapa d’ubicació i fotografies de pa.",
    "legende": "Exemple de web d’un forn adaptada a ordinador i mòbil."
+  },
+  "blog/en/how-to-appear-on-google-maps-complete-guide.html": {
+   "sujet": "art-02",
+   "fichier": "aparecer-google-maps-movil-calle-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and smartphone display a bakery website with a location map and bread photos in desktop and mobile layouts.",
+   "legende": "Example website for a bakery, adapted for desktop and mobile."
   }
  }
 }
