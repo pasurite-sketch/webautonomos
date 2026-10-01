@@ -3857,8 +3857,16 @@
    "site": "d'un commerce local avec un plan d'accès",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "aparecer-google-maps-movil-calle-maquette-es"
+     "statut": "fait",
+     "fichier": "aparecer-google-maps-movil-calle-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T08:38:28",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una panadería con un mapa de ubicación y fotografías de pan.",
+       "legende": "Ejemplo de web de una panadería adaptada a ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

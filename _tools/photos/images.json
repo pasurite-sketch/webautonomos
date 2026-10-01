@@ -3389,6 +3389,15 @@
    "v": 1,
    "alt": "Un ordinateur portable et un smartphone affichent le site d’une boutique de décoration en versions ordinateur et mobile.",
    "legende": "Exemple de site de boutique de décoration sur ordinateur et mobile."
+  },
+  "blog/es/como-aparecer-google-maps-autonomos.html": {
+   "sujet": "art-02",
+   "fichier": "aparecer-google-maps-movil-calle-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de una panadería con un mapa de ubicación y fotografías de pan.",
+   "legende": "Ejemplo de web de una panadería adaptada a ordenador y móvil."
   }
  }
 }
