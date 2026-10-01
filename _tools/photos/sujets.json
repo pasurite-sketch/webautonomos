@@ -4918,8 +4918,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "ficha-google-horarios-negocio-maquette-val"
+     "statut": "fait",
+     "fichier": "ficha-google-horarios-negocio-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-01T13:18:26",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d’un cafè amb una dona preparant les taules de la terrassa.",
+       "legende": "Exemple d’una web de cafeteria adaptada a ordinador i telèfon mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
