@@ -3344,6 +3344,15 @@
    "v": 1,
    "alt": "Ordenador portátil y móvil muestran la web adaptable de un restaurante con fotos y opción de reserva.",
    "legende": "Ejemplo de web de restaurante adaptada a ordenador y móvil."
+  },
+  "blog/index.html": {
+   "sujet": "page-blog",
+   "fichier": "blog-autonomos-lectura-terraza-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Ordenador portátil y móvil muestran un blog para autónomos con consejos, artículos y una imagen de un hombre tomando café.",
+   "legende": "Ejemplo de web de blog adaptable a ordenador y móvil."
   }
  }
 }

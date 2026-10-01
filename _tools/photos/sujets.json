@@ -3638,8 +3638,16 @@
    "site": "d'un blog de conseils pour indépendants",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "blog-autonomos-lectura-terraza-maquette-es"
+     "statut": "fait",
+     "fichier": "blog-autonomos-lectura-terraza-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-01T08:25:51",
+     "textes": {
+      "es": {
+       "alt": "Ordenador portátil y móvil muestran un blog para autónomos con consejos, artículos y una imagen de un hombre tomando café.",
+       "legende": "Ejemplo de web de blog adaptable a ordenador y móvil."
+      }
+     }
     }
    },
    "ecrans": {
