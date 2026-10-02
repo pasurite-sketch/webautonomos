@@ -4425,6 +4425,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Traductions Claire en versions ordinateur et mobile.",
    "legende": "Exemple de site d'une traductrice indépendante sur ordinateur et smartphone."
+  },
+  "blog/es/google-ads-autonomos-guia-basica.html": {
+   "sujet": "art-33",
+   "fichier": "google-ads-autonomo-reservas-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Casa Rural El Olmo en versiones de escritorio y móvil.",
+   "legende": "Ejemplo de web de un alojamiento rural en ordenador y smartphone."
   }
  }
 }
