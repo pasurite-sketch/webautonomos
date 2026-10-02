@@ -4155,6 +4155,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de una droguería de barrio en versiones de escritorio y móvil.",
    "legende": "Ejemplo de web de una droguería adaptada al ordenador y al móvil."
+  },
+  "blog/val/cites-locals-nap-guia-completa.html": {
+   "sujet": "art-23",
+   "fichier": "citas-locales-nap-direccion-negocio-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Ordinador i mòbil mostren la web d'una drogueria de barri en versions adaptades a cada pantalla.",
+   "legende": "Exemple de web d'una drogueria en ordinador i mòbil."
   }
  }
 }

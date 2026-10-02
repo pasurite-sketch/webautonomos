@@ -6622,8 +6622,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "citas-locales-nap-direccion-negocio-maquette-val"
+     "statut": "fait",
+     "fichier": "citas-locales-nap-direccion-negocio-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T09:22:36",
+     "textes": {
+      "val": {
+       "alt": "Ordinador i mòbil mostren la web d'una drogueria de barri en versions adaptades a cada pantalla.",
+       "legende": "Exemple de web d'una drogueria en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
