@@ -8084,8 +8084,16 @@
    "site": "d'une épicerie de quartier",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "facturacion-electronica-comercio-maquette-es"
+     "statut": "fait",
+     "fichier": "facturacion-electronica-comercio-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T14:36:48",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Colmado Laurel con una tendera entregando una bolsa a una clienta.",
+       "legende": "Vista de la web de Colmado Laurel en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
