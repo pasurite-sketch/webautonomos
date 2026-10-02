@@ -8724,8 +8724,16 @@
    "site": "d'un centre d'esthétique",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "centro-estetica-cabina-tratamiento-maquette-es"
+     "statut": "fait",
+     "fichier": "centro-estetica-cabina-tratamiento-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T19:59:44",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Estética Luna con una cabina de belleza luminosa y acogedora.",
+       "legende": "Vista de la web de Estética Luna en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
