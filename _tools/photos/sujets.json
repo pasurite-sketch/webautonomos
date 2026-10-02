@@ -7446,8 +7446,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "elegir-dominio-direccion-negocio-maquette-en"
+     "statut": "fait",
+     "fichier": "elegir-dominio-direccion-negocio-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T13:04:06",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Nueva Luz Store website in desktop and mobile layouts.",
+       "legende": "Example of a newly opened shop website on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
