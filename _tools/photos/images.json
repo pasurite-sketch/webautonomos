@@ -4488,6 +4488,15 @@
    "v": 1,
    "alt": "Laptop and smartphone display the Tinta Norte Tattoo website with a tattoo artist sketching a design.",
    "legende": "Preview of the Tinta Norte Tattoo studio website on desktop and mobile."
+  },
+  "blog/fr/site-web-pour-tatoueurs.html": {
+   "sujet": "art-34",
+   "fichier": "estudio-tatuaje-tatuador-dibujando-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Ordinateur et smartphone affichant le site Encre Nord Tattoo avec un tatoueur dessinant un motif.",
+   "legende": "Aperçu du site Encre Nord Tattoo sur ordinateur et smartphone."
   }
  }
 }

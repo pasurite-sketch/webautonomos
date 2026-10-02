@@ -7863,8 +7863,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "estudio-tatuaje-tatuador-dibujando-maquette-fr"
+     "statut": "fait",
+     "fichier": "estudio-tatuaje-tatuador-dibujando-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T14:01:26",
+     "textes": {
+      "fr": {
+       "alt": "Ordinateur et smartphone affichant le site Encre Nord Tattoo avec un tatoueur dessinant un motif.",
+       "legende": "Aperçu du site Encre Nord Tattoo sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
