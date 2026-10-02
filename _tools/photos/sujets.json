@@ -9154,8 +9154,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "clinica-veterinaria-perro-consulta-maquette-fr"
+     "statut": "fait",
+     "fichier": "clinica-veterinaria-perro-consulta-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T20:38:41",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site de la Clinique vétérinaire Empreintes avec une vétérinaire et un golden retriever.",
+       "legende": "Aperçu du site de la Clinique vétérinaire Empreintes sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
