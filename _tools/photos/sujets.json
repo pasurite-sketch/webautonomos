@@ -7708,8 +7708,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "google-ads-autonomo-reservas-maquette-val"
+     "statut": "fait",
+     "fichier": "google-ads-autonomo-reservas-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T13:24:46",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Casa Rural L'Om en versions d'escriptori i mòbil.",
+       "legende": "Exemple de web d'un allotjament rural en ordinador i telèfon."
+      }
+     }
     },
     "en": {
      "statut": "pret",
