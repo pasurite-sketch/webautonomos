@@ -4128,6 +4128,15 @@
    "v": 1,
    "alt": "Ordinador portàtil i mòbil mostren la web d'una ferreteria, adaptada a les versions d'escriptori i mòbil.",
    "legende": "Exemple de web d'una ferreteria vista en ordinador i mòbil."
+  },
+  "blog/en/how-to-choose-google-business-categories.html": {
+   "sujet": "art-22",
+   "fichier": "categorias-google-business-ferreteria-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and smartphone display the same hardware store website in desktop and mobile layouts side by side.",
+   "legende": "Example website for a hardware store shown on a laptop and smartphone."
   }
  }
 }

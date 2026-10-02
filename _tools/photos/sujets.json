@@ -6503,8 +6503,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "categorias-google-business-ferreteria-maquette-en"
+     "statut": "fait",
+     "fichier": "categorias-google-business-ferreteria-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T09:06:28",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the same hardware store website in desktop and mobile layouts side by side.",
+       "legende": "Example website for a hardware store shown on a laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
