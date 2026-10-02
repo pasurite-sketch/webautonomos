@@ -4758,6 +4758,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la web de Nutrició Verda amb una nutricionista i aliments frescos.",
    "legende": "Vista de la web de Nutrició Verda en ordinador i mòbil."
+  },
+  "blog/en/website-for-dietitians-and-nutritionists.html": {
+   "sujet": "art-42",
+   "fichier": "nutricionista-consulta-alimentos-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Verde Nutrition website with a nutritionist preparing fresh produce.",
+   "legende": "Preview of the Verde Nutrition website on desktop and mobile."
   }
  }
 }
