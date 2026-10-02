@@ -4686,6 +4686,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la web de Coaching Rumb amb una sessió grupal en una sala lluminosa.",
    "legende": "Vista de la web de Coaching Rumb en ordinador i mòbil."
+  },
+  "blog/en/website-for-coaches.html": {
+   "sujet": "art-40",
+   "fichier": "coach-sesion-grupo-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Rumbo Coaching website with a coach leading a group session.",
+   "legende": "Preview of the Rumbo Coaching website on desktop and mobile."
   }
  }
 }

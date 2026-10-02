@@ -8617,8 +8617,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "coach-sesion-grupo-maquette-en"
+     "statut": "fait",
+     "fichier": "coach-sesion-grupo-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T19:54:24",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Rumbo Coaching website with a coach leading a group session.",
+       "legende": "Preview of the Rumbo Coaching website on desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
