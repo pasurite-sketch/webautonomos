@@ -4812,6 +4812,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Coach Léo avec un coach préparant un tapis dans un studio.",
    "legende": "Aperçu du site Coach Léo sur ordinateur et smartphone."
+  },
+  "blog/es/web-para-clinicas-veterinarias.html": {
+   "sujet": "art-44",
+   "fichier": "clinica-veterinaria-perro-consulta-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Clínica Veterinaria Huellas con una veterinaria y un golden retriever.",
+   "legende": "Vista de la web de Clínica Veterinaria Huellas en ordenador y móvil."
   }
  }
 }
