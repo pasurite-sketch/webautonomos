@@ -6515,8 +6515,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "categorias-google-business-ferreteria-maquette-fr"
+     "statut": "fait",
+     "fichier": "categorias-google-business-ferreteria-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T09:12:00",
+     "textes": {
+      "fr": {
+       "alt": "Ordinateur portable et smartphone affichant le même site de quincaillerie, adapté aux écrans d’ordinateur et mobile.",
+       "legende": "Exemple de site de quincaillerie sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {

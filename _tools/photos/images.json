@@ -4137,6 +4137,15 @@
    "v": 1,
    "alt": "Laptop and smartphone display the same hardware store website in desktop and mobile layouts side by side.",
    "legende": "Example website for a hardware store shown on a laptop and smartphone."
+  },
+  "blog/fr/choisir-les-categories-google-business.html": {
+   "sujet": "art-22",
+   "fichier": "categorias-google-business-ferreteria-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Ordinateur portable et smartphone affichant le même site de quincaillerie, adapté aux écrans d’ordinateur et mobile.",
+   "legende": "Exemple de site de quincaillerie sur ordinateur et smartphone."
   }
  }
 }
