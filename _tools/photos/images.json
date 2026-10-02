@@ -4173,6 +4173,15 @@
    "v": 1,
    "alt": "Laptop and smartphone show a neighborhood household store website in desktop and mobile layouts side by side.",
    "legende": "Example website for a local household store on laptop and smartphone."
+  },
+  "blog/fr/citations-locales-nap-guide-complet.html": {
+   "sujet": "art-23",
+   "fichier": "citas-locales-nap-direccion-negocio-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Ordinateur portable et smartphone affichent le même site de droguerie de quartier en versions ordinateur et mobile.",
+   "legende": "Exemple de site de droguerie sur ordinateur et smartphone."
   }
  }
 }
