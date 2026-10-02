@@ -4668,6 +4668,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Cabinet Calme avec une salle d’attente accueillante et lumineuse.",
    "legende": "Aperçu du site Cabinet Calme sur ordinateur et smartphone."
+  },
+  "blog/es/web-para-coaches.html": {
+   "sujet": "art-40",
+   "fichier": "coach-sesion-grupo-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Coaching Rumbo con una sesión grupal en una sala luminosa.",
+   "legende": "Vista de la web de Coaching Rumbo en ordenador y móvil."
   }
  }
 }

@@ -8593,8 +8593,16 @@
    "site": "d'une coach professionnelle",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "coach-sesion-grupo-maquette-es"
+     "statut": "fait",
+     "fichier": "coach-sesion-grupo-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T19:21:02",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Coaching Rumbo con una sesión grupal en una sala luminosa.",
+       "legende": "Vista de la web de Coaching Rumbo en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
