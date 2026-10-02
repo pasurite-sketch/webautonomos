@@ -9023,8 +9023,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "entrenador-personal-estudio-maquette-fr"
+     "statut": "fait",
+     "fichier": "entrenador-personal-estudio-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T20:31:42",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Coach Léo avec un coach préparant un tapis dans un studio.",
+       "legende": "Aperçu du site Coach Léo sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
