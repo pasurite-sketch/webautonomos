@@ -7291,8 +7291,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "errores-marketing-autonomo-folletos-maquette-val"
+     "statut": "fait",
+     "fichier": "errores-marketing-autonomo-folletos-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T12:08:57",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Pintures Brotxa en versions d'escriptori i mòbil.",
+       "legende": "Exemple de web d'un pintor en ordinador i telèfon intel·ligent."
+      }
+     }
     },
     "en": {
      "statut": "pret",
