@@ -8999,8 +8999,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "entrenador-personal-estudio-maquette-val"
+     "statut": "fait",
+     "fichier": "entrenador-personal-estudio-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T20:26:06",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d’Entrena amb Leo amb un entrenador preparant material esportiu.",
+       "legende": "Vista de la web d’Entrena amb Leo en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",

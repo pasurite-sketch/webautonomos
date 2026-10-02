@@ -4785,6 +4785,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Entrena con Leo con un entrenador preparando material deportivo.",
    "legende": "Vista de la web de Entrena con Leo en ordenador y móvil."
+  },
+  "blog/val/web-per-a-entrenadors-personals.html": {
+   "sujet": "art-43",
+   "fichier": "entrenador-personal-estudio-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web d’Entrena amb Leo amb un entrenador preparant material esportiu.",
+   "legende": "Vista de la web d’Entrena amb Leo en ordinador i mòbil."
   }
  }
 }
