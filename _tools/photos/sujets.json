@@ -7029,8 +7029,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-en"
+     "statut": "fait",
+     "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T10:59:30",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the Casa Buganvilla guesthouse website in desktop and mobile layouts.",
+       "legende": "Example of a guesthouse website shown on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
