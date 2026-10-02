@@ -7577,8 +7577,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "inteligencia-artificial-autonoma-despacho-maquette-en"
+     "statut": "fait",
+     "fichier": "inteligencia-artificial-autonoma-despacho-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T13:11:56",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Clara Translations website in desktop and mobile layouts.",
+       "legende": "Example of an independent translator's website on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
