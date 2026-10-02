@@ -8222,8 +8222,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "crear-contenido-web-artesano-grabando-maquette-en"
+     "statut": "fait",
+     "fichier": "crear-contenido-web-artesano-grabando-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T16:55:51",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Yunque Ironworks website with a blacksmith speaking in his workshop.",
+       "legende": "Example website for Yunque Ironworks on desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",

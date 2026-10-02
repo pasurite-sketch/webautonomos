@@ -4578,6 +4578,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la web de Forja Enclusa amb un artesà parlant al seu taller.",
    "legende": "Exemple de web de Forja Enclusa en ordinador i mòbil."
+  },
+  "blog/en/create-web-content-without-being-a-writer.html": {
+   "sujet": "art-37",
+   "fichier": "crear-contenido-web-artesano-grabando-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Yunque Ironworks website with a blacksmith speaking in his workshop.",
+   "legende": "Example website for Yunque Ironworks on desktop and mobile."
   }
  }
 }
