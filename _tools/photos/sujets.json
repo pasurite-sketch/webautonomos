@@ -8474,8 +8474,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "psicologo-sala-espera-consulta-maquette-val"
+     "statut": "fait",
+     "fichier": "psicologo-sala-espera-consulta-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T19:02:17",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web de Psicologia Calma amb una sala d'espera acollidora i lluminosa.",
+       "legende": "Vista de la web de Psicologia Calma en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",

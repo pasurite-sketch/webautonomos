@@ -4641,6 +4641,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Psicología Calma con una sala de terapia acogedora y luminosa.",
    "legende": "Vista de la web de Psicología Calma en ordenador y móvil."
+  },
+  "blog/val/web-per-a-psicolegs-i-terapeutes.html": {
+   "sujet": "art-39",
+   "fichier": "psicologo-sala-espera-consulta-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web de Psicologia Calma amb una sala d'espera acollidora i lluminosa.",
+   "legende": "Vista de la web de Psicologia Calma en ordinador i mòbil."
   }
  }
 }
