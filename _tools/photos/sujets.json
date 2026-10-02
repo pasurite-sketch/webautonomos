@@ -7172,8 +7172,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "backlinks-locales-asociacion-comerciantes-maquette-en"
+     "statut": "fait",
+     "fichier": "backlinks-locales-asociacion-comerciantes-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T11:26:08",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display a merchants' association website in desktop and mobile layouts.",
+       "legende": "Example of a merchants' association website on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
