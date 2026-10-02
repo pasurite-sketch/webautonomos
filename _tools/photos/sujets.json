@@ -8210,8 +8210,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "crear-contenido-web-artesano-grabando-maquette-val"
+     "statut": "fait",
+     "fichier": "crear-contenido-web-artesano-grabando-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T16:18:13",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web de Forja Enclusa amb un artesà parlant al seu taller.",
+       "legende": "Exemple de web de Forja Enclusa en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
