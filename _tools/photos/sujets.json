@@ -7017,8 +7017,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-val"
+     "statut": "fait",
+     "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T10:29:05",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web d'una casa rural amb una terrassa florida en versions adaptades.",
+       "legende": "Exemple de web d'una casa rural en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
