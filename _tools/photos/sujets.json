@@ -7839,8 +7839,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "estudio-tatuaje-tatuador-dibujando-maquette-val"
+     "statut": "fait",
+     "fichier": "estudio-tatuaje-tatuador-dibujando-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T13:44:50",
+     "textes": {
+      "val": {
+       "alt": "Portàtil i mòbil mostren la web de Tinta Nord Tattoo amb un tatuador dibuixant un disseny.",
+       "legende": "Vista de la web de l'estudi Tinta Nord Tattoo en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
