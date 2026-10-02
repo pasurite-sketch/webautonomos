@@ -9142,8 +9142,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "clinica-veterinaria-perro-consulta-maquette-en"
+     "statut": "fait",
+     "fichier": "clinica-veterinaria-perro-consulta-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T20:37:06",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone show the Huellas Vet Clinic website with a veterinarian caring for a golden retriever.",
+       "legende": "Preview of the Huellas Vet Clinic website on a laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
