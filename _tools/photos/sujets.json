@@ -8366,8 +8366,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "clinica-podologia-consulta-maquette-fr"
+     "statut": "fait",
+     "fichier": "clinica-podologia-consulta-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T18:48:33",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site du Cabinet de podologie Pas et sa salle de soins lumineuse.",
+       "legende": "Aperçu du site du Cabinet de podologie Pas sur ordinateur et mobile."
+      }
+     }
     }
    },
    "ecrans": {
