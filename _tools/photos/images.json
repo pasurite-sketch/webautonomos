@@ -4776,6 +4776,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Nutrition Verte avec une nutritionniste préparant des produits frais.",
    "legende": "Aperçu du site Nutrition Verte sur ordinateur et smartphone."
+  },
+  "blog/es/web-para-entrenadores-personales.html": {
+   "sujet": "art-43",
+   "fichier": "entrenador-personal-estudio-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Entrena con Leo con un entrenador preparando material deportivo.",
+   "legende": "Vista de la web de Entrena con Leo en ordenador y móvil."
   }
  }
 }

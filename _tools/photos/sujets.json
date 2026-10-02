@@ -8987,8 +8987,16 @@
    "site": "d'un coach sportif",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "entrenador-personal-estudio-maquette-es"
+     "statut": "fait",
+     "fichier": "entrenador-personal-estudio-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T20:23:08",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Entrena con Leo con un entrenador preparando material deportivo.",
+       "legende": "Vista de la web de Entrena con Leo en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
