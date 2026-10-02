@@ -7553,8 +7553,16 @@
    "site": "d'une traductrice indépendante",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "inteligencia-artificial-autonoma-despacho-maquette-es"
+     "statut": "fait",
+     "fichier": "inteligencia-artificial-autonoma-despacho-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T13:07:24",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Traducciones Clara en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de una traductora independiente en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

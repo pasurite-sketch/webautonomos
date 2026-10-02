@@ -4389,6 +4389,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site de la Boutique Nouvelle Lune en versions adaptées.",
    "legende": "Exemple de site d'une boutique récemment ouverte sur ordinateur et mobile."
+  },
+  "blog/es/inteligencia-artificial-autonomos-herramientas.html": {
+   "sujet": "art-32",
+   "fichier": "inteligencia-artificial-autonoma-despacho-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Traducciones Clara en versiones de escritorio y móvil.",
+   "legende": "Ejemplo de web de una traductora independiente en ordenador y móvil."
   }
  }
 }
