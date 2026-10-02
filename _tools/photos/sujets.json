@@ -7720,8 +7720,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "google-ads-autonomo-reservas-maquette-en"
+     "statut": "fait",
+     "fichier": "google-ads-autonomo-reservas-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T13:27:36",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the El Olmo Guesthouse website in desktop and mobile layouts.",
+       "legende": "Example of a rural guesthouse website on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
