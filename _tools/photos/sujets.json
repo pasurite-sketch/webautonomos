@@ -7315,8 +7315,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "errores-marketing-autonomo-folletos-maquette-fr"
+     "statut": "fait",
+     "fichier": "errores-marketing-autonomo-folletos-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T12:41:43",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Peinture Pinceau en versions ordinateur et mobile.",
+       "legende": "Exemple de site de peintre en bâtiment sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
