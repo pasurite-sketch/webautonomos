@@ -6610,8 +6610,16 @@
    "site": "d'un commerce de quartier",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "citas-locales-nap-direccion-negocio-maquette-es"
+     "statut": "fait",
+     "fichier": "citas-locales-nap-direccion-negocio-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T09:16:41",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una droguería de barrio en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de una droguería adaptada al ordenador y al móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

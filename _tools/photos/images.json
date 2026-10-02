@@ -4146,6 +4146,15 @@
    "v": 1,
    "alt": "Ordinateur portable et smartphone affichant le même site de quincaillerie, adapté aux écrans d’ordinateur et mobile.",
    "legende": "Exemple de site de quincaillerie sur ordinateur et smartphone."
+  },
+  "blog/es/citas-locales-nap-que-son-por-que-importan.html": {
+   "sujet": "art-23",
+   "fichier": "citas-locales-nap-direccion-negocio-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de una droguería de barrio en versiones de escritorio y móvil.",
+   "legende": "Ejemplo de web de una droguería adaptada al ordenador y al móvil."
   }
  }
 }
