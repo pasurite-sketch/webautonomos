@@ -4722,6 +4722,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la web d'Estètica Lluna amb una cabina de bellesa lluminosa.",
    "legende": "Vista de la web d'Estètica Lluna en ordinador i mòbil."
+  },
+  "blog/en/website-for-beauty-salons.html": {
+   "sujet": "art-41",
+   "fichier": "centro-estetica-cabina-tratamiento-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Luna Beauty Studio website with a bright, calming treatment room.",
+   "legende": "Preview of the Luna Beauty Studio website on desktop and mobile."
   }
  }
 }

@@ -8748,8 +8748,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "centro-estetica-cabina-tratamiento-maquette-en"
+     "statut": "fait",
+     "fichier": "centro-estetica-cabina-tratamiento-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T20:02:44",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Luna Beauty Studio website with a bright, calming treatment room.",
+       "legende": "Preview of the Luna Beauty Studio website on desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
