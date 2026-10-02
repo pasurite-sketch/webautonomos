@@ -6772,8 +6772,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "digitalizacion-autonomos-taller-familiar-maquette-en"
+     "statut": "fait",
+     "fichier": "digitalizacion-autonomos-taller-familiar-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T09:44:03",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the Sanz Family Joinery website in desktop and mobile layouts.",
+       "legende": "Example of a family joinery website on laptop and smartphone."
+      }
+     }
     }
    },
    "ecrans": {
