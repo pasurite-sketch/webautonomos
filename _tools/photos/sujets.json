@@ -7458,8 +7458,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "elegir-dominio-direccion-negocio-maquette-fr"
+     "statut": "fait",
+     "fichier": "elegir-dominio-direccion-negocio-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T13:05:16",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site de la Boutique Nouvelle Lune en versions adaptées.",
+       "legende": "Exemple de site d'une boutique récemment ouverte sur ordinateur et mobile."
+      }
+     }
     }
    },
    "ecrans": {
