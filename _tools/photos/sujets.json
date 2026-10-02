@@ -8760,8 +8760,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "centro-estetica-cabina-tratamiento-maquette-fr"
+     "statut": "fait",
+     "fichier": "centro-estetica-cabina-tratamiento-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T20:04:07",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone présentent le site de l’Institut Luna avec une cabine de soins lumineuse et apaisante.",
+       "legende": "Aperçu du site de l’Institut Luna sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
