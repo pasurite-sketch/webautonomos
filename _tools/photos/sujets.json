@@ -8198,8 +8198,16 @@
    "site": "d'un ferronnier d'art",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "crear-contenido-web-artesano-grabando-maquette-es"
+     "statut": "fait",
+     "fichier": "crear-contenido-web-artesano-grabando-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T16:02:14",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Forja Yunque con un artesano hablando en su taller.",
+       "legende": "Ejemplo de web de Forja Yunque en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
