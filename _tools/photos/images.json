@@ -4317,6 +4317,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site d'une association de commerçants en versions adaptées.",
    "legende": "Exemple de site d'une association de commerçants sur ordinateur et smartphone."
+  },
+  "blog/es/errores-marketing-digital-autonomos.html": {
+   "sujet": "art-28",
+   "fichier": "errores-marketing-autonomo-folletos-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Pinturas Brocha en versiones de escritorio y móvil.",
+   "legende": "Ejemplo de web de un pintor en ordenador y smartphone."
   }
  }
 }
