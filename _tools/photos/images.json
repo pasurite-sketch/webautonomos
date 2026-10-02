@@ -4227,6 +4227,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web d'una empresa de cuines a mida adaptada a cada pantalla.",
    "legende": "Exemple de web de cuines a mida en ordinador i mòbil."
+  },
+  "blog/en/website-for-carpenters-and-renovations.html": {
+   "sujet": "art-25",
+   "fichier": "carpintero-cocina-a-medida-terminada-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display a custom kitchen company's website in desktop and mobile layouts.",
+   "legende": "Example of a custom kitchen website on laptop and smartphone."
   }
  }
 }

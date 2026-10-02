@@ -6898,8 +6898,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "carpintero-cocina-a-medida-terminada-maquette-en"
+     "statut": "fait",
+     "fichier": "carpintero-cocina-a-medida-terminada-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T09:54:58",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display a custom kitchen company's website in desktop and mobile layouts.",
+       "legende": "Example of a custom kitchen website on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
