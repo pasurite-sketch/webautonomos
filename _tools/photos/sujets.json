@@ -8096,8 +8096,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "facturacion-electronica-comercio-maquette-val"
+     "statut": "fait",
+     "fichier": "facturacion-electronica-comercio-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T14:59:02",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web de Botiga Llorer amb una dependenta lliurant una bossa a una clienta.",
+       "legende": "Vista de la web de Botiga Llorer en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
