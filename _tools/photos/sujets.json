@@ -8856,8 +8856,16 @@
    "site": "d'une nutritionniste",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "nutricionista-consulta-alimentos-maquette-es"
+     "statut": "fait",
+     "fichier": "nutricionista-consulta-alimentos-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T20:05:25",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Nutrición Verde con una nutricionista y alimentos frescos.",
+       "legende": "Vista de la web de Nutrición Verde en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

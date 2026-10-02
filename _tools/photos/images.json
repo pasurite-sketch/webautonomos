@@ -4740,6 +4740,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone présentent le site de l’Institut Luna avec une cabine de soins lumineuse et apaisante.",
    "legende": "Aperçu du site de l’Institut Luna sur ordinateur et smartphone."
+  },
+  "blog/es/web-para-nutricionistas-dietistas.html": {
+   "sujet": "art-42",
+   "fichier": "nutricionista-consulta-alimentos-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Nutrición Verde con una nutricionista y alimentos frescos.",
+   "legende": "Vista de la web de Nutrición Verde en ordenador y móvil."
   }
  }
 }
