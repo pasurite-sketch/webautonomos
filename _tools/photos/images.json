@@ -4245,6 +4245,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site d'un cuisiniste en versions ordinateur et mobile.",
    "legende": "Exemple de site de cuisines sur mesure sur ordinateur et smartphone."
+  },
+  "blog/es/fotos-videos-ficha-google-importancia.html": {
+   "sujet": "art-26",
+   "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Casa Buganvilla en versiones de escritorio y móvil.",
+   "legende": "Ejemplo de web de una casa rural en ordenador y smartphone."
   }
  }
 }
