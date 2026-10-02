@@ -39,7 +39,7 @@ PAGINAS = {
 
 def patch(rel, r):
     s = open(rel, encoding='utf-8').read()
-    if Q in s:
+    if 'en varios idiomas?</summary>' in s:
         return s
     fl = s.find('class="faq-list"')
     fin = s.find('\n\n  </div>\n</section>', fl)
