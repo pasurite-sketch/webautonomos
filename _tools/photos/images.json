@@ -4794,6 +4794,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la web d’Entrena amb Leo amb un entrenador preparant material esportiu.",
    "legende": "Vista de la web d’Entrena amb Leo en ordinador i mòbil."
+  },
+  "blog/en/website-for-personal-trainers.html": {
+   "sujet": "art-43",
+   "fichier": "entrenador-personal-estudio-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Train with Leo website with a trainer preparing exercise mats and resistance bands.",
+   "legende": "Preview of the Train with Leo website on desktop and mobile."
   }
  }
 }

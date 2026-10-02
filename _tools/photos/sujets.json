@@ -9011,8 +9011,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "entrenador-personal-estudio-maquette-en"
+     "statut": "fait",
+     "fichier": "entrenador-personal-estudio-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T20:27:45",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Train with Leo website with a trainer preparing exercise mats and resistance bands.",
+       "legende": "Preview of the Train with Leo website on desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
