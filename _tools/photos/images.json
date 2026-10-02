@@ -4209,6 +4209,15 @@
    "v": 1,
    "alt": "Laptop and smartphone display the Sanz Family Joinery website in desktop and mobile layouts.",
    "legende": "Example of a family joinery website on laptop and smartphone."
+  },
+  "blog/es/web-para-carpinteros-reformas.html": {
+   "sujet": "art-25",
+   "fichier": "carpintero-cocina-a-medida-terminada-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de una empresa de cocinas a medida en versiones de escritorio y móvil.",
+   "legende": "Ejemplo de web de cocinas a medida en ordenador y smartphone."
   }
  }
 }

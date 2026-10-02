@@ -6862,8 +6862,28 @@
    "site": "d'un menuisier cuisiniste",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "carpintero-cocina-a-medida-terminada-maquette-es"
+     "statut": "fait",
+     "fichier": "carpintero-cocina-a-medida-terminada-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T09:46:33",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una empresa de cocinas a medida en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de cocinas a medida en ordenador y smartphone."
+      },
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web d'una empresa de cuines a mida adaptada a cada pantalla.",
+       "legende": "Exemple de web de cuines a mida en ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display a custom kitchen company's website in desktop and mobile layouts.",
+       "legende": "Example of a custom kitchen website on laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'un cuisiniste adapté aux écrans d'ordinateur et mobile.",
+       "legende": "Exemple de site de cuisines sur mesure sur ordinateur et smartphone."
+      }
+     }
     },
     "val": {
      "statut": "pret",
