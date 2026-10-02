@@ -7827,8 +7827,16 @@
    "site": "d'un studio de tatouage",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "estudio-tatuaje-tatuador-dibujando-maquette-es"
+     "statut": "fait",
+     "fichier": "estudio-tatuaje-tatuador-dibujando-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T13:36:04",
+     "textes": {
+      "es": {
+       "alt": "Portátil y móvil muestran la web de Tinta Norte Tattoo con un tatuador dibujando un diseño.",
+       "legende": "Vista de la web del estudio Tinta Norte Tattoo en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
