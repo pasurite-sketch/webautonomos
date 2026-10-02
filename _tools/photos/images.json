@@ -4551,6 +4551,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la web de Botiga Llorer amb una dependenta lliurant una bossa a una clienta.",
    "legende": "Vista de la web de Botiga Llorer en ordinador i mòbil."
+  },
+  "blog/en/mandatory-e-invoicing-for-freelancers.html": {
+   "sujet": "art-36",
+   "fichier": "facturacion-electronica-comercio-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Laptop and smartphone display the Laurel Deli website with a shopkeeper handing a paper bag to a customer.",
+   "legende": "Preview of the Laurel Deli website on desktop and mobile."
   }
  }
 }
