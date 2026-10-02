@@ -4236,6 +4236,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display a custom kitchen company's website in desktop and mobile layouts.",
    "legende": "Example of a custom kitchen website on laptop and smartphone."
+  },
+  "blog/fr/site-web-pour-menuisiers-et-renovation.html": {
+   "sujet": "art-25",
+   "fichier": "carpintero-cocina-a-medida-terminada-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site d'un cuisiniste en versions ordinateur et mobile.",
+   "legende": "Exemple de site de cuisines sur mesure sur ordinateur et smartphone."
   }
  }
 }

@@ -6910,8 +6910,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "carpintero-cocina-a-medida-terminada-maquette-fr"
+     "statut": "fait",
+     "fichier": "carpintero-cocina-a-medida-terminada-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T09:56:53",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'un cuisiniste en versions ordinateur et mobile.",
+       "legende": "Exemple de site de cuisines sur mesure sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
