@@ -6491,8 +6491,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "categorias-google-business-ferreteria-maquette-val"
+     "statut": "fait",
+     "fichier": "categorias-google-business-ferreteria-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T08:57:32",
+     "textes": {
+      "val": {
+       "alt": "Ordinador portàtil i mòbil mostren la web d'una ferreteria, adaptada a les versions d'escriptori i mòbil.",
+       "legende": "Exemple de web d'una ferreteria vista en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
