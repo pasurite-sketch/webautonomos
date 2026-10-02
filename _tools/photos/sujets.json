@@ -6886,8 +6886,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "carpintero-cocina-a-medida-terminada-maquette-val"
+     "statut": "fait",
+     "fichier": "carpintero-cocina-a-medida-terminada-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T09:53:06",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web d'una empresa de cuines a mida adaptada a cada pantalla.",
+       "legende": "Exemple de web de cuines a mida en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
