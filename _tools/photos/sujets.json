@@ -8892,8 +8892,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "nutricionista-consulta-alimentos-maquette-fr"
+     "statut": "fait",
+     "fichier": "nutricionista-consulta-alimentos-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T20:19:00",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Nutrition Verte avec une nutritionniste préparant des produits frais.",
+       "legende": "Aperçu du site Nutrition Verte sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
