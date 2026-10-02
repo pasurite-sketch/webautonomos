@@ -8330,8 +8330,16 @@
    "site": "d'un cabinet de podologie",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "clinica-podologia-consulta-maquette-es"
+     "statut": "fait",
+     "fichier": "clinica-podologia-consulta-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T17:41:28",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Podología Paso con una sala de tratamiento luminosa.",
+       "legende": "Vista de la web de Podología Paso en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
