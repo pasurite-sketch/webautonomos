@@ -4605,6 +4605,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Podología Paso con una sala de tratamiento luminosa.",
    "legende": "Vista de la web de Podología Paso en ordenador y móvil."
+  },
+  "blog/val/web-per-a-podolegs.html": {
+   "sujet": "art-38",
+   "fichier": "clinica-podologia-consulta-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web de Podologia Pas amb una podòloga preparant la consulta.",
+   "legende": "Vista de la web de Podologia Pas en ordinador i mòbil."
   }
  }
 }

@@ -8342,8 +8342,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "clinica-podologia-consulta-maquette-val"
+     "statut": "fait",
+     "fichier": "clinica-podologia-consulta-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T18:07:47",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web de Podologia Pas amb una podòloga preparant la consulta.",
+       "legende": "Vista de la web de Podologia Pas en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
