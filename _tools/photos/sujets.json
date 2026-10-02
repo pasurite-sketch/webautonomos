@@ -7589,8 +7589,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "inteligencia-artificial-autonoma-despacho-maquette-fr"
+     "statut": "fait",
+     "fichier": "inteligencia-artificial-autonoma-despacho-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T13:15:52",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Traductions Claire en versions ordinateur et mobile.",
+       "legende": "Exemple de site d'une traductrice indépendante sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {

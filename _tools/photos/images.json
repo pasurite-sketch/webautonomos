@@ -4416,6 +4416,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display the Clara Translations website in desktop and mobile layouts.",
    "legende": "Example of an independent translator's website on laptop and smartphone."
+  },
+  "blog/fr/ia-pour-independants-outils-concrets.html": {
+   "sujet": "art-32",
+   "fichier": "inteligencia-artificial-autonoma-despacho-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site Traductions Claire en versions ordinateur et mobile.",
+   "legende": "Exemple de site d'une traductrice indépendante sur ordinateur et smartphone."
   }
  }
 }
