@@ -8736,8 +8736,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "centro-estetica-cabina-tratamiento-maquette-val"
+     "statut": "fait",
+     "fichier": "centro-estetica-cabina-tratamiento-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T20:01:08",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d'Estètica Lluna amb una cabina de bellesa lluminosa.",
+       "legende": "Vista de la web d'Estètica Lluna en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
