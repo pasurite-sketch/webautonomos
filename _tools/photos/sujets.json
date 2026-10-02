@@ -8629,8 +8629,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "coach-sesion-grupo-maquette-fr"
+     "statut": "fait",
+     "fichier": "coach-sesion-grupo-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T19:58:28",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Coaching Cap avec une coach animant une séance de groupe.",
+       "legende": "Aperçu du site Coaching Cap sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
