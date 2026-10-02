@@ -8486,8 +8486,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "psicologo-sala-espera-consulta-maquette-en"
+     "statut": "fait",
+     "fichier": "psicologo-sala-espera-consulta-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T19:14:29",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Calma Psychology website with a calm, welcoming therapy room.",
+       "legende": "Preview of the Calma Psychology website on desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
