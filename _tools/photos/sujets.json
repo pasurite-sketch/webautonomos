@@ -7041,8 +7041,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-fr"
+     "statut": "fait",
+     "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T11:07:16",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'une maison d'hôtes avec une terrasse fleurie.",
+       "legende": "Exemple de site de maison d'hôtes sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {

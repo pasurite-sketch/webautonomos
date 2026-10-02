@@ -4272,6 +4272,15 @@
    "v": 1,
    "alt": "Laptop and smartphone display the Casa Buganvilla guesthouse website in desktop and mobile layouts.",
    "legende": "Example of a guesthouse website shown on laptop and smartphone."
+  },
+  "blog/fr/photos-et-videos-sur-sa-fiche-google.html": {
+   "sujet": "art-26",
+   "fichier": "fotos-ficha-google-alojamiento-terraza-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site d'une maison d'hôtes avec une terrasse fleurie.",
+   "legende": "Exemple de site de maison d'hôtes sur ordinateur et smartphone."
   }
  }
 }
