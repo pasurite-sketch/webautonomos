@@ -4524,6 +4524,15 @@
    "v": 1,
    "alt": "Laptop and smartphone display the Rueda Bikes website with a mechanic adjusting a bicycle saddle.",
    "legende": "Preview of the Rueda Bikes website on desktop and mobile."
+  },
+  "blog/fr/mesurer-les-resultats-de-son-site.html": {
+   "sujet": "art-35",
+   "fichier": "medir-resultados-web-negocio-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Ordinateur et smartphone affichant le site Vélos Roue Libre avec une vendeuse réglant une selle de vélo.",
+   "legende": "Aperçu du site Vélos Roue Libre sur ordinateur et smartphone."
   }
  }
 }

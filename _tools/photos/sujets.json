@@ -7994,8 +7994,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "medir-resultados-web-negocio-maquette-fr"
+     "statut": "fait",
+     "fichier": "medir-resultados-web-negocio-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T14:22:28",
+     "textes": {
+      "fr": {
+       "alt": "Ordinateur et smartphone affichant le site Vélos Roue Libre avec une vendeuse réglant une selle de vélo.",
+       "legende": "Aperçu du site Vélos Roue Libre sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
