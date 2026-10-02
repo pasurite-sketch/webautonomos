@@ -8462,8 +8462,16 @@
    "site": "d'un cabinet de psychologie",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "psicologo-sala-espera-consulta-maquette-es"
+     "statut": "fait",
+     "fichier": "psicologo-sala-espera-consulta-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T18:56:20",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Psicología Calma con una sala de terapia acogedora y luminosa.",
+       "legende": "Vista de la web de Psicología Calma en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
