@@ -9130,8 +9130,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "clinica-veterinaria-perro-consulta-maquette-val"
+     "statut": "fait",
+     "fichier": "clinica-veterinaria-perro-consulta-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T20:34:37",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Clínica Veterinària Petjades amb una veterinària i un golden retriever.",
+       "legende": "Vista de la web de Clínica Veterinària Petjades en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
