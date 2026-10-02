@@ -4182,6 +4182,15 @@
    "v": 1,
    "alt": "Ordinateur portable et smartphone affichent le même site de droguerie de quartier en versions ordinateur et mobile.",
    "legende": "Exemple de site de droguerie sur ordinateur et smartphone."
+  },
+  "blog/es/digitalizacion-autonomos-espana-por-donde-empezar.html": {
+   "sujet": "art-24",
+   "fichier": "digitalizacion-autonomos-taller-familiar-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de una carpintería familiar en versiones de escritorio y móvil.",
+   "legende": "Ejemplo de web de una carpintería familiar en ordenador y móvil."
   }
  }
 }

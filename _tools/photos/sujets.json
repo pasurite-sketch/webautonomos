@@ -6736,8 +6736,28 @@
    "site": "d'une menuiserie familiale",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "digitalizacion-autonomos-taller-familiar-maquette-es"
+     "statut": "fait",
+     "fichier": "digitalizacion-autonomos-taller-familiar-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T09:39:51",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una carpintería familiar en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de una carpintería familiar en ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web d'una fusteria familiar adaptada a cada pantalla.",
+       "legende": "Exemple de web d'una fusteria familiar en ordinador i mòbil."
+      },
+      "en": {
+       "alt": "Laptop and smartphone display a family carpentry website in desktop and mobile layouts.",
+       "legende": "Example of a family carpentry website on laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'une menuiserie familiale adapté à chaque écran.",
+       "legende": "Exemple de site de menuiserie familiale sur ordinateur et smartphone."
+      }
+     }
     },
     "val": {
      "statut": "pret",
