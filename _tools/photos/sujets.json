@@ -8605,8 +8605,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "coach-sesion-grupo-maquette-val"
+     "statut": "fait",
+     "fichier": "coach-sesion-grupo-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T19:23:17",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web de Coaching Rumb amb una sessió grupal en una sala lluminosa.",
+       "legende": "Vista de la web de Coaching Rumb en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
