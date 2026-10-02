@@ -8498,8 +8498,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "psicologo-sala-espera-consulta-maquette-fr"
+     "statut": "fait",
+     "fichier": "psicologo-sala-espera-consulta-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T19:18:46",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Cabinet Calme avec une salle d’attente accueillante et lumineuse.",
+       "legende": "Aperçu du site Cabinet Calme sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
