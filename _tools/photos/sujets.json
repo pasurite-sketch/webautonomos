@@ -6479,8 +6479,16 @@
    "site": "d'une quincaillerie",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "categorias-google-business-ferreteria-maquette-es"
+     "statut": "fait",
+     "fichier": "categorias-google-business-ferreteria-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-02T08:40:04",
+     "textes": {
+      "es": {
+       "alt": "Ordenador portátil y móvil muestran la web de una ferretería con la misma página adaptada a cada pantalla.",
+       "legende": "Ejemplo de web de una ferretería vista en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
