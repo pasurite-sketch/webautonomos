@@ -7982,8 +7982,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "medir-resultados-web-negocio-maquette-en"
+     "statut": "fait",
+     "fichier": "medir-resultados-web-negocio-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T14:09:47",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the Rueda Bikes website with a mechanic adjusting a bicycle saddle.",
+       "legende": "Preview of the Rueda Bikes website on desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
