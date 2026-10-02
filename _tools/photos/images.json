@@ -4749,6 +4749,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Nutrición Verde con una nutricionista y alimentos frescos.",
    "legende": "Vista de la web de Nutrición Verde en ordenador y móvil."
+  },
+  "blog/val/web-per-a-nutricionistes.html": {
+   "sujet": "art-42",
+   "fichier": "nutricionista-consulta-alimentos-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portàtil i un mòbil mostren la web de Nutrició Verda amb una nutricionista i aliments frescos.",
+   "legende": "Vista de la web de Nutrició Verda en ordinador i mòbil."
   }
  }
 }
