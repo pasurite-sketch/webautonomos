@@ -8234,8 +8234,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "crear-contenido-web-artesano-grabando-maquette-fr"
+     "statut": "fait",
+     "fichier": "crear-contenido-web-artesano-grabando-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T17:33:06",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Ferronnerie Enclume avec un artisan dans son atelier.",
+       "legende": "Aperçu du site Ferronnerie Enclume sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {

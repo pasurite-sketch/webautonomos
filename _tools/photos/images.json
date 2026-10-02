@@ -4587,6 +4587,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display the Yunque Ironworks website with a blacksmith speaking in his workshop.",
    "legende": "Example website for Yunque Ironworks on desktop and mobile."
+  },
+  "blog/fr/creer-du-contenu-web-sans-savoir-ecrire.html": {
+   "sujet": "art-37",
+   "fichier": "crear-contenido-web-artesano-grabando-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site Ferronnerie Enclume avec un artisan dans son atelier.",
+   "legende": "Aperçu du site Ferronnerie Enclume sur ordinateur et smartphone."
   }
  }
 }
