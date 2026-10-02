@@ -7970,8 +7970,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "medir-resultados-web-negocio-maquette-val"
+     "statut": "fait",
+     "fichier": "medir-resultados-web-negocio-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-02T14:08:10",
+     "textes": {
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web de Bicis Roda amb una dona ajustant una bicicleta.",
+       "legende": "Vista de la web de Bicis Roda en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
