@@ -7184,8 +7184,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "backlinks-locales-asociacion-comerciantes-maquette-fr"
+     "statut": "fait",
+     "fichier": "backlinks-locales-asociacion-comerciantes-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T11:29:19",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'une association de commerçants en versions adaptées.",
+       "legende": "Exemple de site d'une association de commerçants sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
