@@ -7732,8 +7732,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "google-ads-autonomo-reservas-maquette-fr"
+     "statut": "fait",
+     "fichier": "google-ads-autonomo-reservas-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-02T13:31:25",
+     "textes": {
+      "fr": {
+       "alt": "Ordinateur portable et smartphone affichant le site du gîte L'Orme en version ordinateur et mobile.",
+       "legende": "Aperçu du site du gîte L'Orme sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
