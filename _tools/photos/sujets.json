@@ -8354,8 +8354,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "clinica-podologia-consulta-maquette-en"
+     "statut": "fait",
+     "fichier": "clinica-podologia-consulta-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-02T18:33:16",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Paso Podiatry website with a podiatrist preparing a bright treatment room.",
+       "legende": "Preview of the Paso Podiatry website on desktop and mobile."
+      }
+     }
     },
     "fr": {
      "statut": "pret",

@@ -4614,6 +4614,15 @@
    "v": 1,
    "alt": "Un portàtil i un mòbil mostren la web de Podologia Pas amb una podòloga preparant la consulta.",
    "legende": "Vista de la web de Podologia Pas en ordinador i mòbil."
+  },
+  "blog/en/website-for-podiatrists.html": {
+   "sujet": "art-38",
+   "fichier": "clinica-podologia-consulta-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Paso Podiatry website with a podiatrist preparing a bright treatment room.",
+   "legende": "Preview of the Paso Podiatry website on desktop and mobile."
   }
  }
 }
