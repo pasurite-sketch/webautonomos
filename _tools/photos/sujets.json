@@ -10470,8 +10470,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "tareas-automatizar-prioridades-maquette-fr"
+     "statut": "fait",
+     "fichier": "tareas-automatizar-prioridades-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T17:10:45",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Atelier Cuir avec une artisane travaillant le cuir.",
+       "legende": "Exemple de site Atelier Cuir sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
