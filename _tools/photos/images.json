@@ -5307,6 +5307,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display the Cacao Chocolates site with handmade chocolates and a chocolatier.",
    "legende": "Example website of Cacao Chocolates on laptop and smartphone."
+  },
+  "blog/fr/ce-qu-il-ne-faut-jamais-automatiser.html": {
+   "sujet": "art-66",
+   "fichier": "no-automatizar-trato-humano-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site Chocolaterie Cacao avec une chocolatière et ses clients.",
+   "legende": "Exemple de site Chocolaterie Cacao sur ordinateur et smartphone."
   }
  }
 }

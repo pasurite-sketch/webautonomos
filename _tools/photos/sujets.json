@@ -10866,8 +10866,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "no-automatizar-trato-humano-maquette-fr"
+     "statut": "fait",
+     "fichier": "no-automatizar-trato-humano-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T19:23:01",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Chocolaterie Cacao avec une chocolatière et ses clients.",
+       "legende": "Exemple de site Chocolaterie Cacao sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
