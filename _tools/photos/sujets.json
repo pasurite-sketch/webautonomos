@@ -9392,8 +9392,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "marca-personal-autonomo-barberia-maquette-val"
+     "statut": "fait",
+     "fichier": "marca-personal-autonomo-barberia-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T10:41:58",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Barberia Navalla amb un barber preparant les seues eines.",
+       "legende": "Exemple de web de Barberia Navalla en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
