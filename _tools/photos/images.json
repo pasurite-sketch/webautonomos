@@ -5226,6 +5226,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web de Sabons Lavanda amb una artesana embolicant sabons.",
    "legende": "Exemple de web de Sabons Lavanda en ordinador i mòbil."
+  },
+  "blog/en/automate-without-coding.html": {
+   "sujet": "art-64",
+   "fichier": "automatizar-sin-programar-tienda-online-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Lavanda Soaps site with an artisan wrapping handmade soaps.",
+   "legende": "Example website of Lavanda Soaps on laptop and smartphone."
   }
  }
 }

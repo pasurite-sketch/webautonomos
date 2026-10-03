@@ -10590,8 +10590,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "automatizar-sin-programar-tienda-online-maquette-en"
+     "statut": "fait",
+     "fichier": "automatizar-sin-programar-tienda-online-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T17:36:07",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Lavanda Soaps site with an artisan wrapping handmade soaps.",
+       "legende": "Example website of Lavanda Soaps on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
