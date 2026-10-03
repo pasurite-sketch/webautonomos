@@ -10038,8 +10038,16 @@
    "site": "d'un salon de coiffure avec réservation en ligne",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "reservas-online-agenda-peluqueria-maquette-es"
+     "statut": "fait",
+     "fichier": "reservas-online-agenda-peluqueria-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T13:18:55",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Peluquería Onda con una peluquera atendiendo a una clienta.",
+       "legende": "Ejemplo de web de Peluquería Onda en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

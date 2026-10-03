@@ -5064,6 +5064,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Voyages Boussole avec deux associés échangeant autour d'un café.",
    "legende": "Exemple de site Voyages Boussole sur ordinateur et smartphone."
+  },
+  "blog/es/reservas-online-autonomos-2026.html": {
+   "sujet": "art-60",
+   "fichier": "reservas-online-agenda-peluqueria-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Peluquería Onda con una peluquera atendiendo a una clienta.",
+   "legende": "Ejemplo de web de Peluquería Onda en ordenador y móvil."
   }
  }
 }
