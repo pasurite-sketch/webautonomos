@@ -10182,8 +10182,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-val"
+     "statut": "fait",
+     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T14:23:47",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Fusteria Pi amb un fuster al seu taller de fusta.",
+       "legende": "Exemple de web de Fusteria Pi en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",

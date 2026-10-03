@@ -5109,6 +5109,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Carpintería Pino con un carpintero en su taller de madera.",
    "legende": "Ejemplo de web de Carpintería Pino en ordenador y móvil."
+  },
+  "blog/val/el-que-no-fas-per-falta-de-temps.html": {
+   "sujet": "art-61",
+   "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinador i un mòbil mostren la web de Fusteria Pi amb un fuster al seu taller de fusta.",
+   "legende": "Exemple de web de Fusteria Pi en ordinador i mòbil."
   }
  }
 }
