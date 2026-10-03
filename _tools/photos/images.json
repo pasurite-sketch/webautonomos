@@ -5091,6 +5091,15 @@
    "v": 1,
    "alt": "A laptop and smartphone show the Onda Hair website with a stylist serving a client in the salon.",
    "legende": "Example website of Onda Hair on a laptop and smartphone."
+  },
+  "blog/fr/reservation-en-ligne-pour-independants.html": {
+   "sujet": "art-60",
+   "fichier": "reservas-online-agenda-peluqueria-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site Salon Onde avec une coiffeuse et une cliente au salon.",
+   "legende": "Exemple de site Salon Onde sur ordinateur et smartphone."
   }
  }
 }

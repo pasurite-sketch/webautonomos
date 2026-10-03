@@ -10074,8 +10074,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "reservas-online-agenda-peluqueria-maquette-fr"
+     "statut": "fait",
+     "fichier": "reservas-online-agenda-peluqueria-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T13:43:12",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Salon Onde avec une coiffeuse et une cliente au salon.",
+       "legende": "Exemple de site Salon Onde sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
