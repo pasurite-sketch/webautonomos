@@ -4956,6 +4956,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Sports Sommet avec une vendeuse présentant des chaussures de randonnée.",
    "legende": "Exemple de site Sports Sommet sur ordinateur et smartphone."
+  },
+  "blog/es/cuanto-cuesta-papeleo-autonomo.html": {
+   "sujet": "art-48",
+   "fichier": "papeleo-autonomo-noche-facturas-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Fontanería Grifo con un fontanero cansado ante su ordenador.",
+   "legende": "Ejemplo de web de Fontanería Grifo en ordenador y móvil."
   }
  }
 }

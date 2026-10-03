@@ -9643,8 +9643,16 @@
    "site": "d'un plombier",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "papeleo-autonomo-noche-facturas-maquette-es"
+     "statut": "fait",
+     "fichier": "papeleo-autonomo-noche-facturas-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T11:42:51",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Fontanería Grifo con un fontanero cansado ante su ordenador.",
+       "legende": "Ejemplo de web de Fontanería Grifo en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
