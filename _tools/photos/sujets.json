@@ -10842,8 +10842,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "no-automatizar-trato-humano-maquette-val"
+     "statut": "fait",
+     "fichier": "no-automatizar-trato-humano-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T18:42:04",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Xocolates Cacau amb bombons artesans i una xocolatera.",
+       "legende": "Exemple de web de Xocolates Cacau en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
