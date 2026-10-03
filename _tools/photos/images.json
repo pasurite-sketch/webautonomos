@@ -4929,6 +4929,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Deportes Cumbre con una dependienta enseñando botas de montaña.",
    "legende": "Ejemplo de web de Deportes Cumbre en ordenador y móvil."
+  },
+  "blog/val/preguntes-i-respostes-de-la-fitxa.html": {
+   "sujet": "art-47",
+   "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinador i un mòbil mostren la web d'Esports Cim amb una dependenta ensenyant botes de muntanya.",
+   "legende": "Exemple de web d'Esports Cim en ordinador i mòbil."
   }
  }
 }
