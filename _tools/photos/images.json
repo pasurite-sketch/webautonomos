@@ -5280,6 +5280,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Envois Rapides avec un entrepôt et des colis.",
    "legende": "Exemple de site Envois Rapides sur ordinateur et smartphone."
+  },
+  "blog/es/que-no-deberias-automatizar-nunca.html": {
+   "sujet": "art-66",
+   "fichier": "no-automatizar-trato-humano-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Chocolates Cacao con una chocolatera y bombones.",
+   "legende": "Ejemplo de web de Chocolates Cacao en ordenador y móvil."
   }
  }
 }
