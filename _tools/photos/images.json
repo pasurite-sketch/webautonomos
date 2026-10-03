@@ -5010,6 +5010,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web de Gestoria Compte amb una assessora mirant per la finestra.",
    "legende": "Exemple de web de Gestoria Compte en ordinador i mòbil."
+  },
+  "blog/en/e-invoicing-deadlines-france-spain.html": {
+   "sujet": "art-49",
+   "fichier": "factura-electronica-verifactu-gestoria-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone show the Cuenta Advisors website with an advisor looking out an office window.",
+   "legende": "Example website of Cuenta Advisors on a laptop and smartphone."
   }
  }
 }

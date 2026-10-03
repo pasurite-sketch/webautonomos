@@ -9799,8 +9799,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "factura-electronica-verifactu-gestoria-maquette-en"
+     "statut": "fait",
+     "fichier": "factura-electronica-verifactu-gestoria-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T12:44:03",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone show the Cuenta Advisors website with an advisor looking out an office window.",
+       "legende": "Example website of Cuenta Advisors on a laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
