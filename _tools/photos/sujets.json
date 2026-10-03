@@ -10302,8 +10302,16 @@
    "site": "d'une petite entreprise",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "coste-automatizar-tiempo-calculo-maquette-es"
+     "statut": "fait",
+     "fichier": "coste-automatizar-tiempo-calculo-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T14:53:53",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Taller Reloj con un taller de reparación de relojes.",
+       "legende": "Ejemplo de web de Taller Reloj en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

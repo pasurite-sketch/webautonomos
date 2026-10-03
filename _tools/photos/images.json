@@ -5136,6 +5136,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Menuiserie Pin avec un menuisier dans son atelier.",
    "legende": "Exemple de site Menuiserie Pin sur ordinateur et smartphone."
+  },
+  "blog/es/cuanto-cuesta-automatizar-un-proceso-formula.html": {
+   "sujet": "art-62",
+   "fichier": "coste-automatizar-tiempo-calculo-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Taller Reloj con un taller de reparación de relojes.",
+   "legende": "Ejemplo de web de Taller Reloj en ordenador y móvil."
   }
  }
 }
