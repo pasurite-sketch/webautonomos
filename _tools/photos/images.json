@@ -5181,6 +5181,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Taller Cuero con una artesana trabajando en su taller.",
    "legende": "Ejemplo de web de Taller Cuero en ordenador y móvil."
+  },
+  "blog/val/quines-tasques-automatitzar-primer.html": {
+   "sujet": "art-63",
+   "fichier": "tareas-automatizar-prioridades-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinador i un mòbil mostren la web de Taller Cuiro amb una artesana treballant en cuir.",
+   "legende": "Exemple de web de Taller Cuiro en ordinador i mòbil."
   }
  }
 }

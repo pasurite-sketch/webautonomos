@@ -10446,8 +10446,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "tareas-automatizar-prioridades-maquette-val"
+     "statut": "fait",
+     "fichier": "tareas-automatizar-prioridades-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T15:44:18",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Taller Cuiro amb una artesana treballant en cuir.",
+       "legende": "Exemple de web de Taller Cuiro en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
