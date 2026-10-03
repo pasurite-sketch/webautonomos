@@ -37,7 +37,7 @@ webautonomos/
 ├── blog-spa-data.json      # Données SPA pré-générées (3 langues) — legacy
 ├── template-article.html   # Template HTML de référence pour les articles
 ├── _tools/                 # Outillage blog (non déployé, cf. .assetsignore)
-│   ├── publish_next.py     # Publie le prochain article dû (appelé par le GitHub Action)
+│   ├── publish_next.py     # Publie le prochain article dû (via publier_avec_reprise.sh : timer du VPS, GitHub Action en secours)
 │   ├── add_article.py      # Insertion SPA + sitemap (utilisé par publish_next.py)
 │   └── queue/              # File d'attente : 1 JSON par article à paraître
 │       └── published/      # Articles déjà publiés (déplacés ici après publication)
@@ -45,7 +45,7 @@ webautonomos/
 │   └── publish-articles.js # ⚠️ Legacy, plus appelé par aucun workflow
 ├── .github/
 │   └── workflows/
-│       ├── publish-blog.yml # Publication blog (cron lun/jeu 06:00 UTC) + deploy
+│       ├── publish-blog.yml # Secours de la publication blog (le VPS publie en premier)
 │       └── deploy.yml       # Déploiement Cloudflare sur push `main`
 └── blog/                   # Articles de blog (fichiers HTML individuels)
     └── es/                 # Articles en espagnol (22 articles)
@@ -337,7 +337,40 @@ l'entreprise ou sur le marché d'où elle facture ne se transpose pas.
 
 ## Workflow de Publication
 
-### Publication automatique (GitHub Action)
+### Publication du blog
+
+Depuis le 03/10/2026, **la source principale est le VPS** (OVH, `ssh manada-vps`, utilisateur `ubuntu`) : un timer
+systemd utilisateur publie lundi et jeudi à 06:00 UTC. Le GitHub Action `publish-blog.yml` reste en place comme
+**secours** : il tourne au même créneau (souvent avec des heures de retard), et comme un article publié sort de la file,
+il ne trouve plus rien à publier quand le VPS est passé.
+
+- Timer `webautonomos-blog.timer` (`OnCalendar=Mon,Thu *-*-* 06:00:00 UTC`, `Persistent=true` : un passage manqué
+  pendant une coupure est rattrapé au redémarrage) → service `webautonomos-blog.service` (oneshot, 30 min max).
+  Unités dans `~/.config/systemd/user/` (linger actif, comme photos-bot).
+- Le service lance `~/blog-publisher/run.sh`, **hors du clone** (le reset --hard ne peut pas le réécrire) : verrou
+  flock, `ALLOW_LOCAL=1 bash _tools/publier_avec_reprise.sh` dans le clone dédié, puis si `published=true`, attend
+  que `https://webautonomos.es/blog/es/<slug>` réponde 200 (15 min max, le temps que `deploy.yml` déploie).
+- Clone dédié : `~/blog-publisher/webautonomos` (superficiel, `--depth 1`), poussé avec la deploy key
+  `~/.ssh/webautonomos_blog` via l'alias SSH `github-blog`. Ne jamais lancer `publier_avec_reprise.sh` dans le clone
+  de photos-bot (`~/photos/webautonomos`). Le push passe par une deploy key, pas par le GITHUB_TOKEN : il déclenche
+  donc `deploy.yml`, aucun token Cloudflare n'est sur le VPS.
+- Alerte : healthchecks.io, check `webautonomos-blog` (cron `0 6 * * 1,4` UTC, 1 h de grâce). `run.sh` envoie
+  start / succès / fail (avec la fin du journal) ; l'absence de ping (VPS éteint, timer arrêté) alerte aussi.
+  L'URL de ping est dans `~/.config/blog-publisher/env` (600, hors dépôt).
+
+Diagnostic (sur le VPS) :
+
+```bash
+journalctl --user -u webautonomos-blog -n 100 --no-pager   # journal des passages
+cat ~/blog-publisher/logs/dernier.log                       # dernier passage seul
+systemctl --user list-timers webautonomos-blog.timer        # prochain passage
+systemctl --user status webautonomos-blog.service           # résultat du dernier passage
+systemctl --user start webautonomos-blog.service            # relance à la main (publie seulement si un article est dû)
+```
+
+Secours : Actions → « Publier un article de blog » → Run workflow.
+
+### Publication automatique (GitHub Action, secours)
 
 Le script `_tools/publish_next.py` est exécuté par `.github/workflows/publish-blog.yml` chaque lundi et jeudi à 06:00 UTC (~08:00 Madrid en été). Il :
 
