@@ -5118,6 +5118,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web de Fusteria Pi amb un fuster al seu taller de fusta.",
    "legende": "Exemple de web de Fusteria Pi en ordinador i mòbil."
+  },
+  "blog/en/what-you-never-get-round-to.html": {
+   "sujet": "art-61",
+   "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone show the Pino Carpentry website with a craftsman in his woodworking workshop.",
+   "legende": "Example website of Pino Carpentry on a laptop and smartphone."
   }
  }
 }

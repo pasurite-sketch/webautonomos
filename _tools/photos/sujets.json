@@ -10194,8 +10194,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-en"
+     "statut": "fait",
+     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T14:39:42",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone show the Pino Carpentry website with a craftsman in his woodworking workshop.",
+       "legende": "Example website of Pino Carpentry on a laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
