@@ -10050,8 +10050,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "reservas-online-agenda-peluqueria-maquette-val"
+     "statut": "fait",
+     "fichier": "reservas-online-agenda-peluqueria-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T13:22:03",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Perruqueria Ona amb una perruquera atenent una clienta.",
+       "legende": "Exemple de web de Perruqueria Ona en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",

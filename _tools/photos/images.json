@@ -5073,6 +5073,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Peluquería Onda con una peluquera atendiendo a una clienta.",
    "legende": "Ejemplo de web de Peluquería Onda en ordenador y móvil."
+  },
+  "blog/val/reserves-en-linia-per-a-autonoms.html": {
+   "sujet": "art-60",
+   "fichier": "reservas-online-agenda-peluqueria-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinador i un mòbil mostren la web de Perruqueria Ona amb una perruquera atenent una clienta.",
+   "legende": "Exemple de web de Perruqueria Ona en ordinador i mòbil."
   }
  }
 }
