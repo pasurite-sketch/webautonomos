@@ -9404,8 +9404,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "marca-personal-autonomo-barberia-maquette-en"
+     "statut": "fait",
+     "fichier": "marca-personal-autonomo-barberia-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T10:45:11",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone show the Navaja Barbers website with a barber arranging tools in his salon.",
+       "legende": "Example website shown on a laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
