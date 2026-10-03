@@ -4866,6 +4866,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web de Cafè Ràpid amb un cambrer portant dos cafès en una terrassa.",
    "legende": "Vista de la web de Cafè Ràpid en ordinador i mòbil."
+  },
+  "blog/en/website-speed-and-search-rankings.html": {
+   "sujet": "art-45",
+   "fichier": "velocidad-web-servicio-rapido-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Café Rápido website with a barista carrying two coffees on a busy terrace.",
+   "legende": "Example website shown on a laptop and smartphone."
   }
  }
 }

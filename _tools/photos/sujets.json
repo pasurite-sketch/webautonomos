@@ -9273,8 +9273,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "velocidad-web-servicio-rapido-maquette-en"
+     "statut": "fait",
+     "fichier": "velocidad-web-servicio-rapido-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T10:29:52",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Café Rápido website with a barista carrying two coffees on a busy terrace.",
+       "legende": "Example website shown on a laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
