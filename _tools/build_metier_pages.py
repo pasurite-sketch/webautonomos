@@ -866,7 +866,7 @@ MENU['en'] = dict(
          ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish homeowners find you as "
                                            "easily as expats do."),
          ('📸', 'Your work, shown properly', "Kitchens, wardrobes, doors, staircases: your project photos organised "
-                                            "by type of job."),
+                                            "by type of job, to showcase your best work."),
          ('📍', 'Found locally', "Titles and copy written for searches like “carpenter Jávea” or “kitchen fitter "
                                 "Torrevieja”, in both languages.")],
     where_t='Anywhere in Spain',
@@ -888,7 +888,7 @@ MENU['en'] = dict(
         ('what-to-include', 'On your website', "What to put on your carpentry website",
          '<p class="legal-intro">A homeowner who lands on your website wants to see quickly whether you do the '
          'kind of work they need, in their area, and how to reach you. These are the parts that answer those '
-         'questions and make it easier for them to ask you for a quote. In a clean, uncluttered layout, close-up '
+         'questions and make it easier for them to contact you. In a clean, uncluttered layout, close-up '
          'photos of joints, grain and the finish on a staircase or worktop show your craftsmanship before anyone '
          'picks up the phone.</p>'
          '<div class="why-g">'
@@ -925,7 +925,7 @@ MENU['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F373</div>'
          '<h3>Kitchen fitting</h3>'
          '<p>Units, worktops and installation: homeowners comparing kitchen fitters want to see finished projects '
-         'before they request a quote.</p></div>'
+         'before they get in touch.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F6AA</div>'
          '<h3>Doors, windows and staircases</h3>'
          '<p>Smaller jobs bring in work between larger projects, so give them a clear place on your site '
@@ -965,7 +965,7 @@ MENU['en'] = dict(
          '<li>An incomplete legal notice, missing the NIF or NIE that the LSSI requires</li>'
          '</ul></div>'
          '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>How we help you avoid them</h3>'
-         '<p>Your website is built around your own project photos, names your trade and the areas you cover in '
+         '<p>Your website is built around your own photos, names your trade and the areas you cover in '
          'its titles and copy, and comes with a contact form, a WhatsApp button and legal pages (legal notice, '
          'privacy and cookies). You see it before you pay anything, you can ask for as many changes as you want '
          'before it goes live, and if you decide not to go ahead, you pay nothing.</p></div>'),
@@ -983,11 +983,11 @@ MENU['en'] = dict(
          '<li>Every enquiry goes directly to your email and WhatsApp</li>'
          '<li>Only your own portfolio and projects are shown, with no competitors on the same page</li>'
          '<li>Your own .es domain name, included for the first year</li>'
-         '<li>Designed around your own project images and the towns you cover</li>'
+         '<li>Designed around your own images and the towns you cover</li>'
          '</ul></div>'
          '</div>'),
         ('technical-basics', 'Behind the scenes', 'What runs behind your website',
-         '<p class="legal-intro">Alongside the pages you and your customers see, a few technical basics come '
+         '<p class="legal-intro">Alongside the pages people see, a few technical basics come '
          'with every website we build.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F512</div>'
@@ -1070,7 +1070,16 @@ MENU['en'] = dict(
          ("Can I show before-and-after shots of a finished project?",
           "Yes, before-and-after shots of a kitchen fitting or a finished staircase can help a homeowner compare "
           "carpenters, as long as they're genuine pictures from your own projects. We build your gallery around "
-          "whatever pictures you send us.")],
+          "whatever pictures you send us."),
+         ("What should I check before I start with a web design company?",
+          "Ask to see a working demo before you pay anything, and read the terms: is there a setup fee or a "
+          "minimum contract, and is the domain name registered in your name? Then check that the demo shows your "
+          "own work grouped by type of job, names the towns you cover and is easy to use on a phone."),
+         ("Is a custom design better than a template for a carpenter's website?",
+          "What matters most is that the site shows your own work: your project photos grouped by type of job, "
+          "the towns you cover and a quick way to contact you. We use our own system built from components we've "
+          "already tested, and our team writes the copy and arranges the layout around your own details and "
+          "photos. That is part of how we keep the price low, and you see the demo before you pay anything.")],
     final_t='See your website before you pay a thing',
     final_sd="Free demo within 24 hours, with your projects and legal pages. No setup fee, no lock-in.",
 )
