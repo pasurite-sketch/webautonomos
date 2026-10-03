@@ -9811,8 +9811,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "factura-electronica-verifactu-gestoria-maquette-fr"
+     "statut": "fait",
+     "fichier": "factura-electronica-verifactu-gestoria-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T12:48:58",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Cabinet Compte Juste avec une gestionnaire près d'une fenêtre.",
+       "legende": "Exemple de site Cabinet Compte Juste sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
