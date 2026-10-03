@@ -5154,6 +5154,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web de Taller Rellotge amb eines de reparació de rellotges.",
    "legende": "Exemple de web de Taller Rellotge en ordinador i mòbil."
+  },
+  "blog/en/cuanto-cuesta-automatizar-un-proceso-formula.html": {
+   "sujet": "art-62",
+   "fichier": "coste-automatizar-tiempo-calculo-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Reloj Watch Repairs site with watch repair tools and services.",
+   "legende": "Example website of Reloj Watch Repairs on laptop and smartphone."
   }
  }
 }

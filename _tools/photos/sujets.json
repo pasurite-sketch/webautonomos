@@ -10326,8 +10326,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "coste-automatizar-tiempo-calculo-maquette-en"
+     "statut": "fait",
+     "fichier": "coste-automatizar-tiempo-calculo-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T15:00:13",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Reloj Watch Repairs site with watch repair tools and services.",
+       "legende": "Example website of Reloj Watch Repairs on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
