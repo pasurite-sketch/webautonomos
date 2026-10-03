@@ -5262,6 +5262,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web d'Enviaments Ràpids amb un magatzem i caixes.",
    "legende": "Exemple de web d'Enviaments Ràpids en ordinador i mòbil."
+  },
+  "blog/en/costliest-automation-mistakes.html": {
+   "sujet": "art-65",
+   "fichier": "errores-automatizacion-caros-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Rápidos Deliveries site with a warehouse and local parcel service.",
+   "legende": "Example website of Rápidos Deliveries on laptop and smartphone."
   }
  }
 }

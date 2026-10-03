@@ -10722,8 +10722,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "errores-automatizacion-caros-maquette-en"
+     "statut": "fait",
+     "fichier": "errores-automatizacion-caros-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T18:29:25",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Rápidos Deliveries site with a warehouse and local parcel service.",
+       "legende": "Example website of Rápidos Deliveries on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
