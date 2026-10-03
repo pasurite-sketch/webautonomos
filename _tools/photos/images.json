@@ -5244,6 +5244,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Savonnerie Lavande avec une artisane emballant des savons.",
    "legende": "Exemple de site Savonnerie Lavande sur ordinateur et smartphone."
+  },
+  "blog/es/errores-mas-caros-al-automatizar.html": {
+   "sujet": "art-65",
+   "fichier": "errores-automatizacion-caros-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Envíos Rápidos con un almacén y cajas en movimiento.",
+   "legende": "Ejemplo de web de Envíos Rápidos en ordenador y móvil."
   }
  }
 }

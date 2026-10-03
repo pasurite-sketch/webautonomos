@@ -10698,8 +10698,16 @@
    "site": "d'une petite entreprise de logistique",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "errores-automatizacion-caros-maquette-es"
+     "statut": "fait",
+     "fichier": "errores-automatizacion-caros-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T17:52:42",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Envíos Rápidos con un almacén y cajas en movimiento.",
+       "legende": "Ejemplo de web de Envíos Rápidos en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
