@@ -9775,8 +9775,16 @@
    "site": "d'un cabinet de gestion",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "factura-electronica-verifactu-gestoria-maquette-es"
+     "statut": "fait",
+     "fichier": "factura-electronica-verifactu-gestoria-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T12:09:27",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Gestoría Cuenta con una asesora mirando por la ventana.",
+       "legende": "Ejemplo de web de Gestoría Cuenta en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
