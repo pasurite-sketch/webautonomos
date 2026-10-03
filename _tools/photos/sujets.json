@@ -9249,8 +9249,16 @@
    "site": "d'un café",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "velocidad-web-servicio-rapido-maquette-es"
+     "statut": "fait",
+     "fichier": "velocidad-web-servicio-rapido-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T10:22:45",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Café Rápido con un camarero llevando dos cafés en una terraza.",
+       "legende": "Vista de la web de Café Rápido en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
