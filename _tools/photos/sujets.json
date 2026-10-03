@@ -10854,8 +10854,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "no-automatizar-trato-humano-maquette-en"
+     "statut": "fait",
+     "fichier": "no-automatizar-trato-humano-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T19:19:56",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Cacao Chocolates site with handmade chocolates and a chocolatier.",
+       "legende": "Example website of Cacao Chocolates on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
