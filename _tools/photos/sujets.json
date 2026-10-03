@@ -10314,8 +10314,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "coste-automatizar-tiempo-calculo-maquette-val"
+     "statut": "fait",
+     "fichier": "coste-automatizar-tiempo-calculo-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T14:57:20",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Taller Rellotge amb eines de reparació de rellotges.",
+       "legende": "Exemple de web de Taller Rellotge en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
