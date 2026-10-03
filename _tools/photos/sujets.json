@@ -11130,8 +11130,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "automatizar-proceso-paso-a-paso-maquette-fr"
+     "statut": "fait",
+     "fichier": "automatizar-proceso-paso-a-paso-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T20:31:13",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Meubles Noyer avec un artisan montant un meuble.",
+       "legende": "Exemple de site Meubles Noyer sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
