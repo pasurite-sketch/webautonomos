@@ -10566,8 +10566,16 @@
    "site": "d'une boutique en ligne de savons artisanaux",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "automatizar-sin-programar-tienda-online-maquette-es"
+     "statut": "fait",
+     "fichier": "automatizar-sin-programar-tienda-online-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T17:23:32",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Jabones Lavanda con una artesana envolviendo jabones.",
+       "legende": "Ejemplo de web de Jabones Lavanda en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

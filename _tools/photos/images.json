@@ -5208,6 +5208,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Atelier Cuir avec une artisane travaillant le cuir.",
    "legende": "Exemple de site Atelier Cuir sur ordinateur et smartphone."
+  },
+  "blog/es/automatizar-sin-saber-programar.html": {
+   "sujet": "art-64",
+   "fichier": "automatizar-sin-programar-tienda-online-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Jabones Lavanda con una artesana envolviendo jabones.",
+   "legende": "Ejemplo de web de Jabones Lavanda en ordenador y móvil."
   }
  }
 }
