@@ -9787,8 +9787,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "factura-electronica-verifactu-gestoria-maquette-val"
+     "statut": "fait",
+     "fichier": "factura-electronica-verifactu-gestoria-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T12:24:20",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Gestoria Compte amb una assessora mirant per la finestra.",
+       "legende": "Exemple de web de Gestoria Compte en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
