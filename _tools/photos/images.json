@@ -4875,6 +4875,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display the Café Rápido website with a barista carrying two coffees on a busy terrace.",
    "legende": "Example website shown on a laptop and smartphone."
+  },
+  "blog/fr/vitesse-du-site-et-referencement.html": {
+   "sujet": "art-45",
+   "fichier": "velocidad-web-servicio-rapido-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site Café Express avec un serveur apportant deux cafés sur une terrasse.",
+   "legende": "Exemple de site affiché sur ordinateur et smartphone."
   }
  }
 }

@@ -9285,8 +9285,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "velocidad-web-servicio-rapido-maquette-fr"
+     "statut": "fait",
+     "fichier": "velocidad-web-servicio-rapido-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T10:33:05",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Café Express avec un serveur apportant deux cafés sur une terrasse.",
+       "legende": "Exemple de site affiché sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
