@@ -5046,6 +5046,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web de Viatges Brúixola amb dos socis conversant amb cafè.",
    "legende": "Exemple de web de Viatges Brúixola en ordinador i mòbil."
+  },
+  "blog/en/hire-or-automate.html": {
+   "sujet": "art-50",
+   "fichier": "contratar-o-automatizar-decision-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone show the Brújula Travel website with two colleagues discussing travel over coffee.",
+   "legende": "Example website of Brújula Travel on a laptop and smartphone."
   }
  }
 }

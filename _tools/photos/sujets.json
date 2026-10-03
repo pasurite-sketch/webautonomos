@@ -9931,8 +9931,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "contratar-o-automatizar-decision-maquette-en"
+     "statut": "fait",
+     "fichier": "contratar-o-automatizar-decision-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T13:00:34",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone show the Brújula Travel website with two colleagues discussing travel over coffee.",
+       "legende": "Example website of Brújula Travel on a laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
