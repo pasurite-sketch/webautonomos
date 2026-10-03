@@ -5028,6 +5028,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Cabinet Compte Juste avec une gestionnaire près d'une fenêtre.",
    "legende": "Exemple de site Cabinet Compte Juste sur ordinateur et smartphone."
+  },
+  "blog/es/contratar-o-automatizar.html": {
+   "sujet": "art-50",
+   "fichier": "contratar-o-automatizar-decision-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Viajes Brújula con dos socios conversando con café.",
+   "legende": "Ejemplo de web de Viajes Brújula en ordenador y móvil."
   }
  }
 }

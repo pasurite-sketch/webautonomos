@@ -9907,8 +9907,16 @@
    "site": "d'une agence de voyages",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "contratar-o-automatizar-decision-maquette-es"
+     "statut": "fait",
+     "fichier": "contratar-o-automatizar-decision-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T12:56:17",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Viajes Brújula con dos socios conversando con café.",
+       "legende": "Ejemplo de web de Viajes Brújula en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
