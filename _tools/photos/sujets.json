@@ -9943,8 +9943,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "contratar-o-automatizar-decision-maquette-fr"
+     "statut": "fait",
+     "fichier": "contratar-o-automatizar-decision-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T13:13:40",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Voyages Boussole avec deux associés échangeant autour d'un café.",
+       "legende": "Exemple de site Voyages Boussole sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {

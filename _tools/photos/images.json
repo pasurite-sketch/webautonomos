@@ -5055,6 +5055,15 @@
    "v": 1,
    "alt": "A laptop and smartphone show the Brújula Travel website with two colleagues discussing travel over coffee.",
    "legende": "Example website of Brújula Travel on a laptop and smartphone."
+  },
+  "blog/fr/embaucher-ou-automatiser.html": {
+   "sujet": "art-50",
+   "fichier": "contratar-o-automatizar-decision-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site Voyages Boussole avec deux associés échangeant autour d'un café.",
+   "legende": "Exemple de site Voyages Boussole sur ordinateur et smartphone."
   }
  }
 }
