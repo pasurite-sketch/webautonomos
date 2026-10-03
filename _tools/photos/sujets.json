@@ -9535,8 +9535,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-en"
+     "statut": "fait",
+     "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T11:36:06",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone show the Cumbre Outdoor website with a shop assistant presenting hiking boots.",
+       "legende": "Example website of Cumbre Outdoor on a laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
