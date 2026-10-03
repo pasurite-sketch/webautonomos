@@ -9655,8 +9655,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "papeleo-autonomo-noche-facturas-maquette-val"
+     "statut": "fait",
+     "fichier": "papeleo-autonomo-noche-facturas-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T11:44:54",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Fontaneria Aixeta amb un lampista cansat davant l'ordinador.",
+       "legende": "Exemple de web de Fontaneria Aixeta en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
