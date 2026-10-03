@@ -553,7 +553,7 @@ PHYSIO = dict(
           "charge.")] + FAQ_COMMUNES,
     extra=[
         ('booking-enquiries', '', "Can patients book appointments through the website?",
-         '<p class="legal-intro">The website isn\'t an online booking system, so there\'s no new software for you '
+         '<p class="legal-intro">It isn\'t an online booking system, so there\'s no new software for you '
          'or your patients to learn.</p>\n  <div class="legal-we"><h3>How patients reach you</h3><ul>'
          '<li><span>A contact form that sends every enquiry straight to your own email inbox</span></li>'
          '<li><span>A WhatsApp button, for patients who prefer a faster reply</span></li>'
@@ -561,7 +561,7 @@ PHYSIO = dict(
         ('seo-basics', '', "Does the website help me appear in Google searches?",
          '<p class="legal-intro">Both plans include basic search engine optimisation (SEO). It isn\'t ongoing '
          'local SEO work — if you want that, ask us and we\'ll explain what\'s involved.</p>\n  '
-         '<div class="legal-we"><h3>What\'s included in your website\'s SEO</h3><ul>'
+         '<div class="legal-we"><h3>What the basic SEO covers</h3><ul>'
          '<li><span>Page titles and copy that name your treatments and your area</span></li>'
          '<li><span>Your details kept consistent across your website and your Google Business Profile</span></li>'
          '</ul></div>'),
@@ -572,8 +572,8 @@ PHYSIO = dict(
          'goes live. If your business changes later — new opening hours, a treatment you now offer — just '
          'tell us: one change a month is included in both plans.</p>'),
         ('worth-it', '', "Is a website worth it for a small physiotherapy business?",
-         '<p class="legal-intro">Many patients look for a physio online, often from their phone, and check your '
-         'website before they call, even when someone has recommended you by name. Even if you work alone, '
+         '<p class="legal-intro">Many patients look for a physio online, often from their phone, and check what '
+         'you offer before they call, even when someone has recommended you by name. Even if you work alone, '
          'a clear, simple site does the job of a good reception desk, answering the questions patients would '
          'otherwise phone to ask.</p>\n  '
          '<div class="legal-we"><h3>What patients look for</h3><ul>'
