@@ -9547,8 +9547,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-fr"
+     "statut": "fait",
+     "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T11:39:43",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Sports Sommet avec une vendeuse présentant des chaussures de randonnée.",
+       "legende": "Exemple de site Sports Sommet sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {

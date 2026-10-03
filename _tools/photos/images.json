@@ -4947,6 +4947,15 @@
    "v": 1,
    "alt": "A laptop and smartphone show the Cumbre Outdoor website with a shop assistant presenting hiking boots.",
    "legende": "Example website of Cumbre Outdoor on a laptop and smartphone."
+  },
+  "blog/fr/questions-reponses-fiche-google.html": {
+   "sujet": "art-47",
+   "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site Sports Sommet avec une vendeuse présentant des chaussures de randonnée.",
+   "legende": "Exemple de site Sports Sommet sur ordinateur et smartphone."
   }
  }
 }
