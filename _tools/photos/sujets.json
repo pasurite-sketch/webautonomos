@@ -9679,8 +9679,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "papeleo-autonomo-noche-facturas-maquette-fr"
+     "statut": "fait",
+     "fichier": "papeleo-autonomo-noche-facturas-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T11:48:11",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Plomberie Robinet avec un plombier fatigué dans sa cuisine.",
+       "legende": "Exemple de site Plomberie Robinet sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
