@@ -10062,8 +10062,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "reservas-online-agenda-peluqueria-maquette-en"
+     "statut": "fait",
+     "fichier": "reservas-online-agenda-peluqueria-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T13:28:08",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone show the Onda Hair website with a stylist serving a client in the salon.",
+       "legende": "Example website of Onda Hair on a laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",

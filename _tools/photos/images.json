@@ -5082,6 +5082,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web de Perruqueria Ona amb una perruquera atenent una clienta.",
    "legende": "Exemple de web de Perruqueria Ona en ordinador i mòbil."
+  },
+  "blog/en/online-booking-for-freelancers.html": {
+   "sujet": "art-60",
+   "fichier": "reservas-online-agenda-peluqueria-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone show the Onda Hair website with a stylist serving a client in the salon.",
+   "legende": "Example website of Onda Hair on a laptop and smartphone."
   }
  }
 }
