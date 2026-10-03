@@ -10974,8 +10974,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "mantenimiento-automatizacion-coste-maquette-val"
+     "statut": "fait",
+     "fichier": "mantenimiento-automatizacion-coste-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T19:28:43",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Taller Motor amb un mecànic revisant una màquina.",
+       "legende": "Exemple de web de Taller Motor en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",

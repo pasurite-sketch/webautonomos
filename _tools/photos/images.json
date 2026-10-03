@@ -5325,6 +5325,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Taller Motor con un mecánico revisando una máquina.",
    "legende": "Ejemplo de web de Taller Motor en ordenador y móvil."
+  },
+  "blog/val/manteniment-el-cost-amagat-de-l-automatitzacio.html": {
+   "sujet": "art-67",
+   "fichier": "mantenimiento-automatizacion-coste-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinador i un mòbil mostren la web de Taller Motor amb un mecànic revisant una màquina.",
+   "legende": "Exemple de web de Taller Motor en ordinador i mòbil."
   }
  }
 }
