@@ -9380,8 +9380,16 @@
    "site": "d'un barbier",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "marca-personal-autonomo-barberia-maquette-es"
+     "statut": "fait",
+     "fichier": "marca-personal-autonomo-barberia-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T10:38:31",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Barbería Navaja con un barbero preparando sus herramientas.",
+       "legende": "Ejemplo de web de Barbería Navaja en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

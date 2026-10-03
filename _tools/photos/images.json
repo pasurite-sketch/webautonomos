@@ -4884,6 +4884,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Café Express avec un serveur apportant deux cafés sur une terrasse.",
    "legende": "Exemple de site affiché sur ordinateur et smartphone."
+  },
+  "blog/es/marca-personal-para-autonomos.html": {
+   "sujet": "art-46",
+   "fichier": "marca-personal-autonomo-barberia-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Barbería Navaja con un barbero preparando sus herramientas.",
+   "legende": "Ejemplo de web de Barbería Navaja en ordenador y móvil."
   }
  }
 }
