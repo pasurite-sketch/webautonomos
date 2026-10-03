@@ -5316,6 +5316,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Chocolaterie Cacao avec une chocolatière et ses clients.",
    "legende": "Exemple de site Chocolaterie Cacao sur ordinateur et smartphone."
+  },
+  "blog/es/mantenimiento-coste-automatizacion.html": {
+   "sujet": "art-67",
+   "fichier": "mantenimiento-automatizacion-coste-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Taller Motor con un mecánico revisando una máquina.",
+   "legende": "Ejemplo de web de Taller Motor en ordenador y móvil."
   }
  }
 }
