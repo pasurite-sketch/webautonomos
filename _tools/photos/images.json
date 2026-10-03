@@ -5217,6 +5217,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Jabones Lavanda con una artesana envolviendo jabones.",
    "legende": "Ejemplo de web de Jabones Lavanda en ordenador y móvil."
+  },
+  "blog/val/automatitzar-sense-saber-programar.html": {
+   "sujet": "art-64",
+   "fichier": "automatizar-sin-programar-tienda-online-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinador i un mòbil mostren la web de Sabons Lavanda amb una artesana embolicant sabons.",
+   "legende": "Exemple de web de Sabons Lavanda en ordinador i mòbil."
   }
  }
 }

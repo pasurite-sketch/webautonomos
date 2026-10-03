@@ -10578,8 +10578,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "automatizar-sin-programar-tienda-online-maquette-val"
+     "statut": "fait",
+     "fichier": "automatizar-sin-programar-tienda-online-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T17:33:21",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Sabons Lavanda amb una artesana embolicant sabons.",
+       "legende": "Exemple de web de Sabons Lavanda en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
