@@ -9667,8 +9667,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "papeleo-autonomo-noche-facturas-maquette-en"
+     "statut": "fait",
+     "fichier": "papeleo-autonomo-noche-facturas-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T11:46:17",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone show the Grifo Plumbing website with a tired plumber at a kitchen table.",
+       "legende": "Example website of Grifo Plumbing on a laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
