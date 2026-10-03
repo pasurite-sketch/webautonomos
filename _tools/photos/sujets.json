@@ -9416,8 +9416,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "marca-personal-autonomo-barberia-maquette-fr"
+     "statut": "fait",
+     "fichier": "marca-personal-autonomo-barberia-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T10:49:37",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Barbier Rasoir avec un barbier préparant ses outils.",
+       "legende": "Exemple de site affiché sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
