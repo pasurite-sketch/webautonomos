@@ -11094,8 +11094,16 @@
    "site": "d'un fabricant de meubles",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "automatizar-proceso-paso-a-paso-maquette-es"
+     "statut": "fait",
+     "fichier": "automatizar-proceso-paso-a-paso-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T20:26:43",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Muebles Nogal con un artesano montando un mueble.",
+       "legende": "Ejemplo de web de Muebles Nogal en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
