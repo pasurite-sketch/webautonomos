@@ -10170,8 +10170,16 @@
    "site": "d'un menuisier",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-es"
+     "statut": "fait",
+     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T14:11:32",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Carpintería Pino con un carpintero en su taller de madera.",
+       "legende": "Ejemplo de web de Carpintería Pino en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",

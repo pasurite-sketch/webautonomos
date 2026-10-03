@@ -5100,6 +5100,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Salon Onde avec une coiffeuse et une cliente au salon.",
    "legende": "Exemple de site Salon Onde sur ordinateur et smartphone."
+  },
+  "blog/es/lo-que-no-haces-por-falta-de-tiempo.html": {
+   "sujet": "art-61",
+   "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Carpintería Pino con un carpintero en su taller de madera.",
+   "legende": "Ejemplo de web de Carpintería Pino en ordenador y móvil."
   }
  }
 }
