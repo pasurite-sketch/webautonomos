@@ -10458,8 +10458,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "tareas-automatizar-prioridades-maquette-en"
+     "statut": "fait",
+     "fichier": "tareas-automatizar-prioridades-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T17:03:31",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Cuero Leather Workshop site with an artisan sorting tools.",
+       "legende": "Example website of Cuero Leather Workshop on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",

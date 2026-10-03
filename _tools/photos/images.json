@@ -5190,6 +5190,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web de Taller Cuiro amb una artesana treballant en cuir.",
    "legende": "Exemple de web de Taller Cuiro en ordinador i mòbil."
+  },
+  "blog/en/which-tasks-to-automate-first.html": {
+   "sujet": "art-63",
+   "fichier": "tareas-automatizar-prioridades-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Cuero Leather Workshop site with an artisan sorting tools.",
+   "legende": "Example website of Cuero Leather Workshop on laptop and smartphone."
   }
  }
 }
