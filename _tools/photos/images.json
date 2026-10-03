@@ -5172,6 +5172,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Atelier Horloge avec un atelier de réparation de montres.",
    "legende": "Exemple de site Atelier Horloge sur ordinateur et smartphone."
+  },
+  "blog/es/que-tareas-automatizar-primero.html": {
+   "sujet": "art-63",
+   "fichier": "tareas-automatizar-prioridades-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Taller Cuero con una artesana trabajando en su taller.",
+   "legende": "Ejemplo de web de Taller Cuero en ordenador y móvil."
   }
  }
 }
