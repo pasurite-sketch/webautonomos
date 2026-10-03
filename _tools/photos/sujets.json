@@ -10734,8 +10734,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "errores-automatizacion-caros-maquette-fr"
+     "statut": "fait",
+     "fichier": "errores-automatizacion-caros-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T18:35:07",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Envois Rapides avec un entrepôt et des colis.",
+       "legende": "Exemple de site Envois Rapides sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
