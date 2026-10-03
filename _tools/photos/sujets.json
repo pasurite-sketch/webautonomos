@@ -10338,8 +10338,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "coste-automatizar-tiempo-calculo-maquette-fr"
+     "statut": "fait",
+     "fichier": "coste-automatizar-tiempo-calculo-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T15:02:22",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Atelier Horloge avec un atelier de réparation de montres.",
+       "legende": "Exemple de site Atelier Horloge sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
