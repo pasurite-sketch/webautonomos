@@ -5343,6 +5343,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display the Motor Garage site with a mechanic servicing gears in a workshop.",
    "legende": "Example website of Motor Garage on laptop and smartphone."
+  },
+  "blog/fr/maintenance-le-cout-cache-de-l-automatisation.html": {
+   "sujet": "art-67",
+   "fichier": "mantenimiento-automatizacion-coste-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site Garage Moteur avec un technicien entretenant des engrenages.",
+   "legende": "Exemple de site Garage Moteur sur ordinateur et smartphone."
   }
  }
 }

@@ -10998,8 +10998,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "mantenimiento-automatizacion-coste-maquette-fr"
+     "statut": "fait",
+     "fichier": "mantenimiento-automatizacion-coste-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T20:24:38",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Garage Moteur avec un technicien entretenant des engrenages.",
+       "legende": "Exemple de site Garage Moteur sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
