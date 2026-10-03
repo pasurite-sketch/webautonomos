@@ -5361,6 +5361,15 @@
    "v": 1,
    "alt": "Un portátil y un móvil muestran la web de Muebles Nogal con un artesano montando un mueble.",
    "legende": "Ejemplo de web de Muebles Nogal en ordenador y móvil."
+  },
+  "blog/val/com-es-automatitzar-un-proces-pas-a-pas.html": {
+   "sujet": "art-68",
+   "fichier": "automatizar-proceso-paso-a-paso-maquette-val",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinador i un mòbil mostren la web de Mobles Noguera amb un artesà muntant un moble.",
+   "legende": "Exemple de web de Mobles Noguera en ordinador i mòbil."
   }
  }
 }

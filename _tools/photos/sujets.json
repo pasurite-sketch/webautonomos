@@ -11106,8 +11106,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "automatizar-proceso-paso-a-paso-maquette-val"
+     "statut": "fait",
+     "fichier": "automatizar-proceso-paso-a-paso-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T20:28:02",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Mobles Noguera amb un artesà muntant un moble.",
+       "legende": "Exemple de web de Mobles Noguera en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
