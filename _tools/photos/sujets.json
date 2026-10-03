@@ -10206,8 +10206,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-fr"
+     "statut": "fait",
+     "fichier": "falta-de-tiempo-autonomo-proyecto-pendiente-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T14:43:32",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Menuiserie Pin avec un menuisier dans son atelier.",
+       "legende": "Exemple de site Menuiserie Pin sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
