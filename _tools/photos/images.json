@@ -5235,6 +5235,15 @@
    "v": 1,
    "alt": "A laptop and smartphone display the Lavanda Soaps site with an artisan wrapping handmade soaps.",
    "legende": "Example website of Lavanda Soaps on laptop and smartphone."
+  },
+  "blog/fr/automatiser-sans-savoir-programmer.html": {
+   "sujet": "art-64",
+   "fichier": "automatizar-sin-programar-tienda-online-maquette-fr",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un ordinateur et un smartphone affichent le site Savonnerie Lavande avec une artisane emballant des savons.",
+   "legende": "Exemple de site Savonnerie Lavande sur ordinateur et smartphone."
   }
  }
 }

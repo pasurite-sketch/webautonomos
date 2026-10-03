@@ -10602,8 +10602,16 @@
      }
     },
     "fr": {
-     "statut": "pret",
-     "fichier": "automatizar-sin-programar-tienda-online-maquette-fr"
+     "statut": "fait",
+     "fichier": "automatizar-sin-programar-tienda-online-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-10-03T17:37:46",
+     "textes": {
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site Savonnerie Lavande avec une artisane emballant des savons.",
+       "legende": "Exemple de site Savonnerie Lavande sur ordinateur et smartphone."
+      }
+     }
     }
    },
    "ecrans": {
