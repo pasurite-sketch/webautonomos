@@ -5334,6 +5334,15 @@
    "v": 1,
    "alt": "Un ordinador i un mòbil mostren la web de Taller Motor amb un mecànic revisant una màquina.",
    "legende": "Exemple de web de Taller Motor en ordinador i mòbil."
+  },
+  "blog/en/maintenance-the-hidden-cost-of-automation.html": {
+   "sujet": "art-67",
+   "fichier": "mantenimiento-automatizacion-coste-maquette-en",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "A laptop and smartphone display the Motor Garage site with a mechanic servicing gears in a workshop.",
+   "legende": "Example website of Motor Garage on laptop and smartphone."
   }
  }
 }
