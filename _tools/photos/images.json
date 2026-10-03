@@ -4920,6 +4920,15 @@
    "v": 1,
    "alt": "Un ordinateur et un smartphone affichent le site Barbier Rasoir avec un barbier préparant ses outils.",
    "legende": "Exemple de site affiché sur ordinateur et smartphone."
+  },
+  "blog/es/preguntas-respuestas-ficha-google.html": {
+   "sujet": "art-47",
+   "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-es",
+   "largeur": 1600,
+   "hauteur": 900,
+   "v": 1,
+   "alt": "Un portátil y un móvil muestran la web de Deportes Cumbre con una dependienta enseñando botas de montaña.",
+   "legende": "Ejemplo de web de Deportes Cumbre en ordenador y móvil."
   }
  }
 }

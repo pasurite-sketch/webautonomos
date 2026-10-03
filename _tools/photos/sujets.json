@@ -9511,8 +9511,16 @@
    "site": "d'un magasin de sport",
    "maquette": {
     "es": {
-     "statut": "pret",
-     "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-es"
+     "statut": "fait",
+     "fichier": "preguntas-respuestas-ficha-google-tienda-maquette-es",
+     "v": 1,
+     "fait_le": "2026-10-03T10:51:21",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de Deportes Cumbre con una dependienta enseñando botas de montaña.",
+       "legende": "Ejemplo de web de Deportes Cumbre en ordenador y móvil."
+      }
+     }
     },
     "val": {
      "statut": "pret",
