@@ -36,45 +36,16 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Publier le prochain article dû
+      # Publication + fichiers statiques + index /blog/ + sitemap + commit + push,
+      # avec reprise si main a bougé pendant le run (photos-bot pousse toutes
+      # les 2 à 5 minutes ; c'est ce qui a fait échouer le run du 01/10).
+      # Détails dans _tools/publier_avec_reprise.sh.
+      - name: Publier le prochain article dû, committer et pousser
         id: publish
         env:
           # force=true → on fixe une date lointaine pour rendre le prochain article "dû"
           PUBLISH_DATE_OVERRIDE: ${{ inputs.force && '2099-12-31' || '' }}
-        run: python3 _tools/publish_next.py
-
-      # publish_next.py n'insère l'article que dans les données SPA de index.html
-      # et dans sitemap.xml. Depuis le passage de assets.not_found_handling à
-      # "404-page", une URL sans fichier renvoie un vrai 404 : sans cette étape,
-      # l'article publié serait déclaré au sitemap tout en répondant 404.
-      # Le script ne crée que les fichiers absents (pas de --force).
-      - name: Générer les fichiers statiques des articles
-        if: steps.publish.outputs.published == 'true'
-        run: python3 _tools/generate_spa_articles.py
-
-      # Reconstruit la liste de /blog/ à partir des fichiers présents sur disque,
-      # pour que le nouvel article soit maillé depuis l'index de section.
-      - name: Régénérer l'index du blog
-        if: steps.publish.outputs.published == 'true'
-        run: python3 _tools/generate_blog_index.py
-
-      # add_article.py a deja insere son bloc <url> ; ce generateur reecrit le
-      # sitemap entier depuis le disque pour qu'il reste homogene (une <loc> par
-      # groupe linguistique, avec ses alternates) au lieu d'accumuler les
-      # conventions successives. Il echoue sans rien ecrire si une verification
-      # ne passe pas, ce qui fait echouer le job avant le commit.
-      - name: Régénérer le sitemap
-        if: steps.publish.outputs.published == 'true'
-        run: python3 _tools/generate_sitemap.py
-
-      - name: Committer les changements
-        if: steps.publish.outputs.published == 'true'
-        run: |
-          git config user.name "webautonomos-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add index.html sitemap.xml blog _tools/queue
-          git commit -m "Blog auto : publication ${{ steps.publish.outputs.slug }}"
-          git push
+        run: bash _tools/publier_avec_reprise.sh
 
       - name: Déployer sur Cloudflare Workers
         if: steps.publish.outputs.published == 'true'
@@ -86,7 +57,10 @@ jobs:
       - name: Résumé
         if: always()
         run: |
-          if [ "${{ steps.publish.outputs.published }}" = "true" ]; then
+          if [ "${{ job.status }}" != "success" ]; then
+            # avant le 03/10, un échec affichait « Aucun article dû » : trompeur
+            echo "❌ Échec : article non publié ou non déployé, voir l'étape en rouge. Relancer avec Run workflow." >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ steps.publish.outputs.published }}" = "true" ]; then
             echo "✅ Article publié et déployé : ${{ steps.publish.outputs.slug }}" >> "$GITHUB_STEP_SUMMARY"
           else
             echo "ℹ️ Aucun article dû aujourd'hui — rien publié." >> "$GITHUB_STEP_SUMMARY"
