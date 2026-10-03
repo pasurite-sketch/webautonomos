@@ -10710,8 +10710,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "errores-automatizacion-caros-maquette-val"
+     "statut": "fait",
+     "fichier": "errores-automatizacion-caros-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T18:07:01",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web d'Enviaments Ràpids amb un magatzem i caixes.",
+       "legende": "Exemple de web d'Enviaments Ràpids en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
