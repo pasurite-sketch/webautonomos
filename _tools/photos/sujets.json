@@ -11118,8 +11118,16 @@
      }
     },
     "en": {
-     "statut": "pret",
-     "fichier": "automatizar-proceso-paso-a-paso-maquette-en"
+     "statut": "fait",
+     "fichier": "automatizar-proceso-paso-a-paso-maquette-en",
+     "v": 1,
+     "fait_le": "2026-10-03T20:29:39",
+     "textes": {
+      "en": {
+       "alt": "A laptop and smartphone display the Nogal Furniture site with a craftsman assembling solid wood furniture.",
+       "legende": "Example website of Nogal Furniture on laptop and smartphone."
+      }
+     }
     },
     "fr": {
      "statut": "pret",
