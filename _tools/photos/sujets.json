@@ -9261,8 +9261,16 @@
      }
     },
     "val": {
-     "statut": "pret",
-     "fichier": "velocidad-web-servicio-rapido-maquette-val"
+     "statut": "fait",
+     "fichier": "velocidad-web-servicio-rapido-maquette-val",
+     "v": 1,
+     "fait_le": "2026-10-03T10:25:06",
+     "textes": {
+      "val": {
+       "alt": "Un ordinador i un mòbil mostren la web de Cafè Ràpid amb un cambrer portant dos cafès en una terrassa.",
+       "legende": "Vista de la web de Cafè Ràpid en ordinador i mòbil."
+      }
+     }
     },
     "en": {
      "statut": "pret",
