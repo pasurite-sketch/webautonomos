@@ -66,5 +66,15 @@ pages non santé (`AUTO_MERGE=1`) et programme `run_nuit.sh` chaque nuit à 3h17
 
 Coût : 0 € de plus (mesures SERPmantics gratuites, guides réutilisés, Claude sur
 l'abonnement). Journal : `~/nuit.log` sur le VPS.
+
+## Relevé complet (depuis le 04/10/2026)
+
+`releve.py` mesure en une fois toutes les pages qui ont des guides, sur chaque moteur
+(Google, AI Overview, ChatGPT, Gemini…), et enregistre la mesure dans les guides :
+la liste de SERPmantics affiche ensuite les mêmes notes. Gratuit : aucun guide créé.
+Résultat : `releve.json` et `releve.csv` (une ligne par page et par moteur, avec la
+note précédente, les images et les mots de la page face au top 10).
+Sur le VPS, il tourne aussi depuis le compte `ubuntu` (copie de la clé dans son
+`~/.seo_pipeline.env`, faite par Angelino le 04/10), sur un export de `origin/main`.
 Sources GEO : `sources_geo` dans pages.json ; `serp.py sources` liste celles que
 SERPmantics propose (AI Overview de Google, ChatGPT, Gemini…).
