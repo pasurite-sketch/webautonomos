@@ -22,7 +22,7 @@
     <meta property="og:site_name" content="WebAutonomos">
     <meta property="og:locale" content="es_ES">
     <meta property="article:published_time" content="2026-06-01T08:00:00+01:00">
-    <meta property="article:modified_time" content="2026-06-01T08:00:00+01:00">
+    <meta property="article:modified_time" content="2026-10-04T12:00:00+02:00">
     <meta property="article:section" content="Facturación y Legal">
 
     <meta name="twitter:card" content="summary_large_image">
@@ -61,7 +61,7 @@
                 }
         },
         "datePublished": "2026-06-01T08:00:00+01:00",
-        "dateModified": "2026-06-01T08:00:00+01:00",
+        "dateModified": "2026-10-04T12:00:00+02:00",
         "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": "https://webautonomos.es/blog/es/facturacion-electronica-autonomos-obligatoria"
@@ -113,7 +113,7 @@
                         "name": "¿La factura PDF firmada digitalmente es válida?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "No para los efectos de la Ley Crea y Crece. Necesitas formato Facturae (XML estructurado) o un sistema homologado por la AEAT como Verifactu."
+                                "text": "No para las facturas entre empresas cuando la obligación te alcance: hace falta un formato estructurado, como Facturae o UBL, que un programa pueda leer. Verifactu es otra norma: fija los requisitos del software de facturación, no el formato de la factura."
                         }
                 },
                 {
@@ -121,7 +121,7 @@
                         "name": "¿Cuándo me obliga a mí como autónomo?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "La mayoría de autónomos deberán cumplir a partir de 2027, una vez publicado el reglamento. Pero tus clientes empresas pueden exigírtela antes."
+                                "text": "La obligación llega por etapas: primero las empresas que facturan más de 8 millones de euros y, un año después, el resto, incluidos los autónomos. Consulta las fechas vigentes en la Agencia Tributaria o con tu gestoría, y ten en cuenta que tus clientes empresa pueden pedírtela antes."
                         }
                 },
                 {
@@ -129,7 +129,7 @@
                         "name": "¿Qué herramienta gratuita me recomiendas?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Para autónomos con poco volumen, Holded plan gratuito es la más fácil. Si solo facturas a la administración pública, FACe es suficiente."
+                                "text": "Con poco volumen puede bastarte un programa con plan gratuito o la aplicación gratuita que ha anunciado la Agencia Tributaria, si ya está disponible. Si solo facturas a la Administración pública, FACe es gratuito. Comprueba siempre que la herramienta emite facturas en formato estructurado."
                         }
                 },
                 {
@@ -224,10 +224,10 @@
         <div class="bg-white rounded-2xl shadow-sm p-6 mb-10" style="border-left:4px solid #64748B;">
             <p class="font-bold text-gray-900 mb-3">📑 Contenido del artículo</p>
             <ol class="list-decimal list-inside space-y-1 text-sm">
-                    <li><a href="#seccion-1" class="toc-link">Qué es la facturación electrónica y por qué es obligatoria</a></li>
+                    <li><a href="#seccion-1" class="toc-link">Qué es la facturación electrónica y por qué será obligatoria</a></li>
                     <li><a href="#seccion-2" class="toc-link">Calendario de obligación: cuándo te toca a ti</a></li>
                     <li><a href="#seccion-3" class="toc-link">Qué formato debe tener una factura electrónica válida</a></li>
-                    <li><a href="#seccion-4" class="toc-link">Las 3 herramientas gratuitas que puedes usar</a></li>
+                    <li><a href="#seccion-4" class="toc-link">Herramientas gratuitas que puedes usar</a></li>
                     <li><a href="#seccion-5" class="toc-link">Cómo emitir tu primera factura electrónica paso a paso</a></li>
                     <li><a href="#seccion-6" class="toc-link">Errores comunes que pueden invalidar tu factura</a></li>
                     <li><a href="#seccion-7" class="toc-link">Qué pasa si no cumples: sanciones y consecuencias</a></li>
@@ -236,7 +236,7 @@
         </div>
 
         <div class="article-body">
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">La facturación electrónica deja de ser una opción. La Ley Crea y Crece obliga a todos los autónomos y empresas a emitir facturas en formato electrónico de forma progresiva. Si eres autónomo, esta guía te explica qué es, cuándo te aplica, qué herramientas gratuitas puedes usar y cómo evitar errores que invaliden tus facturas. Sin tecnicismos, sin alarmismo.</p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">La facturación electrónica deja de ser una opción. La Ley Crea y Crece obligará, de forma progresiva, a autónomos y empresas a emitir en formato electrónico las facturas que envían a otras empresas y profesionales; las facturas a particulares no entran en esta obligación. Si eres autónomo, esta guía te explica qué es, cuándo te aplicará, qué herramientas gratuitas puedes usar y cómo evitar errores. Sin tecnicismos, sin alarmismo.</p>
             <figure class="my-10">
                 <picture>
                     <source type="image/webp" srcset="/assets/facturacion-electronica-comercio-800.webp?v=1 800w, /assets/facturacion-electronica-comercio.webp?v=1 1600w" sizes="(max-width: 820px) calc(100vw - 40px), 780px">
@@ -244,12 +244,12 @@
                 </picture>
                 <figcaption class="text-sm text-gray-500 mt-3">La tendera entrega una compra a una clienta en su comercio.</figcaption>
             </figure>
-            <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Qué es la facturación electrónica y por qué es obligatoria</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">La facturación electrónica es un formato estructurado (normalmente XML según el estándar Facturae) que permite el intercambio automatizado de facturas entre empresas y la administración. La Ley Crea y Crece, aprobada en 2022, obliga a su uso progresivo en España para mejorar la transparencia fiscal, reducir el fraude y luchar contra la morosidad comercial. Una factura en PDF enviada por email NO es una factura electrónica válida según esta ley.</p>
+            <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Qué es la facturación electrónica y por qué será obligatoria</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">La factura electrónica es una factura en un formato estructurado que un programa puede leer sin intervención humana, como Facturae o UBL, enviada por un canal digital. La Ley Crea y Crece, aprobada en 2022, la hará obligatoria en las operaciones entre empresas y profesionales para mejorar la transparencia, reducir el fraude y luchar contra la morosidad comercial: además de emitirla, habrá que informar del estado de cada factura, por ejemplo si está aceptada o pagada. Una factura en PDF enviada por email no es una factura electrónica a efectos de esta ley. Y no la confundas con Verifactu, que fija los requisitos del programa con el que facturas: son dos normas distintas, como explicamos en <a href="https://webautonomos.es/blog/es/factura-electronica-plazos-2026-2027" style="color:#2563eb;">Verifactu y factura electrónica: qué te toca</a>.</p>
             <h2 id="seccion-2" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Calendario de obligación: cuándo te toca a ti</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">La aplicación es progresiva según facturación anual: empresas con facturación superior a 8 millones de euros ya están obligadas desde julio de 2025. El resto de empresas y autónomos con facturación inferior a 8 millones de euros tendrán que cumplir a partir del 12 meses tras la publicación del reglamento de desarrollo. La mayoría de autónomos deberán adaptarse a partir de 2027. Pero atención: si tu cliente es una empresa que ya está obligada, ella puede exigirte facturas electrónicas desde antes de tu plazo legal.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">La obligación llegará por etapas, según la facturación anual: primero, las empresas que facturan más de 8 millones de euros al año y, un año después, el resto de empresas y los autónomos. Los plazos se cuentan desde la entrada en vigor de la normativa de desarrollo, que se ha retrasado más de una vez: consulta las fechas vigentes en la sede de la Agencia Tributaria o con tu gestoría antes de planificar. Y aunque todavía no te toque, algunos clientes empresa pueden pedirte facturas electrónicas antes, así que conviene que tu programa ya pueda emitirlas.</p>
             <h2 id="seccion-3" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Qué formato debe tener una factura electrónica válida</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Para ser legalmente válida, una factura electrónica en España debe: estar en formato Facturae (XML estructurado) o en otro formato aceptado por la AEAT como el Verifactu; contener firma electrónica avanzada; incluir todos los campos obligatorios (CIF, dirección, descripción del servicio, IVA aplicado, importe); y ser archivada durante al menos 4 años. Las facturas PDF normales NO son válidas a efectos legales, aunque las envíes por email firmado.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Para cumplir con la Ley Crea y Crece, una factura electrónica debe estar en un formato estructurado admitido, como Facturae o UBL; incluir los datos obligatorios de cualquier factura (número, fecha, NIF y dirección de emisor y cliente, descripción del servicio, base imponible, IVA aplicado e importe); garantizar su autenticidad e integridad; y conservarse durante el plazo legal (a efectos fiscales, al menos cuatro años; pregunta a tu gestoría si debes guardarla más tiempo). Si facturas a una Administración pública a través de FACe, se exige además el formato Facturae con firma electrónica. Cuando la obligación te alcance, un PDF normal no servirá para las facturas entre empresas, aunque lo envíes por email firmado.</p>
             <figure class="my-10">
                 <picture>
                     <source type="image/webp" srcset="/assets/facturacion-electronica-comercio-maquette-es-800.webp?v=1 800w, /assets/facturacion-electronica-comercio-maquette-es.webp?v=1 1600w" sizes="(max-width: 820px) calc(100vw - 40px), 780px">
@@ -257,15 +257,15 @@
                 </picture>
                 <figcaption class="text-sm text-gray-500 mt-3">Vista de la web de Colmado Laurel en ordenador y móvil.</figcaption>
             </figure>
-            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Las 3 herramientas gratuitas que puedes usar</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">FACe es la plataforma oficial del gobierno para facturar a las administraciones públicas: gratis, segura, pero limitada al sector público. Verifactu es la solución oficial de la AEAT para el envío telemático de facturas: gratis para autónomos, integrable con muchos programas. Holded ofrece un plan gratuito con facturación electrónica básica incluida y es muy intuitivo. También existen Quipu y Anfix con planes gratuitos limitados que pueden cubrir las necesidades de un autónomo que factura poco volumen mensual.</p>
+            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Herramientas gratuitas que puedes usar</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">FACe es la plataforma oficial para facturar a las Administraciones públicas: gratuita y segura, pero limitada al sector público. La Agencia Tributaria ha anunciado una aplicación de facturación gratuita para autónomos y pymes con pocas facturas: comprueba en su sede si ya está disponible y qué incluye. También hay programas de facturación con planes gratuitos, con límites de facturas, usuarios o funciones, que pueden bastar a un autónomo con poco volumen. Antes de elegir, comprueba que el programa emite facturas en formato estructurado, que su fabricante ha emitido la declaración responsable que exige Verifactu y que te deja exportar tus datos.</p>
             <h2 id="seccion-5" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Cómo emitir tu primera factura electrónica paso a paso</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Primero, obtén tu certificado digital de la FNMT (gratis, válido 4 años). Segundo, elige una herramienta de facturación que soporte el formato Facturae (las 3 anteriores son válidas). Tercero, configura tus datos fiscales y los de tus clientes en la herramienta. Cuarto, crea la factura desde la interfaz indicando concepto, importe e IVA. Quinto, firma electrónicamente la factura desde la propia herramienta. Sexto, envíala al cliente: si es público, vía FACe; si es privado, según el canal que él acepte. Archívala 4 años. Listo.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Primero, consigue tu certificado digital (para personas físicas, la FNMT lo emite gratis). Segundo, elige una herramienta de facturación que emita facturas en formato estructurado. Tercero, configura tus datos fiscales y los de tus clientes. Cuarto, crea la factura indicando concepto, importe e IVA. Quinto, si facturas a una Administración pública, fírmala electrónicamente desde la propia herramienta. Sexto, envíala al cliente: si es público, a través de FACe; si es privado, por el canal digital que acordéis. Por último, consérvala durante el plazo legal.</p>
             <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Errores comunes que pueden invalidar tu factura</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Confundir factura PDF firmada con factura electrónica válida es el error más común: el formato estructurado es obligatorio. Olvidar la firma electrónica avanzada es otro fallo frecuente. Usar datos fiscales incompletos o incorrectos (CIF, dirección) invalida la factura. No archivar la copia 4 años puede generar sanciones en una inspección. Y atención: si tu cliente es una administración pública, debes enviarla específicamente por FACe, no por email.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Confundir una factura en PDF firmada con una factura electrónica es un error frecuente: hace falta un formato estructurado. Olvidar la firma electrónica cuando facturas a la Administración a través de FACe es otro fallo habitual. Usar datos fiscales incompletos o incorrectos (NIF, dirección) te obliga a rectificar la factura. No conservar las facturas durante el plazo legal puede acarrear sanciones en una inspección. Y si tu cliente es una Administración pública, envía la factura por FACe, no por email.</p>
             <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Qué pasa si no cumples: sanciones y consecuencias</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Las sanciones por no cumplir con la obligación de facturación electrónica oscilan entre 150 y 6.000 euros según la gravedad y reincidencia. Adicionalmente, si una administración pública te exige factura electrónica y no la emites, simplemente no cobrarás hasta que regularices. Tu cliente empresa también puede negarse a pagar facturas que no cumplan el formato exigido. La mejor estrategia es adaptarte ahora, con calma, antes de la obligación formal.</p>
-            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">La facturación electrónica no es una opción, es el futuro inmediato. Pero tampoco es complicado: con un certificado digital gratuito y una herramienta como Holded o Verifactu, puedes empezar hoy mismo. No esperes a la fecha límite: adáptate ahora cuando aún no hay presión, para que cuando llegue la obligación ya estés a punto.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">La normativa prevé sanciones por incumplir la obligación de facturación electrónica: consulta las cuantías vigentes en la Agencia Tributaria o con tu asesor. Además, si una Administración pública te exige factura electrónica y no la emites, el cobro puede retrasarse hasta que la presentes como corresponde, y tus clientes empresa pueden pedirte que la corrijas. Lo más práctico es adaptarte con calma, antes de que llegue tu plazo.</p>
+            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">La facturación electrónica llegará a todas las facturas entre empresas, pero adaptarse no es complicado: con un certificado digital y un programa de facturación adecuado puedes prepararte desde hoy. No esperes a la fecha límite: adáptate ahora, cuando aún no hay presión, para que cuando llegue la obligación ya estés a punto.</p>
         </div>
 
             <section id="faq" class="mt-12">
@@ -273,15 +273,15 @@
                 <div class="space-y-3">
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿La factura PDF firmada digitalmente es válida?</summary>
-                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">No para los efectos de la Ley Crea y Crece. Necesitas formato Facturae (XML estructurado) o un sistema homologado por la AEAT como Verifactu.</div>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">No para las facturas entre empresas cuando la obligación te alcance: hace falta un formato estructurado, como Facturae o UBL, que un programa pueda leer. Verifactu es otra norma: fija los requisitos del software de facturación, no el formato de la factura.</div>
                 </details>
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Cuándo me obliga a mí como autónomo?</summary>
-                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">La mayoría de autónomos deberán cumplir a partir de 2027, una vez publicado el reglamento. Pero tus clientes empresas pueden exigírtela antes.</div>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">La obligación llega por etapas: primero las empresas que facturan más de 8 millones de euros y, un año después, el resto, incluidos los autónomos. Consulta las fechas vigentes en la Agencia Tributaria o con tu gestoría, y ten en cuenta que tus clientes empresa pueden pedírtela antes.</div>
                 </details>
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Qué herramienta gratuita me recomiendas?</summary>
-                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Para autónomos con poco volumen, Holded plan gratuito es la más fácil. Si solo facturas a la administración pública, FACe es suficiente.</div>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Con poco volumen puede bastarte un programa con plan gratuito o la aplicación gratuita que ha anunciado la Agencia Tributaria, si ya está disponible. Si solo facturas a la Administración pública, FACe es gratuito. Comprueba siempre que la herramienta emite facturas en formato estructurado.</div>
                 </details>
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">¿Necesito un gestor o asesor para emitirla?</summary>

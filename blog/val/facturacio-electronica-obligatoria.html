@@ -22,7 +22,7 @@
     <meta property="og:site_name" content="WebAutonomos">
     <meta property="og:locale" content="ca_ES">
     <meta property="article:published_time" content="2026-06-01T08:00:00+01:00">
-    <meta property="article:modified_time" content="2026-06-01T08:00:00+01:00">
+    <meta property="article:modified_time" content="2026-10-04T12:00:00+02:00">
     <meta property="article:section" content="Facturació i Legal">
 
     <meta name="twitter:card" content="summary_large_image">
@@ -61,7 +61,7 @@
                 }
         },
         "datePublished": "2026-06-01T08:00:00+01:00",
-        "dateModified": "2026-06-01T08:00:00+01:00",
+        "dateModified": "2026-10-04T12:00:00+02:00",
         "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": "https://webautonomos.es/blog/val/facturacio-electronica-obligatoria"
@@ -113,7 +113,7 @@
                         "name": "La factura PDF firmada digitalment és vàlida?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "No per als efectes de la Llei Crea i Creix. Necessites format Facturae (XML estructurat) o un sistema homologat per l'AEAT com Verifactu."
+                                "text": "No per a les factures entre empreses quan l'obligació t'arribe: cal un format estructurat, com Facturae o UBL, que un programa puga llegir. Verifactu és una altra norma: fixa els requisits del programari de facturació, no el format de la factura."
                         }
                 },
                 {
@@ -121,7 +121,7 @@
                         "name": "Quan m'obliga a mi com a autònom?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "La majoria d'autònoms hauran de complir a partir de 2027, una vegada publicat el reglament. Però els teus clients empreses poden exigir-te-la abans."
+                                "text": "L'obligació arriba per etapes: primer les empreses que facturen més de 8 milions d'euros i, un any després, la resta, inclosos els autònoms. Consulta les dates vigents en l'Agència Tributària o amb la teua gestoria, i tin en compte que els teus clients empresa poden demanar-te-la abans."
                         }
                 },
                 {
@@ -129,7 +129,7 @@
                         "name": "Quina ferramenta gratuïta em recomanes?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Per a autònoms amb poc volum, Holded pla gratuït és la més fàcil. Si només factures a l'administració pública, FACe és suficient."
+                                "text": "Amb poc volum et pot bastar un programa amb pla gratuït o l'aplicació gratuïta que ha anunciat l'Agència Tributària, si ja està disponible. Si només factures a l'Administració pública, FACe és gratuït. Comprova sempre que la ferramenta emet factures en format estructurat."
                         }
                 },
                 {
@@ -224,10 +224,10 @@
         <div class="bg-white rounded-2xl shadow-sm p-6 mb-10" style="border-left:4px solid #64748B;">
             <p class="font-bold text-gray-900 mb-3">📑 Contingut de l&#x27;article</p>
             <ol class="list-decimal list-inside space-y-1 text-sm">
-                    <li><a href="#seccion-1" class="toc-link">Què és la facturació electrònica i per què és obligatòria</a></li>
+                    <li><a href="#seccion-1" class="toc-link">Què és la facturació electrònica i per què serà obligatòria</a></li>
                     <li><a href="#seccion-2" class="toc-link">Calendari d&#x27;obligació: quan et toca a tu</a></li>
                     <li><a href="#seccion-3" class="toc-link">Quin format ha de tindre una factura electrònica vàlida</a></li>
-                    <li><a href="#seccion-4" class="toc-link">Les 3 ferramentes gratuïtes que pots usar</a></li>
+                    <li><a href="#seccion-4" class="toc-link">Ferramentes gratuïtes que pots usar</a></li>
                     <li><a href="#seccion-5" class="toc-link">Com emetre la teua primera factura electrònica pas a pas</a></li>
                     <li><a href="#seccion-6" class="toc-link">Errors comuns que poden invalidar la teua factura</a></li>
                     <li><a href="#seccion-7" class="toc-link">Què passa si no compleixes: sancions i conseqüències</a></li>
@@ -236,7 +236,7 @@
         </div>
 
         <div class="article-body">
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">La facturació electrònica deixa de ser una opció. La Llei Crea i Creix obliga tots els autònoms i empreses a emetre factures en format electrònic de manera progressiva. Si eres autònom, esta guia t&#x27;explica què és, quan t&#x27;aplica, quines ferramentes gratuïtes pots usar i com evitar errors que invaliden les teues factures. Sense tecnicismes, sense alarmisme.</p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">La facturació electrònica deixa de ser una opció. La Llei Crea i Creix obligarà, de manera progressiva, autònoms i empreses a emetre en format electrònic les factures que envien a altres empreses i professionals; les factures a particulars no entren en esta obligació. Si eres autònom, esta guia t&#x27;explica què és, quan t&#x27;aplicarà, quines ferramentes gratuïtes pots usar i com evitar errors. Sense tecnicismes, sense alarmisme.</p>
             <figure class="my-10">
                 <picture>
                     <source type="image/webp" srcset="/assets/facturacion-electronica-comercio-800.webp?v=1 800w, /assets/facturacion-electronica-comercio.webp?v=1 1600w" sizes="(max-width: 820px) calc(100vw - 40px), 780px">
@@ -244,12 +244,12 @@
                 </picture>
                 <figcaption class="text-sm text-gray-500 mt-3">La botiguera entrega una compra a una clienta al seu comerç.</figcaption>
             </figure>
-            <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Què és la facturació electrònica i per què és obligatòria</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">La facturació electrònica és un format estructurat (normalment XML segons l&#x27;estàndard Facturae) que permet l&#x27;intercanvi automatitzat de factures entre empreses i l&#x27;administració. La Llei Crea i Creix, aprovada en 2022, obliga al seu ús progressiu a Espanya per a millorar la transparència fiscal, reduir el frau i lluitar contra la morositat comercial. Una factura en PDF enviada per email NO és una factura electrònica vàlida segons esta llei.</p>
+            <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Què és la facturació electrònica i per què serà obligatòria</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">La factura electrònica és una factura en un format estructurat que un programa pot llegir sense intervenció humana, com Facturae o UBL, enviada per un canal digital. La Llei Crea i Creix, aprovada en 2022, la farà obligatòria en les operacions entre empreses i professionals per a millorar la transparència, reduir el frau i lluitar contra la morositat comercial: a més d&#x27;emetre-la, caldrà informar de l&#x27;estat de cada factura, per exemple si està acceptada o pagada. Una factura en PDF enviada per email no és una factura electrònica a efectes d&#x27;esta llei. I no la confongues amb Verifactu, que fixa els requisits del programa amb què factures: són dues normes diferents, com expliquem en <a href="https://webautonomos.es/blog/val/factura-electronica-dues-normes" style="color:#2563eb;">Verifactu i factura electrònica</a>.</p>
             <h2 id="seccion-2" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Calendari d&#x27;obligació: quan et toca a tu</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">L&#x27;aplicació és progressiva segons facturació anual: empreses amb facturació superior a 8 milions d&#x27;euros ja estan obligades des de juliol de 2025. La resta d&#x27;empreses i autònoms amb facturació inferior a 8 milions d&#x27;euros hauran de complir a partir dels 12 mesos després de la publicació del reglament de desenvolupament. La majoria d&#x27;autònoms hauran d&#x27;adaptar-se a partir de 2027. Però atenció: si el teu client és una empresa que ja està obligada, ella pot exigir-te factures electròniques des d&#x27;abans del teu termini legal.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">L&#x27;obligació arribarà per etapes, segons la facturació anual: primer, les empreses que facturen més de 8 milions d&#x27;euros l&#x27;any i, un any després, la resta d&#x27;empreses i els autònoms. Els terminis es compten des de l&#x27;entrada en vigor de la normativa de desenvolupament, que s&#x27;ha endarrerit més d&#x27;una vegada: consulta les dates vigents en la seu de l&#x27;Agència Tributària o amb la teua gestoria abans de planificar. I tot i que encara no et toque, alguns clients empresa poden demanar-te factures electròniques abans, així que convé que el teu programa ja puga emetre-les.</p>
             <h2 id="seccion-3" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Quin format ha de tindre una factura electrònica vàlida</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Per a ser legalment vàlida, una factura electrònica a Espanya ha de: estar en format Facturae (XML estructurat) o en un altre format acceptat per l&#x27;AEAT com el Verifactu; contindre firma electrònica avançada; incloure tots els camps obligatoris (CIF, adreça, descripció del servici, IVA aplicat, import); i ser arxivada durant almenys 4 anys. Les factures PDF normals NO són vàlides a efectes legals, encara que les envies per email firmat.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Per a complir amb la Llei Crea i Creix, una factura electrònica ha d&#x27;estar en un format estructurat admés, com Facturae o UBL; incloure les dades obligatòries de qualsevol factura (número, data, NIF i adreça d&#x27;emissor i client, descripció del servici, base imposable, IVA aplicat i import); garantir la seua autenticitat i integritat; i conservar-se durant el termini legal (a efectes fiscals, almenys quatre anys; pregunta a la teua gestoria si l&#x27;has de guardar més temps). Si factures a una Administració pública a través de FACe, s&#x27;exigix a més el format Facturae amb firma electrònica. Quan l&#x27;obligació t&#x27;arribe, un PDF normal no servirà per a les factures entre empreses, encara que l&#x27;envies per email firmat.</p>
             <figure class="my-10">
                 <picture>
                     <source type="image/webp" srcset="/assets/facturacion-electronica-comercio-maquette-val-800.webp?v=1 800w, /assets/facturacion-electronica-comercio-maquette-val.webp?v=1 1600w" sizes="(max-width: 820px) calc(100vw - 40px), 780px">
@@ -257,15 +257,15 @@
                 </picture>
                 <figcaption class="text-sm text-gray-500 mt-3">Vista de la web de Botiga Llorer en ordinador i mòbil.</figcaption>
             </figure>
-            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Les 3 ferramentes gratuïtes que pots usar</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">FACe és la plataforma oficial del govern per a facturar a les administracions públiques: gratis, segura, però limitada al sector públic. Verifactu és la solució oficial de l&#x27;AEAT per a l&#x27;enviament telemàtic de factures: gratis per a autònoms, integrable amb molts programes. Holded oferix un pla gratuït amb facturació electrònica bàsica inclosa i és molt intuïtiu. També existixen Quipu i Anfix amb plans gratuïts limitats que poden cobrir les necessitats d&#x27;un autònom que factura poc volum mensual.</p>
+            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Ferramentes gratuïtes que pots usar</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">FACe és la plataforma oficial per a facturar a les Administracions públiques: gratuïta i segura, però limitada al sector públic. L&#x27;Agència Tributària ha anunciat una aplicació de facturació gratuïta per a autònoms i pimes amb poques factures: comprova en la seua seu si ja està disponible i què inclou. També hi ha programes de facturació amb plans gratuïts, amb límits de factures, usuaris o funcions, que poden bastar a un autònom amb poc volum. Abans de triar, comprova que el programa emet factures en format estructurat, que el seu fabricant ha emés la declaració responsable que exigix Verifactu i que et deixa exportar les teues dades.</p>
             <h2 id="seccion-5" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Com emetre la teua primera factura electrònica pas a pas</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Primer, obtín el teu certificat digital de la FNMT (gratis, vàlid 4 anys). Segon, tria una ferramenta de facturació que admeta el format Facturae (les 3 anteriors són vàlides). Tercer, configura les teues dades fiscals i les dels teus clients en la ferramenta. Quart, crea la factura des de la interfície indicant concepte, import i IVA. Quint, firma electrònicament la factura des de la mateixa ferramenta. Sext, envia-la al client: si és públic, via FACe; si és privat, segons el canal que ell accepte. Arxiva-la 4 anys. Llest.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Primer, aconseguix el teu certificat digital (per a persones físiques, la FNMT l&#x27;emet gratis). Segon, tria una ferramenta de facturació que emeta factures en format estructurat. Tercer, configura les teues dades fiscals i les dels teus clients. Quart, crea la factura indicant concepte, import i IVA. Quint, si factures a una Administració pública, firma-la electrònicament des de la mateixa ferramenta. Sext, envia-la al client: si és públic, a través de FACe; si és privat, pel canal digital que acordeu. Finalment, conserva-la durant el termini legal.</p>
             <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Errors comuns que poden invalidar la teua factura</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Confondre factura PDF firmada amb factura electrònica vàlida és l&#x27;error més comú: el format estructurat és obligatori. Oblidar la firma electrònica avançada és un altre error freqüent. Usar dades fiscals incompletes o incorrectes (CIF, adreça) invalida la factura. No arxivar la còpia 4 anys pot generar sancions en una inspecció. I atenció: si el teu client és una administració pública, l&#x27;has d&#x27;enviar específicament per FACe, no per email.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Confondre una factura en PDF firmada amb una factura electrònica és un error freqüent: cal un format estructurat. Oblidar la firma electrònica quan factures a l&#x27;Administració a través de FACe és una altra errada habitual. Usar dades fiscals incompletes o incorrectes (NIF, adreça) t&#x27;obliga a rectificar la factura. No conservar les factures durant el termini legal pot comportar sancions en una inspecció. I si el teu client és una Administració pública, envia la factura per FACe, no per email.</p>
             <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Què passa si no compleixes: sancions i conseqüències</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Les sancions per no complir amb l&#x27;obligació de facturació electrònica oscil·len entre 150 i 6.000 euros segons la gravetat i reincidència. Addicionalment, si una administració pública t&#x27;exigix factura electrònica i no l&#x27;emets, simplement no cobraràs fins que regularitzes. El teu client empresa també pot negar-se a pagar factures que no complisquen el format exigit. La millor estratègia és adaptar-te ara, amb calma, abans de l&#x27;obligació formal.</p>
-            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">La facturació electrònica no és una opció, és el futur immediat. Però tampoc és complicat: amb un certificat digital gratuït i una ferramenta com Holded o Verifactu, pots començar hui mateix. No esperes a la data límit: adapta&#x27;t ara quan encara no hi ha pressió, perquè quan arribe l&#x27;obligació ja estigues a punt.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">La normativa preveu sancions per incomplir l&#x27;obligació de facturació electrònica: consulta les quanties vigents en l&#x27;Agència Tributària o amb el teu assessor. A més, si una Administració pública t&#x27;exigix factura electrònica i no l&#x27;emets, el cobrament es pot endarrerir fins que la presentes com cal, i els teus clients empresa poden demanar-te que la corregisques. El més pràctic és adaptar-te amb calma, abans que arribe el teu termini.</p>
+            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">La facturació electrònica arribarà a totes les factures entre empreses, però adaptar-se no és complicat: amb un certificat digital i un programa de facturació adequat pots preparar-te des de hui. No esperes a la data límit: adapta&#x27;t ara, quan encara no hi ha pressió, perquè quan arribe l&#x27;obligació ja estigues a punt.</p>
         </div>
 
             <section id="faq" class="mt-12">
@@ -273,15 +273,15 @@
                 <div class="space-y-3">
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">La factura PDF firmada digitalment és vàlida?</summary>
-                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">No per als efectes de la Llei Crea i Creix. Necessites format Facturae (XML estructurat) o un sistema homologat per l&#x27;AEAT com Verifactu.</div>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">No per a les factures entre empreses quan l&#x27;obligació t&#x27;arribe: cal un format estructurat, com Facturae o UBL, que un programa puga llegir. Verifactu és una altra norma: fixa els requisits del programari de facturació, no el format de la factura.</div>
                 </details>
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Quan m&#x27;obliga a mi com a autònom?</summary>
-                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">La majoria d&#x27;autònoms hauran de complir a partir de 2027, una vegada publicat el reglament. Però els teus clients empreses poden exigir-te-la abans.</div>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">L&#x27;obligació arriba per etapes: primer les empreses que facturen més de 8 milions d&#x27;euros i, un any després, la resta, inclosos els autònoms. Consulta les dates vigents en l&#x27;Agència Tributària o amb la teua gestoria, i tin en compte que els teus clients empresa poden demanar-te-la abans.</div>
                 </details>
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Quina ferramenta gratuïta em recomanes?</summary>
-                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Per a autònoms amb poc volum, Holded pla gratuït és la més fàcil. Si només factures a l&#x27;administració pública, FACe és suficient.</div>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Amb poc volum et pot bastar un programa amb pla gratuït o l&#x27;aplicació gratuïta que ha anunciat l&#x27;Agència Tributària, si ja està disponible. Si només factures a l&#x27;Administració pública, FACe és gratuït. Comprova sempre que la ferramenta emet factures en format estructurat.</div>
                 </details>
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Necessite un gestor o assessor per a emetre-la?</summary>

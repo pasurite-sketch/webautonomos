@@ -1,0 +1,207 @@
+{
+ "es": {
+  "h2": [
+   [
+    "Qué es la facturación electrónica y por qué es obligatoria",
+    "Qué es la facturación electrónica y por qué será obligatoria"
+   ],
+   [
+    "Las 3 herramientas gratuitas que puedes usar",
+    "Herramientas gratuitas que puedes usar"
+   ]
+  ],
+  "paras": [
+   [
+    "La facturación electrónica deja de ser una opción. La Ley Crea y Crece obliga a todos los autónomos y empresas a emitir facturas en formato electrónico de forma progresiva. Si eres autónomo, esta guía te explica qué es, cuándo te aplica, qué herramientas gratuitas puedes usar y cómo evitar errores que invaliden tus facturas. Sin tecnicismos, sin alarmismo.",
+    "La facturación electrónica deja de ser una opción. La Ley Crea y Crece obligará, de forma progresiva, a autónomos y empresas a emitir en formato electrónico las facturas que envían a otras empresas y profesionales; las facturas a particulares no entran en esta obligación. Si eres autónomo, esta guía te explica qué es, cuándo te aplicará, qué herramientas gratuitas puedes usar y cómo evitar errores. Sin tecnicismos, sin alarmismo."
+   ],
+   [
+    "La facturación electrónica es un formato estructurado (normalmente XML según el estándar Facturae) que permite el intercambio automatizado de facturas entre empresas y la administración. La Ley Crea y Crece, aprobada en 2022, obliga a su uso progresivo en España para mejorar la transparencia fiscal, reducir el fraude y luchar contra la morosidad comercial. Una factura en PDF enviada por email NO es una factura electrónica válida según esta ley.",
+    "La factura electrónica es una factura en un formato estructurado que un programa puede leer sin intervención humana, como Facturae o UBL, enviada por un canal digital. La Ley Crea y Crece, aprobada en 2022, la hará obligatoria en las operaciones entre empresas y profesionales para mejorar la transparencia, reducir el fraude y luchar contra la morosidad comercial: además de emitirla, habrá que informar del estado de cada factura, por ejemplo si está aceptada o pagada. Una factura en PDF enviada por email no es una factura electrónica a efectos de esta ley. Y no la confundas con Verifactu, que fija los requisitos del programa con el que facturas: son dos normas distintas."
+   ],
+   [
+    "La aplicación es progresiva según facturación anual: empresas con facturación superior a 8 millones de euros ya están obligadas desde julio de 2025. El resto de empresas y autónomos con facturación inferior a 8 millones de euros tendrán que cumplir a partir del 12 meses tras la publicación del reglamento de desarrollo. La mayoría de autónomos deberán adaptarse a partir de 2027. Pero atención: si tu cliente es una empresa que ya está obligada, ella puede exigirte facturas electrónicas desde antes de tu plazo legal.",
+    "La obligación llegará por etapas, según la facturación anual: primero, las empresas que facturan más de 8 millones de euros al año y, un año después, el resto de empresas y los autónomos. Los plazos se cuentan desde la entrada en vigor de la normativa de desarrollo, que se ha retrasado más de una vez: consulta las fechas vigentes en la sede de la Agencia Tributaria o con tu gestoría antes de planificar. Y aunque todavía no te toque, algunos clientes empresa pueden pedirte facturas electrónicas antes, así que conviene que tu programa ya pueda emitirlas."
+   ],
+   [
+    "Para ser legalmente válida, una factura electrónica en España debe: estar en formato Facturae (XML estructurado) o en otro formato aceptado por la AEAT como el Verifactu; contener firma electrónica avanzada; incluir todos los campos obligatorios (CIF, dirección, descripción del servicio, IVA aplicado, importe); y ser archivada durante al menos 4 años. Las facturas PDF normales NO son válidas a efectos legales, aunque las envíes por email firmado.",
+    "Para cumplir con la Ley Crea y Crece, una factura electrónica debe estar en un formato estructurado admitido, como Facturae o UBL; incluir los datos obligatorios de cualquier factura (número, fecha, NIF y dirección de emisor y cliente, descripción del servicio, base imponible, IVA aplicado e importe); garantizar su autenticidad e integridad; y conservarse durante el plazo legal (a efectos fiscales, al menos cuatro años; pregunta a tu gestoría si debes guardarla más tiempo). Si facturas a una Administración pública a través de FACe, se exige además el formato Facturae con firma electrónica. Cuando la obligación te alcance, un PDF normal no servirá para las facturas entre empresas, aunque lo envíes por email firmado."
+   ],
+   [
+    "FACe es la plataforma oficial del gobierno para facturar a las administraciones públicas: gratis, segura, pero limitada al sector público. Verifactu es la solución oficial de la AEAT para el envío telemático de facturas: gratis para autónomos, integrable con muchos programas. Holded ofrece un plan gratuito con facturación electrónica básica incluida y es muy intuitivo. También existen Quipu y Anfix con planes gratuitos limitados que pueden cubrir las necesidades de un autónomo que factura poco volumen mensual.",
+    "FACe es la plataforma oficial para facturar a las Administraciones públicas: gratuita y segura, pero limitada al sector público. La Agencia Tributaria ha anunciado una aplicación de facturación gratuita para autónomos y pymes con pocas facturas: comprueba en su sede si ya está disponible y qué incluye. También hay programas de facturación con planes gratuitos, con límites de facturas, usuarios o funciones, que pueden bastar a un autónomo con poco volumen. Antes de elegir, comprueba que el programa emite facturas en formato estructurado, que su fabricante ha emitido la declaración responsable que exige Verifactu y que te deja exportar tus datos."
+   ],
+   [
+    "Primero, obtén tu certificado digital de la FNMT (gratis, válido 4 años). Segundo, elige una herramienta de facturación que soporte el formato Facturae (las 3 anteriores son válidas). Tercero, configura tus datos fiscales y los de tus clientes en la herramienta. Cuarto, crea la factura desde la interfaz indicando concepto, importe e IVA. Quinto, firma electrónicamente la factura desde la propia herramienta. Sexto, envíala al cliente: si es público, vía FACe; si es privado, según el canal que él acepte. Archívala 4 años. Listo.",
+    "Primero, consigue tu certificado digital (para personas físicas, la FNMT lo emite gratis). Segundo, elige una herramienta de facturación que emita facturas en formato estructurado. Tercero, configura tus datos fiscales y los de tus clientes. Cuarto, crea la factura indicando concepto, importe e IVA. Quinto, si facturas a una Administración pública, fírmala electrónicamente desde la propia herramienta. Sexto, envíala al cliente: si es público, a través de FACe; si es privado, por el canal digital que acordéis. Por último, consérvala durante el plazo legal."
+   ],
+   [
+    "Confundir factura PDF firmada con factura electrónica válida es el error más común: el formato estructurado es obligatorio. Olvidar la firma electrónica avanzada es otro fallo frecuente. Usar datos fiscales incompletos o incorrectos (CIF, dirección) invalida la factura. No archivar la copia 4 años puede generar sanciones en una inspección. Y atención: si tu cliente es una administración pública, debes enviarla específicamente por FACe, no por email.",
+    "Confundir una factura en PDF firmada con una factura electrónica es un error frecuente: hace falta un formato estructurado. Olvidar la firma electrónica cuando facturas a la Administración a través de FACe es otro fallo habitual. Usar datos fiscales incompletos o incorrectos (NIF, dirección) te obliga a rectificar la factura. No conservar las facturas durante el plazo legal puede acarrear sanciones en una inspección. Y si tu cliente es una Administración pública, envía la factura por FACe, no por email."
+   ],
+   [
+    "Las sanciones por no cumplir con la obligación de facturación electrónica oscilan entre 150 y 6.000 euros según la gravedad y reincidencia. Adicionalmente, si una administración pública te exige factura electrónica y no la emites, simplemente no cobrarás hasta que regularices. Tu cliente empresa también puede negarse a pagar facturas que no cumplan el formato exigido. La mejor estrategia es adaptarte ahora, con calma, antes de la obligación formal.",
+    "La normativa prevé sanciones por incumplir la obligación de facturación electrónica: consulta las cuantías vigentes en la Agencia Tributaria o con tu asesor. Además, si una Administración pública te exige factura electrónica y no la emites, el cobro puede retrasarse hasta que la presentes como corresponde, y tus clientes empresa pueden pedirte que la corrijas. Lo más práctico es adaptarte con calma, antes de que llegue tu plazo."
+   ],
+   [
+    "La facturación electrónica no es una opción, es el futuro inmediato. Pero tampoco es complicado: con un certificado digital gratuito y una herramienta como Holded o Verifactu, puedes empezar hoy mismo. No esperes a la fecha límite: adáptate ahora cuando aún no hay presión, para que cuando llegue la obligación ya estés a punto.",
+    "La facturación electrónica llegará a todas las facturas entre empresas, pero adaptarse no es complicado: con un certificado digital y un programa de facturación adecuado puedes prepararte desde hoy. No esperes a la fecha límite: adáptate ahora, cuando aún no hay presión, para que cuando llegue la obligación ya estés a punto."
+   ]
+  ],
+  "faq": [
+   [
+    "No para los efectos de la Ley Crea y Crece. Necesitas formato Facturae (XML estructurado) o un sistema homologado por la AEAT como Verifactu.",
+    "No para las facturas entre empresas cuando la obligación te alcance: hace falta un formato estructurado, como Facturae o UBL, que un programa pueda leer. Verifactu es otra norma: fija los requisitos del software de facturación, no el formato de la factura."
+   ],
+   [
+    "La mayoría de autónomos deberán cumplir a partir de 2027, una vez publicado el reglamento. Pero tus clientes empresas pueden exigírtela antes.",
+    "La obligación llega por etapas: primero las empresas que facturan más de 8 millones de euros y, un año después, el resto, incluidos los autónomos. Consulta las fechas vigentes en la Agencia Tributaria o con tu gestoría, y ten en cuenta que tus clientes empresa pueden pedírtela antes."
+   ],
+   [
+    "Para autónomos con poco volumen, Holded plan gratuito es la más fácil. Si solo facturas a la administración pública, FACe es suficiente.",
+    "Con poco volumen puede bastarte un programa con plan gratuito o la aplicación gratuita que ha anunciado la Agencia Tributaria, si ya está disponible. Si solo facturas a la Administración pública, FACe es gratuito. Comprueba siempre que la herramienta emite facturas en formato estructurado."
+   ]
+  ],
+  "liens": {
+   "2": [
+    "son dos normas distintas.",
+    "son dos normas distintas, como explicamos en <a href=\"https://webautonomos.es/blog/es/factura-electronica-plazos-2026-2027\" style=\"color:#2563eb;\">Verifactu y factura electrónica: qué te toca</a>."
+   ]
+  }
+ },
+ "val": {
+  "h2": [
+   [
+    "Què és la facturació electrònica i per què és obligatòria",
+    "Què és la facturació electrònica i per què serà obligatòria"
+   ],
+   [
+    "Les 3 ferramentes gratuïtes que pots usar",
+    "Ferramentes gratuïtes que pots usar"
+   ]
+  ],
+  "paras": [
+   [
+    "La facturació electrònica deixa de ser una opció. La Llei Crea i Creix obliga tots els autònoms i empreses a emetre factures en format electrònic de manera progressiva. Si eres autònom, esta guia t'explica què és, quan t'aplica, quines ferramentes gratuïtes pots usar i com evitar errors que invaliden les teues factures. Sense tecnicismes, sense alarmisme.",
+    "La facturació electrònica deixa de ser una opció. La Llei Crea i Creix obligarà, de manera progressiva, autònoms i empreses a emetre en format electrònic les factures que envien a altres empreses i professionals; les factures a particulars no entren en esta obligació. Si eres autònom, esta guia t'explica què és, quan t'aplicarà, quines ferramentes gratuïtes pots usar i com evitar errors. Sense tecnicismes, sense alarmisme."
+   ],
+   [
+    "La facturació electrònica és un format estructurat (normalment XML segons l'estàndard Facturae) que permet l'intercanvi automatitzat de factures entre empreses i l'administració. La Llei Crea i Creix, aprovada en 2022, obliga al seu ús progressiu a Espanya per a millorar la transparència fiscal, reduir el frau i lluitar contra la morositat comercial. Una factura en PDF enviada per email NO és una factura electrònica vàlida segons esta llei.",
+    "La factura electrònica és una factura en un format estructurat que un programa pot llegir sense intervenció humana, com Facturae o UBL, enviada per un canal digital. La Llei Crea i Creix, aprovada en 2022, la farà obligatòria en les operacions entre empreses i professionals per a millorar la transparència, reduir el frau i lluitar contra la morositat comercial: a més d'emetre-la, caldrà informar de l'estat de cada factura, per exemple si està acceptada o pagada. Una factura en PDF enviada per email no és una factura electrònica a efectes d'esta llei. I no la confongues amb Verifactu, que fixa els requisits del programa amb què factures: són dues normes diferents."
+   ],
+   [
+    "L'aplicació és progressiva segons facturació anual: empreses amb facturació superior a 8 milions d'euros ja estan obligades des de juliol de 2025. La resta d'empreses i autònoms amb facturació inferior a 8 milions d'euros hauran de complir a partir dels 12 mesos després de la publicació del reglament de desenvolupament. La majoria d'autònoms hauran d'adaptar-se a partir de 2027. Però atenció: si el teu client és una empresa que ja està obligada, ella pot exigir-te factures electròniques des d'abans del teu termini legal.",
+    "L'obligació arribarà per etapes, segons la facturació anual: primer, les empreses que facturen més de 8 milions d'euros l'any i, un any després, la resta d'empreses i els autònoms. Els terminis es compten des de l'entrada en vigor de la normativa de desenvolupament, que s'ha endarrerit més d'una vegada: consulta les dates vigents en la seu de l'Agència Tributària o amb la teua gestoria abans de planificar. I tot i que encara no et toque, alguns clients empresa poden demanar-te factures electròniques abans, així que convé que el teu programa ja puga emetre-les."
+   ],
+   [
+    "Per a ser legalment vàlida, una factura electrònica a Espanya ha de: estar en format Facturae (XML estructurat) o en un altre format acceptat per l'AEAT com el Verifactu; contindre firma electrònica avançada; incloure tots els camps obligatoris (CIF, adreça, descripció del servici, IVA aplicat, import); i ser arxivada durant almenys 4 anys. Les factures PDF normals NO són vàlides a efectes legals, encara que les envies per email firmat.",
+    "Per a complir amb la Llei Crea i Creix, una factura electrònica ha d'estar en un format estructurat admés, com Facturae o UBL; incloure les dades obligatòries de qualsevol factura (número, data, NIF i adreça d'emissor i client, descripció del servici, base imposable, IVA aplicat i import); garantir la seua autenticitat i integritat; i conservar-se durant el termini legal (a efectes fiscals, almenys quatre anys; pregunta a la teua gestoria si l'has de guardar més temps). Si factures a una Administració pública a través de FACe, s'exigix a més el format Facturae amb firma electrònica. Quan l'obligació t'arribe, un PDF normal no servirà per a les factures entre empreses, encara que l'envies per email firmat."
+   ],
+   [
+    "FACe és la plataforma oficial del govern per a facturar a les administracions públiques: gratis, segura, però limitada al sector públic. Verifactu és la solució oficial de l'AEAT per a l'enviament telemàtic de factures: gratis per a autònoms, integrable amb molts programes. Holded oferix un pla gratuït amb facturació electrònica bàsica inclosa i és molt intuïtiu. També existixen Quipu i Anfix amb plans gratuïts limitats que poden cobrir les necessitats d'un autònom que factura poc volum mensual.",
+    "FACe és la plataforma oficial per a facturar a les Administracions públiques: gratuïta i segura, però limitada al sector públic. L'Agència Tributària ha anunciat una aplicació de facturació gratuïta per a autònoms i pimes amb poques factures: comprova en la seua seu si ja està disponible i què inclou. També hi ha programes de facturació amb plans gratuïts, amb límits de factures, usuaris o funcions, que poden bastar a un autònom amb poc volum. Abans de triar, comprova que el programa emet factures en format estructurat, que el seu fabricant ha emés la declaració responsable que exigix Verifactu i que et deixa exportar les teues dades."
+   ],
+   [
+    "Primer, obtín el teu certificat digital de la FNMT (gratis, vàlid 4 anys). Segon, tria una ferramenta de facturació que admeta el format Facturae (les 3 anteriors són vàlides). Tercer, configura les teues dades fiscals i les dels teus clients en la ferramenta. Quart, crea la factura des de la interfície indicant concepte, import i IVA. Quint, firma electrònicament la factura des de la mateixa ferramenta. Sext, envia-la al client: si és públic, via FACe; si és privat, segons el canal que ell accepte. Arxiva-la 4 anys. Llest.",
+    "Primer, aconseguix el teu certificat digital (per a persones físiques, la FNMT l'emet gratis). Segon, tria una ferramenta de facturació que emeta factures en format estructurat. Tercer, configura les teues dades fiscals i les dels teus clients. Quart, crea la factura indicant concepte, import i IVA. Quint, si factures a una Administració pública, firma-la electrònicament des de la mateixa ferramenta. Sext, envia-la al client: si és públic, a través de FACe; si és privat, pel canal digital que acordeu. Finalment, conserva-la durant el termini legal."
+   ],
+   [
+    "Confondre factura PDF firmada amb factura electrònica vàlida és l'error més comú: el format estructurat és obligatori. Oblidar la firma electrònica avançada és un altre error freqüent. Usar dades fiscals incompletes o incorrectes (CIF, adreça) invalida la factura. No arxivar la còpia 4 anys pot generar sancions en una inspecció. I atenció: si el teu client és una administració pública, l'has d'enviar específicament per FACe, no per email.",
+    "Confondre una factura en PDF firmada amb una factura electrònica és un error freqüent: cal un format estructurat. Oblidar la firma electrònica quan factures a l'Administració a través de FACe és una altra errada habitual. Usar dades fiscals incompletes o incorrectes (NIF, adreça) t'obliga a rectificar la factura. No conservar les factures durant el termini legal pot comportar sancions en una inspecció. I si el teu client és una Administració pública, envia la factura per FACe, no per email."
+   ],
+   [
+    "Les sancions per no complir amb l'obligació de facturació electrònica oscil·len entre 150 i 6.000 euros segons la gravetat i reincidència. Addicionalment, si una administració pública t'exigix factura electrònica i no l'emets, simplement no cobraràs fins que regularitzes. El teu client empresa també pot negar-se a pagar factures que no complisquen el format exigit. La millor estratègia és adaptar-te ara, amb calma, abans de l'obligació formal.",
+    "La normativa preveu sancions per incomplir l'obligació de facturació electrònica: consulta les quanties vigents en l'Agència Tributària o amb el teu assessor. A més, si una Administració pública t'exigix factura electrònica i no l'emets, el cobrament es pot endarrerir fins que la presentes com cal, i els teus clients empresa poden demanar-te que la corregisques. El més pràctic és adaptar-te amb calma, abans que arribe el teu termini."
+   ],
+   [
+    "La facturació electrònica no és una opció, és el futur immediat. Però tampoc és complicat: amb un certificat digital gratuït i una ferramenta com Holded o Verifactu, pots començar hui mateix. No esperes a la data límit: adapta't ara quan encara no hi ha pressió, perquè quan arribe l'obligació ja estigues a punt.",
+    "La facturació electrònica arribarà a totes les factures entre empreses, però adaptar-se no és complicat: amb un certificat digital i un programa de facturació adequat pots preparar-te des de hui. No esperes a la data límit: adapta't ara, quan encara no hi ha pressió, perquè quan arribe l'obligació ja estigues a punt."
+   ]
+  ],
+  "faq": [
+   [
+    "No per als efectes de la Llei Crea i Creix. Necessites format Facturae (XML estructurat) o un sistema homologat per l'AEAT com Verifactu.",
+    "No per a les factures entre empreses quan l'obligació t'arribe: cal un format estructurat, com Facturae o UBL, que un programa puga llegir. Verifactu és una altra norma: fixa els requisits del programari de facturació, no el format de la factura."
+   ],
+   [
+    "La majoria d'autònoms hauran de complir a partir de 2027, una vegada publicat el reglament. Però els teus clients empreses poden exigir-te-la abans.",
+    "L'obligació arriba per etapes: primer les empreses que facturen més de 8 milions d'euros i, un any després, la resta, inclosos els autònoms. Consulta les dates vigents en l'Agència Tributària o amb la teua gestoria, i tin en compte que els teus clients empresa poden demanar-te-la abans."
+   ],
+   [
+    "Per a autònoms amb poc volum, Holded pla gratuït és la més fàcil. Si només factures a l'administració pública, FACe és suficient.",
+    "Amb poc volum et pot bastar un programa amb pla gratuït o l'aplicació gratuïta que ha anunciat l'Agència Tributària, si ja està disponible. Si només factures a l'Administració pública, FACe és gratuït. Comprova sempre que la ferramenta emet factures en format estructurat."
+   ]
+  ],
+  "liens": {
+   "2": [
+    "són dues normes diferents.",
+    "són dues normes diferents, com expliquem en <a href=\"https://webautonomos.es/blog/val/factura-electronica-dues-normes\" style=\"color:#2563eb;\">Verifactu i factura electrònica</a>."
+   ]
+  }
+ },
+ "en": {
+  "h2": [
+   [
+    "What electronic invoicing is and why it is mandatory",
+    "What electronic invoicing is and why it will be mandatory"
+   ],
+   [
+    "The 3 free tools you can use",
+    "Free tools you can use"
+   ]
+  ],
+  "paras": [
+   [
+    "Electronic invoicing is no longer optional. The Crea y Crece Law requires all freelancers and companies to issue invoices in electronic format progressively. If you are a freelancer, this guide explains what it is, when it applies to you, which free tools you can use and how to avoid mistakes that invalidate your invoices. No jargon, no alarmism.",
+    "Electronic invoicing is no longer optional. The Crea y Crece Law will gradually require freelancers and companies to issue in electronic format the invoices they send to other businesses and professionals; invoices to private customers are not covered by this obligation. If you are a freelancer, this guide explains what it is, when it will apply to you, which free tools you can use and how to avoid mistakes. No jargon, no alarmism."
+   ],
+   [
+    "Electronic invoicing is a structured format (usually XML following the Facturae standard) that allows the automated exchange of invoices between companies and the administration. The Crea y Crece Law, approved in 2022, requires its progressive use in Spain to improve fiscal transparency, reduce fraud and fight commercial late payment. An invoice in PDF sent by email is NOT a valid electronic invoice under this law.",
+    "An electronic invoice is an invoice in a structured format that software can read without human intervention, such as Facturae or UBL, sent through a digital channel. The Crea y Crece Law, approved in 2022, will make it mandatory for transactions between businesses and professionals, to improve transparency, reduce fraud and fight late payment: as well as issuing it, you will have to report the status of each invoice, for example whether it has been accepted or paid. A PDF invoice sent by email is not an electronic invoice under this law. And do not confuse it with Verifactu, which sets the requirements for the software you invoice with: they are two different rules."
+   ],
+   [
+    "Application is progressive according to annual turnover: companies with turnover above 8 million euros are already required since July 2025. The rest of companies and freelancers with turnover below 8 million euros will have to comply from 12 months after the publication of the implementing regulation. Most freelancers will have to adapt from 2027. But beware: if your client is a company that is already obliged, it can require electronic invoices from you before your legal deadline.",
+    "The obligation will arrive in stages, according to annual turnover: first, companies with a turnover above 8 million euros a year and, one year later, all other companies and freelancers. The deadlines run from the entry into force of the implementing rules, which have been postponed more than once, so check the current dates on the Spanish Tax Agency (AEAT) website or with your gestor before planning. And even if it is not your turn yet, some business clients may ask you for electronic invoices earlier, so it is worth making sure your software can already issue them."
+   ],
+   [
+    "To be legally valid, an electronic invoice in Spain must: be in Facturae format (structured XML) or in another format accepted by the AEAT such as Verifactu; contain an advanced electronic signature; include all mandatory fields (tax ID, address, description of the service, VAT applied, amount); and be archived for at least 4 years. Normal PDF invoices are NOT valid for legal purposes, even if you send them by signed email.",
+    "To comply with the Crea y Crece Law, an electronic invoice must be in an accepted structured format, such as Facturae or UBL; include the mandatory details of any invoice (number, date, tax ID and address of issuer and client, description of the service, taxable base, VAT applied and amount); guarantee its authenticity and integrity; and be kept for the legal period (for tax purposes, at least four years; ask your gestor whether you need to keep it longer). If you invoice a public administration through FACe, the Facturae format with an electronic signature is also required. Once the obligation reaches you, an ordinary PDF will not do for invoices between businesses, even if you send it by signed email."
+   ],
+   [
+    "FACe is the government's official platform for invoicing public administrations: free, secure, but limited to the public sector. Verifactu is the AEAT's official solution for the electronic submission of invoices: free for freelancers, integrable with many programs. Holded offers a free plan with basic electronic invoicing included and is very intuitive. Quipu and Anfix also exist with limited free plans that can cover the needs of a freelancer who invoices a low monthly volume.",
+    "FACe is the official platform for invoicing public administrations: free and secure, but limited to the public sector. The Spanish Tax Agency has announced a free invoicing application for freelancers and small businesses with few invoices: check on its website whether it is already available and what it includes. There is also invoicing software with free plans, limited in invoices, users or features, which may be enough for a freelancer with a low volume. Before choosing, check that the software issues invoices in a structured format, that its manufacturer has issued the declaración responsable required by Verifactu and that you can export your data."
+   ],
+   [
+    "First, get your digital certificate from the FNMT (free, valid 4 years). Second, choose an invoicing tool that supports the Facturae format (the 3 above are valid). Third, set up your tax details and those of your clients in the tool. Fourth, create the invoice from the interface indicating concept, amount and VAT. Fifth, electronically sign the invoice from the tool itself. Sixth, send it to the client: if public, via FACe; if private, according to the channel they accept. Archive it for 4 years. Done.",
+    "First, get your digital certificate (for individuals, the FNMT issues it free of charge). Second, choose an invoicing tool that issues invoices in a structured format. Third, set up your tax details and those of your clients. Fourth, create the invoice with the description, amount and VAT. Fifth, if you invoice a public administration, sign it electronically from the tool itself. Sixth, send it to the client: if public, through FACe; if private, through the digital channel you agree on. Finally, keep it for the legal period."
+   ],
+   [
+    "Confusing a signed PDF invoice with a valid electronic invoice is the most common mistake: the structured format is mandatory. Forgetting the advanced electronic signature is another frequent error. Using incomplete or incorrect tax details (tax ID, address) invalidates the invoice. Not archiving the copy for 4 years can generate penalties in an inspection. And beware: if your client is a public administration, you must send it specifically via FACe, not by email.",
+    "Confusing a signed PDF invoice with an electronic invoice is a frequent mistake: a structured format is required. Forgetting the electronic signature when you invoice the administration through FACe is another common slip. Using incomplete or incorrect tax details (tax ID, address) means you have to correct the invoice. Not keeping your invoices for the legal period can lead to penalties in an inspection. And if your client is a public administration, send the invoice through FACe, not by email."
+   ],
+   [
+    "Penalties for not complying with the electronic invoicing obligation range between 150 and 6,000 euros depending on severity and recurrence. In addition, if a public administration requires an electronic invoice from you and you do not issue it, you simply will not get paid until you regularise. Your company client can also refuse to pay invoices that do not comply with the required format. The best strategy is to adapt now, calmly, before the formal obligation.",
+    "The rules provide for penalties for failing to meet the electronic invoicing obligation: check the current amounts with the Spanish Tax Agency or your adviser. In addition, if a public administration requires an electronic invoice from you and you do not issue it, payment may be delayed until you submit it properly, and your business clients may ask you to correct it. The most practical approach is to adapt calmly, before your deadline arrives."
+   ],
+   [
+    "Electronic invoicing is not an option, it is the immediate future. But it is not complicated either: with a free digital certificate and a tool like Holded or Verifactu, you can start today. Do not wait for the deadline: adapt now while there is still no pressure, so that when the obligation arrives you are already ready.",
+    "Electronic invoicing will reach all invoices between businesses, but adapting is not complicated: with a digital certificate and suitable invoicing software you can start preparing today. Do not wait for the deadline: adapt now, while there is no pressure, so that you are ready when the obligation arrives."
+   ]
+  ],
+  "faq": [
+   [
+    "Not for the purposes of the Crea y Crece Law. You need Facturae format (structured XML) or a system approved by the AEAT such as Verifactu.",
+    "Not for invoices between businesses once the obligation reaches you: you need a structured format, such as Facturae or UBL, that software can read. Verifactu is a different rule: it sets the requirements for invoicing software, not the format of the invoice."
+   ],
+   [
+    "Most freelancers will have to comply from 2027, once the regulation is published. But your company clients can require it from you earlier.",
+    "The obligation arrives in stages: first companies with a turnover above 8 million euros and, one year later, everyone else, freelancers included. Check the current dates with the Spanish Tax Agency or your gestor, and bear in mind that your business clients may ask you for it earlier."
+   ],
+   [
+    "For freelancers with low volume, the Holded free plan is the easiest. If you only invoice the public administration, FACe is enough.",
+    "With a low volume, invoicing software with a free plan may be enough, or the free application announced by the Spanish Tax Agency, if it is already available. If you only invoice the public administration, FACe is free. Always check that the tool issues invoices in a structured format."
+   ]
+  ],
+  "liens": {}
+ }
+}
