@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Relevé SERPmantics de toutes les pages suivies (gratuit : aucun guide créé).
+"""Relevé SERPmantics de toutes les pages du site.
 
-Pour chaque guide du compte SERPmantics (requête × langue × moteur), retrouve la page
-de pages.json qui vise cette requête, mesure son contenu actuel (balise <main>, comme
-`serp.py score`) et enregistre la mesure dans le guide : la liste des guides de
-SERPmantics affiche ensuite les mêmes notes.
+Pages : celles du circuit (pages.json) et toutes les autres (requetes_site.json, avec la
+requête que vise chacune). Pour chaque page qui a des guides (requête × langue × moteur),
+mesure son contenu actuel (balise <main>, comme `serp.py score`) et enregistre la mesure
+dans le guide : la liste des guides de SERPmantics affiche ensuite les mêmes notes.
+Mesurer est gratuit. Un guide sert à toutes les pages qui visent sa requête ; la mesure
+n'est enregistrée que pour la première (celle de pages.json en priorité).
 
     python3 _tools/seo_pipeline/releve.py [--sortie DOSSIER] [--sans-enregistrer] [--reprendre]
+    python3 _tools/seo_pipeline/releve.py creer [--source google] [--phase 1] [--max N] [--reserve 6] [--lot 5] [--essai]
+
+`creer` crée les guides manquants d'un moteur pour les pages de la phase demandée, dans
+la limite du quota API de SERPmantics (200 guides par mois, crédits illimités ou non)
+moins une réserve laissée au circuit. --essai : liste seulement.
 
 Écrit DOSSIER/releve.json (tout) et DOSSIER/releve.csv (une ligne par page et par
 moteur). --reprendre garde les mesures déjà faites dans releve.json.
@@ -30,6 +37,7 @@ NOMS = {'GOOGLE': 'Google', 'GOOGLE_AI_OVERVIEW_CITATIONS': 'AI Overview', 'CHAT
         'GEMINI_CITATIONS': 'Gemini', 'PERPLEXITY_CITATIONS': 'Perplexity', 'CLAUDE_CITATIONS': 'Claude'}
 ORDRE = ['Google', 'AI Overview', 'ChatGPT', 'Gemini', 'Perplexity', 'Claude']
 STRUCT = ['length', 'images', 'headings', 'paragraphs', 'links', 'lists', 'tables', 'videos']
+SITE = os.path.join(P, 'requetes_site.json')
 
 
 def charger_cle():
@@ -89,32 +97,131 @@ def contenu(e):
     return serp.contenu_page(e)
 
 
+def toutes_pages():
+    """Pages de pages.json (phase 1 sauf mention dans requetes_site.json), puis les autres."""
+    try:
+        site = json.load(open(SITE, encoding='utf-8'))
+    except FileNotFoundError:
+        site = {}
+    phases = site.get('phase_pages_suivies') or {}
+    out, vues = [], set()
+    for e in serp.cfg()['pages']:
+        out.append(dict(e, phase=phases.get(e['slug'], 1), suivie=True))
+        vues.add(e['url'].rstrip('/'))
+    for e in site.get('pages') or []:
+        if e['url'].rstrip('/') not in vues and e.get('fichier'):
+            out.append(dict({'statut': 'releve', 'mode': '-'}, **e, suivie=False))
+    return out
+
+
 def associer(guides, pages):
-    """{slug: {moteur: guide le plus récent non expiré}}, guides sans page, guides expirés."""
-    par_page, orphelins = {}, []
-    for g in guides:
-        q, lang = serp.norm(g.get('query')), (g.get('lang') or '').lower()
-        cible = None
-        for e in pages:
-            if serp.norm(e['requete']) != q:
-                continue
-            codes = serp.lang_codes(e)
-            if lang in codes or lang[:2] == e['lang'][:2]:
-                cible = e
-                if lang in codes:
-                    break
-        if not cible:
-            sec = [e['slug'] for e in pages if q in {serp.norm(x) for x in e.get('requetes_secondaires') or []}]
-            orphelins.append({'requete': g.get('query'), 'lang': lang, 'moteur': nom_moteur(g.get('source')),
-                              'id': g.get('id'), 'note_affichee': score_affiche(g),
-                              'expire': bool(g.get('expired')), 'requete_secondaire_de': sec})
+    """{slug: {moteur: guide}} et guides sans page. Pour chaque moteur : guide non expiré, dans
+    la langue préférée de la page, le plus récent. Un guide sert à toutes les pages de sa requête."""
+    par_page, utilises = {}, set()
+    for e in pages:
+        q = serp.norm(e.get('requete'))
+        if not q:
             continue
-        m = nom_moteur(g.get('source'))
-        actuel = par_page.setdefault(cible['slug'], {}).get(m)
-        rang = (not g.get('expired'), g.get('createdAt') or '')
-        if actuel is None or rang > (not actuel.get('expired'), actuel.get('createdAt') or ''):
-            par_page[cible['slug']][m] = g
+        codes = serp.lang_codes(e)
+        choix = {}
+        for g in guides:
+            if serp.norm(g.get('query')) != q:
+                continue
+            lang = (g.get('lang') or '').lower()
+            if lang in codes:
+                pref = codes.index(lang)
+            elif lang[:2] == e['lang'][:2]:
+                pref = len(codes)
+            else:
+                continue
+            m = nom_moteur(g.get('source'))
+            rang = (not g.get('expired'), -pref, g.get('createdAt') or '')
+            if m not in choix or rang > choix[m][0]:
+                choix[m] = (rang, g)
+        if choix:
+            par_page[e['slug']] = {m: g for m, (_r, g) in choix.items()}
+            utilises.update(g.get('id') for _r, g in choix.values())
+    orphelins = [{'requete': g.get('query'), 'lang': (g.get('lang') or '').lower(), 'moteur': nom_moteur(g.get('source')),
+                  'id': g.get('id'), 'note_affichee': score_affiche(g), 'expire': bool(g.get('expired'))}
+                 for g in guides if g.get('id') not in utilises]
     return par_page, orphelins
+
+
+def quota():
+    """Quota API de création de guides : {limit, used, remaining, period_end…} (lecture gratuite)."""
+    code, j = serp.api('GET', '/usage')
+    d = j.get('data') if code == 200 and isinstance(j, dict) else None
+    if not d:
+        try:
+            _i, sid = serp.mcp_appel('initialize', {'protocolVersion': '2025-06-18', 'capabilities': {},
+                                                    'clientInfo': {'name': 'releve', 'version': '1'}})
+            r, _ = serp.mcp_appel('tools/call', {'name': 'get_usage', 'arguments': {}}, sid, ident=2)
+            d = json.loads(r['result']['content'][0]['text'])['data']
+        except Exception as e:
+            serp.log(f'quota illisible : {e}')
+    return d or {}
+
+
+def cmd_creer(a, sortie):
+    source = a[a.index('--source') + 1] if '--source' in a else 'google'
+    phase = int(a[a.index('--phase') + 1]) if '--phase' in a else 1
+    maxi = int(a[a.index('--max') + 1]) if '--max' in a else 10 ** 6
+    reserve = int(a[a.index('--reserve') + 1]) if '--reserve' in a else 6
+    moteur = nom_moteur(source)
+    pages = [e for e in toutes_pages() if e.get('phase', 1) <= phase and e.get('requete')]
+    par_page, _ = associer(lister_guides(), pages)
+    manquants = {}
+    for e in pages:
+        if moteur in par_page.get(e['slug'], {}):
+            continue
+        lang = serp.lang_codes(e)[0]
+        x = manquants.setdefault((lang, serp.norm(e['requete'])), {'requete': e['requete'], 'lang': lang, 'pages': []})
+        x['pages'].append(e['slug'])
+    q = quota()
+    reste = q.get('remaining') if isinstance(q.get('remaining'), int) else 0
+    liste = list(manquants.values())[:max(0, min(maxi, reste - reserve))]
+    print(f"{len(manquants)} guides {moteur} manquants (phase ≤ {phase}) ; quota restant {reste} jusqu'au "
+          f"{str(q.get('period_end'))[:10]}, réserve {reserve} : {len(liste)} à créer")
+    for x in liste:
+        print(f"  {x['lang']}  {x['requete']}  ← {', '.join(x['pages'])}")
+    if '--essai' in a or not liste:
+        return
+    faits = []
+    par_lang = {}
+    for x in liste:
+        par_lang.setdefault(x['lang'], []).append(x)
+    taille = int(a[a.index('--lot') + 1]) if '--lot' in a else 5
+    for lang, xs in par_lang.items():
+        for i in range(0, len(xs), taille):
+            lot = xs[i:i + taille]
+            for essai in range(8):  # 429 : SERPmantics limite le rythme (04/10 : refus après 20 guides en 4 s)
+                code, j = serp.api('POST', '/guides', corps={'queries': [x['requete'] for x in lot], 'lang': lang, 'source': source})
+                serp.log(f'création {lang} ({len(lot)} requêtes) : HTTP {code}')
+                if code != 429:
+                    break
+                serp.log(f'trop de demandes : pause de {60 * (essai + 1)} s ({json.dumps(j, ensure_ascii=False)[:200]})')
+                time.sleep(60 * (essai + 1))
+            crees = {serp.norm(g.get('query')): g.get('id') for g in (j.get('guides') or [])}
+            def requetes(cle):
+                return {serp.norm(str(v.get('query') if isinstance(v, dict) else v)) for v in (j.get(cle) or [])}
+            echecs, inconnus = requetes('guidesFailed'), requetes('guidesUnknown')
+            for x in lot:
+                n = serp.norm(x['requete'])
+                x['id'] = crees.get(n)
+                x['etat'] = ('créé' if x['id'] else 'inconnu : ne pas recréer, chercher dans la liste' if n in inconnus
+                             else 'refusé' if n in echecs or 400 <= code < 500 else 'absent de la réponse')
+                if not x['id']:
+                    x['reponse'] = json.dumps(j, ensure_ascii=False)[:400]
+                faits.append(x)
+            time.sleep(20)
+    for x in faits:
+        if x.get('id'):
+            x['pret'], _j = serp.attendre_guide(x['id'], max_min=30)
+            serp.log(f"{x['requete']} ({x['lang']}) : {x['pret']}")
+    os.makedirs(sortie, exist_ok=True)
+    json.dump(faits, open(os.path.join(sortie, 'creations.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    from collections import Counter
+    print('création :', dict(Counter(x['etat'] for x in faits)), '| prêts :', dict(Counter(x.get('pret') for x in faits if x.get('id'))))
 
 
 def mesurer(e, g, txt, enregistrer):
@@ -166,17 +273,19 @@ def main(a):
         for p in json.load(open(fjson, encoding='utf-8')).get('pages', []):
             for m, r in (p.get('mesures') or {}).items():
                 if 'maintenant' in r:
-                    deja[r['guide_id']] = r
-    pages = serp.cfg()['pages']
+                    deja[(p['slug'], r['guide_id'])] = r
+    pages = toutes_pages()
     guides = lister_guides()
     serp.log(f'{len(guides)} guides dans le compte SERPmantics')
     par_page, orphelins = associer(guides, pages)
     rapport = {'date': datetime.datetime.now().strftime('%Y-%m-%d %H:%M'), 'enregistre_dans_les_guides': enregistrer,
                'seuils': {'vert': serp.seuil_vert(), 'rouge': serp.seuil_rouge()}, 'pages': [],
                'guides_sans_page': orphelins}
+    enregistres = set()  # guide partagé par plusieurs pages : on n'enregistre que la première mesure
     for e in pages:
         fichier = os.path.join(serp.REPO, e['fichier'])
-        ligne = {k: e.get(k) for k in ('slug', 'url', 'lang', 'requete', 'fichier', 'statut', 'mode', 'objectif_geo')}
+        ligne = {k: e.get(k) for k in ('slug', 'url', 'lang', 'requete', 'fichier', 'statut', 'mode', 'objectif_geo',
+                                       'phase', 'suivie', 'origine')}
         ligne['geo_hors_cible'] = e.get('geo_hors_cible') or []
         ligne['mesures'] = {}
         if not os.path.exists(fichier):
@@ -186,11 +295,13 @@ def main(a):
         txt = contenu(e)
         ligne['images_html'] = len(re.findall(r'(?i)<img\b', txt))
         for m, g in sorted((par_page.get(e['slug']) or {}).items(), key=lambda x: (ORDRE + [x[0]]).index(x[0])):
-            if g.get('id') in deja:
-                ligne['mesures'][m] = deja[g['id']]
+            if (e['slug'], g.get('id')) in deja:
+                ligne['mesures'][m] = deja[(e['slug'], g['id'])]
+                enregistres.add(g.get('id'))
                 continue
             serp.log(f"{e['slug']} — {m}")
-            ligne['mesures'][m] = mesurer(e, g, txt, enregistrer)
+            ligne['mesures'][m] = mesurer(e, g, txt, enregistrer and g.get('id') not in enregistres)
+            enregistres.add(g.get('id'))
             time.sleep(0.5)
         rapport['pages'].append(ligne)
         json.dump(rapport, open(fjson, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
@@ -211,9 +322,14 @@ def main(a):
     json.dump(rapport, open(fjson, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     n = sum(len(p['mesures']) for p in rapport['pages'])
     sans = [p['slug'] for p in rapport['pages'] if not p['mesures']]
-    print(f"{n} mesures sur {len(rapport['pages'])} pages ; pages sans guide : {', '.join(sans) or 'aucune'} ; "
-          f"guides sans page : {len(orphelins)} ; écrit dans {sortie}")
+    print(f"{n} mesures sur {len(rapport['pages']) - len(sans)} pages ; {len(sans)} pages sans guide"
+          + (f" ({', '.join(sans)})" if len(sans) <= 15 else '') + f" ; guides sans page : {len(orphelins)} ; écrit dans {sortie}")
 
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    if sys.argv[1:2] == ['creer']:
+        charger_cle()
+        a = sys.argv[2:]
+        cmd_creer(a, os.path.abspath(a[a.index('--sortie') + 1]) if '--sortie' in a else os.path.join(serp.RUNS, '_releve'))
+    else:
+        main(sys.argv[1:])

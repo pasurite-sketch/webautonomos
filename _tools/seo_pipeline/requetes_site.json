@@ -1,0 +1,1954 @@
+{
+ "_lisez_moi": [
+  "Pages du site hors pages.json, avec la requête que vise chacune : releve.py crée leurs guides (« creer ») puis les mesure.",
+  "phase 1 : guides Google créés le 04/10/2026 (quota API : 200 guides par mois, période du 24/09 au 24/10, 6 gardés pour le circuit).",
+  "phase 2 : à partir du 24/10 ; les requêtes « null » sont à choisir avant. Langues acceptées par SERPmantics : es, fr, en-gb… mais ni le catalan ni en-es.",
+  "Requête modifiée : changer « requete » ; l'ancien guide reste dans SERPmantics, un nouveau sera créé."
+ ],
+ "phase_pages_suivies": {
+  "fr-francophones-espagne": 2,
+  "en-plumbers": 2,
+  "en-electricians": 2,
+  "en-builders": 2
+ },
+ "pages": [
+  {
+   "slug": "site-blog-es-5-razones-pagina-web-negocio-2026",
+   "url": "https://webautonomos.es/blog/es/5-razones-pagina-web-negocio-2026",
+   "fichier": "blog/es/5-razones-pagina-web-negocio-2026.html",
+   "lang": "es",
+   "requete": "página web para autónomos",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-5-raisons-davoir-un-site-web-en-2026",
+   "url": "https://webautonomos.es/blog/fr/5-raisons-davoir-un-site-web-en-2026",
+   "fichier": "blog/fr/5-raisons-davoir-un-site-web-en-2026.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-5-reasons-your-business-needs-a-website-in-2026",
+   "url": "https://webautonomos.es/blog/en/5-reasons-your-business-needs-a-website-in-2026",
+   "fichier": "blog/en/5-reasons-your-business-needs-a-website-in-2026.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-automatizar-sin-saber-programar",
+   "url": "https://webautonomos.es/blog/es/automatizar-sin-saber-programar",
+   "fichier": "blog/es/automatizar-sin-saber-programar.html",
+   "lang": "es",
+   "requete": "automatizar sin código",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-automatiser-sans-savoir-programmer",
+   "url": "https://webautonomos.es/blog/fr/automatiser-sans-savoir-programmer",
+   "fichier": "blog/fr/automatiser-sans-savoir-programmer.html",
+   "lang": "fr",
+   "requete": "automatiser sans coder",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-automate-without-coding",
+   "url": "https://webautonomos.es/blog/en/automate-without-coding",
+   "fichier": "blog/en/automate-without-coding.html",
+   "lang": "en",
+   "requete": "automate without code",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-backlinks-locales-como-conseguir",
+   "url": "https://webautonomos.es/blog/es/backlinks-locales-como-conseguir",
+   "fichier": "blog/es/backlinks-locales-como-conseguir.html",
+   "lang": "es",
+   "requete": "backlinks locales",
+   "origine": "ajustée (mot-clé éditorial : backlinks locales SEO)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-obtenir-des-backlinks-locaux",
+   "url": "https://webautonomos.es/blog/fr/obtenir-des-backlinks-locaux",
+   "fichier": "blog/fr/obtenir-des-backlinks-locaux.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-how-to-get-local-backlinks",
+   "url": "https://webautonomos.es/blog/en/how-to-get-local-backlinks",
+   "fichier": "blog/en/how-to-get-local-backlinks.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-categorias-google-business-como-elegir",
+   "url": "https://webautonomos.es/blog/es/categorias-google-business-como-elegir",
+   "fichier": "blog/es/categorias-google-business-como-elegir.html",
+   "lang": "es",
+   "requete": "categorías Google Business",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-choisir-les-categories-google-business",
+   "url": "https://webautonomos.es/blog/fr/choisir-les-categories-google-business",
+   "fichier": "blog/fr/choisir-les-categories-google-business.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-how-to-choose-google-business-categories",
+   "url": "https://webautonomos.es/blog/en/how-to-choose-google-business-categories",
+   "fichier": "blog/en/how-to-choose-google-business-categories.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-citas-locales-nap-que-son-por-que-importan",
+   "url": "https://webautonomos.es/blog/es/citas-locales-nap-que-son-por-que-importan",
+   "fichier": "blog/es/citas-locales-nap-que-son-por-que-importan.html",
+   "lang": "es",
+   "requete": "citas locales SEO",
+   "origine": "ajustée (mot-clé éditorial : citas locales NAP SEO)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-citations-locales-nap-guide-complet",
+   "url": "https://webautonomos.es/blog/fr/citations-locales-nap-guide-complet",
+   "fichier": "blog/fr/citations-locales-nap-guide-complet.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-local-citations-nap-complete-guide",
+   "url": "https://webautonomos.es/blog/en/local-citations-nap-complete-guide",
+   "fichier": "blog/en/local-citations-nap-complete-guide.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-como-aparecer-google-maps-autonomos",
+   "url": "https://webautonomos.es/blog/es/como-aparecer-google-maps-autonomos",
+   "fichier": "blog/es/como-aparecer-google-maps-autonomos.html",
+   "lang": "es",
+   "requete": "aparecer en Google Maps",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-apparaitre-sur-google-maps-guide-complet",
+   "url": "https://webautonomos.es/blog/fr/apparaitre-sur-google-maps-guide-complet",
+   "fichier": "blog/fr/apparaitre-sur-google-maps-guide-complet.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-how-to-appear-on-google-maps-complete-guide",
+   "url": "https://webautonomos.es/blog/en/how-to-appear-on-google-maps-complete-guide",
+   "fichier": "blog/en/how-to-appear-on-google-maps-complete-guide.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-como-conseguir-clientes-por-internet",
+   "url": "https://webautonomos.es/blog/es/como-conseguir-clientes-por-internet",
+   "fichier": "blog/es/como-conseguir-clientes-por-internet.html",
+   "lang": "es",
+   "requete": "cómo conseguir clientes por internet",
+   "origine": "ajustée (mot-clé éditorial : conseguir clientes internet autónomo)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-comment-trouver-des-clients-sur-internet",
+   "url": "https://webautonomos.es/blog/fr/comment-trouver-des-clients-sur-internet",
+   "fichier": "blog/fr/comment-trouver-des-clients-sur-internet.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-how-to-find-clients-online",
+   "url": "https://webautonomos.es/blog/en/how-to-find-clients-online",
+   "fichier": "blog/en/how-to-find-clients-online.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-como-conseguir-resenas-google-negocio",
+   "url": "https://webautonomos.es/blog/es/como-conseguir-resenas-google-negocio",
+   "fichier": "blog/es/como-conseguir-resenas-google-negocio.html",
+   "lang": "es",
+   "requete": "conseguir reseñas Google",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-obtenir-plus-avis-google-guide-complet",
+   "url": "https://webautonomos.es/blog/fr/obtenir-plus-avis-google-guide-complet",
+   "fichier": "blog/fr/obtenir-plus-avis-google-guide-complet.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-how-to-get-more-google-reviews",
+   "url": "https://webautonomos.es/blog/en/how-to-get-more-google-reviews",
+   "fichier": "blog/en/how-to-get-more-google-reviews.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-como-elegir-dominio-web-negocio",
+   "url": "https://webautonomos.es/blog/es/como-elegir-dominio-web-negocio",
+   "fichier": "blog/es/como-elegir-dominio-web-negocio.html",
+   "lang": "es",
+   "requete": "cómo elegir dominio web",
+   "origine": "ajustée (mot-clé éditorial : elegir dominio web negocio)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-choisir-le-nom-de-domaine-de-son-site",
+   "url": "https://webautonomos.es/blog/fr/choisir-le-nom-de-domaine-de-son-site",
+   "fichier": "blog/fr/choisir-le-nom-de-domaine-de-son-site.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-how-to-choose-your-domain-name",
+   "url": "https://webautonomos.es/blog/en/how-to-choose-your-domain-name",
+   "fichier": "blog/en/how-to-choose-your-domain-name.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-como-es-automatizar-un-proceso-paso-a-paso",
+   "url": "https://webautonomos.es/blog/es/como-es-automatizar-un-proceso-paso-a-paso",
+   "fichier": "blog/es/como-es-automatizar-un-proceso-paso-a-paso.html",
+   "lang": "es",
+   "requete": "cómo automatizar un proceso",
+   "origine": "ajustée (mot-clé éditorial : proceso automatización pasos)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-comment-se-passe-l-automatisation-etape-par-etape",
+   "url": "https://webautonomos.es/blog/fr/comment-se-passe-l-automatisation-etape-par-etape",
+   "fichier": "blog/fr/comment-se-passe-l-automatisation-etape-par-etape.html",
+   "lang": "fr",
+   "requete": "processus automatisation étapes",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-how-automating-a-process-works-step-by-step",
+   "url": "https://webautonomos.es/blog/en/how-automating-a-process-works-step-by-step",
+   "fichier": "blog/en/how-automating-a-process-works-step-by-step.html",
+   "lang": "en",
+   "requete": "automation process steps",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-como-posicionar-web-en-google-local",
+   "url": "https://webautonomos.es/blog/es/como-posicionar-web-en-google-local",
+   "fichier": "blog/es/como-posicionar-web-en-google-local.html",
+   "lang": "es",
+   "requete": "posicionar web Google local",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-positionner-son-site-dans-le-google-local",
+   "url": "https://webautonomos.es/blog/fr/positionner-son-site-dans-le-google-local",
+   "fichier": "blog/fr/positionner-son-site-dans-le-google-local.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-how-to-rank-your-website-in-local-google",
+   "url": "https://webautonomos.es/blog/en/how-to-rank-your-website-in-local-google",
+   "fichier": "blog/en/how-to-rank-your-website-in-local-google.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-configurar-whatsapp-business-gratis-autonomos",
+   "url": "https://webautonomos.es/blog/es/configurar-whatsapp-business-gratis-autonomos",
+   "fichier": "blog/es/configurar-whatsapp-business-gratis-autonomos.html",
+   "lang": "es",
+   "requete": "WhatsApp Business autónomos",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-configurer-whatsapp-business-gratuitement",
+   "url": "https://webautonomos.es/blog/fr/configurer-whatsapp-business-gratuitement",
+   "fichier": "blog/fr/configurer-whatsapp-business-gratuitement.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-set-up-whatsapp-business-for-free",
+   "url": "https://webautonomos.es/blog/en/set-up-whatsapp-business-for-free",
+   "fichier": "blog/en/set-up-whatsapp-business-for-free.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-contratar-o-automatizar",
+   "url": "https://webautonomos.es/blog/es/contratar-o-automatizar",
+   "fichier": "blog/es/contratar-o-automatizar.html",
+   "lang": "es",
+   "requete": "contratar o automatizar",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-embaucher-ou-automatiser",
+   "url": "https://webautonomos.es/blog/fr/embaucher-ou-automatiser",
+   "fichier": "blog/fr/embaucher-ou-automatiser.html",
+   "lang": "fr",
+   "requete": "embaucher ou automatiser",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-hire-or-automate",
+   "url": "https://webautonomos.es/blog/en/hire-or-automate",
+   "fichier": "blog/en/hire-or-automate.html",
+   "lang": "en",
+   "requete": "hire or automate",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-crear-contenido-web-sin-saber-escribir",
+   "url": "https://webautonomos.es/blog/es/crear-contenido-web-sin-saber-escribir",
+   "fichier": "blog/es/crear-contenido-web-sin-saber-escribir.html",
+   "lang": "es",
+   "requete": "crear contenido web",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-creer-du-contenu-web-sans-savoir-ecrire",
+   "url": "https://webautonomos.es/blog/fr/creer-du-contenu-web-sans-savoir-ecrire",
+   "fichier": "blog/fr/creer-du-contenu-web-sans-savoir-ecrire.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-create-web-content-without-being-a-writer",
+   "url": "https://webautonomos.es/blog/en/create-web-content-without-being-a-writer",
+   "fichier": "blog/en/create-web-content-without-being-a-writer.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-cuanto-cuesta-automatizar-un-proceso-formula",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-automatizar-un-proceso-formula",
+   "fichier": "blog/es/cuanto-cuesta-automatizar-un-proceso-formula.html",
+   "lang": "es",
+   "requete": "cuánto cuesta automatizar procesos",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-combien-coute-automatiser-un-processus",
+   "url": "https://webautonomos.es/blog/fr/combien-coute-automatiser-un-processus",
+   "fichier": "blog/fr/combien-coute-automatiser-un-processus.html",
+   "lang": "fr",
+   "requete": "combien coûte automatiser un processus",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-cuanto-cuesta-automatizar-un-proceso-formula",
+   "url": "https://webautonomos.es/blog/en/cuanto-cuesta-automatizar-un-proceso-formula",
+   "fichier": "blog/en/cuanto-cuesta-automatizar-un-proceso-formula.html",
+   "lang": "en",
+   "requete": "cost to automate a process",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-fr-combien-coute-un-site-web-pour-independants",
+   "url": "https://webautonomos.es/blog/fr/combien-coute-un-site-web-pour-independants",
+   "fichier": "blog/fr/combien-coute-un-site-web-pour-independants.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-how-much-does-a-website-cost-for-freelancers",
+   "url": "https://webautonomos.es/blog/en/how-much-does-a-website-cost-for-freelancers",
+   "fichier": "blog/en/how-much-does-a-website-cost-for-freelancers.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-cuanto-cuesta-papeleo-autonomo",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-papeleo-autonomo",
+   "fichier": "blog/es/cuanto-cuesta-papeleo-autonomo.html",
+   "lang": "es",
+   "requete": "papeleo autónomos",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-ce-que-la-paperasse-coute-vraiment",
+   "url": "https://webautonomos.es/blog/fr/ce-que-la-paperasse-coute-vraiment",
+   "fichier": "blog/fr/ce-que-la-paperasse-coute-vraiment.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-what-paperwork-really-costs-a-freelancer",
+   "url": "https://webautonomos.es/blog/en/what-paperwork-really-costs-a-freelancer",
+   "fichier": "blog/en/what-paperwork-really-costs-a-freelancer.html",
+   "lang": "en",
+   "requete": "paperwork sole traders",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-digitalizacion-autonomos-espana-por-donde-empezar",
+   "url": "https://webautonomos.es/blog/es/digitalizacion-autonomos-espana-por-donde-empezar",
+   "fichier": "blog/es/digitalizacion-autonomos-espana-por-donde-empezar.html",
+   "lang": "es",
+   "requete": "digitalización autónomos España",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-en-going-digital-as-a-freelancer-where-to-start",
+   "url": "https://webautonomos.es/blog/en/going-digital-as-a-freelancer-where-to-start",
+   "fichier": "blog/en/going-digital-as-a-freelancer-where-to-start.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-email-marketing-autonomos-guia-basica",
+   "url": "https://webautonomos.es/blog/es/email-marketing-autonomos-guia-basica",
+   "fichier": "blog/es/email-marketing-autonomos-guia-basica.html",
+   "lang": "es",
+   "requete": "email marketing autónomos",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-email-marketing-independants-guide-debutant",
+   "url": "https://webautonomos.es/blog/fr/email-marketing-independants-guide-debutant",
+   "fichier": "blog/fr/email-marketing-independants-guide-debutant.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-email-marketing-for-freelancers-beginners-guide",
+   "url": "https://webautonomos.es/blog/en/email-marketing-for-freelancers-beginners-guide",
+   "fichier": "blog/en/email-marketing-for-freelancers-beginners-guide.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-errores-marketing-digital-autonomos",
+   "url": "https://webautonomos.es/blog/es/errores-marketing-digital-autonomos",
+   "fichier": "blog/es/errores-marketing-digital-autonomos.html",
+   "lang": "es",
+   "requete": "errores marketing digital autónomos",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-erreurs-marketing-digital-a-eviter",
+   "url": "https://webautonomos.es/blog/fr/erreurs-marketing-digital-a-eviter",
+   "fichier": "blog/fr/erreurs-marketing-digital-a-eviter.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-digital-marketing-mistakes-to-avoid",
+   "url": "https://webautonomos.es/blog/en/digital-marketing-mistakes-to-avoid",
+   "fichier": "blog/en/digital-marketing-mistakes-to-avoid.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-errores-mas-caros-al-automatizar",
+   "url": "https://webautonomos.es/blog/es/errores-mas-caros-al-automatizar",
+   "fichier": "blog/es/errores-mas-caros-al-automatizar.html",
+   "lang": "es",
+   "requete": "errores al automatizar procesos",
+   "origine": "ajustée (mot-clé éditorial : errores automatización negocio)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-erreurs-les-plus-couteuses-en-automatisation",
+   "url": "https://webautonomos.es/blog/fr/erreurs-les-plus-couteuses-en-automatisation",
+   "fichier": "blog/fr/erreurs-les-plus-couteuses-en-automatisation.html",
+   "lang": "fr",
+   "requete": "erreurs automatisation entreprise",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-costliest-automation-mistakes",
+   "url": "https://webautonomos.es/blog/en/costliest-automation-mistakes",
+   "fichier": "blog/en/costliest-automation-mistakes.html",
+   "lang": "en",
+   "requete": "automation mistakes business",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-factura-electronica-plazos-2026-2027",
+   "url": "https://webautonomos.es/blog/es/factura-electronica-plazos-2026-2027",
+   "fichier": "blog/es/factura-electronica-plazos-2026-2027.html",
+   "lang": "es",
+   "requete": "verifactu autónomos",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-facture-electronique-1er-septembre-2026",
+   "url": "https://webautonomos.es/blog/fr/facture-electronique-1er-septembre-2026",
+   "fichier": "blog/fr/facture-electronique-1er-septembre-2026.html",
+   "lang": "fr",
+   "requete": "facture électronique obligatoire 2026",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-e-invoicing-deadlines-france-spain",
+   "url": "https://webautonomos.es/blog/en/e-invoicing-deadlines-france-spain",
+   "fichier": "blog/en/e-invoicing-deadlines-france-spain.html",
+   "lang": "en",
+   "requete": "e-invoicing mandate France",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-facturacion-electronica-autonomos-obligatoria",
+   "url": "https://webautonomos.es/blog/es/facturacion-electronica-autonomos-obligatoria",
+   "fichier": "blog/es/facturacion-electronica-autonomos-obligatoria.html",
+   "lang": "es",
+   "requete": "facturación electrónica autónomos",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-en-mandatory-e-invoicing-for-freelancers",
+   "url": "https://webautonomos.es/blog/en/mandatory-e-invoicing-for-freelancers",
+   "fichier": "blog/en/mandatory-e-invoicing-for-freelancers.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-fotos-videos-ficha-google-importancia",
+   "url": "https://webautonomos.es/blog/es/fotos-videos-ficha-google-importancia",
+   "fichier": "blog/es/fotos-videos-ficha-google-importancia.html",
+   "lang": "es",
+   "requete": "fotos ficha Google Business",
+   "origine": "ajustée (mot-clé éditorial : fotos vídeos ficha Google)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-photos-et-videos-sur-sa-fiche-google",
+   "url": "https://webautonomos.es/blog/fr/photos-et-videos-sur-sa-fiche-google",
+   "fichier": "blog/fr/photos-et-videos-sur-sa-fiche-google.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-photos-and-videos-on-your-google-listing",
+   "url": "https://webautonomos.es/blog/en/photos-and-videos-on-your-google-listing",
+   "fichier": "blog/en/photos-and-videos-on-your-google-listing.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-google-ads-autonomos-guia-basica",
+   "url": "https://webautonomos.es/blog/es/google-ads-autonomos-guia-basica",
+   "fichier": "blog/es/google-ads-autonomos-guia-basica.html",
+   "lang": "es",
+   "requete": "Google Ads autónomos",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-google-ads-pour-independants-guide-debutant",
+   "url": "https://webautonomos.es/blog/fr/google-ads-pour-independants-guide-debutant",
+   "fichier": "blog/fr/google-ads-pour-independants-guide-debutant.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-google-ads-for-freelancers-beginners-guide",
+   "url": "https://webautonomos.es/blog/en/google-ads-for-freelancers-beginners-guide",
+   "fichier": "blog/en/google-ads-for-freelancers-beginners-guide.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-google-posts-publicar-fiche-google",
+   "url": "https://webautonomos.es/blog/es/google-posts-publicar-fiche-google",
+   "fichier": "blog/es/google-posts-publicar-fiche-google.html",
+   "lang": "es",
+   "requete": "Google Posts",
+   "origine": "ajustée (mot-clé éditorial : Google Posts ficha Google)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-google-posts-publier-sur-sa-fiche",
+   "url": "https://webautonomos.es/blog/fr/google-posts-publier-sur-sa-fiche",
+   "fichier": "blog/fr/google-posts-publier-sur-sa-fiche.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-google-posts-publishing-on-your-listing",
+   "url": "https://webautonomos.es/blog/en/google-posts-publishing-on-your-listing",
+   "fichier": "blog/en/google-posts-publishing-on-your-listing.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-inteligencia-artificial-autonomos-herramientas",
+   "url": "https://webautonomos.es/blog/es/inteligencia-artificial-autonomos-herramientas",
+   "fichier": "blog/es/inteligencia-artificial-autonomos-herramientas.html",
+   "lang": "es",
+   "requete": "inteligencia artificial autónomos",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-ia-pour-independants-outils-concrets",
+   "url": "https://webautonomos.es/blog/fr/ia-pour-independants-outils-concrets",
+   "fichier": "blog/fr/ia-pour-independants-outils-concrets.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-ai-for-freelancers-practical-tools",
+   "url": "https://webautonomos.es/blog/en/ai-for-freelancers-practical-tools",
+   "fichier": "blog/en/ai-for-freelancers-practical-tools.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-lo-que-no-haces-por-falta-de-tiempo",
+   "url": "https://webautonomos.es/blog/es/lo-que-no-haces-por-falta-de-tiempo",
+   "fichier": "blog/es/lo-que-no-haces-por-falta-de-tiempo.html",
+   "lang": "es",
+   "requete": "reclamación de impagados automática",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-ce-que-vous-ne-faites-pas-faute-de-temps",
+   "url": "https://webautonomos.es/blog/fr/ce-que-vous-ne-faites-pas-faute-de-temps",
+   "fichier": "blog/fr/ce-que-vous-ne-faites-pas-faute-de-temps.html",
+   "lang": "fr",
+   "requete": "relance impayés automatique",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-what-you-never-get-round-to",
+   "url": "https://webautonomos.es/blog/en/what-you-never-get-round-to",
+   "fichier": "blog/en/what-you-never-get-round-to.html",
+   "lang": "en",
+   "requete": "automated payment chasing",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-mantenimiento-coste-automatizacion",
+   "url": "https://webautonomos.es/blog/es/mantenimiento-coste-automatizacion",
+   "fichier": "blog/es/mantenimiento-coste-automatizacion.html",
+   "lang": "es",
+   "requete": "coste mantenimiento automatización",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-maintenance-le-cout-cache-de-l-automatisation",
+   "url": "https://webautonomos.es/blog/fr/maintenance-le-cout-cache-de-l-automatisation",
+   "fichier": "blog/fr/maintenance-le-cout-cache-de-l-automatisation.html",
+   "lang": "fr",
+   "requete": "coût maintenance automatisation",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-maintenance-the-hidden-cost-of-automation",
+   "url": "https://webautonomos.es/blog/en/maintenance-the-hidden-cost-of-automation",
+   "fichier": "blog/en/maintenance-the-hidden-cost-of-automation.html",
+   "lang": "en",
+   "requete": "automation maintenance cost",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-marca-personal-para-autonomos",
+   "url": "https://webautonomos.es/blog/es/marca-personal-para-autonomos",
+   "fichier": "blog/es/marca-personal-para-autonomos.html",
+   "lang": "es",
+   "requete": "marca personal autónomo",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-construire-sa-marque-personnelle",
+   "url": "https://webautonomos.es/blog/fr/construire-sa-marque-personnelle",
+   "fichier": "blog/fr/construire-sa-marque-personnelle.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-building-your-personal-brand",
+   "url": "https://webautonomos.es/blog/en/building-your-personal-brand",
+   "fichier": "blog/en/building-your-personal-brand.html",
+   "lang": "en",
+   "requete": "personal brand freelancer",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-medir-resultados-web-google-analytics",
+   "url": "https://webautonomos.es/blog/es/medir-resultados-web-google-analytics",
+   "fichier": "blog/es/medir-resultados-web-google-analytics.html",
+   "lang": "es",
+   "requete": "métricas web",
+   "origine": "ajustée (mot-clé éditorial : métricas web autónomos)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-mesurer-les-resultats-de-son-site",
+   "url": "https://webautonomos.es/blog/fr/mesurer-les-resultats-de-son-site",
+   "fichier": "blog/fr/mesurer-les-resultats-de-son-site.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-measuring-your-website-results",
+   "url": "https://webautonomos.es/blog/en/measuring-your-website-results",
+   "fichier": "blog/en/measuring-your-website-results.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-optimizar-ficha-google-business-profile",
+   "url": "https://webautonomos.es/blog/es/optimizar-ficha-google-business-profile",
+   "fichier": "blog/es/optimizar-ficha-google-business-profile.html",
+   "lang": "es",
+   "requete": "optimizar Google Business Profile",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-optimiser-sa-fiche-google-business-profile",
+   "url": "https://webautonomos.es/blog/fr/optimiser-sa-fiche-google-business-profile",
+   "fichier": "blog/fr/optimiser-sa-fiche-google-business-profile.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-optimise-your-google-business-profile",
+   "url": "https://webautonomos.es/blog/en/optimise-your-google-business-profile",
+   "fichier": "blog/en/optimise-your-google-business-profile.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-electriciens",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-electriciens",
+   "fichier": "blog/fr/site-web-pour-electriciens.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-electricians",
+   "url": "https://webautonomos.es/blog/en/website-for-electricians",
+   "fichier": "blog/en/website-for-electricians.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-palabras-clave-locales-como-elegir",
+   "url": "https://webautonomos.es/blog/es/palabras-clave-locales-como-elegir",
+   "fichier": "blog/es/palabras-clave-locales-como-elegir.html",
+   "lang": "es",
+   "requete": "palabras clave locales",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-choisir-ses-mots-cles-locaux",
+   "url": "https://webautonomos.es/blog/fr/choisir-ses-mots-cles-locaux",
+   "fichier": "blog/fr/choisir-ses-mots-cles-locaux.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-how-to-choose-local-keywords",
+   "url": "https://webautonomos.es/blog/en/how-to-choose-local-keywords",
+   "fichier": "blog/en/how-to-choose-local-keywords.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-preguntas-respuestas-ficha-google",
+   "url": "https://webautonomos.es/blog/es/preguntas-respuestas-ficha-google",
+   "fichier": "blog/es/preguntas-respuestas-ficha-google.html",
+   "lang": "es",
+   "requete": "preguntas y respuestas Google Business",
+   "origine": "ajustée (mot-clé éditorial : preguntas respuestas Google)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-questions-reponses-fiche-google",
+   "url": "https://webautonomos.es/blog/fr/questions-reponses-fiche-google",
+   "fichier": "blog/fr/questions-reponses-fiche-google.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-questions-and-answers-on-your-google-listing",
+   "url": "https://webautonomos.es/blog/en/questions-and-answers-on-your-google-listing",
+   "fichier": "blog/en/questions-and-answers-on-your-google-listing.html",
+   "lang": "en",
+   "requete": "Google questions and answers",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-presupuesto-marketing-digital-autonomos",
+   "url": "https://webautonomos.es/blog/es/presupuesto-marketing-digital-autonomos",
+   "fichier": "blog/es/presupuesto-marketing-digital-autonomos.html",
+   "lang": "es",
+   "requete": "presupuesto marketing digital autónomo",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-budget-marketing-digital-independants",
+   "url": "https://webautonomos.es/blog/fr/budget-marketing-digital-independants",
+   "fichier": "blog/fr/budget-marketing-digital-independants.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-digital-marketing-budget-for-freelancers",
+   "url": "https://webautonomos.es/blog/en/digital-marketing-budget-for-freelancers",
+   "fichier": "blog/en/digital-marketing-budget-for-freelancers.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-que-debe-tener-web-profesional-autonomo",
+   "url": "https://webautonomos.es/blog/es/que-debe-tener-web-profesional-autonomo",
+   "fichier": "blog/es/que-debe-tener-web-profesional-autonomo.html",
+   "lang": "es",
+   "requete": "qué debe tener una página web profesional",
+   "origine": "ajustée (mot-clé éditorial : elementos web profesional autónomo)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-elements-indispensables-site-professionnel",
+   "url": "https://webautonomos.es/blog/fr/elements-indispensables-site-professionnel",
+   "fichier": "blog/fr/elements-indispensables-site-professionnel.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-essential-elements-of-a-professional-website",
+   "url": "https://webautonomos.es/blog/en/essential-elements-of-a-professional-website",
+   "fichier": "blog/en/essential-elements-of-a-professional-website.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-que-es-map-pack-google-como-salir",
+   "url": "https://webautonomos.es/blog/es/que-es-map-pack-google-como-salir",
+   "fichier": "blog/es/que-es-map-pack-google-como-salir.html",
+   "lang": "es",
+   "requete": "Map Pack Google",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-map-pack-google-comment-y-figurer",
+   "url": "https://webautonomos.es/blog/fr/map-pack-google-comment-y-figurer",
+   "fichier": "blog/fr/map-pack-google-comment-y-figurer.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-google-map-pack-how-to-appear",
+   "url": "https://webautonomos.es/blog/en/google-map-pack-how-to-appear",
+   "fichier": "blog/en/google-map-pack-how-to-appear.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-que-no-deberias-automatizar-nunca",
+   "url": "https://webautonomos.es/blog/es/que-no-deberias-automatizar-nunca",
+   "fichier": "blog/es/que-no-deberias-automatizar-nunca.html",
+   "lang": "es",
+   "requete": "qué no automatizar",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-ce-qu-il-ne-faut-jamais-automatiser",
+   "url": "https://webautonomos.es/blog/fr/ce-qu-il-ne-faut-jamais-automatiser",
+   "fichier": "blog/fr/ce-qu-il-ne-faut-jamais-automatiser.html",
+   "lang": "fr",
+   "requete": "ne pas automatiser",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-what-you-should-never-automate",
+   "url": "https://webautonomos.es/blog/en/what-you-should-never-automate",
+   "fichier": "blog/en/what-you-should-never-automate.html",
+   "lang": "en",
+   "requete": "what not to automate",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-que-tareas-automatizar-primero",
+   "url": "https://webautonomos.es/blog/es/que-tareas-automatizar-primero",
+   "fichier": "blog/es/que-tareas-automatizar-primero.html",
+   "lang": "es",
+   "requete": "qué procesos automatizar pyme",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-quelles-taches-automatiser-en-premier",
+   "url": "https://webautonomos.es/blog/fr/quelles-taches-automatiser-en-premier",
+   "fichier": "blog/fr/quelles-taches-automatiser-en-premier.html",
+   "lang": "fr",
+   "requete": "quelles tâches automatiser",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-which-tasks-to-automate-first",
+   "url": "https://webautonomos.es/blog/en/which-tasks-to-automate-first",
+   "fichier": "blog/en/which-tasks-to-automate-first.html",
+   "lang": "en",
+   "requete": "which tasks to automate",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-redes-sociales-autonomos-cuales-usar",
+   "url": "https://webautonomos.es/blog/es/redes-sociales-autonomos-cuales-usar",
+   "fichier": "blog/es/redes-sociales-autonomos-cuales-usar.html",
+   "lang": "es",
+   "requete": "redes sociales autónomos",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-reseaux-sociaux-independants-lesquels-choisir",
+   "url": "https://webautonomos.es/blog/fr/reseaux-sociaux-independants-lesquels-choisir",
+   "fichier": "blog/fr/reseaux-sociaux-independants-lesquels-choisir.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-social-media-for-freelancers-which-to-choose",
+   "url": "https://webautonomos.es/blog/en/social-media-for-freelancers-which-to-choose",
+   "fichier": "blog/en/social-media-for-freelancers-which-to-choose.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-reservas-online-autonomos-2026",
+   "url": "https://webautonomos.es/blog/es/reservas-online-autonomos-2026",
+   "fichier": "blog/es/reservas-online-autonomos-2026.html",
+   "lang": "es",
+   "requete": "reservas online autónomos",
+   "origine": "titre",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-reservation-en-ligne-pour-independants",
+   "url": "https://webautonomos.es/blog/fr/reservation-en-ligne-pour-independants",
+   "fichier": "blog/fr/reservation-en-ligne-pour-independants.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-online-booking-for-freelancers",
+   "url": "https://webautonomos.es/blog/en/online-booking-for-freelancers",
+   "fichier": "blog/en/online-booking-for-freelancers.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-responder-resenas-negativas-google",
+   "url": "https://webautonomos.es/blog/es/responder-resenas-negativas-google",
+   "fichier": "blog/es/responder-resenas-negativas-google.html",
+   "lang": "es",
+   "requete": "responder reseñas negativas Google",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-repondre-aux-avis-negatifs-google",
+   "url": "https://webautonomos.es/blog/fr/repondre-aux-avis-negatifs-google",
+   "fichier": "blog/fr/repondre-aux-avis-negatifs-google.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-how-to-reply-to-negative-google-reviews",
+   "url": "https://webautonomos.es/blog/en/how-to-reply-to-negative-google-reviews",
+   "fichier": "blog/en/how-to-reply-to-negative-google-reviews.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-schema-local-business-que-es-como-implementar",
+   "url": "https://webautonomos.es/blog/es/schema-local-business-que-es-como-implementar",
+   "fichier": "blog/es/schema-local-business-que-es-como-implementar.html",
+   "lang": "es",
+   "requete": "Schema LocalBusiness",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-schema-localbusiness-guide-pratique",
+   "url": "https://webautonomos.es/blog/fr/schema-localbusiness-guide-pratique",
+   "fichier": "blog/fr/schema-localbusiness-guide-pratique.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-schema-localbusiness-practical-guide",
+   "url": "https://webautonomos.es/blog/en/schema-localbusiness-practical-guide",
+   "fichier": "blog/en/schema-localbusiness-practical-guide.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-seo-local-que-es-autonomos",
+   "url": "https://webautonomos.es/blog/es/seo-local-que-es-autonomos",
+   "fichier": "blog/es/seo-local-que-es-autonomos.html",
+   "lang": "es",
+   "requete": "SEO local para autónomos",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-seo-local-independants-guide-complet",
+   "url": "https://webautonomos.es/blog/fr/seo-local-independants-guide-complet",
+   "fichier": "blog/fr/seo-local-independants-guide-complet.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-local-seo-for-freelancers-complete-guide",
+   "url": "https://webautonomos.es/blog/en/local-seo-for-freelancers-complete-guide",
+   "fichier": "blog/en/local-seo-for-freelancers-complete-guide.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-velocidad-web-y-posicionamiento",
+   "url": "https://webautonomos.es/blog/es/velocidad-web-y-posicionamiento",
+   "fichier": "blog/es/velocidad-web-y-posicionamiento.html",
+   "lang": "es",
+   "requete": "velocidad web posicionamiento",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-vitesse-du-site-et-referencement",
+   "url": "https://webautonomos.es/blog/fr/vitesse-du-site-et-referencement",
+   "fichier": "blog/fr/vitesse-du-site-et-referencement.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-speed-and-search-rankings",
+   "url": "https://webautonomos.es/blog/en/website-speed-and-search-rankings",
+   "fichier": "blog/en/website-speed-and-search-rankings.html",
+   "lang": "en",
+   "requete": "website speed ranking",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-web-para-carpinteros-reformas",
+   "url": "https://webautonomos.es/blog/es/web-para-carpinteros-reformas",
+   "fichier": "blog/es/web-para-carpinteros-reformas.html",
+   "lang": "es",
+   "requete": "página web carpintero",
+   "origine": "ajustée (mot-clé éditorial : web carpinteros reformas)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-menuisiers-et-renovation",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-menuisiers-et-renovation",
+   "fichier": "blog/fr/site-web-pour-menuisiers-et-renovation.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-carpenters-and-renovations",
+   "url": "https://webautonomos.es/blog/en/website-for-carpenters-and-renovations",
+   "fichier": "blog/en/website-for-carpenters-and-renovations.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-web-para-centros-estetica-belleza",
+   "url": "https://webautonomos.es/blog/es/web-para-centros-estetica-belleza",
+   "fichier": "blog/es/web-para-centros-estetica-belleza.html",
+   "lang": "es",
+   "requete": "web para centros de estética",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-instituts-de-beaute",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-instituts-de-beaute",
+   "fichier": "blog/fr/site-web-pour-instituts-de-beaute.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-beauty-salons",
+   "url": "https://webautonomos.es/blog/en/website-for-beauty-salons",
+   "fichier": "blog/en/website-for-beauty-salons.html",
+   "lang": "en",
+   "requete": "website for beauty salon",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-web-para-clinica-dental-fisioterapeuta",
+   "url": "https://webautonomos.es/blog/es/web-para-clinica-dental-fisioterapeuta",
+   "fichier": "blog/es/web-para-clinica-dental-fisioterapeuta.html",
+   "lang": "es",
+   "requete": "página web clínica dental",
+   "origine": "ajustée (mot-clé éditorial : web clínica dental fisioterapeuta)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-dentistes-et-kinesitherapeutes",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-dentistes-et-kinesitherapeutes",
+   "fichier": "blog/fr/site-web-pour-dentistes-et-kinesitherapeutes.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-dentists-and-physiotherapists",
+   "url": "https://webautonomos.es/blog/en/website-for-dentists-and-physiotherapists",
+   "fichier": "blog/en/website-for-dentists-and-physiotherapists.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-web-para-clinicas-veterinarias",
+   "url": "https://webautonomos.es/blog/es/web-para-clinicas-veterinarias",
+   "fichier": "blog/es/web-para-clinicas-veterinarias.html",
+   "lang": "es",
+   "requete": "web para clínicas veterinarias",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-cliniques-veterinaires",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-cliniques-veterinaires",
+   "fichier": "blog/fr/site-web-pour-cliniques-veterinaires.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-veterinary-clinics",
+   "url": "https://webautonomos.es/blog/en/website-for-veterinary-clinics",
+   "fichier": "blog/en/website-for-veterinary-clinics.html",
+   "lang": "en",
+   "requete": "website for veterinary clinics",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-web-para-coaches",
+   "url": "https://webautonomos.es/blog/es/web-para-coaches",
+   "fichier": "blog/es/web-para-coaches.html",
+   "lang": "es",
+   "requete": "página web para coaches",
+   "origine": "titre",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-coachs",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-coachs",
+   "fichier": "blog/fr/site-web-pour-coachs.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-coaches",
+   "url": "https://webautonomos.es/blog/en/website-for-coaches",
+   "fichier": "blog/en/website-for-coaches.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-web-para-entrenadores-personales",
+   "url": "https://webautonomos.es/blog/es/web-para-entrenadores-personales",
+   "fichier": "blog/es/web-para-entrenadores-personales.html",
+   "lang": "es",
+   "requete": "web para entrenadores personales",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-coachs-sportifs",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-coachs-sportifs",
+   "fichier": "blog/fr/site-web-pour-coachs-sportifs.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-personal-trainers",
+   "url": "https://webautonomos.es/blog/en/website-for-personal-trainers",
+   "fichier": "blog/en/website-for-personal-trainers.html",
+   "lang": "en",
+   "requete": "website for personal trainers",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-web-para-fontaneros-guia-completa",
+   "url": "https://webautonomos.es/blog/es/web-para-fontaneros-guia-completa",
+   "fichier": "blog/es/web-para-fontaneros-guia-completa.html",
+   "lang": "es",
+   "requete": "web para fontaneros",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-plombiers-guide-complet",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-plombiers-guide-complet",
+   "fichier": "blog/fr/site-web-pour-plombiers-guide-complet.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-plumbers-complete-guide",
+   "url": "https://webautonomos.es/blog/en/website-for-plumbers-complete-guide",
+   "fichier": "blog/en/website-for-plumbers-complete-guide.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-web-para-nutricionistas-dietistas",
+   "url": "https://webautonomos.es/blog/es/web-para-nutricionistas-dietistas",
+   "fichier": "blog/es/web-para-nutricionistas-dietistas.html",
+   "lang": "es",
+   "requete": "web para nutricionistas",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-dieteticiens-nutritionnistes",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-dieteticiens-nutritionnistes",
+   "fichier": "blog/fr/site-web-pour-dieteticiens-nutritionnistes.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-dietitians-and-nutritionists",
+   "url": "https://webautonomos.es/blog/en/website-for-dietitians-and-nutritionists",
+   "fichier": "blog/en/website-for-dietitians-and-nutritionists.html",
+   "lang": "en",
+   "requete": "website for nutritionists",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-web-para-podologos-clinica-pies",
+   "url": "https://webautonomos.es/blog/es/web-para-podologos-clinica-pies",
+   "fichier": "blog/es/web-para-podologos-clinica-pies.html",
+   "lang": "es",
+   "requete": "página web podólogos",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-podologues",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-podologues",
+   "fichier": "blog/fr/site-web-pour-podologues.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-podiatrists",
+   "url": "https://webautonomos.es/blog/en/website-for-podiatrists",
+   "fichier": "blog/en/website-for-podiatrists.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-web-para-psicologos-terapeutas",
+   "url": "https://webautonomos.es/blog/es/web-para-psicologos-terapeutas",
+   "fichier": "blog/es/web-para-psicologos-terapeutas.html",
+   "lang": "es",
+   "requete": "página web psicólogos",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-psychologues-et-therapeutes",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-psychologues-et-therapeutes",
+   "fichier": "blog/fr/site-web-pour-psychologues-et-therapeutes.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-psychologists-and-therapists",
+   "url": "https://webautonomos.es/blog/en/website-for-psychologists-and-therapists",
+   "fichier": "blog/en/website-for-psychologists-and-therapists.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-web-para-tatuadores-estudio-tattoo",
+   "url": "https://webautonomos.es/blog/es/web-para-tatuadores-estudio-tattoo",
+   "fichier": "blog/es/web-para-tatuadores-estudio-tattoo.html",
+   "lang": "es",
+   "requete": "página web tatuadores",
+   "origine": "calendrier",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-site-web-pour-tatoueurs",
+   "url": "https://webautonomos.es/blog/fr/site-web-pour-tatoueurs",
+   "fichier": "blog/fr/site-web-pour-tatoueurs.html",
+   "lang": "fr",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-website-for-tattoo-artists",
+   "url": "https://webautonomos.es/blog/en/website-for-tattoo-artists",
+   "fichier": "blog/en/website-for-tattoo-artists.html",
+   "lang": "en",
+   "requete": null,
+   "origine": "à choisir",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-es-wix-o-wordpress",
+   "url": "https://webautonomos.es/blog/es/wix-o-wordpress",
+   "fichier": "blog/es/wix-o-wordpress.html",
+   "lang": "es",
+   "requete": "wix o wordpress",
+   "origine": "file d’attente",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-fr-wix-ou-wordpress",
+   "url": "https://webautonomos.es/blog/fr/wix-ou-wordpress",
+   "fichier": "blog/fr/wix-ou-wordpress.html",
+   "lang": "fr",
+   "requete": "wix ou wordpress",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-blog-en-wix-or-wordpress",
+   "url": "https://webautonomos.es/blog/en/wix-or-wordpress",
+   "fichier": "blog/en/wix-or-wordpress.html",
+   "lang": "en",
+   "requete": "wix or wordpress",
+   "origine": "file d’attente",
+   "phase": 2
+  },
+  {
+   "slug": "site-como-funciona",
+   "url": "https://webautonomos.es/como-funciona",
+   "fichier": "como-funciona.html",
+   "lang": "es",
+   "requete": null,
+   "phase": 2,
+   "origine": "à choisir"
+  },
+  {
+   "slug": "site-diagnostico-automatizacion",
+   "url": "https://webautonomos.es/diagnostico-automatizacion/",
+   "fichier": "diagnostico-automatizacion/index.html",
+   "lang": "es",
+   "requete": "automatización de procesos para autónomos",
+   "phase": 1,
+   "origine": "titre"
+  },
+  {
+   "slug": "site-electricistas",
+   "url": "https://webautonomos.es/electricistas/",
+   "fichier": "electricistas/index.html",
+   "lang": "es",
+   "requete": "pagina web para electricistas",
+   "phase": 1,
+   "origine": "même requête que es-electricistas (guides existants)"
+  },
+  {
+   "slug": "site-en-ai-visibility",
+   "url": "https://webautonomos.es/en/ai-visibility/",
+   "fichier": "en/ai-visibility/index.html",
+   "lang": "en",
+   "requete": null,
+   "phase": 2,
+   "origine": "à choisir"
+  },
+  {
+   "slug": "site-en-automation-diagnostic",
+   "url": "https://webautonomos.es/en/automation-diagnostic/",
+   "fichier": "en/automation-diagnostic/index.html",
+   "lang": "en",
+   "requete": null,
+   "phase": 2,
+   "origine": "à choisir"
+  },
+  {
+   "slug": "site-en-faq",
+   "url": "https://webautonomos.es/en/faq",
+   "fichier": "en/faq.html",
+   "lang": "en",
+   "requete": null,
+   "phase": 2,
+   "origine": "à choisir"
+  },
+  {
+   "slug": "site-en-how",
+   "url": "https://webautonomos.es/en/how",
+   "fichier": "en/how.html",
+   "lang": "en",
+   "requete": null,
+   "phase": 2,
+   "origine": "à choisir"
+  },
+  {
+   "slug": "site-fr-comment-ca-marche",
+   "url": "https://webautonomos.es/fr/comment-ca-marche",
+   "fichier": "fr/comment-ca-marche.html",
+   "lang": "fr",
+   "requete": null,
+   "phase": 2,
+   "origine": "à choisir"
+  },
+  {
+   "slug": "site-fr-diagnostic-automatisation",
+   "url": "https://webautonomos.es/fr/diagnostic-automatisation/",
+   "fichier": "fr/diagnostic-automatisation/index.html",
+   "lang": "fr",
+   "requete": null,
+   "phase": 2,
+   "origine": "à choisir"
+  },
+  {
+   "slug": "site-fr-questions",
+   "url": "https://webautonomos.es/fr/questions",
+   "fichier": "fr/questions.html",
+   "lang": "fr",
+   "requete": null,
+   "phase": 2,
+   "origine": "à choisir"
+  },
+  {
+   "slug": "site-fr-visibilite-ia",
+   "url": "https://webautonomos.es/fr/visibilite-ia/",
+   "fichier": "fr/visibilite-ia/index.html",
+   "lang": "fr",
+   "requete": null,
+   "phase": 2,
+   "origine": "à choisir"
+  },
+  {
+   "slug": "site-marketing",
+   "url": "https://webautonomos.es/marketing",
+   "fichier": "marketing.html",
+   "lang": "es",
+   "requete": "SEO local para autónomos",
+   "phase": 1,
+   "origine": "titre ; même requête que l’article SEO local"
+  },
+  {
+   "slug": "site-preguntas",
+   "url": "https://webautonomos.es/preguntas",
+   "fichier": "preguntas.html",
+   "lang": "es",
+   "requete": null,
+   "phase": 2,
+   "origine": "à choisir"
+  },
+  {
+   "slug": "site-visibilidad-ia",
+   "url": "https://webautonomos.es/visibilidad-ia/",
+   "fichier": "visibilidad-ia/index.html",
+   "lang": "es",
+   "requete": null,
+   "phase": 2,
+   "origine": "à choisir"
+  }
+ ],
+ "exclues": [
+  {
+   "url": "https://webautonomos.es/blog/",
+   "raison": "index du blog"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/5-raons-per-a-tindre-web-en-2026",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/automatitzar-sense-saber-programar",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/backlinks-locals-com-aconseguir-ne",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/categories-google-business-com-triar-les",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/cites-locals-nap-guia-completa",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/apareixer-en-google-maps-guia-completa",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/aconseguir-clients-per-internet",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/aconseguir-mes-ressenyes-en-google",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/triar-el-domini-del-teu-negoci",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/com-es-automatitzar-un-proces-pas-a-pas",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/posicionar-la-web-en-el-google-local",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/configurar-whatsapp-business-gratis",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/contractar-o-automatitzar",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/crear-contingut-sense-saber-escriure",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/cuanto-cuesta-automatizar-un-proceso-formula",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/quant-costa-una-pagina-web-per-a-autonoms",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/la-paperassa-et-lleva-226-hores",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/digitalitzacio-per-a-autonoms-per-on-comencar",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/marketing-per-correu-guia-basica",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/errors-de-marketing-digital-a-evitar",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/errors-mes-cars-al-automatitzar",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/factura-electronica-dues-normes",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/facturacio-electronica-obligatoria",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/fotos-i-videos-en-la-fitxa-de-google",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/google-ads-guia-basica-per-a-autonoms",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/google-posts-publicar-en-la-fitxa",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/ia-per-a-autonoms-eines-concretes",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/el-que-no-fas-per-falta-de-temps",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/manteniment-el-cost-amagat-de-l-automatitzacio",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/construir-la-teua-marca-personal",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/mesurar-els-resultats-de-la-teua-web",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/optimitzar-fitxa-google-business-profile",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/pagina-web-per-a-electricistes",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/paraules-clau-locals-com-triar-les",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/preguntes-i-respostes-de-la-fitxa",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/pressupost-de-marketing-digital",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/elements-imprescindibles-d-una-web",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/map-pack-de-google-com-apareixer-hi",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/que-no-hauries-d-automatitzar-mai",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/quines-tasques-automatitzar-primer",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/xarxes-socials-quines-triar",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/reserves-en-linia-per-a-autonoms",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/respondre-ressenyes-negatives-en-google",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/schema-localbusiness-guia-practica",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/seo-local-guia-completa-per-a-autonoms",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/velocitat-de-la-web-i-posicionament",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/web-per-a-fusters-i-reformes",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/web-per-a-centres-d-estetica",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/web-per-a-dentistes-i-fisioterapeutes",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/web-per-a-cliniques-veterinaries",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/web-per-a-coaches",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/web-per-a-entrenadors-personals",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/web-per-a-fontaners-guia-completa",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/web-per-a-nutricionistes",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/web-per-a-podolegs",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/web-per-a-psicolegs-i-terapeutes",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/web-per-a-tatuadors",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/blog/val/wix-o-wordpress",
+   "raison": "valencien : SERPmantics ne gère pas le catalan (refus du 04/10/2026)"
+  },
+  {
+   "url": "https://webautonomos.es/aviso-legal/",
+   "raison": "page légale"
+  },
+  {
+   "url": "https://webautonomos.es/contacto",
+   "raison": "contact"
+  },
+  {
+   "url": "https://webautonomos.es/cookies/",
+   "raison": "page légale"
+  },
+  {
+   "url": "https://webautonomos.es/demandez-votre-demo",
+   "raison": "demande de démo"
+  },
+  {
+   "url": "https://webautonomos.es/demo-electricista",
+   "raison": "site de démonstration"
+  },
+  {
+   "url": "https://webautonomos.es/demo-fontanero",
+   "raison": "site de démonstration"
+  },
+  {
+   "url": "https://webautonomos.es/en/contact",
+   "raison": "contact"
+  },
+  {
+   "url": "https://webautonomos.es/fr/contact",
+   "raison": "contact"
+  },
+  {
+   "url": "https://webautonomos.es/get-your-demo",
+   "raison": "demande de démo"
+  },
+  {
+   "url": "https://webautonomos.es/pide-tu-demo",
+   "raison": "demande de démo"
+  },
+  {
+   "url": "https://webautonomos.es/privacidad/",
+   "raison": "page légale"
+  }
+ ]
+}

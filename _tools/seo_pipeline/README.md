@@ -71,10 +71,23 @@ l'abonnement). Journal : `~/nuit.log` sur le VPS.
 
 `releve.py` mesure en une fois toutes les pages qui ont des guides, sur chaque moteur
 (Google, AI Overview, ChatGPT, Gemini…), et enregistre la mesure dans les guides :
-la liste de SERPmantics affiche ensuite les mêmes notes. Gratuit : aucun guide créé.
+la liste de SERPmantics affiche ensuite les mêmes notes. Mesurer est gratuit.
 Résultat : `releve.json` et `releve.csv` (une ligne par page et par moteur, avec la
 note précédente, les images et les mots de la page face au top 10).
 Sur le VPS, il tourne aussi depuis le compte `ubuntu` (copie de la clé dans son
 `~/.seo_pipeline.env`, faite par Angelino le 04/10), sur un export de `origin/main`.
+
+Pages hors circuit : `requetes_site.json` donne la requête que vise chaque page du
+sitemap absente de `pages.json` (articles du blog, outils, FAQ…), par phase.
+`releve.py creer --phase N` crée les guides manquants (Google par défaut) puis le relevé
+les mesure. Limites constatées le 04/10/2026 :
+- quota API : 200 guides créés par mois (période du 24 au 24), même avec les crédits
+  illimités ; lecture et mesures gratuites ; `creer` garde 6 guides pour le circuit ;
+- au plus 20 guides en cours de création (« Too many guides in progress ») : `creer`
+  envoie 5 requêtes toutes les 20 s et réessaie ;
+- langues : ni le catalan (les 58 articles valenciens sont exclus) ni `en-es` : les
+  guides anglais sont en `en-gb`.
+Phase 1 (04/10) : 60 guides Google, pages espagnoles. Phase 2 (à partir du 24/10) :
+pages anglaises et françaises ; les requêtes « null » sont à choisir avant.
 Sources GEO : `sources_geo` dans pages.json ; `serp.py sources` liste celles que
 SERPmantics propose (AI Overview de Google, ChatGPT, Gemini…).
