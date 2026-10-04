@@ -23,7 +23,10 @@ import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from faq_statique import faq_jsonld  # JSON-LD FAQPage aligné sur la FAQ (04/10/2026)
+from faq_statique import faq_jsonld, remplir_faq  # FAQ et JSON-LD FAQPage (04/10/2026)
+# Pages dont la FAQ espagnole est écrite dans le HTML (id de la liste). /visibilidad-ia/ n'y est pas :
+# sa FAQ écrite dans le HTML la faisait passer à 139 dans SERPmantics (voir plus bas).
+FAQ_HTML = {'diagnostico-automatizacion/index.html': 'faq'}
 ROOT = os.path.dirname(HERE)
 PAGES = [('visibilidad-ia/index.html', 'T'),
          ('diagnostico-automatizacion/index.html', 'T')]
@@ -86,6 +89,10 @@ def main():
         vides = len(re.findall(r'<(\w+)[^>]*\bdata-t="[\w.]+"[^>]*>\s*</\1>', html))
         stats = {'remplies': 0, 'manquantes': set()}
         neuf = injecte(html, tr, stats)
+        if isinstance(tr.get('faq'), list) and rel in FAQ_HTML:
+            neuf, ok = remplir_faq(neuf, tr['faq'], FAQ_HTML[rel])
+            if ok:
+                print('   FAQ écrite dans le HTML : %d questions' % len(tr['faq']))
         if isinstance(tr.get('faq'), list) and 'id="faq-list"' in neuf:
             # JSON-LD FAQPage aligné sur T.es.faq (le contrôle d'intégrité de la page les compare).
             # La liste HTML espagnole reste remplie par JavaScript : écrite dans le HTML, la FAQ

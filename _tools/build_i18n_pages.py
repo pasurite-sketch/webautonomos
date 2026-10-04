@@ -372,8 +372,8 @@ def copie(p, src, lang, T):
     s = s.replace('T.es.faq', 'T[PAGE_LANG].faq')
     # textes
     s, n = remplir_data_t(s, t)
-    if p['ld_id'] == 'faq-schema':
-        s, _ = remplir_faq(s, t['faq'])  # questions dans le HTML, dans la langue de la copie
+    # questions de la FAQ dans le HTML, dans la langue de la copie
+    s, _ = remplir_faq(s, t['faq'], 'faq-list' if p['ld_id'] == 'faq-schema' else 'faq')
     # liens
     ancien, cible = p['croise']
     s = liens_a(s, NAV[lang] + [(ancien, cible[lang])])

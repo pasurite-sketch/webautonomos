@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""FAQ écrite dans le HTML des pages i18n (/visibilidad-ia/ et ses copies FR et EN).
+"""FAQ écrite dans le HTML des pages i18n (/visibilidad-ia/, /diagnostico-automatizacion/ et leurs copies).
 
 Pourquoi (04/10/2026) : la liste #faq-list n'était remplie que par JavaScript, depuis
 T[lang].faq. Un robot qui n'exécute pas les scripts, et la mesure SERPmantics, ne
@@ -15,15 +15,21 @@ SVG = ('<svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="
        'stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7"></path></svg>')
 
 
-def faq_html(faq):
-    """Même balisage que la fonction tr() de la page."""
-    return ''.join('<details><summary>%s%s</summary><div class="answer">%s</div></details>' % (q, SVG, r)
-                   for q, r in faq)
+# Balisage exact de la fonction qui dessine la FAQ dans chaque page, par id de la liste
+GABARITS = {
+    'faq-list': '<details><summary>%s' + SVG + '</summary><div class="answer">%s</div></details>',  # /visibilidad-ia/ (tr)
+    'faq': '<details><summary>%s</summary><div class="a">%s</div></details>',  # /diagnostico-automatizacion/ (render)
+}
 
 
-def remplir_faq(html, faq):
-    """Remplace le contenu de <div … id="faq-list"> par la FAQ ; (html, True) si la liste existe."""
-    m = re.search(r'<div\b[^>]*\bid="faq-list"[^>]*>', html)
+def faq_html(faq, ident='faq-list'):
+    """Même balisage que la fonction JavaScript de la page."""
+    return ''.join(GABARITS[ident] % (q, r) for q, r in faq)
+
+
+def remplir_faq(html, faq, ident='faq-list'):
+    """Remplace le contenu de <div … id="ident"> par la FAQ ; (html, True) si la liste existe."""
+    m = re.search(r'<div\b[^>]*\bid="%s"[^>]*>' % ident, html)
     if not m:
         return html, False
     d, fin = 1, None
@@ -33,8 +39,8 @@ def remplir_faq(html, faq):
             fin = m.end() + t.start()
             break
     if fin is None:
-        raise SystemExit('div#faq-list non refermée')
-    return html[:m.end()] + faq_html(faq) + html[fin:], True
+        raise SystemExit('div#%s non refermée' % ident)
+    return html[:m.end()] + faq_html(faq, ident) + html[fin:], True
 
 
 def faq_jsonld(html, faq, ld_id='faq-schema'):
