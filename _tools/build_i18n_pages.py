@@ -42,6 +42,8 @@ import sys
 import tempfile
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'photos'))
 from photos_lib import injecter as poser_photo  # photo prévue par _tools/photos/images.json
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from faq_statique import remplir_faq  # FAQ lisible sans JavaScript (04/10/2026)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://webautonomos.es'
@@ -370,6 +372,8 @@ def copie(p, src, lang, T):
     s = s.replace('T.es.faq', 'T[PAGE_LANG].faq')
     # textes
     s, n = remplir_data_t(s, t)
+    if p['ld_id'] == 'faq-schema':
+        s, _ = remplir_faq(s, t['faq'])  # questions dans le HTML, dans la langue de la copie
     # liens
     ancien, cible = p['croise']
     s = liens_a(s, NAV[lang] + [(ancien, cible[lang])])

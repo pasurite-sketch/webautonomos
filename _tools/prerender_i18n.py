@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Injecte le texte espagnol dans les balises data-t des pages i18n.
+"""Injecte le texte espagnol dans les balises data-t des pages i18n et aligne le
+JSON-LD FAQPage sur la FAQ espagnole.
 
 /visibilidad-ia/ et /diagnostico-automatizacion/ remplissent leurs balises par
 JavaScript depuis un objet de traductions. Servies telles quelles, elles
@@ -21,6 +22,8 @@ import sys
 import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+from faq_statique import faq_jsonld  # JSON-LD FAQPage aligné sur la FAQ (04/10/2026)
 ROOT = os.path.dirname(HERE)
 PAGES = [('visibilidad-ia/index.html', 'T'),
          ('diagnostico-automatizacion/index.html', 'T')]
@@ -83,6 +86,13 @@ def main():
         vides = len(re.findall(r'<(\w+)[^>]*\bdata-t="[\w.]+"[^>]*>\s*</\1>', html))
         stats = {'remplies': 0, 'manquantes': set()}
         neuf = injecte(html, tr, stats)
+        if isinstance(tr.get('faq'), list) and 'id="faq-list"' in neuf:
+            # JSON-LD FAQPage aligné sur T.es.faq (le contrôle d'intégrité de la page les compare).
+            # La liste HTML espagnole reste remplie par JavaScript : écrite dans le HTML, la FAQ
+            # faisait passer la page au-delà de 100 dans SERPmantics (139 le 04/10/2026, page
+            # sur-optimisée face au top 10 espagnol), alors que FR et EN passaient au vert.
+            neuf = faq_jsonld(neuf, tr['faq'])
+            print('   JSON-LD FAQPage : %d questions' % len(tr['faq']))
         print('%-42s cles es %3d | balises vides %3d | remplies %3d'
               % (rel, len(tr), vides, stats['remplies']))
         if stats['manquantes']:
