@@ -7,6 +7,166 @@
  ],
  "sujets": [
   {
+   "id": "file-alta-autonomo-extranjero-espana",
+   "type": "file",
+   "publication": "2026-10-05",
+   "file": "_tools/queue/article_alta_autonomo_extranjero.json",
+   "priorite": 1,
+   "titre": "Alta de autónomo extranjero en España: pasos antes de tu primera factura (2026)",
+   "url": "https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana",
+   "resume": "Te has instalado en España, o vas a hacerlo, y quieres trabajar por tu cuenta. Antes de tu primera factura pasas por tres ventanillas: extranjería, la Agencia Tributaria y la Seguridad Social. Esta guía sigue ese orden y sirve también como lista de control si asesoras a clientes extranjeros. Cada cifra se ha comprobado en fuentes oficiales el 28 de septiembre de 2026. Es inform",
+   "marche": "es",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/alta-autonomo-extranjero-espana.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana",
+     "spa": "es/alta-autonomo-extranjero-espana"
+    },
+    {
+     "html": "blog/val/alta-autonom-estranger.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/alta-autonom-estranger",
+     "spa": "val/alta-autonom-estranger"
+    },
+    {
+     "html": "blog/en/becoming-an-autonomo-in-spain-as-a-foreigner.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/becoming-an-autonomo-in-spain-as-a-foreigner",
+     "spa": "en/becoming-an-autonomo-in-spain-as-a-foreigner"
+    },
+    {
+     "html": "blog/fr/devenir-autonomo-en-espagne.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/devenir-autonomo-en-espagne",
+     "spa": "fr/devenir-autonomo-en-espagne"
+    }
+   ],
+   "statut": "fait",
+   "scene": "Un homme d'une quarantaine d'années, récemment installé en Espagne, ouvre les volets de son nouvel atelier dans une rue ensoleillée de Valence, l'air confiant.",
+   "fichier": "autonomo-extranjero-tramites-oficina",
+   "v": 1,
+   "fait_le": "2026-09-29T12:00:23",
+   "textes": {
+    "es": {
+     "alt": "Un hombre abre las contraventanas de su taller en una calle soleada de estilo mediterráneo.",
+     "legende": "Un artesano abre su nuevo taller mientras entra la luz de la mañana."
+    },
+    "val": {
+     "alt": "Un home obri les finestres del seu taller en un carrer assolellat d’estil mediterrani.",
+     "legende": "Un artesà obri el seu nou taller mentre hi entra la llum del matí."
+    },
+    "en": {
+     "alt": "A man opens the shutters of his workshop on a sunny Mediterranean-style street.",
+     "legende": "A craftsman opens his new workshop as morning sunlight streams inside."
+    },
+    "fr": {
+     "alt": "Un homme ouvre les volets de son atelier dans une rue ensoleillée d’inspiration méditerranéenne.",
+     "legende": "Un artisan ouvre son nouvel atelier tandis que la lumière du matin entre."
+    }
+   },
+   "note": "remis en file le 29/09 : l'ancienne scène (chemise de documents) piégeait le générateur (texte)",
+   "marche_force": "es",
+   "site": "d'un atelier d'artisan à Valence",
+   "maquette": {
+    "es": {
+     "statut": "fait",
+     "fichier": "autonomo-extranjero-tramites-oficina-maquette-es",
+     "v": 2,
+     "fait_le": "2026-09-30T10:57:52",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
+       "legende": "Example website showing an artisan workshop on a laptop and smartphone."
+      },
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de un taller artesanal en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de un taller artesanal en un portátil y un teléfono móvil."
+      }
+     }
+    },
+    "val": {
+     "statut": "fait",
+     "fichier": "autonomo-extranjero-tramites-oficina-maquette-val",
+     "v": 2,
+     "fait_le": "2026-09-30T11:00:07",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
+       "legende": "Example website showing an artisan workshop on a laptop and smartphone."
+      },
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de un taller artesanal en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de un taller artesanal en un portátil y un teléfono móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un taller artesanal en versions d'escriptori i mòbil.",
+       "legende": "Exemple de web d'un taller artesanal en un portàtil i un telèfon mòbil."
+      }
+     }
+    },
+    "en": {
+     "statut": "fait",
+     "fichier": "autonomo-extranjero-tramites-oficina-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T10:54:52",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
+       "legende": "Example website showing an artisan workshop site on laptop and smartphone."
+      }
+     }
+    },
+    "fr": {
+     "statut": "fait",
+     "fichier": "autonomo-extranjero-tramites-oficina-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T11:03:05",
+     "textes": {
+      "en": {
+       "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
+       "legende": "Example website showing an artisan workshop on a laptop and smartphone."
+      },
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web francesa de un taller artesanal en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de un taller artesanal en un portátil y un teléfono móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web francesa d'un taller artesanal en versions d'escriptori i mòbil.",
+       "legende": "Exemple de web d'un taller artesanal en un portàtil i un telèfon mòbil."
+      },
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le même site d’atelier artisanal, en version ordinateur et mobile.",
+       "legende": "Exemple de site d’atelier artisanal affiché sur un ordinateur et un smartphone."
+      }
+     }
+    }
+   },
+   "ecrans": {
+    "es": {
+     "nom": "Taller Nord",
+     "titre": "Artesanía en Valencia",
+     "bouton": "contacto"
+    },
+    "val": {
+     "nom": "Taller Nord",
+     "titre": "Artesania a València",
+     "bouton": "contacto"
+    },
+    "en": {
+     "nom": "Nord Workshop",
+     "titre": "Handcrafted in Valencia",
+     "bouton": "contacto"
+    },
+    "fr": {
+     "nom": "Atelier Nord",
+     "titre": "Artisanat à Valence",
+     "bouton": "contacto"
+    }
+   }
+  },
+  {
    "id": "file-wix-o-wordpress",
    "type": "file",
    "publication": "2026-10-01",
@@ -174,174 +334,15 @@
      "titre": "Pièces faites main",
      "bouton": "tienda"
     }
-   }
-  },
-  {
-   "id": "file-alta-autonomo-extranjero-espana",
-   "type": "file",
-   "publication": "2026-10-05",
-   "file": "_tools/queue/article_alta_autonomo_extranjero.json",
-   "priorite": 2,
-   "titre": "Alta de autónomo extranjero en España: pasos antes de tu primera factura (2026)",
-   "url": "https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana",
-   "resume": "Te has instalado en España, o vas a hacerlo, y quieres trabajar por tu cuenta. Antes de tu primera factura pasas por tres ventanillas: extranjería, la Agencia Tributaria y la Seguridad Social. Esta guía sigue ese orden y sirve también como lista de control si asesoras a clientes extranjeros. Cada cifra se ha comprobado en fuentes oficiales el 28 de septiembre de 2026. Es inform",
-   "marche": "es",
-   "sante": false,
-   "pages": [
-    {
-     "html": "blog/es/alta-autonomo-extranjero-espana.html",
-     "lang": "es",
-     "url": "https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana",
-     "spa": "es/alta-autonomo-extranjero-espana"
-    },
-    {
-     "html": "blog/val/alta-autonom-estranger.html",
-     "lang": "val",
-     "url": "https://webautonomos.es/blog/val/alta-autonom-estranger",
-     "spa": "val/alta-autonom-estranger"
-    },
-    {
-     "html": "blog/en/becoming-an-autonomo-in-spain-as-a-foreigner.html",
-     "lang": "en",
-     "url": "https://webautonomos.es/blog/en/becoming-an-autonomo-in-spain-as-a-foreigner",
-     "spa": "en/becoming-an-autonomo-in-spain-as-a-foreigner"
-    },
-    {
-     "html": "blog/fr/devenir-autonomo-en-espagne.html",
-     "lang": "fr",
-     "url": "https://webautonomos.es/blog/fr/devenir-autonomo-en-espagne",
-     "spa": "fr/devenir-autonomo-en-espagne"
-    }
-   ],
-   "statut": "fait",
-   "scene": "Un homme d'une quarantaine d'années, récemment installé en Espagne, ouvre les volets de son nouvel atelier dans une rue ensoleillée de Valence, l'air confiant.",
-   "fichier": "autonomo-extranjero-tramites-oficina",
-   "v": 1,
-   "fait_le": "2026-09-29T12:00:23",
-   "textes": {
-    "es": {
-     "alt": "Un hombre abre las contraventanas de su taller en una calle soleada de estilo mediterráneo.",
-     "legende": "Un artesano abre su nuevo taller mientras entra la luz de la mañana."
-    },
-    "val": {
-     "alt": "Un home obri les finestres del seu taller en un carrer assolellat d’estil mediterrani.",
-     "legende": "Un artesà obri el seu nou taller mentre hi entra la llum del matí."
-    },
-    "en": {
-     "alt": "A man opens the shutters of his workshop on a sunny Mediterranean-style street.",
-     "legende": "A craftsman opens his new workshop as morning sunlight streams inside."
-    },
-    "fr": {
-     "alt": "Un homme ouvre les volets de son atelier dans une rue ensoleillée d’inspiration méditerranéenne.",
-     "legende": "Un artisan ouvre son nouvel atelier tandis que la lumière du matin entre."
-    }
    },
-   "note": "remis en file le 29/09 : l'ancienne scène (chemise de documents) piégeait le générateur (texte)",
-   "marche_force": "es",
-   "site": "d'un atelier d'artisan à Valence",
-   "maquette": {
-    "es": {
-     "statut": "fait",
-     "fichier": "autonomo-extranjero-tramites-oficina-maquette-es",
-     "v": 2,
-     "fait_le": "2026-09-30T10:57:52",
-     "textes": {
-      "en": {
-       "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
-       "legende": "Example website showing an artisan workshop on a laptop and smartphone."
-      },
-      "es": {
-       "alt": "Un portátil y un móvil muestran la misma web de un taller artesanal en versiones de escritorio y móvil.",
-       "legende": "Ejemplo de web de un taller artesanal en un portátil y un teléfono móvil."
-      }
-     }
-    },
-    "val": {
-     "statut": "fait",
-     "fichier": "autonomo-extranjero-tramites-oficina-maquette-val",
-     "v": 2,
-     "fait_le": "2026-09-30T11:00:07",
-     "textes": {
-      "en": {
-       "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
-       "legende": "Example website showing an artisan workshop on a laptop and smartphone."
-      },
-      "es": {
-       "alt": "Un portátil y un móvil muestran la misma web de un taller artesanal en versiones de escritorio y móvil.",
-       "legende": "Ejemplo de web de un taller artesanal en un portátil y un teléfono móvil."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un taller artesanal en versions d'escriptori i mòbil.",
-       "legende": "Exemple de web d'un taller artesanal en un portàtil i un telèfon mòbil."
-      }
-     }
-    },
-    "en": {
-     "statut": "fait",
-     "fichier": "autonomo-extranjero-tramites-oficina-maquette-en",
-     "v": 1,
-     "fait_le": "2026-09-30T10:54:52",
-     "textes": {
-      "en": {
-       "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
-       "legende": "Example website showing an artisan workshop site on laptop and smartphone."
-      }
-     }
-    },
-    "fr": {
-     "statut": "fait",
-     "fichier": "autonomo-extranjero-tramites-oficina-maquette-fr",
-     "v": 1,
-     "fait_le": "2026-09-30T11:03:05",
-     "textes": {
-      "en": {
-       "alt": "Laptop and smartphone display the same artisan workshop website in desktop and mobile layouts.",
-       "legende": "Example website showing an artisan workshop on a laptop and smartphone."
-      },
-      "es": {
-       "alt": "Un portátil y un móvil muestran la misma web francesa de un taller artesanal en versiones de escritorio y móvil.",
-       "legende": "Ejemplo de web de un taller artesanal en un portátil y un teléfono móvil."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren la mateixa web francesa d'un taller artesanal en versions d'escriptori i mòbil.",
-       "legende": "Exemple de web d'un taller artesanal en un portàtil i un telèfon mòbil."
-      },
-      "fr": {
-       "alt": "Un ordinateur portable et un smartphone affichent le même site d’atelier artisanal, en version ordinateur et mobile.",
-       "legende": "Exemple de site d’atelier artisanal affiché sur un ordinateur et un smartphone."
-      }
-     }
-    }
-   },
-   "ecrans": {
-    "es": {
-     "nom": "Taller Nord",
-     "titre": "Artesanía en Valencia",
-     "bouton": "contacto"
-    },
-    "val": {
-     "nom": "Taller Nord",
-     "titre": "Artesania a València",
-     "bouton": "contacto"
-    },
-    "en": {
-     "nom": "Nord Workshop",
-     "titre": "Handcrafted in Valencia",
-     "bouton": "contacto"
-    },
-    "fr": {
-     "nom": "Atelier Nord",
-     "titre": "Artisanat à Valence",
-     "bouton": "contacto"
-    }
-   }
+   "publie": true
   },
   {
    "id": "file-web-en-varios-idiomas",
    "type": "file",
    "publication": "2026-10-08",
    "file": "_tools/queue/article_web_varios_idiomas.json",
-   "priorite": 3,
+   "priorite": 2,
    "titre": "Web en varios idiomas para tu negocio en España: cuándo compensa y cómo hacerlo bien",
    "url": "https://webautonomos.es/blog/es/web-en-varios-idiomas",
    "resume": "Clientes extranjeros, turistas o una comunidad con lengua cooficial: tarde o temprano te preguntas si tu web necesita otro idioma. Aquí verás cuándo merece la pena, cómo organizar la web para que Google entienda cada versión, qué traducir y qué errores evitar, citando la documentación oficial de Google con la fecha de la versión consultada.",
@@ -525,7 +526,7 @@
    "type": "file",
    "publication": "2026-10-12",
    "file": "_tools/queue/article_aviso_legal_privacidad_cookies.json",
-   "priorite": 4,
+   "priorite": 3,
    "titre": "Aviso legal, privacidad y cookies: lo que tu web debe mostrar por ley en España (2026)",
    "url": "https://webautonomos.es/blog/es/aviso-legal-privacidad-cookies-web",
    "resume": "Tu web es tu escaparate, pero también un espacio regulado. Si eres autónomo o tienes un pequeño negocio en España, la ley te pide: mostrar quién está detrás de la página, explicar qué haces con los datos de quien te escribe y pedir permiso antes de usar ciertas cookies. Repasamos el aviso legal, la política de privacidad y la de cookies, con el artículo exacto de cada obligació",
@@ -708,7 +709,7 @@
    "type": "file",
    "publication": "2026-10-15",
    "file": "_tools/queue/article_facturar_clientes_extranjeros.json",
-   "priorite": 5,
+   "priorite": 4,
    "titre": "Cómo facturar a clientes de la UE y del Reino Unido siendo autónomo en España",
    "url": "https://webautonomos.es/blog/es/facturar-clientes-otros-paises-ue-reino-unido",
    "resume": "Un cliente en Francia, Bélgica o el Reino Unido puede contratarte sin salir de su oficina. Las dudas llegan con la factura: ¿lleva IVA?, ¿qué mención pongo?, ¿hay algún modelo más? Esta guía resume las reglas vigentes en septiembre de 2026 para un autónomo establecido en la península o en Baleares que presta servicios, no bienes, a clientes de la UE o del Reino Unido.",
@@ -3602,7 +3603,7 @@
    "priorite": 41,
    "titre": "Blog para autónomos",
    "url": "https://webautonomos.es/blog/",
-   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos de la Comunidad Valenciana. 226 artículos disponibles.",
+   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos de la Comunidad Valenciana. 230 artículos disponibles.",
    "marche": "europe",
    "sante": false,
    "pages": [
