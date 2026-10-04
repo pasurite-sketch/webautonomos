@@ -76,7 +76,7 @@ def build(data):
     listed = [names[c] for c, _ in langs_present]
     langs_text = (', '.join(listed[:-1]) + ' y ' + listed[-1]) if len(listed) > 1 else listed[0]
 
-    desc = ('Guías prácticas para autónomos de la Comunidad Valenciana: páginas web, '
+    desc = ('Guías prácticas para autónomos, pequeñas y medianas empresas: páginas web, '
             'SEO local, Google Business Profile y marketing digital. '
             f'{total} artículos en {langs_text}.')
     title = 'Blog para autónomos: webs, SEO local y Google Business | WebAutonomos'
@@ -182,7 +182,7 @@ def build(data):
   <h1>Blog para autónomos</h1>
   <p class="lede">
     Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing
-    digital para autónomos de la Comunidad Valenciana. {total} artículos disponibles.
+    digital para autónomos, pequeñas y medianas empresas. {total} artículos disponibles.
   </p>
 
   <ul class="jump">

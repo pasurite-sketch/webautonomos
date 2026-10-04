@@ -1336,7 +1336,7 @@ PREFILL_BLOCKS_VAL = {
         'Vols una web aix\u00ed per al teu negoci?',
     'P\u00e1ginas web profesionales desde 15 \u20ac/mes \u00b7 Sin permanencia':
         'P\u00e0gines web professionals des de 15 \u20ac/mes \u00b7 Sense perman\u00e8ncia',
-    'Agencia web especializada en aut\u00f3nomos de la Comunidad Valenciana. '
+    'Agencia web especializada en aut\u00f3nomos, peque\u00f1as y medianas empresas. '
     'P\u00e1ginas web profesionales desde 15 \u20ac/mes, sin permanencia.':
         'Ag\u00e8ncia web especialitzada en aut\u00f2noms de la Comunitat Valenciana. '
         'P\u00e0gines web professionals des de 15 \u20ac/mes, sense perman\u00e8ncia.',
@@ -1581,7 +1581,7 @@ PREFILL_BLOCKS = {
         'Vous voulez un site comme celui-ci pour votre activit\u00e9 ?',
     'P\u00e1ginas web profesionales desde 15 \u20ac/mes \u00b7 Sin permanencia':
         'Sites web professionnels \u00e0 partir de 15 \u20ac/mois \u00b7 Sans engagement',
-    'Agencia web especializada en aut\u00f3nomos de la Comunidad Valenciana. '
+    'Agencia web especializada en aut\u00f3nomos, peque\u00f1as y medianas empresas. '
     'P\u00e1ginas web profesionales desde 15 \u20ac/mes, sin permanencia.':
         'Agence web sp\u00e9cialis\u00e9e dans les ind\u00e9pendants de la Communaut\u00e9 '
         'valencienne. Sites web professionnels \u00e0 partir de 15 \u20ac/mois, sans engagement.',
@@ -1947,7 +1947,7 @@ PREFILL_BLOCKS_EN = {
         'Want a website like this for your business?',
     'P\u00e1ginas web profesionales desde 15 \u20ac/mes \u00b7 Sin permanencia':
         'Professional websites from \u20ac15/month \u00b7 No commitment',
-    'Agencia web especializada en aut\u00f3nomos de la Comunidad Valenciana. '
+    'Agencia web especializada en aut\u00f3nomos, peque\u00f1as y medianas empresas. '
     'P\u00e1ginas web profesionales desde 15 \u20ac/mes, sin permanencia.':
         'Web agency specialising in freelancers across the Valencian Community. '
         'Professional websites from \u20ac15/month, no commitment.',
