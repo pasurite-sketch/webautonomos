@@ -1338,7 +1338,7 @@ PREFILL_BLOCKS_VAL = {
         'P\u00e0gines web professionals des de 15 \u20ac/mes \u00b7 Sense perman\u00e8ncia',
     'Agencia web especializada en aut\u00f3nomos, peque\u00f1as y medianas empresas. '
     'P\u00e1ginas web profesionales desde 15 \u20ac/mes, sin permanencia.':
-        'Ag\u00e8ncia web especialitzada en aut\u00f2noms de la Comunitat Valenciana. '
+        'Ag\u00e8ncia web especialitzada en aut\u00f2noms, xicotetes i mitjanes empreses. '
         'P\u00e0gines web professionals des de 15 \u20ac/mes, sense perman\u00e8ncia.',
     '\u00bfCu\u00e1nto cuesta y cu\u00e1nto tarda?': 'Quant costa i quant tarda?',
     '15 euros al mes, sin alta y sin permanencia, o 349 euros en pago \u00fanico. '
@@ -1354,8 +1354,8 @@ PREFILL_JSONLD_VAL = {
     'jsonld:1:itemListElement.1.name': 'Blog',
     'jsonld:3:name': 'WebAutonomos',
     'jsonld:3:description': "Ag\u00e8ncia de m\u00e0rqueting digital especialitzada en "
-                            'p\u00e0gines web i SEO local per a aut\u00f2noms de la '
-                            'Comunitat Valenciana',
+                            'p\u00e0gines web i SEO local per a aut\u00f2noms, xicotetes i '
+                            'mitjanes empreses',
     'jsonld:3:areaServed.name': 'Comunitat Valenciana',
     'jsonld:4:name': 'Blog WebAutonomos.es',
     'jsonld:4:description': 'Consells i guies de SEO local i m\u00e0rqueting digital '
@@ -1583,8 +1583,8 @@ PREFILL_BLOCKS = {
         'Sites web professionnels \u00e0 partir de 15 \u20ac/mois \u00b7 Sans engagement',
     'Agencia web especializada en aut\u00f3nomos, peque\u00f1as y medianas empresas. '
     'P\u00e1ginas web profesionales desde 15 \u20ac/mes, sin permanencia.':
-        'Agence web sp\u00e9cialis\u00e9e dans les ind\u00e9pendants de la Communaut\u00e9 '
-        'valencienne. Sites web professionnels \u00e0 partir de 15 \u20ac/mois, sans engagement.',
+        'Agence web sp\u00e9cialis\u00e9e dans les ind\u00e9pendants et les petites et '
+        'moyennes entreprises. Sites web professionnels \u00e0 partir de 15 \u20ac/mois, sans engagement.',
     '\u00bfCu\u00e1nto cuesta y cu\u00e1nto tarda?':
         'Combien \u00e7a co\u00fbte et combien de temps \u00e7a prend ?',
     '15 euros al mes, sin alta y sin permanencia, o 349 euros en pago \u00fanico. '
@@ -1601,8 +1601,8 @@ PREFILL_JSONLD = {
     'jsonld:1:itemListElement.1.name': 'Blog',
     'jsonld:3:name': 'WebAutonomos',
     'jsonld:3:description': 'Agence de marketing digital sp\u00e9cialis\u00e9e dans les sites '
-                            'web et le SEO local pour les ind\u00e9pendants de la '
-                            'Communaut\u00e9 valencienne',
+                            'web et le SEO local pour les ind\u00e9pendants et les '
+                            'petites et moyennes entreprises',
     'jsonld:3:areaServed.name': 'Communaut\u00e9 valencienne',
     'jsonld:4:name': 'Blog WebAutonomos.es',
     'jsonld:4:description': 'Conseils et guides de SEO local et de marketing digital '
@@ -1949,7 +1949,7 @@ PREFILL_BLOCKS_EN = {
         'Professional websites from \u20ac15/month \u00b7 No commitment',
     'Agencia web especializada en aut\u00f3nomos, peque\u00f1as y medianas empresas. '
     'P\u00e1ginas web profesionales desde 15 \u20ac/mes, sin permanencia.':
-        'Web agency specialising in freelancers across the Valencian Community. '
+        'Web agency specialising in freelancers and small and medium-sized businesses. '
         'Professional websites from \u20ac15/month, no commitment.',
     '\u00bfCu\u00e1nto cuesta y cu\u00e1nto tarda?':
         'How much does it cost and how long does it take?',
@@ -1966,8 +1966,8 @@ PREFILL_JSONLD_EN = {
     'jsonld:1:itemListElement.1.name': 'Blog',
     'jsonld:3:name': 'WebAutonomos',
     'jsonld:3:description': 'Digital marketing agency specialising in websites '
-                            'and local SEO for freelancers in the Valencian '
-                            'Community',
+                            'and local SEO for freelancers and small and '
+                            'medium-sized businesses',
     'jsonld:3:areaServed.name': 'Valencian Community',
     'jsonld:4:name': 'Blog WebAutonomos.es',
     'jsonld:4:description': 'Local SEO and digital marketing advice and guides '

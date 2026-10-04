@@ -135,7 +135,7 @@ UI = {
                 read='min de lectura', cta_title='Vols una web així per al teu negoci?',
                 cta_text='Pàgines web professionals per 15 €/mes · Sense alta · Sense permanència',
                 cta_btn='Demana gratis la demo de la teua web →', cta_href='/pide-tu-demo', author_desc=
-                'Agència web especialitzada en autònoms de la Comunitat Valenciana. '
+                'Agència web especialitzada en autònoms, xicotetes i mitjanes empreses. '
                 'Pàgines web professionals des de 15 €/mes, sense permanència.',
                 legal='Avís legal', privacy='Privacitat', contact='Contacte'),
     'en': dict(home='Home', sectors='Websites by trade', sector_q='', sector_link='', blog='Blog', back='← Back to the blog',
@@ -143,7 +143,7 @@ UI = {
                read='min read', cta_title='Want a website like this for your business?',
                cta_text='Professional websites for €15/month · No setup fee · No commitment',
                cta_btn='Get a free demo of your website →', cta_href='/get-your-demo', author_desc=
-               'Web agency specialising in freelancers across the Valencian Community. '
+               'Web agency specialising in freelancers and small and medium-sized businesses. '
                'Professional websites from €15/month, no commitment.',
                legal='Legal notice', privacy='Privacy', contact='Contact'),
     'fr': dict(home='Accueil', sectors='Sites par métier', sector_q='', sector_link='', blog='Blog', back='← Retour au blog',
@@ -151,7 +151,7 @@ UI = {
                read='min de lecture', cta_title='Vous voulez un site comme celui-ci ?',
                cta_text='Sites web professionnels pour 15 €/mois · Sans frais d\'ouverture · Sans engagement',
                cta_btn='Demander gratuitement la démo de votre site →', cta_href='/demandez-votre-demo', author_desc=
-               'Agence web spécialisée dans les indépendants de la Communauté valencienne. '
+               'Agence web spécialisée dans les indépendants et les petites et moyennes entreprises. '
                'Sites web professionnels à partir de 15 €/mois, sans engagement.',
                legal='Mentions légales', privacy='Confidentialité', contact='Contact'),
 }
