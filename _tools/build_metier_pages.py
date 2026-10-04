@@ -866,7 +866,8 @@ MENU['en'] = dict(
          ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish homeowners find you as "
                                            "easily as expats do."),
          ('📸', 'Your work, shown properly', "Kitchens, wardrobes, doors, staircases: your project photos organised "
-                                            "by type of job, to showcase your best work."),
+                                            "by type of job, to showcase your best work, from first fitting to a "
+                                            "great finish."),
          ('📍', 'Found locally', "Titles and copy written for searches like “carpenter Jávea” or “kitchen fitter "
                                 "Torrevieja”, in both languages.")],
     where_t='Anywhere in Spain',
@@ -887,7 +888,7 @@ MENU['en'] = dict(
     extra=[
         ('what-to-include', 'On your website', "What to put on your carpentry website",
          '<p class="legal-intro">A homeowner who lands on your website wants to see quickly whether you do the '
-         'kind of work they need, in their area, and how to reach you. These are the parts that answer those '
+         'kind of work they need, in their area, and how to reach a professional they can trust. These are the parts that answer those '
          'questions and make it easier for them to contact you. In a clean, uncluttered layout, close-up '
          'photos of joints, grain and the finish on a staircase or worktop show your craftsmanship before anyone '
          'picks up the phone.</p>'
@@ -895,7 +896,7 @@ MENU['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F5C2️</div>'
          '<h3>A portfolio organised by project type</h3>'
          '<p>Kitchens, staircases, fitted wardrobes and bespoke furniture, grouped so a visitor looking for one type '
-         'of work does not have to scroll past another. A good starting point is your own project photos: we '
+         'of work does not have to scroll past another. A good starting point is the photos you already have: we '
          'build your site around them.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CD</div>'
          '<h3>The areas you cover, stated clearly</h3>'
@@ -903,13 +904,17 @@ MENU['en'] = dict(
          'Google understand who your site is for.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4AC</div>'
          '<h3>A quote request in one click</h3>'
-         '<p>A form, WhatsApp button or phone number that a homeowner can use straight away, without hunting for '
-         'your contact details.</p></div>'
+         '<p>A form, WhatsApp button or phone number — a simple tool a homeowner can use straight away, without '
+         'hunting across several pages for your contact details.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">⭐</div>'
          '<h3>Google reviews, shown honestly</h3>'
-         '<p>As the rules above set out, your website must say whether and how you check that reviews come from '
-         'real customers. If you show reviews from your Google Business Profile, add a short note saying they '
-         'come from Google and whether, and how, you check them.</p></div>'
+         '<p>If you show ratings and comments from your Google Business Profile, add a short note saying they '
+         'come from Google and whether, and how, you check them, as the rules above require.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✍️</div>'
+         '<h3>Content that helps build trust</h3>'
+         '<p>Clear, professional content about your services and how your quote process works helps a homeowner '
+         'trust what they see before they get in touch, and it is written as part of building your website, not '
+         'as a separate step afterwards.</p></div>'
          '</div>'
          '<p class="where">For a longer read on structuring a carpentry site, see our article on '
          '<a href="https://webautonomos.es/blog/en/website-for-carpenters-and-renovations">websites for carpenters '
@@ -937,7 +942,10 @@ MENU['en'] = dict(
          '</div>'),
         ('local-search-help', 'Local search', 'How your website helps you appear in local searches',
          '<p class="legal-intro">Getting found in your area is not only about the website itself: homeowners also '
-         'post jobs on directories, ask around, or search directly for a trusted tradesperson nearby.</p>'
+         'post jobs on directories, ask around, or search directly for a trusted tradesperson nearby. Carpenter '
+         'and joiner websites often rank for very similar searches, and homeowners looking for a builder '
+         'sometimes use the same words too, so it helps to include these terms naturally in your titles and '
+         'text.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F50D</div>'
          '<h3>Basic SEO, included in your price</h3>'
@@ -953,7 +961,7 @@ MENU['en'] = dict(
          '<a href="https://webautonomos.es/blog/en/how-to-rank-your-website-in-local-google">ranking your website '
          'locally</a>, <a href="https://webautonomos.es/blog/en/optimise-your-google-business-profile">optimising '
          'your Google Business Profile</a> and <a href="https://webautonomos.es/blog/en/how-to-get-more-google-'
-         'reviews">getting more Google reviews</a>.</p></div>'
+         'reviews">getting more Google reviews</a> — worth a read if you want the full picture.</p></div>'
          '</div>'),
         ('common-mistakes', 'What to avoid', 'Common mistakes on carpenter websites',
          '<p class="legal-intro">These are the gaps that often make a carpenter&#8217;s website less '
@@ -965,13 +973,13 @@ MENU['en'] = dict(
          '<li>An incomplete legal notice, missing the NIF or NIE that the LSSI requires</li>'
          '</ul></div>'
          '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>How we help you avoid them</h3>'
-         '<p>Your website is built around your own photos, names your trade and the areas you cover in '
-         'its titles and copy, and comes with a contact form, a WhatsApp button and legal pages (legal notice, '
-         'privacy and cookies). You see it before you pay anything, you can ask for as many changes as you want '
-         'before it goes live, and if you decide not to go ahead, you pay nothing.</p></div>'),
+         '<p>A professional-looking website puts your own pictures first, names your trade and the areas you cover '
+         'in its titles and copy, and comes with a contact form, a WhatsApp button and legal pages (legal notice, '
+         'privacy policy and cookies). You see it before you pay anything, you can ask for as many changes as you '
+         'want before it goes live, and if you decide not to go ahead, you pay nothing.</p></div>'),
         ('directory-vs-website', 'Compare', 'Your own website compared to a directory listing',
          '<p class="legal-intro">If you already get work through a trade directory, here is what changes once you '
-         'also have your own website.</p>'
+         'also build your own website.</p>'
          '<div class="cmp-g">'
          '<div class="cmp-c them"><h3>A directory listing</h3><ul>'
          '<li>Enquiries often go through the platform, not straight to you</li>'
@@ -984,6 +992,7 @@ MENU['en'] = dict(
          '<li>Only your own portfolio and projects are shown, with no competitors on the same page</li>'
          '<li>Your own .es domain name, included for the first year</li>'
          '<li>Designed around your own images and the towns you cover</li>'
+         '<li>A professional, consistent look across all your pages</li>'
          '</ul></div>'
          '</div>'),
         ('technical-basics', 'Behind the scenes', 'What runs behind your website',
@@ -999,9 +1008,9 @@ MENU['en'] = dict(
          '<p>We add links to your Facebook, Instagram or other social profiles on the website, so visitors can '
          'also see the work you post there.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✏️</div>'
-         '<h3>One change a month, included</h3>'
-         '<p>Once your site is live, you can ask for one change a month at no extra cost: updating a price, '
-         'adding new project pictures, or requesting other small changes.</p></div>'
+         '<h3>One monthly change, included</h3>'
+         '<p>Once your site is live, you can ask for it at no extra cost: updating a price, '
+         'adding pictures of a staircase you have just finished, or requesting other small changes.</p></div>'
          '</div>'),
     ],
     faq_t='Frequently asked questions',
@@ -1049,9 +1058,9 @@ MENU['en'] = dict(
          ("How should I organise my project photos on the website?",
           "Group them by type of job (kitchens, staircases, fitted wardrobes, doors) rather than in one long "
           "gallery, so a homeowner looking for a fitted wardrobe sees relevant work straight away. We use the "
-          "photos on your Google Business Profile and any others you send us."),
+          "pictures already on your Google Business Profile and any others you send us."),
          ("Do I need Google Business Profile management as well as a website?",
-          "No, it's optional. Your website already comes with basic SEO: titles and copy built around your trade and "
+          "No, it's optional. Your website already comes with basic SEO: titles and copy that name your trade and "
           "your area. If you want more, we also manage Google Business Profiles for €29 + VAT a month (€49 + VAT to "
           "set one up if you don't have one yet)."),
          ("How much does a website cost?",
@@ -1067,6 +1076,12 @@ MENU['en'] = dict(
           "tradesperson, and they may then look you up online before getting in touch. Others simply search for a "
           "joiner in their area. A website built around your own projects and service area helps in both cases: "
           "someone who heard about you can check your work there, and someone searching can find it."),
+         ("What's the difference between a carpenter, a joiner and a builder?",
+          "In simple terms, a carpenter typically works with timber on site — floors, roofs, staircases — while a "
+          "joiner can build furniture and fittings such as kitchens, doors and wardrobes in a workshop before "
+          "installing them. A builder usually covers wider construction work. In practice, carpenters, joiners and "
+          "builders often overlap, so before you start comparing providers it is worth naming the actual services "
+          "you offer on your own website rather than relying on the job title alone."),
          ("Can I show before-and-after shots of a finished project?",
           "Yes, before-and-after shots of a kitchen fitting or a finished staircase can help a homeowner compare "
           "carpenters, as long as they're genuine pictures from your own projects. We build your gallery around "
@@ -1078,8 +1093,8 @@ MENU['en'] = dict(
          ("Is a custom design better than a template for a carpenter's website?",
           "What matters most is that the site shows your own work: your project photos grouped by type of job, "
           "the towns you cover and a quick way to contact you. We use our own system built from components we've "
-          "already tested, and our team writes the copy and arranges the layout around your own details and "
-          "photos. That is part of how we keep the price low, and you see the demo before you pay anything.")],
+          "already tested, and our team writes the copy and arranges the layout around your own details. "
+          "That is part of how we keep the price low, and you see the demo before you pay anything.")],
     final_t='See your website before you pay a thing',
     final_sd="Free demo within 24 hours, with your projects and legal pages. No setup fee, no lock-in.",
 )
