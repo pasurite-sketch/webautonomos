@@ -906,8 +906,8 @@ PLUMB_UK = dict(
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🚨</div>'
          '<h3>Emergency call-outs first</h3>'
-         '<p>Your hours, the towns you cover and a call button at the top of the page, for the customer with a '
-         'leak who won\'t read further.</p></div>'
+         '<p>Your hours, the towns you serve and a call button at the top of the page, so someone with a leak '
+         'can call you without scrolling.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔥</div>'
          '<h3>Your Gas Safe details</h3>'
          '<p>Your registration number, shown with your registered trading name, so a customer can check it on the '
@@ -933,11 +933,12 @@ PLUMB_UK = dict(
          '<h3>A clear, mobile-first layout</h3>'
          '<p>Someone searching in a hurry won\'t wait for a slow page or zoom in to read it, so a professional '
          'layout keeps things simple, the copy short and the page fast to load, just as readable on a small screen '
-         'as on a desktop.</p></div>'
+         'as on a desktop. A visitor often decides from the homepage alone whether to stay, so the first screen on '
+         'a phone should already show what you do and how to call you.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧭</div>'
          '<h3>An easy path to a call or a quote</h3>'
-         '<p>Every page leads somewhere: a clear call button, WhatsApp link or contact form, so someone who wants '
-         'to book doesn\'t have to search for how.</p></div>'
+         '<p>Every page leads somewhere: a clear call button, a WhatsApp link or a link to your contact form in '
+         'the main navigation, so someone who wants to book doesn\'t have to search for how.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div>'
          '<h3>Layout that earns trust</h3>'
          '<p>Genuine feedback shown without hiding anything negative (see the rules above), your Gas Safe '
@@ -955,18 +956,18 @@ PLUMB_UK = dict(
          'up before they find how to contact you</li>'
          '<li>No visible Gas Safe registration, so a visitor cannot check you on the public register before '
          'agreeing to gas work</li>'
-         '<li>Stock photography and generic copy that could describe any plumbing business, not yours</li>'
+         '<li>Stock images and generic copy that could describe any plumbing business, not yours</li>'
          '<li>A call button or way to get a quote that is buried below several screens of content</li>'
          '<li>A slow site that takes too long to load, especially on a mobile connection</li>'
          '</ul></div>'
          '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>What to do instead</h3>'
          '<p>A simple, professional, mobile-friendly layout, photos of your own jobs and the Gas Safe registration '
-         'a visitor can check. Together, they help someone who is just browsing trust what they see and get in '
-         'touch.</p></div>'),
+         'a visitor can check. Together, they help someone who is just browsing trust what they see and use the '
+         'contact form to get in touch.</p></div>'),
         ('vs-general-website', 'Compare', 'Built around your business, not a generic template',
          '<p class="legal-intro">A general website builder gives you a template to adapt, even one aimed at '
          'your industry, but your Gas Safe registration and your own services are still yours to add. Here is '
-         'what changes when the design starts from your registration and services, not a generic template.</p>'
+         'what\'s different when the design starts from your registration and services, not a generic template.</p>'
          '<div class="cmp-g">'
          '<div class="cmp-c them"><h3>A general website builder</h3><ul>'
          '<li>A generic template you adapt yourself, with no reference to your Gas Safe registration or the jobs '
@@ -1011,19 +1012,22 @@ PLUMB_UK = dict(
          '</div>'),
         local_search_uk('plumber'),
         ('local-trust-plumbers', 'Local & trust', 'Local search and trust for small plumbing companies',
-         '<p class="legal-intro">Many customers find a local plumber through a search, and what they see once they '
-         'land decides whether they call. A small plumbing company doesn\'t need a marketing team for that: a few '
-         'concrete details do the work.</p>'
+         '<p class="legal-intro">For many customers, a search engine is where they start looking for a plumber '
+         'nearby, and what they see once they land decides whether they call. A small plumbing company doesn\'t '
+         'need a marketing team for that: a few concrete details do the work. Different customers look for '
+         'different things before they call: a homeowner with a leak wants your number, a landlord wants to know '
+         'you carry out gas safety checks. Show both clearly instead of burying them.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>Jobs you\'ve done nearby</h3>'
-         '<p>A few photos of your own jobs, each with the town where you did it, show a visitor that you already '
-         'work in their area.</p></div>'
+         '<p>A few real photos of your own jobs, each with the town where you did it, show a visitor that you '
+         'already work in their area.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">⭐</div><h3>Reviews a visitor can check</h3>'
          '<p>A link to your Google reviews lets a visitor read them in full, where they were posted, rather than '
          'taking a few quotes on trust.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div><h3>Who will knock on the door</h3>'
          '<p>Your name, a photo of you or your van and how you prefer to be contacted: someone deciding who to let '
-         'into their home wants to know who is coming.</p></div>'
+         'into their home wants to know who is coming, especially when your business is a one-person '
+         'operation.</p></div>'
          '</div>'
          '<p class="where">More on ranking locally in <a href="https://webautonomos.es/blog/en/'
          'how-to-rank-your-website-in-local-google">how to rank your website locally on Google</a>.</p>'),
@@ -1034,7 +1038,8 @@ PLUMB_UK = dict(
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">⚡</div><h3>Largest Contentful Paint</h3>'
          '<p>It measures how long the largest element on screen, often your main photo or heading, takes to appear. '
-         'A light, well-compressed main photo helps it appear sooner, on a phone as much as on a desktop.</p></div>'
+         'A light, well-compressed main photo helps it appear sooner, on a phone as much as '
+         'on a desktop.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔎</div><h3>Test it yourself</h3>'
          '<p>Google\'s free PageSpeed Insights tool shows how quickly your homepage loads on a phone and on a '
          'desktop, and which images or scripts slow it down. Try it before you choose what to change.</p></div>'
@@ -1046,7 +1051,8 @@ PLUMB_UK = dict(
          'rankings">why your website\'s speed affects your Google ranking</a>.</p>'),
         ('plumbing-website-cost', 'Pricing', 'What does a plumbing website cost?',
          '<p class="legal-intro">A plumbing website\'s cost depends on what\'s bundled in, not only on the design '
-         'itself: hosting, legal pages, ongoing changes and support are billed separately with some providers.</p>'
+         'itself: hosting, legal pages, ongoing changes and support are billed separately with some providers, so '
+         'it\'s worth checking what the terms actually cover before you sign up.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div><h3>What\'s included in one price</h3>'
          '<ul style="list-style:none;padding:0;display:grid;gap:6px;text-align:left;font-size:.92rem;color:#334155">'
@@ -1066,7 +1072,10 @@ PLUMB_UK = dict(
          '<li>How much of the design and copy you write yourself</li>'
          '<li>Whether you pay a one-off fee, a monthly fee, or both</li>'
          '<li>How the site is built, and how easy it is to update afterwards</li>'
-         '</ul></div>'
+         '</ul>'
+         '<p style="margin-top:10px">For a broader comparison of what different providers charge and include, see '
+         'our guide to <a href="https://webautonomos.es/blog/en/how-much-does-a-website-cost-for-freelancers">'
+         'website pricing for freelancers</a>.</p></div>'
          '</div>' % (GBP_MOIS, GBP_UNIQUE)),
     ],
     faq=[("Do I need to be Gas Safe registered?",
@@ -1129,7 +1138,16 @@ PLUMB_UK = dict(
          ("Do I need a privacy policy on my plumbing website?",
           "Yes: UK GDPR requires a privacy policy explaining what you do with visitors' data, and the Privacy and "
           "Electronic Communications Regulations (PECR) cover cookies. Both plans include a privacy policy and "
-          "cookie notice adapted to UK law, ready before your site goes live.")] + FAQ_TRADES,
+          "cookie notice adapted to UK law, ready before your site goes live."),
+         ("How do customers typically find a plumbing company's website?",
+          "Often through a search engine: someone types “emergency plumber” with their town or postcode "
+          "and picks from the results. A clear homepage, your service area and a call button in view give them a "
+          "fast answer and an easy way to get in touch."),
+         ("Do I need lots of pages for my plumbing company?",
+          "Not necessarily: a clear homepage, a section for each service, your service area, legal information "
+          "and a contact form are often enough, reached from one navigation menu so a visitor finds what they "
+          "need in a click or two. If landlords send you regular work, a dedicated page for them is worth "
+          "adding.")] + FAQ_TRADES,
 )
 SRC_PLUMB_UK = [
     ('Gas Safety (Installation and Use) Regulations 1998, reg. 3',
