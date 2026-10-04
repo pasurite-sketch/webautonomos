@@ -1642,9 +1642,9 @@
    "url": "https://webautonomos.es/en/automation-diagnostic/",
    "fichier": "en/automation-diagnostic/index.html",
    "lang": "en",
-   "requete": null,
-   "phase": 2,
-   "origine": "à choisir",
+   "requete": "process automation for small businesses",
+   "phase": 1,
+   "origine": "choisie ; guide créé dans l’interface avec sélection manuelle des résultats (04/10)",
    "langue_serpmantics": "en-gb"
   },
   {
@@ -1681,9 +1681,9 @@
    "url": "https://webautonomos.es/fr/diagnostic-automatisation/",
    "fichier": "fr/diagnostic-automatisation/index.html",
    "lang": "fr",
-   "requete": null,
-   "phase": 2,
-   "origine": "à choisir"
+   "requete": "automatisation des processus PME",
+   "phase": 1,
+   "origine": "choisie ; guide créé dans l’interface avec sélection manuelle des résultats (04/10)"
   },
   {
    "slug": "site-fr-questions",
