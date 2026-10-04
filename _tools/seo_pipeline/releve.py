@@ -38,6 +38,8 @@ NOMS = {'GOOGLE': 'Google', 'GOOGLE_AI_OVERVIEW_CITATIONS': 'AI Overview', 'CHAT
 ORDRE = ['Google', 'AI Overview', 'ChatGPT', 'Gemini', 'Perplexity', 'Claude']
 STRUCT = ['length', 'images', 'headings', 'paragraphs', 'links', 'lists', 'tables', 'videos']
 SITE = os.path.join(P, 'requetes_site.json')
+# Codes que SERPmantics refuse (« Unsupported language code », 04/10/2026) : on passe au suivant
+LANGUES_REFUSEES = {'en-es', 'ca-es'}
 
 
 def charger_cle():
@@ -174,7 +176,7 @@ def cmd_creer(a, sortie):
     for e in pages:
         if moteur in par_page.get(e['slug'], {}):
             continue
-        lang = serp.lang_codes(e)[0]
+        lang = next((c for c in serp.lang_codes(e) if c not in LANGUES_REFUSEES), serp.lang_codes(e)[0])
         x = manquants.setdefault((lang, serp.norm(e['requete'])), {'requete': e['requete'], 'lang': lang, 'pages': []})
         x['pages'].append(e['slug'])
     q = quota()

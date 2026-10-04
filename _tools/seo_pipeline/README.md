@@ -83,6 +83,8 @@ sitemap absente de `pages.json` (articles du blog, outils, FAQ…), par phase.
 les mesure. Limites constatées le 04/10/2026 :
 - quota API : 200 guides créés par mois (période du 24 au 24), même avec les crédits
   illimités ; lecture et mesures gratuites ; `creer` garde 6 guides pour le circuit ;
+  les guides créés à la main dans l'interface comptent aussi (essai du 04/10 : 3 guides,
+  compteur passé de 193 à 196) ;
 - au plus 20 guides en cours de création (« Too many guides in progress ») : `creer`
   envoie 5 requêtes toutes les 20 s et réessaie ;
 - langues : ni le catalan (les 58 articles valenciens sont exclus) ni `en-es` : les

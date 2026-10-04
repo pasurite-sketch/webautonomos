@@ -37,7 +37,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-automatizar-sin-saber-programar",
@@ -64,7 +65,8 @@
    "lang": "en",
    "requete": "automate without code",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-backlinks-locales-como-conseguir",
@@ -91,7 +93,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-categorias-google-business-como-elegir",
@@ -118,7 +121,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-citas-locales-nap-que-son-por-que-importan",
@@ -145,7 +149,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-como-aparecer-google-maps-autonomos",
@@ -172,7 +177,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-como-conseguir-clientes-por-internet",
@@ -199,7 +205,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-como-conseguir-resenas-google-negocio",
@@ -226,7 +233,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-como-elegir-dominio-web-negocio",
@@ -253,7 +261,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-como-es-automatizar-un-proceso-paso-a-paso",
@@ -280,7 +289,8 @@
    "lang": "en",
    "requete": "automation process steps",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-como-posicionar-web-en-google-local",
@@ -307,7 +317,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-configurar-whatsapp-business-gratis-autonomos",
@@ -334,7 +345,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-contratar-o-automatizar",
@@ -361,7 +373,8 @@
    "lang": "en",
    "requete": "hire or automate",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-crear-contenido-web-sin-saber-escribir",
@@ -388,7 +401,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-cuanto-cuesta-automatizar-un-proceso-formula",
@@ -415,7 +429,8 @@
    "lang": "en",
    "requete": "cost to automate a process",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-fr-combien-coute-un-site-web-pour-independants",
@@ -433,7 +448,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-cuanto-cuesta-papeleo-autonomo",
@@ -460,7 +476,8 @@
    "lang": "en",
    "requete": "paperwork sole traders",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-digitalizacion-autonomos-espana-por-donde-empezar",
@@ -478,7 +495,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-email-marketing-autonomos-guia-basica",
@@ -505,7 +523,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-errores-marketing-digital-autonomos",
@@ -532,7 +551,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-errores-mas-caros-al-automatizar",
@@ -559,7 +579,8 @@
    "lang": "en",
    "requete": "automation mistakes business",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-factura-electronica-plazos-2026-2027",
@@ -586,7 +607,8 @@
    "lang": "en",
    "requete": "e-invoicing mandate France",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-facturacion-electronica-autonomos-obligatoria",
@@ -604,7 +626,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-fotos-videos-ficha-google-importancia",
@@ -631,7 +654,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-google-ads-autonomos-guia-basica",
@@ -658,7 +682,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-google-posts-publicar-fiche-google",
@@ -685,7 +710,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-inteligencia-artificial-autonomos-herramientas",
@@ -712,7 +738,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-lo-que-no-haces-por-falta-de-tiempo",
@@ -739,7 +766,8 @@
    "lang": "en",
    "requete": "automated payment chasing",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-mantenimiento-coste-automatizacion",
@@ -766,7 +794,8 @@
    "lang": "en",
    "requete": "automation maintenance cost",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-marca-personal-para-autonomos",
@@ -793,7 +822,8 @@
    "lang": "en",
    "requete": "personal brand freelancer",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-medir-resultados-web-google-analytics",
@@ -820,7 +850,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-optimizar-ficha-google-business-profile",
@@ -847,7 +878,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-fr-site-web-pour-electriciens",
@@ -865,7 +897,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-palabras-clave-locales-como-elegir",
@@ -892,7 +925,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-preguntas-respuestas-ficha-google",
@@ -919,7 +953,8 @@
    "lang": "en",
    "requete": "Google questions and answers",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-presupuesto-marketing-digital-autonomos",
@@ -946,7 +981,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-que-debe-tener-web-profesional-autonomo",
@@ -973,7 +1009,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-que-es-map-pack-google-como-salir",
@@ -1000,7 +1037,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-que-no-deberias-automatizar-nunca",
@@ -1027,7 +1065,8 @@
    "lang": "en",
    "requete": "what not to automate",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-que-tareas-automatizar-primero",
@@ -1054,7 +1093,8 @@
    "lang": "en",
    "requete": "which tasks to automate",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-redes-sociales-autonomos-cuales-usar",
@@ -1081,7 +1121,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-reservas-online-autonomos-2026",
@@ -1108,7 +1149,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-responder-resenas-negativas-google",
@@ -1135,7 +1177,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-schema-local-business-que-es-como-implementar",
@@ -1162,7 +1205,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-seo-local-que-es-autonomos",
@@ -1189,7 +1233,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-velocidad-web-y-posicionamiento",
@@ -1216,7 +1261,8 @@
    "lang": "en",
    "requete": "website speed ranking",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-web-para-carpinteros-reformas",
@@ -1243,7 +1289,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-web-para-centros-estetica-belleza",
@@ -1270,7 +1317,8 @@
    "lang": "en",
    "requete": "website for beauty salon",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-web-para-clinica-dental-fisioterapeuta",
@@ -1297,7 +1345,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-web-para-clinicas-veterinarias",
@@ -1324,7 +1373,8 @@
    "lang": "en",
    "requete": "website for veterinary clinics",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-web-para-coaches",
@@ -1351,7 +1401,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-web-para-entrenadores-personales",
@@ -1378,7 +1429,8 @@
    "lang": "en",
    "requete": "website for personal trainers",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-web-para-fontaneros-guia-completa",
@@ -1405,7 +1457,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-web-para-nutricionistas-dietistas",
@@ -1432,7 +1485,8 @@
    "lang": "en",
    "requete": "website for nutritionists",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-web-para-podologos-clinica-pies",
@@ -1459,7 +1513,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-web-para-psicologos-terapeutas",
@@ -1486,7 +1541,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-web-para-tatuadores-estudio-tattoo",
@@ -1513,7 +1569,8 @@
    "lang": "en",
    "requete": null,
    "origine": "à choisir",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-blog-es-wix-o-wordpress",
@@ -1540,7 +1597,8 @@
    "lang": "en",
    "requete": "wix or wordpress",
    "origine": "file d’attente",
-   "phase": 2
+   "phase": 2,
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-como-funciona",
@@ -1574,9 +1632,10 @@
    "url": "https://webautonomos.es/en/ai-visibility/",
    "fichier": "en/ai-visibility/index.html",
    "lang": "en",
-   "requete": null,
-   "phase": 2,
-   "origine": "à choisir"
+   "requete": "appear in ChatGPT",
+   "phase": 1,
+   "origine": "choisie ; guide créé dans l’interface avec sélection manuelle des résultats (04/10)",
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-en-automation-diagnostic",
@@ -1585,7 +1644,8 @@
    "lang": "en",
    "requete": null,
    "phase": 2,
-   "origine": "à choisir"
+   "origine": "à choisir",
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-en-faq",
@@ -1594,7 +1654,8 @@
    "lang": "en",
    "requete": null,
    "phase": 2,
-   "origine": "à choisir"
+   "origine": "à choisir",
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-en-how",
@@ -1603,7 +1664,8 @@
    "lang": "en",
    "requete": null,
    "phase": 2,
-   "origine": "à choisir"
+   "origine": "à choisir",
+   "langue_serpmantics": "en-gb"
   },
   {
    "slug": "site-fr-comment-ca-marche",
@@ -1637,9 +1699,9 @@
    "url": "https://webautonomos.es/fr/visibilite-ia/",
    "fichier": "fr/visibilite-ia/index.html",
    "lang": "fr",
-   "requete": null,
-   "phase": 2,
-   "origine": "à choisir"
+   "requete": "apparaître sur ChatGPT",
+   "phase": 1,
+   "origine": "choisie ; guide créé dans l’interface avec sélection manuelle des résultats (04/10)"
   },
   {
    "slug": "site-marketing",
@@ -1664,9 +1726,9 @@
    "url": "https://webautonomos.es/visibilidad-ia/",
    "fichier": "visibilidad-ia/index.html",
    "lang": "es",
-   "requete": null,
-   "phase": 2,
-   "origine": "à choisir"
+   "requete": "aparecer en ChatGPT",
+   "phase": 1,
+   "origine": "choisie ; guide créé dans l’interface avec sélection manuelle des résultats (04/10)"
   }
  ],
  "exclues": [
