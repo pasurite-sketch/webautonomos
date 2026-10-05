@@ -46,6 +46,42 @@
         <lastmod>2026-03-02</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
     </url>
     <url>
+        <loc>https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/alta-autonom-estranger"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/becoming-an-autonomo-in-spain-as-a-foreigner"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/devenir-autonomo-en-espagne"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana"/>
+        <lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://webautonomos.es/blog/fr/devenir-autonomo-en-espagne</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/alta-autonom-estranger"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/becoming-an-autonomo-in-spain-as-a-foreigner"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/devenir-autonomo-en-espagne"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana"/>
+        <lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://webautonomos.es/blog/en/becoming-an-autonomo-in-spain-as-a-foreigner</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/alta-autonom-estranger"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/becoming-an-autonomo-in-spain-as-a-foreigner"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/devenir-autonomo-en-espagne"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana"/>
+        <lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://webautonomos.es/blog/val/alta-autonom-estranger</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/alta-autonom-estranger"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/becoming-an-autonomo-in-spain-as-a-foreigner"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/devenir-autonomo-en-espagne"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/alta-autonomo-extranjero-espana"/>
+        <lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://webautonomos.es/blog/es/automatizar-sin-saber-programar</loc>
         <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/automatizar-sin-saber-programar"/>
         <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/automatitzar-sense-saber-programar"/>
