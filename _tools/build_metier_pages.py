@@ -2567,7 +2567,7 @@ ELEC['fr'] = dict(
     crumb_home='Accueil', crumb='Électriciens',
     badge='Électriciens, bornes de recharge, photovoltaïque',
     h1="Création de site internet pour <em>électricien</em> : vos chantiers, vos qualifications",
-    lede="Vos services, de la mise en sécurité aux bornes de recharge, vos zones d'intervention, vos qualifications "
+    lede="Vos services, de la sécurisation aux bornes de recharge, vos zones d'intervention, vos qualifications "
          "présentées telles que vous les détenez et vos tarifs de dépannage accessibles comme la loi le demande. Nous l'écrivons "
          "pour vous et vous envoyons une démo gratuite en 24 heures.",
     pills=['Vos qualifications en avant', 'Tarifs de dépannage accessibles', 'Démo gratuite en 24 h'],
@@ -2669,14 +2669,14 @@ ELEC['fr'] = dict(
          "présenter séparément aide le visiteur et vous évite les promesses approximatives.</p>"
          "<div class=\"why-g\">"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🔌</div>"
-         "<h3>Dépannage et mise en sécurité</h3>"
+         "<h3>Dépannage et sécurisation</h3>"
          "<p>Vos horaires d'intervention, les communes couvertes, un bouton d'appel et un lien vers vos tarifs de "
          "dépannage : l'essentiel pour une panne.</p></div>"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🏠</div>"
-         "<h3>Rénovation et mise en conformité</h3>"
+         "<h3>Rénovation et remise en conformité</h3>"
          "<p>Tableau électrique, remise aux normes, rénovation complète : précisez quand vous vous chargez de "
          "l'attestation Consuel, exigée avant la remise sous tension d'une installation entièrement rénovée que le "
-         "distributeur a mise hors tension à la demande du client.</p>"
+         "distributeur a coupée à la demande du client.</p>"
          "</div>"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🚗</div>"
          "<h3>Bornes de recharge</h3>"
@@ -2691,6 +2691,39 @@ ELEC['fr'] = dict(
          "<p class=\"where\">Pour aller plus loin, consultez "
          "<a href=\"https://webautonomos.es/blog/fr/site-web-pour-electriciens\">notre guide : ce qu'il vous faut "
          "et par où commencer</a>.</p>"),
+        ('choisir-site', 'Avant de vous lancer', "Création de votre site internet d'électricien : comment choisir "
+         "le bon prestataire ?",
+         "<p class=\"legal-intro\">Un bon site internet d'électricien se juge sur ce que comprend son prix, sur le "
+         "délai de lancement, sur sa capacité à vous faire trouver et sur le suivi qui vient ensuite, pas "
+         "seulement sur son apparence. Voici ce qui mérite d'être comparé avant de choisir le prestataire qui créera "
+         "votre site internet.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📦</div>"
+         "<h3>Ce que le prix comprend</h3>"
+         "<p>Conception, hébergement, nom de domaine et mentions légales : vérifiez ce que le prix d'un site "
+         "d'électricien comprend, et ce qui se paie à part, comme le renouvellement du nom de domaine après la "
+         "première année.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">⏱️</div>"
+         "<h3>Le délai de lancement</h3>"
+         "<p>Suivre la création d'un site pendant des semaines prend du temps sur vos chantiers. "
+         "Demandez à voir une démo avant de vous engager : nous la préparons en 24 heures.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🔎</div>"
+         "<h3>La capacité à vous faire trouver</h3>"
+         "<p>Un bon prestataire construit vos titres et vos textes autour de votre métier et de votre secteur "
+         "d'intervention, pour qu'un client qui cherche un électricien près de chez lui tombe sur vous, et pas "
+         "seulement sur vos concurrents.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🛠️</div>"
+         "<h3>L'accompagnement après le lancement</h3>"
+         "<p>Vos qualifications évoluent, vos tarifs aussi : l'abonnement comprend une modification mensuelle, "
+         "pour éviter de rouvrir un projet complet à chaque changement.</p></div>"
+         "</div>"
+         "<p>Pensez aussi au chemin par lequel vos clients arriveront jusqu'à vous : une carte, un moteur de "
+         "recherche ou la recommandation d'un voisin. Un formulaire de contact simple, un site web lisible sur "
+         "mobile et vos secteurs d'intervention bien visibles rassurent un client qui ne vous connaît pas encore "
+         "et l'aident à passer de la recherche à la demande de devis.</p>"
+         "<p class=\"where\">Ces critères valent pour un site d'électricien comme pour tout "
+         "<a href=\"https://webautonomos.es/fr/site-internet-artisan\">site internet pour artisan du bâtiment</a> : "
+         "faites-vous confirmer par écrit ce que comprend le prix avant de vous engager.</p>"),
         visibilite_fr("Référencement du site d'un électricien : ce qui est inclus",
                       "<a href=\"https://webautonomos.es/blog/fr/map-pack-google-comment-y-figurer\">figurer dans "
                       "les résultats de Google Maps</a>, "),
@@ -2737,6 +2770,12 @@ ELEC['fr'] = dict(
           "Ce n'est pas obligatoire, mais si vous les affichez, elles doivent être exactes : afficher un certificat, "
           "un label ou une qualification sans l'avoir obtenu est une pratique commerciale trompeuse (Code de la "
           "consommation, art. L121-4). Nous présentons chaque qualification avec le domaine qu'elle couvre."),
+         ("Quelle est la différence entre un site internet d'électricien et une fiche Google ?",
+          "Une fiche Google vous rend visible sur la carte, mais elle ne remplace pas votre site internet : celui-ci "
+          "présente vos services et vos qualifications en détail, avec un formulaire de contact qui vous envoie "
+          "chaque demande par e-mail et un bouton WhatsApp. Nous proposons les deux séparément : le site à "
+          "15 € HT par mois sans engagement (ou 349 € HT en paiement unique), et la gestion de votre fiche Google à "
+          "29 € HT par mois (49 € HT de création si vous n'en avez pas encore)."),
          FAQ_MEDIATEUR,
          FAQ_AVIS,
          FAQ_SEO,
