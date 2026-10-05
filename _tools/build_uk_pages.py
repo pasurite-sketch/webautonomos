@@ -1169,6 +1169,8 @@ ELEC_UK = dict(
                 "Part P and UK consumer rules. Free demo in 24h, €15/month.",
     service_name="Web design for electricians in the UK",
     audience="Electricians and electrical contractors in the United Kingdom",
+    where="England, Scotland, Wales or Northern Ireland: we're based in Valencia, Spain, and serve clients "
+          "remotely, so where your business is makes no difference.",
     crumb='Web design for electricians',
     badge='For electricians in the UK',
     h1="Web design for <em>electricians</em> in the UK",
@@ -1223,7 +1225,13 @@ ELEC_UK = dict(
               "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
     why_t='Built for electricians',
     why=[('⚡', 'Your registration in place', 'Your scheme and number, where customers look for them and can check '
-                                            'them.')] + WHY_TRADES,
+                                            'them.'),
+         ('💷', 'A price a sole trader can plan for',
+          '€15 a month (about £%d) with no setup fee and no lock-in, or €349 (about £%d) once. No VAT added.'
+          % (GBP_MOIS, GBP_UNIQUE)),
+         ('👀', 'See it before you pay',
+          "Your demo is ready within 24 hours. If it isn't right for you, you pay nothing."),
+         ('💬', 'We reply in English', 'Email, WhatsApp or video call, and we reply the same day.')],
     sectors=['⚡ Domestic electricians', '🏢 Electrical contractors', '🔌 Rewires and consumer units',
              '🚗 EV charger installers', '☀️ Solar PV installers', '📋 Landlord inspections', '💡 Lighting',
              '📶 Smart home and data'],
@@ -1231,13 +1239,13 @@ ELEC_UK = dict(
     extra=[
         ('website-content', 'Content', 'What an electrician website design should show',
          '<p class="legal-intro">A customer looking for an electrician website wants to see what you do, whether '
-         'you cover their area, and whether you can sign off the work. Good electrician website design puts those '
-         'first.</p>'
+         'you cover their area, and whether you\'re qualified to sign off the job. Good electrician website design '
+         'puts those first.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
          '<h3>Your scheme registration</h3>'
          '<p>NICEIC, NAPIT or another authorised scheme, with your registration number, so a customer can check it '
-         'on the Competent Persons Register before booking notifiable work.</p></div>'
+         'on the Competent Persons Register before booking a notifiable job.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗂️</div>'
          '<h3>One section per type of job</h3>'
          '<p>Fault finding, rewires, consumer units, EV chargers and solar each get their own section, so a '
@@ -1245,9 +1253,9 @@ ELEC_UK = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏠</div>'
          '<h3>A page for landlords</h3>'
          '<p>Landlords need their electrics inspected at least every 5 years, and since 2025–26 that includes social '
-         'housing: a page for them brings in recurring work.</p></div>'
+         'housing: a page for them brings in repeat business.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📸</div>'
-         '<h3>Photos of your own work</h3>'
+         '<h3>Photos of your own jobs</h3>'
          '<p>Neat consumer units and finished installations, from your own photos, with a one-line caption for '
          'each job.</p></div>'
          '</div>'),
@@ -1318,21 +1326,21 @@ ELEC_UK = dict(
         local_search_uk('electrician'),
     ],
     faq=[("Do electricians need a licence in the UK?",
-          "There's no legal licence or protected title for electricians, but the law still requires competence "
-          "for electrical work (Electricity at Work Regulations 1989, reg. 16). In England and Wales, registration "
-          "with a competent person scheme lets you self-certify notifiable work in homes instead of going through "
+          "There's no legal licence or protected title for electricians, but health and safety law still requires "
+          "you to be competent to carry out electrical installations. In England and Wales, registration "
+          "with a competent person scheme lets you self-certify notifiable jobs in homes instead of going through "
           "building control, and it is what customers can check."),
-         ("What electrical work is notifiable in England?",
+         ("What electrical jobs are notifiable in England?",
           "Under the Building Regulations 2010 (reg. 12(6A)): installing a new circuit, replacing a consumer unit, "
           "and any addition or alteration to existing circuits in a special location, such as the space around a "
-          "bath or shower, or a room with a swimming pool or sauna heater. Wales has a wider rule, with only a short list of exempt work."),
+          "bath or shower, or a room with a swimming pool or sauna heater. Wales has a wider rule, with only a short list of exempt jobs."),
          ("Which schemes can I join to self-certify?",
-          "For electrical work in homes, the competent person schemes listed in the Building Regulations are "
-          "NICEIC (run by Certsure), NAPIT, Blue Flame and OFTEC. ELECSA and Stroma no longer run schemes for this work, "
-          "so an old logo from either should come off your website."),
+          "For electrical installations in homes, the competent person schemes listed in the Building Regulations are "
+          "NICEIC (run by Certsure), NAPIT, Blue Flame and OFTEC. ELECSA and Stroma no longer run schemes for this type "
+          "of installation, so an old logo from either should come off your website."),
          ("Is BS 7671 a legal requirement?",
           "Not in itself: it's a non-statutory standard, but the HSE says following it is likely to achieve "
-          "compliance with the relevant parts of the Electricity at Work Regulations 1989, and the rented-home "
+          "compliance with the relevant electrical safety regulations, and the rented-home "
           "rules refer to it directly. The current version is BS 7671:2018 with Amendment 4, published in April "
           "2026; Amendment 3 remains usable until about mid-October 2026."),
          ("How often do landlords need an electrical inspection?",
@@ -1345,7 +1353,7 @@ ELEC_UK = dict(
           "cross-pavement solution. This is their final year: they end on 31 March 2027. Home chargers sold in "
           "Great Britain must also meet the smart charge point regulations."),
          ("Do solar panels fall under Part P?",
-          "Solar PV on a roof is electrical work covered by Part P. In England it is usually notifiable, as it "
+          "Solar PV on a roof is an electrical installation covered by Part P. In England it is usually notifiable, as it "
           "normally needs a new circuit, and in Wales it always is; microgeneration installers can self-certify "
           "through their own schemes. Installing solar panels and batteries in homes is zero-rated "
           "for VAT until 31 March 2027."),
@@ -1365,10 +1373,15 @@ ELEC_UK = dict(
          ("What makes a good electrician website, beyond how it looks?",
           "A good electrician website answers the questions a new customer has before they call: your services, "
           "your scheme registration and how to reach you. We write and structure all of this for you, so you "
-          "don't have to build or write any of it yourself.")] + FAQ_TRADES,
+          "don't have to build or write any of it yourself."),
+         ("You're based in Spain: how do we collaborate?",
+          "Remotely and in English, by email, WhatsApp or video call, and we reply the same day. You tell us about "
+          "your business, we build your demo within 24 hours, and you check every word before anything goes live."),
+         FAQ_COMMUNES[1],
+         FAQ_COMMUNES[2]],
 )
 SRC_ELEC_UK = [
-    ('Building Regulations 2010, reg. 12', 'https://www.legislation.gov.uk/uksi/2010/2214/regulation/12'),
+    ('SI 2010/2214, reg. 12', 'https://www.legislation.gov.uk/uksi/2010/2214/regulation/12'),
     ('Competent person schemes', 'https://www.gov.uk/guidance/competent-person-scheme-current-schemes-and-how-schemes-are-authorised'),
     ('HSE, HSR25', 'https://www.hse.gov.uk/pubns/priced/hsr25.pdf'),
     ('Electrical safety standards in rented homes',

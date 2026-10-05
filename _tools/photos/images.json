@@ -457,9 +457,9 @@
    "fichier": "electricista-enchufe-reino-unido",
    "largeur": 1600,
    "hauteur": 900,
-   "v": 1,
+   "v": 2,
    "alt": "An electrician installs a British wall socket in a home, with tools close at hand.",
-   "legende": "Installing wall sockets is a common part of domestic electrical work."
+   "legende": "Installing wall sockets is one of the most common domestic electrical jobs."
   },
   "fr/site-internet-artisan.html": {
    "sujet": "metier-artisan",

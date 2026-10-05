@@ -2270,7 +2270,7 @@
    "statut": "fait",
    "scene": "Un électricien britannique pose une prise murale britannique à trois broches dans un mur fraîchement enduit, un testeur accroché à la ceinture ; intérieur de maison au Royaume-Uni.",
    "fichier": "electricista-enchufe-reino-unido",
-   "v": 1,
+   "v": 2,
    "fait_le": "2026-09-29T15:20:09",
    "textes": {
     "es": {
@@ -2283,7 +2283,7 @@
     },
     "en": {
      "alt": "An electrician installs a British wall socket in a home, with tools close at hand.",
-     "legende": "Installing wall sockets is a common part of domestic electrical work."
+     "legende": "Installing wall sockets is one of the most common domestic electrical jobs."
     },
     "fr": {
      "alt": "Un électricien installe une prise murale britannique dans une maison, avec ses outils à portée de main.",
