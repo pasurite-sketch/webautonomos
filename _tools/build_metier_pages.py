@@ -1246,7 +1246,7 @@ KINE['fr'] = dict(
     crumb_home='Accueil', crumb='Kinésithérapeutes',
     badge='Masseurs-kinésithérapeutes libéraux',
     h1="Un site internet pour <em>kinésithérapeutes</em>, pensé pour votre code de déontologie",
-    lede="Votre cabinet, vos spécificités, vos honoraires et votre agenda en ligne, présentés selon les "
+    lede="Votre cabinet, vos domaines de pratique, vos honoraires et votre agenda en ligne, présentés selon les "
          "recommandations de l'Ordre : un site qui informe, sans rien de commercial. Nous l'écrivons pour vous, vous "
          "validez chaque contenu, et la démo est gratuite en 24 heures.",
     pills=["Construit selon les recommandations de l'Ordre", 'RPPS et honoraires affichés', 'Démo gratuite en 24 h'],
@@ -1254,7 +1254,7 @@ KINE['fr'] = dict(
     brief_t='En bref',
     brief="WebAutonomos crée des sites internet pour les masseurs-kinésithérapeutes libéraux, en France et en "
           "Espagne. Le site présente votre cabinet, vos spécificités reconnues par l'Ordre, vos honoraires et vos modes "
-          "de paiement, avec votre numéro RPPS et votre numéro d'Ordre, comme l'exigent le code de déontologie et les "
+          "de paiement, avec votre identifiant RPPS et votre inscription à l'Ordre, comme l'exigent le code de déontologie et les "
           "recommandations de l'Ordre. Il reste "
           "informatif : pas de témoignages, pas de comparaison, et pas de référencement pour passer devant vos "
           "confrères, que le code interdit. Le site coûte <strong>15 € HT par mois</strong> sans frais d'installation "
@@ -1313,7 +1313,7 @@ KINE['fr'] = dict(
                "<a href=\"/fr/site-internet-francophones-espagne\">site internet pour francophones en Espagne</a>.",
     sources_t='Sources',
     why_ey='Pourquoi nous', why_t="Pensé pour les kinésithérapeutes",
-    why=[('📋', "Les mentions de l'Ordre en place", "RPPS, numéro d'Ordre, honoraires et modes de paiement : ce que le "
+    why=[('📋', "Les mentions de l'Ordre en place", "RPPS, inscription à l'Ordre, honoraires et modes de paiement : ce que le "
                                                   "code et l'Ordre exigent d'un site."),
          ('🏷️', 'Des spécificités reconnues', "Seules les spécificités de la liste de l'Ordre, avec leur libellé exact, "
                                              "comme « Kinésithérapie du sport »."),
@@ -1326,10 +1326,10 @@ KINE['fr'] = dict(
           "Lille, à Toulouse ou à Alicante, rien ne change.",
     sect_t='Pour qui',
     sectors=['💆 Kinés libéraux', '🏃 Kinésithérapie du sport', '🫁 Kinésithérapie respiratoire',
-             '🤰 Kinésithérapie en pelvi-périnéologie', '🧓 Kinésithérapie en gériatrie', '👶 Kinésithérapie en pédiatrie',
+             '🤰 Kinés en pelvi-périnéologie', '🧓 Kinés en gériatrie', '👶 Kinés en pédiatrie',
              '🏥 Cabinets de groupe', '🦴 Kinés ostéopathes'],
     how_t='Votre site en trois étapes',
-    steps=[('Vous décrivez votre cabinet', "Vos spécificités reconnues, vos horaires, votre agenda en ligne, votre "
+    steps=[('Vous décrivez votre cabinet', "Votre parcours, vos horaires, votre agenda en ligne, votre "
                                           "ville : deux minutes suffisent."),
            ('Nous préparons votre démo', "En moins de 24 heures, avec vos honoraires, votre RPPS et vos mentions "
                                         "légales."),
@@ -1382,9 +1382,9 @@ KINE['fr'] = dict(
             "<li><span>Vos honoraires, vos modes de paiement et, le cas échéant, vos spécificités reconnues par le "
             "Conseil national de l'Ordre, présentés selon les règles rappelées plus haut</span></li>"
             "<li><span>Votre adresse, vos horaires et l'accessibilité du cabinet, avec un formulaire de contact sans "
-            "champ libre sur l'état de santé et un bouton WhatsApp</span></li>"
+            "champ médical libre et un bouton WhatsApp</span></li>"
             "<li><span>Un lien vers vos réseaux sociaux professionnels, si vous en avez</span></li>"
-            "<li><span>Vos mentions légales complètes : numéro RPPS, numéro d'Ordre, hébergeur et directeur de la "
+            "<li><span>Vos mentions légales complètes : identifiant RPPS, numéro d'Ordre, hébergeur et directeur de la "
             "publication, comme le demandent la LCEN et les recommandations de l'Ordre</span></li>"
             '<li><span>Votre nom de domaine, en .fr si vous exercez en France, inclus la première année puis environ '
             '12 €/an, qui reste à vous si vous changez de prestataire</span></li>'
