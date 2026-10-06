@@ -1,0 +1,59 @@
+{
+ "_lisez_moi": "Nettoyage du blog du 06/10/2026. (1) « Habitissimo » (expression interdite, VERITE.md §8) retiré des articles sur les citations locales NAP et les backlinks locaux, en ES (données SPA seulement : les pages ES, réécrites, étaient déjà propres), VAL (pages et données SPA) et EN (page des citations et données SPA ; la page EN des backlinks, réécrite, était déjà propre). Formulation reprise des pages ES : Doctoralia pour la santé et, pour les réformes et les métiers, les portails de professionnels du métier ; pour les backlinks, Páginas Amarillas et QDQ seulement. (2) Conclusion de l'article sur les citations : « darte de alta en los directorios clave » / « donar-te d'alta en els directoris clau » / « registering you in the key directories » retiré dans les 3 langues. WebAutonomos ne vend pas d'inscription aux annuaires (VERITE.md §5 : SEO Local = 4 articles de blog par mois, mots-clés locaux, rapport mensuel) ; la phrase dit désormais ce que fait le site (VERITE.md §2 : données cohérentes avec la fiche Google). Les versions FR ne contenaient ni l'un ni l'autre.",
+ "ordre": [
+  "es",
+  "val",
+  "en"
+ ],
+ "es": {
+  "remplacements": [
+   [
+    "Además, busca directorios sectoriales como Habitissimo (reformas) o Doctoralia (salud), y portales municipales de Elda, Elche o Valencia.",
+    "Además, busca los directorios de tu sector (Doctoralia en el sector salud o, si prestas servicios de reformas o de oficios, los portales de profesionales de tu gremio) y los portales municipales de Elda, Elche o Valencia."
+   ],
+   [
+    "Complementa con directorios locales de calidad como Paginas Amarillas, QDQ o Habitissimo.",
+    "Complementa con directorios locales de calidad como Páginas Amarillas o QDQ."
+   ],
+   [
+    "En WebAutonomos nos encargamos de crear tu web con NAP coherente y darte de alta en los directorios clave.",
+    "En WebAutonomos creamos tu web con el mismo NAP que tu ficha de Google Business Profile."
+   ]
+  ],
+  "gardes": "Doctoralia conservé, comme sur la page ES (annuaire de santé ; VERITE.md §2 interdit seulement d'annoncer une intégration d'agenda). Liste des annuaires généraux, bandeau d'appel à l'action et bloc auteur inchangés ; aucun prix ajouté."
+ },
+ "val": {
+  "remplacements": [
+   [
+    "A més, busca directoris sectorials com Habitissimo (reformes) o Doctoralia (salut), i portals municipals d'Elda, Elx o València.",
+    "A més, busca els directoris del teu sector (Doctoralia en el sector de la salut o, si prestes serveis de reformes o d'oficis, els portals de professionals del teu gremi) i els portals municipals d'Elda, Elx o València."
+   ],
+   [
+    "Complementa amb directoris locals de qualitat com Pagines Grogues, QDQ o Habitissimo.",
+    "Complementa-ho amb directoris locals de qualitat com Pàgines Grogues o QDQ."
+   ],
+   [
+    "En WebAutonomos ens encarreguem de crear la teua web amb NAP coherent i donar-te d'alta en els directoris clau.",
+    "En WebAutonomos creem la teua web amb el mateix NAP que la teua fitxa de Google Business Profile."
+   ]
+  ],
+  "gardes": "Mêmes choix qu'en ES. « Pàgines Grogues » : nom déjà employé par l'article sur les citations."
+ },
+ "en": {
+  "remplacements": [
+   [
+    "Additionally, look for industry-specific directories like Habitissimo (home renovation) or Doctoralia (healthcare), and municipal portals from local city councils.",
+    "Additionally, look for directories in your own sector (Doctoralia for healthcare or, if you work in home renovation or another trade, the portals listing professionals in your field) and municipal portals from local city councils."
+   ],
+   [
+    "Supplement these with quality local directories such as Paginas Amarillas, QDQ and Habitissimo.",
+    "Supplement these with quality local directories such as Páginas Amarillas and QDQ."
+   ],
+   [
+    "At WebAutonomos, we handle creating your website with consistent NAP and registering you in the key directories.",
+    "At WebAutonomos, we build your website with the same NAP as your Google Business Profile."
+   ]
+  ],
+  "gardes": "Anglais britannique. « Páginas Amarillas » accentué comme dans les pages EN réécrites. Aucun « + VAT »."
+ }
+}
