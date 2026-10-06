@@ -1543,6 +1543,69 @@ KINE['en'] = dict(
          '<p>British and Irish English say “physiotherapist”, American English “physical therapist”: we write '
          'your copy with the term your patients use.</p></div>'
          '</div>'),
+        ('digital-marketing', 'Marketing', 'How your site fits into your digital marketing',
+         '<p class="legal-intro">Your site is the hub of your digital marketing: the place your business listing, '
+         'your social media pages and your content all point people to. Marketing for healthcare professionals in '
+         'Spain comes with advertising rules attached, so it helps to see how the pieces fit together before you '
+         'spend time or money on any of them.</p>'
+         '<div class="aud-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div>'
+         '<h3>Your Google Business Profile</h3>'
+         '<p>This is the listing that shows local businesses in Google search results, with a name, address, phone '
+         'number and opening hours. Your Business Profile links to your site, which provides the detail a listing '
+         'has no room for, so the two need to match.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔎</div>'
+         '<h3>SEO and search</h3>'
+         '<p>SEO, or search engine optimisation, means giving search engines clear, consistent information about '
+         'who you are, what you treat and where you are based, to help them match you with the right '
+         'searches. Once someone lands on your site, a clear layout and an easy way to get in touch make for '
+         'a better experience.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div>'
+         '<h3>Social media</h3>'
+         '<p>A Facebook or Instagram page is one more digital marketing channel. Your site links to your social '
+         'media profiles, if you have them, and using the same name, photo and brief description on each makes '
+         'your business easier to recognise.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✍️</div>'
+         '<h3>Content</h3>'
+         '<p>Content means the text on your site and anything you publish elsewhere: what you treat, how a first '
+         'appointment works, the questions people ask. Clear content can help visitors find answers quickly, and '
+         'it gives search engines the words to match you with the searches people make, which is what SEO '
+         'builds on.</p></div>'
+         '</div>'
+         '<p class="legal-intro" style="margin:28px auto 0">You don’t need all of it to get started. Building your '
+         'digital marketing one piece at a time is a sensible approach: the site first, then a complete listing, then '
+         'whichever other channel fits your business, so it can grow at a pace that suits you.</p>'),
+        ('marketing-services', 'Beyond the site', 'Marketing services you can add around your site',
+         '<p class="legal-intro">Basic SEO comes with your site. If you want your marketing to grow beyond it, there '
+         'are separate services, and the first two below can be bought without a site, so you can get started '
+         'with the demo and add them later. The prices are in <a href="#getting-found">the section on being found '
+         'locally</a>.</p>'
+         '<div class="cmp-c us" style="max-width:640px;margin:0 auto;"><h3>What each service covers</h3><ul>'
+         '<li><strong>SEO Local:</strong> four blog articles a month, local keywords and a monthly report.</li>'
+         '<li><strong>Google Business Profile management:</strong> optimisation of your listing and four posts a '
+         'month. If you do not have a listing yet, we can create and verify one.</li>'
+         '<li><strong>Social media management and advertising on Facebook or Google Ads:</strong> available on '
+         'request, so just ask.</li>'
+         '</ul></div>'
+         '<p class="legal-intro" style="margin:24px auto 0">Whichever marketing service you choose, the '
+         '<a href="#rules">advertising rules above</a> still apply to every article, post and advert.</p>'),
+        ('online-reputation', 'Trust', 'Building an online reputation within Spanish rules',
+         '<p class="legal-intro">Your online reputation is what people find about you or your business: your site, '
+         'your listing, your social media pages and anything others write about you. Other trades can show '
+         'customer reviews, but Spanish health-advertising rules rule out testimonials from the people you '
+         'treat, so we don’t put them on your site, and healthcare professionals have to earn trust another '
+         'way.</p>'
+         '<div class="cmp-c us" style="max-width:640px;margin:0 auto;"><h3>What builds trust instead</h3><ul>'
+         '<li>Credentials people can check: your Colegio, colegiado number and qualification, shown as the rules '
+         'require</li>'
+         '<li>Keeping the same business name, address, phone number and opening hours on your site, your listing '
+         'and your social media pages, and updating all three together whenever something changes</li>'
+         '<li>Plain descriptions of what you treat and what a first appointment involves, with no promise of '
+         'relief or cure, which can help someone decide whether to get in touch</li>'
+         '<li>A prompt, courteous reply to every message that reaches you by email or WhatsApp</li>'
+         '</ul></div>'
+         '<p class="legal-intro" style="margin:24px auto 0">Reputation is part of your digital marketing, and it is '
+         'slow to grow: building trust starts with details that are correct and consistent.</p>'),
         ('common-gaps', 'What to avoid', 'Common gaps on physiotherapy websites',
          '<p class="legal-intro">These are the gaps that often make a physiotherapy website less effective, or '
          'leave it short of what Spanish rules require.</p>'
@@ -1630,6 +1693,15 @@ KINE['en'] = dict(
           "Mostly in practical ways. A clinic site usually gives each physiotherapist a short profile with their "
           "own training and colegiado number, while a solo site focuses on one person. One rule does differ: a "
           "clinic needs a data protection officer, a physiotherapist working alone doesn't (LOPDGDD, art. 34)."),
+         ("Is a site enough, or do I need other digital marketing as well?",
+          "A site can be enough, depending on what you want from it: it is where people check your credentials "
+          "and find the information they need to get in touch. Some practitioners also want to be found online "
+          "through SEO Local or social media, and for that there are separate marketing services, which you can add "
+          "later or leave out. Anything you add still has to follow Spain’s health-advertising rules."),
+         ("Can you promise SEO will put my site first on Google?",
+          "No. Nobody can promise a ranking, because search engines decide what to show and can change how they "
+          "decide. Good SEO is groundwork: while building your site, we write titles and text that name your "
+          "treatments and your town, and keep your details consistent with your business listing."),
          ("How much does a website cost?",
           "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: design, "
           "hosting, a domain name for the first year, legal pages and one change a month. English and Spanish are "

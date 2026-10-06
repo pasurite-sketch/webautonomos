@@ -568,15 +568,15 @@
       "slug": "en-physio",
       "url": "https://webautonomos.es/en/website-for-physiotherapists-in-spain",
       "lang": "en",
-      "requete": "website for physiotherapists spain",
+      "requete": "website design for physiotherapists",
       "requete_a_confirmer": false,
       "fichier": "en/website-for-physiotherapists-in-spain.html",
       "generateur": "_tools/build_metier_pages.py",
       "mode": "validation",
       "objectif_geo": "au_mieux",
-      "statut": "a_faire",
+      "statut": "fait",
       "priorite": 3,
-      "notes": "SANTÉ. Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne. Semrush 26/09/2026 : volume quasi nul pour les requêtes anglaises en Espagne ; objectif principal : être cité par les IA (GEO). Les cabinets britanniques ont leurs propres pages (en-uk-*) : garder le lien vers elles (spain_note), ne pas viser le Royaume-Uni ici. Angelino (27/09/2026) : retirer « we wait for it before your site goes live » (Murcia) dans legal_note : garder la règle régionale, sans dire ce que fait WebAutonomos (VERITE.md §9). Le lien vers l'outil de réservation du client est permis (simple lien, VERITE.md §2). Pas d'avis de patients sur cette page (VERITE.md §9). Gemini hors cible (27/09) : son guide s'appuie sur des pages de cliniques en espagnol (score 4 à 6).",
+      "notes": "SANTÉ. Lancée à la demande d'Angelino le 26/09/2026. Public : anglophones installés en Espagne. Semrush 26/09/2026 : volume quasi nul pour les requêtes anglaises en Espagne ; objectif principal : être cité par les IA (GEO). Les cabinets britanniques ont leurs propres pages (en-uk-*) : garder le lien vers elles (spain_note), ne pas viser le Royaume-Uni ici. Angelino (27/09/2026) : retirer « we wait for it before your site goes live » (Murcia) dans legal_note : garder la règle régionale, sans dire ce que fait WebAutonomos (VERITE.md §9). Le lien vers l'outil de réservation du client est permis (simple lien, VERITE.md §2). Pas d'avis de patients sur cette page (VERITE.md §9). Gemini hors cible (27/09) : son guide s'appuie sur des pages de cliniques en espagnol (score 4 à 6). Requête Google changée le 06/10/2026 en « website design for physiotherapists » (guide créé dans l'interface, résultats triés : agences de sites et de marketing pour kinés) : l'ancienne ne renvoyait que des cabinets, des universités et du tourisme médical. Les guides IA restent ceux de l'ancienne requête et ne sont plus rattachés.",
       "geo_hors_cible": [
         "gemini"
       ],
