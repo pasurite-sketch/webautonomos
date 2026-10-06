@@ -561,14 +561,12 @@ PHYSIO = dict(
     crumb='Physiotherapy website design',
     badge='For physiotherapists and clinics in the UK',
     h1="Physiotherapy website design for <em>UK physiotherapists and clinics</em>",
-    lede="Your clinic, your team, your treatments and how to book, written with HCPC standards and UK advertising "
-         "rules in mind. We write it for you in English, you approve every word, and your free demo is ready "
-         "within 24 hours.",
+    lede="Your treatments and how to book, written with HCPC standards and UK advertising rules in mind. We write "
+         "it for you in English, you approve every word, and your free demo is ready within 24 hours.",
     pills=['Written around HCPC and CAP rules', "No health claims you can't back up", 'Free demo in 24 hours'],
     brief="WebAutonomos designs websites for physiotherapists and physiotherapy clinics in the UK. We write the "
-          "copy in English from your real details, present your team with the titles they are entitled to use, "
-          "and keep the site clear of what UK rules ban: health claims you can't back up, misuse of protected "
-          "titles, and fake or cherry-picked reviews. " + PRIX_BRIEF,
+          "copy in English from your real details and keep it clear of what UK rules ban: health claims you "
+          "can't back up, misuse of protected titles, and fake or cherry-picked reviews. " + PRIX_BRIEF,
     legal_t='What your physiotherapy website has to get right in the UK',
     legal_intro="Physiotherapy is a regulated profession across the UK: the titles are protected by law, and the "
                 "Health and Care Professions Council (HCPC) sets the standards. Your website is advertising, so "
@@ -620,11 +618,17 @@ PHYSIO = dict(
               "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
     why_t='Built for UK physiotherapists',
     why=[('📋', 'Titles used correctly',
-          'Protected titles, HCPC registration and CSP membership shown the way the rules allow.')] + WHY_COMMUNS,
+          'Protected titles, HCPC registration and CSP membership shown the way the rules allow.'),
+         ('💷', 'A price a small practice can count on', WHY_COMMUNS[0][2]),
+         WHY_COMMUNS[1],
+         ('💬', 'We work in English', 'Email, WhatsApp or videoconference, and we reply the same day.')],
+    where="England, Scotland, Wales or Northern Ireland: we're based in Valencia, Spain, and work remotely, so "
+          "where your business is makes no difference.",
+    how_t='How it works in three steps',
     sectors=['💆 Private physiotherapy clinics', '🏃 Sports physiotherapy', '🧑‍⚕️ Independent physiotherapists',
              '🏠 Home-visit physiotherapists'],
-    steps=[('Tell us about your clinic', 'Your treatments, your team, your fees and opening hours: it takes '
-                                         'two minutes.'),
+    steps=[('Send us your details', 'Your treatments, your team, your fees and opening hours: it takes two '
+                                    'minutes.'),
            ('We build your demo', 'Within 24 hours, with your copy in English and your legal pages.'),
            STEPS_FIN],
     faq=[("Who can call themselves a physiotherapist in the UK?",
@@ -644,38 +648,46 @@ PHYSIO = dict(
           "Not if it is a standalone physiotherapy practice in England: physiotherapists aren't on the list of "
           "professionals whose treatment triggers registration. A clinic whose team includes a listed "
           "professional, such as a doctor or nurse, may need to register."),
-         ("What if I want bigger changes later, like a new section on my site?",
+         ("What if I want bigger changes later?",
           "For bigger changes, such as a redesign or a large new section, we give you a fixed-price quote first, so "
           "there are no surprises. One smaller change a month is already included in both plans, at no extra "
-          "charge.")] + FAQ_COMMUNES,
+          "charge."),
+         ("You're based in Spain: how do we work together?",
+          "Remotely and in English, by email, WhatsApp or videoconference, and we reply the same day. You tell us "
+          "about your business, we build your demo within 24 hours, and you check every word before anything goes "
+          "live."),
+         FAQ_COMMUNES[1],
+         ("Who owns the website?",
+          "With the one-off €349 payment, the website is yours. With monthly payments, the domain is registered in "
+          "your name and you keep it if you leave.")],
     extra=[
         ('booking-enquiries', '', "Can patients book appointments through the website?",
-         '<p class="legal-intro">The website isn\'t an online booking system, so there\'s no new software for you '
+         '<p class="legal-intro">It isn\'t an online booking system, so there\'s no new software for you '
          'or your patients to learn.</p>\n  <div class="legal-we"><h3>How patients reach you</h3><ul>'
          '<li><span>A contact form that sends every enquiry straight to your own email inbox</span></li>'
          '<li><span>A WhatsApp button, for patients who prefer a faster reply</span></li>'
          '<li><span>A link to the booking tool you already use, if you have one</span></li></ul></div>'),
         ('seo-basics', '', "Does the website help me appear in Google searches?",
          '<p class="legal-intro">Both plans include basic search engine optimisation (SEO). It isn\'t ongoing '
-         'local SEO work — if you want that, ask us and we\'ll explain what\'s involved.</p>\n  '
+         'local SEO — if you want that, ask us and we\'ll explain what\'s involved.</p>\n  '
          '<div class="legal-we"><h3>What\'s included in your website\'s SEO</h3><ul>'
-         '<li><span>Page titles and copy that name your treatments and your area</span></li>'
-         '<li><span>Your details kept consistent across your website and your Google Business Profile</span></li>'
+         '<li><span>Titles and copy that name your treatments and your area</span></li>'
+         '<li><span>Your details kept consistent with your Google Business Profile</span></li>'
          '</ul></div>'),
-        ('clinic-content', '', "Who writes the content for my physiotherapy website?",
-         '<p class="legal-intro">We write all the content for you, in English, from the details you send us: '
-         'your treatments, your team and your practice. It\'s tailored to you, never generic stock '
-         'text, and written to be clear and easy for patients to read. You approve it before anything '
-         'goes live. If your business changes later — new opening hours, a treatment you now offer — just '
-         'tell us: one change a month is included in both plans.</p>'),
+        ('clinic-content', '', "Who writes the copy for my physiotherapy website?",
+         '<p class="legal-intro">We write all the copy for you, in English, from the details you send us. '
+         'It\'s tailored to you, never generic stock text, and written to be clear and easy for patients to '
+         'understand. '
+         'You approve it before anything goes live. If your business changes later — new opening hours, a '
+         'treatment you now offer — just tell us: one change a month is included in both plans.</p>'),
         ('worth-it', '', "Is a website worth it for a small physiotherapy business?",
-         '<p class="legal-intro">Many patients look for a physio online, often from their phone, and check your '
-         'website before they call, even when someone has recommended you by name. Even if you work alone, '
-         'a clear, simple site does the job of a good reception desk, answering the questions patients would '
-         'otherwise phone to ask.</p>\n  '
+         '<p class="legal-intro">Many patients look for a physiotherapist online, often on their mobile phones, '
+         'and check what you offer before they call, even when someone has recommended you by name. A clear, '
+         'simple website acts like a good reception desk, answering questions before patients need to '
+         'ask.</p>\n  '
          '<div class="legal-we"><h3>What patients look for</h3><ul>'
          '<li><span>Your treatments and who provides them</span></li>'
-         '<li><span>How to get in touch, by form, WhatsApp or phone</span></li>'
+         '<li><span>How to get in touch, by form, WhatsApp or telephone</span></li>'
          '<li><span>Your fees and opening hours</span></li></ul></div>'),
     ],
 )
@@ -791,7 +803,7 @@ TRADES = dict(
     pills=['Registrations shown as you hold them', 'Built around UK consumer rules', 'Free demo in 24 hours'],
     brief="WebAutonomos designs websites for tradespeople and small building firms in the UK: builders, plumbers, "
           "electricians, roofers, carpenters and more. We write the copy in English from your real details, show "
-          "your trade body and scheme registrations as you hold them, and include the information UK law expects "
+          "your trade body and scheme registrations as you hold them, and include what UK law expects "
           "on a business website. " + PRIX_BRIEF,
     legal_t='What UK rules mean for a tradesman\'s website',
     legal_intro="Your website counts as advertising, and the quotes and jobs that come from it are consumer "
@@ -831,15 +843,15 @@ TRADES = dict(
               "prominence",
               "A privacy policy and cookie notice adapted to UK law (UK GDPR and PECR)",
               "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
-    why_t='Built for UK trades',
+    why_t='Made for UK trades',
     why=[('🧰', 'Your trade, your way', 'Services, areas covered, registrations and job photos, set out the way '
-                                       'customers look for them.')] + WHY_TRADES,
+                                       'customers look for them.')] + WHY_TRADES[:2],
     sectors=['🏗️ Builders', '🔧 Plumbers', '⚡ Electricians', '🏠 Roofers', '🪵 Carpenters and joiners',
              '🎨 Painters and decorators', '🟫 Tilers', '🌳 Landscapers'],
     steps=STEPS_TRADES,
     extra=[
         ('website-content', 'Content', "What to put on a tradesman's website",
-         '<p class="legal-intro">Someone looking for a tradesperson wants to know three things quickly: do you do '
+         '<p class="legal-intro">Someone searching for a tradesperson wants to know three things quickly: do you do '
          'the job they need, do you cover their area, and how do they reach you? Websites for tradesmen work '
          'best when they answer those first.</p>'
          '<div class="why-g">'
@@ -849,27 +861,23 @@ TRADES = dict(
          'job without scrolling through everything else.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div>'
          '<h3>The towns you cover</h3>'
-         '<p>Naming the towns and villages you work in tells a visitor straight away whether you\'ll come to them, '
-         'and helps search engines understand who your site is for.</p></div>'
+         '<p>Naming the towns and villages you cover tells a visitor straight away whether you\'ll come to '
+         'them.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
          '<h3>Registrations people can check</h3>'
          '<p>Gas Safe, NICEIC, NAPIT, TrustMark or a trade association: shown with your number where there is one, '
          'so a customer can check it, and only the ones you actually hold.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📸</div>'
-         '<h3>Photos of your own work</h3>'
-         '<p>We build your trades website design around your own job photos, grouped by type of work, with a '
-         'one-line caption for each.</p></div>'
          '</div>'),
         ('by-trade', 'By trade', 'Trades website design that fits your rules',
-         '<p class="legal-intro">Some trades have their own rules on what they can claim and who can do the work. '
-         'We cover them page by page.</p>'
+         '<p class="legal-intro">Some trades have their own rules on what they can claim and who can do the '
+         'work.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔧</div>'
-         '<h3><a href="https://webautonomos.es/en/web-design-for-plumbers">Web design for plumbers</a></h3>'
+         '<h3><a href="https://webautonomos.es/en/web-design-for-plumbers">Websites for plumbers</a></h3>'
          '<p>Gas Safe registration and logo rules, boilers and building regulations, unvented cylinders and the '
          'Boiler Upgrade Scheme.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">⚡</div>'
-         '<h3><a href="https://webautonomos.es/en/web-design-for-electricians">Web design for electricians</a>'
+         '<h3><a href="https://webautonomos.es/en/web-design-for-electricians">Websites for electricians</a>'
          '</h3>'
          '<p>Part P and competent person schemes, landlord inspections, EV chargers and solar panels.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏗️</div>'
@@ -877,7 +885,10 @@ TRADES = dict(
          '<p>For construction website design, the rules above apply in full: building control, CDM duties on home '
          'jobs, asbestos and waste.</p></div>'
          '</div>'),
-        local_search_uk('tradesperson'),
+        ('local-search-help', 'Local search', 'How customers find a local tradesperson',
+         '<p class="legal-intro">Basic SEO is included: page titles and copy built around your services and the '
+         'towns you cover, kept consistent with your Google Business Profile. For more, we also offer local SEO '
+         'and help managing your Google Business Profile: ask us for prices when you get your demo.</p>'),
     ],
     faq=[("What must a tradesman's website show by law?",
           "Under the Electronic Commerce Regulations 2002 (reg. 6): your business name, a geographic address and "
@@ -913,7 +924,10 @@ TRADES = dict(
          ("Is there VAT on insulation, heat pumps and solar panels?",
           "Installing energy-saving materials in homes, such as insulation, heat pumps, solar panels and "
           "batteries, is zero-rated until 31 March 2027, then goes back to 5% (VAT Notice 708/6). Gas and oil "
-          "boilers and ordinary central heating systems are not included; wood-fuelled boilers are.")] + FAQ_TRADES,
+          "boilers and ordinary central heating systems are not included; wood-fuelled boilers are."),
+         ("You're based in Spain: how do we work together?",
+          "Remotely and in English, by email, WhatsApp or video call, and we reply the same day."),
+         FAQ_COMMUNES[1], FAQ_COMMUNES[2]],
 )
 SRC_TRADES = [
     ('E-Commerce Regulations 2002, reg. 6', 'https://www.legislation.gov.uk/uksi/2002/2013/regulation/6'),
@@ -989,17 +1003,20 @@ PLUMB_UK = dict(
               "Emergency call-out details and a call button that stay in view on mobile",
               "A privacy policy and cookie notice adapted to UK law (UK GDPR and PECR)",
               "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
-    why_t='Built for plumbing and heating businesses',
+    why_t='Built for plumbing and heating firms',
     why=[('🔥', 'Gas Safe details in place', 'Your registration number and trading name, where customers look for '
-                                            'them and can check them.')] + WHY_TRADES,
+                                            'them and can check them.')] + WHY_TRADES[:2],
     sectors=['🔧 Plumbers', '🔥 Gas engineers', '♨️ Heating engineers', '🌡️ Heat pump installers',
              '🚿 Bathroom fitters', '🚰 Emergency plumbers', '🛠️ Boiler servicing', '💧 Drainage'],
-    steps=STEPS_TRADES,
+    steps=[STEPS_TRADES[0],
+           ('We build your demo', 'Within 24 hours, with your services, your copy in English and your legal '
+                                  'pages, ready for you to check.'),
+           STEPS_FIN],
     extra=[
         ('website-content', 'Content', 'What a plumber website design should show',
          '<p class="legal-intro">A good plumber website design answers a worried visitor quickly: can you fix '
          'their problem, do you cover their area, are you Gas Safe registered, and how do they reach you now? '
-         'Websites for plumbers perform best when those answers sit near the top.</p>'
+         'Websites for plumbers perform well when those answers sit near the top.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🚨</div>'
          '<h3>Emergency call-outs first</h3>'
@@ -1022,9 +1039,6 @@ PLUMB_UK = dict(
          'first, then services. For more on what to include, see our <a href="https://webautonomos.es/blog/en/'
          'website-for-plumbers-complete-guide">guide to getting more calls from your website</a>.</p>'),
         ('good-design', 'Design', 'What good web design looks like for a plumbing business',
-         '<p class="legal-intro">Good web design for a plumbing business isn\'t only about how the page looks: '
-         'it is about whether a visitor finds what they need fast enough to call, especially with a leak or a '
-         'boiler that won\'t start.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎨</div>'
          '<h3>A clear, mobile-first layout</h3>'
@@ -1032,56 +1046,25 @@ PLUMB_UK = dict(
          'layout keeps things simple, the copy short and the page fast to load, just as readable on a small screen '
          'as on a desktop. A visitor often decides from the homepage alone whether to stay, so the first screen on '
          'a phone should already show what you do and how to call you.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧭</div>'
-         '<h3>An easy path to a call or a quote</h3>'
-         '<p>Every page leads somewhere: a clear call button, a WhatsApp link or a link to your contact form in '
-         'the main navigation, so someone who wants to book doesn\'t have to search for how.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div>'
          '<h3>Layout that earns trust</h3>'
          '<p>Genuine feedback shown without hiding anything negative (see the rules above), your Gas Safe '
          'registration and straightforward pricing do more for trust than decoration.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏷️</div>'
-         '<h3>Branding that matches the rest of your business</h3>'
-         '<p>Your logo, colours and photos of your own jobs, carried through consistently, so your site matches '
-         'your van, your invoices and your social media.</p></div>'
          '</div>'),
         ('website-mistakes', 'What to avoid', 'Common mistakes on plumbing websites',
-         '<p class="legal-intro">Some gaps show up again and again on plumbing websites, and each one can send a '
-         'visitor off to call someone else.</p>'
          '<div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul>'
-         '<li>A layout that is hard to read on mobile, so a visitor searching from their phone with a leak gives '
-         'up before they find how to contact you</li>'
          '<li>No visible Gas Safe registration, so a visitor cannot check you on the public register before '
          'agreeing to gas work</li>'
          '<li>Stock images and generic copy that could describe any plumbing business, not yours</li>'
-         '<li>A call button or way to get a quote that is buried below several screens of content</li>'
-         '<li>A slow site that takes too long to load, especially on a mobile connection</li>'
-         '</ul></div>'
-         '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>What to do instead</h3>'
-         '<p>A simple, professional, mobile-friendly layout, photos of your own jobs and the Gas Safe registration '
-         'a visitor can check. Together, they help someone who is just browsing trust what they see and use the '
-         'contact form to get in touch.</p></div>'),
+         '</ul></div>'),
         ('vs-general-website', 'Compare', 'Built around your business, not a generic template',
          '<p class="legal-intro">A general website builder gives you a template to adapt, even one aimed at '
          'your industry, but your Gas Safe registration and your own services are still yours to add. Here is '
          'what\'s different when the design starts from your registration and services, not a generic template.</p>'
          '<div class="cmp-g">'
-         '<div class="cmp-c them"><h3>A general website builder</h3><ul>'
-         '<li>A generic template you adapt yourself, with no reference to your Gas Safe registration or the jobs '
-         'you take on</li>'
-         '<li>You write and structure the content yourself, including your services, the areas you cover and how '
-         'to contact you</li>'
-         '<li>Search engine optimisation (SEO) settings, such as page titles and descriptions, left for you to '
-         'fill in yourself</li>'
-         '<li>Support often means searching a knowledge base rather than a person who replies the same day</li>'
-         '</ul></div>'
          '<div class="cmp-c us"><h3>What WebAutonomos builds for a plumbing business</h3><ul>'
-         '<li>Content and layout designed to earn trust from the first visit, based on your services, your Gas '
-         'Safe registration and how a visitor can contact you</li>'
          '<li>Your services, registrations and legal pages written for you in English, for you to check before '
          'anything goes live</li>'
-         '<li>Basic SEO and hosting included at no extra charge, with a professional layout made for mobile</li>'
-         '<li>A direct reply the same day, by email or WhatsApp, whenever you need support</li>'
          '</ul></div>'
          '</div>'
          '<p class="cmp-more"><a href="https://webautonomos.es/en/services">See everything included in your '
@@ -1098,40 +1081,39 @@ PLUMB_UK = dict(
          '<p>Landlords must have every gas appliance and flue they provide checked at least every 12 months (Gas '
          'Safety Regulations, reg. 36). A short, clear page explaining what the check covers and how to arrange '
          'one answers their questions before they call.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏘️</div>'
-         '<h3>Several properties, one call</h3>'
-         '<p>A landlord or letting agent managing several properties in the same local area often prefers one '
-         'company they can call for every gas safety check, rather than searching again each time.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div>'
          '<h3>The gas safety record, sorted</h3>'
          '<p>Landlords have to give their tenants the gas safety record after each check. Saying on your page how '
          'you send it to them is one less thing for them to chase.</p></div>'
          '</div>'),
-        local_search_uk('plumber'),
+        ('local-search-help', 'Local search', 'How customers find a local plumber',
+         '<p class="legal-intro">Search engines and customers read the same pages, so make sure the essentials are '
+         'easy to find.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div>'
+         '<h3>Basic SEO, included in your website</h3>'
+         '<p>Page titles and copy built around your services and the towns you cover, kept consistent with your '
+         'Google Business Profile, come at no extra cost.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div>'
+         '<h3>Local SEO and your Google listing, if you want more</h3>'
+         '<p>If you want to go further than the basic SEO included in your website, we also offer local SEO and '
+         'help managing your Google Business Profile. Ask us for prices when you get your demo.</p></div>'
+         '</div>'),
         ('local-trust-plumbers', 'Local & trust', 'Local search and trust for small plumbing companies',
-         '<p class="legal-intro">For many customers, a search engine is where they start looking for a plumber '
+         '<p class="legal-intro">For many customers, a search engine is where they start searching for a plumber '
          'nearby, and what they see once they land decides whether they call. A small plumbing company doesn\'t '
          'need a marketing team for that: a few concrete details do the work. Different customers look for '
          'different things before they call: a homeowner with a leak wants your number, a landlord wants to know '
          'you carry out gas safety checks. Show both clearly instead of burying them.</p>'
          '<div class="why-g">'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>Jobs you\'ve done nearby</h3>'
-         '<p>A few real photos of your own jobs, each with the town where you did it, show a visitor that you '
-         'already work in their area.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">⭐</div><h3>Reviews a visitor can check</h3>'
-         '<p>A link to your Google reviews lets a visitor read them in full, where they were posted, rather than '
-         'taking a few quotes on trust.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div><h3>Who will knock on the door</h3>'
          '<p>Your name, a photo of you or your van and how you prefer to be contacted: someone deciding who to let '
          'into their home wants to know who is coming, especially when your business is a one-person '
          'operation.</p></div>'
          '</div>'
          '<p class="where">More on ranking locally in <a href="https://webautonomos.es/blog/en/'
-         'how-to-rank-your-website-in-local-google">how to rank your website locally on Google</a>.</p>'),
+         'how-to-rank-your-website-in-local-google">how to get your website found on Google</a>.</p>'),
         ('website-speed-plumbers', 'Performance', 'Website speed and Core Web Vitals for a plumbing website',
-         '<p class="legal-intro">A visitor calling about a leak won\'t wait for a slow page, and Google measures '
-         'loading speed too: Core Web Vitals, including Largest Contentful Paint, are part of the page experience '
-         'signals it looks at alongside the content itself.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">⚡</div><h3>Largest Contentful Paint</h3>'
          '<p>It measures how long the largest element on screen, often your main photo or heading, takes to appear. '
@@ -1147,9 +1129,6 @@ PLUMB_UK = dict(
          '<p class="where">More detail in <a href="https://webautonomos.es/blog/en/website-speed-and-search-'
          'rankings">why your website\'s speed affects your Google ranking</a>.</p>'),
         ('plumbing-website-cost', 'Pricing', 'What does a plumbing website cost?',
-         '<p class="legal-intro">A plumbing website\'s cost depends on what\'s bundled in, not only on the design '
-         'itself: hosting, legal pages, ongoing changes and support are billed separately with some providers, so '
-         'it\'s worth checking what the terms actually cover before you sign up.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div><h3>What\'s included in one price</h3>'
          '<ul style="list-style:none;padding:0;display:grid;gap:6px;text-align:left;font-size:.92rem;color:#334155">'
@@ -1163,16 +1142,6 @@ PLUMB_UK = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔧</div><h3>Bigger changes, quoted separately</h3>'
          '<p>A full redesign or a large new section is quoted once you know what you need, rather than folded into '
          'a monthly price that would have to cover every possibility.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📊</div><h3>Comparing quotes from other providers</h3>'
-         '<p>What a website costs varies widely by provider. Three things usually explain the difference:</p>'
-         '<ul style="list-style:none;padding:0;display:grid;gap:6px;text-align:left;font-size:.92rem;color:#334155">'
-         '<li>How much of the design and copy you write yourself</li>'
-         '<li>Whether you pay a one-off fee, a monthly fee, or both</li>'
-         '<li>How the site is built, and how easy it is to update afterwards</li>'
-         '</ul>'
-         '<p style="margin-top:10px">For a broader comparison of what different providers charge and include, see '
-         'our guide to <a href="https://webautonomos.es/blog/en/how-much-does-a-website-cost-for-freelancers">'
-         'website pricing for freelancers</a>.</p></div>'
          '</div>' % (GBP_MOIS, GBP_UNIQUE)),
     ],
     faq=[("Do I need to be Gas Safe registered?",
@@ -1212,10 +1181,6 @@ PLUMB_UK = dict(
           "Yes: a confusing first experience makes visitors leave before they see what you offer, however good the "
           "job itself is. A simple design, straightforward pricing information and an easy way to get a quote or "
           "make a call give them what they need to decide to contact you."),
-         ("Can a plumbing website support marketing?",
-          "Yes: both plans include basic SEO, with page titles and copy built around your services and the areas "
-          "you cover. If you want to go further, we also offer local SEO and managing your Google Business "
-          "Profile: ask us and we'll explain what it covers."),
          ("Do you offer digital marketing beyond the website itself?",
           "Yes, if you ask: alongside your website, we can assist with paid advertising, such as Google Ads or "
           "Facebook ads, and with managing your social media. Ask us and we'll explain what's involved."),
@@ -1240,11 +1205,9 @@ PLUMB_UK = dict(
           "Often through a search engine: someone types “emergency plumber” with their town or postcode "
           "and picks from the results. A clear homepage, your service area and a call button in view give them a "
           "fast answer and an easy way to get in touch."),
-         ("Do I need lots of pages for my plumbing company?",
-          "Not necessarily: a clear homepage, a section for each service, your service area, legal information "
-          "and a contact form are often enough, reached from one navigation menu so a visitor finds what they "
-          "need in a click or two. If landlords send you regular work, a dedicated page for them is worth "
-          "adding.")] + FAQ_TRADES,
+         ("You're based in Spain: how do we work together?",
+          "Remotely and in English, by email, WhatsApp or video call, and we reply the same day."),
+         FAQ_COMMUNES[1], FAQ_COMMUNES[2]],
 )
 SRC_PLUMB_UK = [
     ('Gas Safety (Installation and Use) Regulations 1998, reg. 3',
