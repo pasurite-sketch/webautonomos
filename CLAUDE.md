@@ -461,8 +461,8 @@ ls blog/es/*.html | wc -l
 ## index.html : ce que le dépôt contient en plus de Lovable
 
 `index.html` est le bundle exporté de Lovable, mais **le fichier du dépôt a divergé de
-la source Lovable**. Trois modifications y vivent, appliquées par des scripts et non à
-la main. Un ré-export depuis Lovable les écraserait toutes les trois, sans avertissement.
+la source Lovable**. Les modifications ci-dessous y vivent, appliquées par des scripts et non
+à la main. Un ré-export depuis Lovable les écraserait toutes, sans avertissement.
 
 | Modification | Qui l'applique | Ce qu'on perd à un ré-export |
 |---|---|---|
@@ -471,6 +471,16 @@ la main. Un ré-export depuis Lovable les écraserait toutes les trois, sans ave
 | `<noscript>` de repli dans le `<body>` | ajouté le 2026-09-01 | Le seul `<h1>` et les 1 200 mots que voit un crawler sans JavaScript sur `/` |
 | Formule tarifaire de 4 champs de métadonnées | corrigée le 2026-09-01 | « 15 €/mes sin alta, sin permanencia » redeviendrait « desde 15… » dans `Organization.description` (JSON-LD statique et bundle) et dans `seo.demoFontanero` / `seo.demoElectricista` |
 | Blocs `image` des articles (données SPA) | `_tools/photos/photos.py`, depuis le 2026-09-29 | La photo des articles dans les données ; les fichiers de `blog/` la gardent, mais une régénération la perdrait |
+| Script `blog-statique` dans le `<head>` | `_tools/patch_blog_statique_20261006.py`, le 2026-10-06 | La navigation interne (menu « Blog », cartes d'articles) ré-afficherait la copie SPA des articles : sans photo et avec un texte périmé |
+
+**Le script `blog-statique`.** L'application garde sa propre copie de chaque article et
+l'affichait quand on passait par le menu « Blog » : son composant ne rend pas les blocs
+`image`, et ses textes ont divergé des fichiers `blog/<langue>/<slug>.html`. Le script
+intercepte `history.pushState` : toute navigation interne vers `/blog` devient un chargement
+de page, et le visiteur reçoit la page statique. Pas de boucle possible : chaque adresse
+d'article de l'application a son fichier (190 vérifiées le 2026-10-06), et une adresse
+inconnue renvoie la page 404, jamais `index.html`. Ne pas le retirer tant que les articles
+vivent dans `blog/` ; s'il disparaît (ré-export), relancer le script, qui est idempotent.
 
 **La formule tarifaire.** Quatre champs de métadonnées portent « 15 €/mes sin alta, sin
 permanencia ». Les **16 autres occurrences de « desde 15 »** dans `index.html` sont des corps
