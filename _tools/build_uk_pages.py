@@ -224,7 +224,7 @@ DENTAL = dict(
               "prescription-only medicine names",
               "A privacy policy and cookie notice adapted to UK law (UK GDPR)",
               "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
-    why_t='Built for UK dentistry',
+    why_t='Designed for UK dentistry',
     why=[('📋', 'GDC details in place',
           'Qualifications, GDC numbers, complaints procedure and last-updated date, set out where patients and '
           'the GDC guidance expect them.')] + WHY_COMMUNS,
@@ -238,9 +238,9 @@ DENTAL = dict(
            STEPS_FIN],
     extra=[
         ('website-content', 'Content', 'What to include on a dental practice website',
-         '<p class="legal-intro">Patients choosing a dental practice want to find the same things quickly, '
-         'however they land on your website: who treats them, what care is on offer, and how to get in touch. '
-         'Good web design puts these first, instead of burying them under general information. We write this '
+         '<p class="legal-intro">Patients choosing a dental practice want to see the same things quickly, '
+         'however they land on your website: who treats them, what care the practice provides, and how to get in touch. '
+         'A tidy layout puts these first, instead of burying them under general information. We write this '
          'content for you in English, for you to check before it goes live.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🦷</div>'
@@ -251,45 +251,99 @@ DENTAL = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧑‍⚕️</div>'
          '<h3>Your team and their GDC registration</h3>'
          '<p>Every dental professional named on the page, introduced with the qualification, the country it comes '
-         'from and the GDC number the rules above require, so patients know who is treating them and can look up '
+         'from and the GDC information the rules above require, so patients know who is treating them and can look up '
          'their registration directly with the GDC.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">💷</div>'
          '<h3>Fees a patient can read before they call</h3>'
          '<p>Clear fees shown on your website, the way the rules above require, so patients don\'t have to '
-         'phone or search elsewhere to find out what a visit or a course of treatment costs.</p></div>'
+         'ring or search elsewhere to find out what a visit or a course of treatment costs.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📞</div>'
          '<h3>More than one way to get in touch</h3>'
-         '<p>A contact form, a phone number and a WhatsApp button, plus a link to the booking tool you already '
-         'use if you have one, so patients who find your website can reach the practice however suits them '
+         '<p>A contact form, a telephone number and a WhatsApp button, plus a button for the booking tool you already '
+         'use if you have one, so patients who land on your website can reach the practice however suits them '
          'best.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div>'
          '<h3>Your location and when you\'re open</h3>'
          '<p>Your address and opening times, so a patient can check when the practice is open before they '
          'call or make the trip.</p></div>'
          '</div>'),
+        ('patient-journey', 'Visitor journey', 'From first click to booking: a visitor\'s journey on a dental website',
+         '<p class="legal-intro">A new visitor arrives with a question, looks for one answer and either spots '
+         'it quickly or goes back. Dental website design starts from that visit and plans it page by '
+         'page.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗂️</div>'
+         '<h3>A page for each treatment</h3>'
+         '<p>A visitor who searched for a treatment should land on a page about it, with a plain description, '
+         'what happens at the visit and how to book appointments. Create a separate page for each treatment: it '
+         'gives people nearby a direct route to it, and it makes each page easier to improve later.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">👥</div>'
+         '<h3>The people behind the practice</h3>'
+         '<p>People who need to choose a practice like to know who they will meet. A short introduction to each '
+         'clinician, designed to be scanned quickly, with a photo and the information the rules above require, '
+         'lets visitors learn who will treat them before the first visit.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">❓</div>'
+         '<h3>Answers to what visitors hesitate over</h3>'
+         '<p>Include parking, step-free access, what to bring to a first visit, whether you are taking on new '
+         'patients and how to reach you in an emergency. Put the answers where visitors can see them, not in a post that '
+         'scrolls away, so they arrive better prepared.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">💬</div>'
+         '<h3>Reassurance for anxious visitors</h3>'
+         '<p>Visitors who feel nervous about a check-up are looking for reassurance. A plain description of a '
+         'first visit lets them learn what to expect, who they will see and how to ask for a pause, and it builds '
+         'trust long before they ring.</p></div>'
+         '</div>'),
         ('good-design', 'Design', 'What good dental website design looks like',
-         '<p class="legal-intro">Good dental website design isn\'t only about how the page looks or how well '
+         '<p class="legal-intro">Dental website design isn\'t only about how the page looks or how well '
          'it performs for SEO; it\'s about whether a visitor finds the information they need and decides to '
          'get in touch.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎨</div>'
          '<h3>Clean, modern web design that loads fast</h3>'
-         '<p>Professional web design pairs a clean, modern look with plain headings and short content, '
-         'built to load fast on mobile as well as on desktop, so visitors don\'t give up '
+         '<p>Web design pairs a clean, modern look with plain headings and short content '
+         'that loads fast on mobile as well as on desktop, so visitors don\'t give up '
          'looking before they reach your contact details.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧭</div>'
          '<h3>An easy path from visitor to enquiry</h3>'
-         '<p>Every page leads somewhere: a clear button to your contact form, phone number or WhatsApp, so a '
+         '<p>Every page leads somewhere: a clear button to your contact form, telephone number or WhatsApp, so a '
          'visitor who\'s ready to book doesn\'t have to search for how.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div>'
          '<h3>Design that builds trust</h3>'
          '<p>Genuine Google reviews, shown with each reviewer\'s permission and without hiding the negative ones '
-         '(see the rules above), your GDC registration and straightforward fees do more for trust than '
-         'decoration. Good design gives these details room instead of hiding them below a slideshow.</p></div>'
+         '(see the rules above), your credentials and straightforward fees do more for trust than '
+         'decoration. Careful design gives these details room instead of hiding them below a slideshow.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏷️</div>'
          '<h3>Branding that matches the rest of your practice</h3>'
          '<p>Your logo, colours and photos, carried through consistently, so your website matches your '
          'practice\'s wider online presence, from your Google Business Profile to social media.</p></div>'
+         '</div>'),
+        ('accessibility-images', 'Accessibility', 'Accessibility and images on a dental website',
+         '<p class="legal-intro">Accessibility is part of dental website design, not an extra: every visitor '
+         'should be able to see, follow and use your pages, whatever their eyesight, mobility or connection. A '
+         'modern, uncluttered layout makes this easier, but only if the points below are settled before the first '
+         'draft.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔠</div>'
+         '<h3>Legible text and high contrast</h3>'
+         '<p>Text should be large enough to see on a small screen and dark enough against its background to stay '
+         'visible in daylight. A clean layout, high contrast and plain headings help every visitor, especially '
+         'anyone with poor eyesight.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔗</div>'
+         '<h3>Buttons, links and forms that say what they do</h3>'
+         '<p>A button labelled “Book an appointment” says more than “click here”. Every field needs a plain label, '
+         'and all interactive elements should be usable from the keyboard. Accessibility features like these make '
+         'the site easier for everyone to use, not only for visitors who rely on a screen reader. Automated '
+         'tools can flag low contrast and missing labels, but a person still needs to check the result.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🖼️</div>'
+         '<h3>A short description for every image</h3>'
+         '<p>Each meaningful image needs a few words of alternative text for visitors who cannot see it, while '
+         'purely decorative images should be hidden from screen readers. These descriptions also keep the information '
+         'understandable when an image fails to load.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📷</div>'
+         '<h3>Photos of your own practice</h3>'
+         '<p>Your reception, treatment rooms and building, from your own photos and your Google listing, show new '
+         'patients where they are going. Generic stock images could belong to any practice, and photos of '
+         'patients need the patient\'s permission.</p></div>'
          '</div>'),
         ('local-search-help', 'Local search', 'How patients search for a local dental practice',
          '<p class="legal-intro">Getting found by someone searching for a local dentist depends on more than '
@@ -298,12 +352,12 @@ DENTAL = dict(
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div>'
          '<h3>Basic SEO, included in your website</h3>'
-         '<p>Page titles and copy built around your treatments and your local area, kept consistent with your '
+         '<p>Page titles and copy organised around your treatments and your local area, kept consistent with your '
          'Google Business Profile, come at no extra cost, helping your practice appear '
          'in relevant local search results.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div>'
          '<h3>Local SEO and your Google listing, if you want more</h3>'
-         '<p>If you want to go further than the basic SEO included in your website, we also offer local SEO and '
+         '<p>If you want to go further than the basic SEO included in your website, we also provide local SEO and '
          'help managing your Google Business Profile. Ask us for prices when you get your demo.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div>'
          '<h3>Searches your website should answer</h3>'
@@ -311,11 +365,11 @@ DENTAL = dict(
          '<ul><li>an emergency dentist near them</li><li>a practice accepting new patients</li>'
          '<li>a dentist open on Saturdays or evenings</li><li>a well-reviewed dental practice nearby</li>'
          '</ul>'
-         '<p>Many of these searches happen on mobile, so your website needs to read as well on a small screen '
+         '<p>Many of these searches happen on mobile, so your website needs to look as good on a small screen '
          'as it does on a desktop.</p></div>'
          '</div>'),
         ('technical-basics', 'Behind the scenes', 'What runs behind your website',
-         '<p class="legal-intro">Alongside the pages your patients read online, a few technical basics come '
+         '<p class="legal-intro">Alongside the pages your patients see online, a few technical basics come '
          'with every website we build.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔒</div>'
@@ -329,19 +383,44 @@ DENTAL = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✏️</div>'
          '<h3>One change a month, included</h3>'
          '<p>Once your website is live, you can ask for one change a month at no extra cost, such as updating '
-         'your team, your fees or anything you\'d like to improve. A full redesign or a large new section '
+         'your fees, your opening times or anything you\'d like to improve. A full redesign or a large new section '
          'goes through a fixed quote agreed before any work starts.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div>'
          '<h3>Your policies, ready to publish</h3>'
          '<p>A privacy policy and cookie notice, adapted to UK law, are included with your website, and every '
          'word is written for you to check before it goes live.</p></div>'
          '</div>'),
+        ('practice-types', 'Types of practice', 'Dental web design for every kind of practice',
+         '<p class="legal-intro">Dental care is organised differently from one practice to the next, and dental '
+         'websites should show how each practice works. The rules above apply to every practice, but the approach to content '
+         'differs.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🦷</div>'
+         '<h3>A single, independent practice</h3>'
+         '<p>An independent practice can let its own character show: who you are, the dental care your practice '
+         'provides and the neighbourhood you serve. Keep your location, opening times and ways to book appointments within '
+         'reach on every page.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏥</div>'
+         '<h3>Mixed NHS and private practices</h3>'
+         '<p>Visitors need to know which treatments are offered on the NHS and which only privately. Make that '
+         'distinction obvious wherever a service is listed, state your fees and keep the explanation in plain English.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✨</div>'
+         '<h3>Cosmetic and orthodontic clinics</h3>'
+         '<p>A clinic offering cosmetic dentistry or orthodontics should show its clinicians\' expertise through '
+         'their credentials and their place on the GDC register, not through titles it doesn\'t hold. Describe '
+         'each treatment plainly and leave out promises of results.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏢</div>'
+         '<h3>Groups and dental companies</h3>'
+         '<p>A group with several sites can create a page for each location, with its own map, opening times '
+         'and telephone number, under one brand. Whatever the company behind it, everything shown for a '
+         'location must stay correct and current.</p></div>'
+         '</div>'),
         ('website-mistakes', 'What to avoid', 'Common mistakes on dental practice websites',
          '<p class="legal-intro">Some gaps show up again and again on dental websites, and they tend to cost new '
          'enquiries before anyone gets in touch.</p>'
          '<div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul>'
          '<li>A layout that is hard to read on mobile, so patients searching from their phone give up before '
-         'they find your details</li>'
+         'they see your details</li>'
          '<li>Fees left out, so a visitor has to search elsewhere before they know what a course of treatment '
          'costs</li>'
          '<li>Stock photography and generic copy that could describe any dentist\'s website, not yours</li>'
@@ -381,21 +460,39 @@ DENTAL = dict(
          'your website worth getting right from day one.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">⏱️</div><h3>Your fees and how to book, within '
-         'seconds</h3><p>Good dental website design gets out of the way: a visitor should see your fees, your '
+         'seconds</h3><p>A visitor should see your fees, your '
          'treatments and how to arrange an appointment within a few seconds, not after scrolling past everything '
          'else.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div><h3>The same experience on mobile as '
          'on desktop</h3><p>Many of your patients will look for you on their phone, so the mobile version of '
          'your website shows the same fees, the same GDC details and the same ways to get in touch as the '
          'desktop version.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎯</div><h3>A demo built from your details, '
-         'not a template</h3><p>Every project starts the same way: we build the demo from your own details, you '
-         'review it, and we change anything that isn\'t right before it goes live, so you never start from a '
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎯</div><h3>A demo made from your details, '
+         'not a template</h3><p>Every project begins like this: we build the demo from your own details, you '
+         'check it, and we change anything that isn\'t right before it goes live, so you never start from a '
          'blank page.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div><h3>Part of a wider marketing '
-         'strategy</h3><p>Your website is usually the first stop, but not the only one: local SEO and your '
-         'Google Business Profile often come next. For a small practice, it makes sense to get these basics '
-         'right before spending on anything else.</p></div>'
+         '</div>'),
+        ('digital-marketing', 'Marketing', 'How your website fits into dental marketing',
+         '<p class="legal-intro">Dental marketing starts with your website, the hub of your practice\'s digital '
+         'channels: it is the first place a new visitor lands and the place every other channel points to. A '
+         'sensible strategy adds one channel at a time, and for a small practice it starts with getting these '
+         'basics right before spending on anything else.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧩</div>'
+         '<h3>One brand across every channel</h3>'
+         '<p>Your Google Business Profile, any social accounts and any paid promotion send people to your site, so '
+         'the logo, colours, fees and opening times should match everywhere. Consistent branding makes your '
+         'practice easy to recognise.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div>'
+         '<h3>Google Business Profile and local SEO</h3>'
+         '<p>We can manage your Google Business Profile, with four posts a month and replies to your reviews. Our '
+         'local SEO adds four blog articles a month, local keywords and a monthly report. Ask us for prices when '
+         'you get your demo.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✍️</div>'
+         '<h3>Content that answers common questions</h3>'
+         '<p>Treatment pages and blog articles in plain English and in your own voice keep your '
+         'content fresh and leave visitors better informed. Dental marketing must still follow the rules '
+         'above, whatever your strategy.</p></div>'
          '</div>'
          '<p class="legal-intro">If you would like more background on getting the basics right, our '
          '<a href="https://webautonomos.es/blog/#en">blog</a> has practical guides on local SEO and improving '
@@ -431,11 +528,11 @@ DENTAL = dict(
           "need to decide to contact you."),
          ("Can a dental website help with marketing?",
           "Both plans include basic SEO, which helps your website appear online for relevant local searches. If "
-          "you want to go further, we also offer local SEO and help managing your Google Business Profile: ask "
+          "you want to go further, we also provide local SEO and help managing your Google Business Profile: ask "
           "us for prices when you request your demo."),
          ("Do you offer digital marketing beyond the website itself?",
           "Yes, on request: alongside your website, we can help with paid advertising, such as Google Ads or "
-          "Facebook ads, and with managing your social media. Ask us and we'll explain what's involved and the "
+          "Facebook ads, and with managing your social media. Ask us and we'll tell you what's involved and the "
           "cost."),
          ("What makes a good dental website, beyond how it looks?",
           "A good dental website answers the questions a new patient has before they call: your fees, your "
@@ -1221,8 +1318,8 @@ ELEC_UK = dict(
               "A page for landlords, if you carry out electrical inspections for rented homes",
               "A privacy policy and cookie notice adapted to UK law (UK GDPR and PECR)",
               "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
-    why_t='Built for electricians',
-    why=[('⚡', 'Your registration in place', 'Your scheme and number, where customers look for them and can check '
+    why_t='Designed for electricians',
+    why=[('⚡', 'Your registration in place', 'Your scheme and number, where visitors look for them and can check '
                                             'them.')] + WHY_TRADES,
     sectors=['⚡ Domestic electricians', '🏢 Electrical contractors', '🔌 Rewires and consumer units',
              '🚗 EV charger installers', '☀️ Solar PV installers', '📋 Landlord inspections', '💡 Lighting',
@@ -1250,6 +1347,11 @@ ELEC_UK = dict(
          '<h3>Photos of your own work</h3>'
          '<p>Neat consumer units and finished installations, from your own photos, with a one-line caption for '
          'each job.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div>'
+         '<h3>Area pages for the towns you serve</h3>'
+         '<p>A short section for each town or area, listing the services you offer there, shows nearby visitors '
+         'that you serve their street and gives a search engine a reason to show your site for local '
+         'searches.</p></div>'
          '</div>'),
         ('good-design', 'Design', 'What a good electrician website looks like',
          '<p class="legal-intro">A good electrician website is about more than how it looks: it is about '
@@ -1316,6 +1418,22 @@ ELEC_UK = dict(
          '<p class="cmp-more"><a href="https://webautonomos.es/en/services">See everything included in your '
          'website →</a></p>'),
         local_search_uk('electrician'),
+        ('searches-answer', 'Searches', 'Searches your electrician website should answer',
+         '<p class="legal-intro">Before they call, visitors type what they need into Google. Websites for electricians '
+         'do best when each of these searches leads straight to an answer:</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔎</div>'
+         '<h3>What visitors type</h3>'
+         '<ul><li>an electrician near me</li><li>an emergency electrician in my town</li>'
+         '<li>a quote for a consumer unit or a rewire</li><li>a quote for EV charger installation</li></ul>'
+         '<p>Each answer is a section: a service section, a town section or a way to ask for a quote. The more '
+         'directly it answers the question, the less a visitor has to hunt.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✍️</div>'
+         '<h3>A blog, if you want more</h3>'
+         '<p>A blog can answer the questions visitors ask before they call, such as when a consumer unit needs '
+         'replacing. Our local SEO adds four blog articles a month, written around local keywords, with a monthly '
+         'report: ask us for prices when you get your demo.</p></div>'
+         '</div>'),
     ],
     faq=[("Do electricians need a licence in the UK?",
           "There's no legal licence or protected title for electricians, but the law still requires competence "
@@ -1356,7 +1474,7 @@ ELEC_UK = dict(
           "the job itself is. A simple design, straightforward pricing information and an easy way to get a "
           "quote give them what they need to decide to contact you."),
          ("Can an electrician website support marketing?",
-          "Yes: both plans include basic SEO, with page titles and copy built around your services and the towns "
+          "Yes: both plans include basic SEO, with page titles and copy organised around your services and the towns "
           "you cover. If you want to go further, we also offer local SEO and managing your Google Business "
           "Profile: ask us for prices when you get your demo."),
          ("Do you offer digital marketing beyond the website itself?",
