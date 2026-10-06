@@ -820,7 +820,7 @@ TRADES = dict(
         ROW_COOKIES,
     ],
     legal_note="Building control, waste and some other rules differ in Wales, Scotland and Northern Ireland: check "
-               "the rules where you work. This is general information as of September 2026, not legal advice.",
+               "the rules for your area. This is general information as of September 2026, not legal advice.",
     spain_note='<strong>Working in Spain?</strong> Spanish rules are different. See '
                '<a href="https://webautonomos.es/en/website-for-builders-in-spain">websites for builders and '
                'renovation companies in Spain</a>.',
@@ -840,8 +840,8 @@ TRADES = dict(
     extra=[
         ('website-content', 'Content', "What to put on a tradesman's website",
          '<p class="legal-intro">Someone looking for a tradesperson wants to know three things quickly: do you do '
-         'the job they need, do you cover their area, and how do they reach you? Websites for tradesmen work '
-         'best when they answer those first.</p>'
+         'the job they need, do you cover their area, and how do they reach you? A tradesman\'s website answers '
+         'those best with a contact form or phone number close by.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗂️</div>'
          '<h3>Your services, grouped by job</h3>'
@@ -849,20 +849,20 @@ TRADES = dict(
          'job without scrolling through everything else.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div>'
          '<h3>The towns you cover</h3>'
-         '<p>Naming the towns and villages you work in tells a visitor straight away whether you\'ll come to them, '
-         'and helps search engines understand who your site is for.</p></div>'
+         '<p>Naming the towns and villages you cover tells a visitor straight away whether you\'ll come to them, '
+         'and helps search engines find your site for local searches.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
          '<h3>Registrations people can check</h3>'
          '<p>Gas Safe, NICEIC, NAPIT, TrustMark or a trade association: shown with your number where there is one, '
          'so a customer can check it, and only the ones you actually hold.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📸</div>'
-         '<h3>Photos of your own work</h3>'
-         '<p>We build your trades website design around your own job photos, grouped by type of work, with a '
+         '<h3>Photos of finished jobs</h3>'
+         '<p>We build your site around your own job photos, grouped by type of work, with a '
          'one-line caption for each.</p></div>'
          '</div>'),
         ('by-trade', 'By trade', 'Trades website design that fits your rules',
-         '<p class="legal-intro">Some trades have their own rules on what they can claim and who can do the work. '
-         'We cover them page by page.</p>'
+         '<p class="legal-intro">Some trades have their own rules on what they can claim and who is qualified to '
+         'carry out the job. We cover them page by page.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔧</div>'
          '<h3><a href="https://webautonomos.es/en/web-design-for-plumbers">Web design for plumbers</a></h3>'
@@ -874,8 +874,9 @@ TRADES = dict(
          '<p>Part P and competent person schemes, landlord inspections, EV chargers and solar panels.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏗️</div>'
          '<h3>Builders and construction firms</h3>'
-         '<p>For construction website design, the rules above apply in full: building control, CDM duties on home '
-         'jobs, asbestos and waste.</p></div>'
+         '<p>Every rule in the table above applies to a building firm, including building control, CDM duties on '
+         'home jobs, asbestos and waste. For construction website design, that means showing only the '
+         'registrations and licences you actually hold, such as a waste carrier registration.</p></div>'
          '</div>'),
         local_search_uk('tradesperson'),
     ],
