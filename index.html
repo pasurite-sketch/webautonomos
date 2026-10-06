@@ -454,7 +454,7 @@
   ]
 }
   </script>
-<script id="blog-statique">/* Blog servi par ses pages statiques : une navigation interne vers /blog recharge la page. Posé par _tools/patch_blog_statique_20261006.py, ne pas modifier à la main. */(function(){var h=window.history,p=h.pushState;h.pushState=function(s,t,u){if(u!=null){try{var x=new URL(u,location.href);if(x.origin===location.origin&&/^\/blog(\/|$)/.test(x.pathname)){location.assign(x.href);return;}}catch(e){}}return p.apply(h,arguments);};})();</script>
+<script id="blog-statique">/* Blog servi par ses pages statiques : une navigation interne vers /blog recharge la page (index : ancre de la langue). Posé par _tools/patch_blog_statique_20261006.py, ne pas modifier à la main. */(function(){var h=window.history,p=h.pushState,A={ca:"val",en:"en",fr:"fr"};h.pushState=function(s,t,u){if(u!=null){try{var x=new URL(u,location.href);if(x.origin===location.origin&&/^\/blog(\/|$)/.test(x.pathname)){if(/^\/blog\/?$/.test(x.pathname)&&!x.hash){x.pathname="/blog/";var l=A[document.documentElement.lang];if(l)x.hash=l;}location.assign(x.href);return;}}catch(e){}}return p.apply(h,arguments);};})();</script>
 </head>
 <body>
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-white focus:text-blue-600 focus:px-4 focus:py-2 focus:rounded focus:z-[999]">Ir al contenido principal</a>
