@@ -107,7 +107,8 @@ DEFAULT_CATEGORY = ('paginas-web', '#3B82F6',
                     {'es': 'Blog', 'val': 'Blog', 'en': 'Blog', 'fr': 'Blog'})
 
 HTML_LANG = {'es': 'es', 'val': 'ca', 'en': 'en', 'fr': 'fr'}
-OG_LOCALE = {'es': 'es_ES', 'val': 'ca_ES', 'en': 'en_US', 'fr': 'fr_FR'}
+# en_GB (06/10/2026) : anglais britannique, comme translate_article.py (CLAUDE.md).
+OG_LOCALE = {'es': 'es_ES', 'val': 'ca_ES', 'en': 'en_GB', 'fr': 'fr_FR'}
 
 # Adresses de navigation par langue (23/09/2026, plan SEO FR-EN) : les
 # articles FR et EN renvoient vers l'accueil de leur langue. es et val
