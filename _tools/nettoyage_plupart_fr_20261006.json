@@ -1,0 +1,66 @@
+{
+ "_lisez_moi": "Nettoyage du blog FR du 06/10/2026 : « la plupart des (clients|patients|gens|internautes|indépendants|artisans|entreprises) » est interdit par VERITE.md §8, et REGLES_REDACTEUR.md §2 bis demande d'écrire à la place « beaucoup de », « souvent », « aide à ». Relevé du 06/10 : 14 occurrences dans le texte visible de 9 pages blog/fr, plus 4 copies dans les réponses du JSON-LD FAQPage (pages « combien coûte un site » et « réseaux sociaux ») ; aucune dans les données SPA d'index.html, blog-spa-data.json ni _tools/queue. Les 14 sont des généralisations sans source : aucun usage légitime (citation, chiffre sourcé, règle citée). Une paire couvre à la fois le texte visible et sa copie JSON-LD, qui restent donc identiques ; le titre de section de « créer du contenu » est corrigé avec son entrée du sommaire. Reformulations : « beaucoup de » ou « souvent », au vouvoiement quand la phrase s'adresse au lecteur. Quand la version réécrite d'un article a une formulation équivalente, elle est reprise : « For many freelancers and small businesses » (EN, combien coûte), « Por qué tantos autónomos se bloquean » et « Muchos autónomos abandonan… » (ES, créer du contenu) ; pour les autres, alignement sur les choix ES/VAL/EN du nettoyage des généralisations du même jour (« muchos », « molts », « many »). Ajout hors motif §8, même règle §2 bis : la phrase qui suit ce titre (« La grande majorité des indépendants renonce… »), corrigée comme dans la version ES réécrite. Aucun nombre, pourcentage ni « + TVA » ajouté (contrôlé par le script) ; bandeau d'appel à l'action et bloc auteur inchangés. _tools/translations (payloads locaux de translate_article.py, ignorés par git) : les mêmes phrases y sont corrigées quand le script tourne dans le dépôt principal ; ia-pour-independants-outils-concrets.json garde 2 occurrences d'une ancienne version de la page, qui ne les contient plus. Les autres généralisations hors motif (« la majorité des », « dans la plupart des cas »…) ne sont pas traitées ici.",
+ "ordre": [
+  "fr"
+ ],
+ "fr": {
+  "remplacements": [
+   [
+    "Le problème, c'est que la plupart des indépendants ne mesurent pas ce retour.",
+    "Le problème, c'est que beaucoup d'indépendants ne mesurent pas ce retour."
+   ],
+   [
+    "Le problème, c'est que la plupart des indépendants ne se demandent jamais quels mots emploie leur public.",
+    "Le problème, c'est que beaucoup d'indépendants ne se demandent jamais quels mots emploie leur public."
+   ],
+   [
+    "Pour la plupart des indépendants et des TPE, un site simple et professionnel bâti sur un modèle optimisé suffit.",
+    "Pour beaucoup d'indépendants et de TPE, un site simple et professionnel bâti sur un modèle optimisé suffit."
+   ],
+   [
+    "La plupart des indépendants ont besoin d'un site simple avec ces rubriques : accueil, services, à propos, et contact avec formulaire.",
+    "Un site simple vous suffira souvent, avec ces rubriques : accueil, services, à propos, et contact avec formulaire."
+   ],
+   [
+    "Pourquoi la plupart des indépendants n'écrivent pas",
+    "Pourquoi tant d'indépendants n'écrivent pas"
+   ],
+   [
+    "La grande majorité des indépendants renonce à mettre son site à jour par peur de la page blanche.",
+    "Beaucoup d'indépendants renoncent à mettre leur site à jour par peur de la page blanche."
+   ],
+   [
+    "La plupart des indépendants ignorent jusqu'à l'existence du SEO local.",
+    "Beaucoup d'indépendants ignorent jusqu'à l'existence du SEO local."
+   ],
+   [
+    "et pourtant la plupart des indépendants emploient leur WhatsApp personnel pour leurs clients",
+    "et pourtant beaucoup d'indépendants emploient leur WhatsApp personnel pour leurs clients"
+   ],
+   [
+    "que la plupart des indépendants n'exploitent jamais.",
+    "que beaucoup d'indépendants n'exploitent jamais."
+   ],
+   [
+    "pour la plupart des artisans et des prestataires de services de proximité,",
+    "pour beaucoup d'artisans et de prestataires de services de proximité,"
+   ],
+   [
+    "Pour la plupart des artisans, Instagram et WhatsApp Business suffisent en complément de votre site et de votre fiche Google Business Profile.",
+    "Si vous êtes artisan, Instagram et WhatsApp Business suffisent souvent en complément de votre site et de votre fiche Google Business Profile."
+   ],
+   [
+    "Cela dit, pour la plupart des indépendants, le retour est meilleur avec Google (SEO + Google Ads) qu'avec les réseaux sociaux.",
+    "Cela dit, le retour est souvent meilleur avec Google (SEO + Google Ads) qu'avec les réseaux sociaux."
+   ],
+   [
+    "la plupart des clients n'attendent qu'un coup de pouce pour se lancer.",
+    "beaucoup de vos futurs clients n'attendent qu'un coup de pouce pour se lancer."
+   ],
+   [
+    "La plupart des clients sont ravis que vous montriez leur rénovation, mais le consentement reste obligatoire.",
+    "Beaucoup de clients sont ravis que vous montriez leur rénovation, mais le consentement reste obligatoire."
+   ]
+  ]
+ }
+}
