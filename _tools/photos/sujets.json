@@ -164,176 +164,6 @@
      "titre": "Artisanat à Valence",
      "bouton": "contacto"
     }
-   }
-  },
-  {
-   "id": "file-wix-o-wordpress",
-   "type": "file",
-   "publication": "2026-10-01",
-   "file": "_tools/queue/article_wix_o_wordpress.json",
-   "priorite": 1,
-   "titre": "Wix o WordPress: cuál elegir para tu web de autónomo en 2026",
-   "url": "https://webautonomos.es/blog/es/wix-o-wordpress",
-   "resume": "Quieres una web para tu negocio y siempre salen los mismos dos nombres: Wix y WordPress. Con Wix alquilas una herramienta completa en la que todo viene resuelto. Con WordPress usas un software libre, con la libertad y el mantenimiento que eso implica. Aquí verás cuánto cuesta cada uno a tres años, qué te pide y a qué tipo de autónomo le encaja. Todos los precios se han comproba",
-   "marche": "europe",
-   "sante": false,
-   "pages": [
-    {
-     "html": "blog/es/wix-o-wordpress.html",
-     "lang": "es",
-     "url": "https://webautonomos.es/blog/es/wix-o-wordpress",
-     "spa": "es/wix-o-wordpress"
-    },
-    {
-     "html": "blog/val/wix-o-wordpress.html",
-     "lang": "val",
-     "url": "https://webautonomos.es/blog/val/wix-o-wordpress",
-     "spa": "val/wix-o-wordpress"
-    },
-    {
-     "html": "blog/en/wix-or-wordpress.html",
-     "lang": "en",
-     "url": "https://webautonomos.es/blog/en/wix-or-wordpress",
-     "spa": "en/wix-or-wordpress"
-    },
-    {
-     "html": "blog/fr/wix-ou-wordpress.html",
-     "lang": "fr",
-     "url": "https://webautonomos.es/blog/fr/wix-ou-wordpress",
-     "spa": "fr/wix-ou-wordpress"
-    }
-   ],
-   "statut": "fait",
-   "scene": "Une céramiste indépendante, dans son atelier, compare deux croquis de mise en page posés côte à côte sur son établi (blocs gris, aucun texte), un crayon à la main ; pots en terre, tours de potier et lumière de fin d'après-midi.",
-   "fichier": "elegir-herramienta-web-taller-ceramica",
-   "v": 2,
-   "fait_le": "2026-09-29T11:10:34",
-   "textes": {
-    "es": {
-     "alt": "Una ceramista trabaja una pieza de barro en su taller, rodeada de estanterías con piezas y utensilios.",
-     "legende": "Una artesana da forma a una pieza de cerámica en su taller."
-    },
-    "val": {
-     "alt": "Una ceramista treballa una peça de fang al seu taller, envoltada de prestatgeries amb peces i utensilis.",
-     "legende": "Una artesana dona forma a una peça de ceràmica al seu taller."
-    },
-    "en": {
-     "alt": "A ceramic artist shapes a clay vessel in her studio, surrounded by shelves of pottery and tools.",
-     "legende": "A ceramic artist shapes a vessel by hand in her workshop."
-    },
-    "fr": {
-     "alt": "Une céramiste façonne une pièce en argile dans son atelier, entourée d’étagères de poteries et d’outils.",
-     "legende": "Une artisane façonne à la main une pièce en céramique dans son atelier."
-    }
-   },
-   "site": "d'une céramiste (boutique d'atelier avec photos de poteries)",
-   "maquette": {
-    "es": {
-     "statut": "fait",
-     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-es",
-     "v": 1,
-     "fait_le": "2026-09-30T10:22:13",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran la web de una ceramista, con fotos de sus piezas y diseño adaptado a ambas pantallas.",
-       "legende": "Ejemplo de web de cerámica artesanal en ordenador y móvil."
-      }
-     }
-    },
-    "val": {
-     "statut": "fait",
-     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-val",
-     "v": 1,
-     "fait_le": "2026-09-30T10:27:23",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran una web de cerámica artesanal, con fotografías de piezas y diseño adaptable a ambas pantallas.",
-       "legende": "Ejemplo de web de cerámica artesanal en ordenador y móvil."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren una web de ceràmica artesanal, amb fotografies de peces i disseny adaptable a les dues pantalles.",
-       "legende": "Exemple de web de ceràmica artesanal en ordinador i mòbil."
-      },
-      "en": {
-       "alt": "A laptop and smartphone display a handmade ceramics website with pottery photos and a responsive layout.",
-       "legende": "Example of a handmade ceramics website on desktop and mobile."
-      },
-      "fr": {
-       "alt": "Un ordinateur et un smartphone affichent un site de céramique artisanale avec des photos de poteries et une mise en page adaptée.",
-       "legende": "Exemple de site de céramique artisanale sur ordinateur et mobile."
-      }
-     }
-    },
-    "en": {
-     "statut": "fait",
-     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-en",
-     "v": 1,
-     "fait_le": "2026-09-30T10:29:04",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran la web de una ceramista, con fotografías de piezas artesanales y diseño adaptable.",
-       "legende": "Ejemplo de tienda de cerámica artesanal en ordenador y móvil."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren la web d'una ceramista, amb fotografies de peces artesanals i disseny adaptable.",
-       "legende": "Exemple de botiga de ceràmica artesanal en ordinador i mòbil."
-      },
-      "en": {
-       "alt": "A laptop and smartphone display a ceramic artist's website with handmade pottery photos and a responsive layout.",
-       "legende": "Example of a handmade ceramics shop on desktop and mobile."
-      },
-      "fr": {
-       "alt": "Un ordinateur et un smartphone affichent le site d'une céramiste avec des photos de poteries artisanales.",
-       "legende": "Exemple de boutique de céramique artisanale sur ordinateur et mobile."
-      }
-     }
-    },
-    "fr": {
-     "statut": "fait",
-     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-fr",
-     "v": 1,
-     "fait_le": "2026-09-30T10:36:53",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran una web de cerámica artesanal, con fotografías de piezas y diseño adaptable a ambas pantallas.",
-       "legende": "Ejemplo de tienda de cerámica artesanal en ordenador y móvil."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren una web de ceràmica artesanal, amb fotografies de peces i disseny adaptable a les dues pantalles.",
-       "legende": "Exemple de botiga de ceràmica artesanal en ordinador i mòbil."
-      },
-      "en": {
-       "alt": "A laptop and smartphone display a handmade ceramics website with pottery photos and a responsive layout.",
-       "legende": "Example of a handmade ceramics shop on desktop and mobile."
-      },
-      "fr": {
-       "alt": "Un ordinateur et un smartphone affichent le site d'une céramiste avec des photos de poteries artisanales.",
-       "legende": "Exemple de boutique de céramique artisanale sur ordinateur et mobile."
-      }
-     }
-    }
-   },
-   "ecrans": {
-    "es": {
-     "nom": "Cerámica Alba",
-     "titre": "Piezas hechas a mano",
-     "bouton": "tienda"
-    },
-    "val": {
-     "nom": "Ceràmica Alba",
-     "titre": "Peces fetes a mà",
-     "bouton": "tienda"
-    },
-    "en": {
-     "nom": "Alba Ceramics",
-     "titre": "Handmade pottery",
-     "bouton": "tienda"
-    },
-    "fr": {
-     "nom": "Céramique Alba",
-     "titre": "Pièces faites main",
-     "bouton": "tienda"
-    }
    },
    "publie": true
   },
@@ -342,7 +172,7 @@
    "type": "file",
    "publication": "2026-10-08",
    "file": "_tools/queue/article_web_varios_idiomas.json",
-   "priorite": 2,
+   "priorite": 1,
    "titre": "Web en varios idiomas para tu negocio en España: cuándo compensa y cómo hacerlo bien",
    "url": "https://webautonomos.es/blog/es/web-en-varios-idiomas",
    "resume": "Clientes extranjeros, turistas o una comunidad con lengua cooficial: tarde o temprano te preguntas si tu web necesita otro idioma. Aquí verás cuándo merece la pena, cómo organizar la web para que Google entienda cada versión, qué traducir y qué errores evitar, citando la documentación oficial de Google con la fecha de la versión consultada.",
@@ -522,11 +352,182 @@
    }
   },
   {
+   "id": "file-wix-o-wordpress",
+   "type": "file",
+   "publication": "2026-10-01",
+   "file": "_tools/queue/article_wix_o_wordpress.json",
+   "priorite": 1,
+   "titre": "Wix o WordPress: cuál elegir para tu web de autónomo en 2026",
+   "url": "https://webautonomos.es/blog/es/wix-o-wordpress",
+   "resume": "Quieres una web para tu negocio y siempre salen los mismos dos nombres: Wix y WordPress. Con Wix alquilas una herramienta completa en la que todo viene resuelto. Con WordPress usas un software libre, con la libertad y el mantenimiento que eso implica. Aquí verás cuánto cuesta cada uno a tres años, qué te pide y a qué tipo de autónomo le encaja. Todos los precios se han comproba",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/wix-o-wordpress.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/wix-o-wordpress",
+     "spa": "es/wix-o-wordpress"
+    },
+    {
+     "html": "blog/val/wix-o-wordpress.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/wix-o-wordpress",
+     "spa": "val/wix-o-wordpress"
+    },
+    {
+     "html": "blog/en/wix-or-wordpress.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/wix-or-wordpress",
+     "spa": "en/wix-or-wordpress"
+    },
+    {
+     "html": "blog/fr/wix-ou-wordpress.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/wix-ou-wordpress",
+     "spa": "fr/wix-ou-wordpress"
+    }
+   ],
+   "statut": "fait",
+   "scene": "Une céramiste indépendante, dans son atelier, compare deux croquis de mise en page posés côte à côte sur son établi (blocs gris, aucun texte), un crayon à la main ; pots en terre, tours de potier et lumière de fin d'après-midi.",
+   "fichier": "elegir-herramienta-web-taller-ceramica",
+   "v": 2,
+   "fait_le": "2026-09-29T11:10:34",
+   "textes": {
+    "es": {
+     "alt": "Una ceramista trabaja una pieza de barro en su taller, rodeada de estanterías con piezas y utensilios.",
+     "legende": "Una artesana da forma a una pieza de cerámica en su taller."
+    },
+    "val": {
+     "alt": "Una ceramista treballa una peça de fang al seu taller, envoltada de prestatgeries amb peces i utensilis.",
+     "legende": "Una artesana dona forma a una peça de ceràmica al seu taller."
+    },
+    "en": {
+     "alt": "A ceramic artist shapes a clay vessel in her studio, surrounded by shelves of pottery and tools.",
+     "legende": "A ceramic artist shapes a vessel by hand in her workshop."
+    },
+    "fr": {
+     "alt": "Une céramiste façonne une pièce en argile dans son atelier, entourée d’étagères de poteries et d’outils.",
+     "legende": "Une artisane façonne à la main une pièce en céramique dans son atelier."
+    }
+   },
+   "site": "d'une céramiste (boutique d'atelier avec photos de poteries)",
+   "maquette": {
+    "es": {
+     "statut": "fait",
+     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T10:22:13",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una ceramista, con fotos de sus piezas y diseño adaptado a ambas pantallas.",
+       "legende": "Ejemplo de web de cerámica artesanal en ordenador y móvil."
+      }
+     }
+    },
+    "val": {
+     "statut": "fait",
+     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-val",
+     "v": 1,
+     "fait_le": "2026-09-30T10:27:23",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran una web de cerámica artesanal, con fotografías de piezas y diseño adaptable a ambas pantallas.",
+       "legende": "Ejemplo de web de cerámica artesanal en ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren una web de ceràmica artesanal, amb fotografies de peces i disseny adaptable a les dues pantalles.",
+       "legende": "Exemple de web de ceràmica artesanal en ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display a handmade ceramics website with pottery photos and a responsive layout.",
+       "legende": "Example of a handmade ceramics website on desktop and mobile."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent un site de céramique artisanale avec des photos de poteries et une mise en page adaptée.",
+       "legende": "Exemple de site de céramique artisanale sur ordinateur et mobile."
+      }
+     }
+    },
+    "en": {
+     "statut": "fait",
+     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T10:29:04",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la web de una ceramista, con fotografías de piezas artesanales y diseño adaptable.",
+       "legende": "Ejemplo de tienda de cerámica artesanal en ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la web d'una ceramista, amb fotografies de peces artesanals i disseny adaptable.",
+       "legende": "Exemple de botiga de ceràmica artesanal en ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display a ceramic artist's website with handmade pottery photos and a responsive layout.",
+       "legende": "Example of a handmade ceramics shop on desktop and mobile."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'une céramiste avec des photos de poteries artisanales.",
+       "legende": "Exemple de boutique de céramique artisanale sur ordinateur et mobile."
+      }
+     }
+    },
+    "fr": {
+     "statut": "fait",
+     "fichier": "elegir-herramienta-web-taller-ceramica-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T10:36:53",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran una web de cerámica artesanal, con fotografías de piezas y diseño adaptable a ambas pantallas.",
+       "legende": "Ejemplo de tienda de cerámica artesanal en ordenador y móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren una web de ceràmica artesanal, amb fotografies de peces i disseny adaptable a les dues pantalles.",
+       "legende": "Exemple de botiga de ceràmica artesanal en ordinador i mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display a handmade ceramics website with pottery photos and a responsive layout.",
+       "legende": "Example of a handmade ceramics shop on desktop and mobile."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le site d'une céramiste avec des photos de poteries artisanales.",
+       "legende": "Exemple de boutique de céramique artisanale sur ordinateur et mobile."
+      }
+     }
+    }
+   },
+   "ecrans": {
+    "es": {
+     "nom": "Cerámica Alba",
+     "titre": "Piezas hechas a mano",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Ceràmica Alba",
+     "titre": "Peces fetes a mà",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Alba Ceramics",
+     "titre": "Handmade pottery",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Céramique Alba",
+     "titre": "Pièces faites main",
+     "bouton": "tienda"
+    }
+   },
+   "publie": true
+  },
+  {
    "id": "file-aviso-legal-privacidad-cookies-web",
    "type": "file",
    "publication": "2026-10-12",
    "file": "_tools/queue/article_aviso_legal_privacidad_cookies.json",
-   "priorite": 3,
+   "priorite": 2,
    "titre": "Aviso legal, privacidad y cookies: lo que tu web debe mostrar por ley en España (2026)",
    "url": "https://webautonomos.es/blog/es/aviso-legal-privacidad-cookies-web",
    "resume": "Tu web es tu escaparate, pero también un espacio regulado. Si eres autónomo o tienes un pequeño negocio en España, la ley te pide: mostrar quién está detrás de la página, explicar qué haces con los datos de quien te escribe y pedir permiso antes de usar ciertas cookies. Repasamos el aviso legal, la política de privacidad y la de cookies, con el artículo exacto de cada obligació",
@@ -709,7 +710,7 @@
    "type": "file",
    "publication": "2026-10-15",
    "file": "_tools/queue/article_facturar_clientes_extranjeros.json",
-   "priorite": 4,
+   "priorite": 3,
    "titre": "Cómo facturar a clientes de la UE y del Reino Unido siendo autónomo en España",
    "url": "https://webautonomos.es/blog/es/facturar-clientes-otros-paises-ue-reino-unido",
    "resume": "Un cliente en Francia, Bélgica o el Reino Unido puede contratarte sin salir de su oficina. Las dudas llegan con la factura: ¿lleva IVA?, ¿qué mención pongo?, ¿hay algún modelo más? Esta guía resume las reglas vigentes en septiembre de 2026 para un autónomo establecido en la península o en Baleares que presta servicios, no bienes, a clientes de la UE o del Reino Unido.",
@@ -2513,7 +2514,7 @@
    "priorite": 32,
    "titre": "Un site internet pas cher pour indépendants et artisans, à 15 €/mois tout compris",
    "url": "https://webautonomos.es/fr/",
-   "resume": "Nous créons votre site professionnel avec vos services, vos photos et vos avis Google, et nous vous l'envoyons en 24 heures — avant que vous ne payiez quoi que ce soit. En France comme en Espagne.",
+   "resume": "Nous créons votre site web professionnel à partir de vos services, de vos photos et de vos avis Google, et nous vous l'envoyons en 24 heures — avant que vous ne payiez quoi que ce soit. En France comme en Espagne.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -3603,7 +3604,7 @@
    "priorite": 41,
    "titre": "Blog para autónomos",
    "url": "https://webautonomos.es/blog/",
-   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 230 artículos disponibles.",
+   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 234 artículos disponibles.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -3804,7 +3805,7 @@
    "priorite": 101,
    "titre": "Cómo aparecer en Google Maps: Guía completa para autónomos",
    "url": "https://webautonomos.es/blog/es/como-aparecer-google-maps-autonomos",
-   "resume": "Google Maps es la herramienta más poderosa para que los clientes locales te encuentren. En esta guía completa te explicamos cómo funciona el sistema, cómo crear tu perfil de empresa y cómo optimizarlo para atraer más clientes a tu negocio.",
+   "resume": "Cuando alguien hace una búsqueda como \"electricista cerca de mí\" o \"fontanero urgente Valencia\", Google Maps le enseña los negocios de la zona con su dirección, su teléfono y sus reseñas. Aparecer en Google Maps es gratis, pero exige crear tu perfil de empresa, verificar tu negocio y mantenerlo actualizado. Te explicamos los pasos para añadir tu negocio a Google Maps y mejorar…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -3935,7 +3936,7 @@
    "priorite": 102,
    "titre": "SEO Local: Qué es y por qué es clave para autónomos y empresas de servicios",
    "url": "https://webautonomos.es/blog/es/seo-local-que-es-autonomos",
-   "resume": "Si eres autónomo, tienes una empresa de servicios o gestionas un negocio local, el SEO local es tu mejor aliado para conseguir más clientes potenciales. En esta guía completa te explicamos qué es, cómo funciona y cómo puede ayudarte a destacar en internet sin necesidad de gran inversión en publicidad.",
+   "resume": "Si eres autónomo, tienes una empresa de servicios o gestionas un negocio local, el SEO local te permite aparecer en Google cuando los clientes de tu zona buscan lo que ofreces. En esta guía te explicamos qué es el SEO local, cómo funciona y qué estrategia seguir, con situaciones típicas de Valencia, Alicante, Elda y Elche, sin depender de grandes inversiones en publicidad.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -4329,7 +4330,7 @@
    "priorite": 105,
    "titre": "Cómo Configurar WhatsApp Business Gratis: Guía Completa para Autónomos 2026",
    "url": "https://webautonomos.es/blog/es/configurar-whatsapp-business-gratis-autonomos",
-   "resume": "WhatsApp Business es la solución de mensajería profesional que todo autónomo debería usar para mejorar la comunicación con los clientes. Si todavía usas WhatsApp personal, estás perdiendo funciones que pueden transformar tu negocio.",
+   "resume": "WhatsApp Business es la aplicación de mensajería pensada para que autónomos, pymes y pequeñas empresas atiendan al cliente con una imagen profesional. Si todavía usas tu WhatsApp personal para el trabajo, puedes mejorar la comunicación con un perfil de empresa, mensajes automáticos y herramientas para organizar los chats, sin cambiar la forma en que hablas con tus clientes.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -4591,7 +4592,7 @@
    "priorite": 107,
    "titre": "Palabras clave locales: cómo elegir las que traen clientes a tu negocio",
    "url": "https://webautonomos.es/blog/es/palabras-clave-locales-como-elegir",
-   "resume": "Si eres autónomo en la Comunidad Valenciana y quieres que tus clientes te encuentren en Google, todo empieza por elegir las palabras clave locales correctas. No sirve de nada tener la mejor web del mundo si nadie la encuentra cuando busca 'fontanero en Elda' o 'dentista en Alicante'.",
+   "resume": "Si eres autónomo en la Comunidad Valenciana y quieres que tus clientes te encuentren en Google, el SEO local empieza por elegir bien las palabras clave locales. Poco importa tener una buena web si nadie la encuentra cuando alguien busca «fontanero en Elda» o «dentista en Alicante». En esta guía aprenderás, paso a paso, qué son, cómo encontrarlas, dónde colocarlas y cómo medir…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -4722,7 +4723,7 @@
    "priorite": 108,
    "titre": "Qué debe tener la web de un electricista: guía práctica 2026",
    "url": "https://webautonomos.es/blog/es/pagina-web-para-electricistas",
-   "resume": "Si trabajas como electricista autónomo en la Comunidad Valenciana, sabes que el boca a boca ya no basta: tus clientes buscan en Google «electricista en Valencia» o «electricista urgente Alicante» antes de llamar a nadie. Una buena página web para electricistas es lo que decide si te encuentran a ti o a la empresa de al lado. En esta guía repasamos qué necesita, cuánto cuesta y…",
+   "resume": "Si trabajas como electricista autónomo en la Comunidad Valenciana, sabes que el boca a boca ya no basta: antes de llamar a nadie, tus clientes buscan en Google «electricista en Valencia» o «urgencias eléctricas Alicante». Una buena página web para electricistas decide si te encuentran a ti o a la empresa de al lado.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -4853,7 +4854,7 @@
    "priorite": 109,
    "titre": "10 trucos para optimizar tu ficha de Google Business Profile",
    "url": "https://webautonomos.es/blog/es/optimizar-ficha-google-business-profile",
-   "resume": "Tu ficha de Google Business Profile (antes Google My Business) es, junto con tu web, la herramienta mas potente para atraer clientes locales. Pero tener una ficha creada no basta: muchos negocios locales ni siquiera han completado toda la información. Si quieres optimizar Google Business Profile para que destaque sobre tu competencia en Valencia, Alicante, Elda o Elche, aqui…",
+   "resume": "Tu ficha de Google Business Profile (antes Google My Business) muestra tu negocio en Google Maps y en la Búsqueda. Si quieres optimizar Google Business Profile para que los clientes de Valencia, Alicante, Elda o Elche te encuentren, estos diez trucos de SEO local te guían paso a paso.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -4984,7 +4985,7 @@
    "priorite": 110,
    "titre": "Como posicionar tu web en Google si eres un negocio local",
    "url": "https://webautonomos.es/blog/es/como-posicionar-web-en-google-local",
-   "resume": "Tienes tu web, tienes tu ficha de Google, pero sigues sin aparecer cuando alguien busca tu servicio en tu ciudad. El problema no es que Google no sepa que existes: es que tu web no esta optimizada para posicionar en Google local. En esta guia te damos la estrategia paso a paso, con tecnicas de on-page SEO especificas para negocios locales en la Comunidad Valenciana, para que…",
+   "resume": "Tienes tu ficha de Google y tu página, pero sigues sin aparecer cuando alguien busca en internet lo que ofreces en tu ciudad. A menudo el problema no es que Google no sepa que existes, sino que tu presencia online no deja claro qué haces ni dónde. Esta guía te explica cómo posicionar tu web en Google como negocio local, con ejemplos de Valencia, Alicante, Elda y Elche, para…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -5246,7 +5247,7 @@
    "priorite": 112,
    "titre": "Cómo conseguir más llamadas con la web de tu fontanería",
    "url": "https://webautonomos.es/blog/es/web-para-fontaneros-guia-completa",
-   "resume": "Si eres fontanero autonomo en la Comunidad Valenciana y todavia no tienes una web para fontaneros que funcione de verdad, estas perdiendo llamadas cada dia. Cuando alguien tiene una fuga de agua en Valencia o necesita cambiar una caldera en Alicante, lo primero que hace es buscar en Google. Y si no apareces, el trabajo se lo lleva otro. En esta guia te mostramos exactamente…",
+   "resume": "Si eres fontanero en la Comunidad Valenciana y todavía no tienes una web para fontaneros que traiga llamadas a tu negocio, puede que estés perdiendo llamadas cada día. Cuando alguien tiene una fuga en Valencia o necesita cambiar la caldera en Alicante, busca en internet desde el móvil y llama a quien encuentra y le inspira confianza. En esta guía te explicamos qué debe tener…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -5377,7 +5378,7 @@
    "priorite": 113,
    "titre": "Google Posts: como publicar en tu ficha de Google para atraer mas clientes",
    "url": "https://webautonomos.es/blog/es/google-posts-publicar-fiche-google",
-   "resume": "Sabias que puedes publicar contenido directamente en tu ficha de Google y que aparece cuando alguien busca tu negocio? Los Google Posts son una de las funciones mas potentes y menos utilizadas de Google Business Profile. Si eres autonomo en Valencia, Alicante, Elda o Elche, publicar en tu ficha de Google al menos una vez a la semana puede multiplicar las interacciones con tu…",
+   "resume": "Cuando alguien va a buscar tu negocio en Google, puede ver tus novedades, ofertas y eventos sin entrar en tu página. Son las publicaciones de tu ficha, conocidas como Google Posts. Si eres autónomo en Valencia, Alicante, Elda o Elche, un post bien pensado cuenta en pocas líneas qué haces.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -5508,7 +5509,7 @@
    "priorite": 114,
    "titre": "Que es el Map Pack de Google y como conseguir que tu negocio aparezca",
    "url": "https://webautonomos.es/blog/es/que-es-map-pack-google-como-salir",
-   "resume": "Si alguna vez has buscado \"fontanero en Valencia\" o \"peluqueria Alicante\" en Google, habras visto un bloque con un mapa y tres negocios destacados justo arriba de todos los resultados. Eso es el Map Pack de Google, y se lleva buena parte de los clics en las búsquedas locales. Para un autonomo en la Comunidad Valenciana, aparecer ahi significa recibir mas llamadas, mas visitas…",
+   "resume": "Si buscas «fontanero en Valencia» o «peluquería en Alicante» en Google, verás un mapa con tres negocios en la parte superior de los resultados. Es el Map Pack de Google, también llamado local pack. Para un autónomo de la Comunidad Valenciana, salir ahí puede traducirse en más llamadas, más visitas y más clientes. En esta guía te explicamos qué es el pack local, qué decide…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -5639,7 +5640,7 @@
    "priorite": 115,
    "titre": "Email marketing para autonomos: empieza sin gastar un euro",
    "url": "https://webautonomos.es/blog/es/email-marketing-autonomos-guia-basica",
-   "resume": "El email marketing para autonomos es una de las herramientas mas rentables y menos aprovechadas del marketing digital. Mientras todo el mundo habla de redes sociales y TikTok, el email sigue funcionando: escribir a tus propios clientes cuesta muy poco y llega directamente a quien ya te conoce. Y lo mejor es que puedes empezar completamente gratis. Si eres fontanero en…",
+   "resume": "El email marketing para autónomos consiste en escribir de forma planificada a personas que ya te conocen o que te han pedido recibir tus correos: clientes, contactos y suscriptores. Es un canal digital propio y puedes empezar sin gastar un euro, porque varias herramientas de envío ofrecen un plan gratuito con límites de contactos y de envíos. Si eres fontanero en Valencia,…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -5770,7 +5771,7 @@
    "priorite": 116,
    "titre": "Qué debe tener la web de una clínica dental o de fisioterapia",
    "url": "https://webautonomos.es/blog/es/web-para-clinica-dental-fisioterapeuta",
-   "resume": "Si eres dentista o fisioterapeuta autonomo en la Comunidad Valenciana, probablemente te has preguntado si realmente necesitas una web para clinica dental o fisioterapia. La respuesta corta: si, y mas que nunca. Hoy, muchos pacientes buscan a su dentista o fisioterapeuta en internet antes de pedir cita. Si no tienes presencia digital, esos pacientes eligen a tu competencia en…",
+   "resume": "Antes de decidirse, muchas personas buscan en internet una clínica dental o una consulta de fisioterapia, comparan opiniones y miran su web. Si trabajas por tu cuenta en la Comunidad Valenciana, esa primera visita influye en que te llamen o sigan buscando. Aquí tienes qué debe incluir, cuánto cuesta y cómo conseguir que te encuentren en Valencia, Alicante o Elche.",
    "marche": "europe",
    "sante": true,
    "pages": [
@@ -5902,7 +5903,7 @@
    "priorite": 117,
    "titre": "Como responder a resenas negativas en Google sin perder clientes",
    "url": "https://webautonomos.es/blog/es/responder-resenas-negativas-google",
-   "resume": "Acabas de abrir Google y lo ves: una resena de 1 estrella en tu ficha de negocio. El estomago se te encoge. Cada dia, miles de autonomos en Valencia, Alicante, Elda y Elche se enfrentan a resenas negativas en Google. La buena noticia es que una mala opinion no tiene por que ser el fin del mundo. De hecho, si sabes responder a resenas negativas en Google de forma profesional,…",
+   "resume": "Abres Google y lo ves: una reseña de 1 estrella en el perfil de tu negocio. Se te encoge el estómago y te entran ganas de responder al instante. Respira: una crítica no es el fin del mundo. Si sabes responder a las reseñas negativas de Google con calma y de forma profesional, puedes mostrar a los clientes de Valencia, Alicante, Elda o Elche cómo trabajas y cómo tratas a quien…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -6033,7 +6034,7 @@
    "priorite": 118,
    "titre": "Schema LocalBusiness: que es y por que tu web lo necesita",
    "url": "https://webautonomos.es/blog/es/schema-local-business-que-es-como-implementar",
-   "resume": "Si tienes un negocio local en la Comunidad Valenciana y quieres que Google entienda perfectamente quien eres, donde estas y que ofreces, necesitas conocer Schema LocalBusiness. Son esos datos estructurados invisibles que le dicen a Google en su propio idioma todo sobre tu negocio. No los ven tus clientes, pero marcan la diferencia entre aparecer con un resultado plano en…",
+   "resume": "Si tienes un negocio local y quieres que Google entienda quién eres, dónde estás y qué ofreces, conviene conocer Schema LocalBusiness, una pieza del SEO técnico. Son datos estructurados que tus clientes no ven, pero que describen tu negocio en un formato que los buscadores leen con facilidad. En esta guía te explicamos qué es, cómo se redacta en JSON-LD, dónde colocarlo en tu…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -6164,7 +6165,7 @@
    "priorite": 119,
    "titre": "Cuanto deberia gastar un autonomo en marketing digital?",
    "url": "https://webautonomos.es/blog/es/presupuesto-marketing-digital-autonomos",
-   "resume": "Es la pregunta que todo autonomo se hace tarde o temprano: cuanto debo invertir en presupuesto de marketing digital para que mi negocio crezca? La respuesta no es un numero magico, sino una estrategia adaptada a tu situacion. Un fontanero en Elda que acaba de darse de alta no tiene las mismas necesidades que un dentista en Valencia con 10 anos de clientela. En esta guia te…",
+   "resume": "¿Cuánto debería gastar un autónomo en marketing digital? No existe una cifra válida para todos, pero sí un método para calcular tu presupuesto: fijar objetivos, elegir canales, decidir qué haces tú y qué contratas, priorizar y medir el retorno. Un fontanero de Elda que acaba de darse de alta no tiene las mismas necesidades que un dentista de Valencia con clientela fija o un…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -6295,7 +6296,7 @@
    "priorite": 120,
    "titre": "Los 7 elementos que toda web de autónomo debe tener",
    "url": "https://webautonomos.es/blog/es/que-debe-tener-web-profesional-autonomo",
-   "resume": "Tener una web está bien. Pero tener una web profesional con los elementos correctos es lo que marca la diferencia entre recibir llamadas de clientes o que tu página sea invisible. Si eres autónomo en la Comunidad Valenciana y ya diste el paso de crear tu sitio web, es hora de comprobar que incluye todo lo que un cliente necesita para confiar en ti y contactarte. En este…",
+   "resume": "¿Qué debe tener una página web profesional? Tu web es la tarjeta de presentación digital de tu empresa o negocio en internet: tiene que mostrar quién eres, qué ofrece tu negocio y cómo contactarte, y generar la confianza que convierte a un visitante en cliente. Si eres autónomo y ya tienes tu sitio web, estos 7 elementos te permiten comprobar si lo consigue.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -6557,7 +6558,7 @@
    "priorite": 122,
    "titre": "Citas locales y NAP: qué son y por qué son vitales para tu SEO",
    "url": "https://webautonomos.es/blog/es/citas-locales-nap-que-son-por-que-importan",
-   "resume": "Si trabajas tu SEO local y no has oído hablar de las citas locales NAP, estás dejando escapar una de las señales más importantes que Google usa para posicionar negocios en los resultados de búsqueda. NAP significa Name, Address, Phone (nombre, dirección y teléfono), y la coherencia de estos datos en internet es crucial para que Google confíe en tu negocio. En esta guía te…",
+   "resume": "Si trabajas el SEO local de tu negocio, te encontrarás con las citas locales: menciones de tu nombre, tu dirección y tu teléfono (el NAP) que aparecen fuera de tu web, en directorios, redes sociales o artículos de prensa. Google las cruza con tu ficha de Google Business Profile y con tu sitio web para comprobar que tu negocio existe, y de ahí depende en parte tu…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -6688,7 +6689,7 @@
    "priorite": 123,
    "titre": "Digitalización para autónomos en España: por dónde empezar en 2026",
    "url": "https://webautonomos.es/blog/es/digitalizacion-autonomos-espana-por-donde-empezar",
-   "resume": "La digitalización autónomos España ya no es una opción: es una necesidad. Si eres fontanero en Elche, electricista en Valencia, dentista en Alicante o carpintero en Elda y sigues dependiendo solo del boca a boca, estás dejando escapar oportunidades cada día. La buena noticia es que digitalizar tu negocio en 2026 es más fácil y barato que nunca, especialmente gracias a ayudas…",
+   "resume": "La digitalización de los autónomos en España no es cosa de grandes empresas: consiste en usar soluciones digitales sencillas para impulsar tu negocio: que te encuentren, que contestes antes y que pierdas menos horas en papeleo. Si eres fontanero en Elche, electricista en Valencia, dentista en Alicante o carpintero en Elda y todavía dependes del boca a boca, esta guía te…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -6809,7 +6810,7 @@
    "priorite": 124,
    "titre": "Qué debe tener la web de un carpintero o de una reforma",
    "url": "https://webautonomos.es/blog/es/web-para-carpinteros-reformas",
-   "resume": "Si eres carpintero o tienes una empresa de reformas en la Comunidad Valenciana, sabes que tu mejor tarjeta de visita es el trabajo bien hecho. Pero si ese trabajo no se ve online, estas perdiendo clientes cada dia. Una web para carpinteros y reformas bien disenada convierte tus proyectos terminados en solicitudes de presupuesto constantes. En esta guia te explicamos…",
+   "resume": "Si eres carpintero o tienes una empresa de reformas en la Comunidad Valenciana, tu carta de presentación es el trabajo bien hecho. Pero si ese trabajo no se ve en internet, quien busca un carpintero en Elda, Elche o Alicante no llega a conocerte. Una página web profesional de carpintería reúne tus servicios, tus proyectos terminados y una forma sencilla de pedir presupuesto.…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -6952,7 +6953,7 @@
    "priorite": 125,
    "titre": "Fotos y videos en tu ficha de Google: qué subir y por qué importa",
    "url": "https://webautonomos.es/blog/es/fotos-videos-ficha-google-importancia",
-   "resume": "Tu ficha de Google Business Profile es tu escaparate digital. Y como en cualquier escaparate, lo que se ve es lo que vende. Las fotos y videos en tu ficha de Google no son un complemento decorativo: son la diferencia entre que un cliente te llame a ti o a tu competencia. Una ficha con fotos reales y actualizadas transmite confianza desde el primer vistazo. Si eres autonomo en…",
+   "resume": "Cuando alguien busca un negocio local como el tuyo en Google Maps, las fotografías de tu ficha de Google pueden ser lo primero que ve. Te explicamos qué fotos y vídeos conviene incluir en Google Business Profile, cómo reaccionar ante lo que añaden tus clientes y qué errores evitar.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -7226,7 +7227,7 @@
    "priorite": 127,
    "titre": "Los 10 errores de marketing digital que cometen los autonomos (y como evitarlos)",
    "url": "https://webautonomos.es/blog/es/errores-marketing-digital-autonomos",
-   "resume": "Carpinteros en Elda, electricistas en Alicante, dentistas en Valencia, fontaneros en Elche: en la Comunidad Valenciana, muchos autónomos repiten los mismos errores de marketing digital una y otra vez. Errores que cuestan clientes, tiempo y dinero. La buena noticia es que todos tienen solucion, y en muchos casos es mas sencilla de lo que imaginas. Este articulo es un recorrido…",
+   "resume": "Carpinteros en Elda, electricistas en Alicante, dentistas en Valencia, fontaneros en Elche: en la Comunidad Valenciana se repiten una y otra vez los mismos errores de marketing digital, y cuestan clientes, tiempo y dinero. La buena noticia es que todos tienen arreglo, y a menudo es más sencillo de lo que imaginas. Estos son diez, agrupados por tema y con una forma concreta de…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -7631,7 +7632,7 @@
    "priorite": 130,
    "titre": "Google Ads para autónomos: guía básica sin tirar dinero",
    "url": "https://webautonomos.es/blog/es/google-ads-autonomos-guia-basica",
-   "resume": "Google Ads puede ser la forma más rápida de conseguir clientes para tu negocio. O la más rápida de tirar dinero si no sabes lo que haces. La diferencia está en la configuración. En esta guía te explicamos cómo crear tu primera campaña de Google Ads como autónomo, con un presupuesto mínimo y sin cometer los errores que hacen perder dinero a tantos principiantes.",
+   "resume": "Google Ads permite que tu negocio aparezca en los resultados de búsqueda justo cuando alguien busca lo que ofreces. Bien configurado, puede atraer clientes potenciales sin esperar a que tu web se posicione; mal configurado, solo consume dinero. Esta guía de Google Ads está pensada para autónomos y pymes: explica cómo crear tu primera campaña, qué palabras clave elegir, cómo…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -7774,7 +7775,7 @@
    "priorite": 131,
    "titre": "Páginas web para tatuadores y estudios de tattoo: lo que necesitas",
    "url": "https://webautonomos.es/blog/es/web-para-tatuadores-estudio-tattoo",
-   "resume": "Si eres tatuador, tu portfolio lo es todo. Instagram es genial para mostrar tu trabajo, pero no te pertenece: un cambio de algoritmo y tu visibilidad puede caer en picado de la noche a la mañana. Una web propia es tu galería permanente, tu sistema de reservas y tu carta de presentación profesional. En esta guía te explicamos qué necesita la web de un estudio de tattoo para…",
+   "resume": "En el mundo del tatuaje, tu arte habla por ti. Instagram es ideal para enseñar tus tatuajes, pero no te pertenece: un cambio en el algoritmo y tu alcance puede caer de un día para otro. Una página propia es tu galería a cualquier hora, tu carta de presentación y el lugar donde las personas encuentran cómo pedir cita. Esta guía te explica qué deben mostrar los tatuadores y…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -7905,7 +7906,7 @@
    "priorite": 132,
    "titre": "Cómo saber si tu web funciona: métricas básicas para autónomos",
    "url": "https://webautonomos.es/blog/es/medir-resultados-web-google-analytics",
-   "resume": "Tienes una web pero no sabes si está funcionando. No recibes llamadas, no sabes cuántas visitas tienes ni de dónde vienen. Tranquilo: con 5 métricas básicas y 10 minutos a la semana puedes saber exactamente qué está pasando y qué mejorar. En esta guía te explicamos cómo configurar Google Analytics 4 sin tecnicismos y qué números mirar realmente para tomar decisiones que…",
+   "resume": "Tienes una web, pero no sabes si funciona: no sabes cuántas personas entran, cómo te encuentran ni si alguna acaba llamándote. Las métricas web responden a esas preguntas con datos. Aquí verás cuáles mirar en Google Analytics 4, en Search Console y en la ficha de Google de tu negocio, cómo configurarlo todo sin tecnicismos y cómo revisarlo en 10 minutos a la semana para tomar…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -8276,7 +8277,7 @@
    "priorite": 135,
    "titre": "Páginas web para podólogos y clínicas de pies: la guía completa",
    "url": "https://webautonomos.es/blog/es/web-para-podologos-clinica-pies",
-   "resume": "Tu clínica de pies funciona bien con boca a boca, pero muchos pacientes nuevos te buscan en Google antes de coger el teléfono. Si no te encuentran online, simplemente eligen al podólogo que sí tiene web. En esta guía te explicamos qué debe tener una web de podología eficaz, cómo presentar tus tratamientos sin asustar al paciente y por qué las reservas online pueden ayudarte a…",
+   "resume": "Tu clínica de pies funciona con el boca a boca, pero muchos posibles pacientes te buscarán en Google antes de llamar. Una página web profesional para podólogos reúne lo que necesitan saber: qué ofreces, quién les atiende, dónde estás y cómo pedir cita. Esta guía está pensada para ayudarte a decidir qué mostrar y cómo explicar los tratamientos sin prometer resultados.",
    "marche": "europe",
    "sante": true,
    "pages": [
@@ -8671,7 +8672,7 @@
    "priorite": 138,
    "titre": "Web para centros de estética: cómo llenar tu agenda de citas",
    "url": "https://webautonomos.es/blog/es/web-para-centros-estetica-belleza",
-   "resume": "Un centro de estética entra por los ojos, y hoy los ojos de tus clientas están en Google y en el móvil. Antes de reservar un tratamiento, buscan tu nombre, miran tus fotos, leen tus reseñas y comprueban si pueden pedir cita fácilmente. Si no tienes una web profesional, esa clienta acaba en el centro de al lado. En esta guía te explicamos cómo una web bien hecha llena tu agenda…",
+   "resume": "Un centro de estética entra por los ojos, y los ojos de tus clientes están en Google y en internet. Antes de reservar buscan tu nombre, miran tus fotos, leen tus reseñas y comprueban si pueden pedir cita. Una web para centros de estética reúne todo eso en un solo sitio. Esta guía te explica qué mostrar y cómo contarlo con claridad.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -8802,7 +8803,7 @@
    "priorite": 139,
    "titre": "Web para nutricionistas: cómo llenar tu agenda de pacientes",
    "url": "https://webautonomos.es/blog/es/web-para-nutricionistas-dietistas",
-   "resume": "Cada vez más personas buscan un nutricionista en Google antes de pedir cita, y muchas consultas ya se hacen online. Antes de confiarte su alimentación y su salud, tus futuros pacientes quieren saber quién eres, qué formación tienes y cómo trabajas. Si no tienes una web profesional, esa confianza se la lleva otro. En esta guía te explicamos por qué un nutricionista necesita una…",
+   "resume": "Muchas personas buscan un nutricionista en internet antes de pedir cita, incluso las que prefieren una videoconsulta. Antes de confiarte su alimentación, tus futuros pacientes quieren saber quién eres, qué titulación tienes y cómo trabajas. Si tu página web no responde a esas dudas, esa confianza se la lleva otro. Esta guía explica qué debe tener la web de nutricionistas y…",
    "marche": "europe",
    "sante": true,
    "pages": [
@@ -8934,7 +8935,7 @@
    "priorite": 140,
    "titre": "Web para entrenadores personales: cómo captar clientes",
    "url": "https://webautonomos.es/blog/es/web-para-entrenadores-personales",
-   "resume": "Un entrenador personal vende resultados y confianza, y hoy tus futuros clientes te buscan en Google e Instagram antes de contratarte. Quieren ver tu método, tus transformaciones y saber si encajas con lo que buscan. Sin una web profesional, esa decisión se toma sin ti. En esta guía te explicamos por qué un entrenador personal necesita una web propia y cómo convertirla en una…",
+   "resume": "Un entrenador personal vende confianza antes que sesiones. Quien busca entrenamiento personal te encuentra en Google o Instagram y elige a quien le transmite seguridad. Aquí verás qué incluir en tu web, cómo presentar tus servicios y cómo recibir reservas.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -9065,7 +9066,7 @@
    "priorite": 141,
    "titre": "Web para clínicas veterinarias: confianza y nuevos pacientes",
    "url": "https://webautonomos.es/blog/es/web-para-clinicas-veterinarias",
-   "resume": "Cuando la mascota de alguien se pone enferma, lo primero que hace su dueño es buscar un veterinario en Google, muchas veces con urgencia. Antes de llevar a su animal, quiere saber qué servicios ofreces, dónde estás, tus horarios y si otros confían en ti. Si tu clínica no tiene una web profesional, ese cliente acaba en la de al lado. En esta guía te explicamos por qué una…",
+   "resume": "Cuando la mascota de alguien se pone enferma, muchos dueños buscan un veterinario en Google, a menudo con prisa. Antes de llevar a su animal quieren saber qué servicios ofreces, dónde estás, cuándo abres y si otros clientes confían en ti. Si tu clínica veterinaria no tiene una página web profesional, esa persona acaba en la de al lado. Esta guía explica cómo debe ser la web de…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -9327,7 +9328,7 @@
    "priorite": 143,
    "titre": "Cómo construir tu marca personal como autónomo",
    "url": "https://webautonomos.es/blog/es/marca-personal-para-autonomos",
-   "resume": "Como autónomo, tú eres tu negocio. La gente no contrata a una empresa anónima: contrata a una persona en la que confía. Esa confianza es tu marca personal, y hoy se construye, sobre todo, online. Antes de trabajar contigo, tus clientes te buscan, leen sobre ti y deciden. En esta guía te explicamos qué es la marca personal, por qué es tu mejor activo como autónomo y cómo…",
+   "resume": "Como autónomo, tú eres tu negocio: la gente no contrata a una empresa anónima, contrata a una persona en la que confía. Esa confianza es tu marca personal, y hoy se construye sobre todo en internet. Antes de trabajar contigo, tus clientes te buscan, leen sobre ti y deciden. En esta guía te explicamos qué es la marca personal para los autónomos y cómo crear tu marca paso a…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -9853,7 +9854,7 @@
    "priorite": 147,
    "titre": "¿Contratar o automatizar?",
    "url": "https://webautonomos.es/blog/es/contratar-o-automatizar",
-   "resume": "La pregunta llega en cuanto lo administrativo desborda: ¿hay que contratar a alguien, o buscar una herramienta? Casi siempre está mal planteada, porque los dos costes se conocen mal. Un empleado cuesta más de lo que dice la nómina. Una automatización cuesta menos de lo que se teme, pero solo hace una parte del trabajo. Aquí están los números de ambos.",
+   "resume": "La pregunta llega en cuanto el trabajo administrativo desborda: ¿hay que contratar a alguien o buscar una herramienta? Si eres autónomo o llevas una microempresa, esta duda se repite cada vez que la actividad crece. Casi siempre está mal planteada, porque se compara un sueldo con una cuota y se olvida lo que cada opción hace de verdad. Un empleado cuesta más de lo que dice la…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -9985,7 +9986,7 @@
    "priorite": 148,
    "titre": "Reservas online para autónomos en 2026: cómo automatizar tus citas",
    "url": "https://webautonomos.es/blog/es/reservas-online-autonomos-2026",
-   "resume": "En 2026 seguir gestionando la agenda con WhatsApp y llamadas es perder dinero y tiempo. El teléfono suena mientras atiendes a un cliente, llegan mensajes a las once de la noche y, sobre todo, muchas ausencias se deben simplemente a que el cliente se olvidó de la cita. La buena noticia: implementar reservas online es más fácil y barato que nunca. En esta guía te explicamos paso…",
+   "resume": "Gestionar la agenda con llamadas y mensajes quita tiempo y se escapan reservas: el teléfono suena mientras atiendes a un cliente, llegan mensajes por la noche y alguien olvida su cita. Un sistema de reservas online permite que tus clientes elijan su hora de forma sencilla y te devuelve tiempo para tu trabajo. En esta guía verás qué opciones tienes para automatizar tus citas,…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -10248,7 +10249,7 @@
    "priorite": 150,
    "titre": "Cuánto cuesta automatizar: la fórmula, no el rango",
    "url": "https://webautonomos.es/blog/es/cuanto-cuesta-automatizar-un-proceso-formula",
-   "resume": "Busca «cuánto cuesta automatizar un proceso» y verás lo mismo en todas partes: rangos que van de 1.500 a 60.000 euros, una lista de factores que mueven el precio, y una frase final que lo resume todo. El importe exacto sale de una auditoría previa. Es verdad. Y no te sirve de nada cuando lo que necesitas es saber si te compensa antes de pedir cita con nadie.",
+   "resume": "Busca «cuánto cuesta automatizar un proceso» y verás lo mismo en todas partes: rangos que van de 1.500 a 60.000 euros, una lista de factores que mueven el precio, y una frase final que lo resume todo. El importe exacto sale de una auditoría previa. Es verdad. Y no te sirve de nada cuando lo que necesitas es saber si te compensa antes de pedir cita con nadie. Aquí tienes otra…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -10512,7 +10513,7 @@
    "priorite": 152,
    "titre": "Automatizar sin saber programar: hasta dónde llegas tú solo",
    "url": "https://webautonomos.es/blog/es/automatizar-sin-saber-programar",
-   "resume": "«Yo de programación no tengo ni idea.» Es la primera frase de casi todas las conversaciones sobre automatización, y casi siempre sobra. En 2026 puedes montar tú solo cosas que hace cinco años exigían un desarrollador. Pero hay un límite, y el problema no es reconocerlo tarde: es no saber dónde está hasta que ya has perdido un fin de semana peleándote con una herramienta. Este…",
+   "resume": "«Yo de programación no tengo ni idea.» Es una frase que se oye a menudo cuando se habla de automatización, y casi siempre sobra. Hoy puedes automatizar sin código buena parte del trabajo repetitivo de tu negocio, también con ayuda de asistentes de IA. Pero hay un límite, y el problema es no saber dónde está hasta que has perdido un fin de semana peleándote con una herramienta.…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -10644,7 +10645,7 @@
    "priorite": 153,
    "titre": "Los 5 errores más caros al automatizar (y cómo evitarlos)",
    "url": "https://webautonomos.es/blog/es/errores-mas-caros-al-automatizar",
-   "resume": "Uno imagina que una automatización, como mucho, no sirve para nada. La realidad es menos amable: una automatización mal planteada cuesta más que no automatizar nada. Inmoviliza dinero al principio, exige mantenimiento, y sobre todo te hace confiar en un proceso que, un día, se equivoca sin avisar. Estos son los cinco errores que más cuestan. Ninguno es técnico: son errores de…",
+   "resume": "Una automatización mal planteada cuesta más que no automatizar nada. Inmoviliza dinero al principio, exige mantenimiento y, sobre todo, te hace confiar en un proceso que un día se equivoca sin avisar. En este artículo repasamos los cinco errores más caros al automatizar procesos, tanto en una empresa pequeña como en un negocio de autónomo. Ninguno es técnico: son errores de…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -10908,7 +10909,7 @@
    "priorite": 155,
    "titre": "El mantenimiento: el coste de la automatización que nadie te cuenta",
    "url": "https://webautonomos.es/blog/es/mantenimiento-coste-automatizacion",
-   "resume": "Cuando se cifra una automatización, casi siempre se mira un solo número: cuánto cuesta el montaje. Es el número que te anuncian, el que figura en el presupuesto, el que comparas. Y es el número equivocado para decidir. Una automatización no es una compra que se paga una vez: es un alquiler que se paga mientras funciona. El montaje es el primer mes, no el precio total. Este…",
+   "resume": "Cuando se cifra una automatización, casi siempre se mira un solo número: cuánto cuesta el montaje. Es el que te anuncian y el que comparas, y es el equivocado para decidir. Una automatización no es una compra que se paga una vez: es un alquiler que se paga mientras funciona. El montaje es el primer mes, no el coste total. Este artículo explica en qué consiste el mantenimiento,…",
    "marche": "europe",
    "sante": false,
    "pages": [
