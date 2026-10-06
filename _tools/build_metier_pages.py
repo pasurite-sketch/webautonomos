@@ -483,6 +483,24 @@ THERA['en'] = dict(
          '<p class="where">For a longer read on structuring this kind of site, see our blog guide on '
          '<a href="https://webautonomos.es/blog/en/website-for-psychologists-and-therapists">the essential '
          'sections of a psychology website</a>.</p>'),
+        ('tone-of-voice', 'Tone of voice', 'How should a therapy website sound?',
+         '<p class="legal-intro">Readers often look at a therapist&#8217;s website while they decide whether to get '
+         'in touch, so tone matters as much as content. Go for a welcoming, personal voice that sounds like you, and '
+         'keep every claim to what the rules allow.</p>'
+         '<div class="aud-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🙂</div>'
+         '<h3>A welcoming voice, not a sales pitch</h3>'
+         '<p>A personal, welcoming tone helps readers feel at ease. Write as you speak, avoid jargon and describe '
+         'your training, your approach and how a session works.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧩</div>'
+         '<h3>Concrete details, not slogans</h3>'
+         '<p>The length of a session, whether you meet in person or online and how to book are more useful to a '
+         'reader than slogans, and they set out what to expect.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div>'
+         '<h3>Credentials a reader can check</h3>'
+         '<p>Your training, your years in practice and, where they apply, your Colegio details are the '
+         'credentials a reader can check. List them plainly and let the details speak.</p></div>'
+         '</div>'),
         ('different-titles', 'Different titles, different rules',
          'Websites for psychologists, psychotherapists and counsellors',
          '<p class="legal-intro">The website itself works the same way for every title; what changes is which '
@@ -519,6 +537,23 @@ THERA['en'] = dict(
          '<p>Our blog has practical guides on <a href="https://webautonomos.es/blog/en/how-to-rank-your-website-'
          'in-local-google">ranking your website locally</a> and <a href="https://webautonomos.es/blog/en/'
          'optimise-your-google-business-profile">optimising your Google Business Profile</a>.</p></div>'
+         '</div>'),
+        ('directory-vs-website', 'Compare', 'Your own website or a therapist directory?',
+         '<p class="legal-intro">If you are already listed in a therapist directory, here is what changes once you '
+         'also have a website of your own.</p>'
+         '<div class="cmp-g">'
+         '<div class="cmp-c them"><h3>A directory listing</h3><ul>'
+         '<li>Your profile appears next to many others, in a layout you do not control</li>'
+         '<li>Visitors can filter by location and compare profiles at a glance</li>'
+         '<li>Enquiries often go through the platform, not straight to you</li>'
+         '<li>Your details live on someone else&#8217;s platform</li>'
+         '</ul></div>'
+         '<div class="cmp-c us"><h3>Your own website</h3><ul>'
+         '<li>You describe what you do in your own words, with your own approach and training</li>'
+         '<li>Every enquiry goes straight to your email and WhatsApp</li>'
+         '<li>Your own .es domain name, included for the first year</li>'
+         '<li>Links to your social media profiles sit on your pages</li>'
+         '</ul></div>'
          '</div>'),
     ],
     faq_t='Frequently asked questions',
@@ -559,6 +594,15 @@ THERA['en'] = dict(
           "A name, a way to reach the person and a preferred time. Not the reason for the consultation: that is "
           "health data under the GDPR, and data should be limited to what is necessary. We add a short note asking "
           "people not to share health details in the form."),
+         ("Is a template enough for a therapist's website?",
+          "What matters is that the site is clear to read, quick to use on a phone and written in your own "
+          "words, whether or not it starts from a ready-made layout. We use our own system built from components we have "
+          "already tested, and our team writes the copy around your details, which is part of how we keep the price "
+          "low. You see the demo before you pay anything."),
+         ("What should I check before choosing a web design company?",
+          "Ask to see a demo with your own details before you pay anything, and read the terms: is there a setup fee or a "
+          "minimum contract, and is the domain name registered in your name? Then check that the demo explains how you work, "
+          "shows your title and registration details as the Spanish rules require, and is simple to use on a phone."),
          ("How much does a website cost?",
           "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: "
           "design, hosting, a domain name for the first year, legal pages and one change a month. The demo is "
@@ -960,6 +1004,30 @@ MENU['en'] = dict(
          '<p class="where">For a longer read on structuring a carpentry site, see our article on '
          '<a href="https://webautonomos.es/blog/en/website-for-carpenters-and-renovations">websites for carpenters '
          'and renovation companies</a>.</p>'),
+        ('win-work', 'Winning work', 'How a professional website helps you win work',
+         '<p class="legal-intro">A homeowner choosing between carpenters will look at what each one has to show. A '
+         'professional website that looks clean and shows your finished pieces, your process and your service area '
+         'gives people what they need to trust you before they get in touch.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F9ED</div>'
+         '<h3>Walk people through the process</h3>'
+         '<p>Describe your process in a few lines: the first visit, the price, the work itself and the finish. '
+         'People feel more at ease when they know how it works, what happens on the day and what the end result '
+         'will be.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F3DB️</div>'
+         '<h3>Show that you are established</h3>'
+         '<p>Showcase your workshop, your years in business and the towns where you are based, so a homeowner sees '
+         'an established local name, not a stranger. Building trust starts before the first phone call.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F91D</div>'
+         '<h3>Say who you take on</h3>'
+         '<p>State whether you serve homeowners, interior designers or builders, and which types of work you cover, '
+         'so people can tell quickly whether you are the skilled maker they need.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4F2</div>'
+         '<h3>Make it easy to become a lead</h3>'
+         '<p>Someone who likes what they have seen should be able to reach you in seconds. A short form, a WhatsApp '
+         'button or a call button is a simple tool that helps you win leads, and a lead that reaches you quickly is '
+         'easier to turn into paid work.</p></div>'
+         '</div>'),
         ('services-carpenters', 'Your work', 'Which services should you highlight?',
          '<p class="legal-intro">Grouping your services by type of job, rather than listing everything on one '
          'long page, helps a visitor find the right section faster.</p>'
@@ -2691,6 +2759,40 @@ ELEC['fr'] = dict(
          "<p class=\"where\">Pour aller plus loin, consultez "
          "<a href=\"https://webautonomos.es/blog/fr/site-web-pour-electriciens\">notre guide : ce qu'il vous faut "
          "et par où commencer</a>.</p>"),
+        ('choisir-site', 'Avant de vous lancer', "Création de votre site internet d'électricien : comment choisir "
+         "le bon prestataire ?",
+         "<p class=\"legal-intro\">Un bon site internet d'électricien se juge sur ce que comprend son prix, sur le "
+         "délai de lancement, sur sa capacité à vous faire trouver par les clients de votre secteur et sur "
+         "l'accompagnement qui suit, pas seulement sur son apparence. Voici ce qui mérite d'être comparé avant de "
+         "choisir le prestataire qui créera votre site internet.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📦</div>"
+         "<h3>Ce que le prix comprend</h3>"
+         "<p>Conception, hébergement, nom de domaine et mentions légales : vérifiez ce qui est compris dans le prix "
+         "d'un site d'électricien, et ce qui se paie à part, comme le renouvellement du nom de domaine après la "
+         "première année.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">⏱️</div>"
+         "<h3>Le délai de lancement</h3>"
+         "<p>Demandez une démo avant de vous engager : nous préparons la vôtre en 24 heures, gratuitement, "
+         "et vous ne payez qu'après avoir validé votre site.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🔎</div>"
+         "<h3>La capacité à vous faire trouver</h3>"
+         "<p>Un bon prestataire construit vos titres et vos textes autour de votre métier et de votre secteur "
+         "d'intervention, pour qu'on vous trouve quand on cherche un électricien près de chez soi, et pas "
+         "seulement vos concurrents.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🛠️</div>"
+         "<h3>L'accompagnement après le lancement</h3>"
+         "<p>Vos qualifications évoluent, vos prix aussi : une modification mensuelle est comprise dans les deux "
+         "formules une fois le site en ligne, pour tenir votre site à jour. Les changements plus importants se font "
+         "sur devis fermé.</p></div>"
+         "</div>"
+         "<p>Pensez aussi au chemin par lequel les clients arriveront jusqu'à vous : une carte, un moteur de "
+         "recherche ou la recommandation d'un voisin. Un formulaire de contact simple, un site lisible sur "
+         "mobile et votre secteur d'intervention bien indiqué permettent de rassurer de nouveaux clients, qui "
+         "ne vous connaissent pas encore, et de passer de la recherche à la prise de contact.</p>"
+         "<p class=\"where\">Ces critères valent pour un site d'électricien comme pour tout "
+         "<a href=\"https://webautonomos.es/fr/site-internet-artisan\">site internet pour artisan du bâtiment</a> : "
+         "faites-vous confirmer par écrit ce que comprend le prix avant de vous engager.</p>"),
         visibilite_fr("Référencement du site d'un électricien : ce qui est inclus",
                       "<a href=\"https://webautonomos.es/blog/fr/map-pack-google-comment-y-figurer\">figurer dans "
                       "les résultats de Google Maps</a>, "),
