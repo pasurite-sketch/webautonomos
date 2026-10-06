@@ -152,13 +152,14 @@ THERA['fr'] = dict(
     crumb_home='Accueil', crumb='Psychologues et thérapeutes',
     badge='Psychologues, psychothérapeutes et praticiens',
     h1="Un site internet pour <em>psychologues et thérapeutes</em>, prêt en 24 heures",
-    lede="Votre site dit qui vous êtes, comment vous travaillez et comment prendre rendez-vous, dans le respect "
-         "des règles de votre profession. Nous l'écrivons pour vous et vous envoyons une démo gratuite en 24 heures.",
-    pills=['Titre et RPPS bien affichés', 'Formulaire réduit au strict nécessaire', 'Démo gratuite en 24 h'],
+    lede="Votre site répond à trois questions : qui vous êtes, comment vous travaillez et comment prendre "
+         "rendez-vous, dans le respect des règles de votre profession. Nous l'écrivons pour vous et vous envoyons "
+         "une démo gratuite en 24 heures.",
+    pills=['Titre et RPPS bien affichés', 'Aucun motif de consultation demandé', 'Démo gratuite en 24 h'],
     cta='Recevoir ma démo gratuite', cta2='Ce que les règles imposent',
     brief_t='En bref',
     brief="WebAutonomos crée des sites internet pour les psychologues, psychothérapeutes et praticiens "
-          "(sophrologues, hypnothérapeutes, praticiens bien-être), en France et en Espagne. Nous rédigeons les "
+          "(sophrologues, hypnothérapeutes, naturopathes), en France et en Espagne. Nous rédigeons les "
           "textes à partir de vos informations, affichons votre titre et votre numéro RPPS si vous en avez un, et "
           "prévoyons un formulaire de contact qui ne demande pas le motif de consultation. Le site coûte "
           "<strong>15 € HT par mois</strong> sans frais d'installation ni engagement, ou <strong>349 € HT en "
@@ -217,14 +218,14 @@ THERA['fr'] = dict(
                "<a href=\"/fr/site-internet-francophones-espagne\">site internet pour francophones en Espagne</a>.",
     sources_t='Sources',
     why_ey='Pourquoi nous', why_t="Pensé pour les métiers de l'accompagnement",
-    why=[('🤫', "La discrétion d'abord", "Un formulaire réduit au strict nécessaire, sans motif de consultation ni "
-                                        "question sur la santé, et un site entièrement en https."),
+    why=[('🤫', "La discrétion d'abord", "Une prise de contact réduite au strict nécessaire, sans motif de "
+                                        "consultation ni question sur la santé, et un site entièrement en https."),
          ('📅', 'Rendez-vous en deux clics', "Un bouton vers votre agenda en ligne, WhatsApp ou le téléphone : la "
                                             "personne choisit ce qui la met à l'aise."),
          ('💻', 'Cabinet ou visio', "Séances au cabinet, en ligne ou les deux : c'est écrit clairement, avec vos "
                                    "tarifs si vous le souhaitez."),
          ('📍', 'Trouvé près de chez vous', "Titres et textes pensés pour les recherches « psychologue + votre "
-                                           "ville », et votre fiche Google si vous le souhaitez.")],
+                                           "ville », en lien avec votre fiche Google.")],
     where_t='En France et en Espagne',
     where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que votre cabinet "
           "soit à Nantes, à Lyon ou à Valence, rien ne change.",
@@ -234,10 +235,10 @@ THERA['fr'] = dict(
     how_t='Votre site en trois étapes',
     steps=[('Vous décrivez votre pratique', "Votre titre, votre approche, cabinet ou visio, votre ville : deux "
                                            "minutes suffisent."),
-           ('Nous préparons votre démo', "En moins de 24 heures, avec vos textes, vos photos si vous en avez et "
-                                        "vos mentions légales."),
-           ('Vous décidez', "Vous demandez les modifications que vous voulez. Si le site vous plaît, il est mis en "
-                           "ligne ; sinon, vous ne payez rien.")],
+           ('Nous préparons votre démo', "En moins de 24 heures, vous la découvrez avec vos textes, vos photos si "
+                                         "vous en avez et vos mentions légales."),
+           ('Vous décidez', "Nous ajustons ensemble les pages selon vos demandes. Si le site vous plaît, nous "
+                            "passons à sa mise en ligne ; sinon, vous ne payez rien.")],
     price_note="Prix hors taxes : l'IVA espagnole de 21 % s'ajoute. Si vous êtes établi dans un autre pays de l'UE, "
                "en France par exemple, avec un numéro de TVA intracommunautaire, la facture est émise sans TVA "
                "(autoliquidation) ; les psychologues, exonérés, et les praticiens en franchise en base ne récupèrent "
@@ -245,8 +246,8 @@ THERA['fr'] = dict(
     extra=[
         ('contenu-site', 'Sur votre site', "Que mettre sur le site internet d&#x27;un psychologue ou d&#x27;un thérapeute ?",
          '<p class="legal-intro">Un site internet efficace pour un thérapeute ou un psychologue répond aux '
-         'questions qu&#x27;une personne se pose avant un premier contact, dans un langage clair, sans jargon ni '
-         'promesse de résultat.</p>'
+         'questions qu&#x27;une personne se pose avant un premier contact, dans un langage clair et simple, sans '
+         'jargon ni promesse de résultat.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📝</div>'
          '<h3>Qui vous êtes, présenté simplement</h3>'
@@ -255,20 +256,20 @@ THERA['fr'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗓️</div>'
          '<h3>Comment se passe une première séance</h3>'
          '<p>La durée d&#x27;une séance, le déroulement du premier rendez-vous, l&#x27;adresse et l&#x27;accès du '
-         'cabinet ou le fonctionnement de la visio : ce qu&#x27;une personne veut savoir avant de vous appeler.</p></div>'
+         'cabinet ou le fonctionnement de la visio : ce qu&#x27;une personne souhaite connaître avant de vous '
+         'appeler.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✉️</div>'
          '<h3>Comment vous contacter</h3>'
-         '<p>Un formulaire court (nom, coordonnées et créneau souhaité, sans motif de consultation), un bouton '
-         'WhatsApp et votre numéro pour appeler directement.</p></div>'
+         '<p>Un formulaire court, un bouton WhatsApp et votre numéro pour appeler directement.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div>'
-         '<h3>Un site rapide sur tous les écrans</h3>'
+         '<h3>Un site web rapide sur tous les écrans</h3>'
          '<p>Beaucoup de visiteurs arrivent depuis leur téléphone : un site qui se charge rapidement et '
          's&#x27;affiche bien sur mobile compte autant pour eux que pour votre référencement.</p></div>'
          '</div>'
          '<p class="where">Pour aller plus loin, notre guide sur <a href="https://webautonomos.es/blog/fr/'
          'site-web-pour-psychologues-et-therapeutes">le site d&#x27;un psychologue ou d&#x27;un thérapeute</a> '
-         'détaille chaque rubrique de contenu.</p>'),
-        ('visibilite-therapeute', 'Se faire trouver',
+         'détaille chaque rubrique.</p>'),
+        ('visibilite-therapeute', 'Visibilité locale',
          "Comment un thérapeute apparaît-il dans les recherches locales ?",
          '<p class="legal-intro">Quand une personne cherche un psychologue ou un thérapeute près de chez elle, des '
          'textes à jour, qui nomment votre activité et votre ville et restent cohérents avec votre fiche Google, '
@@ -276,9 +277,8 @@ THERA['fr'] = dict(
          '<div class="aud-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div>'
          '<h3>Le référencement de base, inclus</h3>'
-         '<p>Des titres et des textes rédigés autour de votre activité et de votre secteur géographique, '
-         'cohérents avec votre fiche Google : cette optimisation fait partie du prix de votre site, sans '
-         'supplément à prévoir.</p></div>'
+         '<p>Des titres et des textes rédigés autour de votre activité, cohérents avec votre fiche Google : cette '
+         'optimisation fait partie du prix de votre site, sans supplément à prévoir.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div>'
          '<h3>SEO local et fiche Google, en complément</h3>'
          '<p>Nous proposons aussi le référencement local (SEO local) pour 15 € HT par mois, et la gestion de '
@@ -286,8 +286,8 @@ THERA['fr'] = dict(
          '</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔗</div>'
          '<h3>Vos réseaux sociaux reliés à votre site</h3>'
-         '<p>Si vous êtes présent sur les réseaux sociaux — Facebook, Instagram, LinkedIn — votre site internet '
-         'renvoie vers vos profils : une présence en ligne cohérente, plutôt que des vitrines séparées.</p></div>'
+         '<p>Si vous êtes présent sur les réseaux sociaux, votre site internet renvoie vers vos profils : une '
+         'présence en ligne cohérente, plutôt que des vitrines séparées.</p></div>'
          '</div>'
          '<p class="where">Nos guides sur le <a href="https://webautonomos.es/blog/fr/'
          'seo-local-independants-guide-complet">SEO local pour indépendants</a> et sur <a href="https://'
@@ -297,22 +297,16 @@ THERA['fr'] = dict(
          "Pourquoi un prix fixe de 15 € HT par mois plutôt qu&#x27;un devis d&#x27;agence ?",
          '<p class="legal-intro">Pour la création de votre site internet de psychologue ou de thérapeute, nous '
          'utilisons un système propre qui réutilise des composants déjà testés, sans bureaux coûteux ni commerciaux '
-         'à commission : c&#x27;est ce qui permet un prix fixe, là où une agence classique construit son devis '
-         'après un échange.</p>'
+         'à commission : c&#x27;est ce qui permet un prix fixe.</p>'
          '<div class="aud-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧩</div>'
          '<h3>Des textes écrits pour votre pratique</h3>'
-         '<p>Nous rédigeons vos textes à partir de vos informations — votre titre, votre approche, votre façon de '
-         'recevoir — au lieu de vous laisser remplir un modèle vide.</p></div>'
+         '<p>Nous rédigeons vos textes à partir de votre titre, de votre approche, de votre façon de recevoir — au '
+         'lieu de vous laisser remplir un modèle vide.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🛠️</div>'
          '<h3>Le suivi technique compris dans le prix</h3>'
-         '<p>Hébergement, certificat SSL, sauvegardes quotidiennes et maintenance technique sont compris, avec une '
-         'modification par mois après la mise en ligne, sans limite de durée.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">💬</div>'
-         '<h3>Un accompagnement, pas un simple outil en ligne</h3>'
-         '<p>Nous écrivons votre site avec vous : vous décrivez votre activité en quelques minutes, vous '
-         'découvrez votre démo en moins de 24 heures, puis nous faisons ensemble les ajustements avant la mise '
-         'en ligne.</p></div>'
+         '<p>Hébergement, certificat SSL, sauvegardes quotidiennes et maintenance technique du site sont compris, '
+         'avec une modification par mois après la mise en ligne, sans limite de durée.</p></div>'
          '</div>'
          '<p class="where">Vous voulez aussi vendre en ligne ? Une boutique en ligne n&#x27;est comprise dans '
          'aucune des deux formules : elle se fait <a href="https://webautonomos.es/fr/prestations">sur devis</a>.'
@@ -359,10 +353,9 @@ THERA['fr'] = dict(
           "sanitaire par sa communauté autonome, avec son numéro d'enregistrement dans sa publicité. Nous créons "
           "aussi des sites pour les francophones installés en Espagne."),
          ("Un nouveau site apparaît-il tout de suite dans les recherches ?",
-          "Pas immédiatement. Le référencement de base, inclus avec votre site, aligne vos titres et vos textes "
-          "sur votre activité et votre fiche Google ; mais le référencement local demande du temps pour "
-          "progresser. Notre service de SEO local, à 15 € HT par mois, est pensé pour cette progression dans la "
-          "durée.")],
+          "Pas immédiatement. Le référencement de base, inclus avec votre site web, aligne vos titres et vos textes "
+          "sur votre activité et votre fiche Google ; mais le référencement local progresse sur la durée. Notre "
+          "service de SEO local, à 15 € HT par mois, est pensé pour accompagner cette progression.")],
     final_t='Voyez votre site avant de payer quoi que ce soit',
     final_sd="Démo gratuite en 24 heures, textes et mentions légales compris. Sans frais d'installation, sans "
              "engagement.",
@@ -1247,18 +1240,18 @@ KINE['fr'] = dict(
     badge='Masseurs-kinésithérapeutes libéraux',
     h1="Un site internet pour <em>kinésithérapeutes</em>, pensé pour votre code de déontologie",
     lede="Votre cabinet, vos spécificités, vos honoraires et votre agenda en ligne, présentés selon les "
-         "recommandations de l'Ordre : un site qui informe, sans rien de commercial. Nous l'écrivons pour vous, vous "
-         "validez chaque contenu, et la démo est gratuite en 24 heures.",
+         "recommandations de l'Ordre : une présentation qui informe, sans rien de commercial. Nous l'écrivons pour "
+         "vous, vous validez chaque contenu, et la démo est gratuite en 24 heures.",
     pills=["Construit selon les recommandations de l'Ordre", 'RPPS et honoraires affichés', 'Démo gratuite en 24 h'],
     cta='Recevoir ma démo gratuite', cta2='Ce que le code impose',
     brief_t='En bref',
     brief="WebAutonomos crée des sites internet pour les masseurs-kinésithérapeutes libéraux, en France et en "
-          "Espagne. Le site présente votre cabinet, vos spécificités reconnues par l'Ordre, vos honoraires et vos modes "
+          "Espagne. Ils présentent votre cabinet, vos spécificités reconnues par l'Ordre, vos honoraires et vos modes "
           "de paiement, avec votre numéro RPPS et votre numéro d'Ordre, comme l'exigent le code de déontologie et les "
-          "recommandations de l'Ordre. Il reste "
-          "informatif : pas de témoignages, pas de comparaison, et pas de référencement pour passer devant vos "
-          "confrères, que le code interdit. Le site coûte <strong>15 € HT par mois</strong> sans frais d'installation "
-          "ni engagement, ou <strong>349 € HT en paiement unique</strong>, et la démo est prête en 24 heures.",
+          "recommandations de l'Ordre. Ils restent informatifs : pas de témoignages, pas de comparaison, et pas de "
+          "référencement pour passer devant vos confrères, que le code interdit. Le site coûte "
+          "<strong>15 € HT par mois</strong> sans frais d'installation ni engagement, ou <strong>349 € HT en "
+          "paiement unique</strong>, et la démo est prête en 24 heures.",
     legal_id='regles', legal_ey='Le code de déontologie', legal_t="Ce que votre site doit respecter",
     legal_intro="Depuis 2020, un kinésithérapeute peut informer le public librement, y compris sur un site internet. "
                 "Mais cette information est encadrée par le code de déontologie et par les recommandations de l'Ordre. "
@@ -1313,28 +1306,24 @@ KINE['fr'] = dict(
                "<a href=\"/fr/site-internet-francophones-espagne\">site internet pour francophones en Espagne</a>.",
     sources_t='Sources',
     why_ey='Pourquoi nous', why_t="Pensé pour les kinésithérapeutes",
-    why=[('📋', "Les mentions de l'Ordre en place", "RPPS, numéro d'Ordre, honoraires et modes de paiement : ce que le "
-                                                  "code et l'Ordre exigent d'un site."),
-         ('🏷️', 'Des spécificités reconnues', "Seules les spécificités de la liste de l'Ordre, avec leur libellé exact, "
-                                             "comme « Kinésithérapie du sport »."),
+    why=[('📋', "Les mentions de l'Ordre en place", "RPPS, numéro d'Ordre, honoraires et modes de paiement : ce que "
+                                                   "le code et l'Ordre exigent."),
          ('📅', 'Un agenda sans champ libre', "Un lien vers votre prise de rendez-vous en ligne, sans zone de texte "
-                                             "libre, comme le recommande l'Ordre."),
-         ('⚖️', 'Rien de ce que le code interdit', "Pas de témoignages, pas de comparaison, pas de référencement pour passer "
-                                            "devant vos confrères : nous ne vous le vendrons pas.")],
+                                             "libre, comme le recommande l'Ordre.")],
     where_t='En France et en Espagne',
     where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que votre cabinet soit à "
           "Lille, à Toulouse ou à Alicante, rien ne change.",
     sect_t='Pour qui',
     sectors=['💆 Kinés libéraux', '🏃 Kinésithérapie du sport', '🫁 Kinésithérapie respiratoire',
-             '🤰 Kinésithérapie en pelvi-périnéologie', '🧓 Kinésithérapie en gériatrie', '👶 Kinésithérapie en pédiatrie',
+             '🤰 Pelvi-périnéologie', '🧓 Gériatrie', '👶 Pédiatrie',
              '🏥 Cabinets de groupe', '🦴 Kinés ostéopathes'],
-    how_t='Votre site en trois étapes',
+    how_t='Comment cela se passe, en trois étapes',
     steps=[('Vous décrivez votre cabinet', "Vos spécificités reconnues, vos horaires, votre agenda en ligne, votre "
                                           "ville : deux minutes suffisent."),
            ('Nous préparons votre démo', "En moins de 24 heures, avec vos honoraires, votre RPPS et vos mentions "
                                         "légales."),
-           ('Vous décidez', "Vous relisez et validez chaque contenu, et demandez les modifications que vous voulez. Si "
-                           "le site vous plaît, il est mis en ligne ; sinon, vous ne payez rien.")],
+           ('Vous décidez', "Vous relisez et validez chaque contenu, et demandez les modifications que vous voulez. "
+                            "Si la démo vous plaît, elle est mise en ligne ; sinon, vous ne payez rien.")],
     price_note=PRIX_FR_SANTE,
     faq_t='Questions fréquentes',
     faq=[("Un kinésithérapeute a-t-il le droit d'avoir un site internet ?",
@@ -1370,7 +1359,7 @@ KINE['fr'] = dict(
           "15 € HT par mois sans frais d'installation ni engagement, ou 349 € HT en paiement unique, avec les mêmes "
           "services : conception, hébergement, nom de domaine la première année, mentions légales et une modification "
           "par mois. La démo est gratuite.")],
-    final_t='Voyez votre site avant de payer quoi que ce soit',
+    final_t='Voyez le résultat avant de payer quoi que ce soit',
     final_sd="Démo gratuite en 24 heures, honoraires et mentions obligatoires compris. Sans frais d'installation, sans "
              "engagement.",
     extra=[('contenu-site', 'Contenu du site', "Site internet kinésithérapeute : ce qu'il doit contenir",
@@ -1378,14 +1367,9 @@ KINE['fr'] = dict(
             "textes à partir de vos informations, l'hébergement web et une modification par mois après la mise en "
             "ligne. Voici, concrètement, ce que vos pages contiennent.</p>"
             '<div class="legal-we"><ul>'
-            "<li><span>Une présentation de votre cabinet et de votre parcours, sans témoignage ni comparaison</span></li>"
             "<li><span>Vos honoraires, vos modes de paiement et, le cas échéant, vos spécificités reconnues par le "
             "Conseil national de l'Ordre, présentés selon les règles rappelées plus haut</span></li>"
-            "<li><span>Votre adresse, vos horaires et l'accessibilité du cabinet, avec un formulaire de contact sans "
-            "champ libre sur l'état de santé et un bouton WhatsApp</span></li>"
             "<li><span>Un lien vers vos réseaux sociaux professionnels, si vous en avez</span></li>"
-            "<li><span>Vos mentions légales complètes : numéro RPPS, numéro d'Ordre, hébergeur et directeur de la "
-            "publication, comme le demandent la LCEN et les recommandations de l'Ordre</span></li>"
             '<li><span>Votre nom de domaine, en .fr si vous exercez en France, inclus la première année puis environ '
             '12 €/an, qui reste à vous si vous changez de prestataire</span></li>'
             '</ul></div>'
@@ -1782,18 +1766,17 @@ DENT['fr'] = dict(
     price_note=PRIX_FR_SANTE,
     extra=[
         ('contenu-site-dentiste', 'Sur votre site', "Ce que contient le site de votre cabinet dentaire",
-         """<p class="legal-intro">Un patient qui cherche un dentiste dans sa ville, depuis son mobile ou son ordinateur, veut savoir en quelques secondes où vous trouver, comment vous contacter et à qui il aura affaire. Pour nous, la création de site internet pour dentiste commence par là : répondre clairement à ces questions, dans les limites du code de déontologie rappelées plus haut.</p>
+         """<p class="legal-intro">Un patient qui cherche un dentiste dans sa ville, depuis son mobile ou son ordinateur, veut savoir en quelques secondes où vous trouver, comment vous contacter et à qui il aura affaire. La création de site internet pour dentiste commence par là : répondre clairement à ces questions, dans les limites du code de déontologie rappelées plus haut.</p>
 <div class="why-g">
 <div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>Votre cabinet, votre équipe, votre adresse</h3><p>Nous rédigeons la présentation de votre cabinet dentaire et de chaque praticien de votre équipe à partir de vos informations, avec votre adresse et vos horaires bien visibles dès la page d'accueil.</p></div>
 <div class="aud-c"><div class="aud-i" aria-hidden="true">☎️</div><h3>Contact en un geste</h3><p>Votre numéro de téléphone, un bouton WhatsApp et un formulaire de contact qui envoie directement la demande à votre adresse email : le patient choisit ce qui lui convient.</p></div>
 <div class="aud-c"><div class="aud-i" aria-hidden="true">🔎</div><h3>Cohérent avec votre fiche Google</h3><p>Les titres et les textes du site reprennent vos soins et votre ville, et restent cohérents avec votre fiche Google : c'est inclus dans le prix.</p></div>
-<div class="aud-c"><div class="aud-i" aria-hidden="true">🌍</div><h3>Jusqu'à quatre langues, sans supplément</h3><p>Si votre patientèle inclut des résidents ou des visiteurs étrangers, votre site peut être rédigé en français et dans jusqu'à trois autres langues parmi l'anglais, l'espagnol, le catalan, le valencien, le galicien et le basque, sans coût supplémentaire.</p></div>
 </div>
 <p class="where">Votre cabinet dentaire partage ses locaux avec des kinésithérapeutes, par exemple dans une maison de santé ? Leur communication est elle aussi encadrée par leur code de déontologie : voir notre page <a href="https://webautonomos.es/fr/site-internet-kinesitherapeute">site internet pour kinésithérapeute</a>.</p>"""),
         ('specialise-dentiste', 'Pensé pour un dentiste', "Pourquoi une création de site internet spécifique aux dentistes",
-         """<p class="legal-intro">Une agence généraliste peut créer un site internet correct pour n'importe quelle activité. La création de site internet pour dentiste demande autre chose : connaître le code de déontologie, les formules autorisées par l'Ordre et les limites propres au secteur médical. Omnipraticien, orthodontiste ou chirurgien oral, chaque activité dentaire a ses propres usages, mais la communication du cabinet doit rester loyale et honnête sur chaque page du site.</p>
+         """<p class="legal-intro">La création de site internet pour dentiste demande de connaître le code de déontologie, les formules autorisées par l'Ordre et les limites propres au secteur médical : la communication du cabinet doit rester loyale et honnête sur chaque page du site.</p>
 <div class="why-g">
-<div class="aud-c"><div class="aud-i" aria-hidden="true">⚙️</div><h3>Une gestion technique que vous n'avez pas à suivre</h3><p>Hébergement, certificat de sécurité, sauvegardes quotidiennes et surveillance du site restent de notre côté après la mise en ligne. Les fonctionnalités utiles à vos patients — formulaire de contact, bouton WhatsApp, liens vers vos réseaux sociaux — sont incluses sans supplément.</p></div>
+<div class="aud-c"><div class="aud-i" aria-hidden="true">⚙️</div><h3>Une gestion technique que vous n'avez pas à suivre</h3><p>Hébergement, certificat de sécurité, sauvegardes quotidiennes et surveillance du site restent de notre côté après la mise en ligne.</p></div>
 <div class="aud-c"><div class="aud-i" aria-hidden="true">✏️</div><h3>Une modification par mois, sans limite de durée</h3><p>Après la mise en ligne, vous pouvez demander une modification par mois, par exemple pour mettre à jour vos honoraires ou vos horaires. Pour un changement plus important, nous vous remettons un devis fermé.</p></div>
 </div>"""),
     ],
@@ -1838,7 +1821,8 @@ DENT['fr'] = dict(
           "code de déontologie encadre votre communication « par tout moyen » (art. R4127-215-1) : ces profils suivent "
           "donc les mêmes règles que votre site."),
          ("Mon site peut-il être proposé en plusieurs langues ?",
-          "Oui, jusqu'à quatre langues au total, sans supplément, et nous rédigeons chaque version nous-mêmes.")],
+          "Oui, jusqu'à quatre langues au total, sans supplément, parmi le français, l'anglais, l'espagnol, le "
+          "catalan, le valencien, le galicien et le basque, et nous rédigeons chaque version nous-mêmes.")],
     final_t='Voyez votre site avant de payer quoi que ce soit',
     final_sd="Démo gratuite en 24 heures, honoraires et mentions obligatoires compris. Sans frais d'installation, sans "
              "engagement.",
