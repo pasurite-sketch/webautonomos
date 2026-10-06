@@ -936,7 +936,7 @@ PLUMB_UK = dict(
     service_name="Web design for plumbers and heating engineers in the UK",
     audience="Plumbers, heating engineers and gas engineers in the United Kingdom",
     crumb='Web design for plumbers',
-    badge='For plumbers and heating engineers in the UK',
+    badge='For plumbers and heating engineers in the United Kingdom',
     h1="Web design for <em>plumbers</em> and heating engineers",
     lede="Your services, your Gas Safe details, the areas you cover and a call or WhatsApp in one tap, written "
          "with UK rules in mind. We write it for you in English, you approve every word, and your free demo is "
@@ -1016,32 +1016,33 @@ PLUMB_UK = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏠</div>'
          '<h3>Landlords as regular customers</h3>'
          '<p>Landlords must have gas appliances and flues checked at least every 12 months (Gas Safety '
-         'Regulations, reg. 36): a page for them brings in repeat business.</p></div>'
+         'Regulations, reg. 36): a dedicated section for them brings in repeat business.</p></div>'
          '</div>'
          '<p class="where">Working as a gas engineer? The same gas engineer website design applies: registration '
          'first, then services. For more on what to include, see our <a href="https://webautonomos.es/blog/en/'
          'website-for-plumbers-complete-guide">guide to getting more calls from your website</a>.</p>'),
         ('good-design', 'Design', 'What good web design looks like for a plumbing business',
-         '<p class="legal-intro">Good web design for a plumbing business isn\'t only about how the page looks: '
-         'it is about whether a visitor finds what they need fast enough to call, especially with a leak or a '
+         '<p class="legal-intro">Good web design for plumbers isn\'t only about looks: a responsive site, designed '
+         'so a visitor finds what they need fast enough to call, matters more, especially with a leak or a '
          'boiler that won\'t start.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎨</div>'
          '<h3>A clear, mobile-first layout</h3>'
-         '<p>Someone searching in a hurry won\'t wait for a slow page or zoom in to read it, so a professional '
-         'layout keeps things simple, the copy short and the page fast to load, just as readable on a small screen '
-         'as on a desktop. A visitor often decides from the homepage alone whether to stay, so the first screen on '
-         'a phone should already show what you do and how to call you.</p></div>'
+         '<p>Someone searching in a hurry won\'t wait for something slow to load or zoom in to read it, so a '
+         'professional layout keeps things simple, the copy short and loading quick, just as readable on '
+         'a small screen as on a desktop. A visitor often decides from the homepage alone whether to stay, so the '
+         'first screen on a phone should already show what you do and how to call you.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧭</div>'
          '<h3>An easy path to a call or a quote</h3>'
-         '<p>Every page leads somewhere: a clear call button, a WhatsApp link or a link to your contact form in '
-         'the main navigation, so someone who wants to book doesn\'t have to search for how.</p></div>'
+         '<p>Wherever a visitor is on your site, the next step is in view: a clear call button, a WhatsApp link or '
+         'a link to your contact form in the main navigation, so someone who wants to book doesn\'t have to search '
+         'for how.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div>'
          '<h3>Layout that earns trust</h3>'
          '<p>Genuine feedback shown without hiding anything negative (see the rules above), your Gas Safe '
          'registration and straightforward pricing do more for trust than decoration.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏷️</div>'
-         '<h3>Branding that matches the rest of your business</h3>'
+         '<h3>Branding that ties it all together</h3>'
          '<p>Your logo, colours and photos of your own jobs, carried through consistently, so your site matches '
          'your van, your invoices and your social media.</p></div>'
          '</div>'),
@@ -1071,7 +1072,7 @@ PLUMB_UK = dict(
          'you take on</li>'
          '<li>You write and structure the content yourself, including your services, the areas you cover and how '
          'to contact you</li>'
-         '<li>Search engine optimisation (SEO) settings, such as page titles and descriptions, left for you to '
+         '<li>Search engine optimisation (SEO) settings, such as titles and meta descriptions, left for you to '
          'fill in yourself</li>'
          '<li>Support often means searching a knowledge base rather than a person who replies the same day</li>'
          '</ul></div>'
@@ -1111,27 +1112,26 @@ PLUMB_UK = dict(
         ('local-trust-plumbers', 'Local & trust', 'Local search and trust for small plumbing companies',
          '<p class="legal-intro">For many customers, a search engine is where they start looking for a plumber '
          'nearby, and what they see once they land decides whether they call. A small plumbing company doesn\'t '
-         'need a marketing team for that: a few concrete details do the work. Different customers look for '
+         'need a marketing team for that: a few concrete details do the job. Different customers look for '
          'different things before they call: a homeowner with a leak wants your number, a landlord wants to know '
          'you carry out gas safety checks. Show both clearly instead of burying them.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📍</div><h3>Jobs you\'ve done nearby</h3>'
-         '<p>A few real photos of your own jobs, each with the town where you did it, show a visitor that you '
-         'already work in their area.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">⭐</div><h3>Reviews a visitor can check</h3>'
+         '<p>A few real photos of your own jobs, each with the town where you did it, show a visitor that you\'re '
+         'already active in their area.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">⭐</div><h3>Proof a visitor can check</h3>'
          '<p>A link to your Google reviews lets a visitor read them in full, where they were posted, rather than '
          'taking a few quotes on trust.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div><h3>Who will knock on the door</h3>'
          '<p>Your name, a photo of you or your van and how you prefer to be contacted: someone deciding who to let '
-         'into their home wants to know who is coming, especially when your business is a one-person '
-         'operation.</p></div>'
+         'into their home wants to know who is coming, especially when you\'re working on your own.</p></div>'
          '</div>'
          '<p class="where">More on ranking locally in <a href="https://webautonomos.es/blog/en/'
          'how-to-rank-your-website-in-local-google">how to rank your website locally on Google</a>.</p>'),
         ('website-speed-plumbers', 'Performance', 'Website speed and Core Web Vitals for a plumbing website',
-         '<p class="legal-intro">A visitor calling about a leak won\'t wait for a slow page, and Google measures '
-         'loading speed too: Core Web Vitals, including Largest Contentful Paint, are part of the page experience '
-         'signals it looks at alongside the content itself.</p>'
+         '<p class="legal-intro">A visitor calling about a leak won\'t wait for something slow to load, and Google '
+         'measures loading speed too: Core Web Vitals, including Largest Contentful Paint, are part of the page '
+         'experience signals it looks at alongside the content itself.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">⚡</div><h3>Largest Contentful Paint</h3>'
          '<p>It measures how long the largest element on screen, often your main photo or heading, takes to appear. '
@@ -1225,13 +1225,13 @@ PLUMB_UK = dict(
           "build or write any of it yourself."),
          ("Does website speed affect a plumbing website's Google ranking?",
           "Yes: Core Web Vitals, including Largest Contentful Paint, are part of Google's page experience signals, "
-          "and a slow page also loses visitors before they call. Hosting, an SSL certificate, 24/7 monitoring and "
+          "and slow loading also loses visitors before they call. Hosting, an SSL certificate, 24/7 monitoring and "
           "technical maintenance are included in both plans, so you don't have to manage the technical side "
           "yourself."),
          ("What should a service area page cover?",
-          "The towns and postcodes you actually cover, so a visitor and Google both know if you're near them. If "
-          "you regularly cover several areas, a short list on your main services page usually does the job, "
-          "without needing a separate page for every town."),
+          "The towns, postcodes and other location details you actually cover, so a visitor and search engines "
+          "both know if you're near them. If you regularly cover several areas, a short list in your main services "
+          "section usually does the job, without needing a separate page for every town."),
          ("Do I need a privacy policy on my plumbing website?",
           "Yes: UK GDPR requires a privacy policy explaining what you do with visitors' data, and the Privacy and "
           "Electronic Communications Regulations (PECR) cover cookies. Both plans include a privacy policy and "
@@ -1243,8 +1243,8 @@ PLUMB_UK = dict(
          ("Do I need lots of pages for my plumbing company?",
           "Not necessarily: a clear homepage, a section for each service, your service area, legal information "
           "and a contact form are often enough, reached from one navigation menu so a visitor finds what they "
-          "need in a click or two. If landlords send you regular work, a dedicated page for them is worth "
-          "adding.")] + FAQ_TRADES,
+          "need in a click or two. If landlords are a regular source of jobs for you, a dedicated section for them "
+          "is worth adding.")] + FAQ_TRADES,
 )
 SRC_PLUMB_UK = [
     ('Gas Safety (Installation and Use) Regulations 1998, reg. 3',
