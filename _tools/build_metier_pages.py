@@ -1446,23 +1446,23 @@ KINE['en'] = dict(
                '<a href="https://webautonomos.es/en/physiotherapy-website-design">physiotherapy website '
                'design for UK clinics</a>.',
     sources_t='Sources',
-    why_ey='Why us', why_t='Built for physiotherapists who work in English',
+    why_ey='Why us', why_t='Built for English-speaking physiotherapists',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
                                          "or technical jargon."),
          ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so local "
                                            "patients find you as easily as expats do."),
-         ('📋', 'Colegio details in place', "Colegio, colegiado number and practice registration details shown the way "
+         ('📋', 'Colegio details in place', "Colegio, colegiado number and registration details shown the way "
                                            "Spain's rules expect."),
          ('📅', 'Easy to book', "A clear button to your online calendar, WhatsApp or phone, with clinic or home visits "
                                "stated plainly.")],
     where_t='Anywhere in Spain',
-    where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work remotely, "
-          "so where your practice is makes no difference.",
+    where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we support you "
+          "remotely, so wherever you're based makes no difference.",
     sect_t='Who it is for',
     sectors=['💆 Physiotherapists', '🏃 Sports physiotherapy', '🦴 Musculoskeletal', '🧓 Older adults',
              '🤰 Women’s health', '👶 Paediatrics', '🏠 Home visits', '🏥 Clinics'],
     how_t='Your website in three steps',
-    steps=[('Tell us about your practice', 'Your treatments, clinic or home visits, your town: it takes two minutes.'),
+    steps=[('Tell us about yourself', 'Your treatments, clinic or home visits, your town: it takes two minutes.'),
            ('We build your demo', 'Within 24 hours, with your copy in English and Spanish and your legal pages.'),
            ('You decide', "You check every word and ask for any changes you want. If you like it, it goes live; if "
                          "not, you pay nothing.")],
@@ -1479,7 +1479,7 @@ KINE['en'] = dict(
          'new patient understands what kind of session to expect, without a promise of relief or cure.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div>'
          '<h3>Your training and registration</h3>'
-         '<p>Your qualification and training, your years in practice, and your Colegio and colegiado number (see '
+         '<p>Your qualification and training, your years of experience, and your Colegio and colegiado number (see '
          '<a href="#rules">the rules above</a>), so a patient checking your credentials finds them straight '
          'away.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✉️</div>'
@@ -1491,10 +1491,10 @@ KINE['en'] = dict(
          '<p>Many patients look for a physiotherapist from their phone, so the design has to hold up there as '
          'well as on a desktop.</p></div>'
          '</div>'),
-        ('treatment-areas', 'Areas of practice', 'Areas physiotherapists in Spain often cover',
-         '<p class="legal-intro">Your website copy can set out the areas you work in — from sports and '
-         'musculoskeletal therapy to paediatric and older-adult care — so a patient searching for a specific type '
-         'of treatment recognises your practice.</p>'
+        ('treatment-areas', 'Areas you treat', 'Areas physiotherapists in Spain often cover',
+         '<p class="legal-intro">Your website copy can set out the areas you cover — from sports and '
+         'musculoskeletal therapy to paediatric and older-adult care — so a patient searching for what you treat '
+         'finds it on your site.</p>'
          '<div class="aud-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏃</div>'
          '<h3>Sports physiotherapy</h3>'
@@ -1509,13 +1509,13 @@ KINE['en'] = dict(
          'life.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤰</div>'
          '<h3>Women’s health and pelvic physiotherapy</h3>'
-         '<p>Pelvic floor treatment, including during pregnancy and after childbirth.</p></div>'
+         '<p>Pelvic floor rehabilitation, including during pregnancy and after childbirth.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">👶</div>'
          '<h3>Paediatric physiotherapy</h3>'
-         '<p>Treatment adapted to a child&#8217;s stage of development.</p></div>'
+         '<p>Sessions adapted to a child&#8217;s stage of development.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧓</div>'
          '<h3>Physiotherapy for older adults</h3>'
-         '<p>Treatment focused on mobility, balance and reducing the risk of falls.</p></div>'
+         '<p>Rehabilitation focused on mobility, balance and reducing the risk of falls.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏠</div>'
          '<h3>Home visits</h3>'
          '<p>Stated plainly on your site, for patients who cannot travel to a clinic.</p></div>'
@@ -1610,20 +1610,20 @@ KINE['en'] = dict(
          '<p class="legal-intro">These are the gaps that often make a physiotherapy website less effective, or '
          'leave it short of what Spanish rules require.</p>'
          '<div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul>'
-         '<li>No Colegio or colegiado number, or a registration number missing from an authorised practice</li>'
-         '<li>A single vague page listing every treatment with no detail on what each one involves</li>'
+         '<li>No Colegio or colegiado number, or a registration number missing from an authorised centre</li>'
+         '<li>A single vague page listing every service with no detail on what each one involves</li>'
          '<li>No clear way to book or ask a question: a phone number buried in a footer, no WhatsApp link</li>'
          '<li>Stock photos and generic text that could belong to any clinic, in any country</li>'
          '</ul></div>'
          '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>How we help you avoid them</h3>'
          '<p>Your website sets out your Colegio and registration details in the right place, describes your '
          'treatments one by one, and comes with a contact form, a WhatsApp button and legal pages (legal notice, '
-         'privacy policy and cookie policy). Whether you work alone or in a clinic team, patients can see what you '
+         'privacy policy and cookie policy). Whether you practise solo or in a clinic team, patients can see what you '
          'offer, how to reach you and what to expect. You see your demo before you pay anything, ask for the '
          'changes you want, and if you decide not to go ahead, you pay nothing.</p></div>'),
         ('how-we-work', 'Working with us', 'What working with our team looks like',
          '<p class="legal-intro">Buying a website online can feel abstract, especially when English is your '
-         'first language and legal Spanish is not. Here is how we work with you, before and after your site goes '
+         'first language and legal Spanish is not. Here is how we support you, before and after your site goes '
          'live.</p>'
          '<div class="aud-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📧</div>'
@@ -1668,15 +1668,15 @@ KINE['en'] = dict(
           "Your Colegio's code of ethics asks you to present yourself only as a “Fisioterapeuta”, without adding another "
           "title. You can mention osteopathy among the techniques you are trained in. Osteopathy isn't a regulated "
           "profession in Spain."),
-         ("Can a sports massage therapist offer treatment?",
+         ("Can a sports massage therapist treat injuries?",
           "No. Sports massage therapist and quiromasajista are not regulated health professions, so they can offer "
           "wellness or relaxation services but can't claim to treat or rehabilitate injuries. Only authorised health "
           "centres may use wording that suggests health care."),
          ("Is physiotherapy VAT-exempt?",
           "Yes, when the service treats or prevents an illness or injury and is provided by a health professional. "
-          "Relaxing, beauty or slimming massage outside a treatment is taxed at 21%. Because your health services are "
-          "exempt, you usually can't deduct the VAT on our invoice (only in part if you also sell taxed services or "
-          "products)."),
+          "Relaxing, beauty or slimming massage with no therapeutic purpose is taxed at 21%. Because your health "
+          "services are exempt, you usually can't deduct the VAT on our invoice (only in part if you also sell taxed "
+          "services or products)."),
          ("Do you set up online scheduling or appointment reminders?",
           "No. We don't integrate an appointment or scheduling system, and we don't send automated SMS or email "
           "reminders. We link to WhatsApp, your phone number or a scheduling tool you already use, and enquiries "
@@ -1689,7 +1689,7 @@ KINE['en'] = dict(
           "Yes. You don't need a separate licence for each area, but list only training you have actually "
           "completed and describe your experience in your own words. Don't add a title such as “specialist”: "
           "your Colegio's code of ethics asks you to present yourself only as a “Fisioterapeuta”."),
-         ("Does it matter if I work alone or as part of a clinic team?",
+         ("Does it matter if I practise solo or as part of a clinic team?",
           "Mostly in practical ways. A clinic site usually gives each physiotherapist a short profile with their "
           "own training and colegiado number, while a solo site focuses on one person. One rule does differ: a "
           "clinic needs a data protection officer, a physiotherapist working alone doesn't (LOPDGDD, art. 34)."),
