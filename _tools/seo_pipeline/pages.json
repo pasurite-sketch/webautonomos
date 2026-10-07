@@ -125,17 +125,17 @@
     },
     {
       "slug": "es-electricistas",
-      "url": "https://webautonomos.es/blog/es/pagina-web-para-electricistas",
+      "url": "https://webautonomos.es/electricistas/",
       "lang": "es",
       "requete": "pagina web para electricistas",
       "requete_a_confirmer": false,
-      "fichier": "blog/es/pagina-web-para-electricistas.html",
+      "fichier": "electricistas/index.html",
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "vert",
       "statut": "fait",
       "priorite": 1,
-      "notes": "Décidé le 24/09 : c'est l'ARTICLE qui porte la requête (pos. 10, 300 imp., 5 clics) ; /electricistas/ (pos. 67) reste la page de conversion et ne doit PAS viser cette requête. Le rédacteur ajoute dans l'article un lien vers /electricistas/ (ancre du type « ver la oferta para electricistas »), retire la statistique « 70 % » sans source et le « caso real » de Miguel (Elche) sauf s'il figure dans VERITE.md. L'article est aussi copié dans index.html (SPA) : ne modifier que le fichier statique. Publiée le 25/09/2026 (PR #3) : score Google 50 → 70, GEO 16 → 28."
+      "notes": "Décidé le 07/10/2026 (audit du 06/10, « le blog prend la place des pages métier ») : la requête revient à /electricistas/, page de conversion, comme pour les six autres métiers. L'article /blog/es/pagina-web-para-electricistas devient un guide (« Qué debe tener la web de un electricista », suivi dans requetes_site.json) et renvoie vers /electricistas/ en haut d'article. Remplace la décision du 24/09, qui confiait la requête à l'article (alors en position 10, 300 impressions ; /electricistas/ en position 67)."
     },
     {
       "slug": "es-psicologos",

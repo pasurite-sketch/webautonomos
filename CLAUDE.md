@@ -234,6 +234,9 @@ Chaque article DOIT contenir dans cet ordre :
   chapeau, avec la requête commerciale exacte comme ancre (« diseño web para fontaneros », « páginas web para psicólogos »…),
   bloc marqué `<!-- lien-page-metier -->` (`_tools/patch_guides_metier_20261007.py`). Ne pas le retirer lors d'une réécriture :
   le guide prenait la place de la page qui vend. Les titres des pages métier sont en « Páginas web para… » et « Diseño web… ».
+  Électriciens : l'article `/blog/es/pagina-web-para-electricistas` est devenu un guide informatif (« Qué debe tener la web
+  de un electricista ») ; la requête « pagina web para electricistas » est suivie sur `/electricistas/` (`pages.json`,
+  es-electricistas), ce qui remplace la décision du 24/09. Garder les titres des guides informatifs.
 
 ### Traductions (VAL + EN + FR)
 

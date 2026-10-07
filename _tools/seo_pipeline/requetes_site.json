@@ -1625,7 +1625,17 @@
    "lang": "es",
    "requete": "pagina web para electricistas",
    "phase": 1,
-   "origine": "même requête que es-electricistas (guides existants)"
+   "origine": "suivie par es-electricistas (pages.json) depuis le 07/10/2026 : releve.py ignore cette entrée (même adresse) ; même requête que le circuit"
+  },
+  {
+   "slug": "site-blog-es-pagina-web-para-electricistas",
+   "url": "https://webautonomos.es/blog/es/pagina-web-para-electricistas",
+   "fichier": "blog/es/pagina-web-para-electricistas.html",
+   "lang": "es",
+   "requete": null,
+   "origine": "guide informatif depuis le 07/10/2026 (« Qué debe tener la web de un electricista ») : « pagina web para electricistas » revient à /electricistas/ (pages.json, es-electricistas). Aucune requête informative exploitable dans le SERP espagnol : « qué debe tener la web de un electricista » (formations, factures) et « cómo hacer una web para electricistas » (modèles, agences : intention de /electricistas/), guides du 07/10 non validés",
+   "phase": 2,
+   "langue_serpmantics": "es"
   },
   {
    "slug": "site-en-ai-visibility",
