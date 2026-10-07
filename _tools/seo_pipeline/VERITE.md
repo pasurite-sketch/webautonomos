@@ -3,7 +3,7 @@
 > **Règle absolue pour les agents** : toute affirmation factuelle sur WebAutonomos
 > (prix, délais, services, langues, chiffres, clients, ancienneté, résultats)
 > qui n'est pas écrite ici est **interdite**. Le relecteur rejette la page.
-> Tenu à jour par Angelino. Dernière révision : 29/09/2026.
+> Tenu à jour par Angelino. Dernière révision : 07/10/2026.
 > Les lignes marquées **À CONFIRMER** ne doivent pas être utilisées tant
 > qu'Angelino ne les a pas tranchées.
 
@@ -81,6 +81,14 @@
 - SEO Local et fiche Google **peuvent s'acheter sans le site** (confirmé le 25/09/2026). Ce ne sont pas des éléments du site à 15 €/mes : le site comprend seulement l'optimisation SEO de base (§2)
 - Gestion des réseaux sociaux et publicité Facebook / Google Ads : proposées **ponctuellement, sur demande** (déclaré par Angelino le 24/09/2026). Aucun prix, délai ni résultat à annoncer : écrire seulement que c'est possible et inviter à demander. Ne jamais écrire que WebAutonomos ne gère pas les réseaux sociaux.
 
+## 5 bis. Automatisation de processus (confirmé par Angelino le 07/10/2026)
+
+- Diagnostic gratuit en ligne (/diagnostico-automatizacion/, /en/automation-diagnostic/, /fr/diagnostic-automatisation/) : quatre questions, environ deux minutes, pour le coût annuel d'une tâche ; six questions de plus pour le potentiel récupérable, la technologie minimale et le délai de retour ; résultat à l'écran, sans engagement (une adresse e-mail est demandée pour envoyer le rapport)
+- Si le projet vaut la peine : visioconférence de trente minutes, puis **devis à prix ferme sous 48 heures après la visioconférence** (vrai, 07/10/2026). Dans un texte, écrire la condition (« sous 48 h après la visio », « en menos de 48 horas tras la videollamada », « within 48 hours of the video call ») ; le bandeau des articles l'écrit depuis le 07/10/2026
+- **Seuil de 24 mois** : WebAutonomos ne propose un projet que s'il s'amortit en moins de 24 mois (vrai, 07/10/2026) ; c'est le seuil qu'applique l'outil
+- **Repère de prix, pas une règle** (décision du 07/10/2026) : mise en œuvre autour de 12 % du coût annuel de la tâche, maintenance autour de 20 % de la mise en œuvre par an, abonnements des outils en plus ; c'est le devis ferme qui fait foi. Ne jamais présenter le 12 % comme un tarif fixe, ni écrire que le prix ne dépend pas de la complexité
+- Interdits : fourchette des projets acceptés (« 500 à 4 000 € »), durée d'amortissement des cas acceptés (« la plupart des cas que nous acceptons se rentabilisent entre 4 et 12 mois », aucun chiffre : retiré le 07/10/2026), refus présentés comme une politique (« nous refusons… », « nous disons non »)
+
 ## 6. Preuves sociales
 
 - Note Trustpilot affichée : **4,3/5 sur 8 avis** (à mettre à jour ici quand elle change)
@@ -100,10 +108,13 @@ Les seuls nombres qu'un agent peut **ajouter** dans une page (en plus de ceux d�
 2026
 961 877 356, 654 23 95 20, 46870, 26
 49, 800, 2.000, 1.500, 4.000
+48
 ```
 
 Un pourcentage (« 70 % », « el 87 % de… ») n'est **jamais** autorisé, sauf s'il est accompagné ici d'une source.
 
+- 12 % : repère du prix de mise en œuvre d'une automatisation (§5 bis, décision d'Angelino du 07/10/2026) ; toujours « autour de 12 % », jamais comme tarif fixe.
+- 20 % : maintenance annuelle indicative d'une automatisation, rapportée à la mise en œuvre (§5 bis).
 - 10 % : remise accordée à un client en alquiler qui passe au paiement unique de 349 € (décision d'Angelino du 07/10/2026, voir §2). Seul usage autorisé de ce pourcentage.
 
 ### Chiffres de marché sourcés (utilisables avec la source citée)

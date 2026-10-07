@@ -167,22 +167,22 @@ CTA_CATEGORIE = {
     'automatizacion': {
         'es': dict(cta_title='¿Cuánto te cuestan tus tareas repetitivas?',
                    cta_text='Diagnóstico gratuito: 4 preguntas, unos 2 minutos · '
-                            'Precio cerrado · Presupuesto en menos de 48 horas',
+                            'Precio cerrado · Presupuesto en menos de 48 horas tras la videollamada',
                    cta_btn='Calcular lo que me cuesta →',
                    cta_href='/diagnostico-automatizacion/'),
         'val': dict(cta_title='Quant et costen les teues tasques repetitives?',
                     cta_text='Diagnòstic gratuït: 4 preguntes, uns 2 minuts · '
-                             'Preu tancat · Pressupost en menys de 48 hores',
+                             'Preu tancat · Pressupost en menys de 48 hores després de la videotrucada',
                     cta_btn='Calcular el que em costa →',
                     cta_href='/diagnostico-automatizacion/?lang=ca'),
         'en': dict(cta_title='What are your repetitive tasks costing you?',
                    cta_text='Free diagnostic: 4 questions, about 2 minutes · '
-                            'Fixed price · Quote within 48 hours',
+                            'Fixed price · Quote within 48 hours of the video call',
                    cta_btn='Calculate what it costs me →',
                    cta_href='/en/automation-diagnostic/'),
         'fr': dict(cta_title='Combien vous coûtent vos tâches répétitives ?',
                    cta_text='Diagnostic gratuit : 4 questions, environ 2 minutes · '
-                            'Prix ferme · Devis en moins de 48 heures',
+                            'Prix ferme · Devis en moins de 48 heures après la visioconférence',
                    cta_btn='Calculer ce que ça me coûte →',
                    cta_href='/fr/diagnostic-automatisation/'),
     },
