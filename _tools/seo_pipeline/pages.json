@@ -217,6 +217,21 @@
       "notes": "Page écrite par build_comparatifs.py (script à usage unique) : modifier la page directement. Prix des concurrents relevés le 23/09 : ne pas les changer sans source. Publiée le 25/09/2026 (PR #4) : score Google 8 → 36, GEO 25 → 69."
     },
     {
+      "slug": "es-pide-tu-demo",
+      "url": "https://webautonomos.es/pide-tu-demo",
+      "lang": "es",
+      "requete": "alquiler de paginas web",
+      "requete_a_confirmer": false,
+      "fichier": "pide-tu-demo.html",
+      "generateur": null,
+      "mode": "validation",
+      "objectif_geo": "au_mieux",
+      "objectif_google": 85,
+      "statut": "fait",
+      "priorite": 1,
+      "notes": "Page de conversion : formulaire de démo et page d'arrivée des annonces Google (patch_ads_gclid.py). Ne pas toucher au formulaire, au webhook ni aux scripts de mesure. Requête choisie le 07/10/2026 avec Angelino : « alquiler de páginas web » (Google n'y montre que des offres de sites loués, de 12,50 à 49 €/mes ; « página web en alquiler » renvoie à la location de logements). Guide créé dans l'interface, 8 concurrents gardés. Section « Alquiler de páginas web » et FAQ (FAQPage) ajoutées sous le formulaire, faits de VERITE.md §2 (passage à l'achat à 349 € moins 10 %, site hors ligne si le client arrête de payer). Guide par paliers (75 ou 100) : 100 retenu le 07/10, note 10 avant la section."
+    },
+    {
       "slug": "fr-home",
       "url": "https://webautonomos.es/fr/",
       "lang": "fr",

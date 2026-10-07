@@ -11,8 +11,8 @@ Compare l'arbre de travail à un commit de base et bloque la publication si :
   - canonical, hreflang, bloc Trustpilot, formulaire, liens de démo ou prix
     ont été retirés ;
   - un lien interne ajouté mène à une page absente ou à une redirection ;
-  - un nombre non autorisé, un pourcentage ou une expression interdite
-    (VERITE.md §7 et §8) a été ajouté ;
+  - un nombre non autorisé, un pourcentage (sauf ceux que VERITE.md §7 source sur une
+    ligne « - N % : … ») ou une expression interdite (VERITE.md §7 et §8) a été ajouté ;
   - des mots espagnols courants sont écrits sans accent.
 
 Usage :
@@ -97,6 +97,13 @@ def verite():
         nombres.update(re.findall(r'\d[\d.,]*\d|\d', item_n))
     interdits = [l.strip() for l in (blocs[1] if len(blocs) > 1 else '').splitlines() if l.strip()]
     return nombres, interdits
+
+
+def pourcentages_autorises():
+    """Pourcentages que VERITE.md §7 autorise avec leur source, une ligne « - 10 % : … » chacun (07/10/2026)."""
+    v = open(os.path.join(P, 'VERITE.md'), encoding='utf-8').read()
+    m = re.search(r'## 7\..*?(?=\n## 8\.)', v, re.S)
+    return set(re.findall(r'(?m)^- (\d[\d,]*) ?% :', m.group(0) if m else ''))
 
 
 def compter(motif, texte, flags=re.I):
@@ -236,12 +243,15 @@ def controler_html(path, base_s, new_s, lang, bloquants, avert, infos):
     # nombre déjà présent (tableau repris dans la FAQ, par ex.) n'est pas bloquant :
     # le relecteur juge le contexte. (25/09 : 9 faux positifs sur es-comparatif.)
     autorises, interdits = verite()
+    pct_ok = pourcentages_autorises()
     nb, nn = nombres_du_texte(tb), nombres_du_texte(tn)
     for k in nn:
         if k not in nb and re.sub(r'\s', '', k) not in autorises:
+            if k in pct_ok and re.search(r'(?<![\d.,])%s\s?%%' % re.escape(k), tn):
+                continue  # pourcentage sourcé dans VERITE.md §7
             bloquants.append(f'{nom} : nombre ajouté non autorisé par VERITE.md : « {k} »')
     pct = lambda t: set(re.findall(r'(\d[\d.,]*)\s?%', t)) | set(re.findall(r'%\s?(\d[\d.,]*)', t))
-    nouveaux_pct = pct(tn) - pct(tb)
+    nouveaux_pct = pct(tn) - pct(tb) - pct_ok
     if nouveaux_pct:
         bloquants.append(f'{nom} : pourcentage ajouté (interdit sans source dans VERITE.md) : '
                          + ', '.join(sorted(nouveaux_pct)))

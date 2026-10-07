@@ -44,6 +44,7 @@
   - textes légaux (privacy policy, cookie notice) **adaptés au droit britannique (UK GDPR)**
   - pages concernées : /en/dental-website-design, /en/physiotherapy-website-design et, depuis le 28/09/2026, /en/web-design-for-tradesmen, /en/web-design-for-plumbers et /en/web-design-for-electricians (générées par `_tools/build_uk_pages.py`)
 - Propriété de la web : avec la formule 349 €, la web est au client (« pagas una vez y la web es tuya », cartes de prix du site) ; en alquiler, ne pas écrire que la web lui appartient (seul le domaine est à lui)
+- Passage de l'alquiler à l'achat (décision d'Angelino du 07/10/2026) : un client en alquiler peut passer plus tard au paiement unique, au prix de 349 € moins 10 % (« con un 10 % de descuento sobre los 349 € »)
 - **Non inclus, ne jamais l'annoncer** (déclaré par Angelino le 25/09/2026) :
   - aucune intégration d'agenda ou de système de réservation en ligne (Calendly, Doctoralia, Bookitit, Doctolib, logiciels de clinique…) et aucun rappel automatique par SMS ou email ; les demandes arrivent par le formulaire (email) et par WhatsApp. **Permis** (confirmé le 27/09/2026) : un simple lien ou bouton vers l'outil de réservation que le client utilise déjà ; écrire « lien », jamais « intégration », « synchronisation » ni « rappels »
   - pas de photos « de alta calidad » ni de reportage photo : WebAutonomos utilise les photos du client (fiche Google, photos envoyées)
@@ -53,7 +54,7 @@
   - pas de modifications illimitées après la mise en ligne (une par mois), pas d'« intégrations avancées » gratuites
 - Textes légaux : dire qu'ils sont inclus ; ne jamais garantir que le client « cumple con todas sus obligaciones legales » (les pages santé ont des obligations propres : colegio, número de colegiado, registro sanitario)
 - TVA : prix affichés **sans IVA** ; IVA 21 % facturée, sauf client avec numéro de TVA intracommunautaire (autoliquidation, facture sans TVA)
-- Résiliation : le client prévient par email ou WhatsApp et arrête de payer, sans pénalité ni durée minimale. **Il n'existe pas d'« área de cliente » / espace client**, ni de résiliation « en 1 clic ».
+- Résiliation : le client prévient par email ou WhatsApp et arrête de payer, sans pénalité ni durée minimale. Quand il arrête de payer l'alquiler, son site n'est plus en ligne (Angelino, 07/10/2026) ; son domaine reste à lui. **Il n'existe pas d'« área de cliente » / espace client**, ni de résiliation « en 1 clic ».
 - Boutiques en ligne (tienda online / e-commerce) : **oui, sur devis** (« bajo presupuesto »). Non incluses dans 15 €/mes ni dans 349 €. Ne jamais annoncer de prix.
 
 ## 3. Langues
@@ -102,6 +103,8 @@ Les seuls nombres qu'un agent peut **ajouter** dans une page (en plus de ceux d�
 ```
 
 Un pourcentage (« 70 % », « el 87 % de… ») n'est **jamais** autorisé, sauf s'il est accompagné ici d'une source.
+
+- 10 % : remise accordée à un client en alquiler qui passe au paiement unique de 349 € (décision d'Angelino du 07/10/2026, voir §2). Seul usage autorisé de ce pourcentage.
 
 ### Chiffres de marché sourcés (utilisables avec la source citée)
 
