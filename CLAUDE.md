@@ -229,6 +229,11 @@ Chaque article DOIT contenir dans cet ordre :
 - Utiliser des ancres de texte descriptives (pas "cliquez ici")
 - Le premier article de chaque silo est le "pilier" (article le plus long et complet)
 - Les articles SPA existants comptent comme cibles de liens valides
+- **Guides métier ES → pages métier** (depuis le 2026-10-07) : les 5 guides espagnols des métiers (fontaneros, psicólogos,
+  electricistas, carpinteros et reformas, clínica dental et fisioterapia) renvoient vers leur page métier juste après le
+  chapeau, avec la requête commerciale exacte comme ancre (« diseño web para fontaneros », « páginas web para psicólogos »…),
+  bloc marqué `<!-- lien-page-metier -->` (`_tools/patch_guides_metier_20261007.py`). Ne pas le retirer lors d'une réécriture :
+  le guide prenait la place de la page qui vend. Les titres des pages métier sont en « Páginas web para… » et « Diseño web… ».
 
 ### Traductions (VAL + EN + FR)
 
