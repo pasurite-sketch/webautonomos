@@ -65,13 +65,13 @@
 - [Demander une démo gratuite](https://webautonomos.es/demandez-votre-demo)
 
 ## Webs por sector
-- [Psicólogos](https://webautonomos.es/psicologos)
-- [Dentistas](https://webautonomos.es/dentistas)
-- [Fisioterapeutas](https://webautonomos.es/fisioterapeutas)
-- [Electricistas](https://webautonomos.es/electricistas)
-- [Fontaneros](https://webautonomos.es/fontaneros)
-- [Carpinteros](https://webautonomos.es/carpinteros)
-- [Empresas de reformas](https://webautonomos.es/reformas)
+- [Psicólogos](https://webautonomos.es/psicologos/)
+- [Dentistas](https://webautonomos.es/dentistas/)
+- [Fisioterapeutas](https://webautonomos.es/fisioterapeutas/)
+- [Electricistas](https://webautonomos.es/electricistas/)
+- [Fontaneros](https://webautonomos.es/fontaneros/)
+- [Carpinteros](https://webautonomos.es/carpinteros/)
+- [Empresas de reformas](https://webautonomos.es/reformas/)
 
 ## Empresa
 PASURITE SLU — NIF ESB42890012

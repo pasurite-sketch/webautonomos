@@ -472,6 +472,7 @@ la source Lovable**. Les modifications ci-dessous y vivent, appliquées par des 
 | Formule tarifaire de 4 champs de métadonnées | corrigée le 2026-09-01 | « 15 €/mes sin alta, sin permanencia » redeviendrait « desde 15… » dans `Organization.description` (JSON-LD statique et bundle) et dans `seo.demoFontanero` / `seo.demoElectricista` |
 | Blocs `image` des articles (données SPA) | `_tools/photos/photos.py`, depuis le 2026-09-29 | La photo des articles dans les données ; les fichiers de `blog/` la gardent, mais une régénération la perdrait |
 | Script `blog-statique` dans le `<head>` | `_tools/patch_blog_statique_20261006.py`, le 2026-10-06 | La navigation interne (menu « Blog », cartes d'articles) ré-afficherait la copie SPA des articles : sans photo et avec un texte périmé |
+| Liens vers les 7 pages métier avec slash final (boutons « Para quién » et repli `<noscript>`) | `_tools/patch_slash_secteurs_20261007.py`, le 2026-10-07 | Les liens repartiraient vers `/psicologos` et les six autres adresses sans slash, qui répondent par une redirection |
 
 **Le script `blog-statique`.** L'application garde sa propre copie de chaque article et
 l'affichait quand on passait par le menu « Blog » : son composant ne rend pas les blocs
@@ -481,6 +482,13 @@ de page, et le visiteur reçoit la page statique. Pas de boucle possible : chaqu
 d'article de l'application a son fichier (190 vérifiées le 2026-10-06), et une adresse
 inconnue renvoie la page 404, jamais `index.html`. Ne pas le retirer tant que les articles
 vivent dans `blog/` ; s'il disparaît (ré-export), relancer le script, qui est idempotent.
+
+**Les pages métier.** `/psicologos/`, `/reformas/`, `/electricistas/`, `/carpinteros/`, `/fontaneros/`,
+`/fisioterapeutas/` et `/dentistas/` sont des dossiers : leur adresse canonique porte le slash final (canonical
+et sitemap). Sans slash, `html_handling` répondait 307 et Google gardait les deux adresses ; `_redirects` porte
+une 301 pour chacune depuis le 2026-10-07 (pas de boucle : `/<métier>/` reste en 200). Les liens internes visent
+directement `/<métier>/`, et `generate_spa_articles.py` écrit le slash pour les nouveaux articles. L'article ES
+« cuanto-cuesta », gelé jusqu'au contrôle du 22/10, garde ses anciens liens : la 301 les couvre.
 
 **La formule tarifaire.** Quatre champs de métadonnées portent « 15 €/mes sin alta, sin
 permanencia ». Les **16 autres occurrences de « desde 15 »** dans `index.html` sont des corps

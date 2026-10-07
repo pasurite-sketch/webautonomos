@@ -354,3 +354,16 @@
 /blog/fr/paperasse-huit-heures-par-semaine  /blog/fr/ce-que-la-paperasse-coute-vraiment   301
 /blog/fr/paperasse-huit-heures-par-semaine/  /blog/fr/ce-que-la-paperasse-coute-vraiment   301
 /blog/fr/paperasse-huit-heures-par-semaine.html  /blog/fr/ce-que-la-paperasse-coute-vraiment   301
+
+# Pages métier servies depuis un dossier (07/10/2026). Sans slash final, Cloudflare
+# répondait 307 vers /<métier>/ (html_handling « auto-trailing-slash ») : redirection
+# temporaire, Google gardait les deux adresses. 301 explicite vers l'adresse canonique.
+# Pas de boucle : la règle ne vise que l'adresse sans slash, /<métier>/ reste servie
+# en 200 (vérifié avec wrangler dev, puis au curl après le déploiement).
+/psicologos       /psicologos/       301
+/reformas         /reformas/         301
+/electricistas    /electricistas/    301
+/carpinteros      /carpinteros/      301
+/fontaneros       /fontaneros/       301
+/fisioterapeutas  /fisioterapeutas/  301
+/dentistas        /dentistas/        301

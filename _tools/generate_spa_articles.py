@@ -715,6 +715,8 @@ def alternates_disque(connus):
 # interne (audit du 05/09/2026 : 0 lien entrant sur /psicologos). Chaque
 # article les lie depuis son pied de page ; les articles sectoriels ES/VAL
 # ajoutent un lien contextuel. Anchor text traduit, cible espagnole.
+# Liens vers /<métier>/ avec le slash final, l'adresse canonique : sans slash,
+# Cloudflare redirige (301 dans _redirects depuis le 07/10/2026).
 SECTORS = [
     ('psicologos',      ('psicol', 'psycho', 'psicoleg'),
      {'es': 'Psicólogos', 'val': 'Psicòlegs', 'en': 'Psychologists', 'fr': 'Psychologues'}),
@@ -741,7 +743,7 @@ SEO_LOCAL_PATS = ('google', 'maps', 'resen', 'ressen', 'nap', 'schema', 'seo-loc
 def sector_links_html(lang):
     """Liste des 7 liens pour le pied de page."""
     return ' · '.join(
-        '<a href="%s/%s" style="color:rgba(255,255,255,0.85); text-decoration:none;">%s</a>'
+        '<a href="%s/%s/" style="color:rgba(255,255,255,0.85); text-decoration:none;">%s</a>'
         % (BASE, key, E(names.get(lang, names['es'])))
         for key, _, names in SECTORS)
 
@@ -767,7 +769,7 @@ def sector_cta_html(slug, lang):
     if not hits:
         return ''
     links = ''.join(
-        '<a href="%s/%s" style="display:inline-block; margin:6px 8px 0 0; color:#2563eb; '
+        '<a href="%s/%s/" style="display:inline-block; margin:6px 8px 0 0; color:#2563eb; '
         'font-weight:600; text-decoration:none;">%s</a>'
         % (BASE, key, E(ui['sector_link'].format(name=names[lang].lower())))
         for key, names in hits)
