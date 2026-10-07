@@ -689,6 +689,15 @@ PHYSIO = dict(
          '<li><span>Your treatments and who provides them</span></li>'
          '<li><span>How to get in touch, by form, WhatsApp or telephone</span></li>'
          '<li><span>Your fees and opening hours</span></li></ul></div>'),
+        # 07/10/2026 : nouveau guide « physiotherapy website design » (agences de sites pour kinés) ; ce guide avance
+        # par paliers (70-72 ou 100) : cette section suffit pour 100. Une section de plus le fait passer au-dessus.
+        ('physio-web-design', 'Website design', 'Physio websites designed around how people choose a practice',
+         '<p class="legal-intro">Good website design for a physio practice isn\'t decoration. It helps a visitor '
+         'understand what you offer, trust the people behind it and get in touch, on mobile as well as on '
+         'desktop.</p>\n  '
+         '<p class="legal-intro"><strong>Real people, not stock images.</strong> Photos of your own practice and '
+         'your team, from your Google listing or sent by you, show people where they are going. Generic stock images '
+         'could belong to anyone, and photos of patients need their permission.</p>'),
     ],
 )
 SRC_PHYSIO = [
