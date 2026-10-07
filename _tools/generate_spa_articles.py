@@ -308,8 +308,8 @@ NAV = """    <nav style="background:white; box-shadow:0 1px 3px rgba(0,0,0,0.1);
 FOOTER = """    <footer style="background:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%); padding:24px 6%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:48px;">
         <a href="{home_url}" style="font-weight:800; font-size:1rem; color:rgba(255,255,255,0.85); text-decoration:none;">&#127760; webautonomos.es</a>
         <div style="display:flex; gap:20px; flex-wrap:wrap;">
-            <a href="{base}/aviso-legal" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{legal}</a>
-            <a href="{base}/privacidad" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{privacy}</a>
+            <a href="{base}/aviso-legal/" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{legal}</a>
+            <a href="{base}/privacidad/" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{privacy}</a>
             <a href="{contact_url}" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{contact}</a>
         </div>
         <nav aria-label="{sectors_label}" style="flex-basis:100%; order:2; display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center; font-size:0.85rem;">
@@ -520,9 +520,9 @@ def render(article, lang, alternates):
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": ui['home'], "item": NAV_URLS[lang]['home']},
-            {"@type": "ListItem", "position": 2, "name": ui['blog'], "item": BASE + "/blog"},
+            {"@type": "ListItem", "position": 2, "name": ui['blog'], "item": BASE + "/blog/"},
             {"@type": "ListItem", "position": 3, "name": cat_label,
-             "item": "%s/blog?categoria=%s" % (BASE, cat_slug)},
+             "item": "%s/blog/?categoria=%s" % (BASE, cat_slug)},
             {"@type": "ListItem", "position": 4, "name": title},
         ],
     }

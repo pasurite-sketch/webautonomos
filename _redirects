@@ -1,5 +1,5 @@
-/blog/es/kit-digital-autonomos-2026-como-solicitarlo  /blog  301
-/blog/es/kit-digital-autonomos-2026-como-solicitarlo/ /blog  301
+/blog/es/kit-digital-autonomos-2026-como-solicitarlo  /blog/  301
+/blog/es/kit-digital-autonomos-2026-como-solicitarlo/ /blog/  301
 
 # Renommage des slugs valenciens en graphie catalane (31/08/2026).
 # Les anciens slugs etaient castillans ; les fichiers ont ete supprimes
@@ -367,3 +367,26 @@
 /fontaneros       /fontaneros/       301
 /fisioterapeutas  /fisioterapeutas/  301
 /dentistas        /dentistas/        301
+
+# Autres pages servies depuis un dossier (07/10/2026), même traitement que les pages
+# métier ci-dessus : 301 explicite vers l'adresse canonique avec slash, au lieu de la 307
+# de html_handling. /gracias a déjà sa règle plus haut.
+/blog                           /blog/                           301
+/aviso-legal                    /aviso-legal/                    301
+/privacidad                     /privacidad/                     301
+/cookies                        /cookies/                        301
+/diagnostico-automatizacion     /diagnostico-automatizacion/     301
+/visibilidad-ia                 /visibilidad-ia/                 301
+/en                             /en/                             301
+/en/ai-visibility               /en/ai-visibility/               301
+/en/automation-diagnostic       /en/automation-diagnostic/       301
+/fr                             /fr/                             301
+/fr/diagnostic-automatisation   /fr/diagnostic-automatisation/   301
+/fr/visibilite-ia               /fr/visibilite-ia/               301
+/demo-carpintero                /demo-carpintero/                301
+/demo-dentistas                 /demo-dentistas/                 301
+/gracias-gmb                    /gracias-gmb/                    301
+/gracias-seo                    /gracias-seo/                    301
+/gracias-visibilidad-ia         /gracias-visibilidad-ia/         301
+/merci                          /merci/                          301
+/thank-you                      /thank-you/                      301

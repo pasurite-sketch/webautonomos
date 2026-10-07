@@ -77,7 +77,7 @@ MOIS = {
 
 H1 = re.compile(r'<h1[^>]*>(.*?)</h1>', re.S | re.I)
 DESC = re.compile(r'<meta name="description" content="([^"]*)"', re.I)
-CAT = re.compile(r'blog\?categoria=([a-z0-9-]+)')
+CAT = re.compile(r'blog/?\?categoria=([a-z0-9-]+)')  # /blog/?categoria= depuis le 07/10/2026
 DATE = re.compile(r'"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})')
 PARA = re.compile(r'<p\b[^>]*>(.*?)</p>', re.S | re.I)
 
@@ -339,8 +339,8 @@ def build(data):
 <footer>
   <a class="fl" href="/"><span>&#127760;</span> webautonomos.es</a>
   <div class="flinks">
-    <a href="/aviso-legal">Aviso legal</a>
-    <a href="/privacidad">Privacidad</a>
+    <a href="/aviso-legal/">Aviso legal</a>
+    <a href="/privacidad/">Privacidad</a>
     <a href="/contacto">Contacto</a>
   </div>
   <address class="fnap">
