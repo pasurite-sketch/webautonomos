@@ -43,10 +43,11 @@ GUIDES = {
         '¿Prefieres que te hagamos la web? Consulta nuestros servicios de %s y de %s%s'
         % (lien('carpinteros', 'páginas web para carpinteros'),
            lien('reformas', 'páginas web para empresas de reformas'), SUITE),
+    # Formulation propre à ce guide : avec « servicios », sa note passait de 100 à 103 (gris).
     'blog/es/web-para-clinica-dental-fisioterapeuta.html':
-        '¿Prefieres que te hagamos la web? Consulta nuestros servicios de %s y de %s%s'
+        '¿Prefieres que te la hagamos? Así funcionan nuestras %s y %s: demo gratis en menos de 24 horas.'
         % (lien('dentistas', 'páginas web para dentistas'),
-           lien('fisioterapeutas', 'páginas web para fisioterapeutas'), SUITE),
+           lien('fisioterapeutas', 'páginas web para fisioterapeutas')),
 }
 CHAPEAU = '<p class="text-lg text-gray-700 leading-relaxed mb-6">'
 
