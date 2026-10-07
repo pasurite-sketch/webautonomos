@@ -26,8 +26,8 @@
    "url": "https://webautonomos.es/blog/fr/5-raisons-davoir-un-site-web-en-2026",
    "fichier": "blog/fr/5-raisons-davoir-un-site-web-en-2026.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "pourquoi avoir un site internet",
+   "origine": "guide créé le 07/10 dans l'interface, 12 pages gardées (intérêt d'un site pour une entreprise, une TPE ou un artisan)",
    "phase": 2
   },
   {
@@ -55,7 +55,7 @@
    "fichier": "blog/fr/automatiser-sans-savoir-programmer.html",
    "lang": "fr",
    "requete": "automatiser sans coder",
-   "origine": "file d’attente",
+   "origine": "file d'attente ; guide créé le 07/10 dans l'interface, 10 pages gardées (outils d'automatisation sans code ; agences, formations et forums retirés)",
    "phase": 2
   },
   {
@@ -166,8 +166,8 @@
    "url": "https://webautonomos.es/blog/fr/apparaitre-sur-google-maps-guide-complet",
    "fichier": "blog/fr/apparaitre-sur-google-maps-guide-complet.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "comment apparaître sur google maps",
+   "origine": "guide créé le 07/10 dans l'interface, 12 pages gardées (guides et aide Google sur la fiche d'établissement)",
    "phase": 2
   },
   {
@@ -465,8 +465,8 @@
    "url": "https://webautonomos.es/blog/fr/ce-que-la-paperasse-coute-vraiment",
    "fichier": "blog/fr/ce-que-la-paperasse-coute-vraiment.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "temps passé sur les tâches administratives",
+   "origine": "guide créé le 07/10 dans l'interface, 12 pages gardées (enquêtes et conseils pour TPE ; pages RH retirées)",
    "phase": 2
   },
   {
@@ -756,7 +756,7 @@
    "fichier": "blog/fr/ce-que-vous-ne-faites-pas-faute-de-temps.html",
    "lang": "fr",
    "requete": "relance impayés automatique",
-   "origine": "file d’attente",
+   "origine": "file d'attente ; guide créé le 07/10 dans l'interface, 12 pages gardées (procédure de relance et relances automatiques ; pages produits retirées)",
    "phase": 2
   },
   {
@@ -970,8 +970,8 @@
    "url": "https://webautonomos.es/blog/fr/budget-marketing-digital-independants",
    "fichier": "blog/fr/budget-marketing-digital-independants.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "budget marketing digital",
+   "origine": "guide créé le 07/10 dans l'interface, 12 pages gardées (établir et répartir un budget ; prix d'agences retirés)",
    "phase": 2
   },
   {
@@ -1054,8 +1054,8 @@
    "url": "https://webautonomos.es/blog/fr/ce-qu-il-ne-faut-jamais-automatiser",
    "fichier": "blog/fr/ce-qu-il-ne-faut-jamais-automatiser.html",
    "lang": "fr",
-   "requete": "ne pas automatiser",
-   "origine": "file d’attente",
+   "requete": "tâches à ne pas automatiser",
+   "origine": "« ne pas automatiser » (file d'attente) trop vague ; guide créé le 07/10 dans l'interface, 8 pages gardées (Google comprend mal la négation : pages sur le choix des tâches à automatiser)",
    "phase": 2
   },
   {
@@ -1092,7 +1092,7 @@
    "fichier": "blog/en/which-tasks-to-automate-first.html",
    "lang": "en",
    "requete": "which tasks to automate",
-   "origine": "file d’attente",
+   "origine": "file d'attente ; guide créé le 07/10 dans l'interface, 9 pages gardées (choix des tâches à automatiser ; tâches informatiques, produits et vidéos retirés)",
    "phase": 2,
    "langue_serpmantics": "en-gb"
   },
@@ -1596,7 +1596,7 @@
    "fichier": "blog/en/wix-or-wordpress.html",
    "lang": "en",
    "requete": "wix or wordpress",
-   "origine": "file d’attente",
+   "origine": "file d'attente ; guide créé le 07/10 dans l'interface, 12 comparatifs gardés (forums retirés)",
    "phase": 2,
    "langue_serpmantics": "en-gb"
   },
@@ -1632,8 +1632,8 @@
    "url": "https://webautonomos.es/blog/es/pagina-web-para-electricistas",
    "fichier": "blog/es/pagina-web-para-electricistas.html",
    "lang": "es",
-   "requete": null,
-   "origine": "guide informatif depuis le 07/10/2026 (« Qué debe tener la web de un electricista ») : « pagina web para electricistas » revient à /electricistas/ (pages.json, es-electricistas). Aucune requête informative exploitable dans le SERP espagnol : « qué debe tener la web de un electricista » (formations, factures) et « cómo hacer una web para electricistas » (modèles, agences : intention de /electricistas/), guides du 07/10 non validés",
+   "requete": "cómo hacer una web para electricistas",
+   "origine": "guide informatif depuis le 07/10/2026 (« Qué debe tener la web de un electricista », titre gardé) ; « qué debe tener la web de un electricista » inutilisable chez SERPmantics (formations, factures) ; guide créé le 07/10, recréé le même jour (le premier était cassé), 5 pages exploitables gardées ; la requête commerciale « pagina web para electricistas » reste à /electricistas/",
    "phase": 2,
    "langue_serpmantics": "es"
   },
