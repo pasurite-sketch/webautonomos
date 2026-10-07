@@ -62,6 +62,11 @@ pages non santé (`AUTO_MERGE=1`) et programme `run_nuit.sh` chaque nuit à 3h17
    publiées ; celles qui ne sont pas au vert (score Google < 50, ou GEO < 50 pour
    les pages `"objectif_geo": "vert"`) reçoivent une retouche minimale, relue,
    puis PR (au plus `MAX_AFFINAGES`, 3 par défaut) ;
+   depuis le 07/10/2026 (voie 1 de l'audit du 06/10), les pages qui ont un
+   `"objectif_google"` dans `pages.json` passent en premier, avec ce seuil à la
+   place de 50 : 85 pour cinq pages métier espagnoles (psicólogos, reformas,
+   fontaneros, electricistas, carpinteros). Une note
+   au-dessus de 100 (gris, sur-optimisation) les fait aussi retoucher ;
 3. nouvelles pages (`N_NOUVELLES`, 2 par défaut).
 
 Coût : 0 € de plus (mesures SERPmantics gratuites, guides réutilisés, Claude sur

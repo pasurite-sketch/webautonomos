@@ -237,6 +237,14 @@ Chaque article DOIT contenir dans cet ordre :
   Électriciens : l'article `/blog/es/pagina-web-para-electricistas` est devenu un guide informatif (« Qué debe tener la web
   de un electricista ») ; la requête « pagina web para electricistas » est suivie sur `/electricistas/` (`pages.json`,
   es-electricistas), ce qui remplace la décision du 24/09. Garder les titres des guides informatifs.
+- **Liens entrants des pages métier (voie 1 de l'audit, depuis le 2026-10-07)** : /psicologos/, /reformas/ et /fontaneros/
+  reçoivent au moins 5 liens dans le texte : l'accueil, leur guide, et trois articles du blog (« qué debe tener »,
+  backlinks locales, reservas online, crear contenido, posicionar en Google local) : paragraphes marqués
+  `<!-- lien-voie1 -->`, plus une phrase dans la liste « Protección de datos » de reservas online
+  (`_tools/patch_liens_voie1_20261007.py`). Ne pas les retirer lors d'une réécriture. Les trois
+  pages ont aussi une section « Antes de decidir » (directorio ou portal, plantilla, web hecha por nosotros), placée
+  juste avant la Normativa, qui reste collée à la FAQ. VERITE §8 interdit « habitissimo » : ne nommer aucun portal de
+  presupuestos.
 
 ### Traductions (VAL + EN + FR)
 

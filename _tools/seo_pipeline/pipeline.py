@@ -60,7 +60,8 @@ BLOQUANTS = ('en_cours', 'pr_ouverte', 'a_revoir')
 
 def cmd_a_affiner(n):
     """Pages publiées (pages.json « fait » ou fusionnées par le circuit), hors pages en
-    cours ou en attente, les moins récemment contrôlées d'abord."""
+    cours ou en attente : d'abord celles qui ont un « objectif_google » (voie 1 de l'audit
+    du 06/10/2026, pages espagnoles), puis les moins récemment contrôlées."""
     st = state()
     ctl = st.get('_controles', {})
     liste = []
@@ -69,9 +70,10 @@ def cmd_a_affiner(n):
         if p['mode'] == 'manuel' or s_ in BLOQUANTS:
             continue
         if p['statut'] == 'fait' or s_ == 'publie':
-            liste.append((ctl.get(p['slug'], {}).get('date', ''), p['priorite'], p['slug']))
+            liste.append((0 if p.get('objectif_google') else 1,
+                          ctl.get(p['slug'], {}).get('date', ''), p['priorite'], p['slug']))
     liste.sort()
-    print('\n'.join(x[2] for x in liste[:n]))
+    print('\n'.join(x[3] for x in liste[:n]))
 
 
 def cmd_controle(slug, resultat):

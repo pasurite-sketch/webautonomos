@@ -497,11 +497,17 @@ def cmd_verifier(slug, label='controle'):
     g = (r.get('google') or {}).get('score')
     geo = r.get('score_geo_moyen')
     objectif = e.get('objectif_geo', 'au_mieux')
+    # « objectif_google » (pages de la voie 1 de l'audit du 06/10/2026) : seuil Google propre
+    # à la page, au-dessus du seuil vert, et jamais plus de 100 (au-delà, SERPmantics affiche
+    # la note en gris : sur-optimisation).
+    objectif_g = int(e.get('objectif_google') or s)
     manque = []
     if not isinstance(g, (int, float)):
         sys.exit('score Google indisponible')  # code 1 : erreur, pas une décision
-    if g < s:
-        manque.append(f'Google {g} < {s}')
+    if g < objectif_g:
+        manque.append(f'Google {g} < {objectif_g}' + (' (objectif_google)' if e.get('objectif_google') else ''))
+    if e.get('objectif_google') and g > 100:
+        manque.append(f'Google {g} > 100 : sur-optimisation (note en gris), à alléger sans descendre sous {objectif_g}')
     if objectif == 'vert' and geo is not None and geo < s:
         manque.append(f'GEO moyen {geo} < {s} (objectif_geo : vert)')
     # toutes les pages : aucun guide GEO en rouge (décision d'Angelino du 25/09/2026, 23h29)

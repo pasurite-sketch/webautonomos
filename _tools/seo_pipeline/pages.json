@@ -7,7 +7,8 @@
     "requetes_secondaires : variantes à placer naturellement (H2, FAQ, texte), sans changer la requête principale du title.",
     "donnees : origine des volumes (Search Console ou outil de mots-clés d'Angelino).",
     "langue_serpmantics : code SERPmantics propre à la page (ex. en-gb pour les pages britanniques), prioritaire sur langues_serpmantics.",
-    "termes_necessaires : mots que le circuit ne doit jamais réduire, même signalés « trop cités » par SERPmantics (pays, termes juridiques) ; ignorés par le contrôle de répétition."
+    "termes_necessaires : mots que le circuit ne doit jamais réduire, même signalés « trop cités » par SERPmantics (pays, termes juridiques) ; ignorés par le contrôle de répétition.",
+    "objectif_google : seuil Google propre à la page (voie 1 de l'audit du 06/10/2026 : 85 sur les pages métier espagnoles, contre 50 pour seuil_vert) ; l'affinage de nuit contrôle ces pages en premier et les retouche si leur note est sous cet objectif ou au-dessus de 100 (gris)."
   ],
   "langues_serpmantics": {
     "es": "es-es",
@@ -88,9 +89,10 @@
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "au_mieux",
+      "objectif_google": 85,
       "statut": "fait",
       "priorite": 1,
-      "notes": "Réécrite à la main le 24/09 (score 18 au départ). Mesurer début novembre. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, règles vérifiées puis relues : ne pas la modifier ni la déplacer (tableau des règles protégé, REGLES_REDACTEUR.md §2)."
+      "notes": "Réécrite à la main le 24/09 (score 18 au départ). Mesurer début novembre. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, règles vérifiées puis relues : ne pas la modifier ni la déplacer (tableau des règles protégé, REGLES_REDACTEUR.md §2). 07/10/2026 (voie 1, méthode de la masterclass) : section « Antes de decidir » (portal de reformas, plantilla o web propia) avant la Normativa, « otras cinco empresas » (chiffre non sourcé) devenu « otras empresas » ; 5 liens entrants dans le texte (accueil, guide, 3 articles). Note 92 → 95."
     },
     {
       "slug": "es-fontaneros",
@@ -102,9 +104,10 @@
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "au_mieux",
+      "objectif_google": 85,
       "statut": "fait",
       "priorite": 1,
-      "notes": "51 imp., pos. 15 (GSC 16 mois). Garder le bloc Trustpilot (<div class=\"proof-num\">4,3★</div>) intact. Publiée le 24/09/2026 (PR #1) : score Google 36 → 50, GEO 16 → 25. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, règles vérifiées puis relues : ne pas la modifier ni la déplacer (tableau des règles protégé, REGLES_REDACTEUR.md §2)."
+      "notes": "51 imp., pos. 15 (GSC 16 mois). Garder le bloc Trustpilot (<div class=\"proof-num\">4,3★</div>) intact. Publiée le 24/09/2026 (PR #1) : score Google 36 → 50, GEO 16 → 25. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, règles vérifiées puis relues : ne pas la modifier ni la déplacer (tableau des règles protégé, REGLES_REDACTEUR.md §2). 07/10/2026 (voie 1, méthode de la masterclass) : section « Antes de decidir » (portal de servicios, plantilla o diseño web) avant la Normativa ; 5 liens entrants dans le texte (accueil, guide, 3 articles). Note 79 → 80."
     },
     {
       "slug": "es-carpinteros",
@@ -116,6 +119,7 @@
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "au_mieux",
+      "objectif_google": 85,
       "geo_hors_cible": [
         "geo"
       ],
@@ -133,6 +137,7 @@
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "vert",
+      "objectif_google": 85,
       "statut": "fait",
       "priorite": 1,
       "notes": "Décidé le 07/10/2026 (audit du 06/10, « le blog prend la place des pages métier ») : la requête revient à /electricistas/, page de conversion, comme pour les six autres métiers. L'article /blog/es/pagina-web-para-electricistas devient un guide (« Qué debe tener la web de un electricista », suivi dans requetes_site.json) et renvoie vers /electricistas/ en haut d'article. Remplace la décision du 24/09, qui confiait la requête à l'article (alors en position 10, 300 impressions ; /electricistas/ en position 67)."
@@ -147,9 +152,10 @@
       "generateur": null,
       "mode": "validation",
       "objectif_geo": "au_mieux",
+      "objectif_google": 85,
       "statut": "fait",
       "priorite": 1,
-      "notes": "SANTÉ. ~160 imp., pos. 42-48. Sous-domaine psicologos.webautonomos.es (démo) aussi indexé. Règles RD 1907/1996. Publiée le 25/09/2026 (PR #12) : score Google 15 → 68, GEO 10 → 33. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, relue : ne pas la modifier ni la déplacer. Sans ligne sur les testimonios de pacientes, par décision d'Angelino du 28/09 (les avis Google restent affichés) : ne pas l'ajouter."
+      "notes": "SANTÉ. ~160 imp., pos. 42-48. Sous-domaine psicologos.webautonomos.es (démo) aussi indexé. Règles RD 1907/1996. Publiée le 25/09/2026 (PR #12) : score Google 15 → 68, GEO 10 → 33. Section « Normativa » (id=\"normativa\", avant la FAQ) ajoutée le 28/09/2026 par _tools/patch_normativa_es_20260928.py, relue : ne pas la modifier ni la déplacer. Sans ligne sur les testimonios de pacientes, par décision d'Angelino du 28/09 (les avis Google restent affichés) : ne pas l'ajouter. 07/10/2026 (voie 1, méthode de la masterclass) : section « Antes de decidir » (directorio, plantilla o web a medida) avant la Normativa ; l'apartado « Tus redes sociales, conectadas » fondu dedans (même fait : enlaces a Instagram o LinkedIn) ; 5 liens entrants dans le texte (accueil, guide, et 3 articles via _tools/patch_liens_voie1_20261007.py). Guide par paliers : 100 retenu."
     },
     {
       "slug": "es-dentistas",
