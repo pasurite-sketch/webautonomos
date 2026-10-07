@@ -1239,19 +1239,18 @@ KINE['fr'] = dict(
     crumb_home='Accueil', crumb='Kinésithérapeutes',
     badge='Masseurs-kinésithérapeutes libéraux',
     h1="Un site internet pour <em>kinésithérapeutes</em>, pensé pour votre code de déontologie",
-    lede="Votre cabinet, vos spécificités, vos honoraires et votre agenda en ligne, présentés selon les "
-         "recommandations de l'Ordre : une présentation qui informe, sans rien de commercial. Nous l'écrivons pour "
-         "vous, vous validez chaque contenu, et la démo est gratuite en 24 heures.",
-    pills=["Construit selon les recommandations de l'Ordre", 'RPPS et honoraires affichés', 'Démo gratuite en 24 h'],
+    lede="Votre cabinet, vos honoraires et votre agenda en ligne, présentés selon les règles de votre profession : "
+         "une présentation qui informe, sans rien de commercial. Nous l'écrivons pour vous, vous validez chaque texte, "
+         "et la démo est gratuite en 24 h.",
+    pills=["Rédigé selon vos règles professionnelles", 'RPPS et honoraires affichés', 'Démo gratuite en 24 h'],
     cta='Recevoir ma démo gratuite', cta2='Ce que le code impose',
     brief_t='En bref',
     brief="WebAutonomos crée des sites internet pour les masseurs-kinésithérapeutes libéraux, en France et en "
-          "Espagne. Ils présentent votre cabinet, vos spécificités reconnues par l'Ordre, vos honoraires et vos modes "
-          "de paiement, avec votre numéro RPPS et votre numéro d'Ordre, comme l'exigent le code de déontologie et les "
-          "recommandations de l'Ordre. Ils restent informatifs : pas de témoignages, pas de comparaison, et pas de "
-          "référencement pour passer devant vos confrères, que le code interdit. Le site coûte "
+          "Espagne. Ils présentent votre cabinet, vos honoraires et vos moyens de paiement, avec votre RPPS, comme "
+          "l'exigent vos obligations professionnelles. Ils restent informatifs : pas de témoignages, pas de comparaison, "
+          "et aucune prestation pour passer devant vos confrères dans Google, ce que le code interdit. Comptez "
           "<strong>15 € HT par mois</strong> sans frais d'installation ni engagement, ou <strong>349 € HT en "
-          "paiement unique</strong>, et la démo est prête en 24 heures.",
+          "paiement unique</strong>, et la démo est prête en 24 h.",
     legal_id='regles', legal_ey='Le code de déontologie', legal_t="Ce que votre site doit respecter",
     legal_intro="Depuis 2020, un kinésithérapeute peut informer le public librement, y compris sur un site internet. "
                 "Mais cette information est encadrée par le code de déontologie et par les recommandations de l'Ordre. "
@@ -1306,22 +1305,22 @@ KINE['fr'] = dict(
                "<a href=\"/fr/site-internet-francophones-espagne\">site internet pour francophones en Espagne</a>.",
     sources_t='Sources',
     why_ey='Pourquoi nous', why_t="Pensé pour les kinésithérapeutes",
-    why=[('📋', "Les mentions de l'Ordre en place", "RPPS, numéro d'Ordre, honoraires et modes de paiement : ce que "
-                                                   "le code et l'Ordre exigent."),
+    why=[('📋', "Vos obligations d'information en place",
+          "RPPS, inscription ordinale, honoraires et moyens de paiement, comme le prévoient le code et les "
+          "recommandations ordinales."),
          ('📅', 'Un agenda sans champ libre', "Un lien vers votre prise de rendez-vous en ligne, sans zone de texte "
-                                             "libre, comme le recommande l'Ordre.")],
+                                             "libre, selon les recommandations ordinales.")],
     where_t='En France et en Espagne',
-    where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que votre cabinet soit à "
+    where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que vous exerciez à "
           "Lille, à Toulouse ou à Alicante, rien ne change.",
     sect_t='Pour qui',
     sectors=['💆 Kinés libéraux', '🏃 Kinésithérapie du sport', '🫁 Kinésithérapie respiratoire',
              '🤰 Pelvi-périnéologie', '🧓 Gériatrie', '👶 Pédiatrie',
              '🏥 Cabinets de groupe', '🦴 Kinés ostéopathes'],
     how_t='Comment cela se passe, en trois étapes',
-    steps=[('Vous décrivez votre cabinet', "Vos spécificités reconnues, vos horaires, votre agenda en ligne, votre "
-                                          "ville : deux minutes suffisent."),
-           ('Nous préparons votre démo', "En moins de 24 heures, avec vos honoraires, votre RPPS et vos mentions "
-                                        "légales."),
+    steps=[('Vous décrivez votre activité', "Vos horaires, votre agenda en ligne et votre ville : deux minutes "
+                                           "suffisent."),
+           ('Nous préparons votre démo', "En moins de 24 h, avec vos honoraires et votre RPPS."),
            ('Vous décidez', "Vous relisez et validez chaque contenu, et demandez les modifications que vous voulez. "
                             "Si la démo vous plaît, elle est mise en ligne ; sinon, vous ne payez rien.")],
     price_note=PRIX_FR_SANTE,
@@ -1329,54 +1328,34 @@ KINE['fr'] = dict(
     faq=[("Un kinésithérapeute a-t-il le droit d'avoir un site internet ?",
           "Oui. Depuis la réforme de 2020, le code de déontologie permet d'informer le public par tout moyen, y compris "
           "sur un site internet, sur vos compétences, votre parcours et vos conditions d'exercice (art. R4321-67-1). "
-          "L'information doit être loyale et honnête et tenir compte des recommandations de l'Ordre, qui demande un site "
-          "sans caractère promotionnel ni commercial."),
-         ("Mes honoraires doivent-ils figurer sur mon site ?",
-          "Oui. Le code de déontologie (art. R4321-98) impose à un kiné qui présente son activité, notamment sur un site, "
-          "d'y indiquer ses honoraires, les modes de paiement acceptés et les obligations d'accès aux soins sans "
-          "discrimination. Des fourchettes sont possibles si vous en précisez les critères."),
-         ("Puis-je payer pour être mieux référencé sur Google ?",
-          "Non. L'article R4321-123 interdit d'obtenir, contre paiement ou par tout autre moyen, un référencement qui "
-          "fasse apparaître votre site en priorité, et l'Ordre étend l'interdiction à tout service qui vise ce résultat. "
-          "C'est pourquoi nous ne vendons ni référencement ni publicité aux kinés : le site est clair et bien construit, "
-          "et Google l'indexe normalement."),
-         ("Puis-je afficher les avis de mes patients ?",
-          "Non : votre communication ne doit pas faire appel à des témoignages de tiers (art. R4321-67-1). Afficher ou "
-          "intégrer des avis de patients sur votre site revient à utiliser ces témoignages."),
+          "L'information doit être loyale et honnête et suivre les recommandations ordinales : pas de caractère "
+          "promotionnel ni commercial."),
+         # 07/10/2026 : les questions sur les honoraires, le référencement payant et les avis de patients redisaient
+         # le tableau des règles ; retirées pour ramener la note SERPmantics sous 100 (tableau inchangé).
          ("Puis-je écrire « kiné du sport » ou « spécialiste » ?",
-          "Seulement les spécificités reconnues par l'Ordre, avec leur libellé exact : « Kinésithérapie du sport », par "
-          "exemple, si vous avez un diplôme reconnu ou au moins 80 heures de formation sur quatre ans. Le mot "
-          "« spécialiste » est à éviter : l'Ordre parle d'exercice préférentiel."),
+          "Seulement les spécificités reconnues, avec leur libellé exact : « Kinésithérapie du sport », par exemple, si "
+          "vous avez un diplôme reconnu ou au moins 80 heures de formation sur quatre ans. Le mot « spécialiste » est à "
+          "éviter : les textes ordinaux parlent d'exercice préférentiel."),
          ("Puis-je indiquer que les patients peuvent venir sans ordonnance ?",
-          "Seulement si vous exercez en établissement de santé ou médico-social, en maison ou centre de santé, en "
-          "équipe de soins primaires ou spécialisés, ou en CPTS dans l'un des 20 départements de l'expérimentation. "
-          "Dans ce cas, précisez les limites : 8 séances au plus sans diagnostic médical, avec un bilan et un compte "
-          "rendu adressés au patient et à son médecin traitant et versés au DMP."),
+          "Seulement dans les cas d'accès direct prévus par l'article L4321-1, rappelés dans le tableau ci-dessus. "
+          "Précisez alors les limites : 8 séances au plus sans diagnostic médical, avec un bilan et un compte rendu "
+          "adressés au patient et à son médecin traitant et versés au DMP."),
          ("Je suis aussi ostéopathe : comment l'indiquer ?",
-          "Si vous avez le droit d'utiliser le titre, le site doit mentionner votre diplôme d'ostéopathie ainsi que votre "
-          "diplôme d'État de masseur-kinésithérapeute, comme sur votre plaque."),
+          "Si vous avez le droit d'utiliser le titre, vos pages doivent mentionner votre diplôme d'ostéopathie ainsi que "
+          "votre diplôme d'État de masseur-kinésithérapeute, comme sur votre plaque."),
          ("Combien coûte un site pour kinésithérapeute ?",
           "15 € HT par mois sans frais d'installation ni engagement, ou 349 € HT en paiement unique, avec les mêmes "
-          "services : conception, hébergement, nom de domaine la première année, mentions légales et une modification "
-          "par mois. La démo est gratuite.")],
+          "services : conception, hébergement, domaine la première année, textes légaux et une modification par mois. "
+          "La démo est gratuite.")],
     final_t='Voyez le résultat avant de payer quoi que ce soit',
-    final_sd="Démo gratuite en 24 heures, honoraires et mentions obligatoires compris. Sans frais d'installation, sans "
-             "engagement.",
-    extra=[('contenu-site', 'Contenu du site', "Site internet kinésithérapeute : ce qu'il doit contenir",
-            '<p class="legal-intro">Notre création de site internet pour kinésithérapeutes comprend la rédaction des '
-            "textes à partir de vos informations, l'hébergement web et une modification par mois après la mise en "
-            "ligne. Voici, concrètement, ce que vos pages contiennent.</p>"
-            '<div class="legal-we"><ul>'
-            "<li><span>Vos honoraires, vos modes de paiement et, le cas échéant, vos spécificités reconnues par le "
-            "Conseil national de l'Ordre, présentés selon les règles rappelées plus haut</span></li>"
-            "<li><span>Un lien vers vos réseaux sociaux professionnels, si vous en avez</span></li>"
-            '<li><span>Votre nom de domaine, en .fr si vous exercez en France, inclus la première année puis environ '
-            '12 €/an, qui reste à vous si vous changez de prestataire</span></li>'
-            '</ul></div>'
-            '<p class="legal-intro"><strong>Création de site internet pour kiné : le même prix, en une ou plusieurs '
-            "langues.</strong> Vous choisissez jusqu'à quatre langues au total, sans supplément, parmi le français, "
-            "l'espagnol, l'anglais, le catalan, le valencien, le galicien et le basque : le prix reste de 15 € HT par "
-            "mois sans frais d'installation ni engagement, ou de 349 € HT en paiement unique.</p>")],
+    final_sd="Démo gratuite en 24 h, avec vos honoraires et votre RPPS. Sans frais d'installation, sans engagement.",
+    extra=[('contenu-site', 'Contenu du site', "Ce que contiennent vos pages",
+            '<p class="legal-intro">Nous rédigeons les textes à partir de vos informations ; l\'hébergement et une '
+            'modification par mois après la mise en ligne sont compris. Vos pages présentent vos honoraires et vos moyens '
+            'de paiement selon les règles rappelées plus haut, un lien vers vos réseaux professionnels si vous en avez, et '
+            'votre domaine, en .fr si vous exercez en France : inclus la première année puis environ 12 €/an, il '
+            'reste à vous si vous changez de prestataire. Jusqu\'à quatre langues au même prix, parmi le français, '
+            'l\'espagnol, l\'anglais, le catalan, le valencien, le galicien et le basque.</p>')],
 )
 
 KINE['en'] = dict(

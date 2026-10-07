@@ -333,7 +333,7 @@
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 3,
-      "notes": "SANTÉ. R4321-123, R4321-98. Semrush France 26/09/2026 : « site internet kiné » 20/mois KD 9 ; « site internet kinésithérapeute » 20 KD 9 ; « création site internet kiné » 10 KD 7. Petit volume. ChatGPT hors cible (27/09) : son guide est bâti sur la surcouche d'accessibilité d'ordremk.fr (expressions sans rapport, 948 à 1 056 mots visés).",
+      "notes": "SANTÉ. R4321-123, R4321-98. Semrush France 26/09/2026 : « site internet kiné » 20/mois KD 9 ; « site internet kinésithérapeute » 20 KD 9 ; « création site internet kiné » 10 KD 7. Petit volume. ChatGPT hors cible (27/09) : son guide est bâti sur la surcouche d'accessibilité d'ordremk.fr (expressions sans rapport, 948 à 1 056 mots visés). 07/10/2026 : nouveau guide Google créé dans l'interface, résultats triés (sept pages sur la création de sites pour kinés ; retirés : l'accueil de l'Ordre et un site d'information patients). Page allégée par le script, tableau des règles inchangé : FAQ réduite aux questions qui ne le redisent pas (honoraires, référencement payant et avis de patients retirés), section « Contenu du site » condensée, « Ordre » moins répété hors du tableau. Note 198 (ancien guide) → 91.",
       "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme.",
       "geo_hors_cible": [
         "chatgpt"
@@ -724,7 +724,7 @@
       "objectif_geo": "au_mieux",
       "statut": "a_faire",
       "priorite": 1,
-      "notes": "SANTÉ, ROYAUME-UNI. Page créée le 26/09/2026 par _tools/build_uk_pages.py : modifier PHYSIO dans ce script puis le relancer. Public : kinésithérapeutes et cabinets de kinésithérapie au Royaume-Uni (clients britanniques acceptés le 26/09/2026). Prix : « €15 a month (about £13) », « €349 (about £300) », « no VAT added » (VERITE.md §2), jamais « + VAT ». Garder intact le tableau des règles britanniques (sources officielles vérifiées le 26/09/2026) et n'y ajouter aucune règle. Garder le lien vers la page « in Spain » (spain_note). Ne pas cibler l'Espagne : la page « in Spain » s'en charge. AI Overview hors cible (28/09) : resté en rouge (16 puis 23), deux relectures l'ont jugé impossible à remonter sans bourrage ; brouillon d'affinage #67 fermé.",
+      "notes": "SANTÉ, ROYAUME-UNI. Page créée le 26/09/2026 par _tools/build_uk_pages.py : modifier PHYSIO dans ce script puis le relancer. Public : kinésithérapeutes et cabinets de kinésithérapie au Royaume-Uni (clients britanniques acceptés le 26/09/2026). Prix : « €15 a month (about £13) », « €349 (about £300) », « no VAT added » (VERITE.md §2), jamais « + VAT ». Garder intact le tableau des règles britanniques (sources officielles vérifiées le 26/09/2026) et n'y ajouter aucune règle. Garder le lien vers la page « in Spain » (spain_note). Ne pas cibler l'Espagne : la page « in Spain » s'en charge. AI Overview hors cible (28/09) : resté en rouge (16 puis 23), deux relectures l'ont jugé impossible à remonter sans bourrage ; brouillon d'affinage #67 fermé. 07/10/2026 : nouveau guide Google créé dans l'interface, résultats triés (agences de sites pour kinés et un guide de conception) ; l'ancien, créé par l'API, comparait la page à une page 404, une bourse de recherche de 31 mots et des fiches d'équipe. Texte inchangé : 117 → 56.",
       "donnees": "Semrush Royaume-Uni, 26/09/2026 : « physiotherapy website design » 110/mois, KD 3.",
       "termes_necessaires": [
         "uk",
