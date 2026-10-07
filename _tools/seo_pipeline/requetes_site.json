@@ -110,8 +110,8 @@
    "url": "https://webautonomos.es/blog/fr/choisir-les-categories-google-business",
    "fichier": "blog/fr/choisir-les-categories-google-business.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "catégorie google my business",
+   "origine": "guide créé le 07/10 dans l'interface ; Google montre surtout des guides d'optimisation de fiche, 12 gardés (forums, vidéos et document Scribd retirés)",
    "phase": 2
   },
   {
@@ -138,8 +138,8 @@
    "url": "https://webautonomos.es/blog/fr/citations-locales-nap-guide-complet",
    "fichier": "blog/fr/citations-locales-nap-guide-complet.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "citations locales nap",
+   "origine": "« citations locales seo » ne renvoyait que des pages anglaises ; guide créé le 07/10 dans l'interface, 8 guides français gardés",
    "phase": 2
   },
   {
@@ -194,8 +194,8 @@
    "url": "https://webautonomos.es/blog/fr/comment-trouver-des-clients-sur-internet",
    "fichier": "blog/fr/comment-trouver-des-clients-sur-internet.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "trouver des clients sur internet",
+   "origine": "guide créé le 07/10 dans l'interface, 12 guides de méthodes gardés (listes de plateformes et vidéos retirées)",
    "phase": 2
   },
   {
@@ -250,8 +250,8 @@
    "url": "https://webautonomos.es/blog/fr/choisir-le-nom-de-domaine-de-son-site",
    "fichier": "blog/fr/choisir-le-nom-de-domaine-de-son-site.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "comment choisir un nom de domaine",
+   "origine": "guide créé le 07/10 dans l'interface, 12 guides gardés (vidéos et pages de vente d'hébergeurs retirées)",
    "phase": 2
   },
   {
@@ -278,8 +278,8 @@
    "url": "https://webautonomos.es/blog/fr/comment-se-passe-l-automatisation-etape-par-etape",
    "fichier": "blog/fr/comment-se-passe-l-automatisation-etape-par-etape.html",
    "lang": "fr",
-   "requete": "processus automatisation étapes",
-   "origine": "file d’attente",
+   "requete": "comment automatiser un processus",
+   "origine": "« processus automatisation étapes » (file d'attente) peu naturel ; guide créé le 07/10 dans l'interface, 12 guides de méthode gardés",
    "phase": 2
   },
   {
@@ -334,8 +334,8 @@
    "url": "https://webautonomos.es/blog/fr/configurer-whatsapp-business-gratuitement",
    "fichier": "blog/fr/configurer-whatsapp-business-gratuitement.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "comment utiliser whatsapp business",
+   "origine": "« configurer whatsapp business » renvoyait surtout la documentation de l'API et des vidéos ; guide créé le 07/10 dans l'interface, 12 guides pratiques gardés",
    "phase": 2
   },
   {
@@ -419,7 +419,7 @@
    "fichier": "blog/fr/combien-coute-automatiser-un-processus.html",
    "lang": "fr",
    "requete": "combien coûte automatiser un processus",
-   "origine": "file d’attente",
+   "origine": "file d'attente ; guide créé le 07/10 dans l'interface, 10 pages sur le coût et le ROI gardées (définitions d'éditeurs et pages de tarifs retirées)",
    "phase": 2
   },
   {
@@ -437,8 +437,8 @@
    "url": "https://webautonomos.es/blog/fr/combien-coute-un-site-web-pour-independants",
    "fichier": "blog/fr/combien-coute-un-site-web-pour-independants.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "combien coûte un site internet",
+   "origine": "guide créé le 07/10 dans l'interface, 12 guides de prix gardés (e-commerce, calculateur et vidéos retirés)",
    "phase": 2
   },
   {
@@ -811,8 +811,8 @@
    "url": "https://webautonomos.es/blog/fr/construire-sa-marque-personnelle",
    "fichier": "blog/fr/construire-sa-marque-personnelle.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "construire sa marque personnelle",
+   "origine": "guide créé le 07/10 dans l'interface, 12 guides de personal branding gardés (doublons et glossaires retirés)",
    "phase": 2
   },
   {
@@ -914,8 +914,8 @@
    "url": "https://webautonomos.es/blog/fr/choisir-ses-mots-cles-locaux",
    "fichier": "blog/fr/choisir-ses-mots-cles-locaux.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "mots clés seo local",
+   "origine": "guide créé le 07/10 dans l'interface, 12 pages gardées (référencement local et choix des mots-clés)",
    "phase": 2
   },
   {
