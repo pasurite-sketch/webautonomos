@@ -111,6 +111,9 @@ def compter(motif, texte, flags=re.I):
 
 
 def nombres_du_texte(t):
+    # durée de lecture de l'en-tête (« 16 min read ») : valeur calculée sur le nombre de mots,
+    # pas un fait ; la recalculer après une réécriture ne doit pas bloquer (07/10/2026)
+    t = re.sub(r'\b\d+ min (?:read|de lectura|de lecture)\b', ' ', t)
     toks = re.findall(r'\d[\d.,]*\d|\d', sans_milliers(t))
     out = {}
     for x in toks:
