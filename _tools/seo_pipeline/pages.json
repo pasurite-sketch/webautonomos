@@ -140,7 +140,10 @@
       "objectif_google": 85,
       "statut": "fait",
       "priorite": 1,
-      "notes": "Décidé le 07/10/2026 (audit du 06/10, « le blog prend la place des pages métier ») : la requête revient à /electricistas/, page de conversion, comme pour les six autres métiers. L'article /blog/es/pagina-web-para-electricistas devient un guide (« Qué debe tener la web de un electricista », suivi dans requetes_site.json) et renvoie vers /electricistas/ en haut d'article. Remplace la décision du 24/09, qui confiait la requête à l'article (alors en position 10, 300 impressions ; /electricistas/ en position 67)."
+      "notes": "Décidé le 07/10/2026 (audit du 06/10, « le blog prend la place des pages métier ») : la requête revient à /electricistas/, page de conversion, comme pour les six autres métiers. L'article /blog/es/pagina-web-para-electricistas devient un guide (« Qué debe tener la web de un electricista », suivi dans requetes_site.json) et renvoie vers /electricistas/ en haut d'article. Remplace la décision du 24/09, qui confiait la requête à l'article (alors en position 10, 300 impressions ; /electricistas/ en position 67).",
+      "termes_necessaires": [
+        "empresa"
+      ]
     },
     {
       "slug": "es-psicologos",
