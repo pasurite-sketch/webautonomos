@@ -82,8 +82,8 @@
    "url": "https://webautonomos.es/blog/fr/obtenir-des-backlinks-locaux",
    "fichier": "blog/fr/obtenir-des-backlinks-locaux.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "netlinking local",
+   "origine": "« backlinks locaux » renvoyait surtout des guides généraux de SEO local ; guide créé le 08/10 dans l'interface, 12 pages sur les liens locaux gardées",
    "phase": 2
   },
   {
@@ -222,8 +222,8 @@
    "url": "https://webautonomos.es/blog/fr/obtenir-plus-avis-google-guide-complet",
    "fichier": "blog/fr/obtenir-plus-avis-google-guide-complet.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "comment avoir plus d'avis google",
+   "origine": "guide créé le 08/10 dans l'interface, 14 guides gardés (Reddit et pages sur le dépôt d'un avis retirés)",
    "phase": 2
   },
   {
@@ -306,8 +306,8 @@
    "url": "https://webautonomos.es/blog/fr/positionner-son-site-dans-le-google-local",
    "fichier": "blog/fr/positionner-son-site-dans-le-google-local.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "référencement local site internet",
+   "origine": "guide créé le 08/10 dans l'interface, 14 guides du référencement local gardés (définitions, agences et vidéo retirées) ; « comment référencer son site localement » donnait le même classement",
    "phase": 2
   },
   {
@@ -643,8 +643,8 @@
    "url": "https://webautonomos.es/blog/fr/photos-et-videos-sur-sa-fiche-google",
    "fichier": "blog/fr/photos-et-videos-sur-sa-fiche-google.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "photos google my business",
+   "origine": "guide créé le 08/10 dans l'interface, 7 pages gardées (pages anglaises, vidéos et guides généraux de la fiche retirés)",
    "phase": 2
   },
   {
@@ -783,8 +783,8 @@
    "url": "https://webautonomos.es/blog/fr/maintenance-le-cout-cache-de-l-automatisation",
    "fichier": "blog/fr/maintenance-le-cout-cache-de-l-automatisation.html",
    "lang": "fr",
-   "requete": "coût maintenance automatisation",
-   "origine": "file d’attente",
+   "requete": "maintenir ses automatisations",
+   "origine": "« coût maintenance automatisation » (file d'attente), « coûts cachés de l'automatisation » et « inconvénients de l'automatisation » renvoyaient l'automatisme industriel ; guide créé le 08/10 dans l'interface, 9 pages gardées (3 sur la maintenance des automatisations, 6 sur l'automatisation des processus en PME)",
    "phase": 2
   },
   {
@@ -839,8 +839,8 @@
    "url": "https://webautonomos.es/blog/fr/mesurer-les-resultats-de-son-site",
    "fichier": "blog/fr/mesurer-les-resultats-de-son-site.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "comment utiliser google analytics",
+   "origine": "guide créé le 08/10 dans l'interface, 13 guides de Google Analytics 4 gardés (pages Universal Analytics, aides d'hébergeurs et vidéos retirées)",
    "phase": 2
   },
   {
@@ -867,8 +867,8 @@
    "url": "https://webautonomos.es/blog/fr/optimiser-sa-fiche-google-business-profile",
    "fichier": "blog/fr/optimiser-sa-fiche-google-business-profile.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "optimiser sa fiche google my business",
+   "origine": "guide créé le 08/10 dans l'interface, 14 guides d'optimisation gardés (vidéo et pages de prestations retirées)",
    "phase": 2
   },
   {
@@ -942,8 +942,8 @@
    "url": "https://webautonomos.es/blog/fr/questions-reponses-fiche-google",
    "fichier": "blog/fr/questions-reponses-fiche-google.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "questions réponses fiche google",
+   "origine": "« questions réponses google my business » et « questions et réponses google maps » renvoyaient des pages générales sur la fiche ou des forums ; guide créé le 08/10 dans l'interface, 6 pages gardées, dont la confirmation par Google de la fin des questions-réponses",
    "phase": 2
   },
   {
@@ -1026,8 +1026,8 @@
    "url": "https://webautonomos.es/blog/fr/map-pack-google-comment-y-figurer",
    "fichier": "blog/fr/map-pack-google-comment-y-figurer.html",
    "lang": "fr",
-   "requete": null,
-   "origine": "à choisir",
+   "requete": "pack local google",
+   "origine": "guide créé le 08/10 dans l'interface, 14 guides français du Pack Local gardés (annonces locales, pages d'agences et vidéos retirées)",
    "phase": 2
   },
   {
@@ -1083,7 +1083,7 @@
    "fichier": "blog/fr/quelles-taches-automatiser-en-premier.html",
    "lang": "fr",
    "requete": "quelles tâches automatiser",
-   "origine": "file d’attente",
+   "origine": "file d'attente ; guide créé le 08/10 dans l'interface, 12 pages gardées (Reddit, LinkedIn et tâches purement informatiques retirés)",
    "phase": 2
   },
   {
