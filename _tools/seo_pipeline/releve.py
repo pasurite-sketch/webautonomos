@@ -65,6 +65,8 @@ def lister_guides():
     tous = []
     for page in range(1, 51):
         code, j = serp.api('GET', '/guides', {'page': page, 'pageSize': 100})
+        if code == 404 and tous:  # total multiple de 100 : la page après la dernière répond 404 (08/10/2026)
+            break
         if code != 200:
             sys.exit(f'liste des guides : HTTP {code} {str(j)[:300]}')
         lot = j.get('guides') or []
