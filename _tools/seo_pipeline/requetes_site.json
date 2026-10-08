@@ -101,8 +101,8 @@
    "url": "https://webautonomos.es/blog/es/categorias-google-business-como-elegir",
    "fichier": "blog/es/categorias-google-business-como-elegir.html",
    "lang": "es",
-   "requete": "categorías Google Business",
-   "origine": "calendrier",
+   "requete": "categorías google business profile",
+   "origine": "« categorías Google Business » (calendrier, guide de l'API) mêlait documentation pour développeurs, forums et vidéos ; guide créé le 08/10 dans l'interface, 14 guides gardés, dont l'aide Google",
    "phase": 1
   },
   {
@@ -381,8 +381,8 @@
    "url": "https://webautonomos.es/blog/es/crear-contenido-web-sin-saber-escribir",
    "fichier": "blog/es/crear-contenido-web-sin-saber-escribir.html",
    "lang": "es",
-   "requete": "crear contenido web",
-   "origine": "calendrier",
+   "requete": "cómo redactar los textos de tu página web",
+   "origine": "« crear contenido web » (calendrier) mêlait outils de création de contenu et accueils de créateurs de sites, « cómo escribir los textos de una página web » renvoyait des pages hors sujet ; guide créé le 08/10 dans l'interface, 14 guides gardés",
    "phase": 1
   },
   {
@@ -484,8 +484,8 @@
    "url": "https://webautonomos.es/blog/es/digitalizacion-autonomos-espana-por-donde-empezar",
    "fichier": "blog/es/digitalizacion-autonomos-espana-por-donde-empezar.html",
    "lang": "es",
-   "requete": "digitalización autónomos España",
-   "origine": "calendrier",
+   "requete": "cómo digitalizar mi negocio",
+   "origine": "« digitalización autónomos España » (calendrier) ne renvoyait que les pages officielles du Kit Digital, terminé, et notre propre article ; guide créé le 08/10 dans l'interface, 12 guides gardés",
    "phase": 1
   },
   {
@@ -560,7 +560,7 @@
    "fichier": "blog/es/errores-mas-caros-al-automatizar.html",
    "lang": "es",
    "requete": "errores al automatizar procesos",
-   "origine": "ajustée (mot-clé éditorial : errores automatización negocio)",
+   "origine": "ajustée (mot-clé éditorial : errores automatización negocio) ; guide recréé le 08/10 dans l'interface, 7 pages gardées (réseaux sociaux, vidéos et automatisme industriel retirés)",
    "phase": 1
   },
   {
@@ -718,8 +718,8 @@
    "url": "https://webautonomos.es/blog/es/inteligencia-artificial-autonomos-herramientas",
    "fichier": "blog/es/inteligencia-artificial-autonomos-herramientas.html",
    "lang": "es",
-   "requete": "inteligencia artificial autónomos",
-   "origine": "calendrier",
+   "requete": "herramientas de inteligencia artificial para autónomos",
+   "origine": "« inteligencia artificial autónomos » (calendrier) renvoyait des pages sur les agents autonomes ; guide créé le 08/10 dans l'interface, 12 pages gardées",
    "phase": 1
   },
   {
@@ -1045,8 +1045,8 @@
    "url": "https://webautonomos.es/blog/es/que-no-deberias-automatizar-nunca",
    "fichier": "blog/es/que-no-deberias-automatizar-nunca.html",
    "lang": "es",
-   "requete": "qué no automatizar",
-   "origine": "file d’attente",
+   "requete": "qué procesos no se deben automatizar",
+   "origine": "« qué no automatizar » (file d'attente) mêlait « qué automatizar primero », RPA et WhatsApp ; guide créé le 08/10 dans l'interface, 10 pages gardées (automatisme industriel retiré)",
    "phase": 1
   },
   {
@@ -1381,8 +1381,8 @@
    "url": "https://webautonomos.es/blog/es/web-para-coaches",
    "fichier": "blog/es/web-para-coaches.html",
    "lang": "es",
-   "requete": "página web para coaches",
-   "origine": "titre",
+   "requete": "cómo hacer una página web de coach",
+   "origine": "« página web para coaches » (titre) renvoyait des sites de coachs et des écoles ; un premier guide recréé n'a pas enregistré sa validation et le second classement était inutilisable ; guide créé le 08/10 dans l'interface, 7 guides gardés",
    "phase": 1
   },
   {
@@ -1409,8 +1409,8 @@
    "url": "https://webautonomos.es/blog/es/web-para-entrenadores-personales",
    "fichier": "blog/es/web-para-entrenadores-personales.html",
    "lang": "es",
-   "requete": "web para entrenadores personales",
-   "origine": "file d’attente",
+   "requete": "cómo crear una web de entrenador personal",
+   "origine": "« web para entrenadores personales » (file d'attente) et « página web para entrenador personal » ne renvoyaient que des sites d'entraîneurs ; guide créé le 08/10 dans l'interface, 11 pages gardées",
    "phase": 1
   },
   {
@@ -1465,8 +1465,8 @@
    "url": "https://webautonomos.es/blog/es/web-para-nutricionistas-dietistas",
    "fichier": "blog/es/web-para-nutricionistas-dietistas.html",
    "lang": "es",
-   "requete": "web para nutricionistas",
-   "origine": "file d’attente",
+   "requete": "cómo crear una página web para nutricionistas",
+   "origine": "« web para nutricionistas » (file d'attente) et « página web para nutricionistas » renvoyaient des cabinets et des annuaires ; guide créé le 08/10 dans l'interface, 13 pages gardées",
    "phase": 1
   },
   {
@@ -1549,8 +1549,8 @@
    "url": "https://webautonomos.es/blog/es/web-para-tatuadores-estudio-tattoo",
    "fichier": "blog/es/web-para-tatuadores-estudio-tattoo.html",
    "lang": "es",
-   "requete": "página web tatuadores",
-   "origine": "calendrier",
+   "requete": "página web para estudio de tatuajes",
+   "origine": "« página web tatuadores » (calendrier) ne renvoyait que des studios et des annuaires ; guide créé le 08/10 dans l'interface, 5 pages gardées (Google renvoie surtout des studios ; deux autres formulations inutilisables)",
    "phase": 1
   },
   {

@@ -371,17 +371,19 @@ THERA['en'] = dict(
     crumb_home='Home', crumb='Therapists and psychologists',
     badge='For therapists, counsellors and psychologists in Spain',
     h1="Websites for <em>therapists and psychologists</em> in Spain",
-    lede="Your website should say who you are, how you work and how to book, in English, while following Spanish "
-         "rules on titles, health advertising and data. We write it for you and send you a free demo within 24 hours.",
-    pills=['Spanish rules built in', 'We work in English', 'Free demo in 24 hours'],
+    lede="A professional website for your therapy practice should say who you are, what your sessions involve and "
+         "how to book a first appointment, in English, while following Spanish rules on titles, health advertising "
+         "and data. We create it for you and send you a free demo within 24 hours.",
+    pills=['Spanish rules built in', 'Support in English', 'Free demo in 24 hours'],
     cta='Get my free demo', cta2='What Spanish rules require',
     brief_t='In short',
-    brief="WebAutonomos builds websites for English-speaking psychologists, psychotherapists, counsellors, "
-          "hypnotherapists and coaches practising in Spain. We write the copy from your information, show your "
-          "Colegio and colegiado number if you are a psychologist, keep health claims and patient testimonials off "
-          "the site, and use a contact form that doesn't ask for health details. It costs <strong>€15 + VAT per "
-          "month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>, in English "
-          "and Spanish, plus up to two more languages (French, Catalan, Galician or Basque), at no extra cost. We work with you in English, and your demo is ready within 24 hours.",
+    brief="WebAutonomos designs websites for English-speaking therapists in Spain: psychologists, "
+          "psychotherapists, counsellors, hypnotherapists and coaches. We write the content from your information, "
+          "show your Colegio and colegiado number if you are a psychologist, keep health claims and patient "
+          "testimonials off the site, and use an enquiry form that never asks about health. It costs "
+          "<strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + "
+          "VAT</strong>, in English and Spanish, plus up to two more languages (French, Catalan, Galician or "
+          "Basque), at no extra cost. We work with you in English, by email, WhatsApp or video call.",
     legal_id='rules', legal_ey='Spanish rules', legal_t='What your website has to get right in Spain',
     legal_intro="In Spain, what you may say online depends on your title. A health psychologist is a regulated "
                 "health professional; a counsellor or coach is not, and must not present their work as health "
@@ -426,126 +428,187 @@ THERA['en'] = dict(
               "in Spain"],
     spain_note='',
     sources_t='Sources',
-    why_ey='Why us', why_t='Built for therapists who work in English',
+    why_ey='Why us', why_t='Built for English-speaking therapists in Spain',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish "
                                          "legal or technical jargon."),
-         ('🤫', 'Discreet by design', "A contact form that asks only what it needs, with no health questions, "
-                                     "and an SSL certificate (https) across the whole site."),
-         ('📅', 'Easy to book', "A clear button to your online calendar, WhatsApp or phone, with in-person or "
-                               "online sessions stated plainly."),
+         ('🤫', 'Discreet by design', "An enquiry form that asks only what it needs, never anything about "
+                                     "health, and an SSL certificate (https) across the whole site."),
+         ('📅', 'Easy to book', "A clear button to the booking or scheduling tool you already use, WhatsApp or "
+                               "your phone, with in-person or online sessions stated plainly."),
          ('📍', 'Found by English speakers', "Titles and copy written for searches like “English-speaking "
-                                            "therapist in Alicante” or “counsellor Valencia”.")],
+                                            "therapist in Alicante” or “couples therapy Valencia”.")],
     where_t='Anywhere in Spain',
     where="Costa Blanca, Valencia, Costa del Sol, Barcelona, Madrid, the Balearic or the Canary Islands: we work "
-          "remotely, so where your practice is makes no difference.",
-    sect_t='Who it is for',
-    sectors=['🧠 Psychologists', '🗣️ Psychotherapists', '💬 Counsellors', '🌀 Hypnotherapists', '🧭 Coaches',
+          "remotely with therapists all over Spain, so where your practice is makes no difference.",
+    sect_t='Therapists we build websites for',
+    sectors=['🧠 Psychologists', '🗣️ Psychotherapists', '💬 Counsellors', '🌀 Hypnotherapists',
+             '💞 Couples and family therapists', '🧭 Coaches',
              '🌿 Wellbeing practitioners', '🧘 Yoga and meditation teachers', '🌱 Personal growth'],
-    how_t='Your website in three steps',
-    steps=[('Tell us about your practice', 'Your title, your approach, in person or online, your town: it takes '
-                                           'two minutes.'),
-           ('We build your demo', 'Within 24 hours, with your copy, your photos if you have some, and your legal '
-                                  'pages.'),
+    how_t='Your therapist website in three steps',
+    steps=[('Tell us about your practice', 'Your title, your approach to therapy, the clients you see, in '
+                                           'person or online, your town: it takes two minutes.'),
+           ('We create your demo', 'Within 24 hours, with your copy, your photos if you have some, and your '
+                                   'legal texts.'),
            ('You decide', "Ask for any changes you want. If you like it, it goes live; if not, you pay nothing.")],
     price_note="Prices exclude VAT (21% IVA on the mainland and the Balearics; the Canary Islands, Ceuta and Melilla "
                "have their own taxes). Psychologists' health services are VAT-exempt, so they usually can't deduct "
                "it: on the mainland and the Balearics the monthly price comes to €18.15. Domain name included for "
                "the first year, then about €12/year.",
     extra=[
-        ('website-content', 'On your website', 'What to put on your therapist or psychologist website',
-         '<p class="legal-intro">When someone looking for a therapist lands on your website, they need to see '
-         'quickly who you are, how you work and how to reach you, whatever screen they are using.</p>'
-         '<div class="why-g">'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📝</div>'
-         '<h3>What you do, in plain language</h3>'
-         '<p>Your approach and the type of session you offer, in person, online or both, described so a '
-         'stranger can understand it, without jargon or a promise of a cure.</p></div>'
+        ('website-content', 'On your website', 'What to include on a therapist website',
+         '<p class="legal-intro">Therapist websites don&#8217;t need to be big. Whether you have a private practice '
+         'or share a centre, a small website with the key pages and features it needs can help potential clients '
+         'looking for a therapist see who you are, what a session involves and how to book, whatever screen they use.</p>'
+         '<div class="aud-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏠</div>'
+         '<h3>A home page that says who you see</h3>'
+         '<p>Your name, your professional title, the clients you see (adults, couples, teenagers) and how a new '
+         'client can get in touch, in a few plain lines, without jargon or a promise of a cure.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div>'
-         '<h3>Who you are, and why they can trust you</h3>'
-         '<p>Your training, your years of experience and, if you are a psychologist, your Colegio and colegiado '
-         'number (see <a href="#rules">the rules above</a>).</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✉️</div>'
-         '<h3>How to get in touch</h3>'
-         '<p>A contact form, a WhatsApp button or a phone number, so a visitor does not have to search for how '
-         'to reach you.</p></div>'
+         '<h3>Building trust on your about page</h3>'
+         '<p>Your training, your experience and, if you are a psychologist, your Colegio and colegiado number (see '
+         '<a href="#rules">the rules above</a>). A photo of you can help clients put a face to the name.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧭</div>'
+         '<h3>Clear descriptions of your therapy</h3>'
+         '<p>The kind of therapy or support you offer, any specific approach you follow, how long a session lasts '
+         'and whether you meet in person, online or both. Write as plainly as possible: a warm tone that sounds '
+         'like you works best, and a list of methods says little to a stranger.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📅</div>'
+         '<h3>Easy to reach</h3>'
+         '<p>A simple enquiry form, a WhatsApp button and, if you use one, a link to your existing booking or '
+         'scheduling tool, so visitors can easily reach you.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔒</div>'
+         '<h3>Privacy from the first click</h3>'
+         '<p>HTTPS across the whole site, nothing that asks why someone wants to see you, and a privacy policy, '
+         'legal notice and cookie policy written for you.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div>'
-         '<h3>A design that works on any screen</h3>'
-         '<p>Many visitors will look at your site on their phone, so a design that looks good and works well on '
-         'any screen matters, for them and for search engines.</p></div>'
+         '<h3>A modern design for every screen</h3>'
+         '<p>Many visitors will look at your site on their phone, so a clean, modern design that makes it easy '
+         'to read there matters, for them and for search engines.</p></div>'
          '</div>'
-         '<p class="where">For a longer read on structuring this kind of site, see our blog guide on '
+         '<p class="where">For a longer read on structuring this kind of site, see our guide for therapists on '
          '<a href="https://webautonomos.es/blog/en/website-for-psychologists-and-therapists">the essential '
          'sections of a psychology website</a>.</p>'),
-        ('tone-of-voice', 'Tone of voice', 'How should a therapy website sound?',
-         '<p class="legal-intro">Readers often look at a therapist&#8217;s website while they decide whether to get '
-         'in touch, so tone matters as much as content. Go for a welcoming, personal voice that sounds like you, and '
-         'keep every claim to what the rules allow.</p>'
+        ('website-options', 'Your options',
+         'Website builder, web designer or done-for-you: which is best for a therapist?',
+         '<p class="legal-intro">Therapists in Spain have three common options for getting a website. The best '
+         'website for you depends on how much of your time and money you want to put in, and the Spanish rules '
+         'above apply whichever you choose.</p>'
          '<div class="aud-g">'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🙂</div>'
-         '<h3>A welcoming voice, not a sales pitch</h3>'
-         '<p>A personal, welcoming tone helps readers feel at ease. Write as you speak, avoid jargon and describe '
-         'your training, your approach and how a session works.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧩</div>'
-         '<h3>Concrete details, not slogans</h3>'
-         '<p>The length of a session, whether you meet in person or online and how to book are more useful to a '
-         'reader than slogans, and they set out what to expect.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div>'
-         '<h3>Credentials a reader can check</h3>'
-         '<p>Your training, your years in practice and, where they apply, your Colegio details are the '
-         'credentials a reader can check. List them plainly and let the details speak.</p></div>'
-         '</div>'),
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧰</div>'
+         '<h3>A website builder you use yourself</h3>'
+         '<p>Website builders such as Wix or Squarespace are platforms that let you build websites from templates, '
+         'with an online editor, SEO tools and hosting, so you can create a professional-looking site on your own. '
+         'They suit therapists who want to design and update everything themselves: you choose the template, write '
+         'the content, set up SEO and add the legal texts and, if you are a psychologist, your colegiado number. '
+         'Templates are a quick starting '
+         'point, but making a template design feel unique to you takes time.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧑‍💻</div>'
+         '<h3>A freelance web designer or an agency</h3>'
+         '<p>In Spain, a professional website costs around €800 to €2,000 from a freelance designer and €1,500 to '
+         '€4,000 from an agency, before maintenance (<a href="https://www.socialmediapymes.com/cuanto-cuesta-una-'
+         'web/" rel="noopener" target="_blank">Social Media Pymes, 2026</a>). A custom website design can suit '
+         'larger practices or clinics with several therapists. Before you choose, it is important to check what '
+         'the price will include: who writes the texts, whether hosting is covered and whose name the domain will '
+         'be in.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
+         '<h3>A website made for you</h3>'
+         '<p>We create the design and the text in English and Spanish, around your approach and the credentials '
+         'the rules ask you to show, and provide hosting and technical maintenance, for €15 + VAT a month with no '
+         'lock-in or a one-off €349 + VAT. You see a free demo before you pay anything.</p></div>'
+         '</div>'
+         '<p class="where">Therapists who enjoy building things and have the time can do well with a builder and its '
+         'templates; if you would rather spend that time with clients, a website made for you is a better fit. '
+         'If you are still weighing up the right option, our comparison of <a href="https://webautonomos.es/en/best-website-builders-for-'
+         'freelancers-in-spain">website builders for freelancers in Spain</a> and our guide to <a href="https://'
+         'webautonomos.es/blog/en/wix-or-wordpress">Wix or WordPress</a> go into more detail.</p>'),
+        ('builder-checklist', 'Checklist', 'Choosing a website builder or template: what to check',
+         '<p class="legal-intro">If you are building your therapist website yourself with a website builder, look at '
+         'these features, templates and tools before you start, to find the platform that suits your needs '
+         'best.</p>'
+         '<div class="cmp-c us" style="max-width:640px;margin:0 auto;"><h3>Essential features</h3><ul>'
+         '<li>Templates with a calm, professional layout that you can easily adapt, and designs that are easy to '
+         'use on a phone</li>'
+         '<li>Basic SEO tools: a title and a description for each page, a clear web address, and simple analytics '
+         'showing how visitors find your site</li>'
+         '<li>Contact options: a WhatsApp button, an email address and a link to the scheduling tool you use</li>'
+         '<li>Room for a legal notice, a privacy policy and a cookie policy, as for every business website in '
+         'Spain</li>'
+         '<li>Hosting, an SSL certificate and backups, or a clear answer on who looks after them</li>'
+         '<li>An editor you can use without technical skills</li>'
+         '<li>A domain name in your own name, which you keep if you change platforms</li>'
+         '</ul></div>'
+         '<p class="legal-intro" style="margin:24px auto 0">Whichever tools and features you pick, creating the '
+         'content is where the time goes: writing about your approach, your training and how a first session '
+         'works, in words a stranger understands.</p>'),
         ('different-titles', 'Different titles, different rules',
          'Websites for psychologists, psychotherapists and counsellors',
-         '<p class="legal-intro">The website itself works the same way for every title; what changes is which '
-         'claims the rules above let you make.</p>'
+         '<p class="legal-intro">The website itself works the same for all therapists; what changes is which '
+         'claims the rules above let each title make.</p>'
          '<div class="aud-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧠</div>'
          '<h3>If you are a psychologist</h3>'
-         '<p>Show your Colegio and colegiado number, plus your practice&#8217;s registration number if you work '
+         '<p>Show your Colegio and colegiado number, plus your practice&#8217;s registration number if you practise '
          'as a health psychologist (see <a href="#rules">the rules above</a>).</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗣️</div>'
          '<h3>If you are a psychotherapist</h3>'
          '<p>Describe your training and how a session works, without a promise of relief or cure: the bans on '
-         'health claims in <a href="#rules">the rules above</a> apply to anyone who presents their work as '
+         'health claims in <a href="#rules">the rules above</a> apply to anyone who presents what they do as '
          'health-related, whatever their title.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">💬</div>'
          '<h3>If you are a counsellor</h3>'
          '<p>Like coach and hypnotherapist, counsellor is not a regulated title in Spain: write about support '
-         'and personal development, not treatment.</p></div>'
+         'and wellbeing, not treatment.</p></div>'
          '</div>'),
-        ('getting-found', 'Local search', 'How your website helps you appear in local searches',
-         '<p class="legal-intro">Getting found by someone searching for a therapist near them depends on more '
-         'than the design: your copy and your Google Business Profile count too.</p>'
+        ('getting-found', 'Marketing', 'Marketing your therapy practice: SEO, Google and content',
+         '<p class="legal-intro">Getting found by people looking for a therapist near them depends on more than '
+         'your website design. Your website, your Google Business Profile and the content you publish can all help '
+         'potential clients find you, and for therapists the health-advertising rules above apply to each of '
+         'them.</p>'
          '<div class="aud-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div>'
          '<h3>Basic SEO, included in your price</h3>'
-         '<p>Titles and copy written around your services and your area, kept consistent with your Google '
-         'Business Profile, come with your website at no extra cost.</p></div>'
+         '<p>Page titles and content written around your services and your area, to match the specific searches '
+         'people make (examples: “psychologist in Jávea”, “counselling in English, Valencia”), kept consistent '
+         'with your Google Business Profile.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div>'
          '<h3>SEO Local and your Google listing, if you want more</h3>'
          '<p>We also offer SEO Local for €15 + VAT a month, and managing your Google Business Profile for €29 '
-         '+ VAT a month (€49 + VAT to set one up if you do not have a listing yet).</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📚</div>'
-         '<h3>Guides to go further</h3>'
-         '<p>Our blog has practical guides on <a href="https://webautonomos.es/blog/en/how-to-rank-your-website-'
-         'in-local-google">ranking your website locally</a> and <a href="https://webautonomos.es/blog/en/'
-         'optimise-your-google-business-profile">optimising your Google Business Profile</a>.</p></div>'
-         '</div>'),
+         '+ VAT a month (€49 + VAT to set one up if you do not have a listing yet). SEO Local covers four blog '
+         'articles a month, local keywords and a monthly report; Google listing management covers optimisation '
+         'and four posts a month.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✍️</div>'
+         '<h3>Useful content, not slogans</h3>'
+         '<p>Short posts that answer what people want to know before they book, such as how a first therapy '
+         'session works or how to prepare for it, can help potential clients decide whether to get in touch, and give '
+         'search engines the right words to match you with.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📣</div>'
+         '<h3>Social media and ads, on request</h3>'
+         '<p>We can also help with social media management and advertising on Facebook or Google Ads, on '
+         'request: just ask. The same health-advertising rules apply to every post, article and '
+         'advert.</p></div>'
+         '</div>'
+         '<p class="where">To get started, you don&#8217;t need all of your marketing at once: start small, create '
+         'a clear website first and add a blog or your Google listing later if you want. Our blog has practical '
+         'guides for therapists and other freelancers on '
+         '<a href="https://webautonomos.es/blog/en/how-to-rank-your-website-in-local-google">ranking your website '
+         'locally</a> and <a href="https://webautonomos.es/blog/en/optimise-your-google-business-profile">'
+         'optimising your Google Business Profile</a>.</p>'),
         ('directory-vs-website', 'Compare', 'Your own website or a therapist directory?',
-         '<p class="legal-intro">If you are already listed in a therapist directory, here is what changes once you '
-         'also have a website of your own.</p>'
+         '<p class="legal-intro">If you already have a profile in a therapy directory, here is what changes once '
+         'people can also look you up on a website of your own.</p>'
          '<div class="cmp-g">'
          '<div class="cmp-c them"><h3>A directory listing</h3><ul>'
-         '<li>Your profile appears next to many others, in a layout you do not control</li>'
+         '<li>Directory sites show your profile next to many others, in a layout you do not control</li>'
          '<li>Visitors can filter by location and compare profiles at a glance</li>'
          '<li>Enquiries often go through the platform, not straight to you</li>'
-         '<li>Your details live on someone else&#8217;s platform</li>'
+         '<li>Your profile lives on someone else&#8217;s platform</li>'
          '</ul></div>'
          '<div class="cmp-c us"><h3>Your own website</h3><ul>'
          '<li>You describe what you do in your own words, with your own approach and training</li>'
          '<li>Every enquiry goes straight to your email and WhatsApp</li>'
          '<li>Your own .es domain name, included for the first year</li>'
-         '<li>Links to your social media profiles sit on your pages</li>'
+         '<li>Links to your social media profiles sit on your site</li>'
          '</ul></div>'
          '</div>'),
     ],
@@ -588,20 +651,38 @@ THERA['en'] = dict(
           "health data under the GDPR, and data should be limited to what is necessary. We add a short note asking "
           "people not to share health details in the form."),
          ("Is a template enough for a therapist's website?",
-          "What matters is that the site is clear to read, quick to use on a phone and written in your own "
-          "words, whether or not it starts from a ready-made layout. We use our own system built from components we have "
-          "already tested, and our team writes the copy around your details, which is part of how we keep the price "
-          "low. You see the demo before you pay anything."),
-         ("What should I check before choosing a web design company?",
-          "Ask to see a demo with your own details before you pay anything, and read the terms: is there a setup fee or a "
-          "minimum contract, and is the domain name registered in your name? Then check that the demo explains how you work, "
-          "shows your title and registration details as the Spanish rules require, and is simple to use on a phone."),
+          "Templates can be a good start for therapist websites. What matters is that the site is clear to read, "
+          "quick to use on a phone and written in your own words, so it feels unique to you, whether or not you are "
+          "starting from a ready-made layout. We use our own "
+          "system built from components we have already tested, and our team writes the copy around your practice, "
+          "which is part of how we keep the price low. You see the demo before you pay anything."),
+         ("What is the best website builder for therapists?",
+          "There isn't one best choice for everyone: it depends on what your practice needs and how much time you "
+          "want to spend on your site. Builders such as Wix or Squarespace give you templates, design tools and "
+          "built-in features, but you create every page, write the content, set up SEO and include Spain's legal "
+          "texts and, if you are a psychologist, your colegiado number yourself. If you would rather not, "
+          "WebAutonomos builds the website for you for €15 + VAT a month or a one-off €349 + VAT, and you see a "
+          "free demo first."),
+         ("Can clients book an appointment online from my therapist website?",
+          "Yes, through a link. If you already use one of the online booking or scheduling tools on the market, your "
+          "website gets a clear button that opens it, so clients can easily book. We don't connect a booking system "
+          "to the site: enquiries from your website reach your email and WhatsApp."),
+         ("Do I need a blog on my therapy website?",
+          "No, but a few clear articles that answer what people want to know before a first session can help "
+          "visitors find answers and give search engines more to go on. With SEO Local, for €15 + VAT a month, you "
+          "get four blog articles a month, local keywords and a monthly report, and Spain's health-advertising "
+          "rules apply to every article."),
+         ("What should therapists check before choosing a web design company?",
+          "Ask them to provide a demo with your own information before you pay anything, and read the terms: is there an "
+          "upfront fee or a minimum contract, and is the domain name registered in your name? Then look at whether "
+          "the demo explains your approach, shows your title and the registration information the Spanish rules "
+          "require, and is simple to use on a phone."),
          ("How much does a website cost?",
           "€15 + VAT a month with no setup fee and no lock-in, or a one-off €349 + VAT, with the same services: "
           "design, hosting, a domain name for the first year, legal pages and one change a month. The demo is "
           "free.")],
     final_t='See your website before you pay a thing',
-    final_sd="Free demo within 24 hours, copy and legal pages included. No setup fee, no lock-in.",
+    final_sd="Start with a free demo within 24 hours, copy and legal texts included. No setup fee, no lock-in.",
 )
 
 THERA_SOURCES = {

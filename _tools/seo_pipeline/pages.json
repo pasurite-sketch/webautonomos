@@ -490,9 +490,9 @@
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "vert",
-      "statut": "a_faire",
+      "statut": "fait",
       "priorite": 2,
-      "notes": "Modifier la page directement (script à usage unique). Prix concurrents relevés le 23/09. Semrush France 26/09/2026 : « meilleur créateur de site » 40/mois KD 27 ; « meilleur créateur de site internet » 20 KD 26. « wix ou wordpress » (590/mois, KD 34) mérite un article dédié, pas cette page.",
+      "notes": "Modifier la page directement (script à usage unique). Prix concurrents relevés le 23/09. Semrush France 26/09/2026 : « meilleur créateur de site » 40/mois KD 27 ; « meilleur créateur de site internet » 20 KD 26. « wix ou wordpress » (590/mois, KD 34) mérite un article dédié, pas cette page. Guide « meilleur créateur de site » recréé le 08/10/2026 dans l'interface (14 comparatifs triés). Réécrite le 08/10/2026 (lot 12) : Google 56 → 90 sur le nouveau guide (75 sur l'ancien) ; prix tiers inchangés, datés du relevé du 23/09.",
       "donnees": "Absente du relevé du 24/09 : requête sautée tant qu'aucun volume ne la confirme."
     },
     {
@@ -560,7 +560,7 @@
       "objectif_geo": "au_mieux",
       "statut": "fait",
       "priorite": 2,
-      "notes": "SANTÉ. Règles espagnoles. Publiée le 25/09/2026 (PR #15) : score Google 43 → 64, GEO 21 → 32.",
+      "notes": "SANTÉ. Règles espagnoles. Publiée le 25/09/2026 (PR #15) : score Google 43 → 64, GEO 21 → 32. Guide « websites for therapists » recréé le 08/10/2026 dans l'interface (14 pages triées ; l'ancien, créé par l'API, mêlait annuaires et pages d'accueil). Réécrite le 08/10/2026 (lot 12, bloc THERA['en'] seulement, règles et réponses juridiques inchangées) : Google 48 → 92 sur le nouveau guide (75 sur l'ancien).",
       "requetes_secondaires": [
         "websites for psychologists",
         "websites for psychotherapists",
@@ -839,7 +839,7 @@
       "slug": "en-expats",
       "url": "https://webautonomos.es/en/web-design-for-expats-in-spain",
       "lang": "en",
-      "requete": "web design spain",
+      "requete": "english speaking web designer spain",
       "requete_a_confirmer": false,
       "requetes_secondaires": [
         "web design for expats"
@@ -848,9 +848,9 @@
       "generateur": "_tools/build_expat_pages.py",
       "mode": "auto",
       "objectif_geo": "au_mieux",
-      "statut": "a_faire",
+      "statut": "fait",
       "priorite": 2,
-      "notes": "Semrush Espagne 26/09/2026 : « web design spain » 40/mois KD 25, seule requête anglaise avec du volume en Espagne. AI Overview hors cible (28/09) : resté en rouge après l'affinage du 28/09 (#68), deux relectures l'ont jugé impossible à remonter sans bourrage.",
+      "notes": "Semrush Espagne 26/09/2026 : « web design spain » 40/mois KD 25, seule requête anglaise avec du volume en Espagne. AI Overview hors cible (28/09) : resté en rouge après l'affinage du 28/09 (#68), deux relectures l'ont jugé impossible à remonter sans bourrage. Requête changée le 08/10/2026 : « web design spain » ne renvoie, sur Google Royaume-Uni (guide en-gb), que des offres d'emploi, des profils et des textes de loi ; « english speaking web designer spain » (guide créé dans l'interface, 8 services de création de sites en anglais en Espagne). Réécrite le 08/10/2026 (lot 12, build_expat_pages.py) : Google 101 → 88 sur le nouveau guide (75 sur l'ancien).",
       "geo_hors_cible": [
         "geo"
       ]
