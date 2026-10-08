@@ -2233,19 +2233,28 @@ FAQ_EN_UK = ("Are UK qualifications recognised in Spain?",
              "last 15 years), an ENAC-accredited certification or a Spanish qualification.")
 
 
-def local_search_en(guide):
-    return ('local-search-help', 'Local search', 'How your website helps you appear in local searches',
-            '<p class="legal-intro">Getting found in your area is not only about the website itself: homeowners '
-            'also ask around, post jobs on directories, or search directly for a trusted tradesperson nearby.</p>'
+def local_search_en(guide, h2='How your website helps you appear in local searches', intro=None, seo=None,
+                    detail='', cartes=''):
+    """Section « recherche locale » des pages bâtiment EN (plombiers, électriciens, builders).
+    Paramètres propres à chaque page (08/10/2026) : titre, chapeau, carte du SEO de base, phrase sur le contenu des
+    services (`detail`, VERITE §5) et cartes ajoutées avant les guides (`cartes`)."""
+    if intro is None:
+        intro = ('Getting found in your area is not only about the website itself: homeowners also ask around, post '
+                 'jobs on directories, or search directly for a trusted tradesperson nearby.')
+    if seo is None:
+        seo = ('Titles and copy written around your trade and the towns you cover, kept consistent with your Google '
+               'Business Profile, come with your website at no extra cost.')
+    return ('local-search-help', 'Local search', h2,
+            '<p class="legal-intro">' + intro + '</p>'
             '<div class="why-g">'
             '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F50D</div>'
             '<h3>Basic SEO, included in your price</h3>'
-            '<p>Titles and copy written around your trade and the towns you cover, kept consistent with your Google '
-            'Business Profile, come with your website at no extra cost.</p></div>'
+            '<p>' + seo + '</p></div>'
             '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4C8</div>'
             '<h3>SEO Local and your Google listing, if you want more</h3>'
             '<p>We also offer SEO Local for €15 + VAT a month, and managing your Google Business Profile for €29 + '
-            'VAT a month (€49 + VAT to set one up if you do not have a listing yet).</p></div>'
+            'VAT a month (€49 + VAT to set one up if you do not have a listing yet).' + detail + '</p></div>'
+            + cartes +
             '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4DA</div>'
             '<h3>Guides to go further</h3>'
             '<p>Our blog has practical guides on ' + guide +
@@ -2486,16 +2495,18 @@ PLOMB['en'] = dict(
     crumb_home='Home', crumb='Plumbers and heating engineers',
     badge='For plumbers and heating engineers in Spain',
     h1="Websites for <em>plumbers</em> and heating engineers in Spain",
-    lede="Your services, the areas you cover, a call or a WhatsApp message in one tap, in English and Spanish, and "
-         "the information Spanish rules expect from a plumbing and heating business. We write it for you and send "
-         "you a free demo within 24 hours.",
+    lede="A plumbing website that shows what you fix, the areas you cover and your phone number, with a call or a "
+         "WhatsApp message one tap away for emergency jobs, in English and Spanish, plus the information Spanish "
+         "rules expect from a plumbing and heating business. We write it for you and send you a free demo within "
+         "24 hours.",
     pills=['English and Spanish included', 'Spanish rules built in', 'Free demo in 24 hours'],
     cta='Get my free demo', cta2='What Spanish rules require',
     brief_t='In short',
-    brief="WebAutonomos builds websites for English-speaking plumbers, heating engineers, gas engineers and "
-          "air-conditioning installers working in Spain. We present your services, write the copy in English and "
-          "Spanish (up to four languages) at no extra cost, and include the information Spanish law expects on a "
-          "business website, such as a legal notice with your NIF or NIE, prices for homeowners shown with VAT included, and the complaint information your region "
+    brief="WebAutonomos designs websites for English-speaking plumbers, heating engineers, gas engineers and "
+          "air-conditioning installers working in Spain. We present each plumbing service clearly, write the "
+          "content in English and Spanish (up to four languages) at no extra cost, and include the information "
+          "Spanish law expects on a business website, such as a legal notice with your NIF or NIE, prices for "
+          "homeowners shown with VAT included, and the complaint information your region "
           "asks for. It costs <strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a "
           "<strong>one-off €349 + VAT</strong>. We work with you in English, and your demo is ready within 24 hours.",
     legal_id='rules', legal_ey='Spanish rules', legal_t='What your business and your website have to get right',
@@ -2542,14 +2553,14 @@ PLOMB['en'] = dict(
     spain_note='<strong>Working in the UK instead?</strong> UK rules are different. See '
                '<a href="https://webautonomos.es/en/web-design-for-plumbers">web design for plumbers and heating engineers in the UK</a>.',
     sources_t='Sources',
-    why_ey='Why us', why_t='Built for tradespeople who work in English',
+    why_ey='Why us', why_t='Made for plumbers who prefer to deal in English',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
                                          "or technical jargon."),
          ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish "
                                                    "homeowners find you as easily as expats do."),
          ('📞', 'One tap to call you', "A call button and WhatsApp always in view on mobile: someone with a leak "
                                       "reaches you without hunting for your number."),
-         ('📍', 'Found locally', "Titles and copy written for searches like “plumber Jávea” or “fontanero "
+         ('📍', 'Found locally', "Titles and copy written for local searches like “plumber Jávea” or “fontanero "
                                 "Torrevieja”, in both languages.")],
     where_t='Anywhere in Spain',
     where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work "
@@ -2558,27 +2569,32 @@ PLOMB['en'] = dict(
     sectors=['🔧 Plumbers', '🔥 Heating engineers', '♨️ Heat pumps and aerothermal', '🚿 Bathroom fitters',
              '🚰 Leak detection', '🧰 Boiler servicing', '❄️ Air conditioning', '🔥 Gas engineers'],
     how_t='Your website in three steps',
-    steps=[('Tell us about your business', 'Your services, the areas you cover and a few job photos: it takes two '
-                                           'minutes.'),
-           ('We build your demo', 'Within 24 hours, with your services, your copy in English and Spanish, and your '
-                                  'legal pages.'),
+    steps=[('Tell us about your plumbing business', 'Your services, the areas you cover and a few job photos: it '
+                                                    'takes two minutes.'),
+           ('We build your demo', 'Within 24 hours, with each service you offer, your copy in English and Spanish, '
+                                  'and your legal pages.'),
            ('You decide', "Ask for any changes you want. If you like it, it goes live; if not, you pay nothing.")],
     price_note=PRIX_EN_BAT,
     extra=[
         ('what-to-include', 'On your website', "What should a plumber's website in Spain show?",
-         '<p class="legal-intro">A homeowner wants to know quickly whether you handle their problem, whether you '
-         'cover their town, and how to reach you. These are the parts that answer those questions.</p>'
+         '<p class="legal-intro">People looking for a plumber online want three answers within seconds: what you '
+         'fix, whether you cover their town, and how to reach you. Effective plumbing websites give those answers '
+         'on the first screen, with the parts below.</p>'
          '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F3E0</div>'
+         '<h3>A homepage that gets to the point</h3>'
+         '<p>Your main plumbing services, the areas you cover and a way to call you at the top of the page, so '
+         'visitors know straight away that they have found the right plumber.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F5C2️</div>'
-         '<h3>Services grouped by type of job</h3>'
-         '<p>Emergency repairs, bathrooms, heating and air conditioning each get their own section, so a visitor '
-         'with a leak does not scroll past heat pumps to find your number.</p></div>'
+         '<h3>A page for each plumbing service</h3>'
+         '<p>Emergency call-outs, leak detection, bathrooms, boilers and air conditioning each get their own page '
+         'or section, so a visitor with a leak does not scroll past heat pumps to find your number.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
          '<h3>Your authorisations, stated accurately</h3>'
          '<p>If your company is authorised for heating, gas or F-gas work, say so, with the category that applies. '
          'Claiming an authorisation you do not hold is misleading advertising.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4B6</div>'
-         '<h3>Clear call-out terms</h3>'
+         '<h3>Clear call-out terms and pricing</h3>'
          '<p>Your call-out charge and hourly rate, shown with VAT included for homeowners, so customers know what to '
          'expect before they ring.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CD</div>'
@@ -2586,10 +2602,123 @@ PLOMB['en'] = dict(
          '<p>Naming the towns you work in (Jávea, Torrevieja or Fuengirola, for example) helps both readers and '
          'Google understand who your site is for.</p></div>'
          '</div>'
-         '<p class="where">For a longer read, see our guide to '
+         '<p class="where">For more tips, see our guide to '
          '<a href="https://webautonomos.es/blog/en/website-for-plumbers-complete-guide">getting more calls from '
          'a plumber&#8217;s website</a>.</p>'),
-        local_search_en(''),
+        ('site-pages', 'Structure', 'Which pages does a plumbing website need?',
+         '<p class="legal-intro">For a small plumbing business, a handful of essential pages is enough: a homepage, '
+         'your plumbing services, the towns you serve, a page about you, testimonials and a contact page, plus the '
+         'legal pages Spanish law requires.</p>'
+         '<div class="cmp-c us" style="max-width:640px;margin:0 auto;"><h3>Pages and features to include</h3><ul>'
+         '<li><strong>Homepage:</strong> what you do and where, with call and WhatsApp buttons in view.</li>'
+         '<li><strong>Service pages:</strong> one page or section per plumbing service (emergency call-outs, leak '
+         'detection, bathroom fitting, boiler servicing, air conditioning), each saying what it covers and what '
+         'it costs.</li>'
+         '<li><strong>Service area:</strong> the towns and urbanisations you serve, from Dénia to Torrevieja, for '
+         'example.</li>'
+         '<li><strong>About:</strong> who you are, your team, how long you have been in the plumbing industry and '
+         'the authorisations you hold.</li>'
+         '<li><strong>Reviews:</strong> what customers say, with a note on how they are checked.</li>'
+         '<li><strong>Contact:</strong> phone, WhatsApp and a short form for quote requests: every extra field is '
+         'one more reason not to send it.</li>'
+         '<li><strong>Legal pages:</strong> legal notice, privacy policy and cookie notice.</li>'
+         '</ul></div>'
+         '<p class="legal-intro" style="margin:24px auto 0">We create these pages and write their content for you, '
+         'from your Google Business Profile, your photos and the information you provide. You see the whole site in '
+         'your demo before you pay anything.</p>'),
+        ('emergency-calls', 'Emergency calls', 'How do customers with an emergency reach a plumber online?',
+         '<p class="legal-intro">Often by phone: someone with water coming through the ceiling wants to talk to a '
+         'plumber now, not fill in a form. Plumbing websites should make calling you the easiest thing to do, on '
+         'every page and on all devices.</p>'
+         '<div class="cmp-c us" style="max-width:640px;margin:0 auto;"><h3>What helps a customer in a hurry</h3><ul>'
+         '<li>Your phone number at the top of each page, as a button that calls you in one tap on a mobile '
+         'phone</li>'
+         '<li>A WhatsApp button, so someone can send you a photo of the leak before you set off</li>'
+         '<li>Your emergency hours stated clearly: if you offer a 24-hour emergency service, say so; if not, say '
+         'when you answer</li>'
+         '<li>The towns where you take emergency call-outs, if they are different from your usual service area</li>'
+         '<li>A short contact form for jobs that can wait, such as a quote request for a new bathroom</li>'
+         '</ul></div>'
+         '<p class="legal-intro" style="margin:24px auto 0">Visitors on a phone have little patience. A clean, '
+         'modern look helps, but a fast, simple page with one clear button often does more for an emergency plumber '
+         'than a clever design.</p>'),
+        ('booking', 'Appointments', 'Can customers book a plumber through your website?',
+         '<p class="legal-intro">Yes: visitors ask for an appointment through your contact form or WhatsApp, and '
+         'you confirm the time yourself. If you already use an online booking tool, we add a link to it on your '
+         'site.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4E9</div>'
+         '<h3>Booking requests arrive where you already look</h3>'
+         '<p>The contact form sends each request to your inbox, and messages arrive on your WhatsApp, so every '
+         'booking request lands in tools you already use.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4C5</div>'
+         '<h3>You keep control of your schedule</h3>'
+         '<p>Your site has no booking system or automatic reminders of its own. For many plumbing jobs, a quick '
+         'call or message to check the problem, the access and the parts before you book the visit is time well '
+         'spent.</p></div>'
+         '</div>'),
+        ('build-trust', 'Trust', 'How does a plumbing website build trust?',
+         '<p class="legal-intro">By showing proof that people can check: real testimonials, pictures of your own '
+         'jobs, your authorisations and clear prices. A plumber is invited into people&#8217;s homes, so trust often '
+         'decides who gets the call.</p>'
+         '<div class="cmp-c us" style="max-width:640px;margin:0 auto;"><h3>What builds trust online</h3><ul>'
+         '<li>Customer reviews, with a note on whether and how you check them</li>'
+         '<li>Pictures of your best plumbing jobs, your van and your team, rather than stock images</li>'
+         '<li>The authorisations you hold, such as RITE or gas, and only those</li>'
+         '<li>Call-out charges and hourly rates shown with VAT included</li>'
+         '<li>Your name, NIF or NIE and address in the legal notice, which shows there is a real business behind '
+         'the site</li>'
+         '<li>The same name, address and phone number on your site, your Google Business Profile and your social '
+         'media profiles</li>'
+         '</ul></div>'
+         '<p class="legal-intro" style="margin:24px auto 0">None of this needs a large marketing budget: it needs '
+         'information that is accurate and kept up to date.</p>'),
+        ('common-mistakes', 'What to avoid', 'Common mistakes on plumbing websites',
+         '<p class="legal-intro">These gaps can cost plumbing websites calls and leads they should be getting, or '
+         'leave them short of what Spanish rules require.</p>'
+         '<div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul>'
+         '<li>A phone number hidden in the footer, or shown as an image that cannot be tapped</li>'
+         '<li>One long page listing every plumbing service, with no detail on what each one covers</li>'
+         '<li>No list of the towns you cover</li>'
+         '<li>Stock images and generic content that could belong to any plumbing business, in any country</li>'
+         '<li>Pages that are slow or hard to read on a mobile phone</li>'
+         '<li>Text only in English, so Spanish-speaking homeowners looking for a fontanero never find you</li>'
+         '<li>No legal notice or privacy information</li>'
+         '</ul></div>'
+         '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>How we help you avoid them</h3>'
+         '<p>Your site comes with call and WhatsApp buttons always in view on mobile, a page or section for each '
+         'service, the towns you serve, your legal pages (legal notice, privacy and cookies) and up to four '
+         'languages, English and Spanish included.</p></div>'),
+        ('included', 'What is included', 'Website design for plumbers: what the price includes',
+         '<p class="legal-intro">Both payment options include the same features: website design, content, and '
+         'everything that keeps your site online and secure. Our team, based in the province of Valencia, talks '
+         'to you in English by email, WhatsApp or video call.</p>'
+         '<div class="cmp-c us" style="max-width:640px;margin:0 auto;"><h3>Features included in both options</h3><ul>'
+         '<li>Website design and content written for you, from your Google Business Profile and your photos</li>'
+         '<li>As many adjustments as you need before your site goes live</li>'
+         '<li>Hosting, an SSL certificate, daily backups, 24/7 monitoring and technical upkeep</li>'
+         '<li>Links to your social media profiles</li>'
+         '<li>One change a month after launch, for updates such as new prices or photos, and a same-day reply when '
+         'you need support</li>'
+         '<li>Your .es domain name, registered in your name and included for the first year</li>'
+         '</ul></div>'
+         '<p class="legal-intro" style="margin:24px auto 0">How can the price be this low? We use our own system, '
+         'which reuses tested components, and we have no luxury offices or sales staff on commission.</p>'),
+        local_search_en(
+            '', h2='Local SEO for plumbers: getting found in your area',
+            intro='When someone uses Google to search for an emergency plumber in Jávea or a fontanero in '
+                  'Torrevieja, a map with local results often appears next to the usual list. Your site, your Google '
+                  'Business Profile and what customers say about you all count, and homeowners also ask neighbours '
+                  'or post jobs on directories that list many plumbing companies side by side.',
+            seo='Page titles and copy written around each plumbing service and the towns you cover, kept consistent '
+                'with your Google Business Profile, come with your site at no extra cost.',
+            detail=' SEO Local means four blog articles a month, local keywords and a monthly report, and both '
+                   'services can be bought separately, even without a site.',
+            cartes='<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4E3</div>'
+                   '<h3>Social media and advertising</h3>'
+                   '<p>Your site links to your social media profiles, so it can sit at the centre of your marketing '
+                   'strategy. Managing those profiles, or advertising on Facebook or Google Ads, is available on '
+                   'request: just ask us.</p></div>'),
     ],
     faq_t='Frequently asked questions',
     faq=[("Do I need to be registered to install heating or air conditioning in Spain?",
@@ -2627,6 +2756,18 @@ PLOMB['en'] = dict(
          FAQ_EN_COMPLAINTS,
          FAQ_EN_REVIEWS,
          FAQ_EN_LANGUAGE,
+         ("What pages should a plumbing website have?",
+          "A homepage with your phone number, a page or section for each plumbing service, the areas you cover, a "
+          "page about you and your team, what customers say, a contact page with a form and WhatsApp, and the legal "
+          "pages Spanish law requires: legal notice, privacy policy and cookie notice."),
+         ("Can customers book appointments online?",
+          "They can request an appointment through the contact form on your website, which sends the request "
+          "straight to your inbox, or through WhatsApp, and you confirm the time. Your website does not include a "
+          "booking system of its own, but if you already use an online booking tool, we add a link to it."),
+         ("Can I change my site after it goes live?",
+          "Yes. One change a month is included after launch, with no time limit, on both the monthly and the "
+          "one-off option: new photos, updated prices or a new service, for example. Larger changes, such as a "
+          "whole new section, get a fixed quote before we start."),
          FAQ_EN_GBP,
          FAQ_EN_PRICE],
     final_t='See your website before you pay a thing',
@@ -2893,17 +3034,17 @@ ELEC['en'] = dict(
     crumb_home='Home', crumb='Electricians',
     badge='For electricians working in Spain',
     h1="Websites for <em>electricians</em> in Spain",
-    lede="Your services, the areas you cover, a call or a WhatsApp message in one tap, in English and Spanish, and "
-         "your authorisation presented accurately. We write it for you and send you a free demo "
-         "within 24 hours.",
-    pills=['English and Spanish included', 'Spanish rules built in', 'Free demo in 24 hours'],
+    lede="An electrician website with your electrical services, the towns you serve, a call or a WhatsApp message "
+         "in one tap, in English and Spanish, and your authorisation presented accurately. We write it for you and "
+         "send you a free demo within 24 hours.",
+    pills=['English and Spanish included', 'Spanish rules built in', 'Free demo in 24h'],
     cta='Get my free demo', cta2='What Spanish rules require',
     brief_t='In short',
     brief="WebAutonomos builds websites for English-speaking electricians, EV charger installers and solar installers "
-          "working in Spain. We present your services, write the copy in English and Spanish (up to four languages) "
-          "at no extra cost, and include the information Spanish law expects on a business website, such as a legal "
+          "working in Spain. We present each electrical service, write the copy in English and Spanish (up to four "
+          "languages) at no extra charge, and include what Spanish law expects on a business site, such as a legal "
           "notice with your NIF or NIE, prices for "
-          "homeowners shown with VAT included, and the complaint information your region asks for. It costs "
+          "domestic customers shown with VAT included, and the complaint information your region requires. It costs "
           "<strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + "
           "VAT</strong>. We work with you in English, and your demo is ready within 24 hours.",
     legal_id='rules', legal_ey='Spanish rules', legal_t='What your business and your website have to get right',
@@ -2952,54 +3093,59 @@ ELEC['en'] = dict(
     spain_note='<strong>Working in the UK instead?</strong> UK rules are different. See '
                '<a href="https://webautonomos.es/en/web-design-for-electricians">web design for electricians in the UK</a>.',
     sources_t='Sources',
-    why_ey='Why us', why_t='Built for tradespeople who work in English',
+    why_ey='Why us', why_t='Made for electricians who prefer English',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
                                          "or technical jargon."),
-         ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish "
-                                                   "homeowners find you as easily as expats do."),
+         ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more for the same price, so "
+                                                   "Spanish-speaking customers find you as easily as expats do."),
          ('🔌', 'Every service in its place', "Repairs, rewires, EV chargers and solar each get their own section, "
                                              "with the authorisation that applies."),
          ('📍', 'Found locally', "Titles and copy written for searches like “electrician Jávea” or “electricista "
                                 "Marbella”, in both languages.")],
     where_t='Anywhere in Spain',
-    where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work "
-          "remotely, so where your van is based does not change how we work with you.",
+    where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we operate "
+          "remotely, so where your van is based makes no difference to how we deal with you.",
     sect_t='Who it is for',
     sectors=['⚡ Electricians', '🔌 Repairs and fault finding', '🏠 Rewires and upgrades', '🚗 EV chargers',
              '☀️ Solar installers', '💡 Lighting', '🏢 Commercial electrical work', '📶 Smart home and networks'],
-    how_t='Your website in three steps',
+    how_t='Your site in three steps',
     steps=[('Tell us about your business', 'Your services, the areas you cover and a few job photos: it takes two '
                                            'minutes.'),
-           ('We build your demo', 'Within 24 hours, with your services, your copy in English and Spanish, and your '
+           ('We build your demo', 'Within 24h, with your services, your copy in English and Spanish, and your '
                                   'legal pages.'),
            ('You decide', "Ask for any changes you want. If you like it, it goes live; if not, you pay nothing.")],
     price_note=PRIX_EN_BAT,
     extra=[
         ('what-to-include', 'On your website', "What should an electrician's website in Spain show?",
-         '<p class="legal-intro">A homeowner wants to see what you do, whether you cover their town, and whether you '
-         'can legally sign off the work. These are the parts that answer those questions.</p>'
+         '<p class="legal-intro">Before they call, homeowners want to know what you do, whether you serve their '
+         'town, and whether you can legally sign off the job. These are the parts that answer them.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
          '<h3>Your authorisation, stated accurately</h3>'
          '<p>That your business is a registered empresa instaladora, with its category (básica or especialista), '
-         'is what tells a customer you can issue the boletín their supplier will ask for.</p></div>'
+         'is what tells a customer you can issue the boletín their supplier will require.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F5C2️</div>'
          '<h3>Services grouped by type of job</h3>'
          '<p>Repairs and fault finding, rewires, EV chargers and solar each get their own section, so a visitor '
          'finds the work they need without scrolling through everything else.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4B6</div>'
          '<h3>Clear call-out terms</h3>'
-         '<p>Your call-out charge and hourly rate, shown with VAT included for homeowners, so customers know what to '
-         'expect before they ring.</p></div>'
+         '<p>Your call-out charge and hourly rate, shown with VAT included for domestic customers, so they know '
+         'what to expect before they ring.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CD</div>'
-         '<h3>The towns you cover</h3>'
-         '<p>Naming the towns you work in (Jávea, Marbella or Santa Pola, for example) helps both readers and Google '
-         'understand who your site is for.</p></div>'
+         '<h3>Your service areas</h3>'
+         '<p>Naming the towns in your local area (Jávea, Marbella or Santa Pola, for example) helps both readers and '
+         'search engines understand who your site is for.</p></div>'
          '</div>'
-         '<p class="where">For a longer read, see our guide to '
+         '<p class="where">For more tips, read our guide to '
          '<a href="https://webautonomos.es/blog/en/website-for-electricians">what an electrician&#8217;s website '
          'needs</a>.</p>'),
-        local_search_en(''),
+        local_search_en(
+            '', h2='Local SEO for electricians: getting found nearby',
+            intro='Getting found in your area is not only about your site: homeowners also ask around, post jobs on '
+                  'directories, or search directly for a trusted electrician nearby.',
+            seo='Titles and copy written around your electrical services and the towns you serve are part of every '
+                'site we build, at no extra charge.'),
     ],
     faq_t='Frequently asked questions',
     faq=[("Do I need to be registered to work as an electrician in Spain?",
@@ -3045,8 +3191,8 @@ ELEC['en'] = dict(
          FAQ_EN_LANGUAGE,
          FAQ_EN_GBP,
          FAQ_EN_PRICE],
-    final_t='See your website before you pay a thing',
-    final_sd="Free demo within 24 hours, with your services and legal pages. No setup fee, no lock-in.",
+    final_t='See your site before you pay a thing',
+    final_sd="Free demo within 24h, with your services and legal pages. No setup fee, no lock-in.",
 )
 
 ELEC_SOURCES = {
@@ -3316,21 +3462,23 @@ ARTI['fr'] = dict(
 
 ARTI['en'] = dict(
     html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
-    title="Websites for builders in Spain: €15/month, free demo",
-    description="Websites for English-speaking builders and renovation companies in Spain: permits, quotes, 10% VAT, "
-                "asbestos, legal notice. Free demo in 24h, €15/month + VAT.",
-    service_name="Web design for builders and renovation companies in Spain",
+    title="Construction company website design in Spain: €15/month",
+    description="Website design for English-speaking builders and construction companies in Spain: permits, quotes, "
+                "10% VAT, asbestos. Free demo in 24h, €15/month + VAT.",
+    service_name="Website design for builders and construction companies in Spain",
     audience="English-speaking builders, renovation companies, painters, tilers and roofers in Spain",
-    crumb_home='Home', crumb='Builders and renovations',
-    badge='For builders and renovation companies in Spain',
-    h1="Websites for <em>builders</em> and renovation companies in Spain",
-    lede="Your projects in photos, the areas you cover, a quote request in one click, in English and Spanish, and the "
-         "information Spanish consumer law expects. We write it for you and send you a free demo within 24 hours.",
+    crumb_home='Home', crumb='Builders and construction companies',
+    badge='For builders and construction companies in Spain',
+    h1="Construction company website design for <em>builders</em> in Spain",
+    lede="A construction website that shows your projects in photos, the areas you cover and a quote request in one "
+         "click, in English and Spanish, with the information Spanish consumer law expects. We write the content for "
+         "you and send you a free demo within 24 hours.",
     pills=['English and Spanish included', 'Spanish rules built in', 'Free demo in 24 hours'],
     cta='Get my free demo', cta2='What Spanish rules require',
     brief_t='In short',
-    brief="WebAutonomos builds websites for English-speaking builders, renovation companies, painters, tilers and "
-          "roofers working in Spain. We show your projects, write the copy in English and Spanish (up to four "
+    brief="WebAutonomos designs websites for English-speaking builders, construction and renovation companies, "
+          "painters, tilers and roofers working in Spain. We showcase your projects and services, write the content "
+          "in English and Spanish (up to four "
           "languages) at no extra cost, and include the information Spanish law expects on a business website, such "
           "as a legal notice with your NIF or NIE, "
           "prices for homeowners shown with VAT included, and the complaint information your region asks for. It "
@@ -3382,37 +3530,62 @@ ARTI['en'] = dict(
     spain_note='<strong>Working in the UK instead?</strong> UK rules are different. See '
                '<a href="https://webautonomos.es/en/web-design-for-tradesmen">web design for tradesmen in the UK</a>.',
     sources_t='Sources',
-    why_ey='Why us', why_t='Built for builders who work in English',
+    why_ey='Why us', why_t='Made for construction businesses that work in English',
     why=[('💬', 'We speak your language', "Email, WhatsApp or video call in English: no need to decode Spanish legal "
                                          "or technical jargon."),
          ('🌍', 'Up to four languages, one price', "English, Spanish and up to two more at no extra cost, so Spanish "
                                                    "homeowners find you as easily as expats do."),
-         ('📸', 'Your projects, shown properly', "Kitchens, bathrooms, full renovations, roofs: your project photos "
-                                                "organised by type of job."),
-         ('📍', 'Found locally', "Titles and copy written for searches like “builder Jávea” or “reformas "
-                                "Torrevieja”, in both languages.")],
+         ('📸', 'Your projects, shown properly', "Kitchens, bathrooms, full renovations, roofs: photos of your "
+                                                "completed projects, organised by type of job."),
+         ('📍', 'Found locally', "Titles and copy written for searches like “builder Jávea”, “construction "
+                                "company Alicante” or “reformas Torrevieja”, in both languages.")],
     where_t='Anywhere in Spain',
     where="Costa Blanca, Costa del Sol, Valencia, Mallorca, Barcelona, Madrid or the Canary Islands: we work "
           "remotely, so where your yard is does not change how we work with you.",
     sect_t='Who it is for',
-    sectors=['🏗️ Builders', '🏠 Renovation companies', '🎨 Painters and decorators', '🟫 Tilers',
+    sectors=['🏗️ Builders', '🏢 Construction companies', '🏠 Renovation companies', '🎨 Painters and decorators',
+             '🟫 Tilers',
              '🏘️ Roofers', '🧱 Bricklayers', '🛁 Kitchen and bathroom fitters', '🏊 Pool builders'],
     how_t='Your website in three steps',
-    steps=[('Tell us about your business', 'Your trades, the areas you cover and a few project photos: it takes two '
-                                           'minutes.'),
+    steps=[('Tell us about your construction business', 'Your trades, the areas you cover and a few project '
+                                                        'photos: it takes two minutes.'),
            ('We build your demo', 'Within 24 hours, with your projects, your copy in English and Spanish, and your '
                                   'legal pages.'),
            ('You decide', "Ask for any changes you want. If you like it, it goes live; if not, you pay nothing.")],
     price_note=PRIX_EN_BAT,
     extra=[
-        ('what-to-include', 'On your website', "What should a builder's website in Spain show?",
+        ('why-website', 'Why a website', 'Why does a construction company need its own website?',
+         '<p class="legal-intro">Because clients check you out before they get in touch. A construction company '
+         'website shows your projects, your team and how you run a job, in one place you control, which directories '
+         'and social media cannot do on their own. For visitors, it is often the first impression of your '
+         'business.</p>'
+         '<div class="cmp-g">'
+         '<div class="cmp-c them"><h3>A directory or social media page</h3><ul>'
+         '<li>Your profile sits next to other builders, in a layout you do not control</li>'
+         '<li>Project photos get lost in a feed after a few weeks</li>'
+         '<li>Enquiries often go through the platform first</li>'
+         '<li>Little room to explain your services, your process or your terms</li>'
+         '</ul></div>'
+         '<div class="cmp-c us"><h3>Your own construction website</h3><ul>'
+         '<li>Your services, projects and team, on pages designed around your business</li>'
+         '<li>Every quote request goes straight to your email or your WhatsApp</li>'
+         '<li>Content in English and Spanish, so both expat and Spanish clients understand you</li>'
+         '<li>Your own .es domain name, included for the first year</li>'
+         '</ul></div>'
+         '</div>'
+         '<p class="legal-intro" style="margin:24px auto 0">Other digital channels still help, social media for '
+         'example: your website links to your profiles, and your profiles send people back to your construction '
+         'website, where they can see the full picture and contact you.</p>'),
+        ('what-to-include', 'On your website', "What should a construction company website show?",
          '<p class="legal-intro">A homeowner comparing builders wants to see finished work like theirs, know that '
-         'you cover their town, and find a simple way to ask for a quote.</p>'
+         'you cover their town, and find a simple way to ask for a quote. Construction websites that answer those '
+         'three points from the homepage make the next step easy.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F5C2️</div>'
          '<h3>A portfolio organised by type of job</h3>'
          '<p>Kitchens, bathrooms, full renovations, roofs and pools, grouped so a visitor looking for one type of '
-         'work does not scroll past the others. We build it from your own project photos.</p></div>'
+         'work does not scroll past the others. We build it from your own project photos, with a short description '
+         'of your main projects.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CD</div>'
          '<h3>The areas you cover, stated clearly</h3>'
          '<p>Naming the towns you work in (Jávea, Torrevieja or Marbella, for example) helps both readers and '
@@ -3421,12 +3594,220 @@ ARTI['en'] = dict(
          '<h3>How you quote and get paid</h3>'
          '<p>A written quote, a clear payment schedule and payment by transfer: saying so on your website reassures '
          'customers who have heard about renovation problems.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F477</div>'
+         '<h3>Your team and experience</h3>'
+         '<p>Who runs each job, which trades you have in-house or bring in, and how long you have been building in '
+         'Spain. Clients want to know who will be in their home.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">⭐</div>'
+         '<h3>Testimonials from past clients</h3>'
+         '<p>Reviews from past clients, with a note on how they are checked, help a new client trust a construction '
+         'company they have never met.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F449</div>'
+         '<h3>A clear call to action</h3>'
+         '<p>A quote request button on every page, plus your phone number and WhatsApp, so visitors who like what '
+         'they see can get in touch straight away.</p></div>'
          '</div>'
          '<p class="where">For a longer read, see our article on '
          '<a href="https://webautonomos.es/blog/en/website-for-carpenters-and-renovations">websites for carpenters '
          'and renovation companies</a>.</p>'),
+        ('site-pages', 'Structure', 'Which pages does a construction website need?',
+         '<p class="legal-intro">A small construction company website needs only a handful of sections, as long as '
+         'each one has a clear purpose: a homepage, your services, your projects, your team, testimonials and a '
+         'quote request, plus the legal texts Spanish law requires.</p>'
+         '<div class="cmp-c us" style="max-width:640px;margin:0 auto;"><h3>A simple site structure</h3><ul>'
+         '<li><strong>Homepage:</strong> who you are, what you build and where, with a quote request button in '
+         'view.</li>'
+         '<li><strong>Services:</strong> one section per type of job, such as renovations, extensions, kitchens '
+         'and bathrooms, roofs or pools.</li>'
+         '<li><strong>Projects:</strong> a portfolio of completed projects, each with photos and a short '
+         'description.</li>'
+         '<li><strong>About:</strong> your team, your experience in the construction industry and how you run a job '
+         'from quote to handover.</li>'
+         '<li><strong>Testimonials:</strong> what past clients say, with a note on how reviews are checked.</li>'
+         '<li><strong>Contact:</strong> a quote request form, your phone number and WhatsApp.</li>'
+         '<li><strong>Legal texts:</strong> legal notice, privacy policy and cookie notice.</li>'
+         '</ul></div>'
+         '<p class="legal-intro" style="margin:24px auto 0">We create the whole structure and write the content for '
+         'you, from your Google Business Profile, your project photos and what you tell us. You see the whole '
+         'website in your demo before you pay anything.</p>'),
+        ('portfolio', 'Your projects', 'How should a builder show completed projects?',
+         '<p class="legal-intro">Project by project: a few of your best photos, the type of job, the town and what '
+         'the client wanted. A short case study for each project tells a visitor more than a long gallery of '
+         'unlabelled images.</p>'
+         '<div class="cmp-c us" style="max-width:640px;margin:0 auto;"><h3>What to include for each project</h3><ul>'
+         '<li>Photos from before, during and after the works</li>'
+         '<li>The type of project: kitchen, bathroom, full renovation, extension, roof or pool</li>'
+         '<li>The town or area, for example Jávea, Calpe or Orihuela Costa</li>'
+         '<li>What the client wanted and how you approached it, in two or three sentences</li>'
+         '<li>A testimonial from that client, if they agree to it</li>'
+         '</ul></div>'
+         '<p class="legal-intro" style="margin:24px auto 0">We organise your project photos by type of job and write '
+         'the short descriptions with you. We use your own photos, so your portfolio shows your real projects.</p>'
+         '<p class="legal-intro" style="margin:16px auto 0">Short case studies like these are strong examples of '
+         'your expertise: they show visitors what you can do for a project like theirs.</p>'),
+        ('content', 'Content', 'What content should a construction website have?',
+         '<p class="legal-intro">Content that answers the questions visitors ask before they call: what you build, '
+         'where, how a project runs, and how you quote and get paid. Write it for your clients first, in plain words '
+         'and without industry jargon: clear, specific content also gives search engines something to read.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F9F1</div>'
+         '<h3>Service descriptions</h3>'
+         '<p>One short section per service: what it includes, the type of property you take on, and how you deal '
+         'with permits and waste. Specific content helps the right clients recognise their project and your '
+         'expertise.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CB</div>'
+         '<h3>How a project runs</h3>'
+         '<p>From the first visit and the written quote to the start date, the payment schedule and the handover. '
+         'Explaining your process in plain steps makes a construction company easier to trust.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">❓</div>'
+         '<h3>Answers to common questions</h3>'
+         '<p>Do I need a permit? Can you start before the summer? Will an architect be involved? A short FAQ on '
+         'your website answers what clients ask on every first visit.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4F0</div>'
+         '<h3>Articles, if you want more</h3>'
+         '<p>Articles about your projects or local building topics keep your site updated and give search '
+         'engines more to read. SEO Local, a separate service, adds four blog articles a month; results build over '
+         'time.</p></div>'
+         '</div>'),
+        ('design', 'Web design', 'Construction web design: layout, images and navigation',
+         '<p class="legal-intro">On construction websites, effective web design is mostly about clarity: large '
+         'images of your projects, simple navigation and a clear call to action on every page. A modern, '
+         'professional look matters, but what makes the difference is whether visitors can find what they came '
+         'for.</p>'
+         '<div class="cmp-c us" style="max-width:640px;margin:0 auto;"><h3>Design choices that help</h3><ul>'
+         '<li>Simple navigation with a few sections: services, projects, about and contact</li>'
+         '<li>Large images of finished projects, each with a short caption</li>'
+         '<li>A layout that is easy to read on a phone, where many visitors first see your site</li>'
+         '<li>Your logo and brand colours, matching your vans, signs and quotes, so your brand looks the same '
+         'everywhere</li>'
+         '<li>A call to action on every page: request a quote, call or send a WhatsApp message</li>'
+         '<li>Photos resized before they go online, so pages load fast</li>'
+         '</ul></div>'
+         '<p class="legal-intro" style="margin:24px auto 0">We design each construction website from your own '
+         'photos and your Google Business Profile, using tested components: it keeps the navigation simple and the price '
+         'low.</p>'),
+        ('features', 'Features', 'Features of a professional construction website',
+         '<p class="legal-intro">Beyond the look, a few features decide whether visitors get in touch. These are '
+         'the ones worth checking on construction websites, whoever builds them.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4F1</div>'
+         '<h3>Easy to use on a phone</h3>'
+         '<p>Many visitors first see your website on a phone, so your site should be designed for small screens, '
+         'with a modern, clean layout: text easy to read and buttons easy to tap without zooming.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F5BC️</div>'
+         '<h3>A strong project gallery</h3>'
+         '<p>Your best projects first, grouped by type, each with a short caption. A strong gallery showcases the '
+         'quality of your work better than any slogan.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4E8</div>'
+         '<h3>Contact on every page</h3>'
+         '<p>A quote request form, a call button and WhatsApp in view on every page, so visitors can get in touch '
+         'the moment they decide.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F310</div>'
+         '<h3>Two languages or more</h3>'
+         '<p>English and Spanish versions of each page, so the same website serves expat and Spanish clients.</p>'
+         '</div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F504</div>'
+         '<h3>Fresh content and updates</h3>'
+         '<p>New projects added as you finish them keep your site up to date. One change a month is included after '
+         'launch, so adding a new project each month costs you nothing extra.</p></div>'
+         '</div>'
+         '<p class="legal-intro" style="margin:24px auto 0">Beyond these features, every construction website we '
+         'create for your business includes a contact form that sends requests to your email, a WhatsApp button, '
+         'links to your social media profiles, hosting, an SSL certificate and daily backups.</p>'),
+        ('by-business', 'By type of business', 'What each construction business should showcase',
+         '<p class="legal-intro">The same design and structure suit many construction websites, but what you put '
+         'first depends on your business. These are the projects and services each one should showcase.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F3D7️</div>'
+         '<h3>Builders and general construction companies</h3>'
+         '<p>Your range of services, from extensions to full renovations, the size of the projects you take on and '
+         'the team that runs them. Case studies of whole-house projects show your experience and expertise '
+         'best.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F6C1</div>'
+         '<h3>Kitchen and bathroom fitters</h3>'
+         '<p>Photos of finished rooms, the materials you use and how long a typical refit takes. Visitors '
+         'planning one room want to see the quality of the finish close up.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F3D8️</div>'
+         '<h3>Roofers</h3>'
+         '<p>Repairs, new roofs and waterproofing as separate services, with photos from the roof itself. Mention '
+         'uralita removal only if your business is registered in the RERA.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F3CA</div>'
+         '<h3>Pool builders</h3>'
+         '<p>New pools and pool renovations, the finishes you offer and the towns where you have built them, with '
+         'your best projects at the top of the homepage.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F3A8</div>'
+         '<h3>Painters and decorators</h3>'
+         '<p>Interior and exterior painting, façades and the products you use, with photos of each room or façade '
+         'as it was and as you left it.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F7EB</div>'
+         '<h3>Tilers and bricklayers</h3>'
+         '<p>Close-up photos of finished surfaces, the materials you lay and the jobs you prefer, from a terrace to a '
+         'full house.</p></div>'
+         '</div>'
+         '<p class="legal-intro" style="margin:24px auto 0">Whatever your trade, we create the content of your '
+         'construction website with you, by email, WhatsApp or video call: the services you want to sell, the '
+         'projects you are proud of and the towns where you want more clients.</p>'),
+        ('options', 'Your options', 'A website builder platform, an agency or a website made for you?',
+         '<p class="legal-intro">There are three common ways to get a construction website, and each one asks for '
+         'a different amount of your time and money.</p>'
+         '<div class="cmp-g">'
+         '<div class="cmp-c them"><h3>Doing it yourself on a platform</h3><ul>'
+         '<li>Website builders such as Wix or Squarespace let you build websites from templates you adapt '
+         'yourself</li>'
+         '<li>You write the content, choose the images and make the updates yourself</li>'
+         '<li>The legal texts and the information Spanish rules require are up to you</li>'
+         '<li>Templates are quick to start, but making one feel truly custom takes a lot of your time</li>'
+         '</ul></div>'
+         '<div class="cmp-c us"><h3>Website design by WebAutonomos</h3><ul>'
+         '<li>We create the design and write the content in English and Spanish</li>'
+         '<li>You see a free demo within 24 hours, before you pay anything</li>'
+         '<li>Hosting, backups, legal texts and one change a month are included, with a same-day reply when you '
+         'need support</li>'
+         '<li>€15 + VAT a month with no lock-in, or a one-off €349 + VAT</li>'
+         '</ul></div>'
+         '</div>'
+         '<p class="legal-intro" style="margin:24px auto 0">A custom design from a web design agency is the third '
+         'route. It can suit a large construction company with a big digital marketing budget, but it can cost more '
+         'and take longer.</p>'),
+        ('languages', 'Languages', 'Does a construction website in Spain need to be in Spanish?',
+         '<p class="legal-intro">If you want Spanish clients as well as expats, yes. Many homeowners in Spain search '
+         'in Spanish, and in the Valencian Community or the Balearics some search in Valencian or Catalan too.</p>'
+         '<p class="legal-intro" style="margin:16px auto 0">Your site comes in English and Spanish at no extra '
+         'cost, plus up to two more languages from French, Catalan, Valencian, Galician and Basque. We write the '
+         'text in each language ourselves, and your monthly change applies in every language.</p>'),
+        ('build-trust', 'Trust', 'How does a construction company website build trust?',
+         '<p class="legal-intro">By making it easy to check who you are and what you have built: a registered '
+         'business, real projects, testimonials, and clear quotes and payment terms. Renovation work means letting '
+         'a team into a home for days or weeks, so trust often decides who gets the job.</p>'
+         '<div class="cmp-c us" style="max-width:640px;margin:0 auto;"><h3>What builds trust online</h3><ul>'
+         '<li>Your business name, NIF or NIE and address in the legal notice</li>'
+         '<li>Finished projects shown with photos of your own jobs</li>'
+         '<li>Testimonials from past clients, with a note on how reviews are checked</li>'
+         '<li>A written quote for every job, and a clear payment schedule</li>'
+         '<li>Payment by bank transfer, which leaves a record for both sides</li>'
+         '<li>Registration where a service needs it, such as the RERA for asbestos removal</li>'
+         '</ul></div>'
+         '<p class="legal-intro" style="margin:24px auto 0">In the construction industry, reputation travels by word '
+         'of mouth, and your construction website is where people check that recommendation.</p>'),
+        ('common-mistakes', 'What to avoid', 'Common mistakes on construction websites',
+         '<p class="legal-intro">These gaps make a construction company seem less professional than its projects, hide '
+         'the details that build trust, or leave its website short of what Spanish rules require.</p>'
+         '<div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul>'
+         '<li>A gallery of unlabelled photos, with no project type, town or description</li>'
+         '<li>Stock images that hide the quality of your own projects</li>'
+         '<li>No clear call to action: the quote form or the phone number is hard to find</li>'
+         '<li>One page listing every service, so visitors cannot see your expertise in the job they need</li>'
+         '<li>A layout that is slow or hard to use on a phone</li>'
+         '<li>Content only in English, when many people in Spain search in Spanish</li>'
+         '<li>No legal notice or privacy information</li>'
+         '</ul></div>'
+         '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>How we help you avoid them</h3>'
+         '<p>We create every construction website from your own projects and photos, with a clear call to action on '
+         'each page, a section for each service, content in English and Spanish, and your legal texts included. '
+         'You check the whole site in your demo before you pay.</p></div>'),
         ('by-trade', 'By trade', 'A website that fits the rules of your trade',
-         '<p class="legal-intro">Some trades have their own rules in Spain. We cover them page by page.</p>'
+         '<p class="legal-intro">Some construction trades have their own rules in Spain, and their websites have to '
+         'reflect them. We cover them page by page.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F527</div>'
          '<h3><a href="https://webautonomos.es/en/website-for-plumbers-in-spain">Plumbers and heating '
@@ -3440,7 +3821,21 @@ ARTI['en'] = dict(
          '<h3><a href="https://webautonomos.es/en/website-for-carpenters-in-spain">Carpenters and joiners</a></h3>'
          '<p>Written quotes, 10% VAT on home renovation, and when you need to register in the REA.</p></div>'
          '</div>'),
-        local_search_en(''),
+        local_search_en(
+            '', h2='Digital marketing for construction companies: getting found locally',
+            intro='Your website is the base of your digital marketing: search engines, your Google Business Profile, '
+                  'social media and any adverts all send visitors to it. In local search results, Google often shows '
+                  'a map of nearby businesses next to the usual links. Homeowners also ask around and post jobs on '
+                  'directories, so the same details everywhere help them find your construction business.',
+            seo='Titles and copy written around your construction services and the towns you cover, kept consistent '
+                'with your Google Business Profile, come with your website at no extra cost.',
+            detail=' SEO Local means four blog articles a month, local keywords and a monthly report, and both '
+                   'services can be bought separately, even without a website.',
+            cartes='<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4E3</div>'
+                   '<h3>Social media and advertising</h3>'
+                   '<p>Your website links to your social media profiles, where project photos often get attention. '
+                   'Managing those profiles, or advertising on Facebook or Google Ads, is available on request if you '
+                   'want to grow your digital marketing: just ask us.</p></div>'),
     ],
     faq_t='Frequently asked questions',
     faq=[("Who has to get the building permit, me or the homeowner?",
@@ -3480,6 +3875,22 @@ ARTI['en'] = dict(
          FAQ_EN_COMPLAINTS,
          FAQ_EN_REVIEWS,
          FAQ_EN_LANGUAGE,
+         ("What should a construction company website include?",
+          "A homepage that says what you build and where, a page or section for each of your services, a portfolio of "
+          "completed projects with photos, a page about your team, testimonials, a quote request form with your "
+          "phone number and WhatsApp, and the legal texts: legal notice, privacy policy and cookie notice."),
+         ("Can you show my completed projects?",
+          "Yes. We build the portfolio of your construction website from your own project photos, organised by type "
+          "of job (kitchens, "
+          "bathrooms, full renovations, roofs, pools), with a short description of each. When you send photos of a "
+          "new project after launch, adding them can be your change of the month: one change a month is included."),
+         ("Do you design websites for construction companies outside the Costa Blanca?",
+          "Yes. We work remotely, by email, WhatsApp or video call, so we design websites for builders and "
+          "construction companies anywhere in Spain, from Valencia and Alicante to Mallorca or the Costa del Sol."),
+         ("Is the website mine?",
+          "With the one-off payment of €349 + VAT, the website is yours. If you pay €15 + VAT a month instead, "
+          "your .es domain name is registered in your name and stays yours if you leave; if you stop paying, the "
+          "site goes offline."),
          FAQ_EN_GBP,
          FAQ_EN_PRICE],
     final_t='See your website before you pay a thing',
