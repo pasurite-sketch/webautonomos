@@ -10,7 +10,7 @@
      blog/val, blog/en et blog/fr. Ne pas editer a la main : relancer le script
      apres chaque publication d'article. -->
 <title>Blog para autónomos: webs, SEO local y Google Business | WebAutonomos</title>
-<meta name="description" content="Guías prácticas para autónomos, pequeñas y medianas empresas: páginas web, SEO local, Google Business Profile y marketing digital. 238 artículos en español, valenciano, inglés y francés.">
+<meta name="description" content="Guías prácticas para autónomos, pequeñas y medianas empresas: páginas web, SEO local, Google Business Profile y marketing digital. 60 artículos en español, con versiones en valenciano, inglés y francés.">
 <link rel="canonical" href="https://webautonomos.es/blog/">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 
@@ -20,7 +20,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://webautonomos.es/blog/">
 <meta property="og:title" content="Blog para autónomos: webs, SEO local y Google Business | WebAutonomos">
-<meta property="og:description" content="Guías prácticas para autónomos, pequeñas y medianas empresas: páginas web, SEO local, Google Business Profile y marketing digital. 238 artículos en español, valenciano, inglés y francés.">
+<meta property="og:description" content="Guías prácticas para autónomos, pequeñas y medianas empresas: páginas web, SEO local, Google Business Profile y marketing digital. 60 artículos en español, con versiones en valenciano, inglés y francés.">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="WebAutonomos">
 <meta name="twitter:card" content="summary_large_image">
@@ -113,7 +113,7 @@
   <h1>Blog para autónomos</h1>
   <p class="lede">
     Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing
-    digital para autónomos, pequeñas y medianas empresas. 238 artículos disponibles.
+    digital para autónomos, pequeñas y medianas empresas. <span id="nart">60 artículos disponibles en español</span>.
   </p>
 <!-- photo:auto -->
 <figure class="photo-auto" style="max-width:880px;margin:28px auto;padding:0;box-sizing:border-box">
@@ -2126,6 +2126,8 @@
   doc.className = doc.className.replace('no-js', 'js');
   var panneaux = [].slice.call(document.querySelectorAll('.panneau'));
   var liens = [].slice.call(document.querySelectorAll('.langues a'));
+  var nart = document.getElementById('nart');
+  var NOMS = {"es": "español", "val": "valenciano", "en": "inglés", "fr": "francés"};
   function filtrer(panneau, cat) {
     [].forEach.call(panneau.querySelectorAll('.fiche'), function (f) {
       f.hidden = !(cat === 'tous' || f.getAttribute('data-cat') === cat);
@@ -2141,7 +2143,12 @@
       p.querySelector('.filtres').hidden = false;
       if (p.id === code) filtrer(p, 'tous');
     });
-    liens.forEach(function (a) { a.setAttribute('aria-current', a.getAttribute('data-lang') === code ? 'true' : 'false'); });
+    liens.forEach(function (a) {
+      var actif = a.getAttribute('data-lang') === code;
+      a.setAttribute('aria-current', actif ? 'true' : 'false');
+      /* compteur du chapeau = nombre d'articles de la langue affichee */
+      if (actif && nart) nart.textContent = a.querySelector('.n').textContent + ' artículos disponibles en ' + NOMS[code];
+    });
   }
   liens.forEach(function (a) {
     a.addEventListener('click', function (e) {

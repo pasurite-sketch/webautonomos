@@ -13,6 +13,12 @@ d'Ariane JSON-LD « blog?categoria= »), date (datePublished) et photo
 informations la reprend d'une autre version linguistique de la meme page (meme
 « sujet » dans images.json). Aucun compteur code en dur.
 
+Compteur du chapeau (09/10/2026) : « N artículos disponibles en <langue> » donne le
+nombre d'articles de la langue affichée (60 en español, 58 en francés…), pas le
+total des quatre langues, qui comptait chaque traduction comme un article de plus.
+Sans JavaScript, il vaut celui de la langue par défaut (l'espagnol) ; avec, il suit
+la langue choisie. La meta description donne aussi le nombre de la langue par défaut.
+
 Sans JavaScript, les quatre langues s'affichent l'une sous l'autre et tous les liens
 restent dans le HTML. Avec JavaScript, une seule langue est visible (#es, #val, #en,
 #fr dans l'adresse, l'espagnol par defaut) et les filtres apparaissent.
@@ -66,6 +72,8 @@ CATS = [
                                        'en': 'Invoicing & Legal', 'fr': 'Facturation et juridique'}),
 ]
 CAT_DEFAUT = 'paginas-web'
+# Nom de chaque langue en espagnol, la langue de la page.
+NOMS = {'es': 'español', 'val': 'valenciano', 'en': 'inglés', 'fr': 'francés'}
 TOUS = {'es': 'Todos', 'val': 'Tots', 'en': 'All', 'fr': 'Tous'}
 FILTRER = {'es': 'Filtrar por tema', 'val': 'Filtrar per tema', 'en': 'Filter by topic', 'fr': 'Filtrer par thème'}
 MOIS = {
@@ -171,18 +179,25 @@ def fiche(a):
             f'        </a>')
 
 
+def langue_defaut(data):
+    """Langue affichée par défaut (la première présente : l'espagnol)."""
+    return next(code for code, _, _ in LANGS if data.get(code))
+
+
 def build(data):
     total = sum(len(v) for v in data.values())
     langs_present = [(code, label, court) for code, label, court in LANGS if data.get(code)]
+    defaut = langue_defaut(data)
+    n_defaut = len(data[defaut])
 
-    # Enumeration des langues pour la meta description, dans la langue de la page.
-    names = {'es': 'español', 'val': 'valenciano', 'en': 'inglés', 'fr': 'francés'}
-    listed = [names[c] for c, _, _ in langs_present]
-    langs_text = (', '.join(listed[:-1]) + ' y ' + listed[-1]) if len(listed) > 1 else listed[0]
+    # Noms des langues dans la langue de la page (meta description et chapeau).
+    autres = [NOMS[c] for c, _, _ in langs_present if c != defaut]
+    autres_text = (', '.join(autres[:-1]) + ' y ' + autres[-1]) if len(autres) > 1 else ''.join(autres)
 
     desc = ('Guías prácticas para autónomos, pequeñas y medianas empresas: páginas web, '
             'SEO local, Google Business Profile y marketing digital. '
-            f'{total} artículos en {langs_text}.')
+            f'{n_defaut} artículos en {NOMS[defaut]}'
+            + (f', con versiones en {autres_text}.' if autres else '.'))
     title = 'Blog para autónomos: webs, SEO local y Google Business | WebAutonomos'
 
     nav = '\n'.join(
@@ -326,7 +341,7 @@ def build(data):
   <h1>Blog para autónomos</h1>
   <p class="lede">
     Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing
-    digital para autónomos, pequeñas y medianas empresas. {total} artículos disponibles.
+    digital para autónomos, pequeñas y medianas empresas. <span id="nart">{n_defaut} artículos disponibles en {NOMS[defaut]}</span>.
   </p>
 
   <nav class="langues" aria-label="Idioma de los artículos">
@@ -359,6 +374,8 @@ def build(data):
   doc.className = doc.className.replace('no-js', 'js');
   var panneaux = [].slice.call(document.querySelectorAll('.panneau'));
   var liens = [].slice.call(document.querySelectorAll('.langues a'));
+  var nart = document.getElementById('nart');
+  var NOMS = {json.dumps(NOMS, ensure_ascii=False)};
   function filtrer(panneau, cat) {{
     [].forEach.call(panneau.querySelectorAll('.fiche'), function (f) {{
       f.hidden = !(cat === 'tous' || f.getAttribute('data-cat') === cat);
@@ -374,7 +391,12 @@ def build(data):
       p.querySelector('.filtres').hidden = false;
       if (p.id === code) filtrer(p, 'tous');
     }});
-    liens.forEach(function (a) {{ a.setAttribute('aria-current', a.getAttribute('data-lang') === code ? 'true' : 'false'); }});
+    liens.forEach(function (a) {{
+      var actif = a.getAttribute('data-lang') === code;
+      a.setAttribute('aria-current', actif ? 'true' : 'false');
+      /* compteur du chapeau = nombre d'articles de la langue affichee */
+      if (actif && nart) nart.textContent = a.querySelector('.n').textContent + ' artículos disponibles en ' + NOMS[code];
+    }});
   }}
   liens.forEach(function (a) {{
     a.addEventListener('click', function (e) {{
@@ -433,11 +455,22 @@ def main():
     expected = [len(data[c]) for c, _, _ in LANGS if data.get(c)]
     if counters != expected:
         problems.append(('compteurs de section', f'{counters} != {expected}'))
-    # Le total doit apparaitre dans le lede, la meta description et og:description.
-    if page.count(f'{total} artículos') < 3:
-        problems.append(('total', f'"{total} artículos" trouve {page.count(f"{total} artículos")}x, attendu 3'))
-    # Aucun autre compteur fige : tout "<n> artículos" doit valoir le total courant.
-    stale = {n for n in re.findall(r'(\d+) artículos', page) if int(n) != total}
+    # Pastilles de langue : chacune porte le nombre d'articles de sa langue (le chapeau les lit).
+    pastilles = {c: int(n) for c, n in re.findall(r'<a href="#\w+" data-lang="(\w+)"[^>]*>[^<]*<span class="n">(\d+)</span></a>', page)}
+    attendu = {c: len(data[c]) for c, _, _ in LANGS if data.get(c)}
+    if pastilles != attendu:
+        problems.append(('pastilles de langue', f'{pastilles} != {attendu}'))
+    # Chapeau : nombre de la langue par defaut, pas le total des quatre langues.
+    defaut = langue_defaut(data)
+    n_defaut = len(data[defaut])
+    chapeau = f'<span id="nart">{n_defaut} artículos disponibles en {NOMS[defaut]}</span>'
+    if page.count(chapeau) != 1:
+        problems.append(('chapeau', f'« {chapeau} » trouve {page.count(chapeau)}x, attendu 1'))
+    # Meta description et og:description : meme nombre.
+    if page.count(f'{n_defaut} artículos en {NOMS[defaut]}') != 2:
+        problems.append(('meta description', f'"{n_defaut} artículos en {NOMS[defaut]}" attendu 2x'))
+    # Aucun autre compteur fige : tout "<n> artículos" doit valoir le nombre de la langue par defaut.
+    stale = {n for n in re.findall(r'(\d+) artículos', page) if int(n) != n_defaut}
     if stale:
         problems.append(('compteur fige', 'valeurs parasites : ' + ', '.join(sorted(stale))))
     # La maquette doit pouvoir se poser en fin de page : aucun intertitre <h2>.
