@@ -168,6 +168,189 @@
    "publie": true
   },
   {
+   "id": "file-aviso-legal-privacidad-cookies-web",
+   "type": "file",
+   "publication": "2026-10-12",
+   "file": "_tools/queue/article_aviso_legal_privacidad_cookies.json",
+   "priorite": 1,
+   "titre": "Aviso legal, privacidad y cookies: lo que tu web debe mostrar por ley en España (2026)",
+   "url": "https://webautonomos.es/blog/es/aviso-legal-privacidad-cookies-web",
+   "resume": "Tu web es tu escaparate, pero también un espacio regulado. Si eres autónomo o tienes un pequeño negocio en España, la ley te pide: mostrar quién está detrás de la página, explicar qué haces con los datos de quien te escribe y pedir permiso antes de usar ciertas cookies. Repasamos el aviso legal, la política de privacidad y la de cookies, con el artículo exacto de cada obligació",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/aviso-legal-privacidad-cookies-web.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/aviso-legal-privacidad-cookies-web",
+     "spa": "es/aviso-legal-privacidad-cookies-web"
+    },
+    {
+     "html": "blog/val/avis-legal-privacitat-cookies-web.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/avis-legal-privacitat-cookies-web",
+     "spa": "val/avis-legal-privacitat-cookies-web"
+    },
+    {
+     "html": "blog/en/legal-notice-privacy-and-cookies-website-spain.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/legal-notice-privacy-and-cookies-website-spain",
+     "spa": "en/legal-notice-privacy-and-cookies-website-spain"
+    },
+    {
+     "html": "blog/fr/mentions-legales-site-internet-espagne.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/mentions-legales-site-internet-espagne",
+     "spa": "fr/mentions-legales-site-internet-espagne"
+    }
+   ],
+   "statut": "fait",
+   "scene": "Gros plan sur la main d'une commerçante qui tourne la clé dans la serrure de la porte en bois de sa boutique, en fin de journée, lumière dorée.",
+   "fichier": "documentos-legales-negocio-archivador",
+   "v": 1,
+   "fait_le": "2026-09-29T14:24:43",
+   "textes": {
+    "es": {
+     "alt": "La mano de una comerciante gira la llave en la cerradura de la puerta de madera de su tienda al atardecer.",
+     "legende": "La tienda cierra al final del día bajo la luz dorada del atardecer."
+    },
+    "val": {
+     "alt": "La mà d'una comerciant gira la clau del pany de la porta de fusta de la seua botiga al capvespre.",
+     "legende": "La botiga tanca al final del dia sota la llum daurada del capvespre."
+    },
+    "en": {
+     "alt": "A shopkeeper's hand turns a key in the lock of a wooden shop door in the warm evening light.",
+     "legende": "A shopkeeper locks the door as golden evening light falls."
+    },
+    "fr": {
+     "alt": "La main d'une commerçante tourne la clé dans la serrure de la porte en bois de sa boutique au crépuscule.",
+     "legende": "La commerçante ferme sa boutique dans la lumière dorée du soir."
+    }
+   },
+   "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution",
+   "site": "d'une boutique de décoration",
+   "maquette": {
+    "es": {
+     "statut": "fait",
+     "fichier": "documentos-legales-negocio-archivador-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T11:57:40",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de una tienda de decoración en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de una tienda de decoración en un portátil y un teléfono móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'una botiga de decoració en versions d'escriptori i mòbil.",
+       "legende": "Exemple de web d'una botiga de decoració en un portàtil i un telèfon mòbil."
+      },
+      "en": {
+       "alt": "Laptop and smartphone display the same home decor shop website in desktop and mobile layouts.",
+       "legende": "Example home decor shop website shown on a laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le même site de décoration en versions ordinateur et mobile.",
+       "legende": "Exemple de site de décoration affiché sur un ordinateur portable et un smartphone."
+      }
+     }
+    },
+    "val": {
+     "statut": "fait",
+     "fichier": "documentos-legales-negocio-archivador-maquette-val",
+     "v": 1,
+     "fait_le": "2026-09-30T12:20:42",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de una tienda de decoración en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de una tienda de decoración en un portátil y un teléfono móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'una botiga de decoració en versions d'escriptori i mòbil.",
+       "legende": "Exemple de web d'una botiga de decoració en un portàtil i un telèfon mòbil."
+      },
+      "en": {
+       "alt": "Laptop and smartphone display the same home decor shop website in desktop and mobile layouts.",
+       "legende": "Example home decor shop website shown on a laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le même site de décoration en versions ordinateur et mobile.",
+       "legende": "Exemple de site de décoration affiché sur un ordinateur portable et un smartphone."
+      }
+     }
+    },
+    "en": {
+     "statut": "fait",
+     "fichier": "documentos-legales-negocio-archivador-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T12:24:08",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de una tienda de decoración en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de una tienda de decoración en un portátil y un teléfono móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'una botiga de decoració en versions d'escriptori i mòbil.",
+       "legende": "Exemple de web d'una botiga de decoració en un portàtil i un telèfon mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the same home decor shop website in desktop and mobile layouts.",
+       "legende": "Example home decor shop website shown on a laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le même site de décoration en versions ordinateur et mobile.",
+       "legende": "Exemple de site de décoration affiché sur un ordinateur portable et un smartphone."
+      }
+     }
+    },
+    "fr": {
+     "statut": "fait",
+     "fichier": "documentos-legales-negocio-archivador-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T12:37:27",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de una tienda de decoración en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de web de una tienda de decoración en un portátil y un teléfono móvil."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'una botiga de decoració en versions d'escriptori i mòbil.",
+       "legende": "Exemple de web d'una botiga de decoració en un portàtil i un telèfon mòbil."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the same home decor shop website in desktop and mobile layouts.",
+       "legende": "Example home decor shop website shown on a laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur portable et un smartphone affichent le même site de décoration en versions ordinateur et mobile.",
+       "legende": "Exemple de site de décoration affiché sur un ordinateur portable et un smartphone."
+      }
+     }
+    }
+   },
+   "ecrans": {
+    "es": {
+     "nom": "Casa Olivo",
+     "titre": "Decoración para tu hogar",
+     "bouton": "tienda"
+    },
+    "val": {
+     "nom": "Casa Olivera",
+     "titre": "Decoració per a la teua llar",
+     "bouton": "tienda"
+    },
+    "en": {
+     "nom": "Casa Olivo",
+     "titre": "Home decor and gifts",
+     "bouton": "tienda"
+    },
+    "fr": {
+     "nom": "Maison Olivier",
+     "titre": "Décoration pour la maison",
+     "bouton": "tienda"
+    }
+   }
+  },
+  {
    "id": "file-web-en-varios-idiomas",
    "type": "file",
    "publication": "2026-10-08",
@@ -349,7 +532,8 @@
      "titre": "Petits-déjeuners face à la mer",
      "bouton": "carta"
     }
-   }
+   },
+   "publie": true
   },
   {
    "id": "file-wix-o-wordpress",
@@ -523,194 +707,11 @@
    "publie": true
   },
   {
-   "id": "file-aviso-legal-privacidad-cookies-web",
-   "type": "file",
-   "publication": "2026-10-12",
-   "file": "_tools/queue/article_aviso_legal_privacidad_cookies.json",
-   "priorite": 2,
-   "titre": "Aviso legal, privacidad y cookies: lo que tu web debe mostrar por ley en España (2026)",
-   "url": "https://webautonomos.es/blog/es/aviso-legal-privacidad-cookies-web",
-   "resume": "Tu web es tu escaparate, pero también un espacio regulado. Si eres autónomo o tienes un pequeño negocio en España, la ley te pide: mostrar quién está detrás de la página, explicar qué haces con los datos de quien te escribe y pedir permiso antes de usar ciertas cookies. Repasamos el aviso legal, la política de privacidad y la de cookies, con el artículo exacto de cada obligació",
-   "marche": "europe",
-   "sante": false,
-   "pages": [
-    {
-     "html": "blog/es/aviso-legal-privacidad-cookies-web.html",
-     "lang": "es",
-     "url": "https://webautonomos.es/blog/es/aviso-legal-privacidad-cookies-web",
-     "spa": "es/aviso-legal-privacidad-cookies-web"
-    },
-    {
-     "html": "blog/val/avis-legal-privacitat-cookies-web.html",
-     "lang": "val",
-     "url": "https://webautonomos.es/blog/val/avis-legal-privacitat-cookies-web",
-     "spa": "val/avis-legal-privacitat-cookies-web"
-    },
-    {
-     "html": "blog/en/legal-notice-privacy-and-cookies-website-spain.html",
-     "lang": "en",
-     "url": "https://webautonomos.es/blog/en/legal-notice-privacy-and-cookies-website-spain",
-     "spa": "en/legal-notice-privacy-and-cookies-website-spain"
-    },
-    {
-     "html": "blog/fr/mentions-legales-site-internet-espagne.html",
-     "lang": "fr",
-     "url": "https://webautonomos.es/blog/fr/mentions-legales-site-internet-espagne",
-     "spa": "fr/mentions-legales-site-internet-espagne"
-    }
-   ],
-   "statut": "fait",
-   "scene": "Gros plan sur la main d'une commerçante qui tourne la clé dans la serrure de la porte en bois de sa boutique, en fin de journée, lumière dorée.",
-   "fichier": "documentos-legales-negocio-archivador",
-   "v": 1,
-   "fait_le": "2026-09-29T14:24:43",
-   "textes": {
-    "es": {
-     "alt": "La mano de una comerciante gira la llave en la cerradura de la puerta de madera de su tienda al atardecer.",
-     "legende": "La tienda cierra al final del día bajo la luz dorada del atardecer."
-    },
-    "val": {
-     "alt": "La mà d'una comerciant gira la clau del pany de la porta de fusta de la seua botiga al capvespre.",
-     "legende": "La botiga tanca al final del dia sota la llum daurada del capvespre."
-    },
-    "en": {
-     "alt": "A shopkeeper's hand turns a key in the lock of a wooden shop door in the warm evening light.",
-     "legende": "A shopkeeper locks the door as golden evening light falls."
-    },
-    "fr": {
-     "alt": "La main d'une commerçante tourne la clé dans la serrure de la porte en bois de sa boutique au crépuscule.",
-     "legende": "La commerçante ferme sa boutique dans la lumière dorée du soir."
-    }
-   },
-   "note": "remis en file le 29/09 : passé pendant les ratés de génération ; doit avoir sa photo avant parution",
-   "site": "d'une boutique de décoration",
-   "maquette": {
-    "es": {
-     "statut": "fait",
-     "fichier": "documentos-legales-negocio-archivador-maquette-es",
-     "v": 1,
-     "fait_le": "2026-09-30T11:57:40",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran la misma web de una tienda de decoración en versiones de escritorio y móvil.",
-       "legende": "Ejemplo de web de una tienda de decoración en un portátil y un teléfono móvil."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren la mateixa web d'una botiga de decoració en versions d'escriptori i mòbil.",
-       "legende": "Exemple de web d'una botiga de decoració en un portàtil i un telèfon mòbil."
-      },
-      "en": {
-       "alt": "Laptop and smartphone display the same home decor shop website in desktop and mobile layouts.",
-       "legende": "Example home decor shop website shown on a laptop and smartphone."
-      },
-      "fr": {
-       "alt": "Un ordinateur portable et un smartphone affichent le même site de décoration en versions ordinateur et mobile.",
-       "legende": "Exemple de site de décoration affiché sur un ordinateur portable et un smartphone."
-      }
-     }
-    },
-    "val": {
-     "statut": "fait",
-     "fichier": "documentos-legales-negocio-archivador-maquette-val",
-     "v": 1,
-     "fait_le": "2026-09-30T12:20:42",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran la misma web de una tienda de decoración en versiones de escritorio y móvil.",
-       "legende": "Ejemplo de web de una tienda de decoración en un portátil y un teléfono móvil."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren la mateixa web d'una botiga de decoració en versions d'escriptori i mòbil.",
-       "legende": "Exemple de web d'una botiga de decoració en un portàtil i un telèfon mòbil."
-      },
-      "en": {
-       "alt": "Laptop and smartphone display the same home decor shop website in desktop and mobile layouts.",
-       "legende": "Example home decor shop website shown on a laptop and smartphone."
-      },
-      "fr": {
-       "alt": "Un ordinateur portable et un smartphone affichent le même site de décoration en versions ordinateur et mobile.",
-       "legende": "Exemple de site de décoration affiché sur un ordinateur portable et un smartphone."
-      }
-     }
-    },
-    "en": {
-     "statut": "fait",
-     "fichier": "documentos-legales-negocio-archivador-maquette-en",
-     "v": 1,
-     "fait_le": "2026-09-30T12:24:08",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran la misma web de una tienda de decoración en versiones de escritorio y móvil.",
-       "legende": "Ejemplo de web de una tienda de decoración en un portátil y un teléfono móvil."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren la mateixa web d'una botiga de decoració en versions d'escriptori i mòbil.",
-       "legende": "Exemple de web d'una botiga de decoració en un portàtil i un telèfon mòbil."
-      },
-      "en": {
-       "alt": "A laptop and smartphone display the same home decor shop website in desktop and mobile layouts.",
-       "legende": "Example home decor shop website shown on a laptop and smartphone."
-      },
-      "fr": {
-       "alt": "Un ordinateur portable et un smartphone affichent le même site de décoration en versions ordinateur et mobile.",
-       "legende": "Exemple de site de décoration affiché sur un ordinateur portable et un smartphone."
-      }
-     }
-    },
-    "fr": {
-     "statut": "fait",
-     "fichier": "documentos-legales-negocio-archivador-maquette-fr",
-     "v": 1,
-     "fait_le": "2026-09-30T12:37:27",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran la misma web de una tienda de decoración en versiones de escritorio y móvil.",
-       "legende": "Ejemplo de web de una tienda de decoración en un portátil y un teléfono móvil."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren la mateixa web d'una botiga de decoració en versions d'escriptori i mòbil.",
-       "legende": "Exemple de web d'una botiga de decoració en un portàtil i un telèfon mòbil."
-      },
-      "en": {
-       "alt": "A laptop and smartphone display the same home decor shop website in desktop and mobile layouts.",
-       "legende": "Example home decor shop website shown on a laptop and smartphone."
-      },
-      "fr": {
-       "alt": "Un ordinateur portable et un smartphone affichent le même site de décoration en versions ordinateur et mobile.",
-       "legende": "Exemple de site de décoration affiché sur un ordinateur portable et un smartphone."
-      }
-     }
-    }
-   },
-   "ecrans": {
-    "es": {
-     "nom": "Casa Olivo",
-     "titre": "Decoración para tu hogar",
-     "bouton": "tienda"
-    },
-    "val": {
-     "nom": "Casa Olivera",
-     "titre": "Decoració per a la teua llar",
-     "bouton": "tienda"
-    },
-    "en": {
-     "nom": "Casa Olivo",
-     "titre": "Home decor and gifts",
-     "bouton": "tienda"
-    },
-    "fr": {
-     "nom": "Maison Olivier",
-     "titre": "Décoration pour la maison",
-     "bouton": "tienda"
-    }
-   }
-  },
-  {
    "id": "file-facturar-clientes-otros-paises-ue-reino-unido",
    "type": "file",
    "publication": "2026-10-15",
    "file": "_tools/queue/article_facturar_clientes_extranjeros.json",
-   "priorite": 3,
+   "priorite": 2,
    "titre": "Cómo facturar a clientes de la UE y del Reino Unido siendo autónomo en España",
    "url": "https://webautonomos.es/blog/es/facturar-clientes-otros-paises-ue-reino-unido",
    "resume": "Un cliente en Francia, Bélgica o el Reino Unido puede contratarte sin salir de su oficina. Las dudas llegan con la factura: ¿lleva IVA?, ¿qué mención pongo?, ¿hay algún modelo más? Esta guía resume las reglas vigentes en septiembre de 2026 para un autónomo establecido en la península o en Baleares que presta servicios, no bienes, a clientes de la UE o del Reino Unido.",
@@ -3604,7 +3605,7 @@
    "priorite": 41,
    "titre": "Blog para autónomos",
    "url": "https://webautonomos.es/blog/",
-   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 234 artículos disponibles.",
+   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 238 artículos disponibles.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -4854,7 +4855,7 @@
    "priorite": 109,
    "titre": "10 trucos para optimizar tu ficha de Google Business Profile",
    "url": "https://webautonomos.es/blog/es/optimizar-ficha-google-business-profile",
-   "resume": "Tu ficha de Google Business Profile (antes Google My Business) muestra tu negocio en Google Maps y en la Búsqueda. Si quieres optimizar Google Business Profile para que los clientes de Valencia, Alicante, Elda o Elche te encuentren, estos diez trucos de SEO local te guían paso a paso.",
+   "resume": "Para optimizar Google Business Profile, verifica tu ficha, completa cada campo con información exacta, sube fotos reales, consigue reseñas y mantén tus datos al día. Es gratis y ayuda a que los clientes de Valencia, Alicante, Elda o Elche encuentren tu negocio en Google Maps. Estos son los 10 pasos, basados en la ayuda oficial de Google.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -5903,7 +5904,7 @@
    "priorite": 117,
    "titre": "Como responder a resenas negativas en Google sin perder clientes",
    "url": "https://webautonomos.es/blog/es/responder-resenas-negativas-google",
-   "resume": "Abres Google y lo ves: una reseña de 1 estrella en el perfil de tu negocio. Se te encoge el estómago y te entran ganas de responder al instante. Respira: una crítica no es el fin del mundo. Si sabes responder a las reseñas negativas de Google con calma y de forma profesional, puedes mostrar a los clientes de Valencia, Alicante, Elda o Elche cómo trabajas y cómo tratas a quien…",
+   "resume": "Abres Google y lo ves: una reseña de una estrella en el perfil de tu negocio, escrita en caliente. Les pasa a muchos negocios, y apetece replicar al instante. Respira: saber responder reseñas negativas en Google con calma y de forma profesional muestra a los clientes de Valencia, Alicante, Elda o Elche cómo trabajas.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -6427,7 +6428,7 @@
    "priorite": 121,
    "titre": "Categorías de Google Business: cómo elegir las correctas para tu negocio",
    "url": "https://webautonomos.es/blog/es/categorias-google-business-como-elegir",
-   "resume": "En Google Business Profile, las categorías le dicen a Google a qué te dedicas y en qué búsquedas puede mostrarte. Elegir mal es como poner un cartel de «panadería» en tu taller mecánico: no te verán quienes buscan lo que haces. Si eres autónomo en Valencia, Alicante, Elda o Elche, aquí verás cómo elegirlas y sacarles partido junto al resto de tu ficha.",
+   "resume": "Las categorías de Google Business Profile le dicen a Google qué tipo de negocio tienes y en qué búsquedas puede mostrarte. Elegir mal es como colgar un cartel de «panadería» en tu taller mecánico: los clientes que buscan lo que haces no te encuentran. Si eres autónomo o tienes una pequeña empresa en Valencia, Alicante, Elda o Elche, en esta guía verás cómo escoger la categoría…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -6689,7 +6690,7 @@
    "priorite": 123,
    "titre": "Digitalización para autónomos en España: por dónde empezar en 2026",
    "url": "https://webautonomos.es/blog/es/digitalizacion-autonomos-espana-por-donde-empezar",
-   "resume": "La digitalización de los autónomos en España no es cosa de grandes empresas: consiste en usar soluciones digitales sencillas para impulsar tu negocio: que te encuentren, que contestes antes y que pierdas menos horas en papeleo. Si eres fontanero en Elche, electricista en Valencia, dentista en Alicante o carpintero en Elda y todavía dependes del boca a boca, esta guía te…",
+   "resume": "¿Quieres saber cómo digitalizar tu negocio y no tienes claro por dónde ir? Si eres fontanero en Elche, tienes una tienda en Castellón o un taller de carpintería en Elda, no necesitas grandes inversiones ni conocimientos técnicos: basta con dar pasos pequeños para que te encuentren, atender mejor a tus clientes y perder menos tiempo en papeleo. Aquí tienes un orden concreto…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -7501,7 +7502,7 @@
    "priorite": 129,
    "titre": "IA para autónomos: 10 herramientas que ya puedes usar en tu negocio",
    "url": "https://webautonomos.es/blog/es/inteligencia-artificial-autonomos-herramientas",
-   "resume": "La inteligencia artificial ya no es cosa de grandes empresas: en 2026, cualquier autónomo puede usarla para redactar correos, preparar presupuestos u ordenar sus facturas sin conocimientos técnicos. En esta guía verás qué puede hacer la IA por tu trabajo, 10 herramientas que puedes probar hoy, cómo empezar y qué riesgos vigilar.",
+   "resume": "Las herramientas de inteligencia artificial para autónomos ya no son cosa de grandes empresas. Seas diseñadora en Valencia, consultor en Alicante o lleves una pequeña fontanería en Elche, la IA puede ayudarte hoy a escribir correos, crear una imagen para redes, resumir una reunión o aligerar el papeleo. Aquí las tienes ordenadas por uso, sin rankings ni precios, con las…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -7775,7 +7776,7 @@
    "priorite": 131,
    "titre": "Páginas web para tatuadores y estudios de tattoo: lo que necesitas",
    "url": "https://webautonomos.es/blog/es/web-para-tatuadores-estudio-tattoo",
-   "resume": "En el mundo del tatuaje, tu arte habla por ti. Instagram es ideal para enseñar tus tatuajes, pero no te pertenece: un cambio en el algoritmo y tu alcance puede caer de un día para otro. Una página propia es tu galería a cualquier hora, tu carta de presentación y el lugar donde las personas encuentran cómo pedir cita. Esta guía te explica qué deben mostrar los tatuadores y…",
+   "resume": "Para muchos tatuadores, la página web es el primer sitio donde alguien descubre su trabajo fuera de las redes sociales. Bien planteada, enseña tus mejores trabajos, presenta a tu equipo de artistas, explica dónde estás y cómo reservar. Esta guía explica qué debe tener la web de un estudio de tatuajes, con ejemplos de Valencia, Alicante, Elche o Castellón.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -8146,7 +8147,7 @@
    "priorite": 134,
    "titre": "Cómo crear contenido para tu web sin saber escribir",
    "url": "https://webautonomos.es/blog/es/crear-contenido-web-sin-saber-escribir",
-   "resume": "Tienes una web, pero algunas páginas siguen vacías porque te bloqueas delante de la pantalla. Tranquilo: para que tu página web atraiga clientes no hace falta ser escritor. Aquí verás qué páginas necesita tu sitio web, un método paso a paso para crear el contenido de cada una aunque no te guste redactar, las bases del SEO, los tipos de contenido que puedes utilizar, cómo…",
+   "resume": "Quieres explicar lo que haces, pero te bloqueas en cuanto toca escribir. Tranquilo: para redactar los textos de tu página web no hace falta ser escritor. En esta guía verás qué textos preparar primero, un método paso a paso para escribirlos aunque no te guste, cómo se escribe para internet y para Google, y cómo avanzar un poco cada semana.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -8541,7 +8542,7 @@
    "priorite": 137,
    "titre": "Web para coaches: cómo conseguir clientes con una web profesional",
    "url": "https://webautonomos.es/blog/es/web-para-coaches",
-   "resume": "Como coach, lo que vendes es confianza. Antes de contratarte, muchas personas te buscan en Google, leen tu historia y deciden si eres quien puede acompañarlas. Una página web para coaches bien planteada responde a esas dudas por ti. En esta guía verás qué debe incluir, cómo presentar tus sesiones de coaching y cuánto cuesta tenerla.",
+   "resume": "Para crear una página web de coaching basta con seguir unos pocos pasos: definir a quién te diriges, decidir cómo hacerla, preparar las páginas esenciales, escribir con tu propia voz y ofrecer a cada visitante una acción clara. Esta guía sirve para cualquier página web para coaches, trabajes en coaching de vida, ejecutivo o de negocios: lo que vendes es confianza, y antes de…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -8803,7 +8804,7 @@
    "priorite": 139,
    "titre": "Web para nutricionistas: cómo llenar tu agenda de pacientes",
    "url": "https://webautonomos.es/blog/es/web-para-nutricionistas-dietistas",
-   "resume": "Muchas personas buscan un nutricionista en internet antes de pedir cita, incluso las que prefieren una videoconsulta. Antes de confiarte su alimentación, tus futuros pacientes quieren saber quién eres, qué titulación tienes y cómo trabajas. Si tu página web no responde a esas dudas, esa confianza se la lleva otro. Esta guía explica qué debe tener la web de nutricionistas y…",
+   "resume": "Muchas personas miran en internet antes de pedir su primera visita a un dietista, incluso las que prefieren la videollamada. Antes de confiarte su alimentación, quieren saber quién eres, qué título tienes y cómo trabajas. Esta guía explica cómo crear una página web para nutricionistas y dietistas: qué secciones preparar, qué mostrar, cómo presentar lo que haces sin promesas y…",
    "marche": "europe",
    "sante": true,
    "pages": [
@@ -8935,7 +8936,7 @@
    "priorite": 140,
    "titre": "Web para entrenadores personales: cómo captar clientes",
    "url": "https://webautonomos.es/blog/es/web-para-entrenadores-personales",
-   "resume": "Un entrenador personal vende confianza antes que sesiones. Quien busca entrenamiento personal te encuentra en Google o Instagram y elige a quien le transmite seguridad. Aquí verás qué incluir en tu web, cómo presentar tus servicios y cómo recibir reservas.",
+   "resume": "Antes de reservar una primera sesión, muchas personas buscan en internet o en Instagram y miran qué ofrece cada profesional. En pocos segundos quieren entender a quién ayudas, dónde entrenas y cómo empezar. Esta guía explica cómo crear una web de entrenador personal paso a paso: qué secciones incluir, cómo hacerte visible en tu ciudad y cuánto cuesta.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -9854,7 +9855,7 @@
    "priorite": 147,
    "titre": "¿Contratar o automatizar?",
    "url": "https://webautonomos.es/blog/es/contratar-o-automatizar",
-   "resume": "La pregunta llega en cuanto el trabajo administrativo desborda: ¿hay que contratar a alguien o buscar una herramienta? Si eres autónomo o llevas una microempresa, esta duda se repite cada vez que la actividad crece. Casi siempre está mal planteada, porque se compara un sueldo con una cuota y se olvida lo que cada opción hace de verdad. Un empleado cuesta más de lo que dice la…",
+   "resume": "La pregunta llega en cuanto el papeleo desborda: ¿incorporar a alguien o dejar parte del trabajo a una herramienta? Si eres autónomo o llevas una pyme, vuelve cada vez que tu negocio crece. El problema es que a menudo se plantea mal: se compara un sueldo con la cuota de un programa sin mirar lo que hace cada opción. Un empleado cuesta más de lo que dice la nómina; una…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -10381,7 +10382,7 @@
    "priorite": 151,
    "titre": "Qué tareas automatizar primero (y cuáles no)",
    "url": "https://webautonomos.es/blog/es/que-tareas-automatizar-primero",
-   "resume": "Cuando decides automatizar algo en tu negocio, lo natural es empezar por la tarea que más te molesta — grabar facturas, perseguir impagados, cuadrar el banco — y buscar una herramienta que te la quite de encima. Es un mal punto de partida: lo que más molesta no tiene por qué ser lo que mejor se amortiza. Esta guía te ayuda a decidir qué procesos automatizar primero en tu pyme…",
+   "resume": "¿Qué procesos automatizar primero en una pyme? Los que se repiten a menudo, consumen tiempo, siguen siempre las mismas reglas, provocan errores cuando se hacen manualmente y usan datos que ya son digitales. Muchos dueños de negocio empiezan, en cambio, por lo que más les molesta (grabar facturas, perseguir impagados), que no siempre es lo que antes se amortiza. Aquí tienes un…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -10513,7 +10514,7 @@
    "priorite": 152,
    "titre": "Automatizar sin saber programar: hasta dónde llegas tú solo",
    "url": "https://webautonomos.es/blog/es/automatizar-sin-saber-programar",
-   "resume": "«Yo de programación no tengo ni idea.» Es una frase que se oye a menudo cuando se habla de automatización, y casi siempre sobra. Hoy puedes automatizar sin código buena parte del trabajo repetitivo de tu negocio, también con ayuda de asistentes de IA. Pero hay un límite, y el problema es no saber dónde está hasta que has perdido un fin de semana peleándote con una herramienta.…",
+   "resume": "«Yo de programación no tengo ni idea.» Es una frase que se oye a menudo cuando se habla de automatización, y casi siempre sobra. Con las herramientas no-code de hoy, un autónomo o una pequeña empresa puede automatizar sin código buena parte de sus procesos repetitivos, conectando los programas que ya usa. Pero hay un límite, y conviene saber dónde está antes de perder un fin…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -10645,7 +10646,7 @@
    "priorite": 153,
    "titre": "Los 5 errores más caros al automatizar (y cómo evitarlos)",
    "url": "https://webautonomos.es/blog/es/errores-mas-caros-al-automatizar",
-   "resume": "Una automatización mal planteada cuesta más que no automatizar nada. Inmoviliza dinero al principio, exige mantenimiento y, sobre todo, te hace confiar en un proceso que un día se equivoca sin avisar. En este artículo repasamos los cinco errores más caros al automatizar procesos, tanto en una empresa pequeña como en un negocio de autónomo. Ninguno es técnico: son errores de…",
+   "resume": "Bien planteada, la automatización permite a cualquier pyme o autónomo ganar tiempo y eficiencia. Mal planteada, sale más cara que no hacer nada: inmoviliza dinero, exige mantenimiento y te hace confiar en un sistema que un día se equivoca sin avisar.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -10777,7 +10778,7 @@
    "priorite": 154,
    "titre": "Qué NO deberías automatizar nunca",
    "url": "https://webautonomos.es/blog/es/que-no-deberias-automatizar-nunca",
-   "resume": "¿Qué no automatizar en tu negocio? Reserva para ti lo que exige criterio, empatía o una negociación, lo que tiene consecuencias serias si sale mal, los procesos que todavía cambian o se repiten poco, el manejo de información sensible sin supervisión y el núcleo de tu oficio. Lo demás puede pasar a una máquina sin que nadie lo eche de menos. Trazar bien esa línea te evita…",
+   "resume": "¿Qué procesos no se deben automatizar? Los que pierden su valor cuando los hace una máquina: el trato con alguien preocupado o molesto, las elecciones de alto impacto o que dependen del contexto, lo que todavía cambia o se repite poco, los datos sensibles sin supervisión y el núcleo de tu oficio. El resto, lo repetitivo y con reglas claras, puede pasar a una máquina sin que…",
    "marche": "europe",
    "sante": false,
    "pages": [
