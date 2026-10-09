@@ -1517,7 +1517,7 @@ def page(P):
     slides, dots = '', ''
     for n, (txt, who, tr) in enumerate(BM.trier_avis(LANG, BM.METIERS[P.get('avis', 'dentistes')]['avis_ordre'])):
         slides += ('<div class="tp-slide"><div class="tp-card"><div class="tp-stars" aria-hidden="true">★★★★★</div>'
-                   '<blockquote>« %s »</blockquote><div class="tp-who">— %s%s</div></div></div>') % (
+                   '<blockquote>“%s”</blockquote><div class="tp-who">— %s%s</div></div></div>') % (
             E(txt), E(who), '<span class="tp-tr">%s</span>' % E(tr) if tr else '')
         dots += '<button class="tp-dot%s" onclick="tpGo(%d)" aria-label="%s %d"></button>' % (
             ' on' if n == 0 else '', n, E(x['rev_aria']), n + 1)
@@ -1651,7 +1651,7 @@ def page(P):
 <section class="proof" id="{i['rev']}">
   <h2>{E(x['rev_t'])}</h2>
   <div class="tp">
-    <div class="tp-head"><span class="tp-score">4.3</span><span class="tp-of">/ 5</span><span class="tp-count">{E(x['rev_count'])}</span></div>
+    <div class="tp-head"><span class="tp-score">{H.TP_SCORE.replace(',', '.')}</span><span class="tp-of">/ 5</span><span class="tp-count">{E(x['rev_count'])}</span></div>
     <div class="tp-view"><div class="tp-track" id="tpTrack">{slides}</div></div>
     <div class="tp-dots" id="tpDots">{dots}</div>
     <a class="tp-link" href="{H.TRUSTPILOT}" target="_blank" rel="noopener noreferrer">{E(x['rev_link'])} →</a>

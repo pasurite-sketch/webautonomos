@@ -4044,7 +4044,7 @@ METIERS = {
         en='/en/website-for-therapists-in-spain',
         C=THERA, SOURCES=THERA_SOURCES,
         # avis des métiers proches en premier
-        avis_ordre=['Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés', 'Fabiana', 'Amelle B.', 'Lee Robinson'],
+        avis_ordre=['Sabine O.', 'Veronika Griessner', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés', 'Fabiana', 'Amelle B.', 'Lee Robinson', 'Albert Vallverdú'],
         llms={'fr': ("- [Site internet pour francophones en Espagne](https://webautonomos.es/fr/site-internet-francophones-espagne)",
                      "Site internet pour psychologues et thérapeutes"),
               'en': ("- [Web design for expats in Spain](https://webautonomos.es/en/web-design-for-expats-in-spain)",
@@ -4057,7 +4057,7 @@ METIERS = {
         fr='/fr/site-internet-menuisier',
         en='/en/website-for-carpenters-in-spain',
         C=MENU, SOURCES=MENU_SOURCES,
-        avis_ordre=['Lee Robinson', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés'],
+        avis_ordre=['Lee Robinson', 'Albert Vallverdú', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés', 'Veronika Griessner'],
         llms={'fr': ("- [Site internet pour psychologues et thérapeutes](https://webautonomos.es/fr/site-internet-psychologue-therapeute)",
                      "Site internet pour menuisiers"),
               'en': ("- [Websites for therapists and psychologists in Spain](https://webautonomos.es/en/website-for-therapists-in-spain)",
@@ -4070,7 +4070,7 @@ METIERS = {
         fr='/fr/site-internet-kinesitherapeute',
         en='/en/website-for-physiotherapists-in-spain',
         C=KINE, SOURCES=KINE_SOURCES,
-        avis_ordre=['Ana Saiz', 'Analía', 'Sabine O.', 'Begoña Cid', 'Inés', 'Fabiana', 'Amelle B.', 'Lee Robinson'],
+        avis_ordre=['Ana Saiz', 'Veronika Griessner', 'Analía', 'Sabine O.', 'Begoña Cid', 'Inés', 'Fabiana', 'Amelle B.', 'Lee Robinson', 'Albert Vallverdú'],
         llms={'fr': ("- [Site internet pour menuisiers](https://webautonomos.es/fr/site-internet-menuisier)",
                      "Site internet pour kinésithérapeutes"),
               'en': ("- [Websites for carpenters and joiners in Spain](https://webautonomos.es/en/website-for-carpenters-in-spain)",
@@ -4083,7 +4083,7 @@ METIERS = {
         fr='/fr/site-internet-dentiste',
         en='/en/website-for-dentists-in-spain',
         C=DENT, SOURCES=DENT_SOURCES,
-        avis_ordre=['Ana Saiz', 'Analía', 'Sabine O.', 'Begoña Cid', 'Inés', 'Fabiana', 'Amelle B.', 'Lee Robinson'],
+        avis_ordre=['Ana Saiz', 'Veronika Griessner', 'Analía', 'Sabine O.', 'Begoña Cid', 'Inés', 'Fabiana', 'Amelle B.', 'Lee Robinson', 'Albert Vallverdú'],
         llms={'fr': ("- [Site internet pour kinésithérapeutes](https://webautonomos.es/fr/site-internet-kinesitherapeute)",
                      "Site internet pour chirurgiens-dentistes"),
               'en': ("- [Websites for physiotherapists in Spain](https://webautonomos.es/en/website-for-physiotherapists-in-spain)",
@@ -4096,7 +4096,7 @@ METIERS = {
         fr='/fr/site-internet-plombier',
         en='/en/website-for-plumbers-in-spain',
         C=PLOMB, SOURCES=PLOMB_SOURCES,
-        avis_ordre=['Lee Robinson', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés'],
+        avis_ordre=['Lee Robinson', 'Albert Vallverdú', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés', 'Veronika Griessner'],
         llms={'fr': ("- [Site internet pour chirurgiens-dentistes](https://webautonomos.es/fr/site-internet-dentiste)",
                      "Site internet pour plombiers et chauffagistes"),
               'en': ("- [Websites for dentists and dental clinics in Spain](https://webautonomos.es/en/website-for-dentists-in-spain)",
@@ -4109,7 +4109,7 @@ METIERS = {
         fr='/fr/site-internet-electricien',
         en='/en/website-for-electricians-in-spain',
         C=ELEC, SOURCES=ELEC_SOURCES,
-        avis_ordre=['Lee Robinson', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés'],
+        avis_ordre=['Lee Robinson', 'Albert Vallverdú', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés', 'Veronika Griessner'],
         llms={'fr': ("- [Site internet pour plombiers et chauffagistes](https://webautonomos.es/fr/site-internet-plombier)",
                      "Site internet pour électriciens"),
               'en': ("- [Websites for plumbers and heating engineers in Spain](https://webautonomos.es/en/website-for-plumbers-in-spain)",
@@ -4122,7 +4122,7 @@ METIERS = {
         fr='/fr/site-internet-artisan',
         en='/en/website-for-builders-in-spain',
         C=ARTI, SOURCES=ARTI_SOURCES,
-        avis_ordre=['Lee Robinson', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés'],
+        avis_ordre=['Lee Robinson', 'Albert Vallverdú', 'Amelle B.', 'Fabiana', 'Sabine O.', 'Ana Saiz', 'Analía', 'Begoña Cid', 'Inés', 'Veronika Griessner'],
         llms={'fr': ("- [Site internet pour électriciens](https://webautonomos.es/fr/site-internet-electricien)",
                      "Site internet pour artisans du bâtiment"),
               'en': ("- [Websites for electricians in Spain](https://webautonomos.es/en/website-for-electricians-in-spain)",
@@ -4188,8 +4188,8 @@ def page(m, lang):
     slides, dots = '', ''
     for n, (txt, who, tr) in enumerate(trier_avis(lang, M['avis_ordre'])):
         slides += ('<div class="tp-slide"><div class="tp-card"><div class="tp-stars" aria-hidden="true">★★★★★</div>'
-                   '<blockquote>« %s »</blockquote><div class="tp-who">— %s%s</div></div></div>') % (
-            E(txt), E(who), '<span class="tp-tr">%s</span>' % E(tr) if tr else '')
+                   '<blockquote>%s</blockquote><div class="tp-who">— %s%s</div></div></div>') % (
+            ('«\u00a0%s\u00a0»' if lang == 'fr' else '“%s”') % E(txt), E(who), '<span class="tp-tr">%s</span>' % E(tr) if tr else '')
         dots += '<button class="tp-dot%s" onclick="tpGo(%d)" aria-label="%s %d"></button>' % (
             ' on' if n == 0 else '', n, E(x['rev_aria']), n + 1)
     faq = ''.join('<details><summary>%s</summary><p>%s</p></details>' % (E(q), E(a)) for q, a in c['faq'])
@@ -4323,7 +4323,7 @@ def page(m, lang):
 <section class="proof" id="{i['rev']}">
   <h2>{E(x['rev_t'])}</h2>
   <div class="tp">
-    <div class="tp-head"><span class="tp-score">{'4,3' if lang == 'fr' else '4.3'}</span><span class="tp-of">/ 5</span><span class="tp-count">{E(x['rev_count'])}</span></div>
+    <div class="tp-head"><span class="tp-score">{H.TP_SCORE if lang == 'fr' else H.TP_SCORE.replace(',', '.')}</span><span class="tp-of">/ 5</span><span class="tp-count">{E(x['rev_count'])}</span></div>
     <div class="tp-view"><div class="tp-track" id="tpTrack">{slides}</div></div>
     <div class="tp-dots" id="tpDots">{dots}</div>
     <a class="tp-link" href="{H.TRUSTPILOT}" target="_blank" rel="noopener noreferrer">{E(x['rev_link'])} →</a>
@@ -4371,9 +4371,10 @@ def page(m, lang):
 
 
 # ═════════════════════════ AUTRES FICHIERS (une seule fois) ════════════════
-NOTE_ES = [('<div class="proof-num">4,2★</div>', '<div class="proof-num">4,3★</div>'),
-           ('<div class="proof-label">Valoración media sobre<br>6 opiniones en Trustpilot</div>',
-            '<div class="proof-label">Valoración media sobre<br>8 opiniones en Trustpilot</div>')]
+# Note des pages métier espagnoles : tenue à jour par _tools/maj_avis_trustpilot.py ; ici, simple contrôle.
+NOTE_ES = [('<div class="proof-num">4,3★</div>', '<div class="proof-num">%s★</div>' % H.TP_SCORE),
+           ('<div class="proof-label">Valoración media sobre<br>8 opiniones en Trustpilot</div>',
+            '<div class="proof-label">TrustScore de Trustpilot<br>sobre %d opiniones</div>' % H.TP_NB)]
 PAGES_ES = ['psicologos', 'dentistas', 'fisioterapeutas', 'electricistas', 'fontaneros', 'carpinteros', 'reformas']
 
 HOMES = '_tools/build_lang_homes.py'

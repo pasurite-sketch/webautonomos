@@ -65,7 +65,7 @@ C['fr'] = dict(
     lede="Vous travaillez en Espagne, en français ou pas : votre site, lui, doit respecter la loi espagnole. Nous le créons pour vous, avec l'aviso legal, la politique de confidentialité et la gestion des cookies, et nous vous envoyons une démo gratuite en 24 heures.",
     pills=['Aviso legal et RGPD inclus', 'Suivi en français', 'Démo gratuite en 24 h'],
     cta='Recevoir ma démo gratuite', cta2='Ce que la loi exige',
-    rating='<b>4,3/5</b> · 8 avis vérifiés sur Trustpilot',
+    rating='<b>TrustScore %s/5</b> · %d avis sur Trustpilot' % (H.TP_SCORE, H.TP_NB),
     brief_t='En bref',
     brief="WebAutonomos crée des sites internet pour les indépendants (autónomos) et les petites entreprises francophones installés en Espagne. Chaque site comprend l'aviso legal, la politique de confidentialité et le consentement aux cookies qu'exige la loi espagnole (LSSI et RGPD), l'hébergement et un nom de domaine à votre nom, pour <strong>15 € HT par mois</strong> sans frais d'installation ni engagement, ou <strong>349 € HT en paiement unique</strong>. Votre site peut être en français et en espagnol, sans supplément. Nous travaillons avec vous en français, par e-mail, WhatsApp et visioconférence, et nous préparons une démo gratuite en 24 heures. L'agence est installée à Ontinyent (province de Valence) et travaille à distance dans toute l'Espagne.",
     legal_ey='La loi espagnole', legal_t="Ce que doit contenir le site d'une activité en Espagne",
@@ -108,7 +108,7 @@ C['fr'] = dict(
                 pts=['Mêmes services inclus', 'Un seul versement', 'Pages légales comprises'])],
     price_note="Prix hors TVA espagnole (21 %). Nom de domaine inclus la première année, puis environ 12 €/an.",
     price_link='Voir le détail des tarifs',
-    rev_t='Ce que disent nos clients', rev_count='Note moyenne sur 8 avis vérifiés Trustpilot',
+    rev_t='Ce que disent nos clients', rev_count='TrustScore calculé par Trustpilot sur %d avis' % H.TP_NB,
     rev_link='Voir tous les avis sur Trustpilot', rev_aria='Avis',
     faq_t='Questions fréquentes',
     faq=[("Mon site peut-il être en français et en espagnol ?",
@@ -144,7 +144,7 @@ C['en'] = dict(
     lede="You run your business in English; your website still has to follow Spanish law. We design it, build it and write the legal texts it needs, then send you a demo within 24 hours.",
     pills=['Spanish legal pages included', 'Support in English', 'Free demo in 24 hours'],
     cta='Get my free demo', cta2='What the law requires',
-    rating='<b>4.3/5</b> · 8 verified reviews on Trustpilot',
+    rating='<b>TrustScore %s/5</b> · %d reviews on Trustpilot' % (H.TP_SCORE.replace(',', '.'), H.TP_NB),
     brief_t='In short',
     brief="WebAutonomos is an English-speaking web design team in Valencia province that creates websites for expats running a business in Spain: freelancers (autónomos) and small companies. We handle the design and development, write your content in English and Spanish, and add the legal texts Spanish law requires (the LSSI and the GDPR). All our websites come with hosting, a domain name in your name, a contact form, a WhatsApp button, links to your social media profiles and basic SEO built around your trade and the area you serve, for <strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>. Your demo is ready within 24 hours, and we work remotely with businesses anywhere in Spain. Local SEO and Google Business Profile management are separate, optional services; <a href=\"/en/services\">explore every service in detail</a>. How much does web design cost in Spain? A freelance web designer typically charges €800 to €2,000 for a professional website, and a web design agency €1,500 to €4,000, both excluding maintenance (<a href=\"https://www.socialmediapymes.com/cuanto-cuesta-una-web/\">Social Media Pymes, 2026</a>). Our <a href=\"/en/pricing\">pricing page</a> compares these options with ours, and if you would rather do it yourself, see our <a href=\"/en/best-website-builders-for-freelancers-in-spain\">comparison of DIY website builders such as Wix and Squarespace</a>.",
     legal_ey='Spanish law', legal_t='What your website in Spain must include',
@@ -194,7 +194,7 @@ C['en'] = dict(
                 pts=['Same services included', 'A single payment', 'Legal pages included'])],
     price_note='Prices exclude Spanish VAT (21%). Domain name included for the first year, then about €12/year.',
     price_link='See full pricing details',
-    rev_t='What our clients say', rev_count='Average rating from 8 verified Trustpilot reviews',
+    rev_t='What our clients say', rev_count='TrustScore calculated by Trustpilot from %d reviews' % H.TP_NB,
     rev_link='See all reviews on Trustpilot', rev_aria='Review',
     faq_t='Frequently asked questions',
     faq=[("Why work with an English-speaking web designer in Spain?",
@@ -304,8 +304,8 @@ def page(lang):
     avis = H.AVIS[lang]
     for n, (txt, who, tr) in enumerate(avis):
         slides += ('<div class="tp-slide"><div class="tp-card"><div class="tp-stars" aria-hidden="true">★★★★★</div>'
-                   '<blockquote>« %s »</blockquote><div class="tp-who">— %s%s</div></div></div>') % (
-            E(txt), E(who), '<span class="tp-tr">%s</span>' % E(tr) if tr else '')
+                   '<blockquote>%s</blockquote><div class="tp-who">— %s%s</div></div></div>') % (
+            ('«\u00a0%s\u00a0»' if lang == 'fr' else '“%s”') % E(txt), E(who), '<span class="tp-tr">%s</span>' % E(tr) if tr else '')
         dots += '<button class="tp-dot%s" onclick="tpGo(%d)" aria-label="%s %d"></button>' % (
             ' on' if n == 0 else '', n, E(c['rev_aria']), n + 1)
     faq = ''.join('<details><summary>%s</summary><p>%s</p></details>' % (E(q), E(a)) for q, a in c['faq'])
@@ -437,7 +437,7 @@ def page(lang):
 <section class="proof" id="{i['rev']}">
   <h2>{E(c['rev_t'])}</h2>
   <div class="tp">
-    <div class="tp-head"><span class="tp-score">{'4,3' if lang == 'fr' else '4.3'}</span><span class="tp-of">/ 5</span><span class="tp-count">{E(c['rev_count'])}</span></div>
+    <div class="tp-head"><span class="tp-score">{H.TP_SCORE if lang == 'fr' else H.TP_SCORE.replace(',', '.')}</span><span class="tp-of">/ 5</span><span class="tp-count">{E(c['rev_count'])}</span></div>
     <div class="tp-view"><div class="tp-track" id="tpTrack">{slides}</div></div>
     <div class="tp-dots" id="tpDots">{dots}</div>
     <a class="tp-link" href="{H.TRUSTPILOT}" target="_blank" rel="noopener noreferrer">{E(c['rev_link'])} →</a>

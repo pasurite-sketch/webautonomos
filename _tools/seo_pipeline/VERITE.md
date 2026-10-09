@@ -91,7 +91,7 @@
 
 ## 6. Preuves sociales
 
-- Note Trustpilot affichée : **4,3/5 sur 8 avis** (à mettre à jour ici quand elle change)
+- Note Trustpilot affichée : **TrustScore 4,4/5 sur 10 avis** (avis spontanés : ne jamais écrire « vérifiés » ni « note moyenne » ; à mettre à jour ici et dans `_tools/maj_avis_trustpilot.py`, qui met le site à jour, quand elle change)
 - Avis déjà publiés sur le site : les conserver tels quels, n'en créer aucun, n'en reformuler aucun
 - Les images des sections « Mira un ejemplo… » des pages métier sont des **démos**, pas des sites de clients (25/09/2026) : ne jamais les présenter comme « real », « de un cliente » ou « caso real »
 - **Aucun client ne peut être cité** (nom, entreprise, ville, résultat) sans accord écrit noté ici. Accords actuels : aucun.

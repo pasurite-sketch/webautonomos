@@ -67,6 +67,10 @@ IDS = {
                sect='trades', rev='reviews', cmp='compare', add='services', faq='faq'),
 }
 TRUSTPILOT = 'https://www.trustpilot.com/review/webautonomos.es'
+# Note et nombre d'avis Trustpilot des pages générées : tenus à jour par
+# _tools/maj_avis_trustpilot.py (avis spontanés, pas « vérifiés » ; TrustScore, pas une moyenne).
+TP_SCORE = '4,4'
+TP_NB = 10
 WHATSAPP = '34654239520'
 
 # ─── avis Trustpilot (8 avis, note 4,3 — même source que l'accueil espagnol) ─
@@ -79,7 +83,9 @@ AVIS = {
   ("Très bon professionnel, très attentif et toujours prêt à vous aider pour tout ce dont vous avez besoin. Il a créé mon site web exactement comme je le voulais, avec toutes les modifications nécessaires et en me guidant à chaque étape.", "Ana Saiz — Psychologue", "traduit de l'espagnol"),
   ("Le travail d'Angelino pour la création de mon nouveau site web est vraiment recommandable. Merci pour ta patience et ton professionnalisme. Résultat impeccable. Je le recommande.", "Begoña Cid — Hypnothérapeute", "traduit de l'espagnol"),
   ("Après beaucoup de difficultés pour avoir mon site, avec WebAutonomos cela a été très simple et rapide. Avec un accueil aimable et proche. Je le recommande !", "Analía Juan Guillén — Psychologue", "traduit de l'espagnol"),
-  ("Rapides et efficaces, j'ai beaucoup aimé le rendu du site, merci beaucoup.", "Inés — Croissance personnelle", "traduit de l'espagnol"),
+  ("Rapides et efficaces, j'ai beaucoup aimé le rendu du site, merci beaucoup.", "Inés — Développement personnel", "traduit de l'espagnol"),
+  ("Ça a été très facile et rapide. Le site est magnifique : simple, clair et beau, exactement comme je le voulais. Je suis très contente de l'attention et du service reçus de la part d'Angelino. Je recommanderai sans aucun doute Web Autónomos à mes amis et collègues.", "Veronika Griessner — Psychologue", "traduit de l'espagnol"),
+  ("Je suis très content du site web", "Albert Vallverdú — Menuisier aluminium et PVC", "traduit de l'espagnol"),
  ],
  'en': [
   ("Angelino built my website quickly and explains everything very well. When you have any questions they are always answered promptly. Anyone needing a website made I would highly recommend contacting Angelino.", "Lee Robinson — Carpenter", ""),
@@ -90,6 +96,8 @@ AVIS = {
   ("Angelino's work on creating my new website comes highly recommended. Thank you for your patience and professionalism. The result is impeccable. I recommend him.", "Begoña Cid — Hypnotherapist", "translated from Spanish"),
   ("After a lot of difficulty getting my website done, with WebAutonomos it was very easy and quick. Friendly and approachable service throughout. I recommend them!", "Analía Juan Guillén — Psychologist", "translated from Spanish"),
   ("Fast and efficient, I really liked how the website turned out, thank you very much.", "Inés — Personal growth", "translated from Spanish"),
+  ("It was very easy and quick. The website is lovely: simple, clear and beautiful, just as I wanted it. I'm very happy with the attention and service I received from Angelino. I'll definitely recommend Web Autónomos to friends and colleagues.", "Veronika Griessner — Psychologist", "translated from Spanish"),
+  ("I'm very happy with the website", "Albert Vallverdú — Aluminium and PVC joiner", "translated from Spanish"),
  ],
 }
 
@@ -106,7 +114,7 @@ C['fr'] = dict(
   lede="Nous créons votre site web professionnel à partir de vos services, de vos photos et de vos avis Google, et nous vous l'envoyons en 24 heures — avant que vous ne payiez quoi que ce soit. En France comme en Espagne.",
   pills=["Sans frais d'installation", 'Sans engagement', 'Démo gratuite en 24 h'],
   cta='Recevoir ma démo gratuite', cta2='Voir les tarifs',
-  rating='<b>4,3/5</b> · 8 avis vérifiés sur Trustpilot',
+  rating='<b>TrustScore %s/5</b> · %d avis sur Trustpilot' % (TP_SCORE, TP_NB),
   brief_t='En bref',
   brief="WebAutonomos assure la création de sites internet professionnels pour les indépendants et les artisans. Le site coûte <strong>15 € HT par mois</strong>, sans frais d'installation ni engagement, ou <strong>349 € HT en paiement unique</strong>. Ce prix comprend le design, l'hébergement, le certificat SSL, le nom de domaine la première année, les textes légaux et la maintenance. Nous préparons une démo gratuite en 24 heures ; vous ne payez que si elle vous plaît. L'agence est basée à Ontinyent (Valence, Espagne) et travaille à distance avec des indépendants en Espagne et en France.",
   inc_ey='Ce qui est inclus', inc_t='Tout est compris dans le prix',
@@ -198,7 +206,7 @@ C['fr'] = dict(
   how_choose_p="Il n'existe pas une seule bonne réponse : tout dépend de votre projet, de vos besoins, du temps et du budget que vous souhaitez y consacrer. Que vous choisissiez un créateur de sites, WordPress ou un site clé en main, la solution retenue doit rester simple à faire évoluer.",
   how_choose_link="Comparer les créateurs de site pour indépendants",
   rev_ey='Avis clients', rev_t='Ce que disent nos clients',
-  rev_count='Note moyenne sur 8 avis vérifiés Trustpilot', rev_link='Voir tous les avis sur Trustpilot',
+  rev_count='TrustScore calculé par Trustpilot sur %d avis' % TP_NB, rev_link='Voir tous les avis sur Trustpilot',
   rev_aria='Avis',
   cmp_ey='Comparer', cmp_t='Pourquoi nous choisir ?',
   cmp_a='Avec une agence classique', cmp_b='Avec WebAutonomos',
@@ -273,7 +281,7 @@ C['en'] = dict(
   lede="We build your affordable, professional website with your services, photos and Google reviews, and send it to you within 24 hours — before you pay anything. The legal pages that Spanish law requires come as standard.",
   pills=['No setup fee', 'No lock-in', 'Free demo in 24 hours'],
   cta='Get my free demo', cta2='See pricing',
-  rating='<b>4.3/5</b> · 8 verified reviews on Trustpilot',
+  rating='<b>TrustScore %s/5</b> · %d reviews on Trustpilot' % (TP_SCORE.replace(',', '.'), TP_NB),
   brief_t='In short',
   brief="WebAutonomos is a web design agency based in Ontinyent (Valencia) that builds professional websites for freelancers (autónomos) and small businesses in Spain, including English-speaking business owners. A website costs <strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + VAT</strong>. That covers design, hosting, SSL, a domain name in your name for the first year, the legal pages required in Spain and ongoing maintenance. We build a free demo within 24 hours and you only pay if you like it.",
   inc_ey="What's included", inc_t='Everything in both plans',
@@ -308,7 +316,7 @@ C['en'] = dict(
            '🪟 Aluminium & PVC', '🦷 Dentists', '💆 Physiotherapists', '🧠 Psychologists',
            '🌿 Wellbeing practitioners', '🖋️ Tattoo artists', '➕ Your trade'],
   rev_ey='Client reviews', rev_t='What our clients say',
-  rev_count='Average rating from 8 verified Trustpilot reviews', rev_link='See all reviews on Trustpilot',
+  rev_count='TrustScore calculated by Trustpilot from %d reviews' % TP_NB, rev_link='See all reviews on Trustpilot',
   rev_aria='Review',
   cmp_ey='Compare', cmp_t='Why choose us?',
   cmp_a='With some agencies', cmp_b='With WebAutonomos',
@@ -787,8 +795,8 @@ def page(lang):
     slides, dots = '', ''
     for n, (txt, who, tr) in enumerate(AVIS[lang]):
         slides += ('<div class="tp-slide"><div class="tp-card"><div class="tp-stars" aria-hidden="true">★★★★★</div>'
-                   '<blockquote>« %s »</blockquote><div class="tp-who">— %s%s</div></div></div>') % (
-            E(txt), E(who), '<span class="tp-tr">%s</span>' % E(tr) if tr else '')
+                   '<blockquote>%s</blockquote><div class="tp-who">— %s%s</div></div></div>') % (
+            ('«\u00a0%s\u00a0»' if lang == 'fr' else '“%s”') % E(txt), E(who), '<span class="tp-tr">%s</span>' % E(tr) if tr else '')
         dots += '<button class="tp-dot%s" onclick="tpGo(%d)" aria-label="%s %d"></button>' % (
             ' on' if n == 0 else '', n, E(c['rev_aria']), n + 1)
     others = ''.join('<li>%s</li>' % x for x in c['cmp_others'])
@@ -927,7 +935,7 @@ def page(lang):
   <p class="ey">{E(c['rev_ey'])}</p>
   <h2>{E(c['rev_t'])}</h2>
   <div class="tp">
-    <div class="tp-head"><span class="tp-score">{'4,3' if lang == 'fr' else '4.3'}</span><span class="tp-of">/ 5</span><span class="tp-count">{E(c['rev_count'])}</span></div>
+    <div class="tp-head"><span class="tp-score">{TP_SCORE if lang == 'fr' else TP_SCORE.replace(',', '.')}</span><span class="tp-of">/ 5</span><span class="tp-count">{E(c['rev_count'])}</span></div>
     <div class="tp-view"><div class="tp-track" id="tpTrack">{slides}</div></div>
     <div class="tp-dots" id="tpDots">{dots}</div>
     <a class="tp-link" href="{TRUSTPILOT}" target="_blank" rel="noopener noreferrer">{E(c['rev_link'])} →</a>
@@ -1003,9 +1011,17 @@ def controles(nom, s):
         o = len(re.findall(r'<%s[\s>]' % tag, visible)); f = visible.count('</%s>' % tag)
         if o != f:
             err.append('<%s> déséquilibré : %d ouvertures, %d fermetures' % (tag, o, f))
-    for interdit in ('Plus de 40', 'More than 40', 'tp-score">4,2', 'tp-score">4.2', ' 6 avis', ' 6 verified'):
+    for interdit in ('Plus de 40', 'More than 40', 'tp-score">4,2', 'tp-score">4.2', ' 6 avis', ' 6 verified',
+                     # avis Trustpilot spontanés, pas vérifiés ; TrustScore, pas une moyenne (09/10/2026)
+                     'avis vérifiés', 'verified reviews', 'verified Trustpilot', 'Note moyenne sur',
+                     'Average rating from'):
         if interdit in s:
             err.append('mention périmée : %s' % interdit)
+    for note in re.findall(r'class="tp-score">([^<]*)<', s):
+        if note not in (TP_SCORE, TP_SCORE.replace(',', '.')):
+            err.append('note Trustpilot %s au lieu de %s (TP_SCORE)' % (note, TP_SCORE))
+    if '<html lang="en"' in s and '<blockquote>«' in s:
+        err.append('guillemets français dans les témoignages d\'une page anglaise')
     for bloc in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):
         try:
             json.loads(bloc)
