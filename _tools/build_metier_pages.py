@@ -3221,6 +3221,29 @@ ELEC['en'] = dict(
          '<p class="where">For more tips, read our guide to '
          '<a href="https://webautonomos.es/blog/en/website-for-electricians">what an electrician&#8217;s website '
          'needs</a>.</p>'),
+        ('visitors-to-enquiries', 'Visitors to enquiries',
+         'How does a website turn visitors into enquiries?',
+         '<p class="legal-intro">A website only helps your business when visitors turn into enquiries you can '
+         'answer. These are the parts of your site that turn a visit into a call, a message or a request for a '
+         'quote.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📞</div>'
+         '<h3>Call or WhatsApp in one tap</h3>'
+         '<p>Your phone number and a WhatsApp button are easy to find, so anyone comparing a few local electricians '
+         'can call or message you without hunting for your number.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✉️</div>'
+         '<h3>Enquiries in your inbox</h3>'
+         '<p>Your contact form sends every enquiry to your email, so a request that comes in while you are on a '
+         'job is waiting for you when you finish.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📷</div>'
+         '<h3>Photos of your own work</h3>'
+         '<p>Your site uses your own photos, from your Google listing or sent by you, so visitors see the jobs '
+         'you actually do.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔗</div>'
+         '<h3>Your social profiles, linked</h3>'
+         '<p>Links to your existing social media profiles are included at no extra cost: one more sign that a '
+         'real business is behind the site.</p></div>'
+         '</div>'),
         local_search_en(
             '', h2='Local SEO for electricians: getting found nearby',
             intro='Getting found in your area is not only about your site: homeowners also ask around, post jobs on '
@@ -3271,6 +3294,15 @@ ELEC['en'] = dict(
          FAQ_EN_REVIEWS,
          FAQ_EN_LANGUAGE,
          FAQ_EN_GBP,
+         ("Will my website help me show up in local Google search results?",
+          "Basic SEO comes with every website at no extra cost: titles and copy written around your trade and the "
+          "towns you serve, to help Google understand what you do and where. No one can promise a position in "
+          "local search results. If you want more, SEO Local adds four blog articles a month, local keywords and "
+          "a monthly report, for €15 + VAT a month."),
+         ("Will my website help me get cited by Google's AI Overviews or tools like ChatGPT?",
+          "No one can guarantee it: Google's AI Overviews and assistants such as ChatGPT choose their own sources. "
+          "What you can do is make your site easy for them to read, with clear headings, your services and the "
+          "towns you serve named plainly, and short, direct answers to the questions your customers ask."),
          FAQ_EN_PRICE],
     final_t='See your site before you pay a thing',
     final_sd="Free demo within 24h, with your services and legal pages. No setup fee, no lock-in.",
