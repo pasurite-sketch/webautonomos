@@ -43,6 +43,8 @@ import tempfile
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'photos'))
 from photos_lib import injecter as poser_photo  # photo prévue par _tools/photos/images.json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from origine_lead import poser as poser_origine  # script d'origine des leads (origine-lead.js), ne pas retirer
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from faq_statique import remplir_faq  # FAQ lisible sans JavaScript (04/10/2026)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -507,7 +509,7 @@ def main():
             if a in s:
                 abandon('%s : %s subsiste' % (rel, a))
     # écriture (seulement ce qui change réellement)
-    ecrire = {r: poser_photo(r, s) for r, s in ecrire.items()}
+    ecrire = {r: poser_origine(poser_photo(r, s)) for r, s in ecrire.items()}
     ecrire = {r: s for r, s in ecrire.items() if not os.path.exists(r) or lire(r) != s}
     print('\n'.join(rapport))
     if check:

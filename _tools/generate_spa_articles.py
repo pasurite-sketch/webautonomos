@@ -32,6 +32,8 @@ import re
 import subprocess
 import sys
 import tempfile
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from origine_lead import poser as poser_origine  # script d'origine des leads (origine-lead.js), ne pas retirer
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX = os.path.join(ROOT, 'index.html')
@@ -858,7 +860,7 @@ def main():
         # generate_sitemap.py : le disque fait foi quand les donnees sont muettes.
         alternates.update(alternates_disque(alternates))
         try:
-            page = render(art, lang, alternates)
+            page = poser_origine(render(art, lang, alternates))
         except Exception as exc:                     # noqa: BLE001
             failed.append((slug, repr(exc)))
             continue

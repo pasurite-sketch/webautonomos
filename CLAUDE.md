@@ -491,7 +491,7 @@ la source Lovable**. Les modifications ci-dessous y vivent, appliquées par des 
 | Liens vers les 7 pages métier avec slash final (boutons « Para quién » et repli `<noscript>`) | `_tools/patch_slash_secteurs_20261007.py`, le 2026-10-07 | Les liens repartiraient vers `/psicologos` et les six autres adresses sans slash, qui répondent par une redirection |
 | Adresses `https://webautonomos.es/blog/` des données JSON-LD (WebSite, Blog, fil d'Ariane) | `_tools/patch_slash_dossiers_20261007.py`, le 2026-10-07 | Ces adresses repartiraient vers `/blog`, qui répond par une redirection |
 | Textes de l'accueil espagnol conformes à VERITE, puis « + IVA » après les prix de l'accueil espagnol et valencien (carte, héros, services additionnels, FAQ) ; tuile « 15€/mes » du formulaire de contact lue dans `t.pricing.period` ; accueil valencien aligné sur l'espagnol (mêmes textes traduits, FAQ de 17 questions) | `_tools/patch_home_es_20261006.py`, le 2026-10-06, puis `_tools/patch_prix_iva_accueil_20261007.py`, `_tools/patch_prix_iva_val_20261007.py` et `_tools/patch_home_val_20261007.py`, le 2026-10-07 | Les prix de l'accueil repasseraient sans IVA, alors que les messages de prospection l'annoncent ; la FAQ reviendrait à la version Lovable (agenda en ligne, délais de 24 h…) |
-| Script `origine-lead.js` dans le `<head>` (repère `<!-- origine-lead -->`), comme dans les 72 pages statiques hors blog | `_tools/patch_origine_leads_20261010.py`, le 2026-10-10 (idempotent ; à relancer aussi pour toute nouvelle page) | L'origine des leads du formulaire de contact de l'accueil (Web3Forms) : plus de referrer, landing_page, form_page ni gclid/utm_* dans l'e-mail |
+| Script `origine-lead.js` dans le `<head>` (repère `<!-- origine-lead -->`), comme dans toutes les pages statiques, blog compris | `_tools/patch_origine_leads_20261010.py`, le 2026-10-10 (idempotent ; à relancer aussi pour toute nouvelle page) | L'origine des leads du formulaire de contact de l'accueil (Web3Forms) : plus de referrer, landing_page, form_page ni gclid/utm_* dans l'e-mail |
 | Avis Trustpilot 9 et 10 (Veronika Griessner, Albert Vallverdú) dans les 4 langues et le carrousel, note et libellés « TrustScore », « publié sur Trustpilot », bloc avis du repli `fallback` | `_tools/maj_avis_trustpilot.py`, le 2026-10-09 (à relancer, après mise à jour de ses constantes, à chaque nouvel avis ou changement de note) | Les deux derniers avis ; « 4,3 », « 8 opiniones verificadas » et « valoración media » reviendraient, alors que les avis sont spontanés et que 4,4 est un TrustScore |
 
 **Le script `blog-statique`.** L'application garde sa propre copie de chaque article et
@@ -507,9 +507,14 @@ vivent dans `blog/` ; s'il disparaît (ré-export), relancer le script, qui est 
 gbraid, wbraid, utm_*) et l'arrivée du visiteur (`wa_origine` : site d'origine, page d'entrée), puis ajoute ces champs
 à chaque formulaire au moment de l'envoi, avec `form_page`. Le scénario Make « Leads WebAutonomos » les range dans la
 feuille (colonnes J-Q) et dans la section « Origen del lead » de l'e-mail ; Web3Forms les affiche dans le sien. Les 3
-pages Visibilidad IA construisent leurs données à la main : leur `pushWeb3Forms` appelle `window.origineLead()`. Le blog
-n'a pas le script : un visiteur entré par un article arrive au formulaire avec « (page du site sans suivi) » et
-l'article comme page d'entrée. Toute nouvelle page avec formulaire doit recevoir le script (relancer le patch).
+pages Visibilidad IA construisent leurs données à la main : leur `pushWeb3Forms` appelle `window.origineLead()`. Le
+blog l'a aussi depuis le 10/10 au soir : un visiteur venu de Google sur un article garde Google comme origine et
+l'article comme page d'entrée. La balise est posée par `_tools/origine_lead.py` (`poser_origine`), que les générateurs
+appellent juste avant d'écrire, à côté de `poser_photo` : `generate_spa_articles`, `translate_article`,
+`generate_blog_index`, `build_metier_pages`, `build_comparatifs`, `build_lang_homes`, `build_expat_pages`,
+`build_uk_pages`, `build_i18n_pages` et `patch_diagnostic`. **Ne pas retirer ces appels.** Une page écrite à la main
+reçoit le script en relançant le patch. Seule exception, l'article ES « cuanto-cuesta », gelé jusqu'au contrôle du
+22/10 (liste `GELES` du patch) ; « (page du site sans suivi) » dans un e-mail signale une page d'entrée sans le script.
 
 **Les pages en dossier.** Les pages servies depuis un dossier (`/blog/`, `/aviso-legal/`, `/privacidad/`,
 `/cookies/`, `/en/`, `/fr/`, les 7 pages métier `/psicologos/`… `/dentistas/`, les pages de diagnostic, de visibilité

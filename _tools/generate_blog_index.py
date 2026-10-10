@@ -44,6 +44,8 @@ import re
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'photos'))
 from photos_lib import injecter as poser_photo  # photo prévue par _tools/photos/images.json
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from origine_lead import poser as poser_origine  # script d'origine des leads (origine-lead.js), ne pas retirer
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://webautonomos.es'
@@ -497,7 +499,7 @@ def main():
         return 0
 
     with open(OUT, 'w', encoding='utf-8') as fh:
-        fh.write(poser_photo(OUT, page))
+        fh.write(poser_origine(poser_photo(OUT, page)))
     print('\nblog/index.html ecrit : %d octets, %d fiches.' % (len(page.encode('utf-8')), total))
     return 0
 

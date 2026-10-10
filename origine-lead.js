@@ -1,6 +1,6 @@
-/* Origine des leads (10/10/2026). Inclus dans le <head> de toutes les pages par
-   _tools/patch_origine_leads_20261010.py (index.html compris) : relancer ce script après un ré-export
-   ou pour une nouvelle page.
+/* Origine des leads (10/10/2026). Inclus dans le <head> de toutes les pages, index.html et blog compris, par
+   _tools/patch_origine_leads_20261010.py et par les générateurs (_tools/origine_lead.py) : relancer le patch après un
+   ré-export d'index.html ou pour une page écrite à la main.
    1. À chaque visite : garde 90 jours les identifiants publicitaires (gclid, gbraid, wbraid, utm_*) sous la même
       clé que le script des pages de démo (wa_ads), et l'arrivée sur le site (site d'origine, page d'entrée) sous
       wa_origine. Une nouvelle arrivée par une annonce ou depuis un autre site remplace l'ancienne ; une visite

@@ -56,6 +56,8 @@ import glob
 import re
 import unicodedata
 import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from origine_lead import poser as poser_origine  # script d'origine des leads (origine-lead.js), ne pas retirer
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://webautonomos.es'
@@ -490,6 +492,7 @@ def adapt_head(s, es_slug, out_slug, prof):
 
     s = localize_switcher(s, es_slug)
     s, _ = ensure_tracking(s)
+    s = poser_origine(s)
     return s
 
 

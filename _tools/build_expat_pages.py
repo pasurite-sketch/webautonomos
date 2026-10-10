@@ -32,6 +32,8 @@ import re
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'photos'))
 from photos_lib import injecter as poser_photo  # photo prévue par _tools/photos/images.json
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from origine_lead import poser as poser_origine  # script d'origine des leads (origine-lead.js), ne pas retirer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -497,7 +499,7 @@ def main():
         if check:
             print('  ✓ %s valide (%d octets) — non écrit' % (rel, len(s.encode())))
             continue
-        open(dest, 'w', encoding='utf-8').write(poser_photo(dest, s))
+        open(dest, 'w', encoding='utf-8').write(poser_origine(poser_photo(dest, s)))
         print('  ✓ %s écrit (%d octets)' % (rel, len(s.encode())))
     # llms.txt : une ligne par page, une seule fois
     llms_p = os.path.join(ROOT, 'llms.txt')
