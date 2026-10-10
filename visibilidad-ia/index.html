@@ -696,6 +696,8 @@ label.lbl{display:block;font-size:.875rem;font-weight:500;color:var(--gray-700);
 .guia th{background:var(--gray-50);font-weight:600;color:var(--gray-800)}
 @media (max-width:640px){.guia table{display:block;overflow-x:auto}}
 </style>
+<!-- origine-lead -->
+<script src="/origine-lead.js" defer></script>
 </head>
 <body>
 
@@ -1703,7 +1705,8 @@ document.addEventListener("DOMContentLoaded", function(){
     return fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(data)
+      // origine du lead (origine-lead.js, _tools/patch_origine_leads_20261010.py)
+      body: JSON.stringify(Object.assign({}, window.origineLead ? window.origineLead() : {}, data))
     }).then(function(r){
       if(!r.ok) throw new Error('Web3Forms HTTP ' + r.status);
       return r.json();
