@@ -8,8 +8,9 @@ sur les 3 pages de démo. Le script origine-lead.js note l'arrivée du visiteur 
 
 Idempotent (repère <!-- origine-lead --> et « origineLead » dans les pages Visibilidad IA). La balise est posée par
 _tools/origine_lead.py, que les générateurs appellent aussi avant d'écrire leurs pages : les nouvelles pages l'ont
-d'office. À relancer après un ré-export Lovable d'index.html, pour une page écrite à la main, et au dégel de l'article
-ES « cuanto-cuesta » (contrôle du 22/10) : retirer alors son nom de GELES.
+d'office. À relancer après un ré-export Lovable d'index.html ou pour une page écrite à la main.
+L'article ES « cuanto-cuesta », gelé jusqu'au contrôle du 22/10 (title, H1, H2), reçoit aussi le script depuis le 10/10 :
+une balise dans le <head> ne touche ni le texte ni les liens, la mesure reste valable (accord d'Angelino).
 Blog ajouté le 10/10 au soir, à la demande d'Angelino : un visiteur venu de Google sur un article garde son origine.
 Usage : python3 _tools/patch_origine_leads_20261010.py [--dry-run]
 """
@@ -20,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from origine_lead import REPERE, poser  # noqa: E402
 
 RACINE = Path(__file__).resolve().parents[1]
-GELES = {"blog/es/cuanto-cuesta-pagina-web-autonomos-espana.html"}  # gelé jusqu'au contrôle du 22/10
+GELES = set()  # pages à ne pas toucher ; vide depuis l'ajout de « cuanto-cuesta » le 10/10
 VISIBILITE = ["visibilidad-ia/index.html", "en/ai-visibility/index.html", "fr/visibilite-ia/index.html"]
 W3F_AVANT = "      body: JSON.stringify(data)\n"
 W3F_APRES = ("      // origine du lead (origine-lead.js, _tools/patch_origine_leads_20261010.py)\n"

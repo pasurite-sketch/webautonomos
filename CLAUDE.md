@@ -513,8 +513,9 @@ l'article comme page d'entrée. La balise est posée par `_tools/origine_lead.py
 appellent juste avant d'écrire, à côté de `poser_photo` : `generate_spa_articles`, `translate_article`,
 `generate_blog_index`, `build_metier_pages`, `build_comparatifs`, `build_lang_homes`, `build_expat_pages`,
 `build_uk_pages`, `build_i18n_pages` et `patch_diagnostic`. **Ne pas retirer ces appels.** Une page écrite à la main
-reçoit le script en relançant le patch. Seule exception, l'article ES « cuanto-cuesta », gelé jusqu'au contrôle du
-22/10 (liste `GELES` du patch) ; « (page du site sans suivi) » dans un e-mail signale une page d'entrée sans le script.
+reçoit le script en relançant le patch. L'article ES « cuanto-cuesta », gelé jusqu'au contrôle du 22/10, l'a aussi :
+le gel porte sur son title, son H1 et ses H2, qu'une balise du `<head>` ne touche pas. « (page du site sans suivi) »
+dans un e-mail signale une page d'entrée sans le script.
 
 **Les pages en dossier.** Les pages servies depuis un dossier (`/blog/`, `/aviso-legal/`, `/privacidad/`,
 `/cookies/`, `/en/`, `/fr/`, les 7 pages métier `/psicologos/`… `/dentistas/`, les pages de diagnostic, de visibilité
