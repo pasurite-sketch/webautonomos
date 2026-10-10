@@ -30,12 +30,13 @@
   var ref = document.referrer || '';
   var interne = ref && ref.indexOf(location.protocol + '//' + location.host) === 0;
   var deja = lire(ORIGINE);
-  if (annonce || (ref && !interne)) {
+  if (!interne && (annonce || ref)) {
     // arrivée par une annonce, un lien tagué ou un autre site (Google, Instagram, annuaire…)
     ecrire(ORIGINE, { referrer: ref ? sansAncre(ref) : '(direct)', landing_page: sansAncre(location.href) });
   } else if (!deja) {
-    // première trace : visite directe, ou arrivée par une page du site sans ce script (l'ancienne page fait foi)
-    ecrire(ORIGINE, interne
+    // première trace : visite directe, ou arrivée par une page du site sans ce script (l'ancienne page fait foi).
+    // Une page du site (rechargement, lien interne) ne remplace jamais une origine déjà notée.
+    ecrire(ORIGINE, interne && !annonce
       ? { referrer: '(page du site sans suivi)', landing_page: sansAncre(ref) }
       : { referrer: '(direct)', landing_page: sansAncre(location.href) });
   }
