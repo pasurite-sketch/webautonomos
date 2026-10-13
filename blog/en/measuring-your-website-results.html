@@ -23,7 +23,7 @@
     <meta property="og:site_name" content="WebAutonomos">
     <meta property="og:locale" content="en_GB">
     <meta property="article:published_time" content="2026-05-28T08:00:00+01:00">
-    <meta property="article:modified_time" content="2026-10-06T19:00:00+02:00">
+    <meta property="article:modified_time" content="2026-10-13T21:44:00+02:00">
     <meta property="article:section" content="Websites">
 
     <meta name="twitter:card" content="summary_large_image">
@@ -62,15 +62,15 @@
                 }
         },
         "datePublished": "2026-05-28T08:00:00+01:00",
-        "dateModified": "2026-10-06T19:00:00+02:00",
+        "dateModified": "2026-10-13T21:44:00+02:00",
         "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": "https://webautonomos.es/blog/en/measuring-your-website-results"
         },
         "articleSection": "Websites",
         "inLanguage": "en",
-        "wordCount": 2658,
-        "keywords": "how to measure website performance, website performance metrics, Google Analytics 4, Search Console, PageSpeed Insights, Core Web Vitals, key events, freelancers in Spain"
+        "wordCount": 3258,
+        "keywords": "how to measure website performance, website performance metrics, Google Analytics 4, Search Console, PageSpeed Insights, Core Web Vitals, lab and field data, Chrome DevTools, key events, freelancers in Spain"
 }
     </script>
     <script type="application/ld+json">
@@ -227,7 +227,7 @@
         <header class="mb-8">
             <span style="background:#3B82F6; color:white; padding:4px 14px; border-radius:999px; font-size:13px; font-weight:600;">Websites</span>
             <p class="text-sm text-gray-500 mt-4 mb-3">
-                <time datetime="2026-05-28">28 May 2026</time> &middot; 12 min read
+                <time datetime="2026-05-28">28 May 2026</time> &middot; 13 min read
             </p>
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">How to measure website performance: a practical guide for freelancers and small businesses</h1>
         </header>
@@ -246,9 +246,11 @@
                     <li><a href="#seccion-9" class="toc-link">Conversion metrics: calls, forms and WhatsApp messages</a></li>
                     <li><a href="#seccion-10" class="toc-link">Queries and clicks in Search Console</a></li>
                     <li><a href="#seccion-11" class="toc-link">Speed and user experience: measuring technical performance</a></li>
-                    <li><a href="#seccion-12" class="toc-link">How to set up your measurement tools</a></li>
-                    <li><a href="#seccion-13" class="toc-link">Cookies and consent in Spain</a></li>
-                    <li><a href="#seccion-14" class="toc-link">How often should you analyse your website performance?</a></li>
+                    <li><a href="#seccion-12" class="toc-link">What is the difference between lab and field data?</a></li>
+                    <li><a href="#seccion-13" class="toc-link">What can Chrome DevTools show you?</a></li>
+                    <li><a href="#seccion-14" class="toc-link">How to install GA4 and connect your tools</a></li>
+                    <li><a href="#seccion-15" class="toc-link">Cookies and consent in Spain</a></li>
+                    <li><a href="#seccion-16" class="toc-link">How often should you analyse your website performance?</a></li>
                     <li><a href="#faq" class="toc-link">Frequently asked questions</a></li>
             </ol>
         </div>
@@ -265,7 +267,7 @@
             <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">What is website performance?</h2>
             <p class="text-gray-700 leading-relaxed mb-4">Website performance is how well your site does its job: attracting the right visitors, giving them a good experience and getting some of them to call or write to you. The website performance metrics you follow should cover its two sides.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Commercial results: visitors, engagement and contacts</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">This side tells you whether the site actually brings in work: how many users arrive, through which channels, what content they read and how many call you, send a WhatsApp message or fill in your form.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">This side tells you whether you actually get work from it: how many users arrive, through which channels, what content they read and how many call you, send a WhatsApp message or fill in your form.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Technical performance: speed and user experience</h3>
             <p class="text-gray-700 leading-relaxed mb-4">This side covers how fast each page loads and reacts to a tap. A slow website can lose potential clients before they read a word, especially on mobile.</p>
             <h2 id="seccion-2" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Why measure website performance?</h2>
@@ -348,11 +350,11 @@
             <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">How many users visit your website?</h2>
             <p class="text-gray-700 leading-relaxed mb-4">GA4 answers this with three figures: users are the people who visit, sessions are their visits and views are the pages they open.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Users and sessions</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">In GA4 reports, the user figure is active users: distinct people who interact with your site, recognised by browser or device. One person on a phone and a laptop therefore usually counts twice, and someone who visits on Monday and Thursday adds one user and two sessions.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">In GA4, the user figure is active users: distinct people who interact with your site, recognised by browser or device. One person on a phone and a laptop therefore usually counts twice, and someone who visits on Monday and Thursday adds one user and two sessions.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Landing pages and top pages</h3>
             <p class="text-gray-700 leading-relaxed mb-4">In the Engagement section, the Pages and screens report ranks your pages by views, and Landing page lists where visits start. If almost every visit lands on your home page and few reach your services, your menu may need a clearer path.</p>
-            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Compare with your own previous months</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">There is no universal good number of visits: performance depends on your trade, your area and the season. It&#x27;s best to compare each month with the previous one and with the same month of the previous year.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Compare with your own earlier months</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">There is no universal good number of visits: performance depends on your trade, your area and the season. It&#x27;s best to compare each month with the one before and with the same month last year.</p>
             <p class="text-gray-700 leading-relaxed mb-4">GA4&#x27;s demographic details also show which towns your users are in, so you can see whether visits come from your target area.</p>
             <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Traffic sources: which channels bring visits</h2>
             <p class="text-gray-700 leading-relaxed mb-4">GA4&#x27;s Traffic acquisition section shows the channel behind each session, so you can see which parts of your marketing strategy bring visitors:</p>
@@ -364,7 +366,7 @@
             <li><strong>Paid Search and Paid Social:</strong> your <a href="https://webautonomos.es/blog/en/google-ads-for-freelancers-beginners-guide" style="color:#2563eb;">advertising campaigns</a>.</li>
             <li><strong>Email:</strong> links in your newsletters, when they are tagged.</li>
             </ul>
-            <p class="text-gray-700 leading-relaxed mb-4">Each channel brings visits of different quality, so compare their contacts, not just their size. If your customers are local, organic traffic is worth growing over time; our <a href="https://webautonomos.es/blog/en/local-seo-for-freelancers-complete-guide" style="color:#2563eb;">local SEO guide</a> explains how to improve it.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Each channel brings visits of different quality, so compare their contacts, not just their size. If your customers live nearby, organic traffic is worth growing over time; our <a href="https://webautonomos.es/blog/en/local-seo-for-freelancers-complete-guide" style="color:#2563eb;">local SEO guide</a> explains how to improve it.</p>
             <p class="text-gray-700 leading-relaxed mb-4">If you&#x27;d rather delegate, our Local SEO service costs €15/month: four blog articles a month, local keywords and a monthly report, and you can buy it without the website.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Tag your links to track your marketing</h3>
             <p class="text-gray-700 leading-relaxed mb-4">UTM tracking parameters (utm_source, utm_medium and utm_campaign) label the links you share in newsletters, WhatsApp statuses or a flyer&#x27;s QR code, so GA4 knows where each visit came from and which campaigns perform better. Our introduction to <a href="https://webautonomos.es/blog/en/email-marketing-for-freelancers-beginners-guide" style="color:#2563eb;">email marketing</a> also explains how to analyse your campaigns.</p>
@@ -418,7 +420,7 @@
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Make sure your pages are indexed</h3>
             <p class="text-gray-700 leading-relaxed mb-4">The Pages section lists which URLs are indexed and why others were left out. Open it after publishing anything new, because a page that isn&#x27;t indexed can&#x27;t appear in the results.</p>
             <h2 id="seccion-11" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Speed and user experience: measuring technical performance</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">To measure the technical performance of a page, enter its address in PageSpeed Insights. You get its Core Web Vitals, a performance score and suggestions for improvement.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">To measure the technical performance of a page, start by entering its address in PageSpeed Insights. You get its Core Web Vitals, a performance score and suggestions for improvement.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Core Web Vitals in plain words</h3>
             <p class="text-gray-700 leading-relaxed mb-4">These three metrics describe the user experience of a page:</p>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
@@ -427,38 +429,62 @@
             <li><strong>Cumulative Layout Shift (CLS):</strong> whether text and buttons jump around during loading.</li>
             </ul>
             <p class="text-gray-700 leading-relaxed mb-4">Each one is rated good, needs improvement or poor; aim for good on all three.</p>
-            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Real visits and simulated tests</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">When a page gets enough visits, PageSpeed displays data from real visitors using the Chrome browser over the previous weeks; otherwise, you only get a simulated test, still useful for spotting issues.</p>
-            <p class="text-gray-700 leading-relaxed mb-4">Results differ between mobile and desktop, and mobile is the most important, since many people will look you up on their phone.</p>
+            <h2 id="seccion-12" class="text-2xl font-bold text-gray-900 mt-10 mb-4">What is the difference between lab and field data?</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Lab figures are produced by a simulated visit on a set phone and network; field figures are collected from real visits in Chrome. The first helps you find the cause of a problem, the second tells you what your visitors see.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">In the lab: repeatable, but simulated</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">A lab analysis repeats the visit with the same device and network settings on every run, so you can compare the result before and after a change, such as compressing your photos. This is helpful for spotting issues, but it can&#x27;t reproduce every phone and connection, nor Interaction to Next Paint, since nobody taps the screen.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">In the field: timings from actual visits</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">Field figures group the timings of many visits, on all kinds of phones, computers and connections. They are collected from Chrome browsers that share usage statistics and published in a public report known as CrUX.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">When a URL gets too few visits, no field figures are available for it; you may see the whole domain&#x27;s instead, or only the lab result. In that case, rely on it and on your own phone.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">What each section tells you</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">In PageSpeed, everything is displayed in the following order:</p>
+            <ol class="list-decimal list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
+            <li><strong>Field figures:</strong> the CrUX figures for the three indicators described above, with an overall assessment, passed or failed, when available.</li>
+            <li><strong>Performance score:</strong> a score calculated by Lighthouse from the simulated visit, shown in green, orange or red. Green is the target, but the score is a general indication, not an end in itself.</li>
+            <li><strong>Lab measurements:</strong> First Contentful Paint (when the first text or image appears) and Total Blocking Time (how long scripts block taps and clicks), among others.</li>
+            <li><strong>Diagnostics:</strong> detailed suggestions, many related to a specific resource, such as an image that could be smaller or a JavaScript file that delays loading.</li>
+            </ol>
+            <p class="text-gray-700 leading-relaxed mb-4">Results differ between mobile and desktop, and the smartphone figures are the important ones, since many clients will look you up on their phone.</p>
+            <h2 id="seccion-13" class="text-2xl font-bold text-gray-900 mt-10 mb-4">What can Chrome DevTools show you?</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Chrome DevTools offers three ways to follow loading on your own computer and network: a Lighthouse analysis, the list of every file downloaded and a step-by-step recording. To open it in Chrome, right-click anywhere in the window and choose Inspect.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Lighthouse: a lab test on your computer</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">The Lighthouse panel runs a similar lab analysis and provides a score and suggestions. It&#x27;s useful before publishing a change, such as a new photo gallery, but its scores depend on your computer, so only compare runs made in the same conditions.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Network panel: every file, one by one</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">With the Network panel open, press reload: it lists each resource requested, such as photos, fonts, style sheets and JavaScript, with its size, how long it takes and the order it arrives in, so one heavy photo stands out at once; click a resource to see its details. Tick Disable cache to see what a new visitor downloads, and pick a slower network in the throttling menu to imitate a phone away from wifi.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">A step-by-step recording of loading</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">The Performance panel records what happens during the page load or while you scroll and click: when each element is painted, which scripts are running and when the layout shifts. The timeline is technical, but it lets you understand where loading stalls, and the panel also displays the three indicators live for your own visit.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Timings recorded behind the scenes</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">During loading, the browser notes the timing of each step, from the first request to the server to the last image. Developers read these timings through the Performance API, with Navigation Timing for the document itself and Resource Timing for each file; some monitoring services use them to build their own field figures.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">You don&#x27;t need these panels every week: open them when something seems slow, or leave them to whoever manages your website. To learn more, the MDN and web.dev documentation explain each of these indicators.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Common causes of slow pages</h3>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
             <li>Heavy images that take long to load because they haven&#x27;t been resized or compressed.</li>
-            <li>Too many plugins, scripts or embedded widgets.</li>
-            <li>A slow server: the Time to First Byte (TTFB) in PageSpeed reflects the server response time.</li>
+            <li>Too many plugins, scripts or embedded widgets, each adding network requests.</li>
+            <li>A slow server: the Time to First Byte (TTFB) reflects the server response time.</li>
             <li>Fonts, videos or pop-ups that load before your content.</li>
             </ul>
-            <p class="text-gray-700 leading-relaxed mb-4">After testing, fix your most visited pages first: that is where better performance pays off. Our article on <a href="https://webautonomos.es/blog/en/website-speed-and-search-rankings" style="color:#2563eb;">why website speed affects your ranking</a> goes into more detail.</p>
-            <h2 id="seccion-12" class="text-2xl font-bold text-gray-900 mt-10 mb-4">How to set up your measurement tools</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">After testing, start with your most visited pages: that is where improvements pay off. Our article on <a href="https://webautonomos.es/blog/en/website-speed-and-search-rankings" style="color:#2563eb;">why website speed affects your ranking</a> goes into more detail.</p>
+            <h2 id="seccion-14" class="text-2xl font-bold text-gray-900 mt-10 mb-4">How to install GA4 and connect your tools</h2>
             <p class="text-gray-700 leading-relaxed mb-4">You don&#x27;t need to be technical. These steps summarise the official help centre:</p>
             <ol class="list-decimal list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
             <li>Open GA4 with your Google account, then create an account and a property with your time zone and currency.</li>
             <li>Add a web data stream with your website address.</li>
             <li>Paste the measurement ID (it starts with G-) or the tag snippet into your site; many website builders have a field for it.</li>
-            <li>Visit your site and open the Realtime report: your visit appears within moments, while standard reports take a little longer.</li>
+            <li>Visit your site and open the Realtime overview: your visit appears within moments, while standard reports take a little longer.</li>
             <li>Define your own connection as internal traffic and activate the filter, so your own visits don&#x27;t inflate the figures.</li>
             <li>Mark the contacts you want to follow as key events (GA4&#x27;s name for conversions).</li>
             <li>Add your site to Search Console, verify it (with the GA4 tag, an HTML file or a DNS record) and link the two tools.</li>
             </ol>
-            <p class="text-gray-700 leading-relaxed mb-4">If you&#x27;d rather not touch the code, ask whoever manages your website to add the tag: it only needs doing once.</p>
-            <h2 id="seccion-13" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Cookies and consent in Spain</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">If you&#x27;d rather not do it yourself, ask whoever manages your website to add the tag: it only needs doing once.</p>
+            <h2 id="seccion-15" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Cookies and consent in Spain</h2>
             <p class="text-gray-700 leading-relaxed mb-4">GA4 uses cookies. In Spain, your website must ask visitors for consent before setting analytics cookies, usually through a banner where they can accept or reject them, and your cookie policy has to mention them.</p>
             <p class="text-gray-700 leading-relaxed mb-4">Visitors who reject cookies may be missing from GA4, which can then display fewer users than really visit; Search Console clicks don&#x27;t depend on your cookies.</p>
             <p class="text-gray-700 leading-relaxed mb-4">If WebAutonomos builds your website, the legal texts (legal notice, privacy policy and cookie policy) are included; when you add a tool such as GA4, make sure the cookie policy mentions it.</p>
-            <h2 id="seccion-14" class="text-2xl font-bold text-gray-900 mt-10 mb-4">How often should you analyse your website performance?</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Once a week works best for a quick look at your metrics, with more time once a month. Small daily changes don&#x27;t matter: one day&#x27;s figures move with a bank holiday, the weather or a single social media post.</p>
+            <h2 id="seccion-16" class="text-2xl font-bold text-gray-900 mt-10 mb-4">How often should you analyse your website performance?</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Once a week works best for a quick glance at your metrics, with a longer analysis once a month. Small daily changes don&#x27;t matter: one day&#x27;s figures move with a bank holiday, the weather or a single social media post.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">A 10-minute weekly check</h3>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
-            <li>Users and sessions compared with the previous week.</li>
+            <li>Users and sessions compared with last week.</li>
             <li>Contacts: calls, WhatsApp messages and forms.</li>
             <li>Traffic sources, to spot any sudden change.</li>
             </ul>
@@ -467,11 +493,11 @@
             <li>The queries that gained or lost clicks in Search Console.</li>
             <li>Calls and direction requests from your profile.</li>
             <li>A PageSpeed test of your most visited pages.</li>
-            <li>A comparison with the same month of the previous year.</li>
+            <li>A comparison with the same month last year.</li>
             </ul>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Realistic goals for a freelancer</h3>
             <p class="text-gray-700 leading-relaxed mb-4">Measure each goal in contacts, not visits: a plumber or a neighbourhood shop gains more from an extra call each month than from visitors in other provinces who will never hire them.</p>
-            <p class="text-gray-700 leading-relaxed mb-4">For example, aim for more contacts than in the same month of the previous year, or more clicks from searches such as <em>physiotherapist in Elche</em>. Note the date of every change you make, including marketing campaigns, so you can see its effect later.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">For example, aim for more contacts than in the same month last year, or more clicks from searches such as <em>physiotherapist in Elche</em>. Note the date of every change you make, including marketing campaigns, so you can see its effect later.</p>
             <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">Measuring website performance isn&#x27;t complicated if you stick to a few performance metrics, spend 10 minutes a week on them and keep one question in mind: are more people contacting you than before? The answer tells you what to improve next.</p>
         </div>
 
