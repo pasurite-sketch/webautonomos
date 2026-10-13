@@ -348,6 +348,189 @@
      "titre": "Décoration pour la maison",
      "bouton": "tienda"
     }
+   },
+   "publie": true
+  },
+  {
+   "id": "file-facturar-clientes-otros-paises-ue-reino-unido",
+   "type": "file",
+   "publication": "2026-10-15",
+   "file": "_tools/queue/article_facturar_clientes_extranjeros.json",
+   "priorite": 1,
+   "titre": "Cómo facturar a clientes de la UE y del Reino Unido siendo autónomo en España",
+   "url": "https://webautonomos.es/blog/es/facturar-clientes-otros-paises-ue-reino-unido",
+   "resume": "Un cliente en Francia, Bélgica o el Reino Unido puede contratarte sin salir de su oficina. Las dudas llegan con la factura: ¿lleva IVA?, ¿qué mención pongo?, ¿hay algún modelo más? Esta guía resume las reglas vigentes en septiembre de 2026 para un autónomo establecido en la península o en Baleares que presta servicios, no bienes, a clientes de la UE o del Reino Unido.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/facturar-clientes-otros-paises-ue-reino-unido.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/facturar-clientes-otros-paises-ue-reino-unido",
+     "spa": "es/facturar-clientes-otros-paises-ue-reino-unido"
+    },
+    {
+     "html": "blog/val/facturar-clients-altres-paisos.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/blog/val/facturar-clients-altres-paisos",
+     "spa": "val/facturar-clients-altres-paisos"
+    },
+    {
+     "html": "blog/en/invoicing-clients-in-other-eu-countries-and-the-uk.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/blog/en/invoicing-clients-in-other-eu-countries-and-the-uk",
+     "spa": "en/invoicing-clients-in-other-eu-countries-and-the-uk"
+    },
+    {
+     "html": "blog/fr/facturer-un-client-etranger-depuis-l-espagne.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/blog/fr/facturer-un-client-etranger-depuis-l-espagne",
+     "spa": "fr/facturer-un-client-etranger-depuis-l-espagne"
+    }
+   ],
+   "statut": "fait",
+   "scene": "Un graphiste indépendant, vu de profil dans son bureau lumineux, ferme au ruban adhésif un carton kraft uni destiné à un client à l'étranger ; plantes et lampe d'architecte.",
+   "fichier": "autonomo-clientes-europa-despacho",
+   "v": 1,
+   "fait_le": "2026-09-29T14:26:47",
+   "textes": {
+    "es": {
+     "alt": "Un diseñador independiente cierra una caja de cartón con cinta adhesiva en un estudio luminoso con plantas.",
+     "legende": "Preparar un paquete en el estudio forma parte del trabajo con clientes de otros países."
+    },
+    "val": {
+     "alt": "Un dissenyador independent tanca una caixa de cartó amb cinta adhesiva en un estudi lluminós amb plantes.",
+     "legende": "Preparar un paquet a l'estudi forma part del treball amb clients d'altres països."
+    },
+    "en": {
+     "alt": "A freelance designer seals a cardboard box with tape in a bright studio filled with plants.",
+     "legende": "Packing a parcel in the studio can be part of working with clients abroad."
+    },
+    "fr": {
+     "alt": "Un graphiste indépendant ferme un carton avec du ruban adhésif dans un bureau lumineux avec des plantes.",
+     "legende": "Préparer un colis au bureau peut faire partie du travail avec des clients étrangers."
+    }
+   },
+   "site": "d'un graphiste indépendant (portfolio)",
+   "maquette": {
+    "es": {
+     "statut": "fait",
+     "fichier": "autonomo-clientes-europa-despacho-maquette-es",
+     "v": 1,
+     "fait_le": "2026-09-30T12:51:58",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de un diseñador gráfico en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de portfolio de diseño gráfico mostrado en un portátil y un teléfono."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un dissenyador gràfic en versions d'escriptori i mòbil.",
+       "legende": "Exemple de portfoli de disseny gràfic en un portàtil i un telèfon."
+      },
+      "en": {
+       "alt": "Laptop and smartphone display the same graphic designer portfolio website in desktop and mobile layouts.",
+       "legende": "Example graphic design portfolio shown on a laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le même portfolio de graphiste en versions ordinateur et mobile.",
+       "legende": "Exemple de portfolio de graphiste affiché sur ordinateur et smartphone."
+      }
+     }
+    },
+    "val": {
+     "statut": "fait",
+     "fichier": "autonomo-clientes-europa-despacho-maquette-val",
+     "v": 1,
+     "fait_le": "2026-09-30T12:55:48",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de un diseñador gráfico en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de portfolio de diseño gráfico mostrado en un portátil y un teléfono."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un dissenyador gràfic en versions d'escriptori i mòbil.",
+       "legende": "Exemple de portfoli de disseny gràfic en un portàtil i un telèfon."
+      },
+      "en": {
+       "alt": "Laptop and smartphone display the same graphic designer portfolio website in desktop and mobile layouts.",
+       "legende": "Example graphic design portfolio shown on a laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le même portfolio de graphiste en versions ordinateur et mobile.",
+       "legende": "Exemple de portfolio de graphiste affiché sur ordinateur et smartphone."
+      }
+     }
+    },
+    "en": {
+     "statut": "fait",
+     "fichier": "autonomo-clientes-europa-despacho-maquette-en",
+     "v": 1,
+     "fait_le": "2026-09-30T12:58:04",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de un diseñador gráfico en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de portfolio de diseño gráfico mostrado en un portátil y un teléfono."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un dissenyador gràfic en versions d'escriptori i mòbil.",
+       "legende": "Exemple de portfoli de disseny gràfic en un portàtil i un telèfon."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the same graphic designer portfolio website in desktop and mobile layouts.",
+       "legende": "Example graphic design portfolio shown on a laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le même portfolio de graphiste en versions ordinateur et mobile.",
+       "legende": "Exemple de portfolio de graphiste affiché sur ordinateur et smartphone."
+      }
+     }
+    },
+    "fr": {
+     "statut": "fait",
+     "fichier": "autonomo-clientes-europa-despacho-maquette-fr",
+     "v": 1,
+     "fait_le": "2026-09-30T13:04:52",
+     "textes": {
+      "es": {
+       "alt": "Un portátil y un móvil muestran la misma web de un diseñador gráfico en versiones de escritorio y móvil.",
+       "legende": "Ejemplo de portfolio de diseño gráfico mostrado en un portátil y un teléfono."
+      },
+      "val": {
+       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un dissenyador gràfic en versions d'escriptori i mòbil.",
+       "legende": "Exemple de portfoli de disseny gràfic en un portàtil i un telèfon."
+      },
+      "en": {
+       "alt": "A laptop and smartphone display the same graphic designer portfolio website in desktop and mobile layouts.",
+       "legende": "Example graphic design portfolio shown on a laptop and smartphone."
+      },
+      "fr": {
+       "alt": "Un ordinateur et un smartphone affichent le même portfolio de graphiste en versions ordinateur et mobile.",
+       "legende": "Exemple de portfolio de graphiste affiché sur ordinateur et smartphone."
+      }
+     }
+    }
+   },
+   "ecrans": {
+    "es": {
+     "nom": "Estudio Vela",
+     "titre": "Diseño gráfico e identidad",
+     "bouton": "portfolio"
+    },
+    "val": {
+     "nom": "Estudi Vela",
+     "titre": "Disseny gràfic i identitat",
+     "bouton": "portfolio"
+    },
+    "en": {
+     "nom": "Vela Studio",
+     "titre": "Graphic design and branding",
+     "bouton": "portfolio"
+    },
+    "fr": {
+     "nom": "Studio Vela",
+     "titre": "Graphisme et identité visuelle",
+     "bouton": "portfolio"
+    }
    }
   },
   {
@@ -705,188 +888,6 @@
     }
    },
    "publie": true
-  },
-  {
-   "id": "file-facturar-clientes-otros-paises-ue-reino-unido",
-   "type": "file",
-   "publication": "2026-10-15",
-   "file": "_tools/queue/article_facturar_clientes_extranjeros.json",
-   "priorite": 2,
-   "titre": "Cómo facturar a clientes de la UE y del Reino Unido siendo autónomo en España",
-   "url": "https://webautonomos.es/blog/es/facturar-clientes-otros-paises-ue-reino-unido",
-   "resume": "Un cliente en Francia, Bélgica o el Reino Unido puede contratarte sin salir de su oficina. Las dudas llegan con la factura: ¿lleva IVA?, ¿qué mención pongo?, ¿hay algún modelo más? Esta guía resume las reglas vigentes en septiembre de 2026 para un autónomo establecido en la península o en Baleares que presta servicios, no bienes, a clientes de la UE o del Reino Unido.",
-   "marche": "europe",
-   "sante": false,
-   "pages": [
-    {
-     "html": "blog/es/facturar-clientes-otros-paises-ue-reino-unido.html",
-     "lang": "es",
-     "url": "https://webautonomos.es/blog/es/facturar-clientes-otros-paises-ue-reino-unido",
-     "spa": "es/facturar-clientes-otros-paises-ue-reino-unido"
-    },
-    {
-     "html": "blog/val/facturar-clients-altres-paisos.html",
-     "lang": "val",
-     "url": "https://webautonomos.es/blog/val/facturar-clients-altres-paisos",
-     "spa": "val/facturar-clients-altres-paisos"
-    },
-    {
-     "html": "blog/en/invoicing-clients-in-other-eu-countries-and-the-uk.html",
-     "lang": "en",
-     "url": "https://webautonomos.es/blog/en/invoicing-clients-in-other-eu-countries-and-the-uk",
-     "spa": "en/invoicing-clients-in-other-eu-countries-and-the-uk"
-    },
-    {
-     "html": "blog/fr/facturer-un-client-etranger-depuis-l-espagne.html",
-     "lang": "fr",
-     "url": "https://webautonomos.es/blog/fr/facturer-un-client-etranger-depuis-l-espagne",
-     "spa": "fr/facturer-un-client-etranger-depuis-l-espagne"
-    }
-   ],
-   "statut": "fait",
-   "scene": "Un graphiste indépendant, vu de profil dans son bureau lumineux, ferme au ruban adhésif un carton kraft uni destiné à un client à l'étranger ; plantes et lampe d'architecte.",
-   "fichier": "autonomo-clientes-europa-despacho",
-   "v": 1,
-   "fait_le": "2026-09-29T14:26:47",
-   "textes": {
-    "es": {
-     "alt": "Un diseñador independiente cierra una caja de cartón con cinta adhesiva en un estudio luminoso con plantas.",
-     "legende": "Preparar un paquete en el estudio forma parte del trabajo con clientes de otros países."
-    },
-    "val": {
-     "alt": "Un dissenyador independent tanca una caixa de cartó amb cinta adhesiva en un estudi lluminós amb plantes.",
-     "legende": "Preparar un paquet a l'estudi forma part del treball amb clients d'altres països."
-    },
-    "en": {
-     "alt": "A freelance designer seals a cardboard box with tape in a bright studio filled with plants.",
-     "legende": "Packing a parcel in the studio can be part of working with clients abroad."
-    },
-    "fr": {
-     "alt": "Un graphiste indépendant ferme un carton avec du ruban adhésif dans un bureau lumineux avec des plantes.",
-     "legende": "Préparer un colis au bureau peut faire partie du travail avec des clients étrangers."
-    }
-   },
-   "site": "d'un graphiste indépendant (portfolio)",
-   "maquette": {
-    "es": {
-     "statut": "fait",
-     "fichier": "autonomo-clientes-europa-despacho-maquette-es",
-     "v": 1,
-     "fait_le": "2026-09-30T12:51:58",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran la misma web de un diseñador gráfico en versiones de escritorio y móvil.",
-       "legende": "Ejemplo de portfolio de diseño gráfico mostrado en un portátil y un teléfono."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un dissenyador gràfic en versions d'escriptori i mòbil.",
-       "legende": "Exemple de portfoli de disseny gràfic en un portàtil i un telèfon."
-      },
-      "en": {
-       "alt": "Laptop and smartphone display the same graphic designer portfolio website in desktop and mobile layouts.",
-       "legende": "Example graphic design portfolio shown on a laptop and smartphone."
-      },
-      "fr": {
-       "alt": "Un ordinateur et un smartphone affichent le même portfolio de graphiste en versions ordinateur et mobile.",
-       "legende": "Exemple de portfolio de graphiste affiché sur ordinateur et smartphone."
-      }
-     }
-    },
-    "val": {
-     "statut": "fait",
-     "fichier": "autonomo-clientes-europa-despacho-maquette-val",
-     "v": 1,
-     "fait_le": "2026-09-30T12:55:48",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran la misma web de un diseñador gráfico en versiones de escritorio y móvil.",
-       "legende": "Ejemplo de portfolio de diseño gráfico mostrado en un portátil y un teléfono."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un dissenyador gràfic en versions d'escriptori i mòbil.",
-       "legende": "Exemple de portfoli de disseny gràfic en un portàtil i un telèfon."
-      },
-      "en": {
-       "alt": "Laptop and smartphone display the same graphic designer portfolio website in desktop and mobile layouts.",
-       "legende": "Example graphic design portfolio shown on a laptop and smartphone."
-      },
-      "fr": {
-       "alt": "Un ordinateur et un smartphone affichent le même portfolio de graphiste en versions ordinateur et mobile.",
-       "legende": "Exemple de portfolio de graphiste affiché sur ordinateur et smartphone."
-      }
-     }
-    },
-    "en": {
-     "statut": "fait",
-     "fichier": "autonomo-clientes-europa-despacho-maquette-en",
-     "v": 1,
-     "fait_le": "2026-09-30T12:58:04",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran la misma web de un diseñador gráfico en versiones de escritorio y móvil.",
-       "legende": "Ejemplo de portfolio de diseño gráfico mostrado en un portátil y un teléfono."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un dissenyador gràfic en versions d'escriptori i mòbil.",
-       "legende": "Exemple de portfoli de disseny gràfic en un portàtil i un telèfon."
-      },
-      "en": {
-       "alt": "A laptop and smartphone display the same graphic designer portfolio website in desktop and mobile layouts.",
-       "legende": "Example graphic design portfolio shown on a laptop and smartphone."
-      },
-      "fr": {
-       "alt": "Un ordinateur et un smartphone affichent le même portfolio de graphiste en versions ordinateur et mobile.",
-       "legende": "Exemple de portfolio de graphiste affiché sur ordinateur et smartphone."
-      }
-     }
-    },
-    "fr": {
-     "statut": "fait",
-     "fichier": "autonomo-clientes-europa-despacho-maquette-fr",
-     "v": 1,
-     "fait_le": "2026-09-30T13:04:52",
-     "textes": {
-      "es": {
-       "alt": "Un portátil y un móvil muestran la misma web de un diseñador gráfico en versiones de escritorio y móvil.",
-       "legende": "Ejemplo de portfolio de diseño gráfico mostrado en un portátil y un teléfono."
-      },
-      "val": {
-       "alt": "Un portàtil i un mòbil mostren la mateixa web d'un dissenyador gràfic en versions d'escriptori i mòbil.",
-       "legende": "Exemple de portfoli de disseny gràfic en un portàtil i un telèfon."
-      },
-      "en": {
-       "alt": "A laptop and smartphone display the same graphic designer portfolio website in desktop and mobile layouts.",
-       "legende": "Example graphic design portfolio shown on a laptop and smartphone."
-      },
-      "fr": {
-       "alt": "Un ordinateur et un smartphone affichent le même portfolio de graphiste en versions ordinateur et mobile.",
-       "legende": "Exemple de portfolio de graphiste affiché sur ordinateur et smartphone."
-      }
-     }
-    }
-   },
-   "ecrans": {
-    "es": {
-     "nom": "Estudio Vela",
-     "titre": "Diseño gráfico e identidad",
-     "bouton": "portfolio"
-    },
-    "val": {
-     "nom": "Estudi Vela",
-     "titre": "Disseny gràfic i identitat",
-     "bouton": "portfolio"
-    },
-    "en": {
-     "nom": "Vela Studio",
-     "titre": "Graphic design and branding",
-     "bouton": "portfolio"
-    },
-    "fr": {
-     "nom": "Studio Vela",
-     "titre": "Graphisme et identité visuelle",
-     "bouton": "portfolio"
-    }
-   }
   },
   {
    "id": "page-tarifs",
@@ -3605,7 +3606,7 @@
    "priorite": 41,
    "titre": "Blog para autónomos",
    "url": "https://webautonomos.es/blog/",
-   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 60 artículos disponibles en español.",
+   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 61 artículos disponibles en español.",
    "marche": "europe",
    "sante": false,
    "pages": [
