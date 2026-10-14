@@ -125,7 +125,7 @@ NAV_URLS = {
 
 # Libelles d'interface
 UI = {
-    'es': dict(home='Inicio', sectors='Webs por sector', sector_q='¿Trabajas en este sector?', sector_link='Ver la web para {name} →', seo_q='¿Prefieres que lo hagamos por ti?', seo_link='SEO local para autónomos desde 15 €/mes →', blog='Blog', back='← Volver al blog',
+    'es': dict(home='Inicio', sectors='Webs por sector', sector_q='¿Trabajas en este sector?', sector_link='Ver la web para {name} →', seo_q='¿Prefieres que lo hagamos por ti?', seo_link='SEO local para autónomos por solo 15 €/mes →', blog='Blog', back='← Volver al blog',
                toc='📑 Contenido del artículo', faq='Preguntas frecuentes',
                read='min de lectura', cta_title='¿Quieres una web así para tu negocio?',
                cta_text='Páginas web profesionales por solo 15 €/mes · Sin alta · Sin permanencia',
@@ -133,7 +133,7 @@ UI = {
                'Agencia web especializada en autónomos, pequeñas y medianas empresas. '
                'Páginas web profesionales por solo 15 €/mes, sin alta, sin permanencia.',
                legal='Aviso legal', privacy='Privacidad', contact='Contacto'),
-    'val': dict(home='Inici', sectors='Webs per sector', sector_q='Treballes en aquest sector?', sector_link='Veure la web per a {name} →', seo_q='Prefereixes que ho fem nosaltres?', seo_link='SEO local per a autònoms des de 15 €/mes →', blog='Blog', back='← Tornar al blog',
+    'val': dict(home='Inici', sectors='Webs per sector', sector_q='Treballes en aquest sector?', sector_link='Veure la web per a {name} →', seo_q='Prefereixes que ho fem nosaltres?', seo_link='SEO local per a autònoms per només 15 €/mes →', blog='Blog', back='← Tornar al blog',
                 toc='📑 Contingut de l\'article', faq='Preguntes freqüents',
                 read='min de lectura', cta_title='Vols una web així per al teu negoci?',
                 cta_text='Pàgines web professionals per només 15 €/mes · Sense alta · Sense permanència',
