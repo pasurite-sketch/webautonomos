@@ -1667,13 +1667,13 @@ KINE['en'] = dict(
          '<li>A prompt, courteous reply to every message that reaches you by email or WhatsApp</li>'
          '</ul></div>'
          '<p class="legal-intro" style="margin:24px auto 0">Reputation is part of your digital marketing, and it is '
-         'slow to grow: building trust starts with details that are correct and consistent.</p>'),
+         'slow to grow: building trust starts with facts that are correct and consistent.</p>'),
         ('common-gaps', 'What to avoid', 'Common gaps on physiotherapy websites',
          '<p class="legal-intro">These are the gaps that often make a physiotherapy website less effective, or '
          'leave it short of what Spanish rules require.</p>'
          '<div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul>'
          '<li>No Colegio or colegiado number, or a registration number missing from an authorised practice</li>'
-         '<li>A single vague page listing every treatment with no detail on what each one involves</li>'
+         '<li>One vague page listing every treatment with no detail on what each one involves</li>'
          '<li>No clear way to book or ask a question: a phone number buried in a footer, no WhatsApp link</li>'
          '<li>Stock photos and generic text that could belong to any clinic, in any country</li>'
          '</ul></div>'
@@ -1690,7 +1690,7 @@ KINE['en'] = dict(
          '<div class="aud-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📧</div>'
          '<h3>No meeting required</h3>'
-         '<p>You send us the details by email or WhatsApp, in English, and we come back with questions if we '
+         '<p>You send us what we need by email or WhatsApp, in English, and we come back with questions if we '
          'need them.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗓️</div>'
          '<h3>A demo within 24 hours</h3>'
