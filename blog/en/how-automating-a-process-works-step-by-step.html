@@ -23,7 +23,7 @@
     <meta property="og:site_name" content="WebAutonomos">
     <meta property="og:locale" content="en_GB">
     <meta property="article:published_time" content="2026-09-24T08:00:00+01:00">
-    <meta property="article:modified_time" content="2026-10-06T19:00:00+02:00">
+    <meta property="article:modified_time" content="2026-10-14T21:00:00+02:00">
     <meta property="article:section" content="Automation">
 
     <meta name="twitter:card" content="summary_large_image">
@@ -62,15 +62,15 @@
                 }
         },
         "datePublished": "2026-09-24T08:00:00+01:00",
-        "dateModified": "2026-10-06T19:00:00+02:00",
+        "dateModified": "2026-10-14T21:00:00+02:00",
         "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": "https://webautonomos.es/blog/en/how-automating-a-process-works-step-by-step"
         },
         "articleSection": "Automation",
         "inLanguage": "en",
-        "wordCount": 2769,
-        "keywords": "automation process steps, how to automate a process, business process automation, automation tools, small business automation"
+        "wordCount": 3316,
+        "keywords": "automation process steps, how to automate a process, business process automation, robotic process automation, automation tools, small business automation"
 }
     </script>
     <script type="application/ld+json">
@@ -138,7 +138,7 @@
                         "name": "Which tools are used for business process automation?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Options include the features built into the software you already use (invoicing, CRM, email), platforms such as Zapier or Make that connect apps through triggers and actions, and bespoke development when nothing else fits. AI tools can handle parts that involve reading varied text, with a person checking the result."
+                                "text": "Options include the features built into the software you already use (invoicing, CRM, email), platforms such as Zapier or Make that connect apps through triggers and actions, RPA for older desktop applications, and bespoke development when nothing else fits. AI tools can handle parts that involve reading varied text, with a person checking the result."
                         }
                 },
                 {
@@ -146,7 +146,15 @@
                         "name": "Can AI automate a whole process on its own?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Not on its own. AI tools are useful for the parts that involve reading or writing text, such as sorting incoming messages or drafting replies. The rest still requires rules, testing and a person checking what reaches your customers, and where a fixed rule is enough, the rule is more predictable."
+                                "text": "Not on its own. AI agents can chain several actions, but AI tools are most useful for the parts that involve reading or writing text, such as sorting incoming messages or drafting replies. The rest still requires rules, testing and a person checking what reaches your customers, and where a fixed rule is enough, the rule is more predictable."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "What is the difference between RPA and workflow automation?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Workflow automation connects applications directly through their integrations, for example an online form that adds a row to a spreadsheet. RPA uses software robots that imitate a person clicking and typing on screen, which helps with older desktop applications that offer no integration, but needs more maintenance whenever a screen changes. Some enterprise suites, from Microsoft among others, offer both."
                         }
                 },
                 {
@@ -227,7 +235,7 @@
         <header class="mb-8">
             <span style="background:#0EA5E9; color:white; padding:4px 14px; border-radius:999px; font-size:13px; font-weight:600;">Automation</span>
             <p class="text-sm text-gray-500 mt-4 mb-3">
-                <time datetime="2026-09-24">Sep 24, 2026</time> &middot; 11 min read
+                <time datetime="2026-09-24">Sep 24, 2026</time> &middot; 13 min read
             </p>
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Automation process steps: what to expect at each stage</h1>
         </header>
@@ -236,17 +244,16 @@
             <p class="font-bold text-gray-900 mb-3">📑 Article contents</p>
             <ol class="list-decimal list-inside space-y-1 text-sm">
                     <li><a href="#seccion-1" class="toc-link">What is process automation?</a></li>
-                    <li><a href="#seccion-2" class="toc-link">Step 1: choose what to automate first</a></li>
-                    <li><a href="#seccion-3" class="toc-link">Step 2: put numbers on it</a></li>
-                    <li><a href="#seccion-4" class="toc-link">Step 3: write down the process as it is really done</a></li>
-                    <li><a href="#seccion-5" class="toc-link">Step 4: choose the right tools</a></li>
-                    <li><a href="#seccion-6" class="toc-link">Step 5: build a first simple version</a></li>
-                    <li><a href="#seccion-7" class="toc-link">Step 6: test it on real cases</a></li>
-                    <li><a href="#seccion-8" class="toc-link">Step 7: go live, then monitor and maintain</a></li>
+                    <li><a href="#seccion-2" class="toc-link">1. Choose what to automate first</a></li>
+                    <li><a href="#seccion-3" class="toc-link">2. Put numbers on it</a></li>
+                    <li><a href="#seccion-4" class="toc-link">3. Write down the process as it is really done</a></li>
+                    <li><a href="#seccion-5" class="toc-link">4. Choose the right tools</a></li>
+                    <li><a href="#seccion-6" class="toc-link">5. Design and build a first simple version</a></li>
+                    <li><a href="#seccion-7" class="toc-link">6. Test it on real cases</a></li>
+                    <li><a href="#seccion-8" class="toc-link">7. Go live, then monitor and maintain</a></li>
                     <li><a href="#seccion-9" class="toc-link">A complete example, from start to finish</a></li>
                     <li><a href="#seccion-10" class="toc-link">How long does the automation process take?</a></li>
-                    <li><a href="#seccion-11" class="toc-link">What is asked of you</a></li>
-                    <li><a href="#seccion-12" class="toc-link">Doing it yourself, or outsourcing</a></li>
+                    <li><a href="#seccion-11" class="toc-link">Doing it yourself, or outsourcing</a></li>
                     <li><a href="#faq" class="toc-link">Automation process FAQ</a></li>
             </ol>
         </div>
@@ -264,18 +271,27 @@
             <p class="text-gray-700 leading-relaxed mb-4">Process automation, also called business process automation (BPA), means getting software to carry out a sequence of actions on its own whenever a specific event happens, following rules you set. Instead of copying each new order into a spreadsheet, you let it land there by itself.</p>
             <p class="text-gray-700 leading-relaxed mb-4">Every automated workflow has three parts: a trigger (a new lead fills in a form, an email arrives, an invoice falls due), rules (if the customer is new, if the amount is above a set figure) and actions (send a message, create a record in your customer relationship management software, or CRM).</p>
             <p class="text-gray-700 leading-relaxed mb-4">Automation is not the same as going digital: a paper form turned into an online one automates nothing if someone still retypes it. If you are still at that stage, read our guide to <a href="https://webautonomos.es/blog/en/going-digital-as-a-freelancer-where-to-start" style="color:#2563eb;">going digital</a> first.</p>
-            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">What a small business can automate</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">Candidates exist in every area of a business:</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Workflow automation, RPA and AI: the main types</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">Business processes can be automated in different ways, and understanding the terms helps when you compare offers:</p>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
-                <li><strong>Admin:</strong> invoice processing, payment reminders and filing documents.</li>
+                <li><strong>Workflow automation</strong> connects applications through their integrations: a new form entry creates a contact in your address book, then sends an email. It is a common route for a small business.</li>
+                <li><strong>Robotic process automation (RPA)</strong> uses software &quot;robots&quot; that repeat what a person does on screen, clicking and typing in applications that offer no integration. Microsoft offers RPA capabilities for desktop applications in its desktop automation product. RPA is useful when an old program gives no other access, but it breaks more easily when a screen changes.</li>
+                <li><strong>AI-based automation</strong> adds a model that reads messages or documents and decides which path to follow, such as sorting enquiries by subject.</li>
+                <li><strong>End-to-end automation</strong> combines these technologies to cover a whole chain, from order to invoice. Enterprise platforms from Microsoft, IBM and others are designed for this, with compliance and governance features; for a freelancer, one well-chosen automation is a sounder start.</li>
+            </ul>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">What a small business can automate</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">Processes worth automating exist in every area of a business:</p>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
+                <li><strong>Finance and admin:</strong> invoice processing, payment reminders and filing documents.</li>
                 <li><strong>Sales:</strong> adding each new lead to your CRM and following up on quotes.</li>
                 <li><strong>Marketing:</strong> scheduling social media posts, sharing new content and sending a welcome email to new subscribers.</li>
                 <li><strong>Customer service:</strong> confirming appointments and acknowledging every enquiry straight away.</li>
-                <li><strong>Internal work:</strong> weekly reports and manual data entry between two systems.</li>
+                <li><strong>Onboarding:</strong> employee onboarding in larger organisations (creating accounts, granting access, sharing documents), or client onboarding for a freelancer: a welcome email, a contract to sign, a shared folder.</li>
+                <li><strong>Internal reporting:</strong> weekly reports and manual data entry between two systems.</li>
             </ul>
             <p class="text-gray-700 leading-relaxed mb-4">The aim is not to replace people but to take repetitive tasks off your plate, so you and your team can focus on what needs judgement, a personal touch and experience. Done well, automation can save time, reduce errors and improve efficiency.</p>
-            <h2 id="seccion-2" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Step 1: choose what to automate first</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Everything starts not with technology but with a choice, and it matters more than you might think, because a good task badly automated remains useful, whereas a bad task perfectly automated remains a bad idea. In many small businesses, the most tedious job looks like the one to tackle, when a quieter one would pay off sooner.</p>
+            <h2 id="seccion-2" class="text-2xl font-bold text-gray-900 mt-10 mb-4">1. Choose what to automate first</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Everything starts not with technology but with a choice, and it matters more than you might think, because a good task badly automated remains useful, whereas a bad task perfectly automated remains a bad idea. To identify candidates, list the business processes you repeat each week. In many small businesses, the most tedious job looks like the one to tackle, when a quieter one would pay off sooner.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">What makes a good candidate</h3>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
                 <li>It is repetitive: it comes back every day or every week.</li>
@@ -286,32 +302,32 @@
             </ul>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">What to leave to a person</h3>
             <p class="text-gray-700 leading-relaxed mb-4">Rule out anything that calls for judgement, anything that changes every month and anything that happens three times a year. A delicate complaint or a first conversation with a new client is best left to people. Our guide to <a href="https://webautonomos.es/blog/en/which-tasks-to-automate-first" style="color:#2563eb;">which tasks to automate first</a> covers the criteria, and <a href="https://webautonomos.es/blog/en/what-you-should-never-automate" style="color:#2563eb;">what you should never automate</a> the exceptions.</p>
-            <h2 id="seccion-3" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Step 2: put numbers on it</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Before building anything, work out what the job costs your business today. Three numbers are enough:</p>
+            <h2 id="seccion-3" class="text-2xl font-bold text-gray-900 mt-10 mb-4">2. Put numbers on it</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Before building anything, work out what the job costs your business today. Three numbers are enough to understand where the money goes:</p>
             <ol class="list-decimal list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
                 <li>how often it comes back each week or month;</li>
                 <li>how long it takes each time;</li>
                 <li>what an hour of your time, or your team&#x27;s, is worth.</li>
             </ol>
-            <p class="text-gray-700 leading-relaxed mb-4">Multiplied together, they give the annual cost of the manual work, which you compare with an estimate of what the automation would cost, set-up and upkeep included. Our article on <a href="https://webautonomos.es/blog/en/cuanto-cuesta-automatizar-un-proceso-formula" style="color:#2563eb;">what an automation project costs</a> walks through the calculation.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Multiplied together, they give the annual cost of the manual work, which you compare with an estimate of what the automation would cost, set-up and upkeep included. This is, in plain terms, the return on investment (ROI) of the project. Our article on <a href="https://webautonomos.es/blog/en/cuanto-cuesta-automatizar-un-proceso-formula" style="color:#2563eb;">what an automation project costs</a> walks through the calculation.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Set a goal you can measure</h3>
             <p class="text-gray-700 leading-relaxed mb-4">Write down in one sentence what success looks like: &quot;no quote request left unanswered&quot; is a useful goal, &quot;get organised&quot; is not. The three numbers above become your baseline, the yardstick for judging the outcome later.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">When the numbers say stop</h3>
             <p class="text-gray-700 leading-relaxed mb-4">If the numbers don&#x27;t add up, you stop there, and that is already a useful result: you have avoided a pointless expense. Our <a href="https://webautonomos.es/en/automation-diagnostic/" style="color:#2563eb;">free diagnostic</a> does this calculation in about two minutes, with no commitment.</p>
-            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Step 3: write down the process as it is really done</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">If the numbers are good, move on to a step that is easy to underestimate: describing the process as it actually unfolds, not as it should work in theory. You cannot automate what has not first been made clear, and a great deal of the work is done here. If you outsource, this is joint work: you know the job better than anyone, and the person building the automation brings the method.</p>
+            <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">3. Write down the process as it is really done</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">If the numbers are good, move on to a stage that is easy to underestimate: describing the process as it actually unfolds, not as it should work in theory. You cannot automate what has not first been made clear, and a great deal of the work is done here. If you outsource, this is joint work: you know the job better than anyone, and the person building the automation brings the method.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Map who does what, and with which tools</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">Sit down with whoever does the job in your business and note each action as it happens today, exceptions included; a sketch on paper is enough. For each one, write down:</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Sit down with whoever does the job in your business and note each action as it happens today, exceptions included; define where the job starts and where it ends; a sketch on paper of the current job is enough. For each one, write down:</p>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
                 <li>who does it, and when;</li>
                 <li>what information it needs, and where it comes from;</li>
-                <li>which tools are used: a spreadsheet, invoicing software, WhatsApp;</li>
+                <li>which programs are used: a spreadsheet, an invoicing program, WhatsApp;</li>
                 <li>where the result goes, and who uses it next.</li>
             </ul>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Look for exceptions and bottlenecks</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">This often turns up surprises: actions repeated out of habit, figures typed twice, approvals stuck in an inbox, or a forgotten exception that changes everything. Remove these bottlenecks first, reducing the job to what is useful: automating a messy workflow only produces the same mess, faster.</p>
-            <h2 id="seccion-5" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Step 4: choose the right tools</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Technology comes once the job is mapped, not before. The option that fits depends on the volume, the complexity and the software your business already uses. Automation tools fall into four families of solutions:</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Writing it down helps clarify the job, and you often discover surprises: actions repeated out of habit, figures typed twice, approvals stuck in an inbox, or a forgotten exception that changes everything. Fix these bottlenecks first, reducing the job to what is useful: automating a messy job only produces the same mess, faster. Keep this documentation: it becomes the brief for whoever builds the automation.</p>
+            <h2 id="seccion-5" class="text-2xl font-bold text-gray-900 mt-10 mb-4">4. Choose the right tools</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Technology comes once the job is mapped, not before. The option that fits depends on the volume, the complexity, the resources you have (budget, time, skills) and the programs your business already uses. Automation options fall into four families of solutions:</p>
             <div class="overflow-x-auto mb-4">
             <table class="w-full text-sm text-left text-gray-700" style="border-collapse:collapse;">
                 <thead>
@@ -346,21 +362,29 @@
             </table>
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Features already in your software</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">Many invoicing programs, customer management tools, <a href="https://webautonomos.es/blog/en/email-marketing-for-freelancers-beginners-guide" style="color:#2563eb;">email marketing services</a> and social media schedulers include rules, templates and scheduled sends. <a href="https://webautonomos.es/blog/en/set-up-whatsapp-business-for-free" style="color:#2563eb;">WhatsApp Business</a>, for instance, can send an automatic greeting or away message. Explore what you already pay for first: many businesses already have the feature without using it.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Many invoicing programs, customer management tools, <a href="https://webautonomos.es/blog/en/email-marketing-for-freelancers-beginners-guide" style="color:#2563eb;">email marketing services</a> and social media schedulers include rules, templates and scheduled sends. <a href="https://webautonomos.es/blog/en/set-up-whatsapp-business-for-free" style="color:#2563eb;">WhatsApp Business</a>, for instance, can send an automatic greeting or away message. Explore what you already pay for first: many businesses already have the feature available in their plan without using it.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">No-code automation tools such as Zapier</h3>
             <p class="text-gray-700 leading-relaxed mb-4">When a job crosses several programs, an automation platform connects them through a visual editor. Zapier is a well-known option that works with a wide range of apps: each of its workflows, called Zaps, starts with a trigger in one app and runs one or more actions in others. Make and Microsoft Power Automate work in a similar way. These platforms work best for simple flows and teams without a developer; read <a href="https://webautonomos.es/blog/en/automate-without-coding" style="color:#2563eb;">how far you can go without programming</a>.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Check integration, access and compliance</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">Whatever the option, check three points before you commit:</p>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
+                <li><strong>Integration:</strong> the tool should connect directly to the applications you use, through ready-made connectors, so you don&#x27;t create fragile workarounds.</li>
+                <li><strong>Access:</strong> decide which users can see and change the automation, and which accounts it runs under; a shared password in a spreadsheet is a risk.</li>
+                <li><strong>Compliance:</strong> if customer data passes through it, find out where that data is stored and check it against the GDPR.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mb-4">Microsoft, Zapier and Make publish documentation and learning resources for their services, a good way to learn the basics before you commit.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Bespoke development</h3>
             <p class="text-gray-700 leading-relaxed mb-4">If the rules are complex or your existing systems don&#x27;t talk to each other, the remaining solution is custom software. It offers more control and fits your business closely, but it needs a bigger upfront budget and a support plan.</p>
-            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Where AI fits in an automated workflow</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">AI tools can read text written in people&#x27;s own words: sorting incoming emails by subject, extracting the figures from a scanned invoice, or drafting replies and marketing content for you to check. They are not essential. Where a fixed rule is enough, a rule-based step is more predictable and often cheaper. Keep a person reviewing anything an AI step sends to a client, and check how the tool handles personal data. Our overview of <a href="https://webautonomos.es/blog/en/ai-for-freelancers-practical-tools" style="color:#2563eb;">AI tools for freelancers</a> covers practical options.</p>
-            <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Step 5: build a first simple version</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Then you build the automation, which is faster than many expect because you don&#x27;t try to do everything at once. You begin with the core: the simplest version that already adds value to your business. For now, it leaves out:</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Where AI fits in an automated system</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">AI models can read text written in people&#x27;s own words: sorting incoming emails by subject, extracting the figures from a scanned invoice, or drafting replies and marketing content for you to check. They are not essential. AI is not magic, either: a model can misread a message, so test any AI action on genuine examples first. Where a fixed rule is enough, a rule-based action is more predictable and often cheaper. Keep a person reviewing anything an AI model sends to a client, and check how the tool handles personal data. Our overview of <a href="https://webautonomos.es/blog/en/ai-for-freelancers-practical-tools" style="color:#2563eb;">AI tools for freelancers</a> covers practical options. AI agents, which chain several actions on their own, are a newer option; they need the same rules, tests and checks by a person, and you learn quickly where they go wrong.</p>
+            <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">5. Design and build a first simple version</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Design the flow on paper first: the starting event, the rules, the actions and what happens when something goes wrong. That last part, error handling, decides whether a failure stops cleanly or sends a wrong message to a client. Then you build the automation, which is faster than many expect because you don&#x27;t try to do everything at once. You begin with the core: the simplest version that already adds value to your business. For now, it leaves out:</p>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
                 <li>the rare exceptions, which you keep handling by hand;</li>
                 <li>extras such as formatting or summary reports;</li>
                 <li>connections to programs you open once a month.</li>
             </ul>
-            <p class="text-gray-700 leading-relaxed mb-4">This first version is a working base to try on real cases, not the finished product. Starting small makes it easier to check quickly that you are on track and correct course before investing in the details, instead of discovering a large project that doesn&#x27;t do what you wanted.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Think of this first version as a better starting point than a plan on paper: a working base to try on real cases, not the finished product. Starting small makes it easier to check quickly that you are on track and correct course before investing in the details, instead of discovering a large project that doesn&#x27;t do what you wanted.</p>
             <figure class="my-10">
                 <picture>
                     <source type="image/webp" srcset="/assets/automatizar-proceso-paso-a-paso-maquette-en-800.webp?v=1 800w, /assets/automatizar-proceso-paso-a-paso-maquette-en.webp?v=1 1600w" sizes="(max-width: 820px) calc(100vw - 40px), 780px">
@@ -368,25 +392,26 @@
                 </picture>
                 <figcaption class="text-sm text-gray-500 mt-3">Example website of Nogal Furniture on laptop and smartphone.</figcaption>
             </figure>
-            <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Step 6: test it on real cases</h2>
+            <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">6. Test it on real cases</h2>
             <p class="text-gray-700 leading-relaxed mb-4">An automation is judged on actual cases, not on paper: let it run on your own orders and enquiries, and watch what happens.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Run it alongside the manual process</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">For a short period, keep doing the work by hand as well and compare each result with yours: it is a simple, effective way to catch errors. Ask the people in your team who do the job every day to try it too: they are the first to spot what doesn&#x27;t fit. Unforeseen exceptions surface at this point, and that is normal: in practice, almost every process reveals at least one surprise at this stage, which is why testing should not be skipped. You adjust, add the missing cases and test again, until the automation runs smoothly in daily use.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">If the tool allows it, try the automation first in a test environment, with sample records, before it touches your production environment. Then, for a short period, keep doing the job by hand as well and compare each result with yours: it is a simple, effective way to catch errors. Ask the people in your team who do the job every day to try it too: they are the first to spot what doesn&#x27;t fit. Unforeseen exceptions surface at this point, and that is normal: in practice, almost every process reveals at least one surprise at this stage, which is why testing should not be skipped. You adjust, add the missing cases and test again, until the automation runs smoothly in daily use.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Checks before the automation goes live</h3>
             <p class="text-gray-700 leading-relaxed mb-4">Before you approve the version, ensure that:</p>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
                 <li>the result matches what you would have produced by hand;</li>
                 <li>incomplete data stops the flow and warns you, rather than sending something wrong;</li>
+                <li>it has been tried in a test environment before you deploy it;</li>
                 <li>someone receives an alert when an error occurs;</li>
                 <li>everyone in your team understands what the automation does and what is still their job.</li>
             </ul>
-            <h2 id="seccion-8" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Step 7: go live, then monitor and maintain</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Once the version is proven, it goes live and keeps running on its own. Going live is not the end, though: it is the move from &quot;it works today&quot; to &quot;it will still work a year from now&quot;.</p>
-            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Set up alerts and document the system</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">Put alerts in place to ensure a failure never goes unnoticed. Then write one page on what the automation does, including which tools it uses, which rules it follows and who to call if it stops, so your business doesn&#x27;t depend on one person&#x27;s memory. Tell your team what changes too: who checks the alerts, and which tasks they no longer need to do.</p>
+            <h2 id="seccion-8" class="text-2xl font-bold text-gray-900 mt-10 mb-4">7. Go live, then monitor and maintain</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Once the version is proven, you deploy it to production and it keeps running on its own. Going live is not the end, though: it is the move from &quot;it works today&quot; to &quot;it will still work a year from now&quot;.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Set up monitoring and write the documentation</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">Monitoring means alerts in place that ensure a failure never goes unnoticed, plus a quick look at the activity history now and then. Then write one page on what the automation does, including which programs it uses, which rules it follows and who to call if it stops, so your business doesn&#x27;t depend on one person&#x27;s memory. Tell the users in your team what changes too: who checks the alerts, and which tasks they no longer do by hand.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Plan maintenance and measure the results</h3>
             <p class="text-gray-700 leading-relaxed mb-4">Software gets updated and your business changes, so automated workflows need to keep up. Agree on who handles maintenance and when the system will be reviewed. Automations without that safety net can fail in silence: read <a href="https://webautonomos.es/blog/en/maintenance-the-hidden-cost-of-automation" style="color:#2563eb;">maintenance, the hidden cost of automation</a> before you go live.</p>
-            <p class="text-gray-700 leading-relaxed mb-4">Finally, measure success against the figures from step 2: time saved, errors avoided, response times. That comparison shows the efficiency you have gained and tells you whether to keep improving this automation or move on to the next process.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Finally, measure success against the figures from step 2: time saved, errors avoided, response times. That comparison shows the efficiency you have gained and tells you whether to keep improving this automation or move on to the next one. Each project also helps you learn what to automate next.</p>
             <h2 id="seccion-9" class="text-2xl font-bold text-gray-900 mt-10 mb-4">A complete example, from start to finish</h2>
             <p class="text-gray-700 leading-relaxed mb-4">A typical situation ties the seven steps together. Picture a physiotherapist in Alicante whose patients book by phone, and who loses time every day confirming appointments:</p>
             <ol class="list-decimal list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
@@ -394,13 +419,13 @@
                 <li><strong>The numbers:</strong> about twenty minutes a day, many hours over a year; the calculation says yes.</li>
                 <li><strong>The process:</strong> describing it reveals a key detail, since some first-time patients need directions that a generic message cannot give.</li>
                 <li><strong>The tools:</strong> the booking software may already offer reminders; if not, an automation platform can fill the gap.</li>
-                <li><strong>The first version:</strong> a simple reminder for regular patients only.</li>
+                <li><strong>The first version:</strong> a simple reminder for regular patients only; no AI is needed, since a fixed rule does the job.</li>
                 <li><strong>The test:</strong> a week on actual appointments brings up the patient who replies to change the time; that case is added.</li>
                 <li><strong>Going live:</strong> with an alert if something fails, and a review every few months.</li>
             </ol>
             <p class="text-gray-700 leading-relaxed mb-4">The result would be twenty minutes a day recovered and a special case handled properly, with nothing technical asked of the physiotherapist.</p>
             <h2 id="seccion-10" class="text-2xl font-bold text-gray-900 mt-10 mb-4">How long does the automation process take?</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">For a simple, well-chosen task, the whole process takes days rather than months. Choosing and costing it take minutes, and describing it takes a conversation. Building and testing the automation make up the bulk of the timeline, which grows when:</p>
+            <p class="text-gray-700 leading-relaxed mb-4">For a simple, well-chosen task, the whole project does not take months. Choosing and costing it take minutes, and describing it takes a conversation. Building and testing the automation make up the bulk of the timeline, which grows when:</p>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
                 <li>there are many exceptions;</li>
                 <li>several apps or systems have to be connected;</li>
@@ -408,14 +433,7 @@
                 <li>nobody in the team has time to test.</li>
             </ul>
             <p class="text-gray-700 leading-relaxed mb-4">Projects that drag on are often the ones that tried to cover every case at once. Keeping the first version small is not a limitation: it is a strategy that lets you see results early and decide what comes next.</p>
-            <h2 id="seccion-11" class="text-2xl font-bold text-gray-900 mt-10 mb-4">What is asked of you</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Your part is lighter than many business owners think, but it is essential, and it is concentrated on two stages:</p>
-            <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
-                <li><strong>Describing the process (step 3):</strong> nobody understands the job better than the person who does it.</li>
-                <li><strong>Checking the tests (step 6):</strong> your eye decides whether the result is correct, because it is your trade.</li>
-            </ul>
-            <p class="text-gray-700 leading-relaxed mb-4">If someone else builds the automation, the rest (the technical work, the adjustments, going live) mainly asks you to stay reachable. You don&#x27;t need to understand how it is made, only to confirm that it does what it should.</p>
-            <h2 id="seccion-12" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Doing it yourself, or outsourcing</h2>
+            <h2 id="seccion-11" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Doing it yourself, or outsourcing</h2>
             <p class="text-gray-700 leading-relaxed mb-4">These steps are the same whether you outsource or build the automation yourself with a visual tool. The difference is not the path, but who carries each stage. If you do it yourself, choosing and costing the job are where it is easiest to go wrong: the temptation to automate the tedious rather than the profitable catches professionals and amateurs alike. Writing down the process and testing on real cases stay non-negotiable.</p>
             <p class="text-gray-700 leading-relaxed mb-4">Doing it yourself can work for simple automations with Zapier or Make, even without technical experience. If your business has several programs to connect, many exceptions or little time to spare, outsourcing can save you time and nasty surprises. Our comparison of <a href="https://webautonomos.es/blog/en/hire-or-automate" style="color:#2563eb;">hiring someone or investing in automation</a> can help you decide, and our article on <a href="https://webautonomos.es/blog/en/costliest-automation-mistakes" style="color:#2563eb;">the costliest automation mistakes for small businesses</a> shows what to watch for.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Mistakes to avoid, whoever builds it</h3>
@@ -447,11 +465,15 @@
                 </details>
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Which tools are used for business process automation?</summary>
-                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Options include the features built into the software you already use (invoicing, CRM, email), platforms such as Zapier or Make that connect apps through triggers and actions, and bespoke development when nothing else fits. AI tools can handle parts that involve reading varied text, with a person checking the result.</div>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Options include the features built into the software you already use (invoicing, CRM, email), platforms such as Zapier or Make that connect apps through triggers and actions, RPA for older desktop applications, and bespoke development when nothing else fits. AI tools can handle parts that involve reading varied text, with a person checking the result.</div>
                 </details>
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Can AI automate a whole process on its own?</summary>
-                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Not on its own. AI tools are useful for the parts that involve reading or writing text, such as sorting incoming messages or drafting replies. The rest still requires rules, testing and a person checking what reaches your customers, and where a fixed rule is enough, the rule is more predictable.</div>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Not on its own. AI agents can chain several actions, but AI tools are most useful for the parts that involve reading or writing text, such as sorting incoming messages or drafting replies. The rest still requires rules, testing and a person checking what reaches your customers, and where a fixed rule is enough, the rule is more predictable.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">What is the difference between RPA and workflow automation?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Workflow automation connects applications directly through their integrations, for example an online form that adds a row to a spreadsheet. RPA uses software robots that imitate a person clicking and typing on screen, which helps with older desktop applications that offer no integration, but needs more maintenance whenever a screen changes. Some enterprise suites, from Microsoft among others, offer both.</div>
                 </details>
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Where do I actually start?</summary>
