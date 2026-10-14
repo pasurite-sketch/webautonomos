@@ -131,7 +131,7 @@ UI = {
                cta_text='Páginas web profesionales por 15 €/mes · Sin alta · Sin permanencia',
                cta_btn='Pedir gratis la demo de tu web →', cta_href='/pide-tu-demo', author_desc=
                'Agencia web especializada en autónomos, pequeñas y medianas empresas. '
-               'Páginas web profesionales desde 15 €/mes, sin permanencia.',
+               'Páginas web profesionales por solo 15 €/mes, sin alta, sin permanencia.',
                legal='Aviso legal', privacy='Privacidad', contact='Contacto'),
     'val': dict(home='Inici', sectors='Webs per sector', sector_q='Treballes en aquest sector?', sector_link='Veure la web per a {name} →', seo_q='Prefereixes que ho fem nosaltres?', seo_link='SEO local per a autònoms des de 15 €/mes →', blog='Blog', back='← Tornar al blog',
                 toc='📑 Contingut de l\'article', faq='Preguntes freqüents',
