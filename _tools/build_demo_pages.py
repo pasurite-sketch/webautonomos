@@ -31,7 +31,7 @@ DEMO_FR=[
  # --- en-tête / métadonnées ---
  ('<html lang="es">', '<html lang="fr">', 1),
  ('<title>Tu Web Profesional Solo 15€/mes — Demo Gratis en 24h | WebAutonomos</title>',
-  '<title>Votre site professionnel pour 15 €/mois — Démo gratuite en 24 h | WebAutonomos</title>', 1),
+  '<title>Votre site pour 15 €/mois — Démo gratuite en 24 h</title>', 1),
  ('<meta name="description" content="Página web profesional para autónomos por solo 15€/mes. Te enviamos tu demo personalizada en menos de 24 horas. Sin alta, sin permanencia.">',
   '<meta name="description" content="Site web professionnel pour indépendants à 15 €/mois. Nous vous envoyons votre démo personnalisée en moins de 24 heures. Sans frais d\'installation, sans engagement.">\n'
   '<link rel="canonical" href="https://webautonomos.es/demandez-votre-demo">\n'
@@ -197,7 +197,7 @@ MERCI_FR=[
 DEMO_EN=[
  ('<html lang="es">', '<html lang="en">', 1),
  ('<title>Tu Web Profesional Solo 15€/mes — Demo Gratis en 24h | WebAutonomos</title>',
-  '<title>Your professional website for just €15/month — Free demo in 24h | WebAutonomos</title>', 1),
+  '<title>Your website for just €15/month — Free demo in 24h</title>', 1),
  ('<meta name="description" content="Página web profesional para autónomos por solo 15€/mes. Te enviamos tu demo personalizada en menos de 24 horas. Sin alta, sin permanencia.">',
   '<meta name="description" content="A professional website for the self-employed from just €15/month. We send you your personalised demo in under 24 hours. No setup fee, no commitment.">\n'
   '<link rel="canonical" href="https://webautonomos.es/get-your-demo">\n'
