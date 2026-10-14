@@ -389,6 +389,12 @@ def copie(p, src, lang, T):
     # liens
     ancien, cible = p['croise']
     s = liens_a(s, NAV[lang] + [(ancien, cible[lang])])
+    # libellés du pied de page légal dans la langue de la copie (14/10/2026)
+    LIBELLES = {'fr': {'mentions-legales/': 'Mentions légales', 'confidentialite/': 'Confidentialité'},
+                'en': {'legal-notice/': 'Legal notice', 'privacy/': 'Privacy'}}
+    for chemin, lib in LIBELLES[lang].items():
+        s = re.sub(r'(<a href="/%s/%s">)(Aviso legal|Privacidad)(</a>)' % (lang, re.escape(chemin)),
+                   lambda mo: mo.group(1) + lib + mo.group(3), s)
     for es_txt, trad in p['wa'].items():
         s = s.replace('?text=' + es_txt + '"', '?text=' + trad[lang] + '"')
     return s, n
