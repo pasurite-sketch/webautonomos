@@ -2134,14 +2134,6 @@
         <lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
     </url>
     <url>
-        <loc>https://webautonomos.es/aviso-legal/</loc>
-        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/aviso-legal/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/en/legal-notice/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/mentions-legales/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/aviso-legal/"/>
-        <lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://webautonomos.es/carpinteros/</loc>
         <lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
@@ -2152,14 +2144,6 @@
     <url>
         <loc>https://webautonomos.es/contacto</loc>
         <lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://webautonomos.es/cookies/</loc>
-        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/cookies/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/en/cookies/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/cookies/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/cookies/"/>
-        <lastmod>2026-08-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/demandez-votre-demo</loc>
@@ -2206,14 +2190,6 @@
         <lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
-        <loc>https://webautonomos.es/en/cookies/</loc>
-        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/cookies/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/en/cookies/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/cookies/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/cookies/"/>
-        <lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://webautonomos.es/en/dental-website-design</loc>
         <lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
@@ -2226,28 +2202,12 @@
         <lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
-        <loc>https://webautonomos.es/en/legal-notice/</loc>
-        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/aviso-legal/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/en/legal-notice/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/mentions-legales/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/aviso-legal/"/>
-        <lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://webautonomos.es/en/physiotherapy-website-design</loc>
         <lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/en/pricing</loc>
         <lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://webautonomos.es/en/privacy/</loc>
-        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/privacidad/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/en/privacy/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/confidentialite/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/privacidad/"/>
-        <lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/en/services</loc>
@@ -2314,24 +2274,8 @@
         <lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
-        <loc>https://webautonomos.es/fr/confidentialite/</loc>
-        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/privacidad/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/en/privacy/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/confidentialite/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/privacidad/"/>
-        <lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://webautonomos.es/fr/contact</loc>
         <lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://webautonomos.es/fr/cookies/</loc>
-        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/cookies/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/en/cookies/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/cookies/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/cookies/"/>
-        <lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/fr/diagnostic-automatisation/</loc>
@@ -2340,14 +2284,6 @@
     <url>
         <loc>https://webautonomos.es/fr/meilleurs-createurs-de-sites-pour-independants</loc>
         <lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://webautonomos.es/fr/mentions-legales/</loc>
-        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/aviso-legal/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/en/legal-notice/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/mentions-legales/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/aviso-legal/"/>
-        <lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/fr/prestations</loc>
@@ -2420,14 +2356,6 @@
     <url>
         <loc>https://webautonomos.es/preguntas</loc>
         <lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://webautonomos.es/privacidad/</loc>
-        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/privacidad/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/en/privacy/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/confidentialite/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/privacidad/"/>
-        <lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     </url>
     <url>
         <loc>https://webautonomos.es/psicologos/</loc>
