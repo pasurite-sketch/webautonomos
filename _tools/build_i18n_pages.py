@@ -86,7 +86,7 @@ PAGES = [
         croise=('/visibilidad-ia/', VIS), ld_id='ld-graph',
         meta={
             'fr': dict(title="Automatisation des processus : calculez si c'est rentable",
-                       desc="Calculez gratuitement ce que vous coûtent vos tâches répétitives et s'il est rentable de les automatiser. Prix ferme, devis sous 48 h. 4 questions, 2 minutes.",
+                       desc="Calculez gratuitement le coût de vos tâches répétitives et s'il est rentable de les automatiser. Prix ferme, devis sous 48 h. 4 questions, 2 minutes.",
                        og_title="Automatisation des processus pour indépendants et PME : calculez si c'est rentable",
                        og_desc="Calculez gratuitement ce que vous coûtent chaque année vos tâches administratives et s'il vaut la peine de les automatiser.",
                        tw_desc="Diagnostic d'automatisation gratuit. Sans inscription.",

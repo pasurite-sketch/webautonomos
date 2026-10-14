@@ -801,8 +801,7 @@ def local_search_uk(trade):
 TRADES = dict(
     COMMUN_TRADES,
     title="Web design for tradesmen in the UK: €15/month",
-    description="Web design for tradesmen in the UK: your services, registrations and legal pages, built around UK "
-                "consumer rules. Free demo in 24h, €15/month, no VAT added.",
+    description='Web design for UK tradesmen: your services, registrations and legal pages, built around UK consumer rules. Free demo in 24h, €15/month, no VAT added.',
     service_name="Web design for tradesmen in the UK",
     audience="Tradespeople and small building firms in the United Kingdom",
     crumb='Web design for tradesmen',
@@ -1236,8 +1235,7 @@ SRC_PLUMB_UK = [
 ELEC_UK = dict(
     COMMUN_TRADES,
     title="Web design for electricians in the UK: €15/month",
-    description="Web design for electricians in the UK: scheme registration, services and legal pages, built around "
-                "Part P and UK consumer rules. Free demo in 24h, €15/month.",
+    description='Web design for UK electricians: scheme registration, services and legal pages, built around Part P and UK consumer rules. Free demo in 24h, €15/month.',
     service_name="Web design for electricians in the UK",
     audience="Electricians and electrical contractors in the United Kingdom",
     crumb='Web design for electricians',

@@ -59,7 +59,7 @@ C = {}
 C['fr'] = dict(
     html_lang='fr', og_locale='fr_FR', unit='mois', area=['ES'],
     title="Site internet pour francophones en Espagne : 15 €/mois",
-    description="Votre site d'indépendant ou d'entreprise en Espagne, conforme à la loi espagnole (aviso legal, RGPD, cookies) et suivi en français. Démo gratuite en 24 h, 15 €/mois HT.",
+    description="Votre site d'indépendant en Espagne, conforme à la loi espagnole (aviso legal, RGPD, cookies) et suivi en français. Démo gratuite en 24 h, 15 €/mois HT.",
     service_name="Création de site internet pour francophones installés en Espagne",
     crumb_home='Accueil', crumb='Francophones en Espagne',
     badge='Francophones installés en Espagne',

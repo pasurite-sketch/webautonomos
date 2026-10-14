@@ -147,8 +147,7 @@ THERA = {}
 THERA['fr'] = dict(
     html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
     title="Site internet pour psychologue et thérapeute : 15 €/mois",
-    description="Site internet pour psychologue, psychothérapeute ou praticien : titre et RPPS, mentions légales, "
-                "formulaire sans motif de consultation. Démo gratuite en 24 h, 15 €/mois HT.",
+    description='Site internet pour psychologue ou psychothérapeute : titre et RPPS, formulaire sans motif de consultation. Démo gratuite en 24 h, 15 €/mois HT.',
     service_name="Création de site internet pour psychologues et thérapeutes",
     audience="Psychologues, psychothérapeutes et praticiens de l'accompagnement",
     crumb_home='Accueil', crumb='Psychologues et thérapeutes',
@@ -717,8 +716,7 @@ MENU = {}
 MENU['fr'] = dict(
     html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
     title="Site internet pour menuisier : 15 €/mois, démo en 24 h",
-    description="Site internet pour menuisier bois, alu ou PVC : vos réalisations, décennale, médiateur, mentions "
-                "légales et encart France Rénov'. Démo gratuite en 24 h, 15 €/mois HT.",
+    description="Site internet pour menuisier bois, alu ou PVC : réalisations, décennale, médiateur, mentions légales, France Rénov'. Démo gratuite en 24 h, 15 €/mois HT.",
     service_name="Création de site internet pour menuisiers",
     audience="Menuisiers, ébénistes, poseurs de fenêtres et agenceurs de cuisine",
     crumb_home='Accueil', crumb='Menuisiers',
@@ -960,8 +958,7 @@ MENU['fr'] = dict(
 MENU['en'] = dict(
     html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
     title="Websites for carpenters and joiners in Spain: €15/month",
-    description="Websites for English-speaking carpenters, joiners and kitchen fitters in Spain: your work, your legal "
-                "notice and Spanish consumer rules. Free demo in 24h, €15/month + VAT.",
+    description='Websites for English-speaking carpenters and kitchen fitters in Spain: your work, legal notice, consumer rules. Free demo in 24h, €15/month + VAT.',
     service_name="Web design for carpenters and joiners in Spain",
     audience="English-speaking carpenters, joiners, kitchen fitters and window installers in Spain",
     crumb_home='Home', crumb='Carpenters and joiners',
@@ -1315,8 +1312,7 @@ KINE = {}
 KINE['fr'] = dict(
     html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
     title="Site internet pour kinésithérapeute : 15 €/mois",
-    description="Site internet pour kinésithérapeute pensé pour le code de déontologie : RPPS, honoraires, "
-                "spécificités reconnues, sans référencement interdit. Démo gratuite en 24 h, 15 €/mois HT.",
+    description='Site internet pour kinésithérapeute pensé pour le code de déontologie : RPPS, honoraires, sans référencement interdit. Démo gratuite en 24 h, 15 €/mois HT.',
     service_name="Création de site internet pour masseurs-kinésithérapeutes",
     audience="Masseurs-kinésithérapeutes libéraux",
     crumb_home='Accueil', crumb='Kinésithérapeutes',
@@ -1444,8 +1440,7 @@ KINE['fr'] = dict(
 KINE['en'] = dict(
     html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
     title="Websites for physiotherapists in Spain: €15/month",
-    description="Websites for English-speaking physiotherapists in Spain, built around Spanish Colegio, "
-                "health-advertising and practice rules. Free demo in 24h, €15/month + VAT.",
+    description='Websites for English-speaking physiotherapists in Spain, built around Colegio, health-advertising and practice rules. Free demo in 24h, €15/month + VAT.',
     service_name="Web design for physiotherapists in Spain",
     audience="English-speaking physiotherapists practising in Spain",
     crumb_home='Home', crumb='Physiotherapists',
@@ -1799,8 +1794,7 @@ DENT = {}
 DENT['fr'] = dict(
     html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
     title="Site internet pour dentiste : 15 €/mois, démo en 24 h",
-    description="Site internet pour chirurgien-dentiste pensé pour le code de déontologie et les recommandations de "
-                "l'Ordre : honoraires, titres, sans avis ni référencement interdit. Démo gratuite en 24 h, 15 €/mois HT.",
+    description='Site internet pour dentiste pensé pour la déontologie : honoraires, titres, sans avis ni référencement interdit. Démo gratuite en 24 h, 15 €/mois HT.',
     service_name="Création de site internet pour chirurgiens-dentistes",
     audience="Chirurgiens-dentistes libéraux",
     crumb_home='Accueil', crumb='Dentistes',
@@ -1965,8 +1959,7 @@ DENT['fr'] = dict(
 DENT['en'] = dict(
     html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
     title="Websites for dentists and dental clinics in Spain: €15/month",
-    description="Websites for English-speaking dentists and dental clinics in Spain, built around Spanish rules on "
-                "health advertising, prices and titles. Free demo in 24h, €15/month + VAT.",
+    description='Websites for English-speaking dentists in Spain, built around Spanish rules on health advertising, prices and titles. Free demo in 24h, €15/month + VAT.',
     service_name="Web design for dentists and dental clinics in Spain",
     audience="English-speaking dentists and dental clinic owners in Spain",
     crumb_home='Home', crumb='Dentists',
@@ -2351,8 +2344,7 @@ PLOMB = {}
 PLOMB['fr'] = dict(
     html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
     title="Création de site internet pour plombier : 15 €/mois",
-    description="Création de site internet pour plombier et chauffagiste : tarifs de dépannage, devis, pompes à "
-                "chaleur, encart France Rénov', mentions légales. Démo gratuite en 24 h, 15 €/mois HT.",
+    description="Site internet pour plombier et chauffagiste : tarifs de dépannage, devis, pompes à chaleur, France Rénov'. Démo gratuite en 24 h, 15 €/mois HT.",
     service_name="Création de site internet pour plombiers et chauffagistes",
     audience="Plombiers, chauffagistes, installateurs de pompes à chaleur et dépanneurs sanitaires",
     crumb_home='Accueil', crumb='Plombiers',
@@ -2571,8 +2563,7 @@ PLOMB['fr'] = dict(
 PLOMB['en'] = dict(
     html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
     title="Websites for plumbers in Spain: €15/month, free demo",
-    description="Websites for English-speaking plumbers and heating engineers in Spain: RITE, gas and F-gas rules, "
-                "call-outs, legal notice. Free demo in 24h, €15/month + VAT.",
+    description='Websites for English-speaking plumbers in Spain: RITE, gas and F-gas rules, call-outs, heating, legal notice. Free demo in 24h, €15/month + VAT.',
     service_name="Web design for plumbers and heating engineers in Spain",
     audience="English-speaking plumbers, heating engineers, gas engineers and air-conditioning installers in Spain",
     crumb_home='Home', crumb='Plumbers and heating engineers',
@@ -2887,8 +2878,7 @@ ELEC = {}
 ELEC['fr'] = dict(
     html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
     title="Création de site internet pour électricien : 15 €/mois",
-    description="Création de site internet pour électricien : tarifs de dépannage, Consuel, bornes de recharge, "
-                "photovoltaïque, encart France Rénov'. Démo gratuite en 24 h, 15 €/mois HT.",
+    description="Site internet pour électricien : tarifs de dépannage, Consuel, bornes de recharge, photovoltaïque, France Rénov'. Démo gratuite en 24 h, 15 €/mois HT.",
     service_name="Création de site internet pour électriciens",
     audience="Électriciens, installateurs de bornes de recharge et de panneaux photovoltaïques",
     crumb_home='Accueil', crumb='Électriciens',
@@ -3110,8 +3100,7 @@ ELEC['fr'] = dict(
 ELEC['en'] = dict(
     html_lang='en', og_locale='en_GB', unit='month', area=['ES'],
     title="Websites for electricians in Spain: €15/month, free demo",
-    description="Websites for English-speaking electricians in Spain: empresa instaladora rules, the boletín, EV "
-                "chargers, solar, legal notice. Free demo in 24h, €15/month + VAT.",
+    description='Websites for English-speaking electricians in Spain: empresa instaladora, boletín, EV chargers, solar, legal notice. Free demo in 24h, €15/month + VAT.',
     service_name="Web design for electricians in Spain",
     audience="English-speaking electricians, EV charger installers and solar installers in Spain",
     crumb_home='Home', crumb='Electricians',
@@ -3344,8 +3333,7 @@ ARTI = {}
 ARTI['fr'] = dict(
     html_lang='fr', og_locale='fr_FR', unit='mois', area=['FR', 'ES'],
     title="Création de site internet pour artisan : 15 €/mois",
-    description="Création de site internet pour artisan du bâtiment : réalisations, devis, assurance, médiateur, "
-                "encart France Rénov'. Démo gratuite en 24 h, 15 €/mois HT, sans engagement.",
+    description="Site internet pour artisan du bâtiment : réalisations, devis, assurance, médiateur, encart France Rénov'. Démo gratuite en 24 h, 15 €/mois HT.",
     service_name="Création de site internet pour artisans du bâtiment",
     audience="Artisans du bâtiment et de la rénovation : maçons, peintres, carreleurs, plaquistes, couvreurs, "
              "plombiers, électriciens et menuisiers",

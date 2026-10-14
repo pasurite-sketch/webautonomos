@@ -33,7 +33,7 @@ DEMO_FR=[
  ('<title>Tu Web Profesional Solo 15€/mes — Demo Gratis en 24h | WebAutonomos</title>',
   '<title>Votre site pour 15 €/mois — Démo gratuite en 24 h</title>', 1),
  ('<meta name="description" content="Página web profesional para autónomos por solo 15€/mes. Te enviamos tu demo personalizada en menos de 24 horas. Sin alta, sin permanencia.">',
-  '<meta name="description" content="Site web professionnel pour indépendants à 15 €/mois. Nous vous envoyons votre démo personnalisée en moins de 24 heures. Sans frais d\'installation, sans engagement.">\n'
+  '<meta name="description" content="Site web professionnel pour indépendants à 15 €/mois. Votre démo personnalisée en moins de 24 heures, sans frais d\'installation ni engagement.">\n'
   '<link rel="canonical" href="https://webautonomos.es/demandez-votre-demo">\n'
   '<link rel="alternate" hreflang="es" href="https://webautonomos.es/pide-tu-demo">\n'
   '<link rel="alternate" hreflang="fr" href="https://webautonomos.es/demandez-votre-demo">\n'
