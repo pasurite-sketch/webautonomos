@@ -180,6 +180,8 @@ def page(lang, url, title, desc, locale, crumb, h1, body, faq, css):
 <meta property="og:locale" content="%(locale)s">
 <meta property="og:site_name" content="WebAutonomos">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="%(title)s">
+<meta name="twitter:description" content="%(desc)s">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">

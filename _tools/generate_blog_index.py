@@ -254,6 +254,8 @@ def build(data):
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="WebAutonomos">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{H.escape(desc)}">
 
 <link rel="icon" href="{BASE}/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -469,8 +471,8 @@ def main():
     if page.count(chapeau) != 1:
         problems.append(('chapeau', f'« {chapeau} » trouve {page.count(chapeau)}x, attendu 1'))
     # Meta description et og:description : meme nombre.
-    if page.count(f'{n_defaut} artículos en {NOMS[defaut]}') != 2:
-        problems.append(('meta description', f'"{n_defaut} artículos en {NOMS[defaut]}" attendu 2x'))
+    if page.count(f'{n_defaut} artículos en {NOMS[defaut]}') != 3:
+        problems.append(('meta description', f'"{n_defaut} artículos en {NOMS[defaut]}" attendu 3x (meta, og, twitter)'))
     # Aucun autre compteur fige : tout "<n> artículos" doit valoir le nombre de la langue par defaut.
     stale = {n for n in re.findall(r'(\d+) artículos', page) if int(n) != n_defaut}
     if stale:
