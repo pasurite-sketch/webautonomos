@@ -1583,11 +1583,11 @@ PREFILL_BLOCKS = {
     '\u00bfQuieres una web as\u00ed para tu negocio?':
         'Vous voulez un site comme celui-ci pour votre activit\u00e9 ?',
     'P\u00e1ginas web profesionales desde 15 \u20ac/mes \u00b7 Sin permanencia':
-        'Sites web professionnels \u00e0 partir de 15 \u20ac/mois \u00b7 Sans engagement',
+        'Sites web professionnels pour seulement 15 \u20ac/mois \u00b7 Sans frais d\'installation \u00b7 Sans engagement',
     'Agencia web especializada en aut\u00f3nomos, peque\u00f1as y medianas empresas. '
     'P\u00e1ginas web profesionales desde 15 \u20ac/mes, sin permanencia.':
         'Agence web sp\u00e9cialis\u00e9e dans les ind\u00e9pendants et les petites et '
-        'moyennes entreprises. Sites web professionnels \u00e0 partir de 15 \u20ac/mois, sans engagement.',
+        'moyennes entreprises. Sites web professionnels pour seulement 15 \u20ac/mois, sans frais d\'installation, sans engagement.',
     '\u00bfCu\u00e1nto cuesta y cu\u00e1nto tarda?':
         'Combien \u00e7a co\u00fbte et combien de temps \u00e7a prend ?',
     '15 euros al mes, sin alta y sin permanencia, o 349 euros en pago \u00fanico. '

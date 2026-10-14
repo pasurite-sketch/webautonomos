@@ -128,7 +128,7 @@ UI = {
     'es': dict(home='Inicio', sectors='Webs por sector', sector_q='¿Trabajas en este sector?', sector_link='Ver la web para {name} →', seo_q='¿Prefieres que lo hagamos por ti?', seo_link='SEO local para autónomos desde 15 €/mes →', blog='Blog', back='← Volver al blog',
                toc='📑 Contenido del artículo', faq='Preguntas frecuentes',
                read='min de lectura', cta_title='¿Quieres una web así para tu negocio?',
-               cta_text='Páginas web profesionales por 15 €/mes · Sin alta · Sin permanencia',
+               cta_text='Páginas web profesionales por solo 15 €/mes · Sin alta · Sin permanencia',
                cta_btn='Pedir gratis la demo de tu web →', cta_href='/pide-tu-demo', author_desc=
                'Agencia web especializada en autónomos, pequeñas y medianas empresas. '
                'Páginas web profesionales por solo 15 €/mes, sin alta, sin permanencia.',
@@ -136,7 +136,7 @@ UI = {
     'val': dict(home='Inici', sectors='Webs per sector', sector_q='Treballes en aquest sector?', sector_link='Veure la web per a {name} →', seo_q='Prefereixes que ho fem nosaltres?', seo_link='SEO local per a autònoms des de 15 €/mes →', blog='Blog', back='← Tornar al blog',
                 toc='📑 Contingut de l\'article', faq='Preguntes freqüents',
                 read='min de lectura', cta_title='Vols una web així per al teu negoci?',
-                cta_text='Pàgines web professionals per 15 €/mes · Sense alta · Sense permanència',
+                cta_text='Pàgines web professionals per només 15 €/mes · Sense alta · Sense permanència',
                 cta_btn='Demana gratis la demo de la teua web →', cta_href='/pide-tu-demo', author_desc=
                 'Agència web especialitzada en autònoms, xicotetes i mitjanes empreses. '
                 'Pàgines web professionals per només 15 €/mes, sense alta, sense permanència.',
@@ -144,7 +144,7 @@ UI = {
     'en': dict(home='Home', sectors='Websites by trade', sector_q='', sector_link='', blog='Blog', back='← Back to the blog',
                toc='📑 Article contents', faq='Frequently asked questions',
                read='min read', cta_title='Want a website like this for your business?',
-               cta_text='Professional websites for €15/month · No setup fee · No commitment',
+               cta_text='Professional websites for just €15/month · No setup fee · No commitment',
                cta_btn='Get a free demo of your website →', cta_href='/get-your-demo', author_desc=
                'Web agency specialising in freelancers and small and medium-sized businesses. '
                'Professional websites for just €15/month, no setup fee, no commitment.',
@@ -152,10 +152,10 @@ UI = {
     'fr': dict(home='Accueil', sectors='Sites par métier', sector_q='', sector_link='', blog='Blog', back='← Retour au blog',
                toc='📑 Sommaire de l\'article', faq='Questions fréquentes',
                read='min de lecture', cta_title='Vous voulez un site comme celui-ci ?',
-               cta_text='Sites web professionnels pour 15 €/mois · Sans frais d\'ouverture · Sans engagement',
+               cta_text='Sites web professionnels pour seulement 15 €/mois · Sans frais d\'installation · Sans engagement',
                cta_btn='Demander gratuitement la démo de votre site →', cta_href='/demandez-votre-demo', author_desc=
                'Agence web spécialisée dans les indépendants et les petites et moyennes entreprises. '
-               'Sites web professionnels pour seulement 15 €/mois, sans frais d'installation, sans engagement.',
+               'Sites web professionnels pour seulement 15 €/mois, sans frais d\'installation, sans engagement.',
                legal='Mentions légales', privacy='Confidentialité', contact='Contact'),
 }
 
