@@ -139,7 +139,7 @@ UI = {
                 cta_text='Pàgines web professionals per 15 €/mes · Sense alta · Sense permanència',
                 cta_btn='Demana gratis la demo de la teua web →', cta_href='/pide-tu-demo', author_desc=
                 'Agència web especialitzada en autònoms, xicotetes i mitjanes empreses. '
-                'Pàgines web professionals des de 15 €/mes, sense permanència.',
+                'Pàgines web professionals per només 15 €/mes, sense alta, sense permanència.',
                 legal='Avís legal', privacy='Privacitat', contact='Contacte'),
     'en': dict(home='Home', sectors='Websites by trade', sector_q='', sector_link='', blog='Blog', back='← Back to the blog',
                toc='📑 Article contents', faq='Frequently asked questions',
@@ -147,7 +147,7 @@ UI = {
                cta_text='Professional websites for €15/month · No setup fee · No commitment',
                cta_btn='Get a free demo of your website →', cta_href='/get-your-demo', author_desc=
                'Web agency specialising in freelancers and small and medium-sized businesses. '
-               'Professional websites from €15/month, no commitment.',
+               'Professional websites for just €15/month, no setup fee, no commitment.',
                legal='Legal notice', privacy='Privacy', contact='Contact'),
     'fr': dict(home='Accueil', sectors='Sites par métier', sector_q='', sector_link='', blog='Blog', back='← Retour au blog',
                toc='📑 Sommaire de l\'article', faq='Questions fréquentes',
@@ -155,7 +155,7 @@ UI = {
                cta_text='Sites web professionnels pour 15 €/mois · Sans frais d\'ouverture · Sans engagement',
                cta_btn='Demander gratuitement la démo de votre site →', cta_href='/demandez-votre-demo', author_desc=
                'Agence web spécialisée dans les indépendants et les petites et moyennes entreprises. '
-               'Sites web professionnels à partir de 15 €/mois, sans engagement.',
+               'Sites web professionnels pour seulement 15 €/mois, sans frais d'installation, sans engagement.',
                legal='Mentions légales', privacy='Confidentialité', contact='Contact'),
 }
 
