@@ -4204,7 +4204,6 @@ def page(m, lang):
     wa = re.sub(r'href="https://wa\.me/[^"]*"', 'href="https://wa.me/%s?text=%s"' % (
         H.WHATSAPP, re.sub(r'[^A-Za-z0-9]', lambda mm: ''.join('%%%02X' % b for b in mm.group(0).encode()),
                            H.C[lang]['wa_text'])), src['float_wa'])
-    legal_js = "event.preventDefault();document.getElementById('%s').style.display='flex'"
     foot_langs = '<a href="%s%s" hreflang="%s">%s</a>' % (BASE, M[autre], autre, autre.upper())
 
     return H.alterner_fonds(f"""<!DOCTYPE html>
@@ -4337,8 +4336,8 @@ def page(m, lang):
 <footer>
   <a class="fl" href="{home}"><span>🌐</span> webautonomos.es</a>
   <div class="flinks">
-    <a href="{BASE}/{'fr/mentions-legales' if lang == 'fr' else 'en/legal-notice'}/" onclick="{legal_js % 'modal-aviso'}">{E(H.C[lang]['foot_legal'])}</a>
-    <a href="{BASE}/{'fr/confidentialite' if lang == 'fr' else 'en/privacy'}/" onclick="{legal_js % 'modal-privacidad'}">{E(H.C[lang]['foot_privacy'])}</a>
+    <a href="{BASE}/{'fr/mentions-legales' if lang == 'fr' else 'en/legal-notice'}/">{E(H.C[lang]['foot_legal'])}</a>
+    <a href="{BASE}/{'fr/confidentialite' if lang == 'fr' else 'en/privacy'}/">{E(H.C[lang]['foot_privacy'])}</a>
     <a href="{BASE}/{lang}/cookies/">Cookies</a>
     <a href="{L('blog')}">{E(H.C[lang]['foot_blog'])}</a>
     {foot_langs}
@@ -4352,8 +4351,6 @@ def page(m, lang):
   </address>
 </footer>
 
-{src['modals'][0]}
-{src['modals'][1]}
 {wa}
 <script>
 {H.CAROUSEL_JS}

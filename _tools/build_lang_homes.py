@@ -435,17 +435,25 @@ def bloc_div(s, debut):
     return None
 
 
+# Les fenêtres légales (modal-aviso / modal-privacidad, texte espagnol) ne
+# sont plus reprises en FR/EN : les liens du pied mènent aux pages légales.
+# On retire donc aussi leurs règles CSS (.modal-…) de la feuille source.
+def _regle_modal(m):
+    sels = [x.strip() for x in m.group(1).split(',')]
+    return '' if all(x.startswith('.modal-') for x in sels) else m.group(0)
+
+
+def sans_css_modal(css):
+    return re.sub(r'^[ \t]*(\.modal-[^{}]*)\{[^{}]*\}[ \t]*\n', _regle_modal, css, flags=re.M)
+
+
 def source(lang):
     s = open(os.path.join(ROOT, SOURCE_DEMO[lang]), encoding='utf-8').read()
     out = {}
     m = re.search(r'<style>(.*?)</style>', s, re.S)
-    out['css'] = m.group(1) if m else None
+    out['css'] = sans_css_modal(m.group(1)) if m else None
     m = re.search(r'<a class="logo".*?</a>', s, re.S)
     out['logo'] = m.group(0) if m else None
-    out['modals'] = []
-    for mid in ('modal-aviso', 'modal-privacidad'):
-        m = re.search(r'<div class="modal-overlay"[^>]*id="%s"' % mid, s)
-        out['modals'].append(bloc_div(s, m.start()) if m else None)
     m = re.search(r'<a class="float-wa".*?</a>', s, re.S)
     out['float_wa'] = m.group(0) if m else None
     manquants = [k for k, v in out.items() if not v or (isinstance(v, list) and not all(v))]
@@ -833,7 +841,6 @@ def page(lang):
     wa = 'https://wa.me/%s?text=%s' % (WHATSAPP, re.sub(r'[^A-Za-z0-9]', lambda m: ''.join(
         '%%%02X' % b for b in m.group(0).encode()), c['wa_text']))
     float_wa = re.sub(r'href="https://wa\.me/[^"]*"', 'href="%s"' % wa, src['float_wa'])
-    legal_js = "event.preventDefault();document.getElementById('%s').style.display='flex'"
 
     return alterner_fonds(f"""<!DOCTYPE html>
 <html lang="{c['html_lang']}">
@@ -978,8 +985,8 @@ def page(lang):
 <footer>
   <a class="fl" href="{url}"><span>🌐</span> webautonomos.es</a>
   <div class="flinks">
-    <a href="{BASE}/{'fr/mentions-legales' if lang == 'fr' else 'en/legal-notice'}/" onclick="{legal_js % 'modal-aviso'}">{E(c['foot_legal'])}</a>
-    <a href="{BASE}/{'fr/confidentialite' if lang == 'fr' else 'en/privacy'}/" onclick="{legal_js % 'modal-privacidad'}">{E(c['foot_privacy'])}</a>
+    <a href="{BASE}/{'fr/mentions-legales' if lang == 'fr' else 'en/legal-notice'}/">{E(c['foot_legal'])}</a>
+    <a href="{BASE}/{'fr/confidentialite' if lang == 'fr' else 'en/privacy'}/">{E(c['foot_privacy'])}</a>
     <a href="{BASE}/{lang}/cookies/">Cookies</a>
     <a href="{L('blog')}">{E(c['foot_blog'])}</a>
     {('<a href="%s">Contact</a>' % L('contact')) if 'contact' in u else ''}
@@ -994,8 +1001,6 @@ def page(lang):
   </address>
 </footer>
 
-{src['modals'][0]}
-{src['modals'][1]}
 {float_wa}
 <script>
 {CAROUSEL_JS}

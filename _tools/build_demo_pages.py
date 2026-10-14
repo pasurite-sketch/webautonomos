@@ -471,6 +471,27 @@ LANGUES = [
         DEMO_EN, MERCI_EN, AVIS_EN, LIB_EN),
 ]
 
+def sans_fenetres_legales(h):
+    """FR/EN (14/10/2026) : retire les fenêtres légales espagnoles (modal-aviso,
+    modal-privacidad), leurs onclick et leurs règles CSS .modal-… ; les liens du
+    pied mènent directement aux pages légales de la langue."""
+    h=re.sub(r' onclick="event\.preventDefault\(\);document\.getElementById\(.modal-(?:aviso|privacidad).\)\.style\.display=.flex."', "", h)
+    for mid in ("modal-aviso", "modal-privacidad"):
+        m=re.search(r'<div class="modal-overlay"[^>]*id="%s"[^>]*>' % mid, h)
+        if not m: continue
+        d, fin = 0, None
+        for t in re.finditer(r'<div\b|</div>', h[m.start():]):
+            d += 1 if t.group(0)=='<div' else -1
+            if d==0: fin=m.start()+t.end(); break
+        deb=h.rfind("\n", 0, m.start())+1
+        if h[deb:m.start()].strip(): deb=m.start()
+        if h[fin:fin+1]=="\n": fin+=1
+        h=h[:deb]+h[fin:]
+    def regle(r):
+        sels=[x.strip() for x in r.group(1).split(",")]
+        return "" if all(x.startswith(".modal-") for x in sels) else r.group(0)
+    return re.sub(r'^[ \t]*(\.modal-[^{}]*)\{[^{}]*\}[ \t]*\n', regle, h, flags=re.M)
+
 def build(src, out, edits, label, code=None, avis=None, lib=None):
     if not os.path.exists(src):
         sys.exit(f"ABANDON : fichier source introuvable — {src}")
@@ -489,6 +510,7 @@ def build(src, out, edits, label, code=None, avis=None, lib=None):
         if h.count(anchor)!=1: sys.exit("ABANDON : balise <form> introuvable.")
         h=h.replace(anchor, anchor+f'\n        <input type="hidden" name="idioma" value="{code}">')
         h=bloc_langue(h, avis, lib)
+        h=sans_fenetres_legales(h)
     d=os.path.dirname(out)
     if d: os.makedirs(d, exist_ok=True)
     open(out,"w",encoding="utf-8").write(h)
