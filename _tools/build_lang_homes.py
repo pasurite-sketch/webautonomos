@@ -103,6 +103,24 @@ AVIS = {
  ],
 }
 
+# ─── sections « guide » des accueils (15/10/2026) ───────────────────────────
+# Même démarche que l'accueil espagnol (_tools/patch_home_es_20261015.py) :
+# avantages d'un site, étapes, budget comparé (tableau), modèles et IA, erreurs.
+# Le texte de ces sections est du HTML écrit à la main (liens compris) ; les
+# cellules des tableaux et les textes alternatifs sont échappés. Seuls les
+# accueils /fr/ et /en/ les affichent : les pages métier, UK et expatriés, qui
+# reprennent d'autres éléments de ce fichier, ne lisent aucune de ces clés.
+SOURCE_PRIX = 'https://www.socialmediapymes.com/cuanto-cuesta-una-web/'  # VERITE.md §7
+GUIDE_IMG = (1600, 900)  # dimensions des photos assets/<nom>.jpg utilisées par les sections guide
+
+
+def _a(url, txt):
+    """Lien d'une section guide : interne (adresse absolue) ou vers la source de VERITE.md §7."""
+    if url.startswith('http'):
+        return '<a href="%s" target="_blank" rel="noopener noreferrer">%s</a>' % (url, txt)
+    return '<a href="%s%s">%s</a>' % (BASE, url, txt)
+
+
 # ─── contenu ────────────────────────────────────────────────────────────────
 C = {}
 C['fr'] = dict(
@@ -120,21 +138,20 @@ C['fr'] = dict(
   brief_t='En bref',
   brief="WebAutonomos assure la création de sites internet professionnels pour les indépendants et les artisans. Le site coûte <strong>15 € HT par mois</strong>, sans frais d'installation ni engagement, ou <strong>349 € HT en paiement unique</strong>. Ce prix comprend le design, l'hébergement, le certificat SSL, le nom de domaine la première année, les textes légaux et la maintenance. Nous préparons une démo gratuite en 24 heures ; vous ne payez que si elle vous plaît. L'agence est basée à Ontinyent (Valence, Espagne) et travaille à distance avec des indépendants en Espagne et en France.",
   inc_ey='Ce qui est inclus', inc_t='Tout est compris dans le prix',
-  inc_sd='Pas de frais cachés, pas d\'options indispensables à payer en plus.',
+  inc_sd='Pas de coûts cachés, pas d\'options indispensables à payer en plus.',
   inc=['Création et design professionnels sur mesure', 'Ajustements illimités avant la mise en ligne',
        'Hébergement rapide et sécurisé', 'Certificat SSL (https)',
-       'Nom de domaine à votre nom, inclus la 1<sup>re</sup> année', 'Site adapté au mobile',
+       'Domaine à votre nom, compris la 1<sup>re</sup> année', 'Site lisible sur téléphone',
        'Formulaire de contact vers votre e-mail', 'Bouton WhatsApp',
        'Mentions légales, confidentialité et cookies', 'Sauvegardes, surveillance 24 h/24 et maintenance',
        "Jusqu'à 4 langues sans supplément", 'Une modification par mois', 'Liens vers vos réseaux sociaux'],
   content_ey='À savoir', content_t='Ce que doit contenir un site internet professionnel',
-  content_sd="Quel que soit son prix, un site web professionnel doit réunir ces éléments de base pour transformer vos visiteurs en demandes de contact.",
-  content_p="Un site pas cher n'est pas un site web incomplet : sa qualité se juge à ce qu'il contient, pas à son prix. Avant de penser à des fonctionnalités en plus, vos pages doivent d'abord présenter clairement votre entreprise et donner envie de vous contacter. Ce que nous construisons est un site internet vitrine : il présente votre activité, vos services et vos coordonnées, il ne remplace pas une boutique en ligne. Si vous souhaitez vendre directement en ligne, une boutique reste possible, mais elle fait l'objet d'une offre séparée.",
+  content_sd="Quel que soit son coût, un site web doit réunir ces éléments de base pour transformer vos visiteurs en demandes de contact.",
+  content_p="Un site pas cher n'est pas un site web incomplet : sa qualité se juge à ce qu'il contient, pas à ce qu'il coûte. Avant de penser à des fonctionnalités en plus, vos pages doivent d'abord présenter clairement votre entreprise et donner envie de vous contacter. Ce que nous construisons est un site internet vitrine : il présente votre activité, vos prestations et vos coordonnées, il ne remplace pas une boutique en ligne.",
   content_g1_t="Les éléments que cherchent vos visiteurs sur un site web",
   content_g1=[("Vos prestations, clairement listées", "Ce que vous faites, pour qui : un visiteur doit comprendre votre activité en quelques secondes, sur la page d'accueil."),
-              ("Votre zone d'intervention", "Les villes ou le quartier où vous travaillez, pour que Google et vos visiteurs sachent si vous couvrez leur secteur."),
-              ("Vos photos et vos avis Google", "Vos réalisations et les avis déjà publiés sur votre fiche Google rassurent un visiteur qui ne vous connaît pas encore."),
-              ("Des prestations clairement présentées", "Chaque prestation importante mérite sa propre rubrique, avec un contenu précis. Des pages bien construites aident vos visiteurs à trouver vite leur réponse et les moteurs de recherche à comprendre ce que vous proposez."),
+              ("Votre zone d'intervention", "Les villes ou le quartier où vous travaillez, pour que les moteurs de recherche et vos visiteurs sachent si vous couvrez leur secteur."),
+              ("Vos photos et vos témoignages", "Vos réalisations et les commentaires déjà publiés sur votre fiche Google rassurent un visiteur qui ne vous connaît pas encore."),
               ("Une prise de contact facile", "Grâce à un formulaire de contact et à un bouton WhatsApp, un visiteur vous joint en toute facilité, depuis n'importe quelle page du site web."),
               ("Un affichage adapté à tous les écrans", "Un site responsive s'adapte à un téléphone, à une tablette comme à un ordinateur. C'est un point essentiel : beaucoup de vos clients vous chercheront depuis leur mobile."),
               ("Des images nettes et des contenus clairs", "Une image qui montre votre savoir-faire rassure plus qu'un long discours, mais le contenu écrit reste la base : des phrases simples et des informations exactes.")],
@@ -143,10 +160,10 @@ C['fr'] = dict(
   how_ey='Le déroulement', how_t='Votre site en trois étapes',
   how_sd='Sans contrat. Sans surprise. Sans jargon technique.',
   steps=[('Vous décrivez votre activité', 'Votre métier, vos services, votre ville : deux minutes suffisent.'),
-         ('Nous construisons votre site web', 'En moins de 24 h, votre démo est prête, avec vos images et vos avis Google.'),
-         ('Vous décidez', 'Elle vous plaît : 15 €/mois et elle est en ligne avec votre nom de domaine. Sinon, vous ne payez rien.')],
+         ('Nous construisons votre site web', 'En moins de 24 h, votre démo est prête, avec vos visuels et vos avis Google.'),
+         ('Vous décidez', 'Elle vous plaît : 15 €/mois et elle est publiée à votre adresse. Sinon, vous ne payez rien.')],
   price_ey='Tarifs', price_t='Un prix clair, deux façons de payer',
-  price_sd='Les mêmes services dans les deux formules.',
+  price_sd='Les mêmes prestations dans les deux formules.',
   plans=[dict(name='Abonnement', amt='15 €', per='HT / mois', hl=True, badge='Le plus choisi',
               pts=["Sans frais d'installation", 'Sans engagement, résiliable à tout moment', 'Démo gratuite avant de payer']),
          dict(name='Paiement unique', amt='349 €', per='HT, une seule fois', hl=False, badge='',
@@ -157,25 +174,20 @@ C['fr'] = dict(
   why_sd="Un tarif bas qui s'explique par notre façon de travailler.",
   why_lede="Parce que nous utilisons notre propre système, qui réutilise des composants déjà testés, et que nous n'avons ni bureaux luxueux ni commerciaux à commission : cela se traduit par un tarif plus bas pour vous.",
   why_h3a="Notre propre système, pas une remise",
-  why_pa="Ce tarif n'est pas une promotion temporaire ni une version limitée : c'est notre prix normal. Chaque site part de briques déjà éprouvées sur d'autres projets, au lieu de repartir de zéro.",
-  why_h3b="Face aux tarifs habituels en Espagne",
-  why_pb_pre="En Espagne, un site web professionnel réalisé par un freelance coûte entre 800 € et 2 000 €, et entre 1 500 € et 4 000 € auprès d'une agence, hors maintenance, selon un ",
-  why_pb_link_txt="article de Social Media Pymes",
-  why_pb_link_url="https://www.socialmediapymes.com/cuanto-cuesta-una-web/",
-  why_pb_post=" publié en août 2026. Avec l'abonnement à 15 € HT par mois, vous n'avancez pas cette somme : vous payez un montant fixe chaque mois, sans frais d'installation. Avec la formule à 349 € HT en paiement unique, vous restez en dessous de ces deux fourchettes. Dans les deux formules, l'hébergement et la maintenance sont compris.",
-  why_extra_t="Ce qui peut faire varier le prix",
-  why_extra_p="Pour un site vitrine, le prix reste celui de votre formule, abonnement mensuel ou paiement unique. Certains besoins en sortent et passent par un devis à part, par exemple :",
-  why_extra_items=["Une boutique en ligne plutôt qu'un site vitrine : vendre directement en ligne reste possible, sur devis.",
+  why_pa="Ce tarif n'est pas une promotion temporaire ni une version limitée : c'est notre prix normal.",
+  # fourchettes freelance / agence (Social Media Pymes) : tableau de la section guide « budget » (guide_a)
+  why_extra_t="Ce qui peut faire varier la facture",
+  why_extra_p="Pour un site de présentation, le montant reste celui de votre formule, abonnement ou achat. Certains besoins en sortent et sont chiffrés à part, par exemple :",
+  why_extra_items=["Une boutique en ligne plutôt qu'un site vitrine : vendre directement en ligne reste possible, avec un chiffrage séparé.",
                     "Une refonte complète ou une nouvelle grande section : ces changements plus importants passent par un devis fermé, jamais par une facture surprise."],
   why_extra_link_txt="Voir en détail combien coûte un site pour un indépendant",
   why_extra_link_url='/blog/fr/combien-coute-un-site-web-pour-independants',
   feat_ey='Personnalisation', feat_t='Quelles fonctionnalités ajouter à votre site internet ?',
   feat_sd="Voici les fonctionnalités principales d'un site vitrine et ce que vous pouvez nous demander, par WhatsApp ou par e-mail.",
-  feat_items=[("Vos réseaux sociaux", "Nous ajoutons des liens vers vos profils (Facebook, Instagram, LinkedIn…) sur votre site web, sans supplément. Si vous voulez aller plus loin, la gestion de vos réseaux sociaux est aussi proposée ponctuellement, sur demande."),
-              ("Votre logo", "Envoyez-le avec vos images : avant la mise en ligne, nous l'intégrons au design, le nombre d'ajustements étant illimité jusque-là ; après, un changement de logo compte comme votre modification du mois. Sans logo, le nom de votre activité suffit pour commencer."),
-              ("Un service ou une section en plus", "Vous ajoutez un service ou une section avec votre modification mensuelle ; une nouvelle grande section ou une refonte fait l'objet d'une proposition chiffrée à part, sans mauvaise surprise."),
-              ("Vos avis et vos photos Google", "Si vous avez une fiche Google, nous partons de ses photos et de ses avis pour préparer votre démo : vous n'avez aucun texte à rédiger vous-même."),
-              ("Un formulaire de contact", "Les demandes arrivent directement dans votre boîte e-mail, et le bouton WhatsApp permet aussi de vous joindre."),
+  feat_items=[("Vos réseaux sociaux", "Nous ajoutons des liens vers vos profils (Facebook, Instagram, LinkedIn…) sur votre site web, sans supplément. Si vous voulez aller plus loin, leur gestion est aussi proposée ponctuellement, sur demande."),
+              ("Votre logo", "Envoyez-le avec le reste de vos fichiers : avant la mise en ligne, nous l'intégrons au design, le nombre d'ajustements étant illimité jusque-là ; après, un changement de logo compte comme votre modification du mois. Sans visuel de marque, le nom de votre activité suffit pour commencer."),
+              ("Une prestation ou une section en plus", "Vous l'ajoutez avec votre modification mensuelle ; une nouvelle grande section ou une refonte fait l'objet d'une proposition chiffrée à part, sans mauvaise surprise."),
+              ("Votre fiche existante", "Si vous avez une fiche Google, nous partons de ses photos et de ses commentaires pour préparer votre démo : vous n'avez aucun texte à rédiger vous-même."),
               ("Un site multilingue", "Si vos clients parlent plusieurs langues, votre site web peut être multilingue : quatre langues au maximum, sans supplément. Nous rédigeons nous-mêmes chaque version."),
               ("Un design sur mesure", "La conception de votre site part de vos informations : vous pouvez personnaliser le design et chaque image avant la mise en ligne, avec un nombre illimité d'ajustements.")],
   feat_link="Comment choisir vos réseaux sociaux", feat_link_url='/blog/fr/reseaux-sociaux-independants-lesquels-choisir',
@@ -185,14 +197,14 @@ C['fr'] = dict(
   hcare_ey='Après la mise en ligne', hcare_t='Hébergement, sécurité et référencement naturel : ce qui reste compris',
   hcare_sd="Un site pas cher ne doit pas devenir un site à l'abandon : voici ce qui reste géré pour vous, mois après mois.",
   hcare_h3a="L'hébergement et la sécurité, sans y penser",
-  hcare_pa="L'hébergement de votre site web, le certificat de sécurité (https) et les sauvegardes quotidiennes sont compris dans le tarif, pas facturés en option. La gestion technique, la surveillance et les mises à jour de sécurité restent de notre côté : vous n'avez ni serveur à choisir, ni outils à surveiller. Grâce à cette prise en charge, vous gardez votre temps pour votre métier.",
+  hcare_pa="L'hébergement de votre site web, le certificat SSL (https) et les sauvegardes quotidiennes sont compris dans le tarif, pas facturés en option. La gestion technique, la surveillance et les mises à jour de sécurité restent de notre côté : vous n'avez ni serveur à choisir, ni outils à surveiller. Grâce à cette prise en charge, vous gardez du temps pour l'essentiel.",
   hcare_h3b="Le référencement naturel, dès la mise en ligne",
-  hcare_pb="Chaque site web comprend une optimisation SEO de base : les titres et les textes reprennent vos prestations et votre zone d'intervention, et les informations du site restent cohérentes avec votre fiche Google. C'est le socle du référencement naturel local, qui se construit dans la durée : ces bases évitent de partir de zéro. Pour aller plus loin, un service de référencement local plus poussé (SEO local) existe en complément, présenté plus bas sur cette page.",
+  hcare_pb="Chaque site web comprend une optimisation SEO de base : les titres et les textes reprennent vos prestations et votre zone d'intervention, et les informations du site restent cohérentes avec votre fiche Google. C'est le socle du référencement naturel local, qui se construit dans la durée : ces bases évitent de partir de zéro. Pour aller plus loin, un accompagnement en référencement local plus poussé (SEO local) existe en complément, présenté plus bas sur cette page.",
   hcare_h3c="Le contenu et les évolutions",
-  hcare_pc="Le contenu de votre site web n'est pas figé : une modification par mois est incluse, par exemple pour ajouter un service, changer une image ou mettre à jour vos horaires. Les changements plus importants, comme une refonte ou une nouvelle grande section, se font sur devis fermé. Vous gardez ainsi un site actuel, sans y passer de temps et sans tout refaire à chaque fois.",
+  hcare_pc="Le contenu de votre site web n'est pas figé : une modification par mois est incluse, par exemple pour ajouter une prestation, changer une image ou actualiser vos horaires.",
   aud_ey='Pour qui', aud_t='En France ou installé en Espagne',
   aud_sd='Nous travaillons à distance, par e-mail, WhatsApp et visioconférence.',
-  aud=[('🇫🇷', 'Indépendants en France', "Artisans, thérapeutes, professions de santé : votre site internet est rédigé en français, pour vos clients, avec votre nom de domaine en .fr."),
+  aud=[('🇫🇷', 'Indépendants en France', "Artisans, thérapeutes, professions de santé : votre site internet est rédigé en français, pour vos clients, avec votre adresse en .fr."),
        ('🇪🇸', 'Francophones installés en Espagne', "Vous travaillez en Espagne ? Nous connaissons les obligations d'un site espagnol (aviso legal, RGPD, cookies) et nous vous parlons en français.", '/fr/site-internet-francophones-espagne'),
        ('💬', 'Un doute sur votre projet ?', "Écrivez-nous sur WhatsApp : nous vous répondons dans la journée, en français.")],
   sect_ey='Métiers', sect_t='Des sites web pour tous les métiers, un seul prix',
@@ -200,9 +212,9 @@ C['fr'] = dict(
            '❄️ Climatisation', '🔑 Serruriers', '🪟 Aluminium et PVC', '🦷 Dentistes',
            '💆 Kinésithérapeutes', '🦶 Podologues', '🧠 Psychologues', '🌿 Thérapeutes bien-être',
            '🖋️ Tatoueurs', '➕ Votre métier'],
-  how_choose_ey='Les options', how_choose_t='Faire soi-même ou confier la création de son site : comment choisir',
-  how_choose_sd="Trois solutions de création de site internet, avec des compromis différents.",
-  how_choose_items=[("Un créateur de site en ligne", "Vous construisez vous-même votre site web, bloc par bloc, sur une interface glisser-déposer, sans toucher au code HTML. Vous gardez la main sur chaque choix, mais la qualité du résultat dépend entièrement de vos bases en design. Ces outils proposent souvent un essai gratuit : vérifiez les limites avant de vous engager."),
+  how_choose_ey='Les options', how_choose_t='Modèles, IA ou site fait pour vous : quelle solution pour la création de votre site ?',
+  how_choose_sd="Trois solutions de création de site, avec des compromis différents.",
+  how_choose_items=[("Un créateur de site en ligne", "Vous construisez vous-même votre site web, bloc par bloc, sur une interface glisser-déposer, sans toucher au code HTML. Vous gardez la main sur chaque choix, mais le rendu dépend entièrement de vos bases en design. Ces outils proposent souvent un essai gratuit : vérifiez les limites avant de vous engager."),
                      ("WordPress et un thème à personnaliser", "Vous installez WordPress, choisissez un thème, puis vous devez l'adapter. C'est une solution flexible, riche en fonctionnalités, mais il faut suivre les mises à jour de sécurité, choisir des extensions et des outils fiables, et gérer vous-même l'administration. De nombreux thèmes existent : le choix est vaste, mais l'apprentissage exige de la patience."),
                      ("Un site clé en main, comme chez WebAutonomos", "Nous assurons la conception de votre site web à partir de vos informations : vous n'ouvrez aucune interface d'administration, vous ne touchez ni thème ni code HTML. Vous nous écrivez pour demander une modification (une par mois est incluse), nous nous en occupons. C'est une solution simple si vous préférez vous consacrer à votre entreprise.")],
   how_choose_p="Il n'existe pas une seule bonne réponse : tout dépend de votre projet, de vos besoins, du temps et du budget que vous souhaitez y consacrer. Que vous choisissiez un créateur de sites, WordPress ou un site clé en main, la solution retenue doit rester simple à faire évoluer.",
@@ -217,23 +229,25 @@ C['fr'] = dict(
               "<strong>Des semaines d'attente :</strong> on vous annonce 2 semaines, il en faut 2 mois.",
               "<strong>Lié par un contrat :</strong> engagement de 12 mois, pénalités si vous résiliez."],
   cmp_us=["<strong>Prix fixe et clair :</strong> 15 €/mois, tout compris, sans petits caractères.",
-          "<strong>Votre site web en 24 heures :</strong> vous le voyez avant de payer, vous validez, il est en ligne.",
+          "<strong>Votre site web en 24 h :</strong> vous le voyez avant de payer, vous validez, il est en ligne.",
           "<strong>Sans engagement :</strong> vous résiliez quand vous voulez, sans pénalité ni justification."],
   mistakes_ey='Vigilance', mistakes_t='Erreurs à éviter en cherchant un site pas cher',
   mistakes_sd="Avec un petit budget, mieux vaut vérifier ces points avant de choisir une offre de création de site internet pas cher, quel que soit le prestataire.",
   mistakes_items=[("Des coûts d'installation qui gonflent la facture", "Un tarif mensuel bas peut cacher des coûts de mise en place à part et finir par coûter cher. Demandez toujours le montant total avant de signer."),
-                   ("Un engagement de longue durée", "Un abonnement mensuel sans engagement vous laisse la possibilité de partir quand vous voulez, sans pénalité ni justification à donner."),
+                   ("Un engagement de longue durée", "Un abonnement sans engagement vous laisse la possibilité de partir quand vous voulez, sans pénalité ni justification à donner."),
                    ("Aucune mention légale", "Les mentions légales et la politique de confidentialité doivent figurer sur le site web dès sa mise en ligne, pas être ajoutées plus tard sur demande."),
-                   ("Un nom de domaine qui ne vous appartient pas", "Vérifiez que le nom de domaine est enregistré à votre nom : c'est ce qui vous permet de le garder si vous changez de prestataire."),
-                   ("Pas de maintenance incluse", "Hébergement, certificat SSL, sauvegardes et mises à jour de sécurité doivent être compris dans le tarif affiché, pas facturés en plus."),
-                   ("Un site qui s'affiche mal sur téléphone", "Beaucoup d'internautes arrivent depuis un mobile. Vérifiez que le site web est responsive : un affichage parfaitement lisible, des boutons simples à toucher, des images qui s'affichent rapidement."),
-                   ("Des pages au contenu copié ou trop générique", "Un contenu valable pour n'importe quelle entreprise n'aide ni les internautes ni votre référencement. Il doit parler de votre métier, de vos prestations et de votre zone d'intervention."),
-                   ("Un site gratuit dont on ignore les limites", "Un site gratuit convient pour tester une idée, mais il impose souvent l'adresse du fournisseur, de la publicité, ou des fonctionnalités et des outils limités. Pour un usage professionnel, vérifiez ce qui est réellement compris.")],
-  mistakes_links=[("le prix d'un site internet", "/fr/tarifs"),
+                   ("Un nom de domaine qui ne vous appartient pas", "Vérifiez qu'il est enregistré à votre nom : c'est ce qui vous permet de le garder si vous changez de prestataire."),
+                   ("Pas de maintenance incluse", "Hébergement, certificat SSL, copies de secours et mises à jour de sécurité doivent être compris dans le tarif affiché, pas facturés en plus."),
+                   ("Un site qui s'affiche mal sur téléphone", "Beaucoup d'internautes arrivent depuis un téléphone. Vérifiez que le site web est responsive : un affichage parfaitement lisible, des boutons simples à toucher, des images qui s'affichent rapidement."),
+                   ("Des pages au contenu copié ou trop générique", "Un contenu valable pour n'importe quelle entreprise n'aide ni les internautes ni votre référencement. Il doit parler de votre savoir-faire, de vos prestations et de votre zone d'intervention."),
+                   ("Un site gratuit dont on ignore les limites", "Un site gratuit convient pour tester une idée, mais il impose souvent l'adresse du fournisseur, de la publicité, ou des fonctionnalités et des outils limités. Pour un usage professionnel, vérifiez ce qui est réellement compris."),
+                   ("Des horaires qui se contredisent", "Si votre fiche d'établissement et vos pages n'affichent pas les mêmes horaires, le client ne sait plus lequel croire."),
+                   ("Une photo d'illustration générique", "Un visuel de banque d'illustrations rassure moins qu'une vraie photo de votre savoir-faire.")],
+  mistakes_links=[("le coût d'un site internet", "/fr/tarifs"),
                    ("la vitesse du site et le référencement", "/blog/fr/vitesse-du-site-et-referencement")],
   add_ey='Pour aller plus loin', add_t='Services complémentaires',
-  addons=[('SEO local', '+15 €/mois', 'Quatre articles par mois, mots-clés locaux et rapport mensuel pour être trouvé sur Google dans votre secteur.', None),
-          ('Fiche Google Business', '+29 €/mois', 'Optimisation de votre fiche Google Maps, 4 publications par mois et réponse aux avis. Création de la fiche : 49 €.', None),
+  addons=[('SEO local', '+15 €/mois', 'Quatre articles par mois, mots-clés locaux et rapport mensuel pour être trouvé dans votre secteur.', None),
+          ('Fiche Google Business', '+29 €/mois', 'Optimisation de votre fiche d\'établissement, 4 publications par mois et réponse aux avis. Création de la fiche : 49 €.', None),
           ('Automatisation des tâches', 'Diagnostic gratuit', "Calculez ce que vous coûtent vos tâches répétitives et si les automatiser est rentable.", 'diag'),
           ('Visibilité IA', 'Audit', 'Savoir si ChatGPT, Gemini ou Perplexity recommandent votre activité, et comment y apparaître.', 'vis')],
   add_more='En savoir plus',
@@ -241,35 +255,158 @@ C['fr'] = dict(
   faq=[("Combien coûte la création d'un site internet avec WebAutonomos ?",
         "15 € HT par mois, sans frais d'installation ni engagement, ou 349 € HT en paiement unique. Les deux formules comprennent les mêmes services : design, hébergement, SSL, nom de domaine la première année (environ 12 €/an ensuite), textes légaux et maintenance."),
        ("Un site pas cher peut-il être de qualité ?",
-        "Tout à fait. Le tarif bas vient de notre façon de travailler, pas d'un travail bâclé : un système propre qui réutilise des composants déjà testés, sans bureaux luxueux ni commerciaux à commission. La qualité se juge sur le résultat, que vous voyez dans la démo avant de payer."),
+        "Tout à fait. Le tarif bas vient de notre façon de travailler, pas d'un site bâclé : un système propre qui réutilise des composants déjà testés, sans bureaux luxueux ni commerciaux à commission. La qualité se juge sur pièce, dans la démo que vous voyez avant de payer."),
        ("Qu'est-ce qu'un site internet vitrine ?",
-        "Un site internet vitrine présente votre entreprise, vos services, votre zone d'intervention et vos coordonnées, sans système de vente en ligne. C'est le type de site web que nous construisons chez WebAutonomos ; si vous avez besoin d'une boutique en ligne pour vendre directement, cela reste possible, avec une offre séparée."),
+        "Un site internet vitrine présente votre entreprise, vos prestations, votre zone d'intervention et vos coordonnées, sans système de vente en ligne. C'est le type de site web que nous construisons chez WebAutonomos ; si vous avez besoin d'une boutique en ligne pour vendre directement, cela reste possible, avec une offre séparée."),
        ("Puis-je voir mon site web avant de payer ?",
-        "Oui. Nous créons votre site web avant tout paiement et vous envoyons un lien privé. Vous demandez les changements que vous voulez ; vous ne payez qu'après avoir validé le résultat."),
+        "Nous créons votre site web avant tout paiement et vous envoyons un lien privé. Vous demandez les changements que vous voulez ; vous ne payez qu'après avoir validé le résultat."),
        ("Combien de temps dure la création de mon site web ?",
-        "La démo est prête en moins de 24 heures. Une fois le design validé, nous connectons votre nom de domaine et le site est en ligne."),
+        "La démo est prête en moins de 24 heures. Une fois le design validé, nous publions le site à votre adresse."),
        ("Travaillez-vous avec des indépendants en France ?",
-        "Oui. Nous assurons la création de sites pour des indépendants en France comme en Espagne. Tout se fait à distance, par e-mail, WhatsApp et visioconférence."),
+        "Oui, au même titre que pour les indépendants installés en Espagne : la création de leurs sites se fait entièrement à distance, par e-mail, WhatsApp et visioconférence."),
        ("Que se passe-t-il si je veux résilier ?",
-        "Vous arrêtez de payer, sans durée minimale ni pénalité. Le nom de domaine est enregistré à votre nom dès le premier jour : vous le gardez et nous vous aidons à le transférer si besoin."),
+        "Vous arrêtez de payer, sans durée minimale ni pénalité. Le domaine vous appartient dès le premier jour : vous le gardez et nous vous aidons à le transférer si besoin."),
        ("Le nom de domaine m'appartient-il ?",
-        "Oui. Nous l'enregistrons à votre nom, en .fr ou en .es selon votre activité. La première année est incluse, le renouvellement coûte ensuite environ 12 €/an."),
+        "Oui. Nous l'enregistrons à votre nom, en .fr ou en .es selon votre pays. La 1re année est incluse, le renouvellement coûte ensuite environ 12 €/an."),
        ("Faut-il des connaissances techniques ?",
-        "Aucune. Vous nous dites ce que vous proposez et vous nous envoyez quelques images si vous en avez ; nous nous occupons de tout le reste, y compris des mises à jour."),
+        "Aucune. Vous nous dites ce que vous proposez et vous nous envoyez quelques images si vous en avez ; nous nous occupons de tout le reste, y compris de la maintenance."),
        ("Puis-je modifier mon site web plus tard ?",
-        "Oui. Une modification par mois est incluse : textes, images, horaires, prestations, prix ou nouvelle section. Vous nous écrivez par WhatsApp ou par e-mail."),
+        "Une modification par mois est incluse : texte, visuels, horaires, prestations, prix ou nouvelle section. Vous nous écrivez par WhatsApp ou par e-mail."),
        ("Mon site web peut-il être en plusieurs langues ?",
-        "Oui. Avec WebAutonomos, votre site web peut être rédigé dans quatre langues maximum, sans supplément : français, espagnol, anglais et les langues co-officielles d'Espagne (catalan, valencien, galicien ou basque). Le prix reste de 15 € HT par mois, ou 349 € HT en paiement unique. Nous rédigeons nous-mêmes chaque version, et la modification mensuelle incluse s'applique dans toutes les langues."),
+        "Avec WebAutonomos, votre site web peut être rédigé dans quatre langues maximum, sans supplément : français, espagnol, anglais et les langues co-officielles d'Espagne (catalan, valencien, galicien ou basque). Le prix reste de 15 € HT par mois, ou 349 € HT pour l'achat. Nous rédigeons nous-mêmes chaque version, et la modification mensuelle incluse s'applique dans toutes les langues."),
        ("Peut-on créer un site internet gratuit ?",
-        "Oui, des outils sur internet permettent de créer un site gratuit, mais avec des limites : adresse du fournisseur à la place de la vôtre, publicité ou fonctionnalités réduites. Pour une entreprise, un site à votre nom, avec un contenu clair, reste plus crédible."),
+        "Oui, des outils sur internet permettent de créer un site gratuit, mais avec des limites : adresse du fournisseur à la place de la vôtre, publicité ou fonctionnalités réduites. Pour une entreprise, un site sous votre propre adresse, avec des informations claires, reste plus crédible."),
        ("Puis-je ajouter mes réseaux sociaux sur mon site web ?",
-        "Oui. Les liens vers vos profils (Facebook, Instagram, LinkedIn…) sont compris dans les deux formules. Si vous ouvrez un nouveau compte plus tard, son ajout compte comme votre modification du mois.")],
+        "Oui. Les liens vers vos profils (Facebook, Instagram, LinkedIn…) sont compris dans les deux formules. Si vous ouvrez un nouveau profil plus tard, son ajout correspond à votre modification du mois."),
+       ("Puis-je passer de l'abonnement à l'achat de mon site ?",
+        "Si vous démarrez avec l'abonnement à 15 € HT par mois et souhaitez ensuite posséder votre site, vous pouvez passer à l'achat, au prix de 349 € HT moins 10 %. Les prestations restent les mêmes ; avec l'achat, le site vous appartient.")],
   final_t='Voyez votre site avant de payer quoi que ce soit',
-  final_sd="Démo gratuite en 24 heures. Sans frais d'installation, sans engagement.",
+  final_sd="Démo gratuite en 24 h. Sans installation à payer, sans engagement.",
   foot_legal='Mentions légales', foot_privacy='Confidentialité', foot_blog='Blog',
   wa_text="Bonjour, je suis intéressé par un site pour mon activité",
   service_name='Création de site internet pour indépendants et artisans',
   area=['ES', 'FR'], unit='mois',
+)
+
+# Sections guide FR (15/10/2026). Public : indépendants en France et francophones
+# installés en Espagne. Fourchettes freelance / agence : marché espagnol (VERITE.md §7),
+# présentées comme telles. Faits WebAutonomos : VERITE.md §2 et §4.
+C['fr'].update(
+  guide_a=[
+    dict(id='budget', ey='Coût', t='Quel budget prévoir pour la création d\'un site internet ? Les quatre options comparées',
+         items=[
+      ('p', "Tout dépend de qui le réalise. En Espagne, où WebAutonomos est installé, la création d'un site professionnel "
+            "se facture de 800 € à 2 000 € chez un freelance et de 1 500 € à 4 000 € dans une agence, hors maintenance, selon "
+            + _a(SOURCE_PRIX, 'Social Media Pymes') + " (2026). Où que vous soyez, vérifiez ce que couvre "
+            "le montant annoncé."),
+      ('table', dict(label='Comparatif des coûts pour créer un site internet', hl=3,
+                     head=['Option', 'Montant de départ', "Qui s'en occupe", 'À savoir'],
+                     rows=[['Vous-même, avec un créateur de sites', "Le forfait de l'outil, et votre investissement personnel",
+                            'Vous : rédaction, personnalisation, réglages et suivi',
+                            'Vous gardez le contrôle ; le rendu dépend du soin que vous y apportez'],
+                           ['Un freelance (Espagne)', 'De 800 € à 2 000 €', 'Une seule personne, avec votre aide', 'Maintenance en plus'],
+                           ['Une agence (Espagne)', 'De 1 500 € à 4 000 €', 'Une équipe, pour une création sur mesure', 'Maintenance en plus'],
+                           ['WebAutonomos', '15 € HT par mois en abonnement, ou 349 € HT en une fois',
+                            "Nous, d'après votre fiche d'établissement et vos visuels",
+                            'Démo en moins de 24 h, avant de payer ; une modification par mois comprise']])),
+      ('p', "Chez nous, l'abonnement coûte 15 € HT par mois, sans engagement : grâce à lui, vous n'avancez aucune somme au "
+            "départ. L'achat coûte 349 € HT en un seul versement, et le site vous appartient. Les deux formules comprennent "
+            "exactement les mêmes prestations, avec un nombre illimité d'ajustements avant la publication, hébergement et "
+            "maintenance compris ; seul le domaine se renouvelle dès la deuxième année, pour environ 12 € de renouvellement annuel. Si vous commencez par la mensualité, vous avez la possibilité de "
+            "passer plus tard à l'achat, avec 10 % de remise sur les 349 € HT."),
+      ('p', "Un site pas cher ne l'est vraiment que si ce montant couvre aussi l'entretien technique. Dans les deux "
+            "cas, vous voyez votre démo avant de payer : si elle ne vous convient pas, vous ne payez pas un centime. Consultez "
+            + _a('/fr/tarifs', 'le détail de nos deux formules') + " ou "
+            + _a('/demandez-votre-demo#pide-demo', 'demandez votre démo gratuite') + "."),
+      ('img', ('cuanto-cuesta-web-presupuesto-restaurante', "Un couple de restaurateurs discute à une table de leur salle "
+               "encore vide, devant deux tasses de café.")),
+    ]),
+  ],
+  guide_b=[
+    dict(id='avantages', ey='Pourquoi un site', t="Que gagne un indépendant à avoir son propre site internet ?",
+         items=[
+      ('p', "Vous gagnez une vitrine ouverte à toute heure, qui répond à ceux qui vous cherchent avant même leur appel : ce que "
+            "vous faites, où vous intervenez, ce qu'on dit de vous et comment vous joindre."),
+      ('ul', ["<strong>De la confiance.</strong> Une personne qui ne vous connaît pas voit vos réalisations, votre zone "
+              "d'intervention et les notes laissées sur votre fiche avant de vous écrire.",
+              "<strong>Des messages à toute heure.</strong> Grâce au formulaire, chaque message arrive dans votre boîte e-mail, "
+              "et le bouton WhatsApp laisse la possibilité de vous écrire facilement pendant que vous êtes sur un chantier ou en "
+              "rendez-vous.",
+              "<strong>Moins d'appels pour rien.</strong> Horaires, secteur couvert et façon de procéder sont expliqués "
+              "clairement sur vos pages : vous gagnez du temps au téléphone.",
+              "<strong>De la visibilité près de chez vous.</strong> Bien construit et bien référencé (SEO local), il peut "
+              "apparaître dans les résultats de recherche locaux quand quelqu'un cherche vos prestations à Lyon, à Bordeaux ou, si "
+              "vous travaillez en Espagne, à Alicante.",
+              "<strong>Plus de crédibilité.</strong> Une adresse web bien à vous inspire davantage confiance qu'une page sur "
+              "un réseau social."]),
+      ('p', "Pour les petites entreprises et les indépendants, les sites internet restent un outil de communication qui "
+            "continue de présenter votre savoir-faire pendant que vous travaillez, quel que soit votre emploi du temps. À lire "
+            "sur notre blog : " + _a('/blog/fr/5-raisons-davoir-un-site-web-en-2026', "cinq raisons d'avoir un site, détaillées") + "."),
+      ('img', ('small-business-owner-website-spain', "Une commerçante en tablier regarde le site de sa boutique sur un "
+               "ordinateur portable et sur un téléphone, attablée en terrasse à la tombée du jour.")),
+    ]),
+    dict(id='creer-son-site', ey='Les étapes', t="Créer son site internet : les étapes, de l'idée à la publication",
+         items=[
+      ('p', "Que vous le fassiez vous-même ou que vous le confiiez à quelqu'un d'autre, toute création de site internet passe "
+            "par les mêmes étapes."),
+      ('h3', "Définir l'objectif du site"),
+      ('p', "Chaque profession part d'une attente différente : pour un plombier, c'est l'appel en urgence ; pour une psychologue, "
+            "permettre de prendre rendez-vous facilement ; pour une entreprise de rénovation, les estimations de travaux ; pour "
+            "une boutique, la vente. Cet objectif décide de la structure : ce qui apparaît en haut de la page d'accueil, le "
+            "bouton le plus visible, les fonctionnalités utiles et le nombre de pages."),
+      ('h3', 'Rassembler vos informations'),
+      ('p', "Notez ce qu'un client veut savoir : vos prestations expliquées simplement, votre zone d'intervention (par exemple "
+            "Nantes et ses environs), vos horaires, quelques clichés de chantiers ou de créations et les commentaires déjà reçus. Un contenu "
+            "écrit pour vous, et non copié, reste la base de tout le reste."),
+      ('p', "Si l'écriture n'est pas votre point fort, notre blog explique "
+            + _a('/blog/fr/creer-du-contenu-web-sans-savoir-ecrire', 'comment rédiger votre site sans savoir écrire') + "."),
+      ('img', ('crear-contenido-web-artesano-grabando', "Un ferronnier explique son métier devant un petit micro posé sur "
+               "l'établi, pendant qu'un collègue meule une pièce de métal au fond de l'atelier.")),
+      ('h3', 'Choisir qui le réalise'),
+      ('p', "Trois solutions s'offrent à vous : un outil à modèles à personnaliser, la conception confiée à un freelance "
+            "ou à une agence, qui facturent le projet, ou un service qui prépare tout pour un montant fixe chaque mois. Le comparatif des coûts, plus haut sur cette page, et la section suivante vous aident à faire votre "
+            "choix selon vos besoins."),
+      ('h3', 'Domaine, hébergement et mentions légales'),
+      ('p', "Le domaine est votre adresse web (votre-entreprise.fr) : il fait partie de votre identité et doit vous "
+            "appartenir, pour que vous puissiez le garder si vous changez de prestataire. L'hébergement fait fonctionner le "
+            "site, avec son certificat SSL. Enfin, tout site commercial affiche des mentions légales et une politique de "
+            "confidentialité, des deux côtés des Pyrénées. À lire : "
+            + _a('/blog/fr/choisir-le-nom-de-domaine-de-son-site', 'comment choisir votre domaine') + " et, si vous êtes "
+            "installé en Espagne, " + _a('/blog/fr/mentions-legales-site-internet-espagne', 'les mentions obligatoires sur un site espagnol') + "."),
+      ('h3', 'Publier, relier et vérifier'),
+      ('p', "Une fois le site en ligne, ajoutez son adresse à votre fiche d'établissement et à vos profils, vérifiez l'affichage "
+            "de vos pages sur téléphone et la facilité de navigation, puis relisez régulièrement vos horaires et vos prestations. "
+            "Pour l'optimisation de la fiche, voici "
+            + _a('/blog/fr/optimiser-sa-fiche-google-business-profile', "la méthode étape par étape") + "."),
+    ]),
+  ],
+  how_choose_extra=[
+    ('h3', "Et l'intelligence artificielle ?"),
+    ('p', "Plusieurs créateurs de sites et assistants d'IA proposent de générer un premier jet, présentation et "
+          "rédaction comprises, après quelques réponses de votre part. Ces solutions permettent de démarrer vite et de personnaliser "
+          "un modèle depuis une interface claire, sans écrire de HTML : aucune compétence en code n'est nécessaire. C'est un bon départ pour des "
+          "besoins simples, mais il faut prendre soin de tout relire : un texte générique ressemble à celui de n'importe "
+          "quel concurrent."),
+    ('img', ('inteligencia-artificial-autonoma-despacho', "Une indépendante dicte un texte à son téléphone posé sur un "
+             "support, dans un bureau lumineux rempli de plantes.")),
+    ('h3', 'Ce qui vous reste à faire avec un outil'),
+    ('ul', ["La rédaction : expliquer votre savoir-faire avec vos mots, et non avec des phrases toutes faites.",
+            "Les réglages de l'interface et la personnalisation : adresse du site, messagerie, mentions légales et, si vous en utilisez, systèmes "
+            "de réservation ou de paiement.",
+            "La vitesse et l'affichage sur téléphone, à vérifier sur toutes vos pages.",
+            "Le suivi au fil des années : gérer les extensions, les copies de secours et les petites modifications."]),
+    ('p', "Si vous souhaitez déléguer la création de site, nous partons de votre fiche et de vos informations, nous écrivons "
+          "vos pages et nous assurons la gestion de la partie technique, sans aucun logiciel à gérer de votre côté : un site "
+          "entièrement préparé pour vous. Pour "
+          "comparer : " + _a('/blog/fr/wix-ou-wordpress', 'Wix ou WordPress') + " et "
+          + _a('/blog/fr/ia-pour-independants-outils-concrets', "les applications d'IA pour indépendants") + "."),
+  ],
+  mistakes_extra=[
+    ('img', ('elementos-web-profesional-muestras-maquette-fr', "Exemple de site d'architecture intérieure, Studio Nid, "
+             "affiché sur un ordinateur portable et sur un téléphone.")),
+    ('p', "Pour savoir si vos pages remplissent leur rôle une fois publiées, lisez sur notre blog "
+          + _a('/blog/fr/mesurer-les-resultats-de-son-site', 'comment mesurer les résultats de votre site') + "."),
+  ],
 )
 
 C['en'] = dict(
@@ -562,6 +699,24 @@ a.stag:hover { border-color:var(--green-mid); }
 }
 """
 
+# Styles des sections guide : ajoutés aux seuls accueils (EXTRA_CSS est aussi
+# repris par les pages métier, UK et expatriés, qui ne doivent pas changer).
+HOME_CSS = """
+/* ─── sections guide des accueils /fr/ /en/ (build_lang_homes.py, 15/10/2026) ─── */
+.g-c p { font-size:1.04rem; line-height:1.75; color:var(--text); margin:0 0 14px; }
+.g-c h3 { margin:28px 0 10px; }
+.g-c ul, .g-c ol { font-size:1.04rem; line-height:1.7; color:var(--text); padding-left:22px; margin:0 0 16px; display:grid; gap:8px; }
+.g-c a { color:var(--blue); font-weight:600; }
+.g-fig { margin:28px 0; }
+.g-fig img { display:block; width:100%; height:auto; border-radius:16px; }
+.g-table { overflow-x:auto; margin:22px 0; border:1.5px solid var(--border); border-radius:14px; background:var(--white); }
+.g-table table { width:100%; min-width:620px; border-collapse:collapse; font-size:.93rem; line-height:1.5; }
+.g-table th, .g-table td { padding:12px 14px; text-align:left; vertical-align:top; border-top:1px solid var(--border); }
+.g-table thead th { border-top:0; background:var(--off); font-weight:700; }
+.g-table tbody th { font-weight:600; }
+.g-table tr.us { background:rgba(34,197,94,.09); }
+"""
+
 
 # ─── alternance des fonds de section ────────────────────────────────────────
 # Entre le hero et le bandeau final, deux sections voisines ne doivent jamais
@@ -680,6 +835,51 @@ def jsonld(lang, c, u):
                       ensure_ascii=False, indent=1)
 
 
+def guide_bloc(it):
+    """Un élément d'une section guide : ('p', html), ('h3', texte), ('ul'|'ol', [html]),
+    ('img', (fichier de assets/ sans extension, texte alternatif)), ('table', dict)."""
+    k, v = it
+    if k == 'p':
+        return '\n    <p>%s</p>' % v
+    if k == 'h3':
+        return '\n    <h3>%s</h3>' % E(v)
+    if k in ('ul', 'ol'):
+        return '\n    <%s>%s</%s>' % (k, ''.join('<li>%s</li>' % x for x in v), k)
+    if k == 'img':
+        f, alt = v
+        for suffixe in ('.jpg', '.webp', '-800.webp'):
+            if not os.path.isfile(os.path.join(ROOT, 'assets', f + suffixe)):
+                sys.exit('ABANDON : image absente : assets/%s%s' % (f, suffixe))
+        b = '/assets/' + f
+        return ('\n    <figure class="g-fig"><picture><source type="image/webp" srcset="%s-800.webp?v=1 800w, %s.webp?v=1 %dw" '
+                'sizes="(max-width: 820px) calc(100vw - 40px), 780px"><img src="%s.jpg?v=1" alt="%s" width="%d" height="%d" '
+                'loading="lazy" decoding="async"></picture></figure>') % (b, b, GUIDE_IMG[0], b, E(alt), GUIDE_IMG[0], GUIDE_IMG[1])
+    if k == 'table':
+        head = ''.join('<th scope="col">%s</th>' % E(x) for x in v['head'])
+        rows = ''.join('<tr%s><th scope="row">%s</th>%s</tr>' % (
+            ' class="us"' if n == v.get('hl') else '', E(r[0]), ''.join('<td>%s</td>' % E(x) for x in r[1:]))
+            for n, r in enumerate(v['rows']))
+        return ('\n    <div class="g-table" role="region" aria-label="%s" tabindex="0"><table><thead><tr>%s</tr></thead>'
+                '<tbody>%s</tbody></table></div>') % (E(v['label']), head, rows)
+    sys.exit('ABANDON : élément de guide inconnu : %s' % k)
+
+
+def guide_html(sections):
+    """Sections guide complètes (le fond est recalculé ensuite par alterner_fonds)."""
+    out = ''
+    for sec in sections:
+        sd = '\n  <p class="sd">%s</p>' % E(sec['sd']) if sec.get('sd') else ''
+        out += f"""
+<section class="blk" id="{sec['id']}">
+  <p class="ey">{E(sec['ey'])}</p>
+  <h2>{E(sec['t'])}</h2>{sd}
+  <div class="brief-c g-c">{''.join(guide_bloc(it) for it in sec['items'])}
+  </div>
+</section>
+"""
+    return out
+
+
 def page(lang):
     c, u, src, i = C[lang], URLS[lang], source(lang), IDS[lang]
     L = lambda k: BASE + u[k]
@@ -717,9 +917,16 @@ def page(lang):
             E(p['name']), E(p['amt']), E(p['per']), ''.join('<li>%s</li>' % E(x) for x in p['pts']))
     why_html = ''
     if c.get('why_t'):
-        why_link = ('<a href="%s" target="_blank" rel="noopener noreferrer" style="color:var(--blue);font-weight:600">%s</a>'
-                    % (c['why_pb_link_url'], E(c['why_pb_link_txt'])))
         p_style = 'font-size:1.04rem;line-height:1.75;color:var(--text)'
+        # paragraphe chiffré facultatif : depuis le 15/10/2026, les fourchettes sourcées
+        # sont dans le tableau de la section guide « budget » (guide_a)
+        why_b_html = ''
+        if c.get('why_h3b'):
+            why_link = ('<a href="%s" target="_blank" rel="noopener noreferrer" style="color:var(--blue);font-weight:600">%s</a>'
+                        % (c['why_pb_link_url'], E(c['why_pb_link_txt'])))
+            why_b_html = f"""
+    <h3 style="margin-top:24px;margin-bottom:8px">{E(c['why_h3b'])}</h3>
+    <p style="{p_style}">{E(c['why_pb_pre'])}{why_link}{E(c['why_pb_post'])}</p>"""
         why_extra_html = ''
         if c.get('why_extra_t'):
             extra_items = ''.join('<li>%s</li>' % E(x) for x in c['why_extra_items'])
@@ -736,9 +943,7 @@ def page(lang):
   <div class="brief-c">
     <p style="{p_style}">{E(c['why_lede'])}</p>
     <h3 style="margin-top:24px;margin-bottom:8px">{E(c['why_h3a'])}</h3>
-    <p style="{p_style}">{E(c['why_pa'])}</p>
-    <h3 style="margin-top:24px;margin-bottom:8px">{E(c['why_h3b'])}</h3>
-    <p style="{p_style}">{E(c['why_pb_pre'])}{why_link}{E(c['why_pb_post'])}</p>{why_extra_html}
+    <p style="{p_style}">{E(c['why_pa'])}</p>{why_b_html}{why_extra_html}
   </div>
 </section>
 """
@@ -792,12 +997,17 @@ def page(lang):
     if c.get('how_choose_t'):
         opts = ''.join('<div class="aud-c"><h3>%s</h3><p>%s</p></div>' % (E(t), E(d))
                        for t, d in c['how_choose_items'])
+        # suite facultative (modèles et IA, 15/10/2026) : éléments de section guide
+        how_extra = ''
+        if c.get('how_choose_extra'):
+            how_extra = '\n  <div class="brief-c g-c" style="margin-top:32px">%s\n  </div>' % ''.join(
+                guide_bloc(it) for it in c['how_choose_extra'])
         how_choose_html = f"""
 <section class="blk" id="comment-choisir">
   <p class="ey">{E(c['how_choose_ey'])}</p>
   <h2>{E(c['how_choose_t'])}</h2>
   <p class="sd">{E(c['how_choose_sd'])}</p>
-  <div class="aud-g">{opts}</div>
+  <div class="aud-g">{opts}</div>{how_extra}
   <p class="p-note" style="max-width:780px">{E(c['how_choose_p'])}</p>
   <a class="p-link" href="{L('cmp')}">{E(c['how_choose_link'])} →</a>
 </section>
@@ -822,12 +1032,17 @@ def page(lang):
             links = ' et '.join('notre %s sur <a href="%s%s" style="color:var(--blue);font-weight:600">%s</a>' % (
                 'page' if n == 0 else 'article de blog', BASE, u2, E(t2)) for n, (t2, u2) in enumerate(c['mistakes_links']))
             see_also = 'À lire aussi :'
+        # suite facultative (image et lien, 15/10/2026) : éléments de section guide
+        mistakes_extra = ''
+        if c.get('mistakes_extra'):
+            mistakes_extra = '\n  <div class="brief-c g-c" style="margin-top:28px">%s\n  </div>' % ''.join(
+                guide_bloc(it) for it in c['mistakes_extra'])
         mistakes_html = f"""
 <section class="blk alt" id="erreurs">
   <p class="ey">{E(c['mistakes_ey'])}</p>
   <h2>{E(c['mistakes_t'])}</h2>
   <p class="sd">{E(c['mistakes_sd'])}</p>
-  <div class="cmp-c them" style="max-width:900px;margin:0 auto"><ul>{items}</ul></div>
+  <div class="cmp-c them" style="max-width:900px;margin:0 auto"><ul>{items}</ul></div>{mistakes_extra}
   <p class="p-note" style="max-width:780px">{see_also} {links}.</p>
 </section>
 """
@@ -869,7 +1084,7 @@ def page(lang):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>{src['css']}{EXTRA_CSS}</style>
+<style>{src['css']}{EXTRA_CSS}{HOME_CSS if c.get('guide_a') or c.get('guide_b') else ''}</style>
 <script type="application/ld+json">
 {jsonld(lang, c, u)}
 </script>
@@ -928,7 +1143,7 @@ def page(lang):
   <p class="p-note">{E(c['price_note'])}</p>
   <a class="p-link" href="{L('tarifs')}">{E(c['price_link'])} →</a>
 </section>
-{why_html}{hcare_html}{feat_html}
+{why_html}{guide_html(c.get('guide_a', []))}{hcare_html}{feat_html}
 <section class="blk alt" id="{i['aud']}">
   <p class="ey">{E(c['aud_ey'])}</p>
   <h2>{E(c['aud_t'])}</h2>
@@ -941,7 +1156,7 @@ def page(lang):
   <h2 style="margin-bottom:24px">{E(c['sect_t'])}</h2>
   <div class="sg">{sectors}</div>
 </section>
-{how_choose_html}
+{guide_html(c.get('guide_b', []))}{how_choose_html}
 <section class="proof" id="{i['rev']}">
   <p class="ey">{E(c['rev_ey'])}</p>
   <h2>{E(c['rev_t'])}</h2>
