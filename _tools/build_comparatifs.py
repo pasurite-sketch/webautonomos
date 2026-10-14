@@ -110,9 +110,9 @@ CSS_PLUS = """<style>
 </style>"""
 
 FOOTERS = {
-    'en': ('/en/', [('/aviso-legal/', 'Legal notice'), ('/privacidad/', 'Privacy'),
+    'en': ('/en/', [('/en/legal-notice/', 'Legal notice'), ('/en/privacy/', 'Privacy'), ('/en/cookies/', 'Cookies'),
                     ('/en/contact', 'Contact'), ('/blog/#en', 'Blog')]),
-    'fr': ('/fr/', [('/aviso-legal/', 'Mentions légales'), ('/privacidad/', 'Confidentialité'),
+    'fr': ('/fr/', [('/fr/mentions-legales/', 'Mentions légales'), ('/fr/confidentialite/', 'Confidentialité'), ('/fr/cookies/', 'Cookies'),
                     ('/fr/contact', 'Contact'), ('/blog/#fr', 'Blog')]),
 }
 

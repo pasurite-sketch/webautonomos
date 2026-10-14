@@ -307,11 +307,19 @@ NAV = """    <nav style="background:white; box-shadow:0 1px 3px rgba(0,0,0,0.1);
     </nav>
 """
 
+# Pages legales de chaque langue (FR/EN depuis le 14/10/2026 ; le valencien garde les pages ES).
+# Le lien Cookies n'est ajoute qu'aux pieds de page FR et EN.
+LEGAL_URLS = {
+    'es': ('/aviso-legal/', '/privacidad/', '/cookies/'),
+    'fr': ('/fr/mentions-legales/', '/fr/confidentialite/', '/fr/cookies/'),
+    'en': ('/en/legal-notice/', '/en/privacy/', '/en/cookies/'),
+}
+
 FOOTER = """    <footer style="background:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%); padding:24px 6%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:48px;">
         <a href="{home_url}" style="font-weight:800; font-size:1rem; color:rgba(255,255,255,0.85); text-decoration:none;">&#127760; webautonomos.es</a>
         <div style="display:flex; gap:20px; flex-wrap:wrap;">
-            <a href="{base}/aviso-legal/" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{legal}</a>
-            <a href="{base}/privacidad/" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{privacy}</a>
+            <a href="{base}{legal_url}" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{legal}</a>
+            <a href="{base}{privacy_url}" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{privacy}</a>{cookies_link}
             <a href="{contact_url}" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">{contact}</a>
         </div>
         <nav aria-label="{sectors_label}" style="flex-basis:100%; order:2; display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center; font-size:0.85rem;">
@@ -673,6 +681,10 @@ def render(article, lang, alternates):
         cta_btn=E(ui['cta_btn']), cta_href=ui.get('cta_href', '/pide-tu-demo'),
         author_desc=E(ui['author_desc']), back=E(ui['back']),
         footer=FOOTER.format(base=BASE, legal=E(ui['legal']),
+                             legal_url=LEGAL_URLS.get(lang, LEGAL_URLS['es'])[0],
+                             privacy_url=LEGAL_URLS.get(lang, LEGAL_URLS['es'])[1],
+                             cookies_link=('\n            <a href="%s%s" style=\"color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;\">Cookies</a>'
+                                           % (BASE, LEGAL_URLS[lang][2])) if lang in ('fr', 'en') else '',
                              home_url=NAV_URLS[lang]['home'],
                              contact_url=NAV_URLS[lang]['contact'],
                              privacy=E(ui['privacy']), contact=E(ui['contact']),

@@ -1675,8 +1675,9 @@ def page(P):
 <footer>
   <a class="fl" href="{home}"><span>🌐</span> webautonomos.es</a>
   <div class="flinks">
-    <a href="{BASE}/aviso-legal/" onclick="{legal_js % 'modal-aviso'}">{E(H.C[LANG]['foot_legal'])}</a>
-    <a href="{BASE}/privacidad/" onclick="{legal_js % 'modal-privacidad'}">{E(H.C[LANG]['foot_privacy'])}</a>
+    <a href="{BASE}/{'fr/mentions-legales' if LANG == 'fr' else 'en/legal-notice'}/" onclick="{legal_js % 'modal-aviso'}">{E(H.C[LANG]['foot_legal'])}</a>
+    <a href="{BASE}/{'fr/confidentialite' if LANG == 'fr' else 'en/privacy'}/" onclick="{legal_js % 'modal-privacidad'}">{E(H.C[LANG]['foot_privacy'])}</a>
+    <a href="{BASE}/{LANG}/cookies/">Cookies</a>
     <a href="{L('blog')}">{E(H.C[LANG]['foot_blog'])}</a>
     {foot_langs}
   </div>

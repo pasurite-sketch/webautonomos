@@ -64,7 +64,12 @@ NAV = {
            ('https://webautonomos.es/#marketing', BASE + '/fr/#services'),
            ('https://webautonomos.es/#preguntas', BASE + '/fr/questions'),
            ('https://webautonomos.es/blog/', BASE + '/blog/#fr'),
-           ('https://webautonomos.es/#contacto', BASE + '/demandez-votre-demo#pide-demo')],
+           ('https://webautonomos.es/#contacto', BASE + '/demandez-votre-demo#pide-demo'),
+           # pages legales de la langue (14/10/2026)
+           ('https://webautonomos.es/aviso-legal/', BASE + '/fr/mentions-legales/'),
+           ('https://webautonomos.es/privacidad/', BASE + '/fr/confidentialite/'),
+           ('https://webautonomos.es/cookies/', BASE + '/fr/cookies/'),
+           ('/aviso-legal/', '/fr/mentions-legales/'), ('/privacidad/', '/fr/confidentialite/'), ('/cookies/', '/fr/cookies/')],
     'en': [('https://webautonomos.es', BASE + '/en/'),
            ('https://webautonomos.es/#que-incluye', BASE + '/en/#included'),
            ('https://webautonomos.es/#precios', BASE + '/en/pricing'),
@@ -72,7 +77,12 @@ NAV = {
            ('https://webautonomos.es/#marketing', BASE + '/en/#services'),
            ('https://webautonomos.es/#preguntas', BASE + '/en/faq'),
            ('https://webautonomos.es/blog/', BASE + '/blog/#en'),
-           ('https://webautonomos.es/#contacto', BASE + '/en/contact')],
+           ('https://webautonomos.es/#contacto', BASE + '/en/contact'),
+           # pages legales de la langue (14/10/2026)
+           ('https://webautonomos.es/aviso-legal/', BASE + '/en/legal-notice/'),
+           ('https://webautonomos.es/privacidad/', BASE + '/en/privacy/'),
+           ('https://webautonomos.es/cookies/', BASE + '/en/cookies/'),
+           ('/aviso-legal/', '/en/legal-notice/'), ('/privacidad/', '/en/privacy/'), ('/cookies/', '/en/cookies/')],
 }
 
 

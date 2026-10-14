@@ -300,6 +300,15 @@ HEAD = ('<?xml version="1.0" encoding="UTF-8"?>\n'
         '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n')
 
 
+# Pages hors blog declarees en groupes linguistiques (alternates hreflang).
+# Pages legales FR/EN creees le 14/10/2026.
+PAGE_GROUPS = (
+    {'es': '/aviso-legal/', 'en': '/en/legal-notice/', 'fr': '/fr/mentions-legales/'},
+    {'es': '/privacidad/', 'en': '/en/privacy/', 'fr': '/fr/confidentialite/'},
+    {'es': '/cookies/', 'en': '/en/cookies/', 'fr': '/fr/cookies/'},
+)
+
+
 def block(loc, lastmod, priority, alternates=(), changefreq='monthly'):
     lines = ['    <url>', '        <loc>%s</loc>' % loc]
     for tag, url in alternates:
@@ -342,7 +351,12 @@ def build(files, grps, pages, previous, stats):
                              '0.7' if l == xdef_lang else '0.6', alts))
 
     for url, path in pages:
-        out.append(block(BASE + url, lastmod_for(BASE + url, path, previous), '0.8'))
+        alts = []
+        for grp in PAGE_GROUPS:
+            if url in grp.values():
+                alts = [(HREFLANG[l], BASE + grp[l]) for l in LANGS if l in grp]
+                alts.append(('x-default', BASE + grp['es']))
+        out.append(block(BASE + url, lastmod_for(BASE + url, path, previous), '0.8', alts))
 
     out.append('</urlset>\n')
     return ''.join(out)
@@ -377,7 +391,7 @@ def verify(xml, files, pages):
             errs.append('<loc> sans fichier sur le disque : %s' % u)
 
     for tag, url in re.findall(r'hreflang="([^"]+)"\s+href="([^"]+)"', xml):
-        if tag == 'x-default':
+        if tag == 'x-default' or url in page_urls:
             continue
         m = URL_RE.search(url)
         if not m or (m.group(1), m.group(2)) not in files:

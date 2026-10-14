@@ -585,8 +585,9 @@ NAP_FOOTER = """
     <footer style="background:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%); padding:24px 6%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:48px;">
         <a href="{base}" style="font-weight:800; font-size:1rem; color:rgba(255,255,255,0.85); text-decoration:none;">&#127760; webautonomos.es</a>
         <div style="display:flex; gap:20px; flex-wrap:wrap;">
-            <a href="{base}/aviso-legal/" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Mentions légales</a>
-            <a href="{base}/privacidad/" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Confidentialité</a>
+            <a href="{base}/fr/mentions-legales/" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Mentions légales</a>
+            <a href="{base}/fr/confidentialite/" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Confidentialité</a>
+            <a href="{base}/fr/cookies/" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Cookies</a>
             <a href="{base}/contacto" style="color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;">Contact</a>
         </div>
         <address style="flex-basis:100%; order:3; margin-top:4px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.12); font-style:normal; font-size:0.78rem; line-height:1.7; color:rgba(255,255,255,0.55); display:flex; flex-direction:column; gap:1px;">
@@ -1055,6 +1056,13 @@ def tutoiement_hits(html_text):
 # liens vers /blog/es/ qui pointent vers la version espagnole.
 
 CHROME_FR = [
+    # pied de page legal : pages legales de la langue + lien Cookies (14/10/2026).
+    # Avant les libelles '>Aviso legal</a>' / '>Privacidad</a>' ci-dessous.
+    ('/aviso-legal/" style=\"color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;\">Aviso legal</a>',
+     '/fr/mentions-legales/" style=\"color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;\">Mentions l\u00e9gales</a>'),
+    ('/privacidad/" style=\"color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;\">Privacidad</a>',
+     '/fr/confidentialite/" style=\"color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;\">Confidentialit\u00e9</a>'
+     '\n            <a href="https://webautonomos.es/fr/cookies/" style=\"color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;\">Cookies</a>'),
     # barre de navigation
     ('>Inicio</a>',            '>Accueil</a>'),
     ('>Servicios</a>',         '>Services</a>'),
@@ -1906,6 +1914,13 @@ def cmd_retarget_all(args):
 # introduire un second vocabulaire anglais a cote du premier.
 
 CHROME_EN = [
+    # pied de page legal : pages legales de la langue + lien Cookies (14/10/2026).
+    # Avant les libelles '>Aviso legal</a>' / '>Privacidad</a>' ci-dessous.
+    ('/aviso-legal/" style=\"color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;\">Aviso legal</a>',
+     '/en/legal-notice/" style=\"color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;\">Legal notice</a>'),
+    ('/privacidad/" style=\"color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;\">Privacidad</a>',
+     '/en/privacy/" style=\"color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;\">Privacy</a>'
+     '\n            <a href="https://webautonomos.es/en/cookies/" style=\"color:rgba(255,255,255,0.8); text-decoration:none; font-size:0.9rem;\">Cookies</a>'),
     # barre de navigation
     ('>Inicio</a>',            '>Home</a>'),
     ('>Servicios</a>',         '>Services</a>'),

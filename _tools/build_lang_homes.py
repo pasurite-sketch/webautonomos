@@ -978,8 +978,9 @@ def page(lang):
 <footer>
   <a class="fl" href="{url}"><span>🌐</span> webautonomos.es</a>
   <div class="flinks">
-    <a href="{BASE}/aviso-legal/" onclick="{legal_js % 'modal-aviso'}">{E(c['foot_legal'])}</a>
-    <a href="{BASE}/privacidad/" onclick="{legal_js % 'modal-privacidad'}">{E(c['foot_privacy'])}</a>
+    <a href="{BASE}/{'fr/mentions-legales' if lang == 'fr' else 'en/legal-notice'}/" onclick="{legal_js % 'modal-aviso'}">{E(c['foot_legal'])}</a>
+    <a href="{BASE}/{'fr/confidentialite' if lang == 'fr' else 'en/privacy'}/" onclick="{legal_js % 'modal-privacidad'}">{E(c['foot_privacy'])}</a>
+    <a href="{BASE}/{lang}/cookies/">Cookies</a>
     <a href="{L('blog')}">{E(c['foot_blog'])}</a>
     {('<a href="%s">Contact</a>' % L('contact')) if 'contact' in u else ''}
     {''.join('<a href="%s" hreflang="%s">%s</a>' % (h, code, lab) for code, lab, h in langs if code != lang)}
