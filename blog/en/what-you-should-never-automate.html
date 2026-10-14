@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>What Not to Automate in Business: Tasks to Keep Human</title>
-    <meta name="description" content="What not to automate in business: customer care, judgment calls, unstable or rare processes, sensitive data, your core work, and how to decide.">
+    <meta name="description" content="What not to automate in business: customer care, judgment calls, unstable processes, personal data, AI agents acting alone, and how to decide.">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <meta name="author" content="WebAutonomos">
 
@@ -19,16 +19,16 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://webautonomos.es/blog/en/what-you-should-never-automate">
     <meta property="og:title" content="What Not to Automate in Business: Tasks to Keep Human">
-    <meta property="og:description" content="What not to automate in business: customer care, judgment calls, unstable or rare processes, sensitive data, your core work, and how to decide.">
+    <meta property="og:description" content="What not to automate in business: customer care, judgment calls, unstable processes, personal data, AI agents acting alone, and how to decide.">
     <meta property="og:site_name" content="WebAutonomos">
     <meta property="og:locale" content="en_GB">
     <meta property="article:published_time" content="2026-09-17T08:00:00+01:00">
-    <meta property="article:modified_time" content="2026-10-07T17:00:00+02:00">
+    <meta property="article:modified_time" content="2026-10-14T02:20:00+02:00">
     <meta property="article:section" content="Automation">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="What Not to Automate in Business: Tasks to Keep Human">
-    <meta name="twitter:description" content="What not to automate in business: customer care, judgment calls, unstable or rare processes, sensitive data, your core work, and how to decide.">
+    <meta name="twitter:description" content="What not to automate in business: customer care, judgment calls, unstable processes, personal data, AI agents acting alone, and how to decide.">
 
     <link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
@@ -46,7 +46,7 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "What not to automate in business, and what to keep in human hands",
-        "description": "What not to automate in business: customer care, judgment calls, unstable or rare processes, sensitive data, your core work, and how to decide.",
+        "description": "What not to automate in business: customer care, judgment calls, unstable processes, personal data, AI agents acting alone, and how to decide.",
         "author": {
                 "@type": "Organization",
                 "name": "WebAutonomos",
@@ -62,15 +62,15 @@
                 }
         },
         "datePublished": "2026-09-17T08:00:00+01:00",
-        "dateModified": "2026-10-07T17:00:00+02:00",
+        "dateModified": "2026-10-14T02:20:00+02:00",
         "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": "https://webautonomos.es/blog/en/what-you-should-never-automate"
         },
         "articleSection": "Automation",
         "inLanguage": "en",
-        "wordCount": 2526,
-        "keywords": "what not to automate in business, tasks not to automate, human judgment, customer service automation, process automation, automation risks"
+        "wordCount": 4651,
+        "keywords": "what not to automate in business, tasks not to automate, human judgment, AI agents, human oversight, GDPR automated decisions, AI assurance, automation risks"
 }
     </script>
     <script type="application/ld+json">
@@ -138,7 +138,7 @@
                         "name": "Is it safe to automate anything involving personal data?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Yes, with care: keep each tool's permissions to the strict minimum and check how it protects privacy. The GDPR gives people the right not to be subject to decisions based solely on automated processing that significantly affect them, so make sure a person checks each one."
+                                "text": "Yes, with care: keep each tool's permissions to the strict minimum and check how it protects privacy. In Spain, the GDPR and the LOPDGDD apply, and the GDPR gives people the right not to be subject to decisions made solely by a machine that produce legal effects for them or similarly significantly affect them. In those cases, make sure a person with the authority to change the outcome reviews each one."
                         }
                 },
                 {
@@ -147,6 +147,14 @@
                         "acceptedAnswer": {
                                 "@type": "Answer",
                                 "text": "For simple questions, yes, as long as a person can take over when needed. For complaints, payments or delicate enquiries, use AI to prepare a draft and review it before you send it."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Can I let an AI agent act on my behalf?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Only for low-stakes, well-defined jobs that are easy to undo, with the minimum permissions the job calls for and a log of what the agent does. Payments, messages to customers and changes to customer files should wait for a person's approval, and someone should be able to switch the agent off at once."
                         }
                 }
         ]
@@ -219,7 +227,7 @@
         <header class="mb-8">
             <span style="background:#0EA5E9; color:white; padding:4px 14px; border-radius:999px; font-size:13px; font-weight:600;">Automation</span>
             <p class="text-sm text-gray-500 mt-4 mb-3">
-                <time datetime="2026-09-17">Sep 17, 2026</time> &middot; 10 min read
+                <time datetime="2026-09-17">Sep 17, 2026</time> &middot; 19 min read
             </p>
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">What not to automate in business, and what to keep in human hands</h1>
         </header>
@@ -237,7 +245,11 @@
                     <li><a href="#seccion-8" class="toc-link">The risks of over-automation</a></li>
                     <li><a href="#seccion-9" class="toc-link">How to decide, task by task</a></li>
                     <li><a href="#seccion-10" class="toc-link">AI suggests, you decide</a></li>
-                    <li><a href="#seccion-11" class="toc-link">What you can safely hand over to a machine</a></li>
+                    <li><a href="#seccion-11" class="toc-link">How can you test AI before relying on it?</a></li>
+                    <li><a href="#seccion-12" class="toc-link">Should an AI agent act on its own?</a></li>
+                    <li><a href="#seccion-13" class="toc-link">Agree the ground rules with your staff</a></li>
+                    <li><a href="#seccion-14" class="toc-link">Official guidance and resources</a></li>
+                    <li><a href="#seccion-15" class="toc-link">What you can safely hand over to a machine</a></li>
                     <li><a href="#faq" class="toc-link">Frequently asked questions</a></li>
             </ol>
         </div>
@@ -252,6 +264,7 @@
                 <figcaption class="text-sm text-gray-500 mt-3">The chocolatier shares a taste of her handmade sweets with a customer.</figcaption>
             </figure>
             <p class="text-gray-700 leading-relaxed mb-4">For many small businesses, automation can save time and improve efficiency, but the technology only applies the rules it was given. Before you start, it pays to work out which business processes gain from it and which lose something important.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">This guide is written for freelancers and SMEs in Spain, so its legal points refer to the GDPR and Spanish law. It also draws on public guidance from the UK, published by the National Cyber Security Centre (NCSC), the Information Commissioner&#x27;s Office (ICO) and the government, and on reports from the CIPD, the professional body for HR in the UK. For an organisation based in Spain, those texts set out principles and good practice rather than requirements.</p>
             <h2 id="seccion-1" class="text-2xl font-bold text-gray-900 mt-10 mb-4">What tasks should not be automated?</h2>
             <p class="text-gray-700 leading-relaxed mb-4">A task should stay with a person when a machine would remove what gives it its value: a genuine conversation, a decision you can&#x27;t undo or the skill you are paid for. In practice, that means:</p>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
@@ -272,18 +285,19 @@
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Difficult conversations about money</h3>
             <p class="text-gray-700 leading-relaxed mb-4">Reminders for overdue invoices fit well into a workflow, and chasing unpaid invoices is often one of those jobs <a href="https://webautonomos.es/blog/en/what-you-never-get-round-to" style="color:#2563eb;">you never get round to</a>. Negotiating a payment plan with a regular customer going through a bad patch is another matter: let the system send the reminders and keep any related decision for yourself.</p>
             <h2 id="seccion-3" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Judgment calls that should stay yours</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">An automation follows a rule: if this happens, do that. It works when the rule is clear, and becomes a risk when the right decision depends on the context. Offering a goodwill gesture, spotting a job that looks like a scam or choosing which project to accept: each of these requires experience and critical thinking. Software can gather the information and flag what looks unusual, but the final word is yours. Bigger organisations have committees, teams and approval processes for these choices; in a small business, you make the call.</p>
-            <p class="text-gray-700 leading-relaxed mb-4">Pricing is a good example. A program can compare your rates with the market, but raising your prices or making an exception for a key customer depends on your strategy, your margins and the relationship, and none of that fits in a formula.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">An automation follows a rule: if this happens, do that. It works when the rule is unambiguous, and becomes a risk when the right decision depends on the context. Offering a goodwill gesture, spotting a job that looks like a scam or choosing which project to accept: each of these requires experience and critical thinking. An app can gather the information and flag what looks unusual, but the final word is yours. Bigger organisations have committees, teams and approval processes for these choices; in a one-person business, you make the call.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Pricing shows this well. A program can compare your rates with the market, but raising your prices or making an exception for a key customer depends on your strategy, your margins and the relationship, and none of that fits in a formula.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Hiring, sick leave and dismissals</h3>
             <p class="text-gray-700 leading-relaxed mb-4">Software can sort CVs or keep the daily record of working hours (the registro de jornada) for your employees. Anything related to hiring, an employee&#x27;s sick leave or a dismissal affects people: an automatic filter can discard exactly the profile you were looking for, and a dismissal should never arrive by automatic email.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Legislation points the same way. Where a firm has workers&#x27; representatives, Spain&#x27;s Workers&#x27; Statute (Estatuto de los Trabajadores) gives them the right to be informed of the rules behind the algorithms that affect decision-making on conditions of employment, hiring or keeping a job, including profiling. In the UK, the CIPD&#x27;s employment law notes stress that no single piece of legislation governs their use in employment: employers have to deal with several areas of law at once, from discrimination to the protection of personal details.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Legal and tax matters</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">Accounting software takes a good part of the <a href="https://webautonomos.es/blog/en/what-paperwork-really-costs-a-freelancer" style="color:#2563eb;">paperwork of a sole trader</a> off your hands. But deciding whether an expense is deductible, how to respond to a formal request from the Tax Agency (Hacienda) or which clause to accept in a contract calls for professional judgment: yours or your adviser&#x27;s. Software can help you meet deadlines, but it can&#x27;t decide which obligations apply to you.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Accounting software takes a good part of the <a href="https://webautonomos.es/blog/en/what-paperwork-really-costs-a-freelancer" style="color:#2563eb;">paperwork of a sole trader</a> off your hands. But deciding whether an expense is deductible, how to respond to a formal request from the Tax Agency (Hacienda) or which clause to accept in a contract calls for professional knowledge and judgment: yours or your adviser&#x27;s. Software can help you meet deadlines, but it can&#x27;t decide which obligations apply to you.</p>
             <h2 id="seccion-4" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Processes that are poorly defined or keep changing</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Automation copies a process; it doesn&#x27;t fix it. If the process is unclear or still moving, a machine repeats the confusion, only faster. If nobody can explain who does what, in which order and with which information, there is nothing solid to hand over yet. Bad assumptions built into a workflow are hard to spot, because they are applied without complaint, and incorrect data then spreads across your connected systems. Map the process first: define it, improve it, write down the steps and run it by hand until it runs smoothly. Our guide on <a href="https://webautonomos.es/blog/en/how-automating-a-process-works-step-by-step" style="color:#2563eb;">how automating a process works, step by step</a> shows what to write down before you start.</p>
-            <p class="text-gray-700 leading-relaxed mb-4">The same applies to anything still evolving. If you are adjusting your rates, testing new services or reorganising your team every couple of months, automating now means freezing a version you are about to abandon. Each change forces you to undo and rebuild, and that back-and-forth soon outweighs the time saved. Let it settle first: something that keeps changing is not a bad candidate forever, just a bad candidate for now.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Automation copies a process; it doesn&#x27;t fix it. If the process is unclear or still moving, a machine repeats the confusion, only faster. If nobody can explain who does what, in which order and with which information, there is no solid base to hand over yet. Bad assumptions built into a workflow are hard to spot, because they are applied without complaint, and incorrect data then spreads across your connected systems. Map the process first: define it, tidy it up, write down the steps and run it by hand until it runs smoothly. Our guide on <a href="https://webautonomos.es/blog/en/how-automating-a-process-works-step-by-step" style="color:#2563eb;">how automating a process works, step by step</a> shows what to write down before you start.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">The same applies to anything still evolving. If you are adjusting your rates, testing new services or reorganising your team every couple of months, building it now means freezing a version you are about to abandon. Each change forces you to undo and rebuild, and that back-and-forth soon outweighs the time saved. Let it settle first: something that keeps changing is not a bad candidate forever, just a bad candidate for now.</p>
             <h2 id="seccion-5" class="text-2xl font-bold text-gray-900 mt-10 mb-4">When automation isn&#x27;t worth the cost</h2>
             <p class="text-gray-700 leading-relaxed mb-4">Building and maintaining an automation takes about the same effort whether you use it a lot or a little, but the time it actually saves depends on how often the task happens. An annoying task is not necessarily a frequent one, and low volume rules out many automation projects.</p>
-            <p class="text-gray-700 leading-relaxed mb-4">A task you do every day or every week deserves a close look; one you do three times a year almost never does. For those rare jobs, use a simple checklist instead: it is free and never breaks down on a Saturday. To run the numbers on a specific task, use <a href="https://webautonomos.es/blog/en/cuanto-cuesta-automatizar-un-proceso-formula" style="color:#2563eb;">the formula for calculating the cost of an automation</a>.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">A task you do every day or every week deserves a close look; one you do three times a year almost never does. For those rare jobs, use a simple checklist instead: it is free and never breaks down on a Saturday. To put an annual figure on a specific task, use <a href="https://webautonomos.es/blog/en/cuanto-cuesta-automatizar-un-proceso-formula" style="color:#2563eb;">the formula for calculating the cost of an automation</a>.</p>
             <p class="text-gray-700 leading-relaxed mb-4">An automation isn&#x27;t finished once it is built either. An app changes its interface, a form gains a new field, a supplier changes the layout of its invoices, and someone has to fix and maintain the workflow. Otherwise, one day the automation stops without warning. <a href="https://webautonomos.es/blog/en/maintenance-the-hidden-cost-of-automation" style="color:#2563eb;">The cost of maintenance</a> is often underestimated: include it before deciding whether a task is worth the effort.</p>
             <figure class="my-10">
                 <picture>
@@ -293,17 +307,25 @@
                 <figcaption class="text-sm text-gray-500 mt-3">Example website of Cacao Chocolates on laptop and smartphone.</figcaption>
             </figure>
             <h2 id="seccion-6" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Personal and sensitive data</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">If your business handles customer files, automation is still possible, but with care: using an app doesn&#x27;t change who is responsible for them. Under the GDPR, you remain the data controller, and every service you share them with is one more point where they can leak. Take particular care with:</p>
+            <p class="text-gray-700 leading-relaxed mb-4">If your business handles files on customers, patients or staff, or other people&#x27;s personal details, automation is still possible, but with care: using an app doesn&#x27;t change who is responsible for them. Under the <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-80807" style="color:#2563eb;">GDPR</a> and the <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673" style="color:#2563eb;">LOPDGDD</a>, the Spanish law that complements it, you remain the data controller, responsible for respecting the rights of the people concerned, and every service you share them with is one more point where they can leak. Take particular care with:</p>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
-            <li>health data and the other special categories of personal data, which the GDPR protects more strictly;</li>
+            <li>health data and the other special categories of personal data, which get stronger protection under the GDPR;</li>
             <li>bank details and payments;</li>
-            <li>automatic decisions that have a significant effect on a person, such as rejecting a job candidate: the GDPR gives people the right not to be subject to a decision based solely on automated processing in such cases;</li>
-            <li>external tools that keep copies of your documents.</li>
+            <li>automatic decisions that have a significant effect on a person, such as rejecting a job candidate;</li>
+            <li>external tools that keep copies of your documents;</li>
+            <li>any new processing that could seriously affect individuals&#x27; rights, where the GDPR may oblige you to carry out an impact assessment beforehand.</li>
             </ul>
-            <p class="text-gray-700 leading-relaxed mb-4">None of this stops you from automating: check how each service protects privacy and security, limit access to what is strictly necessary and let a person review the exceptions.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">What the GDPR says when a machine decides alone</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">The GDPR gives everyone the right not to be subject to a decision based solely on automated processing, including profiling, that produces legal effects for them or similarly significantly affects them. There are exceptions, such as a decision that is necessary to enter into or perform a contract, or one based on the person&#x27;s explicit consent. Even then, the controller must protect the person&#x27;s rights and freedoms with suitable measures, including at least the right to obtain human intervention, to express their point of view and to contest the decision.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">The UK has taken a different route. The ICO explains that recent UK legislation opens up a wider range of lawful bases for decisions with serious effects made solely by a machine, provided organisations keep appropriate safeguards, while special categories stay more protected. That reform changes UK law; an organisation established in Spain remains bound by the GDPR and the LOPDGDD, and the Spanish Data Protection Agency (AEPD) publishes practical guidance on applying them.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">A review that really counts</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">A final sign-off is not enough if the person in that role simply approves whatever the machine proposes. For the review to mean something, ensure the reviewer has the relevant information and evidence to understand the case, the time to look at it and the authority to change the outcome. If they can&#x27;t say no, they are only rubber-stamping. And keep an open channel for the person affected to contest the outcome.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">None of this should stop you: check how each service protects privacy and security, limit access to what is strictly necessary and let a person review the exceptions.</p>
             <h2 id="seccion-7" class="text-2xl font-bold text-gray-900 mt-10 mb-4">The core of your work and your brand</h2>
             <p class="text-gray-700 leading-relaxed mb-4">There is a difference between what surrounds your work and the craft itself. A photographer in Valencia can let an app handle quotes, reminders and file management, but not the way they compose an image; a physiotherapist in Alicante can let patients book online, but not hand over the session. A machine can help you prepare and organise around your craft, but what makes customers choose your business is the last thing to hand over.</p>
             <p class="text-gray-700 leading-relaxed mb-4">Your brand works the same way. Scheduling posts is admin; the writing, the content and the personal contact with your customers are your signature. In sales, a machine can handle the follow-up, not the relationship.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Regulated professions: your code of conduct still applies</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">If you are one of the regulated professionals in Spain, such as lawyers, doctors, psychologists or physiotherapists, your colegio profesional and its code of conduct keep applying when a machine is involved. Confidentiality of client or patient details, your personal responsibility for advice or a diagnosis and, in many codes, the duty to stay up to date in your field remain yours, and so do the professional standards your colegio sets. Before handing over any part of a professional service, check whether your colegio has published guidance or standards relevant to chatbots and language models: in an expert service, the judgment you bring to your area of practice is what clients pay for and trust.</p>
             <h2 id="seccion-8" class="text-2xl font-bold text-gray-900 mt-10 mb-4">The risks of over-automation</h2>
             <p class="text-gray-700 leading-relaxed mb-4">A person makes a mistake once; a machine repeats it in every operation, at full speed, until someone notices. And the more systems and workflows you chain together, the harder it is to see where an error comes from.</p>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
@@ -315,7 +337,7 @@
             </ul>
             <p class="text-gray-700 leading-relaxed mb-4">Treat every automation you create as a project: give it someone in your team who checks it regularly, a log of what it does and an easy way to switch it off. One that nobody watches can pile up errors in silence for weeks. Other, more technical pitfalls are covered in <a href="https://webautonomos.es/blog/en/costliest-automation-mistakes" style="color:#2563eb;">the costliest small business automation mistakes</a>.</p>
             <h2 id="seccion-9" class="text-2xl font-bold text-gray-900 mt-10 mb-4">How to decide, task by task</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">A good way to start is with two key questions: what does the task lose if a machine does it, and what do you gain in time, efficiency or fewer errors? If it loses little and the saving is clear, go ahead; if it loses something your customers care about, keep doing it yourself.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">A good way to start is with two key questions: what does the task lose if a machine does it, and what do you gain in time, efficiency or fewer errors? If it loses little and the saving is obvious, go ahead without a second thought; if it loses something your customers care about, keep doing it yourself.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">The one-question test</h3>
             <p class="text-gray-700 leading-relaxed mb-4">Imagine a customer found out that a machine handles the task: would they be reassured or disappointed? With the filing of your invoices, they wouldn&#x27;t care. With the reply to their delicate enquiry, they would be disappointed, and rightly so.</p>
             <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">A quick risk checklist: questions to ask first</h3>
@@ -323,33 +345,83 @@
             <li>Is the right answer always the same, or does it depend on the situation?</li>
             <li>If the system gets it wrong, what is the impact, and can it be undone?</li>
             <li>Does the task happen often enough to justify the effort to build and maintain it?</li>
-            <li>Is the process stable and repeatable, with clear rules and accurate data?</li>
+            <li>Is the process stable and repeatable, with clear rules and accurate inputs?</li>
             <li>Does it involve personal details or payments?</li>
             <li>Do your customers expect a person to do it?</li>
             </ul>
-            <p class="text-gray-700 leading-relaxed mb-4">If one of these questions is hard to answer, it isn&#x27;t all or nothing: you can hand over part of the job and keep a person at the point where the decision is made. Here is where the line falls for some everyday jobs:</p>
+            <p class="text-gray-700 leading-relaxed mb-4">If one of these questions is hard to answer, it isn&#x27;t all or nothing. There is a middle way: the machine prepares the job, and a person steps in at the point where the decision is made. The following table shows where the line falls for some everyday jobs:</p>
             <div class="overflow-x-auto mb-4">
                 <table class="w-full text-sm text-left text-gray-700" style="border-collapse:collapse;">
-                    <thead><tr style="border-bottom:2px solid #e5e7eb;"><th class="py-2 pr-4">Automate with confidence</th><th class="py-2">Keep in human hands</th></tr></thead>
+                    <thead><tr style="border-bottom:2px solid #e5e7eb;"><th class="py-2 pr-4">Hand over with confidence</th><th class="py-2 pr-4">Hand over with a review</th><th class="py-2">Keep in human hands</th></tr></thead>
                     <tbody>
-                    <tr style="border-bottom:1px solid #e5e7eb;"><td class="py-2 pr-4">The acknowledgement of an enquiry</td><td class="py-2">The reply to a delicate enquiry</td></tr>
-                    <tr style="border-bottom:1px solid #e5e7eb;"><td class="py-2 pr-4">Reminders for overdue invoices</td><td class="py-2">Negotiating with a customer in difficulty</td></tr>
-                    <tr style="border-bottom:1px solid #e5e7eb;"><td class="py-2 pr-4">Moving files between your tools</td><td class="py-2">A price rise or an exception</td></tr>
-                    <tr style="border-bottom:1px solid #e5e7eb;"><td class="py-2 pr-4">Filing invoices and documents</td><td class="py-2">Responding to a formal request from Hacienda</td></tr>
-                    <tr style="border-bottom:1px solid #e5e7eb;"><td class="py-2 pr-4">A first draft written with AI</td><td class="py-2">The final version that carries your name</td></tr>
+                    <tr style="border-bottom:1px solid #e5e7eb;"><td class="py-2 pr-4">The acknowledgement of an enquiry</td><td class="py-2 pr-4">Sorting enquiries by topic</td><td class="py-2">The reply to a delicate enquiry</td></tr>
+                    <tr style="border-bottom:1px solid #e5e7eb;"><td class="py-2 pr-4">Reminders for overdue invoices</td><td class="py-2 pr-4">The final notice before you claim an unpaid invoice</td><td class="py-2">Negotiating with a customer in difficulty</td></tr>
+                    <tr style="border-bottom:1px solid #e5e7eb;"><td class="py-2 pr-4">Moving files between your tools</td><td class="py-2 pr-4">Assigning each request to the right person</td><td class="py-2">A price rise or an exception</td></tr>
+                    <tr style="border-bottom:1px solid #e5e7eb;"><td class="py-2 pr-4">Filing invoices and documents</td><td class="py-2 pr-4">Category suggestions for each expense</td><td class="py-2">Responding to a formal request from Hacienda</td></tr>
+                    <tr style="border-bottom:1px solid #e5e7eb;"><td class="py-2 pr-4">A first draft written with AI</td><td class="py-2 pr-4">A suggested reply to a routine question</td><td class="py-2">The final version that carries your name</td></tr>
                     </tbody>
                 </table>
             </div>
+            <p class="text-gray-700 leading-relaxed mb-4">For the middle column to function, decide in advance which details each request must include for the machine to handle it alone; anything that arrives incomplete goes to the person who decides.</p>
             <h2 id="seccion-10" class="text-2xl font-bold text-gray-900 mt-10 mb-4">AI suggests, you decide</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Artificial intelligence widens what automation can do without changing the main rule: the tool suggests and a person decides. A language model can draft an email or summarise a long document in seconds, and it can also state an invented fact with complete confidence, which is why it shouldn&#x27;t run your customer support unsupervised. Use it mainly to:</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Artificial intelligence widens what automation can do without changing the main rule: the tool suggests and a person decides. A language model can draft an email or summarise a long document in seconds, and it can also state an invented fact with complete confidence, which is why it shouldn&#x27;t run your customer support unsupervised. Use it mainly in three ways:</p>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
-            <li>prepare drafts of emails or posts that you then review;</li>
-            <li>summarise and organise long notes or documents;</li>
-            <li>flag what looks out of the ordinary.</li>
+            <li>preparing drafts of emails or posts that you then review;</li>
+            <li>summarising and organising long notes or documents;</li>
+            <li>flagging what looks out of the ordinary.</li>
             </ul>
             <p class="text-gray-700 leading-relaxed mb-4">Don&#x27;t publish what it produces without reading it, and don&#x27;t let it reply on its own to a customer with a serious complaint: reviewing its work is how you get the benefits of the technology without risking your reputation. To get started, see this selection of <a href="https://webautonomos.es/blog/en/ai-for-freelancers-practical-tools" style="color:#2563eb;">AI tools for freelancers</a>.</p>
-            <h2 id="seccion-11" class="text-2xl font-bold text-gray-900 mt-10 mb-4">What you can safely hand over to a machine</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Once you set all that aside, plenty is left: repetitive, predictable jobs with no delicate choices, necessary chores that nobody misses doing. It is the operational side of your business, and a good place to start:</p>
+            <h2 id="seccion-11" class="text-2xl font-bold text-gray-900 mt-10 mb-4">How can you test AI before relying on it?</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Try it on a sample of past enquiries or documents from your own firm, compare its results with what you would have done and keep evidence of what you checked. The UK government calls this kind of exercise AI assurance: measuring, evaluating and communicating how far it deserves trust.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">The government&#x27;s introduction to the subject, issued by the Department for Science, Innovation and Technology as the first in a series on assurance and governance, describes several techniques that organisations can combine; they include an assessment of the risks, an impact assessment covering wider effects, bias audits, compliance audits and conformity assessment. A sole trader or an SME doesn&#x27;t need a formal audit, but it can borrow the same logic:</p>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
+            <li><strong>Research and risks:</strong> check where the provider keeps your files and whether they are used to train its models, then ask what the worst mistake could be and who it would affect.</li>
+            <li><strong>Performance testing:</strong> run it on a range of past enquiries, invoices or CVs, focus on the ones where a mistake would hurt most and compare its output with your own choices.</li>
+            <li><strong>Bias check:</strong> look for results that consistently put one group at a disadvantage, one of the known issues with CV filters.</li>
+            <li><strong>Compliance check:</strong> ensure it meets your legal requirements and any professional standards that apply, above all on data protection.</li>
+            <li><strong>Evidence:</strong> keep a short report of what you tested and what you observed, so you can explain later why you trusted it.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mb-4">The same guidance points out that no single technique settles the question: checks are combined and repeated, in proportion to the risks, and shared technical standards make them consistent. Base your decision on these checks rather than on the sales pitch, and test again when the provider releases the latest version of its model, when you change the way you use it and as part of an annual review.</p>
+            <h2 id="seccion-12" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Should an AI agent act on its own?</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Only for low-stakes, tightly bounded jobs that are easy to undo. Anything with a lasting impact, such as payments, messages to your whole customer list or changes to customer files, should wait for a person&#x27;s approval.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">An AI agent goes further than a chatbot that answers questions: it can consult your files, use other applications, pursue a goal and take action with little or no supervision, such as replying to messages, updating a spreadsheet or placing an order online. In guidance published in 2026, the UK&#x27;s NCSC urges organisations to do some careful thinking before the adoption of agents, and explains that this autonomy is the source of both their benefits and their extra risks. Agents receive wider access to your accounts and files, they can interpret a goal in a literal or unexpected way, they can act more quickly than anyone can review, and it can be hard to explain afterwards why they did something. They also inherit the weaknesses of language models, such as prompt injection, where instructions hidden in a message or a web page push the agent to do something you never asked for.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Three levels of oversight</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">The NCSC distinguishes three ways of keeping a person involved, depending on the stakes and on how much trust the agent has earned:</p>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
+            <li><strong>In the loop:</strong> a person approves each action before it happens. For a sole trader or an SME, that is the right level for payments, refunds, contracts and anything with an impact on customers.</li>
+            <li><strong>On the loop:</strong> the agent acts, and a person monitors it and can step in. It suits internal work that is easy to reverse, such as sorting incoming messages.</li>
+            <li><strong>Out of the loop:</strong> the agent acts without any review. Keep this for jobs where a mistake would be trivial.</li>
+            </ul>
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Limits to set before an agent goes live</h3>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
+            <li><strong>Give some thought to whether you need an agent at all:</strong> an honest assessment of the benefits may show that simpler options, such as a written procedure or an ordinary set of fixed rules, do the job more safely.</li>
+            <li><strong>Begin with a pilot:</strong> one specific, well-defined task with a single purpose and a narrow focus, and widen its scope only once it has proved reliable.</li>
+            <li><strong>Grant the minimum permissions:</strong> ensure it can reach only the folders, accounts and services needed for the task, for as short a period as possible, and never open-ended rights over your bank account, your customer database or anything else critical.</li>
+            <li><strong>Keep logs:</strong> a record of what the agent did, so you can trace an error or a security incident back to its source.</li>
+            <li><strong>Give someone the lead role:</strong> a responsible person who approves its permissions, checks its output and has the authority and capability to switch it off at once.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mb-4">The NCSC&#x27;s rule of thumb applies to a one-person firm as much as to a major organisation with formal governance: if you can&#x27;t understand, monitor or contain what an agent does, it isn&#x27;t ready to be used.</p>
+            <h2 id="seccion-13" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Agree the ground rules with your staff</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">As soon as you have staff, deciding what a machine may handle also becomes a question of roles, responsibilities and trust. The CIPD advises organisations to agree a short list of shared principles before they scale up their use of AI: which tools are approved and for what purpose, how personal details are handled, where AI must not be used and what happens in case of misuse. In a firm with two or three staff, you will probably lead the work yourself, and this code of conduct fits on one page. It should include the following points:</p>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
+            <li>the applications everyone may use, and the accounts they run under;</li>
+            <li>the information that must never be pasted into a chatbot, such as medical files or customers&#x27; bank details;</li>
+            <li>the choices that stay in a person&#x27;s hands: hiring, performance reviews, promotions and dismissals;</li>
+            <li>the role of each person: who checks the results, and who to tell when issues arise;</li>
+            <li>the conduct expected when a chatbot produces something doubtful: stop, check and report it.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mb-4">It doesn&#x27;t call for an expert: it is basic governance, agreed as a group, written in plain words, put into practice from day one, kept up to date and open to revision when the rules, the benefits or the available options change. Keep your staff involved from the outset and develop the rules with them, because they have knowledge of exceptions that never appear in a written procedure. In the case studies behind a CIPD research report on responsible adoption, top-down mandates often bred mistrust, while changes shaped together with staff were more successful.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Watch the hidden burden of checking, too. Reviewing what an assistant produces demands attention, and the CIPD warns about the fatigue that sets in when staff spend their days verifying machine output. Give staff the chance to develop the knowledge and skills to spot a mistaken answer, protect room for thinking, and focus the hours freed up on the work that calls for judgment rather than squeezing more into the same day.</p>
+            <h2 id="seccion-14" class="text-2xl font-bold text-gray-900 mt-10 mb-4">Official guidance and resources</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">You don&#x27;t have to settle these questions alone, and help is available: several public bodies publish free guidance online, and some of it is aimed at SMEs and the self-employed.</p>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
+            <li><strong>In Spain:</strong> the AEPD publishes practical guides on applying the GDPR, among them a guide to impact assessment, and INCIBE, Spain&#x27;s public cybersecurity institute, offers a range of free resources and support for SMEs and the self-employed, with alerts on the latest threats and a helpline for incidents.</li>
+            <li><strong>At EU level:</strong> the AI Act, which also applies in Spain, lists AI used to recruit candidates or to decide on workers&#x27; promotion or dismissal among its high-risk uses, with extra requirements for the organisations that use it, such as ensuring oversight by persons with the competence, training, authority and support to intervene.</li>
+            <li><strong>In the UK:</strong> the NCSC publishes cyber security advice for organisations, the ICO explains UK privacy law, the government&#x27;s assurance guidance is available on GOV.UK and the CIPD publishes resources to support HR professionals in their roles, including notes on employment law.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mb-4">Treat the UK texts as a source of principles and good practice; for your own obligations, your options are the relevant authority, such as the AEPD, your gestor or another professional adviser.</p>
+            <h2 id="seccion-15" class="text-2xl font-bold text-gray-900 mt-10 mb-4">What you can safely hand over to a machine</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Once you set all that aside, plenty is left: repetitive, predictable jobs with no delicate choices, necessary chores that nobody misses doing. It covers back-office functions, the operational side of your business, and a good place to start:</p>
             <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-1">
             <li>filing invoices and updating a spreadsheet you share with your team;</li>
             <li>reminders for appointments, payments and deadlines;</li>
@@ -358,7 +430,7 @@
             <li>internal reports and the admin you repeat every week.</li>
             </ul>
             <p class="text-gray-700 leading-relaxed mb-4">There, machines help without getting tired: they remove bottlenecks, reduce manual work, improve productivity and save you time for higher-value jobs. To choose between a person and a machine, see <a href="https://webautonomos.es/blog/en/hire-or-automate" style="color:#2563eb;">should you hire or automate?</a></p>
-            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">Knowing what not to automate is worth as much as knowing what to automate. Our free <a href="https://webautonomos.es/en/automation-diagnostic/" style="color:#2563eb;">automation diagnostic</a> puts numbers on a task in about two minutes: four questions, the result on screen and no commitment. It tells you whether the task is worth automating, and has no trouble concluding that it isn&#x27;t.</p>
+            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">Knowing where to stop is worth as much as knowing where to begin. Our free <a href="https://webautonomos.es/en/automation-diagnostic/" style="color:#2563eb;">automation diagnostic</a> puts a figure on the annual cost of a task in about two minutes: four questions, the result on screen and no commitment. If you answer six more questions, it tells you whether the task is worth automating, and has no trouble concluding that it isn&#x27;t.</p>
         </div>
 
             <section id="faq" class="mt-12">
@@ -378,11 +450,15 @@
                 </details>
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Is it safe to automate anything involving personal data?</summary>
-                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Yes, with care: keep each tool's permissions to the strict minimum and check how it protects privacy. The GDPR gives people the right not to be subject to decisions based solely on automated processing that significantly affect them, so make sure a person checks each one.</div>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Yes, with care: keep each tool's permissions to the strict minimum and check how it protects privacy. In Spain, the GDPR and the LOPDGDD apply, and the GDPR gives people the right not to be subject to decisions made solely by a machine that produce legal effects for them or similarly significantly affect them. In those cases, make sure a person with the authority to change the outcome reviews each one.</div>
                 </details>
                 <details class="bg-white rounded-xl shadow-sm overflow-hidden">
                     <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Can I let AI answer my customers on its own?</summary>
                     <div class="px-6 pb-4 text-gray-600 leading-relaxed">For simple questions, yes, as long as a person can take over when needed. For complaints, payments or delicate enquiries, use AI to prepare a draft and review it before you send it.</div>
+                </details>
+                <details class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <summary class="px-6 py-4 font-semibold text-gray-800 cursor-pointer hover:bg-gray-50 transition">Can I let an AI agent act on my behalf?</summary>
+                    <div class="px-6 pb-4 text-gray-600 leading-relaxed">Only for low-stakes, well-defined jobs that are easy to undo, with the minimum permissions the job calls for and a log of what the agent does. Payments, messages to customers and changes to customer files should wait for a person's approval, and someone should be able to switch the agent off at once.</div>
                 </details>
                 </div>
             </section>
