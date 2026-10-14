@@ -355,6 +355,24 @@
 /blog/fr/paperasse-huit-heures-par-semaine/  /blog/fr/ce-que-la-paperasse-coute-vraiment   301
 /blog/fr/paperasse-huit-heures-par-semaine.html  /blog/fr/ce-que-la-paperasse-coute-vraiment   301
 
+# Cannibalisation (14/10/2026) : les guides ES par métier sont fusionnés dans les pages
+# métier et redirigés en 301 (fichiers supprimés, VAL/EN/FR inchangés).
+/blog/es/web-para-psicologos-terapeutas  /psicologos/  301
+/blog/es/web-para-psicologos-terapeutas/  /psicologos/  301
+/blog/es/web-para-psicologos-terapeutas.html  /psicologos/  301
+/blog/es/web-para-carpinteros-reformas  /carpinteros/  301
+/blog/es/web-para-carpinteros-reformas/  /carpinteros/  301
+/blog/es/web-para-carpinteros-reformas.html  /carpinteros/  301
+/blog/es/web-para-fontaneros-guia-completa  /fontaneros/  301
+/blog/es/web-para-fontaneros-guia-completa/  /fontaneros/  301
+/blog/es/web-para-fontaneros-guia-completa.html  /fontaneros/  301
+/blog/es/pagina-web-para-electricistas  /electricistas/  301
+/blog/es/pagina-web-para-electricistas/  /electricistas/  301
+/blog/es/pagina-web-para-electricistas.html  /electricistas/  301
+
+# Landing catalane (14/10/2026), servie depuis un dossier.
+/web-per-a-autonoms  /web-per-a-autonoms/  301
+
 # Pages métier servies depuis un dossier (07/10/2026). Sans slash final, Cloudflare
 # répondait 307 vers /<métier>/ (html_handling « auto-trailing-slash ») : redirection
 # temporaire, Google gardait les deux adresses. 301 explicite vers l'adresse canonique.
