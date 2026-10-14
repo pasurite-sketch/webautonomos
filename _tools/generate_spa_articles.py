@@ -854,7 +854,7 @@ def main():
                 if split_slug(sl)[1] == base:
                     wanted.update((by_id.get(a_.get('id')) or {l_: sl}).values())
 
-    written, skipped, failed = {}, 0, []
+    written, skipped, failed, vides = {}, 0, [], 0
     for slug, (lang, art) in sorted(by_slug.items()):
         if wanted and slug not in wanted:
             continue
@@ -862,6 +862,13 @@ def main():
             continue
         if has_asset(slug) and not args.force:
             skipped += 1
+            continue
+        # 15/10/2026 : le corps et la FAQ des articles ont été retirés du SPA
+        # (_tools/nettoyage_spa_blog_20261015.py). Les fichiers statiques de blog/
+        # sont la seule source à jour : ne jamais écrire une page sans contenu,
+        # même avec --force.
+        if not art.get('content'):
+            vides += 1
             continue
         _, base = split_slug(slug)
         alternates = dict(by_id.get(art.get('id')) or by_base.get(base, {}))
@@ -891,6 +898,8 @@ def main():
             print('  %-4s %3d' % (lang, len(files)))
     print('  %-4s %3d' % ('TOTAL', sum(len(v) for v in written.values())))
     print('Deja presents, ignores : %d' % skipped)
+    if vides:
+        print('Sans contenu dans le SPA, ignores (le fichier statique fait foi) : %d' % vides)
     if failed:
         print('\nEchecs (%d) :' % len(failed))
         for slug, err in failed:
