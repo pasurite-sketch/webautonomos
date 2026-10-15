@@ -312,6 +312,29 @@ THERA['fr'] = dict(
          '<p class="where">Vous voulez aussi vendre en ligne ? Une boutique en ligne n&#x27;est comprise dans '
          'aucune des deux formules : elle se fait <a href="https://webautonomos.es/fr/prestations">sur devis</a>.'
          '</p>'),
+        # 15/10/2026 : section ajoutée pour le guide AI Overview (note sous 50), avec un vocabulaire absent des
+        # guides Google (déjà à 100) et ChatGPT (déjà au-dessus de 100).
+        ('options-creation', 'Les options', "WordPress, modèle tout prêt ou solution conçue pour vous ?",
+         '<p class="legal-intro">Vous pouvez tout faire seul, avec WordPress ou un modèle tout prêt, ou le '
+         'confier. Voici ce que chaque option vous demande.</p>'
+         '<div class="aud-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧰</div>'
+         '<h3>WordPress ou un modèle</h3>'
+         '<p>Ces solutions offrent beaucoup de fonctionnalités, mais l&#x27;hébergement, les extensions à actualiser '
+         'et les obligations juridiques vous reviennent, et il faut prendre des soirées pour écrire.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🪡</div>'
+         '<h3>Une solution conçue pour vous</h3>'
+         '<p>Nous rédigeons tout à partir de ce que vous nous dites, dans une présentation adaptée à votre façon '
+         'de travailler ; vous relisez chaque phrase avant publication, puis nous assurons le suivi.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📰</div>'
+         '<h3>Des contenus utiles aux visiteurs</h3>'
+         '<p>Votre approche, le déroulement du premier entretien, vos actualités (ateliers, groupes) : ce que vos '
+         'futurs consultants veulent découvrir avant de vous écrire.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧭</div>'
+         '<h3>Une navigation claire et intuitive</h3>'
+         '<p>Peu de rubriques, une structure claire, une carte avec le plan d&#x27;accès et une courte FAQ : la '
+         'personne trouve vite comment vous joindre, sans témoignages ni promesse.</p></div>'
+         '</div>'),
     ],
     faq_t='Questions fréquentes',
     faq=[("Un psychologue doit-il afficher son numéro RPPS sur son site ?",
@@ -881,6 +904,52 @@ MENU['fr'] = dict(
          "<p class=\"where\">Pour aller plus loin, consultez "
          "<a href=\"https://webautonomos.es/blog/fr/site-web-pour-menuisiers-et-renovation\">notre guide pratique "
          "pour menuisiers</a>.</p>"),
+        # 15/10/2026 : section ajoutée pour les guides ChatGPT, AI Overview et Gemini (notes sous 50).
+        ('demande-devis', 'Demandes de devis', "De la demande de devis à la prestation : le parcours d'une demande",
+         "<p class=\"legal-intro\">Sur le site internet d'un menuisier, la page la plus utile est souvent celle "
+         "de la demande de devis. Voici comment nous la construisons.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📝</div>"
+         "<h3>Un formulaire de demande de devis simple</h3>"
+         "<p>Votre visiteur indique sa ville, ce qui vous dit tout de suite si elle est dans votre zone d'intervention, "
+         "le type de projet (porte, dressing, escalier, fenêtres) et s'il a déjà un plan ou des mesures : vous "
+         "recevez une demande précise, par e-mail.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🪚</div>"
+         "<h3>Pose seule ou fabrication sur-mesure ?</h3>"
+         "<p>Dites clairement si vous assurez la pose de menuiseries qu'on vous fournit, la fabrication "
+         "sur-mesure dans votre atelier, ou les deux : chaque prestation a sa page, avec ce qu'elle "
+         "comprend.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">💶</div>"
+         "<h3>Faut-il afficher ses prix ?</h3>"
+         "<p>Pour du sur-mesure, une fourchette ou la mention « sur devis » suffit. Si vous faites du dépannage, "
+         "vos tarifs doivent en revanche être affichés, comme le rappellent les règles plus haut.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📲</div>"
+         "<h3>Répondre aux demandes sans attendre</h3>"
+         "<p>Une demande reçue un jour de chantier vous attend dans votre boîte e-mail, et le bouton WhatsApp "
+         "permet aussi de vous écrire directement.</p></div>"
+         "</div>"),
+        ('vitrine-ou-boutique', 'Le bon format', "Quel site internet pour menuisier : vitrine ou e-commerce ?",
+         "<p class=\"legal-intro\">Souvent, un site vitrine suffit à un menuisier, sans "
+         "boutique. Voici ce que couvre chaque format.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🏠</div>"
+         "<h3>Un site vitrine pour vos chantiers</h3>"
+         "<p>Il présente vos chantiers dans une galerie, vos projets d'agencement intérieur (dressings, bibliothèques, placards) "
+         "et vos coordonnées : c'est ce que comprennent nos deux formules.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🛒</div>"
+         "<h3>La boutique en ligne, sur devis</h3>"
+         "<p>Vendre en ligne des pièces ou du mobilier demande un site e-commerce : il n'est compris dans aucune "
+         "des deux formules et se fait sur devis.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🛠️</div>"
+         "<h3>Mise en ligne et maintenance</h3>"
+         "<p>La mise en ligne a lieu une fois la démo validée ; ensuite, la maintenance technique et une "
+         "modification par mois sont comprises, sans limite de durée. Les fonctionnalités de base, comme la "
+         "galerie de chantiers et le bouton WhatsApp, sont prêtes dès le premier jour.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📍</div>"
+         "<h3>Votre région, page après page</h3>"
+         "<p>Chaque page nomme votre région et les communes de vos chantiers : c'est la base du référencement "
+         "local, que des articles réguliers peuvent ensuite compléter.</p></div>"
+         "</div>"),
         ('visibilite', 'Se faire trouver', 'Comment apparaître dans les recherches locales',
          "<p class=\"legal-intro\">Commencez par des informations identiques partout : mêmes nom, adresse et "
          "téléphone sur votre site internet et sur votre fiche d'établissement. Une partie de ce travail est déjà "
@@ -1456,7 +1525,30 @@ KINE['fr'] = dict(
             'de paiement selon les règles rappelées plus haut, un lien vers vos réseaux professionnels si vous en avez, et '
             'votre domaine, en .fr si vous exercez en France : inclus la première année puis environ 12 €/an, il '
             'reste à vous si vous changez de prestataire. Jusqu\'à quatre langues au même prix, parmi le français, '
-            'l\'espagnol, l\'anglais, le catalan, le valencien, le galicien et le basque.</p>')],
+            'l\'espagnol, l\'anglais, le catalan, le valencien, le galicien et le basque.</p>'),
+           # 15/10/2026 : section ajoutée pour les guides ChatGPT, AI Overview et Gemini (notes sous 50).
+           ('cabinet-methode', 'Votre pratique', "Votre méthode, votre matériel, vos disponibilités",
+            "<p class=\"legal-intro\">Avant d'appeler, un patient veut connaître votre façon de travailler et vos "
+            "disponibilités. Ces éléments ont leur place sur votre site, rédigées sans caractère "
+            "promotionnel.</p>"
+            "<div class=\"aud-g\">"
+            "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🧭</div>"
+            "<h3>Votre méthode de travail</h3>"
+            "<p>Le déroulement d'une première séance, le bilan, la part de thérapie manuelle et les exercices à refaire "
+            "chez soi entre deux séances : le patient sait à quoi s'attendre, sans rien promettre.</p></div>"
+            "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🛠️</div>"
+            "<h3>Votre matériel</h3>"
+            "<p>Le matériel de votre plateau technique et, si vous en avez une, la salle de balnéothérapie, décrits simplement et montrés "
+            "avec vos propres photos.</p></div>"
+            "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🕒</div>"
+            "<h3>Vos disponibilités</h3>"
+            "<p>Vos horaires, les créneaux disponibles pour les visites à domicile si vous en faites, et un bouton vers l'agenda en ligne que vous "
+            "utilisez déjà.</p></div>"
+            "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🔗</div>"
+            "<h3>Vos réseaux sociaux</h3>"
+            "<p>Un lien vers votre page Facebook ou LinkedIn si vous en avez une, pour partager vos "
+            "publications ; le code de déontologie s'y applique comme sur votre site.</p></div>"
+            "</div>")],
 )
 
 KINE['en'] = dict(
@@ -2117,6 +2209,30 @@ DENT['en'] = dict(
          'website locally</a> and <a href="https://webautonomos.es/blog/en/optimise-your-google-business-'
          'profile">optimising your Google Business Profile</a>.</p></div>'
          '</div>'),
+        # 15/10/2026 : section ajoutée pour les guides ChatGPT et Gemini (notes sous 50 ; le guide Gemini est en espagnol).
+        ('english-and-spanish', 'Two languages', 'Your dental clinic website in English and Spanish',
+         '<p class="legal-intro">Your patients search in more than one language. An expat in Malaga may type '
+         '“dental clinic Malaga”, while a Spanish neighbour types “clínica dental Málaga” or “dentista en '
+         'Barcelona”. A dental website written in both languages can answer both searches.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🦷</div>'
+         '<h3>Each dental treatment, in both languages</h3>'
+         '<p>General dentistry, dental implants, orthodontics, periodontics, endodontics, aesthetic dentistry, '
+         'and emergency dental care if your clinic offers it: each one gets a short description in English and '
+         'in Spanish, without a promise of results.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔤</div>'
+         '<h3>The words Spanish patients use</h3>'
+         '<p>Patients in Spain look for a “clínica dental”, a “dentista” or an “odontólogo”. We write your '
+         'Spanish pages with the words they type, and with your dental clinic’s name as it appears on the '
+         'regional register.</p></div>'
+         '</div>'
+         '<div class="aud-c" style="max-width:640px;margin:24px auto 0;"><h3>What a Spanish page can look like</h3>'
+         '<p lang="es"><em>Ejemplo:</em> En nuestra clínica dental de Málaga atendemos a cada paciente en '
+         'español y en inglés. Antes de empezar un tratamiento, te explicamos en qué consiste, cuánto dura y '
+         'cuál es su precio completo.</p>'
+         '<p lang="es">Tratamientos: odontología general, implantes dentales, ortodoncia, periodoncia y estética '
+         'dental. Pide tu primera cita por teléfono, por WhatsApp o con el formulario de contacto, y te '
+         'responderemos para darte una hora.</p></div>'),
         ('technical-basics', 'Behind the scenes', 'The technical side, handled for you',
          '<p class="legal-intro">Alongside the pages you and your patients see, a few technical basics come '
          'with every site we build.</p>'
@@ -2514,6 +2630,28 @@ PLOMB['fr'] = dict(
          "<p class=\"where\">Pour aller plus loin, consultez "
          "<a href=\"https://webautonomos.es/blog/fr/site-web-pour-plombiers-guide-complet\">notre guide pour "
          "recevoir plus d'appels</a>.</p>"),
+        # 15/10/2026 : section ajoutée pour les guides AI Overview et Gemini (notes sous 50).
+        ('par-ou-commencer', 'Par où commencer', "Un site internet de plombier efficace : par où commencer ?",
+         "<p class=\"legal-intro\">Un site de plombier bien conçu répond vite aux questions de vos clients : "
+         "venez-vous jusque chez eux, comment vous joindre, et à quel prix.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📞</div>"
+         "<h3>Le numéro de téléphone en premier</h3>"
+         "<p>En cas de fuite ou de panne, vos clients veulent appeler tout de suite : votre numéro de téléphone et "
+         "un bouton WhatsApp restent visibles sur chaque page, sur mobile comme sur ordinateur.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📝</div>"
+         "<h3>Un formulaire pour demander un devis</h3>"
+         "<p>Pour une salle de bain ou un chauffe-eau à remplacer, un formulaire de contact court permet de "
+         "demander un devis : la demande arrive directement sur votre e-mail.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📍</div>"
+         "<h3>Votre activité et vos communes</h3>"
+         "<p>Dépannage, salle de bain, chauffage : chaque activité a sa section, avec les communes où vous "
+         "travaillez. C'est la base de votre visibilité dans les résultats de Google.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🧩</div>"
+         "<h3>Créer un site seul ou le confier ?</h3>"
+         "<p>Créer un site soi-même demande du temps : design, textes, hébergement, nom de domaine, mises à jour. "
+         "Notre offre : un site vitrine conçu pour vous, publié une fois la démo validée.</p></div>"
+         "</div>"),
         visibilite_fr("Référencement du site internet d'un plombier : ce qui est inclus",
                       "<a href=\"https://webautonomos.es/blog/fr/positionner-son-site-dans-le-google-local\">"
                       "positionner votre site dans la recherche locale</a>, "),
@@ -3064,6 +3202,35 @@ ELEC['fr'] = dict(
          "<p class=\"where\">Ces critères valent pour un site d'électricien comme pour tout "
          "<a href=\"https://webautonomos.es/fr/site-internet-artisan\">site internet pour artisan du bâtiment</a> : "
          "faites-vous confirmer par écrit ce que comprend le prix avant de vous engager.</p>"),
+        # 15/10/2026 : section ajoutée pour les guides ChatGPT et Gemini (notes sous 50) ; faits tirés de l'aide
+        # Google Business Profile (fiche gratuite, validation, zone desservie, réponses aux avis).
+        ('fiche-google', 'Google Business Profile', "Site internet et Google Business Profile : comment les associer",
+         "<p class=\"legal-intro\">Quand on cherche un électricien dans sa ville, le moteur de recherche affiche "
+         "souvent des profils d'établissement avant les sites. Votre profil Google Business Profile et votre site se "
+         "complètent : voici comment.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🆓</div>"
+         "<h3>Un profil gratuit, à valider</h3>"
+         "<p>Créer ce profil est gratuit. L'entreprise doit ensuite être validée avant "
+         "que le profil s'affiche.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📍</div>"
+         "<h3>Une zone desservie plutôt qu'une adresse</h3>"
+         "<p>Si vous vous déplacez sans recevoir le public, vous pouvez masquer votre adresse et indiquer les "
+         "communes ou le secteur où vous intervenez.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🔁</div>"
+         "<h3>Les mêmes coordonnées sur le profil et le site</h3>"
+         "<p>Nom, téléphone, horaires et prestations identiques sur le profil et sur le site ; le profil renvoie "
+         "vers votre site, qui donne le détail qu'un profil ne peut pas contenir.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">💬</div>"
+         "<h3>Notes, réponses et publications</h3>"
+         "<p>On peut y laisser une note et un commentaire, auxquels vous pouvez répondre, et vous pouvez y publier "
+         "des actualités. Si vous préférez déléguer, nous gérons ce profil : optimisation, quatre publications "
+         "mensuelles et réponses aux commentaires.</p></div>"
+         "</div>"
+         "<p class=\"where\">Créer un site efficace n'exige pas forcément une agence : notre équipe "
+         "s'occupe de tout, avec un site optimisé et responsive, un formulaire simple et des pages utiles, "
+         "que vous n'avez pas à gérer vous-même. Un profil et un site tenus à jour donnent confiance aux "
+         "prospects et soutiennent votre visibilité locale.</p>"),
         visibilite_fr("Référencement du site d'un électricien : ce qui est inclus",
                       "<a href=\"https://webautonomos.es/blog/fr/map-pack-google-comment-y-figurer\">figurer dans "
                       "les résultats de Google Maps</a>, "),
@@ -3177,13 +3344,13 @@ ELEC['en'] = dict(
     legal_note="Registration is handled by your region's industry department, and rules on quotes and complaint forms "
                "are regional too. This is general information as of September 2026, not legal advice.",
     legal_we_t='What we set up for you',
-    legal_we=["A proper legal notice with your name, NIF or NIE and contact details, plus your company details if you "
-              "trade as an S.L.",
-              "Your authorisation described accurately: empresa instaladora category, and only the work it covers",
+    legal_we=["A proper legal notice with your name, NIF or NIE, address, phone and email, plus your Registro "
+              "Mercantil entry if you trade as an S.L.",
+              "Your authorisation described accurately: empresa instaladora category, and only the jobs it covers",
               "Your call-out terms and your prices for homeowners shown with VAT included",
-              "The complaint information your region asks for, such as the QR poster in Andalucía",
+              "The complaint notice your region asks for, such as the QR poster in Andalucía",
               "A call button and WhatsApp always visible on mobile, and your site in up to four languages, English "
-              "and Spanish included, at no extra cost"],
+              "and Spanish included, for the same price"],
     spain_note='<strong>Working in the UK instead?</strong> UK rules are different. See '
                '<a href="https://webautonomos.es/en/web-design-for-electricians">web design for electricians in the UK</a>.',
     sources_t='Sources',
@@ -3207,11 +3374,11 @@ ELEC['en'] = dict(
                                            'minutes.'),
            ('We build your demo', 'Within 24h, with your services, your copy in English and Spanish, and your '
                                   'legal pages.'),
-           ('You decide', "Ask for any changes you want. If you like it, it goes live; if not, you pay nothing.")],
+           ('You decide', "Request any changes you want. If you like it, it goes live; if not, you pay nothing.")],
     price_note=PRIX_EN_BAT,
     extra=[
         ('what-to-include', 'On your website', "What should an electrician's website in Spain show?",
-         '<p class="legal-intro">Before they call, homeowners want to know what you do, whether you serve their '
+         '<p class="legal-intro">Before they call, people want to know what you do, whether you serve their '
          'town, and whether you can legally sign off the job. These are the parts that answer them.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
@@ -3221,7 +3388,7 @@ ELEC['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F5C2️</div>'
          '<h3>Services grouped by type of job</h3>'
          '<p>Repairs and fault finding, rewires, EV chargers and solar each get their own section, so a visitor '
-         'finds the work they need without scrolling through everything else.</p></div>'
+         'finds what they need without scrolling through everything else.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4B6</div>'
          '<h3>Clear call-out terms</h3>'
          '<p>Your call-out charge and hourly rate, shown with VAT included for domestic customers, so they know '
@@ -3234,32 +3401,35 @@ ELEC['en'] = dict(
          '<p class="where">For more tips, read our guide to '
          '<a href="https://webautonomos.es/blog/en/website-for-electricians">what an electrician&#8217;s website '
          'needs</a>.</p>'),
-        ('visitors-to-enquiries', 'Visitors to enquiries',
-         'How does a website turn visitors into enquiries?',
-         '<p class="legal-intro">A website only helps your business when visitors turn into enquiries you can '
-         'answer. These are the parts of your site that turn a visit into a call, a message or a request for a '
-         'quote.</p>'
+        # 15/10/2026 : section ajoutée pour le guide Gemini (vocabulaire absent du guide Google, déjà au-dessus de 100).
+        ('design', 'Design', 'Website design for electricians: what works',
+         '<p class="legal-intro">On websites for electricians, as for any small business, good design is about '
+         'clarity, not effects. '
+         'Here is what we build into every design, and why.</p>'
          '<div class="why-g">'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📞</div>'
-         '<h3>Call or WhatsApp in one tap</h3>'
-         '<p>Your phone number and a WhatsApp button are easy to find, so anyone comparing a few local electricians '
-         'can call or message you without hunting for your number.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✉️</div>'
-         '<h3>Enquiries in your inbox</h3>'
-         '<p>Your contact form sends every enquiry to your email, so a request that comes in while you are on a '
-         'job is waiting for you when you finish.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📷</div>'
-         '<h3>Photos of your own work</h3>'
-         '<p>Your site uses your own photos, from your Google listing or sent by you, so visitors see the jobs '
-         'you actually do.</p></div>'
-         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔗</div>'
-         '<h3>Your social profiles, linked</h3>'
-         '<p>Links to your existing social media profiles are included at no extra cost: one more sign that a '
-         'real business is behind the site.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">👀</div>'
+         '<h3>The essentials at first view</h3>'
+         '<p>Your services, your location and a call button are visible as soon as the page opens, on a phone as '
+         'clearly as on a laptop.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📸</div>'
+         '<h3>Real photos, not stock images</h3>'
+         '<p>The design is built around photos of your own vans, consumer units and finished jobs, so the site '
+         'looks like your business and nobody else&#8217;s.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📋</div>'
+         '<h3>A list of the jobs you take on</h3>'
+         '<p>Emergency call-outs if you offer them, EV charger installs, solar, rewires: a short list shows a '
+         'visitor straight away whether you do what they need.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✍️</div>'
+         '<h3>Content that works for readers and AI tools</h3>'
+         '<p>Short, plain content for each service and each town in your service area helps readers, and AI '
+         'tools that review sites, understand what you do. Visibility builds over time, and no one can promise '
+         'it.</p></div>'
          '</div>'),
+        # Section « visitors-to-enquiries » retirée le 15/10/2026 (note Google au-dessus de 100) ; appel, WhatsApp,
+        # formulaire et réseaux sociaux restent dans le tarif, les photos dans la section design.
         ('safety-standards', 'Safety and standards',
          "How does your website show you work to Spain's electrical safety rules?",
-         '<p class="legal-intro">In Spain, the technical safety rules for low-voltage work are set by the '
+         '<p class="legal-intro">In Spain, the technical safety rules on low voltage are set by the '
          'Reglamento electrotécnico para baja tensión (REBT, RD 842/2002) and its technical instructions, the '
          'ITC-BT. A homeowner cannot judge the wiring behind a wall, so your website shows them the proof that '
          'does exist: your registration, your category and the boletín.</p>'
@@ -3276,25 +3446,45 @@ ELEC['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div>'
          '<h3>The certificate that proves it</h3>'
          '<p>When an installation is finished, your company issues the certificado de instalación, the boletín, signed by '
-         'one of your own installers; the electricity supplier will not connect a new installation without it. '
-         'Your website can say which category you hold and which jobs it covers, so customers know before they '
-         'call.</p></div>'
+         'one of your own installers; the electricity supplier will not connect a new installation without it.</p>'
+         '</div>'
+         '</div>'),
+        # 15/10/2026 : section ajoutée pour le guide ChatGPT (note sous 50), qui cite les organismes britanniques.
+        ('uk-trained', 'Trained in the UK', 'NICEIC, NAPIT and the wiring regulations: what carries over to Spain',
+         '<p class="legal-intro">If you trained and worked in Britain, you may have been registered with a '
+         'competent person scheme such as NICEIC or NAPIT, and trained to the IET Wiring Regulations. '
+         'That training is real experience, but neither registration is an authorisation in Spain.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🇬🇧</div>'
+         '<h3>British schemes stay at home</h3>'
+         '<p>NICEIC and NAPIT membership, and Part P self-certification, apply in England and Wales. In Spain, the standards are the REBT and its ITC-BT instructions, and your business is recorded by '
+         'your region as an empresa instaladora.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div>'
+         '<h3>Training and qualifications</h3>'
+         '<p>Your training courses in Britain can count towards a Spanish qualification through the routes set out in '
+         '<a href="#rules">the rules above</a>: homologation, accreditation of experience, an accredited personal '
+         'certification or a Spanish course.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">✍️</div>'
+         '<h3>How your website presents it</h3>'
+         '<p>Your site can mention your years of professional experience and your British training, as long as no British '
+         'scheme logo or membership is presented as a Spanish authorisation. Your empresa instaladora '
+         'registration takes priority.</p></div>'
          '</div>'),
         local_search_en(
             '', h2='Local SEO for electricians: getting found nearby',
-            intro='Getting found in your area is not only about your site: homeowners also ask around, post jobs on '
-                  'directories, or search directly for a trusted electrician nearby.',
+            intro='Being found nearby depends on more than your site: people also turn to their neighbours, or search '
+                  'directly for an electrician near them.',
             seo='Titles and copy written around your electrical services and the towns you serve are part of every '
                 'site we build, at no extra charge.'),
     ],
     faq_t='Frequently asked questions',
-    faq=[("Do I need to be registered to work as an electrician in Spain?",
+    faq=[("Do I need to be registered as an electrician in Spain?",
           "Yes. Only an empresa instaladora en baja tensión may install, maintain or repair low-voltage "
           "installations (REBT, art. 22). As a sole trader or company, you file a declaración responsable with the "
           "region where you are established, with at least one qualified installer and civil liability cover of at "
           "least €600,000 per claim for the básica category. Working without it is a serious offence under the "
           "Industry Act (Ley 21/1992), and a very serious one in Catalonia."),
-         ("Can I work as an electrician in Spain with UK qualifications?",
+         ("Can I practise as an electrician in Spain with British qualifications?",
           "Not on the strength of the UK certificate alone. Since 1 January 2021 the UK counts as a third country for "
           "qualifications, and there is no regional exam for electricians. The routes are homologation of your "
           "qualification, accreditation of your work experience (legal residence and at least three years, with at "
@@ -3310,8 +3500,8 @@ ELEC['en'] = dict(
           "§3). Under ITC-BT-04, a charging installation needs a project above 50 kW, outdoors above 10 kW, or for mode 4 charging. In a comunidad de "
           "propietarios, an owner installing a charger in their own parking space only has to notify the community "
           "beforehand (Ley de Propiedad Horizontal, art. 17.5)."),
-         ("Can my customers deduct the cost of a charger or solar panels from income tax?",
-          "For 2026, yes, within limits. Homeowners can deduct 15% of the cost of a charger installed by "
+         ("Can my customers deduct a charger or solar panels from income tax?",
+          "For 2026, yes, within limits. Homeowners can deduct 15% of the price of a charger installed by "
           "31 December 2026 in a property they own, on a base of up to €4,000, and a new deduction covers solar "
           "self-consumption installed in 2026: 10%, or 20% in a residential building, on a base of up to €5,000, "
           "with the installation certificate. Payment must be by card, transfer, nominative cheque or bank deposit, "
@@ -3321,11 +3511,9 @@ ELEC['en'] = dict(
           "Only for the types listed in ITC-BT-05: for example premises open to the public, installations with fire "
           "or explosion risk, swimming pools above 10 kW, or EV charging that needs a project. Under the national "
           "rules, an ordinary home installation does not need an initial inspection by an OCA."),
-         ("Why does my category matter to homeowners?",
-          "Because it tells them you are allowed to do the job. Only a registered empresa instaladora may "
-          "install, maintain or repair low-voltage installations, and its category, básica or especialista, "
-          "sets which jobs it can take on. Stating your category and the work it covers on your website answers "
-          "that question before they call."),
+         # 15/10/2026 : question « Why does my category matter to homeowners? » retirée (redite de la section
+         # safety-standards) et question sur la recherche locale retirée (redite de local-search-help et de
+         # FAQ_EN_GBP), pour ramener la note Google sous 100.
          FAQ_EN_QUOTE,
          ("Can customers cancel after an emergency call-out?",
           "Not for the urgent repair itself. Under article 103 of the consumer law (TRLGDCU), there is no right of "
@@ -3334,16 +3522,13 @@ ELEC['en'] = dict(
           "the spare parts you necessarily used."),
          FAQ_EN_REVIEWS,
          FAQ_EN_LANGUAGE,
-         FAQ_EN_GBP,
-         ("Will my website help me show up in local Google search results?",
-          "Basic SEO comes with every website at no extra cost: titles and copy written around your trade and the "
-          "towns you serve, to help Google understand what you do and where. No one can promise a position in "
-          "local search results. If you want more, SEO Local adds four blog articles a month, local keywords and "
-          "a monthly report, for €15 + VAT a month."),
-         ("Will my website help me get cited by Google's AI Overviews or tools like ChatGPT?",
-          "No one can guarantee it: Google's AI Overviews and assistants such as ChatGPT choose their own sources. "
-          "What you can do is make your site easy for them to read, with clear headings, your services and the "
-          "towns you serve named plainly, and short, direct answers to the questions your customers ask."),
+         # FAQ_EN_GBP retirée le 15/10/2026 : mêmes prix que la carte « SEO Local » de local-search-help.
+         # Question sur les AI Overviews et ChatGPT réécrite le 15/10/2026 (note Google au-dessus de 100).
+         ("Can AI assistants such as ChatGPT recommend my business?",
+          "No one can promise it: AI assistants such as ChatGPT or Gemini choose their own sources. What you can "
+          "offer them is a site that is easy to read, with clear headings, each service and town named plainly, and "
+          "short answers to the questions your customers ask. If you choose SEO Local, its four blog articles a "
+          "month add more answers of that kind."),
          FAQ_EN_PRICE],
     final_t='See your site before you pay a thing',
     final_sd="Free demo within 24h, with your services and legal pages. No setup fee, no lock-in.",
@@ -3534,6 +3719,31 @@ ARTI['fr'] = dict(
         visibilite_fr("SEO pour artisans : ce qui est inclus et ce qui est en plus",
                       "<a href=\"https://webautonomos.es/blog/fr/positionner-son-site-dans-le-google-local\">"
                       "positionner votre site dans la recherche locale</a>, "),
+        # 15/10/2026 : section ajoutée pour le guide Gemini (note sous 50).
+        ('choisir', 'Les options', "Le faire soi-même, passer par une agence ou par nous ?",
+         "<p class=\"legal-intro\">Trois options s'offrent à un artisan : un outil pour créer son site seul, une "
+         "agence, ou une formule clé en main comme la nôtre. Avant de choisir, comparez le budget, le temps à y "
+         "passer et la maintenance.</p>"
+         "<div class=\"why-g\">"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🧩</div>"
+         "<h3>Les outils à faire soi-même</h3>"
+         "<p>Wix ou WordPress permettent de créer un site seul. Il faut alors trouver le temps : choisir la "
+         "structure des pages, rédiger les textes, optimiser les images et les balises, puis gérer les mises à jour "
+         "et la maintenance, le soir après le chantier.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🏢</div>"
+         "<h3>Une agence</h3>"
+         "<p>Une agence construit un site sur mesure, avec un investissement de départ plus élevé et une "
+         "maintenance souvent facturée à part. Demandez ce que comprend le devis : hébergement, domaine, mises à "
+         "jour.</p></div>"
+         "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🔑</div>"
+         "<h3>Notre formule clé en main</h3>"
+         "<p>Nous rédigeons les textes à partir de vos informations et de vos photos de chantier, et nous "
+         "assurons l'hébergement, les sauvegardes et la maintenance technique. Vous voyez la démo avant de payer "
+         "quoi que ce soit.</p></div>"
+         "</div>"
+         "<p class=\"where\">Quelle que soit l'option, un bon site d'artisan reste simple : vos métiers, votre zone "
+         "d'intervention, vos horaires, un formulaire de contact pour les demandes de devis, et des pages qui "
+         "s'affichent bien sur téléphone, d'où beaucoup de clients vous cherchent.</p>"),
     ],
     faq_t='Questions fréquentes',
     faq=[("Que doit contenir le site internet d'un artisan ?",

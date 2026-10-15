@@ -567,12 +567,12 @@ PHYSIO = dict(
          "it for you in English, you approve every word, and your free demo is ready within 24 hours.",
     pills=['Written around HCPC and CAP rules', "No treatment claims you can't back up", 'Free demo in 24 hours'],
     brief="WebAutonomos designs websites for physios and physiotherapy clinics in the UK. We write the "
-          "copy in English from your real details and keep it clear of what UK rules ban: treatment claims you "
+          "copy in English from your real details and keep it clear of what the rules ban: treatment claims you "
           "can't back up, misuse of protected titles, and fake or cherry-picked reviews. " + PRIX_BRIEF,
-    legal_t='What your physiotherapy website has to get right in the UK',
+    legal_t='What your physiotherapy website has to get right',
     legal_intro="Physiotherapy is a regulated profession across the UK: the titles are protected by law, and the "
                 "Health and Care Professions Council (HCPC) sets the standards. Your website is advertising, so "
-                "UK advertising rules apply too.",
+                "advertising rules apply too.",
     legal_rows=[
         ('Protected titles', 'Health Professions Order 2001, art. 39; SI 2003/1571, Sch. 1',
          "Only professionals registered with the HCPC may call themselves “physiotherapist” or “physical "
@@ -616,7 +616,7 @@ PHYSIO = dict(
               "only where the rules allow them",
               "Treatments described without cure claims or conditions you can't back up with evidence",
               "A contact form that asks only what it needs",
-              "A privacy policy and cookie notice adapted to UK law (UK GDPR)",
+              "A privacy policy and cookie notice adapted to UK GDPR",
               "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
     why_t='Built for UK physiotherapists',
     why=[('📋', 'Titles used correctly',
@@ -661,7 +661,15 @@ PHYSIO = dict(
          FAQ_COMMUNES[1],
          ("Who owns the website?",
           "With the one-off €349 payment, the website is yours. With monthly payments, the domain is registered in "
-          "your name and you keep it if you leave.")],
+          "your name and you keep it if you leave."),
+         ("What does a new patient want to know before they book?",
+          "Who they will see, with each practitioner's HCPC registration and qualifications; the problems you "
+          "see, such as rehab after a back or knee injury; your pricing for an initial assessment and a follow-up "
+          "session; the areas you cover; and how to get an appointment, by phone, WhatsApp or the diary tool you already use."),
+         ("Do you use a template?",
+          "We use our own system, which reuses tested components: that is one reason the price stays low. The "
+          "copy and photos are tailored to you, prepared from your own details and pictures, not generic "
+          "text.")],
     extra=[
         ('booking-enquiries', '', "Can patients book appointments through the website?",
          '<p class="legal-intro">It isn\'t an online booking system, so there\'s no new software for you '
@@ -700,6 +708,52 @@ PHYSIO = dict(
          '<p class="legal-intro"><strong>Real people, not stock images.</strong> Photos of your own practice and '
          'your team, from your Google listing or sent by you, show people where they are going. Generic stock images '
          'could belong to anyone, and photos of patients need their permission.</p>'),
+        # 15/10/2026 : guides AI Overview, ChatGPT et Gemini (« physiotherapy website design ») : comment les patients
+        # trouvent, choisissent et contactent un kiné en ligne. Faits WebAutonomos : VERITE §2 (formulaire, WhatsApp,
+        # lien vers l'outil de réservation existant, SEO de base) et §5 (SEO local à part, sur demande).
+        ('patients-online', '', 'How someone chooses and books a physiotherapist',
+         '<p class="legal-intro">After an injury, a new patient often compares a few local sites on a phone '
+         'before they call or book an appointment. Anyone looking for rehab after an injury wants to feel '
+         'confident about who they will see: plain explanations of your approach, without jargon, go a long way.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🩺</div>'
+         '<h3>Each type of care explained</h3>'
+         '<p>Rehab after an injury, back and neck problems, house calls: each type of care gets a short section '
+         'on what happens at the initial assessment and at follow-up sessions, who provides it and your pricing, '
+         'so a patient knows what to expect before they book.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📞</div>'
+         '<h3>One tap to call or message</h3>'
+         '<p>On a mobile-friendly layout, your phone number, a call button and WhatsApp stay within reach on every screen, so asking for an '
+         'appointment takes a single tap.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📅</div>'
+         '<h3>The appointment tool you already use</h3>'
+         '<p>If you already have one, we add a link to it so a patient can book directly. '
+         'Enquiries sent by WhatsApp come straight to you.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🤝</div>'
+         '<h3>Trust before the first session</h3>'
+         '<p>Anyone choosing a practitioner wants to trust them: show each physiotherapist\'s name, HCPC '
+         'registration and qualifications, photos of the person they will see, and genuine feedback shown '
+         'honestly.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧑‍⚕️</div>'
+         '<h3>Sole practitioner or several</h3>'
+         '<p>Whether you practise alone or alongside other practitioners, the structure stays the same: who '
+         'they will see, what it costs and how to get an appointment.</p></div>'
+         '</div>'),
+        ('first-message-to-launch', '', 'What to expect, from first message to launch',
+         '<p class="legal-intro">A busy physio rarely has the time, or the digital know-how, for a long project. '
+         'This is how ours works.</p>\n  '
+         '<div class="legal-we"><h3>From first message to going live</h3><ul>'
+         '<li><span><strong>Essentials first:</strong> your treatments, the injuries and problems '
+         'you see, your pricing for an initial assessment and follow-up sessions, and the areas you '
+         'cover.</span></li>'
+         '<li><span><strong>A demo within 24 hours:</strong> you see it on a phone and a laptop before paying '
+         'anything, and you can ask for as many adjustments as you need before launch.</span></li>'
+         '<li><span><strong>Launch and support:</strong> hosting, SSL for secure connections, daily '
+         'backups and 24/7 monitoring are included, plus one change a month after launch.</span></li>'
+         '<li><span><strong>Bigger projects later:</strong> a redesign or a large new section gets a fixed-price '
+         'quote first.</span></li>'
+         '<li><span><strong>More local visibility, if you want it:</strong> ongoing local SEO, to rank in more local '
+         'searches, is sold separately. Ask us about it.</span></li></ul></div>'),
     ],
 )
 SRC_PHYSIO = [
@@ -815,7 +869,7 @@ TRADES = dict(
           "electricians, roofers, carpenters and more. We write the copy in English from your real details, show "
           "your trade body and scheme registrations as you hold them, and include what the law expects "
           "on a business website. " + PRIX_BRIEF,
-    legal_t='What UK rules mean for a tradesman\'s website',
+    legal_t='What the rules mean for a tradesman\'s website',
     legal_intro="Your website counts as advertising, and the quotes and jobs that come from it are consumer "
                 "contracts. These are the rules that matter for tradespeople.",
     legal_rows=[
@@ -842,7 +896,7 @@ TRADES = dict(
         ROW_COOKIES,
     ],
     legal_note="Building control, waste and some other rules differ in Wales, Scotland and Northern Ireland: check "
-               "the rules where you work. This is general information as of September 2026, not legal advice.",
+               "the rules where you operate. This is general information as of September 2026, not legal advice.",
     spain_note='<strong>Working in Spain?</strong> Spanish rules are different. See '
                '<a href="https://webautonomos.es/en/website-for-builders-in-spain">websites for builders and '
                'renovation companies in Spain</a>.',
@@ -851,10 +905,10 @@ TRADES = dict(
               "Your trade body and scheme registrations shown as you hold them, with nothing you're not entitled to",
               "Reviews shown honestly: genuine, without hiding the negative ones or giving the positive ones more "
               "prominence",
-              "A privacy policy and cookie notice adapted to UK law (UK GDPR and PECR)",
+              "A privacy policy and cookie notice adapted to UK GDPR and PECR",
               "A .co.uk or .uk domain in your name, hosting, an SSL certificate and daily backups"],
-    why_t='Made for UK trades',
-    why=[('🧰', 'Your trade, your way', 'Services, areas covered, registrations and job photos, set out the way '
+    why_t='Made for tradespeople',
+    why=[('🧰', 'Your trade, set out clearly', 'Services, areas covered, registrations and job photos, set out as '
                                        'customers look for them.')] + WHY_TRADES[:2],
     sectors=['🏗️ Builders', '🔧 Plumbers', '⚡ Electricians', '🏠 Roofers', '🪵 Carpenters and joiners',
              '🎨 Painters and decorators', '🟫 Tilers', '🌳 Landscapers'],
@@ -862,7 +916,7 @@ TRADES = dict(
     extra=[
         ('website-content', 'Content', "What to put on a tradesman's website",
          '<p class="legal-intro">Someone searching for a tradesperson wants to know three things quickly: do you do '
-         'the job they need, do you cover their area, and how do they reach you? Websites for tradesmen work '
+         'the job they need, do you cover their area, and how do they reach you? Websites for tradesmen do '
          'best when they answer those first.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗂️</div>'
@@ -879,8 +933,8 @@ TRADES = dict(
          'so a customer can check it, and only the ones you actually hold.</p></div>'
          '</div>'),
         ('by-trade', 'By trade', 'Trades website design that fits your rules',
-         '<p class="legal-intro">Some trades have their own rules on what they can claim and who can do the '
-         'work.</p>'
+         '<p class="legal-intro">Some trades have their own rules on what they can claim and who can carry it '
+         'out.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔧</div>'
          '<h3><a href="https://webautonomos.es/en/web-design-for-plumbers">Websites for plumbers</a></h3>'
@@ -898,7 +952,43 @@ TRADES = dict(
         ('local-search-help', 'Local search', 'How customers find a local tradesperson',
          '<p class="legal-intro">Basic SEO is included: page titles and copy built around your services and the '
          'towns you cover, kept consistent with your Google Business Profile. For more, we also offer local SEO '
-         'and help managing your Google Business Profile: ask us for prices when you get your demo.</p>'),
+         'and help managing your Google Business Profile: ask us for prices when you get your demo.</p>'
+         '<p class="legal-intro">Small trade businesses often get much of their visibility from searches made on '
+         'a mobile, close by, so each service and each area should stand out.</p>'),
+        # 15/10/2026 : guides AI Overview, ChatGPT et Gemini (« web design for tradesmen ») : liste pratique de ce que
+        # lisent les clients avant d'appeler. Faits WebAutonomos : VERITE §2 (formulaire vers l'e-mail, WhatsApp, une
+        # modification par mois, photos du client).
+        ('trade-checklist', 'Checklist', 'A practical checklist for a trade business website',
+         '<p class="legal-intro">Customers often compare two or three tradespeople before they ring anyone, '
+         'and they want practical, honest answers first. These are the things they read.</p>\n  '
+         '<div class="legal-we"><h3>What to put on it</h3><ul>'
+         '<li><span><strong>Real photos of finished projects:</strong> before-and-after shots taken on your own mobile '
+         'are better proof than stock images. A small gallery '
+         'is enough at first.</span></li>'
+         '<li><span><strong>A section for each service:</strong> plumbing, rewiring, roofing or kitchen fitting, '
+         'each described in plain words, so a visitor finds what they need straight away.</span></li>'
+         '<li><span><strong>The areas you cover, town by town:</strong> anyone searching nearby sees at a glance '
+         'whether you\'ll come to them.</span></li>'
+         '<li><span><strong>Pricing guidance where you can give it:</strong> a typical call-out charge or a range '
+         'for common repairs helps a visitor decide. If every job is different, say how you price it, and remember that '
+         'what you write can become part of the contract.</span></li>'
+         '<li><span><strong>One tap to call or message:</strong> your call button and WhatsApp stay visible on '
+         'mobile, so anyone can call you from the roadside.</span></li>'
+         '<li><span><strong>A clear next step at every turn:</strong> call, WhatsApp or the enquiry form, so interest '
+         'can turn into a lead. Enquiries from it arrive straight in your inbox.</span></li>'
+         '<li><span><strong>Fast to load and easy to read on a small screen:</strong> anyone in a hurry goes '
+         'elsewhere if it\'s slow.</span></li></ul></div>'),
+        ('getting-started', 'Getting started', 'What a tradesman sends us to get started',
+         '<p class="legal-intro">It takes a few minutes, not a long project. Whatever your trade, this short '
+         'list is enough for us to prepare your demo within 24 hours.</p>\n  '
+         '<div class="legal-we"><h3>What to send</h3><ul>'
+         '<li><span>What you do and the towns or areas where you go</span></li>'
+         '<li><span>Your trade body and scheme registrations, exactly as you hold them</span></li>'
+         '<li><span>A few photos of finished projects, taken on your mobile</span></li>'
+         '<li><span>Any branding you already use, such as the colours on your van</span></li>'
+         '<li><span>How you prefer to be reached: call, WhatsApp or both</span></li></ul></div>'
+         '<p class="legal-intro">We write the copy, add your legal texts and send you the '
+         'demo to read. Nothing is published until you approve it.</p>'),
     ],
     faq=[("What must a tradesman's website show by law?",
           "Under the Electronic Commerce Regulations 2002 (reg. 6): your business name, a geographic address and "
@@ -935,6 +1025,18 @@ TRADES = dict(
           "Installing energy-saving materials in homes, such as insulation, heat pumps, solar panels and "
           "batteries, is zero-rated until 31 March 2027, then goes back to 5% (VAT Notice 708/6). Gas and oil "
           "boilers and ordinary central heating systems are not included; wood-fuelled boilers are."),
+         ("How do people pick a tradesman?",
+          "They typically read a few sites side by side: what each tradesman does, the areas they cover, photos "
+          "of real projects, genuine feedback and how quickly they can get a reply. A plumber, builder or "
+          "electrician with clear service sections and a call button that's easy to spot is easier to pick."),
+         ("Are directory profiles enough on their own?",
+          "Directory profiles can bring leads, but you share the listing with competitors and play by the "
+          "directory's rules. On your own site only you appear, with real photos of your projects and a direct "
+          "line to you, and you can link to it from each directory profile."),
+         ("Do I need a website if customers find me through recommendations?",
+          "Recommendations still lead people to check you out before they call. Having one lets them check what you "
+          "do, the areas you cover, photos of real projects and how to get in touch, and it gives you an "
+          "address to put on your van and your quotes."),
          ("You're based in Spain: how do we work together?",
           "Remotely and in English, by email, WhatsApp or video call, and we reply the same day."),
          FAQ_COMMUNES[1], FAQ_COMMUNES[2]],
@@ -1082,6 +1184,40 @@ PLUMB_UK = dict(
          '<p class="legal-intro">Need a wider trades website, or cover more than one trade? See '
          '<a href="https://webautonomos.es/en/web-design-for-tradesmen">web design for tradesmen</a> or '
          '<a href="https://webautonomos.es/en/web-design-for-electricians">web design for electricians</a>.</p>'),
+        # 15/10/2026 : guide AI Overview (« web design for plumbers ») : navigation et clients professionnels.
+        # Conseils généraux, aucun fait nouveau sur WebAutonomos.
+        ('commercial-navigation', 'Navigation', 'Simple navigation for domestic and commercial clients',
+         '<p class="legal-intro">A homeowner with a burst pipe and a facilities manager planning a commercial job '
+         'need different information. Simple navigation lets each one click straight to what matters, without '
+         'reading everything else.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🧭</div>'
+         '<h3>Navigation in plain words</h3>'
+         '<p>Top-level navigation such as Emergencies, Boilers, Drains, Landlords and Commercial, with the call '
+         'button always one click away. Short labels do better than clever ones.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏢</div>'
+         '<h3>A dedicated commercial section</h3>'
+         '<p>If you take on commercial jobs, such as offices, shops or blocks of flats, give them a dedicated '
+         'section: what you take on, where you operate, whether you can come out of hours and how to arrange a '
+         'visit.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">💷</div>'
+         '<h3>Budget information up front</h3>'
+         '<p>Commercial clients often plan to a budget. A short note on how you charge for planned maintenance, '
+         'call-outs and larger jobs helps them decide quickly.</p></div>'
+         '</div>'),
+        ('planning-checklist', 'Planning', 'Planning ahead: a short checklist',
+         '<p class="legal-intro">Starting from scratch? A little planning leads to a more effective result, '
+         'whatever your budget.</p>\n  '
+         '<div class="legal-we"><h3>Before your demo</h3><ul>'
+         '<li><span>Note the specific jobs you want more of, such as heating installs, drain clearance or '
+         'commercial maintenance, so the information people see first matches them.</span></li>'
+         '<li><span>Decide where you serve, and how far you\'ll travel for an emergency.</span></li>'
+         '<li><span>Gather a few strong photos: your van, you on a job, a finished bathroom. Visual proof of your '
+         'own is worth more than stock images.</span></li>'
+         '<li><span>If you already use a booking or job management app, keep it: we can link to '
+         'it.</span></li>'
+         '<li><span>Choose the level of detail on charges: a typical call-out fee, or how you charge for '
+         'larger jobs.</span></li></ul></div>'),
         ('landlords', 'Landlords', 'Serving landlords and letting agents',
          '<p class="legal-intro">Landlords and letting agents are a source of ongoing jobs for many plumbing and '
          'heating companies, and a dedicated page makes it easy for them to see you\'re set up for it.</p>'
@@ -1215,6 +1351,14 @@ PLUMB_UK = dict(
           "Often through a search engine: someone types “emergency plumber” with their town or postcode "
           "and picks from the results. A clear homepage, your service area and a call button in view give them a "
           "fast answer and an easy way to get in touch."),
+         ("What belongs in my menu?",
+          "Keep the navigation short: emergencies, boilers, drains, landlords, commercial if you take it on, and "
+          "contact. People in a hurry should be able to call you from anywhere on the site without hunting "
+          "through menus."),
+         ("Do commercial clients look for different information?",
+          "Often, yes: a facilities manager or a letting agent wants to see which kinds of property you serve, "
+          "whether you can attend out of hours, how you handle planned maintenance and how invoicing works. A "
+          "dedicated section with that information saves them a call."),
          ("You're based in Spain: how do we work together?",
           "Remotely and in English, by email, WhatsApp or video call, and we reply the same day."),
          FAQ_COMMUNES[1], FAQ_COMMUNES[2]],
