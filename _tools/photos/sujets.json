@@ -3606,7 +3606,7 @@
    "priorite": 41,
    "titre": "Blog para autónomos",
    "url": "https://webautonomos.es/blog/",
-   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 61 artículos disponibles en español.",
+   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 57 artículos disponibles en español.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -3659,6 +3659,31 @@
      "nom": "Blog Autónomo",
      "titre": "Guías para tu negocio",
      "bouton": "leer"
+    }
+   }
+  },
+  {
+   "id": "page-web-per-a-autonoms",
+   "type": "page",
+   "priorite": 60,
+   "titre": "Pàgina web per a autònoms, en català i castellà",
+   "url": "https://webautonomos.es/web-per-a-autonoms/",
+   "resume": "La teva web professional, bilingüe català i castellà sense cap suplement, per 15 €/mes + IVA, sense alta ni permanència. Demo personalitzada en menys de 24 hores.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "web-per-a-autonoms/index.html",
+     "lang": "val",
+     "url": "https://webautonomos.es/web-per-a-autonoms/"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-page-web-per-a-autonoms",
+   "maquette": {
+    "val": {
+     "statut": "pret",
+     "fichier": "photo-page-web-per-a-autonoms-maquette-val"
     }
    }
   },
@@ -4201,7 +4226,7 @@
    "priorite": 104,
    "titre": "Cómo conseguir más reseñas en Google para tu negocio: Guía completa 2026",
    "url": "https://webautonomos.es/blog/es/como-conseguir-resenas-google-negocio",
-   "resume": "Las reseñas de Google son el factor más imprescindible para que nuevos clientes te elijan. Una empresa con 50 reseñas de 4.5 estrellas siempre ganará al negocio que tiene 5 reseñas, aunque sean de 5 estrellas. En esta guía completa hemos recopilado los mejores consejos para conseguir más reseñas de forma ética y efectiva para aumentar la visibilidad de tu negocio.",
+   "resume": "Para conseguir más reseñas en Google no hace falta ningún truco: basta con tener el Perfil de Empresa completo, pedir la opinión a cada cliente en el momento adecuado y ponérselo fácil con un enlace o un código QR. En esta guía tienes los pasos, mensajes de ejemplo y las normas que debes respetar para que tus opiniones no se eliminen.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -4723,18 +4748,12 @@
    "id": "art-09",
    "type": "article",
    "priorite": 108,
-   "titre": "Qué debe tener la web de un electricista: guía práctica 2026",
-   "url": "https://webautonomos.es/blog/es/pagina-web-para-electricistas",
-   "resume": "Si trabajas como electricista autónomo en la Comunidad Valenciana, sabes que el boca a boca ya no basta: antes de llamar a nadie, la gente busca en Google «electricista en Valencia» o «urgencias eléctricas Alicante». Una buena web decide si te encuentran a ti o a la empresa de al lado.",
+   "titre": "Pagina web per a electricistes: que necessites i com comencar",
+   "url": "https://webautonomos.es/blog/val/pagina-web-per-a-electricistes",
+   "resume": "Si ets electricista autonom a la Comunitat Valenciana, saps que el boca a boca ja no es suficient. Els teus clients potencials busquen en Google \"electricista a Valencia\" o \"electricista urgent Alacant\" abans de telefonar a ningu. I si no tens una pagina web per a electricistes professional, estas perdent eixos clients davant de competidors que si la tenen. En esta guia…",
    "marche": "europe",
    "sante": false,
    "pages": [
-    {
-     "html": "blog/es/pagina-web-para-electricistas.html",
-     "lang": "es",
-     "url": "https://webautonomos.es/blog/es/pagina-web-para-electricistas",
-     "spa": "es/pagina-web-para-electricistas"
-    },
     {
      "html": "blog/val/pagina-web-per-a-electricistes.html",
      "lang": "val",
@@ -4746,11 +4765,6 @@
      "lang": "en",
      "url": "https://webautonomos.es/blog/en/website-for-electricians",
      "spa": "en/website-for-electricians"
-    },
-    {
-     "html": "blog/fr/site-web-pour-electriciens.html",
-     "lang": "fr",
-     "url": "https://webautonomos.es/blog/fr/site-web-pour-electriciens"
     }
    ],
    "statut": "fait",
@@ -5247,18 +5261,12 @@
    "id": "art-13",
    "type": "article",
    "priorite": 112,
-   "titre": "Cómo conseguir más llamadas con la web de tu fontanería",
-   "url": "https://webautonomos.es/blog/es/web-para-fontaneros-guia-completa",
-   "resume": "Si eres fontanero en la Comunidad Valenciana y todavía no tienes una web para fontaneros que traiga llamadas a tu negocio, puede que estés perdiendo llamadas cada día. Cuando alguien tiene una fuga en Valencia o necesita cambiar la caldera en Alicante, busca en internet desde el móvil y llama a quien encuentra y le inspira confianza. En esta guía te explicamos qué debe tener…",
+   "titre": "Web per a fontaners: com aconseguir mes trucades amb la teua pagina",
+   "url": "https://webautonomos.es/blog/val/web-per-a-fontaners-guia-completa",
+   "resume": "Si ets fontaner autonom a la Comunitat Valenciana i encara no tens una web per a fontaners que funcione de veritat, estas perdent trucades cada dia. Quan alguna persona te una fuita d'aigua a Valencia o necessita canviar una caldera a Alacant, el primer que fa es buscar en Google. I si no apareixes, el treball se l'emporta un altre. En esta guia et mostrem exactament que…",
    "marche": "europe",
    "sante": false,
    "pages": [
-    {
-     "html": "blog/es/web-para-fontaneros-guia-completa.html",
-     "lang": "es",
-     "url": "https://webautonomos.es/blog/es/web-para-fontaneros-guia-completa",
-     "spa": "es/web-para-fontaneros-guia-completa"
-    },
     {
      "html": "blog/val/web-per-a-fontaners-guia-completa.html",
      "lang": "val",
@@ -5270,11 +5278,6 @@
      "lang": "en",
      "url": "https://webautonomos.es/blog/en/website-for-plumbers-complete-guide",
      "spa": "en/website-for-plumbers-complete-guide"
-    },
-    {
-     "html": "blog/fr/site-web-pour-plombiers-guide-complet.html",
-     "lang": "fr",
-     "url": "https://webautonomos.es/blog/fr/site-web-pour-plombiers-guide-complet"
     }
    ],
    "statut": "fait",
@@ -5511,7 +5514,7 @@
    "priorite": 114,
    "titre": "Que es el Map Pack de Google y como conseguir que tu negocio aparezca",
    "url": "https://webautonomos.es/blog/es/que-es-map-pack-google-como-salir",
-   "resume": "Si buscas «fontanero en Valencia» en Google, verás un mapa con tres negocios encima de los resultados. Para un autónomo de la Comunidad Valenciana, aparecer ahí puede traducirse en más llamadas, más visitas y más clientes. En este artículo te explicamos qué es, cómo decide el buscador quién sale y cómo preparar tu ficha, tus reseñas y tu página.",
+   "resume": "Si buscas «fontanero en Valencia» en Google, verás un mapa con tres negocios encima de los resultados. Para un autónomo de la Comunidad Valenciana, aparecer ahí puede traducirse en más llamadas, más visitas y más clientes. En este artículo te explicamos qué es, cómo decide el buscador quién sale y cómo preparar tu Perfil de Empresa, tus reseñas y tu sitio.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -5905,7 +5908,7 @@
    "priorite": 117,
    "titre": "Como responder a resenas negativas en Google sin perder clientes",
    "url": "https://webautonomos.es/blog/es/responder-resenas-negativas-google",
-   "resume": "Abres Google y lo ves: una reseña de una estrella en el perfil de tu negocio, escrita en caliente. Les pasa a muchos negocios, y apetece replicar al instante. Respira: saber responder reseñas negativas en Google con calma y de forma profesional muestra a los clientes de Valencia, Alicante, Elda o Elche cómo trabajas.",
+   "resume": "Abres tu perfil y lo ves: una reseña de una estrella en el perfil de tu negocio, escrita en caliente. Les pasa a muchos negocios, y apetece replicar al instante. Respira: saber responder reseñas negativas en Google con calma y de forma profesional muestra a quien te busca en Valencia, Alicante, Elda o Elche cómo trabajas.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -6691,7 +6694,7 @@
    "priorite": 123,
    "titre": "Digitalización para autónomos en España: por dónde empezar en 2026",
    "url": "https://webautonomos.es/blog/es/digitalizacion-autonomos-espana-por-donde-empezar",
-   "resume": "¿Quieres saber cómo digitalizar tu negocio y no tienes claro por dónde ir? Si eres fontanero en Elche, tienes una tienda en Castellón o un taller de carpintería en Elda, no necesitas grandes inversiones ni conocimientos técnicos: basta con dar pasos pequeños para que te encuentren, atender mejor a tus clientes y perder menos tiempo en papeleo. Aquí tienes un orden concreto…",
+   "resume": "¿Quieres saber cómo digitalizar tu negocio y no tienes claro por dónde ir? Si eres fontanero en Elche, tienes una tienda en Castellón o un taller de carpintería en Elda, no necesitas grandes inversiones ni conocimientos técnicos: basta con avanzar poco a poco para que te encuentren, atender mejor a tus clientes y perder menos tiempo en papeleo. Aquí tienes un orden concreto…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -6810,18 +6813,12 @@
    "id": "art-25",
    "type": "article",
    "priorite": 124,
-   "titre": "Qué debe tener la web de un carpintero o de una reforma",
-   "url": "https://webautonomos.es/blog/es/web-para-carpinteros-reformas",
-   "resume": "Si eres carpintero o tienes una empresa de reformas en la Comunidad Valenciana, tu carta de presentación es el trabajo bien hecho. Pero si ese trabajo no se ve en internet, quien busca un carpintero en Elda, Elche o Alicante no llega a conocerte. Una página web profesional de carpintería reúne tus servicios, tus proyectos terminados y una forma sencilla de pedir presupuesto.…",
+   "titre": "Pagines web per a fusters i empreses de reformes: guia practica",
+   "url": "https://webautonomos.es/blog/val/web-per-a-fusters-i-reformes",
+   "resume": "Si ets fuster o tens una empresa de reformes a la Comunitat Valenciana, saps que la teua millor targeta de visita es la faena ben feta. Pero si eixa faena no es veu online, estas perdent clients cada dia. Una web per a fusters i reformes ben dissenyada converteix els teus projectes acabats en sol·licituds de pressupost constants. En esta guia t'expliquem exactament que…",
    "marche": "europe",
    "sante": false,
    "pages": [
-    {
-     "html": "blog/es/web-para-carpinteros-reformas.html",
-     "lang": "es",
-     "url": "https://webautonomos.es/blog/es/web-para-carpinteros-reformas",
-     "spa": "es/web-para-carpinteros-reformas"
-    },
     {
      "html": "blog/val/web-per-a-fusters-i-reformes.html",
      "lang": "val",
@@ -6833,11 +6830,6 @@
      "lang": "en",
      "url": "https://webautonomos.es/blog/en/website-for-carpenters-and-renovations",
      "spa": "en/website-for-carpenters-and-renovations"
-    },
-    {
-     "html": "blog/fr/site-web-pour-menuisiers-et-renovation.html",
-     "lang": "fr",
-     "url": "https://webautonomos.es/blog/fr/site-web-pour-menuisiers-et-renovation"
     }
    ],
    "statut": "fait",
@@ -6955,7 +6947,7 @@
    "priorite": 125,
    "titre": "Fotos y videos en tu ficha de Google: qué subir y por qué importa",
    "url": "https://webautonomos.es/blog/es/fotos-videos-ficha-google-importancia",
-   "resume": "Cuando alguien busca un negocio local como el tuyo en Google Maps, las fotografías de tu ficha de Google pueden ser lo primero que ve. Te explicamos qué fotos y vídeos conviene incluir en Google Business Profile, cómo reaccionar ante lo que añaden tus clientes y qué errores evitar.",
+   "resume": "Cuando alguien busca un negocio local como el tuyo en Google Maps, las fotos de tu ficha pueden ser lo primero que ve. Te explicamos qué fotos y vídeos conviene incluir en Google Business Profile, cómo reaccionar ante lo que añaden tus clientes y qué fallos evitar.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -8409,18 +8401,12 @@
    "id": "art-39",
    "type": "article",
    "priorite": 136,
-   "titre": "Qué debe tener la web de un psicólogo: guía completa 2026",
-   "url": "https://webautonomos.es/blog/es/web-para-psicologos-terapeutas",
-   "resume": "Si eres psicólogo, psicóloga o terapeuta en España, tu página web es, muchas veces, lo primero que alguien consulta antes de escribirte. Quien busca apoyo psicológico compara profesionales cercanos, lee cómo trabajan y decide si le transmiten confianza. En esta guía verás qué secciones necesita la web de un psicólogo, cómo presentar tus servicios sin prometer resultados, qué…",
+   "titre": "Pàgines web per a psicòlegs i terapeutes: guia completa",
+   "url": "https://webautonomos.es/blog/val/web-per-a-psicolegs-i-terapeutes",
+   "resume": "Si eres psicòleg o terapeuta a Espanya, la teua pàgina web no és un luxe: és la teua consulta digital. Hui moltes persones que busquen suport psicològic comencen per Google. Busquen professionals pròxims, llegixen sobre el seu enfocament terapèutic i avaluen si els transmet confiança abans de cridar. Si no et troben en línia, trien un altre professional. En esta guia…",
    "marche": "europe",
    "sante": true,
    "pages": [
-    {
-     "html": "blog/es/web-para-psicologos-terapeutas.html",
-     "lang": "es",
-     "url": "https://webautonomos.es/blog/es/web-para-psicologos-terapeutas",
-     "spa": "es/web-para-psicologos-terapeutas"
-    },
     {
      "html": "blog/val/web-per-a-psicolegs-i-terapeutes.html",
      "lang": "val",
@@ -8432,11 +8418,6 @@
      "lang": "en",
      "url": "https://webautonomos.es/blog/en/website-for-psychologists-and-therapists",
      "spa": "en/website-for-psychologists-and-therapists"
-    },
-    {
-     "html": "blog/fr/site-web-pour-psychologues-et-therapeutes.html",
-     "lang": "fr",
-     "url": "https://webautonomos.es/blog/fr/site-web-pour-psychologues-et-therapeutes"
     }
    ],
    "statut": "fait",
@@ -8674,7 +8655,7 @@
    "priorite": 138,
    "titre": "Web para centros de estética: cómo llenar tu agenda de citas",
    "url": "https://webautonomos.es/blog/es/web-para-centros-estetica-belleza",
-   "resume": "Un centro de estética entra por los ojos, y los ojos de tus clientes están en Google y en internet. Antes de reservar buscan tu nombre, miran tus fotos, leen tus reseñas y comprueban si pueden pedir cita. Una web para centros de estética reúne todo eso en un solo sitio. Esta guía te explica qué mostrar y cómo contarlo con claridad.",
+   "resume": "Un centro de estética entra por los ojos, y los ojos de tus clientes están en Google y en internet. Antes de reservar buscan tu nombre, miran tu trabajo, leen comentarios y comprueban si pueden pedir cita. Una web para centros de estética reúne todo eso en un solo sitio. Esta guía te explica qué mostrar y cómo contarlo con claridad.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -9068,7 +9049,7 @@
    "priorite": 141,
    "titre": "Web para clínicas veterinarias: confianza y nuevos pacientes",
    "url": "https://webautonomos.es/blog/es/web-para-clinicas-veterinarias",
-   "resume": "Cuando la mascota de alguien se pone enferma, muchos dueños buscan un veterinario en Google, a menudo con prisa. Antes de llevar a su animal quieren saber qué servicios ofreces, dónde estás, cuándo abres y si otros clientes confían en ti. Si tu clínica veterinaria no tiene una página web profesional, esa persona acaba en la de al lado. Esta guía explica cómo debe ser la web de…",
+   "resume": "Cuando la mascota de alguien se pone enferma, muchas personas buscan un veterinario en Google, a menudo con prisa. Antes de llevar a su animal quieren saber qué servicios ofreces, dónde estás, cuándo abres y si otros clientes confían en ti. Si tu clínica veterinaria no tiene una página web profesional, esa persona acaba en la de al lado. Esta guía explica cómo debe ser la…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -9856,7 +9837,7 @@
    "priorite": 147,
    "titre": "¿Contratar o automatizar?",
    "url": "https://webautonomos.es/blog/es/contratar-o-automatizar",
-   "resume": "La pregunta llega en cuanto el papeleo desborda: ¿incorporar a alguien o dejar parte del trabajo a una herramienta? Si eres autónomo o llevas una pyme, vuelve cada vez que tu negocio crece. El problema es que a menudo se plantea mal: se compara un sueldo con la cuota de un programa sin mirar lo que hace cada opción. Un empleado cuesta más de lo que dice la nómina; una…",
+   "resume": "La pregunta llega en cuanto el papeleo desborda: ¿incorporar a alguien o dejar parte del trabajo a una herramienta? Si eres autónomo o llevas una pyme, vuelve cada vez que tu negocio crece. El problema es que a menudo se plantea mal: se compara un sueldo con la cuota de un programa sin mirar lo que hace cada opción. Un empleado tiene un coste mayor de lo que dice la nómina;…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -10251,7 +10232,7 @@
    "priorite": 150,
    "titre": "Cuánto cuesta automatizar: la fórmula, no el rango",
    "url": "https://webautonomos.es/blog/es/cuanto-cuesta-automatizar-un-proceso-formula",
-   "resume": "Busca «cuánto cuesta automatizar un proceso» y verás lo mismo en todas partes: rangos que van de 1.500 a 60.000 euros, una lista de factores que mueven el precio, y una frase final que lo resume todo. El importe exacto sale de una auditoría previa. Es verdad. Y no te sirve de nada cuando lo que necesitas es saber si te compensa antes de pedir cita con nadie. Aquí tienes otra…",
+   "resume": "Busca «cuánto cuesta automatizar procesos» y verás lo mismo en casi todas partes: rangos muy amplios, una lista de factores que mueven la cifra y una frase final: el importe exacto sale de una auditoría previa. Es verdad, pero no te sirve cuando quieres saber si te compensa antes de pedir cita con nadie. Aquí tienes otra respuesta: una fórmula con tres números que ya conoces,…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -10515,7 +10496,7 @@
    "priorite": 152,
    "titre": "Automatizar sin saber programar: hasta dónde llegas tú solo",
    "url": "https://webautonomos.es/blog/es/automatizar-sin-saber-programar",
-   "resume": "«Yo de programación no tengo ni idea.» Es una frase que se oye a menudo cuando se habla de automatización, y casi siempre sobra. Con las herramientas no-code de hoy, un autónomo o una pequeña empresa puede automatizar sin código buena parte de sus procesos repetitivos, conectando los programas que ya usa. Pero hay un límite, y conviene saber dónde está antes de perder un fin…",
+   "resume": "«Yo de programación no tengo ni idea.» Es una frase que se oye a menudo cuando se habla de automatización, y casi siempre sobra. Con las herramientas no-code de hoy, un autónomo o una pequeña empresa puede automatizar sin código buena parte de sus procesos repetitivos, conectando los programas que ya usa. Pero hay un límite, y es mejor saber dónde está antes de perder un fin…",
    "marche": "europe",
    "sante": false,
    "pages": [
