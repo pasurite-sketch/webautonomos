@@ -3302,13 +3302,13 @@ ELEC['en'] = dict(
     cta='Get my free demo', cta2='What Spanish rules require',
     brief_t='In short',
     brief="WebAutonomos builds websites for English-speaking electricians, EV charger installers and solar installers "
-          "working in Spain. We present each electrical service, write the copy in English and Spanish (up to four "
+          "working in Spain. We present each of your electrical services, write the copy in English and Spanish (up to four "
           "languages) at no extra charge, and include what Spanish law expects on a business site, such as a legal "
           "notice with your NIF or NIE, prices for "
-          "domestic customers shown with VAT included, and the complaint information your region requires. It costs "
+          "domestic customers shown with VAT included, and the complaint channels your region requires. It costs "
           "<strong>€15 + VAT per month</strong> with no setup fee and no lock-in, or a <strong>one-off €349 + "
-          "VAT</strong>. We work with you in English, and your demo is ready within 24 hours.",
-    legal_id='rules', legal_ey='Spanish rules', legal_t='What your business and your website have to get right',
+          "VAT</strong>. We work with you in English, and your demo is ready within 24h.",
+    legal_id='rules', legal_ey='Spanish rules', legal_t='What Spanish law asks of your business and your website',
     legal_intro="In Spain, electrical work is reserved to registered installation companies, and only they can sign "
                 "the certificate that gets an installation connected. Consumer law then sets the rules for quotes, "
                 "call-outs and complaints. These are the points that matter.",
@@ -3317,7 +3317,7 @@ ELEC['en'] = dict(
         ('Empresa instaladora', 'REBT (RD 842/2002), art. 22; ITC-BT-03',
          "Only an empresa instaladora en baja tensión may install, maintain or repair low-voltage installations. You "
          "file a declaración responsable with the region where you are established; it is valid across Spain with "
-         "no expiry date, and the region gives you a number and sends your details to the Registro Integrado "
+         "no expiry date, and the region gives you a number and sends your data to the Registro Integrado "
          "Industrial."),
         ('Requirements', 'ITC-BT-03, §3, §4, §5.8 and Appendix I',
          "At least one qualified instalador en baja tensión for your category (básica or especialista), under any "
@@ -3341,8 +3341,8 @@ ELEC['en'] = dict(
         ROW_EN_COMPLAINTS,
         ROW_EN_NOTICE,
     ],
-    legal_note="Registration is handled by your region's industry department, and rules on quotes and complaint forms "
-               "are regional too. This is general information as of September 2026, not legal advice.",
+    legal_note="Registration is handled by your region's industry department, and rules on quotes and complaints "
+               "are regional too. This is a general summary as of September 2026, not legal advice.",
     legal_we_t='What we set up for you',
     legal_we=["A proper legal notice with your name, NIF or NIE, address, phone and email, plus your Registro "
               "Mercantil entry if you trade as an S.L.",
@@ -3370,7 +3370,7 @@ ELEC['en'] = dict(
     sectors=['⚡ Electricians', '🔌 Repairs and fault finding', '🏠 Rewires and upgrades', '🚗 EV chargers',
              '☀️ Solar installers', '💡 Lighting', '🏢 Commercial electrical work', '📶 Smart home and networks'],
     how_t='Your site in three steps',
-    steps=[('Tell us about your business', 'Your services, the areas you cover and a few job photos: it takes two '
+    steps=[('Tell us about your business', 'Your services, the towns you cover and a few job photos: it takes two '
                                            'minutes.'),
            ('We build your demo', 'Within 24h, with your services, your copy in English and Spanish, and your '
                                   'legal pages.'),
@@ -3403,18 +3403,18 @@ ELEC['en'] = dict(
          'needs</a>.</p>'),
         # 15/10/2026 : section ajoutée pour le guide Gemini (vocabulaire absent du guide Google, déjà au-dessus de 100).
         ('design', 'Design', 'Website design for electricians: what works',
-         '<p class="legal-intro">On websites for electricians, as for any small business, good design is about '
-         'clarity, not effects. '
+         '<p class="legal-intro">On websites for electricians, as for any small business, good website design is about '
+         'clarity, not effects: a website that looks clean and is easy to use on a phone is worth more than animations. '
          'Here is what we build into every design, and why.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">👀</div>'
          '<h3>The essentials at first view</h3>'
          '<p>Your services, your location and a call button are visible as soon as the page opens, on a phone as '
-         'clearly as on a laptop.</p></div>'
+         'clearly as on a laptop, and your email, address and legal pages are easy to find in the footer of every page.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📸</div>'
          '<h3>Real photos, not stock images</h3>'
-         '<p>The design is built around photos of your own vans, consumer units and finished jobs, so the site '
-         'looks like your business and nobody else&#8217;s.</p></div>'
+         '<p>The design uses photos of your own vans, consumer units and finished jobs, so the site '
+         'looks like your business and nobody else&#8217;s: a custom design, not a template with a new logo.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📋</div>'
          '<h3>A list of the jobs you take on</h3>'
          '<p>Emergency call-outs if you offer them, EV charger installs, solar, rewires: a short list shows a '
@@ -3441,8 +3441,8 @@ ELEC['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div>'
          '<h3>Your category, recorded by your region</h3>'
          '<p>Your business is registered as an empresa instaladora through a declaración responsable filed with '
-         'your region, with a básica or especialista category and at least one qualified instalador en baja '
-         'tensión. That category is what tells a customer which jobs you can take on.</p></div>'
+         'your region, with a básica or especialista category and at least one instalador en baja '
+         'tensión. That category is what tells people which jobs you can take on.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div>'
          '<h3>The certificate that proves it</h3>'
          '<p>When an installation is finished, your company issues the certificado de instalación, the boletín, signed by '
@@ -3456,7 +3456,7 @@ ELEC['en'] = dict(
          'That training is real experience, but neither registration is an authorisation in Spain.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🇬🇧</div>'
-         '<h3>British schemes stay at home</h3>'
+         '<h3>British schemes stay in Britain</h3>'
          '<p>NICEIC and NAPIT membership, and Part P self-certification, apply in England and Wales. In Spain, the standards are the REBT and its ITC-BT instructions, and your business is recorded by '
          'your region as an empresa instaladora.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div>'
@@ -3466,7 +3466,7 @@ ELEC['en'] = dict(
          'certification or a Spanish course.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✍️</div>'
          '<h3>How your website presents it</h3>'
-         '<p>Your site can mention your years of professional experience and your British training, as long as no British '
+         '<p>You can mention your years of professional experience and your British training, as long as no British '
          'scheme logo or membership is presented as a Spanish authorisation. Your empresa instaladora '
          'registration takes priority.</p></div>'
          '</div>'),
@@ -3481,8 +3481,8 @@ ELEC['en'] = dict(
     faq=[("Do I need to be registered as an electrician in Spain?",
           "Yes. Only an empresa instaladora en baja tensión may install, maintain or repair low-voltage "
           "installations (REBT, art. 22). As a sole trader or company, you file a declaración responsable with the "
-          "region where you are established, with at least one qualified installer and civil liability cover of at "
-          "least €600,000 per claim for the básica category. Working without it is a serious offence under the "
+          "region where you are established, with at least one installer holding the qualification and civil liability cover of at "
+          "least €600,000 for the básica category. Working without it is a serious offence under the "
           "Industry Act (Ley 21/1992), and a very serious one in Catalonia."),
          ("Can I practise as an electrician in Spain with British qualifications?",
           "Not on the strength of the UK certificate alone. Since 1 January 2021 the UK counts as a third country for "
@@ -3492,12 +3492,12 @@ ELEC['en'] = dict(
           "as the certificado de profesionalidad ELEE0109."),
          ("What is a boletín and who can issue it?",
           "The boletín is the certificado de instalación eléctrica (CIE). Only the empresa instaladora that did the "
-          "work issues it, signed by one of its own qualified installers, and it is filed with the region; the "
+          "work issues it, signed by one of its own installers, and it is filed with the region; the "
           "electricity supplier will not connect a new installation without it. A company may not supply "
           "certificates for work it did not carry out."),
          ("Can I install EV chargers in Spain?",
           "Yes, if your business is a registered empresa instaladora: the básica category covers chargers (ITC-BT-03, "
-          "§3). Under ITC-BT-04, a charging installation needs a project above 50 kW, outdoors above 10 kW, or for mode 4 charging. In a comunidad de "
+          "§3). Under ITC-BT-04, a charging installation needs a proyecto (a formal design document) above 50 kW, outdoors above 10 kW, or for mode 4 charging. In a comunidad de "
           "propietarios, an owner installing a charger in their own parking space only has to notify the community "
           "beforehand (Ley de Propiedad Horizontal, art. 17.5)."),
          ("Can my customers deduct a charger or solar panels from income tax?",
@@ -3506,11 +3506,11 @@ ELEC['en'] = dict(
           "self-consumption installed in 2026: 10%, or 20% in a residential building, on a base of up to €5,000, "
           "with the installation certificate. Payment must be by card, transfer, nominative cheque or bank deposit, "
           "never in cash. Point "
-          "customers to the Agencia Tributaria for the details that apply to them."),
+          "customers to the Agencia Tributaria for the rules that apply to them."),
          ("When does an installation need an OCA inspection?",
           "Only for the types listed in ITC-BT-05: for example premises open to the public, installations with fire "
           "or explosion risk, swimming pools above 10 kW, or EV charging that needs a project. Under the national "
-          "rules, an ordinary home installation does not need an initial inspection by an OCA."),
+          "rules, an ordinary domestic installation does not need an initial inspection by an OCA."),
          # 15/10/2026 : question « Why does my category matter to homeowners? » retirée (redite de la section
          # safety-standards) et question sur la recherche locale retirée (redite de local-search-help et de
          # FAQ_EN_GBP), pour ramener la note Google sous 100.
@@ -3518,7 +3518,7 @@ ELEC['en'] = dict(
          ("Can customers cancel after an emergency call-out?",
           "Not for the urgent repair itself. Under article 103 of the consumer law (TRLGDCU), there is no right of "
           "withdrawal when the customer specifically asked you to visit for an urgent repair or maintenance job. "
-          "The 14-day right still applies to extra services you provide during that visit, and to goods other than "
+          "The 14-day withdrawal period still applies to extra services you provide during that visit, and to goods other than "
           "the spare parts you necessarily used."),
          FAQ_EN_REVIEWS,
          FAQ_EN_LANGUAGE,
@@ -3527,8 +3527,8 @@ ELEC['en'] = dict(
          ("Can AI assistants such as ChatGPT recommend my business?",
           "No one can promise it: AI assistants such as ChatGPT or Gemini choose their own sources. What you can "
           "offer them is a site that is easy to read, with clear headings, each service and town named plainly, and "
-          "short answers to the questions your customers ask. If you choose SEO Local, its four blog articles a "
-          "month add more answers of that kind."),
+          "short answers to the questions your customers ask. If you choose SEO Local, its four monthly blog "
+          "articles add more answers of that kind."),
          FAQ_EN_PRICE],
     final_t='See your site before you pay a thing',
     final_sd="Free demo within 24h, with your services and legal pages. No setup fee, no lock-in.",
