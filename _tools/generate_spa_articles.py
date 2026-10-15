@@ -865,9 +865,10 @@ def main():
             continue
         # 15/10/2026 : le corps et la FAQ des articles ont été retirés du SPA
         # (_tools/nettoyage_spa_blog_20261015.py). Les fichiers statiques de blog/
-        # sont la seule source à jour : ne jamais écrire une page sans contenu,
-        # même avec --force.
-        if not art.get('content'):
+        # sont la seule source à jour : ne jamais écrire une page sans texte,
+        # même avec --force. La tâche nocturne des photos remet des blocs
+        # « image » dans content : seuls les blocs de texte comptent.
+        if not any((b or {}).get('type') != 'image' for b in (art.get('content') or [])):
             vides += 1
             continue
         _, base = split_slug(slug)
