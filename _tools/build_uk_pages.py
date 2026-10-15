@@ -561,13 +561,13 @@ PHYSIO = dict(
     service_name="Physiotherapy website design for UK clinics",
     audience="Physiotherapists and physiotherapy clinic owners in the United Kingdom",
     crumb='Physiotherapy website design',
-    badge='For physiotherapists and clinics in the UK',
+    badge='For physios and clinics in the UK',
     h1="Physiotherapy website design for <em>UK physiotherapists and clinics</em>",
     lede="Your treatments and how to book, written with HCPC standards and UK advertising rules in mind. We write "
          "it for you in English, you approve every word, and your free demo is ready within 24 hours.",
-    pills=['Written around HCPC and CAP rules', "No health claims you can't back up", 'Free demo in 24 hours'],
-    brief="WebAutonomos designs websites for physiotherapists and physiotherapy clinics in the UK. We write the "
-          "copy in English from your real details and keep it clear of what UK rules ban: health claims you "
+    pills=['Written around HCPC and CAP rules', "No treatment claims you can't back up", 'Free demo in 24 hours'],
+    brief="WebAutonomos designs websites for physios and physiotherapy clinics in the UK. We write the "
+          "copy in English from your real details and keep it clear of what UK rules ban: treatment claims you "
           "can't back up, misuse of protected titles, and fake or cherry-picked reviews. " + PRIX_BRIEF,
     legal_t='What your physiotherapy website has to get right in the UK',
     legal_intro="Physiotherapy is a regulated profession across the UK: the titles are protected by law, and the "
@@ -805,19 +805,19 @@ TRADES = dict(
     service_name="Web design for tradesmen in the UK",
     audience="Tradespeople and small building firms in the United Kingdom",
     crumb='Web design for tradesmen',
-    badge='For tradespeople and builders in the UK',
+    badge='For tradespeople in the UK',
     h1="Web design for <em>tradesmen</em> in the UK",
-    lede="Your services, the areas you cover, your registrations and a quote request in one tap, written with UK "
-         "consumer rules in mind. We write it for you in English, you approve every word, and your free demo is "
+    lede="Your services, the areas you cover, your registrations and a quote request in one tap, written with "
+         "consumer rules in mind. We write it for you in English, you approve every word, and your demo is "
          "ready within 24 hours.",
     pills=['Registrations shown as you hold them', 'Built around UK consumer rules', 'Free demo in 24 hours'],
     brief="WebAutonomos designs websites for tradespeople and small building firms in the UK: builders, plumbers, "
           "electricians, roofers, carpenters and more. We write the copy in English from your real details, show "
-          "your trade body and scheme registrations as you hold them, and include what UK law expects "
+          "your trade body and scheme registrations as you hold them, and include what the law expects "
           "on a business website. " + PRIX_BRIEF,
     legal_t='What UK rules mean for a tradesman\'s website',
     legal_intro="Your website counts as advertising, and the quotes and jobs that come from it are consumer "
-                "contracts. These are the rules that matter for tradespeople and builders.",
+                "contracts. These are the rules that matter for tradespeople.",
     legal_rows=[
         ROW_UK_DETAILS,
         ROW_UK_CONTRATS,
@@ -830,7 +830,7 @@ TRADES = dict(
          "Notifiable work, such as a new circuit, a consumer unit, a boiler or replacement windows, needs building "
          "control approval unless an installer registered with a competent person scheme self-certifies it. "
          "Homeowners can check scheme membership online."),
-        ('Health and safety on home jobs', 'Construction (Design and Management) Regulations 2015, regs 7 and 15',
+        ('Health and safety on domestic jobs', 'Construction (Design and Management) Regulations 2015, regs 7 and 15',
          "On a domestic job the client's duties pass to you as the contractor (or to the principal contractor if "
          "there are several), and you draw up a construction phase plan before work starts."),
         ('Asbestos', 'Control of Asbestos Regulations 2012, regs 8 and 9',
@@ -892,7 +892,7 @@ TRADES = dict(
          '<p>Part P and competent person schemes, landlord inspections, EV chargers and solar panels.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🏗️</div>'
          '<h3>Builders and construction firms</h3>'
-         '<p>For construction website design, the rules above apply in full: building control, CDM duties on home '
+         '<p>For construction website design, the rules above apply in full: building control, CDM duties on domestic '
          'jobs, asbestos and waste.</p></div>'
          '</div>'),
         ('local-search-help', 'Local search', 'How customers find a local tradesperson',
@@ -919,7 +919,7 @@ TRADES = dict(
           "reasonable price, and if no finish date was agreed, the work must be done within a reasonable time."),
          FAQ_UK_AVIS,
          FAQ_UK_CANCEL,
-         ("What are my health and safety duties on a home job?",
+         ("What are my health and safety duties on a domestic job?",
           "Under the Construction (Design and Management) Regulations 2015, a domestic client's duties pass to the "
           "contractor, or to the principal contractor if there is more than one, and the contractor draws up a "
           "construction phase plan before setting up the site."),

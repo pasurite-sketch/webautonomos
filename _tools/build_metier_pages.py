@@ -161,7 +161,7 @@ THERA['fr'] = dict(
     brief_t='En bref',
     brief="WebAutonomos crée des sites internet pour les psychologues, psychothérapeutes et praticiens "
           "(sophrologues, hypnothérapeutes, naturopathes), en France et en Espagne. Nous rédigeons les "
-          "textes à partir de vos informations, affichons votre titre et votre numéro RPPS si vous en avez un, et "
+          "textes à partir de vos informations, affichons votre titre et votre RPPS si vous en avez un, et "
           "prévoyons un formulaire de contact qui ne demande pas le motif de consultation. Le site coûte "
           "<strong>15 € HT par mois</strong> sans frais d'installation ni engagement, ou <strong>349 € HT en "
           "paiement unique</strong>, jusqu'à 4 langues sans supplément si vous le souhaitez, et la démo est prête en 24 heures.",
@@ -210,9 +210,9 @@ THERA['fr'] = dict(
               "psychologue ou psychothérapeute",
               "Des textes sans promesse de guérison, rédigés à partir de votre approche et de votre parcours",
               "Un formulaire sans champ « motif de consultation », avec un rappel de ne pas y décrire sa situation",
-              "Un lien vers votre outil de rendez-vous (Doctolib, Calendly ou autre) plutôt qu'une collecte de "
-              "données sur le site",
-              "Mentions légales, politique de confidentialité et gestion des cookies rédigées avec vos données"],
+              "Un lien vers votre outil de rendez-vous (Doctolib, Calendly ou autre) plutôt qu'une prise "
+              "de réservation sur le site",
+              "Mentions légales, politique de confidentialité et gestion des cookies rédigées pour vous"],
     spain_note="<strong>Vous exercez en Espagne ?</strong> Les règles changent : un psychologue doit être inscrit à "
                "un Colegio et afficher son numéro de colegiado sur son site, et un cabinet de psychologie de la santé "
                "doit être autorisé comme centre sanitaire. Nous connaissons aussi ces règles : "
@@ -220,24 +220,24 @@ THERA['fr'] = dict(
     sources_t='Sources',
     why_ey='Pourquoi nous', why_t="Pensé pour les métiers de l'accompagnement",
     why=[('🤫', "La discrétion d'abord", "Une prise de contact réduite au strict nécessaire, sans motif de "
-                                        "consultation ni question sur la santé, et un site entièrement en https."),
+                                        "consultation ni question personnelle, et un site entièrement en https."),
          ('📅', 'Rendez-vous en deux clics', "Un bouton vers votre agenda en ligne, WhatsApp ou le téléphone : la "
                                             "personne choisit ce qui la met à l'aise."),
-         ('💻', 'Cabinet ou visio', "Séances au cabinet, en ligne ou les deux : c'est écrit clairement, avec vos "
+         ('💻', 'Sur place ou à distance', "Séances au cabinet, en ligne ou les deux : c'est écrit clairement, avec vos "
                                    "tarifs si vous le souhaitez."),
          ('📍', 'Trouvé près de chez vous', "Titres et textes pensés pour les recherches « psychologue + votre "
-                                           "ville », en lien avec votre fiche Google.")],
+                                           "ville ».")],
     where_t='En France et en Espagne',
-    where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que votre cabinet "
-          "soit à Nantes, à Lyon ou à Valence, rien ne change.",
+    where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que vous exerciez "
+          "à Nantes, à Lyon ou à Valence, rien ne change.",
     sect_t='Pour qui',
     sectors=['🧠 Psychologues', '🗣️ Psychothérapeutes', '🛋️ Psychanalystes', '🌬️ Sophrologues',
              '🌀 Hypnothérapeutes', '🌿 Naturopathes', '💆 Praticiens bien-être', '🧭 Coachs'],
     how_t='Votre site en trois étapes',
-    steps=[('Vous décrivez votre pratique', "Votre titre, votre approche, cabinet ou visio, votre ville : deux "
+    steps=[('Vous décrivez votre pratique', "Votre titre, votre approche, sur place ou en visio, votre ville : deux "
                                            "minutes suffisent."),
            ('Nous préparons votre démo', "En moins de 24 heures, vous la découvrez avec vos textes, vos photos si "
-                                         "vous en avez et vos mentions légales."),
+                                         "vous en avez."),
            ('Vous décidez', "Nous ajustons ensemble les pages selon vos demandes. Si le site vous plaît, nous "
                             "passons à sa mise en ligne ; sinon, vous ne payez rien.")],
     price_note="Prix hors taxes : l'IVA espagnole de 21 % s'ajoute. Si vous êtes établi dans un autre pays de l'UE, "
@@ -246,39 +246,39 @@ THERA['fr'] = dict(
                "pas cette TVA. Nom de domaine inclus la première année, puis environ 12 €/an.",
     extra=[
         ('contenu-site', 'Sur votre site', "Que mettre sur le site internet d&#x27;un psychologue ou d&#x27;un thérapeute ?",
-         '<p class="legal-intro">Un site internet efficace pour un thérapeute ou un psychologue répond aux '
+         '<p class="legal-intro">Un site internet efficace pour un thérapeute répond aux '
          'questions qu&#x27;une personne se pose avant un premier contact, dans un langage clair et simple, sans '
          'jargon ni promesse de résultat.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📝</div>'
          '<h3>Qui vous êtes, présenté simplement</h3>'
-         '<p>Votre formation, votre titre et votre approche, résumés en quelques lignes pour qu&#x27;un visiteur '
+         '<p>Votre parcours, votre titre et votre approche, résumés en quelques lignes pour qu&#x27;un visiteur '
          'sache tout de suite à qui il s&#x27;adresse.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🗓️</div>'
          '<h3>Comment se passe une première séance</h3>'
-         '<p>La durée d&#x27;une séance, le déroulement du premier rendez-vous, l&#x27;adresse et l&#x27;accès du '
+         '<p>La durée d&#x27;une séance, le déroulement du premier rendez-vous, l&#x27;accès au '
          'cabinet ou le fonctionnement de la visio : ce qu&#x27;une personne souhaite connaître avant de vous '
          'appeler.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✉️</div>'
          '<h3>Comment vous contacter</h3>'
-         '<p>Un formulaire court, un bouton WhatsApp et votre numéro pour appeler directement.</p></div>'
+         '<p>Un formulaire court, un bouton WhatsApp et un bouton d&#x27;appel direct.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📱</div>'
-         '<h3>Un site web rapide sur tous les écrans</h3>'
+         '<h3>Un site lisible sur tous les écrans</h3>'
          '<p>Beaucoup de visiteurs arrivent depuis leur téléphone : un site qui se charge rapidement et '
          's&#x27;affiche bien sur mobile compte autant pour eux que pour votre référencement.</p></div>'
          '</div>'
          '<p class="where">Pour aller plus loin, notre guide sur <a href="https://webautonomos.es/blog/fr/'
-         'site-web-pour-psychologues-et-therapeutes">le site d&#x27;un psychologue ou d&#x27;un thérapeute</a> '
+         'site-web-pour-psychologues-et-therapeutes">le site d&#x27;un psy ou d&#x27;un thérapeute</a> '
          'détaille chaque rubrique.</p>'),
         ('visibilite-therapeute', 'Visibilité locale',
          "Comment un thérapeute apparaît-il dans les recherches locales ?",
-         '<p class="legal-intro">Quand une personne cherche un psychologue ou un thérapeute près de chez elle, des '
+         '<p class="legal-intro">Quand une personne cherche un thérapeute près de chez elle, des '
          'textes à jour, qui nomment votre activité et votre ville et restent cohérents avec votre fiche Google, '
          'aident votre site à apparaître dans ces recherches locales.</p>'
          '<div class="aud-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🔍</div>'
          '<h3>Le référencement de base, inclus</h3>'
-         '<p>Des titres et des textes rédigés autour de votre activité, cohérents avec votre fiche Google : cette '
+         '<p>Des titres et des textes rédigés autour de votre activité et de votre ville : cette '
          'optimisation fait partie du prix de votre site, sans supplément à prévoir.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📈</div>'
          '<h3>SEO local et fiche Google, en complément</h3>'
@@ -296,7 +296,7 @@ THERA['fr'] = dict(
          'Google</a> détaillent la démarche.</p>'),
         ('pourquoi-webautonomos', 'Notre différence',
          "Pourquoi un prix fixe de 15 € HT par mois plutôt qu&#x27;un devis d&#x27;agence ?",
-         '<p class="legal-intro">Pour la création de votre site internet de psychologue ou de thérapeute, nous '
+         '<p class="legal-intro">Pour la création de votre site internet, nous '
          'utilisons un système propre qui réutilise des composants déjà testés, sans bureaux coûteux ni commerciaux '
          'à commission : c&#x27;est ce qui permet un prix fixe.</p>'
          '<div class="aud-g">'
@@ -322,7 +322,7 @@ THERA['fr'] = dict(
           "chacun de vous vérifier sur l'Annuaire santé."),
          ("Mon numéro ADELI est-il encore valable ?",
           "Il n'est plus attribué. Les psychologues ont basculé dans le répertoire RPPS le 3 juin 2024, les "
-          "psychothérapeutes le 11 octobre 2024. C'est le numéro RPPS qu'il faut afficher."),
+          "psychothérapeutes le 11 octobre 2024. C'est le RPPS qu'il faut afficher."),
          ("Un sophrologue ou un hypnothérapeute peut-il se présenter comme thérapeute ?",
           "Le mot « thérapeute » n'est pas protégé, contrairement à « psychologue » et « psychothérapeute ». Il est "
           "en revanche interdit d'affirmer faussement qu'une prestation guérit une maladie (Code de la consommation, art. "
@@ -331,22 +331,22 @@ THERA['fr'] = dict(
           "promesse de résultat médical."),
          ("Puis-je demander le motif de consultation dans le formulaire de contact ?",
           "Mieux vaut pas. Le motif de consultation est une donnée de santé, et le RGPD impose de ne collecter que "
-          "les données nécessaires : pour prendre rendez-vous, il n'est en général pas utile. Un outil qui stocke des "
-          "données de santé pour vous doit passer par un hébergeur certifié HDS. Nos formulaires demandent seulement le nom, les "
-          "coordonnées et le créneau souhaité."),
+          "les données nécessaires : pour prendre rendez-vous, il n'est en général pas utile. Un outil qui les stocke "
+          "pour vous doit passer par un hébergeur certifié HDS. Nos formulaires se limitent à l'identité, aux "
+          "coordonnées et au créneau souhaité."),
          ("Puis-je indiquer que je suis conventionné Mon soutien psy ?",
           "Nous n'avons trouvé aucune règle qui l'interdise ; veillez simplement à ce que ce soit exact. C'est un "
           "vrai critère de choix : depuis le 15 juin 2024, les patients peuvent vous consulter sans passer par un "
           "médecin, pour 12 séances par an au plus (sauf exceptions depuis juin 2026), à 50 € la séance, prises en "
           "charge à 60 % par l'Assurance maladie."),
          ("Un psychologue a-t-il le droit de faire de la publicité ?",
-          "Oui. Les psychologues ne font pas partie des professions de santé du Code de la santé publique et ne sont "
-          "pas soumis aux règles de publicité des professions de santé à ordre. Le code de déontologie de 2021, qui n'a pas de valeur réglementaire, "
+          "Oui. Ils ne font pas partie des professions de santé du Code de la santé publique et ne sont "
+          "donc pas soumis aux règles de publicité des professions à ordre. Leur code de déontologie de 2021, qui n'a pas de valeur réglementaire, "
           "demande de communiquer « avec mesure » et en référence à son titre : un site clair et factuel répond à "
           "cette exigence."),
          ("Combien coûte un site pour psychologue ou thérapeute ?",
           "15 € HT par mois sans frais d'installation ni engagement, ou 349 € HT en paiement unique, avec les mêmes "
-          "services : conception, hébergement, nom de domaine la première année, mentions légales et une "
+          "services : conception, hébergement, domaine la première année, mentions légales et une "
           "modification par mois. La démo est gratuite."),
          ("J'exerce en Espagne : les règles sont-elles les mêmes ?",
           "Non. En Espagne, un psychologue doit être inscrit à un Colegio et afficher son numéro de colegiado sur "
@@ -356,7 +356,7 @@ THERA['fr'] = dict(
          ("Un nouveau site apparaît-il tout de suite dans les recherches ?",
           "Pas immédiatement. Le référencement de base, inclus avec votre site web, aligne vos titres et vos textes "
           "sur votre activité et votre fiche Google ; mais le référencement local progresse sur la durée. Notre "
-          "service de SEO local, à 15 € HT par mois, est pensé pour accompagner cette progression.")],
+          "offre de SEO local, à 15 € HT par mois, est pensé pour accompagner cette progression.")],
     final_t='Voyez votre site avant de payer quoi que ce soit',
     final_sd="Démo gratuite en 24 heures, textes et mentions légales compris. Sans frais d'installation, sans "
              "engagement.",
@@ -450,7 +450,7 @@ THERA['en'] = dict(
                                            'person or online, your town: it takes two minutes.'),
            ('We create your demo', 'Within 24 hours, with your copy, your photos if you have some, and your '
                                    'legal texts.'),
-           ('You decide', "Ask for any changes you want. If you like it, it goes live; if not, you pay nothing.")],
+           ('You decide', "Request any changes you want. If you like it, it goes live; if not, you pay nothing.")],
     price_note="Prices exclude VAT (21% IVA on the mainland and the Balearics; the Canary Islands, Ceuta and Melilla "
                "have their own taxes). Psychologists' health services are VAT-exempt, so they usually can't deduct "
                "it: on the mainland and the Balearics the monthly price comes to €18.15. Domain name included for "
@@ -515,7 +515,7 @@ THERA['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
          '<h3>A website made for you</h3>'
          '<p>We create the design and the text in English and Spanish, around your approach and the credentials '
-         'the rules ask you to show, and provide hosting and technical maintenance, for €15 + VAT a month with no '
+         'the rules require you to show, and provide hosting and technical maintenance, for €15 + VAT a month with no '
          'lock-in or a one-off €349 + VAT. You see a free demo before you pay anything.</p></div>'
          '</div>'
          '<p class="where">Therapists who enjoy building things and have the time can do well with a builder and its '
@@ -543,7 +543,7 @@ THERA['en'] = dict(
          'content is where the time goes: writing about your approach, your training and how a first session '
          'works, in words a stranger understands.</p>'),
         ('different-titles', 'Different titles, different rules',
-         'Websites for psychologists, psychotherapists and counsellors',
+         'Websites for psychologists, psychotherapists and other therapists',
          '<p class="legal-intro">The website itself works the same for all therapists; what changes is which '
          'claims the rules above let each title make.</p>'
          '<div class="aud-g">'
@@ -586,7 +586,7 @@ THERA['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📣</div>'
          '<h3>Social media and ads, on request</h3>'
          '<p>We can also help with social media management and advertising on Facebook or Google Ads, on '
-         'request: just ask. The same health-advertising rules apply to every post, article and '
+         'request. The same health-advertising rules apply to every post, article and '
          'advert.</p></div>'
          '</div>'
          '<p class="where">To get started, you don&#8217;t need all of your marketing at once: start small, create '
@@ -674,7 +674,7 @@ THERA['en'] = dict(
           "get four blog articles a month, local keywords and a monthly report, and Spain's health-advertising "
           "rules apply to every article."),
          ("What should therapists check before choosing a web design company?",
-          "Ask them to provide a demo with your own information before you pay anything, and read the terms: is there an "
+          "Insist on a demo with your own information before you pay anything, and read the terms: is there an "
           "upfront fee or a minimum contract, and is the domain name registered in your name? Then look at whether "
           "the demo explains your approach, shows your title and the registration information the Spanish rules "
           "require, and is simple to use on a phone."),
@@ -1083,9 +1083,9 @@ MENU['en'] = dict(
          'gives people what they need to trust you before they get in touch.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F9ED</div>'
-         '<h3>Walk people through the process</h3>'
+         '<h3>Take homeowners through the process</h3>'
          '<p>Describe your process in a few lines: the first visit, the price, the work itself and the finish. '
-         'People feel more at ease when they know how it works, what happens on the day and what the end result '
+         'They feel more at ease when they know how it works, what happens on the day and what the end result '
          'will be.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F3DB️</div>'
          '<h3>Show that you are established</h3>'
@@ -1111,7 +1111,7 @@ MENU['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001FA91</div>'
          '<h3>Bespoke furniture and fitted wardrobes</h3>'
          '<p>Custom pieces you build to a room&#8217;s exact dimensions are a different decision for a homeowner '
-         'than a quick repair, so give them their own section.</p></div>'
+         'than a repair, so give them their own section.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F373</div>'
          '<h3>Kitchen fitting</h3>'
          '<p>Units, worktops and installation: homeowners comparing kitchen fitters want to see past projects '
@@ -1150,7 +1150,7 @@ MENU['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F50D</div>'
          '<h3>Basic SEO, included in your price</h3>'
          '<p>Titles and copy written around your trade and your area, matching your Google Business '
-         'Profile, come with your website at no extra cost.</p></div>'
+         'Profile, come with your website at no extra charge.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4C8</div>'
          '<h3>SEO Local and your Google listing, if you want more</h3>'
          '<p>We also offer SEO Local for €15 + VAT a month, and managing your Google Business Profile for €29 + '
@@ -1168,7 +1168,7 @@ MENU['en'] = dict(
          '<div class="cmp-c them" style="max-width:640px;margin:0 auto;"><ul>'
          '<li>No project photos, or an unsorted gallery mixing every type of job</li>'
          '<li>No clear service area, so people cannot tell whether you cover their town</li>'
-         '<li>No quick way to ask for a quote: a phone number buried in a footer, or no WhatsApp link</li>'
+         '<li>No easy way to ask for a quote: a phone number buried in a footer, or no WhatsApp link</li>'
          '<li>Content in English only, so Spanish homeowners searching for a <em>carpintero</em> can miss it</li>'
          '<li>An incomplete legal notice, missing the NIF or NIE that the LSSI requires</li>'
          '</ul></div>'
@@ -1195,13 +1195,13 @@ MENU['en'] = dict(
          '</ul></div>'
          '</div>'),
         ('technical-basics', 'Behind the scenes', 'What runs behind your website',
-         '<p class="legal-intro">Alongside the pages people see, a few technical basics come '
+         '<p class="legal-intro">Alongside the visible pages, a few essentials come '
          'with every website we build.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F512</div>'
          '<h3>Hosting, SSL and daily backups</h3>'
          '<p>Your site includes hosting, an SSL certificate, daily backups and technical maintenance, so you do '
-         'not have to think about the technical side.</p></div>'
+         'not have to think about it.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F517</div>'
          '<h3>Links to your social profiles</h3>'
          '<p>Your site links to your Facebook, Instagram or other social profiles, so visitors can '
@@ -1209,7 +1209,7 @@ MENU['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✏️</div>'
          '<h3>One change a month, included</h3>'
          '<p>Once your site is live, you can ask for one change a month at no extra cost: updating a price, '
-         'adding new project pictures, or requesting other small changes.</p></div>'
+         'adding new project pictures, or another small edit.</p></div>'
          '</div>'),
     ],
     faq_t='Frequently asked questions',
