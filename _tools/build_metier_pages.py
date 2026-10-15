@@ -3257,6 +3257,29 @@ ELEC['en'] = dict(
          '<p>Links to your existing social media profiles are included at no extra cost: one more sign that a '
          'real business is behind the site.</p></div>'
          '</div>'),
+        ('safety-standards', 'Safety and standards',
+         "How does your website show you work to Spain's electrical safety rules?",
+         '<p class="legal-intro">In Spain, the technical safety rules for low-voltage work are set by the '
+         'Reglamento electrotécnico para baja tensión (REBT, RD 842/2002) and its technical instructions, the '
+         'ITC-BT. A homeowner cannot judge the wiring behind a wall, so your website shows them the proof that '
+         'does exist: your registration, your category and the boletín.</p>'
+         '<div class="why-g">'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🛡️</div>'
+         '<h3>The REBT sets the standard</h3>'
+         '<p>New low-voltage installations, and alterations or extensions to existing ones, have to meet the '
+         'technical rules of the REBT and its ITC-BT instructions, in homes and commercial buildings alike.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div>'
+         '<h3>Your category, recorded by your region</h3>'
+         '<p>Your business is registered as an empresa instaladora through a declaración responsable filed with '
+         'your region, with a básica or especialista category and at least one qualified instalador en baja '
+         'tensión. That category is what tells a customer which jobs you can take on.</p></div>'
+         '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div>'
+         '<h3>The certificate that proves it</h3>'
+         '<p>When an installation is finished, your company issues the certificado de instalación, the boletín, signed by '
+         'one of your own installers; the electricity supplier will not connect a new installation without it. '
+         'Your website can say which category you hold and which jobs it covers, so customers know before they '
+         'call.</p></div>'
+         '</div>'),
         local_search_en(
             '', h2='Local SEO for electricians: getting found nearby',
             intro='Getting found in your area is not only about your site: homeowners also ask around, post jobs on '
@@ -3298,6 +3321,11 @@ ELEC['en'] = dict(
           "Only for the types listed in ITC-BT-05: for example premises open to the public, installations with fire "
           "or explosion risk, swimming pools above 10 kW, or EV charging that needs a project. Under the national "
           "rules, an ordinary home installation does not need an initial inspection by an OCA."),
+         ("Why does my category matter to homeowners?",
+          "Because it tells them you are allowed to do the job. Only a registered empresa instaladora may "
+          "install, maintain or repair low-voltage installations, and its category, básica or especialista, "
+          "sets which jobs it can take on. Stating your category and the work it covers on your website answers "
+          "that question before they call."),
          FAQ_EN_QUOTE,
          ("Can customers cancel after an emergency call-out?",
           "Not for the urgent repair itself. Under article 103 of the consumer law (TRLGDCU), there is no right of "
