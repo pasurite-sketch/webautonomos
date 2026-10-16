@@ -755,12 +755,12 @@ MENU['fr'] = dict(
           "fenêtres et les agenceurs de cuisine, en France et en Espagne. Nous mettons vos réalisations en valeur, "
           "rédigeons les textes et plaçons les mentions qu'impose le travail pour des particuliers : assurance, "
           "médiateur de la consommation, mentions légales et, si vous remplacez des fenêtres ou isolez, "
-          "l'encart France Rénov' obligatoire à partir du 1<sup>er</sup> octobre 2026. Le site coûte "
+          "l'encart France Rénov' obligatoire à partir du 1<sup>er</sup> octobre 2026. Le prix est de "
           "<strong>15 € HT par mois</strong> sans frais d'installation ni engagement, ou <strong>349 € HT en "
           "paiement unique</strong>, jusqu'à 4 langues sans supplément si vous le souhaitez, et la démo est prête en "
           "24 heures.",
     legal_id='regles', legal_ey='Les règles', legal_t="Ce que votre site doit montrer",
-    legal_intro="Un site de menuisier n'est pas qu'une vitrine : dès que vous travaillez pour des particuliers, le Code "
+    legal_intro="Un site professionnel n'est pas qu'une vitrine : dès que vous travaillez pour des particuliers, le Code "
                 "de la consommation vous impose quelques mentions, et la rénovation énergétique a ses propres règles. "
                 "Voici l'essentiel pour une activité en France.",
     legal_cols=('Sujet', 'Texte', 'Ce que ça change pour vous'),
@@ -817,7 +817,7 @@ MENU['fr'] = dict(
                                       "recevez la demande directement."),
          ('📄', 'Les mentions en ordre', "Assurance, médiateur, mentions légales, encart France Rénov' : ce que la "
                                         "loi demande est en place, sans que vous ayez à le chercher."),
-         ('📍', 'Trouvé près de chez vous', "Titres et textes pensés pour les recherches « menuisier + votre ville », "
+         ('📍', 'Trouvé près de chez vous', "Titres et textes pensés pour les recherches « menuiserie + votre ville », "
                                            "et votre fiche Google si vous le souhaitez.")],
     where_t='En France et en Espagne',
     where="Nous travaillons à distance, en français, par e-mail, WhatsApp et visioconférence : que votre atelier soit "
@@ -830,8 +830,8 @@ MENU['fr'] = dict(
                                            "chantier : deux minutes suffisent."),
            ('Nous préparons votre démo', "En moins de 24 heures, avec vos réalisations, vos textes et vos mentions "
                                         "légales."),
-           ('Vous décidez', "Vous demandez les modifications que vous voulez. Si le site vous plaît, il est mis en "
-                           "ligne ; sinon, vous ne payez rien.")],
+           ('Vous décidez', "Vous demandez les modifications que vous voulez. Si le site vous plaît, il est "
+                           "publié ; sinon, vous ne payez rien.")],
     price_note="Prix hors taxes : l'IVA espagnole de 21 % s'ajoute. Si votre entreprise est établie dans un autre "
                "pays de l'UE, en France par exemple, avec un numéro de TVA intracommunautaire, la facture est émise "
                "sans TVA (autoliquidation). Nom de domaine inclus la première année, puis environ 12 €/an.",
@@ -843,9 +843,9 @@ MENU['fr'] = dict(
          "<div class=\"why-g\">"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🔎</div>"
          "<h3>Être visible près de chez vous</h3>"
-         "<p>Quand quelqu'un cherche qui pourra lui poser un escalier ou des fenêtres près de chez lui, un site "
-         "internet clair vous rend visible : vos titres et vos textes nomment votre métier et votre ville, ce qui soutient "
-         "votre visibilité locale.</p></div>"
+         "<p>Quand quelqu'un cherche qui pourra lui poser un escalier ou des fenêtres près de chez lui, une présence "
+         "en ligne claire vous rend visible : vos titres et vos textes nomment votre métier et votre ville, ce qui "
+         "soutient votre visibilité locale.</p></div>"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🤝</div>"
          "<h3>Inspirer confiance avant le premier appel</h3>"
          "<p>Des photos de vos travaux, vos avis, vos mentions légales et votre assurance : les internautes peuvent "
@@ -853,7 +853,7 @@ MENU['fr'] = dict(
          "vous faites.</p></div>"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📨</div>"
          "<h3>Faciliter la prise de contact</h3>"
-         "<p>Votre site internet réunit un formulaire de contact, un bouton WhatsApp et votre numéro de téléphone : "
+         "<p>Le formulaire de contact, le bouton WhatsApp et votre numéro de téléphone sont à portée de clic : "
          "le visiteur décrit ses travaux en quelques lignes et vous recevez sa demande directement par e-mail.</p>"
          "</div>"
          "</div>"
@@ -898,7 +898,7 @@ MENU['fr'] = dict(
          "sur la Costa Blanca ou ailleurs.</p></div>"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🏷️</div>"
          "<h3>Une légende sous chaque photo</h3>"
-         "<p>Le matériau, le type de pose et la ville du chantier, en une ligne : le visiteur comprend ce qu'il "
+         "<p>Le matériau, le type de pose et la ville du chantier, en quelques mots : le visiteur comprend ce qu'il "
          "regarde sans avoir à vous appeler.</p></div>"
          "</div>"
          "<p class=\"where\">Pour aller plus loin, consultez "
@@ -906,7 +906,7 @@ MENU['fr'] = dict(
          "pour menuisiers</a>.</p>"),
         # 15/10/2026 : section ajoutée pour les guides ChatGPT, AI Overview et Gemini (notes sous 50).
         ('demande-devis', 'Demandes de devis', "De la demande de devis à la prestation : le parcours d'une demande",
-         "<p class=\"legal-intro\">Sur le site internet d'un menuisier, la page la plus utile est souvent celle "
+         "<p class=\"legal-intro\">Sur un site de menuiserie, la page la plus utile est souvent celle "
          "de la demande de devis. Voici comment nous la construisons.</p>"
          "<div class=\"why-g\">"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📝</div>"
@@ -928,7 +928,7 @@ MENU['fr'] = dict(
          "<p>Une demande reçue un jour de chantier vous attend dans votre boîte e-mail, et le bouton WhatsApp "
          "permet aussi de vous écrire directement.</p></div>"
          "</div>"),
-        ('vitrine-ou-boutique', 'Le bon format', "Quel site internet pour menuisier : vitrine ou e-commerce ?",
+        ('vitrine-ou-boutique', 'Le bon format', "Quel site internet pour votre menuiserie : vitrine ou e-commerce ?",
          "<p class=\"legal-intro\">Souvent, un site vitrine suffit à un menuisier, sans "
          "boutique. Voici ce que couvre chaque format.</p>"
          "<div class=\"why-g\">"
@@ -937,12 +937,12 @@ MENU['fr'] = dict(
          "<p>Il présente vos chantiers dans une galerie, vos projets d'agencement intérieur (dressings, bibliothèques, placards) "
          "et vos coordonnées : c'est ce que comprennent nos deux formules.</p></div>"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🛒</div>"
-         "<h3>La boutique en ligne, sur devis</h3>"
-         "<p>Vendre en ligne des pièces ou du mobilier demande un site e-commerce : il n'est compris dans aucune "
+         "<h3>L'e-commerce, sur devis</h3>"
+         "<p>Vendre des pièces ou du mobilier par internet demande un site e-commerce : il n'est compris dans aucune "
          "des deux formules et se fait sur devis.</p></div>"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">🛠️</div>"
-         "<h3>Mise en ligne et maintenance</h3>"
-         "<p>La mise en ligne a lieu une fois la démo validée ; ensuite, la maintenance technique et une "
+         "<h3>Publication et maintenance</h3>"
+         "<p>La publication a lieu une fois la démo validée ; ensuite, la maintenance technique et une "
          "modification par mois sont comprises, sans limite de durée. Les fonctionnalités de base, comme la "
          "galerie de chantiers et le bouton WhatsApp, sont prêtes dès le premier jour.</p></div>"
          "<div class=\"aud-c\"><div class=\"aud-i\" aria-hidden=\"true\">📍</div>"
