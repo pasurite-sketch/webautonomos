@@ -3302,7 +3302,7 @@ ELEC['en'] = dict(
     cta='Get my free demo', cta2='What Spanish rules require',
     brief_t='In short',
     brief="WebAutonomos builds websites for English-speaking electricians, EV charger installers and solar installers "
-          "working in Spain. We present each of your electrical services, write the copy in English and Spanish (up to four "
+          "working in Spain. We present your full range of electrical services, write the copy in English and Spanish (up to four "
           "languages) at no extra charge, and include what Spanish law expects on a business site, such as a legal "
           "notice with your NIF or NIE, prices for "
           "domestic customers shown with VAT included, and the complaint channels your region requires. It costs "
@@ -3379,7 +3379,7 @@ ELEC['en'] = dict(
     extra=[
         ('what-to-include', 'On your website', "What should an electrician's website in Spain show?",
          '<p class="legal-intro">Before they call, people want to know what you do, whether you serve their '
-         'town, and whether you can legally sign off the job. These are the parts that answer them.</p>'
+         'town, and whether your business can legally certify electrical installations. These are the parts that answer them.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✅</div>'
          '<h3>Your authorisation, stated accurately</h3>'
@@ -3392,7 +3392,7 @@ ELEC['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4B6</div>'
          '<h3>Clear call-out terms</h3>'
          '<p>Your call-out charge and hourly rate, shown with VAT included for domestic customers, so they know '
-         'what to expect before they ring.</p></div>'
+         'what to expect before they contact you.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CD</div>'
          '<h3>Your service areas</h3>'
          '<p>Naming the towns in your local area (Jávea, Marbella or Santa Pola, for example) helps both readers and '
@@ -3428,16 +3428,17 @@ ELEC['en'] = dict(
         # Section « visitors-to-enquiries » retirée le 15/10/2026 (note Google au-dessus de 100) ; appel, WhatsApp,
         # formulaire et réseaux sociaux restent dans le tarif, les photos dans la section design.
         ('safety-standards', 'Safety and standards',
-         "How does your website show you work to Spain's electrical safety rules?",
+         "How can your website show that you work to Spain's electrical safety rules?",
          '<p class="legal-intro">In Spain, the technical safety rules on low voltage are set by the '
          'Reglamento electrotécnico para baja tensión (REBT, RD 842/2002) and its technical instructions, the '
-         'ITC-BT. A homeowner cannot judge the wiring behind a wall, so your website shows them the proof that '
-         'does exist: your registration, your category and the boletín.</p>'
+         'ITC-BT. A homeowner cannot judge the wiring behind a wall, so your website points them to the proof '
+         'that does exist: your registration, your category and the boletín you issue for each installation.</p>'
          '<div class="why-g">'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🛡️</div>'
          '<h3>The REBT sets the standard</h3>'
-         '<p>New low-voltage installations, and alterations or extensions to existing ones, have to meet the '
-         'technical rules of the REBT and its ITC-BT instructions, in homes and commercial buildings alike.</p></div>'
+         '<p>New low-voltage installations and their alterations and extensions have to meet the technical rules '
+         'of the REBT and its ITC-BT instructions, in homes and commercial buildings alike; installations that '
+         'predate the REBT must meet them when they undergo major alterations, major repairs or extensions.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div>'
          '<h3>Your category, recorded by your region</h3>'
          '<p>Your business is registered as an empresa instaladora through a declaración responsable filed with '
