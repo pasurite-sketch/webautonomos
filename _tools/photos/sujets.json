@@ -531,7 +531,8 @@
      "titre": "Graphisme et identité visuelle",
      "bouton": "portfolio"
     }
-   }
+   },
+   "publie": true
   },
   {
    "id": "file-web-en-varios-idiomas",
@@ -2442,7 +2443,7 @@
    "priorite": 31,
    "titre": "Web design for tradesmen in the UK",
    "url": "https://webautonomos.es/en/web-design-for-tradesmen",
-   "resume": "Your services, the areas you cover, your registrations and a quote request in one tap, written with UK consumer rules in mind. We write it for you in English, you approve every word, and your free demo is ready within 24 hours.",
+   "resume": "Your services, the areas you cover, your registrations and a quote request in one tap, written with consumer rules in mind. We write it for you in English, you approve every word, and your demo is ready within 24 hours.",
    "marche": "uk",
    "sante": false,
    "pages": [
@@ -3543,7 +3544,7 @@
    "priorite": 40,
    "titre": "SEO local para autónomos: aparece en Google Maps cuando te buscan en tu zona",
    "url": "https://webautonomos.es/marketing",
-   "resume": "Tener web no basta: hay que salir donde te buscan. SEO local desde 15 €/mes y gestión de tu ficha de Google desde 29 €/mes, sin permanencia. Contratas lo que necesitas y lo dejas cuando quieras.",
+   "resume": "Tener web no basta: hay que salir donde te buscan. SEO local por 15 €/mes + IVA y gestión de tu ficha de Google por 29 €/mes + IVA (49 € + IVA de creación si todavía no tienes ficha), sin permanencia. Contratas lo que necesitas y lo dejas cuando quieras.",
    "marche": "es",
    "sante": false,
    "pages": [
@@ -3606,7 +3607,7 @@
    "priorite": 41,
    "titre": "Blog para autónomos",
    "url": "https://webautonomos.es/blog/",
-   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 57 artículos disponibles en español.",
+   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 58 artículos disponibles en español.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -4619,7 +4620,7 @@
    "priorite": 107,
    "titre": "Palabras clave locales: cómo elegir las que traen clientes a tu negocio",
    "url": "https://webautonomos.es/blog/es/palabras-clave-locales-como-elegir",
-   "resume": "Si eres autónomo en la Comunidad Valenciana y quieres que tus clientes te encuentren en Google, el SEO local empieza por elegir bien las palabras clave locales. Poco importa tener una buena web si nadie la encuentra cuando alguien busca «fontanero en Elda» o «dentista en Alicante». En esta guía aprenderás, paso a paso, qué son, cómo encontrarlas, dónde colocarlas y cómo medir…",
+   "resume": "Si eres autónomo en la Comunidad Valenciana y quieres que te encuentren en Google, el SEO local empieza por elegir bien las palabras clave locales. Poco importa tener una buena web si nadie la encuentra cuando alguien busca «fontanero en Elda» o «dentista en Alicante». En esta guía aprenderás, paso a paso, qué son, cómo encontrarlas, dónde colocarlas y cómo medir los…",
    "marche": "europe",
    "sante": false,
    "pages": [
