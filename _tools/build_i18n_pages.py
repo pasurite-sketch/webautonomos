@@ -123,7 +123,11 @@ PAGES = [
                  'en': wa("Hello, I've done the automation diagnostic")},
             'Hola%2C%20me%20interesa%20el%20diagn%C3%B3stico%20de%20automatizaci%C3%B3n':
                 {'fr': wa("Bonjour, le diagnostic d'automatisation m'intéresse"),
-                 'en': wa("Hello, I'm interested in the automation diagnostic")}},
+                 'en': wa("Hello, I'm interested in the automation diagnostic")},
+            # bouton « Contar mi caso » de la colonne « Lo que no haces » (ajouté le 16/10/2026)
+            'Hola%2C%20hay%20algo%20que%20no%20hago%20por%20falta%20de%20tiempo%20y%20me%20gustar%C3%ADa%20comentarlo':
+                {'fr': wa("Bonjour, il y a quelque chose que je ne fais pas faute de temps et j'aimerais en parler"),
+                 'en': wa("Hello, there's something I don't get round to for lack of time and I'd like to talk it through")}},
         point='10', ancre_comm='\n  Vérifié : 0px de débordement de 1300',
     ),
     dict(
