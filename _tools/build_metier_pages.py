@@ -3350,7 +3350,8 @@ ELEC['en'] = dict(
               "Your call-out terms and your prices for homeowners shown with VAT included",
               "The complaint notice your region asks for, such as the QR poster in Andalucía",
               "A call button and WhatsApp always visible on mobile, and your site in up to four languages, English "
-              "and Spanish included, for the same price"],
+              "and Spanish included, for the same price",
+              "A privacy policy and a cookie notice, included on every site alongside your legal notice"],
     spain_note='<strong>Working in the UK instead?</strong> UK rules are different. See '
                '<a href="https://webautonomos.es/en/web-design-for-electricians">web design for electricians in the UK</a>.',
     sources_t='Sources',
@@ -3372,8 +3373,8 @@ ELEC['en'] = dict(
     how_t='Your site in three steps',
     steps=[('Tell us about your business', 'Your services, the towns you cover and a few job photos: it takes two '
                                            'minutes.'),
-           ('We build your demo', 'Within 24h, with your services, your copy in English and Spanish, and your '
-                                  'legal pages.'),
+           ('We build your demo', 'Within 24h, saving you the time of writing it yourself, with your services, '
+                                  'your copy in English and Spanish, and your legal pages.'),
            ('You decide', "Request any changes you want. If you like it, it goes live; if not, you pay nothing.")],
     price_note=PRIX_EN_BAT,
     extra=[
@@ -3392,11 +3393,13 @@ ELEC['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4B6</div>'
          '<h3>Clear call-out terms</h3>'
          '<p>Your call-out charge and hourly rate, shown with VAT included for domestic customers, so they know '
-         'what to expect before they contact you.</p></div>'
+         'what to expect before they contact you, whether they call, message you on WhatsApp or send an enquiry '
+         'through the form on this page.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">\U0001F4CD</div>'
          '<h3>Your service areas</h3>'
          '<p>Naming the towns in your local area (Jávea, Marbella or Santa Pola, for example) helps both readers and '
-         'search engines understand who your site is for.</p></div>'
+         'search engines understand who your site is for, so a visitor looking for an electrician nearby can see at '
+         'a glance that you cover their town.</p></div>'
          '</div>'
          '<p class="where">For more tips, read our guide to '
          '<a href="https://webautonomos.es/blog/en/website-for-electricians">what an electrician&#8217;s website '
@@ -3443,7 +3446,8 @@ ELEC['en'] = dict(
          '<h3>Your category, recorded by your region</h3>'
          '<p>Your business is registered as an empresa instaladora through a declaración responsable filed with '
          'your region, with a básica or especialista category and at least one instalador en baja '
-         'tensión. That category is what tells people which jobs you can take on.</p></div>'
+         'tensión. That category is what tells people which jobs you can take on. Showing your registration '
+         'number on your site gives a homeowner something concrete to check before they hire you.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">📄</div>'
          '<h3>The certificate that proves it</h3>'
          '<p>When an installation is finished, your company issues the certificado de instalación, the boletín, signed by '
@@ -3459,15 +3463,18 @@ ELEC['en'] = dict(
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🇬🇧</div>'
          '<h3>British schemes stay in Britain</h3>'
          '<p>NICEIC and NAPIT membership, and Part P self-certification, apply in England and Wales. In Spain, the standards are the REBT and its ITC-BT instructions, and your business is recorded by '
-         'your region as an empresa instaladora.</p></div>'
+         'your region as an empresa instaladora. Both schemes also expect registered members to keep up with '
+         'professional development and pass periodic technical assessments to keep their listing (niceic.com, '
+         'napit.org.uk), whereas a Spanish declaración responsable has no expiry date.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">🎓</div>'
          '<h3>Training and qualifications</h3>'
          '<p>Your training courses in Britain can count towards a Spanish qualification through the routes set out in '
-         '<a href="#rules">the rules above</a>: homologation, accreditation of experience, an accredited personal '
-         'certification or a Spanish course.</p></div>'
+         '<a href="#faq">the FAQ below</a>: homologation, accreditation of experience, an accredited personal '
+         'certification or a Spanish course. A short course in the Spanish terms used on certificates and official '
+         'forms can also make the paperwork easier.</p></div>'
          '<div class="aud-c"><div class="aud-i" aria-hidden="true">✍️</div>'
          '<h3>How your website presents it</h3>'
-         '<p>You can mention your years of professional experience and your British training, as long as no British '
+         '<p>You can mention your years of UK experience and your British training, as long as no British '
          'scheme logo or membership is presented as a Spanish authorisation. Your empresa instaladora '
          'registration takes priority.</p></div>'
          '</div>'),
@@ -3475,8 +3482,9 @@ ELEC['en'] = dict(
             '', h2='Local SEO for electricians: getting found nearby',
             intro='Being found nearby depends on more than your site: people also turn to their neighbours, or search '
                   'directly for an electrician near them.',
-            seo='Titles and copy written around your electrical services and the towns you serve are part of every '
-                'site we build, at no extra charge.'),
+            seo='Titles and copy written around your electrical services and the towns you serve help your site '
+                'rank in Google search results for those terms, as part of every site we build, at no extra '
+                'charge.'),
     ],
     faq_t='Frequently asked questions',
     faq=[("Do I need to be registered as an electrician in Spain?",
