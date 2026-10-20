@@ -121,6 +121,8 @@ Un pourcentage (« 70 % », « el 87 % de… ») n'est **jamais** autorisé, sau
 
 - Web professionnelle réalisée par un freelance : **800 € à 2 000 €** ; par une agence : **1 500 € à 4 000 €**, hors maintenance — [Social Media Pymes, « Cuánto cuesta una web: precios reales en España 2026 », 31/08/2026](https://www.socialmediapymes.com/cuanto-cuesta-una-web/)
 - 96,3 % des 16-74 ans ont utilisé Internet au cours des trois derniers mois — [INE, Encuesta TIC-H 2025, 20/11/2025](https://www.ine.es/dyngs/Prensa/TICH2025.htm)
+- Démarches administratives : un autónomo y consacre en moyenne **226 heures par an**, soit **3 390 €** à 15 €/heure, d'après la fédération nationale ATA — [Diario de León, « La burocracia cuesta a cada autónomo 3.400 euros al año », 11/08/2026](https://www.diariodeleon.es/economia/260811/2093911/burocracia-cuesta-autonomo-3-400-euros-ano.html) (vérifié le 20/10/2026 ; la note d'ATA elle-même est introuvable sur ata.es)
+- Pymes et digitalisation : parmi les entreprises très digitalisées, **23 %** consacrent plus de 10 jours par mois aux tâches administratives, contre **9 %** chez les peu digitalisées ; **75 %** gèrent leurs finances avec plus d'un outil et **29 %** avec quatre ou plus — [Qonto et IO Investigación, « Radiografía económica y bancaria de la micro y pequeña empresa en España 2026 », communiqué du 22/04/2026](https://qonto-assets.s3.eu-central-1.amazonaws.com/blog/images/cache/np%20-%20survey%202026.pdf) (vérifié le 20/10/2026)
 
 Aucune source fiable trouvée pour la part des recherches locales faites sur mobile : écrire « muchos de tus clientes te buscarán desde el móvil », sans chiffre.
 
