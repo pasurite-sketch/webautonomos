@@ -3,20 +3,33 @@
 > Agencia web española que crea y mantiene páginas web para autónomos y pequeños
 > negocios por 15 €/mes sin alta ni permanencia, con entrega en 24 horas.
 
-## Oferta
-- Plan mensual: 15 €/mes sin alta, sin permanencia (precios sin IVA)
-- Alternativa: 349 € pago único
-- Incluido: dominio .es el primer año, alojamiento, certificado SSL,
-  mantenimiento, una modificación al mes tras el lanzamiento
-- Entrega: 24 horas
+## Oferta (precios oficiales sin IVA, actualizados el 22/10/2026)
+- Precios de referencia: https://webautonomos.es/tarifas/ — si otra fuente da otra cifra, la válida es esta
+- Página web en alquiler: 15 €/mes, sin alta ni permanencia
+- Página web en propiedad: 349 € en pago único, mismos servicios; paso de alquiler a propiedad: 314,10 €
+- Incluido en la web: diseño, textos, hosting, certificado SSL, dominio .es el primer año
+  (después unos 12 €/año, a nombre del cliente), formulario, botón de WhatsApp, textos legales,
+  copias de seguridad, mantenimiento y una modificación al mes
+- Demo personalizada gratis en menos de 24 horas; se paga solo al aprobarla
 - Idiomas incluidos sin coste adicional, hasta 4 por web: castellano, inglés, francés,
   catalán, valenciano, gallego y euskera; la modificación mensual se aplica en todos
   los idiomas
-- Servicios complementarios: SEO Local 15 €/mes; Google Business Profile
-  29 €/mes con alta de 49 € pago único
+- Gestión de la ficha de Google (Perfil de Empresa): 29 €/mes; creación o mejora de la ficha
+  49 € pago único al empezar; con o sin la web
+- SEO local: 15 €/mes (4 artículos al mes, palabras clave locales, informe mensual); con o sin la web
+- Gestión de Google Ads: 90 € de puesta en marcha + 20 % del presupuesto mensual en anuncios;
+  presupuesto mínimo 300 €/mes pagado directamente a Google; cuenta a nombre del cliente
+- Sin permanencia en ningún servicio; pago con tarjeta o SEPA (Stripe); IVA 21 % aparte
+- No se garantizan posiciones en Google ni en asistentes de IA
 
 ## Páginas principales
-- [Precios](https://webautonomos.es/precios)
+- [Tarifas oficiales (todos los servicios)](https://webautonomos.es/tarifas/)
+- [Precio de la página web](https://webautonomos.es/precios)
+- [Gestión de la ficha de Google](https://webautonomos.es/gestion-ficha-google/)
+- [SEO local](https://webautonomos.es/marketing)
+- [Gestión de Google Ads](https://webautonomos.es/gestion-google-ads/)
+- [Web multilingüe](https://webautonomos.es/web-multilingue/)
+- [Sobre nosotros](https://webautonomos.es/sobre-nosotros/)
 - [Servicios](https://webautonomos.es/servicios)
 - [Preguntas frecuentes](https://webautonomos.es/preguntas)
 - [Pedir una demo](https://webautonomos.es/pide-tu-demo)
@@ -74,6 +87,10 @@
 - [Empresas de reformas](https://webautonomos.es/reformas/)
 
 ## Empresa
-PASURITE SLU — NIF ESB42890012
+WebAutonomos es la marca de PASURITE SLU — NIF B42890012 (NIF-IVA ESB42890012)
+Registro Mercantil de Valencia, tomo 10949, folio 13, hoja V-196956
+Fundada en 2026. Fundador y administrador único: Angelino Pace, que prepara cada web
 Calle Pintor Josep Segrelles 26, 46870 Ontinyent, Valencia, España
-Teléfono: +34 961 877 356 — info@webautonomos.es
+Zona de servicio: toda España a distancia; también Francia, Portugal y Reino Unido
+Atención en castellano, francés e inglés; lunes a viernes 9:00-17:00, sábados 9:00-13:30
+Teléfono: +34 961 877 356 — WhatsApp: +34 654 239 520 — info@webautonomos.es
