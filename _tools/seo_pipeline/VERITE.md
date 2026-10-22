@@ -260,5 +260,5 @@ qu[eé] dolor resuelve
   - mise en relation avec des clients ;
   - aucune promesse sur la qualité de la reconnaissance vocale ou de la lecture OCR.
 - **Ne pas annoncer** : le travail en équipe. Les invitations d'un membre existent, mais elles ne sont testées que par l'API.
-- **Pas encore en ligne au 22/10/2026** : l'inscription avec seulement prénom + e-mail. Ne pas écrire « solo tu nombre y tu email » avant sa mise en ligne.
+- **Inscription** : seulement prénom + e-mail, sans carte ni mot de passe (code de connexion envoyé par e-mail) ; case non pré-cochée pour les audiences publicitaires, refus possible des e-mails commerciaux.
 
