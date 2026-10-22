@@ -535,6 +535,34 @@
    "publie": true
   },
   {
+   "id": "file-se-acaba-kit-digital-que-hacer-con-mi-web",
+   "type": "file",
+   "publication": "2026-10-22",
+   "file": "_tools/queue/article_kit_digital_que_hacer.json",
+   "priorite": 1,
+   "titre": "Se me acaba el Kit Digital: ¿qué hago con mi web?",
+   "url": "https://webautonomos.es/blog/es/se-acaba-kit-digital-que-hacer-con-mi-web",
+   "resume": "Cuando se acaban los 12 meses del Kit Digital, tu agente digitalizador deja de estar obligado a mantener tu web, y seguir online cuesta dinero: en una agencia como Aeuroweb, el mantenimiento técnico de una web corporativa sale a 39 €/mes + IVA; si lo haces tú, el creador de webs de Hostinger cuesta 2,39 €/mes + IVA pagando 48 meses por adelantado; en WebAutonomos, 15 €/mes + IV",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/se-acaba-kit-digital-que-hacer-con-mi-web.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/se-acaba-kit-digital-que-hacer-con-mi-web",
+     "spa": "es/se-acaba-kit-digital-que-hacer-con-mi-web"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-file-se-acaba-kit-digital-que-hacer-con-mi-web",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-file-se-acaba-kit-digital-que-hacer-con-mi-web-maquette-es"
+    }
+   }
+  },
+  {
    "id": "file-web-en-varios-idiomas",
    "type": "file",
    "publication": "2026-10-08",
@@ -889,6 +917,202 @@
     }
    },
    "publie": true
+  },
+  {
+   "id": "file-cuanto-cuesta-gestionar-ficha-google-business",
+   "type": "file",
+   "publication": "2026-10-26",
+   "file": "_tools/queue/article_precio_gestion_ficha_google.json",
+   "priorite": 2,
+   "titre": "¿Cuánto cuesta que me gestionen la ficha de Google Business?",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-gestionar-ficha-google-business",
+   "resume": "Crear y mantener tu ficha de Google Business Profile es gratis; lo que se paga es que alguien la gestione por ti. En las cuatro webs de agencias y profesionales españoles que hemos consultado en octubre de 2026, la gestión mensual va de 65 € al mes a 400 € + IVA al mes o más. En WebAutonomos, la gestión de tu ficha de Google cuesta 29 €/mes + IVA (49 € + IVA de creación o mejor",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/cuanto-cuesta-gestionar-ficha-google-business.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/cuanto-cuesta-gestionar-ficha-google-business",
+     "spa": "es/cuanto-cuesta-gestionar-ficha-google-business"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-file-cuanto-cuesta-gestionar-ficha-google-business",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-file-cuanto-cuesta-gestionar-ficha-google-business-maquette-es"
+    }
+   }
+  },
+  {
+   "id": "file-alquilar-pagina-web-cuanto-cuesta",
+   "type": "file",
+   "publication": "2026-10-29",
+   "file": "_tools/queue/article_alquilar_pagina_web_precio.json",
+   "priorite": 3,
+   "titre": "¿Cuánto cuesta alquilar una página web? Precios 2026",
+   "url": "https://webautonomos.es/blog/es/alquilar-pagina-web-cuanto-cuesta",
+   "resume": "Alquilar una página web en España cuesta entre 49 € y 75 € al mes en las cuatro ofertas de agencias que hemos revisado en octubre de 2026 (IVA aparte o incluido según la empresa), y en algunas tienes que sumar una cuota de alta, pagar meses por adelantado o firmar un contrato mínimo de 6 meses. En WebAutonomos, la página web de un autónomo cuesta 15 €/mes + IVA, sin alta ni per",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/alquilar-pagina-web-cuanto-cuesta.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/alquilar-pagina-web-cuanto-cuesta",
+     "spa": "es/alquilar-pagina-web-cuanto-cuesta"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-file-alquilar-pagina-web-cuanto-cuesta",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-file-alquilar-pagina-web-cuanto-cuesta-maquette-es"
+    }
+   }
+  },
+  {
+   "id": "file-cuanto-cuesta-mantener-pagina-web",
+   "type": "file",
+   "publication": "2026-11-02",
+   "file": "_tools/queue/article_precio_mantener_pagina_web.json",
+   "priorite": 4,
+   "titre": "¿Cuánto cuesta mantener una página web al año? Precios 2026",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-mantener-pagina-web",
+   "resume": "Mantener una página web pequeña cuesta entre 87 € y 130 € + IVA al año si la llevas tú con WordPress (dominio y hosting a precio de renovación), y entre 432 € y 1.788 € + IVA al año si contratas un plan de mantenimiento de agencia, que además no incluye ni el hosting ni el dominio. En WebAutonomos, la página web de un autónomo cuesta 15 €/mes + IVA, sin alta ni permanencia, o 3",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/cuanto-cuesta-mantener-pagina-web.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/cuanto-cuesta-mantener-pagina-web",
+     "spa": "es/cuanto-cuesta-mantener-pagina-web"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-file-cuanto-cuesta-mantener-pagina-web",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-file-cuanto-cuesta-mantener-pagina-web-maquette-es"
+    }
+   }
+  },
+  {
+   "id": "file-cuanto-cuesta-seo-local-autonomo",
+   "type": "file",
+   "publication": "2026-11-05",
+   "file": "_tools/queue/article_precio_seo_local_autonomo.json",
+   "priorite": 5,
+   "titre": "¿Cuánto cuesta el SEO local para un autónomo? Precios 2026",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-seo-local-autonomo",
+   "resume": "El SEO local para un autónomo cuesta 0 € si lo haces tú mismo y varios cientos de euros al mes si lo encargas a una agencia: en las tarifas publicadas que hemos consultado en octubre de 2026 en España, los planes van de 180 €/mes a 800 €/mes o más (Adelanta Publicidad y SEO de Barrio los publican sin IVA). En WebAutonomos, el SEO Local cuesta 15 €/mes + IVA (4 artículos de blog",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/cuanto-cuesta-seo-local-autonomo.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/cuanto-cuesta-seo-local-autonomo",
+     "spa": "es/cuanto-cuesta-seo-local-autonomo"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-file-cuanto-cuesta-seo-local-autonomo",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-file-cuanto-cuesta-seo-local-autonomo-maquette-es"
+    }
+   }
+  },
+  {
+   "id": "file-cuanto-cuesta-gestion-google-ads-autonomo",
+   "type": "file",
+   "publication": "2026-11-09",
+   "file": "_tools/queue/article_precio_gestion_google_ads.json",
+   "priorite": 6,
+   "titre": "¿Cuánto cuesta que me gestionen Google Ads siendo autónomo?",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-gestion-google-ads-autonomo",
+   "resume": "Que te gestionen Google Ads siendo autónomo tiene dos costes: el dinero que pagas a Google por los clics, que decides tú porque no hay inversión mínima, y los honorarios de quien gestiona, que en las tarifas publicadas por agencias y freelances españoles que hemos revisado en octubre de 2026 van de 99 € a 950 € al mes, o un 10 a 15 % de lo que gastas en anuncios. En WebAutonomo",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/cuanto-cuesta-gestion-google-ads-autonomo.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/cuanto-cuesta-gestion-google-ads-autonomo",
+     "spa": "es/cuanto-cuesta-gestion-google-ads-autonomo"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-file-cuanto-cuesta-gestion-google-ads-autonomo",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-file-cuanto-cuesta-gestion-google-ads-autonomo-maquette-es"
+    }
+   }
+  },
+  {
+   "id": "file-cuanto-cuesta-pagina-web-carpinteria",
+   "type": "file",
+   "publication": "2026-11-12",
+   "file": "_tools/queue/article_precio_web_carpinteria.json",
+   "priorite": 7,
+   "titre": "¿Cuánto cuesta la página web de una carpintería? Precios 2026",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-carpinteria",
+   "resume": "Una web corporativa como la de una carpintería, de 4 a 10 páginas, cuesta entre 800 € y 2.000 € si la hace un freelance y entre 1.500 € y 4.000 € si la hace una agencia, [según Social Media Pymes](https://www.socialmediapymes.com/cuanto-cuesta-una-web/) en su guía de precios de agosto de 2026. Si la montas tú con un constructor, pagas una cuota de unos pocos euros al mes y pone",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/cuanto-cuesta-pagina-web-carpinteria.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-carpinteria",
+     "spa": "es/cuanto-cuesta-pagina-web-carpinteria"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-file-cuanto-cuesta-pagina-web-carpinteria",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-file-cuanto-cuesta-pagina-web-carpinteria-maquette-es"
+    }
+   }
+  },
+  {
+   "id": "file-cuanto-cuesta-pagina-web-empresa-reformas",
+   "type": "file",
+   "publication": "2026-11-16",
+   "file": "_tools/queue/article_precio_web_reformas.json",
+   "priorite": 8,
+   "titre": "¿Cuánto cuesta la página web de una empresa de reformas?",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-empresa-reformas",
+   "resume": "Una web corporativa como la de una empresa de reformas, de 4 a 10 páginas, cuesta entre 800 € y 2.000 € si la hace un freelance y entre 1.500 € y 4.000 € si la hace una agencia, [según Social Media Pymes](https://www.socialmediapymes.com/cuanto-cuesta-una-web/) (agosto de 2026), sin contar el mantenimiento. Si la montas tú con un constructor de webs, el plan Premium de Hostinge",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/cuanto-cuesta-pagina-web-empresa-reformas.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-empresa-reformas",
+     "spa": "es/cuanto-cuesta-pagina-web-empresa-reformas"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-file-cuanto-cuesta-pagina-web-empresa-reformas",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-file-cuanto-cuesta-pagina-web-empresa-reformas-maquette-es"
+    }
+   }
   },
   {
    "id": "page-tarifs",
@@ -3660,6 +3884,131 @@
      "nom": "Blog Autónomo",
      "titre": "Guías para tu negocio",
      "bouton": "leer"
+    }
+   }
+  },
+  {
+   "id": "page-gestion-ficha-google",
+   "type": "page",
+   "priorite": 60,
+   "titre": "Gestión de la ficha de Google: 29 € al mes + IVA",
+   "url": "https://webautonomos.es/gestion-ficha-google/",
+   "resume": "Precios oficiales, sin IVA. Actualizado el 22 de octubre de 2026.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "gestion-ficha-google/index.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/gestion-ficha-google/"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-page-gestion-ficha-google",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-page-gestion-ficha-google-maquette-es"
+    }
+   }
+  },
+  {
+   "id": "page-gestion-google-ads",
+   "type": "page",
+   "priorite": 60,
+   "titre": "Gestión de Google Ads: 90 € de puesta en marcha y el 20 % de tu presupuesto",
+   "url": "https://webautonomos.es/gestion-google-ads/",
+   "resume": "Precios oficiales, sin IVA. Actualizado el 22 de octubre de 2026.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "gestion-google-ads/index.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/gestion-google-ads/"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-page-gestion-google-ads",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-page-gestion-google-ads-maquette-es"
+    }
+   }
+  },
+  {
+   "id": "page-sobre-nosotros",
+   "type": "page",
+   "priorite": 60,
+   "titre": "Sobre WebAutonomos",
+   "url": "https://webautonomos.es/sobre-nosotros/",
+   "resume": "WebAutonomos es la marca de PASURITE SLU, una empresa de Ontinyent (Valencia) fundada en 2026 que crea y mantiene páginas web para autónomos y pequeños negocios de toda España.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "sobre-nosotros/index.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/sobre-nosotros/"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-page-sobre-nosotros",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-page-sobre-nosotros-maquette-es"
+    }
+   }
+  },
+  {
+   "id": "page-tarifas",
+   "type": "page",
+   "priorite": 60,
+   "titre": "Tarifas oficiales de WebAutonomos",
+   "url": "https://webautonomos.es/tarifas/",
+   "resume": "Precios oficiales, sin IVA. Actualizado el 22 de octubre de 2026.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "tarifas/index.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/tarifas/"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-page-tarifas",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-page-tarifas-maquette-es"
+    }
+   }
+  },
+  {
+   "id": "page-web-multilingue",
+   "type": "page",
+   "priorite": 60,
+   "titre": "Web en varios idiomas: hasta 4 idiomas incluidos, sin coste extra",
+   "url": "https://webautonomos.es/web-multilingue/",
+   "resume": "Precios oficiales, sin IVA. Actualizado el 22 de octubre de 2026.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "web-multilingue/index.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/web-multilingue/"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-page-web-multilingue",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-page-web-multilingue-maquette-es"
     }
    }
   },
