@@ -3,7 +3,7 @@
 > **Règle absolue pour les agents** : toute affirmation factuelle sur WebAutonomos
 > (prix, délais, services, langues, chiffres, clients, ancienneté, résultats)
 > qui n'est pas écrite ici est **interdite**. Le relecteur rejette la page.
-> Tenu à jour par Angelino. Dernière révision : 07/10/2026.
+> Tenu à jour par Angelino. Dernière révision : 22/10/2026 (§11 Devia).
 > Les lignes marquées **À CONFIRMER** ne doivent pas être utilisées tant
 > qu'Angelino ne les a pas tranchées.
 
@@ -110,6 +110,7 @@ Les seuls nombres qu'un agent peut **ajouter** dans une page (en plus de ceux d�
 961 877 356, 654 23 95 20, 46870, 26
 49, 800, 2.000, 1.500, 4.000
 48
+3, 10, 30, 100, 79, 1,20, 0,97, 0,79, 14,52, 35,09, 95,59 (Devia uniquement, voir §11)
 ```
 
 Un pourcentage (« 70 % », « el 87 % de… ») n'est **jamais** autorisé, sauf s'il est accompagné ici d'une source.
@@ -117,6 +118,8 @@ Un pourcentage (« 70 % », « el 87 % de… ») n'est **jamais** autorisé, sau
 - 12 % : repère du prix de mise en œuvre d'une automatisation (§5 bis, décision d'Angelino du 07/10/2026) ; toujours « autour de 12 % », jamais comme tarif fixe.
 - 20 % : maintenance annuelle indicative d'une automatisation, rapportée à la mise en œuvre (§5 bis).
 - 10 % : remise accordée à un client en alquiler qui passe au paiement unique de 349 € (décision d'Angelino du 07/10/2026, voir §2). Seul usage autorisé de ce pourcentage.
+- 19 % : économie par devis du pack Devia de 30 (0,97 €) par rapport au pack de 10 (1,20 €), voir §11. Seul usage autorisé.
+- 34 % : économie par devis du pack Devia de 100 (0,79 €) par rapport au pack de 10 (1,20 €), voir §11. Seul usage autorisé.
 
 ### Chiffres de marché sourcés (utilisables avec la source citée)
 
@@ -214,3 +217,48 @@ qu[eé] dolor resuelve
 - [ ] Précision du 22/10/2026 (à confirmer par Angelino) : la règle ci-dessus vise la correction des anciens articles. Les nouveaux articles de prix écrivent les prix de WebAutonomos avec « + IVA », comme la formule du §5 et comme l'exige la LSSI (art. 10) quand une page affiche des prix
 - [x] Home : « el 46% de las búsquedas… » retiré de la FAQ dans les 4 langues (27/09)
 - [x] Blog : statistiques sans source et faux « cas réels » retirés (27/09, `_tools/nettoyage_blog_20260927.py`) ; catégories Google, prix d'agence, étude Northwestern, offres gratuites d'e-mailing et étoiles Schema corrigés (28/09, `_tools/nettoyage_blog_20260928.py`)
+
+## 11. Devia, application de presupuestos (ajouté le 22/10/2026 avec l'accord d'Angelino)
+
+- **Ce que c'est** : Devia est une application web de WebAutonomos (PASURITE SLU) pour faire des devis (« presupuestos »).
+  - Adresse : https://presupuestos.webautonomos.es ; inscription sur /inscription.
+  - Elle s'installe sur Android, iPhone et ordinateur, sans magasin d'applications.
+  - Pages de vente : /app-presupuestos/ (ES), /fr/application-devis-artisan/ (FR), /en/quoting-app/ (EN). Prix dans /tarifas/.
+- **Quatre façons de créer un devis** :
+  - **dictée** : transcription par ElevenLabs, lignes proposées par l'IA, ajouts successifs possibles ;
+  - **photo ou PDF d'un devis existant** : lecture par Mistral OCR, original affiché à côté de la version numérique, reproduction fidèle ou nouveau devis ;
+  - **photos de réalisations** : intégrées au devis ou mises en annexe. **L'IA n'analyse pas les photos** : ne jamais l'écrire ;
+  - **saisie manuelle** : catalogue de prestations, duplication d'un devis.
+- **Calculs** :
+  - faits par un moteur exact, au centime, jamais par l'IA ;
+  - TVA par taux, remises par ligne ou globales, sections et sous-totaux ;
+  - retención IRPF : % de la base, déduite, d'où le « neto a pagar » ;
+  - acompte (anticipo) en % ou en montant fixe.
+- **L'IA n'invente jamais un prix, une quantité ni un taux de TVA.** Ce qui manque reste « a confirmar », hors des totaux, et bloque le passage à « Listo para enviar ». Un écart de totaux sur un devis importé est signalé, jamais corrigé tout seul.
+- **PDF** :
+  - 4 modèles : Minimalista, Moderna, Clásica, Premium (avec galerie) ;
+  - logo, couleur, conditions de paiement et IBAN de l'entreprise ;
+  - en espagnol, français ou anglais, la langue étant choisie pour chaque devis ;
+  - interface de l'application en ES, FR et EN.
+- **Hors connexion** : on peut créer et modifier des devis sans réseau. La dictée et la lecture de documents demandent une connexion.
+- **Confiance** :
+  - rien n'est envoyé au client sans action de l'utilisateur (e-mail, lien, partage ou impression) ;
+  - données cloisonnées par entreprise ; photos privées.
+- **Prix** :
+  - 3 presupuestos gratuits, sans carte ;
+  - puis packs prépayés **sans abonnement** : 10 pour 12 € + IVA (1,20 € le devis), 30 pour 29 € + IVA (0,97 €, 19 % d'économie), 100 pour 79 € + IVA (0,79 €, 34 % d'économie) ;
+  - TTC avec 21 % : 14,52 €, 35,09 €, 95,59 € ;
+  - **crédits sans expiration** ;
+  - 1 crédit = 1 presupuesto finalisé (« Listo para enviar »), une seule fois par devis ;
+  - brouillons, dictées, imports, modifications et duplicatas gratuits et illimités ;
+  - paiement par Stripe, avec facture TVA (le client peut indiquer son NIF) ;
+  - jamais « desde » devant un prix ;
+  - côté FR, écrire « HT », pas « + IVA ».
+- **Ne fait pas** (ne jamais l'annoncer) :
+  - factures, ni donc Verifactu ;
+  - base de prix de la construction ;
+  - mise en relation avec des clients ;
+  - aucune promesse sur la qualité de la reconnaissance vocale ou de la lecture OCR.
+- **Ne pas annoncer** : le travail en équipe. Les invitations d'un membre existent, mais elles ne sont testées que par l'API.
+- **Pas encore en ligne au 22/10/2026** : l'inscription avec seulement prénom + e-mail. Ne pas écrire « solo tu nombre y tu email » avant sa mise en ligne.
+
