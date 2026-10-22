@@ -409,6 +409,14 @@
 /fr/cookies                     /fr/cookies/                     301
 /demo-carpintero                /demo-carpintero/                301
 
+# Pages officielles servies depuis un dossier (22/10/2026) : 301 vers l'adresse canonique avec
+# slash, comme les pages métier (sans cette règle, html_handling répondait 307).
+/tarifas                 /tarifas/                 301
+/gestion-ficha-google    /gestion-ficha-google/    301
+/gestion-google-ads      /gestion-google-ads/      301
+/web-multilingue         /web-multilingue/         301
+/sobre-nosotros          /sobre-nosotros/          301
+
 # Page de vente de Devia (application de presupuestos), servie depuis un dossier (22/10/2026).
 /app-presupuestos  /app-presupuestos/  301
 /fr/application-devis-artisan  /fr/application-devis-artisan/  301
