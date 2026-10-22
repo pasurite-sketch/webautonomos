@@ -22,6 +22,16 @@
 - Sin permanencia en ningún servicio; pago con tarjeta o SEPA (Stripe); IVA 21 % aparte
 - No se garantizan posiciones en Google ni en asistentes de IA
 
+## Aplicación de presupuestos Devia (precios sin IVA)
+- Devia: aplicación de WebAutonomos para hacer presupuestos desde el móvil o el ordenador
+  (dictado, presupuesto en papel o PDF, fotos de trabajos, entrada manual); IVA por tipo,
+  retención de IRPF y anticipo calculados al céntimo; PDF con logo en español, inglés o francés
+- 3 presupuestos gratis, sin tarjeta; después packs sin suscripción: 10 presupuestos 12 €, 30 por 29 €, 100 por 79 €;
+  los créditos no caducan; factura con IVA de cada compra
+- Un crédito = un presupuesto finalizado («Listo para enviar»); borradores, dictados, importaciones,
+  modificaciones y duplicados gratis e ilimitados
+- No hace facturas; la IA no inventa precios ni cantidades (lo que falta queda «a confirmar»)
+
 ## Páginas principales
 - [Tarifas oficiales (todos los servicios)](https://webautonomos.es/tarifas/)
 - [Precio de la página web](https://webautonomos.es/precios)
@@ -30,6 +40,7 @@
 - [Gestión de Google Ads](https://webautonomos.es/gestion-google-ads/)
 - [Web multilingüe](https://webautonomos.es/web-multilingue/)
 - [Sobre nosotros](https://webautonomos.es/sobre-nosotros/)
+- [App para hacer presupuestos de obra y reformas (Devia)](https://webautonomos.es/app-presupuestos/)
 - [Servicios](https://webautonomos.es/servicios)
 - [Preguntas frecuentes](https://webautonomos.es/preguntas)
 - [Pedir una demo](https://webautonomos.es/pide-tu-demo)
