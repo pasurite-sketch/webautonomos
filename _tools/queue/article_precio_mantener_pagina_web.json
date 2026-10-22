@@ -20,7 +20,7 @@
     "content": [
       {
         "type": "intro",
-        "text": "Mantener una página web pequeña cuesta entre 87 € y 130 € + IVA al año si la llevas tú con WordPress (dominio y hosting a precio de renovación), y entre 432 € y 1.788 € + IVA al año si contratas un plan de mantenimiento de agencia, que además no incluye ni el hosting ni el dominio. En WebAutonomos, la página web de un autónomo cuesta 15 €/mes + IVA, sin alta ni permanencia, o 349 € + IVA en un solo pago, con hosting, certificado SSL, copias de seguridad diarias, vigilancia 24/7, mantenimiento técnico y una modificación al mes; el dominio .es va incluido el primer año y después cuesta unos 12 € al año. Aquí tienes el desglose partida por partida, con precios consultados en las webs oficiales en octubre de 2026, para que sepas qué pagas, qué es gratis y qué te cuesta en horas."
+        "text": "Mantener una página web pequeña cuesta entre 87 € y 130 € + IVA al año si la llevas tú con WordPress (dominio y hosting a precio de renovación), y entre 432 € y 1.788 € + IVA al año si contratas un plan de mantenimiento de agencia, que además no incluye ni el hosting ni el dominio. En WebAutonomos, la página web de un autónomo cuesta 15 €/mes + IVA, sin alta ni permanencia, o 349 € + IVA en un solo pago, con hosting, certificado SSL, copias de seguridad diarias, vigilancia 24/7, mantenimiento técnico y una modificación al mes; el dominio .es va incluido el primer año y después cuesta 12 € + IVA al año. Aquí tienes el desglose partida por partida, con precios consultados en las webs oficiales en octubre de 2026, para que sepas qué pagas, qué es gratis y qué te cuesta en horas."
       },
       {
         "type": "heading",
@@ -164,7 +164,7 @@
           ],
           [
             "Dominio .es",
-            "Incluido el primer año; después, unos 12 €/año",
+            "Incluido el primer año; después, 12 € + IVA al año",
             "6,99 a 9,99 €/año + IVA al renovar (OVHcloud, Hostinger)",
             "Aparte: lo pagas tú"
           ],
@@ -206,7 +206,7 @@
           ],
           [
             "Total en dinero, a partir del segundo año",
-            "Alquiler: 180 € + IVA y unos 12 € de dominio. Pago único: unos 12 € de dominio",
+            "Alquiler: 180 € + IVA y 12 € + IVA de dominio. Pago único: 12 € + IVA de dominio",
             "86,94 a 129,87 € + IVA, más tu tiempo",
             "432 a 1.788 € + IVA, más hosting y dominio"
           ]
@@ -231,7 +231,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Si quieres una web sencilla para que te encuentren y te escriban, sin ocuparte de nada técnico, en WebAutonomos la web en alquiler cuesta 15 €/mes + IVA, sin alta ni permanencia: 180 € al año con hosting, SSL, copias de seguridad diarias, vigilancia 24/7, mantenimiento técnico y una modificación al mes. Si prefieres pagar una vez, son 349 € + IVA con los mismos servicios, y a partir del segundo año solo pagas el dominio, unos 12 € al año. Tienes todos los detalles en nuestras [tarifas oficiales](/precios)."
+        "text": "Si quieres una web sencilla para que te encuentren y te escriban, sin ocuparte de nada técnico, en WebAutonomos la web en alquiler cuesta 15 €/mes + IVA, sin alta ni permanencia: 180 € al año con hosting, SSL, copias de seguridad diarias, vigilancia 24/7, mantenimiento técnico y una modificación al mes. Si prefieres pagar una vez, son 349 € + IVA con los mismos servicios, y a partir del segundo año solo pagas el dominio, 12 € + IVA al año. Tienes todos los detalles en nuestras [tarifas oficiales](/precios)."
       },
       {
         "type": "paragraph",
@@ -239,13 +239,13 @@
       },
       {
         "type": "conclusion",
-        "text": "Mantener una web no es caro, pero tampoco es gratis: o pagas con dinero o pagas con horas. Por tu cuenta, cuenta con 87 € a 130 € + IVA al año más tu tiempo. Con un plan de agencia, entre 432 € y 1.788 € + IVA, más hosting y dominio. Con WebAutonomos, 180 € + IVA al año en alquiler, o 349 € + IVA una vez, y en los dos casos unos 12 € de dominio a partir del segundo año. Si quieres ver cómo quedaría la tuya antes de decidir, [pide tu demo gratis](/pide-tu-demo): la tienes en menos de 24 horas y, si no te convence, no pagas nada."
+        "text": "Mantener una web no es caro, pero tampoco es gratis: o pagas con dinero o pagas con horas. Por tu cuenta, cuenta con 87 € a 130 € + IVA al año más tu tiempo. Con un plan de agencia, entre 432 € y 1.788 € + IVA, más hosting y dominio. Con WebAutonomos, 180 € + IVA al año en alquiler, o 349 € + IVA una vez, y en los dos casos 12 € + IVA de dominio al año a partir del segundo año. Si quieres ver cómo quedaría la tuya antes de decidir, [pide tu demo gratis](/pide-tu-demo): la tienes en menos de 24 horas y, si no te convence, no pagas nada."
       }
     ],
     "faq": [
       {
         "q": "¿Cuánto cuesta mantener una página web al año?",
-        "a": "Si la mantienes tú con WordPress, entre 87 € y 130 € + IVA al año en dominio y hosting, según los precios de renovación de OVHcloud, Raiola y Hostinger en octubre de 2026, más tu tiempo. Un plan de mantenimiento de agencia cuesta entre 432 € y 1.788 € + IVA al año, sin hosting ni dominio. En WebAutonomos son 15 €/mes + IVA con hosting, SSL y mantenimiento incluidos, más unos 12 € al año de dominio a partir del segundo año."
+        "a": "Si la mantienes tú con WordPress, entre 87 € y 130 € + IVA al año en dominio y hosting, según los precios de renovación de OVHcloud, Raiola y Hostinger en octubre de 2026, más tu tiempo. Un plan de mantenimiento de agencia cuesta entre 432 € y 1.788 € + IVA al año, sin hosting ni dominio. En WebAutonomos son 15 €/mes + IVA con hosting, SSL y mantenimiento incluidos, más 12 € + IVA al año de dominio a partir del segundo año."
       },
       {
         "q": "¿Cuánto cuesta el dominio y el hosting de una web?",

@@ -8,7 +8,7 @@
 - Página web en alquiler: 15 €/mes, sin alta ni permanencia
 - Página web en propiedad: 349 € en pago único, mismos servicios; paso de alquiler a propiedad: 314,10 €
 - Incluido en la web: diseño, textos, hosting, certificado SSL, dominio .es el primer año
-  (después unos 12 €/año, a nombre del cliente), formulario, botón de WhatsApp, textos legales,
+  (después 12 € + IVA al año, a nombre del cliente), formulario, botón de WhatsApp, textos legales,
   copias de seguridad, mantenimiento y una modificación al mes
 - Demo personalizada gratis en menos de 24 horas; se paga solo al aprobarla
 - Idiomas incluidos sin coste adicional, hasta 4 por web: castellano, inglés, francés,

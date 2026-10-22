@@ -96,7 +96,7 @@
           ],
           [
             "Dominio",
-            "Incluido el 1.er año, a tu nombre; luego unos 12 €/año",
+            "Incluido el 1.er año, a tu nombre; luego 12 € + IVA al año",
             "Incluido",
             "No incluido",
             "Incluido",
@@ -191,7 +191,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Con nuestros precios: 15 €/mes + IVA son 180 € + IVA al año; la compra son 349 € + IVA una sola vez. En las dos fórmulas el dominio está incluido el primer año y después cuesta unos 12 € al año, y el hosting, el mantenimiento y una modificación al mes siguen incluidos, también en la compra."
+        "text": "Con nuestros precios: 15 €/mes + IVA son 180 € + IVA al año; la compra son 349 € + IVA una sola vez. En las dos fórmulas el dominio está incluido el primer año y después cuesta 12 € + IVA al año, y el hosting, el mantenimiento y una modificación al mes siguen incluidos, también en la compra."
       },
       {
         "type": "table",
@@ -209,8 +209,8 @@
           ],
           [
             "2 años",
-            "Unos 372 € (360 € + unos 12 € de dominio)",
-            "Unos 361 € (349 € + unos 12 € de dominio)"
+            "372 € + IVA (360 € + 12 € de dominio)",
+            "361 € + IVA (349 € + 12 € de dominio)"
           ],
           [
             "3 años",
@@ -228,7 +228,7 @@
             "—"
           ]
         ],
-        "note": "Tarifas de WebAutonomos en octubre de 2026, sin IVA salvo la fila \"con IVA\". Dominio: unos 12 €/año desde el segundo año. Pasar a propiedad: 349 € − 10 % = 314,10 € + IVA."
+        "note": "Tarifas de WebAutonomos en octubre de 2026, sin IVA salvo la fila \"con IVA\". Dominio: 12 € + IVA al año desde el segundo año. Pasar a propiedad: 349 € − 10 % = 314,10 € + IVA."
       },
       {
         "type": "paragraph",

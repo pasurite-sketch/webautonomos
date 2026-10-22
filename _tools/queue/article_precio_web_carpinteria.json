@@ -129,7 +129,7 @@
           ],
           [
             "Dominio",
-            ".es a tu nombre, incluido el primer año, después unos 12 €/año",
+            ".es a tu nombre, incluido el primer año, después 12 € + IVA al año",
             "Según presupuesto",
             "Según presupuesto",
             "IONOS: incluido el primer año; WordPress: aparte"
@@ -219,7 +219,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Las dos fórmulas incluyen lo mismo, también la modificación al mes después de publicar, sin límite de duración. Si empiezas en alquiler y más adelante quieres la web en propiedad, pasas al pago único con un 10 % de descuento sobre los 349 €, es decir, 314,10 € + IVA. En los dos casos el dominio .es va a tu nombre, incluido el primer año, y después cuesta unos 12 €/año."
+        "text": "Las dos fórmulas incluyen lo mismo, también la modificación al mes después de publicar, sin límite de duración. Si empiezas en alquiler y más adelante quieres la web en propiedad, pasas al pago único con un 10 % de descuento sobre los 349 €, es decir, 314,10 € + IVA. En los dos casos el dominio .es va a tu nombre, incluido el primer año, y después cuesta 12 € + IVA al año."
       },
       {
         "type": "paragraph",
@@ -265,7 +265,7 @@
       },
       {
         "q": "¿El precio de WebAutonomos incluye el dominio y el hosting?",
-        "a": "Sí. Incluye hosting, certificado SSL, copias de seguridad diarias, vigilancia 24/7 y mantenimiento técnico. El dominio .es va a tu nombre, incluido el primer año, y después cuesta unos 12 €/año."
+        "a": "Sí. Incluye hosting, certificado SSL, copias de seguridad diarias, vigilancia 24/7 y mantenimiento técnico. El dominio .es va a tu nombre, incluido el primer año, y después cuesta 12 € + IVA al año."
       }
     ]
   }

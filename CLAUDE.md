@@ -573,3 +573,5 @@ aurait exigé une correspondance exacte et interdit ce procédé.
 - **Le cache Cloudflare répond `HIT` même après un déploiement raté** — se fier au déploiement, pas au fait que la page charge
 
 - 22/10/2026 — index.html (bundle) : condition des 49 € « creación o mejora » dans les 4 langues ; OfferCatalog JSON-LD : ajout création/amélioration de fiche (49 €) et Google Ads (90 € + 20 %). Levier 1, branche levier-1-paginas-oficiales.
+
+- 22/10/2026 — index.html (bundle) : renouvellement du domaine .es affiché « 12 € + IVA al año » (au lieu de « ~12 € »), ES et VAL.
