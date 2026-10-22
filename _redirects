@@ -411,6 +411,8 @@
 
 # Page de vente de Devia (application de presupuestos), servie depuis un dossier (22/10/2026).
 /app-presupuestos  /app-presupuestos/  301
+/fr/application-devis-artisan  /fr/application-devis-artisan/  301
+/en/quoting-app  /en/quoting-app/  301
 /demo-dentistas                 /demo-dentistas/                 301
 /gracias-gmb                    /gracias-gmb/                    301
 /gracias-seo                    /gracias-seo/                    301

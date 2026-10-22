@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MT6S7CH7N9');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wb9354sv4p");
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Version française de la page de vente de Devia. Préparée le 22/10/2026, non publiée. -->
+<title>Application devis artisan : 3 devis gratuits | Devia</title>
+<meta name="description" content="Faites vos devis d'artisan sur votre téléphone : dictez-les, remettez au propre un devis papier ou saisissez-les. TVA exacte, PDF à votre logo. 3 gratuits.">
+<link rel="canonical" href="https://webautonomos.es/fr/application-devis-artisan/">
+<link rel="alternate" hreflang="es-ES" href="https://webautonomos.es/app-presupuestos/">
+<link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/application-devis-artisan/">
+<link rel="alternate" hreflang="en" href="https://webautonomos.es/en/quoting-app/">
+<link rel="alternate" hreflang="x-default" href="https://webautonomos.es/app-presupuestos/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webautonomos.es/fr/application-devis-artisan/">
+<meta property="og:title" content="Devia, l'application de devis pour artisans, à dicter sur le chantier">
+<meta property="og:description" content="Dictez le devis, remettez au propre un devis papier ou saisissez-le : Devia calcule la TVA et l'acompte au centime et le met en PDF à votre logo. Sans abonnement, 3 devis gratuits.">
+<meta property="og:image" content="https://webautonomos.es/og-image.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="WebAutonomos">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --blue:#1a3a8f; --blue-dark:#0f2060; --blue-soft:#eef3ff;
+    --green:#22c55e; --green-dark:#0f7a3a; --green-soft:#e9f8ef;
+    --amber:#b45309; --amber-soft:#fff6e5; --amber-border:#f6d48b;
+    --grad:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%);
+    --white:#ffffff; --off:#f4fbf7; --gray:#5b6b80; --border:#d1e8d9; --line:#e5e7eb; --text:#0f2040;
+  }
+  *, *::before, *::after { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  html, body { margin:0; padding:0; }
+  body { font-family:'DM Sans',sans-serif; color:var(--text); background:var(--white);
+         -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+  a { color:var(--blue); }
+  img, svg { max-width:100%; }
+
+  /* NAV (même barre que les pages métier) */
+  nav.top { position:sticky; top:0; z-index:50; height:60px; background:#fff;
+            display:flex; align-items:center; justify-content:space-between; padding:0 6%;
+            box-shadow:0 2px 18px rgba(15,32,96,0.12); }
+  .logo { text-decoration:none; display:flex; align-items:center; gap:9px; }
+  .logo-icon { width:34px; height:34px; background:linear-gradient(135deg,#2056df,#188d6e); border-radius:9px;
+               display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .logo-text { font-family:'Bricolage Grotesque',sans-serif; font-size:1.1rem; letter-spacing:-0.01em; }
+  .logo-web { font-weight:800; color:#0f172a; } .logo-auto { font-weight:800; color:#2563eb; }
+  .logo-es { color:var(--green-dark); font-weight:700; }
+  .nav-back { font-size:.95rem; color:#4b5563; text-decoration:none; }
+  .nav-back:hover { color:var(--blue); }
+
+  /* HERO */
+  .hero { background:var(--grad); color:#fff; padding:56px 6% 64px; position:relative; overflow:hidden; }
+  .hero::before { content:''; position:absolute; inset:0; pointer-events:none;
+                  background:radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.09) 0%, transparent 55%); }
+  .hero-in { max-width:1120px; margin:0 auto; display:grid; grid-template-columns:1.1fr .9fr; gap:48px;
+             align-items:center; position:relative; }
+  .crumb { font-size:.85rem; color:rgba(255,255,255,.75); margin:0 0 18px; }
+  .crumb a { color:rgba(255,255,255,.9); text-decoration:none; }
+  .badge { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.15);
+           border:1px solid rgba(255,255,255,.28); font-size:.74rem; font-weight:700; letter-spacing:.09em;
+           text-transform:uppercase; padding:5px 14px; border-radius:100px; margin:0 0 18px; }
+  h1 { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:clamp(2rem,4.6vw,3.15rem);
+       line-height:1.08; letter-spacing:-0.02em; margin:0 0 18px; }
+  .lede { font-size:1.08rem; line-height:1.65; color:rgba(255,255,255,.86); margin:0 0 22px; max-width:56ch; }
+  .pills { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 28px; padding:0; list-style:none; }
+  .pills li { background:rgba(255,255,255,.13); border:1px solid rgba(255,255,255,.22); font-size:.86rem;
+              padding:6px 13px; border-radius:100px; }
+  .cta { display:inline-flex; align-items:center; gap:10px; background:#fff; color:var(--blue-dark) !important;
+         font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:1.06rem; text-decoration:none;
+         padding:15px 30px; border-radius:12px; box-shadow:0 8px 28px rgba(15,32,96,.25);
+         transition:transform .15s ease, box-shadow .15s ease; }
+  .cta:hover { transform:translateY(-2px); box-shadow:0 12px 36px rgba(15,32,96,.32); }
+  .cta:focus-visible { outline:3px solid #fff; outline-offset:3px; }
+  .cta-note { font-size:.9rem; color:rgba(255,255,255,.8); margin:12px 0 0; line-height:1.5; }
+
+  /* Maquette de presupuesto (illustration) */
+  .mock { background:#fff; color:var(--text); border-radius:20px; padding:20px 20px 16px;
+          box-shadow:0 24px 60px rgba(8,20,60,.35); max-width:400px; justify-self:center; width:100%; }
+  .mock-top { display:flex; align-items:center; justify-content:space-between; gap:10px; margin:0 0 4px; }
+  .mock-num { font-size:.78rem; color:var(--gray); font-variant-numeric:tabular-nums; }
+  .chip { display:inline-flex; align-items:center; gap:6px; font-size:.74rem; font-weight:700; border-radius:100px;
+          padding:4px 10px; white-space:nowrap; }
+  .chip-voice { background:var(--blue-soft); color:var(--blue); }
+  .chip-warn { background:var(--amber-soft); color:var(--amber); border:1px solid var(--amber-border); }
+  .mock-title { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:1.12rem; margin:6px 0 12px; }
+  .mock table { width:100%; border-collapse:collapse; font-size:.84rem; }
+  .mock td { padding:8px 0; border-bottom:1px solid var(--line); vertical-align:top; line-height:1.35; }
+  .mock td.r { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; padding-left:10px; }
+  .mock td small { display:block; color:var(--gray); font-size:.76rem; }
+  .mock .tot td { border-bottom:none; padding:4px 0; }
+  .mock .tot.big td { font-weight:700; font-size:.98rem; padding-top:8px; }
+  .mock .sep td { border-bottom:1px solid var(--line); padding:4px 0 0; }
+  .mock-warn { margin:12px 0 0; font-size:.78rem; color:var(--amber); background:var(--amber-soft);
+               border-radius:10px; padding:8px 10px; line-height:1.45; }
+  .mock-cap { text-align:center; font-size:.76rem; color:rgba(255,255,255,.75); margin:10px 0 0; }
+
+  /* SECTIONS */
+  section.s { padding:72px 6%; }
+  section.alt { background:var(--off); }
+  .w { max-width:1080px; margin:0 auto; }
+  .w-narrow { max-width:800px; margin:0 auto; }
+  .ey { font-size:.76rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--green-dark); margin:0 0 10px; }
+  h2 { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:clamp(1.5rem,3.4vw,2.15rem);
+       line-height:1.15; letter-spacing:-0.01em; margin:0 0 14px; }
+  h3 { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:1.12rem; margin:0 0 8px; line-height:1.3; }
+  .sd { font-size:1.04rem; line-height:1.7; color:var(--gray); margin:0 0 36px; max-width:66ch; }
+  p { line-height:1.7; }
+
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .grid2 { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+  .card { background:#fff; border:1px solid var(--border); border-radius:16px; padding:22px 20px; }
+  .card p { margin:0; color:var(--gray); font-size:.97rem; line-height:1.65; }
+  .card p + p { margin-top:10px; }
+  .card .tech { font-size:.82rem; color:#7a8799; }
+  .ico { width:44px; height:44px; border-radius:12px; display:flex; align-items:center; justify-content:center;
+         background:var(--blue-soft); color:var(--blue); margin:0 0 14px; }
+  .ico svg { width:22px; height:22px; }
+  .ico.g { background:var(--green-soft); color:var(--green-dark); }
+  .num { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:.8rem; color:var(--green-dark);
+         letter-spacing:.06em; margin:0 0 4px; }
+
+  ul.checks { list-style:none; margin:0; padding:0; display:grid; gap:12px; }
+  ul.checks li { position:relative; padding:0 0 0 30px; line-height:1.65; }
+  ul.checks li::before { content:''; position:absolute; left:2px; top:5px; width:18px; height:18px; border-radius:50%;
+                         background:var(--green-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f7a3a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/12px no-repeat; }
+  ul.nots { list-style:none; margin:0; padding:0; display:grid; gap:12px; }
+  ul.nots li { position:relative; padding:0 0 0 30px; line-height:1.65; }
+  ul.nots li::before { content:'–'; position:absolute; left:6px; top:0; font-weight:700; color:var(--gray); }
+
+  .calc { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:start; }
+  .steps { list-style:none; margin:0; padding:0; counter-reset:st; display:grid; gap:14px; }
+  .steps li { counter-increment:st; position:relative; padding:14px 16px 14px 56px; background:#fff;
+              border:1px solid var(--border); border-radius:14px; line-height:1.6; }
+  .steps li::before { content:counter(st); position:absolute; left:16px; top:14px; width:28px; height:28px; border-radius:8px;
+                      background:var(--grad); color:#fff; font-weight:700; font-size:.9rem; display:flex;
+                      align-items:center; justify-content:center; }
+  .steps strong { display:block; }
+
+  .trust { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  .trust .card { border-left:4px solid var(--green); }
+
+  /* PRECIOS */
+  .plans { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; align-items:stretch; }
+  .plan { background:#fff; border:1px solid var(--border); border-radius:18px; padding:24px 20px; display:flex; flex-direction:column; }
+  .plan.free { background:var(--blue-soft); border-color:#c9d6fb; }
+  .plan-name { font-weight:700; font-size:.95rem; margin:0 0 10px; }
+  .plan-price { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:2.1rem; line-height:1; margin:0; color:var(--blue-dark); }
+  .plan-price span { font-family:'DM Sans',sans-serif; font-size:.92rem; font-weight:600; color:var(--gray); }
+  .plan-unit { font-size:.92rem; color:var(--gray); margin:10px 0 0; line-height:1.5; }
+  .save { display:inline-block; margin:12px 0 0; font-size:.8rem; font-weight:700; color:var(--green-dark);
+          background:var(--green-soft); border-radius:100px; padding:4px 10px; align-self:flex-start; }
+  .plan-ttc { margin:auto 0 0; padding-top:14px; font-size:.8rem; color:#7a8799; }
+  .price-notes { margin:24px 0 0; display:grid; gap:8px; }
+  .price-notes p { margin:0; font-size:.95rem; color:var(--gray); }
+  .center { text-align:center; }
+  .cta-dark { background:var(--grad); color:#fff !important; box-shadow:0 8px 24px rgba(26,58,143,.25); }
+  .cta-row { margin:32px 0 0; }
+
+  .tw { overflow-x:auto; margin:0; border:1px solid var(--border); border-radius:14px; background:#fff; }
+  table.cmp { width:100%; border-collapse:collapse; font-size:.95rem; line-height:1.5; min-width:520px; }
+  table.cmp th, table.cmp td { padding:12px 14px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+  table.cmp thead th { background:var(--off); font-size:.86rem; }
+  table.cmp thead th.dv { color:var(--blue-dark); }
+  table.cmp tbody th { font-weight:600; width:28%; }
+  table.cmp td.dv { color:var(--text); font-weight:500; }
+  table.cmp td { color:var(--gray); }
+  table.cmp tr:last-child th, table.cmp tr:last-child td { border-bottom:none; }
+
+  .trades { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:10px; }
+  .trades li { background:#fff; border:1px solid var(--border); border-radius:100px; padding:8px 16px; font-size:.95rem; }
+
+  /* FAQ (même accordéon que les pages officielles) */
+  .faq { display:flex; flex-direction:column; gap:10px; }
+  .faq details { border:1px solid var(--border); border-radius:12px; background:#fff; }
+  .faq details[open] { background:var(--off); }
+  .faq summary { cursor:pointer; list-style:none; padding:15px 46px 15px 16px; font-weight:600; line-height:1.45; position:relative; }
+  .faq summary::-webkit-details-marker { display:none; }
+  .faq summary::after { content:""; position:absolute; right:18px; top:50%; width:9px; height:9px;
+                        border-right:2px solid var(--blue); border-bottom:2px solid var(--blue);
+                        transform:translateY(-70%) rotate(45deg); transition:transform .2s ease; }
+  .faq details[open] summary::after { transform:translateY(-30%) rotate(225deg); }
+  .faq summary:focus-visible { outline:2px solid var(--blue); outline-offset:2px; border-radius:12px; }
+  .faq details p { margin:0; padding:0 16px 16px; color:var(--gray); line-height:1.7; }
+
+  .about { display:flex; gap:18px; align-items:flex-start; }
+  .about .ico { flex-shrink:0; margin:0; }
+  .about p { margin:0 0 10px; color:var(--gray); }
+
+  .final { background:var(--grad); color:#fff; text-align:center; padding:64px 6%; }
+  .final h2 { color:#fff; }
+  .final p { color:rgba(255,255,255,.85); margin:0 auto 26px; max-width:56ch; }
+
+  footer { padding:24px 6%; background:var(--grad); border-top:1px solid rgba(255,255,255,.15);
+           display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; }
+  .fl { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:1rem; color:rgba(255,255,255,.85);
+        text-decoration:none; display:flex; align-items:center; gap:6px; }
+  .flinks { display:flex; gap:20px; flex-wrap:wrap; }
+  .flinks a { color:rgba(255,255,255,.8); text-decoration:none; font-size:.9rem; }
+  .flinks a:hover { color:#fff; }
+  .fnap { flex-basis:100%; order:3; margin-top:4px; padding-top:16px; border-top:1px solid rgba(255,255,255,.12);
+          font-style:normal; font-size:.78rem; line-height:1.7; color:rgba(255,255,255,.55);
+          display:flex; flex-direction:column; gap:1px; }
+  .fnap a { color:rgba(255,255,255,.55); text-decoration:none; }
+
+  @media (max-width:980px) {
+    .hero-in { grid-template-columns:1fr; gap:36px; }
+    .grid4, .plans { grid-template-columns:repeat(2,1fr); }
+    .grid3 { grid-template-columns:1fr 1fr; }
+    .calc { grid-template-columns:1fr; gap:24px; }
+  }
+  @media (max-width:600px) {
+    .hero { padding:28px 16px 44px; }
+    .crumb { margin:0 0 12px; font-size:.8rem; }
+    .badge { display:none; }
+    h1 { font-size:1.95rem; margin:0 0 14px; }
+    .lede { font-size:1rem; line-height:1.6; margin:0 0 16px; }
+    .pills { gap:6px; margin:0 0 20px; }
+    .pills li { font-size:.78rem; padding:5px 10px; }
+    section.s { padding:52px 16px; }
+    .final { padding:52px 16px; }
+    nav.top { padding:0 16px; }
+    footer { padding:24px 16px; }
+    .nav-back { font-size:.88rem; }
+    .grid4, .grid3, .grid2, .plans, .trust { grid-template-columns:1fr; }
+    .cta { width:100%; justify-content:center; }
+    .mock { padding:16px 14px 12px; }
+    .about { flex-direction:column; }
+    table.cmp { min-width:0; font-size:.86rem; }
+    table.cmp th, table.cmp td { padding:10px 8px; }
+    table.cmp tbody th { width:30%; }
+  }
+  @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .cta { transition:none; } }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://webautonomos.es/fr/application-devis-artisan/#devia",
+  "name": "Devia",
+  "description": "Application de devis pour artisans et petites entreprises du bâtiment et des services : devis dictés, repris d'un document, à partir de photos de réalisations ou saisis à la main, avec TVA par taux, remises et acompte calculés au centime, et PDF au logo de l'entreprise en français, anglais ou espagnol. Application installable sur Android, iPhone et ordinateur. 3 devis d'essai gratuits, sans carte ; ensuite, packs de devis sans abonnement, crédits sans expiration.",
+  "category": "Application de devis",
+  "brand": {
+    "@type": "Brand",
+    "name": "Devia"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "@id": "https://webautonomos.es/#organization",
+    "name": "WebAutonomos",
+    "url": "https://webautonomos.es"
+  },
+  "url": "https://webautonomos.es/fr/application-devis-artisan/",
+  "image": "https://webautonomos.es/og-image.png",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Pack de 10 devis",
+      "price": "12",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "12",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      },
+      "eligibleQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 10,
+        "unitText": "devis"
+      },
+      "availability": "https://schema.org/InStock",
+      "url": "https://webautonomos.es/fr/application-devis-artisan/#tarifs",
+      "seller": {
+        "@id": "https://webautonomos.es/#organization"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Pack de 30 devis",
+      "price": "29",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "29",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      },
+      "eligibleQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "devis"
+      },
+      "availability": "https://schema.org/InStock",
+      "url": "https://webautonomos.es/fr/application-devis-artisan/#tarifs",
+      "seller": {
+        "@id": "https://webautonomos.es/#organization"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Pack de 100 devis",
+      "price": "79",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "79",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      },
+      "eligibleQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 100,
+        "unitText": "devis"
+      },
+      "availability": "https://schema.org/InStock",
+      "url": "https://webautonomos.es/fr/application-devis-artisan/#tarifs",
+      "seller": {
+        "@id": "https://webautonomos.es/#organization"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Combien coûte Devia ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les 3 premiers devis sont gratuits. Ensuite, vous achetez un pack : 10 devis pour 12 € HT, 30 pour 29 € HT ou 100 pour 79 € HT. Il n’y a pas d’abonnement, et les crédits n’expirent pas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Existe-t-il une version gratuite ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vous avez 3 devis gratuits pour essayer les quatre façons de faire, sans carte bancaire. Il n’y a pas de formule gratuite permanente : ensuite, vous ne payez que les devis que vous faites, par pack."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu’est-ce qui compte comme un devis ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un crédit correspond à un devis finalisé : il est utilisé quand vous passez le devis à « Prêt à envoyer », une seule fois par devis. Brouillons, dictées, imports, modifications et duplications sont gratuits et illimités, et modifier ou envoyer ensuite un devis finalisé ne coûte rien de plus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Les crédits expirent-ils ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Les crédits que vous achetez n’expirent pas : si vous ne faites pas de devis pendant un mois, ils restent sur votre compte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Est-ce que je reçois une facture ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Chaque achat donne lieu à une facture qui détaille la TVA. Au paiement, vous pouvez indiquer le nom de votre entreprise et votre numéro de TVA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "L’intelligence artificielle fixe-t-elle les prix ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. L’IA transcrit ce que vous dictez, lit les documents et range les lignes, mais elle n’invente jamais un prix, une quantité ni un taux de TVA : ce qui manque reste « à confirmer » et hors des totaux. Les calculs sont faits par un moteur de calcul exact, pas par l’IA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment faire un devis sur son téléphone ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Avec Devia, ouvrez l’application dans le navigateur ou installez-la sur l’écran d’accueil de votre iPhone ou de votre téléphone Android, sans passer par un magasin d’applications. Choisissez ensuite de dicter le devis, de photographier un devis papier ou de le saisir. Vous pouvez le terminer plus tard sur l’ordinateur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Devia fonctionne-t-il sans connexion ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, pour créer et modifier des devis : ils sont enregistrés sur le téléphone et se synchronisent au retour de la connexion. La dictée et la lecture de documents ont besoin d’Internet, et Devia vous le signale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que doit contenir un devis ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les coordonnées de votre entreprise et du client, un numéro et une date, la durée de validité, l’adresse du chantier, le détail des prestations avec quantités et prix, le total HT, la TVA par taux, le total TTC et les conditions de paiement. Devia les place dans le PDF et peut ajouter une zone pour la signature du client. Vérifiez aussi les mentions propres à votre métier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je faire le devis en anglais ou en espagnol ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Chaque devis a sa langue : le PDF peut sortir en français, en anglais ou en espagnol, quelle que soit la langue de l’application. L’application existe aussi dans ces trois langues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Devia fait-il les factures ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Devia se concentre sur le devis, du chantier jusqu’au PDF que vous envoyez à votre client. Pour facturer, gardez votre logiciel de facturation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qui voit mes devis ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seulement votre entreprise. Chaque entreprise ne voit que ses clients, ses devis et ses photos, et Devia n’envoie rien à vos clients : le devis part quand vous l’envoyez."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://webautonomos.es/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Application de devis Devia",
+      "item": "https://webautonomos.es/fr/application-devis-artisan/"
+    }
+  ]
+}
+</script>
+<!-- origine-lead -->
+<script src="/origine-lead.js" defer></script>
+</head>
+<body>
+
+<nav class="top">
+  <a class="logo" href="https://webautonomos.es/fr/">
+    <span class="logo-icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    </span>
+    <span class="logo-text"><span class="logo-web">web</span><span class="logo-auto">autonomos</span><span class="logo-es">.es</span></span>
+  </a>
+  <a class="nav-back" href="https://webautonomos.es/fr/">← Retour à l’accueil</a>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="hero-in">
+    <div>
+      <p class="crumb"><a href="/fr/">Accueil</a> &rsaquo; Application de devis Devia</p>
+      <p class="badge">Devia · Devis avec l’IA, crédits sans expiration</p>
+      <h1>L’application de devis pour artisans, à dicter sur le chantier</h1>
+      <p class="lede">Pour les artisans et les petites entreprises du bâtiment et des services : avec Devia, vous faites un devis professionnel sur le chantier ou au bureau. Vous le dictez, vous remettez au propre un devis papier, vous partez des photos de vos réalisations ou vous le saisissez, et Devia calcule la TVA et l’acompte au centime. Vous ne payez que les devis que vous faites.</p>
+      <ul class="pills">
+        <li>Devis à la voix</li>
+        <li>Du papier au PDF</li>
+        <li>Fonctionne sans réseau</li>
+        <li>Crédits sans expiration</li>
+      </ul>
+      <a class="cta" href="https://presupuestos.webautonomos.es/inscription" onclick="gtag('event','click_probar_devia',{event_category:'devia',event_label:'hero_fr'})">Essayer gratuitement →</a>
+      <p class="cta-note">3 devis gratuits, sans carte bancaire. Ensuite, 10 devis pour 12 € HT, sans abonnement.</p>
+    </div>
+
+    <figure class="mock-wrap" style="margin:0">
+      <div class="mock" role="img" aria-label="Exemple de devis dans Devia : deux lignes chiffrées, une ligne dont le prix est à confirmer, TVA à 20 % et acompte de 30 %">
+        <div class="mock-top">
+          <span class="chip chip-voice">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><line x1="12" y1="18" x2="12" y2="22"/></svg>
+            Dictée
+          </span>
+          <span class="mock-num">Devis 2026-014</span>
+        </div>
+        <p class="mock-title">Rénovation électrique · local commercial</p>
+        <table>
+          <tr><td>Tableau électrique du local<small>1 u</small></td><td class="r">340,00 €</td></tr>
+          <tr><td>Points lumineux LED<small>12 u × 18,50 €</small></td><td class="r">222,00 €</td></tr>
+          <tr><td>Attestation Consuel<small>1 u</small></td><td class="r"><span class="chip chip-warn">à confirmer</span></td></tr>
+          <tr class="tot"><td>Total HT</td><td class="r">562,00 €</td></tr>
+          <tr class="tot"><td>TVA 20 %</td><td class="r">112,40 €</td></tr>
+          <tr class="tot big"><td>Total TTC</td><td class="r">674,40 €</td></tr>
+          <tr class="tot"><td>Acompte 30 %</td><td class="r">202,32 €</td></tr>
+        </table>
+        <p class="mock-warn">Montants provisoires : un prix reste à confirmer.</p>
+      </div>
+      <figcaption class="mock-cap">Exemple illustratif</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="s" id="start">
+  <div class="w">
+    <p class="ey">Quatre façons de commencer</p>
+    <h2>Faites votre devis à la voix, en photo ou à la main</h2>
+    <p class="sd">Sur le chantier avec votre téléphone ou le soir au bureau : vous choisissez comment commencer et vous terminez toujours dans le même éditeur, avec les mêmes calculs et le même PDF.</p>
+    <div class="grid4">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><line x1="12" y1="18" x2="12" y2="22"/></svg></div>
+        <h3>Devis vocal avec l’IA</h3>
+        <p>Sur le chantier, décrivez les travaux à voix haute, comme vous les expliqueriez à un collègue, et l’IA de Devia propose les lignes. Vous pouvez continuer à dicter pour ajouter des postes au même devis.</p>
+        <p class="tech">Transcription par ElevenLabs.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></div>
+        <h3>Remettez au propre un devis papier</h3>
+        <p>Celui écrit à la main dans la camionnette, une photo ou un vieux PDF : Devia le lit et vous montre l’original à côté de la version numérique. Vous choisissez de le reproduire tel quel ou de le refaire avec votre modèle.</p>
+        <p class="tech">Lecture par Mistral OCR.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></div>
+        <h3>Partez des photos de vos réalisations</h3>
+        <p>Gardez dans Devia les photos de vos chantiers et choisissez celles qui accompagnent le devis : dans le document ou dans une annexe photo, dans l’ordre que vous voulez.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+        <h3>Saisissez-le à la main</h3>
+        <p>Ligne par ligne, ou depuis votre catalogue de prestations habituelles. Vous pouvez aussi dupliquer un ancien devis et ne changer que ce qui doit l’être.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s alt" id="calc">
+  <div class="w calc">
+    <div>
+      <p class="ey">Calculs exacts</p>
+      <h2>Un devis avec TVA par taux, remises et acompte, au centime</h2>
+      <p class="sd" style="margin-bottom:20px">Les calculs sont faits par un moteur de calcul exact, le même sur le téléphone et sur le serveur. L’IA ne calcule jamais un montant.</p>
+      <ul class="checks">
+        <li><strong>TVA par taux.</strong> Chaque ligne porte son taux, et la TVA est calculée sur la base de chaque taux, pas en additionnant des arrondis ligne par ligne. Les taux de votre pays (France, Belgique, Suisse, Luxembourg) sont proposés, et c’est vous qui les confirmez.</li>
+        <li><strong>Acompte.</strong> En pourcentage ou en montant fixe, avec le solde qui reste à payer.</li>
+        <li><strong>Remises et sections.</strong> Remise par ligne ou sur le total, sections et sous-totaux pour organiser le chantier.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Ce qui se passe quand il manque une information</h3>
+      <ol class="steps">
+        <li><strong>Elle reste vide.</strong> Un prix, une quantité ou un taux de TVA que vous n’avez pas donné n’est pas remplacé par une supposition.</li>
+        <li><strong>Elle est marquée « à confirmer ».</strong> La ligne sort des totaux et les montants s’affichent comme provisoires.</li>
+        <li><strong>Le devis attend votre relecture.</strong> Il ne passe pas à « Prêt à envoyer » tant qu’un point reste en suspens.</li>
+      </ol>
+      <p style="margin:16px 0 0;color:var(--gray)">Et si vous importez un ancien devis dont les totaux ne tombent pas juste, Devia vous montre les deux montants, celui du document et celui recalculé, sans rien corriger de lui-même.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="pdf">
+  <div class="w">
+    <p class="ey">Le document</p>
+    <h2>Un PDF à votre logo, dans la langue de votre client</h2>
+    <p class="sd">Votre client reçoit un devis à votre image, pas un tableur.</p>
+    <div class="grid3">
+      <div class="card">
+        <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></div>
+        <h3>4 modèles</h3>
+        <p>Minimaliste, Moderne, Classique et Premium, avec galerie de photos. Avec votre logo, votre couleur, vos conditions de paiement et vos coordonnées bancaires.</p>
+      </div>
+      <div class="card">
+        <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3>En français, anglais ou espagnol</h3>
+        <p>Chaque devis a sa langue, quelle que soit celle de l’application : pratique pour un client étranger.</p>
+      </div>
+      <div class="card">
+        <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></svg></div>
+        <h3>Vous l’envoyez vous-même</h3>
+        <p>Par e-mail, par lien ou depuis le menu de partage du téléphone, ou vous l’imprimez. Chaque version envoyée reste dans l’historique.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s alt" id="mobile">
+  <div class="w grid2" style="align-items:start">
+    <div>
+      <p class="ey">Au chantier et au bureau</p>
+      <h2>Une application qui fonctionne même sans réseau</h2>
+      <p style="color:var(--gray);margin:0">Devia s’installe sur l’écran d’accueil de votre iPhone, de votre téléphone Android ou de votre ordinateur, sans passer par un magasin d’applications. Vous commencez un devis sur le chantier et vous le terminez sur l’ordinateur.</p>
+    </div>
+    <ul class="checks" style="align-self:center">
+      <li><strong>Sans connexion :</strong> vous créez et modifiez vos devis à la cave ou en pleine campagne ; ils se synchronisent au retour du réseau.</li>
+      <li><strong>Avec connexion :</strong> la dictée et la lecture de documents ont besoin d’Internet, et Devia vous prévient quand il n’y en a pas.</li>
+      <li><strong>Fiches clients</strong> avec leurs adresses de chantier et l’historique de leurs devis.</li>
+      <li><strong>Application en français, anglais et espagnol,</strong> au choix d’un geste.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="s" id="trust">
+  <div class="w">
+    <p class="ey">Vous décidez</p>
+    <h2>Des devis avec l’IA, mais votre prix reste votre prix</h2>
+    <p class="sd">L’IA vous évite de taper : elle transcrit, lit et range. Un devis engage votre prix et votre parole : rien ne part sans votre relecture.</p>
+    <div class="trust">
+      <div class="card"><h3>Elle n’invente jamais un prix</h3><p>Pas de prix « indicatifs » : ni prix, ni quantités, ni taux de TVA. Ce que vous n’avez pas dit ou qui se lit mal reste « à confirmer ».</p></div>
+      <div class="card"><h3>Rien n’est envoyé à votre place</h3><p>Aucun devis n’arrive chez votre client sans que vous l’envoyiez.</p></div>
+      <div class="card"><h3>Vos données, pour votre entreprise seulement</h3><p>Chaque entreprise ne voit que ses clients, ses devis et ses photos. Les photos de vos chantiers sont privées.</p></div>
+      <div class="card"><h3>Vous relisez tout avant</h3><p>Les lignes dictées ou lues dans un document se relisent une à une, et ce qui est douteux est signalé.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="s alt" id="tarifs">
+  <div class="w">
+    <p class="ey">Tarifs</p>
+    <h2>Vous ne payez que les devis que vous faites</h2>
+    <p class="sd">Vous commencez avec 3 devis gratuits, sans carte bancaire. Si Devia vous convainc, vous achetez un pack quand vous en avez besoin : sans abonnement ni engagement, et les crédits n’expirent pas. Un mois sans devis ne vous coûte rien.</p>
+    <div class="plans">
+      <div class="plan free">
+        <p class="plan-name">Essai</p>
+        <p class="plan-price">0 €</p>
+        <p class="plan-unit">3 devis gratuits pour essayer les quatre façons de faire.</p>
+      </div>
+      <div class="plan">
+        <p class="plan-name">10 devis</p>
+        <p class="plan-price">12 € <span>HT</span></p>
+        <p class="plan-unit">1,20 € HT par devis</p>
+      </div>
+      <div class="plan">
+        <p class="plan-name">30 devis</p>
+        <p class="plan-price">29 € <span>HT</span></p>
+        <p class="plan-unit">0,97 € HT par devis</p>
+        <span class="save">19 % d’économie</span>
+      </div>
+      <div class="plan">
+        <p class="plan-name">100 devis</p>
+        <p class="plan-price">79 € <span>HT</span></p>
+        <p class="plan-unit">0,79 € HT par devis</p>
+        <span class="save">34 % d’économie</span>
+      </div>
+    </div>
+    <div class="price-notes">
+      <p><strong>Un crédit = un devis finalisé.</strong> Il est utilisé quand vous passez le devis à « Prêt à envoyer », une seule fois. Brouillons, dictées, imports, modifications et duplications sont gratuits et illimités.</p>
+      <p><strong>Les crédits n’expirent pas.</strong> Avec 5 devis par mois, le pack de 30 vous dure six mois.</p>
+      <p>L’économie est calculée par rapport au prix par devis du pack de 10. Prix hors taxes : la TVA applicable est calculée au paiement selon votre pays et votre numéro de TVA. Paiement sécurisé par Stripe, avec une facture.</p>
+    </div>
+    <div class="cta-row center">
+      <a class="cta cta-dark" href="https://presupuestos.webautonomos.es/inscription" onclick="gtag('event','click_probar_devia',{event_category:'devia',event_label:'tarifs_fr'})">Essayer gratuitement →</a>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="template">
+  <div class="w-narrow">
+    <p class="ey">Avant de choisir</p>
+    <h2>Devia ou un modèle de devis Excel ou Word</h2>
+    <p class="sd" style="margin-bottom:24px">Un modèle suffit au bureau ; sur le chantier, avec le téléphone, il montre vite ses limites.</p>
+    <div class="tw"><table class="cmp">
+      <thead><tr><th scope="col"></th><th scope="col" class="dv">Devia</th><th scope="col">Modèle Excel ou Word</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Sur le téléphone, au chantier</th><td class="dv">Oui, même à la voix et sans réseau</td><td>Peu pratique sur un petit écran</td></tr>
+        <tr><th scope="row">Calculs</th><td class="dv">TVA par taux et acompte, au centime</td><td>Des formules à vérifier vous-même</td></tr>
+        <tr><th scope="row">Un prix manquant</th><td class="dv">Marqué « à confirmer » et hors du total</td><td>Une cellule vide peut passer inaperçue</td></tr>
+        <tr><th scope="row">Devis papier</th><td class="dv">Lus et remis au propre</td><td>À retaper</td></tr>
+        <tr><th scope="row">Langue du PDF</th><td class="dv">Français, anglais ou espagnol, par devis</td><td>Celle du modèle</td></tr>
+        <tr><th scope="row">Prix</th><td class="dv">3 gratuits ; ensuite 1,20 € HT par devis ou moins, sans expiration</td><td>Gratuit si vous avez déjà le logiciel</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin:20px 0 0;color:var(--gray)">Vous avez déjà un logiciel de devis et factures ? Devia ne remplace pas sa partie facturation : il s’occupe du devis, sur le chantier, et la facture reste dans votre logiciel habituel.</p>
+  </div>
+</section>
+
+<section class="s alt" id="who">
+  <div class="w">
+    <p class="ey">Pour qui</p>
+    <h2>Pour les artisans et les petites entreprises qui chiffrent chantiers et services</h2>
+    <p class="sd" style="margin-bottom:22px">Si vous faites souvent des devis et que vous préférez passer vos soirées à autre chose, Devia est fait pour vous : une application de devis pour le bâtiment et les services, pas un logiciel de gestion complet.</p>
+    <ul class="trades">
+      <li>Rénovation</li><li>Plomberie</li><li>Électricité</li><li>Peinture</li><li>Menuiserie</li><li>Climatisation</li><li>Serrurerie</li><li>Maçonnerie</li><li>Paysagisme</li><li>Nettoyage</li><li>Maintenance</li>
+    </ul>
+    <div class="grid2" style="margin-top:36px">
+      <div>
+        <h3>Ce que Devia ne fait pas</h3>
+        <ul class="nots">
+          <li>Pas de factures : pour facturer, gardez votre logiciel de facturation.</li>
+          <li>Pas de base de prix du bâtiment : les prix sont les vôtres, et vous les gardez dans votre catalogue.</li>
+          <li>Il ne vous trouve pas de clients : c’est un outil pour chiffrer, pas une plateforme de mise en relation.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Et si vous voulez aussi être trouvé</h3>
+        <p style="margin:0;color:var(--gray)">Nous sommes WebAutonomos : nous créons aussi des <a href="/fr/site-internet-artisan">sites internet pour artisans</a>, pour que les clients qui cherchent votre métier dans votre secteur vous demandent un devis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="faq">
+  <div class="w-narrow">
+    <p class="ey">Questions fréquentes</p>
+    <h2>Ce qu’on nous demande sur Devia</h2>
+    <div class="faq">
+      <details>
+        <summary>Combien coûte Devia ?</summary>
+        <p>Les 3 premiers devis sont gratuits. Ensuite, vous achetez un pack : 10 devis pour 12 € HT, 30 pour 29 € HT ou 100 pour 79 € HT. Il n’y a pas d’abonnement, et les crédits n’expirent pas.</p>
+      </details>
+      <details>
+        <summary>Existe-t-il une version gratuite ?</summary>
+        <p>Vous avez 3 devis gratuits pour essayer les quatre façons de faire, sans carte bancaire. Il n’y a pas de formule gratuite permanente : ensuite, vous ne payez que les devis que vous faites, par pack.</p>
+      </details>
+      <details>
+        <summary>Qu’est-ce qui compte comme un devis ?</summary>
+        <p>Un crédit correspond à un devis finalisé : il est utilisé quand vous passez le devis à « Prêt à envoyer », une seule fois par devis. Brouillons, dictées, imports, modifications et duplications sont gratuits et illimités, et modifier ou envoyer ensuite un devis finalisé ne coûte rien de plus.</p>
+      </details>
+      <details>
+        <summary>Les crédits expirent-ils ?</summary>
+        <p>Non. Les crédits que vous achetez n’expirent pas : si vous ne faites pas de devis pendant un mois, ils restent sur votre compte.</p>
+      </details>
+      <details>
+        <summary>Est-ce que je reçois une facture ?</summary>
+        <p>Oui. Chaque achat donne lieu à une facture qui détaille la TVA. Au paiement, vous pouvez indiquer le nom de votre entreprise et votre numéro de TVA.</p>
+      </details>
+      <details>
+        <summary>L’intelligence artificielle fixe-t-elle les prix ?</summary>
+        <p>Non. L’IA transcrit ce que vous dictez, lit les documents et range les lignes, mais elle n’invente jamais un prix, une quantité ni un taux de TVA : ce qui manque reste « à confirmer » et hors des totaux. Les calculs sont faits par un moteur de calcul exact, pas par l’IA.</p>
+      </details>
+      <details>
+        <summary>Comment faire un devis sur son téléphone ?</summary>
+        <p>Avec Devia, ouvrez l’application dans le navigateur ou installez-la sur l’écran d’accueil de votre iPhone ou de votre téléphone Android, sans passer par un magasin d’applications. Choisissez ensuite de dicter le devis, de photographier un devis papier ou de le saisir. Vous pouvez le terminer plus tard sur l’ordinateur.</p>
+      </details>
+      <details>
+        <summary>Devia fonctionne-t-il sans connexion ?</summary>
+        <p>Oui, pour créer et modifier des devis : ils sont enregistrés sur le téléphone et se synchronisent au retour de la connexion. La dictée et la lecture de documents ont besoin d’Internet, et Devia vous le signale.</p>
+      </details>
+      <details>
+        <summary>Que doit contenir un devis ?</summary>
+        <p>Les coordonnées de votre entreprise et du client, un numéro et une date, la durée de validité, l’adresse du chantier, le détail des prestations avec quantités et prix, le total HT, la TVA par taux, le total TTC et les conditions de paiement. Devia les place dans le PDF et peut ajouter une zone pour la signature du client. Vérifiez aussi les mentions propres à votre métier.</p>
+      </details>
+      <details>
+        <summary>Puis-je faire le devis en anglais ou en espagnol ?</summary>
+        <p>Oui. Chaque devis a sa langue : le PDF peut sortir en français, en anglais ou en espagnol, quelle que soit la langue de l’application. L’application existe aussi dans ces trois langues.</p>
+      </details>
+      <details>
+        <summary>Devia fait-il les factures ?</summary>
+        <p>Non. Devia se concentre sur le devis, du chantier jusqu’au PDF que vous envoyez à votre client. Pour facturer, gardez votre logiciel de facturation.</p>
+      </details>
+      <details>
+        <summary>Qui voit mes devis ?</summary>
+        <p>Seulement votre entreprise. Chaque entreprise ne voit que ses clients, ses devis et ses photos, et Devia n’envoie rien à vos clients : le devis part quand vous l’envoyez.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="s alt" id="about">
+  <div class="w-narrow about">
+    <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
+    <div>
+      <h3>Qui est derrière Devia</h3>
+      <p>Devia est une application de WebAutonomos, la marque de PASURITE SLU, basée à Ontinyent (Valence, Espagne). C’est la même entreprise qui crée des sites internet pour les indépendants : découvrez-la sur <a href="/fr/">webautonomos.es</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <h2>Faites votre prochain devis avec Devia</h2>
+  <p>Dictez, photographiez ou saisissez : les 3 premiers devis sont gratuits, sans carte bancaire.</p>
+  <a class="cta" href="https://presupuestos.webautonomos.es/inscription" onclick="gtag('event','click_probar_devia',{event_category:'devia',event_label:'final_fr'})">Essayer gratuitement →</a>
+</section>
+
+</main>
+
+<footer>
+  <a class="fl" href="/fr/"><span>&#127760;</span> webautonomos.es</a>
+  <div class="flinks">
+    <a href="/fr/mentions-legales/">Mentions légales</a>
+    <a href="/fr/confidentialite/">Confidentialité</a>
+    <a href="/fr/cookies/">Cookies</a>
+    <a href="/blog/#fr">Blog</a>
+    <a href="/app-presupuestos/" hreflang="es">ES</a>
+    <a href="/en/quoting-app/" hreflang="en">EN</a>
+  </div>
+  <address class="fnap">
+    <strong>WebAutonomos</strong>
+    <span>Calle Pintor Josep Segrelles, 26</span>
+    <span>46870 Ontinyent, Valencia</span>
+    <a href="tel:+34961877356">+34 961 877 356</a>
+    <a href="mailto:info@webautonomos.es">info@webautonomos.es</a>
+  </address>
+</footer>
+</body>
+</html>

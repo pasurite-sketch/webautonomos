@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT6S7CH7N9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MT6S7CH7N9');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wb9354sv4p");
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- English version of the Devia sales page. Prepared on 22/10/2026, not published. -->
+<title>Quoting app for builders and tradespeople in Spain | Devia</title>
+<meta name="description" content="Write quotes on your phone: dictate them on site, turn a paper quote into a PDF or type them in. Spanish VAT and IRPF done right. 3 free quotes.">
+<link rel="canonical" href="https://webautonomos.es/en/quoting-app/">
+<link rel="alternate" hreflang="es-ES" href="https://webautonomos.es/app-presupuestos/">
+<link rel="alternate" hreflang="fr" href="https://webautonomos.es/fr/application-devis-artisan/">
+<link rel="alternate" hreflang="en" href="https://webautonomos.es/en/quoting-app/">
+<link rel="alternate" hreflang="x-default" href="https://webautonomos.es/app-presupuestos/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webautonomos.es/en/quoting-app/">
+<meta property="og:title" content="Devia, the quoting app for builders and tradespeople in Spain">
+<meta property="og:description" content="Dictate the quote, turn a paper quote into a clean PDF or type it: Devia works out IVA, IRPF and the deposit to the cent and puts your logo on it. No subscription, 3 free quotes.">
+<meta property="og:image" content="https://webautonomos.es/og-image.png">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="WebAutonomos">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="https://webautonomos.es/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --blue:#1a3a8f; --blue-dark:#0f2060; --blue-soft:#eef3ff;
+    --green:#22c55e; --green-dark:#0f7a3a; --green-soft:#e9f8ef;
+    --amber:#b45309; --amber-soft:#fff6e5; --amber-border:#f6d48b;
+    --grad:linear-gradient(135deg,#1a3a8f 0%,#1a7a5a 50%,#22c55e 100%);
+    --white:#ffffff; --off:#f4fbf7; --gray:#5b6b80; --border:#d1e8d9; --line:#e5e7eb; --text:#0f2040;
+  }
+  *, *::before, *::after { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  html, body { margin:0; padding:0; }
+  body { font-family:'DM Sans',sans-serif; color:var(--text); background:var(--white);
+         -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+  a { color:var(--blue); }
+  img, svg { max-width:100%; }
+
+  /* NAV (même barre que les pages métier) */
+  nav.top { position:sticky; top:0; z-index:50; height:60px; background:#fff;
+            display:flex; align-items:center; justify-content:space-between; padding:0 6%;
+            box-shadow:0 2px 18px rgba(15,32,96,0.12); }
+  .logo { text-decoration:none; display:flex; align-items:center; gap:9px; }
+  .logo-icon { width:34px; height:34px; background:linear-gradient(135deg,#2056df,#188d6e); border-radius:9px;
+               display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .logo-text { font-family:'Bricolage Grotesque',sans-serif; font-size:1.1rem; letter-spacing:-0.01em; }
+  .logo-web { font-weight:800; color:#0f172a; } .logo-auto { font-weight:800; color:#2563eb; }
+  .logo-es { color:var(--green-dark); font-weight:700; }
+  .nav-back { font-size:.95rem; color:#4b5563; text-decoration:none; }
+  .nav-back:hover { color:var(--blue); }
+
+  /* HERO */
+  .hero { background:var(--grad); color:#fff; padding:56px 6% 64px; position:relative; overflow:hidden; }
+  .hero::before { content:''; position:absolute; inset:0; pointer-events:none;
+                  background:radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.09) 0%, transparent 55%); }
+  .hero-in { max-width:1120px; margin:0 auto; display:grid; grid-template-columns:1.1fr .9fr; gap:48px;
+             align-items:center; position:relative; }
+  .crumb { font-size:.85rem; color:rgba(255,255,255,.75); margin:0 0 18px; }
+  .crumb a { color:rgba(255,255,255,.9); text-decoration:none; }
+  .badge { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.15);
+           border:1px solid rgba(255,255,255,.28); font-size:.74rem; font-weight:700; letter-spacing:.09em;
+           text-transform:uppercase; padding:5px 14px; border-radius:100px; margin:0 0 18px; }
+  h1 { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:clamp(2rem,4.6vw,3.15rem);
+       line-height:1.08; letter-spacing:-0.02em; margin:0 0 18px; }
+  .lede { font-size:1.08rem; line-height:1.65; color:rgba(255,255,255,.86); margin:0 0 22px; max-width:56ch; }
+  .pills { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 28px; padding:0; list-style:none; }
+  .pills li { background:rgba(255,255,255,.13); border:1px solid rgba(255,255,255,.22); font-size:.86rem;
+              padding:6px 13px; border-radius:100px; }
+  .cta { display:inline-flex; align-items:center; gap:10px; background:#fff; color:var(--blue-dark) !important;
+         font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:1.06rem; text-decoration:none;
+         padding:15px 30px; border-radius:12px; box-shadow:0 8px 28px rgba(15,32,96,.25);
+         transition:transform .15s ease, box-shadow .15s ease; }
+  .cta:hover { transform:translateY(-2px); box-shadow:0 12px 36px rgba(15,32,96,.32); }
+  .cta:focus-visible { outline:3px solid #fff; outline-offset:3px; }
+  .cta-note { font-size:.9rem; color:rgba(255,255,255,.8); margin:12px 0 0; line-height:1.5; }
+
+  /* Maquette de presupuesto (illustration) */
+  .mock { background:#fff; color:var(--text); border-radius:20px; padding:20px 20px 16px;
+          box-shadow:0 24px 60px rgba(8,20,60,.35); max-width:400px; justify-self:center; width:100%; }
+  .mock-top { display:flex; align-items:center; justify-content:space-between; gap:10px; margin:0 0 4px; }
+  .mock-num { font-size:.78rem; color:var(--gray); font-variant-numeric:tabular-nums; }
+  .chip { display:inline-flex; align-items:center; gap:6px; font-size:.74rem; font-weight:700; border-radius:100px;
+          padding:4px 10px; white-space:nowrap; }
+  .chip-voice { background:var(--blue-soft); color:var(--blue); }
+  .chip-warn { background:var(--amber-soft); color:var(--amber); border:1px solid var(--amber-border); }
+  .mock-title { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:1.12rem; margin:6px 0 12px; }
+  .mock table { width:100%; border-collapse:collapse; font-size:.84rem; }
+  .mock td { padding:8px 0; border-bottom:1px solid var(--line); vertical-align:top; line-height:1.35; }
+  .mock td.r { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; padding-left:10px; }
+  .mock td small { display:block; color:var(--gray); font-size:.76rem; }
+  .mock .tot td { border-bottom:none; padding:4px 0; }
+  .mock .tot.big td { font-weight:700; font-size:.98rem; padding-top:8px; }
+  .mock .sep td { border-bottom:1px solid var(--line); padding:4px 0 0; }
+  .mock-warn { margin:12px 0 0; font-size:.78rem; color:var(--amber); background:var(--amber-soft);
+               border-radius:10px; padding:8px 10px; line-height:1.45; }
+  .mock-cap { text-align:center; font-size:.76rem; color:rgba(255,255,255,.75); margin:10px 0 0; }
+
+  /* SECTIONS */
+  section.s { padding:72px 6%; }
+  section.alt { background:var(--off); }
+  .w { max-width:1080px; margin:0 auto; }
+  .w-narrow { max-width:800px; margin:0 auto; }
+  .ey { font-size:.76rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--green-dark); margin:0 0 10px; }
+  h2 { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:clamp(1.5rem,3.4vw,2.15rem);
+       line-height:1.15; letter-spacing:-0.01em; margin:0 0 14px; }
+  h3 { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:1.12rem; margin:0 0 8px; line-height:1.3; }
+  .sd { font-size:1.04rem; line-height:1.7; color:var(--gray); margin:0 0 36px; max-width:66ch; }
+  p { line-height:1.7; }
+
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .grid2 { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+  .card { background:#fff; border:1px solid var(--border); border-radius:16px; padding:22px 20px; }
+  .card p { margin:0; color:var(--gray); font-size:.97rem; line-height:1.65; }
+  .card p + p { margin-top:10px; }
+  .card .tech { font-size:.82rem; color:#7a8799; }
+  .ico { width:44px; height:44px; border-radius:12px; display:flex; align-items:center; justify-content:center;
+         background:var(--blue-soft); color:var(--blue); margin:0 0 14px; }
+  .ico svg { width:22px; height:22px; }
+  .ico.g { background:var(--green-soft); color:var(--green-dark); }
+  .num { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:.8rem; color:var(--green-dark);
+         letter-spacing:.06em; margin:0 0 4px; }
+
+  ul.checks { list-style:none; margin:0; padding:0; display:grid; gap:12px; }
+  ul.checks li { position:relative; padding:0 0 0 30px; line-height:1.65; }
+  ul.checks li::before { content:''; position:absolute; left:2px; top:5px; width:18px; height:18px; border-radius:50%;
+                         background:var(--green-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f7a3a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/12px no-repeat; }
+  ul.nots { list-style:none; margin:0; padding:0; display:grid; gap:12px; }
+  ul.nots li { position:relative; padding:0 0 0 30px; line-height:1.65; }
+  ul.nots li::before { content:'–'; position:absolute; left:6px; top:0; font-weight:700; color:var(--gray); }
+
+  .calc { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:start; }
+  .steps { list-style:none; margin:0; padding:0; counter-reset:st; display:grid; gap:14px; }
+  .steps li { counter-increment:st; position:relative; padding:14px 16px 14px 56px; background:#fff;
+              border:1px solid var(--border); border-radius:14px; line-height:1.6; }
+  .steps li::before { content:counter(st); position:absolute; left:16px; top:14px; width:28px; height:28px; border-radius:8px;
+                      background:var(--grad); color:#fff; font-weight:700; font-size:.9rem; display:flex;
+                      align-items:center; justify-content:center; }
+  .steps strong { display:block; }
+
+  .trust { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  .trust .card { border-left:4px solid var(--green); }
+
+  /* PRECIOS */
+  .plans { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; align-items:stretch; }
+  .plan { background:#fff; border:1px solid var(--border); border-radius:18px; padding:24px 20px; display:flex; flex-direction:column; }
+  .plan.free { background:var(--blue-soft); border-color:#c9d6fb; }
+  .plan-name { font-weight:700; font-size:.95rem; margin:0 0 10px; }
+  .plan-price { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:2.1rem; line-height:1; margin:0; color:var(--blue-dark); }
+  .plan-price span { font-family:'DM Sans',sans-serif; font-size:.92rem; font-weight:600; color:var(--gray); }
+  .plan-unit { font-size:.92rem; color:var(--gray); margin:10px 0 0; line-height:1.5; }
+  .save { display:inline-block; margin:12px 0 0; font-size:.8rem; font-weight:700; color:var(--green-dark);
+          background:var(--green-soft); border-radius:100px; padding:4px 10px; align-self:flex-start; }
+  .plan-ttc { margin:auto 0 0; padding-top:14px; font-size:.8rem; color:#7a8799; }
+  .price-notes { margin:24px 0 0; display:grid; gap:8px; }
+  .price-notes p { margin:0; font-size:.95rem; color:var(--gray); }
+  .center { text-align:center; }
+  .cta-dark { background:var(--grad); color:#fff !important; box-shadow:0 8px 24px rgba(26,58,143,.25); }
+  .cta-row { margin:32px 0 0; }
+
+  .tw { overflow-x:auto; margin:0; border:1px solid var(--border); border-radius:14px; background:#fff; }
+  table.cmp { width:100%; border-collapse:collapse; font-size:.95rem; line-height:1.5; min-width:520px; }
+  table.cmp th, table.cmp td { padding:12px 14px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+  table.cmp thead th { background:var(--off); font-size:.86rem; }
+  table.cmp thead th.dv { color:var(--blue-dark); }
+  table.cmp tbody th { font-weight:600; width:28%; }
+  table.cmp td.dv { color:var(--text); font-weight:500; }
+  table.cmp td { color:var(--gray); }
+  table.cmp tr:last-child th, table.cmp tr:last-child td { border-bottom:none; }
+
+  .trades { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:10px; }
+  .trades li { background:#fff; border:1px solid var(--border); border-radius:100px; padding:8px 16px; font-size:.95rem; }
+
+  /* FAQ (même accordéon que les pages officielles) */
+  .faq { display:flex; flex-direction:column; gap:10px; }
+  .faq details { border:1px solid var(--border); border-radius:12px; background:#fff; }
+  .faq details[open] { background:var(--off); }
+  .faq summary { cursor:pointer; list-style:none; padding:15px 46px 15px 16px; font-weight:600; line-height:1.45; position:relative; }
+  .faq summary::-webkit-details-marker { display:none; }
+  .faq summary::after { content:""; position:absolute; right:18px; top:50%; width:9px; height:9px;
+                        border-right:2px solid var(--blue); border-bottom:2px solid var(--blue);
+                        transform:translateY(-70%) rotate(45deg); transition:transform .2s ease; }
+  .faq details[open] summary::after { transform:translateY(-30%) rotate(225deg); }
+  .faq summary:focus-visible { outline:2px solid var(--blue); outline-offset:2px; border-radius:12px; }
+  .faq details p { margin:0; padding:0 16px 16px; color:var(--gray); line-height:1.7; }
+
+  .about { display:flex; gap:18px; align-items:flex-start; }
+  .about .ico { flex-shrink:0; margin:0; }
+  .about p { margin:0 0 10px; color:var(--gray); }
+
+  .final { background:var(--grad); color:#fff; text-align:center; padding:64px 6%; }
+  .final h2 { color:#fff; }
+  .final p { color:rgba(255,255,255,.85); margin:0 auto 26px; max-width:56ch; }
+
+  footer { padding:24px 6%; background:var(--grad); border-top:1px solid rgba(255,255,255,.15);
+           display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; }
+  .fl { font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:1rem; color:rgba(255,255,255,.85);
+        text-decoration:none; display:flex; align-items:center; gap:6px; }
+  .flinks { display:flex; gap:20px; flex-wrap:wrap; }
+  .flinks a { color:rgba(255,255,255,.8); text-decoration:none; font-size:.9rem; }
+  .flinks a:hover { color:#fff; }
+  .fnap { flex-basis:100%; order:3; margin-top:4px; padding-top:16px; border-top:1px solid rgba(255,255,255,.12);
+          font-style:normal; font-size:.78rem; line-height:1.7; color:rgba(255,255,255,.55);
+          display:flex; flex-direction:column; gap:1px; }
+  .fnap a { color:rgba(255,255,255,.55); text-decoration:none; }
+
+  @media (max-width:980px) {
+    .hero-in { grid-template-columns:1fr; gap:36px; }
+    .grid4, .plans { grid-template-columns:repeat(2,1fr); }
+    .grid3 { grid-template-columns:1fr 1fr; }
+    .calc { grid-template-columns:1fr; gap:24px; }
+  }
+  @media (max-width:600px) {
+    .hero { padding:28px 16px 44px; }
+    .crumb { margin:0 0 12px; font-size:.8rem; }
+    .badge { display:none; }
+    h1 { font-size:1.95rem; margin:0 0 14px; }
+    .lede { font-size:1rem; line-height:1.6; margin:0 0 16px; }
+    .pills { gap:6px; margin:0 0 20px; }
+    .pills li { font-size:.78rem; padding:5px 10px; }
+    section.s { padding:52px 16px; }
+    .final { padding:52px 16px; }
+    nav.top { padding:0 16px; }
+    footer { padding:24px 16px; }
+    .nav-back { font-size:.88rem; }
+    .grid4, .grid3, .grid2, .plans, .trust { grid-template-columns:1fr; }
+    .cta { width:100%; justify-content:center; }
+    .mock { padding:16px 14px 12px; }
+    .about { flex-direction:column; }
+    table.cmp { min-width:0; font-size:.86rem; }
+    table.cmp th, table.cmp td { padding:10px 8px; }
+    table.cmp tbody th { width:30%; }
+  }
+  @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .cta { transition:none; } }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://webautonomos.es/en/quoting-app/#devia",
+  "name": "Devia",
+  "description": "Quoting app for self-employed tradespeople and small firms in building and services in Spain: quotes dictated, read from an existing document, built from photos of past work or typed in, with IVA by rate, IRPF withholding and deposit worked out to the cent, and a PDF with the business logo in English, Spanish or French. Installs on Android, iPhone and computer. 3 free trial quotes, no card; then quote packs with no subscription, credits never expire.",
+  "category": "Quoting app",
+  "brand": {
+    "@type": "Brand",
+    "name": "Devia"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "@id": "https://webautonomos.es/#organization",
+    "name": "WebAutonomos",
+    "url": "https://webautonomos.es"
+  },
+  "url": "https://webautonomos.es/en/quoting-app/",
+  "image": "https://webautonomos.es/og-image.png",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Pack of 10 quotes",
+      "price": "12",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "12",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      },
+      "eligibleQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 10,
+        "unitText": "quotes"
+      },
+      "availability": "https://schema.org/InStock",
+      "url": "https://webautonomos.es/en/quoting-app/#pricing",
+      "seller": {
+        "@id": "https://webautonomos.es/#organization"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Pack of 30 quotes",
+      "price": "29",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "29",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      },
+      "eligibleQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 30,
+        "unitText": "quotes"
+      },
+      "availability": "https://schema.org/InStock",
+      "url": "https://webautonomos.es/en/quoting-app/#pricing",
+      "seller": {
+        "@id": "https://webautonomos.es/#organization"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Pack of 100 quotes",
+      "price": "79",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "79",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      },
+      "eligibleQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 100,
+        "unitText": "quotes"
+      },
+      "availability": "https://schema.org/InStock",
+      "url": "https://webautonomos.es/en/quoting-app/#pricing",
+      "seller": {
+        "@id": "https://webautonomos.es/#organization"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Devia cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your first 3 quotes are free. After that you buy a pack: 10 quotes for €12 + VAT, 30 for €29 + VAT or 100 for €79 + VAT. There’s no subscription, and credits never expire."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a free version?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You get 3 free quotes to try all four ways of working, with no card needed. There’s no permanent free plan: after that you only pay for the quotes you make, in packs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What counts as a quote?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One credit is one finalised quote: it’s used when you set the quote to “Ready to send”, once per quote. Drafts, dictations, imports, edits and duplicates are free and unlimited, and editing or sending a finalised quote later costs nothing more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do credits expire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The credits you buy never expire: if you don’t write any quotes for a month, they stay in your account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I get an invoice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every purchase comes with an invoice showing the VAT. When you pay, you can enter your business name and your tax number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the AI set the prices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The AI transcribes what you dictate, reads documents and sorts the lines, but it never makes up a price, a quantity or a VAT rate: anything missing stays “to confirm” and out of the totals. The sums are done by an exact calculation engine, not by the AI."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I write a quote on my phone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With Devia, open the app in your browser or install it on the home screen of your iPhone or Android phone, without going through an app store. Then dictate the quote, photograph a paper quote or type it in. You can finish it later on the computer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Devia work offline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for creating and editing quotes: they’re saved on your phone and sync when the connection comes back. Dictation and document reading do need the internet, and Devia tells you so."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should a quote include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your business and client details, a number and a date, how long the offer is valid, the job address, the items with quantities and prices, the base, IVA by rate and the total, and your payment terms. Devia puts them all in the PDF and can add a space for the client’s signature."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I write the quote in Spanish for a Spanish client?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Each quote has its own language: the PDF can come out in English, Spanish or French, whatever language you use the app in. The app itself is available in all three."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Devia do invoices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Devia focuses on the quote, from the job to the PDF you send your client. For invoicing, keep using your invoicing software."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who can see my quotes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only your business. Each business only sees its own clients, quotes and photos, and Devia sends nothing to your clients: the quote goes out when you send it."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://webautonomos.es/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Devia quoting app",
+      "item": "https://webautonomos.es/en/quoting-app/"
+    }
+  ]
+}
+</script>
+<!-- origine-lead -->
+<script src="/origine-lead.js" defer></script>
+</head>
+<body>
+
+<nav class="top">
+  <a class="logo" href="https://webautonomos.es/en/">
+    <span class="logo-icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    </span>
+    <span class="logo-text"><span class="logo-web">web</span><span class="logo-auto">autonomos</span><span class="logo-es">.es</span></span>
+  </a>
+  <a class="nav-back" href="https://webautonomos.es/en/">← Back to home</a>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="hero-in">
+    <div>
+      <p class="crumb"><a href="/en/">Home</a> &rsaquo; Devia quoting app</p>
+      <p class="badge">Devia · AI-assisted quotes, credits never expire</p>
+      <h1>The quoting app for builders and tradespeople in Spain</h1>
+      <p class="lede">For self-employed tradespeople and small firms in Spain: with Devia you write a professional quote on site or in the office. Dictate it, turn a paper quote into a clean PDF, start from photos of your work or type it in, and Devia works out the IVA, the IRPF withholding and the deposit to the cent. You only pay for the quotes you make.</p>
+      <ul class="pills">
+        <li>Quotes by voice</li>
+        <li>Paper to PDF</li>
+        <li>Works with no signal</li>
+        <li>Credits never expire</li>
+      </ul>
+      <a class="cta" href="https://presupuestos.webautonomos.es/inscription" onclick="gtag('event','click_probar_devia',{event_category:'devia',event_label:'hero_en'})">Try it free →</a>
+      <p class="cta-note">3 free quotes, no card needed. Then 10 quotes for €12 + VAT, no subscription.</p>
+    </div>
+
+    <figure class="mock-wrap" style="margin:0">
+      <div class="mock" role="img" aria-label="Example quote in Devia: two priced lines, one line with the price still to confirm, 21% VAT and a 30% deposit">
+        <div class="mock-top">
+          <span class="chip chip-voice">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><line x1="12" y1="18" x2="12" y2="22"/></svg>
+            Dictated
+          </span>
+          <span class="mock-num">Quote 2026-014</span>
+        </div>
+        <p class="mock-title">Electrical refit · shop unit</p>
+        <table>
+          <tr><td>Consumer unit for the premises<small>1 unit</small></td><td class="r">€340.00</td></tr>
+          <tr><td>LED light points<small>12 × €18.50</small></td><td class="r">€222.00</td></tr>
+          <tr><td>Electrical certificate (CIE)<small>1 unit</small></td><td class="r"><span class="chip chip-warn">to confirm</span></td></tr>
+          <tr class="tot"><td>Subtotal</td><td class="r">€562.00</td></tr>
+          <tr class="tot"><td>IVA 21%</td><td class="r">€118.02</td></tr>
+          <tr class="tot big"><td>Total</td><td class="r">€680.02</td></tr>
+          <tr class="tot"><td>Deposit 30%</td><td class="r">€204.01</td></tr>
+        </table>
+        <p class="mock-warn">Provisional amounts: one price is still to be confirmed.</p>
+      </div>
+      <figcaption class="mock-cap">Illustrative example</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="s" id="start">
+  <div class="w">
+    <p class="ey">Four ways to start</p>
+    <h2>Quote by voice, from a photo or by hand</h2>
+    <p class="sd">On site with your phone or in the evening at your desk: choose how to start, and you always finish in the same editor, with the same sums and the same PDF.</p>
+    <div class="grid4">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><line x1="12" y1="18" x2="12" y2="22"/></svg></div>
+        <h3>Quotes by voice</h3>
+        <p>On site, describe the work out loud, the way you'd explain it to a colleague, and Devia suggests the lines. Keep dictating to add more items to the same quote.</p>
+        <p class="tech">Transcription by ElevenLabs.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></div>
+        <h3>Turn a paper quote into a PDF</h3>
+        <p>The one you wrote by hand in the van, a photo or an old PDF: Devia reads it and shows you the original next to the digital version. Choose to reproduce it as it is or redo it with your template.</p>
+        <p class="tech">Reading by Mistral OCR.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></div>
+        <h3>Start from photos of your work</h3>
+        <p>Keep photos of your jobs in Devia and choose which ones go with the quote: inside the document or in a photo appendix, in the order you like.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+        <h3>Type it in</h3>
+        <p>Line by line, or from your catalogue of usual items. You can also duplicate an earlier quote and change only what you need.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s alt" id="calc">
+  <div class="w calc">
+    <div>
+      <p class="ey">Accurate sums</p>
+      <h2>Quotes with IVA, IRPF withholding and deposit, to the cent</h2>
+      <p class="sd" style="margin-bottom:20px">The sums are done by an exact calculation engine, the same on your phone and on the server. The AI never calculates an amount.</p>
+      <ul class="checks">
+        <li><strong>IVA by rate.</strong> Each line has its own VAT rate, and the tax is worked out on the base for each rate, not by adding up rounded amounts line by line.</li>
+        <li><strong>IRPF withholding.</strong> If your client is a business and you have to apply it, enter the percentage: Devia works it out on the taxable base and shows the net amount payable.</li>
+        <li><strong>Deposit.</strong> As a percentage or a fixed amount, with the balance still to pay.</li>
+        <li><strong>Discounts and sections.</strong> Discount per line or on the total, sections and subtotals to organise the job.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>What happens when something is missing</h3>
+      <ol class="steps">
+        <li><strong>It stays blank.</strong> A price, a quantity or a VAT rate you haven't given is never filled in with a guess.</li>
+        <li><strong>It's marked “to confirm”.</strong> The line comes out of the totals and the amounts show as provisional.</li>
+        <li><strong>The quote waits for your check.</strong> It can't be set to “Ready to send” while anything is still pending.</li>
+      </ol>
+      <p style="margin:16px 0 0;color:var(--gray)">And if you import an old quote whose totals don't add up, Devia shows you both figures, the one on the document and the recalculated one, without correcting anything on its own.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="pdf">
+  <div class="w">
+    <p class="ey">The document</p>
+    <h2>A PDF with your logo, in your client's language</h2>
+    <p class="sd">Your client gets a quote with your branding, not a spreadsheet.</p>
+    <div class="grid3">
+      <div class="card">
+        <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></div>
+        <h3>4 templates</h3>
+        <p>Minimal, Modern, Classic and Premium, with a photo gallery. With your logo, your colour, your payment terms and your bank details.</p>
+      </div>
+      <div class="card">
+        <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3>In English, Spanish or French</h3>
+        <p>Each quote has its own language, whatever language you use the app in: quote your Spanish clients in Spanish and your British or Irish clients in English.</p>
+      </div>
+      <div class="card">
+        <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></svg></div>
+        <h3>You send it yourself</h3>
+        <p>By email, with a link or from your phone’s share menu, or print it. Every version you send stays in the history.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s alt" id="mobile">
+  <div class="w grid2" style="align-items:start">
+    <div>
+      <p class="ey">On site and in the office</p>
+      <h2>An app that works even with no signal</h2>
+      <p style="color:var(--gray);margin:0">Devia installs on the home screen of your iPhone, your Android phone or your computer, without going through an app store. Start a quote on site and finish it on the computer.</p>
+    </div>
+    <ul class="checks" style="align-self:center">
+      <li><strong>Offline:</strong> create and edit quotes in a basement or out in the countryside; they sync when the signal comes back.</li>
+      <li><strong>Online:</strong> dictation and document reading need the internet, and Devia tells you when there is none.</li>
+      <li><strong>Client records</strong> with their job addresses and the history of their quotes.</li>
+      <li><strong>App in English, Spanish and French,</strong> switch with one tap.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="s" id="trust">
+  <div class="w">
+    <p class="ey">You decide</p>
+    <h2>Quotes with AI, but your price is your price</h2>
+    <p class="sd">The AI saves you typing: it transcribes, reads and sorts. A quote commits your price and your word, so nothing goes out without your check.</p>
+    <div class="trust">
+      <div class="card"><h3>It never makes up a price</h3><p>No “guide” prices: no prices, no quantities, no VAT rates. Anything you didn’t say or that can’t be read clearly stays “to confirm”.</p></div>
+      <div class="card"><h3>Nothing is sent for you</h3><p>No quote reaches your client unless you send it.</p></div>
+      <div class="card"><h3>Your data, for your business only</h3><p>Each business only sees its own clients, quotes and photos. Photos of your jobs are private.</p></div>
+      <div class="card"><h3>You check everything first</h3><p>Lines dictated or read from a document are checked one by one, and anything doubtful is flagged.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="s alt" id="pricing">
+  <div class="w">
+    <p class="ey">Pricing</p>
+    <h2>You only pay for the quotes you make</h2>
+    <p class="sd">Start with 3 free quotes, no card needed. If you like it, buy a pack when you need one: no subscription, no lock-in, and credits never expire. A month without quotes costs you nothing.</p>
+    <div class="plans">
+      <div class="plan free">
+        <p class="plan-name">Trial</p>
+        <p class="plan-price">€0</p>
+        <p class="plan-unit">3 free quotes to try all four ways of working.</p>
+      </div>
+      <div class="plan">
+        <p class="plan-name">10 quotes</p>
+        <p class="plan-price">€12 <span>+ VAT</span></p>
+        <p class="plan-unit">€1.20 + VAT per quote</p>
+        <p class="plan-ttc">€14.52 inc. VAT</p>
+      </div>
+      <div class="plan">
+        <p class="plan-name">30 quotes</p>
+        <p class="plan-price">€29 <span>+ VAT</span></p>
+        <p class="plan-unit">€0.97 + VAT per quote</p>
+        <span class="save">Save 19%</span>
+        <p class="plan-ttc">€35.09 inc. VAT</p>
+      </div>
+      <div class="plan">
+        <p class="plan-name">100 quotes</p>
+        <p class="plan-price">€79 <span>+ VAT</span></p>
+        <p class="plan-unit">€0.79 + VAT per quote</p>
+        <span class="save">Save 34%</span>
+        <p class="plan-ttc">€95.59 inc. VAT</p>
+      </div>
+    </div>
+    <div class="price-notes">
+      <p><strong>One credit = one finalised quote.</strong> It is used when you set the quote to “Ready to send”, once only. Drafts, dictations, imports, edits and duplicates are free and unlimited.</p>
+      <p><strong>Credits never expire.</strong> At 5 quotes a month, the pack of 30 lasts you six months.</p>
+      <p>Savings are worked out against the per-quote price of the pack of 10. Prices exclude Spanish VAT (IVA, 21%). Secure payment through Stripe, with a VAT invoice.</p>
+    </div>
+    <div class="cta-row center">
+      <a class="cta cta-dark" href="https://presupuestos.webautonomos.es/inscription" onclick="gtag('event','click_probar_devia',{event_category:'devia',event_label:'pricing_en'})">Try it free →</a>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="template">
+  <div class="w-narrow">
+    <p class="ey">Before you decide</p>
+    <h2>Devia or an Excel or Word quote template</h2>
+    <p class="sd" style="margin-bottom:24px">A template does the job at your desk; on site, on your phone, it soon falls short.</p>
+    <div class="tw"><table class="cmp">
+      <thead><tr><th scope="col"></th><th scope="col" class="dv">Devia</th><th scope="col">Excel or Word template</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">On your phone, on site</th><td class="dv">Yes, by voice too, even with no signal</td><td>Awkward on a small screen</td></tr>
+        <tr><th scope="row">Sums</th><td class="dv">IVA by rate, IRPF and deposit, to the cent</td><td>Formulas you have to check yourself</td></tr>
+        <tr><th scope="row">A missing price</th><td class="dv">Marked “to confirm” and left out of the total</td><td>An empty cell can go unnoticed</td></tr>
+        <tr><th scope="row">Paper quotes</th><td class="dv">Read and turned into a clean PDF</td><td>Typed out again</td></tr>
+        <tr><th scope="row">PDF language</th><td class="dv">English, Spanish or French, per quote</td><td>Whatever the template is in</td></tr>
+        <tr><th scope="row">Price</th><td class="dv">3 free; then €1.20 + VAT per quote or less, credits never expire</td><td>Free if you already have the software</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin:20px 0 0;color:var(--gray)">Already using invoicing software? Devia doesn't replace it: it handles the quote, on site, and your invoices stay in your usual software.</p>
+  </div>
+</section>
+
+<section class="s alt" id="who">
+  <div class="w">
+    <p class="ey">Who it's for</p>
+    <h2>For tradespeople and small firms who quote for jobs and services</h2>
+    <p class="sd" style="margin-bottom:22px">If you write quotes often and would rather spend your evenings on something else, Devia is for you: a quoting app for builders and trades, not full job-management software.</p>
+    <ul class="trades">
+      <li>Renovation</li><li>Plumbing</li><li>Electrical</li><li>Painting and decorating</li><li>Carpentry</li><li>Air conditioning</li><li>Locksmiths</li><li>Building work</li><li>Gardening</li><li>Pool maintenance</li><li>Cleaning</li><li>Property maintenance</li>
+    </ul>
+    <div class="grid2" style="margin-top:36px">
+      <div>
+        <h3>What Devia doesn't do</h3>
+        <ul class="nots">
+          <li>No invoices: keep using your invoicing software to bill.</li>
+          <li>No construction price database: the prices are yours, and you keep them in your catalogue.</li>
+          <li>It doesn't find you clients: it's a tool for quoting, not a quotes marketplace.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>If you also want to be found</h3>
+        <p style="margin:0;color:var(--gray)">We’re WebAutonomos: we also build <a href="/en/website-for-builders-in-spain">websites for builders and tradespeople in Spain</a>, so people looking for your trade in your area ask you for a quote.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="faq">
+  <div class="w-narrow">
+    <p class="ey">FAQ</p>
+    <h2>What people ask us about Devia</h2>
+    <div class="faq">
+      <details>
+        <summary>How much does Devia cost?</summary>
+        <p>Your first 3 quotes are free. After that you buy a pack: 10 quotes for €12 + VAT, 30 for €29 + VAT or 100 for €79 + VAT. There’s no subscription, and credits never expire.</p>
+      </details>
+      <details>
+        <summary>Is there a free version?</summary>
+        <p>You get 3 free quotes to try all four ways of working, with no card needed. There’s no permanent free plan: after that you only pay for the quotes you make, in packs.</p>
+      </details>
+      <details>
+        <summary>What counts as a quote?</summary>
+        <p>One credit is one finalised quote: it’s used when you set the quote to “Ready to send”, once per quote. Drafts, dictations, imports, edits and duplicates are free and unlimited, and editing or sending a finalised quote later costs nothing more.</p>
+      </details>
+      <details>
+        <summary>Do credits expire?</summary>
+        <p>No. The credits you buy never expire: if you don’t write any quotes for a month, they stay in your account.</p>
+      </details>
+      <details>
+        <summary>Do I get an invoice?</summary>
+        <p>Yes. Every purchase comes with an invoice showing the VAT. When you pay, you can enter your business name and your tax number.</p>
+      </details>
+      <details>
+        <summary>Does the AI set the prices?</summary>
+        <p>No. The AI transcribes what you dictate, reads documents and sorts the lines, but it never makes up a price, a quantity or a VAT rate: anything missing stays “to confirm” and out of the totals. The sums are done by an exact calculation engine, not by the AI.</p>
+      </details>
+      <details>
+        <summary>How do I write a quote on my phone?</summary>
+        <p>With Devia, open the app in your browser or install it on the home screen of your iPhone or Android phone, without going through an app store. Then dictate the quote, photograph a paper quote or type it in. You can finish it later on the computer.</p>
+      </details>
+      <details>
+        <summary>Does Devia work offline?</summary>
+        <p>Yes, for creating and editing quotes: they’re saved on your phone and sync when the connection comes back. Dictation and document reading do need the internet, and Devia tells you so.</p>
+      </details>
+      <details>
+        <summary>What should a quote include?</summary>
+        <p>Your business and client details, a number and a date, how long the offer is valid, the job address, the items with quantities and prices, the base, IVA by rate and the total, and your payment terms. Devia puts them all in the PDF and can add a space for the client’s signature.</p>
+      </details>
+      <details>
+        <summary>Can I write the quote in Spanish for a Spanish client?</summary>
+        <p>Yes. Each quote has its own language: the PDF can come out in English, Spanish or French, whatever language you use the app in. The app itself is available in all three.</p>
+      </details>
+      <details>
+        <summary>Does Devia do invoices?</summary>
+        <p>No. Devia focuses on the quote, from the job to the PDF you send your client. For invoicing, keep using your invoicing software.</p>
+      </details>
+      <details>
+        <summary>Who can see my quotes?</summary>
+        <p>Only your business. Each business only sees its own clients, quotes and photos, and Devia sends nothing to your clients: the quote goes out when you send it.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="s alt" id="about">
+  <div class="w-narrow about">
+    <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
+    <div>
+      <h3>Who's behind Devia</h3>
+      <p>Devia is an app by WebAutonomos, the brand of PASURITE SLU, based in Ontinyent (Valencia). We’re the same company that builds websites for the self-employed in Spain, and we work with you in English: see <a href="/en/">webautonomos.es</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <h2>Write your next quote with Devia</h2>
+  <p>Dictate, photograph or type: your first 3 quotes are free, no card needed.</p>
+  <a class="cta" href="https://presupuestos.webautonomos.es/inscription" onclick="gtag('event','click_probar_devia',{event_category:'devia',event_label:'final_en'})">Try it free →</a>
+</section>
+
+</main>
+
+<footer>
+  <a class="fl" href="/en/"><span>&#127760;</span> webautonomos.es</a>
+  <div class="flinks">
+    <a href="/en/legal-notice/">Legal notice</a>
+    <a href="/en/privacy/">Privacy</a>
+    <a href="/en/cookies/">Cookies</a>
+    <a href="/blog/#en">Blog</a>
+    <a href="/app-presupuestos/" hreflang="es">ES</a>
+    <a href="/fr/application-devis-artisan/" hreflang="fr">FR</a>
+  </div>
+  <address class="fnap">
+    <strong>WebAutonomos</strong>
+    <span>Calle Pintor Josep Segrelles, 26</span>
+    <span>46870 Ontinyent, Valencia</span>
+    <a href="tel:+34961877356">+34 961 877 356</a>
+    <a href="mailto:info@webautonomos.es">info@webautonomos.es</a>
+  </address>
+</footer>
+</body>
+</html>
