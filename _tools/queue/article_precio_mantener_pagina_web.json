@@ -1,0 +1,272 @@
+{
+  "publish_date": "2026-11-02",
+  "slug": "cuanto-cuesta-mantener-pagina-web",
+  "category": "web",
+  "image": "🛠️",
+  "readTime": 9,
+  "lastmod": "2026-11-02",
+  "es": {
+    "date": "2 Noviembre 2026",
+    "title": "¿Cuánto cuesta mantener una página web al año? Precios 2026",
+    "seoTitle": "Cuánto cuesta mantener una web al año | WebAutonomos",
+    "metaDescription": "Mantener una web cuesta 87-130 € + IVA al año si lo haces tú y 432-1.788 € con una agencia. Dominio, hosting, SSL y mantenimiento, precios 2026.",
+    "keywords": [
+      "cuánto cuesta mantener una página web",
+      "precio mantenimiento web wordpress",
+      "cuánto cuesta dominio y hosting al año",
+      "plan de mantenimiento web precio"
+    ],
+    "excerpt": "Dominio, hosting, SSL, copias, actualizaciones y tu tiempo: lo que cuesta de verdad mantener la web de un autónomo cada año, con precios oficiales de octubre de 2026.",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Mantener una página web pequeña cuesta entre 87 € y 130 € + IVA al año si la llevas tú con WordPress (dominio y hosting a precio de renovación), y entre 432 € y 1.788 € + IVA al año si contratas un plan de mantenimiento de agencia, que además no incluye ni el hosting ni el dominio. En WebAutonomos, la página web de un autónomo cuesta 15 €/mes + IVA, sin alta ni permanencia, o 349 € + IVA en un solo pago, con hosting, certificado SSL, copias de seguridad diarias, vigilancia 24/7, mantenimiento técnico y una modificación al mes; el dominio .es va incluido el primer año y después cuesta unos 12 € al año. Aquí tienes el desglose partida por partida, con precios consultados en las webs oficiales en octubre de 2026, para que sepas qué pagas, qué es gratis y qué te cuesta en horas."
+      },
+      {
+        "type": "heading",
+        "text": "¿Qué gastos tiene una página web una vez publicada?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Crear la web es un gasto. Mantenerla es otro, y vuelve cada año. Según [Social Media Pymes en agosto de 2026](https://www.socialmediapymes.com/cuanto-cuesta-una-web/), una web corporativa hecha por un freelance cuesta entre 800 € y 2.000 €, y con una agencia entre 1.500 € y 4.000 €, sin contar el mantenimiento. El detalle de la creación lo tienes en [cuánto cuesta una página web para autónomos en España](/blog/es/cuanto-cuesta-pagina-web-autonomos-espana). Este artículo va de lo que viene después."
+      },
+      {
+        "type": "paragraph",
+        "text": "Una web publicada tiene siete partidas de mantenimiento: el dominio, el hosting, el certificado SSL, las copias de seguridad, las actualizaciones y la seguridad, los cambios de contenido y tu tiempo. Unas se pagan con dinero y otras con horas. Las dos cuentan, y es justo la segunda la que se olvida al comparar precios."
+      },
+      {
+        "type": "heading",
+        "text": "¿Cuánto cuesta el dominio .es al año?"
+      },
+      {
+        "type": "paragraph",
+        "text": "El dominio es el nombre de tu web, del tipo tunegocio.es. Se paga cada año y el precio del primer año casi nunca es el de la renovación. Fíjate siempre en la segunda cifra: es la que pagarás todos los años siguientes."
+      },
+      {
+        "type": "paragraph",
+        "text": "Según su web en octubre de 2026, [OVHcloud](https://www.ovhcloud.com/es-es/domains/tld/es/) cobra 5,99 € + IVA el primer año por un .es y 6,99 € + IVA por cada renovación. [Hostinger](https://www.hostinger.com/es/tld/dominio-es) lo anuncia a 0,01 € el primer año y a 9,99 € al año en la renovación, también sin IVA. La guía de Social Media Pymes sitúa el dominio entre 10 € y 15 € al año. En la práctica, cuenta con menos de 15 € al año por un .es."
+      },
+      {
+        "type": "paragraph",
+        "text": "Lo importante no es ahorrarte dos euros, sino que el dominio esté a tu nombre y que no se te pase la renovación. Si caduca, tu web deja de verse y el correo que uses con ese dominio deja de llegar. Si aún no lo tienes, lee [cómo elegir el dominio de tu negocio](/blog/es/como-elegir-dominio-web-negocio) antes de registrarlo."
+      },
+      {
+        "type": "heading",
+        "text": "¿Cuánto cuesta el hosting de una web pequeña?"
+      },
+      {
+        "type": "paragraph",
+        "text": "El hosting es el servidor donde vive tu web. Para la web de un autónomo (unas pocas páginas, un formulario y algunas fotos) basta un hosting compartido. Aquí la diferencia entre el precio de bienvenida y el de renovación es todavía mayor que en el dominio."
+      },
+      {
+        "type": "paragraph",
+        "text": "Según su web en octubre de 2026, el plan Premium de [Hostinger](https://www.hostinger.com/es/hosting-web) cuesta 2,39 €/mes si pagas 48 meses por adelantado (114,72 € de golpe) y se renueva a 9,99 €/mes, es decir, 119,88 € al año. Los precios no incluyen IVA. [Raiola Networks](https://raiolanetworks.com/hosting-wordpress/), proveedor español, publica su Hosting Inicio para WordPress a 8,95 €/mes + IVA pagando mes a mes (107,40 € al año) o 79,95 € + IVA si pagas el año entero. Social Media Pymes da una horquilla de 50 € a 200 € al año según la potencia contratada."
+      },
+      {
+        "type": "paragraph",
+        "text": "En resumen: una vez pasada la oferta de bienvenida, el hosting de una web pequeña cuesta entre 80 € y 120 € + IVA al año. WordPress, en cambio, no se paga: como explica [la comunidad de WordPress en España](https://es.wordpress.org/2022/01/24/diferencias-wordpress-org-wordpress-com/), es software libre y se descarga gratis, pero tienes que contratar tu propio alojamiento y tu dominio. Y no elijas solo por precio: un hosting lento se paga en visitas que se van, como contamos en [velocidad web y posicionamiento](/blog/es/velocidad-web-y-posicionamiento)."
+      },
+      {
+        "type": "heading",
+        "text": "¿El certificado SSL se paga?"
+      },
+      {
+        "type": "paragraph",
+        "text": "No tiene por qué. El certificado SSL es lo que pone el candado y el «https» delante de tu dirección. Sin él, el navegador avisa de que la web no es segura, y nadie quiere dejar su teléfono en un formulario con ese aviso."
+      },
+      {
+        "type": "paragraph",
+        "text": "[Let's Encrypt](https://letsencrypt.org/about/) se presenta en su web como una autoridad de certificación gratuita, automatizada y abierta: cualquiera que tenga un dominio puede obtener con ella un certificado de confianza sin coste. Los dos hostings citados, Hostinger y Raiola, instalan un certificado gratuito de forma automática en sus planes. Para la web de un autónomo, el SSL debería costarte 0 €."
+      },
+      {
+        "type": "paragraph",
+        "text": "Existen certificados de pago con validación de empresa, pensados para tiendas grandes o entidades que quieren mostrar su razón social. Para una web de servicios con un formulario de contacto, uno gratuito cifra los datos igual. Si alguien te cobra el SSL aparte en una web sencilla, pregunta qué te da que no te dé uno gratuito."
+      },
+      {
+        "type": "heading",
+        "text": "¿Quién hace las copias de seguridad y las actualizaciones?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Aquí empieza el mantenimiento de verdad. Una web en WordPress tiene tres piezas que se actualizan: el propio WordPress, el tema y los plugins. Si no actualizas, acumulas fallos de seguridad conocidos. Si actualizas sin copia de seguridad y algo se rompe, puedes quedarte sin web hasta que alguien lo arregle."
+      },
+      {
+        "type": "paragraph",
+        "text": "Las copias dependen del plan que contrates. Según la web de [Hostinger](https://www.hostinger.com/es/hosting-web) en octubre de 2026, el plan Premium incluye copias semanales; las copias diarias llegan con el plan Unlimited, que se renueva a 16,99 €/mes + IVA. Con una copia semanal, en el peor caso pierdes los cambios de varios días. Comprueba siempre qué frecuencia tiene tu plan y si sabes restaurar una copia antes de necesitarlo."
+      },
+      {
+        "type": "paragraph",
+        "text": "Las actualizaciones las haces tú, con una rutina sencilla: copia de seguridad, actualizar, y revisar que las páginas y el formulario siguen funcionando. Si lo haces con regularidad, es poco trabajo. El problema llega cuando una actualización choca con un plugin y no sabes por dónde empezar. Ahí es donde muchos autónomos acaban pagando a alguien."
+      },
+      {
+        "type": "heading",
+        "text": "¿Y los cambios de contenido? ¿Cuánto vale tu tiempo?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Cambiar un horario, subir una foto nueva, añadir un servicio o actualizar una tarifa. Son cambios pequeños, pero la web tiene que reflejarlos: si tu web dice una cosa y tu ficha de Google otra, el cliente duda y llama a otro."
+      },
+      {
+        "type": "paragraph",
+        "text": "Si llevas tú la web, estos cambios no cuestan dinero, cuestan tiempo. Y el tiempo de un autónomo tiene precio. El [Diario de León, con datos de la federación de autónomos ATA](https://www.diariodeleon.es/economia/260811/2093911/burocracia-cuesta-autonomo-3-400-euros-ano.html), valoraba en agosto de 2026 a 15 € la hora el tiempo que un autónomo dedica a trámites. Con esa misma cifra, si dedicas solo una hora al mes a tu web entre actualizaciones, copias y algún cambio, son 12 horas al año: 180 € de tu tiempo."
+      },
+      {
+        "type": "paragraph",
+        "text": "Una hora al mes es una estimación prudente si nunca has tocado WordPress. Aprender el editor, elegir plugins o resolver un fallo te llevará más las primeras veces. Si ya te manejas, quizá menos. Si todavía dudas de la herramienta, compara antes en [¿Wix o WordPress?](/blog/es/wix-o-wordpress)."
+      },
+      {
+        "type": "heading",
+        "text": "¿Qué incluye un plan de mantenimiento web y cuánto cobra una agencia?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Un plan de mantenimiento es una cuota mensual por la que alguien se ocupa de la parte técnica de tu web. Suele incluir actualizaciones, copias de seguridad, revisión de seguridad y un tiempo limitado para soporte o cambios. En los tres planes que hemos consultado, el hosting y el dominio no están incluidos: los sigues pagando tú. Estos son tres ejemplos de tarifas publicadas por empresas españolas en octubre de 2026, todas sin IVA."
+      },
+      {
+        "type": "paragraph",
+        "text": "[Nerade](https://nerade.com/mantenimiento-web-wordpress-profesional/) cobra 40 €/mes por su plan Básico, o 36 €/mes con pago anual: actualizaciones de WordPress y plugins, revisión de seguridad básica, copias de seguridad y una hora de soporte al mes. No incluye cambios de contenido; para eso está su plan Pro, a 75 €/mes (67 €/mes con pago anual). Su propia web aclara que el alojamiento, el dominio y las licencias de plugins de pago son gastos aparte."
+      },
+      {
+        "type": "paragraph",
+        "text": "[Charrúa](https://charrua.es/mantenimiento-web-wordpress/) publica su Plan Básico desde 79 €/mes pagando mes a mes; si contratas el año entero te ahorras 120 €, lo que lo deja desde 69 €/mes. Incluye actualizaciones con pruebas, revisión de seguridad, monitorización del servidor 24/7, copias diarias y hasta 30 minutos al mes de soporte. El hosting lo contratas tú por separado."
+      },
+      {
+        "type": "paragraph",
+        "text": "[Destaca](https://www.destaca.es/) cobra 149 €/mes + IVA por su plan Corporativo: actualizaciones revisadas a mano, copias diarias, monitorización 24/7, una hora al mes para cambios de textos, fotos o secciones, e informe mensual. Tampoco incluye el hosting."
+      },
+      {
+        "type": "paragraph",
+        "text": "Al año, eso son entre 432 € (Nerade Básico con pago anual) y 1.788 € (Destaca Corporativo), más hosting y dominio. Son precios coherentes con lo que cubren: hay una persona detrás, con horas reales de soporte. Pero para una web de pocas páginas que cambia poco, puede ser más de lo que necesitas."
+      },
+      {
+        "type": "heading",
+        "text": "¿Cuánto cuesta mantener una página web al año? Resumen"
+      },
+      {
+        "type": "paragraph",
+        "text": "Esta tabla junta las tres formas de mantener una web pequeña, partida por partida, con los precios publicados en octubre de 2026. La última fila es la que se repite cada año."
+      },
+      {
+        "type": "table",
+        "caption": "Coste anual de mantener la web de un autónomo (precios sin IVA, octubre de 2026)",
+        "headers": [
+          "Partida",
+          "WebAutonomos",
+          "Hacerlo tú: hosting + WordPress",
+          "Plan de mantenimiento de agencia"
+        ],
+        "rows": [
+          [
+            "Creación de la web",
+            "Incluida (15 €/mes + IVA en alquiler o 349 € + IVA en un solo pago)",
+            "La haces tú",
+            "Aparte: 800 a 4.000 € según Social Media Pymes"
+          ],
+          [
+            "Dominio .es",
+            "Incluido el primer año; después, unos 12 €/año",
+            "6,99 a 9,99 €/año + IVA al renovar (OVHcloud, Hostinger)",
+            "Aparte: lo pagas tú"
+          ],
+          [
+            "Hosting",
+            "Incluido",
+            "79,95 a 119,88 €/año + IVA (Raiola con pago anual, Hostinger al renovar)",
+            "Aparte: no incluido en los planes consultados"
+          ],
+          [
+            "Certificado SSL",
+            "Incluido",
+            "0 € (certificado gratuito instalado por el hosting)",
+            "Según tu hosting"
+          ],
+          [
+            "Copias de seguridad",
+            "Diarias, incluidas",
+            "Semanales en Hostinger Premium; diarias en planes superiores",
+            "Incluidas (diarias en Charrúa y Destaca)"
+          ],
+          [
+            "Actualizaciones y seguridad",
+            "Mantenimiento técnico y vigilancia 24/7 incluidos",
+            "Las haces tú",
+            "Incluidas"
+          ],
+          [
+            "Cambios de contenido",
+            "Una modificación al mes",
+            "Los haces tú",
+            "Según el plan: no incluidos (Nerade Básico) o 1 h/mes (Destaca)"
+          ],
+          [
+            "Tu tiempo",
+            "Pedir el cambio por email o WhatsApp",
+            "Una hora al mes = 180 €/año a 15 €/hora",
+            "Pedir el cambio"
+          ],
+          [
+            "Total en dinero, a partir del segundo año",
+            "Alquiler: 180 € + IVA y unos 12 € de dominio. Pago único: unos 12 € de dominio",
+            "86,94 a 129,87 € + IVA, más tu tiempo",
+            "432 a 1.788 € + IVA, más hosting y dominio"
+          ]
+        ],
+        "note": "Precios consultados en octubre de 2026 en las webs oficiales de OVHcloud, Hostinger, Raiola Networks, Let's Encrypt, Nerade, Charrúa y Destaca; todos sin IVA (21 %). Hacerlo tú: hosting de Raiola con pago anual y dominio de OVHcloud (mínimo), u hosting Premium y dominio de Hostinger a precio de renovación (máximo). Agencia: de Nerade Básico con pago anual (36 €/mes) a Destaca Corporativo (149 €/mes)."
+      },
+      {
+        "type": "paragraph",
+        "text": "El primer año cambia algo. Si lo haces tú, las ofertas de bienvenida abaratan el arranque, pero el plan Premium de Hostinger, por ejemplo, exige pagar 48 meses por adelantado para tener el precio de 2,39 €/mes. Con WebAutonomos, el primer año cuesta 180 € + IVA en alquiler o 349 € + IVA en pago único, con la web ya hecha y el dominio incluido."
+      },
+      {
+        "type": "heading",
+        "text": "¿Qué opción te conviene según tu caso?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Hazlo tú si te gusta la parte técnica, tienes un rato cada mes y quieres control total. Con un hosting compartido y WordPress, pagas entre 87 € y 130 € + IVA al año. Es la opción más barata en euros, siempre que hagas las copias, las actualizaciones y los cambios tú mismo, sin dejarlo para cuando tengas tiempo."
+      },
+      {
+        "type": "paragraph",
+        "text": "Contrata un plan de agencia si tu web es más compleja (muchas secciones, plugins de pago, una tienda online) o si ya tienes una web en WordPress que te gusta y solo quieres que alguien la cuide. Pagarás más, pero tendrás horas de una persona que conoce tu web."
+      },
+      {
+        "type": "paragraph",
+        "text": "Si quieres una web sencilla para que te encuentren y te escriban, sin ocuparte de nada técnico, en WebAutonomos la web en alquiler cuesta 15 €/mes + IVA, sin alta ni permanencia: 180 € al año con hosting, SSL, copias de seguridad diarias, vigilancia 24/7, mantenimiento técnico y una modificación al mes. Si prefieres pagar una vez, son 349 € + IVA con los mismos servicios, y a partir del segundo año solo pagas el dominio, unos 12 € al año. Tienes todos los detalles en nuestras [tarifas oficiales](/precios)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Lo que no incluimos, para que compares bien: el email profesional (bajo petición), la tienda online (bajo presupuesto), las fotos profesionales y los cambios grandes, como un rediseño o una sección nueva grande, que van con presupuesto cerrado. Y si necesitas cambiar cosas cada semana, una modificación al mes se te quedará corta: ahí te conviene llevar tú la web o un plan con más horas."
+      },
+      {
+        "type": "conclusion",
+        "text": "Mantener una web no es caro, pero tampoco es gratis: o pagas con dinero o pagas con horas. Por tu cuenta, cuenta con 87 € a 130 € + IVA al año más tu tiempo. Con un plan de agencia, entre 432 € y 1.788 € + IVA, más hosting y dominio. Con WebAutonomos, 180 € + IVA al año en alquiler, o 349 € + IVA una vez, y en los dos casos unos 12 € de dominio a partir del segundo año. Si quieres ver cómo quedaría la tuya antes de decidir, [pide tu demo gratis](/pide-tu-demo): la tienes en menos de 24 horas y, si no te convence, no pagas nada."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cuánto cuesta mantener una página web al año?",
+        "a": "Si la mantienes tú con WordPress, entre 87 € y 130 € + IVA al año en dominio y hosting, según los precios de renovación de OVHcloud, Raiola y Hostinger en octubre de 2026, más tu tiempo. Un plan de mantenimiento de agencia cuesta entre 432 € y 1.788 € + IVA al año, sin hosting ni dominio. En WebAutonomos son 15 €/mes + IVA con hosting, SSL y mantenimiento incluidos, más unos 12 € al año de dominio a partir del segundo año."
+      },
+      {
+        "q": "¿Cuánto cuesta el dominio y el hosting de una web?",
+        "a": "Un dominio .es cuesta 6,99 € + IVA al año al renovar en OVHcloud y 9,99 € + IVA al año en Hostinger, aunque el primer año suele ser más barato. Un hosting compartido para una web pequeña cuesta 79,95 € + IVA al año en Raiola Networks pagando el año (8,95 €/mes pagando mes a mes), y el plan Premium de Hostinger se renueva a 9,99 €/mes + IVA. En total, entre 87 € y 130 € + IVA al año a precio de renovación."
+      },
+      {
+        "q": "¿El certificado SSL se paga?",
+        "a": "No necesariamente. Let's Encrypt emite certificados SSL gratuitos para cualquiera que tenga un dominio, y hostings como Hostinger o Raiola los instalan automáticamente. Para la web de un autónomo, el SSL debería costar 0 €."
+      },
+      {
+        "q": "¿Qué incluye un plan de mantenimiento web?",
+        "a": "Un plan de mantenimiento suele incluir las actualizaciones de WordPress, del tema y de los plugins, copias de seguridad, revisión de seguridad y un tiempo limitado de soporte o cambios al mes. En los planes consultados en octubre de 2026, el hosting y el dominio se pagan aparte. Algunos planes básicos no incluyen cambios de contenido."
+      },
+      {
+        "q": "¿Cuánto cobra una agencia por mantener una web WordPress?",
+        "a": "Según sus tarifas publicadas en octubre de 2026, Nerade cobra 40 €/mes (36 €/mes con pago anual), Charrúa desde 79 €/mes (desde 69 €/mes contratando el año) y Destaca 149 €/mes, todo sin IVA. Al año son entre 432 € y 1.788 €, sin contar hosting ni dominio."
+      },
+      {
+        "q": "¿Puedo mantener mi web yo mismo sin pagar a nadie?",
+        "a": "Sí, si tienes una web en WordPress y algo de soltura técnica. Pagarás solo el dominio y el hosting, entre 87 € y 130 € + IVA al año a precio de renovación. A cambio, las copias, las actualizaciones y los cambios son cosa tuya, y una hora al mes valorada a 15 € equivale a 180 € al año de tu tiempo."
+      }
+    ]
+  }
+}
