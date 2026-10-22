@@ -571,3 +571,5 @@ aurait exigé une correspondance exacte et interdit ce procédé.
 - **Cloudflare sert les fichiers statiques** — les chemins /blog/es/slug.html sont servis directement
 - **Committé ≠ en ligne** — vérifier le run `deploy.yml` (ou `npx wrangler deployments list`) après un push
 - **Le cache Cloudflare répond `HIT` même après un déploiement raté** — se fier au déploiement, pas au fait que la page charge
+
+- 22/10/2026 — index.html (bundle) : condition des 49 € « creación o mejora » dans les 4 langues ; OfferCatalog JSON-LD : ajout création/amélioration de fiche (49 €) et Google Ads (90 € + 20 %). Levier 1, branche levier-1-paginas-oficiales.
