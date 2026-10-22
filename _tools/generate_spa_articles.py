@@ -264,6 +264,35 @@ def has_asset(slug):
 # --------------------------------------------------------------------------
 
 E = lambda s: html.escape(s or '', quote=True)
+
+# Liens dans le texte des articles (22/10/2026), seulement dans les blocs intro, paragraph et
+# conclusion. Dans index.html, ils sont écrits en <a href="…" …>texte</a> (add_article.py convertit
+# le [texte](url) de la file ; les articles plus anciens en contiennent déjà). Ces <a> sont ramenés
+# à [texte](url), le texte est échappé (E), puis le motif redevient un <a> : aucun autre HTML ne
+# peut passer. Les liens externes s'ouvrent dans un nouvel onglet.
+LIEN_MD = re.compile(r'\[([^\[\]]+)\]\((/[^()\s]*|https://[^()\s]+)\)')
+LIEN_A = re.compile(r'<a\s+href="(/[^"\s]*|https://[^"\s]+)"[^>]*>([^<\[\]]+)</a>')
+
+
+def a_vers_md(s):
+    return LIEN_A.sub(lambda m: '[%s](%s)' % (m.group(2), m.group(1)), s or '')
+
+
+def EL(s):
+    """E() + liens (<a> simples ou markdown)."""
+    s = a_vers_md(s)
+    def lien(m):
+        texte, url = m.group(1), m.group(2)
+        if url.startswith('/'):
+            return '<a href="%s" class="text-blue-600 underline hover:text-blue-800">%s</a>' % (url, texte)
+        return ('<a href="%s" target="_blank" rel="noopener" class="text-blue-600 underline '
+                'hover:text-blue-800">%s</a>' % (url, texte))
+    return LIEN_MD.sub(lien, E(s))
+
+
+def sans_md(s):
+    """Texte sans la syntaxe des liens (pour le comptage de mots et les données structurées)."""
+    return LIEN_MD.sub(lambda m: m.group(1), a_vers_md(s))
 J = lambda s: json.dumps(s or '', ensure_ascii=False)
 
 
@@ -464,9 +493,9 @@ def render(article, lang, alternates):
             body.append('            <h2 id="seccion-%d" class="text-2xl font-bold text-gray-900 mt-10 mb-4">%s</h2>'
                         % (n, E(text)))
         elif kind == 'intro':
-            body.append('            <p class="text-lg text-gray-700 leading-relaxed mb-6">%s</p>' % E(text))
+            body.append('            <p class="text-lg text-gray-700 leading-relaxed mb-6">%s</p>' % EL(text))
         elif kind == 'conclusion':
-            body.append('            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">%s</p>' % E(text))
+            body.append('            <p class="text-lg text-gray-800 leading-relaxed mt-8 mb-6 font-medium">%s</p>' % EL(text))
         elif kind == 'table':
             body.append(render_table(b))
         elif kind == 'image':
@@ -485,7 +514,7 @@ def render(article, lang, alternates):
             fig.append('            </figure>')
             body.append('\n'.join(fig))
         else:
-            body.append('            <p class="text-gray-700 leading-relaxed mb-4">%s</p>' % E(text))
+            body.append('            <p class="text-gray-700 leading-relaxed mb-4">%s</p>' % EL(text))
     toc.append('                    <li><a href="#faq" class="toc-link">%s</a></li>' % E(ui['faq']))
 
     # ---- FAQ
@@ -523,7 +552,7 @@ def render(article, lang, alternates):
         "mainEntityOfPage": {"@type": "WebPage", "@id": url},
         "articleSection": cat_label,
         "inLanguage": HTML_LANG[lang],
-        "wordCount": sum(len((b.get('text') or '').split()) for b in blocks),
+        "wordCount": sum(len(sans_md(b.get('text')).split()) for b in blocks),
         "keywords": ", ".join(article.get('keywords') or []),
     }
     breadcrumb = {

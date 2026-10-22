@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Ajoute un nouvel article de blog (3 langues) à WebAutonomos.
+"""Ajoute un nouvel article de blog à WebAutonomos (espagnol obligatoire ; valencien, anglais et
+français facultatifs depuis le 22/10/2026 : un article en espagnol seul n'est inséré que dans le
+tableau espagnol, et son bloc de sitemap ne déclare que les langues présentes).
 
 Usage (depuis ~/webautonomos) :
     python3 add_article.py article_XX.json
@@ -32,14 +34,15 @@ sm = open(S, encoding='utf-8').read()
 LANGUES = ('es', 'val', 'en', 'fr')
 CHAMPS_LANGUE = ('date', 'title', 'seoTitle', 'metaDescription', 'keywords', 'excerpt', 'content', 'faq')
 manquants = [c for c in ('slug', 'category', 'image', 'readTime') if c not in art]
-for lg in LANGUES:
-    if lg not in art:
-        manquants.append(f'bloc "{lg}"')
-    else:
-        manquants += [f'{lg}.{c}' for c in CHAMPS_LANGUE if c not in art[lg]]
+if 'es' not in art:
+    manquants.append('bloc "es"')
+# Langues présentes : es obligatoire, les autres facultatives (articles en espagnol seul, 22/10/2026)
+PRESENTES = tuple(lg for lg in LANGUES if lg in art)
+for lg in PRESENTES:
+    manquants += [f'{lg}.{c}' for c in CHAMPS_LANGUE if c not in art[lg]]
 if manquants:
     print('ERREUR: champs absents du JSON : ' + ', '.join(manquants))
-    print('        (le site est en 4 langues : es, val, en, fr sont tous requis). Abandon.')
+    print('        (es est obligatoire ; val, en et fr sont facultatifs mais complets s\'ils sont là). Abandon.')
     sys.exit(1)
 
 # --- 0b) categorie : doit exister dans le filtre du blog ET dans les 3 blocs de
@@ -97,7 +100,7 @@ if not mobj:
     print('ERREUR: parseArticleDate introuvable. Abandon.'); sys.exit(1)
 existing = set(re.findall(r"'([^']+)':", mobj.group(1)))
 needed = set()
-for lg in ('es', 'val', 'en', 'fr'):
+for lg in PRESENTES:
     for tok in art[lg]['date'].lower().replace(',', '').split():
         if not tok.isdigit(): needed.add(tok)
 missing = [t for t in sorted(needed) if t not in existing]
@@ -139,14 +142,35 @@ nid = max(int(x) for a in arrays for x in re.findall(r'\{id:(\d+),', a)) + 1
 # espagnole, qui sert de <loc> canonique au sitemap. Chaque bloc de langue peut
 # le surcharger avec son propre "slug" ; les articles qui n'en déclarent pas se
 # comportent exactement comme avant.
-SLUGS = {lg: art[lg].get('slug', art['slug']) for lg in LANGUES}
+SLUGS = {lg: art[lg].get('slug', art['slug']) for lg in PRESENTES}
 if len(set(SLUGS.values())) > 1:
-    print('  slugs par langue : ' + ', '.join(f'{lg}={SLUGS[lg]}' for lg in LANGUES))
+    print('  slugs par langue : ' + ', '.join(f'{lg}={SLUGS[lg]}' for lg in PRESENTES))
 
 # refuser un slug déjà présent, langue par langue
-for lg in LANGUES:
+for lg in PRESENTES:
     if re.search(r'slug:"%s/%s"' % (lg, re.escape(SLUGS[lg])), html):
         print(f'ERREUR: le slug "{SLUGS[lg]}" existe déjà en {lg}. Abandon.'); sys.exit(1)
+
+# Liens dans le texte (22/10/2026) : le JSON de la file écrit [texte](/chemin) ou [texte](https://…)
+# dans les blocs intro, paragraph et conclusion. Le SPA affiche ces blocs en HTML brut
+# (dangerouslySetInnerHTML), comme les liens déjà présents dans les articles : on les convertit
+# donc en <a> avec la même classe. generate_spa_articles.py relit ces <a> pour la page statique.
+LIEN_MD = re.compile(r'\[([^\[\]]+)\]\((/[^()\s]*|https://[^()\s]+)\)')
+
+def md_vers_a(texte):
+    def lien(m):
+        t, url = m.group(1), m.group(2)
+        ext = '' if url.startswith('/') else ' target="_blank" rel="noopener"'
+        return '<a href="%s"%s class="text-blue-600 font-semibold hover:underline">%s</a>' % (url, ext, t)
+    return LIEN_MD.sub(lien, texte)
+
+def avec_liens(blocs):
+    out = []
+    for b in blocs:
+        if b.get('type') in ('intro', 'paragraph', 'conclusion') and isinstance(b.get('text'), str):
+            b = dict(b, text=md_vers_a(b['text']))
+        out.append(b)
+    return out
 
 def build_entry(lg):
     a = art[lg]
@@ -154,11 +178,13 @@ def build_entry(lg):
         'id': nid, 'slug': f'{lg}/' + SLUGS[lg], 'title': a['title'], 'seoTitle': a['seoTitle'],
         'metaDescription': a['metaDescription'], 'keywords': a['keywords'], 'excerpt': a['excerpt'],
         'category': art['category'], 'date': a['date'], 'readTime': art['readTime'], 'image': art['image'],
-        'content': a['content'], 'faq': a['faq'],
+        'content': avec_liens(a['content']), 'faq': a['faq'],
     })
 
 new_html = html
 for arr, lg in zip(arrays, labels):
+    if lg not in PRESENTES:
+        continue
     entry = build_entry(lg)
     if new_html.count('articles:' + arr) != 1:
         print(f'ERREUR: tableau {lg} non localisable de façon unique. Abandon.'); sys.exit(1)
@@ -169,14 +195,17 @@ for arr, lg in zip(arrays, labels):
 sl = SLUGS['es']; lm = art.get('lastmod', '2026-07-20')
 # Chaque alternative pointe vers le slug de SA langue : un hreflang qui pointe
 # vers une URL inexistante est une erreur signalee par la Search Console.
+HREFLANG = {'es': 'es', 'val': 'ca-ES', 'en': 'en', 'fr': 'fr'}
+alternatives = ''
+if len(PRESENTES) > 1:   # un article en espagnol seul n'a pas d'alternative linguistique
+    alternatives = ''.join(
+        f'        <xhtml:link rel="alternate" hreflang="{HREFLANG[lg]}" href="https://webautonomos.es/blog/{lg}/{SLUGS[lg]}"/>\n'
+        for lg in PRESENTES) + \
+        f'        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/{SLUGS["es"]}"/>\n'
 block = (
  '    <url>\n'
  f'        <loc>https://webautonomos.es/blog/es/{SLUGS["es"]}</loc>\n'
- f'        <xhtml:link rel="alternate" hreflang="es" href="https://webautonomos.es/blog/es/{SLUGS["es"]}"/>\n'
- f'        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://webautonomos.es/blog/val/{SLUGS["val"]}"/>\n'
- f'        <xhtml:link rel="alternate" hreflang="en" href="https://webautonomos.es/blog/en/{SLUGS["en"]}"/>\n'
- f'        <xhtml:link rel="alternate" hreflang="fr" href="https://webautonomos.es/blog/fr/{SLUGS["fr"]}"/>\n'
- f'        <xhtml:link rel="alternate" hreflang="x-default" href="https://webautonomos.es/blog/es/{SLUGS["es"]}"/>\n'
+ + alternatives +
  f'        <lastmod>{lm}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>\n'
  '    </url>\n')
 if f'/blog/es/{sl}<' in sm:
@@ -190,6 +219,8 @@ if new_html.count('{') - new_html.count('}') != html.count('{') - html.count('}'
 if new_html.count('[') - new_html.count(']') != html.count('[') - html.count(']'): errs.append('déséquilibre []')
 vstarts = [m.start() + len('articles:') for m in re.finditer(r'articles:\[', new_html)]
 for s, lg in zip(vstarts, labels):
+    if lg not in PRESENTES:
+        continue
     a = bracket_match(new_html, s, '[', ']')
     ids = re.findall(r'\{id:(\d+),', a)
     if ids.count(str(nid)) != 1: errs.append(f'tableau {lg}: id {nid} absent/dupliqué')
@@ -203,6 +234,8 @@ try:
     import subprocess, tempfile
     entries = []
     for s, lg in zip(vstarts, labels):
+        if lg not in PRESENTES:
+            continue
         a = bracket_match(new_html, s, '[', ']')
         m = re.search(r'\{id:%d,slug:' % nid, a)
         entries.append(bracket_match(a, m.start(), '{', '}'))
@@ -223,7 +256,7 @@ shutil.copy2(F, os.path.join(home, 'index.html.bak-addarticle'))
 shutil.copy2(S, os.path.join(home, 'sitemap.xml.bak-addarticle'))
 open(F, 'w', encoding='utf-8').write(new_html)
 open(S, 'w', encoding='utf-8').write(new_sm)
-print(f'\nArticle #{nid} "{sl}" ajouté (ES/VAL/EN/FR) + sitemap mis à jour.')
+print(f'\nArticle #{nid} "{sl}" ajouté ({"/".join(lg.upper() for lg in PRESENTES)}) + sitemap mis à jour.')
 print(f'Sauvegardes: {home}/index.html.bak-addarticle , {home}/sitemap.xml.bak-addarticle')
 print('Déploie :  npx wrangler deploy')
 

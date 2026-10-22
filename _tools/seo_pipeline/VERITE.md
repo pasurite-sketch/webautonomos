@@ -76,10 +76,11 @@
 ## 5. Services complémentaires
 
 - SEO Local : **15 €/mes + IVA** — 4 articles de blog par mois, mots-clés locaux, rapport mensuel (confirmé le 25/09/2026)
-- Formule validée à reprendre mot pour mot : « ofrecemos SEO Local por 15 €/mes + IVA y la gestión de tu ficha de Google por 29 €/mes + IVA (49 € + IVA de creación si todavía no tienes ficha) »
-- Google Business Profile (ficha de Google) : **29 €/mes + IVA**, et **49 € + IVA** de création/vérification si le client n'a pas encore de fiche (paiement unique). Décidé le 24/09/2026. Contenu : optimisation de la fiche, 4 publications par mois, réponse aux avis (confirmé le 25/09/2026)
+- Formule validée à reprendre mot pour mot : « ofrecemos SEO Local por 15 €/mes + IVA y la gestión de tu ficha de Google por 29 €/mes + IVA (49 € + IVA de creación o mejora de la ficha, una sola vez al empezar) » (mise à jour le 22/10/2026 ; l'ancienne formule « 49 € + IVA de creación si todavía no tienes ficha » est périmée)
+- Google Business Profile (ficha de Google) : **29 €/mes + IVA**, et **49 € + IVA** de « creación o mejora » de la fiche, payés une seule fois au démarrage par tout client de la gestion de fiche, qu'il ait déjà une fiche ou non (décision d'Angelino du 22/10/2026 ; avant, seulement sans fiche existante). Prix décidé le 24/09/2026. Contenu : optimisation de la fiche, 4 publications par mois, réponse aux avis (confirmé le 25/09/2026)
 - SEO Local et fiche Google **peuvent s'acheter sans le site** (confirmé le 25/09/2026). Ce ne sont pas des éléments du site à 15 €/mes : le site comprend seulement l'optimisation SEO de base (§2)
-- Gestion des réseaux sociaux et publicité Facebook / Google Ads : proposées **ponctuellement, sur demande** (déclaré par Angelino le 24/09/2026). Aucun prix, délai ni résultat à annoncer : écrire seulement que c'est possible et inviter à demander. Ne jamais écrire que WebAutonomos ne gère pas les réseaux sociaux.
+- Gestion de campagnes **Google Ads** (décision d'Angelino du 20/10/2026, complétée le 22/10/2026) : **90 € + IVA** de mise en place, puis **20 % de la dépense publicitaire mensuelle + IVA** ; budget publicitaire **minimum 300 €/mois**, payé directement à Google par le client (WebAutonomos ne l'avance pas) ; **sans engagement**. Dans les textes, dire « presupuesto » (de anuncios) et jamais « inversión » pour l'argent du client. Aucun délai ni résultat à annoncer ; le contenu détaillé du service n'est pas encore validé : ne pas l'inventer.
+- Gestion des réseaux sociaux et publicité Facebook : proposées **ponctuellement, sur demande** (déclaré par Angelino le 24/09/2026). Aucun prix, délai ni résultat à annoncer : écrire seulement que c'est possible et inviter à demander. Ne jamais écrire que WebAutonomos ne gère pas les réseaux sociaux.
 
 ## 5 bis. Automatisation de processus (confirmé par Angelino le 07/10/2026)
 
@@ -123,6 +124,12 @@ Un pourcentage (« 70 % », « el 87 % de… ») n'est **jamais** autorisé, sau
 - 96,3 % des 16-74 ans ont utilisé Internet au cours des trois derniers mois — [INE, Encuesta TIC-H 2025, 20/11/2025](https://www.ine.es/dyngs/Prensa/TICH2025.htm)
 - Démarches administratives : un autónomo y consacre en moyenne **226 heures par an**, soit **3 390 €** à 15 €/heure, d'après la fédération nationale ATA — [Diario de León, « La burocracia cuesta a cada autónomo 3.400 euros al año », 11/08/2026](https://www.diariodeleon.es/economia/260811/2093911/burocracia-cuesta-autonomo-3-400-euros-ano.html) (vérifié le 20/10/2026 ; la note d'ATA elle-même est introuvable sur ata.es)
 - Pymes et digitalisation : parmi les entreprises très digitalisées, **23 %** consacrent plus de 10 jours par mois aux tâches administratives, contre **9 %** chez les peu digitalisées ; **75 %** gèrent leurs finances avec plus d'un outil et **29 %** avec quatre ou plus — [Qonto et IO Investigación, « Radiografía económica y bancaria de la micro y pequeña empresa en España 2026 », communiqué du 22/04/2026](https://qonto-assets.s3.eu-central-1.amazonaws.com/blog/images/cache/np%20-%20survey%202026.pdf) (vérifié le 20/10/2026)
+
+### Articles de blog sur les prix (série ES du 22/10 au 16/11/2026)
+
+- Chaque prix d'un tiers (agence, freelance, hébergeur, registrar, constructeur, Google) est permis **s'il est sourcé dans le texte** (lien + mois de consultation) et vérifié par un relecteur indépendant avant publication ; les promotions sont signalées comme telles (« precio de promoción »).
+- Les totaux calculés à partir de ces prix ou des prix de VERITE sont permis (ex. 15 € × 12 = 180 € ; 349 € − 10 % = 314,10 €).
+- Les sources et dates de vérification de chaque article sont dans le brief de rédaction ; revérifier les promotions (Hostinger, IONOS) la veille de la publication.
 
 Aucune source fiable trouvée pour la part des recherches locales faites sur mobile : écrire « muchos de tus clientes te buscarán desde el móvil », sans chiffre.
 
@@ -204,5 +211,6 @@ qu[eé] dolor resuelve
 - [x] Blog : promesses fausses corrigées en ES/EN/FR/VAL (SEO local « inclus », modifications illimitées, intégrations, email pro) (25/09)
 - [x] /fr/tarifs : « Le prix affiché est le prix payé » remplacé par « Les prix affichés sont hors taxes » (25/09)
 - [x] Blog : ne pas ajouter « + IVA » ni modifier le bandeau d'appel à l'action ou le bloc auteur des articles (décision du 25/09)
+- [ ] Précision du 22/10/2026 (à confirmer par Angelino) : la règle ci-dessus vise la correction des anciens articles. Les nouveaux articles de prix écrivent les prix de WebAutonomos avec « + IVA », comme la formule du §5 et comme l'exige la LSSI (art. 10) quand une page affiche des prix
 - [x] Home : « el 46% de las búsquedas… » retiré de la FAQ dans les 4 langues (27/09)
 - [x] Blog : statistiques sans source et faux « cas réels » retirés (27/09, `_tools/nettoyage_blog_20260927.py`) ; catégories Google, prix d'agence, étude Northwestern, offres gratuites d'e-mailing et étoiles Schema corrigés (28/09, `_tools/nettoyage_blog_20260928.py`)
