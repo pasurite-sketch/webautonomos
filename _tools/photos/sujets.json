@@ -352,6 +352,34 @@
    "publie": true
   },
   {
+   "id": "file-cuanto-cuesta-gestionar-ficha-google-business",
+   "type": "file",
+   "publication": "2026-10-26",
+   "file": "_tools/queue/article_precio_gestion_ficha_google.json",
+   "priorite": 1,
+   "titre": "¿Cuánto cuesta que me gestionen la ficha de Google Business?",
+   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-gestionar-ficha-google-business",
+   "resume": "Crear y mantener tu ficha de Google Business Profile es gratis; lo que se paga es que alguien la gestione por ti. En las cuatro webs de agencias y profesionales españoles que hemos consultado en octubre de 2026, la gestión mensual va de 65 € al mes a 400 € + IVA al mes o más. En WebAutonomos, la gestión de tu ficha de Google cuesta 29 €/mes + IVA (49 € + IVA de creación o mejor",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/cuanto-cuesta-gestionar-ficha-google-business.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/cuanto-cuesta-gestionar-ficha-google-business",
+     "spa": "es/cuanto-cuesta-gestionar-ficha-google-business"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-file-cuanto-cuesta-gestionar-ficha-google-business",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-file-cuanto-cuesta-gestionar-ficha-google-business-maquette-es"
+    }
+   }
+  },
+  {
    "id": "file-facturar-clientes-otros-paises-ue-reino-unido",
    "type": "file",
    "publication": "2026-10-15",
@@ -533,34 +561,6 @@
     }
    },
    "publie": true
-  },
-  {
-   "id": "file-se-acaba-kit-digital-que-hacer-con-mi-web",
-   "type": "file",
-   "publication": "2026-10-22",
-   "file": "_tools/queue/article_kit_digital_que_hacer.json",
-   "priorite": 1,
-   "titre": "Se me acaba el Kit Digital: ¿qué hago con mi web?",
-   "url": "https://webautonomos.es/blog/es/se-acaba-kit-digital-que-hacer-con-mi-web",
-   "resume": "Cuando se acaban los 12 meses del Kit Digital, tu agente digitalizador deja de estar obligado a mantener tu web, y seguir online cuesta dinero: en una agencia como Aeuroweb, el mantenimiento técnico de una web corporativa sale a 39 €/mes + IVA; si lo haces tú, el creador de webs de Hostinger cuesta 2,39 €/mes + IVA pagando 48 meses por adelantado; en WebAutonomos, 15 €/mes + IV",
-   "marche": "europe",
-   "sante": false,
-   "pages": [
-    {
-     "html": "blog/es/se-acaba-kit-digital-que-hacer-con-mi-web.html",
-     "lang": "es",
-     "url": "https://webautonomos.es/blog/es/se-acaba-kit-digital-que-hacer-con-mi-web",
-     "spa": "es/se-acaba-kit-digital-que-hacer-con-mi-web"
-    }
-   ],
-   "statut": "pret",
-   "fichier": "photo-file-se-acaba-kit-digital-que-hacer-con-mi-web",
-   "maquette": {
-    "es": {
-     "statut": "pret",
-     "fichier": "photo-file-se-acaba-kit-digital-que-hacer-con-mi-web-maquette-es"
-    }
-   }
   },
   {
    "id": "file-web-en-varios-idiomas",
@@ -919,39 +919,11 @@
    "publie": true
   },
   {
-   "id": "file-cuanto-cuesta-gestionar-ficha-google-business",
-   "type": "file",
-   "publication": "2026-10-26",
-   "file": "_tools/queue/article_precio_gestion_ficha_google.json",
-   "priorite": 2,
-   "titre": "¿Cuánto cuesta que me gestionen la ficha de Google Business?",
-   "url": "https://webautonomos.es/blog/es/cuanto-cuesta-gestionar-ficha-google-business",
-   "resume": "Crear y mantener tu ficha de Google Business Profile es gratis; lo que se paga es que alguien la gestione por ti. En las cuatro webs de agencias y profesionales españoles que hemos consultado en octubre de 2026, la gestión mensual va de 65 € al mes a 400 € + IVA al mes o más. En WebAutonomos, la gestión de tu ficha de Google cuesta 29 €/mes + IVA (49 € + IVA de creación o mejor",
-   "marche": "europe",
-   "sante": false,
-   "pages": [
-    {
-     "html": "blog/es/cuanto-cuesta-gestionar-ficha-google-business.html",
-     "lang": "es",
-     "url": "https://webautonomos.es/blog/es/cuanto-cuesta-gestionar-ficha-google-business",
-     "spa": "es/cuanto-cuesta-gestionar-ficha-google-business"
-    }
-   ],
-   "statut": "pret",
-   "fichier": "photo-file-cuanto-cuesta-gestionar-ficha-google-business",
-   "maquette": {
-    "es": {
-     "statut": "pret",
-     "fichier": "photo-file-cuanto-cuesta-gestionar-ficha-google-business-maquette-es"
-    }
-   }
-  },
-  {
    "id": "file-alquilar-pagina-web-cuanto-cuesta",
    "type": "file",
    "publication": "2026-10-29",
    "file": "_tools/queue/article_alquilar_pagina_web_precio.json",
-   "priorite": 3,
+   "priorite": 2,
    "titre": "¿Cuánto cuesta alquilar una página web? Precios 2026",
    "url": "https://webautonomos.es/blog/es/alquilar-pagina-web-cuanto-cuesta",
    "resume": "Alquilar una página web en España cuesta entre 49 € y 75 € al mes en las cuatro ofertas de agencias que hemos revisado en octubre de 2026 (IVA aparte o incluido según la empresa), y en algunas tienes que sumar una cuota de alta, pagar meses por adelantado o firmar un contrato mínimo de 6 meses. En WebAutonomos, la página web de un autónomo cuesta 15 €/mes + IVA, sin alta ni per",
@@ -979,7 +951,7 @@
    "type": "file",
    "publication": "2026-11-02",
    "file": "_tools/queue/article_precio_mantener_pagina_web.json",
-   "priorite": 4,
+   "priorite": 3,
    "titre": "¿Cuánto cuesta mantener una página web al año? Precios 2026",
    "url": "https://webautonomos.es/blog/es/cuanto-cuesta-mantener-pagina-web",
    "resume": "Mantener una página web pequeña cuesta entre 87 € y 130 € + IVA al año si la llevas tú con WordPress (dominio y hosting a precio de renovación), y entre 432 € y 1.788 € + IVA al año si contratas un plan de mantenimiento de agencia, que además no incluye ni el hosting ni el dominio. En WebAutonomos, la página web de un autónomo cuesta 15 €/mes + IVA, sin alta ni permanencia, o 3",
@@ -1007,7 +979,7 @@
    "type": "file",
    "publication": "2026-11-05",
    "file": "_tools/queue/article_precio_seo_local_autonomo.json",
-   "priorite": 5,
+   "priorite": 4,
    "titre": "¿Cuánto cuesta el SEO local para un autónomo? Precios 2026",
    "url": "https://webautonomos.es/blog/es/cuanto-cuesta-seo-local-autonomo",
    "resume": "El SEO local para un autónomo cuesta 0 € si lo haces tú mismo y varios cientos de euros al mes si lo encargas a una agencia: en las tarifas publicadas que hemos consultado en octubre de 2026 en España, los planes van de 180 €/mes a 800 €/mes o más (Adelanta Publicidad y SEO de Barrio los publican sin IVA). En WebAutonomos, el SEO Local cuesta 15 €/mes + IVA (4 artículos de blog",
@@ -1035,7 +1007,7 @@
    "type": "file",
    "publication": "2026-11-09",
    "file": "_tools/queue/article_precio_gestion_google_ads.json",
-   "priorite": 6,
+   "priorite": 5,
    "titre": "¿Cuánto cuesta que me gestionen Google Ads siendo autónomo?",
    "url": "https://webautonomos.es/blog/es/cuanto-cuesta-gestion-google-ads-autonomo",
    "resume": "Que te gestionen Google Ads siendo autónomo tiene dos costes: el dinero que pagas a Google por los clics, que decides tú porque no hay inversión mínima, y los honorarios de quien gestiona, que en las tarifas publicadas por agencias y freelances españoles que hemos revisado en octubre de 2026 van de 99 € a 950 € al mes, o un 10 a 15 % de lo que gastas en anuncios. En WebAutonomo",
@@ -1063,7 +1035,7 @@
    "type": "file",
    "publication": "2026-11-12",
    "file": "_tools/queue/article_precio_web_carpinteria.json",
-   "priorite": 7,
+   "priorite": 6,
    "titre": "¿Cuánto cuesta la página web de una carpintería? Precios 2026",
    "url": "https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-carpinteria",
    "resume": "Una web corporativa como la de una carpintería, de 4 a 10 páginas, cuesta entre 800 € y 2.000 € si la hace un freelance y entre 1.500 € y 4.000 € si la hace una agencia, [según Social Media Pymes](https://www.socialmediapymes.com/cuanto-cuesta-una-web/) en su guía de precios de agosto de 2026. Si la montas tú con un constructor, pagas una cuota de unos pocos euros al mes y pone",
@@ -1091,7 +1063,7 @@
    "type": "file",
    "publication": "2026-11-16",
    "file": "_tools/queue/article_precio_web_reformas.json",
-   "priorite": 8,
+   "priorite": 7,
    "titre": "¿Cuánto cuesta la página web de una empresa de reformas?",
    "url": "https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-empresa-reformas",
    "resume": "Una web corporativa como la de una empresa de reformas, de 4 a 10 páginas, cuesta entre 800 € y 2.000 € si la hace un freelance y entre 1.500 € y 4.000 € si la hace una agencia, [según Social Media Pymes](https://www.socialmediapymes.com/cuanto-cuesta-una-web/) (agosto de 2026), sin contar el mantenimiento. Si la montas tú con un constructor de webs, el plan Premium de Hostinge",
@@ -3831,7 +3803,7 @@
    "priorite": 41,
    "titre": "Blog para autónomos",
    "url": "https://webautonomos.es/blog/",
-   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 58 artículos disponibles en español.",
+   "resume": "Guías prácticas sobre páginas web, SEO local, Google Business Profile y marketing digital para autónomos, pequeñas y medianas empresas. 59 artículos disponibles en español.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -3884,6 +3856,81 @@
      "nom": "Blog Autónomo",
      "titre": "Guías para tu negocio",
      "bouton": "leer"
+    }
+   }
+  },
+  {
+   "id": "page-app-presupuestos",
+   "type": "page",
+   "priorite": 60,
+   "titre": "La app para hacer presupuestos de obra y reformas desde el móvil",
+   "url": "https://webautonomos.es/app-presupuestos/",
+   "resume": "Para autónomos y pequeñas empresas: con Devia haces un presupuesto profesional en la obra o en la oficina. Lo dictas, pasas a limpio uno en papel, partes de las fotos de tus trabajos o lo escribes, y Devia calcula el IVA, la retención de IRPF y el anticipo al céntimo. Pagas solo los presupuestos que haces.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "app-presupuestos/index.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/app-presupuestos/"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-page-app-presupuestos",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-page-app-presupuestos-maquette-es"
+    }
+   }
+  },
+  {
+   "id": "page-en-quoting-app",
+   "type": "page",
+   "priorite": 60,
+   "titre": "The quoting app for builders and tradespeople in Spain",
+   "url": "https://webautonomos.es/en/quoting-app/",
+   "resume": "For self-employed tradespeople and small firms in Spain: with Devia you write a professional quote on site or in the office. Dictate it, turn a paper quote into a clean PDF, start from photos of your work or type it in, and Devia works out the IVA, the IRPF withholding and the deposit to the cent. You only pay for the quotes you make.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "en/quoting-app/index.html",
+     "lang": "en",
+     "url": "https://webautonomos.es/en/quoting-app/"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-page-en-quoting-app",
+   "maquette": {
+    "en": {
+     "statut": "pret",
+     "fichier": "photo-page-en-quoting-app-maquette-en"
+    }
+   }
+  },
+  {
+   "id": "page-fr-application-devis-artisan",
+   "type": "page",
+   "priorite": 60,
+   "titre": "L’application de devis pour artisans, à dicter sur le chantier",
+   "url": "https://webautonomos.es/fr/application-devis-artisan/",
+   "resume": "Pour les artisans et les petites entreprises du bâtiment et des services : avec Devia, vous faites un devis professionnel sur le chantier ou au bureau. Vous le dictez, vous remettez au propre un devis papier, vous partez des photos de vos réalisations ou vous le saisissez, et Devia calcule la TVA et l’acompte au centime. Vous ne payez que les devis que vous faites.",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "fr/application-devis-artisan/index.html",
+     "lang": "fr",
+     "url": "https://webautonomos.es/fr/application-devis-artisan/"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-page-fr-application-devis-artisan",
+   "maquette": {
+    "fr": {
+     "statut": "pret",
+     "fichier": "photo-page-fr-application-devis-artisan-maquette-fr"
     }
    }
   },
@@ -11497,6 +11544,32 @@
      "nom": "Meubles Noyer",
      "titre": "Meubles en bois massif",
      "bouton": "tienda"
+    }
+   }
+  },
+  {
+   "id": "art-74",
+   "type": "article",
+   "priorite": 162,
+   "titre": "Se me acaba el Kit Digital: ¿qué hago con mi web?",
+   "url": "https://webautonomos.es/blog/es/se-acaba-kit-digital-que-hacer-con-mi-web",
+   "resume": "Cuando se acaban los 12 meses del Kit Digital, tu agente digitalizador deja de estar obligado a mantener tu web, y seguir online cuesta dinero: en una agencia como Aeuroweb, el mantenimiento técnico de una web corporativa sale a 39 €/mes + IVA; si lo haces tú, el creador de webs de Hostinger cuesta 2,39 €/mes + IVA pagando 48 meses por adelantado; en WebAutonomos, 15 €/mes +…",
+   "marche": "europe",
+   "sante": false,
+   "pages": [
+    {
+     "html": "blog/es/se-acaba-kit-digital-que-hacer-con-mi-web.html",
+     "lang": "es",
+     "url": "https://webautonomos.es/blog/es/se-acaba-kit-digital-que-hacer-con-mi-web",
+     "spa": "es/se-acaba-kit-digital-que-hacer-con-mi-web"
+    }
+   ],
+   "statut": "pret",
+   "fichier": "photo-file-se-acaba-kit-digital-que-hacer-con-mi-web",
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-file-se-acaba-kit-digital-que-hacer-con-mi-web-maquette-es"
     }
    }
   }
