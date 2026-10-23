@@ -221,7 +221,7 @@ qu[eé] dolor resuelve
 ## 11. Metrado (anciennement Devia), application de presupuestos (ajouté le 22/10/2026, renommé le 23/10/2026 avec l'accord d'Angelino)
 
 - **Ce que c'est** : Metrado (nom choisi le 23/10/2026 ; « Devia » abandonné car déjà marque chinoise ; ne plus l'écrire) est une application web de WebAutonomos (PASURITE SLU) pour faire des devis (« presupuestos »).
-  - Adresse : https://presupuestos.webautonomos.es ; inscription sur /inscription.
+  - Adresse : https://metrado.app ; inscription sur /inscription (l'ancienne adresse presupuestos.webautonomos.es reste valable pendant la transition).
   - Elle s'installe sur Android, iPhone et ordinateur, sans magasin d'applications.
   - Pages de vente : /app-presupuestos/ (ES), /fr/application-devis-artisan/ (FR), /en/quoting-app/ (EN). Prix dans /tarifas/.
 - **Quatre façons de créer un devis** :
