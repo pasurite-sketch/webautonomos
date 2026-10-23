@@ -25,7 +25,7 @@ DOSSIERS = ['aviso-legal', 'blog', 'cookies', 'demo-carpintero', 'demo-dentistas
             'diagnostico-automatizacion', 'en', 'en/ai-visibility', 'en/automation-diagnostic',
             'fr', 'fr/diagnostic-automatisation', 'fr/visibilite-ia', 'gracias-gmb', 'gracias-seo',
             'gracias-visibilidad-ia', 'gracias', 'merci', 'privacidad', 'thank-you', 'visibilidad-ia']
-GELES = {os.path.join('blog', 'es', 'cuanto-cuesta-pagina-web-autonomos-espana.html')}
+GELES = set()  # gel de « cuanto-cuesta » levé le 23/10/2026 (il protégeait l'article jusqu'au 22/10)
 EXCLUS = {'.git', 'node_modules', '_tools', '.wrangler', '.claude', 'scripts', '.github'}
 _ALT = '|'.join(re.escape(d) for d in sorted(DOSSIERS, key=len, reverse=True))
 # /<dossier> suivi d'un guillemet, d'une parenthèse, de « ? » ou de « # » : jamais

@@ -21,7 +21,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 METIERS = ['psicologos', 'reformas', 'electricistas', 'carpinteros', 'fontaneros',
            'fisioterapeutas', 'dentistas']
-GELES = {os.path.join('blog', 'es', 'cuanto-cuesta-pagina-web-autonomos-espana.html')}
+GELES = set()  # gel de « cuanto-cuesta » levé le 23/10/2026 (il protégeait l'article jusqu'au 22/10)
 EXCLUS = {'.git', 'node_modules', '_tools', '.wrangler', '.claude', 'scripts', '.github'}
 # /<métier> suivi d'un guillemet ou d'une parenthèse fermante : jamais /<métier>/,
 # ni psicologos.webautonomos.es, ni /demo-dentistas/, ni web-para-psicologos-…

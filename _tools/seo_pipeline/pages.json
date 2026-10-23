@@ -61,9 +61,9 @@
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "vert",
-      "statut": "gele_jusqu_au_2026-10-22",
+      "statut": "fait",
       "priorite": 1,
-      "notes": "Gelée jusqu'au contrôle du 22/10 (page récente, title du 14/09). Ne pas toucher avant. Exception du 29/09/2026, demandée par Angelino : la phrase sur l'IVA de la note de prix est corrigée (« la mayoría de autónomos… » retiré) ; title, H1 et H2 inchangés."
+      "notes": "Gelée jusqu'au contrôle du 22/10 (page récente, title du 14/09). Ne pas toucher avant. Exception du 29/09/2026, demandée par Angelino : la phrase sur l'IVA de la note de prix est corrigée (« la mayoría de autónomos… » retiré) ; title, H1 et H2 inchangés. 23/10/2026 : gel levé ; corps étoffé à la main (formules, ce qui est inclus, ce qui ne l'est pas, démarche, FAQ ; fourchettes du marché de VERITE §7), title et H1 du 14/09 gardés ; SERPmantics Google 8 → 100, ChatGPT 41 → 94."
     },
     {
       "slug": "es-cuanto-cuesta",
@@ -75,9 +75,9 @@
       "generateur": null,
       "mode": "auto",
       "objectif_geo": "vert",
-      "statut": "gele_jusqu_au_2026-10-22",
+      "statut": "fait",
       "priorite": 1,
-      "notes": "Porte les requêtes de prix (2 800 imp.). À traiter avec /precios après le 22/10. Aussi copié dans index.html (SPA)."
+      "notes": "Porte les requêtes de prix (2 800 imp.). À traiter avec /precios après le 22/10. Aussi copié dans index.html (SPA). 23/10/2026 : gel levé ; allégé de 105 (gris) à 93, fourchettes du marché remplacées par celles de VERITE §7, « todo incluido » retiré, title et H1 gardés, « + IVA » non ajouté au prix du site (VERITE §10) ; ChatGPT 55 → 83. La copie de la SPA (index.html, metaDescription) n'a pas été modifiée."
     },
     {
       "slug": "es-reformas",
