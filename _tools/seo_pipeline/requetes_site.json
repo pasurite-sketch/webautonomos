@@ -3,7 +3,8 @@
   "Pages du site hors pages.json, avec la requête que vise chacune : releve.py crée leurs guides (« creer ») puis les mesure.",
   "phase 1 : guides Google créés le 04/10/2026 (quota API : 200 guides par mois, période du 24/09 au 24/10, 6 gardés pour le circuit).",
   "phase 2 : à partir du 24/10 ; les requêtes « null » sont à choisir avant. Langues acceptées par SERPmantics : es, fr, en-gb… mais ni le catalan ni en-es.",
-  "Requête modifiée : changer « requete » ; l'ancien guide reste dans SERPmantics, un nouveau sera créé."
+  "Requête modifiée : changer « requete » ; l'ancien guide reste dans SERPmantics, un nouveau sera créé.",
+  "Page hors du dépôt : « externe » : true et « fichier » : null ; releve.py la lit en ligne à son adresse (accueils de metrado.app depuis le 23/10/2026)."
  ],
  "phase_pages_suivies": {
   "fr-francophones-espagne": 2,
@@ -1810,6 +1811,37 @@
    "lang": "en",
    "requete": "quoting app for builders",
    "origine": "guide Google créé le 23/10/2026 (passe Metrado), guide ChatGPT créé le 23/10/2026 par l'API",
+   "phase": 1,
+   "langue_serpmantics": "en-gb"
+  },
+  {
+   "slug": "metrado-app-es",
+   "url": "https://metrado.app/es/",
+   "fichier": null,
+   "externe": true,
+   "lang": "es",
+   "requete": "app para hacer presupuestos desde el móvil",
+   "origine": "accueil de metrado.app (dépôt ~/devia, site/locales) ; guides Google et ChatGPT créés et triés dans l'interface le 23/10/2026",
+   "phase": 1
+  },
+  {
+   "slug": "metrado-app-fr",
+   "url": "https://metrado.app/fr/",
+   "fichier": null,
+   "externe": true,
+   "lang": "fr",
+   "requete": "application pour faire des devis sur téléphone",
+   "origine": "accueil de metrado.app (dépôt ~/devia, site/locales) ; guides Google et ChatGPT créés et triés dans l'interface le 23/10/2026",
+   "phase": 1
+  },
+  {
+   "slug": "metrado-app-en",
+   "url": "https://metrado.app/en/",
+   "fichier": null,
+   "externe": true,
+   "lang": "en",
+   "requete": "quote app for tradesmen",
+   "origine": "accueil de metrado.app (dépôt ~/devia, site/locales) ; guides Google et ChatGPT créés et triés dans l'interface le 23/10/2026",
    "phase": 1,
    "langue_serpmantics": "en-gb"
   }

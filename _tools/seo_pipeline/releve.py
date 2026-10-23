@@ -3,7 +3,8 @@
 """Relevé SERPmantics de toutes les pages du site.
 
 Pages : celles du circuit (pages.json) et toutes les autres (requetes_site.json, avec la
-requête que vise chacune). Pour chaque page qui a des guides (requête × langue × moteur),
+requête que vise chacune). Une page hors du dépôt (« externe » : true, sans « fichier », par
+exemple l'accueil de metrado.app) est lue en ligne, à son adresse, à chaque relevé. Pour chaque page qui a des guides (requête × langue × moteur),
 mesure son contenu actuel (balise <main>, comme `serp.py score`) et enregistre la mesure
 dans le guide : la liste des guides de SERPmantics affiche ensuite les mêmes notes.
 Mesurer est gratuit. Un guide sert à toutes les pages qui visent sa requête ; la mesure
@@ -90,8 +91,19 @@ def score_affiche(g):
     return None
 
 
+def html_en_ligne(url):
+    """HTML d'une page hors du dépôt, téléchargé à son adresse."""
+    import urllib.request
+    req = urllib.request.Request(url, headers={'User-Agent': 'webautonomos-releve/1.0'})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read().decode('utf-8', 'replace')
+
+
 def contenu(e):
-    """<main> de la page ; pour l'accueil SPA, le repli sans JavaScript (seul HTML statique)."""
+    """<main> de la page ; pour l'accueil SPA, le repli sans JavaScript (seul HTML statique) ;
+    pour une page externe, la page en ligne."""
+    if e.get('externe'):
+        return serp.contenu_html(html_en_ligne(e['url']))
     if e['fichier'] == 'index.html':
         s = open(os.path.join(serp.REPO, 'index.html'), encoding='utf-8').read()
         m = re.search(r'(?is)<noscript[^>]*id="fallback"[^>]*>(.*?)</noscript>', s)
@@ -113,7 +125,7 @@ def toutes_pages():
         out.append(dict(e, phase=phases.get(e['slug'], 1), suivie=True))
         vues.add(e['url'].rstrip('/'))
     for e in site.get('pages') or []:
-        if e['url'].rstrip('/') not in vues and e.get('fichier'):
+        if e['url'].rstrip('/') not in vues and (e.get('fichier') or e.get('externe')):
             out.append(dict({'statut': 'releve', 'mode': '-'}, **e, suivie=False))
     return out
 
@@ -287,16 +299,20 @@ def main(a):
                'guides_sans_page': orphelins}
     enregistres = set()  # guide partagé par plusieurs pages : on n'enregistre que la première mesure
     for e in pages:
-        fichier = os.path.join(serp.REPO, e['fichier'])
         ligne = {k: e.get(k) for k in ('slug', 'url', 'lang', 'requete', 'fichier', 'statut', 'mode', 'objectif_geo',
-                                       'phase', 'suivie', 'origine')}
+                                       'phase', 'suivie', 'origine', 'externe')}
         ligne['geo_hors_cible'] = e.get('geo_hors_cible') or []
         ligne['mesures'] = {}
-        if not os.path.exists(fichier):
+        if not e.get('externe') and not os.path.exists(os.path.join(serp.REPO, e['fichier'])):
             ligne['erreur'] = 'fichier absent'
             rapport['pages'].append(ligne)
             continue
-        txt = contenu(e)
+        try:
+            txt = contenu(e)
+        except OSError as x:  # page externe injoignable (réseau, 404…)
+            ligne['erreur'] = f'page en ligne illisible : {x}'
+            rapport['pages'].append(ligne)
+            continue
         ligne['images_html'] = len(re.findall(r'(?i)<img\b', txt))
         for m, g in sorted((par_page.get(e['slug']) or {}).items(), key=lambda x: (ORDRE + [x[0]]).index(x[0])):
             if (e['slug'], g.get('id')) in deja:

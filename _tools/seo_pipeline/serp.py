@@ -365,7 +365,11 @@ def cmd_guides(slug):
 
 # ---------------------------------------------------------------- score
 def contenu_page(e):
-    s = open(os.path.join(REPO, e['fichier']), encoding='utf-8').read()
+    return contenu_html(open(os.path.join(REPO, e['fichier']), encoding='utf-8').read())
+
+
+def contenu_html(s):
+    """Texte mesuré d'une page : sa balise <main> (sinon <body>), sans scripts, styles ni commentaires."""
     m = re.search(r'(?is)<main[^>]*>(.*)</main>', s) or re.search(r'(?is)<body[^>]*>(.*)</body>', s)
     c = m.group(1) if m else s
     c = re.sub(r'(?is)<(script|style|noscript|svg|template)[^>]*>.*?</\1>', ' ', c)
