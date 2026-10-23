@@ -11564,12 +11564,20 @@
      "spa": "es/se-acaba-kit-digital-que-hacer-con-mi-web"
     }
    ],
-   "statut": "pret",
+   "statut": "fait",
    "fichier": "photo-file-se-acaba-kit-digital-que-hacer-con-mi-web",
    "maquette": {
     "es": {
      "statut": "pret",
      "fichier": "photo-file-se-acaba-kit-digital-que-hacer-con-mi-web-maquette-es"
+    }
+   },
+   "v": 1,
+   "fait_le": "2026-10-24T01:19:28",
+   "textes": {
+    "es": {
+     "alt": "Carpintero autónomo con una taza de café mira pensativo el móvil sobre su banco de trabajo, con luz de mañana",
+     "legende": "Cuando se acaba el Kit Digital, toca decidir qué hacer con tu web"
     }
    }
   }
