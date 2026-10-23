@@ -1739,6 +1739,79 @@
    "requete": "aparecer en ChatGPT",
    "phase": 1,
    "origine": "choisie ; guide créé dans l’interface avec sélection manuelle des résultats (04/10)"
+  },
+  {
+   "slug": "site-tarifas",
+   "url": "https://webautonomos.es/tarifas/",
+   "fichier": "tarifas/index.html",
+   "lang": "es",
+   "requete": "tarifas diseño web 2026",
+   "origine": "guide Google et guide ChatGPT créés le 23/10/2026 par l'API (passe SERPmantics des pages nouvelles depuis le relevé du 20/10)",
+   "phase": 1
+  },
+  {
+   "slug": "site-gestion-ficha-google",
+   "url": "https://webautonomos.es/gestion-ficha-google/",
+   "fichier": "gestion-ficha-google/index.html",
+   "lang": "es",
+   "requete": "gestión ficha de google para empresas",
+   "origine": "guide Google et guide ChatGPT créés le 23/10/2026 par l'API (passe SERPmantics des pages nouvelles depuis le relevé du 20/10)",
+   "phase": 1
+  },
+  {
+   "slug": "site-gestion-google-ads",
+   "url": "https://webautonomos.es/gestion-google-ads/",
+   "fichier": "gestion-google-ads/index.html",
+   "lang": "es",
+   "requete": "precio gestión google ads",
+   "origine": "guide Google et guide ChatGPT créés le 23/10/2026 par l'API (passe SERPmantics des pages nouvelles depuis le relevé du 20/10)",
+   "phase": 1
+  },
+  {
+   "slug": "site-web-multilingue",
+   "url": "https://webautonomos.es/web-multilingue/",
+   "fichier": "web-multilingue/index.html",
+   "lang": "es",
+   "requete": "página web multilingüe",
+   "origine": "guide Google et guide ChatGPT créés le 23/10/2026 par l'API (passe SERPmantics des pages nouvelles depuis le relevé du 20/10)",
+   "phase": 1
+  },
+  {
+   "slug": "site-blog-es-se-acaba-kit-digital-que-hacer-con-mi-web",
+   "url": "https://webautonomos.es/blog/es/se-acaba-kit-digital-que-hacer-con-mi-web",
+   "fichier": "blog/es/se-acaba-kit-digital-que-hacer-con-mi-web.html",
+   "lang": "es",
+   "requete": "fin kit digital página web",
+   "origine": "guide Google et guide ChatGPT créés le 23/10/2026 par l'API (passe SERPmantics des pages nouvelles depuis le relevé du 20/10)",
+   "phase": 1
+  },
+  {
+   "slug": "site-app-presupuestos",
+   "url": "https://webautonomos.es/app-presupuestos/",
+   "fichier": "app-presupuestos/index.html",
+   "lang": "es",
+   "requete": "app para hacer presupuestos de obra y reformas",
+   "origine": "guide Google créé le 23/10/2026 (passe Metrado), guide ChatGPT créé le 23/10/2026 par l'API",
+   "phase": 1
+  },
+  {
+   "slug": "site-fr-application-devis-artisan",
+   "url": "https://webautonomos.es/fr/application-devis-artisan/",
+   "fichier": "fr/application-devis-artisan/index.html",
+   "lang": "fr",
+   "requete": "application devis artisan",
+   "origine": "guide Google créé le 23/10/2026 (passe Metrado), guide ChatGPT créé le 23/10/2026 par l'API",
+   "phase": 1
+  },
+  {
+   "slug": "site-en-quoting-app",
+   "url": "https://webautonomos.es/en/quoting-app/",
+   "fichier": "en/quoting-app/index.html",
+   "lang": "en",
+   "requete": "quoting app for builders",
+   "origine": "guide Google créé le 23/10/2026 (passe Metrado), guide ChatGPT créé le 23/10/2026 par l'API",
+   "phase": 1,
+   "langue_serpmantics": "en-gb"
   }
  ],
  "exclues": [
@@ -2021,6 +2094,10 @@
   {
    "url": "https://webautonomos.es/privacidad/",
    "raison": "page légale"
+  },
+  {
+   "url": "https://webautonomos.es/sobre-nosotros/",
+   "raison": "page de marque (présentation de l'entreprise), sans requête de recherche visée (23/10/2026)"
   }
  ]
 }

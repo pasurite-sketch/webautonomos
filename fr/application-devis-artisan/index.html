@@ -363,7 +363,7 @@
       "name": "Qu’est-ce qui compte comme un devis ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chaque document finalisé, quand vous le passez à « Prêt à envoyer », une seule fois. Brouillons, dictées, imports, modifications et duplications sont gratuits et illimités."
+        "text": "Chaque document finalisé, quand vous le passez à « Prêt à envoyer », une seule fois. Brouillons, dictées, imports, modifications et duplications sont inclus, gratuits et illimités."
       }
     },
     {
@@ -371,7 +371,7 @@
       "name": "L’intelligence artificielle fixe-t-elle les prix ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Non. L’IA transcrit ce que vous dictez, lit les documents et range les lignes, mais elle n’invente jamais un prix, une quantité ni un taux : ce qui manque reste « à confirmer » et hors des totaux. Les calculs sont faits par un moteur de calcul exact."
+        "text": "Non. L’IA transcrit ce que vous dictez, lit les documents et range les lignes, mais elle n’invente jamais un prix, une quantité ni un taux : ce qui manque reste « à confirmer » et hors des totaux. Le calcul est automatique, fait par un moteur de calcul exact."
       }
     },
     {
@@ -379,7 +379,7 @@
       "name": "Comment faire un devis sur son téléphone ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Avec Metrado, un logiciel en ligne qui s’installe comme une application sur smartphone et ordinateur : vous dictez, photographiez un document papier ou saisissez les lignes, même sans réseau."
+        "text": "Avec Metrado, un logiciel en ligne qui s’installe comme une application sur smartphone et ordinateur : vous pouvez dicter, prendre en photo un document papier ou saisir les postes sans aller jusqu’au bureau ; la saisie fonctionne même sans réseau."
       }
     },
     {
@@ -387,7 +387,7 @@
       "name": "Le logiciel fonctionne-t-il sans connexion ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui, pour créer et modifier vos documents : ils sont enregistrés sur l’appareil et se synchronisent au retour de la connexion. La dictée et la lecture de documents ont besoin d’Internet."
+        "text": "Oui, pour créer et modifier vos documents, même les jours sans réseau : ils sont enregistrés sur l’appareil et se synchronisent au retour de la connexion. La dictée et la lecture de documents ont besoin d’Internet."
       }
     },
     {
@@ -395,7 +395,7 @@
       "name": "Quelles mentions doit contenir un devis ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Les mentions obligatoires : les coordonnées de votre entreprise et du client, un numéro et une date, la durée de validité, l’adresse du chantier, le détail des prestations, le total HT, la TVA par taux, le total TTC et les conditions de paiement. Le logiciel les place dans le PDF ; vérifiez aussi les mentions légales et obligatoires propres à votre métier."
+        "text": "Les mentions obligatoires : les coordonnées de votre entreprise et du client, un numéro et une date, la durée de validité de l’offre (en jours ou jusqu’à une date), l’adresse du chantier, le détail des prestations, le total HT, la TVA par taux, le total TTC et les conditions de paiement. Tous ces éléments sont inclus dans le PDF ; vérifiez aussi les mentions légales et les informations propres à votre métier."
       }
     },
     {
@@ -411,7 +411,7 @@
       "name": "Metrado gère-t-il les devis et factures ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Il gère les devis, pas les factures : ce logiciel se concentre sur l’offre, de la visite jusqu’au PDF que vous envoyez. Pour chaque facture et la facture électronique, gardez votre logiciel de facturation."
+        "text": "Il gère les devis, pas les factures : ce logiciel se concentre sur l’offre, de la visite jusqu’au PDF que vous envoyez. Pour chaque facture et la facture électronique, utilisez votre logiciel de facturation."
       }
     },
     {
@@ -419,7 +419,7 @@
       "name": "Peut-on transformer un devis en facture ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pas dans Metrado, qui ne fait pas de factures : une fois le devis accepté, établissez la facture dans votre logiciel de facturation en reprenant ses lignes ; les factures, la facturation et la gestion comptable restent dans vos logiciels habituels."
+        "text": "Non, pas dans Metrado, qui ne fait pas de factures : une fois le devis accepté, établissez la facture dans votre logiciel de facturation en reprenant ses postes ; les factures, la facturation et la gestion comptable restent dans vos logiciels habituels."
       }
     },
     {
@@ -427,7 +427,7 @@
       "name": "Existe-t-il un logiciel de devis gratuit ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Plusieurs logiciels du bâtiment proposent une formule gratuite limitée en temps ou en fonctionnalités. Metrado est gratuit pour les 3 premiers, sans carte bancaire et avec toutes les fonctionnalités, puis passe à des packs sans abonnement : rien à payer pendant un mois sans activité, de quoi l’essayer avant de choisir."
+        "text": "Plusieurs logiciels du bâtiment proposent une formule gratuite limitée en temps ou en fonctionnalités. Metrado est gratuit pour les 3 premiers, sans carte bancaire et avec toutes les fonctionnalités, dictée et PDF inclus, puis passe à des packs sans abonnement : rien à payer pendant les jours ou les mois sans activité. Vous l’essayez tout simplement sur vos propres chantiers avant de choisir."
       }
     },
     {
@@ -435,7 +435,7 @@
       "name": "Qui voit mes données ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Seulement votre entreprise, sur votre compte, et le logiciel n’envoie rien à vos clients à votre place : tout part quand vous l’envoyez."
+        "text": "Seulement votre entreprise : l’accès se fait par votre compte, et le logiciel n’envoie rien à vos clients à votre place : tout part quand vous l’envoyez."
       }
     }
   ]
@@ -524,32 +524,41 @@
 <section class="s" id="start">
   <div class="w">
     <p class="ey">Quatre façons de commencer</p>
-    <h2>Faites votre devis à la voix, en photo ou à la main</h2>
+    <h2>Créez votre devis à la voix, en photo ou à la main</h2>
     <p class="sd">Chez le client, sur votre mobile, ou le soir au bureau : la création du devis se fait comme vous voulez, et vous terminez toujours dans la même interface, simple à utiliser, pensée pour les professionnels du bâtiment.</p>
     <div class="grid4">
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><line x1="12" y1="18" x2="12" y2="22"/></svg></div>
         <h3>Devis vocal avec l’IA</h3>
-        <p>Sur le chantier, décrivez les travaux à voix haute, comme vous les expliqueriez à un collègue, et, grâce à l’IA, le logiciel propose les lignes. Vous pouvez continuer à dicter pour ajouter des postes.</p>
+        <p>Sur le chantier, décrivez les travaux à voix haute, comme vous les expliqueriez à un collègue, et, grâce à l’IA, le logiciel propose les postes. Vous pouvez continuer à dicter pour en ajouter d’autres.</p>
         <div class="tech">Transcription par ElevenLabs.</div>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></div>
         <h3>Remettez au propre un devis papier</h3>
-        <p>Celui écrit à la main dans la camionnette, une photo ou un vieux PDF : le logiciel le lit grâce à l’OCR et vous montre l’original à côté de la version numérique. Vous le reproduisez tel quel ou vous le refaites avec votre modèle, pour gagner du temps avec vos clients réguliers.</p>
+        <p>Celui écrit à la main dans la camionnette, une photo ou un vieux PDF : le logiciel le lit grâce à l’OCR, crée la version numérique à partir du document et vous montre l’original à côté. Vous le reproduisez tel quel ou vous le refaites avec votre modèle, pour gagner du temps avec vos clients réguliers.</p>
         <div class="tech">OCR par Mistral.</div>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></div>
         <h3>Partez des photos de vos réalisations</h3>
-        <p>Gardez dans Metrado les photos de vos chantiers et choisissez celles qui accompagnent le document : dedans ou dans une annexe photo, dans l’ordre que vous voulez.</p>
+        <p>Conservez dans Metrado les photos de vos chantiers et choisissez celles qui accompagnent le document : dedans ou dans une annexe photo, dans l’ordre que vous voulez.</p>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
         <h3>Saisissez-le à la main</h3>
-        <p>Ligne par ligne, ou depuis le catalogue de votre compte de prestations, de matériaux et de main-d’œuvre. Vous pouvez aussi dupliquer un ancien document et ne changer que l’essentiel.</p>
+        <p>Ligne par ligne, ou depuis le catalogue de votre compte de prestations, de matériaux et de main-d’œuvre. Vous pouvez aussi partir d’un ancien document, le dupliquer et ne changer que l’essentiel.</p>
       </div>
     </div>
+    <h3 style="margin-top:44px">De la visite au PDF : la création d’un devis, étape par étape</h3>
+    <p class="sd" style="margin-bottom:18px">Quelle que soit la façon de commencer, chaque devis suit les mêmes étapes dans le logiciel, pour répondre à chaque demande :</p>
+    <ol class="steps" style="max-width:800px">
+      <li><strong>Créez votre compte pour l’essai gratuit.</strong> Il suffit de votre prénom et de votre e-mail, sans carte. Renseignez une seule fois vos données et vos conditions : chaque document les reprend.</li>
+      <li><strong>Préparez le document sur le terrain.</strong> Dans la camionnette, dans les minutes qui suivent la prise de mesures, dictez ce qu’il y a à faire, prenez en photo un document manuscrit ou saisissez les postes.</li>
+      <li><strong>Relisez chaque poste.</strong> Ce qui manque reste « à confirmer » et hors des totaux : c’est à vous de compléter les informations nécessaires.</li>
+      <li><strong>Passez-le à « Prêt à envoyer ».</strong> C’est la seule étape qui utilise un crédit, une seule fois par document.</li>
+      <li><strong>Transmettez-le.</strong> Par e-mail, par lien ou depuis le menu de partage de votre téléphone. Le PDF peut comporter un espace « Bon pour accord » pour la signature du client ; une fois le devis accepté, la facture se fait dans votre logiciel de facturation.</li>
+    </ol>
   </div>
 </section>
 
@@ -561,7 +570,7 @@
       <p class="sd" style="margin-bottom:20px">Les calculs sont faits automatiquement par le logiciel, grâce à un moteur de calcul exact, le même sur mobile et sur le serveur, pour tous les métiers du bâtiment, et les totaux sont mis à jour en temps réel. L’IA ne calcule jamais un montant.</p>
       <ul class="checks">
         <li><strong>TVA par taux.</strong> Chaque ligne porte son taux, et la taxe est calculée sur la base de chaque taux, pas en additionnant des arrondis. Les taux de votre pays (France, Belgique, Suisse, Luxembourg) sont proposés, et c’est vous qui les confirmez.</li>
-        <li><strong>Acompte.</strong> En pourcentage ou en montant fixe, avec le solde qui reste à payer.</li>
+        <li><strong>Acompte.</strong> Deux options : en pourcentage ou en montant fixe, avec le solde qui reste à payer.</li>
         <li><strong>Remises et sections.</strong> Remise par ligne ou sur le total, sections et sous-totaux pour une gestion claire des travaux.</li>
       </ul>
     </div>
@@ -576,7 +585,7 @@
   <div class="w">
     <p class="ey">Le document</p>
     <h2>Un PDF à votre logo, dans la langue de votre client</h2>
-    <p class="sd">Le logiciel permet de générer un PDF professionnel à votre image, pas un tableur.</p>
+    <p class="sd">Le logiciel permet de générer un PDF professionnel et complet à votre image, pas un tableau Excel.</p>
     <div class="grid2">
       <div class="card">
         <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></div>
@@ -607,13 +616,13 @@
     <div>
       <p class="ey">Au chantier et au bureau</p>
       <h2>Une application mobile qui fonctionne même sans réseau</h2>
-      <p style="color:var(--gray);margin:0">Metrado s’installe facilement sur l’écran d’accueil de votre iPhone, de votre smartphone Android, de votre tablette ou de votre ordinateur, avec les mêmes fonctionnalités, sans passer par un magasin d’applications. Vous commencez chez le client et vous terminez au bureau, sans perdre de temps : un logiciel pour gérer vos devis où que vous soyez.</p>
+      <p style="color:var(--gray);margin:0">Metrado s’installe facilement sur l’écran d’accueil de votre iPhone, de votre smartphone Android, de votre tablette ou de votre ordinateur (PC et Mac), avec les mêmes fonctionnalités, sans passer par un magasin d’applications. Vous commencez chez le client et vous terminez au bureau, sans perdre de temps : gérez vos devis où que vous soyez.</p>
     </div>
     <ul class="checks" style="align-self:center">
-      <li><strong>Sans connexion :</strong> création et modification de vos documents sur les chantiers, à la cave ou en pleine campagne ; ils se synchronisent au retour du réseau.</li>
-      <li><strong>Avec connexion :</strong> la dictée et la lecture de documents ont besoin d’Internet, et le logiciel vous prévient quand il n’y en a pas.</li>
-      <li><strong>Gestion des clients :</strong> fiches avec leurs adresses et l’historique de chaque client, sur votre compte.</li>
-      <li><strong>Application disponible en français, anglais et espagnol,</strong> au choix d’un geste.</li>
+      <li><strong>Hors réseau :</strong> création et modification de vos documents sur les chantiers, à la cave ou en pleine campagne ; ils se synchronisent au retour du réseau.</li>
+      <li><strong>En ligne :</strong> la dictée et la lecture de documents ont besoin d’Internet, et le logiciel vous prévient quand il n’y en a pas.</li>
+      <li><strong>Gestion des clients :</strong> fiches avec leurs coordonnées de contact, leurs adresses et l’historique de chaque client, sur votre compte.</li>
+      <li><strong>Application disponible en français, anglais et espagnol,</strong> au choix, en un clic.</li>
     </ul>
   </div>
 </section>
@@ -622,9 +631,9 @@
   <div class="w">
     <p class="ey">Vous décidez</p>
     <h2>Des devis avec l’IA, mais votre prix reste votre prix</h2>
-    <p class="sd">L’IA est un outil simple qui vous évite de taper : elle transcrit, lit et range. Ce que vous envoyez engage votre parole : rien ne part sans votre relecture.</p>
+    <p class="sd">L’IA est un outil simple, une aide qui vous évite de taper : elle transcrit, lit et range. Ce que vous remettez à vos clients engage votre parole : rien ne part sans votre relecture.</p>
     <div class="trust">
-      <div class="card"><h3>Elle n’invente jamais un prix</h3><p>Pas de montants « indicatifs » : ni prix, ni quantités, ni taux. Ce que vous n’avez pas dit ou qui se lit mal reste « à confirmer ».</p></div>
+      <div class="card"><h3>Elle n’invente jamais un prix</h3><p>Pas de montants « indicatifs » : ni prix, ni quantités, ni taux. Une information que vous n’avez pas donnée ou qui se lit mal reste « à confirmer ».</p></div>
       <div class="card"><h3>Rien n’est envoyé à votre place</h3><p>Aucun document n’arrive chez votre client sans que vous l’envoyiez.</p></div>
       <div class="card"><h3>Vos données, pour votre entreprise seulement</h3><p>Vos données et les photos de vos chantiers ne sont visibles que par votre entreprise.</p></div>
     </div>
@@ -679,9 +688,9 @@
     <div class="tw"><table class="cmp">
       <thead><tr><th scope="col"></th><th scope="col" class="dv">Metrado</th><th scope="col">Modèle Excel ou Word</th></tr></thead>
       <tbody>
-        <tr><th scope="row">Sur mobile, en intervention</th><td class="dv">Oui, même à la voix et sans réseau</td><td>Peu pratique sur un petit écran</td></tr>
-        <tr><th scope="row">Calculs</th><td class="dv">TVA par taux et acompte, au centime</td><td>Des formules à vérifier vous-même</td></tr>
-        <tr><th scope="row">Utilisation</th><td class="dv">Logiciel en ligne à utiliser sur mobile et ordinateur</td><td>Un fichier à gérer sur chaque appareil</td></tr>
+        <tr><th scope="row">Sur mobile, en intervention</th><td class="dv">Oui, à la voix ; sans réseau, en saisie</td><td>Peu pratique sur un petit écran</td></tr>
+        <tr><th scope="row">Calculs</th><td class="dv">Calcul automatique de la TVA par taux et de l’acompte, au centime</td><td>Des formules à vérifier vous-même</td></tr>
+        <tr><th scope="row">Utilisation</th><td class="dv">Vos devis en ligne, à utiliser sur mobile et ordinateur</td><td>Un fichier à gérer sur chaque appareil</td></tr>
         <tr><th scope="row">Un montant manquant</th><td class="dv">Marqué « à confirmer » et hors du total</td><td>Une cellule vide peut passer inaperçue</td></tr>
         <tr><th scope="row">Devis papier</th><td class="dv">Lus et remis au propre</td><td>À retaper</td></tr>
         <tr><th scope="row">Langue du PDF</th><td class="dv">Français, anglais ou espagnol, au choix</td><td>Celle du modèle</td></tr>
@@ -699,18 +708,20 @@
     <p class="sd" style="margin-bottom:22px">Avant de choisir parmi les logiciels et les outils du marché, ce guide vous aide : regardez vos besoins réels et l’utilisation que vous en ferez : les fonctionnalités utiles au quotidien de votre activité, sur les chantiers et au bureau, et le temps que vous voulez passer à gérer vos devis et factures.</p>
     <h3>Les critères à vérifier</h3>
     <ul class="checks">
-      <li><strong>Un outil mobile pour gérer vos devis :</strong> une application sur smartphone ou tablette, simple à prendre en main, utilisable sans réseau, et pas seulement un logiciel de bureau.</li>
-      <li><strong>Des calculs fiables :</strong> TVA par taux et acompte calculés automatiquement, sans formules à surveiller, pour une création de devis sans erreur de calcul.</li>
+      <li><strong>Un outil mobile pour gérer vos devis :</strong> une application sur smartphone ou tablette, disponible aussi sur ordinateur, simple à prendre en main, utilisable sans réseau, et pas seulement un logiciel de bureau.</li>
+      <li><strong>Des calculs automatiques et fiables :</strong> TVA par taux et acomptes calculés par le logiciel, sans formules à surveiller, pour une création de devis sans erreur de calcul.</li>
       <li><strong>Des devis conformes à votre activité :</strong> les mentions légales et obligatoires de votre métier et de vos clients, les prestations, les matériaux et la main-d’œuvre, avec vos propres tarifs.</li>
+      <li><strong>La signature du client :</strong> Metrado peut ajouter au PDF un espace « Bon pour accord », à signer à la main ; si vos clients veulent signer en ligne, prévoyez un outil de signature électronique.</li>
       <li><strong>Une IA qui n’invente rien :</strong> ce qui manque doit rester visible, pas être rempli à votre place.</li>
-      <li><strong>Un essai gratuit sans engagement :</strong> la plupart des logiciels en proposent un ; avec Metrado, 3 gratuits, puis des packs sans abonnement, sans frais au mois.</li>
+      <li><strong>Un tarif clair :</strong> un abonnement affiché en € HT/mois se paie aussi pendant les mois creux ; comparez le coût sur un an pour savoir ce que vous paierez vraiment.</li>
+      <li><strong>Un essai gratuit sans engagement :</strong> la plupart des logiciels en proposent un. Pour juger la prise en main et savoir si un outil est facile à utiliser, le plus simple est de le tester gratuitement sur un vrai chantier. Avec Metrado, 3 gratuits, puis des packs sans abonnement, sans frais au mois.</li>
     </ul>
-    <p style="margin:18px 0 0;color:var(--gray)">Côté facturation, bon à savoir : la facture électronique devient la règle : depuis le 1er septembre 2026, toutes les entreprises, y compris celles du BTP, doivent pouvoir recevoir des factures électroniques, et les TPE et PME devront les émettre au 1er septembre 2027 (<a href="https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises" rel="noopener" target="_blank">economie.gouv.fr</a>). Metrado ne fait pas la facturation : gardez pour facturer un outil de facturation conforme, ou l’un des logiciels de gestion avec facturation électronique, et utilisez Metrado pour l’offre : chaque outil à sa place.</p>
-    <h3 style="margin-top:28px">Devis, factures, gestion : qui fait quoi ?</h3>
+    <p style="margin:18px 0 0;color:var(--gray)">Côté facturation, bon à savoir : la facture électronique devient la règle : depuis le 1er septembre 2026, toutes les entreprises, y compris celles du BTP, doivent pouvoir recevoir des factures électroniques, et les TPE et PME devront les émettre au 1er septembre 2027 (<a href="https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises" rel="noopener" target="_blank">economie.gouv.fr</a>). Metrado ne fait pas la facturation : utilisez pour facturer un outil de facturation conforme, ou l’un des logiciels de gestion avec facturation électronique, et Metrado pour l’offre : chaque outil à sa place.</p>
+    <h3 style="margin-top:28px">Devis et factures, gestion : qui fait quoi ?</h3>
     <ul class="nots">
       <li><strong>Le logiciel de devis</strong> prépare l’offre : prestations, fournitures, main-d’œuvre, taxes et acompte. C’est le rôle d’un logiciel de devis comme Metrado.</li>
       <li><strong>Le logiciel de facturation</strong> établit chaque facture et la facture électronique, conforme aux obligations de facturation électronique.</li>
-      <li><strong>Le logiciel de gestion BTP</strong> regroupe devis et factures, facturation électronique, suivi des chantiers, stocks, trésorerie et pilotage de l’activité de l’entreprise du bâtiment.</li>
+      <li><strong>Le logiciel de gestion BTP</strong> regroupe devis et factures, bibliothèques d’ouvrages, facturation électronique, suivi des chantiers, stocks, trésorerie et pilotage de l’activité de l’entreprise du bâtiment.</li>
       <li><strong>L’expert-comptable</strong> reprend les factures dans la comptabilité, avec ses propres logiciels : un logiciel comptable n’est pas un outil de facturation.</li>
     </ul>
   </div>
@@ -720,7 +731,7 @@
   <div class="w">
     <p class="ey">Pour qui</p>
     <h2>Pour les artisans du bâtiment et les TPE du BTP</h2>
-    <p class="sd" style="margin-bottom:22px">Si vous êtes artisan, que vous chiffrez souvent des travaux et que vous voulez gagner du temps, Metrado est fait pour vous : une solution simple pour les professionnels du bâtiment et des services, pas un logiciel de gestion et de facturation électronique complet ni une suite d’outils.</p>
+    <p class="sd" style="margin-bottom:22px">Si vous êtes artisan ou micro-entrepreneur, que vous chiffrez souvent des travaux et que vous voulez gagner du temps, Metrado est fait pour vous : un logiciel conçu pour les artisans du bâtiment et les professionnels des services, une solution simple de devis, pas un logiciel de gestion et de facturation électronique complet ni une suite d’outils.</p>
     <ul class="trades">
       <li>Bâtiment</li><li>Rénovation</li><li>Plomberie</li><li>Électricité</li><li>Peinture</li><li>Menuiserie</li><li>Climatisation</li><li>Serrurerie</li><li>Maçonnerie</li><li>Paysagisme</li><li>Nettoyage</li><li>Maintenance</li>
     </ul>
@@ -728,8 +739,8 @@
       <div>
         <h3>Ce que le logiciel ne fait pas</h3>
         <ul class="nots">
-          <li>Pas de factures ni de facture électronique : pour facturer, gardez votre logiciel de facturation.</li>
-          <li>Pas de base de prix : les tarifs du bâtiment sont les vôtres, et vous les gardez dans votre catalogue.</li>
+          <li>Pas de factures ni de facture électronique : pour facturer, continuez avec votre logiciel de facturation.</li>
+          <li>Pas de base de prix ni de bibliothèque d’ouvrages fournie : les tarifs du bâtiment sont les vôtres, et vous les gardez dans votre catalogue.</li>
           <li>Pas de gestion de chantiers : ni planning, ni suivi de chantier ou des stocks, ni comptabilité ; pour gérer tout cela, une solution de gestion BTP sera plus utile.</li>
           <li>Il ne vous trouve pas de clients : c’est un outil pro pour chiffrer, pas une plateforme de mise en relation.</li>
         </ul>
@@ -745,7 +756,7 @@
 <section class="s alt" id="faq">
   <div class="w-narrow">
     <p class="ey">Questions fréquentes</p>
-    <h2>Ce qu’on nous demande sur Metrado</h2>
+    <h2>Vos questions sur Metrado</h2>
     <div class="faq">
       <details>
         <summary>Combien coûte le logiciel Metrado ?</summary>
@@ -753,23 +764,23 @@
       </details>
       <details>
         <summary>Qu’est-ce qui compte comme un devis ?</summary>
-        <p>Chaque document finalisé, quand vous le passez à « Prêt à envoyer », une seule fois. Brouillons, dictées, imports, modifications et duplications sont gratuits et illimités.</p>
+        <p>Chaque document finalisé, quand vous le passez à « Prêt à envoyer », une seule fois. Brouillons, dictées, imports, modifications et duplications sont inclus, gratuits et illimités.</p>
       </details>
       <details>
         <summary>L’intelligence artificielle fixe-t-elle les prix ?</summary>
-        <p>Non. L’IA transcrit ce que vous dictez, lit les documents et range les lignes, mais elle n’invente jamais un prix, une quantité ni un taux : ce qui manque reste « à confirmer » et hors des totaux. Les calculs sont faits par un moteur de calcul exact.</p>
+        <p>Non. L’IA transcrit ce que vous dictez, lit les documents et range les lignes, mais elle n’invente jamais un prix, une quantité ni un taux : ce qui manque reste « à confirmer » et hors des totaux. Le calcul est automatique, fait par un moteur de calcul exact.</p>
       </details>
       <details>
         <summary>Comment faire un devis sur son téléphone ?</summary>
-        <p>Avec Metrado, un logiciel en ligne qui s’installe comme une application sur smartphone et ordinateur : vous dictez, photographiez un document papier ou saisissez les lignes, même sans réseau.</p>
+        <p>Avec Metrado, un logiciel en ligne qui s’installe comme une application sur smartphone et ordinateur : vous pouvez dicter, prendre en photo un document papier ou saisir les postes sans aller jusqu’au bureau ; la saisie fonctionne même sans réseau.</p>
       </details>
       <details>
         <summary>Le logiciel fonctionne-t-il sans connexion ?</summary>
-        <p>Oui, pour créer et modifier vos documents : ils sont enregistrés sur l’appareil et se synchronisent au retour de la connexion. La dictée et la lecture de documents ont besoin d’Internet.</p>
+        <p>Oui, pour créer et modifier vos documents, même les jours sans réseau : ils sont enregistrés sur l’appareil et se synchronisent au retour de la connexion. La dictée et la lecture de documents ont besoin d’Internet.</p>
       </details>
       <details>
         <summary>Quelles mentions doit contenir un devis ?</summary>
-        <p>Les mentions obligatoires : les coordonnées de votre entreprise et du client, un numéro et une date, la durée de validité, l’adresse du chantier, le détail des prestations, le total HT, la TVA par taux, le total TTC et les conditions de paiement. Le logiciel les place dans le PDF ; vérifiez aussi les mentions légales et obligatoires propres à votre métier.</p>
+        <p>Les mentions obligatoires : les coordonnées de votre entreprise et du client, un numéro et une date, la durée de validité de l’offre (en jours ou jusqu’à une date), l’adresse du chantier, le détail des prestations, le total HT, la TVA par taux, le total TTC et les conditions de paiement. Tous ces éléments sont inclus dans le PDF ; vérifiez aussi les mentions légales et les informations propres à votre métier.</p>
       </details>
       <details>
         <summary>Metrado est-il adapté aux entreprises du BTP ?</summary>
@@ -777,19 +788,19 @@
       </details>
       <details>
         <summary>Metrado gère-t-il les devis et factures ?</summary>
-        <p>Il gère les devis, pas les factures : ce logiciel se concentre sur l’offre, de la visite jusqu’au PDF que vous envoyez. Pour chaque facture et la facture électronique, gardez votre logiciel de facturation.</p>
+        <p>Il gère les devis, pas les factures : ce logiciel se concentre sur l’offre, de la visite jusqu’au PDF que vous envoyez. Pour chaque facture et la facture électronique, utilisez votre logiciel de facturation.</p>
       </details>
       <details>
         <summary>Peut-on transformer un devis en facture ?</summary>
-        <p>Pas dans Metrado, qui ne fait pas de factures : une fois le devis accepté, établissez la facture dans votre logiciel de facturation en reprenant ses lignes ; les factures, la facturation et la gestion comptable restent dans vos logiciels habituels.</p>
+        <p>Non, pas dans Metrado, qui ne fait pas de factures : une fois le devis accepté, établissez la facture dans votre logiciel de facturation en reprenant ses postes ; les factures, la facturation et la gestion comptable restent dans vos logiciels habituels.</p>
       </details>
       <details>
         <summary>Existe-t-il un logiciel de devis gratuit ?</summary>
-        <p>Plusieurs logiciels du bâtiment proposent une formule gratuite limitée en temps ou en fonctionnalités. Metrado est gratuit pour les 3 premiers, sans carte bancaire et avec toutes les fonctionnalités, puis passe à des packs sans abonnement : rien à payer pendant un mois sans activité, de quoi l’essayer avant de choisir.</p>
+        <p>Plusieurs logiciels du bâtiment proposent une formule gratuite limitée en temps ou en fonctionnalités. Metrado est gratuit pour les 3 premiers, sans carte bancaire et avec toutes les fonctionnalités, dictée et PDF inclus, puis passe à des packs sans abonnement : rien à payer pendant les jours ou les mois sans activité. Vous l’essayez tout simplement sur vos propres chantiers avant de choisir.</p>
       </details>
       <details>
         <summary>Qui voit mes données ?</summary>
-        <p>Seulement votre entreprise, sur votre compte, et le logiciel n’envoie rien à vos clients à votre place : tout part quand vous l’envoyez.</p>
+        <p>Seulement votre entreprise : l’accès se fait par votre compte, et le logiciel n’envoie rien à vos clients à votre place : tout part quand vous l’envoyez.</p>
       </details>
     </div>
   </div>
@@ -800,7 +811,7 @@
     <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
     <div>
       <h3>Qui est derrière le logiciel Metrado</h3>
-      <p>Metrado est un logiciel de WebAutonomos (PASURITE SLU), à Ontinyent (Valence, Espagne), l’entreprise qui crée des sites internet et des outils pour les indépendants et les professionnels : <a href="/fr/">webautonomos.es</a>.</p>
+      <p>Metrado est un logiciel de WebAutonomos (PASURITE SLU), à Ontinyent (Valence, Espagne), l’entreprise qui crée des sites internet et des outils pour les indépendants et les professionnels ; voir notre site : <a href="/fr/">webautonomos.es</a>.</p>
     </div>
   </div>
 </section>
