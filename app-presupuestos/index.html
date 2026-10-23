@@ -137,7 +137,7 @@
   .card { background:#fff; border:1px solid var(--border); border-radius:16px; padding:22px 20px; }
   .card p { margin:0; color:var(--gray); font-size:.97rem; line-height:1.65; }
   .card p + p { margin-top:10px; }
-  .card .tech { font-size:.82rem; color:#7a8799; }
+  .card .tech { font-size:.82rem; color:#7a8799; margin-top:10px; }
   .ico { width:44px; height:44px; border-radius:12px; display:flex; align-items:center; justify-content:center;
          background:var(--blue-soft); color:var(--blue); margin:0 0 14px; }
   .ico svg { width:22px; height:22px; }
@@ -352,15 +352,15 @@
       "name": "¿Cuánto cuesta Metrado?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Los 3 primeros presupuestos son gratis. Después compras un pack: 10 presupuestos por 12 € + IVA, 30 por 29 € + IVA o 100 por 79 € + IVA. No hay suscripción ni cuota mensual, y los créditos no caducan."
+        "text": "Los 3 primeros son gratis, sin tarjeta: solo te pedimos tu nombre y tu email. Después compras un pack: 10 presupuestos por 12 € + IVA, 30 por 29 € + IVA o 100 por 79 € + IVA. Todas las funciones están incluidas, no hay suscripción y los créditos no caducan."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Hay una versión gratis?",
+      "name": "¿Puedo ver una demo antes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tienes 3 presupuestos gratis para probar los cuatro modos, sin tarjeta: para empezar solo te pedimos tu nombre y tu email. No hay un plan gratuito permanente: después pagas solo los presupuestos que haces, con un pack."
+        "text": "No hace falta: los 3 primeros presupuestos son gratis, así que lo pruebas tú, con tus obras y sin demo comercial."
       }
     },
     {
@@ -368,23 +368,7 @@
       "name": "¿Qué cuenta como un presupuesto?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Un crédito es un presupuesto finalizado: se usa cuando lo marcas «Listo para enviar», una sola vez por presupuesto. Los borradores, los dictados, las importaciones, las modificaciones y los duplicados son gratis e ilimitados, y modificar o enviar después un presupuesto finalizado no gasta nada más."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Caducan los créditos?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Los créditos que compras no caducan: si un mes no haces presupuestos, siguen en tu cuenta para cuando los necesites."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Recibo factura de los packs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sí. Cada compra genera una factura con el IVA desglosado. Al pagar puedes indicar el nombre de tu empresa y tu NIF."
+        "text": "Cada presupuesto que finalizas, cuando lo marcas «Listo para enviar», una sola vez. Los borradores, los dictados, las importaciones, las modificaciones y los duplicados son gratis e ilimitados."
       }
     },
     {
@@ -392,15 +376,23 @@
       "name": "¿La inteligencia artificial pone los precios?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. La IA transcribe lo que dictas, lee los documentos y ordena las líneas, pero nunca inventa un precio, una cantidad ni un tipo de IVA: lo que falta queda marcado «a confirmar» y fuera de los totales. Las cuentas las hace un motor de cálculo exacto, no la IA."
+        "text": "No. La IA transcribe lo que dictas, lee lo que importas y ordena las partidas, pero nunca inventa un coste, una cantidad ni un tipo de IVA: lo que falta queda marcado «a confirmar» y fuera de los totales. Las cuentas las hace un motor de cálculo exacto, y el control de cada importe es tuyo."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Puedo hacer presupuestos desde el móvil?",
+      "name": "¿Es una app o un programa para el ordenador?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. Metrado se abre en el navegador y se instala en la pantalla de inicio de un iPhone, de un móvil Android o de un ordenador, sin pasar por una tienda de aplicaciones. Empiezas el presupuesto en la obra y, si quieres, lo terminas en el ordenador."
+        "text": "Las dos cosas: un software que se abre en el navegador y se instala como app en la pantalla de inicio de un iPhone, de un móvil Android o de un ordenador, sin pasar por una tienda de aplicaciones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo importar lo que ya tengo en Excel o en PDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, en PDF o en foto: Metrado los lee y los pasa a limpio. Si lo tienes en Excel, expórtalo antes a PDF y luego impórtalo."
       }
     },
     {
@@ -408,23 +400,23 @@
       "name": "¿Funciona sin conexión a internet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, para crear y modificar presupuestos: se guardan en el móvil y se sincronizan cuando vuelve la conexión. El dictado y la lectura de documentos sí necesitan conexión, y Metrado te lo indica."
+        "text": "Sí: Metrado te permite crear presupuestos y modificarlos sin conexión; se sincronizan cuando vuelve la red, sin perder trabajo. El dictado y la lectura de documentos sí necesitan conexión."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué debe incluir un presupuesto profesional?",
+      "name": "¿Puedo hacerlo en inglés o en francés?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Los datos de tu empresa y del cliente, un número y una fecha, la validez de la oferta, la dirección de la obra, las partidas con cantidades y precios, la base, el IVA por tipo y el total, y las condiciones de pago. Metrado los pone en el PDF y, si quieres, añade un espacio para la firma del cliente."
+        "text": "Sí. El PDF puede salir en español, inglés o francés, aunque tú uses la aplicación en español."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Puedo hacer el presupuesto en inglés o en francés?",
+      "name": "¿Sirve para una empresa de construcción?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. Cada presupuesto tiene su idioma: el PDF puede salir en español, inglés o francés, aunque tú uses la aplicación en español. La aplicación también está en los tres idiomas."
+        "text": "Sí, para profesionales, autónomos y pequeñas empresas constructoras, de reformas e instalaciones que hacen presupuestos de obras a menudo. Para la gestión integral de grandes proyectos, con planificación y seguimiento, la solución es un programa de gestión de obras más completo."
       }
     },
     {
@@ -432,15 +424,15 @@
       "name": "¿Metrado hace facturas?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Metrado se centra en el presupuesto, desde la obra hasta el PDF que envías a tu cliente. Para facturar, sigue usando tu programa de facturación."
+        "text": "No. Metrado se centra en el presupuesto, desde la obra hasta el PDF que envías. Para facturar, sigue usando tu programa de facturación u otras herramientas."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Quién ve mis presupuestos?",
+      "name": "¿Quién ve mis datos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Solo tu empresa. Cada empresa ve únicamente sus clientes, sus presupuestos y sus fotos, y Metrado no envía nada a tus clientes: el presupuesto sale cuando tú lo envías."
+        "text": "Solo tu empresa, y Metrado no envía nada por su cuenta: el presupuesto sale cuando tú lo envías."
       }
     }
   ]
@@ -492,11 +484,11 @@
   <div class="hero-in">
     <div>
       <p class="crumb"><a href="/">Inicio</a> &rsaquo; App de presupuestos Metrado</p>
-      <p class="badge">Metrado · Presupuestos con IA, sin suscripción</p>
+      <p class="badge">Metrado · App de presupuestos sin suscripción</p>
       <h1>La app para hacer presupuestos de obra y reformas desde el móvil</h1>
-      <p class="lede">Para autónomos y pequeñas empresas: con Metrado haces un presupuesto profesional en la obra o en la oficina. Lo dictas, pasas a limpio uno en papel, partes de las fotos de tus trabajos o lo escribes, y Metrado calcula el IVA, la retención de IRPF y el anticipo al céntimo. Pagas solo los presupuestos que haces.</p>
+      <p class="lede">Metrado es un software de presupuestos de obra para autónomos y pequeñas empresas de reformas y construcción. Puedes crear presupuestos directamente en la obra o en la oficina: los dictas, pasas a limpio uno en papel, partes de las fotos de tus trabajos o los escribes, y Metrado calcula automáticamente el IVA, la retención de IRPF y el anticipo al céntimo. Pagas solo los presupuestos que haces.</p>
       <ul class="pills">
-        <li>Presupuesto por voz</li>
+        <li>Dictado por voz</li>
         <li>Del papel al PDF</li>
         <li>Funciona sin cobertura</li>
         <li>Sin suscripción</li>
@@ -514,7 +506,7 @@
           </span>
           <span class="mock-num">Presupuesto 2026-014</span>
         </div>
-        <p class="mock-title">Reforma eléctrica · local comercial</p>
+        <div class="mock-title">Reforma eléctrica · local comercial</div>
         <table>
           <tr><td>Cuadro eléctrico del local<small>1 ud</small></td><td class="r">340,00 €</td></tr>
           <tr><td>Puntos de luz LED<small>12 ud × 18,50 €</small></td><td class="r">222,00 €</td></tr>
@@ -524,7 +516,7 @@
           <tr class="tot big"><td>Total</td><td class="r">680,02 €</td></tr>
           <tr class="tot"><td>Anticipo 30 %</td><td class="r">204,01 €</td></tr>
         </table>
-        <p class="mock-warn">Importes provisionales: hay un precio pendiente de confirmar.</p>
+        <div class="mock-warn">Importes provisionales: hay un precio pendiente de confirmar.</div>
       </div>
       <figcaption class="mock-cap">Ejemplo ilustrativo</figcaption>
     </figure>
@@ -536,29 +528,29 @@
   <div class="w">
     <p class="ey">Cuatro maneras de empezar</p>
     <h2>Haz el presupuesto por voz, con una foto o a mano</h2>
-    <p class="sd">En la obra con el móvil o por la tarde en la oficina: eliges cómo empezar y terminas siempre en el mismo editor, con las mismas cuentas y el mismo PDF.</p>
+    <p class="sd">En la obra con el móvil o por la tarde en la oficina: eliges cómo empezar y terminas siempre en el mismo editor, pensado para cada proyecto de construcción y reforma.</p>
     <div class="grid4">
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><line x1="12" y1="18" x2="12" y2="22"/></svg></div>
         <h3>Presupuesto por voz</h3>
-        <p>En la obra, describe los trabajos en voz alta, como se los contarías a un compañero, y Metrado propone las líneas. Puedes seguir dictando para añadir partidas al mismo presupuesto.</p>
-        <p class="tech">Transcripción con ElevenLabs.</p>
+        <p>En la obra, describe el trabajo en voz alta, como se lo contarías a un compañero, y Metrado propone las partidas. Puedes seguir dictando para añadir más partidas al mismo presupuesto.</p>
+        <div class="tech">Transcripción con ElevenLabs.</div>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></div>
         <h3>Pasa a limpio un presupuesto en papel</h3>
-        <p>El que escribiste a mano en la furgoneta, una foto o un PDF antiguo: Metrado lo lee y te enseña el original al lado de la versión digital. Eliges reproducirlo tal cual o rehacerlo con tu plantilla.</p>
-        <p class="tech">Lectura con Mistral OCR.</p>
+        <p>El que escribiste en la furgoneta, una foto o un PDF antiguo: con la lectura automática, Metrado lo lee, con todas sus partidas, y te enseña el original al lado de la versión digital. Eliges reproducirlo tal cual o rehacerlo con tu plantilla: así puedes importar tus presupuestos de obra antiguos.</p>
+        <div class="tech">Lectura con Mistral OCR.</div>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></div>
         <h3>Parte de las fotos de tus trabajos</h3>
-        <p>Guarda en Metrado las fotos de tus obras y elige cuáles acompañan al presupuesto: dentro del documento o en un anexo fotográfico, en el orden que quieras.</p>
+        <p>Guarda en Metrado las fotos de tus obras y elige cuáles acompañan al documento: dentro o en un anexo fotográfico, en el orden que quieras.</p>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
         <h3>Escríbelo a mano</h3>
-        <p>Línea a línea, o desde tu catálogo de partidas habituales. También puedes duplicar un presupuesto anterior y cambiar solo lo que haga falta.</p>
+        <p>Partida a partida, o desde tu catálogo de materiales y mano de obra, con tus precios. Metrado también te permite duplicar uno anterior y cambiar solo lo que haga falta.</p>
       </div>
     </div>
   </div>
@@ -570,22 +562,18 @@
     <div>
       <p class="ey">Cuentas exactas</p>
       <h2>Presupuestos con IVA, retención de IRPF y anticipo, al céntimo</h2>
-      <p class="sd" style="margin-bottom:20px">Las cuentas las hace un motor de cálculo exacto, el mismo en el móvil y en el servidor. La IA nunca calcula un importe.</p>
+      <p class="sd" style="margin-bottom:20px">Las cuentas las hace automáticamente un motor de cálculo exacto, el mismo en el móvil y en el servidor, y los totales se actualizan en tiempo real mientras escribes. La IA te ayuda, pero nunca calcula un importe.</p>
       <ul class="checks">
-        <li><strong>IVA por tipo.</strong> Cada línea lleva su tipo de IVA, y el impuesto se calcula sobre la base de cada tipo, no sumando redondeos línea a línea.</li>
+        <li><strong>IVA por tipo.</strong> Cada partida lleva su tipo de IVA, y el impuesto se calcula por tipo, no sumando redondeos línea a línea.</li>
         <li><strong>Retención de IRPF.</strong> Si tu cliente es una empresa y te toca aplicarla, indicas el porcentaje: Metrado la calcula sobre la base imponible y te muestra el neto a pagar.</li>
-        <li><strong>Anticipo.</strong> En porcentaje o en importe fijo, con lo que queda pendiente después.</li>
-        <li><strong>Descuentos y capítulos.</strong> Descuento por línea o sobre el total, secciones y subtotales para ordenar la obra.</li>
+        <li><strong>Anticipo.</strong> En porcentaje o en importe fijo, con lo que queda pendiente, calculado en tiempo real.</li>
+        <li><strong>Capítulos y partidas.</strong> Organiza la obra por capítulos, con subtotales, separa materiales y mano de obra, y aplica descuentos por partida o sobre el total.</li>
       </ul>
     </div>
     <div>
-      <h3>Lo que pasa cuando falta un dato</h3>
-      <ol class="steps">
-        <li><strong>Se queda en blanco.</strong> Un precio, una cantidad o un tipo de IVA que no has dicho no se rellena con una suposición.</li>
-        <li><strong>Se marca «a confirmar».</strong> La línea sale de los totales y los importes aparecen como provisionales.</li>
-        <li><strong>No pasa hasta que lo revisas.</strong> El presupuesto no queda listo para enviar mientras haya algo pendiente.</li>
-      </ol>
-      <p style="margin:16px 0 0;color:var(--gray)">Y si importas un presupuesto antiguo cuyas sumas no cuadran, Metrado te enseña las dos cifras, la del documento y la recalculada, sin corregir nada por su cuenta.</p>
+      <h3>Si falta un dato</h3>
+      <p style="margin:0 0 12px;color:var(--gray)">Un coste, una cantidad o un tipo de IVA que no has dicho queda en blanco y marcado «a confirmar», fuera de los totales, y no puedes enviarlo hasta revisarlo.</p>
+      <p style="margin:16px 0 0;color:var(--gray)">Y si importas un documento antiguo cuyas sumas no cuadran, Metrado te enseña las dos cifras, la del documento y la recalculada, sin corregir nada por su cuenta.</p>
     </div>
   </div>
 </section>
@@ -595,22 +583,27 @@
   <div class="w">
     <p class="ey">El documento</p>
     <h2>Un PDF con tu logo, en el idioma de tu cliente</h2>
-    <p class="sd">Tu cliente recibe un presupuesto con tu imagen, no una hoja de cálculo.</p>
-    <div class="grid3">
+    <p class="sd">Metrado genera un PDF con tu imagen: quien te encarga la obra no recibe una hoja de Excel.</p>
+    <div class="grid2">
       <div class="card">
         <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></div>
         <h3>4 plantillas</h3>
-        <p>Minimalista, Moderna, Clásica y Premium, esta con galería de fotos. Con tu logo, tu color, tus condiciones de pago y tus datos bancarios.</p>
+        <p>Minimalista, Moderna, Clásica y Premium, esta con galería de fotos. Metrado permite añadir tu logo, tu color, tus condiciones de pago, la validez de la oferta y tus datos bancarios.</p>
       </div>
       <div class="card">
         <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
         <h3>En español, inglés o francés</h3>
-        <p>Cada presupuesto tiene su idioma, aunque tú trabajes en español: útil si haces obras para clientes extranjeros.</p>
+        <p>Cada documento tiene su idioma, aunque tú trabajes en español: útil si haces obras para propietarios extranjeros.</p>
       </div>
       <div class="card">
         <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></svg></div>
         <h3>Lo envías tú</h3>
-        <p>Por correo, con un enlace o desde el menú compartir del móvil, o lo imprimes. Cada versión enviada queda guardada en el historial.</p>
+        <p>Con tus herramientas habituales: directamente por correo, con un enlace o desde el menú compartir del móvil, o lo imprimes. Cada versión enviada queda en el historial, para un buen control de versiones.</p>
+      </div>
+      <div class="card">
+        <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg></div>
+        <h3>Los planos del proyecto</h3>
+        <p>Metrado permite adjuntar los planos de tus proyectos, en PDF o en imagen: van al final del PDF del presupuesto, en un anexo «Planos».</p>
       </div>
     </div>
   </div>
@@ -622,13 +615,12 @@
     <div>
       <p class="ey">En la obra y en la oficina</p>
       <h2>Una aplicación que funciona aunque no haya cobertura</h2>
-      <p style="color:var(--gray);margin:0 0 0">Metrado se instala en la pantalla de inicio de tu iPhone, de tu móvil Android o de tu ordenador, sin pasar por una tienda de aplicaciones. Empiezas un presupuesto en la obra y lo terminas en el ordenador.</p>
+      <p style="color:var(--gray);margin:0 0 0">Metrado se instala en la pantalla de inicio de tu iPhone, de tu móvil Android o de tu ordenador, sin pasar por una tienda de aplicaciones. Empiezas en la obra y terminas en el ordenador, sin repetir el trabajo.</p>
     </div>
     <ul class="checks" style="align-self:center">
       <li><strong>Sin conexión:</strong> creas y modificas presupuestos en el sótano o en el campo; se sincronizan al volver la red.</li>
       <li><strong>Con conexión:</strong> el dictado y la lectura de documentos necesitan internet, y Metrado te avisa cuando no lo hay.</li>
-      <li><strong>Fichas de clientes</strong> con sus direcciones de obra y el historial de sus presupuestos.</li>
-      <li><strong>Aplicación en español, inglés y francés</strong>, a elegir con un toque.</li>
+      <li><strong>Gestión de clientes:</strong> fichas con sus direcciones de obra y el historial de sus presupuestos.</li>
     </ul>
   </div>
 </section>
@@ -637,13 +629,12 @@
 <section class="s" id="confianza">
   <div class="w">
     <p class="ey">Tú decides</p>
-    <h2>Presupuestos con IA, pero tu precio es tu precio</h2>
-    <p class="sd">La IA te ahorra tecleo: transcribe, lee y ordena. Un presupuesto compromete tu precio y tu palabra, así que nada sale sin tu revisión.</p>
+    <h2>Presupuestos con IA, pero los importes los pones tú</h2>
+    <p class="sd">La IA es una herramienta que te ahorra tecleo: transcribe, lee y ordena. Un presupuesto compromete tu palabra, así que nada sale sin tu revisión: el control lo tienes tú.</p>
     <div class="trust">
-      <div class="card"><h3>Nunca inventa un precio</h3><p>No propone precios «orientativos»: ni precios, ni cantidades, ni tipos de IVA. Lo que no has dicho o no se lee bien queda «a confirmar».</p></div>
-      <div class="card"><h3>No envía nada por su cuenta</h3><p>Ningún presupuesto llega a tu cliente sin que tú lo envíes.</p></div>
-      <div class="card"><h3>Tus datos, solo para tu empresa</h3><p>Cada empresa ve únicamente sus clientes, sus presupuestos y sus fotos. Las fotos de tus obras son privadas.</p></div>
-      <div class="card"><h3>Lo revisas todo antes</h3><p>Las líneas dictadas o leídas de un documento se revisan una a una, y lo dudoso se señala para que lo mires.</p></div>
+      <div class="card"><h3>Nunca inventa un importe</h3><p>No propone importes «orientativos»: ni costes, ni cantidades, ni tipos de IVA. Lo que no has dicho o no se lee bien queda «a confirmar».</p></div>
+      <div class="card"><h3>No envía nada por su cuenta</h3><p>Nada llega a tu cliente sin que tú lo envíes.</p></div>
+      <div class="card"><h3>Tus datos, solo para tu empresa</h3><p>Tus datos, tus presupuestos y las fotos de tus obras solo los ve tu empresa. Nadie más tiene acceso.</p></div>
     </div>
   </div>
 </section>
@@ -653,38 +644,38 @@
   <div class="w">
     <p class="ey">Precios</p>
     <h2>Pagas solo los presupuestos que haces</h2>
-    <p class="sd">Empiezas con 3 presupuestos gratis, sin tarjeta. Si te convence, compras un pack cuando lo necesitas: sin suscripción ni permanencia, y los créditos no caducan. Si un mes no presupuestas, no pagas nada y tus créditos siguen ahí.</p>
+    <p class="sd">Empiezas con 3 presupuestos gratis, sin tarjeta. Si te convence, compras un pack cuando lo necesitas: sin suscripción ni permanencia. Si un mes no presupuestas, no pagas nada.</p>
     <div class="plans">
       <div class="plan free">
-        <p class="plan-name">Prueba</p>
-        <p class="plan-price">0 €</p>
-        <p class="plan-unit">3 presupuestos gratis para probar los cuatro modos.</p>
+        <div class="plan-name">Prueba</div>
+        <div class="plan-price">0 €</div>
+        <div class="plan-unit">3 gratis para probar los cuatro modos.</div>
       </div>
       <div class="plan">
-        <p class="plan-name">10 presupuestos</p>
-        <p class="plan-price">12 € <span>+ IVA</span></p>
-        <p class="plan-unit">1,20 € + IVA por presupuesto</p>
-        <p class="plan-ttc">14,52 € con IVA</p>
+        <div class="plan-name">10 presupuestos</div>
+        <div class="plan-price">12 € <span>+ IVA</span></div>
+        <div class="plan-unit">1,20 € + IVA cada uno</div>
+        <div class="plan-ttc">14,52 € con IVA</div>
       </div>
       <div class="plan">
-        <p class="plan-name">30 presupuestos</p>
-        <p class="plan-price">29 € <span>+ IVA</span></p>
-        <p class="plan-unit">0,97 € + IVA por presupuesto</p>
+        <div class="plan-name">30 presupuestos</div>
+        <div class="plan-price">29 € <span>+ IVA</span></div>
+        <div class="plan-unit">0,97 € + IVA cada uno</div>
         <span class="save">Ahorras un 19 %</span>
-        <p class="plan-ttc">35,09 € con IVA</p>
+        <div class="plan-ttc">35,09 € con IVA</div>
       </div>
       <div class="plan">
-        <p class="plan-name">100 presupuestos</p>
-        <p class="plan-price">79 € <span>+ IVA</span></p>
-        <p class="plan-unit">0,79 € + IVA por presupuesto</p>
+        <div class="plan-name">100 presupuestos</div>
+        <div class="plan-price">79 € <span>+ IVA</span></div>
+        <div class="plan-unit">0,79 € + IVA cada uno</div>
         <span class="save">Ahorras un 34 %</span>
-        <p class="plan-ttc">95,59 € con IVA</p>
+        <div class="plan-ttc">95,59 € con IVA</div>
       </div>
     </div>
     <div class="price-notes">
       <p><strong>Un crédito = un presupuesto finalizado.</strong> Se usa cuando marcas el presupuesto «Listo para enviar», una sola vez. Los borradores, los dictados, las importaciones, las modificaciones y los duplicados son gratis e ilimitados.</p>
       <p><strong>Los créditos no caducan.</strong> Con 5 presupuestos al mes, el pack de 30 te dura medio año.</p>
-      <p>El ahorro se calcula frente al precio por presupuesto del pack de 10. Precios sin IVA (21 %). Pago seguro con Stripe y factura con el IVA desglosado.</p>
+      <p>Ahorro calculado frente al pack de 10. Precios sin IVA (21 %). Pago seguro con Stripe y factura con el IVA desglosado.</p>
     </div>
     <div class="cta-row center">
       <a class="cta cta-dark" href="https://presupuestos.webautonomos.es/inscription" onclick="gtag('event','click_probar_devia',{event_category:'devia',event_label:'precios'})">Probar gratis →</a>
@@ -693,34 +684,51 @@
 </section>
 
 <!-- PLANTILLA -->
-<section class="s" id="plantilla">
+<section class="s alt" id="plantilla">
   <div class="w-narrow">
     <p class="ey">Antes de decidir</p>
     <h2>Metrado o una plantilla de presupuesto en Excel o Word</h2>
-    <p class="sd" style="margin-bottom:24px">Una plantilla sirve en la oficina; en la obra, con el móvil, se queda corta.</p>
+    <p class="sd" style="margin-bottom:24px">Una plantilla de Excel sirve en la oficina; en una obra de construcción, con el móvil, se queda corta.</p>
     <div class="tw"><table class="cmp">
       <thead><tr><th scope="col"></th><th scope="col" class="dv">Metrado</th><th scope="col">Plantilla de Excel o Word</th></tr></thead>
       <tbody>
         <tr><th scope="row">Desde el móvil, en la obra</th><td class="dv">Sí, también por voz y sin cobertura</td><td>Incómoda en una pantalla pequeña</td></tr>
-        <tr><th scope="row">Cuentas</th><td class="dv">IVA por tipo, IRPF y anticipo, al céntimo</td><td>Fórmulas que tienes que revisar tú</td></tr>
-        <tr><th scope="row">Un precio que falta</th><td class="dv">Marcado «a confirmar» y fuera del total</td><td>Una celda vacía puede pasar desapercibida</td></tr>
+        <tr><th scope="row">Cuentas</th><td class="dv">Partidas, IVA por tipo, IRPF y anticipo, al céntimo</td><td>Fórmulas de Excel que tienes que revisar tú</td></tr>
+        <tr><th scope="row">Una partida sin precio</th><td class="dv">Marcado «a confirmar» y fuera del total</td><td>Una celda vacía puede pasar desapercibida</td></tr>
         <tr><th scope="row">Presupuestos en papel</th><td class="dv">Los lee y los pasa a limpio</td><td>Hay que volver a teclearlos</td></tr>
-        <tr><th scope="row">Idioma del PDF</th><td class="dv">Español, inglés o francés, por presupuesto</td><td>El de la plantilla</td></tr>
-        <tr><th scope="row">Precio</th><td class="dv">3 gratis; después, 1,20 € + IVA por presupuesto o menos, sin caducidad</td><td>Gratis si ya tienes el programa</td></tr>
+        <tr><th scope="row">Idioma del PDF</th><td class="dv">Español, inglés o francés, a elegir</td><td>El de la plantilla</td></tr>
+        <tr><th scope="row">Precio</th><td class="dv">3 gratis; después, 1,20 € + IVA o menos cada uno, sin caducidad</td><td>Gratis si ya tienes el programa</td></tr>
       </tbody>
     </table></div>
-    <p style="margin:20px 0 0;color:var(--gray)">¿Ya usas un programa de facturación? Metrado no lo sustituye: se ocupa del presupuesto, en la obra, y la factura sigue en tu programa de siempre.</p>
+    <p style="margin:20px 0 0;color:var(--gray)">¿Ya usas un programa de facturación u otras herramientas de gestión? Metrado no las sustituye: es una solución para el presupuesto, en la obra, y la factura sigue en tu programa de siempre.</p>
+  </div>
+</section>
+
+<!-- ELEGIR -->
+<section class="s" id="elegir">
+  <div class="w-narrow">
+    <p class="ey">Guía rápida</p>
+    <h2>Cómo elegir un software de presupuestos de obra</h2>
+    <p class="sd" style="margin-bottom:22px">Antes de elegir entre herramientas, mira qué funciones necesitas de verdad y cómo trabajas: en la obra, con el móvil, o en la oficina con proyectos de construcción grandes.</p>
+    <ul class="checks">
+      <li><strong>Que te permita crear el presupuesto y generar el PDF donde estás:</strong> una app en el móvil, sin depender de la cobertura, y no solo un programa de escritorio.</li>
+      <li><strong>Que las cuentas sean exactas:</strong> una cuenta precisa al céntimo en IVA, IRPF y anticipo, sin fórmulas que mantener.</li>
+      <li><strong>Que no invente información:</strong> en un presupuesto de obra, lo que falta debe quedar a la vista, no rellenado por la IA: tú mantienes el control.</li>
+      <li><strong>Que se adapte a tu forma de trabajar en la construcción:</strong> partidas, capítulos, materiales y mano de obra, con tu catálogo y tus precios.</li>
+      <li><strong>Que puedas probarlo sin demo comercial:</strong> con Metrado haces 3 presupuestos reales de tus obras, gratis.</li>
+    </ul>
+    <p style="margin:18px 0 0;color:var(--gray)">Si necesitas una plataforma de gestión integral, con módulos de planificación, control de costes, seguimiento de obra y facturación, la solución es uno de los programas de gestión de obras. Metrado se centra en una sola tarea: el presupuesto, desde la obra hasta el PDF.</p>
   </div>
 </section>
 
 <!-- PARA QUIÉN -->
-<section class="s alt" id="para-quien">
+<section class="s" id="para-quien">
   <div class="w">
     <p class="ey">Para quién</p>
-    <h2>Para autónomos y pequeñas empresas que presupuestan obras y servicios</h2>
-    <p class="sd" style="margin-bottom:22px">Si haces presupuestos a menudo y prefieres dedicar la tarde a otra cosa, Metrado está pensado para ti.</p>
+    <h2>Para profesionales de la construcción, las reformas y los servicios</h2>
+    <p class="sd" style="margin-bottom:22px">Si haces presupuestos de obra a menudo, para proyectos grandes o pequeños, y prefieres dedicar tu tiempo a otra cosa, Metrado es la herramienta pensada para ti: autónomos y pequeñas empresas del sector.</p>
     <ul class="trades">
-      <li>Reformas</li><li>Fontanería</li><li>Electricidad</li><li>Pintura</li><li>Carpintería</li>
+      <li>Construcción</li><li>Reformas</li><li>Fontanería</li><li>Electricidad</li><li>Pintura</li><li>Carpintería</li>
       <li>Climatización</li><li>Cerrajería</li><li>Albañilería</li><li>Jardinería</li><li>Limpieza</li><li>Mantenimiento</li>
     </ul>
     <div class="grid2" style="margin-top:36px">
@@ -728,83 +736,80 @@
         <h3>Lo que Metrado no hace</h3>
         <ul class="nots">
           <li>No hace facturas: para facturar, sigue usando tu programa de facturación.</li>
-          <li>No trae una base de precios de la construcción: los precios son los tuyos, y los guardas en tu catálogo.</li>
+          <li>No trae una base de datos de precios de la construcción: los precios son los tuyos y los de tus proveedores, y los guardas en tu catálogo.</li>
+          <li>No es un software de gestión de obras de construcción: no lleva la planificación, el control de costes ni las órdenes de compra.</li>
           <li>No te busca clientes: es una herramienta para presupuestar, no un portal de presupuestos.</li>
         </ul>
       </div>
       <div>
         <h3>Si además quieres que te encuentren</h3>
-        <p style="margin:0;color:var(--gray)">Somos WebAutonomos: también hacemos <a href="/precios">páginas web para autónomos</a> y la <a href="/gestion-ficha-google/">gestión de tu ficha de Google</a>, para que los clientes que buscan tu oficio en tu zona te pidan presupuesto.</p>
+        <p style="margin:0;color:var(--gray)">Somos WebAutonomos: también hacemos <a href="/precios">páginas web para autónomos</a> y la <a href="/gestion-ficha-google/">gestión de tu ficha de Google</a>, para que quien busca tu oficio en tu zona te encuentre.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="s" id="preguntas">
+<section class="s alt" id="preguntas">
   <div class="w-narrow">
     <p class="ey">Preguntas frecuentes</p>
     <h2>Lo que nos preguntan sobre Metrado</h2>
     <div class="faq">
       <details>
         <summary>¿Cuánto cuesta Metrado?</summary>
-        <p>Los 3 primeros presupuestos son gratis. Después compras un pack: 10 presupuestos por 12 € + IVA, 30 por 29 € + IVA o 100 por 79 € + IVA. No hay suscripción ni cuota mensual, y los créditos no caducan.</p>
+        <p>Los 3 primeros son gratis, sin tarjeta: solo te pedimos tu nombre y tu email. Después compras un pack: 10 presupuestos por 12 € + IVA, 30 por 29 € + IVA o 100 por 79 € + IVA. Todas las funciones están incluidas, no hay suscripción y los créditos no caducan.</p>
       </details>
       <details>
-        <summary>¿Hay una versión gratis?</summary>
-        <p>Tienes 3 presupuestos gratis para probar los cuatro modos, sin tarjeta: para empezar solo te pedimos tu nombre y tu email. No hay un plan gratuito permanente: después pagas solo los presupuestos que haces, con un pack.</p>
+        <summary>¿Puedo ver una demo antes?</summary>
+        <p>No hace falta: los 3 primeros presupuestos son gratis, así que lo pruebas tú, con tus obras y sin demo comercial.</p>
       </details>
       <details>
         <summary>¿Qué cuenta como un presupuesto?</summary>
-        <p>Un crédito es un presupuesto finalizado: se usa cuando lo marcas «Listo para enviar», una sola vez por presupuesto. Los borradores, los dictados, las importaciones, las modificaciones y los duplicados son gratis e ilimitados, y modificar o enviar después un presupuesto finalizado no gasta nada más.</p>
-      </details>
-      <details>
-        <summary>¿Caducan los créditos?</summary>
-        <p>No. Los créditos que compras no caducan: si un mes no haces presupuestos, siguen en tu cuenta para cuando los necesites.</p>
-      </details>
-      <details>
-        <summary>¿Recibo factura de los packs?</summary>
-        <p>Sí. Cada compra genera una factura con el IVA desglosado. Al pagar puedes indicar el nombre de tu empresa y tu NIF.</p>
+        <p>Cada presupuesto que finalizas, cuando lo marcas «Listo para enviar», una sola vez. Los borradores, los dictados, las importaciones, las modificaciones y los duplicados son gratis e ilimitados.</p>
       </details>
       <details>
         <summary>¿La inteligencia artificial pone los precios?</summary>
-        <p>No. La IA transcribe lo que dictas, lee los documentos y ordena las líneas, pero nunca inventa un precio, una cantidad ni un tipo de IVA: lo que falta queda marcado «a confirmar» y fuera de los totales. Las cuentas las hace un motor de cálculo exacto, no la IA.</p>
+        <p>No. La IA transcribe lo que dictas, lee lo que importas y ordena las partidas, pero nunca inventa un coste, una cantidad ni un tipo de IVA: lo que falta queda marcado «a confirmar» y fuera de los totales. Las cuentas las hace un motor de cálculo exacto, y el control de cada importe es tuyo.</p>
       </details>
       <details>
-        <summary>¿Puedo hacer presupuestos desde el móvil?</summary>
-        <p>Sí. Metrado se abre en el navegador y se instala en la pantalla de inicio de un iPhone, de un móvil Android o de un ordenador, sin pasar por una tienda de aplicaciones. Empiezas el presupuesto en la obra y, si quieres, lo terminas en el ordenador.</p>
+        <summary>¿Es una app o un programa para el ordenador?</summary>
+        <p>Las dos cosas: un software que se abre en el navegador y se instala como app en la pantalla de inicio de un iPhone, de un móvil Android o de un ordenador, sin pasar por una tienda de aplicaciones.</p>
+      </details>
+      <details>
+        <summary>¿Puedo importar lo que ya tengo en Excel o en PDF?</summary>
+        <p>Sí, en PDF o en foto: Metrado los lee y los pasa a limpio. Si lo tienes en Excel, expórtalo antes a PDF y luego impórtalo.</p>
       </details>
       <details>
         <summary>¿Funciona sin conexión a internet?</summary>
-        <p>Sí, para crear y modificar presupuestos: se guardan en el móvil y se sincronizan cuando vuelve la conexión. El dictado y la lectura de documentos sí necesitan conexión, y Metrado te lo indica.</p>
+        <p>Sí: Metrado te permite crear presupuestos y modificarlos sin conexión; se sincronizan cuando vuelve la red, sin perder trabajo. El dictado y la lectura de documentos sí necesitan conexión.</p>
       </details>
       <details>
-        <summary>¿Qué debe incluir un presupuesto profesional?</summary>
-        <p>Los datos de tu empresa y del cliente, un número y una fecha, la validez de la oferta, la dirección de la obra, las partidas con cantidades y precios, la base, el IVA por tipo y el total, y las condiciones de pago. Metrado los pone en el PDF y, si quieres, añade un espacio para la firma del cliente.</p>
+        <summary>¿Puedo hacerlo en inglés o en francés?</summary>
+        <p>Sí. El PDF puede salir en español, inglés o francés, aunque tú uses la aplicación en español.</p>
       </details>
       <details>
-        <summary>¿Puedo hacer el presupuesto en inglés o en francés?</summary>
-        <p>Sí. Cada presupuesto tiene su idioma: el PDF puede salir en español, inglés o francés, aunque tú uses la aplicación en español. La aplicación también está en los tres idiomas.</p>
+        <summary>¿Sirve para una empresa de construcción?</summary>
+        <p>Sí, para profesionales, autónomos y pequeñas empresas constructoras, de reformas e instalaciones que hacen presupuestos de obras a menudo. Para la gestión integral de grandes proyectos, con planificación y seguimiento, la solución es un programa de gestión de obras más completo.</p>
       </details>
       <details>
         <summary>¿Metrado hace facturas?</summary>
-        <p>No. Metrado se centra en el presupuesto, desde la obra hasta el PDF que envías a tu cliente. Para facturar, sigue usando tu programa de facturación.</p>
+        <p>No. Metrado se centra en el presupuesto, desde la obra hasta el PDF que envías. Para facturar, sigue usando tu programa de facturación u otras herramientas.</p>
       </details>
       <details>
-        <summary>¿Quién ve mis presupuestos?</summary>
-        <p>Solo tu empresa. Cada empresa ve únicamente sus clientes, sus presupuestos y sus fotos, y Metrado no envía nada a tus clientes: el presupuesto sale cuando tú lo envías.</p>
+        <summary>¿Quién ve mis datos?</summary>
+        <p>Solo tu empresa, y Metrado no envía nada por su cuenta: el presupuesto sale cuando tú lo envías.</p>
       </details>
     </div>
   </div>
 </section>
 
 <!-- QUIÉN -->
-<section class="s alt" id="quien">
+<section class="s" id="quien">
   <div class="w-narrow about">
     <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
     <div>
       <h3>Quién está detrás de Metrado</h3>
-      <p>Metrado es una aplicación de WebAutonomos, la marca de PASURITE SLU, con sede en Ontinyent (Valencia). Somos la misma empresa que hace páginas web para autónomos: puedes ver quiénes somos en <a href="/sobre-nosotros/">sobre nosotros</a>.</p>
+      <p>Metrado es un software de WebAutonomos (PASURITE SLU), en Ontinyent (Valencia), la empresa que hace páginas web para autónomos: <a href="/sobre-nosotros/">sobre nosotros</a>.</p>
     </div>
   </div>
 </section>
