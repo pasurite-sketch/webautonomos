@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Liens internes vers les pages de vente de Devia (22/10/2026).
+"""Liens internes vers les pages de vente de Metrado (22/10/2026).
 
 Ajoute un passage marqué <!-- lien-devia --> dans les trois pages de services :
-- servicios.html : section « App de presupuestos Devia » avant « Redes sociales » ;
-- en/services.html : Devia dans la liste « Two more services » (qui devient « Three ») ;
+- servicios.html : section « App de presupuestos Metrado » avant « Redes sociales » ;
+- en/services.html : Metrado dans la liste « Two more services » (qui devient « Three ») ;
 - fr/prestations.html : paragraphe avant « Questions fréquentes ».
 
 Idempotent : une page qui a déjà le repère est signalée [DEJA].
@@ -20,8 +20,8 @@ PATCHES = {
     'servicios.html': [(
         '  <h2>Redes sociales, bajo petición</h2>\n',
         f'''  {MARK}
-  <h2>App de presupuestos Devia — 3 gratis</h2>
-  <p>Si eres tú quien prepara los presupuestos para tus clientes, Devia te ayuda a hacerlos desde el móvil: los dictas en la obra, pasas a limpio uno en papel o los escribes, y salen en PDF con tu logo, con el IVA y la retención de IRPF calculados al céntimo. Los 3 primeros presupuestos son gratis; después, 10 presupuestos por 12 € + IVA, sin suscripción, y los créditos no caducan. Todo sobre la <a href="/app-presupuestos/" style="color:var(--blue);font-weight:600">app para hacer presupuestos de obra y reformas</a>.</p>
+  <h2>App de presupuestos Metrado — 3 gratis</h2>
+  <p>Si eres tú quien prepara los presupuestos para tus clientes, Metrado te ayuda a hacerlos desde el móvil: los dictas en la obra, pasas a limpio uno en papel o los escribes, y salen en PDF con tu logo, con el IVA y la retención de IRPF calculados al céntimo. Los 3 primeros presupuestos son gratis; después, 10 presupuestos por 12 € + IVA, sin suscripción, y los créditos no caducan. Todo sobre la <a href="/app-presupuestos/" style="color:var(--blue);font-weight:600">app para hacer presupuestos de obra y reformas</a>.</p>
 
   <h2>Redes sociales, bajo petición</h2>
 ''')],
@@ -29,15 +29,15 @@ PATCHES = {
         ('  <h2>Two more services</h2>\n  <p>Beyond our web design services, we offer two more:</p>\n',
          '  <h2>Three more services</h2>\n  <p>Beyond our web design services, we offer three more:</p>\n'),
         ('    <li><a href="/en/ai-visibility/">AI visibility check</a>',
-         f'''    <li>{MARK}<a href="/en/quoting-app/">Devia quoting app</a>: write quotes for your own clients on your phone, by voice or from a paper quote, with IVA and IRPF worked out to the cent; 3 free quotes, then 10 quotes for €12 + VAT, no subscription.</li>
+         f'''    <li>{MARK}<a href="/en/quoting-app/">Metrado quoting app</a>: write quotes for your own clients on your phone, by voice or from a paper quote, with IVA and IRPF worked out to the cent; 3 free quotes, then 10 quotes for €12 + VAT, no subscription.</li>
     <li><a href="/en/ai-visibility/">AI visibility check</a>'''),
     ],
     'fr/prestations.html': [(
         '  <h2>Questions fréquentes</h2>\n',
         f'''  {MARK}
-  <h2>Et pour vos propres devis : l'application Devia</h2>
+  <h2>Et pour vos propres devis : l'application Metrado</h2>
   <p>Vous êtes artisan et vous préparez vous-même les devis de vos clients ?
-  Devia vous permet de les faire sur votre téléphone : vous les dictez sur le
+  Metrado vous permet de les faire sur votre téléphone : vous les dictez sur le
   chantier, vous remettez au propre un devis papier ou vous les saisissez, et ils
   sortent en PDF à votre logo, avec la TVA calculée au centime. Les 3 premiers
   devis sont gratuits ; ensuite, 10 devis pour 12 € HT, sans abonnement, et les

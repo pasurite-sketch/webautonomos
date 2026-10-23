@@ -3,7 +3,7 @@
 > **Règle absolue pour les agents** : toute affirmation factuelle sur WebAutonomos
 > (prix, délais, services, langues, chiffres, clients, ancienneté, résultats)
 > qui n'est pas écrite ici est **interdite**. Le relecteur rejette la page.
-> Tenu à jour par Angelino. Dernière révision : 22/10/2026 (§11 Devia).
+> Tenu à jour par Angelino. Dernière révision : 22/10/2026 (§11 Metrado).
 > Les lignes marquées **À CONFIRMER** ne doivent pas être utilisées tant
 > qu'Angelino ne les a pas tranchées.
 
@@ -110,7 +110,7 @@ Les seuls nombres qu'un agent peut **ajouter** dans une page (en plus de ceux d�
 961 877 356, 654 23 95 20, 46870, 26
 49, 800, 2.000, 1.500, 4.000
 48
-3, 10, 30, 100, 79, 1,20, 0,97, 0,79, 14,52, 35,09, 95,59 (Devia uniquement, voir §11)
+3, 10, 30, 100, 79, 1,20, 0,97, 0,79, 14,52, 35,09, 95,59 (Metrado uniquement, voir §11)
 ```
 
 Un pourcentage (« 70 % », « el 87 % de… ») n'est **jamais** autorisé, sauf s'il est accompagné ici d'une source.
@@ -118,8 +118,8 @@ Un pourcentage (« 70 % », « el 87 % de… ») n'est **jamais** autorisé, sau
 - 12 % : repère du prix de mise en œuvre d'une automatisation (§5 bis, décision d'Angelino du 07/10/2026) ; toujours « autour de 12 % », jamais comme tarif fixe.
 - 20 % : maintenance annuelle indicative d'une automatisation, rapportée à la mise en œuvre (§5 bis).
 - 10 % : remise accordée à un client en alquiler qui passe au paiement unique de 349 € (décision d'Angelino du 07/10/2026, voir §2). Seul usage autorisé de ce pourcentage.
-- 19 % : économie par devis du pack Devia de 30 (0,97 €) par rapport au pack de 10 (1,20 €), voir §11. Seul usage autorisé.
-- 34 % : économie par devis du pack Devia de 100 (0,79 €) par rapport au pack de 10 (1,20 €), voir §11. Seul usage autorisé.
+- 19 % : économie par devis du pack Metrado de 30 (0,97 €) par rapport au pack de 10 (1,20 €), voir §11. Seul usage autorisé.
+- 34 % : économie par devis du pack Metrado de 100 (0,79 €) par rapport au pack de 10 (1,20 €), voir §11. Seul usage autorisé.
 
 ### Chiffres de marché sourcés (utilisables avec la source citée)
 
@@ -218,9 +218,9 @@ qu[eé] dolor resuelve
 - [x] Home : « el 46% de las búsquedas… » retiré de la FAQ dans les 4 langues (27/09)
 - [x] Blog : statistiques sans source et faux « cas réels » retirés (27/09, `_tools/nettoyage_blog_20260927.py`) ; catégories Google, prix d'agence, étude Northwestern, offres gratuites d'e-mailing et étoiles Schema corrigés (28/09, `_tools/nettoyage_blog_20260928.py`)
 
-## 11. Devia, application de presupuestos (ajouté le 22/10/2026 avec l'accord d'Angelino)
+## 11. Metrado (anciennement Devia), application de presupuestos (ajouté le 22/10/2026, renommé le 23/10/2026 avec l'accord d'Angelino)
 
-- **Ce que c'est** : Devia est une application web de WebAutonomos (PASURITE SLU) pour faire des devis (« presupuestos »).
+- **Ce que c'est** : Metrado (nom choisi le 23/10/2026 ; « Devia » abandonné car déjà marque chinoise ; ne plus l'écrire) est une application web de WebAutonomos (PASURITE SLU) pour faire des devis (« presupuestos »).
   - Adresse : https://presupuestos.webautonomos.es ; inscription sur /inscription.
   - Elle s'installe sur Android, iPhone et ordinateur, sans magasin d'applications.
   - Pages de vente : /app-presupuestos/ (ES), /fr/application-devis-artisan/ (FR), /en/quoting-app/ (EN). Prix dans /tarifas/.
