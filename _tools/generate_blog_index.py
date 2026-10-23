@@ -111,7 +111,7 @@ def resume_de(s):
     return ''
 
 
-def lire(lang, slug, photos):
+def lire(lang, slug, photos, vignettes=None):
     rel = 'blog/%s/%s.html' % (lang, slug)
     with open(os.path.join(ROOT, rel), encoding='utf-8', errors='replace') as fh:
         s = fh.read()
@@ -124,17 +124,22 @@ def lire(lang, slug, photos):
         'cat': cat.group(1) if cat else None,
         'date': date.group(1) if date else None,
         'photo': photos.get(rel),
+        'vignette': (vignettes or {}).get(rel),
     }
 
 
 def collect():
     """{lang: [article]} ; les manques sont repris d'une autre langue de la meme page."""
-    photos = json.load(open(IMAGES, encoding='utf-8')).get('pages', {})
+    images = json.load(open(IMAGES, encoding='utf-8'))
+    photos = images.get('pages', {})
+    # Image propre à la fiche (24/10/2026) : section « vignettes » de images.json, même clé que « pages ».
+    # Sinon la fiche reprend la photo de l'article.
+    vignettes = images.get('vignettes', {})
     data = {}
     for code, _, _ in LANGS:
         d = os.path.join(ROOT, 'blog', code)
         noms = sorted(n for n in os.listdir(d) if n.endswith('.html') and n != 'index.html') if os.path.isdir(d) else []
-        data[code] = [lire(code, n[:-5], photos) for n in noms]
+        data[code] = [lire(code, n[:-5], photos, vignettes) for n in noms]
     par_sujet = {}
     for arts in data.values():
         for a in arts:
@@ -165,7 +170,7 @@ def date_lisible(iso, lang):
 def fiche(a):
     code = a['lang']
     couleur, nom = next((c[1], c[2][code]) for c in CATS if c[0] == a['cat'])
-    p = a['photo']
+    p = a.get('vignette') or a['photo']
     vignette = f'<span class="vignette vide" style="--c:{couleur}"></span>'  # photo pas encore posée
     if p:
         vignette = ('<span class="vignette"><img src="/assets/%s-800.webp?v=%s" alt="%s" width="800" height="450" '
