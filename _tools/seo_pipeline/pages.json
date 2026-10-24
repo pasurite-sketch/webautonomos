@@ -77,7 +77,8 @@
       "objectif_geo": "vert",
       "statut": "fait",
       "priorite": 1,
-      "notes": "Porte les requêtes de prix (2 800 imp.). À traiter avec /precios après le 22/10. Aussi copié dans index.html (SPA). 23/10/2026 : gel levé ; allégé de 105 (gris) à 93, fourchettes du marché remplacées par celles de VERITE §7, « todo incluido » retiré, title et H1 gardés, « + IVA » non ajouté au prix du site (VERITE §10) ; ChatGPT 55 → 83. La copie de la SPA (index.html, metaDescription) n'a pas été modifiée."
+      "termes_necessaires": ["mes", "dominio"],
+      "notes": "Porte les requêtes de prix (2 800 imp.). À traiter avec /precios après le 22/10. Aussi copié dans index.html (SPA). 23/10/2026 : gel levé ; allégé de 105 (gris) à 93, fourchettes du marché remplacées par celles de VERITE §7, « todo incluido » retiré, title et H1 gardés, « + IVA » non ajouté au prix du site (VERITE §10) ; ChatGPT 55 → 83. La copie de la SPA (index.html, metaDescription) n'a pas été modifiée. 24/10/2026 (affinage) : répétitions de web/mantenimiento/pago/año/cuesta/agencia réduites hors des éléments protégés ; « mes » et « dominio » restent au-dessus de leur fourchette (prix, FAQ du dominio, libellés de coût) sans toucher aux prix, d'où leur ajout à termes_necessaires (décision d'Angelino, review.json)."
     },
     {
       "slug": "es-reformas",
