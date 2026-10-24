@@ -1109,8 +1109,7 @@
     {
      "html": "precios.html",
      "lang": "es",
-     "url": "https://webautonomos.es/precios",
-     "pas_avant": "2026-10-23"
+     "url": "https://webautonomos.es/precios"
     }
    ],
    "statut": "fait",
@@ -3738,9 +3737,9 @@
    "id": "page-marketing",
    "type": "page",
    "priorite": 40,
-   "titre": "SEO local para autónomos: aparece en Google Maps cuando te buscan en tu zona",
+   "titre": "Servicio de SEO local para tu negocio: autónomos y pequeñas empresas",
    "url": "https://webautonomos.es/marketing",
-   "resume": "Tener web no basta: hay que salir donde te buscan. SEO local por 15 €/mes + IVA y gestión de tu ficha de Google por 29 €/mes + IVA (49 € + IVA de creación o mejora de tu ficha, en un pago único), sin permanencia. Contratas lo que necesitas y lo dejas cuando quieras.",
+   "resume": "Tener web no basta: hay que salir donde te buscan. Nuestro servicio de SEO local trabaja cada mes para que te encuentren en tu zona, por 15 €/mes + IVA, sin alta ni permanencia: cuatro artículos al mes, palabras clave locales y un informe mensual. Lo contratas con o sin nuestra web y lo dejas cuando quieras.",
    "marche": "es",
    "sante": false,
    "pages": [
@@ -3865,7 +3864,7 @@
    "priorite": 60,
    "titre": "La app para hacer presupuestos de obra y reformas desde el móvil",
    "url": "https://webautonomos.es/app-presupuestos/",
-   "resume": "Para autónomos y pequeñas empresas: con Devia haces un presupuesto profesional en la obra o en la oficina. Lo dictas, pasas a limpio uno en papel, partes de las fotos de tus trabajos o lo escribes, y Devia calcula el IVA, la retención de IRPF y el anticipo al céntimo. Pagas solo los presupuestos que haces.",
+   "resume": "Metrado es un software de presupuestos de obra para autónomos y pequeñas empresas de reformas y construcción en España. Puedes crear presupuestos directamente en la obra o en la oficina: los dictas, pasas a limpio uno en papel, partes de las fotos de tus trabajos o los escribes, y Metrado calcula automáticamente el IVA, la retención de IRPF y el anticipo al céntimo. Pagas solo…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -3890,7 +3889,7 @@
    "priorite": 60,
    "titre": "The quoting app for builders and tradespeople in Spain",
    "url": "https://webautonomos.es/en/quoting-app/",
-   "resume": "For self-employed tradespeople and small firms in Spain: with Devia you write a professional quote on site or in the office. Dictate it, turn a paper quote into a clean PDF, start from photos of your work or type it in, and Devia works out the IVA, the IRPF withholding and the deposit to the cent. You only pay for the quotes you make.",
+   "resume": "Metrado is quoting software and a mobile app for self-employed tradespeople, builders and small construction firms in Spain. Create a professional quote on site or in the office: dictate it, turn a paper quote into a clean PDF, start from photos of your work or type it in, and Metrado works out the IVA, the IRPF withholding and the deposit to the cent. Pay-per-use pricing: you…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -3915,7 +3914,7 @@
    "priorite": 60,
    "titre": "L’application de devis pour artisans, à dicter sur le chantier",
    "url": "https://webautonomos.es/fr/application-devis-artisan/",
-   "resume": "Pour les artisans et les petites entreprises du bâtiment et des services : avec Devia, vous faites un devis professionnel sur le chantier ou au bureau. Vous le dictez, vous remettez au propre un devis papier, vous partez des photos de vos réalisations ou vous le saisissez, et Devia calcule la TVA et l’acompte au centime. Vous ne payez que les devis que vous faites.",
+   "resume": "Metrado est un logiciel de devis pour les artisans du bâtiment et les petites entreprises du BTP et des services. Chez le client ou au bureau, vous le dictez, vous remettez au propre un document papier, vous partez des photos de vos réalisations ou vous le saisissez, et le logiciel calcule automatiquement la TVA et l’acompte au centime. Vous ne payez que ce que vous utilisez.",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -3938,7 +3937,7 @@
    "id": "page-gestion-ficha-google",
    "type": "page",
    "priorite": 60,
-   "titre": "Gestión de la ficha de Google: 29 € al mes + IVA",
+   "titre": "Gestión de la ficha de Google para empresas: 29 € al mes + IVA",
    "url": "https://webautonomos.es/gestion-ficha-google/",
    "resume": "Precios oficiales, sin IVA. Actualizado el 22 de octubre de 2026.",
    "marche": "europe",
@@ -3963,7 +3962,7 @@
    "id": "page-gestion-google-ads",
    "type": "page",
    "priorite": 60,
-   "titre": "Gestión de Google Ads: 90 € de puesta en marcha y el 20 % de tu presupuesto",
+   "titre": "Precio de la gestión de Google Ads: 90 € + IVA de puesta en marcha y el 20 % de tu gasto en publicidad, + IVA",
    "url": "https://webautonomos.es/gestion-google-ads/",
    "resume": "Precios oficiales, sin IVA. Actualizado el 22 de octubre de 2026.",
    "marche": "europe",
@@ -4013,7 +4012,7 @@
    "id": "page-tarifas",
    "type": "page",
    "priorite": 60,
-   "titre": "Tarifas oficiales de WebAutonomos",
+   "titre": "Tarifas de diseño web 2026: precios oficiales de WebAutonomos",
    "url": "https://webautonomos.es/tarifas/",
    "resume": "Precios oficiales, sin IVA. Actualizado el 22 de octubre de 2026.",
    "marche": "europe",
@@ -4038,7 +4037,7 @@
    "id": "page-web-multilingue",
    "type": "page",
    "priorite": 60,
-   "titre": "Web en varios idiomas: hasta 4 idiomas incluidos, sin coste extra",
+   "titre": "Página web multilingüe para autónomos: hasta 4 idiomas incluidos",
    "url": "https://webautonomos.es/web-multilingue/",
    "resume": "Precios oficiales, sin IVA. Actualizado el 22 de octubre de 2026.",
    "marche": "europe",
@@ -4491,7 +4490,7 @@
    "priorite": 103,
    "titre": "¿Cuánto cuesta una página web para autónomos en España? Precios reales 2026",
    "url": "https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-autonomos-espana",
-   "resume": "Una de las preguntas más frecuentes que recibimos es: ¿cuánto cuesta crear una página web? La respuesta puede variar considerablemente dependiendo de muchos factores. En esta guía completa analizamos todas las opciones del mercado español para que los trabajadores autónomos y pequeñas empresas puedan tomar la mejor decisión.",
+   "resume": "¿Cuánto cuesta una página web en España? En 2026, una web profesional hecha por un freelance cuesta entre 800 € y 2.000 €, y hecha por una agencia, entre 1.500 € y 4.000 €, sin contar el mantenimiento, según Social Media Pymes. Si la haces tú con una plataforma, pagas una cuota y pones tú el trabajo. En WebAutonomos, la web cuesta 15 €/mes, sin alta ni permanencia, o 349 € en…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -4499,8 +4498,7 @@
      "html": "blog/es/cuanto-cuesta-pagina-web-autonomos-espana.html",
      "lang": "es",
      "url": "https://webautonomos.es/blog/es/cuanto-cuesta-pagina-web-autonomos-espana",
-     "spa": "es/cuanto-cuesta-pagina-web-autonomos-espana",
-     "pas_avant": "2026-10-23"
+     "spa": "es/cuanto-cuesta-pagina-web-autonomos-espana"
     },
     {
      "html": "blog/val/quant-costa-una-pagina-web-per-a-autonoms.html",
@@ -11553,7 +11551,7 @@
    "priorite": 162,
    "titre": "Se me acaba el Kit Digital: ¿qué hago con mi web?",
    "url": "https://webautonomos.es/blog/es/se-acaba-kit-digital-que-hacer-con-mi-web",
-   "resume": "Cuando se acaban los 12 meses del Kit Digital, tu agente digitalizador deja de estar obligado a mantener tu web, y seguir online cuesta dinero: en una agencia como Aeuroweb, el mantenimiento técnico de una web corporativa sale a 39 €/mes + IVA; si lo haces tú, el creador de webs de Hostinger cuesta 2,39 €/mes + IVA pagando 48 meses por adelantado; en WebAutonomos, 15 €/mes +…",
+   "resume": "Se me acaba el Kit Digital, ¿y ahora qué? Cuando terminan los 12 meses de servicio, tu agente digitalizador deja de estar obligado a mantener tu página web, y seguir online cuesta dinero: en Aeuroweb, el mantenimiento técnico de una web corporativa sale a 39 €/mes + IVA; si lo haces tú, el creador de webs de Hostinger cuesta 2,39 €/mes + IVA pagando 48 meses por adelantado; en…",
    "marche": "europe",
    "sante": false,
    "pages": [
@@ -11566,18 +11564,18 @@
    ],
    "statut": "fait",
    "fichier": "photo-file-se-acaba-kit-digital-que-hacer-con-mi-web",
-   "maquette": {
-    "es": {
-     "statut": "pret",
-     "fichier": "photo-file-se-acaba-kit-digital-que-hacer-con-mi-web-maquette-es"
-    }
-   },
    "v": 1,
    "fait_le": "2026-10-24T01:19:28",
    "textes": {
     "es": {
      "alt": "Carpintero autónomo con una taza de café mira pensativo el móvil sobre su banco de trabajo, con luz de mañana",
      "legende": "Cuando se acaba el Kit Digital, toca decidir qué hacer con tu web"
+    }
+   },
+   "maquette": {
+    "es": {
+     "statut": "pret",
+     "fichier": "photo-file-se-acaba-kit-digital-que-hacer-con-mi-web-maquette-es"
     }
    }
   }
